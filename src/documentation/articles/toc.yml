@@ -10,7 +10,5 @@
   href: jvm_callbacks.md
 - name: netdroid usage
   href: usage.md
-- name: How to build from scratch
-  href: howtobuild.md
 - name: Command-line switches
   href: commandlineswitch.md

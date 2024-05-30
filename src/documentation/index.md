@@ -42,7 +42,6 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
 * [Usage](articles/usage.md)
 * [APIs extensibility](articles/API_extensibility.md)
 * [JVM callbacks](articles/jvm_callbacks.md)
-* [How to build from scratch](articles/howtobuild.md)
 
 ---
 
