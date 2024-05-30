@@ -37,12 +37,12 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
 
 ## Summary
 
-* [Roadmap](src/documentation/articles/roadmap.md)
-* [Current state](src/documentation/articles/currentstate.md)
-* [Usage](src/documentation/articles/usage.md)
-* [APIs extensibility](src/documentation/articles/API_extensibility.md)
-* [JVM callbacks](src/documentation/articles/jvm_callbacks.md)
-* [How to build from scratch](src/documentation/articles/howtobuild.md)
+* [Roadmap](articles/roadmap.md)
+* [Current state](articles/currentstate.md)
+* [Usage](articles/usage.md)
+* [APIs extensibility](articles/API_extensibility.md)
+* [JVM callbacks](articles/jvm_callbacks.md)
+* [How to build from scratch](articles/howtobuild.md)
 
 ---
 
