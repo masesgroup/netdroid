@@ -26,6 +26,50 @@
 	<ItemGroup>
 		<None Include="mases.netdroid.targets" Pack="true" PackagePath="build" />
 		<None Include="..\..\..\jars\*.jar" Pack="true" PackagePath="build\jars" />
+		<Compile Remove="Generated\Java\Util\Function\AllPackageClasses.cs" />
+		<Compile Remove="Generated\Java\Util\Function\BiConsumer.cs" />
+		<Compile Remove="Generated\Java\Util\Function\BiFunction.cs" />
+		<Compile Remove="Generated\Java\Util\Function\BinaryOperator.cs" />
+		<Compile Remove="Generated\Java\Util\Function\BiPredicate.cs" />
+		<Compile Remove="Generated\Java\Util\Function\BooleanSupplier.cs" />
+		<Compile Remove="Generated\Java\Util\Function\Consumer.cs" />
+		<Compile Remove="Generated\Java\Util\Function\DoubleBinaryOperator.cs" />
+		<Compile Remove="Generated\Java\Util\Function\DoubleConsumer.cs" />
+		<Compile Remove="Generated\Java\Util\Function\DoubleFunction.cs" />
+		<Compile Remove="Generated\Java\Util\Function\DoublePredicate.cs" />
+		<Compile Remove="Generated\Java\Util\Function\DoubleSupplier.cs" />
+		<Compile Remove="Generated\Java\Util\Function\DoubleToIntFunction.cs" />
+		<Compile Remove="Generated\Java\Util\Function\DoubleToLongFunction.cs" />
+		<Compile Remove="Generated\Java\Util\Function\DoubleUnaryOperator.cs" />
+		<Compile Remove="Generated\Java\Util\Function\Function.cs" />
+		<Compile Remove="Generated\Java\Util\Function\IntBinaryOperator.cs" />
+		<Compile Remove="Generated\Java\Util\Function\IntConsumer.cs" />
+		<Compile Remove="Generated\Java\Util\Function\IntFunction.cs" />
+		<Compile Remove="Generated\Java\Util\Function\IntPredicate.cs" />
+		<Compile Remove="Generated\Java\Util\Function\IntSupplier.cs" />
+		<Compile Remove="Generated\Java\Util\Function\IntToDoubleFunction.cs" />
+		<Compile Remove="Generated\Java\Util\Function\IntToLongFunction.cs" />
+		<Compile Remove="Generated\Java\Util\Function\IntUnaryOperator.cs" />
+		<Compile Remove="Generated\Java\Util\Function\LongBinaryOperator.cs" />
+		<Compile Remove="Generated\Java\Util\Function\LongConsumer.cs" />
+		<Compile Remove="Generated\Java\Util\Function\LongFunction.cs" />
+		<Compile Remove="Generated\Java\Util\Function\LongPredicate.cs" />
+		<Compile Remove="Generated\Java\Util\Function\LongSupplier.cs" />
+		<Compile Remove="Generated\Java\Util\Function\LongToDoubleFunction.cs" />
+		<Compile Remove="Generated\Java\Util\Function\LongToIntFunction.cs" />
+		<Compile Remove="Generated\Java\Util\Function\LongUnaryOperator.cs" />
+		<Compile Remove="Generated\Java\Util\Function\ObjDoubleConsumer.cs" />
+		<Compile Remove="Generated\Java\Util\Function\ObjIntConsumer.cs" />
+		<Compile Remove="Generated\Java\Util\Function\ObjLongConsumer.cs" />
+		<Compile Remove="Generated\Java\Util\Function\Predicate.cs" />
+		<Compile Remove="Generated\Java\Util\Function\Supplier.cs" />
+		<Compile Remove="Generated\Java\Util\Function\ToDoubleBiFunction.cs" />
+		<Compile Remove="Generated\Java\Util\Function\ToDoubleFunction.cs" />
+		<Compile Remove="Generated\Java\Util\Function\ToIntBiFunction.cs" />
+		<Compile Remove="Generated\Java\Util\Function\ToIntFunction.cs" />
+		<Compile Remove="Generated\Java\Util\Function\ToLongBiFunction.cs" />
+		<Compile Remove="Generated\Java\Util\Function\ToLongFunction.cs" />
+		<Compile Remove="Generated\Java\Util\Function\UnaryOperator.cs" />
 		<None Include="..\..\documentation\articles\usage.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(GITHUB_SIMPLIFIED_GENERATION)' == 'true'">
