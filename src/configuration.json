@@ -32,6 +32,8 @@
     "javax.management.NotificationFilter"
   ],
   "ClassesToAvoid": [
+    "android.R",
+    "android.widget.ArrayAdapter",
     "java.lang.ProcessBuilder$Redirect$Type",
     "java.lang.Thread$UncaughtExceptionHandler",
     "java.util.Comparator",
@@ -65,6 +67,7 @@
     "javax.tools.DiagnosticListener"
   ],
   "NamespacesInConflict": [
+    "android.system",
     "java.lang.module",
     "java.awt.color",
     "java.awt.desktop",

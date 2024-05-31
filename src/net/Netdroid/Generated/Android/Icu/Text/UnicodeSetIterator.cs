@@ -54,10 +54,6 @@ namespace Android.Icu.Text
         /// </summary>
         public int codepointEnd { get { return IGetField<int>("codepointEnd"); } set { ISetField("codepointEnd", value); } }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetIterator.html#string"/>
-        /// </summary>
-        public Java.Lang.String string { get { return IGetField<Java.Lang.String>("string"); } set { ISetField("string", value); } }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetIterator.html#IS_STRING"/>
         /// </summary>
         public static int IS_STRING { get { return SGetField<int>(LocalBridgeClazz, "IS_STRING"); } set { SSetField(LocalBridgeClazz, "IS_STRING", value); } }

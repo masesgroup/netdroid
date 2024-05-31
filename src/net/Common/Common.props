@@ -22,7 +22,7 @@
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(NETDROID_DOCKER_BUILD_ACTIONS)' != 'true'">
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<TargetFrameworks>net462;net6.0;net8.0</TargetFrameworks>
+		<TargetFrameworks>net8.0</TargetFrameworks>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(NETDROID_DOCKER_BUILD_ACTIONS)' == 'true'">
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
@@ -34,9 +34,6 @@
 	<ItemGroup>
 		<None Include="..\Common\JCOB128x128.png" Pack="true" PackagePath="" />
 		<None Include="..\Common\Netdroid.snk" Link="Netdroid.snk" />
-	</ItemGroup>
-	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
-		<Reference Include="Microsoft.CSharp" />
 	</ItemGroup>
 	<!-- Fix start https://github.com/dotnet/sourcelink/issues/572 -->
 	<PropertyGroup>
