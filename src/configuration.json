@@ -4,7 +4,7 @@
   "JavaListenerBasePackage": "org.mases.netdroid.generated",
   "PreferMethodWithSignature": true,
   "OnlyPropertiesForGetterSetter": true,
-  "DisableInterfaceMethodGeneration": false,
+  "DisableInterfaceMethodGeneration": true,
   "CreateInterfaceInheritance": true,
   "JarList": [
     "android.jar"
