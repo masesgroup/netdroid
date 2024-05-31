@@ -93,17 +93,6 @@ namespace Android.Hardware.Camera2
             return IExecute<Java.Util.List<Android.Util.Size>>("getExtensionSupportedSizes", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionCharacteristics.html#getEstimatedCaptureLatencyRangeMillis(int,android.util.Size,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Android.Util.Size"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Android.Util.Range"/></returns>
-        public Android.Util.Range<Java.Lang.Long> GetEstimatedCaptureLatencyRangeMillis(int arg0, Android.Util.Size arg1, int arg2)
-        {
-            return IExecute<Android.Util.Range<Java.Lang.Long>>("getEstimatedCaptureLatencyRangeMillis", arg0, arg1, arg2);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionCharacteristics.html#isCaptureProcessProgressAvailable(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

@@ -29,16 +29,6 @@ namespace Android.Hardware.Camera2.Params
     public partial class Capability
     {
         #region Constructors
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Capability.html#%3Cinit%3E(int,android.util.Size,android.util.Range)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Android.Util.Size"/></param>
-        /// <param name="arg2"><see cref="Android.Util.Range"/></param>
-        public Capability(int arg0, Android.Util.Size arg1, Android.Util.Range<Java.Lang.Float> arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
 
         #endregion
 
@@ -68,13 +58,6 @@ namespace Android.Hardware.Camera2.Params
         public int Mode
         {
             get { return IExecuteWithSignature<int>("getMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Capability.html#getZoomRatioRange()"/> 
-        /// </summary>
-        public Android.Util.Range<Java.Lang.Float> ZoomRatioRange
-        {
-            get { return IExecuteWithSignature<Android.Util.Range<Java.Lang.Float>>("getZoomRatioRange", "()Landroid/util/Range;"); }
         }
 
         #endregion

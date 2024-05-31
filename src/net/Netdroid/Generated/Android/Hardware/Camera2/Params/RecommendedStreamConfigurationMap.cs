@@ -94,13 +94,6 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getHighSpeedVideoFpsRanges()"/> 
-        /// </summary>
-        public Java.Util.Set<Android.Util.Range<Java.Lang.Integer>> HighSpeedVideoFpsRanges
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Android.Util.Range<Java.Lang.Integer>>>("getHighSpeedVideoFpsRanges", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getHighSpeedVideoSizes()"/> 
         /// </summary>
         public Java.Util.Set<Android.Util.Size> HighSpeedVideoSizes
@@ -176,15 +169,6 @@ namespace Android.Hardware.Camera2.Params
             return IExecuteWithSignature<bool>("isOutputSupportedFor", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getHighSpeedVideoFpsRangesFor(android.util.Size)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Util.Size"/></param>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Android.Util.Range<Java.Lang.Integer>> GetHighSpeedVideoFpsRangesFor(Android.Util.Size arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Set<Android.Util.Range<Java.Lang.Integer>>>("getHighSpeedVideoFpsRangesFor", "(Landroid/util/Size;)Ljava/util/Set;", arg0);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getHighResolutionOutputSizes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -192,15 +176,6 @@ namespace Android.Hardware.Camera2.Params
         public Java.Util.Set<Android.Util.Size> GetHighResolutionOutputSizes(int arg0)
         {
             return IExecuteWithSignature<Java.Util.Set<Android.Util.Size>>("getHighResolutionOutputSizes", "(I)Ljava/util/Set;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getHighSpeedVideoSizesFor(android.util.Range)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Util.Range"/></param>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<Android.Util.Size> GetHighSpeedVideoSizesFor(Android.Util.Range<Java.Lang.Integer> arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Set<Android.Util.Size>>("getHighSpeedVideoSizesFor", "(Landroid/util/Range;)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getInputSizes(int)"/>
