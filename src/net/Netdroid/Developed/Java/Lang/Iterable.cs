@@ -70,12 +70,10 @@ namespace Java.Lang
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Iterable(params object[] args) : base(args) { }
-#if !JNETREFLECTOR
         /// <summary>
         /// Returns an iterator over elements of type <typeparamref name="T"/>.
         /// </summary>
         /// <returns>An <see cref="Util.Iterator{T}"/></returns>
         public Util.Iterator<T> Iterator => IExecute<Util.Iterator<T>>("iterator");
-#endif
     }
 }

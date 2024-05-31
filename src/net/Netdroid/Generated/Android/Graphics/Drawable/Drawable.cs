@@ -51,18 +51,6 @@ namespace Android.Graphics.Drawable
             return SExecuteWithSignature<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromPath", "(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#createFromResourceStream(android.content.res.Resources,android.util.TypedValue,java.io.InputStream,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Content.Res.Resources"/></param>
-        /// <param name="arg1"><see cref="Android.Util.TypedValue"/></param>
-        /// <param name="arg2"><see cref="Java.Io.InputStream"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
-        public static Android.Graphics.Drawable.Drawable CreateFromResourceStream(Android.Content.Res.Resources arg0, Android.Util.TypedValue arg1, Java.Io.InputStream arg2, Java.Lang.String arg3)
-        {
-            return SExecute<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromResourceStream", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#createFromStream(java.io.InputStream,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>

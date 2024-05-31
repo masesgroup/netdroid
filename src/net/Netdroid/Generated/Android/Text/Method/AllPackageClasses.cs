@@ -228,12 +228,8 @@ namespace Android.Text.Method
         /// </summary>
         public DateKeyListener() { InitializeHandlers(); }
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.text.method.DateKeyListener";
+    #warning Remember to build the Java class for event listener
 
-    
         // TODO: complete the class
 
     }
@@ -287,12 +283,8 @@ namespace Android.Text.Method
         /// </summary>
         public DateTimeKeyListener() { InitializeHandlers(); }
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.text.method.DateTimeKeyListener";
+    #warning Remember to build the Java class for event listener
 
-    
         // TODO: complete the class
 
     }
@@ -346,12 +338,8 @@ namespace Android.Text.Method
         /// </summary>
         public DialerKeyListener() { InitializeHandlers(); }
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.text.method.DialerKeyListener";
+    #warning Remember to build the Java class for event listener
 
-    
         // TODO: complete the class
 
     }
@@ -405,12 +393,8 @@ namespace Android.Text.Method
         /// </summary>
         public DigitsKeyListener() { InitializeHandlers(); }
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.text.method.DigitsKeyListener";
+    #warning Remember to build the Java class for event listener
 
-    
         // TODO: complete the class
 
     }
@@ -611,12 +595,8 @@ namespace Android.Text.Method
         /// </summary>
         public MetaKeyKeyListener() { InitializeHandlers(); }
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.text.method.MetaKeyKeyListener";
+    #warning Remember to build the Java class for event listener
 
-    
         // TODO: complete the class
 
     }
@@ -878,12 +858,8 @@ namespace Android.Text.Method
         /// </summary>
         public QwertyKeyListener() { InitializeHandlers(); }
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.text.method.QwertyKeyListener";
+    #warning Remember to build the Java class for event listener
 
-    
         // TODO: complete the class
 
     }
@@ -1174,12 +1150,8 @@ namespace Android.Text.Method
         /// </summary>
         public TimeKeyListener() { InitializeHandlers(); }
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.text.method.TimeKeyListener";
+    #warning Remember to build the Java class for event listener
 
-    
         // TODO: complete the class
 
     }

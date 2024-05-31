@@ -101,15 +101,6 @@ namespace Android.Content.Res
             return IExecuteWithSignature<Android.Graphics.Typeface>("getFont", "(I)Landroid/graphics/Typeface;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#peekValue(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Android.Util.TypedValue"/></returns>
-        public Android.Util.TypedValue PeekValue(int arg0)
-        {
-            return IExecuteWithSignature<Android.Util.TypedValue>("peekValue", "(I)Landroid/util/TypedValue;", arg0);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getBoolean(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -118,16 +109,6 @@ namespace Android.Content.Res
         public bool GetBoolean(int arg0, bool arg1)
         {
             return IExecute<bool>("getBoolean", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getValue(int,android.util.TypedValue)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Android.Util.TypedValue"/></param>
-        /// <returns><see cref="bool"/></returns>
-        public bool GetValue(int arg0, Android.Util.TypedValue arg1)
-        {
-            return IExecute<bool>("getValue", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#hasValue(int)"/>

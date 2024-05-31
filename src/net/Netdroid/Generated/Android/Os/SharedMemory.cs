@@ -61,7 +61,7 @@ namespace Android.Os
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Android.Os.SharedMemory"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static Android.Os.SharedMemory Create(Java.Lang.String arg0, int arg1)
         {
             return SExecute<Android.Os.SharedMemory>(LocalBridgeClazz, "create", arg0, arg1);
@@ -118,7 +118,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public Java.Nio.ByteBuffer Map(int arg0, int arg1, int arg2)
         {
             return IExecute<Java.Nio.ByteBuffer>("map", arg0, arg1, arg2);
@@ -127,7 +127,7 @@ namespace Android.Os
         /// <see href="https://developer.android.com/reference/android/os/SharedMemory.html#mapReadOnly()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public Java.Nio.ByteBuffer MapReadOnly()
         {
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("mapReadOnly", "()Ljava/nio/ByteBuffer;");
@@ -136,7 +136,7 @@ namespace Android.Os
         /// <see href="https://developer.android.com/reference/android/os/SharedMemory.html#mapReadWrite()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public Java.Nio.ByteBuffer MapReadWrite()
         {
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("mapReadWrite", "()Ljava/nio/ByteBuffer;");

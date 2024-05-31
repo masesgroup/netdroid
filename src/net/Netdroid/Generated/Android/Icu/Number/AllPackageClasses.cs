@@ -785,7 +785,7 @@ namespace Android.Icu.Number
     /// <see href="https://developer.android.com/reference/android/icu/number/NumberFormatterSettings.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class NumberFormatterSettings<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NumberFormatterSettings<T>> where T: Android.Icu.Number.NumberFormatterSettings<T>
+    public partial class NumberFormatterSettings<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NumberFormatterSettings<T>> where T: Android.Icu.Number.NumberFormatterSettings<?>
     {
         const string _bridgeClassName = "android.icu.number.NumberFormatterSettings";
         /// <summary>
@@ -1056,7 +1056,7 @@ namespace Android.Icu.Number
     /// <see href="https://developer.android.com/reference/android/icu/number/NumberRangeFormatterSettings.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class NumberRangeFormatterSettings<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NumberRangeFormatterSettings<T>> where T: Android.Icu.Number.NumberRangeFormatterSettings<object>
+    public partial class NumberRangeFormatterSettings<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NumberRangeFormatterSettings<T>> where T: Android.Icu.Number.NumberRangeFormatterSettings<?>
     {
         const string _bridgeClassName = "android.icu.number.NumberRangeFormatterSettings";
         /// <summary>

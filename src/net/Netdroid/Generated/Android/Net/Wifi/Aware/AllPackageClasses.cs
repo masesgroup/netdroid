@@ -345,12 +345,8 @@ namespace Android.Net.Wifi.Aware
         /// </summary>
         public IdentityChangedListener() { InitializeHandlers(); }
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.net.wifi.aware.IdentityChangedListener";
+    #warning Remember to build the Java class for event listener
 
-    
         // TODO: complete the class
 
     }
