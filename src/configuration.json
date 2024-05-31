@@ -53,7 +53,6 @@
     "android.text.method.MetaKeyKeyListener",
     "android.text.method.QwertyKeyListener",
     "android.text.method.TimeKeyListener",
-    "android.widget.ArrayAdapter",
     "android.widget.CursorTreeAdapter",
     "android.widget.HeaderViewListAdapter",
     "android.widget.ResourceCursorAdapter",
@@ -67,8 +66,10 @@
   ],
   "ClassesToAvoid": [
     "android.R",
+    "android.icu.number.NumberFormatterSettings",
     "android.icu.text.UnicodeSetIterator",
     "android.util.TypedValue",
+    "android.widget.ArrayAdapter",
     "java.lang.ProcessBuilder$Redirect$Type",
     "java.lang.Thread$UncaughtExceptionHandler",
     "java.util.Comparator",
