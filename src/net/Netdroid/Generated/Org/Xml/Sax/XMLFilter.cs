@@ -32,10 +32,6 @@ namespace Org.Xml.Sax
     public partial interface IXMLFilter : Org.Xml.Sax.IXMLReader
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLFilter.html#getParent()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLFilter.html#setParent(org.xml.sax.XMLReader)"/>
-        /// </summary>
-        Org.Xml.Sax.XMLReader Parent { get; set; }
 
         #endregion
 

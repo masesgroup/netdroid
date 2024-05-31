@@ -32,32 +32,6 @@ namespace Android.Icu.Text
     public partial interface IUnicodeMatcher
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeMatcher.html#matchesIndexValue(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool MatchesIndexValue(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeMatcher.html#matches(android.icu.text.Replaceable,int[],int,boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Icu.Text.Replaceable"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <returns><see cref="int"/></returns>
-        int Matches(Android.Icu.Text.Replaceable arg0, int[] arg1, int arg2, bool arg3);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeMatcher.html#toPattern(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String ToPattern(bool arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeMatcher.html#addMatchSetTo(android.icu.text.UnicodeSet)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Icu.Text.UnicodeSet"/></param>
-        void AddMatchSetTo(Android.Icu.Text.UnicodeSet arg0);
 
         #endregion
 

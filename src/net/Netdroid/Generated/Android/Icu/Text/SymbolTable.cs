@@ -32,26 +32,6 @@ namespace Android.Icu.Text
     public partial interface ISymbolTable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/SymbolTable.html#lookupMatcher(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Android.Icu.Text.UnicodeMatcher"/></returns>
-        Android.Icu.Text.UnicodeMatcher LookupMatcher(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/SymbolTable.html#lookup(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="char"/></returns>
-        char[] Lookup(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/SymbolTable.html#parseReference(java.lang.String,java.text.ParsePosition,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Text.ParsePosition"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String ParseReference(Java.Lang.String arg0, Java.Text.ParsePosition arg1, int arg2);
 
         #endregion
 

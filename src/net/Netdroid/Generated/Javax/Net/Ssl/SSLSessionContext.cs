@@ -32,24 +32,6 @@ namespace Javax.Net.Ssl
     public partial interface ISSLSessionContext
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionContext.html#getIds()"/> 
-        /// </summary>
-        Java.Util.Enumeration<byte[]> Ids { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionContext.html#getSessionCacheSize()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionContext.html#setSessionCacheSize(int)"/>
-        /// </summary>
-        int SessionCacheSize { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionContext.html#getSessionTimeout()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionContext.html#setSessionTimeout(int)"/>
-        /// </summary>
-        int SessionTimeout { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionContext.html#getSession(byte[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="Javax.Net.Ssl.SSLSession"/></returns>
-        Javax.Net.Ssl.SSLSession GetSession(byte[] arg0);
 
         #endregion
 

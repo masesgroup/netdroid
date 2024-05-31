@@ -32,23 +32,6 @@ namespace Android.App.Backup
     public partial interface IBackupHelper
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/backup/BackupHelper.html#performBackup(android.os.ParcelFileDescriptor,android.app.backup.BackupDataOutput,android.os.ParcelFileDescriptor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Os.ParcelFileDescriptor"/></param>
-        /// <param name="arg1"><see cref="Android.App.Backup.BackupDataOutput"/></param>
-        /// <param name="arg2"><see cref="Android.Os.ParcelFileDescriptor"/></param>
-        void PerformBackup(Android.Os.ParcelFileDescriptor arg0, Android.App.Backup.BackupDataOutput arg1, Android.Os.ParcelFileDescriptor arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/backup/BackupHelper.html#restoreEntity(android.app.backup.BackupDataInputStream)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.App.Backup.BackupDataInputStream"/></param>
-        void RestoreEntity(Android.App.Backup.BackupDataInputStream arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/backup/BackupHelper.html#writeNewStateDescription(android.os.ParcelFileDescriptor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Os.ParcelFileDescriptor"/></param>
-        void WriteNewStateDescription(Android.Os.ParcelFileDescriptor arg0);
 
         #endregion
 

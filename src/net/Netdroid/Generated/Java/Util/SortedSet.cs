@@ -115,40 +115,6 @@ namespace Java.Util
     public partial interface ISortedSet<E> : Java.Util.ISet<E>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#first()"/>
-        /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
-        E First();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#last()"/>
-        /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
-        E Last();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#headSet(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
-        Java.Util.SortedSet<E> HeadSet(E arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#subSet(java.lang.Object,java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <param name="arg1"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
-        Java.Util.SortedSet<E> SubSet(E arg0, E arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#tailSet(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="Java.Util.SortedSet"/></returns>
-        Java.Util.SortedSet<E> TailSet(E arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#spliterator()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        Java.Util.Spliterator<E> Spliterator();
 
         #endregion
 

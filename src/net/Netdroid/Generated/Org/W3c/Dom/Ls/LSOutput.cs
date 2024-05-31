@@ -32,22 +32,6 @@ namespace Org.W3c.Dom.Ls
     public partial interface ILSOutput
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSOutput.html#getByteStream()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSOutput.html#setByteStream(java.io.OutputStream)"/>
-        /// </summary>
-        Java.Io.OutputStream ByteStream { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSOutput.html#getCharacterStream()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSOutput.html#setCharacterStream(java.io.Writer)"/>
-        /// </summary>
-        Java.Io.Writer CharacterStream { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSOutput.html#getEncoding()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSOutput.html#setEncoding(java.lang.String)"/>
-        /// </summary>
-        Java.Lang.String Encoding { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSOutput.html#getSystemId()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSOutput.html#setSystemId(java.lang.String)"/>
-        /// </summary>
-        Java.Lang.String SystemId { get; set; }
 
         #endregion
 

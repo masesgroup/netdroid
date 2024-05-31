@@ -32,20 +32,6 @@ namespace Javax.Xml.Transform.Sax
     public partial interface ITransformerHandler
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/TransformerHandler.html#getSystemId()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/TransformerHandler.html#setSystemId(java.lang.String)"/>
-        /// </summary>
-        Java.Lang.String SystemId { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/TransformerHandler.html#getTransformer()"/> 
-        /// </summary>
-        Javax.Xml.Transform.Transformer Transformer { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/TransformerHandler.html#setResult(javax.xml.transform.Result)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.Result"/></param>
-        /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        void SetResult(Javax.Xml.Transform.Result arg0);
 
         #endregion
 

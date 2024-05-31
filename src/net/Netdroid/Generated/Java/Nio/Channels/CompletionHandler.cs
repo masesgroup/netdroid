@@ -81,18 +81,6 @@ namespace Java.Nio.Channels
     public partial interface ICompletionHandler<V, A>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/CompletionHandler.html#completed(java.lang.Object,java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="V"/></param>
-        /// <param name="arg1"><typeparamref name="A"/></param>
-        void Completed(V arg0, A arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/CompletionHandler.html#failed(java.lang.Throwable,java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
-        /// <param name="arg1"><typeparamref name="A"/></param>
-        void Failed(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0, A arg1);
 
         #endregion
 

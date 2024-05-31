@@ -32,12 +32,6 @@ namespace Android.Graphics
     public partial interface IPostProcessor
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/PostProcessor.html#onPostProcess(android.graphics.Canvas)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Graphics.Canvas"/></param>
-        /// <returns><see cref="int"/></returns>
-        int OnPostProcess(Android.Graphics.Canvas arg0);
 
         #endregion
 

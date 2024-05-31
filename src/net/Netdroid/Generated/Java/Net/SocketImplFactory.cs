@@ -32,11 +32,6 @@ namespace Java.Net
     public partial interface ISocketImplFactory
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/SocketImplFactory.html#createSocketImpl()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Net.SocketImpl"/></returns>
-        Java.Net.SocketImpl CreateSocketImpl();
 
         #endregion
 

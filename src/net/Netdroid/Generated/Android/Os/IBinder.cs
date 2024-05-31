@@ -32,64 +32,6 @@ namespace Android.Os
     public partial interface IIBinder
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/IBinder.html#getInterfaceDescriptor()"/> 
-        /// </summary>
-        Java.Lang.String InterfaceDescriptor { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/IBinder.html#queryLocalInterface(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Android.Os.IInterface"/></returns>
-        Android.Os.IInterface QueryLocalInterface(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/IBinder.html#isBinderAlive()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsBinderAlive();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/IBinder.html#pingBinder()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool PingBinder();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/IBinder.html#transact(int,android.os.Parcel,android.os.Parcel,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Android.Os.Parcel"/></param>
-        /// <param name="arg2"><see cref="Android.Os.Parcel"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Android.Os.RemoteException"/>
-        bool Transact(int arg0, Android.Os.Parcel arg1, Android.Os.Parcel arg2, int arg3);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/IBinder.html#unlinkToDeath(android.os.IBinder.DeathRecipient,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Os.IBinder.DeathRecipient"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool UnlinkToDeath(Android.Os.IBinder.DeathRecipient arg0, int arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/IBinder.html#dump(java.io.FileDescriptor,java.lang.String[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Android.Os.RemoteException"/>
-        void Dump(Java.Io.FileDescriptor arg0, Java.Lang.String[] arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/IBinder.html#dumpAsync(java.io.FileDescriptor,java.lang.String[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Android.Os.RemoteException"/>
-        void DumpAsync(Java.Io.FileDescriptor arg0, Java.Lang.String[] arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/IBinder.html#linkToDeath(android.os.IBinder.DeathRecipient,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Os.IBinder.DeathRecipient"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Android.Os.RemoteException"/>
-        void LinkToDeath(Android.Os.IBinder.DeathRecipient arg0, int arg1);
 
         #endregion
 

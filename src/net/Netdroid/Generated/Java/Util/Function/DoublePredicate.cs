@@ -32,29 +32,6 @@ namespace Java.Util.Function
     public partial interface IDoublePredicate
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#test(double)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool Test(double arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
-        Java.Util.Function.DoublePredicate And(Java.Util.Function.DoublePredicate arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#negate()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
-        Java.Util.Function.DoublePredicate Negate();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
-        Java.Util.Function.DoublePredicate Or(Java.Util.Function.DoublePredicate arg0);
 
         #endregion
 

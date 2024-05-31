@@ -32,28 +32,6 @@ namespace Android.Text.Style
     public partial interface ILeadingMarginSpan : Android.Text.Style.IParagraphStyle
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/LeadingMarginSpan.html#getLeadingMargin(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="int"/></returns>
-        int GetLeadingMargin(bool arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/LeadingMarginSpan.html#drawLeadingMargin(android.graphics.Canvas,android.graphics.Paint,int,int,int,int,int,java.lang.CharSequence,int,int,boolean,android.text.Layout)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Graphics.Canvas"/></param>
-        /// <param name="arg1"><see cref="Android.Graphics.Paint"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <param name="arg7"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg8"><see cref="int"/></param>
-        /// <param name="arg9"><see cref="int"/></param>
-        /// <param name="arg10"><see cref="bool"/></param>
-        /// <param name="arg11"><see cref="Android.Text.Layout"/></param>
-        void DrawLeadingMargin(Android.Graphics.Canvas arg0, Android.Graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, Java.Lang.CharSequence arg7, int arg8, int arg9, bool arg10, Android.Text.Layout arg11);
 
         #endregion
 

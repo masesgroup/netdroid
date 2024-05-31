@@ -32,39 +32,6 @@ namespace Java.Lang
     public partial interface ICharSequence
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/CharSequence.html#charAt(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="char"/></returns>
-        char CharAt(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/CharSequence.html#length()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        int Length();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/CharSequence.html#subSequence(int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-        Java.Lang.CharSequence SubSequence(int arg0, int arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/CharSequence.html#isEmpty()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsEmpty();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/CharSequence.html#chars()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        Java.Util.Stream.IntStream Chars();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/CharSequence.html#codePoints()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        Java.Util.Stream.IntStream CodePoints();
 
         #endregion
 

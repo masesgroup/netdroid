@@ -32,10 +32,6 @@ namespace Android.Text.Style
     public partial interface IAlignmentSpan : Android.Text.Style.IParagraphStyle
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/AlignmentSpan.html#getAlignment()"/> 
-        /// </summary>
-        Android.Text.Layout.Alignment Alignment { get; }
 
         #endregion
 

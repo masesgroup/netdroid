@@ -32,12 +32,6 @@ namespace Java.Util.Function
     public partial interface IDoubleToLongFunction
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleToLongFunction.html#applyAsLong(double)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="long"/></returns>
-        long ApplyAsLong(double arg0);
 
         #endregion
 

@@ -2,6 +2,7 @@
   "RelativeDestinationCSharpClassPath": "net\\Netdroid\\Generated",
   "RelativeDestinationJavaListenerPath": "jvm\\netdroid\\src\\main\\java",
   "JavaListenerBasePackage": "org.mases.netdroid.generated",
+  "ReflectDeprecated": true,
   "PreferMethodWithSignature": true,
   "OnlyPropertiesForGetterSetter": true,
   "DisableInterfaceMethodGeneration": true,
@@ -16,16 +17,16 @@
     }
   ],
   "NamespacesToAvoid": [
-    "org.jcp.xml.dsig.internal",
     "com.oracle",
     "com.sun",
-    "org.mases",
-    "org.junit",
-    "org.hamcrest",
+    "java.awt.peer",
     "org.burningwave",
     "org.graalvm",
-    "org.slf4j",
-    "java.awt.peer"
+    "org.hamcrest",
+    "org.jcp.xml.dsig.internal",
+    "org.junit",
+    "org.mases",
+    "org.slf4j"
   ],
   "ClassesToBeListener": [
     "javax.swing.Action",

@@ -32,12 +32,6 @@ namespace Java.Net
     public partial interface IFileNameMap
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/FileNameMap.html#getContentTypeFor(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String GetContentTypeFor(Java.Lang.String arg0);
 
         #endregion
 

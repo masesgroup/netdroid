@@ -136,13 +136,6 @@ namespace Java.Util.Function
     public partial interface IToIntBiFunction<T, U>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToIntBiFunction.html#applyAsInt(java.lang.Object,java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
-        /// <returns><see cref="int"/></returns>
-        int ApplyAsInt(T arg0, U arg1);
 
         #endregion
 

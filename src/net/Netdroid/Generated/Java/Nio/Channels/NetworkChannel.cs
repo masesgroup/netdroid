@@ -32,39 +32,6 @@ namespace Java.Nio.Channels
     public partial interface INetworkChannel : Java.Nio.Channels.IChannel
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/NetworkChannel.html#getLocalAddress()"/> 
-        /// </summary>
-        Java.Net.SocketAddress LocalAddress { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/NetworkChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
-        /// <param name="arg1"><typeparamref name="T"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Nio.Channels.NetworkChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Nio.Channels.NetworkChannel SetOption<T>(Java.Net.SocketOption<T> arg0, T arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/NetworkChannel.html#getOption(java.net.SocketOption)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        T GetOption<T>(Java.Net.SocketOption<T> arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/NetworkChannel.html#bind(java.net.SocketAddress)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
-        /// <returns><see cref="Java.Nio.Channels.NetworkChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Nio.Channels.NetworkChannel Bind(Java.Net.SocketAddress arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/NetworkChannel.html#supportedOptions()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions();
 
         #endregion
 

@@ -32,13 +32,6 @@ namespace Javax.Net.Ssl
     public partial interface IHostnameVerifier
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HostnameVerifier.html#verify(java.lang.String,javax.net.ssl.SSLSession)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Javax.Net.Ssl.SSLSession"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool Verify(Java.Lang.String arg0, Javax.Net.Ssl.SSLSession arg1);
 
         #endregion
 

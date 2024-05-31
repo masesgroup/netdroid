@@ -79,16 +79,6 @@ namespace Android.App.Appsearch
     public partial interface IBatchResultCallback<KeyType, ValueType>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/BatchResultCallback.html#onResult(android.app.appsearch.AppSearchBatchResult)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.App.Appsearch.AppSearchBatchResult"/></param>
-        void OnResult(Android.App.Appsearch.AppSearchBatchResult<KeyType, ValueType> arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/BatchResultCallback.html#onSystemError(java.lang.Throwable)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
-        void OnSystemError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
 
         #endregion
 

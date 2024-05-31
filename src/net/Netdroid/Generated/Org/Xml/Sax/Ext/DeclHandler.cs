@@ -32,38 +32,6 @@ namespace Org.Xml.Sax.Ext
     public partial interface IDeclHandler
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/DeclHandler.html#attributeDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        void AttributeDecl(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/DeclHandler.html#elementDecl(java.lang.String,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        void ElementDecl(Java.Lang.String arg0, Java.Lang.String arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/DeclHandler.html#externalEntityDecl(java.lang.String,java.lang.String,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        void ExternalEntityDecl(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/DeclHandler.html#internalEntityDecl(java.lang.String,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        void InternalEntityDecl(Java.Lang.String arg0, Java.Lang.String arg1);
 
         #endregion
 

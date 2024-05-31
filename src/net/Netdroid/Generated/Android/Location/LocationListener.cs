@@ -32,31 +32,6 @@ namespace Android.Location
     public partial interface ILocationListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationListener.html#onLocationChanged(android.location.Location)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Location.Location"/></param>
-        void OnLocationChanged(Android.Location.Location arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationListener.html#onFlushComplete(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void OnFlushComplete(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationListener.html#onLocationChanged(java.util.List)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        void OnLocationChanged(Java.Util.List<Android.Location.Location> arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationListener.html#onProviderDisabled(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        void OnProviderDisabled(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationListener.html#onProviderEnabled(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        void OnProviderEnabled(Java.Lang.String arg0);
 
         #endregion
 

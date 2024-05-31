@@ -32,20 +32,6 @@ namespace Android.Widget
     public partial interface ICheckable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Checkable.html#isChecked()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsChecked();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Checkable.html#setChecked(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        void SetChecked(bool arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Checkable.html#toggle()"/>
-        /// </summary>
-        void Toggle();
 
         #endregion
 

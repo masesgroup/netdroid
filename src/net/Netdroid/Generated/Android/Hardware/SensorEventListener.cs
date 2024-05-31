@@ -32,17 +32,6 @@ namespace Android.Hardware
     public partial interface ISensorEventListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/SensorEventListener.html#onAccuracyChanged(android.hardware.Sensor,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Hardware.Sensor"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        void OnAccuracyChanged(Android.Hardware.Sensor arg0, int arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/SensorEventListener.html#onSensorChanged(android.hardware.SensorEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Hardware.SensorEvent"/></param>
-        void OnSensorChanged(Android.Hardware.SensorEvent arg0);
 
         #endregion
 

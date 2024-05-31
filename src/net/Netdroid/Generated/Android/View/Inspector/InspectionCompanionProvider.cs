@@ -32,13 +32,6 @@ namespace Android.View.Inspector
     public partial interface IInspectionCompanionProvider
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inspector/InspectionCompanionProvider.html#provide(java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Android.View.Inspector.InspectionCompanion"/></returns>
-        Android.View.Inspector.InspectionCompanion<T> Provide<T>(Java.Lang.Class arg0);
 
         #endregion
 

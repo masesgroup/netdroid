@@ -32,27 +32,6 @@ namespace Android.Text
     public partial interface ITextWatcher : Android.Text.INoCopySpan
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/TextWatcher.html#afterTextChanged(android.text.Editable)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Text.Editable"/></param>
-        void AfterTextChanged(Android.Text.Editable arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/TextWatcher.html#beforeTextChanged(java.lang.CharSequence,int,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        void BeforeTextChanged(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/TextWatcher.html#onTextChanged(java.lang.CharSequence,int,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        void OnTextChanged(Java.Lang.CharSequence arg0, int arg1, int arg2, int arg3);
 
         #endregion
 

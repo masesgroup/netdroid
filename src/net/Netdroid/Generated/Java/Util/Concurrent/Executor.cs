@@ -32,11 +32,6 @@ namespace Java.Util.Concurrent
     public partial interface IExecutor
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Executor.html#execute(java.lang.Runnable)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        void Execute(Java.Lang.Runnable arg0);
 
         #endregion
 

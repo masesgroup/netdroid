@@ -32,12 +32,6 @@ namespace Javax.Sql
     public partial interface IRowSetReader
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetReader.html#readData(javax.sql.RowSetInternal)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.RowSetInternal"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
-        void ReadData(Javax.Sql.RowSetInternal arg0);
 
         #endregion
 

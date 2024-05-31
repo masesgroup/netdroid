@@ -131,50 +131,6 @@ namespace Java.Util
     public partial interface ISortedMap<K, V> : Java.Util.IMap<K, V>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#values()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Collection"/></returns>
-        Java.Util.Collection<V> Values();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#entrySet()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySet();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#keySet()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        Java.Util.Set<K> KeySet();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#headMap(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <returns><see cref="Java.Util.SortedMap"/></returns>
-        Java.Util.SortedMap<K, V> HeadMap(K arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#subMap(java.lang.Object,java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <param name="arg1"><typeparamref name="K"/></param>
-        /// <returns><see cref="Java.Util.SortedMap"/></returns>
-        Java.Util.SortedMap<K, V> SubMap(K arg0, K arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#tailMap(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="K"/></param>
-        /// <returns><see cref="Java.Util.SortedMap"/></returns>
-        Java.Util.SortedMap<K, V> TailMap(K arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#firstKey()"/>
-        /// </summary>
-        /// <returns><typeparamref name="K"/></returns>
-        K FirstKey();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#lastKey()"/>
-        /// </summary>
-        /// <returns><typeparamref name="K"/></returns>
-        K LastKey();
 
         #endregion
 

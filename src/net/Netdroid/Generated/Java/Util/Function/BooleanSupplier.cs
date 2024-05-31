@@ -32,11 +32,6 @@ namespace Java.Util.Function
     public partial interface IBooleanSupplier
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BooleanSupplier.html#getAsBoolean()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool GetAsBoolean();
 
         #endregion
 

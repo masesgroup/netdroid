@@ -32,10 +32,6 @@ namespace Java.Security.Interfaces
     public partial interface IEdECKey
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/EdECKey.html#getParams()"/> 
-        /// </summary>
-        Java.Security.Spec.NamedParameterSpec Params { get; }
 
         #endregion
 

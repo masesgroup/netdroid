@@ -136,13 +136,6 @@ namespace Java.Util.Function
     public partial interface IToLongBiFunction<T, U>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
-        /// <returns><see cref="long"/></returns>
-        long ApplyAsLong(T arg0, U arg1);
 
         #endregion
 

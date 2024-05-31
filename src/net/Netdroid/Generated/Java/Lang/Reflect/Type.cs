@@ -32,10 +32,6 @@ namespace Java.Lang.Reflect
     public partial interface IType
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Type.html#getTypeName()"/> 
-        /// </summary>
-        Java.Lang.String TypeName { get; }
 
         #endregion
 

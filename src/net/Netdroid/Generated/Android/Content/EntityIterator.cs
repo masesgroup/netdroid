@@ -32,14 +32,6 @@ namespace Android.Content
     public partial interface IEntityIterator
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/EntityIterator.html#close()"/>
-        /// </summary>
-        void Close();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/EntityIterator.html#reset()"/>
-        /// </summary>
-        void Reset();
 
         #endregion
 

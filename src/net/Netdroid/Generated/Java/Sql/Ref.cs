@@ -32,21 +32,6 @@ namespace Java.Sql
     public partial interface IRef
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Ref.html#getBaseTypeName()"/> 
-        /// </summary>
-        Java.Lang.String BaseTypeName { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Ref.html#getObject()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/Ref.html#setObject(java.lang.Object)"/>
-        /// </summary>
-        object Object { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Ref.html#getObject(java.util.Map)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        object GetObject(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0);
 
         #endregion
 

@@ -32,31 +32,6 @@ namespace Android.Media
     public partial interface IAudioRouting
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRouting.html#getPreferredDevice()"/> 
-        /// </summary>
-        Android.Media.AudioDeviceInfo PreferredDevice { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRouting.html#getRoutedDevice()"/> 
-        /// </summary>
-        Android.Media.AudioDeviceInfo RoutedDevice { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRouting.html#setPreferredDevice(android.media.AudioDeviceInfo)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Media.AudioDeviceInfo"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool SetPreferredDevice(Android.Media.AudioDeviceInfo arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRouting.html#addOnRoutingChangedListener(android.media.AudioRouting.OnRoutingChangedListener,android.os.Handler)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Media.AudioRouting.OnRoutingChangedListener"/></param>
-        /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
-        void AddOnRoutingChangedListener(Android.Media.AudioRouting.OnRoutingChangedListener arg0, Android.Os.Handler arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRouting.html#removeOnRoutingChangedListener(android.media.AudioRouting.OnRoutingChangedListener)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Media.AudioRouting.OnRoutingChangedListener"/></param>
-        void RemoveOnRoutingChangedListener(Android.Media.AudioRouting.OnRoutingChangedListener arg0);
 
         #endregion
 

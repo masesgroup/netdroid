@@ -32,42 +32,6 @@ namespace Android.View
     public partial interface IAttachedSurfaceControl
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.html#getBufferTransformHint()"/> 
-        /// </summary>
-        int BufferTransformHint { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.html#buildReparentTransaction(android.view.SurfaceControl)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.SurfaceControl"/></param>
-        /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
-        Android.View.SurfaceControl.Transaction BuildReparentTransaction(Android.View.SurfaceControl arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.html#applyTransactionOnDraw(android.view.SurfaceControl.Transaction)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.SurfaceControl.Transaction"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool ApplyTransactionOnDraw(Android.View.SurfaceControl.Transaction arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.html#addOnBufferTransformHintChangedListener(android.view.AttachedSurfaceControl.OnBufferTransformHintChangedListener)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.AttachedSurfaceControl.OnBufferTransformHintChangedListener"/></param>
-        void AddOnBufferTransformHintChangedListener(Android.View.AttachedSurfaceControl.OnBufferTransformHintChangedListener arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.html#removeOnBufferTransformHintChangedListener(android.view.AttachedSurfaceControl.OnBufferTransformHintChangedListener)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.AttachedSurfaceControl.OnBufferTransformHintChangedListener"/></param>
-        void RemoveOnBufferTransformHintChangedListener(Android.View.AttachedSurfaceControl.OnBufferTransformHintChangedListener arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.html#setChildBoundingInsets(android.graphics.Rect)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
-        void SetChildBoundingInsets(Android.Graphics.Rect arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.html#setTouchableRegion(android.graphics.Region)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Graphics.Region"/></param>
-        void SetTouchableRegion(Android.Graphics.Region arg0);
 
         #endregion
 

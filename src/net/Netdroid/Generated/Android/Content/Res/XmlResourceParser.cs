@@ -32,16 +32,6 @@ namespace Android.Content.Res
     public partial interface IXmlResourceParser
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/XmlResourceParser.html#getAttributeNamespace(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String GetAttributeNamespace(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/XmlResourceParser.html#close()"/>
-        /// </summary>
-        void Close();
 
         #endregion
 

@@ -32,23 +32,6 @@ namespace Android.Database
     public partial interface ICrossProcessCursor : Android.Database.ICursor
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/CrossProcessCursor.html#getWindow()"/> 
-        /// </summary>
-        Android.Database.CursorWindow Window { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/CrossProcessCursor.html#onMove(int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool OnMove(int arg0, int arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/CrossProcessCursor.html#fillWindow(int,android.database.CursorWindow)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Android.Database.CursorWindow"/></param>
-        void FillWindow(int arg0, Android.Database.CursorWindow arg1);
 
         #endregion
 

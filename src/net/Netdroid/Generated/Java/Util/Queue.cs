@@ -113,38 +113,6 @@ namespace Java.Util
     public partial interface IQueue<E> : Java.Util.ICollection<E>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#add(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool Add(E arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#offer(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool Offer(E arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#element()"/>
-        /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
-        E Element();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#peek()"/>
-        /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
-        E Peek();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#poll()"/>
-        /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
-        E Poll();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Queue.html#remove()"/>
-        /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
-        E Remove();
 
         #endregion
 

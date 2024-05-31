@@ -32,16 +32,6 @@ namespace Android.Service.Quickaccesswallet
     public partial interface IGetWalletCardsCallback
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsCallback.html#onFailure(android.service.quickaccesswallet.GetWalletCardsError)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Service.Quickaccesswallet.GetWalletCardsError"/></param>
-        void OnFailure(Android.Service.Quickaccesswallet.GetWalletCardsError arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsCallback.html#onSuccess(android.service.quickaccesswallet.GetWalletCardsResponse)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Service.Quickaccesswallet.GetWalletCardsResponse"/></param>
-        void OnSuccess(Android.Service.Quickaccesswallet.GetWalletCardsResponse arg0);
 
         #endregion
 

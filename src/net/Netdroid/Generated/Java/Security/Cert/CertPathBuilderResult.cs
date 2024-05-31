@@ -32,10 +32,6 @@ namespace Java.Security.Cert
     public partial interface ICertPathBuilderResult : Java.Lang.ICloneable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathBuilderResult.html#getCertPath()"/> 
-        /// </summary>
-        Java.Security.Cert.CertPath CertPath { get; }
 
         #endregion
 

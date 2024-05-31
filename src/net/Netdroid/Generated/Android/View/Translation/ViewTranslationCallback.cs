@@ -32,24 +32,6 @@ namespace Android.View.Translation
     public partial interface IViewTranslationCallback
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/ViewTranslationCallback.html#onClearTranslation(android.view.View)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.View"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool OnClearTranslation(Android.View.View arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/ViewTranslationCallback.html#onHideTranslation(android.view.View)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.View"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool OnHideTranslation(Android.View.View arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/ViewTranslationCallback.html#onShowTranslation(android.view.View)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.View"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool OnShowTranslation(Android.View.View arg0);
 
         #endregion
 

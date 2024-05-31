@@ -32,21 +32,6 @@ namespace Javax.Sql
     public partial interface IRowSetListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
-        void CursorMoved(Javax.Sql.RowSetEvent arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetListener.html#rowChanged(javax.sql.RowSetEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
-        void RowChanged(Javax.Sql.RowSetEvent arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetListener.html#rowSetChanged(javax.sql.RowSetEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
-        void RowSetChanged(Javax.Sql.RowSetEvent arg0);
 
         #endregion
 

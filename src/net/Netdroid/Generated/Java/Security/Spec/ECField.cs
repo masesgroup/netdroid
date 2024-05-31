@@ -32,10 +32,6 @@ namespace Java.Security.Spec
     public partial interface IECField
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECField.html#getFieldSize()"/> 
-        /// </summary>
-        int FieldSize { get; }
 
         #endregion
 

@@ -32,16 +32,6 @@ namespace Android.Util
     public partial interface IDumpable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/Dumpable.html#getDumpableName()"/> 
-        /// </summary>
-        Java.Lang.String DumpableName { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/Dumpable.html#dump(java.io.PrintWriter,java.lang.String[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        void Dump(Java.Io.PrintWriter arg0, Java.Lang.String[] arg1);
 
         #endregion
 

@@ -32,21 +32,6 @@ namespace Android.Media
     public partial interface IAudioRecordingMonitor
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingMonitor.html#getActiveRecordingConfiguration()"/> 
-        /// </summary>
-        Android.Media.AudioRecordingConfiguration ActiveRecordingConfiguration { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingMonitor.html#registerAudioRecordingCallback(java.util.concurrent.Executor,android.media.AudioManager.AudioRecordingCallback)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <param name="arg1"><see cref="Android.Media.AudioManager.AudioRecordingCallback"/></param>
-        void RegisterAudioRecordingCallback(Java.Util.Concurrent.Executor arg0, Android.Media.AudioManager.AudioRecordingCallback arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingMonitor.html#unregisterAudioRecordingCallback(android.media.AudioManager.AudioRecordingCallback)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Media.AudioManager.AudioRecordingCallback"/></param>
-        void UnregisterAudioRecordingCallback(Android.Media.AudioManager.AudioRecordingCallback arg0);
 
         #endregion
 

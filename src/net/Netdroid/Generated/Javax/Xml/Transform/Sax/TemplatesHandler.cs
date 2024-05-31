@@ -32,14 +32,6 @@ namespace Javax.Xml.Transform.Sax
     public partial interface ITemplatesHandler : Org.Xml.Sax.IContentHandler
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/TemplatesHandler.html#getSystemId()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/TemplatesHandler.html#setSystemId(java.lang.String)"/>
-        /// </summary>
-        Java.Lang.String SystemId { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/TemplatesHandler.html#getTemplates()"/> 
-        /// </summary>
-        Javax.Xml.Transform.Templates Templates { get; }
 
         #endregion
 

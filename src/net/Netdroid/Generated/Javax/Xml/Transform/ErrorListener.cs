@@ -32,24 +32,6 @@ namespace Javax.Xml.Transform
     public partial interface IErrorListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
-        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
-        void Error(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/ErrorListener.html#fatalError(javax.xml.transform.TransformerException)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
-        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
-        void FatalError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/ErrorListener.html#warning(javax.xml.transform.TransformerException)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
-        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
-        void Warning(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
 
         #endregion
 

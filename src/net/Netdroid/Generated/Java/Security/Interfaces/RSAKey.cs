@@ -32,14 +32,6 @@ namespace Java.Security.Interfaces
     public partial interface IRSAKey
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAKey.html#getModulus()"/> 
-        /// </summary>
-        Java.Math.BigInteger Modulus { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAKey.html#getParams()"/> 
-        /// </summary>
-        Java.Security.Spec.AlgorithmParameterSpec Params { get; }
 
         #endregion
 

@@ -32,11 +32,6 @@ namespace Java.Io
     public partial interface IFlushable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Flushable.html#flush()"/>
-        /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
-        void Flush();
 
         #endregion
 

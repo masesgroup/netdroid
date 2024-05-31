@@ -32,18 +32,6 @@ namespace Java.Security.Interfaces
     public partial interface IDSAParams
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAParams.html#getG()"/> 
-        /// </summary>
-        Java.Math.BigInteger G { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAParams.html#getP()"/> 
-        /// </summary>
-        Java.Math.BigInteger P { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAParams.html#getQ()"/> 
-        /// </summary>
-        Java.Math.BigInteger Q { get; }
 
         #endregion
 

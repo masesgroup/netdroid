@@ -32,14 +32,6 @@ namespace Java.Lang.Reflect
     public partial interface IWildcardType : Java.Lang.Reflect.IType
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/WildcardType.html#getLowerBounds()"/> 
-        /// </summary>
-        Java.Lang.Reflect.Type[] LowerBounds { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/WildcardType.html#getUpperBounds()"/> 
-        /// </summary>
-        Java.Lang.Reflect.Type[] UpperBounds { get; }
 
         #endregion
 

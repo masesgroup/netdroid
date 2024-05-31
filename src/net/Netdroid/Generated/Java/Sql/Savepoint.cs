@@ -32,14 +32,6 @@ namespace Java.Sql
     public partial interface ISavepoint
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Savepoint.html#getSavepointId()"/> 
-        /// </summary>
-        int SavepointId { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Savepoint.html#getSavepointName()"/> 
-        /// </summary>
-        Java.Lang.String SavepointName { get; }
 
         #endregion
 

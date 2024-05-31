@@ -32,10 +32,6 @@ namespace Javax.Xml.Transform
     public partial interface IResult
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Result.html#getSystemId()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Result.html#setSystemId(java.lang.String)"/>
-        /// </summary>
-        Java.Lang.String SystemId { get; set; }
 
         #endregion
 

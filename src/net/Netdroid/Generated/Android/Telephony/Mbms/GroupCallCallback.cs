@@ -32,23 +32,6 @@ namespace Android.Telephony.Mbms
     public partial interface IGroupCallCallback
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/GroupCallCallback.html#onBroadcastSignalStrengthUpdated(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void OnBroadcastSignalStrengthUpdated(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/GroupCallCallback.html#onError(int,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        void OnError(int arg0, Java.Lang.String arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/GroupCallCallback.html#onGroupCallStateChanged(int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        void OnGroupCallStateChanged(int arg0, int arg1);
 
         #endregion
 

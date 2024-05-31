@@ -79,16 +79,6 @@ namespace Java.Nio.File.Attribute
     public partial interface IFileAttribute<T>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileAttribute.html#name()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String Name();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileAttribute.html#value()"/>
-        /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
-        T Value();
 
         #endregion
 

@@ -32,13 +32,6 @@ namespace Java.Nio.Channels
     public partial interface IReadableByteChannel : Java.Nio.Channels.IChannel
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/ReadableByteChannel.html#read(java.nio.ByteBuffer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        int Read(Java.Nio.ByteBuffer arg0);
 
         #endregion
 

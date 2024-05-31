@@ -32,59 +32,6 @@ namespace Android.Icu.Text
     public partial interface IReplaceable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Replaceable.html#hasMetaData()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool HasMetaData();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Replaceable.html#charAt(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="char"/></returns>
-        char CharAt(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Replaceable.html#char32At(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        int Char32At(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Replaceable.html#length()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        int Length();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Replaceable.html#copy(int,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        void Copy(int arg0, int arg1, int arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Replaceable.html#getChars(int,int,char[],int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="char"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        void GetChars(int arg0, int arg1, char[] arg2, int arg3);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Replaceable.html#replace(int,int,char[],int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="char"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        void Replace(int arg0, int arg1, char[] arg2, int arg3, int arg4);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Replaceable.html#replace(int,int,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        void Replace(int arg0, int arg1, Java.Lang.String arg2);
 
         #endregion
 

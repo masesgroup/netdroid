@@ -32,16 +32,6 @@ namespace Javax.Sql
     public partial interface IStatementEventListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/StatementEventListener.html#statementClosed(javax.sql.StatementEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.StatementEvent"/></param>
-        void StatementClosed(Javax.Sql.StatementEvent arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/StatementEventListener.html#statementErrorOccurred(javax.sql.StatementEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.StatementEvent"/></param>
-        void StatementErrorOccurred(Javax.Sql.StatementEvent arg0);
 
         #endregion
 

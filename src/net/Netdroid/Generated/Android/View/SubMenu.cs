@@ -32,56 +32,6 @@ namespace Android.View
     public partial interface ISubMenu : Android.View.IMenu
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/SubMenu.html#getItem()"/> 
-        /// </summary>
-        Android.View.MenuItem Item { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/SubMenu.html#setHeaderIcon(android.graphics.drawable.Drawable)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
-        /// <returns><see cref="Android.View.SubMenu"/></returns>
-        Android.View.SubMenu SetHeaderIcon(Android.Graphics.Drawable.Drawable arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/SubMenu.html#setHeaderIcon(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Android.View.SubMenu"/></returns>
-        Android.View.SubMenu SetHeaderIcon(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/SubMenu.html#setHeaderTitle(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Android.View.SubMenu"/></returns>
-        Android.View.SubMenu SetHeaderTitle(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/SubMenu.html#setHeaderTitle(java.lang.CharSequence)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Android.View.SubMenu"/></returns>
-        Android.View.SubMenu SetHeaderTitle(Java.Lang.CharSequence arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/SubMenu.html#setHeaderView(android.view.View)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.View"/></param>
-        /// <returns><see cref="Android.View.SubMenu"/></returns>
-        Android.View.SubMenu SetHeaderView(Android.View.View arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/SubMenu.html#setIcon(android.graphics.drawable.Drawable)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
-        /// <returns><see cref="Android.View.SubMenu"/></returns>
-        Android.View.SubMenu SetIcon(Android.Graphics.Drawable.Drawable arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/SubMenu.html#setIcon(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Android.View.SubMenu"/></returns>
-        Android.View.SubMenu SetIcon(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/SubMenu.html#clearHeader()"/>
-        /// </summary>
-        void ClearHeader();
 
         #endregion
 

@@ -32,13 +32,6 @@ namespace Javax.Security.Auth.Callback
     public partial interface ICallbackHandler
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/callback/CallbackHandler.html#handle(javax.security.auth.callback.Callback[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Callback.Callback"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Javax.Security.Auth.Callback.UnsupportedCallbackException"/>
-        void Handle(Javax.Security.Auth.Callback.Callback[] arg0);
 
         #endregion
 

@@ -32,10 +32,6 @@ namespace Java.Security.Interfaces
     public partial interface IXECKey
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/XECKey.html#getParams()"/> 
-        /// </summary>
-        Java.Security.Spec.AlgorithmParameterSpec Params { get; }
 
         #endregion
 

@@ -32,22 +32,6 @@ namespace Org.Xml.Sax
     public partial interface ILocator
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/Locator.html#getColumnNumber()"/> 
-        /// </summary>
-        int ColumnNumber { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/Locator.html#getLineNumber()"/> 
-        /// </summary>
-        int LineNumber { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/Locator.html#getPublicId()"/> 
-        /// </summary>
-        Java.Lang.String PublicId { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/Locator.html#getSystemId()"/> 
-        /// </summary>
-        Java.Lang.String SystemId { get; }
 
         #endregion
 

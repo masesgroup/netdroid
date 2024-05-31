@@ -32,12 +32,6 @@ namespace Android.Media.Effect
     public partial interface IEffectUpdateListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/effect/EffectUpdateListener.html#onEffectUpdated(android.media.effect.Effect,java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Media.Effect.Effect"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        void OnEffectUpdated(Android.Media.Effect.Effect arg0, object arg1);
 
         #endregion
 

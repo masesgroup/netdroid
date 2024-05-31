@@ -32,16 +32,6 @@ namespace Java.Nio.Channels
     public partial interface IChannel : Java.Io.ICloseable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Channel.html#isOpen()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsOpen();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Channel.html#close()"/>
-        /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
-        void Close();
 
         #endregion
 

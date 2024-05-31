@@ -32,16 +32,6 @@ namespace Javax.Xml.Transform
     public partial interface ITemplates
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Templates.html#getOutputProperties()"/> 
-        /// </summary>
-        Java.Util.Properties OutputProperties { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Templates.html#newTransformer()"/>
-        /// </summary>
-        /// <returns><see cref="Javax.Xml.Transform.Transformer"/></returns>
-        /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
-        Javax.Xml.Transform.Transformer NewTransformer();
 
         #endregion
 

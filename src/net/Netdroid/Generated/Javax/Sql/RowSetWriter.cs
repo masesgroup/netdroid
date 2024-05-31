@@ -32,13 +32,6 @@ namespace Javax.Sql
     public partial interface IRowSetWriter
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetWriter.html#writeData(javax.sql.RowSetInternal)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.RowSetInternal"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        bool WriteData(Javax.Sql.RowSetInternal arg0);
 
         #endregion
 

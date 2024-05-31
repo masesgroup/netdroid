@@ -226,51 +226,6 @@ namespace Java.Util.Stream
     public partial interface ICollector<T, A, R>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#accumulator()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
-        Java.Util.Function.BiConsumer<A, T> Accumulator();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#accumulator()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
-        Java.Util.Function.BiConsumer<A, T> AccumulatorDirect();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#combiner()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
-        Java.Util.Function.BinaryOperator<A> Combiner();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#combiner()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
-        Java.Util.Function.BinaryOperator<A> CombinerDirect();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#finisher()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        Java.Util.Function.Function<A, R> Finisher();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#finisher()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        Java.Util.Function.Function<A, R> FinisherDirect();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#supplier()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
-        Java.Util.Function.Supplier<A> Supplier();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#supplier()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
-        Java.Util.Function.Supplier<A> SupplierDirect();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#characteristics()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        Java.Util.Set<Java.Util.Stream.Collector.Characteristics> CharacteristicsMethod();
 
         #endregion
 

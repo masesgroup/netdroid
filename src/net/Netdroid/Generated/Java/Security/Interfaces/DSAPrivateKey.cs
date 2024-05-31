@@ -32,10 +32,6 @@ namespace Java.Security.Interfaces
     public partial interface IDSAPrivateKey
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAPrivateKey.html#getX()"/> 
-        /// </summary>
-        Java.Math.BigInteger X { get; }
 
         #endregion
 

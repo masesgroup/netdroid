@@ -32,20 +32,6 @@ namespace Android.Window
     public partial interface IOnBackAnimationCallback : Android.Window.IOnBackInvokedCallback
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/window/OnBackAnimationCallback.html#onBackCancelled()"/>
-        /// </summary>
-        void OnBackCancelled();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/window/OnBackAnimationCallback.html#onBackProgressed(android.window.BackEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Window.BackEvent"/></param>
-        void OnBackProgressed(Android.Window.BackEvent arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/window/OnBackAnimationCallback.html#onBackStarted(android.window.BackEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Window.BackEvent"/></param>
-        void OnBackStarted(Android.Window.BackEvent arg0);
 
         #endregion
 

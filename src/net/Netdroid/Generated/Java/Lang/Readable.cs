@@ -32,13 +32,6 @@ namespace Java.Lang
     public partial interface IReadable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Readable.html#read(java.nio.CharBuffer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        int Read(Java.Nio.CharBuffer arg0);
 
         #endregion
 

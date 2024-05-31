@@ -32,14 +32,6 @@ namespace Android.Text
     public partial interface IGetChars : Java.Lang.ICharSequence
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/GetChars.html#getChars(int,int,char[],int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="char"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        void GetCharsMethod(int arg0, int arg1, char[] arg2, int arg3);
 
         #endregion
 

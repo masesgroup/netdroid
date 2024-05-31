@@ -32,24 +32,6 @@ namespace Javax.Xml.Namespace
     public partial interface INamespaceContext
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/namespace/NamespaceContext.html#getNamespaceURI(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String GetNamespaceURI(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/namespace/NamespaceContext.html#getPrefix(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String GetPrefix(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/namespace/NamespaceContext.html#getPrefixes(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<Java.Lang.String> GetPrefixes(Java.Lang.String arg0);
 
         #endregion
 

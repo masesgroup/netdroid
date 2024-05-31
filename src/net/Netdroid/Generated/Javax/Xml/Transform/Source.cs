@@ -32,15 +32,6 @@ namespace Javax.Xml.Transform
     public partial interface ISource
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Source.html#getSystemId()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Source.html#setSystemId(java.lang.String)"/>
-        /// </summary>
-        Java.Lang.String SystemId { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Source.html#isEmpty()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsEmpty();
 
         #endregion
 

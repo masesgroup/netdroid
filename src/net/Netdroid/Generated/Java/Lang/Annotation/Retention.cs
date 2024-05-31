@@ -32,11 +32,6 @@ namespace Java.Lang.Annotation
     public partial interface IRetention : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/annotation/Retention.html#value()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.Annotation.RetentionPolicy"/></returns>
-        Java.Lang.Annotation.RetentionPolicy Value();
 
         #endregion
 

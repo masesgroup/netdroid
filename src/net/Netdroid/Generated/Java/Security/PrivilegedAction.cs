@@ -71,11 +71,6 @@ namespace Java.Security
     public partial interface IPrivilegedAction<T>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/PrivilegedAction.html#run()"/>
-        /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
-        T Run();
 
         #endregion
 

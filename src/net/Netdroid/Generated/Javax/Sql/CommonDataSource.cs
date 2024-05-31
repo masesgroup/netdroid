@@ -32,24 +32,6 @@ namespace Javax.Sql
     public partial interface ICommonDataSource
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/CommonDataSource.html#getLoginTimeout()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/CommonDataSource.html#setLoginTimeout(int)"/>
-        /// </summary>
-        int LoginTimeout { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/CommonDataSource.html#getLogWriter()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/CommonDataSource.html#setLogWriter(java.io.PrintWriter)"/>
-        /// </summary>
-        Java.Io.PrintWriter LogWriter { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/CommonDataSource.html#getParentLogger()"/> 
-        /// </summary>
-        Java.Util.Logging.Logger ParentLogger { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/CommonDataSource.html#createShardingKeyBuilder()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Sql.ShardingKeyBuilder"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.ShardingKeyBuilder CreateShardingKeyBuilder();
 
         #endregion
 

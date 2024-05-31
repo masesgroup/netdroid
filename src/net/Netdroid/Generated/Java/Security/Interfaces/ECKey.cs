@@ -32,10 +32,6 @@ namespace Java.Security.Interfaces
     public partial interface IECKey
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/ECKey.html#getParams()"/> 
-        /// </summary>
-        Java.Security.Spec.ECParameterSpec Params { get; }
 
         #endregion
 

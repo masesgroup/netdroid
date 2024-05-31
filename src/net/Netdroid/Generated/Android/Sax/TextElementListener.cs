@@ -32,16 +32,6 @@ namespace Android.Sax
     public partial interface ITextElementListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/sax/EndTextElementListener.html#end(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        void End(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/sax/StartElementListener.html#start(org.xml.sax.Attributes)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.Attributes"/></param>
-        void Start(Org.Xml.Sax.Attributes arg0);
 
         #endregion
 

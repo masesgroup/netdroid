@@ -32,11 +32,6 @@ namespace Android.Util
     public partial interface IPrinter
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/Printer.html#println(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        void Println(Java.Lang.String arg0);
 
         #endregion
 

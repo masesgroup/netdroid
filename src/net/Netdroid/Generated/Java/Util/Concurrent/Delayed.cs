@@ -32,12 +32,6 @@ namespace Java.Util.Concurrent
     public partial interface IDelayed : Java.Lang.IComparable<Java.Util.Concurrent.Delayed>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Delayed.html#getDelay(java.util.concurrent.TimeUnit)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="long"/></returns>
-        long GetDelay(Java.Util.Concurrent.TimeUnit arg0);
 
         #endregion
 

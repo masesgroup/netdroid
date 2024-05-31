@@ -32,12 +32,6 @@ namespace Java.Util.Function
     public partial interface ILongToIntFunction
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongToIntFunction.html#applyAsInt(long)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="int"/></returns>
-        int ApplyAsInt(long arg0);
 
         #endregion
 

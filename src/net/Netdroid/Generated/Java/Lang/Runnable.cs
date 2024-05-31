@@ -32,10 +32,6 @@ namespace Java.Lang
     public partial interface IRunnable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runnable.html#run()"/>
-        /// </summary>
-        void Run();
 
         #endregion
 

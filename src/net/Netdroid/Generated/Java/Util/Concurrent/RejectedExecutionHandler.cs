@@ -32,12 +32,6 @@ namespace Java.Util.Concurrent
     public partial interface IRejectedExecutionHandler
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/RejectedExecutionHandler.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>
-        void RejectedExecution(Java.Lang.Runnable arg0, Java.Util.Concurrent.ThreadPoolExecutor arg1);
 
         #endregion
 

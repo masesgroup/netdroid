@@ -32,54 +32,6 @@ namespace Java.Time.Chrono
     public partial interface IEra
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Era.html#getValue()"/> 
-        /// </summary>
-        int Value { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Era.html#query(java.time.temporal.TemporalQuery)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
-        /// <typeparam name="R"></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        R Query<R>(Java.Time.Temporal.TemporalQuery<R> arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Era.html#isSupported(java.time.temporal.TemporalField)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool IsSupported(Java.Time.Temporal.TemporalField arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Era.html#get(java.time.temporal.TemporalField)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
-        /// <returns><see cref="int"/></returns>
-        int Get(Java.Time.Temporal.TemporalField arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Era.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String GetDisplayName(Java.Time.Format.TextStyle arg0, Java.Util.Locale arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Era.html#adjustInto(java.time.temporal.Temporal)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
-        Java.Time.Temporal.Temporal AdjustInto(Java.Time.Temporal.Temporal arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Era.html#range(java.time.temporal.TemporalField)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
-        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
-        Java.Time.Temporal.ValueRange Range(Java.Time.Temporal.TemporalField arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Era.html#getLong(java.time.temporal.TemporalField)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
-        /// <returns><see cref="long"/></returns>
-        long GetLong(Java.Time.Temporal.TemporalField arg0);
 
         #endregion
 

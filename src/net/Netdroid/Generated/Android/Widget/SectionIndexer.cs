@@ -32,22 +32,6 @@ namespace Android.Widget
     public partial interface ISectionIndexer
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SectionIndexer.html#getSections()"/> 
-        /// </summary>
-        object[] Sections { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SectionIndexer.html#getPositionForSection(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        int GetPositionForSection(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SectionIndexer.html#getSectionForPosition(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        int GetSectionForPosition(int arg0);
 
         #endregion
 

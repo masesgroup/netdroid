@@ -32,10 +32,6 @@ namespace Java.Security.Interfaces
     public partial interface IXECPrivateKey
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/XECPrivateKey.html#getScalar()"/> 
-        /// </summary>
-        Java.Util.Optional<byte[]> Scalar { get; }
 
         #endregion
 

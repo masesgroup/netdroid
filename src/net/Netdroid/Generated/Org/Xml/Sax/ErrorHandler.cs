@@ -32,24 +32,6 @@ namespace Org.Xml.Sax
     public partial interface IErrorHandler
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ErrorHandler.html#error(org.xml.sax.SAXParseException)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        void Error(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ErrorHandler.html#fatalError(org.xml.sax.SAXParseException)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        void FatalError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ErrorHandler.html#warning(org.xml.sax.SAXParseException)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        void Warning(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
 
         #endregion
 

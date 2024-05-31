@@ -32,10 +32,6 @@ namespace Java.Sql
     public partial interface IRowId
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/RowId.html#getBytes()"/> 
-        /// </summary>
-        byte[] Bytes { get; }
 
         #endregion
 

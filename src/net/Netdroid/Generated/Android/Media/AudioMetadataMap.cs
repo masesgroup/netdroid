@@ -32,21 +32,6 @@ namespace Android.Media
     public partial interface IAudioMetadataMap : Android.Media.IAudioMetadataReadMap
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioMetadataMap.html#remove(android.media.AudioMetadata.Key)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Media.AudioMetadata.Key"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        T Remove<T>(Android.Media.AudioMetadata.Key<T> arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioMetadataMap.html#set(android.media.AudioMetadata.Key,java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Media.AudioMetadata.Key"/></param>
-        /// <param name="arg1"><typeparamref name="T"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        T Set<T>(Android.Media.AudioMetadata.Key<T> arg0, T arg1);
 
         #endregion
 

@@ -32,14 +32,6 @@ namespace Android.View
     public partial interface ICollapsibleActionView
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/CollapsibleActionView.html#onActionViewCollapsed()"/>
-        /// </summary>
-        void OnActionViewCollapsed();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/CollapsibleActionView.html#onActionViewExpanded()"/>
-        /// </summary>
-        void OnActionViewExpanded();
 
         #endregion
 

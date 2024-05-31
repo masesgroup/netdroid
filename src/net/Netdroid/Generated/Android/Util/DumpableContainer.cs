@@ -32,18 +32,6 @@ namespace Android.Util
     public partial interface IDumpableContainer
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/DumpableContainer.html#addDumpable(android.util.Dumpable)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Util.Dumpable"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool AddDumpable(Android.Util.Dumpable arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/DumpableContainer.html#removeDumpable(android.util.Dumpable)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Util.Dumpable"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool RemoveDumpable(Android.Util.Dumpable arg0);
 
         #endregion
 

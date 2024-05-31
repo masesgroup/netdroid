@@ -32,15 +32,6 @@ namespace Android.Content
     public partial interface IComponentCallbacks
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ComponentCallbacks.html#onConfigurationChanged(android.content.res.Configuration)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Content.Res.Configuration"/></param>
-        void OnConfigurationChanged(Android.Content.Res.Configuration arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ComponentCallbacks.html#onLowMemory()"/>
-        /// </summary>
-        void OnLowMemory();
 
         #endregion
 

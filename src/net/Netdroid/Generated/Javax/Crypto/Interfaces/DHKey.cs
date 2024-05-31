@@ -32,10 +32,6 @@ namespace Javax.Crypto.Interfaces
     public partial interface IDHKey
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/interfaces/DHKey.html#getParams()"/> 
-        /// </summary>
-        Javax.Crypto.Spec.DHParameterSpec Params { get; }
 
         #endregion
 

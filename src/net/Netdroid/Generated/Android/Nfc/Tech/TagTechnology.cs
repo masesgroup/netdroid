@@ -32,25 +32,6 @@ namespace Android.Nfc.Tech
     public partial interface ITagTechnology : Java.Io.ICloseable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/TagTechnology.html#getTag()"/> 
-        /// </summary>
-        Android.Nfc.Tag Tag { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/TagTechnology.html#isConnected()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsConnected();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/TagTechnology.html#close()"/>
-        /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
-        void Close();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/TagTechnology.html#connect()"/>
-        /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
-        void Connect();
 
         #endregion
 

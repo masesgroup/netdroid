@@ -32,32 +32,6 @@ namespace Javax.Sql
     public partial interface IDataSource
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/DataSource.html#getConnection()"/> 
-        /// </summary>
-        Java.Sql.Connection Connection { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/DataSource.html#getLoginTimeout()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/DataSource.html#setLoginTimeout(int)"/>
-        /// </summary>
-        int LoginTimeout { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/DataSource.html#getLogWriter()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/DataSource.html#setLogWriter(java.io.PrintWriter)"/>
-        /// </summary>
-        Java.Io.PrintWriter LogWriter { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/DataSource.html#getConnection(java.lang.String,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Sql.Connection"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.Connection GetConnection(Java.Lang.String arg0, Java.Lang.String arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/DataSource.html#createConnectionBuilder()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.ConnectionBuilder CreateConnectionBuilder();
 
         #endregion
 

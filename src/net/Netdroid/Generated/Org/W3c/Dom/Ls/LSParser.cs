@@ -32,52 +32,6 @@ namespace Org.W3c.Dom.Ls
     public partial interface ILSParser
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#getAsync()"/> 
-        /// </summary>
-        bool Async { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#getBusy()"/> 
-        /// </summary>
-        bool Busy { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#getDomConfig()"/> 
-        /// </summary>
-        Org.W3c.Dom.DOMConfiguration DomConfig { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#getFilter()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#setFilter(org.w3c.dom.ls.LSParserFilter)"/>
-        /// </summary>
-        Org.W3c.Dom.Ls.LSParserFilter Filter { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#parse(org.w3c.dom.ls.LSInput)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Ls.LSInput"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
-        Org.W3c.Dom.Document Parse(Org.W3c.Dom.Ls.LSInput arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#parseURI(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
-        Org.W3c.Dom.Document ParseURI(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#parseWithContext(org.w3c.dom.ls.LSInput,org.w3c.dom.Node,short)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Ls.LSInput"/></param>
-        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <param name="arg2"><see cref="short"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
-        Org.W3c.Dom.Node ParseWithContext(Org.W3c.Dom.Ls.LSInput arg0, Org.W3c.Dom.Node arg1, short arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSParser.html#abort()"/>
-        /// </summary>
-        void Abort();
 
         #endregion
 

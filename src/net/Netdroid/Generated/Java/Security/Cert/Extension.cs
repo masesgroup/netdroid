@@ -32,25 +32,6 @@ namespace Java.Security.Cert
     public partial interface IExtension
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/Extension.html#getId()"/> 
-        /// </summary>
-        Java.Lang.String Id { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/Extension.html#getValue()"/> 
-        /// </summary>
-        byte[] Value { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/Extension.html#isCritical()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsCritical();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/Extension.html#encode(java.io.OutputStream)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        void Encode(Java.Io.OutputStream arg0);
 
         #endregion
 

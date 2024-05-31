@@ -32,33 +32,6 @@ namespace Android.Telecom
     public partial interface ICallControlCallback
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallControlCallback.html#onAnswer(int,java.util.function.Consumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
-        void OnAnswer(int arg0, Java.Util.Function.Consumer<Java.Lang.Boolean> arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallControlCallback.html#onCallStreamingStarted(java.util.function.Consumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        void OnCallStreamingStarted(Java.Util.Function.Consumer<Java.Lang.Boolean> arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallControlCallback.html#onDisconnect(android.telecom.DisconnectCause,java.util.function.Consumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Telecom.DisconnectCause"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
-        void OnDisconnect(Android.Telecom.DisconnectCause arg0, Java.Util.Function.Consumer<Java.Lang.Boolean> arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallControlCallback.html#onSetActive(java.util.function.Consumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        void OnSetActive(Java.Util.Function.Consumer<Java.Lang.Boolean> arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallControlCallback.html#onSetInactive(java.util.function.Consumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        void OnSetInactive(Java.Util.Function.Consumer<Java.Lang.Boolean> arg0);
 
         #endregion
 

@@ -32,64 +32,6 @@ namespace Android.Speech
     public partial interface IRecognitionListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onBeginningOfSpeech()"/>
-        /// </summary>
-        void OnBeginningOfSpeech();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onBufferReceived(byte[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        void OnBufferReceived(byte[] arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onEndOfSpeech()"/>
-        /// </summary>
-        void OnEndOfSpeech();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onError(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void OnError(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onEvent(int,android.os.Bundle)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
-        void OnEvent(int arg0, Android.Os.Bundle arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onPartialResults(android.os.Bundle)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
-        void OnPartialResults(Android.Os.Bundle arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onReadyForSpeech(android.os.Bundle)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
-        void OnReadyForSpeech(Android.Os.Bundle arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onResults(android.os.Bundle)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
-        void OnResults(Android.Os.Bundle arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onRmsChanged(float)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        void OnRmsChanged(float arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onEndOfSegmentedSession()"/>
-        /// </summary>
-        void OnEndOfSegmentedSession();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onLanguageDetection(android.os.Bundle)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
-        void OnLanguageDetection(Android.Os.Bundle arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onSegmentResults(android.os.Bundle)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
-        void OnSegmentResults(Android.Os.Bundle arg0);
 
         #endregion
 

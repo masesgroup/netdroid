@@ -32,22 +32,6 @@ namespace Android.Text
     public partial interface ITextDirectionHeuristic
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/TextDirectionHeuristic.html#isRtl(char[],int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool IsRtl(char[] arg0, int arg1, int arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/TextDirectionHeuristic.html#isRtl(java.lang.CharSequence,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool IsRtl(Java.Lang.CharSequence arg0, int arg1, int arg2);
 
         #endregion
 

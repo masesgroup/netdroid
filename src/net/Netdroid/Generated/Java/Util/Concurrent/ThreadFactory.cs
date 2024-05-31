@@ -32,12 +32,6 @@ namespace Java.Util.Concurrent
     public partial interface IThreadFactory
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadFactory.html#newThread(java.lang.Runnable)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <returns><see cref="Java.Lang.Thread"/></returns>
-        Java.Lang.Thread NewThread(Java.Lang.Runnable arg0);
 
         #endregion
 

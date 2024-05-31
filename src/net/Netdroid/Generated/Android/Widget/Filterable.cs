@@ -32,10 +32,6 @@ namespace Android.Widget
     public partial interface IFilterable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Filterable.html#getFilter()"/> 
-        /// </summary>
-        Android.Widget.Filter Filter { get; }
 
         #endregion
 

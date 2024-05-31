@@ -32,23 +32,6 @@ namespace Java.Lang.Reflect
     public partial interface IMember
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Member.html#getDeclaringClass()"/> 
-        /// </summary>
-        Java.Lang.Class DeclaringClass { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Member.html#getModifiers()"/> 
-        /// </summary>
-        int Modifiers { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Member.html#getName()"/> 
-        /// </summary>
-        Java.Lang.String Name { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Member.html#isSynthetic()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsSynthetic();
 
         #endregion
 

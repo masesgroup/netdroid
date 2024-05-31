@@ -32,20 +32,6 @@ namespace Android.Webkit
     public partial interface IPluginStub
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/PluginStub.html#getEmbeddedView(int,android.content.Context)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Android.Content.Context"/></param>
-        /// <returns><see cref="Android.View.View"/></returns>
-        Android.View.View GetEmbeddedView(int arg0, Android.Content.Context arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/PluginStub.html#getFullScreenView(int,android.content.Context)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Android.Content.Context"/></param>
-        /// <returns><see cref="Android.View.View"/></returns>
-        Android.View.View GetFullScreenView(int arg0, Android.Content.Context arg1);
 
         #endregion
 

@@ -32,40 +32,6 @@ namespace Android.View
     public partial interface IContextMenu : Android.View.IMenu
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ContextMenu.html#setHeaderIcon(android.graphics.drawable.Drawable)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
-        /// <returns><see cref="Android.View.ContextMenu"/></returns>
-        Android.View.ContextMenu SetHeaderIcon(Android.Graphics.Drawable.Drawable arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ContextMenu.html#setHeaderIcon(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Android.View.ContextMenu"/></returns>
-        Android.View.ContextMenu SetHeaderIcon(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ContextMenu.html#setHeaderTitle(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Android.View.ContextMenu"/></returns>
-        Android.View.ContextMenu SetHeaderTitle(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ContextMenu.html#setHeaderTitle(java.lang.CharSequence)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Android.View.ContextMenu"/></returns>
-        Android.View.ContextMenu SetHeaderTitle(Java.Lang.CharSequence arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ContextMenu.html#setHeaderView(android.view.View)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.View"/></param>
-        /// <returns><see cref="Android.View.ContextMenu"/></returns>
-        Android.View.ContextMenu SetHeaderView(Android.View.View arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ContextMenu.html#clearHeader()"/>
-        /// </summary>
-        void ClearHeader();
 
         #endregion
 

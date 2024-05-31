@@ -32,24 +32,6 @@ namespace Android.Speech
     public partial interface IModelDownloadListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/ModelDownloadListener.html#onError(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void OnError(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/ModelDownloadListener.html#onProgress(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void OnProgress(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/ModelDownloadListener.html#onScheduled()"/>
-        /// </summary>
-        void OnScheduled();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/ModelDownloadListener.html#onSuccess()"/>
-        /// </summary>
-        void OnSuccess();
 
         #endregion
 

@@ -32,22 +32,6 @@ namespace Java.Time
     public partial interface IInstantSource
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/InstantSource.html#instant()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Time.Instant"/></returns>
-        Java.Time.Instant Instant();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/InstantSource.html#withZone(java.time.ZoneId)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
-        /// <returns><see cref="Java.Time.Clock"/></returns>
-        Java.Time.Clock WithZone(Java.Time.ZoneId arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/InstantSource.html#millis()"/>
-        /// </summary>
-        /// <returns><see cref="long"/></returns>
-        long Millis();
 
         #endregion
 

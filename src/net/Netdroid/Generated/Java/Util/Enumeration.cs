@@ -87,21 +87,6 @@ namespace Java.Util
     public partial interface IEnumeration<E>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Enumeration.html#hasMoreElements()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool HasMoreElements();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Enumeration.html#nextElement()"/>
-        /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
-        E NextElement();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Enumeration.html#asIterator()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<E> AsIterator();
 
         #endregion
 

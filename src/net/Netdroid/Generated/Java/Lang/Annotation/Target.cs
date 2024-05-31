@@ -32,11 +32,6 @@ namespace Java.Lang.Annotation
     public partial interface ITarget : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/annotation/Target.html#value()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.Annotation.ElementType"/></returns>
-        Java.Lang.Annotation.ElementType[] Value();
 
         #endregion
 

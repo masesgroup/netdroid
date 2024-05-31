@@ -32,31 +32,6 @@ namespace Android.Database.Sqlite
     public partial interface ISQLiteCursorDriver
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteCursorDriver.html#query(android.database.sqlite.SQLiteDatabase.CursorFactory,java.lang.String[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Database.Sqlite.SQLiteDatabase.CursorFactory"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Android.Database.Cursor"/></returns>
-        Android.Database.Cursor Query(Android.Database.Sqlite.SQLiteDatabase.CursorFactory arg0, Java.Lang.String[] arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteCursorDriver.html#cursorClosed()"/>
-        /// </summary>
-        void CursorClosed();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteCursorDriver.html#cursorDeactivated()"/>
-        /// </summary>
-        void CursorDeactivated();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteCursorDriver.html#cursorRequeried(android.database.Cursor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Database.Cursor"/></param>
-        void CursorRequeried(Android.Database.Cursor arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteCursorDriver.html#setBindArguments(java.lang.String[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        void SetBindArguments(Java.Lang.String[] arg0);
 
         #endregion
 

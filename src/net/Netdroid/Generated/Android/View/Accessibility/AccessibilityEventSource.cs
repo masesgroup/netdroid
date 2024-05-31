@@ -32,16 +32,6 @@ namespace Android.View.Accessibility
     public partial interface IAccessibilityEventSource
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEventSource.html#sendAccessibilityEvent(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void SendAccessibilityEvent(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEventSource.html#sendAccessibilityEventUnchecked(android.view.accessibility.AccessibilityEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.Accessibility.AccessibilityEvent"/></param>
-        void SendAccessibilityEventUnchecked(Android.View.Accessibility.AccessibilityEvent arg0);
 
         #endregion
 

@@ -32,17 +32,6 @@ namespace Android.Os
     public partial interface IParcelable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcelable.html#describeContents()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        int DescribeContents();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Parcelable.html#writeToParcel(android.os.Parcel,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        void WriteToParcel(Android.Os.Parcel arg0, int arg1);
 
         #endregion
 

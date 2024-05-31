@@ -32,11 +32,6 @@ namespace Java.Util.Prefs
     public partial interface IPreferenceChangeListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Prefs.PreferenceChangeEvent"/></param>
-        void PreferenceChange(Java.Util.Prefs.PreferenceChangeEvent arg0);
 
         #endregion
 

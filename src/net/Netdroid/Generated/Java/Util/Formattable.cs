@@ -32,14 +32,6 @@ namespace Java.Util
     public partial interface IFormattable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formattable.html#formatTo(java.util.Formatter,int,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Formatter"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        void FormatTo(Java.Util.Formatter arg0, int arg1, int arg2, int arg3);
 
         #endregion
 

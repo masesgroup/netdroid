@@ -32,67 +32,6 @@ namespace Android.Widget
     public partial interface IAdapter
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getView(int,android.view.View,android.view.ViewGroup)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Android.View.View"/></param>
-        /// <param name="arg2"><see cref="Android.View.ViewGroup"/></param>
-        /// <returns><see cref="Android.View.View"/></returns>
-        Android.View.View GetView(int arg0, Android.View.View arg1, Android.View.ViewGroup arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#hasStableIds()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool HasStableIds();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#isEmpty()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsEmpty();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getCount()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        int GetCount();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getItemViewType(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        int GetItemViewType(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getViewTypeCount()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        int GetViewTypeCount();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getItem(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
-        object GetItem(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getItemId(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="long"/></returns>
-        long GetItemId(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#registerDataSetObserver(android.database.DataSetObserver)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Database.DataSetObserver"/></param>
-        void RegisterDataSetObserver(Android.Database.DataSetObserver arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#unregisterDataSetObserver(android.database.DataSetObserver)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Database.DataSetObserver"/></param>
-        void UnregisterDataSetObserver(Android.Database.DataSetObserver arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getAutofillOptions()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-        Java.Lang.CharSequence[] GetAutofillOptions();
 
         #endregion
 

@@ -32,16 +32,6 @@ namespace Android.Icu.Util
     public partial interface IRangeValueIterator
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/RangeValueIterator.html#next(android.icu.util.RangeValueIterator.Element)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Icu.Util.RangeValueIterator.Element"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool Next(Android.Icu.Util.RangeValueIterator.Element arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/RangeValueIterator.html#reset()"/>
-        /// </summary>
-        void Reset();
 
         #endregion
 

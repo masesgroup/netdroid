@@ -32,49 +32,6 @@ namespace Java.Text
     public partial interface ICharacterIterator : Java.Lang.ICloneable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#getBeginIndex()"/> 
-        /// </summary>
-        int BeginIndex { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#getEndIndex()"/> 
-        /// </summary>
-        int EndIndex { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#getIndex()"/> 
-        /// </summary>
-        int Index { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#current()"/>
-        /// </summary>
-        /// <returns><see cref="char"/></returns>
-        char Current();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#first()"/>
-        /// </summary>
-        /// <returns><see cref="char"/></returns>
-        char First();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#last()"/>
-        /// </summary>
-        /// <returns><see cref="char"/></returns>
-        char Last();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#next()"/>
-        /// </summary>
-        /// <returns><see cref="char"/></returns>
-        char Next();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#previous()"/>
-        /// </summary>
-        /// <returns><see cref="char"/></returns>
-        char Previous();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#setIndex(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="char"/></returns>
-        char SetIndex(int arg0);
 
         #endregion
 

@@ -32,50 +32,6 @@ namespace Org.W3c.Dom
     public partial interface ICharacterData : Org.W3c.Dom.INode
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CharacterData.html#getData()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CharacterData.html#setData(java.lang.String)"/>
-        /// </summary>
-        Java.Lang.String Data { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CharacterData.html#getLength()"/> 
-        /// </summary>
-        int Length { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CharacterData.html#substringData(int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Java.Lang.String SubstringData(int arg0, int arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CharacterData.html#appendData(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        void AppendData(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CharacterData.html#deleteData(int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        void DeleteData(int arg0, int arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CharacterData.html#insertData(int,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        void InsertData(int arg0, Java.Lang.String arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CharacterData.html#replaceData(int,int,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        void ReplaceData(int arg0, int arg1, Java.Lang.String arg2);
 
         #endregion
 

@@ -32,10 +32,6 @@ namespace Java.Security.Interfaces
     public partial interface IDSAKey
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAKey.html#getParams()"/> 
-        /// </summary>
-        Java.Security.Interfaces.DSAParams Params { get; }
 
         #endregion
 

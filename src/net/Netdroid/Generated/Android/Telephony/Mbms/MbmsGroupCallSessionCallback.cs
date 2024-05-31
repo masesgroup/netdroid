@@ -32,28 +32,6 @@ namespace Android.Telephony.Mbms
     public partial interface IMbmsGroupCallSessionCallback
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/MbmsGroupCallSessionCallback.html#onAvailableSaisUpdated(java.util.List,java.util.List)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <param name="arg1"><see cref="Java.Util.List"/></param>
-        void OnAvailableSaisUpdated(Java.Util.List<Java.Lang.Integer> arg0, Java.Util.List<Java.Util.List<Java.Lang.Integer>> arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/MbmsGroupCallSessionCallback.html#onError(int,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        void OnError(int arg0, Java.Lang.String arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/MbmsGroupCallSessionCallback.html#onMiddlewareReady()"/>
-        /// </summary>
-        void OnMiddlewareReady();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/MbmsGroupCallSessionCallback.html#onServiceInterfaceAvailable(java.lang.String,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        void OnServiceInterfaceAvailable(Java.Lang.String arg0, int arg1);
 
         #endregion
 

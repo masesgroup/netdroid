@@ -32,16 +32,6 @@ namespace Android.App.Appsearch.Observer
     public partial interface IObserverCallback
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/ObserverCallback.html#onDocumentChanged(android.app.appsearch.observer.DocumentChangeInfo)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.App.Appsearch.Observer.DocumentChangeInfo"/></param>
-        void OnDocumentChanged(Android.App.Appsearch.Observer.DocumentChangeInfo arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/ObserverCallback.html#onSchemaChanged(android.app.appsearch.observer.SchemaChangeInfo)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.App.Appsearch.Observer.SchemaChangeInfo"/></param>
-        void OnSchemaChanged(Android.App.Appsearch.Observer.SchemaChangeInfo arg0);
 
         #endregion
 

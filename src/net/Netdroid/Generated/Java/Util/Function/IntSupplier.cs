@@ -32,11 +32,6 @@ namespace Java.Util.Function
     public partial interface IIntSupplier
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntSupplier.html#getAsInt()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        int GetAsInt();
 
         #endregion
 

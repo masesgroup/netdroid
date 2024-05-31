@@ -32,11 +32,6 @@ namespace Java.Io
     public partial interface IObjectInputValidation
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputValidation.html#validateObject()"/>
-        /// </summary>
-        /// <exception cref="Java.Io.InvalidObjectException"/>
-        void ValidateObject();
 
         #endregion
 

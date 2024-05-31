@@ -32,23 +32,6 @@ namespace Android.View
     public partial interface IViewManager
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewManager.html#addView(android.view.View,android.view.ViewGroup.LayoutParams)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.View"/></param>
-        /// <param name="arg1"><see cref="Android.View.ViewGroup.LayoutParams"/></param>
-        void AddView(Android.View.View arg0, Android.View.ViewGroup.LayoutParams arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewManager.html#removeView(android.view.View)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.View"/></param>
-        void RemoveView(Android.View.View arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewManager.html#updateViewLayout(android.view.View,android.view.ViewGroup.LayoutParams)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.View"/></param>
-        /// <param name="arg1"><see cref="Android.View.ViewGroup.LayoutParams"/></param>
-        void UpdateViewLayout(Android.View.View arg0, Android.View.ViewGroup.LayoutParams arg1);
 
         #endregion
 

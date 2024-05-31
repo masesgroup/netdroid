@@ -32,14 +32,6 @@ namespace Org.W3c.Dom
     public partial interface INotation : Org.W3c.Dom.INode
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Notation.html#getPublicId()"/> 
-        /// </summary>
-        Java.Lang.String PublicId { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Notation.html#getSystemId()"/> 
-        /// </summary>
-        Java.Lang.String SystemId { get; }
 
         #endregion
 

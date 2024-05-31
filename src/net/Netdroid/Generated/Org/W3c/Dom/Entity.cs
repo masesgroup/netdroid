@@ -32,30 +32,6 @@ namespace Org.W3c.Dom
     public partial interface IEntity : Org.W3c.Dom.INode
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Entity.html#getInputEncoding()"/> 
-        /// </summary>
-        Java.Lang.String InputEncoding { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Entity.html#getNotationName()"/> 
-        /// </summary>
-        Java.Lang.String NotationName { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Entity.html#getPublicId()"/> 
-        /// </summary>
-        Java.Lang.String PublicId { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Entity.html#getSystemId()"/> 
-        /// </summary>
-        Java.Lang.String SystemId { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Entity.html#getXmlEncoding()"/> 
-        /// </summary>
-        Java.Lang.String XmlEncoding { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Entity.html#getXmlVersion()"/> 
-        /// </summary>
-        Java.Lang.String XmlVersion { get; }
 
         #endregion
 

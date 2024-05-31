@@ -32,19 +32,6 @@ namespace Android.Text
     public partial interface ISpannable : Android.Text.ISpanned
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Spannable.html#removeSpan(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        void RemoveSpan(object arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Spannable.html#setSpan(java.lang.Object,int,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        void SetSpan(object arg0, int arg1, int arg2, int arg3);
 
         #endregion
 

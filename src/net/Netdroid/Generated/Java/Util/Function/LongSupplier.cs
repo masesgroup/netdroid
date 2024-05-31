@@ -32,11 +32,6 @@ namespace Java.Util.Function
     public partial interface ILongSupplier
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongSupplier.html#getAsLong()"/>
-        /// </summary>
-        /// <returns><see cref="long"/></returns>
-        long GetAsLong();
 
         #endregion
 

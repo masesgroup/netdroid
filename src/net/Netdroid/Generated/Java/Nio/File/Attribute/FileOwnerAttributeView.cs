@@ -32,15 +32,6 @@ namespace Java.Nio.File.Attribute
     public partial interface IFileOwnerAttributeView : Java.Nio.File.Attribute.IFileAttributeView
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileOwnerAttributeView.html#getOwner()"/> <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileOwnerAttributeView.html#setOwner(java.nio.file.attribute.UserPrincipal)"/>
-        /// </summary>
-        Java.Nio.File.Attribute.UserPrincipal Owner { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileOwnerAttributeView.html#name()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String Name();
 
         #endregion
 

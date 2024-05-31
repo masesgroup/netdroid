@@ -32,22 +32,6 @@ namespace Javax.Microedition.Khronos.Opengles
     public partial interface IGL10Ext : Javax.Microedition.Khronos.Opengles.IGL
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL10Ext.html#glQueryMatrixxOES(int[],int,int[],int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        int GlQueryMatrixxOES(int[] arg0, int arg1, int[] arg2, int arg3);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/javax/microedition/khronos/opengles/GL10Ext.html#glQueryMatrixxOES(java.nio.IntBuffer,java.nio.IntBuffer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.IntBuffer"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.IntBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
-        int GlQueryMatrixxOES(Java.Nio.IntBuffer arg0, Java.Nio.IntBuffer arg1);
 
         #endregion
 

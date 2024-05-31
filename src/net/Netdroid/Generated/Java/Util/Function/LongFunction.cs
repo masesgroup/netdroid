@@ -134,12 +134,6 @@ namespace Java.Util.Function
     public partial interface ILongFunction<R>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongFunction.html#apply(long)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><typeparamref name="R"/></returns>
-        R Apply(long arg0);
 
         #endregion
 

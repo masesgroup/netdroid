@@ -32,10 +32,6 @@ namespace Java.Security.Interfaces
     public partial interface IRSAPublicKey
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAPublicKey.html#getPublicExponent()"/> 
-        /// </summary>
-        Java.Math.BigInteger PublicExponent { get; }
 
         #endregion
 

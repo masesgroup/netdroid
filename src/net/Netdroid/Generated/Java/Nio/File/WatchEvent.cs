@@ -224,21 +224,6 @@ namespace Java.Nio.File
     public partial interface IWatchEvent<T>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.html#count()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        int Count();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.html#kind()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Nio.File.WatchEvent.Kind"/></returns>
-        Java.Nio.File.WatchEvent.Kind<T> KindMethod();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.html#context()"/>
-        /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
-        T Context();
 
         #endregion
 

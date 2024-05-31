@@ -32,11 +32,6 @@ namespace Java.Beans
     public partial interface IPropertyChangeListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
-        void PropertyChange(Java.Beans.PropertyChangeEvent arg0);
 
         #endregion
 

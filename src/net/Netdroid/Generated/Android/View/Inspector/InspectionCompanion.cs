@@ -111,17 +111,6 @@ namespace Android.View.Inspector
     public partial interface IInspectionCompanion<T>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inspector/InspectionCompanion.html#mapProperties(android.view.inspector.PropertyMapper)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.Inspector.PropertyMapper"/></param>
-        void MapProperties(Android.View.Inspector.PropertyMapper arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inspector/InspectionCompanion.html#readProperties(java.lang.Object,android.view.inspector.PropertyReader)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="Android.View.Inspector.PropertyReader"/></param>
-        void ReadProperties(T arg0, Android.View.Inspector.PropertyReader arg1);
 
         #endregion
 

@@ -32,24 +32,6 @@ namespace Javax.Net.Ssl
     public partial interface IX509TrustManager : Javax.Net.Ssl.ITrustManager
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509TrustManager.html#getAcceptedIssuers()"/> 
-        /// </summary>
-        Java.Security.Cert.X509Certificate[] AcceptedIssuers { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509TrustManager.html#checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Security.Cert.CertificateException"/>
-        void CheckClientTrusted(Java.Security.Cert.X509Certificate[] arg0, Java.Lang.String arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509TrustManager.html#checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Security.Cert.CertificateException"/>
-        void CheckServerTrusted(Java.Security.Cert.X509Certificate[] arg0, Java.Lang.String arg1);
 
         #endregion
 

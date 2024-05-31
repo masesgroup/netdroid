@@ -79,16 +79,6 @@ namespace Android.Os
     public partial interface IOutcomeReceiver<R, E>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/OutcomeReceiver.html#onResult(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="R"/></param>
-        void OnResult(R arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/OutcomeReceiver.html#onError(java.lang.Throwable)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        void OnError(E arg0);
 
         #endregion
 

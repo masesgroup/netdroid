@@ -32,57 +32,6 @@ namespace Android.Speech.Tts
     public partial interface ISynthesisCallback
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisCallback.html#getMaxBufferSize()"/> 
-        /// </summary>
-        int MaxBufferSize { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisCallback.html#hasFinished()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool HasFinished();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisCallback.html#hasStarted()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool HasStarted();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisCallback.html#audioAvailable(byte[],int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        int AudioAvailable(byte[] arg0, int arg1, int arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisCallback.html#done()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        int Done();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisCallback.html#start(int,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        int Start(int arg0, int arg1, int arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisCallback.html#error()"/>
-        /// </summary>
-        void Error();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisCallback.html#error(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void Error(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisCallback.html#rangeStart(int,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        void RangeStart(int arg0, int arg1, int arg2);
 
         #endregion
 

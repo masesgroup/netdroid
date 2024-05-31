@@ -32,10 +32,6 @@ namespace Javax.Crypto.Interfaces
     public partial interface IDHPublicKey
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/interfaces/DHPublicKey.html#getY()"/> 
-        /// </summary>
-        Java.Math.BigInteger Y { get; }
 
         #endregion
 

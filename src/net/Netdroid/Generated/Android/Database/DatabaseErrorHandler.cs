@@ -32,11 +32,6 @@ namespace Android.Database
     public partial interface IDatabaseErrorHandler
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/DatabaseErrorHandler.html#onCorruption(android.database.sqlite.SQLiteDatabase)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Database.Sqlite.SQLiteDatabase"/></param>
-        void OnCorruption(Android.Database.Sqlite.SQLiteDatabase arg0);
 
         #endregion
 

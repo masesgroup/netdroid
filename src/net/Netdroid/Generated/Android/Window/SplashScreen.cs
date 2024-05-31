@@ -32,20 +32,6 @@ namespace Android.Window
     public partial interface ISplashScreen
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/window/SplashScreen.html#clearOnExitAnimationListener()"/>
-        /// </summary>
-        void ClearOnExitAnimationListener();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/window/SplashScreen.html#setOnExitAnimationListener(android.window.SplashScreen.OnExitAnimationListener)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Window.SplashScreen.OnExitAnimationListener"/></param>
-        void SetOnExitAnimationListener(Android.Window.SplashScreen.OnExitAnimationListener arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/window/SplashScreen.html#setSplashScreenTheme(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void SetSplashScreenTheme(int arg0);
 
         #endregion
 

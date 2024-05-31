@@ -32,11 +32,6 @@ namespace Android.Hardware
     public partial interface ISensorEventListener2 : Android.Hardware.ISensorEventListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/SensorEventListener2.html#onFlushCompleted(android.hardware.Sensor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Hardware.Sensor"/></param>
-        void OnFlushCompleted(Android.Hardware.Sensor arg0);
 
         #endregion
 

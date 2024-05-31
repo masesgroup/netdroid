@@ -32,68 +32,6 @@ namespace Org.Xml.Sax
     public partial interface IXMLReader
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLReader.html#getContentHandler()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLReader.html#setContentHandler(org.xml.sax.ContentHandler)"/>
-        /// </summary>
-        Org.Xml.Sax.ContentHandler ContentHandler { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLReader.html#getDTDHandler()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLReader.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
-        /// </summary>
-        Org.Xml.Sax.DTDHandler DTDHandler { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLReader.html#getEntityResolver()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLReader.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
-        /// </summary>
-        Org.Xml.Sax.EntityResolver EntityResolver { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLReader.html#getErrorHandler()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLReader.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
-        /// </summary>
-        Org.Xml.Sax.ErrorHandler ErrorHandler { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLReader.html#getFeature(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
-        bool GetFeature(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLReader.html#getProperty(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
-        object GetProperty(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLReader.html#parse(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        void Parse(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLReader.html#parse(org.xml.sax.InputSource)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        void Parse(Org.Xml.Sax.InputSource arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLReader.html#setFeature(java.lang.String,boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
-        void SetFeature(Java.Lang.String arg0, bool arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLReader.html#setProperty(java.lang.String,java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
-        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
-        void SetProperty(Java.Lang.String arg0, object arg1);
 
         #endregion
 

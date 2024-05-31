@@ -32,11 +32,6 @@ namespace Android.App
     public partial interface IZygotePreload
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ZygotePreload.html#doPreload(android.content.pm.ApplicationInfo)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Content.Pm.ApplicationInfo"/></param>
-        void DoPreload(Android.Content.Pm.ApplicationInfo arg0);
 
         #endregion
 

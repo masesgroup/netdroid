@@ -32,21 +32,6 @@ namespace Java.Sql
     public partial interface IWrapper
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Wrapper.html#unwrap(java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        T Unwrap<T>(Java.Lang.Class arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Wrapper.html#isWrapperFor(java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        bool IsWrapperFor(Java.Lang.Class arg0);
 
         #endregion
 

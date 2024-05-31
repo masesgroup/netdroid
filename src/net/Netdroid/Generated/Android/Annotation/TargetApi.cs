@@ -32,11 +32,6 @@ namespace Android.Annotation
     public partial interface ITargetApi : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/annotation/TargetApi.html#value()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        int Value();
 
         #endregion
 

@@ -32,20 +32,6 @@ namespace Java.Net
     public partial interface ISocketOptions
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/SocketOptions.html#getOption(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Net.SocketException"/>
-        object GetOption(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/SocketOptions.html#setOption(int,java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <exception cref="Java.Net.SocketException"/>
-        void SetOption(int arg0, object arg1);
 
         #endregion
 

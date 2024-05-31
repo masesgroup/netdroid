@@ -32,10 +32,6 @@ namespace Java.Lang.Reflect
     public partial interface IGenericArrayType : Java.Lang.Reflect.IType
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/GenericArrayType.html#getGenericComponentType()"/> 
-        /// </summary>
-        Java.Lang.Reflect.Type GenericComponentType { get; }
 
         #endregion
 

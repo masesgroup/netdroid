@@ -32,22 +32,6 @@ namespace Javax.Xml.Transform
     public partial interface ISourceLocator
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/SourceLocator.html#getColumnNumber()"/> 
-        /// </summary>
-        int ColumnNumber { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/SourceLocator.html#getLineNumber()"/> 
-        /// </summary>
-        int LineNumber { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/SourceLocator.html#getPublicId()"/> 
-        /// </summary>
-        Java.Lang.String PublicId { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/SourceLocator.html#getSystemId()"/> 
-        /// </summary>
-        Java.Lang.String SystemId { get; }
 
         #endregion
 

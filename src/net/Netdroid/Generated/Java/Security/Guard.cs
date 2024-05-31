@@ -32,12 +32,6 @@ namespace Java.Security
     public partial interface IGuard
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Guard.html#checkGuard(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <exception cref="Java.Lang.SecurityException"/>
-        void CheckGuard(object arg0);
 
         #endregion
 

@@ -32,16 +32,6 @@ namespace Android.Speech
     public partial interface IRecognitionSupportCallback
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionSupportCallback.html#onError(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void OnError(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionSupportCallback.html#onSupportResult(android.speech.RecognitionSupport)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Speech.RecognitionSupport"/></param>
-        void OnSupportResult(Android.Speech.RecognitionSupport arg0);
 
         #endregion
 
