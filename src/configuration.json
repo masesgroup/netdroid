@@ -32,6 +32,7 @@
     "javax.management.NotificationFilter"
   ],
   "ClassesToAvoidJavaListener": [
+    "android.animation.AnimatorListenerAdapter",
     "android.bluetooth.BluetoothAdapter",
     "android.content.AbstractThreadedSyncAdapter",
     "android.hardware.TriggerEventListener",
@@ -52,17 +53,20 @@
     "android.text.method.MetaKeyKeyListener",
     "android.text.method.QwertyKeyListener",
     "android.text.method.TimeKeyListener",
+    "android.widget.ArrayAdapter",
+    "android.widget.CursorTreeAdapter",
+    "android.widget.HeaderViewListAdapter",
     "android.widget.ResourceCursorAdapter",
     "android.widget.ResourceCursorTreeAdapter",
     "android.widget.SimpleCursorAdapter",
     "android.widget.SimpleCursorTreeAdapter",
     "android.widget.SimpleExpandableListAdapter",
     "android.view.OrientationEventListener",
-    "android.view.accessibility.CaptioningChangeListener"
+    "android.view.accessibility.CaptioningChangeListener",
+    "org.xml.sax.helpers.XMLReaderAdapter"
   ],
   "ClassesToAvoid": [
     "android.R",
-    "android.widget.ArrayAdapter",
     "java.lang.ProcessBuilder$Redirect$Type",
     "java.lang.Thread$UncaughtExceptionHandler",
     "java.util.Comparator",
