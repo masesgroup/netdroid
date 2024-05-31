@@ -23,7 +23,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.System
+namespace Android.SystemNs
 {
     #region StructTimeval
     public partial class StructTimeval
@@ -57,10 +57,10 @@ namespace Android.System
         /// <see href="https://developer.android.com/reference/android/system/StructTimeval.html#fromMillis(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Android.System.StructTimeval"/></returns>
-        public static Android.System.StructTimeval FromMillis(long arg0)
+        /// <returns><see cref="Android.SystemNs.StructTimeval"/></returns>
+        public static Android.SystemNs.StructTimeval FromMillis(long arg0)
         {
-            return SExecuteWithSignature<Android.System.StructTimeval>(LocalBridgeClazz, "fromMillis", "(J)Landroid/system/StructTimeval;", arg0);
+            return SExecuteWithSignature<Android.SystemNs.StructTimeval>(LocalBridgeClazz, "fromMillis", "(J)Landroid/system/StructTimeval;", arg0);
         }
 
         #endregion

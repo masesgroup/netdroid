@@ -24,7 +24,7 @@
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using System;
 
-namespace Android.System
+namespace Android.SystemNs
 {
     #region ErrnoException
     /// <summary>
@@ -399,7 +399,7 @@ namespace Android.System
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/system/StructTimespec.html"/>
     /// </summary>
-    public partial class StructTimespec : Java.Lang.Comparable<Android.System.StructTimespec>
+    public partial class StructTimespec : Java.Lang.Comparable<Android.SystemNs.StructTimespec>
     {
         const string _bridgeClassName = "android.system.StructTimespec";
         /// <summary>

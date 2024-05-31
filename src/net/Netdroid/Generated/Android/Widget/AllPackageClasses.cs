@@ -5375,12 +5375,8 @@ namespace Android.Widget
         /// </summary>
         public ResourceCursorAdapter() { InitializeHandlers(); }
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.ResourceCursorAdapter";
+    #warning Remember to build the Java class for event listener
 
-    
         // TODO: complete the class
 
     }
@@ -5434,12 +5430,8 @@ namespace Android.Widget
         /// </summary>
         public ResourceCursorTreeAdapter() { InitializeHandlers(); }
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.ResourceCursorTreeAdapter";
+    #warning Remember to build the Java class for event listener
 
-    
         // TODO: complete the class
 
     }
@@ -6159,12 +6151,8 @@ namespace Android.Widget
         /// </summary>
         public SimpleCursorAdapter() { InitializeHandlers(); }
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.SimpleCursorAdapter";
+    #warning Remember to build the Java class for event listener
 
-    
         // TODO: complete the class
         #region CursorToStringConverter
         /// <summary>
@@ -6310,12 +6298,8 @@ namespace Android.Widget
         /// </summary>
         public SimpleCursorTreeAdapter() { InitializeHandlers(); }
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.SimpleCursorTreeAdapter";
+    #warning Remember to build the Java class for event listener
 
-    
         // TODO: complete the class
         #region ViewBinder
         /// <summary>
@@ -6415,12 +6399,8 @@ namespace Android.Widget
         /// </summary>
         public SimpleExpandableListAdapter() { InitializeHandlers(); }
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.SimpleExpandableListAdapter";
+    #warning Remember to build the Java class for event listener
 
-    
         // TODO: complete the class
 
     }

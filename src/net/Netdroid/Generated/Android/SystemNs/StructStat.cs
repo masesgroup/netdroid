@@ -23,7 +23,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.System
+namespace Android.SystemNs
 {
     #region StructStat
     public partial class StructStat
@@ -40,12 +40,12 @@ namespace Android.System
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="long"/></param>
         /// <param name="arg7"><see cref="long"/></param>
-        /// <param name="arg8"><see cref="Android.System.StructTimespec"/></param>
-        /// <param name="arg9"><see cref="Android.System.StructTimespec"/></param>
-        /// <param name="arg10"><see cref="Android.System.StructTimespec"/></param>
+        /// <param name="arg8"><see cref="Android.SystemNs.StructTimespec"/></param>
+        /// <param name="arg9"><see cref="Android.SystemNs.StructTimespec"/></param>
+        /// <param name="arg10"><see cref="Android.SystemNs.StructTimespec"/></param>
         /// <param name="arg11"><see cref="long"/></param>
         /// <param name="arg12"><see cref="long"/></param>
-        public StructStat(long arg0, long arg1, int arg2, long arg3, int arg4, int arg5, long arg6, long arg7, Android.System.StructTimespec arg8, Android.System.StructTimespec arg9, Android.System.StructTimespec arg10, long arg11, long arg12)
+        public StructStat(long arg0, long arg1, int arg2, long arg3, int arg4, int arg5, long arg6, long arg7, Android.SystemNs.StructTimespec arg8, Android.SystemNs.StructTimespec arg9, Android.SystemNs.StructTimespec arg10, long arg11, long arg12)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12)
         {
         }
@@ -80,20 +80,20 @@ namespace Android.System
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/StructStat.html#st_atim"/>
         /// </summary>
-        public Android.System.StructTimespec st_atim { get { if (!_st_atimReady) { _st_atimContent = IGetField<Android.System.StructTimespec>("st_atim"); _st_atimReady = true; } return _st_atimContent; } }
-        private Android.System.StructTimespec _st_atimContent = default;
+        public Android.SystemNs.StructTimespec st_atim { get { if (!_st_atimReady) { _st_atimContent = IGetField<Android.SystemNs.StructTimespec>("st_atim"); _st_atimReady = true; } return _st_atimContent; } }
+        private Android.SystemNs.StructTimespec _st_atimContent = default;
         private bool _st_atimReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/StructStat.html#st_ctim"/>
         /// </summary>
-        public Android.System.StructTimespec st_ctim { get { if (!_st_ctimReady) { _st_ctimContent = IGetField<Android.System.StructTimespec>("st_ctim"); _st_ctimReady = true; } return _st_ctimContent; } }
-        private Android.System.StructTimespec _st_ctimContent = default;
+        public Android.SystemNs.StructTimespec st_ctim { get { if (!_st_ctimReady) { _st_ctimContent = IGetField<Android.SystemNs.StructTimespec>("st_ctim"); _st_ctimReady = true; } return _st_ctimContent; } }
+        private Android.SystemNs.StructTimespec _st_ctimContent = default;
         private bool _st_ctimReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/StructStat.html#st_mtim"/>
         /// </summary>
-        public Android.System.StructTimespec st_mtim { get { if (!_st_mtimReady) { _st_mtimContent = IGetField<Android.System.StructTimespec>("st_mtim"); _st_mtimReady = true; } return _st_mtimContent; } }
-        private Android.System.StructTimespec _st_mtimContent = default;
+        public Android.SystemNs.StructTimespec st_mtim { get { if (!_st_mtimReady) { _st_mtimContent = IGetField<Android.SystemNs.StructTimespec>("st_mtim"); _st_mtimReady = true; } return _st_mtimContent; } }
+        private Android.SystemNs.StructTimespec _st_mtimContent = default;
         private bool _st_mtimReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/StructStat.html#st_gid"/>
