@@ -154,6 +154,13 @@ namespace Android.Content.Pm
         private static int _FOREGROUND_SERVICE_TYPE_MICROPHONEContent = default;
         private static bool _FOREGROUND_SERVICE_TYPE_MICROPHONEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_NONE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FOREGROUND_SERVICE_TYPE_NONE { get { if (!_FOREGROUND_SERVICE_TYPE_NONEReady) { _FOREGROUND_SERVICE_TYPE_NONEContent = SGetField<int>(LocalBridgeClazz, "FOREGROUND_SERVICE_TYPE_NONE"); _FOREGROUND_SERVICE_TYPE_NONEReady = true; } return _FOREGROUND_SERVICE_TYPE_NONEContent; } }
+        private static int _FOREGROUND_SERVICE_TYPE_NONEContent = default;
+        private static bool _FOREGROUND_SERVICE_TYPE_NONEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ServiceInfo.html#FOREGROUND_SERVICE_TYPE_PHONE_CALL"/>
         /// </summary>
         public static int FOREGROUND_SERVICE_TYPE_PHONE_CALL { get { if (!_FOREGROUND_SERVICE_TYPE_PHONE_CALLReady) { _FOREGROUND_SERVICE_TYPE_PHONE_CALLContent = SGetField<int>(LocalBridgeClazz, "FOREGROUND_SERVICE_TYPE_PHONE_CALL"); _FOREGROUND_SERVICE_TYPE_PHONE_CALLReady = true; } return _FOREGROUND_SERVICE_TYPE_PHONE_CALLContent; } }

@@ -758,6 +758,13 @@ namespace Android.Hardware.Camera2
         private static int _CONTROL_SCENE_MODE_HDRContent = default;
         private static bool _CONTROL_SCENE_MODE_HDRReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_SCENE_MODE_HIGH_SPEED_VIDEO"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int CONTROL_SCENE_MODE_HIGH_SPEED_VIDEO { get { if (!_CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOReady) { _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOContent = SGetField<int>(LocalBridgeClazz, "CONTROL_SCENE_MODE_HIGH_SPEED_VIDEO"); _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOReady = true; } return _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOContent; } }
+        private static int _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOContent = default;
+        private static bool _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_SCENE_MODE_LANDSCAPE"/>
         /// </summary>
         public static int CONTROL_SCENE_MODE_LANDSCAPE { get { if (!_CONTROL_SCENE_MODE_LANDSCAPEReady) { _CONTROL_SCENE_MODE_LANDSCAPEContent = SGetField<int>(LocalBridgeClazz, "CONTROL_SCENE_MODE_LANDSCAPE"); _CONTROL_SCENE_MODE_LANDSCAPEReady = true; } return _CONTROL_SCENE_MODE_LANDSCAPEContent; } }
@@ -2443,6 +2450,13 @@ namespace Android.Hardware.Camera2
         public static int CONTROL_SCENE_MODE_HDR { get { if (!_CONTROL_SCENE_MODE_HDRReady) { _CONTROL_SCENE_MODE_HDRContent = SGetField<int>(LocalBridgeClazz, "CONTROL_SCENE_MODE_HDR"); _CONTROL_SCENE_MODE_HDRReady = true; } return _CONTROL_SCENE_MODE_HDRContent; } }
         private static int _CONTROL_SCENE_MODE_HDRContent = default;
         private static bool _CONTROL_SCENE_MODE_HDRReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_SCENE_MODE_HIGH_SPEED_VIDEO"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int CONTROL_SCENE_MODE_HIGH_SPEED_VIDEO { get { if (!_CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOReady) { _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOContent = SGetField<int>(LocalBridgeClazz, "CONTROL_SCENE_MODE_HIGH_SPEED_VIDEO"); _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOReady = true; } return _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOContent; } }
+        private static int _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOContent = default;
+        private static bool _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_SCENE_MODE_LANDSCAPE"/>
         /// </summary>

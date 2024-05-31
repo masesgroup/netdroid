@@ -278,6 +278,15 @@ namespace Android.Os
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSdkSandbox", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Process.html#supportsProcesses()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public static bool SupportsProcesses()
+        {
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "supportsProcesses", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Process.html#myPid()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>

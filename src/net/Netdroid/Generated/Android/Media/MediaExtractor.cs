@@ -315,6 +315,15 @@ namespace Android.Media
         {
             IExecuteWithSignature("setDataSource", "(Ljava/lang/String;)V", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#setMediaCas(android.media.MediaCas)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.MediaCas"/></param>
+        [System.Obsolete()]
+        public void SetMediaCas(Android.Media.MediaCas arg0)
+        {
+            IExecuteWithSignature("setMediaCas", "(Landroid/media/MediaCas;)V", arg0);
+        }
 
         #endregion
 

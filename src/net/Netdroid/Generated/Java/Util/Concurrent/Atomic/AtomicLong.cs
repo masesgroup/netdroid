@@ -99,6 +99,17 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndSet", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSet(long,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool WeakCompareAndSet(long arg0, long arg1)
+        {
+            return IExecute<bool>("weakCompareAndSet", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSetAcquire(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>

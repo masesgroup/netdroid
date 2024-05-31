@@ -524,6 +524,16 @@ namespace Android.Security.Keystore
                 return IExecuteWithSignature<Android.Security.Keystore.KeyGenParameterSpec.Builder>("setUserAuthenticationRequired", "(Z)Landroid/security/keystore/KeyGenParameterSpec$Builder;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.Builder.html#setUserAuthenticationValidityDurationSeconds(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Android.Security.Keystore.KeyGenParameterSpec.Builder"/></returns>
+            [System.Obsolete()]
+            public Android.Security.Keystore.KeyGenParameterSpec.Builder SetUserAuthenticationValidityDurationSeconds(int arg0)
+            {
+                return IExecuteWithSignature<Android.Security.Keystore.KeyGenParameterSpec.Builder>("setUserAuthenticationValidityDurationSeconds", "(I)Landroid/security/keystore/KeyGenParameterSpec$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/security/keystore/KeyGenParameterSpec.Builder.html#setUserAuthenticationValidWhileOnBody(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>

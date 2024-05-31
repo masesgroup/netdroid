@@ -37,6 +37,41 @@ namespace Android.App
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#THEME_DEVICE_DEFAULT_DARK"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int THEME_DEVICE_DEFAULT_DARK { get { if (!_THEME_DEVICE_DEFAULT_DARKReady) { _THEME_DEVICE_DEFAULT_DARKContent = SGetField<int>(LocalBridgeClazz, "THEME_DEVICE_DEFAULT_DARK"); _THEME_DEVICE_DEFAULT_DARKReady = true; } return _THEME_DEVICE_DEFAULT_DARKContent; } }
+        private static int _THEME_DEVICE_DEFAULT_DARKContent = default;
+        private static bool _THEME_DEVICE_DEFAULT_DARKReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#THEME_DEVICE_DEFAULT_LIGHT"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int THEME_DEVICE_DEFAULT_LIGHT { get { if (!_THEME_DEVICE_DEFAULT_LIGHTReady) { _THEME_DEVICE_DEFAULT_LIGHTContent = SGetField<int>(LocalBridgeClazz, "THEME_DEVICE_DEFAULT_LIGHT"); _THEME_DEVICE_DEFAULT_LIGHTReady = true; } return _THEME_DEVICE_DEFAULT_LIGHTContent; } }
+        private static int _THEME_DEVICE_DEFAULT_LIGHTContent = default;
+        private static bool _THEME_DEVICE_DEFAULT_LIGHTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#THEME_HOLO_DARK"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int THEME_HOLO_DARK { get { if (!_THEME_HOLO_DARKReady) { _THEME_HOLO_DARKContent = SGetField<int>(LocalBridgeClazz, "THEME_HOLO_DARK"); _THEME_HOLO_DARKReady = true; } return _THEME_HOLO_DARKContent; } }
+        private static int _THEME_HOLO_DARKContent = default;
+        private static bool _THEME_HOLO_DARKReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#THEME_HOLO_LIGHT"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int THEME_HOLO_LIGHT { get { if (!_THEME_HOLO_LIGHTReady) { _THEME_HOLO_LIGHTContent = SGetField<int>(LocalBridgeClazz, "THEME_HOLO_LIGHT"); _THEME_HOLO_LIGHTReady = true; } return _THEME_HOLO_LIGHTContent; } }
+        private static int _THEME_HOLO_LIGHTContent = default;
+        private static bool _THEME_HOLO_LIGHTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#THEME_TRADITIONAL"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int THEME_TRADITIONAL { get { if (!_THEME_TRADITIONALReady) { _THEME_TRADITIONALContent = SGetField<int>(LocalBridgeClazz, "THEME_TRADITIONAL"); _THEME_TRADITIONALReady = true; } return _THEME_TRADITIONALContent; } }
+        private static int _THEME_TRADITIONALContent = default;
+        private static bool _THEME_TRADITIONALReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -80,6 +115,66 @@ namespace Android.App
         public void SetButton(int arg0, Java.Lang.CharSequence arg1, Android.Os.Message arg2)
         {
             IExecute("setButton", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Android.Content.DialogInterface.OnClickListener"/></param>
+        [System.Obsolete()]
+        public void SetButton(Java.Lang.CharSequence arg0, Android.Content.DialogInterface.OnClickListener arg1)
+        {
+            IExecute("setButton", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton(java.lang.CharSequence,android.os.Message)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Message"/></param>
+        [System.Obsolete()]
+        public void SetButton(Java.Lang.CharSequence arg0, Android.Os.Message arg1)
+        {
+            IExecute("setButton", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton2(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Android.Content.DialogInterface.OnClickListener"/></param>
+        [System.Obsolete()]
+        public void SetButton2(Java.Lang.CharSequence arg0, Android.Content.DialogInterface.OnClickListener arg1)
+        {
+            IExecute("setButton2", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton2(java.lang.CharSequence,android.os.Message)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Message"/></param>
+        [System.Obsolete()]
+        public void SetButton2(Java.Lang.CharSequence arg0, Android.Os.Message arg1)
+        {
+            IExecute("setButton2", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton3(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Android.Content.DialogInterface.OnClickListener"/></param>
+        [System.Obsolete()]
+        public void SetButton3(Java.Lang.CharSequence arg0, Android.Content.DialogInterface.OnClickListener arg1)
+        {
+            IExecute("setButton3", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton3(java.lang.CharSequence,android.os.Message)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Message"/></param>
+        [System.Obsolete()]
+        public void SetButton3(Java.Lang.CharSequence arg0, Android.Os.Message arg1)
+        {
+            IExecute("setButton3", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AlertDialog.html#setCustomTitle(android.view.View)"/>
@@ -278,6 +373,16 @@ namespace Android.App
             public Android.App.AlertDialog.Builder SetIconAttribute(int arg0)
             {
                 return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setIconAttribute", "(I)Landroid/app/AlertDialog$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setInverseBackgroundForced(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.App.AlertDialog.Builder"/></returns>
+            [System.Obsolete()]
+            public Android.App.AlertDialog.Builder SetInverseBackgroundForced(bool arg0)
+            {
+                return IExecuteWithSignature<Android.App.AlertDialog.Builder>("setInverseBackgroundForced", "(Z)Landroid/app/AlertDialog$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/AlertDialog.Builder.html#setItems(int,android.content.DialogInterface.OnClickListener)"/>

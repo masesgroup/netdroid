@@ -113,6 +113,39 @@ namespace Android.Telephony
             return SExecute<bool>(LocalBridgeClazz, "areSamePhoneNumber", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#compare(android.content.Context,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public static bool Compare(Android.Content.Context arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        {
+            return SExecute<bool>(LocalBridgeClazz, "compare", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#compare(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public static bool Compare(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return SExecute<bool>(LocalBridgeClazz, "compare", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#isEmergencyNumber(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public static bool IsEmergencyNumber(Java.Lang.String arg0)
+        {
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isEmergencyNumber", "(Ljava/lang/String;)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#isGlobalPhoneNumber(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -129,6 +162,17 @@ namespace Android.Telephony
         public static bool IsISODigit(char arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isISODigit", "(C)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#isLocalEmergencyNumber(android.content.Context,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public static bool IsLocalEmergencyNumber(Android.Content.Context arg0, Java.Lang.String arg1)
+        {
+            return SExecute<bool>(LocalBridgeClazz, "isLocalEmergencyNumber", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#isVoiceMailNumber(java.lang.String)"/>
@@ -177,6 +221,16 @@ namespace Android.Telephony
             return SExecuteArray<byte>(LocalBridgeClazz, "numberToCalledPartyBCD", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#numberToCalledPartyBCD(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="byte"/></returns>
+        [System.Obsolete()]
+        public static byte[] NumberToCalledPartyBCD(Java.Lang.String arg0)
+        {
+            return SExecuteWithSignatureArray<byte>(LocalBridgeClazz, "numberToCalledPartyBCD", "(Ljava/lang/String;)[B", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#is12Key(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
@@ -222,6 +276,16 @@ namespace Android.Telephony
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isStartsPostDial", "(C)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#getFormatTypeForLocale(java.util.Locale)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public static int GetFormatTypeForLocale(Java.Util.Locale arg0)
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getFormatTypeForLocale", "(Ljava/util/Locale;)I", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#toaFromString(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -252,6 +316,18 @@ namespace Android.Telephony
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "calledPartyBCDFragmentToString", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#calledPartyBCDFragmentToString(byte[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public static Java.Lang.String CalledPartyBCDFragmentToString(byte[] arg0, int arg1, int arg2)
+        {
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "calledPartyBCDFragmentToString", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#calledPartyBCDToString(byte[],int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -262,6 +338,18 @@ namespace Android.Telephony
         public static Java.Lang.String CalledPartyBCDToString(byte[] arg0, int arg1, int arg2, int arg3)
         {
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "calledPartyBCDToString", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#calledPartyBCDToString(byte[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public static Java.Lang.String CalledPartyBCDToString(byte[] arg0, int arg1, int arg2)
+        {
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "calledPartyBCDToString", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#convertKeypadLettersToDigits(java.lang.String)"/>
@@ -310,6 +398,16 @@ namespace Android.Telephony
         public static Java.Lang.String FormatNumber(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "formatNumber", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#formatNumber(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public static Java.Lang.String FormatNumber(Java.Lang.String arg0)
+        {
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "formatNumber", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#formatNumberToE164(java.lang.String,java.lang.String)"/>
@@ -405,6 +503,34 @@ namespace Android.Telephony
         public static void AddTtsSpan(Android.Text.Spannable arg0, int arg1, int arg2)
         {
             SExecute(LocalBridgeClazz, "addTtsSpan", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#formatJapaneseNumber(android.text.Editable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Text.Editable"/></param>
+        [System.Obsolete()]
+        public static void FormatJapaneseNumber(Android.Text.Editable arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "formatJapaneseNumber", "(Landroid/text/Editable;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#formatNanpNumber(android.text.Editable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Text.Editable"/></param>
+        [System.Obsolete()]
+        public static void FormatNanpNumber(Android.Text.Editable arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "formatNanpNumber", "(Landroid/text/Editable;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#formatNumber(android.text.Editable,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Text.Editable"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public static void FormatNumber(Android.Text.Editable arg0, int arg1)
+        {
+            SExecute(LocalBridgeClazz, "formatNumber", arg0, arg1);
         }
 
         #endregion

@@ -113,6 +113,14 @@ namespace Android.Speech.Tts
             get { return IExecuteWithSignature<int>("getSpeechRate", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getText()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String Text
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getVariant()"/> 
         /// </summary>
         public Java.Lang.String Variant

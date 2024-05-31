@@ -188,6 +188,13 @@ namespace Android.App
         private static Java.Lang.String _COLUMN_LAST_MODIFIED_TIMESTAMPContent = default;
         private static bool _COLUMN_LAST_MODIFIED_TIMESTAMPReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/DownloadManager.html#COLUMN_LOCAL_FILENAME"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String COLUMN_LOCAL_FILENAME { get { if (!_COLUMN_LOCAL_FILENAMEReady) { _COLUMN_LOCAL_FILENAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "COLUMN_LOCAL_FILENAME"); _COLUMN_LOCAL_FILENAMEReady = true; } return _COLUMN_LOCAL_FILENAMEContent; } }
+        private static Java.Lang.String _COLUMN_LOCAL_FILENAMEContent = default;
+        private static bool _COLUMN_LOCAL_FILENAMEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DownloadManager.html#COLUMN_LOCAL_URI"/>
         /// </summary>
         public static Java.Lang.String COLUMN_LOCAL_URI { get { if (!_COLUMN_LOCAL_URIReady) { _COLUMN_LOCAL_URIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "COLUMN_LOCAL_URI"); _COLUMN_LOCAL_URIReady = true; } return _COLUMN_LOCAL_URIContent; } }
@@ -324,6 +331,40 @@ namespace Android.App
         public Java.Lang.String GetMimeTypeForDownloadedFile(long arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getMimeTypeForDownloadedFile", "(J)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/DownloadManager.html#addCompletedDownload(java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String,long,boolean,android.net.Uri,android.net.Uri)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg5"><see cref="long"/></param>
+        /// <param name="arg6"><see cref="bool"/></param>
+        /// <param name="arg7"><see cref="Android.Net.Uri"/></param>
+        /// <param name="arg8"><see cref="Android.Net.Uri"/></param>
+        /// <returns><see cref="long"/></returns>
+        [System.Obsolete()]
+        public long AddCompletedDownload(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2, Java.Lang.String arg3, Java.Lang.String arg4, long arg5, bool arg6, Android.Net.Uri arg7, Android.Net.Uri arg8)
+        {
+            return IExecute<long>("addCompletedDownload", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/DownloadManager.html#addCompletedDownload(java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String,long,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg5"><see cref="long"/></param>
+        /// <param name="arg6"><see cref="bool"/></param>
+        /// <returns><see cref="long"/></returns>
+        [System.Obsolete()]
+        public long AddCompletedDownload(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2, Java.Lang.String arg3, Java.Lang.String arg4, long arg5, bool arg6)
+        {
+            return IExecute<long>("addCompletedDownload", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DownloadManager.html#enqueue(android.app.DownloadManager.Request)"/>
@@ -564,6 +605,16 @@ namespace Android.App
                 return IExecuteWithSignature<Android.App.DownloadManager.Request>("setRequiresDeviceIdle", "(Z)Landroid/app/DownloadManager$Request;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/DownloadManager.Request.html#setShowRunningNotification(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.App.DownloadManager.Request"/></returns>
+            [System.Obsolete()]
+            public Android.App.DownloadManager.Request SetShowRunningNotification(bool arg0)
+            {
+                return IExecuteWithSignature<Android.App.DownloadManager.Request>("setShowRunningNotification", "(Z)Landroid/app/DownloadManager$Request;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/DownloadManager.Request.html#setTitle(java.lang.CharSequence)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -571,6 +622,24 @@ namespace Android.App
             public Android.App.DownloadManager.Request SetTitle(Java.Lang.CharSequence arg0)
             {
                 return IExecuteWithSignature<Android.App.DownloadManager.Request>("setTitle", "(Ljava/lang/CharSequence;)Landroid/app/DownloadManager$Request;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/DownloadManager.Request.html#setVisibleInDownloadsUi(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.App.DownloadManager.Request"/></returns>
+            [System.Obsolete()]
+            public Android.App.DownloadManager.Request SetVisibleInDownloadsUi(bool arg0)
+            {
+                return IExecuteWithSignature<Android.App.DownloadManager.Request>("setVisibleInDownloadsUi", "(Z)Landroid/app/DownloadManager$Request;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/DownloadManager.Request.html#allowScanningByMediaScanner()"/>
+            /// </summary>
+            [System.Obsolete()]
+            public void AllowScanningByMediaScanner()
+            {
+                IExecuteWithSignature("allowScanningByMediaScanner", "()V");
             }
 
             #endregion

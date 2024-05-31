@@ -56,6 +56,20 @@ namespace Android.Os
         private static Java.Lang.String _BRANDContent = default;
         private static bool _BRANDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Build.html#CPU_ABI"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String CPU_ABI { get { if (!_CPU_ABIReady) { _CPU_ABIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CPU_ABI"); _CPU_ABIReady = true; } return _CPU_ABIContent; } }
+        private static Java.Lang.String _CPU_ABIContent = default;
+        private static bool _CPU_ABIReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Build.html#CPU_ABI2"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String CPU_ABI2 { get { if (!_CPU_ABI2Ready) { _CPU_ABI2Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "CPU_ABI2"); _CPU_ABI2Ready = true; } return _CPU_ABI2Content; } }
+        private static Java.Lang.String _CPU_ABI2Content = default;
+        private static bool _CPU_ABI2Ready = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Build.html#DEVICE"/>
         /// </summary>
         public static Java.Lang.String DEVICE { get { if (!_DEVICEReady) { _DEVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEVICE"); _DEVICEReady = true; } return _DEVICEContent; } }
@@ -115,6 +129,20 @@ namespace Android.Os
         public static Java.Lang.String PRODUCT { get { if (!_PRODUCTReady) { _PRODUCTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PRODUCT"); _PRODUCTReady = true; } return _PRODUCTContent; } }
         private static Java.Lang.String _PRODUCTContent = default;
         private static bool _PRODUCTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Build.html#RADIO"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String RADIO { get { if (!_RADIOReady) { _RADIOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RADIO"); _RADIOReady = true; } return _RADIOContent; } }
+        private static Java.Lang.String _RADIOContent = default;
+        private static bool _RADIOReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Build.html#SERIAL"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String SERIAL { get { if (!_SERIALReady) { _SERIALContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SERIAL"); _SERIALReady = true; } return _SERIALContent; } }
+        private static Java.Lang.String _SERIALContent = default;
+        private static bool _SERIALReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Build.html#SKU"/>
         /// </summary>
@@ -338,6 +366,13 @@ namespace Android.Os
             public static Java.Lang.String RELEASE_OR_PREVIEW_DISPLAY { get { if (!_RELEASE_OR_PREVIEW_DISPLAYReady) { _RELEASE_OR_PREVIEW_DISPLAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RELEASE_OR_PREVIEW_DISPLAY"); _RELEASE_OR_PREVIEW_DISPLAYReady = true; } return _RELEASE_OR_PREVIEW_DISPLAYContent; } }
             private static Java.Lang.String _RELEASE_OR_PREVIEW_DISPLAYContent = default;
             private static bool _RELEASE_OR_PREVIEW_DISPLAYReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Build.VERSION.html#SDK"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Java.Lang.String SDK { get { if (!_SDKReady) { _SDKContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SDK"); _SDKReady = true; } return _SDKContent; } }
+            private static Java.Lang.String _SDKContent = default;
+            private static bool _SDKReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/Build.VERSION.html#SECURITY_PATCH"/>
             /// </summary>

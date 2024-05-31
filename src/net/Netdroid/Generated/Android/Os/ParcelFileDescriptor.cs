@@ -90,6 +90,20 @@ namespace Android.Os
         private static int _MODE_TRUNCATEContent = default;
         private static bool _MODE_TRUNCATEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#MODE_WORLD_READABLE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MODE_WORLD_READABLE { get { if (!_MODE_WORLD_READABLEReady) { _MODE_WORLD_READABLEContent = SGetField<int>(LocalBridgeClazz, "MODE_WORLD_READABLE"); _MODE_WORLD_READABLEReady = true; } return _MODE_WORLD_READABLEContent; } }
+        private static int _MODE_WORLD_READABLEContent = default;
+        private static bool _MODE_WORLD_READABLEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#MODE_WORLD_WRITEABLE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MODE_WORLD_WRITEABLE { get { if (!_MODE_WORLD_WRITEABLEReady) { _MODE_WORLD_WRITEABLEContent = SGetField<int>(LocalBridgeClazz, "MODE_WORLD_WRITEABLE"); _MODE_WORLD_WRITEABLEReady = true; } return _MODE_WORLD_WRITEABLEContent; } }
+        private static int _MODE_WORLD_WRITEABLEContent = default;
+        private static bool _MODE_WORLD_WRITEABLEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#MODE_WRITE_ONLY"/>
         /// </summary>
         public static int MODE_WRITE_ONLY { get { if (!_MODE_WRITE_ONLYReady) { _MODE_WRITE_ONLYContent = SGetField<int>(LocalBridgeClazz, "MODE_WRITE_ONLY"); _MODE_WRITE_ONLYReady = true; } return _MODE_WRITE_ONLYContent; } }

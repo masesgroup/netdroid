@@ -136,6 +136,14 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getConnectedDevices()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Util.List<Android.Bluetooth.BluetoothDevice> ConnectedDevices
+        {
+            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getConnectedDevices", "()Ljava/util/List;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getDevice()"/> 
         /// </summary>
         public Android.Bluetooth.BluetoothDevice Device
@@ -245,6 +253,36 @@ namespace Android.Bluetooth
             return IExecute<bool>("setCharacteristicNotification", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#writeCharacteristic(android.bluetooth.BluetoothGattCharacteristic)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothGattCharacteristic"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool WriteCharacteristic(Android.Bluetooth.BluetoothGattCharacteristic arg0)
+        {
+            return IExecuteWithSignature<bool>("writeCharacteristic", "(Landroid/bluetooth/BluetoothGattCharacteristic;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#writeDescriptor(android.bluetooth.BluetoothGattDescriptor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothGattDescriptor"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool WriteDescriptor(Android.Bluetooth.BluetoothGattDescriptor arg0)
+        {
+            return IExecuteWithSignature<bool>("writeDescriptor", "(Landroid/bluetooth/BluetoothGattDescriptor;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getConnectionState(android.bluetooth.BluetoothDevice)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothDevice"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int GetConnectionState(Android.Bluetooth.BluetoothDevice arg0)
+        {
+            return IExecuteWithSignature<int>("getConnectionState", "(Landroid/bluetooth/BluetoothDevice;)I", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#writeCharacteristic(android.bluetooth.BluetoothGattCharacteristic,byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothGattCharacteristic"/></param>
@@ -266,11 +304,30 @@ namespace Android.Bluetooth
             return IExecute<int>("writeDescriptor", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getDevicesMatchingConnectionStates(int[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        [System.Obsolete()]
+        public Java.Util.List<Android.Bluetooth.BluetoothDevice> GetDevicesMatchingConnectionStates(int[] arg0)
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getDevicesMatchingConnectionStates", "([I)Ljava/util/List;", new object[] { arg0 });
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#abortReliableWrite()"/>
         /// </summary>
         public void AbortReliableWrite()
         {
             IExecuteWithSignature("abortReliableWrite", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#abortReliableWrite(android.bluetooth.BluetoothDevice)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothDevice"/></param>
+        [System.Obsolete()]
+        public void AbortReliableWrite(Android.Bluetooth.BluetoothDevice arg0)
+        {
+            IExecuteWithSignature("abortReliableWrite", "(Landroid/bluetooth/BluetoothDevice;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#close()"/>

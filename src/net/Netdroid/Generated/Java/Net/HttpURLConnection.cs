@@ -218,6 +218,13 @@ namespace Java.Net
         private static int _HTTP_SEE_OTHERContent = default;
         private static bool _HTTP_SEE_OTHERReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpURLConnection.html#HTTP_SERVER_ERROR"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int HTTP_SERVER_ERROR { get { if (!_HTTP_SERVER_ERRORReady) { _HTTP_SERVER_ERRORContent = SGetField<int>(LocalBridgeClazz, "HTTP_SERVER_ERROR"); _HTTP_SERVER_ERRORReady = true; } return _HTTP_SERVER_ERRORContent; } }
+        private static int _HTTP_SERVER_ERRORContent = default;
+        private static bool _HTTP_SERVER_ERRORReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/net/HttpURLConnection.html#HTTP_UNAUTHORIZED"/>
         /// </summary>
         public static int HTTP_UNAUTHORIZED { get { if (!_HTTP_UNAUTHORIZEDReady) { _HTTP_UNAUTHORIZEDContent = SGetField<int>(LocalBridgeClazz, "HTTP_UNAUTHORIZED"); _HTTP_UNAUTHORIZEDReady = true; } return _HTTP_UNAUTHORIZEDContent; } }

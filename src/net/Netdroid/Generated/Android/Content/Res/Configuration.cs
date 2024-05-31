@@ -126,6 +126,11 @@ namespace Android.Content.Res
         /// </summary>
         public int uiMode { get { return IGetField<int>("uiMode"); } set { ISetField("uiMode", value); } }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#locale"/>
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Util.Locale locale { get { return IGetField<Java.Util.Locale>("locale"); } set { ISetField("locale", value); } }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#CREATOR"/>
         /// </summary>
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
@@ -354,6 +359,13 @@ namespace Android.Content.Res
         private static int _ORIENTATION_PORTRAITContent = default;
         private static bool _ORIENTATION_PORTRAITReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#ORIENTATION_SQUARE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ORIENTATION_SQUARE { get { if (!_ORIENTATION_SQUAREReady) { _ORIENTATION_SQUAREContent = SGetField<int>(LocalBridgeClazz, "ORIENTATION_SQUARE"); _ORIENTATION_SQUAREReady = true; } return _ORIENTATION_SQUAREContent; } }
+        private static int _ORIENTATION_SQUAREContent = default;
+        private static bool _ORIENTATION_SQUAREReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#ORIENTATION_UNDEFINED"/>
         /// </summary>
         public static int ORIENTATION_UNDEFINED { get { if (!_ORIENTATION_UNDEFINEDReady) { _ORIENTATION_UNDEFINEDContent = SGetField<int>(LocalBridgeClazz, "ORIENTATION_UNDEFINED"); _ORIENTATION_UNDEFINEDReady = true; } return _ORIENTATION_UNDEFINEDContent; } }
@@ -509,6 +521,13 @@ namespace Android.Content.Res
         public static int TOUCHSCREEN_NOTOUCH { get { if (!_TOUCHSCREEN_NOTOUCHReady) { _TOUCHSCREEN_NOTOUCHContent = SGetField<int>(LocalBridgeClazz, "TOUCHSCREEN_NOTOUCH"); _TOUCHSCREEN_NOTOUCHReady = true; } return _TOUCHSCREEN_NOTOUCHContent; } }
         private static int _TOUCHSCREEN_NOTOUCHContent = default;
         private static bool _TOUCHSCREEN_NOTOUCHReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#TOUCHSCREEN_STYLUS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int TOUCHSCREEN_STYLUS { get { if (!_TOUCHSCREEN_STYLUSReady) { _TOUCHSCREEN_STYLUSContent = SGetField<int>(LocalBridgeClazz, "TOUCHSCREEN_STYLUS"); _TOUCHSCREEN_STYLUSReady = true; } return _TOUCHSCREEN_STYLUSContent; } }
+        private static int _TOUCHSCREEN_STYLUSContent = default;
+        private static bool _TOUCHSCREEN_STYLUSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Configuration.html#TOUCHSCREEN_UNDEFINED"/>
         /// </summary>

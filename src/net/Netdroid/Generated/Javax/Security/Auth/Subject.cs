@@ -75,6 +75,43 @@ namespace Javax.Security.Auth
         {
             return SExecute<T>(LocalBridgeClazz, "doAs", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedAction,java.security.AccessControlContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <param name="arg1"><see cref="Java.Security.PrivilegedAction"/></param>
+        /// <param name="arg2"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        [System.Obsolete()]
+        public static T DoAsPrivileged<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedAction<T> arg1, Java.Security.AccessControlContext arg2)
+        {
+            return SExecute<T>(LocalBridgeClazz, "doAsPrivileged", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedExceptionAction,java.security.AccessControlContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <param name="arg1"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
+        /// <param name="arg2"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        /// <exception cref="Java.Security.PrivilegedActionException"/>
+        [System.Obsolete()]
+        public static T DoAsPrivileged<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedExceptionAction<T> arg1, Java.Security.AccessControlContext arg2)
+        {
+            return SExecute<T>(LocalBridgeClazz, "doAsPrivileged", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html#getSubject(java.security.AccessControlContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <returns><see cref="Javax.Security.Auth.Subject"/></returns>
+        [System.Obsolete()]
+        public static Javax.Security.Auth.Subject GetSubject(Java.Security.AccessControlContext arg0)
+        {
+            return SExecuteWithSignature<Javax.Security.Auth.Subject>(LocalBridgeClazz, "getSubject", "(Ljava/security/AccessControlContext;)Ljavax/security/auth/Subject;", arg0);
+        }
 
         #endregion
 

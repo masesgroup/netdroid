@@ -100,6 +100,16 @@ namespace Android.Security.Identity
             return IExecute<Android.Security.Identity.WritableIdentityCredential>("createCredential", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredentialStore.html#deleteCredentialByName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="byte"/></returns>
+        [System.Obsolete()]
+        public byte[] DeleteCredentialByName(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignatureArray<byte>("deleteCredentialByName", "(Ljava/lang/String;)[B", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredentialStore.html#createPresentationSession(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

@@ -51,6 +51,19 @@ namespace Android.App
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#%3Cinit%3E(java.lang.String,android.content.ComponentName,android.net.Uri,int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg2"><see cref="Android.Net.Uri"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public AutomaticZenRule(Java.Lang.String arg0, Android.Content.ComponentName arg1, Android.Net.Uri arg2, int arg3, bool arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
 
         #endregion
 

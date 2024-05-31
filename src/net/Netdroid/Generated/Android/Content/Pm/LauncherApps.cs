@@ -415,6 +415,17 @@ namespace Android.Content.Pm
                 IExecute("onPackageLoadingProgressChanged", arg0, arg1, arg2);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.Callback.html#onPackagesSuspended(java.lang.String[],android.os.UserHandle,android.os.Bundle)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
+            /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
+            [System.Obsolete()]
+            public void OnPackagesSuspended(Java.Lang.String[] arg0, Android.Os.UserHandle arg1, Android.Os.Bundle arg2)
+            {
+                IExecute("onPackagesSuspended", arg0, arg1, arg2);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/LauncherApps.Callback.html#onPackagesSuspended(java.lang.String[],android.os.UserHandle)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>

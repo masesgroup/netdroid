@@ -76,6 +76,13 @@ namespace Android.Accessibilityservice
         private static int _CAPABILITY_CAN_PERFORM_GESTURESContent = default;
         private static bool _CAPABILITY_CAN_PERFORM_GESTURESReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITY"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITY { get { if (!_CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITYReady) { _CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITYContent = SGetField<int>(LocalBridgeClazz, "CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITY"); _CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITYReady = true; } return _CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITYContent; } }
+        private static int _CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITYContent = default;
+        private static bool _CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#CAPABILITY_CAN_REQUEST_FILTER_KEY_EVENTS"/>
         /// </summary>
         public static int CAPABILITY_CAN_REQUEST_FILTER_KEY_EVENTS { get { if (!_CAPABILITY_CAN_REQUEST_FILTER_KEY_EVENTSReady) { _CAPABILITY_CAN_REQUEST_FILTER_KEY_EVENTSContent = SGetField<int>(LocalBridgeClazz, "CAPABILITY_CAN_REQUEST_FILTER_KEY_EVENTS"); _CAPABILITY_CAN_REQUEST_FILTER_KEY_EVENTSReady = true; } return _CAPABILITY_CAN_REQUEST_FILTER_KEY_EVENTSContent; } }
@@ -190,6 +197,13 @@ namespace Android.Accessibilityservice
         private static int _FLAG_REQUEST_ACCESSIBILITY_BUTTONContent = default;
         private static bool _FLAG_REQUEST_ACCESSIBILITY_BUTTONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITY"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITY { get { if (!_FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITYReady) { _FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITYContent = SGetField<int>(LocalBridgeClazz, "FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITY"); _FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITYReady = true; } return _FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITYContent; } }
+        private static int _FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITYContent = default;
+        private static bool _FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#FLAG_REQUEST_FILTER_KEY_EVENTS"/>
         /// </summary>
         public static int FLAG_REQUEST_FILTER_KEY_EVENTS { get { if (!_FLAG_REQUEST_FILTER_KEY_EVENTSReady) { _FLAG_REQUEST_FILTER_KEY_EVENTSContent = SGetField<int>(LocalBridgeClazz, "FLAG_REQUEST_FILTER_KEY_EVENTS"); _FLAG_REQUEST_FILTER_KEY_EVENTSReady = true; } return _FLAG_REQUEST_FILTER_KEY_EVENTSContent; } }
@@ -273,11 +287,27 @@ namespace Android.Accessibilityservice
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getCanRetrieveWindowContent()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public bool CanRetrieveWindowContent
+        {
+            get { return IExecuteWithSignature<bool>("getCanRetrieveWindowContent", "()Z"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getCapabilities()"/> 
         /// </summary>
         public int Capabilities
         {
             get { return IExecuteWithSignature<int>("getCapabilities", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getDescription()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String Description
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityServiceInfo.html#getId()"/> 

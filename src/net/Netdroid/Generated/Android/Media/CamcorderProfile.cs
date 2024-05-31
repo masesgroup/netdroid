@@ -312,6 +312,27 @@ namespace Android.Media
 
         #region Static methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/CamcorderProfile.html#get(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Android.Media.CamcorderProfile"/></returns>
+        [System.Obsolete()]
+        public static Android.Media.CamcorderProfile Get(int arg0, int arg1)
+        {
+            return SExecute<Android.Media.CamcorderProfile>(LocalBridgeClazz, "get", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/CamcorderProfile.html#get(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Android.Media.CamcorderProfile"/></returns>
+        [System.Obsolete()]
+        public static Android.Media.CamcorderProfile Get(int arg0)
+        {
+            return SExecuteWithSignature<Android.Media.CamcorderProfile>(LocalBridgeClazz, "get", "(I)Landroid/media/CamcorderProfile;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/CamcorderProfile.html#getAll(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

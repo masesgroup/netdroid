@@ -29,6 +29,25 @@ namespace Java.Lang
     public partial class Integer : Java.Lang.IComparable<Java.Lang.Integer>, Java.Lang.Constant.IConstable, Java.Lang.Constant.IConstantDesc
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#%3Cinit%3E(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [System.Obsolete()]
+        public Integer(int arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html#%3Cinit%3E(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
+        [System.Obsolete()]
+        public Integer(Java.Lang.String arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 

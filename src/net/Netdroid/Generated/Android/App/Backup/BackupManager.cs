@@ -71,6 +71,16 @@ namespace Android.App.Backup
             return IExecuteWithSignature<Android.Os.UserHandle>("getUserForAncestralSerialNumber", "(J)Landroid/os/UserHandle;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/backup/BackupManager.html#requestRestore(android.app.backup.RestoreObserver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.Backup.RestoreObserver"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int RequestRestore(Android.App.Backup.RestoreObserver arg0)
+        {
+            return IExecuteWithSignature<int>("requestRestore", "(Landroid/app/backup/RestoreObserver;)I", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/backup/BackupManager.html#dataChanged()"/>
         /// </summary>
         public void DataChanged()

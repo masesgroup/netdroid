@@ -42,6 +42,14 @@ namespace Android.View
 
         #region Static methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#getAmbiguousGestureMultiplier()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static float AmbiguousGestureMultiplier
+        {
+            get { return SExecuteWithSignature<float>(LocalBridgeClazz, "getAmbiguousGestureMultiplier", "()F"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#getDefaultActionModeHideDuration()"/> 
         /// </summary>
         public static long DefaultActionModeHideDuration
@@ -54,6 +62,30 @@ namespace Android.View
         public static int DoubleTapTimeout
         {
             get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getDoubleTapTimeout", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#getEdgeSlop()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int EdgeSlop
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getEdgeSlop", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#getFadingEdgeLength()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int FadingEdgeLength
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getFadingEdgeLength", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#getGlobalActionKeyTimeout()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static long GlobalActionKeyTimeout
+        {
+            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getGlobalActionKeyTimeout", "()J"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#getJumpTapTimeout()"/> 
@@ -84,6 +116,30 @@ namespace Android.View
             get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getLongPressTimeout", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#getMaximumDrawingCacheSize()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int MaximumDrawingCacheSize
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaximumDrawingCacheSize", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#getMaximumFlingVelocity()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int MaximumFlingVelocity
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaximumFlingVelocity", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#getMinimumFlingVelocity()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int MinimumFlingVelocity
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMinimumFlingVelocity", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#getMultiPressTimeout()"/> 
         /// </summary>
         public static int MultiPressTimeout
@@ -105,6 +161,14 @@ namespace Android.View
             get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getScrollBarFadeDuration", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#getScrollBarSize()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int ScrollBarSize
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getScrollBarSize", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#getScrollDefaultDelay()"/> 
         /// </summary>
         public static int ScrollDefaultDelay
@@ -124,6 +188,22 @@ namespace Android.View
         public static int TapTimeout
         {
             get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getTapTimeout", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#getTouchSlop()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int TouchSlop
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getTouchSlop", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#getWindowTouchSlop()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int WindowTouchSlop
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getWindowTouchSlop", "()I"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewConfiguration.html#getZoomControlsTimeout()"/> 

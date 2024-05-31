@@ -29,6 +29,25 @@ namespace Java.Lang
     public partial class Byte : Java.Lang.IComparable<Java.Lang.Byte>, Java.Lang.Constant.IConstable
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#%3Cinit%3E(byte)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        [System.Obsolete()]
+        public Byte(byte arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#%3Cinit%3E(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
+        [System.Obsolete()]
+        public Byte(Java.Lang.String arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 

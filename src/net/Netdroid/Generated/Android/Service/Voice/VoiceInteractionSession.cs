@@ -354,12 +354,36 @@ namespace Android.Service.Voice
             IExecuteWithSignature("onDirectActionsInvalidated", "(Landroid/service/voice/VoiceInteractionSession$ActivityId;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onHandleAssist(android.os.Bundle,android.app.assist.AssistStructure,android.app.assist.AssistContent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg1"><see cref="Android.App.Assist.AssistStructure"/></param>
+        /// <param name="arg2"><see cref="Android.App.Assist.AssistContent"/></param>
+        [System.Obsolete()]
+        public void OnHandleAssist(Android.Os.Bundle arg0, Android.App.Assist.AssistStructure arg1, Android.App.Assist.AssistContent arg2)
+        {
+            IExecute("onHandleAssist", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onHandleAssist(android.service.voice.VoiceInteractionSession.AssistState)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Service.Voice.VoiceInteractionSession.AssistState"/></param>
         public void OnHandleAssist(Android.Service.Voice.VoiceInteractionSession.AssistState arg0)
         {
             IExecuteWithSignature("onHandleAssist", "(Landroid/service/voice/VoiceInteractionSession$AssistState;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onHandleAssistSecondary(android.os.Bundle,android.app.assist.AssistStructure,android.app.assist.AssistContent,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg1"><see cref="Android.App.Assist.AssistStructure"/></param>
+        /// <param name="arg2"><see cref="Android.App.Assist.AssistContent"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void OnHandleAssistSecondary(Android.Os.Bundle arg0, Android.App.Assist.AssistStructure arg1, Android.App.Assist.AssistContent arg2, int arg3, int arg4)
+        {
+            IExecute("onHandleAssistSecondary", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onHandleScreenshot(android.graphics.Bitmap)"/>
@@ -564,6 +588,14 @@ namespace Android.Service.Voice
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AbortVoiceRequest.html#getMessage()"/> 
+            /// </summary>
+            [System.Obsolete()]
+            public Java.Lang.CharSequence Message
+            {
+                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getMessage", "()Ljava/lang/CharSequence;"); }
+            }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AbortVoiceRequest.html#getVoicePrompt()"/> 
             /// </summary>
@@ -777,6 +809,14 @@ namespace Android.Service.Voice
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.CompleteVoiceRequest.html#getMessage()"/> 
+            /// </summary>
+            [System.Obsolete()]
+            public Java.Lang.CharSequence Message
+            {
+                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getMessage", "()Ljava/lang/CharSequence;"); }
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.CompleteVoiceRequest.html#getVoicePrompt()"/> 
             /// </summary>
             public Android.App.VoiceInteractor.Prompt VoicePrompt
@@ -822,6 +862,14 @@ namespace Android.Service.Voice
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.ConfirmationRequest.html#getPrompt()"/> 
+            /// </summary>
+            [System.Obsolete()]
+            public Java.Lang.CharSequence Prompt
+            {
+                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getPrompt", "()Ljava/lang/CharSequence;"); }
+            }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.ConfirmationRequest.html#getVoicePrompt()"/> 
             /// </summary>
@@ -940,6 +988,14 @@ namespace Android.Service.Voice
             public Android.App.VoiceInteractor.PickOptionRequest.Option[] Options
             {
                 get { return IExecuteWithSignatureArray<Android.App.VoiceInteractor.PickOptionRequest.Option>("getOptions", "()[Landroid/app/VoiceInteractor$PickOptionRequest$Option;"); }
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.PickOptionRequest.html#getPrompt()"/> 
+            /// </summary>
+            [System.Obsolete()]
+            public Java.Lang.CharSequence Prompt
+            {
+                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getPrompt", "()Ljava/lang/CharSequence;"); }
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.PickOptionRequest.html#getVoicePrompt()"/> 

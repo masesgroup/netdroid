@@ -74,6 +74,14 @@ namespace Java.Lang
             get { return SExecuteWithSignature<Java.Util.Properties>(LocalBridgeClazz, "getProperties", "()Ljava/util/Properties;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setProperties", "(Ljava/util/Properties;)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#getSecurityManager()"/> <see href="https://developer.android.com/reference/java.base/java/lang/System.html#setSecurityManager(java.lang.SecurityManager)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.SecurityManager SecurityManager
+        {
+            get { return SExecuteWithSignature<Java.Lang.SecurityManager>(LocalBridgeClazz, "getSecurityManager", "()Ljava/lang/SecurityManager;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setSecurityManager", "(Ljava/lang/SecurityManager;)V", value); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#console()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.Console"/></returns>

@@ -114,6 +114,13 @@ namespace Android.Media
         private static Java.Lang.String _EXTRA_RINGTONE_EXISTING_URIContent = default;
         private static bool _EXTRA_RINGTONE_EXISTING_URIReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#EXTRA_RINGTONE_INCLUDE_DRM"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String EXTRA_RINGTONE_INCLUDE_DRM { get { if (!_EXTRA_RINGTONE_INCLUDE_DRMReady) { _EXTRA_RINGTONE_INCLUDE_DRMContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_RINGTONE_INCLUDE_DRM"); _EXTRA_RINGTONE_INCLUDE_DRMReady = true; } return _EXTRA_RINGTONE_INCLUDE_DRMContent; } }
+        private static Java.Lang.String _EXTRA_RINGTONE_INCLUDE_DRMContent = default;
+        private static bool _EXTRA_RINGTONE_INCLUDE_DRMReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#EXTRA_RINGTONE_PICKED_URI"/>
         /// </summary>
         public static Java.Lang.String EXTRA_RINGTONE_PICKED_URI { get { if (!_EXTRA_RINGTONE_PICKED_URIReady) { _EXTRA_RINGTONE_PICKED_URIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_RINGTONE_PICKED_URI"); _EXTRA_RINGTONE_PICKED_URIReady = true; } return _EXTRA_RINGTONE_PICKED_URIContent; } }
@@ -253,6 +260,14 @@ namespace Android.Media
         public Android.Database.Cursor Cursor
         {
             get { return IExecuteWithSignature<Android.Database.Cursor>("getCursor", "()Landroid/database/Cursor;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#getIncludeDrm()"/> <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#setIncludeDrm(boolean)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public bool IncludeDrm
+        {
+            get { return IExecuteWithSignature<bool>("getIncludeDrm", "()Z"); } set { IExecuteWithSignature("setIncludeDrm", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#getRingtone(int)"/>

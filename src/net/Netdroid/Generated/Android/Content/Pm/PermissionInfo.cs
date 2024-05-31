@@ -29,6 +29,15 @@ namespace Android.Content.Pm
     public partial class PermissionInfo
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#%3Cinit%3E(android.content.pm.PermissionInfo)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Pm.PermissionInfo"/></param>
+        [System.Obsolete()]
+        public PermissionInfo(Android.Content.Pm.PermissionInfo arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 
@@ -49,6 +58,11 @@ namespace Android.Content.Pm
         /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#flags"/>
         /// </summary>
         public int flags { get { return IGetField<int>("flags"); } set { ISetField("flags", value); } }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#protectionLevel"/>
+        /// </summary>
+        [System.Obsolete()]
+        public int protectionLevel { get { return IGetField<int>("protectionLevel"); } set { ISetField("protectionLevel", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#nonLocalizedDescription"/>
         /// </summary>
@@ -154,6 +168,13 @@ namespace Android.Content.Pm
         private static int _PROTECTION_FLAG_SETUPContent = default;
         private static bool _PROTECTION_FLAG_SETUPReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#PROTECTION_FLAG_SYSTEM"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int PROTECTION_FLAG_SYSTEM { get { if (!_PROTECTION_FLAG_SYSTEMReady) { _PROTECTION_FLAG_SYSTEMContent = SGetField<int>(LocalBridgeClazz, "PROTECTION_FLAG_SYSTEM"); _PROTECTION_FLAG_SYSTEMReady = true; } return _PROTECTION_FLAG_SYSTEMContent; } }
+        private static int _PROTECTION_FLAG_SYSTEMContent = default;
+        private static bool _PROTECTION_FLAG_SYSTEMReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#PROTECTION_FLAG_VERIFIER"/>
         /// </summary>
         public static int PROTECTION_FLAG_VERIFIER { get { if (!_PROTECTION_FLAG_VERIFIERReady) { _PROTECTION_FLAG_VERIFIERContent = SGetField<int>(LocalBridgeClazz, "PROTECTION_FLAG_VERIFIER"); _PROTECTION_FLAG_VERIFIERReady = true; } return _PROTECTION_FLAG_VERIFIERContent; } }
@@ -166,6 +187,20 @@ namespace Android.Content.Pm
         private static int _PROTECTION_INTERNALContent = default;
         private static bool _PROTECTION_INTERNALReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#PROTECTION_MASK_BASE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int PROTECTION_MASK_BASE { get { if (!_PROTECTION_MASK_BASEReady) { _PROTECTION_MASK_BASEContent = SGetField<int>(LocalBridgeClazz, "PROTECTION_MASK_BASE"); _PROTECTION_MASK_BASEReady = true; } return _PROTECTION_MASK_BASEContent; } }
+        private static int _PROTECTION_MASK_BASEContent = default;
+        private static bool _PROTECTION_MASK_BASEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#PROTECTION_MASK_FLAGS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int PROTECTION_MASK_FLAGS { get { if (!_PROTECTION_MASK_FLAGSReady) { _PROTECTION_MASK_FLAGSContent = SGetField<int>(LocalBridgeClazz, "PROTECTION_MASK_FLAGS"); _PROTECTION_MASK_FLAGSReady = true; } return _PROTECTION_MASK_FLAGSContent; } }
+        private static int _PROTECTION_MASK_FLAGSContent = default;
+        private static bool _PROTECTION_MASK_FLAGSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#PROTECTION_NORMAL"/>
         /// </summary>
         public static int PROTECTION_NORMAL { get { if (!_PROTECTION_NORMALReady) { _PROTECTION_NORMALContent = SGetField<int>(LocalBridgeClazz, "PROTECTION_NORMAL"); _PROTECTION_NORMALReady = true; } return _PROTECTION_NORMALContent; } }
@@ -177,6 +212,13 @@ namespace Android.Content.Pm
         public static int PROTECTION_SIGNATURE { get { if (!_PROTECTION_SIGNATUREReady) { _PROTECTION_SIGNATUREContent = SGetField<int>(LocalBridgeClazz, "PROTECTION_SIGNATURE"); _PROTECTION_SIGNATUREReady = true; } return _PROTECTION_SIGNATUREContent; } }
         private static int _PROTECTION_SIGNATUREContent = default;
         private static bool _PROTECTION_SIGNATUREReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#PROTECTION_SIGNATURE_OR_SYSTEM"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int PROTECTION_SIGNATURE_OR_SYSTEM { get { if (!_PROTECTION_SIGNATURE_OR_SYSTEMReady) { _PROTECTION_SIGNATURE_OR_SYSTEMContent = SGetField<int>(LocalBridgeClazz, "PROTECTION_SIGNATURE_OR_SYSTEM"); _PROTECTION_SIGNATURE_OR_SYSTEMReady = true; } return _PROTECTION_SIGNATURE_OR_SYSTEMContent; } }
+        private static int _PROTECTION_SIGNATURE_OR_SYSTEMContent = default;
+        private static bool _PROTECTION_SIGNATURE_OR_SYSTEMReady = false; // this is used because in case of generics 
 
         #endregion
 

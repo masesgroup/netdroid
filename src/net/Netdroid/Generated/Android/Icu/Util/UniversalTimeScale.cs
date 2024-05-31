@@ -104,6 +104,13 @@ namespace Android.Icu.Util
         private static int _MAC_TIMEContent = default;
         private static bool _MAC_TIMEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/UniversalTimeScale.html#MAX_SCALE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MAX_SCALE { get { if (!_MAX_SCALEReady) { _MAX_SCALEContent = SGetField<int>(LocalBridgeClazz, "MAX_SCALE"); _MAX_SCALEReady = true; } return _MAX_SCALEContent; } }
+        private static int _MAX_SCALEContent = default;
+        private static bool _MAX_SCALEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/UniversalTimeScale.html#TO_MAX_VALUE"/>
         /// </summary>
         public static int TO_MAX_VALUE { get { if (!_TO_MAX_VALUEReady) { _TO_MAX_VALUEContent = SGetField<int>(LocalBridgeClazz, "TO_MAX_VALUE"); _TO_MAX_VALUEReady = true; } return _TO_MAX_VALUEContent; } }

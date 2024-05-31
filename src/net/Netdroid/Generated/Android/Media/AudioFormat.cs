@@ -44,6 +44,34 @@ namespace Android.Media
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_CONFIGURATION_DEFAULT"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int CHANNEL_CONFIGURATION_DEFAULT { get { if (!_CHANNEL_CONFIGURATION_DEFAULTReady) { _CHANNEL_CONFIGURATION_DEFAULTContent = SGetField<int>(LocalBridgeClazz, "CHANNEL_CONFIGURATION_DEFAULT"); _CHANNEL_CONFIGURATION_DEFAULTReady = true; } return _CHANNEL_CONFIGURATION_DEFAULTContent; } }
+        private static int _CHANNEL_CONFIGURATION_DEFAULTContent = default;
+        private static bool _CHANNEL_CONFIGURATION_DEFAULTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_CONFIGURATION_INVALID"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int CHANNEL_CONFIGURATION_INVALID { get { if (!_CHANNEL_CONFIGURATION_INVALIDReady) { _CHANNEL_CONFIGURATION_INVALIDContent = SGetField<int>(LocalBridgeClazz, "CHANNEL_CONFIGURATION_INVALID"); _CHANNEL_CONFIGURATION_INVALIDReady = true; } return _CHANNEL_CONFIGURATION_INVALIDContent; } }
+        private static int _CHANNEL_CONFIGURATION_INVALIDContent = default;
+        private static bool _CHANNEL_CONFIGURATION_INVALIDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_CONFIGURATION_MONO"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int CHANNEL_CONFIGURATION_MONO { get { if (!_CHANNEL_CONFIGURATION_MONOReady) { _CHANNEL_CONFIGURATION_MONOContent = SGetField<int>(LocalBridgeClazz, "CHANNEL_CONFIGURATION_MONO"); _CHANNEL_CONFIGURATION_MONOReady = true; } return _CHANNEL_CONFIGURATION_MONOContent; } }
+        private static int _CHANNEL_CONFIGURATION_MONOContent = default;
+        private static bool _CHANNEL_CONFIGURATION_MONOReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_CONFIGURATION_STEREO"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int CHANNEL_CONFIGURATION_STEREO { get { if (!_CHANNEL_CONFIGURATION_STEREOReady) { _CHANNEL_CONFIGURATION_STEREOContent = SGetField<int>(LocalBridgeClazz, "CHANNEL_CONFIGURATION_STEREO"); _CHANNEL_CONFIGURATION_STEREOReady = true; } return _CHANNEL_CONFIGURATION_STEREOContent; } }
+        private static int _CHANNEL_CONFIGURATION_STEREOContent = default;
+        private static bool _CHANNEL_CONFIGURATION_STEREOReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_BACK"/>
         /// </summary>
         public static int CHANNEL_IN_BACK { get { if (!_CHANNEL_IN_BACKReady) { _CHANNEL_IN_BACKContent = SGetField<int>(LocalBridgeClazz, "CHANNEL_IN_BACK"); _CHANNEL_IN_BACKReady = true; } return _CHANNEL_IN_BACKContent; } }
@@ -175,6 +203,13 @@ namespace Android.Media
         public static int CHANNEL_OUT_6POINT1 { get { if (!_CHANNEL_OUT_6POINT1Ready) { _CHANNEL_OUT_6POINT1Content = SGetField<int>(LocalBridgeClazz, "CHANNEL_OUT_6POINT1"); _CHANNEL_OUT_6POINT1Ready = true; } return _CHANNEL_OUT_6POINT1Content; } }
         private static int _CHANNEL_OUT_6POINT1Content = default;
         private static bool _CHANNEL_OUT_6POINT1Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_7POINT1"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int CHANNEL_OUT_7POINT1 { get { if (!_CHANNEL_OUT_7POINT1Ready) { _CHANNEL_OUT_7POINT1Content = SGetField<int>(LocalBridgeClazz, "CHANNEL_OUT_7POINT1"); _CHANNEL_OUT_7POINT1Ready = true; } return _CHANNEL_OUT_7POINT1Content; } }
+        private static int _CHANNEL_OUT_7POINT1Content = default;
+        private static bool _CHANNEL_OUT_7POINT1Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_7POINT1_SURROUND"/>
         /// </summary>
@@ -481,6 +516,13 @@ namespace Android.Media
         public static int ENCODING_DTS_HD_MA { get { if (!_ENCODING_DTS_HD_MAReady) { _ENCODING_DTS_HD_MAContent = SGetField<int>(LocalBridgeClazz, "ENCODING_DTS_HD_MA"); _ENCODING_DTS_HD_MAReady = true; } return _ENCODING_DTS_HD_MAContent; } }
         private static int _ENCODING_DTS_HD_MAContent = default;
         private static bool _ENCODING_DTS_HD_MAReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DTS_UHD"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ENCODING_DTS_UHD { get { if (!_ENCODING_DTS_UHDReady) { _ENCODING_DTS_UHDContent = SGetField<int>(LocalBridgeClazz, "ENCODING_DTS_UHD"); _ENCODING_DTS_UHDReady = true; } return _ENCODING_DTS_UHDContent; } }
+        private static int _ENCODING_DTS_UHDContent = default;
+        private static bool _ENCODING_DTS_UHDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DTS_UHD_P1"/>
         /// </summary>

@@ -144,6 +144,101 @@ namespace Android.Content
     }
     #endregion
 
+    #region AsyncTaskLoader
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/content/AsyncTaskLoader.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class AsyncTaskLoader : Android.Content.Loader
+    {
+        const string _bridgeClassName = "android.content.AsyncTaskLoader";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        [Obsolete("AsyncTaskLoader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public AsyncTaskLoader() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        [Obsolete("AsyncTaskLoader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public AsyncTaskLoader(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AsyncTaskLoader<D>
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/content/AsyncTaskLoader.html"/>
+    /// </summary>
+    /// <typeparam name="D"></typeparam>
+    [System.Obsolete()]
+    public partial class AsyncTaskLoader<D> : Android.Content.Loader<D>
+    {
+        const string _bridgeClassName = "android.content.AsyncTaskLoader";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        [Obsolete("AsyncTaskLoader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public AsyncTaskLoader() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        [Obsolete("AsyncTaskLoader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public AsyncTaskLoader(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+    
+    }
+    #endregion
+
     #region AttributionSource
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/content/AttributionSource.html"/>
@@ -326,7 +421,7 @@ namespace Android.Content
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/content/ClipboardManager.html"/>
     /// </summary>
-    public partial class ClipboardManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ClipboardManager>
+    public partial class ClipboardManager : Android.Text.ClipboardManager
     {
         const string _bridgeClassName = "android.content.ClipboardManager";
         /// <summary>
@@ -1056,7 +1151,7 @@ namespace Android.Content
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/content/ContentQueryMap.html"/>
     /// </summary>
-    public partial class ContentQueryMap : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ContentQueryMap>
+    public partial class ContentQueryMap : Java.Util.Observable
     {
         const string _bridgeClassName = "android.content.ContentQueryMap";
         /// <summary>
@@ -1467,6 +1562,51 @@ namespace Android.Content
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ContextWrapper(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CursorLoader
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class CursorLoader : Android.Content.AsyncTaskLoader<Android.Database.Cursor>
+    {
+        const string _bridgeClassName = "android.content.CursorLoader";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CursorLoader() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CursorLoader(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
@@ -2370,6 +2510,384 @@ namespace Android.Content
         }
         #endregion
 
+    
+    }
+    #endregion
+
+    #region Loader
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/content/Loader.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class Loader : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Loader>
+    {
+        const string _bridgeClassName = "android.content.Loader";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Loader() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Loader(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+        #region ForceLoadContentObserver
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Loader.ForceLoadContentObserver.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class ForceLoadContentObserver : Android.Database.ContentObserver
+        {
+            const string _bridgeClassName = "android.content.Loader$ForceLoadContentObserver";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public ForceLoadContentObserver() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public ForceLoadContentObserver(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => false;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region OnLoadCanceledListener
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Loader.OnLoadCanceledListener.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class OnLoadCanceledListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public OnLoadCanceledListener() { InitializeHandlers(); }
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => "org.mases.netdroid.generated.android.content.OnLoadCanceledListener";
+
+        
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region OnLoadCanceledListenerDirect
+        /// <summary>
+        /// Direct override of <see cref="OnLoadCanceledListener"/> or its generic type if there is one
+        /// </summary>
+        public partial class OnLoadCanceledListenerDirect : OnLoadCanceledListener
+        {
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+            /// </summary>
+            public override bool AutoInit => false;
+
+            /// <inheritdoc />
+            protected override void InitializeHandlers() { }
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => "android.content.Loader$OnLoadCanceledListener";
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+        }
+        #endregion
+
+        #region OnLoadCanceledListener<D>
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Loader.OnLoadCanceledListener.html"/>
+        /// </summary>
+        /// <typeparam name="D"></typeparam>
+        [System.Obsolete()]
+        public partial class OnLoadCanceledListener<D> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public OnLoadCanceledListener() { InitializeHandlers(); }
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => "org.mases.netdroid.generated.android.content.OnLoadCanceledListener";
+
+        
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region OnLoadCanceledListenerDirect<D>
+        /// <summary>
+        /// Direct override of <see cref="OnLoadCanceledListener"/> or its generic type if there is one
+        /// </summary>
+        public partial class OnLoadCanceledListenerDirect<D> : OnLoadCanceledListener<D>
+        {
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+            /// </summary>
+            public override bool AutoInit => false;
+
+            /// <inheritdoc />
+            protected override void InitializeHandlers() { }
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => "android.content.Loader$OnLoadCanceledListener";
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+        }
+        #endregion
+
+        #region OnLoadCompleteListener
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Loader.OnLoadCompleteListener.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class OnLoadCompleteListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public OnLoadCompleteListener() { InitializeHandlers(); }
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => "org.mases.netdroid.generated.android.content.OnLoadCompleteListener";
+
+        
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region OnLoadCompleteListenerDirect
+        /// <summary>
+        /// Direct override of <see cref="OnLoadCompleteListener"/> or its generic type if there is one
+        /// </summary>
+        public partial class OnLoadCompleteListenerDirect : OnLoadCompleteListener
+        {
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+            /// </summary>
+            public override bool AutoInit => false;
+
+            /// <inheritdoc />
+            protected override void InitializeHandlers() { }
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => "android.content.Loader$OnLoadCompleteListener";
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+        }
+        #endregion
+
+        #region OnLoadCompleteListener<D>
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Loader.OnLoadCompleteListener.html"/>
+        /// </summary>
+        /// <typeparam name="D"></typeparam>
+        [System.Obsolete()]
+        public partial class OnLoadCompleteListener<D> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public OnLoadCompleteListener() { InitializeHandlers(); }
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => "org.mases.netdroid.generated.android.content.OnLoadCompleteListener";
+
+        
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region OnLoadCompleteListenerDirect<D>
+        /// <summary>
+        /// Direct override of <see cref="OnLoadCompleteListener"/> or its generic type if there is one
+        /// </summary>
+        public partial class OnLoadCompleteListenerDirect<D> : OnLoadCompleteListener<D>
+        {
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+            /// </summary>
+            public override bool AutoInit => false;
+
+            /// <inheritdoc />
+            protected override void InitializeHandlers() { }
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => "android.content.Loader$OnLoadCompleteListener";
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+        }
+        #endregion
+
+    
+    }
+    #endregion
+
+    #region Loader<D>
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/content/Loader.html"/>
+    /// </summary>
+    /// <typeparam name="D"></typeparam>
+    [System.Obsolete()]
+    public partial class Loader<D> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Loader<D>>
+    {
+        const string _bridgeClassName = "android.content.Loader";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Loader() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Loader(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
     
     }
     #endregion

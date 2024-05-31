@@ -29,6 +29,57 @@ namespace Android.Text
     public partial class StaticLayout
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/StaticLayout.html#%3Cinit%3E(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout.Alignment,float,float,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Android.Text.TextPaint"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Android.Text.Layout.Alignment"/></param>
+        /// <param name="arg4"><see cref="float"/></param>
+        /// <param name="arg5"><see cref="float"/></param>
+        /// <param name="arg6"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public StaticLayout(Java.Lang.CharSequence arg0, Android.Text.TextPaint arg1, int arg2, Android.Text.Layout.Alignment arg3, float arg4, float arg5, bool arg6)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/StaticLayout.html#%3Cinit%3E(java.lang.CharSequence,int,int,android.text.TextPaint,int,android.text.Layout.Alignment,float,float,boolean,android.text.TextUtils.TruncateAt,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Android.Text.TextPaint"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="Android.Text.Layout.Alignment"/></param>
+        /// <param name="arg6"><see cref="float"/></param>
+        /// <param name="arg7"><see cref="float"/></param>
+        /// <param name="arg8"><see cref="bool"/></param>
+        /// <param name="arg9"><see cref="Android.Text.TextUtils.TruncateAt"/></param>
+        /// <param name="arg10"><see cref="int"/></param>
+        [System.Obsolete()]
+        public StaticLayout(Java.Lang.CharSequence arg0, int arg1, int arg2, Android.Text.TextPaint arg3, int arg4, Android.Text.Layout.Alignment arg5, float arg6, float arg7, bool arg8, Android.Text.TextUtils.TruncateAt arg9, int arg10)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/StaticLayout.html#%3Cinit%3E(java.lang.CharSequence,int,int,android.text.TextPaint,int,android.text.Layout.Alignment,float,float,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Android.Text.TextPaint"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="Android.Text.Layout.Alignment"/></param>
+        /// <param name="arg6"><see cref="float"/></param>
+        /// <param name="arg7"><see cref="float"/></param>
+        /// <param name="arg8"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public StaticLayout(Java.Lang.CharSequence arg0, int arg1, int arg2, Android.Text.TextPaint arg3, int arg4, Android.Text.Layout.Alignment arg5, float arg6, float arg7, bool arg8)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
+        {
+        }
 
         #endregion
 

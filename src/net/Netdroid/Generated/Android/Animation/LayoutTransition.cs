@@ -196,6 +196,16 @@ namespace Android.Animation
             IExecute("hideChild", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/LayoutTransition.html#hideChild(android.view.ViewGroup,android.view.View)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.ViewGroup"/></param>
+        /// <param name="arg1"><see cref="Android.View.View"/></param>
+        [System.Obsolete()]
+        public void HideChild(Android.View.ViewGroup arg0, Android.View.View arg1)
+        {
+            IExecute("hideChild", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/LayoutTransition.html#removeChild(android.view.ViewGroup,android.view.View)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.ViewGroup"/></param>
@@ -282,6 +292,16 @@ namespace Android.Animation
         public void ShowChild(Android.View.ViewGroup arg0, Android.View.View arg1, int arg2)
         {
             IExecute("showChild", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/LayoutTransition.html#showChild(android.view.ViewGroup,android.view.View)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.ViewGroup"/></param>
+        /// <param name="arg1"><see cref="Android.View.View"/></param>
+        [System.Obsolete()]
+        public void ShowChild(Android.View.ViewGroup arg0, Android.View.View arg1)
+        {
+            IExecute("showChild", arg0, arg1);
         }
 
         #endregion

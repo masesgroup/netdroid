@@ -52,6 +52,20 @@ namespace Android.Graphics
             return SExecuteWithSignature<Android.Graphics.BitmapRegionDecoder>(LocalBridgeClazz, "newInstance", "(Landroid/os/ParcelFileDescriptor;)Landroid/graphics/BitmapRegionDecoder;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/BitmapRegionDecoder.html#newInstance(byte[],int,int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <returns><see cref="Android.Graphics.BitmapRegionDecoder"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public static Android.Graphics.BitmapRegionDecoder NewInstance(byte[] arg0, int arg1, int arg2, bool arg3)
+        {
+            return SExecute<Android.Graphics.BitmapRegionDecoder>(LocalBridgeClazz, "newInstance", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/BitmapRegionDecoder.html#newInstance(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -64,6 +78,30 @@ namespace Android.Graphics
             return SExecute<Android.Graphics.BitmapRegionDecoder>(LocalBridgeClazz, "newInstance", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/BitmapRegionDecoder.html#newInstance(java.io.FileDescriptor,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Android.Graphics.BitmapRegionDecoder"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public static Android.Graphics.BitmapRegionDecoder NewInstance(Java.Io.FileDescriptor arg0, bool arg1)
+        {
+            return SExecute<Android.Graphics.BitmapRegionDecoder>(LocalBridgeClazz, "newInstance", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/BitmapRegionDecoder.html#newInstance(java.io.InputStream,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Android.Graphics.BitmapRegionDecoder"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public static Android.Graphics.BitmapRegionDecoder NewInstance(Java.Io.InputStream arg0, bool arg1)
+        {
+            return SExecute<Android.Graphics.BitmapRegionDecoder>(LocalBridgeClazz, "newInstance", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/BitmapRegionDecoder.html#newInstance(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
@@ -72,6 +110,18 @@ namespace Android.Graphics
         public static Android.Graphics.BitmapRegionDecoder NewInstance(Java.Io.InputStream arg0)
         {
             return SExecuteWithSignature<Android.Graphics.BitmapRegionDecoder>(LocalBridgeClazz, "newInstance", "(Ljava/io/InputStream;)Landroid/graphics/BitmapRegionDecoder;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/BitmapRegionDecoder.html#newInstance(java.lang.String,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Android.Graphics.BitmapRegionDecoder"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public static Android.Graphics.BitmapRegionDecoder NewInstance(Java.Lang.String arg0, bool arg1)
+        {
+            return SExecute<Android.Graphics.BitmapRegionDecoder>(LocalBridgeClazz, "newInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/BitmapRegionDecoder.html#newInstance(java.lang.String)"/>

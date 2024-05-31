@@ -384,6 +384,246 @@ namespace Android.Inputmethodservice
     }
     #endregion
 
+    #region Keyboard
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/inputmethodservice/Keyboard.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class Keyboard : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Keyboard>
+    {
+        const string _bridgeClassName = "android.inputmethodservice.Keyboard";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Keyboard() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Keyboard(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+        #region Key
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/Keyboard.Key.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class Key : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Key>
+        {
+            const string _bridgeClassName = "android.inputmethodservice.Keyboard$Key";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Key() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Key(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region Row
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/Keyboard.Row.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class Row : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Row>
+        {
+            const string _bridgeClassName = "android.inputmethodservice.Keyboard$Row";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Row() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Row(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+    
+    }
+    #endregion
+
+    #region KeyboardView
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class KeyboardView : Android.View.View
+    {
+        const string _bridgeClassName = "android.inputmethodservice.KeyboardView";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public KeyboardView() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public KeyboardView(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+        #region OnKeyboardActionListener
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/KeyboardView.OnKeyboardActionListener.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class OnKeyboardActionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public OnKeyboardActionListener() { InitializeHandlers(); }
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => "org.mases.netdroid.generated.android.inputmethodservice.OnKeyboardActionListener";
+
+        
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region OnKeyboardActionListenerDirect
+        /// <summary>
+        /// Direct override of <see cref="OnKeyboardActionListener"/> or its generic type if there is one
+        /// </summary>
+        public partial class OnKeyboardActionListenerDirect : OnKeyboardActionListener
+        {
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+            /// </summary>
+            public override bool AutoInit => false;
+
+            /// <inheritdoc />
+            protected override void InitializeHandlers() { }
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => "android.inputmethodservice.KeyboardView$OnKeyboardActionListener";
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+        }
+        #endregion
+
+    
+    }
+    #endregion
+
 
 
 }

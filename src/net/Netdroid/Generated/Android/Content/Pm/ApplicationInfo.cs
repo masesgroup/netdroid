@@ -312,6 +312,13 @@ namespace Android.Content.Pm
         private static int _FLAG_IS_DATA_ONLYContent = default;
         private static bool _FLAG_IS_DATA_ONLYReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_IS_GAME"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FLAG_IS_GAME { get { if (!_FLAG_IS_GAMEReady) { _FLAG_IS_GAMEContent = SGetField<int>(LocalBridgeClazz, "FLAG_IS_GAME"); _FLAG_IS_GAMEReady = true; } return _FLAG_IS_GAMEContent; } }
+        private static int _FLAG_IS_GAMEContent = default;
+        private static bool _FLAG_IS_GAMEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_KILL_AFTER_RESTORE"/>
         /// </summary>
         public static int FLAG_KILL_AFTER_RESTORE { get { if (!_FLAG_KILL_AFTER_RESTOREReady) { _FLAG_KILL_AFTER_RESTOREContent = SGetField<int>(LocalBridgeClazz, "FLAG_KILL_AFTER_RESTORE"); _FLAG_KILL_AFTER_RESTOREReady = true; } return _FLAG_KILL_AFTER_RESTOREContent; } }
@@ -371,6 +378,13 @@ namespace Android.Content.Pm
         public static int FLAG_SUPPORTS_RTL { get { if (!_FLAG_SUPPORTS_RTLReady) { _FLAG_SUPPORTS_RTLContent = SGetField<int>(LocalBridgeClazz, "FLAG_SUPPORTS_RTL"); _FLAG_SUPPORTS_RTLReady = true; } return _FLAG_SUPPORTS_RTLContent; } }
         private static int _FLAG_SUPPORTS_RTLContent = default;
         private static bool _FLAG_SUPPORTS_RTLReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SUPPORTS_SCREEN_DENSITIES"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FLAG_SUPPORTS_SCREEN_DENSITIES { get { if (!_FLAG_SUPPORTS_SCREEN_DENSITIESReady) { _FLAG_SUPPORTS_SCREEN_DENSITIESContent = SGetField<int>(LocalBridgeClazz, "FLAG_SUPPORTS_SCREEN_DENSITIES"); _FLAG_SUPPORTS_SCREEN_DENSITIESReady = true; } return _FLAG_SUPPORTS_SCREEN_DENSITIESContent; } }
+        private static int _FLAG_SUPPORTS_SCREEN_DENSITIESContent = default;
+        private static bool _FLAG_SUPPORTS_SCREEN_DENSITIESReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SUPPORTS_SMALL_SCREENS"/>
         /// </summary>

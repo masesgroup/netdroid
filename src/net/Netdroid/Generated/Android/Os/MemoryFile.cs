@@ -70,6 +70,15 @@ namespace Android.Os
             get { return IExecuteWithSignature<Java.Io.OutputStream>("getOutputStream", "()Ljava/io/OutputStream;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/MemoryFile.html#isPurgingAllowed()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsPurgingAllowed()
+        {
+            return IExecuteWithSignature<bool>("isPurgingAllowed", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/MemoryFile.html#length()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -89,6 +98,17 @@ namespace Android.Os
         public int ReadBytes(byte[] arg0, int arg1, int arg2, int arg3)
         {
             return IExecute<int>("readBytes", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/MemoryFile.html#allowPurging(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public bool AllowPurging(bool arg0)
+        {
+            return IExecuteWithSignature<bool>("allowPurging", "(Z)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/MemoryFile.html#close()"/>

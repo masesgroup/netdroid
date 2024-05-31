@@ -53,6 +53,28 @@ namespace Java.Util.Concurrent
             return SExecute<Java.Util.Concurrent.Callable<T>>(LocalBridgeClazz, "callable", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Executors.html#privilegedCallable(java.util.concurrent.Callable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
+        [System.Obsolete()]
+        public static Java.Util.Concurrent.Callable<T> PrivilegedCallable<T>(Java.Util.Concurrent.Callable<T> arg0)
+        {
+            return SExecuteWithSignature<Java.Util.Concurrent.Callable<T>>(LocalBridgeClazz, "privilegedCallable", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Callable;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Executors.html#privilegedCallableUsingCurrentClassLoader(java.util.concurrent.Callable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
+        [System.Obsolete()]
+        public static Java.Util.Concurrent.Callable<T> PrivilegedCallableUsingCurrentClassLoader<T>(Java.Util.Concurrent.Callable<T> arg0)
+        {
+            return SExecuteWithSignature<Java.Util.Concurrent.Callable<T>>(LocalBridgeClazz, "privilegedCallableUsingCurrentClassLoader", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Callable;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Executors.html#callable(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
@@ -210,6 +232,15 @@ namespace Java.Util.Concurrent
         public static Java.Util.Concurrent.ThreadFactory DefaultThreadFactory()
         {
             return SExecuteWithSignature<Java.Util.Concurrent.ThreadFactory>(LocalBridgeClazz, "defaultThreadFactory", "()Ljava/util/concurrent/ThreadFactory;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Executors.html#privilegedThreadFactory()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.ThreadFactory"/></returns>
+        [System.Obsolete()]
+        public static Java.Util.Concurrent.ThreadFactory PrivilegedThreadFactory()
+        {
+            return SExecuteWithSignature<Java.Util.Concurrent.ThreadFactory>(LocalBridgeClazz, "privilegedThreadFactory", "()Ljava/util/concurrent/ThreadFactory;");
         }
 
         #endregion

@@ -52,6 +52,14 @@ namespace Android.Service.Autofill
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.html#getClientState()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Os.Bundle ClientState
+        {
+            get { return IExecuteWithSignature<Android.Os.Bundle>("getClientState", "()Landroid/os/Bundle;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/FillEventHistory.html#getEvents()"/> 
         /// </summary>
         public Java.Util.List<Android.Service.Autofill.FillEventHistory.Event> Events

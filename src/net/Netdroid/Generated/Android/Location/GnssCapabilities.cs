@@ -93,6 +93,15 @@ namespace Android.Location
             return IExecuteWithSignature<bool>("hasGeofencing", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssCapabilities.html#hasGnssAntennaInfo()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool HasGnssAntennaInfo()
+        {
+            return IExecuteWithSignature<bool>("hasGnssAntennaInfo", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssCapabilities.html#hasLowPowerMode()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>

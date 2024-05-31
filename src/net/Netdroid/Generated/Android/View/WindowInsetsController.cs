@@ -74,6 +74,20 @@ namespace Android.View
         private static int _BEHAVIOR_DEFAULTContent = default;
         private static bool _BEHAVIOR_DEFAULTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#BEHAVIOR_SHOW_BARS_BY_SWIPE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int BEHAVIOR_SHOW_BARS_BY_SWIPE { get { if (!_BEHAVIOR_SHOW_BARS_BY_SWIPEReady) { _BEHAVIOR_SHOW_BARS_BY_SWIPEContent = SGetField<int>(LocalBridgeClazz, "BEHAVIOR_SHOW_BARS_BY_SWIPE"); _BEHAVIOR_SHOW_BARS_BY_SWIPEReady = true; } return _BEHAVIOR_SHOW_BARS_BY_SWIPEContent; } }
+        private static int _BEHAVIOR_SHOW_BARS_BY_SWIPEContent = default;
+        private static bool _BEHAVIOR_SHOW_BARS_BY_SWIPEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#BEHAVIOR_SHOW_BARS_BY_TOUCH"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int BEHAVIOR_SHOW_BARS_BY_TOUCH { get { if (!_BEHAVIOR_SHOW_BARS_BY_TOUCHReady) { _BEHAVIOR_SHOW_BARS_BY_TOUCHContent = SGetField<int>(LocalBridgeClazz, "BEHAVIOR_SHOW_BARS_BY_TOUCH"); _BEHAVIOR_SHOW_BARS_BY_TOUCHReady = true; } return _BEHAVIOR_SHOW_BARS_BY_TOUCHContent; } }
+        private static int _BEHAVIOR_SHOW_BARS_BY_TOUCHContent = default;
+        private static bool _BEHAVIOR_SHOW_BARS_BY_TOUCHReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE"/>
         /// </summary>
         public static int BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE { get { if (!_BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPEReady) { _BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPEContent = SGetField<int>(LocalBridgeClazz, "BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE"); _BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPEReady = true; } return _BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPEContent; } }

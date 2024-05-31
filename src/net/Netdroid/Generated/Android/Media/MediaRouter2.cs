@@ -341,6 +341,33 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RouteCallback.html#onRoutesAdded(java.util.List)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            [System.Obsolete()]
+            public void OnRoutesAdded(Java.Util.List<Android.Media.MediaRoute2Info> arg0)
+            {
+                IExecuteWithSignature("onRoutesAdded", "(Ljava/util/List;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RouteCallback.html#onRoutesChanged(java.util.List)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            [System.Obsolete()]
+            public void OnRoutesChanged(Java.Util.List<Android.Media.MediaRoute2Info> arg0)
+            {
+                IExecuteWithSignature("onRoutesChanged", "(Ljava/util/List;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RouteCallback.html#onRoutesRemoved(java.util.List)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.List"/></param>
+            [System.Obsolete()]
+            public void OnRoutesRemoved(Java.Util.List<Android.Media.MediaRoute2Info> arg0)
+            {
+                IExecuteWithSignature("onRoutesRemoved", "(Ljava/util/List;)V", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RouteCallback.html#onRoutesUpdated(java.util.List)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.List"/></param>

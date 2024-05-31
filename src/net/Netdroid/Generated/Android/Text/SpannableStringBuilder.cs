@@ -222,6 +222,21 @@ namespace Android.Text
             return IExecuteWithSignature<int>("getSpanStart", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#getTextRunCursor(int,int,int,int,int,android.graphics.Paint)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="Android.Graphics.Paint"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int GetTextRunCursor(int arg0, int arg1, int arg2, int arg3, int arg4, Android.Graphics.Paint arg5)
+        {
+            return IExecute<int>("getTextRunCursor", arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#length()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>

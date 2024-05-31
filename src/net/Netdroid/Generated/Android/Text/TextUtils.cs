@@ -112,6 +112,16 @@ namespace Android.Text
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isEmpty", "(Ljava/lang/CharSequence;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#isGraphic(char)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public static bool IsGraphic(char arg0)
+        {
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isGraphic", "(C)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#isGraphic(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -282,6 +292,20 @@ namespace Android.Text
             return SExecute<int>(LocalBridgeClazz, "lastIndexOf", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#commaEllipsize(java.lang.CharSequence,android.text.TextPaint,float,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Android.Text.TextPaint"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        [System.Obsolete()]
+        public static Java.Lang.CharSequence CommaEllipsize(Java.Lang.CharSequence arg0, Android.Text.TextPaint arg1, float arg2, Java.Lang.String arg3, Java.Lang.String arg4)
+        {
+            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "commaEllipsize", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#concat(java.lang.CharSequence[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -325,6 +349,18 @@ namespace Android.Text
         public static Java.Lang.CharSequence ExpandTemplate(Java.Lang.CharSequence arg0, params Java.Lang.CharSequence[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "expandTemplate", arg0); else return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "expandTemplate", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#getReverse(java.lang.CharSequence,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        [System.Obsolete()]
+        public static Java.Lang.CharSequence GetReverse(Java.Lang.CharSequence arg0, int arg1, int arg2)
+        {
+            return SExecute<Java.Lang.CharSequence>(LocalBridgeClazz, "getReverse", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/TextUtils.html#listEllipsize(android.content.Context,java.util.List,java.lang.String,android.text.TextPaint,float,int)"/>

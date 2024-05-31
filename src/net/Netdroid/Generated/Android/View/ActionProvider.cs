@@ -54,6 +54,15 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ActionProvider.html#onCreateActionView()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.View"/></returns>
+        [System.Obsolete()]
+        public Android.View.View OnCreateActionView()
+        {
+            return IExecuteWithSignature<Android.View.View>("onCreateActionView", "()Landroid/view/View;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ActionProvider.html#onCreateActionView(android.view.MenuItem)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.MenuItem"/></param>

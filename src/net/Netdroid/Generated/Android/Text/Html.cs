@@ -108,6 +108,18 @@ namespace Android.Text
 
         #region Static methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Html.html#fromHtml(java.lang.String,android.text.Html.ImageGetter,android.text.Html.TagHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Text.Html.ImageGetter"/></param>
+        /// <param name="arg2"><see cref="Android.Text.Html.TagHandler"/></param>
+        /// <returns><see cref="Android.Text.Spanned"/></returns>
+        [System.Obsolete()]
+        public static Android.Text.Spanned FromHtml(Java.Lang.String arg0, Android.Text.Html.ImageGetter arg1, Android.Text.Html.TagHandler arg2)
+        {
+            return SExecute<Android.Text.Spanned>(LocalBridgeClazz, "fromHtml", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Html.html#fromHtml(java.lang.String,int,android.text.Html.ImageGetter,android.text.Html.TagHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -130,6 +142,16 @@ namespace Android.Text
             return SExecute<Android.Text.Spanned>(LocalBridgeClazz, "fromHtml", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Html.html#fromHtml(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.Text.Spanned"/></returns>
+        [System.Obsolete()]
+        public static Android.Text.Spanned FromHtml(Java.Lang.String arg0)
+        {
+            return SExecuteWithSignature<Android.Text.Spanned>(LocalBridgeClazz, "fromHtml", "(Ljava/lang/String;)Landroid/text/Spanned;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Html.html#escapeHtml(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -147,6 +169,16 @@ namespace Android.Text
         public static Java.Lang.String ToHtml(Android.Text.Spanned arg0, int arg1)
         {
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "toHtml", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Html.html#toHtml(android.text.Spanned)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Text.Spanned"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public static Java.Lang.String ToHtml(Android.Text.Spanned arg0)
+        {
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toHtml", "(Landroid/text/Spanned;)Ljava/lang/String;", arg0);
         }
 
         #endregion

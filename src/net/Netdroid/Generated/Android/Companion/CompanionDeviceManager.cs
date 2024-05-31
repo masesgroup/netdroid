@@ -79,6 +79,13 @@ namespace Android.Companion
         public static Java.Lang.String EXTRA_ASSOCIATION { get { if (!_EXTRA_ASSOCIATIONReady) { _EXTRA_ASSOCIATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_ASSOCIATION"); _EXTRA_ASSOCIATIONReady = true; } return _EXTRA_ASSOCIATIONContent; } }
         private static Java.Lang.String _EXTRA_ASSOCIATIONContent = default;
         private static bool _EXTRA_ASSOCIATIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#EXTRA_DEVICE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String EXTRA_DEVICE { get { if (!_EXTRA_DEVICEReady) { _EXTRA_DEVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_DEVICE"); _EXTRA_DEVICEReady = true; } return _EXTRA_DEVICEContent; } }
+        private static Java.Lang.String _EXTRA_DEVICEContent = default;
+        private static bool _EXTRA_DEVICEReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -87,6 +94,14 @@ namespace Android.Companion
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#getAssociations()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Util.List<Java.Lang.String> Associations
+        {
+            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAssociations", "()Ljava/util/List;"); }
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#getMyAssociations()"/> 
         /// </summary>
@@ -111,6 +126,16 @@ namespace Android.Companion
         public Android.Content.IntentSender BuildPermissionTransferUserConsentIntent(int arg0)
         {
             return IExecuteWithSignature<Android.Content.IntentSender>("buildPermissionTransferUserConsentIntent", "(I)Landroid/content/IntentSender;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#hasNotificationAccess(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool HasNotificationAccess(Android.Content.ComponentName arg0)
+        {
+            return IExecuteWithSignature<bool>("hasNotificationAccess", "(Landroid/content/ComponentName;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#associate(android.companion.AssociationRequest,android.companion.CompanionDeviceManager.Callback,android.os.Handler)"/>
@@ -168,6 +193,15 @@ namespace Android.Companion
         public void Disassociate(int arg0)
         {
             IExecuteWithSignature("disassociate", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#disassociate(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public void Disassociate(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("disassociate", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.html#enableSystemDataSyncForTypes(int,int)"/>
@@ -262,6 +296,15 @@ namespace Android.Companion
             public void OnAssociationPending(Android.Content.IntentSender arg0)
             {
                 IExecuteWithSignature("onAssociationPending", "(Landroid/content/IntentSender;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceManager.Callback.html#onDeviceFound(android.content.IntentSender)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Content.IntentSender"/></param>
+            [System.Obsolete()]
+            public void OnDeviceFound(Android.Content.IntentSender arg0)
+            {
+                IExecuteWithSignature("onDeviceFound", "(Landroid/content/IntentSender;)V", arg0);
             }
 
             #endregion

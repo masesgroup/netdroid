@@ -69,6 +69,16 @@ namespace Android.Webkit
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isContentUrl", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/URLUtil.html#isCookielessProxyUrl(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public static bool IsCookielessProxyUrl(Java.Lang.String arg0)
+        {
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isCookielessProxyUrl", "(Ljava/lang/String;)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/URLUtil.html#isDataUrl(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

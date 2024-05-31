@@ -130,6 +130,15 @@ namespace Android.Webkit
             return IExecute<bool>("onJsPrompt", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onJsTimeout()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool OnJsTimeout()
+        {
+            return IExecuteWithSignature<bool>("onJsTimeout", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onShowFileChooser(android.webkit.WebView,android.webkit.ValueCallback,android.webkit.WebChromeClient.FileChooserParams)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Webkit.WebView"/></param>
@@ -155,6 +164,31 @@ namespace Android.Webkit
         public void OnCloseWindow(Android.Webkit.WebView arg0)
         {
             IExecuteWithSignature("onCloseWindow", "(Landroid/webkit/WebView;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onConsoleMessage(java.lang.String,int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public void OnConsoleMessage(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
+        {
+            IExecute("onConsoleMessage", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onExceededDatabaseQuota(java.lang.String,java.lang.String,long,long,long,android.webkit.WebStorage.QuotaUpdater)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <param name="arg3"><see cref="long"/></param>
+        /// <param name="arg4"><see cref="long"/></param>
+        /// <param name="arg5"><see cref="Android.Webkit.WebStorage.QuotaUpdater"/></param>
+        [System.Obsolete()]
+        public void OnExceededDatabaseQuota(Java.Lang.String arg0, Java.Lang.String arg1, long arg2, long arg3, long arg4, Android.Webkit.WebStorage.QuotaUpdater arg5)
+        {
+            IExecute("onExceededDatabaseQuota", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onGeolocationPermissionsHidePrompt()"/>
@@ -248,6 +282,17 @@ namespace Android.Webkit
         public void OnShowCustomView(Android.View.View arg0, Android.Webkit.WebChromeClient.CustomViewCallback arg1)
         {
             IExecute("onShowCustomView", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onShowCustomView(android.view.View,int,android.webkit.WebChromeClient.CustomViewCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.Webkit.WebChromeClient.CustomViewCallback"/></param>
+        [System.Obsolete()]
+        public void OnShowCustomView(Android.View.View arg0, int arg1, Android.Webkit.WebChromeClient.CustomViewCallback arg2)
+        {
+            IExecute("onShowCustomView", arg0, arg1, arg2);
         }
 
         #endregion

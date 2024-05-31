@@ -700,6 +700,13 @@ namespace Android.Graphics
             private static Android.Graphics.Bitmap.CompressFormat _PNGContent = default;
             private static bool _PNGReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.CompressFormat.html#WEBP"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Android.Graphics.Bitmap.CompressFormat WEBP { get { if (!_WEBPReady) { _WEBPContent = SGetField<Android.Graphics.Bitmap.CompressFormat>(LocalBridgeClazz, "WEBP"); _WEBPReady = true; } return _WEBPContent; } }
+            private static Android.Graphics.Bitmap.CompressFormat _WEBPContent = default;
+            private static bool _WEBPReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.CompressFormat.html#WEBP_LOSSLESS"/>
             /// </summary>
             public static Android.Graphics.Bitmap.CompressFormat WEBP_LOSSLESS { get { if (!_WEBP_LOSSLESSReady) { _WEBP_LOSSLESSContent = SGetField<Android.Graphics.Bitmap.CompressFormat>(LocalBridgeClazz, "WEBP_LOSSLESS"); _WEBP_LOSSLESSReady = true; } return _WEBP_LOSSLESSContent; } }
@@ -765,6 +772,13 @@ namespace Android.Graphics
             public static Android.Graphics.Bitmap.Config ALPHA_8 { get { if (!_ALPHA_8Ready) { _ALPHA_8Content = SGetField<Android.Graphics.Bitmap.Config>(LocalBridgeClazz, "ALPHA_8"); _ALPHA_8Ready = true; } return _ALPHA_8Content; } }
             private static Android.Graphics.Bitmap.Config _ALPHA_8Content = default;
             private static bool _ALPHA_8Ready = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.Config.html#ARGB_4444"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Android.Graphics.Bitmap.Config ARGB_4444 { get { if (!_ARGB_4444Ready) { _ARGB_4444Content = SGetField<Android.Graphics.Bitmap.Config>(LocalBridgeClazz, "ARGB_4444"); _ARGB_4444Ready = true; } return _ARGB_4444Content; } }
+            private static Android.Graphics.Bitmap.Config _ARGB_4444Content = default;
+            private static bool _ARGB_4444Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/Bitmap.Config.html#ARGB_8888"/>
             /// </summary>

@@ -104,6 +104,13 @@ namespace Android.Media
         private static int _FLAG_HW_AV_SYNCContent = default;
         private static bool _FLAG_HW_AV_SYNCReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#FLAG_LOW_LATENCY"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FLAG_LOW_LATENCY { get { if (!_FLAG_LOW_LATENCYReady) { _FLAG_LOW_LATENCYContent = SGetField<int>(LocalBridgeClazz, "FLAG_LOW_LATENCY"); _FLAG_LOW_LATENCYReady = true; } return _FLAG_LOW_LATENCYContent; } }
+        private static int _FLAG_LOW_LATENCYContent = default;
+        private static bool _FLAG_LOW_LATENCYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#SPATIALIZATION_BEHAVIOR_AUTO"/>
         /// </summary>
         public static int SPATIALIZATION_BEHAVIOR_AUTO { get { if (!_SPATIALIZATION_BEHAVIOR_AUTOReady) { _SPATIALIZATION_BEHAVIOR_AUTOContent = SGetField<int>(LocalBridgeClazz, "SPATIALIZATION_BEHAVIOR_AUTO"); _SPATIALIZATION_BEHAVIOR_AUTOReady = true; } return _SPATIALIZATION_BEHAVIOR_AUTOContent; } }
@@ -163,6 +170,27 @@ namespace Android.Media
         public static int USAGE_NOTIFICATION { get { if (!_USAGE_NOTIFICATIONReady) { _USAGE_NOTIFICATIONContent = SGetField<int>(LocalBridgeClazz, "USAGE_NOTIFICATION"); _USAGE_NOTIFICATIONReady = true; } return _USAGE_NOTIFICATIONContent; } }
         private static int _USAGE_NOTIFICATIONContent = default;
         private static bool _USAGE_NOTIFICATIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#USAGE_NOTIFICATION_COMMUNICATION_DELAYED"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int USAGE_NOTIFICATION_COMMUNICATION_DELAYED { get { if (!_USAGE_NOTIFICATION_COMMUNICATION_DELAYEDReady) { _USAGE_NOTIFICATION_COMMUNICATION_DELAYEDContent = SGetField<int>(LocalBridgeClazz, "USAGE_NOTIFICATION_COMMUNICATION_DELAYED"); _USAGE_NOTIFICATION_COMMUNICATION_DELAYEDReady = true; } return _USAGE_NOTIFICATION_COMMUNICATION_DELAYEDContent; } }
+        private static int _USAGE_NOTIFICATION_COMMUNICATION_DELAYEDContent = default;
+        private static bool _USAGE_NOTIFICATION_COMMUNICATION_DELAYEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#USAGE_NOTIFICATION_COMMUNICATION_INSTANT"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int USAGE_NOTIFICATION_COMMUNICATION_INSTANT { get { if (!_USAGE_NOTIFICATION_COMMUNICATION_INSTANTReady) { _USAGE_NOTIFICATION_COMMUNICATION_INSTANTContent = SGetField<int>(LocalBridgeClazz, "USAGE_NOTIFICATION_COMMUNICATION_INSTANT"); _USAGE_NOTIFICATION_COMMUNICATION_INSTANTReady = true; } return _USAGE_NOTIFICATION_COMMUNICATION_INSTANTContent; } }
+        private static int _USAGE_NOTIFICATION_COMMUNICATION_INSTANTContent = default;
+        private static bool _USAGE_NOTIFICATION_COMMUNICATION_INSTANTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#USAGE_NOTIFICATION_COMMUNICATION_REQUEST"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int USAGE_NOTIFICATION_COMMUNICATION_REQUEST { get { if (!_USAGE_NOTIFICATION_COMMUNICATION_REQUESTReady) { _USAGE_NOTIFICATION_COMMUNICATION_REQUESTContent = SGetField<int>(LocalBridgeClazz, "USAGE_NOTIFICATION_COMMUNICATION_REQUEST"); _USAGE_NOTIFICATION_COMMUNICATION_REQUESTReady = true; } return _USAGE_NOTIFICATION_COMMUNICATION_REQUESTContent; } }
+        private static int _USAGE_NOTIFICATION_COMMUNICATION_REQUESTContent = default;
+        private static bool _USAGE_NOTIFICATION_COMMUNICATION_REQUESTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#USAGE_NOTIFICATION_EVENT"/>
         /// </summary>

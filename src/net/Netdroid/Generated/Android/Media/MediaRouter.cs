@@ -776,6 +776,13 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter.UserRouteInfo.html#getRemoteControlClient()"/> <see href="https://developer.android.com/reference/android/media/MediaRouter.UserRouteInfo.html#setRemoteControlClient(android.media.RemoteControlClient)"/>
+            /// </summary>
+            public Android.Media.RemoteControlClient RemoteControlClient
+            {
+                get { return IExecuteWithSignature<Android.Media.RemoteControlClient>("getRemoteControlClient", "()Landroid/media/RemoteControlClient;"); } set { IExecuteWithSignature("setRemoteControlClient", "(Landroid/media/RemoteControlClient;)V", value); }
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter.UserRouteInfo.html#setDescription(java.lang.CharSequence)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>

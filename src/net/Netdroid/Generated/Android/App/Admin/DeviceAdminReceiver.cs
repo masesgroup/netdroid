@@ -307,6 +307,16 @@ namespace Android.App.Admin
             IExecute("onPasswordChanged", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordChanged(android.content.Context,android.content.Intent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
+        [System.Obsolete()]
+        public void OnPasswordChanged(Android.Content.Context arg0, Android.Content.Intent arg1)
+        {
+            IExecute("onPasswordChanged", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordExpiring(android.content.Context,android.content.Intent,android.os.UserHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -315,6 +325,16 @@ namespace Android.App.Admin
         public void OnPasswordExpiring(Android.Content.Context arg0, Android.Content.Intent arg1, Android.Os.UserHandle arg2)
         {
             IExecute("onPasswordExpiring", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordExpiring(android.content.Context,android.content.Intent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
+        [System.Obsolete()]
+        public void OnPasswordExpiring(Android.Content.Context arg0, Android.Content.Intent arg1)
+        {
+            IExecute("onPasswordExpiring", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordFailed(android.content.Context,android.content.Intent,android.os.UserHandle)"/>
@@ -327,6 +347,16 @@ namespace Android.App.Admin
             IExecute("onPasswordFailed", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordFailed(android.content.Context,android.content.Intent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
+        [System.Obsolete()]
+        public void OnPasswordFailed(Android.Content.Context arg0, Android.Content.Intent arg1)
+        {
+            IExecute("onPasswordFailed", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordSucceeded(android.content.Context,android.content.Intent,android.os.UserHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -337,6 +367,16 @@ namespace Android.App.Admin
             IExecute("onPasswordSucceeded", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onPasswordSucceeded(android.content.Context,android.content.Intent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
+        [System.Obsolete()]
+        public void OnPasswordSucceeded(Android.Content.Context arg0, Android.Content.Intent arg1)
+        {
+            IExecute("onPasswordSucceeded", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onProfileProvisioningComplete(android.content.Context,android.content.Intent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -344,6 +384,16 @@ namespace Android.App.Admin
         public void OnProfileProvisioningComplete(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
             IExecute("onProfileProvisioningComplete", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onReadyForUserInitialization(android.content.Context,android.content.Intent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
+        [System.Obsolete()]
+        public void OnReadyForUserInitialization(Android.Content.Context arg0, Android.Content.Intent arg1)
+        {
+            IExecute("onReadyForUserInitialization", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminReceiver.html#onSecurityLogsAvailable(android.content.Context,android.content.Intent)"/>

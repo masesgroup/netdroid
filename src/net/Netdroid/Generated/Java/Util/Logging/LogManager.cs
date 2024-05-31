@@ -54,6 +54,14 @@ namespace Java.Util.Logging
         {
             get { return SExecuteWithSignature<Java.Util.Logging.LogManager>(LocalBridgeClazz, "getLogManager", "()Ljava/util/logging/LogManager;"); }
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogManager.html#getLoggingMXBean()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Util.Logging.LoggingMXBean LoggingMXBean
+        {
+            get { return SExecuteWithSignature<Java.Util.Logging.LoggingMXBean>(LocalBridgeClazz, "getLoggingMXBean", "()Ljava/util/logging/LoggingMXBean;"); }
+        }
 
         #endregion
 
@@ -100,6 +108,15 @@ namespace Java.Util.Logging
         public Java.Util.Logging.LogManager AddConfigurationListener(Java.Lang.Runnable arg0)
         {
             return IExecuteWithSignature<Java.Util.Logging.LogManager>("addConfigurationListener", "(Ljava/lang/Runnable;)Ljava/util/logging/LogManager;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogManager.html#checkAccess()"/>
+        /// </summary>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        [System.Obsolete()]
+        public void CheckAccess()
+        {
+            IExecuteWithSignature("checkAccess", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogManager.html#readConfiguration()"/>

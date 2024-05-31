@@ -98,6 +98,13 @@ namespace Android.Speech
         private static Java.Lang.String _DETAILS_META_DATAContent = default;
         private static bool _DETAILS_META_DATAReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_AUDIO_INJECT_SOURCE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String EXTRA_AUDIO_INJECT_SOURCE { get { if (!_EXTRA_AUDIO_INJECT_SOURCEReady) { _EXTRA_AUDIO_INJECT_SOURCEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_AUDIO_INJECT_SOURCE"); _EXTRA_AUDIO_INJECT_SOURCEReady = true; } return _EXTRA_AUDIO_INJECT_SOURCEContent; } }
+        private static Java.Lang.String _EXTRA_AUDIO_INJECT_SOURCEContent = default;
+        private static bool _EXTRA_AUDIO_INJECT_SOURCEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/RecognizerIntent.html#EXTRA_AUDIO_SOURCE"/>
         /// </summary>
         public static Java.Lang.String EXTRA_AUDIO_SOURCE { get { if (!_EXTRA_AUDIO_SOURCEReady) { _EXTRA_AUDIO_SOURCEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_AUDIO_SOURCE"); _EXTRA_AUDIO_SOURCEReady = true; } return _EXTRA_AUDIO_SOURCEContent; } }

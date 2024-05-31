@@ -948,11 +948,29 @@ namespace Android.Telephony
 
         #region Static methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getDefault()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static Android.Telephony.SmsManager Default
+        {
+            get { return SExecuteWithSignature<Android.Telephony.SmsManager>(LocalBridgeClazz, "getDefault", "()Landroid/telephony/SmsManager;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getDefaultSmsSubscriptionId()"/> 
         /// </summary>
         public static int DefaultSmsSubscriptionId
         {
             get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultSmsSubscriptionId", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getSmsManagerForSubscriptionId(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Android.Telephony.SmsManager"/></returns>
+        [System.Obsolete()]
+        public static Android.Telephony.SmsManager GetSmsManagerForSubscriptionId(int arg0)
+        {
+            return SExecuteWithSignature<Android.Telephony.SmsManager>(LocalBridgeClazz, "getSmsManagerForSubscriptionId", "(I)Landroid/telephony/SmsManager;", arg0);
         }
 
         #endregion

@@ -50,6 +50,27 @@ namespace Android.Graphics.Drawable
             : base(arg0, arg1)
         {
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/NinePatchDrawable.html#%3Cinit%3E(android.graphics.Bitmap,byte[],android.graphics.Rect,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg2"><see cref="Android.Graphics.Rect"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public NinePatchDrawable(Android.Graphics.Bitmap arg0, byte[] arg1, Android.Graphics.Rect arg2, Java.Lang.String arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/NinePatchDrawable.html#%3Cinit%3E(android.graphics.NinePatch)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.NinePatch"/></param>
+        [System.Obsolete()]
+        public NinePatchDrawable(Android.Graphics.NinePatch arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 

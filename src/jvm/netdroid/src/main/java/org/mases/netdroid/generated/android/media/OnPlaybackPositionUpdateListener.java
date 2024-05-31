@@ -22,18 +22,14 @@
 
 package org.mases.netdroid.generated.android.media;
 
-public final class OnPlaybackPositionUpdateListener extends org.mases.jcobridge.JCListener implements android.media.AudioTrack.OnPlaybackPositionUpdateListener {
+public final class OnPlaybackPositionUpdateListener extends org.mases.jcobridge.JCListener implements android.media.RemoteControlClient.OnPlaybackPositionUpdateListener {
     public OnPlaybackPositionUpdateListener(String key) throws org.mases.jcobridge.JCNativeException {
         super(key);
     }
 
     //@Override
-    public void onMarkerReached(android.media.AudioTrack arg0) {
-        raiseEvent("onMarkerReached", arg0);
-    }
-    //@Override
-    public void onPeriodicNotification(android.media.AudioTrack arg0) {
-        raiseEvent("onPeriodicNotification", arg0);
+    public void onPlaybackPositionUpdate(long arg0) {
+        raiseEvent("onPlaybackPositionUpdate", arg0);
     }
 
 }

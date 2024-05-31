@@ -49,6 +49,20 @@ namespace Android.Inputmethodservice
         public static int BACK_DISPOSITION_DEFAULT { get { if (!_BACK_DISPOSITION_DEFAULTReady) { _BACK_DISPOSITION_DEFAULTContent = SGetField<int>(LocalBridgeClazz, "BACK_DISPOSITION_DEFAULT"); _BACK_DISPOSITION_DEFAULTReady = true; } return _BACK_DISPOSITION_DEFAULTContent; } }
         private static int _BACK_DISPOSITION_DEFAULTContent = default;
         private static bool _BACK_DISPOSITION_DEFAULTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#BACK_DISPOSITION_WILL_DISMISS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int BACK_DISPOSITION_WILL_DISMISS { get { if (!_BACK_DISPOSITION_WILL_DISMISSReady) { _BACK_DISPOSITION_WILL_DISMISSContent = SGetField<int>(LocalBridgeClazz, "BACK_DISPOSITION_WILL_DISMISS"); _BACK_DISPOSITION_WILL_DISMISSReady = true; } return _BACK_DISPOSITION_WILL_DISMISSContent; } }
+        private static int _BACK_DISPOSITION_WILL_DISMISSContent = default;
+        private static bool _BACK_DISPOSITION_WILL_DISMISSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#BACK_DISPOSITION_WILL_NOT_DISMISS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int BACK_DISPOSITION_WILL_NOT_DISMISS { get { if (!_BACK_DISPOSITION_WILL_NOT_DISMISSReady) { _BACK_DISPOSITION_WILL_NOT_DISMISSContent = SGetField<int>(LocalBridgeClazz, "BACK_DISPOSITION_WILL_NOT_DISMISS"); _BACK_DISPOSITION_WILL_NOT_DISMISSReady = true; } return _BACK_DISPOSITION_WILL_NOT_DISMISSContent; } }
+        private static int _BACK_DISPOSITION_WILL_NOT_DISMISSContent = default;
+        private static bool _BACK_DISPOSITION_WILL_NOT_DISMISSReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -105,6 +119,14 @@ namespace Android.Inputmethodservice
         public bool CurrentInputStarted
         {
             get { return IExecuteWithSignature<bool>("getCurrentInputStarted", "()Z"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getInputMethodWindowRecommendedHeight()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int InputMethodWindowRecommendedHeight
+        {
+            get { return IExecuteWithSignature<int>("getInputMethodWindowRecommendedHeight", "()I"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getLayoutInflater()"/> 
@@ -173,6 +195,15 @@ namespace Android.Inputmethodservice
         public Android.View.View OnCreateInputView()
         {
             return IExecuteWithSignature<Android.View.View>("onCreateInputView", "()Landroid/view/View;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#enableHardwareAcceleration()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool EnableHardwareAcceleration()
+        {
+            return IExecuteWithSignature<bool>("enableHardwareAcceleration", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#isExtractViewShown()"/>
@@ -501,6 +532,15 @@ namespace Android.Inputmethodservice
             IExecuteWithSignature("onUnbindInput", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateCursor(android.graphics.Rect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+        [System.Obsolete()]
+        public void OnUpdateCursor(Android.Graphics.Rect arg0)
+        {
+            IExecuteWithSignature("onUpdateCursor", "(Landroid/graphics/Rect;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateCursorAnchorInfo(android.view.inputmethod.CursorAnchorInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Inputmethod.CursorAnchorInfo"/></param>
@@ -553,6 +593,15 @@ namespace Android.Inputmethodservice
         public void OnUpdateSelection(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
             IExecute("onUpdateSelection", arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onViewClicked(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void OnViewClicked(bool arg0)
+        {
+            IExecuteWithSignature("onViewClicked", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onWindowHidden()"/>

@@ -78,6 +78,14 @@ namespace Android.Os
         {
             SExecuteWithSignature(LocalBridgeClazz, "prepare", "()V");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Looper.html#prepareMainLooper()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void PrepareMainLooper()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "prepareMainLooper", "()V");
+        }
 
         #endregion
 

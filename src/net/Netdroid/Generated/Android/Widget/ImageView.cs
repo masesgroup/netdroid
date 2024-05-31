@@ -216,6 +216,15 @@ namespace Android.Widget
             IExecuteWithSignature("animateTransform", "(Landroid/graphics/Matrix;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setAlpha(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetAlpha(int arg0)
+        {
+            IExecuteWithSignature("setAlpha", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setBaseline(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

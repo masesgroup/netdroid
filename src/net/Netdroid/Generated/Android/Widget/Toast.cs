@@ -117,6 +117,14 @@ namespace Android.Widget
             get { return IExecuteWithSignature<float>("getVerticalMargin", "()F"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toast.html#getView()"/> <see href="https://developer.android.com/reference/android/widget/Toast.html#setView(android.view.View)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public Android.View.View View
+        {
+            get { return IExecuteWithSignature<Android.View.View>("getView", "()Landroid/view/View;"); } set { IExecuteWithSignature("setView", "(Landroid/view/View;)V", value); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Toast.html#getXOffset()"/> 
         /// </summary>
         public int XOffset

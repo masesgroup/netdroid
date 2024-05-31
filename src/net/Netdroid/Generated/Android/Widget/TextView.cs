@@ -1547,6 +1547,16 @@ namespace Android.Widget
             IExecute("setText", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextAppearance(android.content.Context,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetTextAppearance(Android.Content.Context arg0, int arg1)
+        {
+            IExecute("setTextAppearance", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextAppearance(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

@@ -30,6 +30,18 @@ namespace Android.Webkit
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public WebView(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, bool arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -137,6 +149,16 @@ namespace Android.Webkit
             get { return SExecuteWithSignature<Java.Lang.ClassLoader>(LocalBridgeClazz, "getWebViewClassLoader", "()Ljava/lang/ClassLoader;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#findAddress(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public static Java.Lang.String FindAddress(Java.Lang.String arg0)
+        {
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "findAddress", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#clearClientCertPreferences(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
@@ -197,11 +219,12 @@ namespace Android.Webkit
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#getCertificate()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#getCertificate()"/> <see href="https://developer.android.com/reference/android/webkit/WebView.html#setCertificate(android.net.http.SslCertificate)"/>
         /// </summary>
+        [System.Obsolete()]
         public Android.Net.Http.SslCertificate Certificate
         {
-            get { return IExecuteWithSignature<Android.Net.Http.SslCertificate>("getCertificate", "()Landroid/net/http/SslCertificate;"); }
+            get { return IExecuteWithSignature<Android.Net.Http.SslCertificate>("getCertificate", "()Landroid/net/http/SslCertificate;"); } set { IExecuteWithSignature("setCertificate", "(Landroid/net/http/SslCertificate;)V", value); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#getContentHeight()"/> 
@@ -251,6 +274,14 @@ namespace Android.Webkit
         public int RendererRequestedPriority
         {
             get { return IExecuteWithSignature<int>("getRendererRequestedPriority", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#getScale()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public float Scale
+        {
+            get { return IExecuteWithSignature<float>("getScale", "()F"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#getSettings()"/> 
@@ -314,6 +345,33 @@ namespace Android.Webkit
         public Android.Webkit.WebViewRenderProcessClient WebViewRenderProcessClient
         {
             get { return IExecuteWithSignature<Android.Webkit.WebViewRenderProcessClient>("getWebViewRenderProcessClient", "()Landroid/webkit/WebViewRenderProcessClient;"); } set { IExecuteWithSignature("setWebViewRenderProcessClient", "(Landroid/webkit/WebViewRenderProcessClient;)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#capturePicture()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Picture"/></returns>
+        [System.Obsolete()]
+        public Android.Graphics.Picture CapturePicture()
+        {
+            return IExecuteWithSignature<Android.Graphics.Picture>("capturePicture", "()Landroid/graphics/Picture;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#createPrintDocumentAdapter()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Print.PrintDocumentAdapter"/></returns>
+        [System.Obsolete()]
+        public Android.Print.PrintDocumentAdapter CreatePrintDocumentAdapter()
+        {
+            return IExecuteWithSignature<Android.Print.PrintDocumentAdapter>("createPrintDocumentAdapter", "()Landroid/print/PrintDocumentAdapter;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#createPrintDocumentAdapter()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Print.PrintDocumentAdapter"/></returns>
+        [System.Obsolete()]
+        public Android.Print.PrintDocumentAdapter CreatePrintDocumentAdapterDirect()
+        {
+            return IExecuteWithSignature<Android.Print.PrintDocumentAdapterDirect, Android.Print.PrintDocumentAdapter>("createPrintDocumentAdapter", "()Landroid/print/PrintDocumentAdapter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#createPrintDocumentAdapter(java.lang.String)"/>
@@ -393,12 +451,48 @@ namespace Android.Webkit
             return IExecuteWithSignature<bool>("canGoForward", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#canZoomIn()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool CanZoomIn()
+        {
+            return IExecuteWithSignature<bool>("canZoomIn", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#canZoomOut()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool CanZoomOut()
+        {
+            return IExecuteWithSignature<bool>("canZoomOut", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#isPrivateBrowsingEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsPrivateBrowsingEnabled()
         {
             return IExecuteWithSignature<bool>("isPrivateBrowsingEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#overlayHorizontalScrollbar()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool OverlayHorizontalScrollbar()
+        {
+            return IExecuteWithSignature<bool>("overlayHorizontalScrollbar", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#overlayVerticalScrollbar()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool OverlayVerticalScrollbar()
+        {
+            return IExecuteWithSignature<bool>("overlayVerticalScrollbar", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#pageDown(boolean)"/>
@@ -419,6 +513,17 @@ namespace Android.Webkit
             return IExecuteWithSignature<bool>("pageUp", "(Z)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#showFindDialog(java.lang.String,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool ShowFindDialog(Java.Lang.String arg0, bool arg1)
+        {
+            return IExecute<bool>("showFindDialog", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#zoomIn()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -433,6 +538,27 @@ namespace Android.Webkit
         public bool ZoomOut()
         {
             return IExecuteWithSignature<bool>("zoomOut", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#findAll(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int FindAll(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<int>("findAll", "(Ljava/lang/String;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#getHttpAuthUsernamePassword(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public Java.Lang.String[] GetHttpAuthUsernamePassword(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return IExecuteArray<Java.Lang.String>("getHttpAuthUsernamePassword", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#addJavascriptInterface(java.lang.Object,java.lang.String)"/>
@@ -478,6 +604,14 @@ namespace Android.Webkit
         public void ClearSslPreferences()
         {
             IExecuteWithSignature("clearSslPreferences", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#clearView()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void ClearView()
+        {
+            IExecuteWithSignature("clearView", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#destroy()"/>
@@ -527,6 +661,14 @@ namespace Android.Webkit
         public void FlingScroll(int arg0, int arg1)
         {
             IExecute("flingScroll", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#freeMemory()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void FreeMemory()
+        {
+            IExecuteWithSignature("freeMemory", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#goBack()"/>
@@ -595,6 +737,36 @@ namespace Android.Webkit
         public void LoadUrl(Java.Lang.String arg0)
         {
             IExecuteWithSignature("loadUrl", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#onChildViewAdded(android.view.View,android.view.View)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <param name="arg1"><see cref="Android.View.View"/></param>
+        [System.Obsolete()]
+        public void OnChildViewAdded(Android.View.View arg0, Android.View.View arg1)
+        {
+            IExecute("onChildViewAdded", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#onChildViewRemoved(android.view.View,android.view.View)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <param name="arg1"><see cref="Android.View.View"/></param>
+        [System.Obsolete()]
+        public void OnChildViewRemoved(Android.View.View arg0, Android.View.View arg1)
+        {
+            IExecute("onChildViewRemoved", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#onGlobalFocusChanged(android.view.View,android.view.View)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <param name="arg1"><see cref="Android.View.View"/></param>
+        [System.Obsolete()]
+        public void OnGlobalFocusChanged(Android.View.View arg0, Android.View.View arg1)
+        {
+            IExecute("onGlobalFocusChanged", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#onPause()"/>
@@ -683,6 +855,17 @@ namespace Android.Webkit
             IExecuteWithSignature("resumeTimers", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#savePassword(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public void SavePassword(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+        {
+            IExecute("savePassword", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#saveWebArchive(java.lang.String,boolean,android.webkit.ValueCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -717,12 +900,42 @@ namespace Android.Webkit
             IExecuteWithSignature("setFindListener", "(Landroid/webkit/WebView$FindListener;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#setHorizontalScrollbarOverlay(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetHorizontalScrollbarOverlay(bool arg0)
+        {
+            IExecuteWithSignature("setHorizontalScrollbarOverlay", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#setHttpAuthUsernamePassword(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public void SetHttpAuthUsernamePassword(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+        {
+            IExecute("setHttpAuthUsernamePassword", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#setInitialScale(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void SetInitialScale(int arg0)
         {
             IExecuteWithSignature("setInitialScale", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#setMapTrackballToArrowKeys(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetMapTrackballToArrowKeys(bool arg0)
+        {
+            IExecuteWithSignature("setMapTrackballToArrowKeys", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#setNetworkAvailable(boolean)"/>
@@ -733,6 +946,15 @@ namespace Android.Webkit
             IExecuteWithSignature("setNetworkAvailable", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#setPictureListener(android.webkit.WebView.PictureListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Webkit.WebView.PictureListener"/></param>
+        [System.Obsolete()]
+        public void SetPictureListener(Android.Webkit.WebView.PictureListener arg0)
+        {
+            IExecuteWithSignature("setPictureListener", "(Landroid/webkit/WebView$PictureListener;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#setRendererPriorityPolicy(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -740,6 +962,15 @@ namespace Android.Webkit
         public void SetRendererPriorityPolicy(int arg0, bool arg1)
         {
             IExecute("setRendererPriorityPolicy", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#setVerticalScrollbarOverlay(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetVerticalScrollbarOverlay(bool arg0)
+        {
+            IExecuteWithSignature("setVerticalScrollbarOverlay", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebView.html#setWebViewRenderProcessClient(java.util.concurrent.Executor,android.webkit.WebViewRenderProcessClient)"/>
@@ -885,6 +1116,13 @@ namespace Android.Webkit
 
             #region Fields
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebView.HitTestResult.html#ANCHOR_TYPE"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int ANCHOR_TYPE { get { if (!_ANCHOR_TYPEReady) { _ANCHOR_TYPEContent = SGetField<int>(LocalBridgeClazz, "ANCHOR_TYPE"); _ANCHOR_TYPEReady = true; } return _ANCHOR_TYPEContent; } }
+            private static int _ANCHOR_TYPEContent = default;
+            private static bool _ANCHOR_TYPEReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebView.HitTestResult.html#EDIT_TEXT_TYPE"/>
             /// </summary>
             public static int EDIT_TEXT_TYPE { get { if (!_EDIT_TEXT_TYPEReady) { _EDIT_TEXT_TYPEContent = SGetField<int>(LocalBridgeClazz, "EDIT_TEXT_TYPE"); _EDIT_TEXT_TYPEReady = true; } return _EDIT_TEXT_TYPEContent; } }
@@ -902,6 +1140,13 @@ namespace Android.Webkit
             public static int GEO_TYPE { get { if (!_GEO_TYPEReady) { _GEO_TYPEContent = SGetField<int>(LocalBridgeClazz, "GEO_TYPE"); _GEO_TYPEReady = true; } return _GEO_TYPEContent; } }
             private static int _GEO_TYPEContent = default;
             private static bool _GEO_TYPEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebView.HitTestResult.html#IMAGE_ANCHOR_TYPE"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int IMAGE_ANCHOR_TYPE { get { if (!_IMAGE_ANCHOR_TYPEReady) { _IMAGE_ANCHOR_TYPEContent = SGetField<int>(LocalBridgeClazz, "IMAGE_ANCHOR_TYPE"); _IMAGE_ANCHOR_TYPEReady = true; } return _IMAGE_ANCHOR_TYPEContent; } }
+            private static int _IMAGE_ANCHOR_TYPEContent = default;
+            private static bool _IMAGE_ANCHOR_TYPEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebView.HitTestResult.html#IMAGE_TYPE"/>
             /// </summary>
@@ -953,6 +1198,109 @@ namespace Android.Webkit
             public int Type
             {
                 get { return IExecuteWithSignature<int>("getType", "()I"); }
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region PictureListener
+        public partial class PictureListener
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// Handlers initializer for <see cref="PictureListener"/>
+            /// </summary>
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("onNewPicture", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Webkit.WebView>>>(OnNewPictureEventHandler));
+
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/webkit/WebView.PictureListener.html#onNewPicture(android.webkit.WebView,android.graphics.Picture)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnNewPicture"/> has a value it takes precedence over corresponding class method</remarks>
+            public System.Action<Android.Webkit.WebView, Android.Graphics.Picture> OnOnNewPicture { get; set; } = null;
+
+            void OnNewPictureEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Webkit.WebView>> data)
+            {
+                var methodToExecute = (OnOnNewPicture != null) ? OnOnNewPicture : OnNewPicture;
+                methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Graphics.Picture>(0));
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebView.PictureListener.html#onNewPicture(android.webkit.WebView,android.graphics.Picture)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Webkit.WebView"/></param>
+            /// <param name="arg1"><see cref="Android.Graphics.Picture"/></param>
+            [System.Obsolete()]
+            public virtual void OnNewPicture(Android.Webkit.WebView arg0, Android.Graphics.Picture arg1)
+            {
+                
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region PictureListenerDirect
+        public partial class PictureListenerDirect
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebView.PictureListener.html#onNewPicture(android.webkit.WebView,android.graphics.Picture)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Webkit.WebView"/></param>
+            /// <param name="arg1"><see cref="Android.Graphics.Picture"/></param>
+            [System.Obsolete()]
+            public override void OnNewPicture(Android.Webkit.WebView arg0, Android.Graphics.Picture arg1)
+            {
+                IExecute("onNewPicture", arg0, arg1);
             }
 
             #endregion

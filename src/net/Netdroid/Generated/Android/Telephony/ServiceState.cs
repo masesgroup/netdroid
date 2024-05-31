@@ -30,6 +30,15 @@ namespace Android.Telephony
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#%3Cinit%3E(android.os.Parcel)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
+        [System.Obsolete()]
+        public ServiceState(Android.Os.Parcel arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#%3Cinit%3E(android.telephony.ServiceState)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Telephony.ServiceState"/></param>

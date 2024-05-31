@@ -202,6 +202,33 @@ namespace Android.Telephony
             return IExecuteWithSignature<bool>("isNetworkSearching", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#isRegistered()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsRegistered()
+        {
+            return IExecuteWithSignature<bool>("isRegistered", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#isRoaming()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsRoaming()
+        {
+            return IExecuteWithSignature<bool>("isRoaming", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#isSearching()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsSearching()
+        {
+            return IExecuteWithSignature<bool>("isSearching", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/NetworkRegistrationInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>

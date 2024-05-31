@@ -54,6 +54,16 @@ namespace Android.View
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#%3Cinit%3E(android.graphics.Rect,java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+        /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        [System.Obsolete()]
+        public DisplayCutout(Android.Graphics.Rect arg0, Java.Util.List<Android.Graphics.Rect> arg1)
+            : base(arg0, arg1)
+        {
+        }
 
         #endregion
 

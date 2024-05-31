@@ -62,6 +62,27 @@ namespace Android.Telephony
         private static int _CHANNEL_NUMBER_UNKNOWNContent = default;
         private static bool _CHANNEL_NUMBER_UNKNOWNReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#CONNECTION_PRIMARY_SERVING"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int CONNECTION_PRIMARY_SERVING { get { if (!_CONNECTION_PRIMARY_SERVINGReady) { _CONNECTION_PRIMARY_SERVINGContent = SGetField<int>(LocalBridgeClazz, "CONNECTION_PRIMARY_SERVING"); _CONNECTION_PRIMARY_SERVINGReady = true; } return _CONNECTION_PRIMARY_SERVINGContent; } }
+        private static int _CONNECTION_PRIMARY_SERVINGContent = default;
+        private static bool _CONNECTION_PRIMARY_SERVINGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#CONNECTION_SECONDARY_SERVING"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int CONNECTION_SECONDARY_SERVING { get { if (!_CONNECTION_SECONDARY_SERVINGReady) { _CONNECTION_SECONDARY_SERVINGContent = SGetField<int>(LocalBridgeClazz, "CONNECTION_SECONDARY_SERVING"); _CONNECTION_SECONDARY_SERVINGReady = true; } return _CONNECTION_SECONDARY_SERVINGContent; } }
+        private static int _CONNECTION_SECONDARY_SERVINGContent = default;
+        private static bool _CONNECTION_SECONDARY_SERVINGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#CONNECTION_UNKNOWN"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int CONNECTION_UNKNOWN { get { if (!_CONNECTION_UNKNOWNReady) { _CONNECTION_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "CONNECTION_UNKNOWN"); _CONNECTION_UNKNOWNReady = true; } return _CONNECTION_UNKNOWNContent; } }
+        private static int _CONNECTION_UNKNOWNContent = default;
+        private static bool _CONNECTION_UNKNOWNReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhysicalChannelConfig.html#FREQUENCY_UNKNOWN"/>
         /// </summary>
         public static int FREQUENCY_UNKNOWN { get { if (!_FREQUENCY_UNKNOWNReady) { _FREQUENCY_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "FREQUENCY_UNKNOWN"); _FREQUENCY_UNKNOWNReady = true; } return _FREQUENCY_UNKNOWNContent; } }

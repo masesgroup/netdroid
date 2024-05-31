@@ -84,6 +84,14 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/FrameLayout.html#getConsiderGoneChildrenWhenMeasuring()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public bool ConsiderGoneChildrenWhenMeasuring
+        {
+            get { return IExecuteWithSignature<bool>("getConsiderGoneChildrenWhenMeasuring", "()Z"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/FrameLayout.html#getMeasureAllChildren()"/> <see href="https://developer.android.com/reference/android/widget/FrameLayout.html#setMeasureAllChildren(boolean)"/>
         /// </summary>
         public bool MeasureAllChildren

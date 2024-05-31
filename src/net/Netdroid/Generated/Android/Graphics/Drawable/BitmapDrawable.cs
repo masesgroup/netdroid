@@ -56,6 +56,42 @@ namespace Android.Graphics.Drawable
             : base(arg0, arg1)
         {
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#%3Cinit%3E(android.content.res.Resources)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.Resources"/></param>
+        [System.Obsolete()]
+        public BitmapDrawable(Android.Content.Res.Resources arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#%3Cinit%3E(android.graphics.Bitmap)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
+        [System.Obsolete()]
+        public BitmapDrawable(Android.Graphics.Bitmap arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        [System.Obsolete()]
+        public BitmapDrawable(Java.Io.InputStream arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#%3Cinit%3E(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public BitmapDrawable(Java.Lang.String arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 

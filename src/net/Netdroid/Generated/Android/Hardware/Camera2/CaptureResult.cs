@@ -170,6 +170,13 @@ namespace Android.Hardware.Camera2
         private static Android.Hardware.Camera2.CaptureResult.Key _LENS_POSE_TRANSLATIONContent = default;
         private static bool _LENS_POSE_TRANSLATIONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#LENS_RADIAL_DISTORTION"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Android.Hardware.Camera2.CaptureResult.Key LENS_RADIAL_DISTORTION { get { if (!_LENS_RADIAL_DISTORTIONReady) { _LENS_RADIAL_DISTORTIONContent = SGetField<Android.Hardware.Camera2.CaptureResult.Key>(LocalBridgeClazz, "LENS_RADIAL_DISTORTION"); _LENS_RADIAL_DISTORTIONReady = true; } return _LENS_RADIAL_DISTORTIONContent; } }
+        private static Android.Hardware.Camera2.CaptureResult.Key _LENS_RADIAL_DISTORTIONContent = default;
+        private static bool _LENS_RADIAL_DISTORTIONReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureResult.html#SENSOR_DYNAMIC_BLACK_LEVEL"/>
         /// </summary>
         public static Android.Hardware.Camera2.CaptureResult.Key SENSOR_DYNAMIC_BLACK_LEVEL { get { if (!_SENSOR_DYNAMIC_BLACK_LEVELReady) { _SENSOR_DYNAMIC_BLACK_LEVELContent = SGetField<Android.Hardware.Camera2.CaptureResult.Key>(LocalBridgeClazz, "SENSOR_DYNAMIC_BLACK_LEVEL"); _SENSOR_DYNAMIC_BLACK_LEVELReady = true; } return _SENSOR_DYNAMIC_BLACK_LEVELContent; } }

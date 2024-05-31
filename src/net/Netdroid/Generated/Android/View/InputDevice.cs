@@ -62,6 +62,69 @@ namespace Android.View
         private static int _KEYBOARD_TYPE_NONEContent = default;
         private static bool _KEYBOARD_TYPE_NONEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_ORIENTATION"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MOTION_RANGE_ORIENTATION { get { if (!_MOTION_RANGE_ORIENTATIONReady) { _MOTION_RANGE_ORIENTATIONContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_ORIENTATION"); _MOTION_RANGE_ORIENTATIONReady = true; } return _MOTION_RANGE_ORIENTATIONContent; } }
+        private static int _MOTION_RANGE_ORIENTATIONContent = default;
+        private static bool _MOTION_RANGE_ORIENTATIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_PRESSURE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MOTION_RANGE_PRESSURE { get { if (!_MOTION_RANGE_PRESSUREReady) { _MOTION_RANGE_PRESSUREContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_PRESSURE"); _MOTION_RANGE_PRESSUREReady = true; } return _MOTION_RANGE_PRESSUREContent; } }
+        private static int _MOTION_RANGE_PRESSUREContent = default;
+        private static bool _MOTION_RANGE_PRESSUREReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_SIZE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MOTION_RANGE_SIZE { get { if (!_MOTION_RANGE_SIZEReady) { _MOTION_RANGE_SIZEContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_SIZE"); _MOTION_RANGE_SIZEReady = true; } return _MOTION_RANGE_SIZEContent; } }
+        private static int _MOTION_RANGE_SIZEContent = default;
+        private static bool _MOTION_RANGE_SIZEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_TOOL_MAJOR"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MOTION_RANGE_TOOL_MAJOR { get { if (!_MOTION_RANGE_TOOL_MAJORReady) { _MOTION_RANGE_TOOL_MAJORContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_TOOL_MAJOR"); _MOTION_RANGE_TOOL_MAJORReady = true; } return _MOTION_RANGE_TOOL_MAJORContent; } }
+        private static int _MOTION_RANGE_TOOL_MAJORContent = default;
+        private static bool _MOTION_RANGE_TOOL_MAJORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_TOOL_MINOR"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MOTION_RANGE_TOOL_MINOR { get { if (!_MOTION_RANGE_TOOL_MINORReady) { _MOTION_RANGE_TOOL_MINORContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_TOOL_MINOR"); _MOTION_RANGE_TOOL_MINORReady = true; } return _MOTION_RANGE_TOOL_MINORContent; } }
+        private static int _MOTION_RANGE_TOOL_MINORContent = default;
+        private static bool _MOTION_RANGE_TOOL_MINORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_TOUCH_MAJOR"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MOTION_RANGE_TOUCH_MAJOR { get { if (!_MOTION_RANGE_TOUCH_MAJORReady) { _MOTION_RANGE_TOUCH_MAJORContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_TOUCH_MAJOR"); _MOTION_RANGE_TOUCH_MAJORReady = true; } return _MOTION_RANGE_TOUCH_MAJORContent; } }
+        private static int _MOTION_RANGE_TOUCH_MAJORContent = default;
+        private static bool _MOTION_RANGE_TOUCH_MAJORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_TOUCH_MINOR"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MOTION_RANGE_TOUCH_MINOR { get { if (!_MOTION_RANGE_TOUCH_MINORReady) { _MOTION_RANGE_TOUCH_MINORContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_TOUCH_MINOR"); _MOTION_RANGE_TOUCH_MINORReady = true; } return _MOTION_RANGE_TOUCH_MINORContent; } }
+        private static int _MOTION_RANGE_TOUCH_MINORContent = default;
+        private static bool _MOTION_RANGE_TOUCH_MINORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_X"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MOTION_RANGE_X { get { if (!_MOTION_RANGE_XReady) { _MOTION_RANGE_XContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_X"); _MOTION_RANGE_XReady = true; } return _MOTION_RANGE_XContent; } }
+        private static int _MOTION_RANGE_XContent = default;
+        private static bool _MOTION_RANGE_XReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_Y"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MOTION_RANGE_Y { get { if (!_MOTION_RANGE_YReady) { _MOTION_RANGE_YContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_Y"); _MOTION_RANGE_YReady = true; } return _MOTION_RANGE_YContent; } }
+        private static int _MOTION_RANGE_YContent = default;
+        private static bool _MOTION_RANGE_YReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#SOURCE_ANY"/>
         /// </summary>
         public static int SOURCE_ANY { get { if (!_SOURCE_ANYReady) { _SOURCE_ANYContent = SGetField<int>(LocalBridgeClazz, "SOURCE_ANY"); _SOURCE_ANYReady = true; } return _SOURCE_ANYContent; } }
@@ -319,6 +382,14 @@ namespace Android.View
         public int VendorId
         {
             get { return IExecuteWithSignature<int>("getVendorId", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getVibrator()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Os.Vibrator Vibrator
+        {
+            get { return IExecuteWithSignature<Android.Os.Vibrator>("getVibrator", "()Landroid/os/Vibrator;"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getVibratorManager()"/> 

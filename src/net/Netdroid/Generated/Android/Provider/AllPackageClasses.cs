@@ -1308,6 +1308,1149 @@ namespace Android.Provider
     }
     #endregion
 
+    #region Contacts
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/provider/Contacts.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class Contacts : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Contacts>
+    {
+        const string _bridgeClassName = "android.provider.Contacts";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Contacts() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Contacts(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+        #region ContactMethods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.ContactMethods.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class ContactMethods : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ContactMethods>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$ContactMethods";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public ContactMethods() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public ContactMethods(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region ContactMethodsColumns
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.ContactMethodsColumns.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class ContactMethodsColumns : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ContactMethodsColumns>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$ContactMethodsColumns";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            [Obsolete("ContactMethodsColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public ContactMethodsColumns() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            [Obsolete("ContactMethodsColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public ContactMethodsColumns(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region Extensions
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.Extensions.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class Extensions : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Extensions>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$Extensions";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Extensions() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Extensions(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region ExtensionsColumns
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.ExtensionsColumns.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class ExtensionsColumns : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ExtensionsColumns>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$ExtensionsColumns";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            [Obsolete("ExtensionsColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public ExtensionsColumns() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            [Obsolete("ExtensionsColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public ExtensionsColumns(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region GroupMembership
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.GroupMembership.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class GroupMembership : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GroupMembership>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$GroupMembership";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public GroupMembership() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public GroupMembership(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region Groups
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.Groups.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class Groups : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Groups>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$Groups";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Groups() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Groups(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region GroupsColumns
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.GroupsColumns.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class GroupsColumns : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GroupsColumns>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$GroupsColumns";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            [Obsolete("GroupsColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public GroupsColumns() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            [Obsolete("GroupsColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public GroupsColumns(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region Intents
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.Intents.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class Intents : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Intents>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$Intents";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Intents() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Intents(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+            #region UI
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/Contacts.Intents.UI.html"/>
+            /// </summary>
+            [System.Obsolete()]
+            public partial class UI : MASES.JCOBridge.C2JBridge.JVMBridgeBase<UI>
+            {
+                const string _bridgeClassName = "android.provider.Contacts$Intents$UI";
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public UI() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public UI(params object[] args) : base(args) { }
+
+                private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+                /// </summary>
+                public override string BridgeClassName => _bridgeClassName;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+                /// </summary>
+                public override bool IsBridgeAbstract => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+                /// </summary>
+                public override bool IsBridgeCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+                /// </summary>
+                public override bool IsBridgeInterface => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+                /// </summary>
+                public override bool IsBridgeStatic => true;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+            #region Insert
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/Contacts.Intents.Insert.html"/>
+            /// </summary>
+            [System.Obsolete()]
+            public partial class Insert : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Insert>
+            {
+                const string _bridgeClassName = "android.provider.Contacts$Intents$Insert";
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public Insert() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public Insert(params object[] args) : base(args) { }
+
+                private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+                /// </summary>
+                public override string BridgeClassName => _bridgeClassName;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+                /// </summary>
+                public override bool IsBridgeAbstract => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+                /// </summary>
+                public override bool IsBridgeCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+                /// </summary>
+                public override bool IsBridgeInterface => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+                /// </summary>
+                public override bool IsBridgeStatic => true;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+        
+        }
+        #endregion
+
+        #region OrganizationColumns
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.OrganizationColumns.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class OrganizationColumns : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OrganizationColumns>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$OrganizationColumns";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            [Obsolete("OrganizationColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public OrganizationColumns() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            [Obsolete("OrganizationColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public OrganizationColumns(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region Organizations
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.Organizations.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class Organizations : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Organizations>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$Organizations";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Organizations() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Organizations(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region People
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.People.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class People : MASES.JCOBridge.C2JBridge.JVMBridgeBase<People>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$People";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public People() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public People(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+            #region Phones
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/Contacts.People.Phones.html"/>
+            /// </summary>
+            [System.Obsolete()]
+            public partial class Phones : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Phones>
+            {
+                const string _bridgeClassName = "android.provider.Contacts$People$Phones";
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public Phones() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public Phones(params object[] args) : base(args) { }
+
+                private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+                /// </summary>
+                public override string BridgeClassName => _bridgeClassName;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+                /// </summary>
+                public override bool IsBridgeAbstract => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+                /// </summary>
+                public override bool IsBridgeCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+                /// </summary>
+                public override bool IsBridgeInterface => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+                /// </summary>
+                public override bool IsBridgeStatic => true;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+            #region Extensions
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/Contacts.People.Extensions.html"/>
+            /// </summary>
+            [System.Obsolete()]
+            public partial class Extensions : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Extensions>
+            {
+                const string _bridgeClassName = "android.provider.Contacts$People$Extensions";
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public Extensions() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public Extensions(params object[] args) : base(args) { }
+
+                private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+                /// </summary>
+                public override string BridgeClassName => _bridgeClassName;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+                /// </summary>
+                public override bool IsBridgeAbstract => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+                /// </summary>
+                public override bool IsBridgeCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+                /// </summary>
+                public override bool IsBridgeInterface => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+                /// </summary>
+                public override bool IsBridgeStatic => true;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+            #region ContactMethods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/Contacts.People.ContactMethods.html"/>
+            /// </summary>
+            [System.Obsolete()]
+            public partial class ContactMethods : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ContactMethods>
+            {
+                const string _bridgeClassName = "android.provider.Contacts$People$ContactMethods";
+                /// <summary>
+                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+                /// </summary>
+                public ContactMethods() { }
+                /// <summary>
+                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+                /// </summary>
+                public ContactMethods(params object[] args) : base(args) { }
+
+                private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+                /// </summary>
+                public override string BridgeClassName => _bridgeClassName;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+                /// </summary>
+                public override bool IsBridgeAbstract => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+                /// </summary>
+                public override bool IsBridgeCloseable => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+                /// </summary>
+                public override bool IsBridgeInterface => false;
+                /// <summary>
+                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+                /// </summary>
+                public override bool IsBridgeStatic => true;
+
+                // TODO: complete the class
+
+            }
+            #endregion
+
+        
+        }
+        #endregion
+
+        #region PeopleColumns
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.PeopleColumns.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class PeopleColumns : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PeopleColumns>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$PeopleColumns";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            [Obsolete("PeopleColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public PeopleColumns() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            [Obsolete("PeopleColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public PeopleColumns(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region Phones
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.Phones.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class Phones : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Phones>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$Phones";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Phones() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Phones(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region PhonesColumns
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.PhonesColumns.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class PhonesColumns : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PhonesColumns>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$PhonesColumns";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            [Obsolete("PhonesColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public PhonesColumns() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            [Obsolete("PhonesColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public PhonesColumns(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region Photos
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.Photos.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class Photos : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Photos>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$Photos";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Photos() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Photos(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region PhotosColumns
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.PhotosColumns.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class PhotosColumns : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PhotosColumns>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$PhotosColumns";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            [Obsolete("PhotosColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public PhotosColumns() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            [Obsolete("PhotosColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public PhotosColumns(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region PresenceColumns
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.PresenceColumns.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class PresenceColumns : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PresenceColumns>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$PresenceColumns";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            [Obsolete("PresenceColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public PresenceColumns() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            [Obsolete("PresenceColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public PresenceColumns(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region Settings
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.Settings.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class Settings : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Settings>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$Settings";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Settings() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Settings(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region SettingsColumns
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/Contacts.SettingsColumns.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class SettingsColumns : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SettingsColumns>
+        {
+            const string _bridgeClassName = "android.provider.Contacts$SettingsColumns";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            [Obsolete("SettingsColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public SettingsColumns() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            [Obsolete("SettingsColumns class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public SettingsColumns(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+    
+    }
+    #endregion
+
     #region ContactsContract
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.html"/>
@@ -2538,6 +3681,51 @@ namespace Android.Provider
         }
         #endregion
 
+        #region DataUsageFeedback
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.DataUsageFeedback.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class DataUsageFeedback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DataUsageFeedback>
+        {
+            const string _bridgeClassName = "android.provider.ContactsContract$DataUsageFeedback";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public DataUsageFeedback() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public DataUsageFeedback(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
         #region DeletedContacts
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.DeletedContacts.html"/>
@@ -2999,6 +4187,51 @@ namespace Android.Provider
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public PinnedPositions(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region Presence
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.Presence.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class Presence : Android.Provider.ContactsContract.StatusUpdates
+        {
+            const string _bridgeClassName = "android.provider.ContactsContract$Presence";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Presence() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Presence(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
@@ -3896,6 +5129,321 @@ namespace Android.Provider
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
         public override bool IsBridgeAbstract => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region FontRequest
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/provider/FontRequest.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class FontRequest : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FontRequest>
+    {
+        const string _bridgeClassName = "android.provider.FontRequest";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public FontRequest() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public FontRequest(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region FontsContract
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/provider/FontsContract.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class FontsContract : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FontsContract>
+    {
+        const string _bridgeClassName = "android.provider.FontsContract";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public FontsContract() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public FontsContract(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+        #region Columns
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/FontsContract.Columns.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class Columns : Android.Provider.BaseColumns
+        {
+            const string _bridgeClassName = "android.provider.FontsContract$Columns";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Columns() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Columns(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region FontFamilyResult
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/FontsContract.FontFamilyResult.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class FontFamilyResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FontFamilyResult>
+        {
+            const string _bridgeClassName = "android.provider.FontsContract$FontFamilyResult";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public FontFamilyResult() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public FontFamilyResult(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region FontInfo
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/FontsContract.FontInfo.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class FontInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FontInfo>
+        {
+            const string _bridgeClassName = "android.provider.FontsContract$FontInfo";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public FontInfo() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public FontInfo(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+        #region FontRequestCallback
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/FontsContract.FontRequestCallback.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class FontRequestCallback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FontRequestCallback>
+        {
+            const string _bridgeClassName = "android.provider.FontsContract$FontRequestCallback";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public FontRequestCallback() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public FontRequestCallback(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+    
+    }
+    #endregion
+
+    #region LiveFolders
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/provider/LiveFolders.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class LiveFolders : Android.Provider.BaseColumns
+    {
+        const string _bridgeClassName = "android.provider.LiveFolders";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public LiveFolders() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public LiveFolders(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
         /// </summary>

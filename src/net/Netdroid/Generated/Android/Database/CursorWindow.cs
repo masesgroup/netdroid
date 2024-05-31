@@ -30,6 +30,15 @@ namespace Android.Database
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#%3Cinit%3E(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public CursorWindow(bool arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#%3Cinit%3E(java.lang.String,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -102,6 +111,61 @@ namespace Android.Database
         public bool AllocRow()
         {
             return IExecuteWithSignature<bool>("allocRow", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#isBlob(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsBlob(int arg0, int arg1)
+        {
+            return IExecute<bool>("isBlob", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#isFloat(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsFloat(int arg0, int arg1)
+        {
+            return IExecute<bool>("isFloat", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#isLong(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsLong(int arg0, int arg1)
+        {
+            return IExecute<bool>("isLong", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#isNull(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsNull(int arg0, int arg1)
+        {
+            return IExecute<bool>("isNull", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#isString(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsString(int arg0, int arg1)
+        {
+            return IExecute<bool>("isString", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#putBlob(byte[],int,int)"/>

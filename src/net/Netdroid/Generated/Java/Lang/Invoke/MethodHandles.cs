@@ -587,6 +587,15 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<bool>("hasFullPrivilegeAccess", "()Z");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#hasPrivateAccess()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            [System.Obsolete()]
+            public bool HasPrivateAccess()
+            {
+                return IExecuteWithSignature<bool>("hasPrivateAccess", "()Z");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#lookupModes()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>

@@ -88,6 +88,18 @@ namespace Android.Bluetooth
             return IExecute<bool>("connect", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServer.html#notifyCharacteristicChanged(android.bluetooth.BluetoothDevice,android.bluetooth.BluetoothGattCharacteristic,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothDevice"/></param>
+        /// <param name="arg1"><see cref="Android.Bluetooth.BluetoothGattCharacteristic"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool NotifyCharacteristicChanged(Android.Bluetooth.BluetoothDevice arg0, Android.Bluetooth.BluetoothGattCharacteristic arg1, bool arg2)
+        {
+            return IExecute<bool>("notifyCharacteristicChanged", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattServer.html#removeService(android.bluetooth.BluetoothGattService)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothGattService"/></param>

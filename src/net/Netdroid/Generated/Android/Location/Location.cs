@@ -331,6 +331,15 @@ namespace Android.Location
             return IExecuteWithSignature<bool>("isComplete", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#isFromMockProvider()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsFromMockProvider()
+        {
+            return IExecuteWithSignature<bool>("isFromMockProvider", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Location.html#isMock()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -372,6 +381,16 @@ namespace Android.Location
         public long GetElapsedRealtimeAgeMillis(long arg0)
         {
             return IExecuteWithSignature<long>("getElapsedRealtimeAgeMillis", "(J)J", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#dump(android.util.Printer,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Util.Printer"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public void Dump(Android.Util.Printer arg0, Java.Lang.String arg1)
+        {
+            IExecute("dump", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Location.html#removeAccuracy()"/>

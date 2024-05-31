@@ -214,6 +214,14 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getActiveStagedSession()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Content.Pm.PackageInstaller.SessionInfo ActiveStagedSession
+        {
+            get { return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.SessionInfo>("getActiveStagedSession", "()Landroid/content/pm/PackageInstaller$SessionInfo;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getActiveStagedSessions()"/> 
         /// </summary>
         public Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo> ActiveStagedSessions
@@ -985,6 +993,18 @@ namespace Android.Content.Pm
                 IExecute("requestUserPreapproval", arg0, arg1);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#setChecksums(java.lang.String,java.util.List,byte[])"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Java.Util.List"/></param>
+            /// <param name="arg2"><see cref="byte"/></param>
+            /// <exception cref="Java.Io.IOException"/>
+            [System.Obsolete()]
+            public void SetChecksums(Java.Lang.String arg0, Java.Util.List<Android.Content.Pm.Checksum> arg1, byte[] arg2)
+            {
+                IExecute("setChecksums", arg0, arg1, arg2);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#setStagingProgress(float)"/>
             /// </summary>
             /// <param name="arg0"><see cref="float"/></param>
@@ -1140,6 +1160,41 @@ namespace Android.Content.Pm
             public static int SESSION_VERIFICATION_FAILED { get { if (!_SESSION_VERIFICATION_FAILEDReady) { _SESSION_VERIFICATION_FAILEDContent = SGetField<int>(LocalBridgeClazz, "SESSION_VERIFICATION_FAILED"); _SESSION_VERIFICATION_FAILEDReady = true; } return _SESSION_VERIFICATION_FAILEDContent; } }
             private static int _SESSION_VERIFICATION_FAILEDContent = default;
             private static bool _SESSION_VERIFICATION_FAILEDReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#STAGED_SESSION_ACTIVATION_FAILED"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int STAGED_SESSION_ACTIVATION_FAILED { get { if (!_STAGED_SESSION_ACTIVATION_FAILEDReady) { _STAGED_SESSION_ACTIVATION_FAILEDContent = SGetField<int>(LocalBridgeClazz, "STAGED_SESSION_ACTIVATION_FAILED"); _STAGED_SESSION_ACTIVATION_FAILEDReady = true; } return _STAGED_SESSION_ACTIVATION_FAILEDContent; } }
+            private static int _STAGED_SESSION_ACTIVATION_FAILEDContent = default;
+            private static bool _STAGED_SESSION_ACTIVATION_FAILEDReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#STAGED_SESSION_CONFLICT"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int STAGED_SESSION_CONFLICT { get { if (!_STAGED_SESSION_CONFLICTReady) { _STAGED_SESSION_CONFLICTContent = SGetField<int>(LocalBridgeClazz, "STAGED_SESSION_CONFLICT"); _STAGED_SESSION_CONFLICTReady = true; } return _STAGED_SESSION_CONFLICTContent; } }
+            private static int _STAGED_SESSION_CONFLICTContent = default;
+            private static bool _STAGED_SESSION_CONFLICTReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#STAGED_SESSION_NO_ERROR"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int STAGED_SESSION_NO_ERROR { get { if (!_STAGED_SESSION_NO_ERRORReady) { _STAGED_SESSION_NO_ERRORContent = SGetField<int>(LocalBridgeClazz, "STAGED_SESSION_NO_ERROR"); _STAGED_SESSION_NO_ERRORReady = true; } return _STAGED_SESSION_NO_ERRORContent; } }
+            private static int _STAGED_SESSION_NO_ERRORContent = default;
+            private static bool _STAGED_SESSION_NO_ERRORReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#STAGED_SESSION_UNKNOWN"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int STAGED_SESSION_UNKNOWN { get { if (!_STAGED_SESSION_UNKNOWNReady) { _STAGED_SESSION_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "STAGED_SESSION_UNKNOWN"); _STAGED_SESSION_UNKNOWNReady = true; } return _STAGED_SESSION_UNKNOWNContent; } }
+            private static int _STAGED_SESSION_UNKNOWNContent = default;
+            private static bool _STAGED_SESSION_UNKNOWNReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#STAGED_SESSION_VERIFICATION_FAILED"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int STAGED_SESSION_VERIFICATION_FAILED { get { if (!_STAGED_SESSION_VERIFICATION_FAILEDReady) { _STAGED_SESSION_VERIFICATION_FAILEDContent = SGetField<int>(LocalBridgeClazz, "STAGED_SESSION_VERIFICATION_FAILED"); _STAGED_SESSION_VERIFICATION_FAILEDReady = true; } return _STAGED_SESSION_VERIFICATION_FAILEDContent; } }
+            private static int _STAGED_SESSION_VERIFICATION_FAILEDContent = default;
+            private static bool _STAGED_SESSION_VERIFICATION_FAILEDReady = false; // this is used because in case of generics 
 
             #endregion
 
@@ -1599,6 +1654,15 @@ namespace Android.Content.Pm
             public void SetAppPackageName(Java.Lang.String arg0)
             {
                 IExecuteWithSignature("setAppPackageName", "(Ljava/lang/String;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionParams.html#setAutoRevokePermissionsMode(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            [System.Obsolete()]
+            public void SetAutoRevokePermissionsMode(bool arg0)
+            {
+                IExecuteWithSignature("setAutoRevokePermissionsMode", "(Z)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionParams.html#setDontKillApp(boolean)"/>

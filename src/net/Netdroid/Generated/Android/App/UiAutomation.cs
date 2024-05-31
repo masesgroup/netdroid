@@ -108,6 +108,14 @@ namespace Android.App
             get { return IExecuteWithSignature<Android.Accessibilityservice.AccessibilityServiceInfo>("getServiceInfo", "()Landroid/accessibilityservice/AccessibilityServiceInfo;"); } set { IExecuteWithSignature("setServiceInfo", "(Landroid/accessibilityservice/AccessibilityServiceInfo;)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#getWindowAnimationFrameStats()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Android.View.WindowAnimationFrameStats WindowAnimationFrameStats
+        {
+            get { return IExecuteWithSignature<Android.View.WindowAnimationFrameStats>("getWindowAnimationFrameStats", "()Landroid/view/WindowAnimationFrameStats;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#getWindows()"/> 
         /// </summary>
         public Java.Util.List<Android.View.Accessibility.AccessibilityWindowInfo> Windows
@@ -254,6 +262,14 @@ namespace Android.App
         public void AdoptShellPermissionIdentity(params Java.Lang.String[] arg0)
         {
             if (arg0.Length == 0) IExecuteWithSignature("adoptShellPermissionIdentity", "([Ljava/lang/String;)V"); else IExecuteWithSignature("adoptShellPermissionIdentity", "([Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#clearWindowAnimationFrameStats()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void ClearWindowAnimationFrameStats()
+        {
+            IExecuteWithSignature("clearWindowAnimationFrameStats", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#dropShellPermissionIdentity()"/>

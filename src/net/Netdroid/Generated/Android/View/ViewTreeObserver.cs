@@ -173,6 +173,15 @@ namespace Android.View
             IExecuteWithSignature("registerFrameCommitCallback", "(Ljava/lang/Runnable;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeGlobalOnLayoutListener(android.view.ViewTreeObserver.OnGlobalLayoutListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.ViewTreeObserver.OnGlobalLayoutListener"/></param>
+        [System.Obsolete()]
+        public void RemoveGlobalOnLayoutListener(Android.View.ViewTreeObserver.OnGlobalLayoutListener arg0)
+        {
+            IExecuteWithSignature("removeGlobalOnLayoutListener", "(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeOnDrawListener(android.view.ViewTreeObserver.OnDrawListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.ViewTreeObserver.OnDrawListener"/></param>

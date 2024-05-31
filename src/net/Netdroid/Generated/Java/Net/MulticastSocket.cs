@@ -64,6 +64,22 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/net/MulticastSocket.html#getInterface()"/> <see href="https://developer.android.com/reference/java.base/java/net/MulticastSocket.html#setInterface(java.net.InetAddress)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Net.InetAddress Interface
+        {
+            get { return IExecuteWithSignature<Java.Net.InetAddress>("getInterface", "()Ljava/net/InetAddress;"); } set { IExecuteWithSignature("setInterface", "(Ljava/net/InetAddress;)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/net/MulticastSocket.html#getLoopbackMode()"/> <see href="https://developer.android.com/reference/java.base/java/net/MulticastSocket.html#setLoopbackMode(boolean)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public bool LoopbackMode
+        {
+            get { return IExecuteWithSignature<bool>("getLoopbackMode", "()Z"); } set { IExecuteWithSignature("setLoopbackMode", "(Z)V", value); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/net/MulticastSocket.html#getNetworkInterface()"/> <see href="https://developer.android.com/reference/java.base/java/net/MulticastSocket.html#setNetworkInterface(java.net.NetworkInterface)"/>
         /// </summary>
         public Java.Net.NetworkInterface NetworkInterface
@@ -76,6 +92,45 @@ namespace Java.Net
         public int TimeToLive
         {
             get { return IExecuteWithSignature<int>("getTimeToLive", "()I"); } set { IExecuteWithSignature("setTimeToLive", "(I)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/net/MulticastSocket.html#getTTL()"/> <see href="https://developer.android.com/reference/java.base/java/net/MulticastSocket.html#setTTL(byte)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public byte TTL
+        {
+            get { return IExecuteWithSignature<byte>("getTTL", "()B"); } set { IExecuteWithSignature("setTTL", "(B)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/net/MulticastSocket.html#joinGroup(java.net.InetAddress)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public void JoinGroup(Java.Net.InetAddress arg0)
+        {
+            IExecuteWithSignature("joinGroup", "(Ljava/net/InetAddress;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/net/MulticastSocket.html#leaveGroup(java.net.InetAddress)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public void LeaveGroup(Java.Net.InetAddress arg0)
+        {
+            IExecuteWithSignature("leaveGroup", "(Ljava/net/InetAddress;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/net/MulticastSocket.html#send(java.net.DatagramPacket,byte)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.DatagramPacket"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public void Send(Java.Net.DatagramPacket arg0, byte arg1)
+        {
+            IExecute("send", arg0, arg1);
         }
 
         #endregion

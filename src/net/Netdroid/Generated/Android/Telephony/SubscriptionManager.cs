@@ -233,6 +233,16 @@ namespace Android.Telephony
             get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultVoiceSubscriptionId", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#from(android.content.Context)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <returns><see cref="Android.Telephony.SubscriptionManager"/></returns>
+        [System.Obsolete()]
+        public static Android.Telephony.SubscriptionManager From(Android.Content.Context arg0)
+        {
+            return SExecuteWithSignature<Android.Telephony.SubscriptionManager>(LocalBridgeClazz, "from", "(Landroid/content/Context;)Landroid/telephony/SubscriptionManager;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#isUsableSubscriptionId(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -395,6 +405,16 @@ namespace Android.Telephony
             return IExecuteWithSignature<int>("getDeviceToDeviceStatusSharingPreference", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getSubscriptionIds(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int[] GetSubscriptionIds(int arg0)
+        {
+            return IExecuteWithSignatureArray<int>("getSubscriptionIds", "(I)[I", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#getPhoneNumber(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -448,6 +468,15 @@ namespace Android.Telephony
         public void AddOnOpportunisticSubscriptionsChangedListener(Java.Util.Concurrent.Executor arg0, Android.Telephony.SubscriptionManager.OnOpportunisticSubscriptionsChangedListener arg1)
         {
             IExecute("addOnOpportunisticSubscriptionsChangedListener", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#addOnSubscriptionsChangedListener(android.telephony.SubscriptionManager.OnSubscriptionsChangedListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Telephony.SubscriptionManager.OnSubscriptionsChangedListener"/></param>
+        [System.Obsolete()]
+        public void AddOnSubscriptionsChangedListener(Android.Telephony.SubscriptionManager.OnSubscriptionsChangedListener arg0)
+        {
+            IExecuteWithSignature("addOnSubscriptionsChangedListener", "(Landroid/telephony/SubscriptionManager$OnSubscriptionsChangedListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#addOnSubscriptionsChangedListener(java.util.concurrent.Executor,android.telephony.SubscriptionManager.OnSubscriptionsChangedListener)"/>
@@ -570,6 +599,26 @@ namespace Android.Telephony
         public void SetSubscriptionPlans(int arg0, Java.Util.List<Android.Telephony.SubscriptionPlan> arg1, long arg2)
         {
             IExecute("setSubscriptionPlans", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#setSubscriptionPlans(int,java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        [System.Obsolete()]
+        public void SetSubscriptionPlans(int arg0, Java.Util.List<Android.Telephony.SubscriptionPlan> arg1)
+        {
+            IExecute("setSubscriptionPlans", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionManager.html#switchToSubscription(int,android.app.PendingIntent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.App.PendingIntent"/></param>
+        [System.Obsolete()]
+        public void SwitchToSubscription(int arg0, Android.App.PendingIntent arg1)
+        {
+            IExecute("switchToSubscription", arg0, arg1);
         }
 
         #endregion

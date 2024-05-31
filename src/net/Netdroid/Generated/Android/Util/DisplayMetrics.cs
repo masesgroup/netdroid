@@ -42,6 +42,11 @@ namespace Android.Util
         /// </summary>
         public float density { get { return IGetField<float>("density"); } set { ISetField("density", value); } }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/DisplayMetrics.html#scaledDensity"/>
+        /// </summary>
+        [System.Obsolete()]
+        public float scaledDensity { get { return IGetField<float>("scaledDensity"); } set { ISetField("scaledDensity", value); } }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/DisplayMetrics.html#xdpi"/>
         /// </summary>
         public float xdpi { get { return IGetField<float>("xdpi"); } set { ISetField("xdpi", value); } }

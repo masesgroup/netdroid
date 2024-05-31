@@ -29,6 +29,17 @@ namespace Android.View.Textservice
     public partial class SpellCheckerSubtype
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSubtype.html#%3Cinit%3E(int,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public SpellCheckerSubtype(int arg0, Java.Lang.String arg1, Java.Lang.String arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
 
         #endregion
 
@@ -64,6 +75,14 @@ namespace Android.View.Textservice
         public Java.Lang.String LanguageTag
         {
             get { return IExecuteWithSignature<Java.Lang.String>("getLanguageTag", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSubtype.html#getLocale()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String Locale
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getLocale", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSubtype.html#getNameResId()"/> 

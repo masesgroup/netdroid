@@ -76,6 +76,14 @@ namespace Android.Media
             get { return IExecuteWithSignature<long>("getAnchorSystemNanoTime", "()J"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaTimestamp.html#getAnchorSytemNanoTime()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public long AnchorSytemNanoTime
+        {
+            get { return IExecuteWithSignature<long>("getAnchorSytemNanoTime", "()J"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaTimestamp.html#getMediaClockRate()"/> 
         /// </summary>
         public float MediaClockRate

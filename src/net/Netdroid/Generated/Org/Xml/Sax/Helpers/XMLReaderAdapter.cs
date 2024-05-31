@@ -59,6 +59,7 @@ namespace Org.Xml.Sax.Helpers
             AddEventHandler("parse", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(ParseEventHandler));
             AddEventHandler("parse1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>>>(Parse1EventHandler));
             AddEventHandler("processingInstruction", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(ProcessingInstructionEventHandler));
+            AddEventHandler("setDocumentHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DocumentHandler>>>(SetDocumentHandlerEventHandler));
             AddEventHandler("setDocumentLocator", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>>>(SetDocumentLocatorEventHandler));
             AddEventHandler("setDTDHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>>>(SetDTDHandlerEventHandler));
             AddEventHandler("setEntityResolver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>>>(SetEntityResolverEventHandler));
@@ -287,6 +288,27 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void ProcessingInstruction(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setDocumentHandler(org.xml.sax.DocumentHandler)"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnSetDocumentHandler"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Org.Xml.Sax.DocumentHandler> OnSetDocumentHandler { get; set; } = null;
+
+        void SetDocumentHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DocumentHandler>> data)
+        {
+            var methodToExecute = (OnSetDocumentHandler != null) ? OnSetDocumentHandler : SetDocumentHandler;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setDocumentHandler(org.xml.sax.DocumentHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.DocumentHandler"/></param>
+        public virtual void SetDocumentHandler(Org.Xml.Sax.DocumentHandler arg0)
         {
             
         }
@@ -606,6 +628,14 @@ namespace Org.Xml.Sax.Helpers
         public override void ProcessingInstruction(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecute("processingInstruction", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setDocumentHandler(org.xml.sax.DocumentHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.DocumentHandler"/></param>
+        public override void SetDocumentHandler(Org.Xml.Sax.DocumentHandler arg0)
+        {
+            IExecuteWithSignature("setDocumentHandler", "(Lorg/xml/sax/DocumentHandler;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setDocumentLocator(org.xml.sax.Locator)"/>

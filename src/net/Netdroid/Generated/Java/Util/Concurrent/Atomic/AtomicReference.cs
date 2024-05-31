@@ -85,6 +85,17 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndSet", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool WeakCompareAndSet(object arg0, object arg1)
+        {
+            return IExecute<bool>("weakCompareAndSet", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetAcquire(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -306,6 +317,17 @@ namespace Java.Util.Concurrent.Atomic
         public bool CompareAndSet(V arg0, V arg1)
         {
             return IExecute<bool>("compareAndSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="V"/></param>
+        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool WeakCompareAndSet(V arg0, V arg1)
+        {
+            return IExecute<bool>("weakCompareAndSet", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html#weakCompareAndSetAcquire(java.lang.Object,java.lang.Object)"/>

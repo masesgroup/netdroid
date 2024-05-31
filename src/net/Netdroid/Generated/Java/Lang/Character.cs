@@ -29,6 +29,15 @@ namespace Java.Lang
     public partial class Character : Java.Io.ISerializable, Java.Lang.IComparable<Java.Lang.Character>, Java.Lang.Constant.IConstable
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Character.html#%3Cinit%3E(char)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        [System.Obsolete()]
+        public Character(char arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 
@@ -618,6 +627,26 @@ namespace Java.Lang
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isJavaIdentifierStart", "(I)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Character.html#isJavaLetter(char)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public static bool IsJavaLetter(char arg0)
+        {
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isJavaLetter", "(C)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Character.html#isJavaLetterOrDigit(char)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public static bool IsJavaLetterOrDigit(char arg0)
+        {
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isJavaLetterOrDigit", "(C)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/Character.html#isLetter(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
@@ -697,6 +726,16 @@ namespace Java.Lang
         public static bool IsMirrored(int arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isMirrored", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Character.html#isSpace(char)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public static bool IsSpace(char arg0)
+        {
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSpace", "(C)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/Character.html#isSpaceChar(char)"/>
@@ -2906,6 +2945,13 @@ namespace Java.Lang
             public static Java.Lang.Character.UnicodeBlock SUPPLEMENTARY_PRIVATE_USE_AREA_B { get { if (!_SUPPLEMENTARY_PRIVATE_USE_AREA_BReady) { _SUPPLEMENTARY_PRIVATE_USE_AREA_BContent = SGetField<Java.Lang.Character.UnicodeBlock>(LocalBridgeClazz, "SUPPLEMENTARY_PRIVATE_USE_AREA_B"); _SUPPLEMENTARY_PRIVATE_USE_AREA_BReady = true; } return _SUPPLEMENTARY_PRIVATE_USE_AREA_BContent; } }
             private static Java.Lang.Character.UnicodeBlock _SUPPLEMENTARY_PRIVATE_USE_AREA_BContent = default;
             private static bool _SUPPLEMENTARY_PRIVATE_USE_AREA_BReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/java.base/java/lang/Character.UnicodeBlock.html#SURROGATES_AREA"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Java.Lang.Character.UnicodeBlock SURROGATES_AREA { get { if (!_SURROGATES_AREAReady) { _SURROGATES_AREAContent = SGetField<Java.Lang.Character.UnicodeBlock>(LocalBridgeClazz, "SURROGATES_AREA"); _SURROGATES_AREAReady = true; } return _SURROGATES_AREAContent; } }
+            private static Java.Lang.Character.UnicodeBlock _SURROGATES_AREAContent = default;
+            private static bool _SURROGATES_AREAReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/java.base/java/lang/Character.UnicodeBlock.html#SUTTON_SIGNWRITING"/>
             /// </summary>

@@ -226,6 +226,14 @@ namespace Android.App
             get { return IExecuteWithSignature<Android.Content.IntentSender>("getIntentSender", "()Landroid/content/IntentSender;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getTargetPackage()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String TargetPackage
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getTargetPackage", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#isActivity()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>

@@ -65,6 +65,29 @@ namespace Android.Bluetooth
             return default;
         }
 
+        /// <summary>
+        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getDefaultAdapter()"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnGetDefaultAdapter"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Android.Bluetooth.BluetoothAdapter> OnGetDefaultAdapter { get; set; } = null;
+
+        void GetDefaultAdapterEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            var methodToExecute = (OnGetDefaultAdapter != null) ? OnGetDefaultAdapter : GetDefaultAdapter;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
+        }
+
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getDefaultAdapter()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Bluetooth.BluetoothAdapter"/></returns>
+        [System.Obsolete()]
+        public virtual Android.Bluetooth.BluetoothAdapter GetDefaultAdapter()
+        {
+            return default;
+        }
+
         #endregion
 
         #region Instance methods
@@ -83,6 +106,8 @@ namespace Android.Bluetooth
             AddEventHandler("getBluetoothLeAdvertiser", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetBluetoothLeAdvertiserEventHandler));
             AddEventHandler("getBluetoothLeScanner", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetBluetoothLeScannerEventHandler));
             AddEventHandler("cancelDiscovery", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(CancelDiscoveryEventHandler));
+            AddEventHandler("disable", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(DisableEventHandler));
+            AddEventHandler("enable", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(EnableEventHandler));
             AddEventHandler("getProfileProxy", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.Context>>>(GetProfileProxyEventHandler));
             AddEventHandler("isDiscovering", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsDiscoveringEventHandler));
             AddEventHandler("isEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsEnabledEventHandler));
@@ -95,6 +120,8 @@ namespace Android.Bluetooth
             AddEventHandler("isOffloadedScanBatchingSupported", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsOffloadedScanBatchingSupportedEventHandler));
             AddEventHandler("setName", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(SetNameEventHandler));
             AddEventHandler("startDiscovery", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(StartDiscoveryEventHandler));
+            AddEventHandler("startLeScan", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Bluetooth.BluetoothAdapter.LeScanCallback>>>(StartLeScanEventHandler));
+            AddEventHandler("startLeScan2", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.UUID[]>>>(StartLeScan2EventHandler));
             AddEventHandler("getLeMaximumAdvertisingDataLength", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetLeMaximumAdvertisingDataLengthEventHandler));
             AddEventHandler("getMaxConnectedAudioDevices", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetMaxConnectedAudioDevicesEventHandler));
             AddEventHandler("getProfileConnectionState", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetProfileConnectionStateEventHandler));
@@ -108,6 +135,7 @@ namespace Android.Bluetooth
             AddEventHandler("getDiscoverableTimeout", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetDiscoverableTimeoutEventHandler));
             AddEventHandler("getBondedDevices", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetBondedDevicesEventHandler));
             AddEventHandler("closeProfileProxy", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(CloseProfileProxyEventHandler));
+            AddEventHandler("stopLeScan", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Bluetooth.BluetoothAdapter.LeScanCallback>>>(StopLeScanEventHandler));
 
         }
 
@@ -339,6 +367,52 @@ namespace Android.Bluetooth
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public virtual bool CancelDiscovery()
+        {
+            return default;
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#disable()"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnDisable"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<bool> OnDisable { get; set; } = null;
+
+        void DisableEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            var methodToExecute = (OnDisable != null) ? OnDisable : Disable;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
+        }
+
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#disable()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public virtual bool Disable()
+        {
+            return default;
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#enable()"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnEnable"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<bool> OnEnable { get; set; } = null;
+
+        void EnableEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            var methodToExecute = (OnEnable != null) ? OnEnable : Enable;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
+        }
+
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#enable()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public virtual bool Enable()
         {
             return default;
         }
@@ -607,6 +681,55 @@ namespace Android.Bluetooth
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public virtual bool StartDiscovery()
+        {
+            return default;
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnStartLeScan"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Android.Bluetooth.BluetoothAdapter.LeScanCallback, bool> OnStartLeScan { get; set; } = null;
+
+        void StartLeScanEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Bluetooth.BluetoothAdapter.LeScanCallback>> data)
+        {
+            var methodToExecute = (OnStartLeScan != null) ? OnStartLeScan : StartLeScan;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
+        }
+
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothAdapter.LeScanCallback"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public virtual bool StartLeScan(Android.Bluetooth.BluetoothAdapter.LeScanCallback arg0)
+        {
+            return default;
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startLeScan(java.util.UUID[],android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnStartLeScan2"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.UUID[], Android.Bluetooth.BluetoothAdapter.LeScanCallback, bool> OnStartLeScan2 { get; set; } = null;
+
+        void StartLeScan2EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.UUID[]>> data)
+        {
+            var methodToExecute = (OnStartLeScan2 != null) ? OnStartLeScan2 : StartLeScan;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Bluetooth.BluetoothAdapter.LeScanCallback>(0));
+            data.SetReturnValue(executionResult);
+        }
+
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startLeScan(java.util.UUID[],android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.UUID"/></param>
+        /// <param name="arg1"><see cref="Android.Bluetooth.BluetoothAdapter.LeScanCallback"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public virtual bool StartLeScan(Java.Util.UUID[] arg0, Android.Bluetooth.BluetoothAdapter.LeScanCallback arg1)
         {
             return default;
         }
@@ -898,6 +1021,28 @@ namespace Android.Bluetooth
             
         }
 
+        /// <summary>
+        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#stopLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnStopLeScan"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Android.Bluetooth.BluetoothAdapter.LeScanCallback> OnStopLeScan { get; set; } = null;
+
+        void StopLeScanEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Bluetooth.BluetoothAdapter.LeScanCallback>> data)
+        {
+            var methodToExecute = (OnStopLeScan != null) ? OnStopLeScan : StopLeScan;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#stopLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothAdapter.LeScanCallback"/></param>
+        [System.Obsolete()]
+        public virtual void StopLeScan(Android.Bluetooth.BluetoothAdapter.LeScanCallback arg0)
+        {
+            
+        }
+
         #endregion
 
         #region Nested classes
@@ -1116,6 +1261,24 @@ namespace Android.Bluetooth
             return IExecuteWithSignature<bool>("cancelDiscovery", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#disable()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public override bool Disable()
+        {
+            return IExecuteWithSignature<bool>("disable", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#enable()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public override bool Enable()
+        {
+            return IExecuteWithSignature<bool>("enable", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getProfileProxy(android.content.Context,android.bluetooth.BluetoothProfile.ServiceListener,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -1216,6 +1379,27 @@ namespace Android.Bluetooth
             return IExecuteWithSignature<bool>("startDiscovery", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothAdapter.LeScanCallback"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public override bool StartLeScan(Android.Bluetooth.BluetoothAdapter.LeScanCallback arg0)
+        {
+            return IExecuteWithSignature<bool>("startLeScan", "(Landroid/bluetooth/BluetoothAdapter$LeScanCallback;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startLeScan(java.util.UUID[],android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.UUID"/></param>
+        /// <param name="arg1"><see cref="Android.Bluetooth.BluetoothAdapter.LeScanCallback"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public override bool StartLeScan(Java.Util.UUID[] arg0, Android.Bluetooth.BluetoothAdapter.LeScanCallback arg1)
+        {
+            return IExecute<bool>("startLeScan", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getProfileConnectionState(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1256,6 +1440,15 @@ namespace Android.Bluetooth
         public override void CloseProfileProxy(int arg0, Android.Bluetooth.BluetoothProfile arg1)
         {
             IExecute("closeProfileProxy", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#stopLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothAdapter.LeScanCallback"/></param>
+        [System.Obsolete()]
+        public override void StopLeScan(Android.Bluetooth.BluetoothAdapter.LeScanCallback arg0)
+        {
+            IExecuteWithSignature("stopLeScan", "(Landroid/bluetooth/BluetoothAdapter$LeScanCallback;)V", arg0);
         }
 
         #endregion

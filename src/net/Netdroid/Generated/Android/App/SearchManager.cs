@@ -381,6 +381,24 @@ namespace Android.App
             return IExecuteWithSignature<Android.App.SearchableInfo>("getSearchableInfo", "(Landroid/content/ComponentName;)Landroid/app/SearchableInfo;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchManager.html#onCancel(android.content.DialogInterface)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.DialogInterface"/></param>
+        [System.Obsolete()]
+        public void OnCancel(Android.Content.DialogInterface arg0)
+        {
+            IExecuteWithSignature("onCancel", "(Landroid/content/DialogInterface;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchManager.html#onDismiss(android.content.DialogInterface)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.DialogInterface"/></param>
+        [System.Obsolete()]
+        public void OnDismiss(Android.Content.DialogInterface arg0)
+        {
+            IExecuteWithSignature("onDismiss", "(Landroid/content/DialogInterface;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/SearchManager.html#setOnCancelListener(android.app.SearchManager.OnCancelListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.SearchManager.OnCancelListener"/></param>

@@ -39,6 +39,16 @@ namespace Android.View
             : base(arg0, arg1, arg2)
         {
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowMetrics.html#%3Cinit%3E(android.graphics.Rect,android.view.WindowInsets)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+        /// <param name="arg1"><see cref="Android.View.WindowInsets"/></param>
+        [System.Obsolete()]
+        public WindowMetrics(Android.Graphics.Rect arg0, Android.View.WindowInsets arg1)
+            : base(arg0, arg1)
+        {
+        }
 
         #endregion
 

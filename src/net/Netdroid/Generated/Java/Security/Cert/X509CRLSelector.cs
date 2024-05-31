@@ -114,6 +114,16 @@ namespace Java.Security.Cert
             IExecuteWithSignature("addIssuerName", "([B)V", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#addIssuerName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public void AddIssuerName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("addIssuerName", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLSelector.html#setMaxCRLNumber(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>

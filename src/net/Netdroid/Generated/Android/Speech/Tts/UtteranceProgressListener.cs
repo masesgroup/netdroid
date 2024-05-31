@@ -51,10 +51,11 @@ namespace Android.Speech.Tts
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("onDone", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnDoneEventHandler));
+            AddEventHandler("onError", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnErrorEventHandler));
             AddEventHandler("onStart", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnStartEventHandler));
             AddEventHandler("onAudioAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnAudioAvailableEventHandler));
             AddEventHandler("onBeginSynthesis", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnBeginSynthesisEventHandler));
-            AddEventHandler("onError", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnErrorEventHandler));
+            AddEventHandler("onError2", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnError2EventHandler));
             AddEventHandler("onRangeStart", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnRangeStartEventHandler));
             AddEventHandler("onStop", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnStopEventHandler));
 
@@ -77,6 +78,28 @@ namespace Android.Speech.Tts
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public virtual void OnDone(Java.Lang.String arg0)
+        {
+            
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://developer.android.com/reference/android/speech/tts/UtteranceProgressListener.html#onError(java.lang.String)"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Lang.String> OnOnError { get; set; } = null;
+
+        void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+        {
+            var methodToExecute = (OnOnError != null) ? OnOnError : OnError;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/tts/UtteranceProgressListener.html#onError(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public virtual void OnError(Java.Lang.String arg0)
         {
             
         }
@@ -151,12 +174,12 @@ namespace Android.Speech.Tts
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/speech/tts/UtteranceProgressListener.html#onError(java.lang.String,int)"/>
         /// </summary>
-        /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String, int> OnOnError { get; set; } = null;
+        /// <remarks>If <see cref="OnOnError2"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Lang.String, int> OnOnError2 { get; set; } = null;
 
-        void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+        void OnError2EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
-            var methodToExecute = (OnOnError != null) ? OnOnError : OnError;
+            var methodToExecute = (OnOnError2 != null) ? OnOnError2 : OnError;
             methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
         }
 
@@ -253,6 +276,15 @@ namespace Android.Speech.Tts
         public override void OnDone(Java.Lang.String arg0)
         {
             IExecuteWithSignature("onDone", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/tts/UtteranceProgressListener.html#onError(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public override void OnError(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("onError", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/UtteranceProgressListener.html#onStart(java.lang.String)"/>

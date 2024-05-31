@@ -84,6 +84,22 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#getCurrentHour()"/> <see href="https://developer.android.com/reference/android/widget/TimePicker.html#setCurrentHour(java.lang.Integer)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.Integer CurrentHour
+        {
+            get { return IExecuteWithSignature<Java.Lang.Integer>("getCurrentHour", "()Ljava/lang/Integer;"); } set { IExecuteWithSignature("setCurrentHour", "(Ljava/lang/Integer;)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#getCurrentMinute()"/> <see href="https://developer.android.com/reference/android/widget/TimePicker.html#setCurrentMinute(java.lang.Integer)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.Integer CurrentMinute
+        {
+            get { return IExecuteWithSignature<Java.Lang.Integer>("getCurrentMinute", "()Ljava/lang/Integer;"); } set { IExecuteWithSignature("setCurrentMinute", "(Ljava/lang/Integer;)V", value); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#getHour()"/> <see href="https://developer.android.com/reference/android/widget/TimePicker.html#setHour(int)"/>
         /// </summary>
         public int Hour

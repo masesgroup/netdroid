@@ -110,6 +110,15 @@ namespace Android.Graphics
             IExecuteWithSignature("set", "(Landroid/graphics/Outline;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Outline.html#setConvexPath(android.graphics.Path)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Path"/></param>
+        [System.Obsolete()]
+        public void SetConvexPath(Android.Graphics.Path arg0)
+        {
+            IExecuteWithSignature("setConvexPath", "(Landroid/graphics/Path;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Outline.html#setEmpty()"/>
         /// </summary>
         public void SetEmpty()

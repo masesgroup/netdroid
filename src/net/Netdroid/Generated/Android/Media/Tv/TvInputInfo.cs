@@ -160,6 +160,15 @@ namespace Android.Media.Tv
             get { return IExecuteWithSignature<int>("getType", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#createSettingsIntent()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Intent"/></returns>
+        [System.Obsolete()]
+        public Android.Content.Intent CreateSettingsIntent()
+        {
+            return IExecuteWithSignature<Android.Content.Intent>("createSettingsIntent", "()Landroid/content/Intent;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvInputInfo.html#createSetupIntent()"/>
         /// </summary>
         /// <returns><see cref="Android.Content.Intent"/></returns>

@@ -26,6 +26,24 @@ using System;
 
 namespace Org.Apache.Http.Conn
 {
+    #region ConnectTimeoutException
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/org/apache/http/conn/ConnectTimeoutException.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class ConnectTimeoutException : Java.Io.InterruptedIOException
+    {
+        const string _bridgeClassName = "org.apache.http.conn.ConnectTimeoutException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
 
 
 }

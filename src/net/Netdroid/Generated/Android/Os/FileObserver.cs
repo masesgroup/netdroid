@@ -47,6 +47,25 @@ namespace Android.Os
         {
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/FileObserver.html#%3Cinit%3E(java.lang.String,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public FileObserver(Java.Lang.String arg0, int arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/FileObserver.html#%3Cinit%3E(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public FileObserver(Java.Lang.String arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/FileObserver.html#%3Cinit%3E(java.util.List,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>

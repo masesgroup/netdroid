@@ -84,6 +84,14 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getCheckItemIds()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public long[] CheckItemIds
+        {
+            get { return IExecuteWithSignatureArray<long>("getCheckItemIds", "()[J"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListView.html#getDivider()"/> <see href="https://developer.android.com/reference/android/widget/ListView.html#setDivider(android.graphics.drawable.Drawable)"/>
         /// </summary>
         public Android.Graphics.Drawable.Drawable Divider

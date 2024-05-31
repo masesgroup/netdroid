@@ -2899,6 +2899,21 @@ namespace Android.Opengl
             SExecute(LocalBridgeClazz, "glGetTransformFeedbackVarying", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/opengl/GLES30.html#glGetTransformFeedbackVarying(int,int,int,java.nio.IntBuffer,java.nio.IntBuffer,java.nio.IntBuffer,byte)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Java.Nio.IntBuffer"/></param>
+        /// <param name="arg4"><see cref="Java.Nio.IntBuffer"/></param>
+        /// <param name="arg5"><see cref="Java.Nio.IntBuffer"/></param>
+        /// <param name="arg6"><see cref="byte"/></param>
+        [System.Obsolete()]
+        public static void GlGetTransformFeedbackVarying(int arg0, int arg1, int arg2, Java.Nio.IntBuffer arg3, Java.Nio.IntBuffer arg4, Java.Nio.IntBuffer arg5, byte arg6)
+        {
+            SExecute(LocalBridgeClazz, "glGetTransformFeedbackVarying", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES30.html#glGetTransformFeedbackVarying(int,int,int,java.nio.IntBuffer,java.nio.IntBuffer,java.nio.IntBuffer,java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

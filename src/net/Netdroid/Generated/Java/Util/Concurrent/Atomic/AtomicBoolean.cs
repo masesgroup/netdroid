@@ -75,6 +75,17 @@ namespace Java.Util.Concurrent.Atomic
             get { return IExecuteWithSignature<bool>("getPlain", "()Z"); } set { IExecuteWithSignature("setPlain", "(Z)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSet(boolean,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool WeakCompareAndSet(bool arg0, bool arg1)
+        {
+            return IExecute<bool>("weakCompareAndSet", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetPlain(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>

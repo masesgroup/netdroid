@@ -38,6 +38,20 @@ namespace Android.Os
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#ACQUIRE_CAUSES_WAKEUP"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ACQUIRE_CAUSES_WAKEUP { get { if (!_ACQUIRE_CAUSES_WAKEUPReady) { _ACQUIRE_CAUSES_WAKEUPContent = SGetField<int>(LocalBridgeClazz, "ACQUIRE_CAUSES_WAKEUP"); _ACQUIRE_CAUSES_WAKEUPReady = true; } return _ACQUIRE_CAUSES_WAKEUPContent; } }
+        private static int _ACQUIRE_CAUSES_WAKEUPContent = default;
+        private static bool _ACQUIRE_CAUSES_WAKEUPReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#FULL_WAKE_LOCK"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FULL_WAKE_LOCK { get { if (!_FULL_WAKE_LOCKReady) { _FULL_WAKE_LOCKContent = SGetField<int>(LocalBridgeClazz, "FULL_WAKE_LOCK"); _FULL_WAKE_LOCKReady = true; } return _FULL_WAKE_LOCKContent; } }
+        private static int _FULL_WAKE_LOCKContent = default;
+        private static bool _FULL_WAKE_LOCKReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#LOCATION_MODE_ALL_DISABLED_WHEN_SCREEN_OFF"/>
         /// </summary>
         public static int LOCATION_MODE_ALL_DISABLED_WHEN_SCREEN_OFF { get { if (!_LOCATION_MODE_ALL_DISABLED_WHEN_SCREEN_OFFReady) { _LOCATION_MODE_ALL_DISABLED_WHEN_SCREEN_OFFContent = SGetField<int>(LocalBridgeClazz, "LOCATION_MODE_ALL_DISABLED_WHEN_SCREEN_OFF"); _LOCATION_MODE_ALL_DISABLED_WHEN_SCREEN_OFFReady = true; } return _LOCATION_MODE_ALL_DISABLED_WHEN_SCREEN_OFFContent; } }
@@ -109,6 +123,20 @@ namespace Android.Os
         public static int RELEASE_FLAG_WAIT_FOR_NO_PROXIMITY { get { if (!_RELEASE_FLAG_WAIT_FOR_NO_PROXIMITYReady) { _RELEASE_FLAG_WAIT_FOR_NO_PROXIMITYContent = SGetField<int>(LocalBridgeClazz, "RELEASE_FLAG_WAIT_FOR_NO_PROXIMITY"); _RELEASE_FLAG_WAIT_FOR_NO_PROXIMITYReady = true; } return _RELEASE_FLAG_WAIT_FOR_NO_PROXIMITYContent; } }
         private static int _RELEASE_FLAG_WAIT_FOR_NO_PROXIMITYContent = default;
         private static bool _RELEASE_FLAG_WAIT_FOR_NO_PROXIMITYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#SCREEN_BRIGHT_WAKE_LOCK"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SCREEN_BRIGHT_WAKE_LOCK { get { if (!_SCREEN_BRIGHT_WAKE_LOCKReady) { _SCREEN_BRIGHT_WAKE_LOCKContent = SGetField<int>(LocalBridgeClazz, "SCREEN_BRIGHT_WAKE_LOCK"); _SCREEN_BRIGHT_WAKE_LOCKReady = true; } return _SCREEN_BRIGHT_WAKE_LOCKContent; } }
+        private static int _SCREEN_BRIGHT_WAKE_LOCKContent = default;
+        private static bool _SCREEN_BRIGHT_WAKE_LOCKReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#SCREEN_DIM_WAKE_LOCK"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SCREEN_DIM_WAKE_LOCK { get { if (!_SCREEN_DIM_WAKE_LOCKReady) { _SCREEN_DIM_WAKE_LOCKContent = SGetField<int>(LocalBridgeClazz, "SCREEN_DIM_WAKE_LOCK"); _SCREEN_DIM_WAKE_LOCKReady = true; } return _SCREEN_DIM_WAKE_LOCKContent; } }
+        private static int _SCREEN_DIM_WAKE_LOCKContent = default;
+        private static bool _SCREEN_DIM_WAKE_LOCKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#THERMAL_STATUS_CRITICAL"/>
         /// </summary>
@@ -316,6 +344,15 @@ namespace Android.Os
         public bool IsRebootingUserspaceSupported()
         {
             return IExecuteWithSignature<bool>("isRebootingUserspaceSupported", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#isScreenOn()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsScreenOn()
+        {
+            return IExecuteWithSignature<bool>("isScreenOn", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#isSustainedPerformanceModeSupported()"/>

@@ -92,6 +92,13 @@ namespace Android.Os.Health
         private static int _MEASUREMENT_BUTTON_USER_ACTIVITY_COUNTContent = default;
         private static bool _MEASUREMENT_BUTTON_USER_ACTIVITY_COUNTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/UidHealthStats.html#MEASUREMENT_CPU_POWER_MAMS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MEASUREMENT_CPU_POWER_MAMS { get { if (!_MEASUREMENT_CPU_POWER_MAMSReady) { _MEASUREMENT_CPU_POWER_MAMSContent = SGetField<int>(LocalBridgeClazz, "MEASUREMENT_CPU_POWER_MAMS"); _MEASUREMENT_CPU_POWER_MAMSReady = true; } return _MEASUREMENT_CPU_POWER_MAMSContent; } }
+        private static int _MEASUREMENT_CPU_POWER_MAMSContent = default;
+        private static bool _MEASUREMENT_CPU_POWER_MAMSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/health/UidHealthStats.html#MEASUREMENT_MOBILE_IDLE_MS"/>
         /// </summary>
         public static int MEASUREMENT_MOBILE_IDLE_MS { get { if (!_MEASUREMENT_MOBILE_IDLE_MSReady) { _MEASUREMENT_MOBILE_IDLE_MSContent = SGetField<int>(LocalBridgeClazz, "MEASUREMENT_MOBILE_IDLE_MS"); _MEASUREMENT_MOBILE_IDLE_MSReady = true; } return _MEASUREMENT_MOBILE_IDLE_MSContent; } }

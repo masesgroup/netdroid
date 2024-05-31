@@ -187,6 +187,25 @@ namespace Android.Widget
             return IExecute<Android.View.View>("apply", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#clone()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Widget.RemoteViews"/></returns>
+        [System.Obsolete()]
+        public Android.Widget.RemoteViews Clone()
+        {
+            return IExecuteWithSignature<Android.Widget.RemoteViews>("clone", "()Landroid/widget/RemoteViews;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#onLoadClass(java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool OnLoadClass(Java.Lang.Class arg0)
+        {
+            return IExecuteWithSignature<bool>("onLoadClass", "(Ljava/lang/Class;)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -745,6 +764,17 @@ namespace Android.Widget
             IExecute("setRemoteAdapter", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setRemoteAdapter(int,int,android.content.Intent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.Content.Intent"/></param>
+        [System.Obsolete()]
+        public void SetRemoteAdapter(int arg0, int arg1, Android.Content.Intent arg2)
+        {
+            IExecute("setRemoteAdapter", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#setScrollPosition(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -970,6 +1000,24 @@ namespace Android.Widget
         public void SetViewVisibility(int arg0, int arg1)
         {
             IExecute("setViewVisibility", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#showNext(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void ShowNext(int arg0)
+        {
+            IExecuteWithSignature("showNext", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#showPrevious(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void ShowPrevious(int arg0)
+        {
+            IExecuteWithSignature("showPrevious", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RemoteViews.html#writeToParcel(android.os.Parcel,int)"/>

@@ -340,6 +340,38 @@ namespace Android.View.Textclassifier
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifier.EntityConfig.html#create(java.util.Collection,java.util.Collection,java.util.Collection)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
+            /// <param name="arg2"><see cref="Java.Util.Collection"/></param>
+            /// <returns><see cref="Android.View.Textclassifier.TextClassifier.EntityConfig"/></returns>
+            [System.Obsolete()]
+            public static Android.View.Textclassifier.TextClassifier.EntityConfig Create(Java.Util.Collection<Java.Lang.String> arg0, Java.Util.Collection<Java.Lang.String> arg1, Java.Util.Collection<Java.Lang.String> arg2)
+            {
+                return SExecute<Android.View.Textclassifier.TextClassifier.EntityConfig>(LocalBridgeClazz, "create", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifier.EntityConfig.html#createWithExplicitEntityList(java.util.Collection)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+            /// <returns><see cref="Android.View.Textclassifier.TextClassifier.EntityConfig"/></returns>
+            [System.Obsolete()]
+            public static Android.View.Textclassifier.TextClassifier.EntityConfig CreateWithExplicitEntityList(Java.Util.Collection<Java.Lang.String> arg0)
+            {
+                return SExecute<Android.View.Textclassifier.TextClassifier.EntityConfig>(LocalBridgeClazz, "createWithExplicitEntityList", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifier.EntityConfig.html#createWithHints(java.util.Collection)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+            /// <returns><see cref="Android.View.Textclassifier.TextClassifier.EntityConfig"/></returns>
+            [System.Obsolete()]
+            public static Android.View.Textclassifier.TextClassifier.EntityConfig CreateWithHints(Java.Util.Collection<Java.Lang.String> arg0)
+            {
+                return SExecute<Android.View.Textclassifier.TextClassifier.EntityConfig>(LocalBridgeClazz, "createWithHints", arg0);
+            }
 
             #endregion
 

@@ -598,6 +598,18 @@ namespace Java.Sql
             IExecute("setTimestamp", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.sql/java/sql/PreparedStatement.html#setUnicodeStream(int,java.io.InputStream,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        [System.Obsolete()]
+        public void SetUnicodeStream(int arg0, Java.Io.InputStream arg1, int arg2)
+        {
+            IExecute("setUnicodeStream", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.sql/java/sql/PreparedStatement.html#setURL(int,java.net.URL)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

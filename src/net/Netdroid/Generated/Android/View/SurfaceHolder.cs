@@ -55,6 +55,34 @@ namespace Android.View
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceHolder.html#SURFACE_TYPE_GPU"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SURFACE_TYPE_GPU { get { if (!_SURFACE_TYPE_GPUReady) { _SURFACE_TYPE_GPUContent = SGetField<int>(LocalBridgeClazz, "SURFACE_TYPE_GPU"); _SURFACE_TYPE_GPUReady = true; } return _SURFACE_TYPE_GPUContent; } }
+        private static int _SURFACE_TYPE_GPUContent = default;
+        private static bool _SURFACE_TYPE_GPUReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceHolder.html#SURFACE_TYPE_HARDWARE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SURFACE_TYPE_HARDWARE { get { if (!_SURFACE_TYPE_HARDWAREReady) { _SURFACE_TYPE_HARDWAREContent = SGetField<int>(LocalBridgeClazz, "SURFACE_TYPE_HARDWARE"); _SURFACE_TYPE_HARDWAREReady = true; } return _SURFACE_TYPE_HARDWAREContent; } }
+        private static int _SURFACE_TYPE_HARDWAREContent = default;
+        private static bool _SURFACE_TYPE_HARDWAREReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceHolder.html#SURFACE_TYPE_NORMAL"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SURFACE_TYPE_NORMAL { get { if (!_SURFACE_TYPE_NORMALReady) { _SURFACE_TYPE_NORMALContent = SGetField<int>(LocalBridgeClazz, "SURFACE_TYPE_NORMAL"); _SURFACE_TYPE_NORMALReady = true; } return _SURFACE_TYPE_NORMALContent; } }
+        private static int _SURFACE_TYPE_NORMALContent = default;
+        private static bool _SURFACE_TYPE_NORMALReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceHolder.html#SURFACE_TYPE_PUSH_BUFFERS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SURFACE_TYPE_PUSH_BUFFERS { get { if (!_SURFACE_TYPE_PUSH_BUFFERSReady) { _SURFACE_TYPE_PUSH_BUFFERSContent = SGetField<int>(LocalBridgeClazz, "SURFACE_TYPE_PUSH_BUFFERS"); _SURFACE_TYPE_PUSH_BUFFERSReady = true; } return _SURFACE_TYPE_PUSH_BUFFERSContent; } }
+        private static int _SURFACE_TYPE_PUSH_BUFFERSContent = default;
+        private static bool _SURFACE_TYPE_PUSH_BUFFERSReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -149,6 +177,15 @@ namespace Android.View
         public void SetSizeFromLayout()
         {
             IExecuteWithSignature("setSizeFromLayout", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceHolder.html#setType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetType(int arg0)
+        {
+            IExecuteWithSignature("setType", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/SurfaceHolder.html#unlockCanvasAndPost(android.graphics.Canvas)"/>

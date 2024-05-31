@@ -594,6 +594,51 @@ namespace Android.Graphics
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
+        #region EdgeType
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.EdgeType.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class EdgeType : Java.Lang.Enum<Android.Graphics.Canvas.EdgeType>
+        {
+            const string _bridgeClassName = "android.graphics.Canvas$EdgeType";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public EdgeType() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public EdgeType(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
         #region VertexMode
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.VertexMode.html"/>
@@ -2582,6 +2627,51 @@ namespace Android.Graphics
         #endregion
 
     
+    }
+    #endregion
+
+    #region Movie
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/graphics/Movie.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class Movie : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Movie>
+    {
+        const string _bridgeClassName = "android.graphics.Movie";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Movie() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Movie(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 
@@ -4575,6 +4665,24 @@ namespace Android.Graphics
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
+        }
+        #endregion
+
+        #region OutOfResourcesException
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/SurfaceTexture.OutOfResourcesException.html"/>
+        /// </summary>
+        [System.Obsolete()]
+        public partial class OutOfResourcesException : Java.Lang.Exception
+        {
+            const string _bridgeClassName = "android.graphics.SurfaceTexture$OutOfResourcesException";
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+
+            // TODO: complete the class
+
         }
         #endregion
 

@@ -29,6 +29,15 @@ namespace Android.Widget
     public partial class Magnifier
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Magnifier.html#%3Cinit%3E(android.view.View)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        [System.Obsolete()]
+        public Magnifier(Android.View.View arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 

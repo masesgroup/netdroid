@@ -71,6 +71,14 @@ namespace Java.Security.Cert
             get { return IExecuteWithSignature<Java.Util.Collection<Java.Util.List<object>>>("getIssuerAlternativeNames", "()Ljava/util/Collection;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getIssuerDN()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Security.Principal IssuerDN
+        {
+            get { return IExecuteWithSignature<Java.Security.Principal>("getIssuerDN", "()Ljava/security/Principal;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getIssuerUniqueID()"/> 
         /// </summary>
         public bool[] IssuerUniqueID
@@ -146,6 +154,14 @@ namespace Java.Security.Cert
         public Java.Util.Collection<Java.Util.List<object>> SubjectAlternativeNames
         {
             get { return IExecuteWithSignature<Java.Util.Collection<Java.Util.List<object>>>("getSubjectAlternativeNames", "()Ljava/util/Collection;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getSubjectDN()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Security.Principal SubjectDN
+        {
+            get { return IExecuteWithSignature<Java.Security.Principal>("getSubjectDN", "()Ljava/security/Principal;"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getSubjectUniqueID()"/> 

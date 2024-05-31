@@ -67,6 +67,14 @@ namespace Java.Security
             get { return IExecuteWithSignature<Java.Util.Set<Java.Security.Provider.Service>>("getServices", "()Ljava/util/Set;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/security/Provider.html#getVersion()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public double Version
+        {
+            get { return IExecuteWithSignature<double>("getVersion", "()D"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/security/Provider.html#getVersionStr()"/> 
         /// </summary>
         public Java.Lang.String VersionStr

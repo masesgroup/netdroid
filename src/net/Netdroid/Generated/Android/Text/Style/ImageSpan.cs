@@ -87,6 +87,25 @@ namespace Android.Text.Style
         {
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/ImageSpan.html#%3Cinit%3E(android.graphics.Bitmap,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public ImageSpan(Android.Graphics.Bitmap arg0, int arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/ImageSpan.html#%3Cinit%3E(android.graphics.Bitmap)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
+        [System.Obsolete()]
+        public ImageSpan(Android.Graphics.Bitmap arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/ImageSpan.html#%3Cinit%3E(android.graphics.drawable.Drawable,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>

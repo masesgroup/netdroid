@@ -22,14 +22,14 @@
 
 package org.mases.netdroid.generated.android.location;
 
-public final class Listener extends org.mases.jcobridge.JCListener implements android.location.GnssAntennaInfo.Listener {
+public final class Listener extends org.mases.jcobridge.JCListener implements android.location.GpsStatus.Listener {
     public Listener(String key) throws org.mases.jcobridge.JCNativeException {
         super(key);
     }
 
     //@Override
-    public void onGnssAntennaInfoReceived(java.util.List arg0) {
-        raiseEvent("onGnssAntennaInfoReceived", arg0);
+    public void onGpsStatusChanged(int arg0) {
+        raiseEvent("onGpsStatusChanged", arg0);
     }
 
 }

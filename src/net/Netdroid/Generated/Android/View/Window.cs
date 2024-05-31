@@ -106,6 +106,13 @@ namespace Android.View
         private static int _FEATURE_CUSTOM_TITLEContent = default;
         private static bool _FEATURE_CUSTOM_TITLEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#FEATURE_INDETERMINATE_PROGRESS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FEATURE_INDETERMINATE_PROGRESS { get { if (!_FEATURE_INDETERMINATE_PROGRESSReady) { _FEATURE_INDETERMINATE_PROGRESSContent = SGetField<int>(LocalBridgeClazz, "FEATURE_INDETERMINATE_PROGRESS"); _FEATURE_INDETERMINATE_PROGRESSReady = true; } return _FEATURE_INDETERMINATE_PROGRESSContent; } }
+        private static int _FEATURE_INDETERMINATE_PROGRESSContent = default;
+        private static bool _FEATURE_INDETERMINATE_PROGRESSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#FEATURE_LEFT_ICON"/>
         /// </summary>
         public static int FEATURE_LEFT_ICON { get { if (!_FEATURE_LEFT_ICONReady) { _FEATURE_LEFT_ICONContent = SGetField<int>(LocalBridgeClazz, "FEATURE_LEFT_ICON"); _FEATURE_LEFT_ICONReady = true; } return _FEATURE_LEFT_ICONContent; } }
@@ -124,17 +131,87 @@ namespace Android.View
         private static int _FEATURE_OPTIONS_PANELContent = default;
         private static bool _FEATURE_OPTIONS_PANELReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#FEATURE_PROGRESS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FEATURE_PROGRESS { get { if (!_FEATURE_PROGRESSReady) { _FEATURE_PROGRESSContent = SGetField<int>(LocalBridgeClazz, "FEATURE_PROGRESS"); _FEATURE_PROGRESSReady = true; } return _FEATURE_PROGRESSContent; } }
+        private static int _FEATURE_PROGRESSContent = default;
+        private static bool _FEATURE_PROGRESSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#FEATURE_RIGHT_ICON"/>
         /// </summary>
         public static int FEATURE_RIGHT_ICON { get { if (!_FEATURE_RIGHT_ICONReady) { _FEATURE_RIGHT_ICONContent = SGetField<int>(LocalBridgeClazz, "FEATURE_RIGHT_ICON"); _FEATURE_RIGHT_ICONReady = true; } return _FEATURE_RIGHT_ICONContent; } }
         private static int _FEATURE_RIGHT_ICONContent = default;
         private static bool _FEATURE_RIGHT_ICONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#FEATURE_SWIPE_TO_DISMISS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FEATURE_SWIPE_TO_DISMISS { get { if (!_FEATURE_SWIPE_TO_DISMISSReady) { _FEATURE_SWIPE_TO_DISMISSContent = SGetField<int>(LocalBridgeClazz, "FEATURE_SWIPE_TO_DISMISS"); _FEATURE_SWIPE_TO_DISMISSReady = true; } return _FEATURE_SWIPE_TO_DISMISSContent; } }
+        private static int _FEATURE_SWIPE_TO_DISMISSContent = default;
+        private static bool _FEATURE_SWIPE_TO_DISMISSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#ID_ANDROID_CONTENT"/>
         /// </summary>
         public static int ID_ANDROID_CONTENT { get { if (!_ID_ANDROID_CONTENTReady) { _ID_ANDROID_CONTENTContent = SGetField<int>(LocalBridgeClazz, "ID_ANDROID_CONTENT"); _ID_ANDROID_CONTENTReady = true; } return _ID_ANDROID_CONTENTContent; } }
         private static int _ID_ANDROID_CONTENTContent = default;
         private static bool _ID_ANDROID_CONTENTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#PROGRESS_END"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int PROGRESS_END { get { if (!_PROGRESS_ENDReady) { _PROGRESS_ENDContent = SGetField<int>(LocalBridgeClazz, "PROGRESS_END"); _PROGRESS_ENDReady = true; } return _PROGRESS_ENDContent; } }
+        private static int _PROGRESS_ENDContent = default;
+        private static bool _PROGRESS_ENDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#PROGRESS_INDETERMINATE_OFF"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int PROGRESS_INDETERMINATE_OFF { get { if (!_PROGRESS_INDETERMINATE_OFFReady) { _PROGRESS_INDETERMINATE_OFFContent = SGetField<int>(LocalBridgeClazz, "PROGRESS_INDETERMINATE_OFF"); _PROGRESS_INDETERMINATE_OFFReady = true; } return _PROGRESS_INDETERMINATE_OFFContent; } }
+        private static int _PROGRESS_INDETERMINATE_OFFContent = default;
+        private static bool _PROGRESS_INDETERMINATE_OFFReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#PROGRESS_INDETERMINATE_ON"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int PROGRESS_INDETERMINATE_ON { get { if (!_PROGRESS_INDETERMINATE_ONReady) { _PROGRESS_INDETERMINATE_ONContent = SGetField<int>(LocalBridgeClazz, "PROGRESS_INDETERMINATE_ON"); _PROGRESS_INDETERMINATE_ONReady = true; } return _PROGRESS_INDETERMINATE_ONContent; } }
+        private static int _PROGRESS_INDETERMINATE_ONContent = default;
+        private static bool _PROGRESS_INDETERMINATE_ONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#PROGRESS_SECONDARY_END"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int PROGRESS_SECONDARY_END { get { if (!_PROGRESS_SECONDARY_ENDReady) { _PROGRESS_SECONDARY_ENDContent = SGetField<int>(LocalBridgeClazz, "PROGRESS_SECONDARY_END"); _PROGRESS_SECONDARY_ENDReady = true; } return _PROGRESS_SECONDARY_ENDContent; } }
+        private static int _PROGRESS_SECONDARY_ENDContent = default;
+        private static bool _PROGRESS_SECONDARY_ENDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#PROGRESS_SECONDARY_START"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int PROGRESS_SECONDARY_START { get { if (!_PROGRESS_SECONDARY_STARTReady) { _PROGRESS_SECONDARY_STARTContent = SGetField<int>(LocalBridgeClazz, "PROGRESS_SECONDARY_START"); _PROGRESS_SECONDARY_STARTReady = true; } return _PROGRESS_SECONDARY_STARTContent; } }
+        private static int _PROGRESS_SECONDARY_STARTContent = default;
+        private static bool _PROGRESS_SECONDARY_STARTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#PROGRESS_START"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int PROGRESS_START { get { if (!_PROGRESS_STARTReady) { _PROGRESS_STARTContent = SGetField<int>(LocalBridgeClazz, "PROGRESS_START"); _PROGRESS_STARTReady = true; } return _PROGRESS_STARTContent; } }
+        private static int _PROGRESS_STARTContent = default;
+        private static bool _PROGRESS_STARTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#PROGRESS_VISIBILITY_OFF"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int PROGRESS_VISIBILITY_OFF { get { if (!_PROGRESS_VISIBILITY_OFFReady) { _PROGRESS_VISIBILITY_OFFContent = SGetField<int>(LocalBridgeClazz, "PROGRESS_VISIBILITY_OFF"); _PROGRESS_VISIBILITY_OFFReady = true; } return _PROGRESS_VISIBILITY_OFFContent; } }
+        private static int _PROGRESS_VISIBILITY_OFFContent = default;
+        private static bool _PROGRESS_VISIBILITY_OFFReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#PROGRESS_VISIBILITY_ON"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int PROGRESS_VISIBILITY_ON { get { if (!_PROGRESS_VISIBILITY_ONReady) { _PROGRESS_VISIBILITY_ONContent = SGetField<int>(LocalBridgeClazz, "PROGRESS_VISIBILITY_ON"); _PROGRESS_VISIBILITY_ONReady = true; } return _PROGRESS_VISIBILITY_ONContent; } }
+        private static int _PROGRESS_VISIBILITY_ONContent = default;
+        private static bool _PROGRESS_VISIBILITY_ONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#NAVIGATION_BAR_BACKGROUND_TRANSITION_NAME"/>
         /// </summary>
@@ -693,6 +770,15 @@ namespace Android.View
         public void SetTitle(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("setTitle", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setTitleColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetTitleColor(int arg0)
+        {
+            IExecuteWithSignature("setTitleColor", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#takeInputQueue(android.view.InputQueue.Callback)"/>

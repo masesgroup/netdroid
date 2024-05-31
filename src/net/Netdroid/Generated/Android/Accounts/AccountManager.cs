@@ -266,6 +266,13 @@ namespace Android.Accounts
         private static Java.Lang.String _KEY_USERDATAContent = default;
         private static bool _KEY_USERDATAReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#LOGIN_ACCOUNTS_CHANGED_ACTION"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String LOGIN_ACCOUNTS_CHANGED_ACTION { get { if (!_LOGIN_ACCOUNTS_CHANGED_ACTIONReady) { _LOGIN_ACCOUNTS_CHANGED_ACTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LOGIN_ACCOUNTS_CHANGED_ACTION"); _LOGIN_ACCOUNTS_CHANGED_ACTIONReady = true; } return _LOGIN_ACCOUNTS_CHANGED_ACTIONContent; } }
+        private static Java.Lang.String _LOGIN_ACCOUNTS_CHANGED_ACTIONContent = default;
+        private static bool _LOGIN_ACCOUNTS_CHANGED_ACTIONReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#PACKAGE_NAME_KEY_LEGACY_NOT_VISIBLE"/>
         /// </summary>
         public static Java.Lang.String PACKAGE_NAME_KEY_LEGACY_NOT_VISIBLE { get { if (!_PACKAGE_NAME_KEY_LEGACY_NOT_VISIBLEReady) { _PACKAGE_NAME_KEY_LEGACY_NOT_VISIBLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PACKAGE_NAME_KEY_LEGACY_NOT_VISIBLE"); _PACKAGE_NAME_KEY_LEGACY_NOT_VISIBLEReady = true; } return _PACKAGE_NAME_KEY_LEGACY_NOT_VISIBLEContent; } }
@@ -289,6 +296,23 @@ namespace Android.Accounts
         public static Android.Accounts.AccountManager Get(Android.Content.Context arg0)
         {
             return SExecuteWithSignature<Android.Accounts.AccountManager>(LocalBridgeClazz, "get", "(Landroid/content/Context;)Landroid/accounts/AccountManager;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#newChooseAccountIntent(android.accounts.Account,java.util.ArrayList,java.lang.String[],boolean,java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Accounts.Account"/></param>
+        /// <param name="arg1"><see cref="Java.Util.ArrayList"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg5"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg6"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg7"><see cref="Android.Os.Bundle"/></param>
+        /// <returns><see cref="Android.Content.Intent"/></returns>
+        [System.Obsolete()]
+        public static Android.Content.Intent NewChooseAccountIntent(Android.Accounts.Account arg0, Java.Util.ArrayList<Android.Accounts.Account> arg1, Java.Lang.String[] arg2, bool arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String[] arg6, Android.Os.Bundle arg7)
+        {
+            return SExecute<Android.Content.Intent>(LocalBridgeClazz, "newChooseAccountIntent", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#newChooseAccountIntent(android.accounts.Account,java.util.List,java.lang.String[],java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle)"/>
@@ -447,6 +471,20 @@ namespace Android.Accounts
             return IExecute<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("getAuthToken", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthToken(android.accounts.Account,java.lang.String,boolean,android.accounts.AccountManagerCallback,android.os.Handler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Accounts.Account"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="Android.Accounts.AccountManagerCallback"/></param>
+        /// <param name="arg4"><see cref="Android.Os.Handler"/></param>
+        /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
+        [System.Obsolete()]
+        public Android.Accounts.AccountManagerFuture<Android.Os.Bundle> GetAuthToken(Android.Accounts.Account arg0, Java.Lang.String arg1, bool arg2, Android.Accounts.AccountManagerCallback<Android.Os.Bundle> arg3, Android.Os.Handler arg4)
+        {
+            return IExecute<Android.Accounts.AccountManagerFuture<Android.Os.Bundle>>("getAuthToken", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#getAuthTokenByFeatures(java.lang.String,java.lang.String,java.lang.String[],android.app.Activity,android.os.Bundle,android.os.Bundle,android.accounts.AccountManagerCallback,android.os.Handler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -540,6 +578,18 @@ namespace Android.Accounts
         public Android.Accounts.AccountManagerFuture<Java.Lang.Boolean> IsCredentialsUpdateSuggested(Android.Accounts.Account arg0, Java.Lang.String arg1, Android.Accounts.AccountManagerCallback<Java.Lang.Boolean> arg2, Android.Os.Handler arg3)
         {
             return IExecute<Android.Accounts.AccountManagerFuture<Java.Lang.Boolean>>("isCredentialsUpdateSuggested", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#removeAccount(android.accounts.Account,android.accounts.AccountManagerCallback,android.os.Handler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Accounts.Account"/></param>
+        /// <param name="arg1"><see cref="Android.Accounts.AccountManagerCallback"/></param>
+        /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
+        /// <returns><see cref="Android.Accounts.AccountManagerFuture"/></returns>
+        [System.Obsolete()]
+        public Android.Accounts.AccountManagerFuture<Java.Lang.Boolean> RemoveAccount(Android.Accounts.Account arg0, Android.Accounts.AccountManagerCallback<Java.Lang.Boolean> arg1, Android.Os.Handler arg2)
+        {
+            return IExecute<Android.Accounts.AccountManagerFuture<Java.Lang.Boolean>>("removeAccount", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManager.html#addAccountExplicitly(android.accounts.Account,java.lang.String,android.os.Bundle,java.util.Map)"/>

@@ -61,6 +61,24 @@ namespace Android.Media
         #endregion
 
         #region Static methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodecList.html#getCodecCount()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int CodecCount
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getCodecCount", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodecList.html#getCodecInfoAt(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Android.Media.MediaCodecInfo"/></returns>
+        [System.Obsolete()]
+        public static Android.Media.MediaCodecInfo GetCodecInfoAt(int arg0)
+        {
+            return SExecuteWithSignature<Android.Media.MediaCodecInfo>(LocalBridgeClazz, "getCodecInfoAt", "(I)Landroid/media/MediaCodecInfo;", arg0);
+        }
 
         #endregion
 

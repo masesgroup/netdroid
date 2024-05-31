@@ -30,6 +30,15 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        [System.Obsolete()]
+        public StreamTokenizer(Java.Io.InputStream arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#%3Cinit%3E(java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>

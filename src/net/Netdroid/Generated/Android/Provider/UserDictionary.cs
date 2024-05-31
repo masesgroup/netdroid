@@ -80,6 +80,20 @@ namespace Android.Provider
             private static Android.Net.Uri _CONTENT_URIContent = default;
             private static bool _CONTENT_URIReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/UserDictionary.Words.html#LOCALE_TYPE_ALL"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int LOCALE_TYPE_ALL { get { if (!_LOCALE_TYPE_ALLReady) { _LOCALE_TYPE_ALLContent = SGetField<int>(LocalBridgeClazz, "LOCALE_TYPE_ALL"); _LOCALE_TYPE_ALLReady = true; } return _LOCALE_TYPE_ALLContent; } }
+            private static int _LOCALE_TYPE_ALLContent = default;
+            private static bool _LOCALE_TYPE_ALLReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/UserDictionary.Words.html#LOCALE_TYPE_CURRENT"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int LOCALE_TYPE_CURRENT { get { if (!_LOCALE_TYPE_CURRENTReady) { _LOCALE_TYPE_CURRENTContent = SGetField<int>(LocalBridgeClazz, "LOCALE_TYPE_CURRENT"); _LOCALE_TYPE_CURRENTReady = true; } return _LOCALE_TYPE_CURRENTContent; } }
+            private static int _LOCALE_TYPE_CURRENTContent = default;
+            private static bool _LOCALE_TYPE_CURRENTReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/UserDictionary.Words.html#_ID"/>
             /// </summary>
             public static Java.Lang.String _ID { get { if (!__IDReady) { __IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "_ID"); __IDReady = true; } return __IDContent; } }
@@ -137,6 +151,18 @@ namespace Android.Provider
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/UserDictionary.Words.html#addWord(android.content.Context,java.lang.String,int,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
+            [System.Obsolete()]
+            public static void AddWord(Android.Content.Context arg0, Java.Lang.String arg1, int arg2, int arg3)
+            {
+                SExecute(LocalBridgeClazz, "addWord", arg0, arg1, arg2, arg3);
+            }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/UserDictionary.Words.html#addWord(android.content.Context,java.lang.String,int,java.lang.String,java.util.Locale)"/>
             /// </summary>

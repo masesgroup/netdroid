@@ -56,6 +56,15 @@ namespace Android.Webkit
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "allowFileSchemeCookies", "()Z");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/CookieManager.html#setAcceptFileSchemeCookies(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public static void SetAcceptFileSchemeCookies(bool arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setAcceptFileSchemeCookies", "(Z)V", arg0);
+        }
 
         #endregion
 
@@ -102,12 +111,36 @@ namespace Android.Webkit
             IExecuteWithSignature("flush", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/CookieManager.html#removeAllCookie()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void RemoveAllCookie()
+        {
+            IExecuteWithSignature("removeAllCookie", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/CookieManager.html#removeAllCookies(android.webkit.ValueCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Webkit.ValueCallback"/></param>
         public void RemoveAllCookies(Android.Webkit.ValueCallback<Java.Lang.Boolean> arg0)
         {
             IExecuteWithSignature("removeAllCookies", "(Landroid/webkit/ValueCallback;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/CookieManager.html#removeExpiredCookie()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void RemoveExpiredCookie()
+        {
+            IExecuteWithSignature("removeExpiredCookie", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/CookieManager.html#removeSessionCookie()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void RemoveSessionCookie()
+        {
+            IExecuteWithSignature("removeSessionCookie", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/CookieManager.html#removeSessionCookies(android.webkit.ValueCallback)"/>

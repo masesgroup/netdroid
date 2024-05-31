@@ -30,6 +30,18 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/net/Socket.html#%3Cinit%3E(java.lang.String,int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public Socket(Java.Lang.String arg0, int arg1, bool arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/net/Socket.html#%3Cinit%3E(java.lang.String,int,java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -50,6 +62,18 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public Socket(Java.Lang.String arg0, int arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/net/Socket.html#%3Cinit%3E(java.net.InetAddress,int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public Socket(Java.Net.InetAddress arg0, int arg1, bool arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -94,6 +118,16 @@ namespace Java.Net
         #endregion
 
         #region Static methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/net/Socket.html#setSocketImplFactory(java.net.SocketImplFactory)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketImplFactory"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public static void SetSocketImplFactory(Java.Net.SocketImplFactory arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setSocketImplFactory", "(Ljava/net/SocketImplFactory;)V", arg0);
+        }
 
         #endregion
 

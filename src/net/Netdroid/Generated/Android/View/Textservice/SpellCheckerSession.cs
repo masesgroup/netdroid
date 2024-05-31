@@ -89,6 +89,27 @@ namespace Android.View.Textservice
         {
             IExecute("getSentenceSuggestions", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.html#getSuggestions(android.view.textservice.TextInfo,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Textservice.TextInfo"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void GetSuggestions(Android.View.Textservice.TextInfo arg0, int arg1)
+        {
+            IExecute("getSuggestions", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerSession.html#getSuggestions(android.view.textservice.TextInfo[],int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Textservice.TextInfo"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void GetSuggestions(Android.View.Textservice.TextInfo[] arg0, int arg1, bool arg2)
+        {
+            IExecute("getSuggestions", arg0, arg1, arg2);
+        }
 
         #endregion
 

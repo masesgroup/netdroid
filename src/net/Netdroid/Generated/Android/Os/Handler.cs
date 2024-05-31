@@ -30,6 +30,15 @@ namespace Android.Os
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Handler.html#%3Cinit%3E(android.os.Handler.Callback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Handler.Callback"/></param>
+        [System.Obsolete()]
+        public Handler(Android.Os.Handler.Callback arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Handler.html#%3Cinit%3E(android.os.Looper,android.os.Handler.Callback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Looper"/></param>

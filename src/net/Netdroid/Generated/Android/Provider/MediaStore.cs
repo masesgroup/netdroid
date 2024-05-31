@@ -182,6 +182,13 @@ namespace Android.Provider
         private static Java.Lang.String _EXTRA_MEDIA_GENREContent = default;
         private static bool _EXTRA_MEDIA_GENREReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_PLAYLIST"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String EXTRA_MEDIA_PLAYLIST { get { if (!_EXTRA_MEDIA_PLAYLISTReady) { _EXTRA_MEDIA_PLAYLISTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_MEDIA_PLAYLIST"); _EXTRA_MEDIA_PLAYLISTReady = true; } return _EXTRA_MEDIA_PLAYLISTContent; } }
+        private static Java.Lang.String _EXTRA_MEDIA_PLAYLISTContent = default;
+        private static bool _EXTRA_MEDIA_PLAYLISTReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#EXTRA_MEDIA_RADIO_CHANNEL"/>
         /// </summary>
         public static Java.Lang.String EXTRA_MEDIA_RADIO_CHANNEL { get { if (!_EXTRA_MEDIA_RADIO_CHANNELReady) { _EXTRA_MEDIA_RADIO_CHANNELContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_MEDIA_RADIO_CHANNEL"); _EXTRA_MEDIA_RADIO_CHANNELReady = true; } return _EXTRA_MEDIA_RADIO_CHANNELContent; } }
@@ -241,6 +248,13 @@ namespace Android.Provider
         public static Java.Lang.String INTENT_ACTION_MEDIA_SEARCH { get { if (!_INTENT_ACTION_MEDIA_SEARCHReady) { _INTENT_ACTION_MEDIA_SEARCHContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "INTENT_ACTION_MEDIA_SEARCH"); _INTENT_ACTION_MEDIA_SEARCHReady = true; } return _INTENT_ACTION_MEDIA_SEARCHContent; } }
         private static Java.Lang.String _INTENT_ACTION_MEDIA_SEARCHContent = default;
         private static bool _INTENT_ACTION_MEDIA_SEARCHReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_MUSIC_PLAYER"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String INTENT_ACTION_MUSIC_PLAYER { get { if (!_INTENT_ACTION_MUSIC_PLAYERReady) { _INTENT_ACTION_MUSIC_PLAYERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "INTENT_ACTION_MUSIC_PLAYER"); _INTENT_ACTION_MUSIC_PLAYERReady = true; } return _INTENT_ACTION_MUSIC_PLAYERContent; } }
+        private static Java.Lang.String _INTENT_ACTION_MUSIC_PLAYERContent = default;
+        private static bool _INTENT_ACTION_MUSIC_PLAYERReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#INTENT_ACTION_STILL_IMAGE_CAMERA"/>
         /// </summary>
@@ -440,6 +454,16 @@ namespace Android.Provider
             return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getRedactedUri", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#setIncludePending(android.net.Uri)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        [System.Obsolete()]
+        public static Android.Net.Uri SetIncludePending(Android.Net.Uri arg0)
+        {
+            return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "setIncludePending", "(Landroid/net/Uri;)Landroid/net/Uri;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/MediaStore.html#setRequireOriginal(android.net.Uri)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
@@ -609,6 +633,16 @@ namespace Android.Provider
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.html#keyFor(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            [System.Obsolete()]
+            public static Java.Lang.String KeyFor(Java.Lang.String arg0)
+            {
+                return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "keyFor", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+            }
 
             #endregion
 
@@ -666,6 +700,34 @@ namespace Android.Provider
                 #endregion
 
                 #region Fields
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.PlaylistsColumns.html#DATA"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String DATA { get { if (!_DATAReady) { _DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DATA"); _DATAReady = true; } return _DATAContent; } }
+                private static Java.Lang.String _DATAContent = default;
+                private static bool _DATAReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.PlaylistsColumns.html#DATE_ADDED"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String DATE_ADDED { get { if (!_DATE_ADDEDReady) { _DATE_ADDEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DATE_ADDED"); _DATE_ADDEDReady = true; } return _DATE_ADDEDContent; } }
+                private static Java.Lang.String _DATE_ADDEDContent = default;
+                private static bool _DATE_ADDEDReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.PlaylistsColumns.html#DATE_MODIFIED"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String DATE_MODIFIED { get { if (!_DATE_MODIFIEDReady) { _DATE_MODIFIEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DATE_MODIFIED"); _DATE_MODIFIEDReady = true; } return _DATE_MODIFIEDContent; } }
+                private static Java.Lang.String _DATE_MODIFIEDContent = default;
+                private static bool _DATE_MODIFIEDReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.PlaylistsColumns.html#NAME"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String NAME { get { if (!_NAMEReady) { _NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "NAME"); _NAMEReady = true; } return _NAMEContent; } }
+                private static Java.Lang.String _NAMEContent = default;
+                private static bool _NAMEReady = false; // this is used because in case of generics 
 
                 #endregion
 
@@ -701,10 +763,55 @@ namespace Android.Provider
                 #endregion
 
                 #region Fields
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.html#EXTERNAL_CONTENT_URI"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Android.Net.Uri EXTERNAL_CONTENT_URI { get { if (!_EXTERNAL_CONTENT_URIReady) { _EXTERNAL_CONTENT_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "EXTERNAL_CONTENT_URI"); _EXTERNAL_CONTENT_URIReady = true; } return _EXTERNAL_CONTENT_URIContent; } }
+                private static Android.Net.Uri _EXTERNAL_CONTENT_URIContent = default;
+                private static bool _EXTERNAL_CONTENT_URIReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.html#INTERNAL_CONTENT_URI"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Android.Net.Uri INTERNAL_CONTENT_URI { get { if (!_INTERNAL_CONTENT_URIReady) { _INTERNAL_CONTENT_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "INTERNAL_CONTENT_URI"); _INTERNAL_CONTENT_URIReady = true; } return _INTERNAL_CONTENT_URIContent; } }
+                private static Android.Net.Uri _INTERNAL_CONTENT_URIContent = default;
+                private static bool _INTERNAL_CONTENT_URIReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.html#CONTENT_TYPE"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String CONTENT_TYPE { get { if (!_CONTENT_TYPEReady) { _CONTENT_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CONTENT_TYPE"); _CONTENT_TYPEReady = true; } return _CONTENT_TYPEContent; } }
+                private static Java.Lang.String _CONTENT_TYPEContent = default;
+                private static bool _CONTENT_TYPEReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.html#DEFAULT_SORT_ORDER"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String DEFAULT_SORT_ORDER { get { if (!_DEFAULT_SORT_ORDERReady) { _DEFAULT_SORT_ORDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT_SORT_ORDER"); _DEFAULT_SORT_ORDERReady = true; } return _DEFAULT_SORT_ORDERContent; } }
+                private static Java.Lang.String _DEFAULT_SORT_ORDERContent = default;
+                private static bool _DEFAULT_SORT_ORDERReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.html#ENTRY_CONTENT_TYPE"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String ENTRY_CONTENT_TYPE { get { if (!_ENTRY_CONTENT_TYPEReady) { _ENTRY_CONTENT_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ENTRY_CONTENT_TYPE"); _ENTRY_CONTENT_TYPEReady = true; } return _ENTRY_CONTENT_TYPEContent; } }
+                private static Java.Lang.String _ENTRY_CONTENT_TYPEContent = default;
+                private static bool _ENTRY_CONTENT_TYPEReady = false; // this is used because in case of generics 
 
                 #endregion
 
                 #region Static methods
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.html#getContentUri(java.lang.String)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+                /// <returns><see cref="Android.Net.Uri"/></returns>
+                [System.Obsolete()]
+                public static Android.Net.Uri GetContentUri(Java.Lang.String arg0)
+                {
+                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
+                }
 
                 #endregion
 
@@ -725,10 +832,76 @@ namespace Android.Provider
                     #endregion
 
                     #region Fields
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.Members.html#_ID"/>
+                    /// </summary>
+                    [System.Obsolete()]
+                    public static Java.Lang.String _ID { get { if (!__IDReady) { __IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "_ID"); __IDReady = true; } return __IDContent; } }
+                    private static Java.Lang.String __IDContent = default;
+                    private static bool __IDReady = false; // this is used because in case of generics 
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.Members.html#AUDIO_ID"/>
+                    /// </summary>
+                    [System.Obsolete()]
+                    public static Java.Lang.String AUDIO_ID { get { if (!_AUDIO_IDReady) { _AUDIO_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "AUDIO_ID"); _AUDIO_IDReady = true; } return _AUDIO_IDContent; } }
+                    private static Java.Lang.String _AUDIO_IDContent = default;
+                    private static bool _AUDIO_IDReady = false; // this is used because in case of generics 
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.Members.html#CONTENT_DIRECTORY"/>
+                    /// </summary>
+                    [System.Obsolete()]
+                    public static Java.Lang.String CONTENT_DIRECTORY { get { if (!_CONTENT_DIRECTORYReady) { _CONTENT_DIRECTORYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CONTENT_DIRECTORY"); _CONTENT_DIRECTORYReady = true; } return _CONTENT_DIRECTORYContent; } }
+                    private static Java.Lang.String _CONTENT_DIRECTORYContent = default;
+                    private static bool _CONTENT_DIRECTORYReady = false; // this is used because in case of generics 
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.Members.html#DEFAULT_SORT_ORDER"/>
+                    /// </summary>
+                    [System.Obsolete()]
+                    public static Java.Lang.String DEFAULT_SORT_ORDER { get { if (!_DEFAULT_SORT_ORDERReady) { _DEFAULT_SORT_ORDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT_SORT_ORDER"); _DEFAULT_SORT_ORDERReady = true; } return _DEFAULT_SORT_ORDERContent; } }
+                    private static Java.Lang.String _DEFAULT_SORT_ORDERContent = default;
+                    private static bool _DEFAULT_SORT_ORDERReady = false; // this is used because in case of generics 
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.Members.html#PLAY_ORDER"/>
+                    /// </summary>
+                    [System.Obsolete()]
+                    public static Java.Lang.String PLAY_ORDER { get { if (!_PLAY_ORDERReady) { _PLAY_ORDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PLAY_ORDER"); _PLAY_ORDERReady = true; } return _PLAY_ORDERContent; } }
+                    private static Java.Lang.String _PLAY_ORDERContent = default;
+                    private static bool _PLAY_ORDERReady = false; // this is used because in case of generics 
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.Members.html#PLAYLIST_ID"/>
+                    /// </summary>
+                    [System.Obsolete()]
+                    public static Java.Lang.String PLAYLIST_ID { get { if (!_PLAYLIST_IDReady) { _PLAYLIST_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PLAYLIST_ID"); _PLAYLIST_IDReady = true; } return _PLAYLIST_IDContent; } }
+                    private static Java.Lang.String _PLAYLIST_IDContent = default;
+                    private static bool _PLAYLIST_IDReady = false; // this is used because in case of generics 
 
                     #endregion
 
                     #region Static methods
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.Members.html#getContentUri(java.lang.String,long)"/>
+                    /// </summary>
+                    /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+                    /// <param name="arg1"><see cref="long"/></param>
+                    /// <returns><see cref="Android.Net.Uri"/></returns>
+                    [System.Obsolete()]
+                    public static Android.Net.Uri GetContentUri(Java.Lang.String arg0, long arg1)
+                    {
+                        return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", arg0, arg1);
+                    }
+                    /// <summary>
+                    /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Playlists.Members.html#moveItem(android.content.ContentResolver,long,int,int)"/>
+                    /// </summary>
+                    /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                    /// <param name="arg1"><see cref="long"/></param>
+                    /// <param name="arg2"><see cref="int"/></param>
+                    /// <param name="arg3"><see cref="int"/></param>
+                    /// <returns><see cref="bool"/></returns>
+                    [System.Obsolete()]
+                    public static bool MoveItem(Android.Content.ContentResolver arg0, long arg1, int arg2, int arg3)
+                    {
+                        return SExecute<bool>(LocalBridgeClazz, "moveItem", arg0, arg1, arg2, arg3);
+                    }
 
                     #endregion
 
@@ -827,6 +1000,16 @@ namespace Android.Provider
                 public static Android.Net.Uri GetContentUri(Java.Lang.String arg0)
                 {
                     return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.Media.html#getContentUriForPath(java.lang.String)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+                /// <returns><see cref="Android.Net.Uri"/></returns>
+                [System.Obsolete()]
+                public static Android.Net.Uri GetContentUriForPath(Java.Lang.String arg0)
+                {
+                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUriForPath", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
                 }
 
                 #endregion
@@ -1048,11 +1231,25 @@ namespace Android.Provider
                 private static Java.Lang.String _ALBUM_IDContent = default;
                 private static bool _ALBUM_IDReady = false; // this is used because in case of generics 
                 /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AudioColumns.html#ALBUM_KEY"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String ALBUM_KEY { get { if (!_ALBUM_KEYReady) { _ALBUM_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ALBUM_KEY"); _ALBUM_KEYReady = true; } return _ALBUM_KEYContent; } }
+                private static Java.Lang.String _ALBUM_KEYContent = default;
+                private static bool _ALBUM_KEYReady = false; // this is used because in case of generics 
+                /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AudioColumns.html#ARTIST_ID"/>
                 /// </summary>
                 public static Java.Lang.String ARTIST_ID { get { if (!_ARTIST_IDReady) { _ARTIST_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ARTIST_ID"); _ARTIST_IDReady = true; } return _ARTIST_IDContent; } }
                 private static Java.Lang.String _ARTIST_IDContent = default;
                 private static bool _ARTIST_IDReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AudioColumns.html#ARTIST_KEY"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String ARTIST_KEY { get { if (!_ARTIST_KEYReady) { _ARTIST_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ARTIST_KEY"); _ARTIST_KEYReady = true; } return _ARTIST_KEYContent; } }
+                private static Java.Lang.String _ARTIST_KEYContent = default;
+                private static bool _ARTIST_KEYReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AudioColumns.html#BOOKMARK"/>
                 /// </summary>
@@ -1071,6 +1268,13 @@ namespace Android.Provider
                 public static Java.Lang.String GENRE_ID { get { if (!_GENRE_IDReady) { _GENRE_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "GENRE_ID"); _GENRE_IDReady = true; } return _GENRE_IDContent; } }
                 private static Java.Lang.String _GENRE_IDContent = default;
                 private static bool _GENRE_IDReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AudioColumns.html#GENRE_KEY"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String GENRE_KEY { get { if (!_GENRE_KEYReady) { _GENRE_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "GENRE_KEY"); _GENRE_KEYReady = true; } return _GENRE_KEYContent; } }
+                private static Java.Lang.String _GENRE_KEYContent = default;
+                private static bool _GENRE_KEYReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AudioColumns.html#IS_ALARM"/>
                 /// </summary>
@@ -1113,6 +1317,13 @@ namespace Android.Provider
                 public static Java.Lang.String IS_RINGTONE { get { if (!_IS_RINGTONEReady) { _IS_RINGTONEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "IS_RINGTONE"); _IS_RINGTONEReady = true; } return _IS_RINGTONEContent; } }
                 private static Java.Lang.String _IS_RINGTONEContent = default;
                 private static bool _IS_RINGTONEReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AudioColumns.html#TITLE_KEY"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String TITLE_KEY { get { if (!_TITLE_KEYReady) { _TITLE_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TITLE_KEY"); _TITLE_KEYReady = true; } return _TITLE_KEYContent; } }
+                private static Java.Lang.String _TITLE_KEYContent = default;
+                private static bool _TITLE_KEYReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AudioColumns.html#TITLE_RESOURCE_URI"/>
                 /// </summary>
@@ -1288,6 +1499,13 @@ namespace Android.Provider
                 private static Java.Lang.String _ARTISTContent = default;
                 private static bool _ARTISTReady = false; // this is used because in case of generics 
                 /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.ArtistColumns.html#ARTIST_KEY"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String ARTIST_KEY { get { if (!_ARTIST_KEYReady) { _ARTIST_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ARTIST_KEY"); _ARTIST_KEYReady = true; } return _ARTIST_KEYContent; } }
+                private static Java.Lang.String _ARTIST_KEYContent = default;
+                private static bool _ARTIST_KEYReady = false; // this is used because in case of generics 
+                /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.ArtistColumns.html#NUMBER_OF_ALBUMS"/>
                 /// </summary>
                 public static Java.Lang.String NUMBER_OF_ALBUMS { get { if (!_NUMBER_OF_ALBUMSReady) { _NUMBER_OF_ALBUMSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "NUMBER_OF_ALBUMS"); _NUMBER_OF_ALBUMSReady = true; } return _NUMBER_OF_ALBUMSContent; } }
@@ -1411,11 +1629,25 @@ namespace Android.Provider
                 private static Java.Lang.String _ALBUMContent = default;
                 private static bool _ALBUMReady = false; // this is used because in case of generics 
                 /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AlbumColumns.html#ALBUM_ART"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String ALBUM_ART { get { if (!_ALBUM_ARTReady) { _ALBUM_ARTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ALBUM_ART"); _ALBUM_ARTReady = true; } return _ALBUM_ARTContent; } }
+                private static Java.Lang.String _ALBUM_ARTContent = default;
+                private static bool _ALBUM_ARTReady = false; // this is used because in case of generics 
+                /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AlbumColumns.html#ALBUM_ID"/>
                 /// </summary>
                 public static Java.Lang.String ALBUM_ID { get { if (!_ALBUM_IDReady) { _ALBUM_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ALBUM_ID"); _ALBUM_IDReady = true; } return _ALBUM_IDContent; } }
                 private static Java.Lang.String _ALBUM_IDContent = default;
                 private static bool _ALBUM_IDReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AlbumColumns.html#ALBUM_KEY"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String ALBUM_KEY { get { if (!_ALBUM_KEYReady) { _ALBUM_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ALBUM_KEY"); _ALBUM_KEYReady = true; } return _ALBUM_KEYContent; } }
+                private static Java.Lang.String _ALBUM_KEYContent = default;
+                private static bool _ALBUM_KEYReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AlbumColumns.html#ARTIST"/>
                 /// </summary>
@@ -1428,6 +1660,13 @@ namespace Android.Provider
                 public static Java.Lang.String ARTIST_ID { get { if (!_ARTIST_IDReady) { _ARTIST_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ARTIST_ID"); _ARTIST_IDReady = true; } return _ARTIST_IDContent; } }
                 private static Java.Lang.String _ARTIST_IDContent = default;
                 private static bool _ARTIST_IDReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AlbumColumns.html#ARTIST_KEY"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String ARTIST_KEY { get { if (!_ARTIST_KEYReady) { _ARTIST_KEYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ARTIST_KEY"); _ARTIST_KEYReady = true; } return _ARTIST_KEYContent; } }
+                private static Java.Lang.String _ARTIST_KEYContent = default;
+                private static bool _ARTIST_KEYReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Audio.AlbumColumns.html#FIRST_YEAR"/>
                 /// </summary>
@@ -1669,6 +1908,13 @@ namespace Android.Provider
                 private static int _MEDIA_TYPE_NONEContent = default;
                 private static bool _MEDIA_TYPE_NONEReady = false; // this is used because in case of generics 
                 /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Files.FileColumns.html#MEDIA_TYPE_PLAYLIST"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static int MEDIA_TYPE_PLAYLIST { get { if (!_MEDIA_TYPE_PLAYLISTReady) { _MEDIA_TYPE_PLAYLISTContent = SGetField<int>(LocalBridgeClazz, "MEDIA_TYPE_PLAYLIST"); _MEDIA_TYPE_PLAYLISTReady = true; } return _MEDIA_TYPE_PLAYLISTContent; } }
+                private static int _MEDIA_TYPE_PLAYLISTContent = default;
+                private static bool _MEDIA_TYPE_PLAYLISTReady = false; // this is used because in case of generics 
+                /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Files.FileColumns.html#MEDIA_TYPE_SUBTITLE"/>
                 /// </summary>
                 public static int MEDIA_TYPE_SUBTITLE { get { if (!_MEDIA_TYPE_SUBTITLEReady) { _MEDIA_TYPE_SUBTITLEContent = SGetField<int>(LocalBridgeClazz, "MEDIA_TYPE_SUBTITLE"); _MEDIA_TYPE_SUBTITLEReady = true; } return _MEDIA_TYPE_SUBTITLEContent; } }
@@ -1760,10 +2006,200 @@ namespace Android.Provider
                 #endregion
 
                 #region Fields
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#EXTERNAL_CONTENT_URI"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Android.Net.Uri EXTERNAL_CONTENT_URI { get { if (!_EXTERNAL_CONTENT_URIReady) { _EXTERNAL_CONTENT_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "EXTERNAL_CONTENT_URI"); _EXTERNAL_CONTENT_URIReady = true; } return _EXTERNAL_CONTENT_URIContent; } }
+                private static Android.Net.Uri _EXTERNAL_CONTENT_URIContent = default;
+                private static bool _EXTERNAL_CONTENT_URIReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#INTERNAL_CONTENT_URI"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Android.Net.Uri INTERNAL_CONTENT_URI { get { if (!_INTERNAL_CONTENT_URIReady) { _INTERNAL_CONTENT_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "INTERNAL_CONTENT_URI"); _INTERNAL_CONTENT_URIReady = true; } return _INTERNAL_CONTENT_URIContent; } }
+                private static Android.Net.Uri _INTERNAL_CONTENT_URIContent = default;
+                private static bool _INTERNAL_CONTENT_URIReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#FULL_SCREEN_KIND"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static int FULL_SCREEN_KIND { get { if (!_FULL_SCREEN_KINDReady) { _FULL_SCREEN_KINDContent = SGetField<int>(LocalBridgeClazz, "FULL_SCREEN_KIND"); _FULL_SCREEN_KINDReady = true; } return _FULL_SCREEN_KINDContent; } }
+                private static int _FULL_SCREEN_KINDContent = default;
+                private static bool _FULL_SCREEN_KINDReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#MICRO_KIND"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static int MICRO_KIND { get { if (!_MICRO_KINDReady) { _MICRO_KINDContent = SGetField<int>(LocalBridgeClazz, "MICRO_KIND"); _MICRO_KINDReady = true; } return _MICRO_KINDContent; } }
+                private static int _MICRO_KINDContent = default;
+                private static bool _MICRO_KINDReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#MINI_KIND"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static int MINI_KIND { get { if (!_MINI_KINDReady) { _MINI_KINDContent = SGetField<int>(LocalBridgeClazz, "MINI_KIND"); _MINI_KINDReady = true; } return _MINI_KINDContent; } }
+                private static int _MINI_KINDContent = default;
+                private static bool _MINI_KINDReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#DATA"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String DATA { get { if (!_DATAReady) { _DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DATA"); _DATAReady = true; } return _DATAContent; } }
+                private static Java.Lang.String _DATAContent = default;
+                private static bool _DATAReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#DEFAULT_SORT_ORDER"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String DEFAULT_SORT_ORDER { get { if (!_DEFAULT_SORT_ORDERReady) { _DEFAULT_SORT_ORDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT_SORT_ORDER"); _DEFAULT_SORT_ORDERReady = true; } return _DEFAULT_SORT_ORDERContent; } }
+                private static Java.Lang.String _DEFAULT_SORT_ORDERContent = default;
+                private static bool _DEFAULT_SORT_ORDERReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#HEIGHT"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String HEIGHT { get { if (!_HEIGHTReady) { _HEIGHTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "HEIGHT"); _HEIGHTReady = true; } return _HEIGHTContent; } }
+                private static Java.Lang.String _HEIGHTContent = default;
+                private static bool _HEIGHTReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#IMAGE_ID"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String IMAGE_ID { get { if (!_IMAGE_IDReady) { _IMAGE_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "IMAGE_ID"); _IMAGE_IDReady = true; } return _IMAGE_IDContent; } }
+                private static Java.Lang.String _IMAGE_IDContent = default;
+                private static bool _IMAGE_IDReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#KIND"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String KIND { get { if (!_KINDReady) { _KINDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KIND"); _KINDReady = true; } return _KINDContent; } }
+                private static Java.Lang.String _KINDContent = default;
+                private static bool _KINDReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#THUMB_DATA"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String THUMB_DATA { get { if (!_THUMB_DATAReady) { _THUMB_DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "THUMB_DATA"); _THUMB_DATAReady = true; } return _THUMB_DATAContent; } }
+                private static Java.Lang.String _THUMB_DATAContent = default;
+                private static bool _THUMB_DATAReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#WIDTH"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String WIDTH { get { if (!_WIDTHReady) { _WIDTHContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIDTH"); _WIDTHReady = true; } return _WIDTHContent; } }
+                private static Java.Lang.String _WIDTHContent = default;
+                private static bool _WIDTHReady = false; // this is used because in case of generics 
 
                 #endregion
 
                 #region Static methods
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#getThumbnail(android.content.ContentResolver,long,int,android.graphics.BitmapFactory.Options)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <param name="arg1"><see cref="long"/></param>
+                /// <param name="arg2"><see cref="int"/></param>
+                /// <param name="arg3"><see cref="Android.Graphics.BitmapFactory.Options"/></param>
+                /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+                [System.Obsolete()]
+                public static Android.Graphics.Bitmap GetThumbnail(Android.Content.ContentResolver arg0, long arg1, int arg2, Android.Graphics.BitmapFactory.Options arg3)
+                {
+                    return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", arg0, arg1, arg2, arg3);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#getThumbnail(android.content.ContentResolver,long,long,int,android.graphics.BitmapFactory.Options)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <param name="arg1"><see cref="long"/></param>
+                /// <param name="arg2"><see cref="long"/></param>
+                /// <param name="arg3"><see cref="int"/></param>
+                /// <param name="arg4"><see cref="Android.Graphics.BitmapFactory.Options"/></param>
+                /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+                [System.Obsolete()]
+                public static Android.Graphics.Bitmap GetThumbnail(Android.Content.ContentResolver arg0, long arg1, long arg2, int arg3, Android.Graphics.BitmapFactory.Options arg4)
+                {
+                    return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", arg0, arg1, arg2, arg3, arg4);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#getContentUri(java.lang.String)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+                /// <returns><see cref="Android.Net.Uri"/></returns>
+                [System.Obsolete()]
+                public static Android.Net.Uri GetContentUri(Java.Lang.String arg0)
+                {
+                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#getKindSize(int)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="int"/></param>
+                /// <returns><see cref="Android.Util.Size"/></returns>
+                [System.Obsolete()]
+                public static Android.Util.Size GetKindSize(int arg0)
+                {
+                    return SExecuteWithSignature<Android.Util.Size>(LocalBridgeClazz, "getKindSize", "(I)Landroid/util/Size;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#query(android.content.ContentResolver,android.net.Uri,java.lang.String[])"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
+                /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+                /// <returns><see cref="Android.Database.Cursor"/></returns>
+                [System.Obsolete()]
+                public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String[] arg2)
+                {
+                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#queryMiniThumbnail(android.content.ContentResolver,long,int,java.lang.String[])"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <param name="arg1"><see cref="long"/></param>
+                /// <param name="arg2"><see cref="int"/></param>
+                /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+                /// <returns><see cref="Android.Database.Cursor"/></returns>
+                [System.Obsolete()]
+                public static Android.Database.Cursor QueryMiniThumbnail(Android.Content.ContentResolver arg0, long arg1, int arg2, Java.Lang.String[] arg3)
+                {
+                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "queryMiniThumbnail", arg0, arg1, arg2, arg3);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#queryMiniThumbnails(android.content.ContentResolver,android.net.Uri,int,java.lang.String[])"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
+                /// <param name="arg2"><see cref="int"/></param>
+                /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+                /// <returns><see cref="Android.Database.Cursor"/></returns>
+                [System.Obsolete()]
+                public static Android.Database.Cursor QueryMiniThumbnails(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, int arg2, Java.Lang.String[] arg3)
+                {
+                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "queryMiniThumbnails", arg0, arg1, arg2, arg3);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#cancelThumbnailRequest(android.content.ContentResolver,long,long)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <param name="arg1"><see cref="long"/></param>
+                /// <param name="arg2"><see cref="long"/></param>
+                [System.Obsolete()]
+                public static void CancelThumbnailRequest(Android.Content.ContentResolver arg0, long arg1, long arg2)
+                {
+                    SExecute(LocalBridgeClazz, "cancelThumbnailRequest", arg0, arg1, arg2);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Thumbnails.html#cancelThumbnailRequest(android.content.ContentResolver,long)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <param name="arg1"><see cref="long"/></param>
+                [System.Obsolete()]
+                public static void CancelThumbnailRequest(Android.Content.ContentResolver arg0, long arg1)
+                {
+                    SExecute(LocalBridgeClazz, "cancelThumbnailRequest", arg0, arg1);
+                }
 
                 #endregion
 
@@ -1820,6 +2256,60 @@ namespace Android.Provider
 
                 #region Static methods
                 /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#query(android.content.ContentResolver,android.net.Uri,java.lang.String[],java.lang.String,java.lang.String)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
+                /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+                /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+                /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+                /// <returns><see cref="Android.Database.Cursor"/></returns>
+                [System.Obsolete()]
+                public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String[] arg2, Java.Lang.String arg3, Java.Lang.String arg4)
+                {
+                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2, arg3, arg4);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#query(android.content.ContentResolver,android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
+                /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+                /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+                /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+                /// <param name="arg5"><see cref="Java.Lang.String"/></param>
+                /// <returns><see cref="Android.Database.Cursor"/></returns>
+                [System.Obsolete()]
+                public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String[] arg2, Java.Lang.String arg3, Java.Lang.String[] arg4, Java.Lang.String arg5)
+                {
+                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2, arg3, arg4, arg5);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#query(android.content.ContentResolver,android.net.Uri,java.lang.String[])"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
+                /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+                /// <returns><see cref="Android.Database.Cursor"/></returns>
+                [System.Obsolete()]
+                public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String[] arg2)
+                {
+                    return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#getBitmap(android.content.ContentResolver,android.net.Uri)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
+                /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+                /// <exception cref="Java.Io.FileNotFoundException"/>
+                /// <exception cref="Java.Io.IOException"/>
+                [System.Obsolete()]
+                public static Android.Graphics.Bitmap GetBitmap(Android.Content.ContentResolver arg0, Android.Net.Uri arg1)
+                {
+                    return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "getBitmap", arg0, arg1);
+                }
+                /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#getContentUri(java.lang.String,long)"/>
                 /// </summary>
                 /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1837,6 +2327,33 @@ namespace Android.Provider
                 public static Android.Net.Uri GetContentUri(Java.Lang.String arg0)
                 {
                     return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#insertImage(android.content.ContentResolver,android.graphics.Bitmap,java.lang.String,java.lang.String)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <param name="arg1"><see cref="Android.Graphics.Bitmap"/></param>
+                /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+                /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+                /// <returns><see cref="Java.Lang.String"/></returns>
+                [System.Obsolete()]
+                public static Java.Lang.String InsertImage(Android.Content.ContentResolver arg0, Android.Graphics.Bitmap arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+                {
+                    return SExecute<Java.Lang.String>(LocalBridgeClazz, "insertImage", arg0, arg1, arg2, arg3);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.Media.html#insertImage(android.content.ContentResolver,java.lang.String,java.lang.String,java.lang.String)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+                /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+                /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+                /// <returns><see cref="Java.Lang.String"/></returns>
+                /// <exception cref="Java.Io.FileNotFoundException"/>
+                [System.Obsolete()]
+                public static Java.Lang.String InsertImage(Android.Content.ContentResolver arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+                {
+                    return SExecute<Java.Lang.String>(LocalBridgeClazz, "insertImage", arg0, arg1, arg2, arg3);
                 }
 
                 #endregion
@@ -1895,6 +2412,34 @@ namespace Android.Provider
                 public static Java.Lang.String ISO { get { if (!_ISOReady) { _ISOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ISO"); _ISOReady = true; } return _ISOContent; } }
                 private static Java.Lang.String _ISOContent = default;
                 private static bool _ISOReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.ImageColumns.html#LATITUDE"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String LATITUDE { get { if (!_LATITUDEReady) { _LATITUDEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LATITUDE"); _LATITUDEReady = true; } return _LATITUDEContent; } }
+                private static Java.Lang.String _LATITUDEContent = default;
+                private static bool _LATITUDEReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.ImageColumns.html#LONGITUDE"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String LONGITUDE { get { if (!_LONGITUDEReady) { _LONGITUDEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LONGITUDE"); _LONGITUDEReady = true; } return _LONGITUDEContent; } }
+                private static Java.Lang.String _LONGITUDEContent = default;
+                private static bool _LONGITUDEReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.ImageColumns.html#MINI_THUMB_MAGIC"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String MINI_THUMB_MAGIC { get { if (!_MINI_THUMB_MAGICReady) { _MINI_THUMB_MAGICContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MINI_THUMB_MAGIC"); _MINI_THUMB_MAGICReady = true; } return _MINI_THUMB_MAGICContent; } }
+                private static Java.Lang.String _MINI_THUMB_MAGICContent = default;
+                private static bool _MINI_THUMB_MAGICReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.ImageColumns.html#PICASA_ID"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String PICASA_ID { get { if (!_PICASA_IDReady) { _PICASA_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PICASA_ID"); _PICASA_IDReady = true; } return _PICASA_IDContent; } }
+                private static Java.Lang.String _PICASA_IDContent = default;
+                private static bool _PICASA_IDReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Images.ImageColumns.html#SCENE_CAPTURE_TYPE"/>
                 /// </summary>
@@ -2329,6 +2874,18 @@ namespace Android.Provider
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.html#query(android.content.ContentResolver,android.net.Uri,java.lang.String[])"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+            /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
+            /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.Database.Cursor"/></returns>
+            [System.Obsolete()]
+            public static Android.Database.Cursor Query(Android.Content.ContentResolver arg0, Android.Net.Uri arg1, Java.Lang.String[] arg2)
+            {
+                return SExecute<Android.Database.Cursor>(LocalBridgeClazz, "query", arg0, arg1, arg2);
+            }
 
             #endregion
 
@@ -2398,6 +2955,27 @@ namespace Android.Provider
                 private static Java.Lang.String _LANGUAGEContent = default;
                 private static bool _LANGUAGEReady = false; // this is used because in case of generics 
                 /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.VideoColumns.html#LATITUDE"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String LATITUDE { get { if (!_LATITUDEReady) { _LATITUDEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LATITUDE"); _LATITUDEReady = true; } return _LATITUDEContent; } }
+                private static Java.Lang.String _LATITUDEContent = default;
+                private static bool _LATITUDEReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.VideoColumns.html#LONGITUDE"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String LONGITUDE { get { if (!_LONGITUDEReady) { _LONGITUDEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LONGITUDE"); _LONGITUDEReady = true; } return _LONGITUDEContent; } }
+                private static Java.Lang.String _LONGITUDEContent = default;
+                private static bool _LONGITUDEReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.VideoColumns.html#MINI_THUMB_MAGIC"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String MINI_THUMB_MAGIC { get { if (!_MINI_THUMB_MAGICReady) { _MINI_THUMB_MAGICContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MINI_THUMB_MAGIC"); _MINI_THUMB_MAGICReady = true; } return _MINI_THUMB_MAGICContent; } }
+                private static Java.Lang.String _MINI_THUMB_MAGICContent = default;
+                private static bool _MINI_THUMB_MAGICReady = false; // this is used because in case of generics 
+                /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.VideoColumns.html#TAGS"/>
                 /// </summary>
                 public static Java.Lang.String TAGS { get { if (!_TAGSReady) { _TAGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TAGS"); _TAGSReady = true; } return _TAGSContent; } }
@@ -2434,10 +3012,155 @@ namespace Android.Provider
                 #endregion
 
                 #region Fields
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#EXTERNAL_CONTENT_URI"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Android.Net.Uri EXTERNAL_CONTENT_URI { get { if (!_EXTERNAL_CONTENT_URIReady) { _EXTERNAL_CONTENT_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "EXTERNAL_CONTENT_URI"); _EXTERNAL_CONTENT_URIReady = true; } return _EXTERNAL_CONTENT_URIContent; } }
+                private static Android.Net.Uri _EXTERNAL_CONTENT_URIContent = default;
+                private static bool _EXTERNAL_CONTENT_URIReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#INTERNAL_CONTENT_URI"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Android.Net.Uri INTERNAL_CONTENT_URI { get { if (!_INTERNAL_CONTENT_URIReady) { _INTERNAL_CONTENT_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "INTERNAL_CONTENT_URI"); _INTERNAL_CONTENT_URIReady = true; } return _INTERNAL_CONTENT_URIContent; } }
+                private static Android.Net.Uri _INTERNAL_CONTENT_URIContent = default;
+                private static bool _INTERNAL_CONTENT_URIReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#FULL_SCREEN_KIND"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static int FULL_SCREEN_KIND { get { if (!_FULL_SCREEN_KINDReady) { _FULL_SCREEN_KINDContent = SGetField<int>(LocalBridgeClazz, "FULL_SCREEN_KIND"); _FULL_SCREEN_KINDReady = true; } return _FULL_SCREEN_KINDContent; } }
+                private static int _FULL_SCREEN_KINDContent = default;
+                private static bool _FULL_SCREEN_KINDReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#MICRO_KIND"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static int MICRO_KIND { get { if (!_MICRO_KINDReady) { _MICRO_KINDContent = SGetField<int>(LocalBridgeClazz, "MICRO_KIND"); _MICRO_KINDReady = true; } return _MICRO_KINDContent; } }
+                private static int _MICRO_KINDContent = default;
+                private static bool _MICRO_KINDReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#MINI_KIND"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static int MINI_KIND { get { if (!_MINI_KINDReady) { _MINI_KINDContent = SGetField<int>(LocalBridgeClazz, "MINI_KIND"); _MINI_KINDReady = true; } return _MINI_KINDContent; } }
+                private static int _MINI_KINDContent = default;
+                private static bool _MINI_KINDReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#DATA"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String DATA { get { if (!_DATAReady) { _DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DATA"); _DATAReady = true; } return _DATAContent; } }
+                private static Java.Lang.String _DATAContent = default;
+                private static bool _DATAReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#DEFAULT_SORT_ORDER"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String DEFAULT_SORT_ORDER { get { if (!_DEFAULT_SORT_ORDERReady) { _DEFAULT_SORT_ORDERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEFAULT_SORT_ORDER"); _DEFAULT_SORT_ORDERReady = true; } return _DEFAULT_SORT_ORDERContent; } }
+                private static Java.Lang.String _DEFAULT_SORT_ORDERContent = default;
+                private static bool _DEFAULT_SORT_ORDERReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#HEIGHT"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String HEIGHT { get { if (!_HEIGHTReady) { _HEIGHTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "HEIGHT"); _HEIGHTReady = true; } return _HEIGHTContent; } }
+                private static Java.Lang.String _HEIGHTContent = default;
+                private static bool _HEIGHTReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#KIND"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String KIND { get { if (!_KINDReady) { _KINDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KIND"); _KINDReady = true; } return _KINDContent; } }
+                private static Java.Lang.String _KINDContent = default;
+                private static bool _KINDReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#VIDEO_ID"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String VIDEO_ID { get { if (!_VIDEO_IDReady) { _VIDEO_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "VIDEO_ID"); _VIDEO_IDReady = true; } return _VIDEO_IDContent; } }
+                private static Java.Lang.String _VIDEO_IDContent = default;
+                private static bool _VIDEO_IDReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#WIDTH"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static Java.Lang.String WIDTH { get { if (!_WIDTHReady) { _WIDTHContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIDTH"); _WIDTHReady = true; } return _WIDTHContent; } }
+                private static Java.Lang.String _WIDTHContent = default;
+                private static bool _WIDTHReady = false; // this is used because in case of generics 
 
                 #endregion
 
                 #region Static methods
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#getThumbnail(android.content.ContentResolver,long,int,android.graphics.BitmapFactory.Options)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <param name="arg1"><see cref="long"/></param>
+                /// <param name="arg2"><see cref="int"/></param>
+                /// <param name="arg3"><see cref="Android.Graphics.BitmapFactory.Options"/></param>
+                /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+                [System.Obsolete()]
+                public static Android.Graphics.Bitmap GetThumbnail(Android.Content.ContentResolver arg0, long arg1, int arg2, Android.Graphics.BitmapFactory.Options arg3)
+                {
+                    return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", arg0, arg1, arg2, arg3);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#getThumbnail(android.content.ContentResolver,long,long,int,android.graphics.BitmapFactory.Options)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <param name="arg1"><see cref="long"/></param>
+                /// <param name="arg2"><see cref="long"/></param>
+                /// <param name="arg3"><see cref="int"/></param>
+                /// <param name="arg4"><see cref="Android.Graphics.BitmapFactory.Options"/></param>
+                /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+                [System.Obsolete()]
+                public static Android.Graphics.Bitmap GetThumbnail(Android.Content.ContentResolver arg0, long arg1, long arg2, int arg3, Android.Graphics.BitmapFactory.Options arg4)
+                {
+                    return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "getThumbnail", arg0, arg1, arg2, arg3, arg4);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#getContentUri(java.lang.String)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+                /// <returns><see cref="Android.Net.Uri"/></returns>
+                [System.Obsolete()]
+                public static Android.Net.Uri GetContentUri(Java.Lang.String arg0)
+                {
+                    return SExecuteWithSignature<Android.Net.Uri>(LocalBridgeClazz, "getContentUri", "(Ljava/lang/String;)Landroid/net/Uri;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#getKindSize(int)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="int"/></param>
+                /// <returns><see cref="Android.Util.Size"/></returns>
+                [System.Obsolete()]
+                public static Android.Util.Size GetKindSize(int arg0)
+                {
+                    return SExecuteWithSignature<Android.Util.Size>(LocalBridgeClazz, "getKindSize", "(I)Landroid/util/Size;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#cancelThumbnailRequest(android.content.ContentResolver,long,long)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <param name="arg1"><see cref="long"/></param>
+                /// <param name="arg2"><see cref="long"/></param>
+                [System.Obsolete()]
+                public static void CancelThumbnailRequest(Android.Content.ContentResolver arg0, long arg1, long arg2)
+                {
+                    SExecute(LocalBridgeClazz, "cancelThumbnailRequest", arg0, arg1, arg2);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/MediaStore.Video.Thumbnails.html#cancelThumbnailRequest(android.content.ContentResolver,long)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+                /// <param name="arg1"><see cref="long"/></param>
+                [System.Obsolete()]
+                public static void CancelThumbnailRequest(Android.Content.ContentResolver arg0, long arg1)
+                {
+                    SExecute(LocalBridgeClazz, "cancelThumbnailRequest", arg0, arg1);
+                }
 
                 #endregion
 

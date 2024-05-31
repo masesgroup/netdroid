@@ -233,6 +233,15 @@ namespace Android.Opengl
             IExecuteWithSignature("surfaceDestroyed", "(Landroid/view/SurfaceHolder;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#surfaceRedrawNeeded(android.view.SurfaceHolder)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.SurfaceHolder"/></param>
+        [System.Obsolete()]
+        public void SurfaceRedrawNeeded(Android.View.SurfaceHolder arg0)
+        {
+            IExecuteWithSignature("surfaceRedrawNeeded", "(Landroid/view/SurfaceHolder;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLSurfaceView.html#surfaceRedrawNeededAsync(android.view.SurfaceHolder,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.SurfaceHolder"/></param>

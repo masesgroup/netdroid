@@ -305,6 +305,15 @@ namespace Android.App
             return IExecuteWithSignature<Android.Os.Bundle>("toBundle", "()Landroid/os/Bundle;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#isPendingIntentBackgroundActivityLaunchAllowed()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsPendingIntentBackgroundActivityLaunchAllowed()
+        {
+            return IExecuteWithSignature<bool>("isPendingIntentBackgroundActivityLaunchAllowed", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#isShareIdentityEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -319,6 +328,15 @@ namespace Android.App
         public void RequestUsageTimeReport(Android.App.PendingIntent arg0)
         {
             IExecuteWithSignature("requestUsageTimeReport", "(Landroid/app/PendingIntent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#setPendingIntentBackgroundActivityLaunchAllowed(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetPendingIntentBackgroundActivityLaunchAllowed(bool arg0)
+        {
+            IExecuteWithSignature("setPendingIntentBackgroundActivityLaunchAllowed", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#update(android.app.ActivityOptions)"/>

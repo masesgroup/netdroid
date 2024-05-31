@@ -266,6 +266,27 @@ namespace Android.View
         private static int _DRAG_FLAG_OPAQUEContent = default;
         private static bool _DRAG_FLAG_OPAQUEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#DRAWING_CACHE_QUALITY_AUTO"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int DRAWING_CACHE_QUALITY_AUTO { get { if (!_DRAWING_CACHE_QUALITY_AUTOReady) { _DRAWING_CACHE_QUALITY_AUTOContent = SGetField<int>(LocalBridgeClazz, "DRAWING_CACHE_QUALITY_AUTO"); _DRAWING_CACHE_QUALITY_AUTOReady = true; } return _DRAWING_CACHE_QUALITY_AUTOContent; } }
+        private static int _DRAWING_CACHE_QUALITY_AUTOContent = default;
+        private static bool _DRAWING_CACHE_QUALITY_AUTOReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#DRAWING_CACHE_QUALITY_HIGH"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int DRAWING_CACHE_QUALITY_HIGH { get { if (!_DRAWING_CACHE_QUALITY_HIGHReady) { _DRAWING_CACHE_QUALITY_HIGHContent = SGetField<int>(LocalBridgeClazz, "DRAWING_CACHE_QUALITY_HIGH"); _DRAWING_CACHE_QUALITY_HIGHReady = true; } return _DRAWING_CACHE_QUALITY_HIGHContent; } }
+        private static int _DRAWING_CACHE_QUALITY_HIGHContent = default;
+        private static bool _DRAWING_CACHE_QUALITY_HIGHReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#DRAWING_CACHE_QUALITY_LOW"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int DRAWING_CACHE_QUALITY_LOW { get { if (!_DRAWING_CACHE_QUALITY_LOWReady) { _DRAWING_CACHE_QUALITY_LOWContent = SGetField<int>(LocalBridgeClazz, "DRAWING_CACHE_QUALITY_LOW"); _DRAWING_CACHE_QUALITY_LOWReady = true; } return _DRAWING_CACHE_QUALITY_LOWContent; } }
+        private static int _DRAWING_CACHE_QUALITY_LOWContent = default;
+        private static bool _DRAWING_CACHE_QUALITY_LOWReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#FIND_VIEWS_WITH_CONTENT_DESCRIPTION"/>
         /// </summary>
         public static int FIND_VIEWS_WITH_CONTENT_DESCRIPTION { get { if (!_FIND_VIEWS_WITH_CONTENT_DESCRIPTIONReady) { _FIND_VIEWS_WITH_CONTENT_DESCRIPTIONContent = SGetField<int>(LocalBridgeClazz, "FIND_VIEWS_WITH_CONTENT_DESCRIPTION"); _FIND_VIEWS_WITH_CONTENT_DESCRIPTIONReady = true; } return _FIND_VIEWS_WITH_CONTENT_DESCRIPTIONContent; } }
@@ -679,6 +700,104 @@ namespace Android.View
         public static int SOUND_EFFECTS_ENABLED { get { if (!_SOUND_EFFECTS_ENABLEDReady) { _SOUND_EFFECTS_ENABLEDContent = SGetField<int>(LocalBridgeClazz, "SOUND_EFFECTS_ENABLED"); _SOUND_EFFECTS_ENABLEDReady = true; } return _SOUND_EFFECTS_ENABLEDContent; } }
         private static int _SOUND_EFFECTS_ENABLEDContent = default;
         private static bool _SOUND_EFFECTS_ENABLEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#STATUS_BAR_HIDDEN"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int STATUS_BAR_HIDDEN { get { if (!_STATUS_BAR_HIDDENReady) { _STATUS_BAR_HIDDENContent = SGetField<int>(LocalBridgeClazz, "STATUS_BAR_HIDDEN"); _STATUS_BAR_HIDDENReady = true; } return _STATUS_BAR_HIDDENContent; } }
+        private static int _STATUS_BAR_HIDDENContent = default;
+        private static bool _STATUS_BAR_HIDDENReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#STATUS_BAR_VISIBLE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int STATUS_BAR_VISIBLE { get { if (!_STATUS_BAR_VISIBLEReady) { _STATUS_BAR_VISIBLEContent = SGetField<int>(LocalBridgeClazz, "STATUS_BAR_VISIBLE"); _STATUS_BAR_VISIBLEReady = true; } return _STATUS_BAR_VISIBLEContent; } }
+        private static int _STATUS_BAR_VISIBLEContent = default;
+        private static bool _STATUS_BAR_VISIBLEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_FULLSCREEN"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SYSTEM_UI_FLAG_FULLSCREEN { get { if (!_SYSTEM_UI_FLAG_FULLSCREENReady) { _SYSTEM_UI_FLAG_FULLSCREENContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_FULLSCREEN"); _SYSTEM_UI_FLAG_FULLSCREENReady = true; } return _SYSTEM_UI_FLAG_FULLSCREENContent; } }
+        private static int _SYSTEM_UI_FLAG_FULLSCREENContent = default;
+        private static bool _SYSTEM_UI_FLAG_FULLSCREENReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_HIDE_NAVIGATION"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SYSTEM_UI_FLAG_HIDE_NAVIGATION { get { if (!_SYSTEM_UI_FLAG_HIDE_NAVIGATIONReady) { _SYSTEM_UI_FLAG_HIDE_NAVIGATIONContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_HIDE_NAVIGATION"); _SYSTEM_UI_FLAG_HIDE_NAVIGATIONReady = true; } return _SYSTEM_UI_FLAG_HIDE_NAVIGATIONContent; } }
+        private static int _SYSTEM_UI_FLAG_HIDE_NAVIGATIONContent = default;
+        private static bool _SYSTEM_UI_FLAG_HIDE_NAVIGATIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_IMMERSIVE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SYSTEM_UI_FLAG_IMMERSIVE { get { if (!_SYSTEM_UI_FLAG_IMMERSIVEReady) { _SYSTEM_UI_FLAG_IMMERSIVEContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_IMMERSIVE"); _SYSTEM_UI_FLAG_IMMERSIVEReady = true; } return _SYSTEM_UI_FLAG_IMMERSIVEContent; } }
+        private static int _SYSTEM_UI_FLAG_IMMERSIVEContent = default;
+        private static bool _SYSTEM_UI_FLAG_IMMERSIVEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_IMMERSIVE_STICKY"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SYSTEM_UI_FLAG_IMMERSIVE_STICKY { get { if (!_SYSTEM_UI_FLAG_IMMERSIVE_STICKYReady) { _SYSTEM_UI_FLAG_IMMERSIVE_STICKYContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_IMMERSIVE_STICKY"); _SYSTEM_UI_FLAG_IMMERSIVE_STICKYReady = true; } return _SYSTEM_UI_FLAG_IMMERSIVE_STICKYContent; } }
+        private static int _SYSTEM_UI_FLAG_IMMERSIVE_STICKYContent = default;
+        private static bool _SYSTEM_UI_FLAG_IMMERSIVE_STICKYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN { get { if (!_SYSTEM_UI_FLAG_LAYOUT_FULLSCREENReady) { _SYSTEM_UI_FLAG_LAYOUT_FULLSCREENContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN"); _SYSTEM_UI_FLAG_LAYOUT_FULLSCREENReady = true; } return _SYSTEM_UI_FLAG_LAYOUT_FULLSCREENContent; } }
+        private static int _SYSTEM_UI_FLAG_LAYOUT_FULLSCREENContent = default;
+        private static bool _SYSTEM_UI_FLAG_LAYOUT_FULLSCREENReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION { get { if (!_SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATIONReady) { _SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATIONContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION"); _SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATIONReady = true; } return _SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATIONContent; } }
+        private static int _SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATIONContent = default;
+        private static bool _SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_LAYOUT_STABLE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SYSTEM_UI_FLAG_LAYOUT_STABLE { get { if (!_SYSTEM_UI_FLAG_LAYOUT_STABLEReady) { _SYSTEM_UI_FLAG_LAYOUT_STABLEContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_LAYOUT_STABLE"); _SYSTEM_UI_FLAG_LAYOUT_STABLEReady = true; } return _SYSTEM_UI_FLAG_LAYOUT_STABLEContent; } }
+        private static int _SYSTEM_UI_FLAG_LAYOUT_STABLEContent = default;
+        private static bool _SYSTEM_UI_FLAG_LAYOUT_STABLEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR { get { if (!_SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BARReady) { _SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BARContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR"); _SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BARReady = true; } return _SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BARContent; } }
+        private static int _SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BARContent = default;
+        private static bool _SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BARReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_LIGHT_STATUS_BAR"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SYSTEM_UI_FLAG_LIGHT_STATUS_BAR { get { if (!_SYSTEM_UI_FLAG_LIGHT_STATUS_BARReady) { _SYSTEM_UI_FLAG_LIGHT_STATUS_BARContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_LIGHT_STATUS_BAR"); _SYSTEM_UI_FLAG_LIGHT_STATUS_BARReady = true; } return _SYSTEM_UI_FLAG_LIGHT_STATUS_BARContent; } }
+        private static int _SYSTEM_UI_FLAG_LIGHT_STATUS_BARContent = default;
+        private static bool _SYSTEM_UI_FLAG_LIGHT_STATUS_BARReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_LOW_PROFILE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SYSTEM_UI_FLAG_LOW_PROFILE { get { if (!_SYSTEM_UI_FLAG_LOW_PROFILEReady) { _SYSTEM_UI_FLAG_LOW_PROFILEContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_LOW_PROFILE"); _SYSTEM_UI_FLAG_LOW_PROFILEReady = true; } return _SYSTEM_UI_FLAG_LOW_PROFILEContent; } }
+        private static int _SYSTEM_UI_FLAG_LOW_PROFILEContent = default;
+        private static bool _SYSTEM_UI_FLAG_LOW_PROFILEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_FLAG_VISIBLE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SYSTEM_UI_FLAG_VISIBLE { get { if (!_SYSTEM_UI_FLAG_VISIBLEReady) { _SYSTEM_UI_FLAG_VISIBLEContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_FLAG_VISIBLE"); _SYSTEM_UI_FLAG_VISIBLEReady = true; } return _SYSTEM_UI_FLAG_VISIBLEContent; } }
+        private static int _SYSTEM_UI_FLAG_VISIBLEContent = default;
+        private static bool _SYSTEM_UI_FLAG_VISIBLEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#SYSTEM_UI_LAYOUT_FLAGS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SYSTEM_UI_LAYOUT_FLAGS { get { if (!_SYSTEM_UI_LAYOUT_FLAGSReady) { _SYSTEM_UI_LAYOUT_FLAGSContent = SGetField<int>(LocalBridgeClazz, "SYSTEM_UI_LAYOUT_FLAGS"); _SYSTEM_UI_LAYOUT_FLAGSReady = true; } return _SYSTEM_UI_LAYOUT_FLAGSContent; } }
+        private static int _SYSTEM_UI_LAYOUT_FLAGSContent = default;
+        private static bool _SYSTEM_UI_LAYOUT_FLAGSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#TEXT_ALIGNMENT_CENTER"/>
         /// </summary>
@@ -1144,6 +1263,30 @@ namespace Android.View
         public int[] DrawableState
         {
             get { return IExecuteWithSignatureArray<int>("getDrawableState", "()[I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getDrawingCache()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Graphics.Bitmap DrawingCache
+        {
+            get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getDrawingCache", "()Landroid/graphics/Bitmap;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getDrawingCacheBackgroundColor()"/> <see href="https://developer.android.com/reference/android/view/View.html#setDrawingCacheBackgroundColor(int)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public int DrawingCacheBackgroundColor
+        {
+            get { return IExecuteWithSignature<int>("getDrawingCacheBackgroundColor", "()I"); } set { IExecuteWithSignature("setDrawingCacheBackgroundColor", "(I)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getDrawingCacheQuality()"/> <see href="https://developer.android.com/reference/android/view/View.html#setDrawingCacheQuality(int)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public int DrawingCacheQuality
+        {
+            get { return IExecuteWithSignature<int>("getDrawingCacheQuality", "()I"); } set { IExecuteWithSignature("setDrawingCacheQuality", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getDrawingTime()"/> 
@@ -1776,6 +1919,14 @@ namespace Android.View
             get { return IExecuteWithSignature<Java.Util.List<Android.Graphics.Rect>>("getSystemGestureExclusionRects", "()Ljava/util/List;"); } set { IExecuteWithSignature("setSystemGestureExclusionRects", "(Ljava/util/List;)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getSystemUiVisibility()"/> <see href="https://developer.android.com/reference/android/view/View.html#setSystemUiVisibility(int)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public int SystemUiVisibility
+        {
+            get { return IExecuteWithSignature<int>("getSystemUiVisibility", "()I"); } set { IExecuteWithSignature("setSystemUiVisibility", "(I)V", value); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getTag()"/> <see href="https://developer.android.com/reference/android/view/View.html#setTag(java.lang.Object)"/>
         /// </summary>
         public object Tag
@@ -1944,6 +2095,14 @@ namespace Android.View
             get { return IExecuteWithSignature<Android.View.WindowInsetsController>("getWindowInsetsController", "()Landroid/view/WindowInsetsController;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getWindowSystemUiVisibility()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int WindowSystemUiVisibility
+        {
+            get { return IExecuteWithSignature<int>("getWindowSystemUiVisibility", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#getWindowToken()"/> 
         /// </summary>
         public Android.Os.IBinder WindowToken
@@ -1977,6 +2136,16 @@ namespace Android.View
         public float Z
         {
             get { return IExecuteWithSignature<float>("getZ", "()F"); } set { IExecuteWithSignature("setZ", "(F)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#getDrawingCache(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        [System.Obsolete()]
+        public Android.Graphics.Bitmap GetDrawingCache(bool arg0)
+        {
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getDrawingCache", "(Z)Landroid/graphics/Bitmap;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#createAccessibilityNodeInfo()"/>
@@ -2518,6 +2687,15 @@ namespace Android.View
         public bool IsDirty()
         {
             return IExecuteWithSignature<bool>("isDirty", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#isDrawingCacheEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsDrawingCacheEnabled()
+        {
+            return IExecuteWithSignature<bool>("isDrawingCacheEnabled", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#isDuplicateParentStateEnabled()"/>
@@ -3106,6 +3284,15 @@ namespace Android.View
             return IExecuteWithSignature<bool>("startNestedScroll", "(I)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#willNotCacheDrawing()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool WillNotCacheDrawing()
+        {
+            return IExecuteWithSignature<bool>("willNotCacheDrawing", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#willNotDraw()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -3273,6 +3460,19 @@ namespace Android.View
         public bool RequestFocusFromTouch()
         {
             return IExecuteWithSignature<bool>("requestFocusFromTouch", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#startDrag(android.content.ClipData,android.view.View.DragShadowBuilder,java.lang.Object,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ClipData"/></param>
+        /// <param name="arg1"><see cref="Android.View.View.DragShadowBuilder"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool StartDrag(Android.Content.ClipData arg0, Android.View.View.DragShadowBuilder arg1, object arg2, int arg3)
+        {
+            return IExecute<bool>("startDrag", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#startDragAndDrop(android.content.ClipData,android.view.View.DragShadowBuilder,java.lang.Object,int)"/>
@@ -3510,6 +3710,23 @@ namespace Android.View
             IExecuteWithSignature("bringToFront", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#buildDrawingCache()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void BuildDrawingCache()
+        {
+            IExecuteWithSignature("buildDrawingCache", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#buildDrawingCache(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void BuildDrawingCache(bool arg0)
+        {
+            IExecuteWithSignature("buildDrawingCache", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#buildLayer()"/>
         /// </summary>
         public void BuildLayer()
@@ -3558,6 +3775,14 @@ namespace Android.View
         public void CreateContextMenu(Android.View.ContextMenu arg0)
         {
             IExecuteWithSignature("createContextMenu", "(Landroid/view/ContextMenu;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#destroyDrawingCache()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void DestroyDrawingCache()
+        {
+            IExecuteWithSignature("destroyDrawingCache", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#dispatchConfigurationChanged(android.content.res.Configuration)"/>
@@ -3645,6 +3870,15 @@ namespace Android.View
             IExecuteWithSignature("dispatchStartTemporaryDetach", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#dispatchSystemUiVisibilityChanged(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void DispatchSystemUiVisibilityChanged(int arg0)
+        {
+            IExecuteWithSignature("dispatchSystemUiVisibilityChanged", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#dispatchWindowFocusChanged(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -3667,6 +3901,15 @@ namespace Android.View
         public void DispatchWindowInsetsAnimationPrepare(Android.View.WindowInsetsAnimation arg0)
         {
             IExecuteWithSignature("dispatchWindowInsetsAnimationPrepare", "(Landroid/view/WindowInsetsAnimation;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#dispatchWindowSystemUiVisiblityChanged(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void DispatchWindowSystemUiVisiblityChanged(int arg0)
+        {
+            IExecuteWithSignature("dispatchWindowSystemUiVisiblityChanged", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#dispatchWindowVisibilityChanged(int)"/>
@@ -3791,6 +4034,27 @@ namespace Android.View
         public void Invalidate()
         {
             IExecuteWithSignature("invalidate", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#invalidate(android.graphics.Rect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+        [System.Obsolete()]
+        public void Invalidate(Android.Graphics.Rect arg0)
+        {
+            IExecuteWithSignature("invalidate", "(Landroid/graphics/Rect;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#invalidate(int,int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void Invalidate(int arg0, int arg1, int arg2, int arg3)
+        {
+            IExecute("invalidate", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#invalidateDrawable(android.graphics.drawable.Drawable)"/>
@@ -4031,6 +4295,15 @@ namespace Android.View
             IExecuteWithSignature("onWindowFocusChanged", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#onWindowSystemUiVisibilityChanged(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void OnWindowSystemUiVisibilityChanged(int arg0)
+        {
+            IExecuteWithSignature("onWindowSystemUiVisibilityChanged", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#playSoundEffect(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -4155,6 +4428,14 @@ namespace Android.View
         public void RequestApplyInsets()
         {
             IExecuteWithSignature("requestApplyInsets", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#requestFitSystemWindows()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void RequestFitSystemWindows()
+        {
+            IExecuteWithSignature("requestFitSystemWindows", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#requestLayout()"/>
@@ -4310,6 +4591,15 @@ namespace Android.View
             IExecuteWithSignature("setBackgroundColor", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setBackgroundDrawable(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        [System.Obsolete()]
+        public void SetBackgroundDrawable(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setBackgroundDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setBackgroundResource(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -4332,6 +4622,15 @@ namespace Android.View
         public void SetContextClickable(bool arg0)
         {
             IExecuteWithSignature("setContextClickable", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setDrawingCacheEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetDrawingCacheEnabled(bool arg0)
+        {
+            IExecuteWithSignature("setDrawingCacheEnabled", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setDuplicateParentStateEnabled(boolean)"/>
@@ -4611,6 +4910,15 @@ namespace Android.View
             IExecuteWithSignature("setOnScrollChangeListener", "(Landroid/view/View$OnScrollChangeListener;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setOnSystemUiVisibilityChangeListener(android.view.View.OnSystemUiVisibilityChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View.OnSystemUiVisibilityChangeListener"/></param>
+        [System.Obsolete()]
+        public void SetOnSystemUiVisibilityChangeListener(Android.View.View.OnSystemUiVisibilityChangeListener arg0)
+        {
+            IExecuteWithSignature("setOnSystemUiVisibilityChangeListener", "(Landroid/view/View$OnSystemUiVisibilityChangeListener;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setOnTouchListener(android.view.View.OnTouchListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View.OnTouchListener"/></param>
@@ -4761,6 +5069,15 @@ namespace Android.View
         public void SetViewTranslationCallback(Android.View.Translation.ViewTranslationCallback arg0)
         {
             IExecuteWithSignature("setViewTranslationCallback", "(Landroid/view/translation/ViewTranslationCallback;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/View.html#setWillNotCacheDrawing(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetWillNotCacheDrawing(bool arg0)
+        {
+            IExecuteWithSignature("setWillNotCacheDrawing", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/View.html#setWillNotDraw(boolean)"/>
@@ -6685,6 +7002,107 @@ namespace Android.View
             public override void OnScrollChange(Android.View.View arg0, int arg1, int arg2, int arg3, int arg4)
             {
                 IExecute("onScrollChange", arg0, arg1, arg2, arg3, arg4);
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region OnSystemUiVisibilityChangeListener
+        public partial class OnSystemUiVisibilityChangeListener
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// Handlers initializer for <see cref="OnSystemUiVisibilityChangeListener"/>
+            /// </summary>
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("onSystemUiVisibilityChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnSystemUiVisibilityChangeEventHandler));
+
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/view/View.OnSystemUiVisibilityChangeListener.html#onSystemUiVisibilityChange(int)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnSystemUiVisibilityChange"/> has a value it takes precedence over corresponding class method</remarks>
+            public System.Action<int> OnOnSystemUiVisibilityChange { get; set; } = null;
+
+            void OnSystemUiVisibilityChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+            {
+                var methodToExecute = (OnOnSystemUiVisibilityChange != null) ? OnOnSystemUiVisibilityChange : OnSystemUiVisibilityChange;
+                methodToExecute.Invoke(data.EventData.TypedEventData);
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/View.OnSystemUiVisibilityChangeListener.html#onSystemUiVisibilityChange(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            [System.Obsolete()]
+            public virtual void OnSystemUiVisibilityChange(int arg0)
+            {
+                
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region OnSystemUiVisibilityChangeListenerDirect
+        public partial class OnSystemUiVisibilityChangeListenerDirect
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/View.OnSystemUiVisibilityChangeListener.html#onSystemUiVisibilityChange(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            [System.Obsolete()]
+            public override void OnSystemUiVisibilityChange(int arg0)
+            {
+                IExecuteWithSignature("onSystemUiVisibilityChange", "(I)V", arg0);
             }
 
             #endregion

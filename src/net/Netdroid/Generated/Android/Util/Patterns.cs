@@ -38,6 +38,27 @@ namespace Android.Util
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/Patterns.html#GOOD_IRI_CHAR"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String GOOD_IRI_CHAR { get { if (!_GOOD_IRI_CHARReady) { _GOOD_IRI_CHARContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "GOOD_IRI_CHAR"); _GOOD_IRI_CHARReady = true; } return _GOOD_IRI_CHARContent; } }
+        private static Java.Lang.String _GOOD_IRI_CHARContent = default;
+        private static bool _GOOD_IRI_CHARReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/Patterns.html#TOP_LEVEL_DOMAIN_STR"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String TOP_LEVEL_DOMAIN_STR { get { if (!_TOP_LEVEL_DOMAIN_STRReady) { _TOP_LEVEL_DOMAIN_STRContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TOP_LEVEL_DOMAIN_STR"); _TOP_LEVEL_DOMAIN_STRReady = true; } return _TOP_LEVEL_DOMAIN_STRContent; } }
+        private static Java.Lang.String _TOP_LEVEL_DOMAIN_STRContent = default;
+        private static bool _TOP_LEVEL_DOMAIN_STRReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/Patterns.html#TOP_LEVEL_DOMAIN_STR_FOR_WEB_URL"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String TOP_LEVEL_DOMAIN_STR_FOR_WEB_URL { get { if (!_TOP_LEVEL_DOMAIN_STR_FOR_WEB_URLReady) { _TOP_LEVEL_DOMAIN_STR_FOR_WEB_URLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TOP_LEVEL_DOMAIN_STR_FOR_WEB_URL"); _TOP_LEVEL_DOMAIN_STR_FOR_WEB_URLReady = true; } return _TOP_LEVEL_DOMAIN_STR_FOR_WEB_URLContent; } }
+        private static Java.Lang.String _TOP_LEVEL_DOMAIN_STR_FOR_WEB_URLContent = default;
+        private static bool _TOP_LEVEL_DOMAIN_STR_FOR_WEB_URLReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Patterns.html#DOMAIN_NAME"/>
         /// </summary>
         public static Java.Util.Regex.Pattern DOMAIN_NAME { get { if (!_DOMAIN_NAMEReady) { _DOMAIN_NAMEContent = SGetField<Java.Util.Regex.Pattern>(LocalBridgeClazz, "DOMAIN_NAME"); _DOMAIN_NAMEReady = true; } return _DOMAIN_NAMEContent; } }
@@ -50,11 +71,25 @@ namespace Android.Util
         private static Java.Util.Regex.Pattern _EMAIL_ADDRESSContent = default;
         private static bool _EMAIL_ADDRESSReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/Patterns.html#IP_ADDRESS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Util.Regex.Pattern IP_ADDRESS { get { if (!_IP_ADDRESSReady) { _IP_ADDRESSContent = SGetField<Java.Util.Regex.Pattern>(LocalBridgeClazz, "IP_ADDRESS"); _IP_ADDRESSReady = true; } return _IP_ADDRESSContent; } }
+        private static Java.Util.Regex.Pattern _IP_ADDRESSContent = default;
+        private static bool _IP_ADDRESSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Patterns.html#PHONE"/>
         /// </summary>
         public static Java.Util.Regex.Pattern PHONE { get { if (!_PHONEReady) { _PHONEContent = SGetField<Java.Util.Regex.Pattern>(LocalBridgeClazz, "PHONE"); _PHONEReady = true; } return _PHONEContent; } }
         private static Java.Util.Regex.Pattern _PHONEContent = default;
         private static bool _PHONEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/Patterns.html#TOP_LEVEL_DOMAIN"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Util.Regex.Pattern TOP_LEVEL_DOMAIN { get { if (!_TOP_LEVEL_DOMAINReady) { _TOP_LEVEL_DOMAINContent = SGetField<Java.Util.Regex.Pattern>(LocalBridgeClazz, "TOP_LEVEL_DOMAIN"); _TOP_LEVEL_DOMAINReady = true; } return _TOP_LEVEL_DOMAINContent; } }
+        private static Java.Util.Regex.Pattern _TOP_LEVEL_DOMAINContent = default;
+        private static bool _TOP_LEVEL_DOMAINReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Patterns.html#WEB_URL"/>
         /// </summary>

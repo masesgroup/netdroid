@@ -104,6 +104,13 @@ namespace Android.Os
         private static Java.Lang.String _ALLOW_PARENT_PROFILE_APP_LINKINGContent = default;
         private static bool _ALLOW_PARENT_PROFILE_APP_LINKINGReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADD_MANAGED_PROFILE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String DISALLOW_ADD_MANAGED_PROFILE { get { if (!_DISALLOW_ADD_MANAGED_PROFILEReady) { _DISALLOW_ADD_MANAGED_PROFILEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_ADD_MANAGED_PROFILE"); _DISALLOW_ADD_MANAGED_PROFILEReady = true; } return _DISALLOW_ADD_MANAGED_PROFILEContent; } }
+        private static Java.Lang.String _DISALLOW_ADD_MANAGED_PROFILEContent = default;
+        private static bool _DISALLOW_ADD_MANAGED_PROFILEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADD_USER"/>
         /// </summary>
         public static Java.Lang.String DISALLOW_ADD_USER { get { if (!_DISALLOW_ADD_USERReady) { _DISALLOW_ADD_USERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_ADD_USER"); _DISALLOW_ADD_USERReady = true; } return _DISALLOW_ADD_USERContent; } }
@@ -374,6 +381,13 @@ namespace Android.Os
         private static Java.Lang.String _DISALLOW_PRINTINGContent = default;
         private static bool _DISALLOW_PRINTINGReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_REMOVE_MANAGED_PROFILE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String DISALLOW_REMOVE_MANAGED_PROFILE { get { if (!_DISALLOW_REMOVE_MANAGED_PROFILEReady) { _DISALLOW_REMOVE_MANAGED_PROFILEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_REMOVE_MANAGED_PROFILE"); _DISALLOW_REMOVE_MANAGED_PROFILEReady = true; } return _DISALLOW_REMOVE_MANAGED_PROFILEContent; } }
+        private static Java.Lang.String _DISALLOW_REMOVE_MANAGED_PROFILEContent = default;
+        private static bool _DISALLOW_REMOVE_MANAGED_PROFILEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_REMOVE_USER"/>
         /// </summary>
         public static Java.Lang.String DISALLOW_REMOVE_USER { get { if (!_DISALLOW_REMOVE_USERReady) { _DISALLOW_REMOVE_USERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_REMOVE_USER"); _DISALLOW_REMOVE_USERReady = true; } return _DISALLOW_REMOVE_USERContent; } }
@@ -545,11 +559,12 @@ namespace Android.Os
             get { return IExecuteWithSignature<Java.Util.List<Android.Os.UserHandle>>("getUserProfiles", "()Ljava/util/List;"); }
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#getUserRestrictions()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#getUserRestrictions()"/> <see href="https://developer.android.com/reference/android/os/UserManager.html#setUserRestrictions(android.os.Bundle)"/>
         /// </summary>
+        [System.Obsolete()]
         public Android.Os.Bundle UserRestrictions
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getUserRestrictions", "()Landroid/os/Bundle;"); }
+            get { return IExecuteWithSignature<Android.Os.Bundle>("getUserRestrictions", "()Landroid/os/Bundle;"); } set { IExecuteWithSignature("setUserRestrictions", "(Landroid/os/Bundle;)V", value); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#getApplicationRestrictions(java.lang.String)"/>
@@ -709,6 +724,16 @@ namespace Android.Os
             return IExecute<bool>("requestQuietModeEnabled", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#setRestrictionsChallenge(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool SetRestrictionsChallenge(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<bool>("setRestrictionsChallenge", "(Ljava/lang/String;)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#getSerialNumberForUser(android.os.UserHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.UserHandle"/></param>
@@ -725,6 +750,26 @@ namespace Android.Os
         public long GetUserCreationTime(Android.Os.UserHandle arg0)
         {
             return IExecuteWithSignature<long>("getUserCreationTime", "(Landroid/os/UserHandle;)J", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#setUserRestriction(java.lang.String,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetUserRestriction(Java.Lang.String arg0, bool arg1)
+        {
+            IExecute("setUserRestriction", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#setUserRestrictions(android.os.Bundle,android.os.UserHandle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
+        [System.Obsolete()]
+        public void SetUserRestrictions(Android.Os.Bundle arg0, Android.Os.UserHandle arg1)
+        {
+            IExecute("setUserRestrictions", arg0, arg1);
         }
 
         #endregion

@@ -62,6 +62,15 @@ namespace Java.Lang.Ref
             return IExecuteWithSignature<bool>("enqueue", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html#isEnqueued()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsEnqueued()
+        {
+            return IExecuteWithSignature<bool>("isEnqueued", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html#refersTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -135,6 +144,15 @@ namespace Java.Lang.Ref
         public bool Enqueue()
         {
             return IExecuteWithSignature<bool>("enqueue", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html#isEnqueued()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsEnqueued()
+        {
+            return IExecuteWithSignature<bool>("isEnqueued", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html#refersTo(java.lang.Object)"/>

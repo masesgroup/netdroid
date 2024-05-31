@@ -162,6 +162,13 @@ namespace Android.Media
         private static int _WHITEBALANCE_MANUALContent = default;
         private static bool _WHITEBALANCE_MANUALReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#TAG_APERTURE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String TAG_APERTURE { get { if (!_TAG_APERTUREReady) { _TAG_APERTUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TAG_APERTURE"); _TAG_APERTUREReady = true; } return _TAG_APERTUREContent; } }
+        private static Java.Lang.String _TAG_APERTUREContent = default;
+        private static bool _TAG_APERTUREReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#TAG_APERTURE_VALUE"/>
         /// </summary>
         public static Java.Lang.String TAG_APERTURE_VALUE { get { if (!_TAG_APERTURE_VALUEReady) { _TAG_APERTURE_VALUEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TAG_APERTURE_VALUE"); _TAG_APERTURE_VALUEReady = true; } return _TAG_APERTURE_VALUEContent; } }
@@ -594,6 +601,13 @@ namespace Android.Media
         private static Java.Lang.String _TAG_INTEROPERABILITY_INDEXContent = default;
         private static bool _TAG_INTEROPERABILITY_INDEXReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#TAG_ISO"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String TAG_ISO { get { if (!_TAG_ISOReady) { _TAG_ISOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TAG_ISO"); _TAG_ISOReady = true; } return _TAG_ISOContent; } }
+        private static Java.Lang.String _TAG_ISOContent = default;
+        private static bool _TAG_ISOReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#TAG_ISO_SPEED_RATINGS"/>
         /// </summary>
         public static Java.Lang.String TAG_ISO_SPEED_RATINGS { get { if (!_TAG_ISO_SPEED_RATINGSReady) { _TAG_ISO_SPEED_RATINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TAG_ISO_SPEED_RATINGS"); _TAG_ISO_SPEED_RATINGSReady = true; } return _TAG_ISO_SPEED_RATINGSContent; } }
@@ -906,11 +920,25 @@ namespace Android.Media
         private static Java.Lang.String _TAG_SUBSEC_TIMEContent = default;
         private static bool _TAG_SUBSEC_TIMEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#TAG_SUBSEC_TIME_DIG"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String TAG_SUBSEC_TIME_DIG { get { if (!_TAG_SUBSEC_TIME_DIGReady) { _TAG_SUBSEC_TIME_DIGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TAG_SUBSEC_TIME_DIG"); _TAG_SUBSEC_TIME_DIGReady = true; } return _TAG_SUBSEC_TIME_DIGContent; } }
+        private static Java.Lang.String _TAG_SUBSEC_TIME_DIGContent = default;
+        private static bool _TAG_SUBSEC_TIME_DIGReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#TAG_SUBSEC_TIME_DIGITIZED"/>
         /// </summary>
         public static Java.Lang.String TAG_SUBSEC_TIME_DIGITIZED { get { if (!_TAG_SUBSEC_TIME_DIGITIZEDReady) { _TAG_SUBSEC_TIME_DIGITIZEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TAG_SUBSEC_TIME_DIGITIZED"); _TAG_SUBSEC_TIME_DIGITIZEDReady = true; } return _TAG_SUBSEC_TIME_DIGITIZEDContent; } }
         private static Java.Lang.String _TAG_SUBSEC_TIME_DIGITIZEDContent = default;
         private static bool _TAG_SUBSEC_TIME_DIGITIZEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#TAG_SUBSEC_TIME_ORIG"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String TAG_SUBSEC_TIME_ORIG { get { if (!_TAG_SUBSEC_TIME_ORIGReady) { _TAG_SUBSEC_TIME_ORIGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TAG_SUBSEC_TIME_ORIG"); _TAG_SUBSEC_TIME_ORIGReady = true; } return _TAG_SUBSEC_TIME_ORIGContent; } }
+        private static Java.Lang.String _TAG_SUBSEC_TIME_ORIGContent = default;
+        private static bool _TAG_SUBSEC_TIME_ORIGReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#TAG_SUBSEC_TIME_ORIGINAL"/>
         /// </summary>

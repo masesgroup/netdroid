@@ -62,6 +62,13 @@ namespace Android.View
         private static int _ALPHAContent = default;
         private static bool _ALPHAReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyCharacterMap.html#BUILT_IN_KEYBOARD"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int BUILT_IN_KEYBOARD { get { if (!_BUILT_IN_KEYBOARDReady) { _BUILT_IN_KEYBOARDContent = SGetField<int>(LocalBridgeClazz, "BUILT_IN_KEYBOARD"); _BUILT_IN_KEYBOARDReady = true; } return _BUILT_IN_KEYBOARDContent; } }
+        private static int _BUILT_IN_KEYBOARDContent = default;
+        private static bool _BUILT_IN_KEYBOARDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyCharacterMap.html#COMBINING_ACCENT"/>
         /// </summary>
         public static int COMBINING_ACCENT { get { if (!_COMBINING_ACCENTReady) { _COMBINING_ACCENTContent = SGetField<int>(LocalBridgeClazz, "COMBINING_ACCENT"); _COMBINING_ACCENTReady = true; } return _COMBINING_ACCENTContent; } }
@@ -184,6 +191,17 @@ namespace Android.View
             return IExecuteWithSignatureArray<Android.View.KeyEvent>("getEvents", "([C)[Landroid/view/KeyEvent;", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyCharacterMap.html#getKeyData(int,android.view.KeyCharacterMap.KeyData)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.View.KeyCharacterMap.KeyData"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool GetKeyData(int arg0, Android.View.KeyCharacterMap.KeyData arg1)
+        {
+            return IExecute<bool>("getKeyData", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyCharacterMap.html#isPrintingKey(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -262,6 +280,59 @@ namespace Android.View
         #endregion
 
         #region Nested classes
+        #region KeyData
+        public partial class KeyData
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/KeyCharacterMap.KeyData.html#displayLabel"/>
+            /// </summary>
+            [System.Obsolete()]
+            public char displayLabel { get { return IGetField<char>("displayLabel"); } set { ISetField("displayLabel", value); } }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/KeyCharacterMap.KeyData.html#number"/>
+            /// </summary>
+            [System.Obsolete()]
+            public char number { get { return IGetField<char>("number"); } set { ISetField("number", value); } }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/KeyCharacterMap.KeyData.html#meta"/>
+            /// </summary>
+            [System.Obsolete()]
+            public char[] meta { get { return IGetFieldArray<char>("meta"); } set { ISetField("meta", value); } }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/KeyCharacterMap.KeyData.html#META_LENGTH"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int META_LENGTH { get { if (!_META_LENGTHReady) { _META_LENGTHContent = SGetField<int>(LocalBridgeClazz, "META_LENGTH"); _META_LENGTHReady = true; } return _META_LENGTHContent; } }
+            private static int _META_LENGTHContent = default;
+            private static bool _META_LENGTHReady = false; // this is used because in case of generics 
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region UnavailableException
         public partial class UnavailableException
         {

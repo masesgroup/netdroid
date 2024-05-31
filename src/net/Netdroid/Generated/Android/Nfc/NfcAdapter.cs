@@ -292,6 +292,128 @@ namespace Android.Nfc
         #endregion
 
         #region Nested classes
+        #region CreateBeamUrisCallback
+        public partial class CreateBeamUrisCallback
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.CreateBeamUrisCallback.html#createBeamUris(android.nfc.NfcEvent)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Nfc.NfcEvent"/></param>
+            /// <returns><see cref="Android.Net.Uri"/></returns>
+            [System.Obsolete()]
+            public Android.Net.Uri[] CreateBeamUris(Android.Nfc.NfcEvent arg0)
+            {
+                return IExecuteWithSignatureArray<Android.Net.Uri>("createBeamUris", "(Landroid/nfc/NfcEvent;)[Landroid/net/Uri;", arg0);
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region CreateNdefMessageCallback
+        public partial class CreateNdefMessageCallback
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.CreateNdefMessageCallback.html#createNdefMessage(android.nfc.NfcEvent)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Nfc.NfcEvent"/></param>
+            /// <returns><see cref="Android.Nfc.NdefMessage"/></returns>
+            [System.Obsolete()]
+            public Android.Nfc.NdefMessage CreateNdefMessage(Android.Nfc.NfcEvent arg0)
+            {
+                return IExecuteWithSignature<Android.Nfc.NdefMessage>("createNdefMessage", "(Landroid/nfc/NfcEvent;)Landroid/nfc/NdefMessage;", arg0);
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region OnNdefPushCompleteCallback
+        public partial class OnNdefPushCompleteCallback
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/nfc/NfcAdapter.OnNdefPushCompleteCallback.html#onNdefPushComplete(android.nfc.NfcEvent)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Nfc.NfcEvent"/></param>
+            [System.Obsolete()]
+            public void OnNdefPushComplete(Android.Nfc.NfcEvent arg0)
+            {
+                IExecuteWithSignature("onNdefPushComplete", "(Landroid/nfc/NfcEvent;)V", arg0);
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region OnTagRemovedListener
         public partial class OnTagRemovedListener
         {

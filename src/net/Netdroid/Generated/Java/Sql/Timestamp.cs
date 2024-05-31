@@ -30,6 +30,21 @@ namespace Java.Sql
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Timestamp.html#%3Cinit%3E(int,int,int,int,int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
+        [System.Obsolete()]
+        public Timestamp(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.sql/java/sql/Timestamp.html#%3Cinit%3E(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>

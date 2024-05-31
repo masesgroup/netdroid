@@ -188,6 +188,13 @@ namespace Android.Telecom
         private static int _CAPABILITY_CAN_SEND_RESPONSE_VIA_CONNECTIONContent = default;
         private static bool _CAPABILITY_CAN_SEND_RESPONSE_VIA_CONNECTIONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#CAPABILITY_CAN_UPGRADE_TO_VIDEO"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int CAPABILITY_CAN_UPGRADE_TO_VIDEO { get { if (!_CAPABILITY_CAN_UPGRADE_TO_VIDEOReady) { _CAPABILITY_CAN_UPGRADE_TO_VIDEOContent = SGetField<int>(LocalBridgeClazz, "CAPABILITY_CAN_UPGRADE_TO_VIDEO"); _CAPABILITY_CAN_UPGRADE_TO_VIDEOReady = true; } return _CAPABILITY_CAN_UPGRADE_TO_VIDEOContent; } }
+        private static int _CAPABILITY_CAN_UPGRADE_TO_VIDEOContent = default;
+        private static bool _CAPABILITY_CAN_UPGRADE_TO_VIDEOReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO"/>
         /// </summary>
         public static int CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO { get { if (!_CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIOReady) { _CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIOContent = SGetField<int>(LocalBridgeClazz, "CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIO"); _CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIOReady = true; } return _CAPABILITY_CANNOT_DOWNGRADE_VIDEO_TO_AUDIOContent; } }
@@ -627,6 +634,14 @@ namespace Android.Telecom
             get { return IExecuteWithSignature<bool>("getAudioModeIsVoip", "()Z"); } set { IExecuteWithSignature("setAudioModeIsVoip", "(Z)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#getCallAudioState()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Telecom.CallAudioState CallAudioState
+        {
+            get { return IExecuteWithSignature<Android.Telecom.CallAudioState>("getCallAudioState", "()Landroid/telecom/CallAudioState;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#getCallerDisplayName()"/> 
         /// </summary>
         public Java.Lang.String CallerDisplayName
@@ -837,6 +852,15 @@ namespace Android.Telecom
             IExecute("setAddress", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#setAudioRoute(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetAudioRoute(int arg0)
+        {
+            IExecuteWithSignature("setAudioRoute", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#setCallerDisplayName(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -980,6 +1004,15 @@ namespace Android.Telecom
         public void OnAvailableCallEndpointsChanged(Java.Util.List<Android.Telecom.CallEndpoint> arg0)
         {
             IExecuteWithSignature("onAvailableCallEndpointsChanged", "(Ljava/util/List;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#onCallAudioStateChanged(android.telecom.CallAudioState)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Telecom.CallAudioState"/></param>
+        [System.Obsolete()]
+        public void OnCallAudioStateChanged(Android.Telecom.CallAudioState arg0)
+        {
+            IExecuteWithSignature("onCallAudioStateChanged", "(Landroid/telecom/CallAudioState;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#onCallEndpointChanged(android.telecom.CallEndpoint)"/>
@@ -1162,6 +1195,15 @@ namespace Android.Telecom
         public void OnUsingAlternativeUi(bool arg0)
         {
             IExecuteWithSignature("onUsingAlternativeUi", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#requestBluetoothAudio(android.bluetooth.BluetoothDevice)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothDevice"/></param>
+        [System.Obsolete()]
+        public void RequestBluetoothAudio(Android.Bluetooth.BluetoothDevice arg0)
+        {
+            IExecuteWithSignature("requestBluetoothAudio", "(Landroid/bluetooth/BluetoothDevice;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Connection.html#sendConnectionEvent(java.lang.String,android.os.Bundle)"/>

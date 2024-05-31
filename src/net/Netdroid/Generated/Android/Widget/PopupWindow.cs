@@ -459,6 +459,16 @@ namespace Android.Widget
             IExecuteWithSignature("setTouchModal", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#setWindowLayoutMode(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetWindowLayoutMode(int arg0, int arg1)
+        {
+            IExecute("setWindowLayoutMode", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/PopupWindow.html#showAsDropDown(android.view.View,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>

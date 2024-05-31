@@ -166,6 +166,22 @@ namespace Android.Widget
             get { return IExecuteWithSignature<int>("getInputMethodMode", "()I"); } set { IExecuteWithSignature("setInputMethodMode", "(I)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getItemClickListener()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Widget.AdapterView.OnItemClickListener ItemClickListener
+        {
+            get { return IExecuteWithSignature<Android.Widget.AdapterView.OnItemClickListener>("getItemClickListener", "()Landroid/widget/AdapterView$OnItemClickListener;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getItemSelectedListener()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Widget.AdapterView.OnItemSelectedListener ItemSelectedListener
+        {
+            get { return IExecuteWithSignature<Android.Widget.AdapterView.OnItemSelectedListener>("getItemSelectedListener", "()Landroid/widget/AdapterView$OnItemSelectedListener;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getListSelection()"/> <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setListSelection(int)"/>
         /// </summary>
         public int ListSelection

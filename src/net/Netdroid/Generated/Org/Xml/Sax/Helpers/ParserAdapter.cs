@@ -71,6 +71,7 @@ namespace Org.Xml.Sax.Helpers
             AddEventHandler("setFeature", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(SetFeatureEventHandler));
             AddEventHandler("setProperty", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(SetPropertyEventHandler));
             AddEventHandler("startDocument", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(StartDocumentEventHandler));
+            AddEventHandler("startElement", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(StartElementEventHandler));
 
         }
 
@@ -546,6 +547,29 @@ namespace Org.Xml.Sax.Helpers
             
         }
 
+        /// <summary>
+        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#startElement(java.lang.String,org.xml.sax.AttributeList)"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnStartElement"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Lang.String, Org.Xml.Sax.AttributeList> OnStartElement { get; set; } = null;
+
+        void StartElementEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+        {
+            var methodToExecute = (OnStartElement != null) ? OnStartElement : StartElement;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Org.Xml.Sax.AttributeList>(0));
+        }
+
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#startElement(java.lang.String,org.xml.sax.AttributeList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Org.Xml.Sax.AttributeList"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void StartElement(Java.Lang.String arg0, Org.Xml.Sax.AttributeList arg1)
+        {
+            
+        }
+
         #endregion
 
         #region Nested classes
@@ -732,6 +756,16 @@ namespace Org.Xml.Sax.Helpers
         public override void StartDocument()
         {
             IExecuteWithSignature("startDocument", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#startElement(java.lang.String,org.xml.sax.AttributeList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Org.Xml.Sax.AttributeList"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public override void StartElement(Java.Lang.String arg0, Org.Xml.Sax.AttributeList arg1)
+        {
+            IExecute("startElement", arg0, arg1);
         }
 
         #endregion

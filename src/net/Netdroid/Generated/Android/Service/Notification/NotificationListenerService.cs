@@ -266,6 +266,20 @@ namespace Android.Service.Notification
         private static int _REASON_USER_STOPPEDContent = default;
         private static bool _REASON_USER_STOPPEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#SUPPRESSED_EFFECT_SCREEN_OFF"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SUPPRESSED_EFFECT_SCREEN_OFF { get { if (!_SUPPRESSED_EFFECT_SCREEN_OFFReady) { _SUPPRESSED_EFFECT_SCREEN_OFFContent = SGetField<int>(LocalBridgeClazz, "SUPPRESSED_EFFECT_SCREEN_OFF"); _SUPPRESSED_EFFECT_SCREEN_OFFReady = true; } return _SUPPRESSED_EFFECT_SCREEN_OFFContent; } }
+        private static int _SUPPRESSED_EFFECT_SCREEN_OFFContent = default;
+        private static bool _SUPPRESSED_EFFECT_SCREEN_OFFReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#SUPPRESSED_EFFECT_SCREEN_ON"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SUPPRESSED_EFFECT_SCREEN_ON { get { if (!_SUPPRESSED_EFFECT_SCREEN_ONReady) { _SUPPRESSED_EFFECT_SCREEN_ONContent = SGetField<int>(LocalBridgeClazz, "SUPPRESSED_EFFECT_SCREEN_ON"); _SUPPRESSED_EFFECT_SCREEN_ONReady = true; } return _SUPPRESSED_EFFECT_SCREEN_ONContent; } }
+        private static int _SUPPRESSED_EFFECT_SCREEN_ONContent = default;
+        private static bool _SUPPRESSED_EFFECT_SCREEN_ONReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#ACTION_SETTINGS_HOME"/>
         /// </summary>
         public static Java.Lang.String ACTION_SETTINGS_HOME { get { if (!_ACTION_SETTINGS_HOMEReady) { _ACTION_SETTINGS_HOMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_SETTINGS_HOME"); _ACTION_SETTINGS_HOMEReady = true; } return _ACTION_SETTINGS_HOMEContent; } }
@@ -389,6 +403,17 @@ namespace Android.Service.Notification
         public void CancelAllNotifications()
         {
             IExecuteWithSignature("cancelAllNotifications", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#cancelNotification(java.lang.String,java.lang.String,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void CancelNotification(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
+        {
+            IExecute("cancelNotification", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#cancelNotification(java.lang.String)"/>

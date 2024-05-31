@@ -412,6 +412,16 @@ namespace Android.Hardware.Biometrics
                 return IExecuteWithSignature<Android.Hardware.Biometrics.BiometricPrompt.Builder>("setDescription", "(Ljava/lang/CharSequence;)Landroid/hardware/biometrics/BiometricPrompt$Builder;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.Builder.html#setDeviceCredentialAllowed(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Hardware.Biometrics.BiometricPrompt.Builder"/></returns>
+            [System.Obsolete()]
+            public Android.Hardware.Biometrics.BiometricPrompt.Builder SetDeviceCredentialAllowed(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Hardware.Biometrics.BiometricPrompt.Builder>("setDeviceCredentialAllowed", "(Z)Landroid/hardware/biometrics/BiometricPrompt$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.Builder.html#setNegativeButton(java.lang.CharSequence,java.util.concurrent.Executor,android.content.DialogInterface.OnClickListener)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -455,6 +465,15 @@ namespace Android.Hardware.Biometrics
         public partial class CryptoObject
         {
             #region Constructors
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#%3Cinit%3E(android.security.identity.IdentityCredential)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Security.Identity.IdentityCredential"/></param>
+            [System.Obsolete()]
+            public CryptoObject(Android.Security.Identity.IdentityCredential arg0)
+                : base(arg0)
+            {
+            }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#%3Cinit%3E(android.security.identity.PresentationSession)"/>
             /// </summary>
@@ -509,6 +528,14 @@ namespace Android.Hardware.Biometrics
             public Javax.Crypto.Cipher Cipher
             {
                 get { return IExecuteWithSignature<Javax.Crypto.Cipher>("getCipher", "()Ljavax/crypto/Cipher;"); }
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#getIdentityCredential()"/> 
+            /// </summary>
+            [System.Obsolete()]
+            public Android.Security.Identity.IdentityCredential IdentityCredential
+            {
+                get { return IExecuteWithSignature<Android.Security.Identity.IdentityCredential>("getIdentityCredential", "()Landroid/security/identity/IdentityCredential;"); }
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#getMac()"/> 

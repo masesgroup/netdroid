@@ -1364,6 +1364,13 @@ namespace Android.Opengl
         private static int _GL_STENCIL_FUNCContent = default;
         private static bool _GL_STENCIL_FUNCReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#GL_STENCIL_INDEX"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int GL_STENCIL_INDEX { get { if (!_GL_STENCIL_INDEXReady) { _GL_STENCIL_INDEXContent = SGetField<int>(LocalBridgeClazz, "GL_STENCIL_INDEX"); _GL_STENCIL_INDEXReady = true; } return _GL_STENCIL_INDEXContent; } }
+        private static int _GL_STENCIL_INDEXContent = default;
+        private static bool _GL_STENCIL_INDEXReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/GLES20.html#GL_STENCIL_INDEX8"/>
         /// </summary>
         public static int GL_STENCIL_INDEX8 { get { if (!_GL_STENCIL_INDEX8Ready) { _GL_STENCIL_INDEX8Content = SGetField<int>(LocalBridgeClazz, "GL_STENCIL_INDEX8"); _GL_STENCIL_INDEX8Ready = true; } return _GL_STENCIL_INDEX8Content; } }

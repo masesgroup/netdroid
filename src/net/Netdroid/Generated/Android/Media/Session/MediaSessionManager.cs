@@ -130,6 +130,15 @@ namespace Android.Media.Session
             IExecuteWithSignature("addOnSession2TokensChangedListener", "(Landroid/media/session/MediaSessionManager$OnSession2TokensChangedListener;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.html#notifySession2Created(android.media.Session2Token)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.Session2Token"/></param>
+        [System.Obsolete()]
+        public void NotifySession2Created(Android.Media.Session2Token arg0)
+        {
+            IExecuteWithSignature("notifySession2Created", "(Landroid/media/Session2Token;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.html#removeOnActiveSessionsChangedListener(android.media.session.MediaSessionManager.OnActiveSessionsChangedListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.Session.MediaSessionManager.OnActiveSessionsChangedListener"/></param>

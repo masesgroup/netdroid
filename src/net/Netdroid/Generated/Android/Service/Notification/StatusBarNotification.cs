@@ -37,6 +37,24 @@ namespace Android.Service.Notification
             : base(arg0)
         {
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#%3Cinit%3E(java.lang.String,java.lang.String,int,java.lang.String,int,int,int,android.app.Notification,android.os.UserHandle,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg7"><see cref="Android.App.Notification"/></param>
+        /// <param name="arg8"><see cref="Android.Os.UserHandle"/></param>
+        /// <param name="arg9"><see cref="long"/></param>
+        [System.Obsolete()]
+        public StatusBarNotification(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3, int arg4, int arg5, int arg6, Android.App.Notification arg7, Android.Os.UserHandle arg8, long arg9)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9)
+        {
+        }
 
         #endregion
 
@@ -135,6 +153,14 @@ namespace Android.Service.Notification
         public Android.Os.UserHandle User
         {
             get { return IExecuteWithSignature<Android.Os.UserHandle>("getUser", "()Landroid/os/UserHandle;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#getUserId()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int UserId
+        {
+            get { return IExecuteWithSignature<int>("getUserId", "()I"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/StatusBarNotification.html#clone()"/>

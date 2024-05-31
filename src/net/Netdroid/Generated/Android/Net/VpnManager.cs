@@ -191,6 +191,14 @@ namespace Android.Net
             IExecuteWithSignature("deleteProvisionedVpnProfile", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/VpnManager.html#startProvisionedVpnProfile()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void StartProvisionedVpnProfile()
+        {
+            IExecuteWithSignature("startProvisionedVpnProfile", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/VpnManager.html#stopProvisionedVpnProfile()"/>
         /// </summary>
         public void StopProvisionedVpnProfile()

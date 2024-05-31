@@ -148,6 +148,24 @@ namespace Android.Bluetooth
             get { return IExecuteWithSignature<Java.Util.UUID>("getUuid", "()Ljava/util/UUID;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattDescriptor.html#getValue()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public byte[] Value
+        {
+            get { return IExecuteWithSignatureArray<byte>("getValue", "()[B"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattDescriptor.html#setValue(byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool SetValue(byte[] arg0)
+        {
+            return IExecuteWithSignature<bool>("setValue", "([B)Z", new object[] { arg0 });
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattDescriptor.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>

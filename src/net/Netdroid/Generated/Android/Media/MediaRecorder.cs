@@ -247,6 +247,15 @@ namespace Android.Media
             IExecuteWithSignature("setAudioSource", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#setCamera(android.hardware.Camera)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Hardware.Camera"/></param>
+        [System.Obsolete()]
+        public void SetCamera(Android.Hardware.Camera arg0)
+        {
+            IExecuteWithSignature("setCamera", "(Landroid/hardware/Camera;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#setMaxDuration(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1117,6 +1126,13 @@ namespace Android.Media
             public static int OGG { get { if (!_OGGReady) { _OGGContent = SGetField<int>(LocalBridgeClazz, "OGG"); _OGGReady = true; } return _OGGContent; } }
             private static int _OGGContent = default;
             private static bool _OGGReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.OutputFormat.html#RAW_AMR"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int RAW_AMR { get { if (!_RAW_AMRReady) { _RAW_AMRContent = SGetField<int>(LocalBridgeClazz, "RAW_AMR"); _RAW_AMRReady = true; } return _RAW_AMRContent; } }
+            private static int _RAW_AMRContent = default;
+            private static bool _RAW_AMRReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.OutputFormat.html#THREE_GPP"/>
             /// </summary>

@@ -109,6 +109,14 @@ namespace Android.Net.Wifi
             get { return IExecuteWithSignature<int>("getSecurityType", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#getSsid()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String Ssid
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getSsid", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#getWifiSsid()"/> 
         /// </summary>
         public Android.Net.Wifi.WifiSsid WifiSsid

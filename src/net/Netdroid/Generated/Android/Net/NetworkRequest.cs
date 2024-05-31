@@ -218,6 +218,16 @@ namespace Android.Net
             {
                 return IExecuteWithSignature<Android.Net.NetworkRequest.Builder>("setNetworkSpecifier", "(Landroid/net/NetworkSpecifier;)Landroid/net/NetworkRequest$Builder;", arg0);
             }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/NetworkRequest.Builder.html#setNetworkSpecifier(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.Net.NetworkRequest.Builder"/></returns>
+            [System.Obsolete()]
+            public Android.Net.NetworkRequest.Builder SetNetworkSpecifier(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<Android.Net.NetworkRequest.Builder>("setNetworkSpecifier", "(Ljava/lang/String;)Landroid/net/NetworkRequest$Builder;", arg0);
+            }
 
             #endregion
 

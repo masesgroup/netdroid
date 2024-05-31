@@ -242,6 +242,13 @@ namespace Android.Security.Keystore
         private static Java.Lang.String _ENCRYPTION_PADDING_RSA_PKCS1Content = default;
         private static bool _ENCRYPTION_PADDING_RSA_PKCS1Ready = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyProperties.html#KEY_ALGORITHM_3DES"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String KEY_ALGORITHM_3DES { get { if (!_KEY_ALGORITHM_3DESReady) { _KEY_ALGORITHM_3DESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_ALGORITHM_3DES"); _KEY_ALGORITHM_3DESReady = true; } return _KEY_ALGORITHM_3DESContent; } }
+        private static Java.Lang.String _KEY_ALGORITHM_3DESContent = default;
+        private static bool _KEY_ALGORITHM_3DESReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/keystore/KeyProperties.html#KEY_ALGORITHM_AES"/>
         /// </summary>
         public static Java.Lang.String KEY_ALGORITHM_AES { get { if (!_KEY_ALGORITHM_AESReady) { _KEY_ALGORITHM_AESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_ALGORITHM_AES"); _KEY_ALGORITHM_AESReady = true; } return _KEY_ALGORITHM_AESContent; } }

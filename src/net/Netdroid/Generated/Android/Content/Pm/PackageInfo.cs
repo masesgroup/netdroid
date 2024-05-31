@@ -82,6 +82,11 @@ namespace Android.Content.Pm
         /// </summary>
         public Android.Content.Pm.ServiceInfo[] services { get { return IGetFieldArray<Android.Content.Pm.ServiceInfo>("services"); } set { ISetField("services", value); } }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#signatures"/>
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Content.Pm.Signature[] signatures { get { return IGetFieldArray<Android.Content.Pm.Signature>("signatures"); } set { ISetField("signatures", value); } }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#signingInfo"/>
         /// </summary>
         public Android.Content.Pm.SigningInfo signingInfo { get { return IGetField<Android.Content.Pm.SigningInfo>("signingInfo"); } set { ISetField("signingInfo", value); } }
@@ -101,6 +106,11 @@ namespace Android.Content.Pm
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#sharedUserLabel"/>
         /// </summary>
         public int sharedUserLabel { get { return IGetField<int>("sharedUserLabel"); } set { ISetField("sharedUserLabel", value); } }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#versionCode"/>
+        /// </summary>
+        [System.Obsolete()]
+        public int versionCode { get { return IGetField<int>("versionCode"); } set { ISetField("versionCode", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#gids"/>
         /// </summary>

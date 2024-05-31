@@ -186,11 +186,35 @@ namespace Android.View
             get { return IExecuteWithSignature<float>("getHdrSdrRatio", "()F"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getHeight()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int Height
+        {
+            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Display.html#getName()"/> 
         /// </summary>
         public Java.Lang.String Name
         {
             get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getOrientation()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int Orientation
+        {
+            get { return IExecuteWithSignature<int>("getOrientation", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getPixelFormat()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int PixelFormat
+        {
+            get { return IExecuteWithSignature<int>("getPixelFormat", "()I"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Display.html#getPreferredWideGamutColorSpace()"/> 
@@ -240,6 +264,22 @@ namespace Android.View
         public Android.View.Display.Mode[] SupportedModes
         {
             get { return IExecuteWithSignatureArray<Android.View.Display.Mode>("getSupportedModes", "()[Landroid/view/Display$Mode;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getSupportedRefreshRates()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public float[] SupportedRefreshRates
+        {
+            get { return IExecuteWithSignatureArray<float>("getSupportedRefreshRates", "()[F"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getWidth()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int Width
+        {
+            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Display.html#getRoundedCorner(int)"/>
@@ -298,6 +338,51 @@ namespace Android.View
         public void GetCurrentSizeRange(Android.Graphics.Point arg0, Android.Graphics.Point arg1)
         {
             IExecute("getCurrentSizeRange", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getMetrics(android.util.DisplayMetrics)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Util.DisplayMetrics"/></param>
+        [System.Obsolete()]
+        public void GetMetrics(Android.Util.DisplayMetrics arg0)
+        {
+            IExecuteWithSignature("getMetrics", "(Landroid/util/DisplayMetrics;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getRealMetrics(android.util.DisplayMetrics)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Util.DisplayMetrics"/></param>
+        [System.Obsolete()]
+        public void GetRealMetrics(Android.Util.DisplayMetrics arg0)
+        {
+            IExecuteWithSignature("getRealMetrics", "(Landroid/util/DisplayMetrics;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getRealSize(android.graphics.Point)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Point"/></param>
+        [System.Obsolete()]
+        public void GetRealSize(Android.Graphics.Point arg0)
+        {
+            IExecuteWithSignature("getRealSize", "(Landroid/graphics/Point;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getRectSize(android.graphics.Rect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+        [System.Obsolete()]
+        public void GetRectSize(Android.Graphics.Rect arg0)
+        {
+            IExecuteWithSignature("getRectSize", "(Landroid/graphics/Rect;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getSize(android.graphics.Point)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Point"/></param>
+        [System.Obsolete()]
+        public void GetSize(Android.Graphics.Point arg0)
+        {
+            IExecuteWithSignature("getSize", "(Landroid/graphics/Point;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Display.html#registerHdrSdrRatioChangedListener(java.util.concurrent.Executor,java.util.function.Consumer)"/>
@@ -402,6 +487,14 @@ namespace Android.View
             public float DesiredMinLuminance
             {
                 get { return IExecuteWithSignature<float>("getDesiredMinLuminance", "()F"); }
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/Display.HdrCapabilities.html#getSupportedHdrTypes()"/> 
+            /// </summary>
+            [System.Obsolete()]
+            public int[] SupportedHdrTypes
+            {
+                get { return IExecuteWithSignatureArray<int>("getSupportedHdrTypes", "()[I"); }
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/Display.HdrCapabilities.html#describeContents()"/>

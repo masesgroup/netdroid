@@ -182,6 +182,17 @@ namespace Android.Webkit
             return IExecute<Android.Webkit.WebResourceResponse>("shouldInterceptRequest", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#shouldInterceptRequest(android.webkit.WebView,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Webkit.WebView"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.Webkit.WebResourceResponse"/></returns>
+        [System.Obsolete()]
+        public Android.Webkit.WebResourceResponse ShouldInterceptRequest(Android.Webkit.WebView arg0, Java.Lang.String arg1)
+        {
+            return IExecute<Android.Webkit.WebResourceResponse>("shouldInterceptRequest", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onRenderProcessGone(android.webkit.WebView,android.webkit.RenderProcessGoneDetail)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Webkit.WebView"/></param>
@@ -208,6 +219,17 @@ namespace Android.Webkit
         /// <param name="arg1"><see cref="Android.Webkit.WebResourceRequest"/></param>
         /// <returns><see cref="bool"/></returns>
         public bool ShouldOverrideUrlLoading(Android.Webkit.WebView arg0, Android.Webkit.WebResourceRequest arg1)
+        {
+            return IExecute<bool>("shouldOverrideUrlLoading", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Webkit.WebView"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool ShouldOverrideUrlLoading(Android.Webkit.WebView arg0, Java.Lang.String arg1)
         {
             return IExecute<bool>("shouldOverrideUrlLoading", arg0, arg1);
         }
@@ -288,6 +310,18 @@ namespace Android.Webkit
             IExecute("onReceivedError", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onReceivedError(android.webkit.WebView,int,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Webkit.WebView"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public void OnReceivedError(Android.Webkit.WebView arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+        {
+            IExecute("onReceivedError", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onReceivedHttpAuthRequest(android.webkit.WebView,android.webkit.HttpAuthHandler,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Webkit.WebView"/></param>
@@ -349,6 +383,17 @@ namespace Android.Webkit
         public void OnScaleChanged(Android.Webkit.WebView arg0, float arg1, float arg2)
         {
             IExecute("onScaleChanged", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onTooManyRedirects(android.webkit.WebView,android.os.Message,android.os.Message)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Webkit.WebView"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Message"/></param>
+        /// <param name="arg2"><see cref="Android.Os.Message"/></param>
+        [System.Obsolete()]
+        public void OnTooManyRedirects(Android.Webkit.WebView arg0, Android.Os.Message arg1, Android.Os.Message arg2)
+        {
+            IExecute("onTooManyRedirects", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewClient.html#onUnhandledKeyEvent(android.webkit.WebView,android.view.KeyEvent)"/>

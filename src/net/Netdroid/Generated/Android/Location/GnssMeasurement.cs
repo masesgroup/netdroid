@@ -235,6 +235,14 @@ namespace Android.Location
             get { return IExecuteWithSignature<double>("getAccumulatedDeltaRangeUncertaintyMeters", "()D"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getAutomaticGainControlLevelDb()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public double AutomaticGainControlLevelDb
+        {
+            get { return IExecuteWithSignature<double>("getAutomaticGainControlLevelDb", "()D"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getBasebandCn0DbHz()"/> 
         /// </summary>
         public double BasebandCn0DbHz
@@ -242,11 +250,35 @@ namespace Android.Location
             get { return IExecuteWithSignature<double>("getBasebandCn0DbHz", "()D"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getCarrierCycles()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public long CarrierCycles
+        {
+            get { return IExecuteWithSignature<long>("getCarrierCycles", "()J"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getCarrierFrequencyHz()"/> 
         /// </summary>
         public float CarrierFrequencyHz
         {
             get { return IExecuteWithSignature<float>("getCarrierFrequencyHz", "()F"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getCarrierPhase()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public double CarrierPhase
+        {
+            get { return IExecuteWithSignature<double>("getCarrierPhase", "()D"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getCarrierPhaseUncertainty()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public double CarrierPhaseUncertainty
+        {
+            get { return IExecuteWithSignature<double>("getCarrierPhaseUncertainty", "()D"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getCn0DbHz()"/> 
@@ -361,6 +393,15 @@ namespace Android.Location
             get { return IExecuteWithSignature<double>("getTimeOffsetNanos", "()D"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#hasAutomaticGainControlLevelDb()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool HasAutomaticGainControlLevelDb()
+        {
+            return IExecuteWithSignature<bool>("hasAutomaticGainControlLevelDb", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#hasBasebandCn0DbHz()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -369,12 +410,39 @@ namespace Android.Location
             return IExecuteWithSignature<bool>("hasBasebandCn0DbHz", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#hasCarrierCycles()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool HasCarrierCycles()
+        {
+            return IExecuteWithSignature<bool>("hasCarrierCycles", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#hasCarrierFrequencyHz()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasCarrierFrequencyHz()
         {
             return IExecuteWithSignature<bool>("hasCarrierFrequencyHz", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#hasCarrierPhase()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool HasCarrierPhase()
+        {
+            return IExecuteWithSignature<bool>("hasCarrierPhase", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#hasCarrierPhaseUncertainty()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool HasCarrierPhaseUncertainty()
+        {
+            return IExecuteWithSignature<bool>("hasCarrierPhaseUncertainty", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#hasCodeType()"/>

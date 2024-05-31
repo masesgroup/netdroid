@@ -29,6 +29,17 @@ namespace Android.Media
     public partial class SoundPool
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/SoundPool.html#%3Cinit%3E(int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        [System.Obsolete()]
+        public SoundPool(int arg0, int arg1, int arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
 
         #endregion
 

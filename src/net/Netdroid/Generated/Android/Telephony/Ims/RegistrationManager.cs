@@ -150,12 +150,30 @@ namespace Android.Telephony.Ims
                 IExecuteWithSignature("onRegistered", "(Landroid/telephony/ims/ImsRegistrationAttributes;)V", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/ims/RegistrationManager.RegistrationCallback.html#onRegistered(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            [System.Obsolete()]
+            public void OnRegistered(int arg0)
+            {
+                IExecuteWithSignature("onRegistered", "(I)V", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/ims/RegistrationManager.RegistrationCallback.html#onRegistering(android.telephony.ims.ImsRegistrationAttributes)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Telephony.Ims.ImsRegistrationAttributes"/></param>
             public void OnRegistering(Android.Telephony.Ims.ImsRegistrationAttributes arg0)
             {
                 IExecuteWithSignature("onRegistering", "(Landroid/telephony/ims/ImsRegistrationAttributes;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/ims/RegistrationManager.RegistrationCallback.html#onRegistering(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            [System.Obsolete()]
+            public void OnRegistering(int arg0)
+            {
+                IExecuteWithSignature("onRegistering", "(I)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/ims/RegistrationManager.RegistrationCallback.html#onTechnologyChangeFailed(int,android.telephony.ims.ImsReasonInfo)"/>

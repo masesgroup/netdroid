@@ -244,6 +244,13 @@ namespace Android.Content
         private static Java.Lang.String _SCHEME_FILEContent = default;
         private static bool _SCHEME_FILEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#SYNC_EXTRAS_ACCOUNT"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String SYNC_EXTRAS_ACCOUNT { get { if (!_SYNC_EXTRAS_ACCOUNTReady) { _SYNC_EXTRAS_ACCOUNTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SYNC_EXTRAS_ACCOUNT"); _SYNC_EXTRAS_ACCOUNTReady = true; } return _SYNC_EXTRAS_ACCOUNTContent; } }
+        private static Java.Lang.String _SYNC_EXTRAS_ACCOUNTContent = default;
+        private static bool _SYNC_EXTRAS_ACCOUNTReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#SYNC_EXTRAS_DISCARD_LOCAL_DELETIONS"/>
         /// </summary>
         public static Java.Lang.String SYNC_EXTRAS_DISCARD_LOCAL_DELETIONS { get { if (!_SYNC_EXTRAS_DISCARD_LOCAL_DELETIONSReady) { _SYNC_EXTRAS_DISCARD_LOCAL_DELETIONSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SYNC_EXTRAS_DISCARD_LOCAL_DELETIONS"); _SYNC_EXTRAS_DISCARD_LOCAL_DELETIONSReady = true; } return _SYNC_EXTRAS_DISCARD_LOCAL_DELETIONSContent; } }
@@ -261,6 +268,13 @@ namespace Android.Content
         public static Java.Lang.String SYNC_EXTRAS_EXPEDITED { get { if (!_SYNC_EXTRAS_EXPEDITEDReady) { _SYNC_EXTRAS_EXPEDITEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SYNC_EXTRAS_EXPEDITED"); _SYNC_EXTRAS_EXPEDITEDReady = true; } return _SYNC_EXTRAS_EXPEDITEDContent; } }
         private static Java.Lang.String _SYNC_EXTRAS_EXPEDITEDContent = default;
         private static bool _SYNC_EXTRAS_EXPEDITEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#SYNC_EXTRAS_FORCE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String SYNC_EXTRAS_FORCE { get { if (!_SYNC_EXTRAS_FORCEReady) { _SYNC_EXTRAS_FORCEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SYNC_EXTRAS_FORCE"); _SYNC_EXTRAS_FORCEReady = true; } return _SYNC_EXTRAS_FORCEContent; } }
+        private static Java.Lang.String _SYNC_EXTRAS_FORCEContent = default;
+        private static bool _SYNC_EXTRAS_FORCEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#SYNC_EXTRAS_IGNORE_BACKOFF"/>
         /// </summary>
@@ -313,6 +327,14 @@ namespace Android.Content
         #endregion
 
         #region Static methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#getCurrentSync()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static Android.Content.SyncInfo CurrentSync
+        {
+            get { return SExecuteWithSignature<Android.Content.SyncInfo>(LocalBridgeClazz, "getCurrentSync", "()Landroid/content/SyncInfo;"); }
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#getCurrentSyncs()"/> 
         /// </summary>
@@ -935,6 +957,26 @@ namespace Android.Content
             return IExecuteArray<Java.Lang.String>("getStreamTypes", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#cancelSync(android.net.Uri)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
+        [System.Obsolete()]
+        public void CancelSync(Android.Net.Uri arg0)
+        {
+            IExecuteWithSignature("cancelSync", "(Landroid/net/Uri;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#notifyChange(android.net.Uri,android.database.ContentObserver,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
+        /// <param name="arg1"><see cref="Android.Database.ContentObserver"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void NotifyChange(Android.Net.Uri arg0, Android.Database.ContentObserver arg1, bool arg2)
+        {
+            IExecute("notifyChange", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#notifyChange(android.net.Uri,android.database.ContentObserver,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
@@ -971,6 +1013,16 @@ namespace Android.Content
         public void ReleasePersistableUriPermission(Android.Net.Uri arg0, int arg1)
         {
             IExecute("releasePersistableUriPermission", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#startSync(android.net.Uri,android.os.Bundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
+        [System.Obsolete()]
+        public void StartSync(Android.Net.Uri arg0, Android.Os.Bundle arg1)
+        {
+            IExecute("startSync", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#takePersistableUriPermission(android.net.Uri,int)"/>

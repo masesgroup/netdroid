@@ -162,6 +162,20 @@ namespace Android.App.Usage
             private static int _KEYGUARD_SHOWNContent = default;
             private static bool _KEYGUARD_SHOWNReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#MOVE_TO_BACKGROUND"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int MOVE_TO_BACKGROUND { get { if (!_MOVE_TO_BACKGROUNDReady) { _MOVE_TO_BACKGROUNDContent = SGetField<int>(LocalBridgeClazz, "MOVE_TO_BACKGROUND"); _MOVE_TO_BACKGROUNDReady = true; } return _MOVE_TO_BACKGROUNDContent; } }
+            private static int _MOVE_TO_BACKGROUNDContent = default;
+            private static bool _MOVE_TO_BACKGROUNDReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#MOVE_TO_FOREGROUND"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int MOVE_TO_FOREGROUND { get { if (!_MOVE_TO_FOREGROUNDReady) { _MOVE_TO_FOREGROUNDContent = SGetField<int>(LocalBridgeClazz, "MOVE_TO_FOREGROUND"); _MOVE_TO_FOREGROUNDReady = true; } return _MOVE_TO_FOREGROUNDContent; } }
+            private static int _MOVE_TO_FOREGROUNDContent = default;
+            private static bool _MOVE_TO_FOREGROUNDReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/usage/UsageEvents.Event.html#NONE"/>
             /// </summary>
             public static int NONE { get { if (!_NONEReady) { _NONEContent = SGetField<int>(LocalBridgeClazz, "NONE"); _NONEReady = true; } return _NONEContent; } }

@@ -60,6 +60,17 @@ namespace Android.Media
             return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createAudioThumbnail", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ThumbnailUtils.html#createAudioThumbnail(java.lang.String,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        [System.Obsolete()]
+        public static Android.Graphics.Bitmap CreateAudioThumbnail(Java.Lang.String arg0, int arg1)
+        {
+            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createAudioThumbnail", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ThumbnailUtils.html#createImageThumbnail(java.io.File,android.util.Size,android.os.CancellationSignal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
@@ -72,6 +83,17 @@ namespace Android.Media
             return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createImageThumbnail", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ThumbnailUtils.html#createImageThumbnail(java.lang.String,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        [System.Obsolete()]
+        public static Android.Graphics.Bitmap CreateImageThumbnail(Java.Lang.String arg0, int arg1)
+        {
+            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createImageThumbnail", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ThumbnailUtils.html#createVideoThumbnail(java.io.File,android.util.Size,android.os.CancellationSignal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
@@ -82,6 +104,17 @@ namespace Android.Media
         public static Android.Graphics.Bitmap CreateVideoThumbnail(Java.Io.File arg0, Android.Util.Size arg1, Android.Os.CancellationSignal arg2)
         {
             return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createVideoThumbnail", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ThumbnailUtils.html#createVideoThumbnail(java.lang.String,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        [System.Obsolete()]
+        public static Android.Graphics.Bitmap CreateVideoThumbnail(Java.Lang.String arg0, int arg1)
+        {
+            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "createVideoThumbnail", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ThumbnailUtils.html#extractThumbnail(android.graphics.Bitmap,int,int,int)"/>

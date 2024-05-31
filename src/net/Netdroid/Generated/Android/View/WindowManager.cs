@@ -131,6 +131,14 @@ namespace Android.View
             get { return IExecuteWithSignature<Android.View.WindowMetrics>("getCurrentWindowMetrics", "()Landroid/view/WindowMetrics;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#getDefaultDisplay()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Android.View.Display DefaultDisplay
+        {
+            get { return IExecuteWithSignature<Android.View.Display>("getDefaultDisplay", "()Landroid/view/Display;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#getMaximumWindowMetrics()"/> 
         /// </summary>
         public Android.View.WindowMetrics MaximumWindowMetrics
@@ -399,6 +407,11 @@ namespace Android.View
             /// </summary>
             public int layoutInDisplayCutoutMode { get { return IGetField<int>("layoutInDisplayCutoutMode"); } set { ISetField("layoutInDisplayCutoutMode", value); } }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#memoryType"/>
+            /// </summary>
+            [System.Obsolete()]
+            public int memoryType { get { return IGetField<int>("memoryType"); } set { ISetField("memoryType", value); } }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#preferredDisplayModeId"/>
             /// </summary>
             public int preferredDisplayModeId { get { return IGetField<int>("preferredDisplayModeId"); } set { ISetField("preferredDisplayModeId", value); } }
@@ -414,6 +427,11 @@ namespace Android.View
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#softInputMode"/>
             /// </summary>
             public int softInputMode { get { return IGetField<int>("softInputMode"); } set { ISetField("softInputMode", value); } }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#systemUiVisibility"/>
+            /// </summary>
+            [System.Obsolete()]
+            public int systemUiVisibility { get { return IGetField<int>("systemUiVisibility"); } set { ISetField("systemUiVisibility", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#type"/>
             /// </summary>
@@ -525,11 +543,39 @@ namespace Android.View
             private static int _FLAG_DIM_BEHINDContent = default;
             private static bool _FLAG_DIM_BEHINDReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_DISMISS_KEYGUARD"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int FLAG_DISMISS_KEYGUARD { get { if (!_FLAG_DISMISS_KEYGUARDReady) { _FLAG_DISMISS_KEYGUARDContent = SGetField<int>(LocalBridgeClazz, "FLAG_DISMISS_KEYGUARD"); _FLAG_DISMISS_KEYGUARDReady = true; } return _FLAG_DISMISS_KEYGUARDContent; } }
+            private static int _FLAG_DISMISS_KEYGUARDContent = default;
+            private static bool _FLAG_DISMISS_KEYGUARDReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_DITHER"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int FLAG_DITHER { get { if (!_FLAG_DITHERReady) { _FLAG_DITHERContent = SGetField<int>(LocalBridgeClazz, "FLAG_DITHER"); _FLAG_DITHERReady = true; } return _FLAG_DITHERContent; } }
+            private static int _FLAG_DITHERContent = default;
+            private static bool _FLAG_DITHERReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS"/>
             /// </summary>
             public static int FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS { get { if (!_FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDSReady) { _FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDSContent = SGetField<int>(LocalBridgeClazz, "FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS"); _FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDSReady = true; } return _FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDSContent; } }
             private static int _FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDSContent = default;
             private static bool _FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDSReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_FORCE_NOT_FULLSCREEN"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int FLAG_FORCE_NOT_FULLSCREEN { get { if (!_FLAG_FORCE_NOT_FULLSCREENReady) { _FLAG_FORCE_NOT_FULLSCREENContent = SGetField<int>(LocalBridgeClazz, "FLAG_FORCE_NOT_FULLSCREEN"); _FLAG_FORCE_NOT_FULLSCREENReady = true; } return _FLAG_FORCE_NOT_FULLSCREENContent; } }
+            private static int _FLAG_FORCE_NOT_FULLSCREENContent = default;
+            private static bool _FLAG_FORCE_NOT_FULLSCREENReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_FULLSCREEN"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int FLAG_FULLSCREEN { get { if (!_FLAG_FULLSCREENReady) { _FLAG_FULLSCREENContent = SGetField<int>(LocalBridgeClazz, "FLAG_FULLSCREEN"); _FLAG_FULLSCREENReady = true; } return _FLAG_FULLSCREENContent; } }
+            private static int _FLAG_FULLSCREENContent = default;
+            private static bool _FLAG_FULLSCREENReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_HARDWARE_ACCELERATED"/>
             /// </summary>
@@ -549,11 +595,32 @@ namespace Android.View
             private static int _FLAG_KEEP_SCREEN_ONContent = default;
             private static bool _FLAG_KEEP_SCREEN_ONReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_LAYOUT_ATTACHED_IN_DECOR"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int FLAG_LAYOUT_ATTACHED_IN_DECOR { get { if (!_FLAG_LAYOUT_ATTACHED_IN_DECORReady) { _FLAG_LAYOUT_ATTACHED_IN_DECORContent = SGetField<int>(LocalBridgeClazz, "FLAG_LAYOUT_ATTACHED_IN_DECOR"); _FLAG_LAYOUT_ATTACHED_IN_DECORReady = true; } return _FLAG_LAYOUT_ATTACHED_IN_DECORContent; } }
+            private static int _FLAG_LAYOUT_ATTACHED_IN_DECORContent = default;
+            private static bool _FLAG_LAYOUT_ATTACHED_IN_DECORReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_LAYOUT_IN_OVERSCAN"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int FLAG_LAYOUT_IN_OVERSCAN { get { if (!_FLAG_LAYOUT_IN_OVERSCANReady) { _FLAG_LAYOUT_IN_OVERSCANContent = SGetField<int>(LocalBridgeClazz, "FLAG_LAYOUT_IN_OVERSCAN"); _FLAG_LAYOUT_IN_OVERSCANReady = true; } return _FLAG_LAYOUT_IN_OVERSCANContent; } }
+            private static int _FLAG_LAYOUT_IN_OVERSCANContent = default;
+            private static bool _FLAG_LAYOUT_IN_OVERSCANReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_LAYOUT_IN_SCREEN"/>
             /// </summary>
             public static int FLAG_LAYOUT_IN_SCREEN { get { if (!_FLAG_LAYOUT_IN_SCREENReady) { _FLAG_LAYOUT_IN_SCREENContent = SGetField<int>(LocalBridgeClazz, "FLAG_LAYOUT_IN_SCREEN"); _FLAG_LAYOUT_IN_SCREENReady = true; } return _FLAG_LAYOUT_IN_SCREENContent; } }
             private static int _FLAG_LAYOUT_IN_SCREENContent = default;
             private static bool _FLAG_LAYOUT_IN_SCREENReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_LAYOUT_INSET_DECOR"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int FLAG_LAYOUT_INSET_DECOR { get { if (!_FLAG_LAYOUT_INSET_DECORReady) { _FLAG_LAYOUT_INSET_DECORContent = SGetField<int>(LocalBridgeClazz, "FLAG_LAYOUT_INSET_DECOR"); _FLAG_LAYOUT_INSET_DECORReady = true; } return _FLAG_LAYOUT_INSET_DECORContent; } }
+            private static int _FLAG_LAYOUT_INSET_DECORContent = default;
+            private static bool _FLAG_LAYOUT_INSET_DECORReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_LAYOUT_NO_LIMITS"/>
             /// </summary>
@@ -603,11 +670,46 @@ namespace Android.View
             private static int _FLAG_SHOW_WALLPAPERContent = default;
             private static bool _FLAG_SHOW_WALLPAPERReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_SHOW_WHEN_LOCKED"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int FLAG_SHOW_WHEN_LOCKED { get { if (!_FLAG_SHOW_WHEN_LOCKEDReady) { _FLAG_SHOW_WHEN_LOCKEDContent = SGetField<int>(LocalBridgeClazz, "FLAG_SHOW_WHEN_LOCKED"); _FLAG_SHOW_WHEN_LOCKEDReady = true; } return _FLAG_SHOW_WHEN_LOCKEDContent; } }
+            private static int _FLAG_SHOW_WHEN_LOCKEDContent = default;
+            private static bool _FLAG_SHOW_WHEN_LOCKEDReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_SPLIT_TOUCH"/>
             /// </summary>
             public static int FLAG_SPLIT_TOUCH { get { if (!_FLAG_SPLIT_TOUCHReady) { _FLAG_SPLIT_TOUCHContent = SGetField<int>(LocalBridgeClazz, "FLAG_SPLIT_TOUCH"); _FLAG_SPLIT_TOUCHReady = true; } return _FLAG_SPLIT_TOUCHContent; } }
             private static int _FLAG_SPLIT_TOUCHContent = default;
             private static bool _FLAG_SPLIT_TOUCHReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_TOUCHABLE_WHEN_WAKING"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int FLAG_TOUCHABLE_WHEN_WAKING { get { if (!_FLAG_TOUCHABLE_WHEN_WAKINGReady) { _FLAG_TOUCHABLE_WHEN_WAKINGContent = SGetField<int>(LocalBridgeClazz, "FLAG_TOUCHABLE_WHEN_WAKING"); _FLAG_TOUCHABLE_WHEN_WAKINGReady = true; } return _FLAG_TOUCHABLE_WHEN_WAKINGContent; } }
+            private static int _FLAG_TOUCHABLE_WHEN_WAKINGContent = default;
+            private static bool _FLAG_TOUCHABLE_WHEN_WAKINGReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_TRANSLUCENT_NAVIGATION"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int FLAG_TRANSLUCENT_NAVIGATION { get { if (!_FLAG_TRANSLUCENT_NAVIGATIONReady) { _FLAG_TRANSLUCENT_NAVIGATIONContent = SGetField<int>(LocalBridgeClazz, "FLAG_TRANSLUCENT_NAVIGATION"); _FLAG_TRANSLUCENT_NAVIGATIONReady = true; } return _FLAG_TRANSLUCENT_NAVIGATIONContent; } }
+            private static int _FLAG_TRANSLUCENT_NAVIGATIONContent = default;
+            private static bool _FLAG_TRANSLUCENT_NAVIGATIONReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_TRANSLUCENT_STATUS"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int FLAG_TRANSLUCENT_STATUS { get { if (!_FLAG_TRANSLUCENT_STATUSReady) { _FLAG_TRANSLUCENT_STATUSContent = SGetField<int>(LocalBridgeClazz, "FLAG_TRANSLUCENT_STATUS"); _FLAG_TRANSLUCENT_STATUSReady = true; } return _FLAG_TRANSLUCENT_STATUSContent; } }
+            private static int _FLAG_TRANSLUCENT_STATUSContent = default;
+            private static bool _FLAG_TRANSLUCENT_STATUSReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_TURN_SCREEN_ON"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int FLAG_TURN_SCREEN_ON { get { if (!_FLAG_TURN_SCREEN_ONReady) { _FLAG_TURN_SCREEN_ONContent = SGetField<int>(LocalBridgeClazz, "FLAG_TURN_SCREEN_ON"); _FLAG_TURN_SCREEN_ONReady = true; } return _FLAG_TURN_SCREEN_ONContent; } }
+            private static int _FLAG_TURN_SCREEN_ONContent = default;
+            private static bool _FLAG_TURN_SCREEN_ONReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_WATCH_OUTSIDE_TOUCH"/>
             /// </summary>
@@ -681,6 +783,34 @@ namespace Android.View
             private static int _MEMORY_TYPE_CHANGEDContent = default;
             private static bool _MEMORY_TYPE_CHANGEDReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#MEMORY_TYPE_GPU"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int MEMORY_TYPE_GPU { get { if (!_MEMORY_TYPE_GPUReady) { _MEMORY_TYPE_GPUContent = SGetField<int>(LocalBridgeClazz, "MEMORY_TYPE_GPU"); _MEMORY_TYPE_GPUReady = true; } return _MEMORY_TYPE_GPUContent; } }
+            private static int _MEMORY_TYPE_GPUContent = default;
+            private static bool _MEMORY_TYPE_GPUReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#MEMORY_TYPE_HARDWARE"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int MEMORY_TYPE_HARDWARE { get { if (!_MEMORY_TYPE_HARDWAREReady) { _MEMORY_TYPE_HARDWAREContent = SGetField<int>(LocalBridgeClazz, "MEMORY_TYPE_HARDWARE"); _MEMORY_TYPE_HARDWAREReady = true; } return _MEMORY_TYPE_HARDWAREContent; } }
+            private static int _MEMORY_TYPE_HARDWAREContent = default;
+            private static bool _MEMORY_TYPE_HARDWAREReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#MEMORY_TYPE_NORMAL"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int MEMORY_TYPE_NORMAL { get { if (!_MEMORY_TYPE_NORMALReady) { _MEMORY_TYPE_NORMALContent = SGetField<int>(LocalBridgeClazz, "MEMORY_TYPE_NORMAL"); _MEMORY_TYPE_NORMALReady = true; } return _MEMORY_TYPE_NORMALContent; } }
+            private static int _MEMORY_TYPE_NORMALContent = default;
+            private static bool _MEMORY_TYPE_NORMALReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#MEMORY_TYPE_PUSH_BUFFERS"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int MEMORY_TYPE_PUSH_BUFFERS { get { if (!_MEMORY_TYPE_PUSH_BUFFERSReady) { _MEMORY_TYPE_PUSH_BUFFERSContent = SGetField<int>(LocalBridgeClazz, "MEMORY_TYPE_PUSH_BUFFERS"); _MEMORY_TYPE_PUSH_BUFFERSReady = true; } return _MEMORY_TYPE_PUSH_BUFFERSContent; } }
+            private static int _MEMORY_TYPE_PUSH_BUFFERSContent = default;
+            private static bool _MEMORY_TYPE_PUSH_BUFFERSReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#ROTATION_ANIMATION_CHANGED"/>
             /// </summary>
             public static int ROTATION_ANIMATION_CHANGED { get { if (!_ROTATION_ANIMATION_CHANGEDReady) { _ROTATION_ANIMATION_CHANGEDContent = SGetField<int>(LocalBridgeClazz, "ROTATION_ANIMATION_CHANGED"); _ROTATION_ANIMATION_CHANGEDReady = true; } return _ROTATION_ANIMATION_CHANGEDContent; } }
@@ -734,6 +864,13 @@ namespace Android.View
             public static int SOFT_INPUT_ADJUST_PAN { get { if (!_SOFT_INPUT_ADJUST_PANReady) { _SOFT_INPUT_ADJUST_PANContent = SGetField<int>(LocalBridgeClazz, "SOFT_INPUT_ADJUST_PAN"); _SOFT_INPUT_ADJUST_PANReady = true; } return _SOFT_INPUT_ADJUST_PANContent; } }
             private static int _SOFT_INPUT_ADJUST_PANContent = default;
             private static bool _SOFT_INPUT_ADJUST_PANReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#SOFT_INPUT_ADJUST_RESIZE"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int SOFT_INPUT_ADJUST_RESIZE { get { if (!_SOFT_INPUT_ADJUST_RESIZEReady) { _SOFT_INPUT_ADJUST_RESIZEContent = SGetField<int>(LocalBridgeClazz, "SOFT_INPUT_ADJUST_RESIZE"); _SOFT_INPUT_ADJUST_RESIZEReady = true; } return _SOFT_INPUT_ADJUST_RESIZEContent; } }
+            private static int _SOFT_INPUT_ADJUST_RESIZEContent = default;
+            private static bool _SOFT_INPUT_ADJUST_RESIZEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#SOFT_INPUT_ADJUST_UNSPECIFIED"/>
             /// </summary>
@@ -891,6 +1028,20 @@ namespace Android.View
             private static int _TYPE_KEYGUARD_DIALOGContent = default;
             private static bool _TYPE_KEYGUARD_DIALOGReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#TYPE_PHONE"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int TYPE_PHONE { get { if (!_TYPE_PHONEReady) { _TYPE_PHONEContent = SGetField<int>(LocalBridgeClazz, "TYPE_PHONE"); _TYPE_PHONEReady = true; } return _TYPE_PHONEContent; } }
+            private static int _TYPE_PHONEContent = default;
+            private static bool _TYPE_PHONEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#TYPE_PRIORITY_PHONE"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int TYPE_PRIORITY_PHONE { get { if (!_TYPE_PRIORITY_PHONEReady) { _TYPE_PRIORITY_PHONEContent = SGetField<int>(LocalBridgeClazz, "TYPE_PRIORITY_PHONE"); _TYPE_PRIORITY_PHONEReady = true; } return _TYPE_PRIORITY_PHONEContent; } }
+            private static int _TYPE_PRIORITY_PHONEContent = default;
+            private static bool _TYPE_PRIORITY_PHONEReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#TYPE_PRIVATE_PRESENTATION"/>
             /// </summary>
             public static int TYPE_PRIVATE_PRESENTATION { get { if (!_TYPE_PRIVATE_PRESENTATIONReady) { _TYPE_PRIVATE_PRESENTATIONContent = SGetField<int>(LocalBridgeClazz, "TYPE_PRIVATE_PRESENTATION"); _TYPE_PRIVATE_PRESENTATIONReady = true; } return _TYPE_PRIVATE_PRESENTATIONContent; } }
@@ -909,11 +1060,39 @@ namespace Android.View
             private static int _TYPE_STATUS_BARContent = default;
             private static bool _TYPE_STATUS_BARReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_ALERT"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int TYPE_SYSTEM_ALERT { get { if (!_TYPE_SYSTEM_ALERTReady) { _TYPE_SYSTEM_ALERTContent = SGetField<int>(LocalBridgeClazz, "TYPE_SYSTEM_ALERT"); _TYPE_SYSTEM_ALERTReady = true; } return _TYPE_SYSTEM_ALERTContent; } }
+            private static int _TYPE_SYSTEM_ALERTContent = default;
+            private static bool _TYPE_SYSTEM_ALERTReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_DIALOG"/>
             /// </summary>
             public static int TYPE_SYSTEM_DIALOG { get { if (!_TYPE_SYSTEM_DIALOGReady) { _TYPE_SYSTEM_DIALOGContent = SGetField<int>(LocalBridgeClazz, "TYPE_SYSTEM_DIALOG"); _TYPE_SYSTEM_DIALOGReady = true; } return _TYPE_SYSTEM_DIALOGContent; } }
             private static int _TYPE_SYSTEM_DIALOGContent = default;
             private static bool _TYPE_SYSTEM_DIALOGReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_ERROR"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int TYPE_SYSTEM_ERROR { get { if (!_TYPE_SYSTEM_ERRORReady) { _TYPE_SYSTEM_ERRORContent = SGetField<int>(LocalBridgeClazz, "TYPE_SYSTEM_ERROR"); _TYPE_SYSTEM_ERRORReady = true; } return _TYPE_SYSTEM_ERRORContent; } }
+            private static int _TYPE_SYSTEM_ERRORContent = default;
+            private static bool _TYPE_SYSTEM_ERRORReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_OVERLAY"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int TYPE_SYSTEM_OVERLAY { get { if (!_TYPE_SYSTEM_OVERLAYReady) { _TYPE_SYSTEM_OVERLAYContent = SGetField<int>(LocalBridgeClazz, "TYPE_SYSTEM_OVERLAY"); _TYPE_SYSTEM_OVERLAYReady = true; } return _TYPE_SYSTEM_OVERLAYContent; } }
+            private static int _TYPE_SYSTEM_OVERLAYContent = default;
+            private static bool _TYPE_SYSTEM_OVERLAYReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#TYPE_TOAST"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int TYPE_TOAST { get { if (!_TYPE_TOASTReady) { _TYPE_TOASTContent = SGetField<int>(LocalBridgeClazz, "TYPE_TOAST"); _TYPE_TOASTReady = true; } return _TYPE_TOASTContent; } }
+            private static int _TYPE_TOASTContent = default;
+            private static bool _TYPE_TOASTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#TYPE_WALLPAPER"/>
             /// </summary>

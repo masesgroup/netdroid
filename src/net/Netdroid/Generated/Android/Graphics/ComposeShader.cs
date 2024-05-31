@@ -49,6 +49,17 @@ namespace Android.Graphics
             : base(arg0, arg1, arg2)
         {
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/ComposeShader.html#%3Cinit%3E(android.graphics.Shader,android.graphics.Shader,android.graphics.Xfermode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Shader"/></param>
+        /// <param name="arg1"><see cref="Android.Graphics.Shader"/></param>
+        /// <param name="arg2"><see cref="Android.Graphics.Xfermode"/></param>
+        [System.Obsolete()]
+        public ComposeShader(Android.Graphics.Shader arg0, Android.Graphics.Shader arg1, Android.Graphics.Xfermode arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
 
         #endregion
 

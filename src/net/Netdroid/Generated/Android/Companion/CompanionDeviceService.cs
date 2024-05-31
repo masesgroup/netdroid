@@ -80,12 +80,30 @@ namespace Android.Companion
             IExecuteWithSignature("onDeviceAppeared", "(Landroid/companion/AssociationInfo;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceService.html#onDeviceAppeared(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public void OnDeviceAppeared(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("onDeviceAppeared", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceService.html#onDeviceDisappeared(android.companion.AssociationInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Companion.AssociationInfo"/></param>
         public void OnDeviceDisappeared(Android.Companion.AssociationInfo arg0)
         {
             IExecuteWithSignature("onDeviceDisappeared", "(Landroid/companion/AssociationInfo;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/CompanionDeviceService.html#onDeviceDisappeared(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public void OnDeviceDisappeared(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("onDeviceDisappeared", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

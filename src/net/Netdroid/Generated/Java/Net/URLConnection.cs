@@ -65,6 +65,16 @@ namespace Java.Net
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "getDefaultUseCaches", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#getDefaultRequestProperty(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public static Java.Lang.String GetDefaultRequestProperty(Java.Lang.String arg0)
+        {
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultRequestProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#guessContentTypeFromName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -90,6 +100,16 @@ namespace Java.Net
         public static void SetContentHandlerFactory(Java.Net.ContentHandlerFactory arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setContentHandlerFactory", "(Ljava/net/ContentHandlerFactory;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#setDefaultRequestProperty(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public static void SetDefaultRequestProperty(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            SExecute(LocalBridgeClazz, "setDefaultRequestProperty", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/net/URLConnection.html#setDefaultUseCaches(java.lang.String,boolean)"/>

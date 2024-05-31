@@ -152,6 +152,15 @@ namespace Android.Database.Sqlite
             IExecuteWithSignature("onOpen", "(Landroid/database/sqlite/SQLiteDatabase;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteOpenHelper.html#setIdleConnectionTimeout(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        [System.Obsolete()]
+        public void SetIdleConnectionTimeout(long arg0)
+        {
+            IExecuteWithSignature("setIdleConnectionTimeout", "(J)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteOpenHelper.html#setLookasideConfig(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

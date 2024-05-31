@@ -109,6 +109,15 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignatureArray<T>("getDeclaredAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/AccessibleObject.html#isAccessible()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsAccessible()
+        {
+            return IExecuteWithSignature<bool>("isAccessible", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/AccessibleObject.html#isAnnotationPresent(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>

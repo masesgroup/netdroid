@@ -61,6 +61,15 @@ namespace Android.Transition
         {
             get { return IExecuteWithSignature<bool>("getResizeClip", "()Z"); } set { IExecuteWithSignature("setResizeClip", "(Z)V", value); }
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/ChangeBounds.html#setReparent(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetReparent(bool arg0)
+        {
+            IExecuteWithSignature("setReparent", "(Z)V", arg0);
+        }
 
         #endregion
 

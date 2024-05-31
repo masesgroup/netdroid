@@ -47,11 +47,25 @@ namespace Android.Media
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#EVENT_KEY_EXPIRED"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int EVENT_KEY_EXPIRED { get { if (!_EVENT_KEY_EXPIREDReady) { _EVENT_KEY_EXPIREDContent = SGetField<int>(LocalBridgeClazz, "EVENT_KEY_EXPIRED"); _EVENT_KEY_EXPIREDReady = true; } return _EVENT_KEY_EXPIREDContent; } }
+        private static int _EVENT_KEY_EXPIREDContent = default;
+        private static bool _EVENT_KEY_EXPIREDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#EVENT_KEY_REQUIRED"/>
         /// </summary>
         public static int EVENT_KEY_REQUIRED { get { if (!_EVENT_KEY_REQUIREDReady) { _EVENT_KEY_REQUIREDContent = SGetField<int>(LocalBridgeClazz, "EVENT_KEY_REQUIRED"); _EVENT_KEY_REQUIREDReady = true; } return _EVENT_KEY_REQUIREDContent; } }
         private static int _EVENT_KEY_REQUIREDContent = default;
         private static bool _EVENT_KEY_REQUIREDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#EVENT_PROVISION_REQUIRED"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int EVENT_PROVISION_REQUIRED { get { if (!_EVENT_PROVISION_REQUIREDReady) { _EVENT_PROVISION_REQUIREDContent = SGetField<int>(LocalBridgeClazz, "EVENT_PROVISION_REQUIRED"); _EVENT_PROVISION_REQUIREDReady = true; } return _EVENT_PROVISION_REQUIREDContent; } }
+        private static int _EVENT_PROVISION_REQUIREDContent = default;
+        private static bool _EVENT_PROVISION_REQUIREDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#EVENT_SESSION_RECLAIMED"/>
         /// </summary>
@@ -323,6 +337,22 @@ namespace Android.Media
             get { return IExecuteWithSignature<int>("getOpenSessionCount", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getSecureStopIds()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Util.List<byte[]> SecureStopIds
+        {
+            get { return IExecuteWithSignature<Java.Util.List<byte[]>>("getSecureStopIds", "()Ljava/util/List;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getSecureStops()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Util.List<byte[]> SecureStops
+        {
+            get { return IExecuteWithSignature<Java.Util.List<byte[]>>("getSecureStops", "()Ljava/util/List;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getCryptoSession(byte[],java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -406,6 +436,16 @@ namespace Android.Media
             return IExecuteWithSignatureArray<byte>("getPropertyByteArray", "(Ljava/lang/String;)[B", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#getSecureStop(byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <returns><see cref="byte"/></returns>
+        [System.Obsolete()]
+        public byte[] GetSecureStop(byte[] arg0)
+        {
+            return IExecuteWithSignatureArray<byte>("getSecureStop", "([B)[B", new object[] { arg0 });
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#provideKeyResponse(byte[],byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -454,6 +494,23 @@ namespace Android.Media
             return IExecuteWithSignature<Java.Util.HashMap<Java.Lang.String, Java.Lang.String>>("queryKeyStatus", "([B)Ljava/util/HashMap;", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#releaseSecureStops(byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        [System.Obsolete()]
+        public void ReleaseSecureStops(byte[] arg0)
+        {
+            IExecuteWithSignature("releaseSecureStops", "([B)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#removeAllSecureStops()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void RemoveAllSecureStops()
+        {
+            IExecuteWithSignature("removeAllSecureStops", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#removeKeys(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -468,6 +525,15 @@ namespace Android.Media
         public void RemoveOfflineLicense(byte[] arg0)
         {
             IExecuteWithSignature("removeOfflineLicense", "([B)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#removeSecureStop(byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        [System.Obsolete()]
+        public void RemoveSecureStop(byte[] arg0)
+        {
+            IExecuteWithSignature("removeSecureStop", "([B)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#restoreKeys(byte[],byte[])"/>
@@ -547,6 +613,22 @@ namespace Android.Media
         public void ProvideProvisionResponse(byte[] arg0)
         {
             IExecuteWithSignature("provideProvisionResponse", "([B)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#release()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void Release()
+        {
+            IExecuteWithSignature("release", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#releaseAllSecureStops()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void ReleaseAllSecureStops()
+        {
+            IExecuteWithSignature("releaseAllSecureStops", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDrm.html#setOnEventListener(android.media.MediaDrm.OnEventListener,android.os.Handler)"/>
@@ -922,6 +1004,37 @@ namespace Android.Media
             public static int ERROR_ZERO_SUBSAMPLES { get { if (!_ERROR_ZERO_SUBSAMPLESReady) { _ERROR_ZERO_SUBSAMPLESContent = SGetField<int>(LocalBridgeClazz, "ERROR_ZERO_SUBSAMPLES"); _ERROR_ZERO_SUBSAMPLESReady = true; } return _ERROR_ZERO_SUBSAMPLESContent; } }
             private static int _ERROR_ZERO_SUBSAMPLESContent = default;
             private static bool _ERROR_ZERO_SUBSAMPLESReady = false; // this is used because in case of generics 
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region HdcpLevel
+        public partial class HdcpLevel
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
 
             #endregion
 
@@ -1916,6 +2029,37 @@ namespace Android.Media
             {
                 get { return IExecuteWithSignature<Java.Lang.String>("getDefaultUrl", "()Ljava/lang/String;"); }
             }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region SecurityLevel
+        public partial class SecurityLevel
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
 
             #endregion
 

@@ -59,6 +59,25 @@ namespace Android.View
             : base(arg0, arg1)
         {
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/GestureDetector.html#%3Cinit%3E(android.view.GestureDetector.OnGestureListener,android.os.Handler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.GestureDetector.OnGestureListener"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
+        [System.Obsolete()]
+        public GestureDetector(Android.View.GestureDetector.OnGestureListener arg0, Android.Os.Handler arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/GestureDetector.html#%3Cinit%3E(android.view.GestureDetector.OnGestureListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.GestureDetector.OnGestureListener"/></param>
+        [System.Obsolete()]
+        public GestureDetector(Android.View.GestureDetector.OnGestureListener arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 

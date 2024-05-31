@@ -48,6 +48,16 @@ namespace Java.Lang
         {
             get { return SExecuteWithSignatureArray<Java.Lang.Package>(LocalBridgeClazz, "getPackages", "()[Ljava/lang/Package;"); }
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html#getPackage(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.Package"/></returns>
+        [System.Obsolete()]
+        public static Java.Lang.Package GetPackage(Java.Lang.String arg0)
+        {
+            return SExecuteWithSignature<Java.Lang.Package>(LocalBridgeClazz, "getPackage", "(Ljava/lang/String;)Ljava/lang/Package;", arg0);
+        }
 
         #endregion
 

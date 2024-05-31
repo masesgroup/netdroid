@@ -66,6 +66,14 @@ namespace Android.Telephony
             get { return IExecuteWithSignature<Java.Lang.String>("getEid", "()Ljava/lang/String;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#getIccId()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String IccId
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getIccId", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#getPhysicalSlotIndex()"/> 
         /// </summary>
         public int PhysicalSlotIndex
@@ -78,6 +86,14 @@ namespace Android.Telephony
         public Java.Util.Collection<Android.Telephony.UiccPortInfo> Ports
         {
             get { return IExecuteWithSignature<Java.Util.Collection<Android.Telephony.UiccPortInfo>>("getPorts", "()Ljava/util/Collection;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#getSlotIndex()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int SlotIndex
+        {
+            get { return IExecuteWithSignature<int>("getSlotIndex", "()I"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#isEuicc()"/>

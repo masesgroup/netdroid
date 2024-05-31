@@ -55,12 +55,30 @@ namespace Android.Webkit
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebViewDatabase.html#hasFormData()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool HasFormData()
+        {
+            return IExecuteWithSignature<bool>("hasFormData", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewDatabase.html#hasHttpAuthUsernamePassword()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasHttpAuthUsernamePassword()
         {
             return IExecuteWithSignature<bool>("hasHttpAuthUsernamePassword", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebViewDatabase.html#hasUsernamePassword()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool HasUsernamePassword()
+        {
+            return IExecuteWithSignature<bool>("hasUsernamePassword", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewDatabase.html#getHttpAuthUsernamePassword(java.lang.String,java.lang.String)"/>
@@ -73,11 +91,27 @@ namespace Android.Webkit
             return IExecuteArray<Java.Lang.String>("getHttpAuthUsernamePassword", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebViewDatabase.html#clearFormData()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void ClearFormData()
+        {
+            IExecuteWithSignature("clearFormData", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewDatabase.html#clearHttpAuthUsernamePassword()"/>
         /// </summary>
         public void ClearHttpAuthUsernamePassword()
         {
             IExecuteWithSignature("clearHttpAuthUsernamePassword", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebViewDatabase.html#clearUsernamePassword()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void ClearUsernamePassword()
+        {
+            IExecuteWithSignature("clearUsernamePassword", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewDatabase.html#setHttpAuthUsernamePassword(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>

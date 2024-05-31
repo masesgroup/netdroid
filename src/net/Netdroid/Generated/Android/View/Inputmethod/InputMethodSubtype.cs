@@ -29,6 +29,37 @@ namespace Android.View.Inputmethod
     public partial class InputMethodSubtype
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#%3Cinit%3E(int,int,java.lang.String,java.lang.String,java.lang.String,boolean,boolean,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg5"><see cref="bool"/></param>
+        /// <param name="arg6"><see cref="bool"/></param>
+        /// <param name="arg7"><see cref="int"/></param>
+        [System.Obsolete()]
+        public InputMethodSubtype(int arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, bool arg5, bool arg6, int arg7)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#%3Cinit%3E(int,int,java.lang.String,java.lang.String,java.lang.String,boolean,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg5"><see cref="bool"/></param>
+        /// <param name="arg6"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public InputMethodSubtype(int arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, bool arg5, bool arg6)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
+        {
+        }
 
         #endregion
 
@@ -71,6 +102,14 @@ namespace Android.View.Inputmethod
         public Java.Lang.String LanguageTag
         {
             get { return IExecuteWithSignature<Java.Lang.String>("getLanguageTag", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getLocale()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String Locale
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getLocale", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getMode()"/> 

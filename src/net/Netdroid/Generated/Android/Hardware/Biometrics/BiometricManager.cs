@@ -85,6 +85,15 @@ namespace Android.Hardware.Biometrics
             return IExecuteWithSignature<Android.Hardware.Biometrics.BiometricManager.Strings>("getStrings", "(I)Landroid/hardware/biometrics/BiometricManager$Strings;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricManager.html#canAuthenticate()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int CanAuthenticate()
+        {
+            return IExecuteWithSignature<int>("canAuthenticate", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricManager.html#canAuthenticate(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

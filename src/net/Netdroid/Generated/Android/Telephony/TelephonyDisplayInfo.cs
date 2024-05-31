@@ -73,6 +73,13 @@ namespace Android.Telephony
         public static int OVERRIDE_NETWORK_TYPE_NR_NSA { get { if (!_OVERRIDE_NETWORK_TYPE_NR_NSAReady) { _OVERRIDE_NETWORK_TYPE_NR_NSAContent = SGetField<int>(LocalBridgeClazz, "OVERRIDE_NETWORK_TYPE_NR_NSA"); _OVERRIDE_NETWORK_TYPE_NR_NSAReady = true; } return _OVERRIDE_NETWORK_TYPE_NR_NSAContent; } }
         private static int _OVERRIDE_NETWORK_TYPE_NR_NSAContent = default;
         private static bool _OVERRIDE_NETWORK_TYPE_NR_NSAReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyDisplayInfo.html#OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVE { get { if (!_OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVEReady) { _OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVEContent = SGetField<int>(LocalBridgeClazz, "OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVE"); _OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVEReady = true; } return _OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVEContent; } }
+        private static int _OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVEContent = default;
+        private static bool _OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVEReady = false; // this is used because in case of generics 
 
         #endregion
 

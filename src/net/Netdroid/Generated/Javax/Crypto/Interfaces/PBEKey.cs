@@ -55,6 +55,13 @@ namespace Javax.Crypto.Interfaces
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/interfaces/PBEKey.html#serialVersionUID"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static long serialVersionUID { get { if (!_serialVersionUIDReady) { _serialVersionUIDContent = SGetField<long>(LocalBridgeClazz, "serialVersionUID"); _serialVersionUIDReady = true; } return _serialVersionUIDContent; } }
+        private static long _serialVersionUIDContent = default;
+        private static bool _serialVersionUIDReady = false; // this is used because in case of generics 
 
         #endregion
 

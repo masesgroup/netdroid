@@ -90,11 +90,12 @@ namespace Java.Util.Logging
             get { return IExecuteWithSignature<Java.Lang.String>("getMessage", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setMessage", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getMillis()"/> 
+        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getMillis()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setMillis(long)"/>
         /// </summary>
+        [System.Obsolete()]
         public long Millis
         {
-            get { return IExecuteWithSignature<long>("getMillis", "()J"); }
+            get { return IExecuteWithSignature<long>("getMillis", "()J"); } set { IExecuteWithSignature("setMillis", "(J)V", value); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getParameters()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setParameters(java.lang.Object[])"/>
@@ -137,6 +138,14 @@ namespace Java.Util.Logging
         public Java.Lang.String SourceMethodName
         {
             get { return IExecuteWithSignature<Java.Lang.String>("getSourceMethodName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSourceMethodName", "(Ljava/lang/String;)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getThreadID()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setThreadID(int)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public int ThreadID
+        {
+            get { return IExecuteWithSignature<int>("getThreadID", "()I"); } set { IExecuteWithSignature("setThreadID", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getThrown()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setThrown(java.lang.Throwable)"/>

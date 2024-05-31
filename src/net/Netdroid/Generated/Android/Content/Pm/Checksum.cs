@@ -65,11 +65,39 @@ namespace Android.Content.Pm
         private static int _TYPE_PARTIAL_MERKLE_ROOT_1M_SHA512Content = default;
         private static bool _TYPE_PARTIAL_MERKLE_ROOT_1M_SHA512Ready = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/Checksum.html#TYPE_WHOLE_MD5"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int TYPE_WHOLE_MD5 { get { if (!_TYPE_WHOLE_MD5Ready) { _TYPE_WHOLE_MD5Content = SGetField<int>(LocalBridgeClazz, "TYPE_WHOLE_MD5"); _TYPE_WHOLE_MD5Ready = true; } return _TYPE_WHOLE_MD5Content; } }
+        private static int _TYPE_WHOLE_MD5Content = default;
+        private static bool _TYPE_WHOLE_MD5Ready = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/Checksum.html#TYPE_WHOLE_MERKLE_ROOT_4K_SHA256"/>
         /// </summary>
         public static int TYPE_WHOLE_MERKLE_ROOT_4K_SHA256 { get { if (!_TYPE_WHOLE_MERKLE_ROOT_4K_SHA256Ready) { _TYPE_WHOLE_MERKLE_ROOT_4K_SHA256Content = SGetField<int>(LocalBridgeClazz, "TYPE_WHOLE_MERKLE_ROOT_4K_SHA256"); _TYPE_WHOLE_MERKLE_ROOT_4K_SHA256Ready = true; } return _TYPE_WHOLE_MERKLE_ROOT_4K_SHA256Content; } }
         private static int _TYPE_WHOLE_MERKLE_ROOT_4K_SHA256Content = default;
         private static bool _TYPE_WHOLE_MERKLE_ROOT_4K_SHA256Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/Checksum.html#TYPE_WHOLE_SHA1"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int TYPE_WHOLE_SHA1 { get { if (!_TYPE_WHOLE_SHA1Ready) { _TYPE_WHOLE_SHA1Content = SGetField<int>(LocalBridgeClazz, "TYPE_WHOLE_SHA1"); _TYPE_WHOLE_SHA1Ready = true; } return _TYPE_WHOLE_SHA1Content; } }
+        private static int _TYPE_WHOLE_SHA1Content = default;
+        private static bool _TYPE_WHOLE_SHA1Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/Checksum.html#TYPE_WHOLE_SHA256"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int TYPE_WHOLE_SHA256 { get { if (!_TYPE_WHOLE_SHA256Ready) { _TYPE_WHOLE_SHA256Content = SGetField<int>(LocalBridgeClazz, "TYPE_WHOLE_SHA256"); _TYPE_WHOLE_SHA256Ready = true; } return _TYPE_WHOLE_SHA256Content; } }
+        private static int _TYPE_WHOLE_SHA256Content = default;
+        private static bool _TYPE_WHOLE_SHA256Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/Checksum.html#TYPE_WHOLE_SHA512"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int TYPE_WHOLE_SHA512 { get { if (!_TYPE_WHOLE_SHA512Ready) { _TYPE_WHOLE_SHA512Content = SGetField<int>(LocalBridgeClazz, "TYPE_WHOLE_SHA512"); _TYPE_WHOLE_SHA512Ready = true; } return _TYPE_WHOLE_SHA512Content; } }
+        private static int _TYPE_WHOLE_SHA512Content = default;
+        private static bool _TYPE_WHOLE_SHA512Ready = false; // this is used because in case of generics 
 
         #endregion
 
