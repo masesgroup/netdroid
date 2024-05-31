@@ -69,6 +69,7 @@
     "android.icu.number.NumberFormatterSettings",
     "android.icu.number.NumberRangeFormatterSettings",
     "android.icu.text.UnicodeSetIterator",
+    "android.text.style.TtsSpan",
     "android.util.Range",
     "android.util.TypedValue",
     "android.widget.ArrayAdapter",
