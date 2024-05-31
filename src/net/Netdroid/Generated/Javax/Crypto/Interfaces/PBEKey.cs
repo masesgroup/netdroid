@@ -32,18 +32,6 @@ namespace Javax.Crypto.Interfaces
     public partial interface IPBEKey : Javax.Crypto.ISecretKey
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/interfaces/PBEKey.html#getIterationCount()"/> 
-        /// </summary>
-        int IterationCount { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/interfaces/PBEKey.html#getPassword()"/> 
-        /// </summary>
-        char[] Password { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/interfaces/PBEKey.html#getSalt()"/> 
-        /// </summary>
-        byte[] Salt { get; }
 
         #endregion
 

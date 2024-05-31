@@ -32,10 +32,6 @@ namespace Android.Sax
     public partial interface IEndElementListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/sax/EndElementListener.html#end()"/>
-        /// </summary>
-        void End();
 
         #endregion
 

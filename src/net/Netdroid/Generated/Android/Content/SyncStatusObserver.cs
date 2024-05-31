@@ -32,11 +32,6 @@ namespace Android.Content
     public partial interface ISyncStatusObserver
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/SyncStatusObserver.html#onStatusChanged(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void OnStatusChanged(int arg0);
 
         #endregion
 

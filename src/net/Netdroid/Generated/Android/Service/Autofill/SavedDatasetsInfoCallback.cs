@@ -32,16 +32,6 @@ namespace Android.Service.Autofill
     public partial interface ISavedDatasetsInfoCallback
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/SavedDatasetsInfoCallback.html#onError(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void OnError(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/SavedDatasetsInfoCallback.html#onSuccess(java.util.Set)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        void OnSuccess(Java.Util.Set<Android.Service.Autofill.SavedDatasetsInfo> arg0);
 
         #endregion
 

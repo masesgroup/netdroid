@@ -32,12 +32,6 @@ namespace Java.Time.Temporal
     public partial interface ITemporalAdjuster
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAdjuster.html#adjustInto(java.time.temporal.Temporal)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
-        Java.Time.Temporal.Temporal AdjustInto(Java.Time.Temporal.Temporal arg0);
 
         #endregion
 

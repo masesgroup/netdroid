@@ -32,11 +32,6 @@ namespace Java.Nio.Channels
     public partial interface IInterruptibleChannel : Java.Nio.Channels.IChannel
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/InterruptibleChannel.html#close()"/>
-        /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
-        void Close();
 
         #endregion
 

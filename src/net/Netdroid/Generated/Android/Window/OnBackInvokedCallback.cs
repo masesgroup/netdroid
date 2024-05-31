@@ -32,10 +32,6 @@ namespace Android.Window
     public partial interface IOnBackInvokedCallback
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/window/OnBackInvokedCallback.html#onBackInvoked()"/>
-        /// </summary>
-        void OnBackInvoked();
 
         #endregion
 

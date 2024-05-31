@@ -32,13 +32,6 @@ namespace Android.View
     public partial interface IOnReceiveContentListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/OnReceiveContentListener.html#onReceiveContent(android.view.View,android.view.ContentInfo)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.View"/></param>
-        /// <param name="arg1"><see cref="Android.View.ContentInfo"/></param>
-        /// <returns><see cref="Android.View.ContentInfo"/></returns>
-        Android.View.ContentInfo OnReceiveContent(Android.View.View arg0, Android.View.ContentInfo arg1);
 
         #endregion
 

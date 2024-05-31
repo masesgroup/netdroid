@@ -32,10 +32,6 @@ namespace Java.Security.Interfaces
     public partial interface IRSAPrivateKey
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/RSAPrivateKey.html#getPrivateExponent()"/> 
-        /// </summary>
-        Java.Math.BigInteger PrivateExponent { get; }
 
         #endregion
 

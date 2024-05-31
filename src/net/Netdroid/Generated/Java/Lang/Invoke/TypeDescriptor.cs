@@ -32,11 +32,6 @@ namespace Java.Lang.Invoke
     public partial interface ITypeDescriptor
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.html#descriptorString()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String DescriptorString();
 
         #endregion
 

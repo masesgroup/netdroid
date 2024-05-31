@@ -32,53 +32,6 @@ namespace Java.Io
     public partial interface IObjectInput
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInput.html#available()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        int Available();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInput.html#read()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        int Read();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInput.html#read(byte[],int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        int Read(byte[] arg0, int arg1, int arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInput.html#read(byte[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        int Read(byte[] arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInput.html#readObject()"/>
-        /// </summary>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        /// <exception cref="Java.Io.IOException"/>
-        object ReadObject();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInput.html#skip(long)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        long Skip(long arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInput.html#close()"/>
-        /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
-        void Close();
 
         #endregion
 

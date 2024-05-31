@@ -32,30 +32,6 @@ namespace Org.W3c.Dom
     public partial interface IDocumentType : Org.W3c.Dom.INode
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DocumentType.html#getEntities()"/> 
-        /// </summary>
-        Org.W3c.Dom.NamedNodeMap Entities { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DocumentType.html#getInternalSubset()"/> 
-        /// </summary>
-        Java.Lang.String InternalSubset { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DocumentType.html#getName()"/> 
-        /// </summary>
-        Java.Lang.String Name { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DocumentType.html#getNotations()"/> 
-        /// </summary>
-        Org.W3c.Dom.NamedNodeMap Notations { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DocumentType.html#getPublicId()"/> 
-        /// </summary>
-        Java.Lang.String PublicId { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DocumentType.html#getSystemId()"/> 
-        /// </summary>
-        Java.Lang.String SystemId { get; }
 
         #endregion
 

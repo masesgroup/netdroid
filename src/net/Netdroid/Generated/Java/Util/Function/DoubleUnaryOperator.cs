@@ -32,24 +32,6 @@ namespace Java.Util.Function
     public partial interface IDoubleUnaryOperator
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleUnaryOperator.html#applyAsDouble(double)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
-        double ApplyAsDouble(double arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleUnaryOperator.html#andThen(java.util.function.DoubleUnaryOperator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
-        /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
-        Java.Util.Function.DoubleUnaryOperator AndThen(Java.Util.Function.DoubleUnaryOperator arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleUnaryOperator.html#compose(java.util.function.DoubleUnaryOperator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
-        /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
-        Java.Util.Function.DoubleUnaryOperator Compose(Java.Util.Function.DoubleUnaryOperator arg0);
 
         #endregion
 

@@ -32,29 +32,6 @@ namespace Java.Lang
     public partial interface IAppendable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Appendable.html#append(char)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="Java.Lang.Appendable"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Lang.Appendable Append(char arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Appendable.html#append(java.lang.CharSequence,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.Appendable"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Lang.Appendable Append(Java.Lang.CharSequence arg0, int arg1, int arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Appendable.html#append(java.lang.CharSequence)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Java.Lang.Appendable"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Lang.Appendable Append(Java.Lang.CharSequence arg0);
 
         #endregion
 

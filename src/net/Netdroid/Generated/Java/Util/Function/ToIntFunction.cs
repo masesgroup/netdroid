@@ -134,12 +134,6 @@ namespace Java.Util.Function
     public partial interface IToIntFunction<T>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <returns><see cref="int"/></returns>
-        int ApplyAsInt(T arg0);
 
         #endregion
 

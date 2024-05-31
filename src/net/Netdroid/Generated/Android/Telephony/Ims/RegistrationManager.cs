@@ -32,30 +32,6 @@ namespace Android.Telephony.Ims
     public partial interface IRegistrationManager
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/RegistrationManager.html#getRegistrationState(java.util.concurrent.Executor,java.util.function.Consumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
-        void GetRegistrationState(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Java.Lang.Integer> arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/RegistrationManager.html#getRegistrationTransportType(java.util.concurrent.Executor,java.util.function.Consumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
-        void GetRegistrationTransportType(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Java.Lang.Integer> arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/RegistrationManager.html#registerImsRegistrationCallback(java.util.concurrent.Executor,android.telephony.ims.RegistrationManager.RegistrationCallback)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <param name="arg1"><see cref="Android.Telephony.Ims.RegistrationManager.RegistrationCallback"/></param>
-        /// <exception cref="Android.Telephony.Ims.ImsException"/>
-        void RegisterImsRegistrationCallback(Java.Util.Concurrent.Executor arg0, Android.Telephony.Ims.RegistrationManager.RegistrationCallback arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/RegistrationManager.html#unregisterImsRegistrationCallback(android.telephony.ims.RegistrationManager.RegistrationCallback)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Telephony.Ims.RegistrationManager.RegistrationCallback"/></param>
-        void UnregisterImsRegistrationCallback(Android.Telephony.Ims.RegistrationManager.RegistrationCallback arg0);
 
         #endregion
 

@@ -78,10 +78,6 @@ namespace Java.Util.Concurrent
     public partial interface IRunnableFuture<V>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/RunnableFuture.html#run()"/>
-        /// </summary>
-        void Run();
 
         #endregion
 

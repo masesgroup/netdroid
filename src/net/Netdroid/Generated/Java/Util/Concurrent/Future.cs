@@ -111,39 +111,6 @@ namespace Java.Util.Concurrent
     public partial interface IFuture<V>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Future.html#cancel(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool Cancel(bool arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Future.html#isCancelled()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsCancelled();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Future.html#isDone()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsDone();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Future.html#get()"/>
-        /// </summary>
-        /// <returns><typeparamref name="V"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
-        V Get();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Future.html#get(long,java.util.concurrent.TimeUnit)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><typeparamref name="V"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        /// <exception cref="Java.Util.Concurrent.ExecutionException"/>
-        /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
-        V Get(long arg0, Java.Util.Concurrent.TimeUnit arg1);
 
         #endregion
 

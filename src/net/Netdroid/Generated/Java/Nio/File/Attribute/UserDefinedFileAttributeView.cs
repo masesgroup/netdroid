@@ -32,46 +32,6 @@ namespace Java.Nio.File.Attribute
     public partial interface IUserDefinedFileAttributeView : Java.Nio.File.Attribute.IFileAttributeView
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#read(java.lang.String,java.nio.ByteBuffer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        int Read(Java.Lang.String arg0, Java.Nio.ByteBuffer arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#size(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        int Size(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#write(java.lang.String,java.nio.ByteBuffer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        int Write(Java.Lang.String arg0, Java.Nio.ByteBuffer arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#name()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String Name();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#list()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Util.List<Java.Lang.String> List();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#delete(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        void Delete(Java.Lang.String arg0);
 
         #endregion
 

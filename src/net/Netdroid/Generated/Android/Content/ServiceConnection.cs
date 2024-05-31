@@ -32,27 +32,6 @@ namespace Android.Content
     public partial interface IServiceConnection
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ServiceConnection.html#onServiceConnected(android.content.ComponentName,android.os.IBinder)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
-        /// <param name="arg1"><see cref="Android.Os.IBinder"/></param>
-        void OnServiceConnected(Android.Content.ComponentName arg0, Android.Os.IBinder arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ServiceConnection.html#onServiceDisconnected(android.content.ComponentName)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
-        void OnServiceDisconnected(Android.Content.ComponentName arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ServiceConnection.html#onBindingDied(android.content.ComponentName)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
-        void OnBindingDied(Android.Content.ComponentName arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ServiceConnection.html#onNullBinding(android.content.ComponentName)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
-        void OnNullBinding(Android.Content.ComponentName arg0);
 
         #endregion
 

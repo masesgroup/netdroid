@@ -32,22 +32,6 @@ namespace Android.Bluetooth
     public partial interface IBluetoothProfile
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.html#getConnectedDevices()"/> 
-        /// </summary>
-        Java.Util.List<Android.Bluetooth.BluetoothDevice> ConnectedDevices { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.html#getConnectionState(android.bluetooth.BluetoothDevice)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothDevice"/></param>
-        /// <returns><see cref="int"/></returns>
-        int GetConnectionState(Android.Bluetooth.BluetoothDevice arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.html#getDevicesMatchingConnectionStates(int[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        Java.Util.List<Android.Bluetooth.BluetoothDevice> GetDevicesMatchingConnectionStates(int[] arg0);
 
         #endregion
 

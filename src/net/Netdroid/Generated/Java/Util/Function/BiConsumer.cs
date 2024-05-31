@@ -177,20 +177,6 @@ namespace Java.Util.Function
     public partial interface IBiConsumer<T, U>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
-        void Accept(T arg0, U arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
-        Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U;
 
         #endregion
 

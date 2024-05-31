@@ -32,59 +32,6 @@ namespace Org.W3c.Dom
     public partial interface INamedNodeMap
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NamedNodeMap.html#getLength()"/> 
-        /// </summary>
-        int Length { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NamedNodeMap.html#getNamedItem(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        Org.W3c.Dom.Node GetNamedItem(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NamedNodeMap.html#getNamedItemNS(java.lang.String,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.Node GetNamedItemNS(Java.Lang.String arg0, Java.Lang.String arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NamedNodeMap.html#item(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        Org.W3c.Dom.Node Item(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NamedNodeMap.html#removeNamedItem(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.Node RemoveNamedItem(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NamedNodeMap.html#removeNamedItemNS(java.lang.String,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.Node RemoveNamedItemNS(Java.Lang.String arg0, Java.Lang.String arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NamedNodeMap.html#setNamedItem(org.w3c.dom.Node)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.Node SetNamedItem(Org.W3c.Dom.Node arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NamedNodeMap.html#setNamedItemNS(org.w3c.dom.Node)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.Node SetNamedItemNS(Org.W3c.Dom.Node arg0);
 
         #endregion
 

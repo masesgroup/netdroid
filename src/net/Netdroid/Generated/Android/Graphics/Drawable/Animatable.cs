@@ -32,19 +32,6 @@ namespace Android.Graphics.Drawable
     public partial interface IAnimatable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Animatable.html#isRunning()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsRunning();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Animatable.html#start()"/>
-        /// </summary>
-        void Start();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Animatable.html#stop()"/>
-        /// </summary>
-        void Stop();
 
         #endregion
 

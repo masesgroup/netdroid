@@ -32,11 +32,6 @@ namespace Android.Os
     public partial interface IIInterface
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/IInterface.html#asBinder()"/>
-        /// </summary>
-        /// <returns><see cref="Android.Os.IBinder"/></returns>
-        Android.Os.IBinder AsBinder();
 
         #endregion
 

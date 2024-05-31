@@ -71,11 +71,6 @@ namespace Android.Accounts
     public partial interface IAccountManagerCallback<V>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accounts/AccountManagerCallback.html#run(android.accounts.AccountManagerFuture)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Accounts.AccountManagerFuture"/></param>
-        void Run(Android.Accounts.AccountManagerFuture<V> arg0);
 
         #endregion
 

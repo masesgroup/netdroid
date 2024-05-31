@@ -32,30 +32,6 @@ namespace Org.W3c.Dom
     public partial interface IDOMLocator
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMLocator.html#getByteOffset()"/> 
-        /// </summary>
-        int ByteOffset { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMLocator.html#getColumnNumber()"/> 
-        /// </summary>
-        int ColumnNumber { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMLocator.html#getLineNumber()"/> 
-        /// </summary>
-        int LineNumber { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMLocator.html#getRelatedNode()"/> 
-        /// </summary>
-        Org.W3c.Dom.Node RelatedNode { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMLocator.html#getUri()"/> 
-        /// </summary>
-        Java.Lang.String Uri { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMLocator.html#getUtf16Offset()"/> 
-        /// </summary>
-        int Utf16Offset { get; }
 
         #endregion
 

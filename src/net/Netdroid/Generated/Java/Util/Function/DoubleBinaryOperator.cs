@@ -32,13 +32,6 @@ namespace Java.Util.Function
     public partial interface IDoubleBinaryOperator
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleBinaryOperator.html#applyAsDouble(double,double)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <param name="arg1"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
-        double ApplyAsDouble(double arg0, double arg1);
 
         #endregion
 

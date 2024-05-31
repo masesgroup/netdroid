@@ -32,12 +32,6 @@ namespace Android.Animation
     public partial interface ITimeInterpolator
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/TimeInterpolator.html#getInterpolation(float)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="float"/></returns>
-        float GetInterpolation(float arg0);
 
         #endregion
 

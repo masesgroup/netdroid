@@ -79,11 +79,6 @@ namespace Java.Util.Concurrent
     public partial interface IRunnableScheduledFuture<V>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsPeriodic();
 
         #endregion
 

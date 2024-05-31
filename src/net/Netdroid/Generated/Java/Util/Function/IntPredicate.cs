@@ -32,29 +32,6 @@ namespace Java.Util.Function
     public partial interface IIntPredicate
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#test(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool Test(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
-        Java.Util.Function.IntPredicate And(Java.Util.Function.IntPredicate arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#negate()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
-        Java.Util.Function.IntPredicate Negate();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
-        Java.Util.Function.IntPredicate Or(Java.Util.Function.IntPredicate arg0);
 
         #endregion
 

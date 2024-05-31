@@ -32,12 +32,6 @@ namespace Java.Lang.Annotation
     public partial interface IRepeatable : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/annotation/Repeatable.html#value()"/>
-        /// </summary>
-        /// <typeparam name="ReturnExtendsJava_Lang_Annotation_Annotation"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
-        /// <returns><see cref="Java.Lang.Class"/></returns>
-        Java.Lang.Class Value<ReturnExtendsJava_Lang_Annotation_Annotation>() where ReturnExtendsJava_Lang_Annotation_Annotation: Java.Lang.Annotation.Annotation;
 
         #endregion
 

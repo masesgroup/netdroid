@@ -32,44 +32,6 @@ namespace Android.Text.Method
     public partial interface IKeyListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#onKeyDown(android.view.View,android.text.Editable,int,android.view.KeyEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.View"/></param>
-        /// <param name="arg1"><see cref="Android.Text.Editable"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Android.View.KeyEvent"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool OnKeyDown(Android.View.View arg0, Android.Text.Editable arg1, int arg2, Android.View.KeyEvent arg3);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#onKeyOther(android.view.View,android.text.Editable,android.view.KeyEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.View"/></param>
-        /// <param name="arg1"><see cref="Android.Text.Editable"/></param>
-        /// <param name="arg2"><see cref="Android.View.KeyEvent"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool OnKeyOther(Android.View.View arg0, Android.Text.Editable arg1, Android.View.KeyEvent arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#onKeyUp(android.view.View,android.text.Editable,int,android.view.KeyEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.View"/></param>
-        /// <param name="arg1"><see cref="Android.Text.Editable"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Android.View.KeyEvent"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool OnKeyUp(Android.View.View arg0, Android.Text.Editable arg1, int arg2, Android.View.KeyEvent arg3);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#getInputType()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        int GetInputType();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#clearMetaKeyState(android.view.View,android.text.Editable,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.View"/></param>
-        /// <param name="arg1"><see cref="Android.Text.Editable"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        void ClearMetaKeyState(Android.View.View arg0, Android.Text.Editable arg1, int arg2);
 
         #endregion
 

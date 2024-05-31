@@ -32,44 +32,6 @@ namespace Java.Util.Regex
     public partial interface IMatchResult
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/MatchResult.html#end()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        int End();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/MatchResult.html#end(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        int End(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/MatchResult.html#groupCount()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        int GroupCount();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/MatchResult.html#start()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        int Start();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/MatchResult.html#start(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        int Start(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/MatchResult.html#group()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String Group();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/MatchResult.html#group(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String Group(int arg0);
 
         #endregion
 

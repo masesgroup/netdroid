@@ -32,17 +32,6 @@ namespace Android.Window
     public partial interface IOnBackInvokedDispatcher
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/window/OnBackInvokedDispatcher.html#registerOnBackInvokedCallback(int,android.window.OnBackInvokedCallback)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Android.Window.OnBackInvokedCallback"/></param>
-        void RegisterOnBackInvokedCallback(int arg0, Android.Window.OnBackInvokedCallback arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/window/OnBackInvokedDispatcher.html#unregisterOnBackInvokedCallback(android.window.OnBackInvokedCallback)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Window.OnBackInvokedCallback"/></param>
-        void UnregisterOnBackInvokedCallback(Android.Window.OnBackInvokedCallback arg0);
 
         #endregion
 

@@ -32,18 +32,6 @@ namespace Java.Security
     public partial interface IKey : Java.Io.ISerializable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Key.html#getAlgorithm()"/> 
-        /// </summary>
-        Java.Lang.String Algorithm { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Key.html#getEncoded()"/> 
-        /// </summary>
-        byte[] Encoded { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Key.html#getFormat()"/> 
-        /// </summary>
-        Java.Lang.String Format { get; }
 
         #endregion
 

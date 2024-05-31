@@ -32,12 +32,6 @@ namespace Android.Widget
     public partial interface IFilterQueryProvider
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/FilterQueryProvider.html#runQuery(java.lang.CharSequence)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Android.Database.Cursor"/></returns>
-        Android.Database.Cursor RunQuery(Java.Lang.CharSequence arg0);
 
         #endregion
 

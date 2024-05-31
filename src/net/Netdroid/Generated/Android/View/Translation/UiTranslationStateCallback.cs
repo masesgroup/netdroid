@@ -32,50 +32,6 @@ namespace Android.View.Translation
     public partial interface IUiTranslationStateCallback
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/UiTranslationStateCallback.html#onFinished()"/>
-        /// </summary>
-        void OnFinished();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/UiTranslationStateCallback.html#onPaused()"/>
-        /// </summary>
-        void OnPaused();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/UiTranslationStateCallback.html#onFinished(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        void OnFinished(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/UiTranslationStateCallback.html#onPaused(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        void OnPaused(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/UiTranslationStateCallback.html#onResumed(android.icu.util.ULocale,android.icu.util.ULocale,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Icu.Util.ULocale"/></param>
-        /// <param name="arg1"><see cref="Android.Icu.Util.ULocale"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        void OnResumed(Android.Icu.Util.ULocale arg0, Android.Icu.Util.ULocale arg1, Java.Lang.String arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/UiTranslationStateCallback.html#onResumed(android.icu.util.ULocale,android.icu.util.ULocale)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Icu.Util.ULocale"/></param>
-        /// <param name="arg1"><see cref="Android.Icu.Util.ULocale"/></param>
-        void OnResumed(Android.Icu.Util.ULocale arg0, Android.Icu.Util.ULocale arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/UiTranslationStateCallback.html#onStarted(android.icu.util.ULocale,android.icu.util.ULocale,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Icu.Util.ULocale"/></param>
-        /// <param name="arg1"><see cref="Android.Icu.Util.ULocale"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        void OnStarted(Android.Icu.Util.ULocale arg0, Android.Icu.Util.ULocale arg1, Java.Lang.String arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/UiTranslationStateCallback.html#onStarted(android.icu.util.ULocale,android.icu.util.ULocale)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Icu.Util.ULocale"/></param>
-        /// <param name="arg1"><see cref="Android.Icu.Util.ULocale"/></param>
-        void OnStarted(Android.Icu.Util.ULocale arg0, Android.Icu.Util.ULocale arg1);
 
         #endregion
 

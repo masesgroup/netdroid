@@ -32,12 +32,6 @@ namespace Android.View.Textclassifier
     public partial interface ITextClassificationSessionFactory
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationSessionFactory.html#createTextClassificationSession(android.view.textclassifier.TextClassificationContext)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.Textclassifier.TextClassificationContext"/></param>
-        /// <returns><see cref="Android.View.Textclassifier.TextClassifier"/></returns>
-        Android.View.Textclassifier.TextClassifier CreateTextClassificationSession(Android.View.Textclassifier.TextClassificationContext arg0);
 
         #endregion
 

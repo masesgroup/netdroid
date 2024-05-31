@@ -32,15 +32,6 @@ namespace Android.Webkit
     public partial interface IDownloadListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/DownloadListener.html#onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg4"><see cref="long"/></param>
-        void OnDownloadStart(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, long arg4);
 
         #endregion
 

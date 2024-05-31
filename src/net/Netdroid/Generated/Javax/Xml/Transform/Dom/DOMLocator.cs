@@ -32,10 +32,6 @@ namespace Javax.Xml.Transform.Dom
     public partial interface IDOMLocator : Javax.Xml.Transform.ISourceLocator
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/dom/DOMLocator.html#getOriginatingNode()"/> 
-        /// </summary>
-        Org.W3c.Dom.Node OriginatingNode { get; }
 
         #endregion
 

@@ -32,27 +32,6 @@ namespace Android.Widget
     public partial interface IHeterogeneousExpandableList
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/HeterogeneousExpandableList.html#getChildTypeCount()"/> 
-        /// </summary>
-        int ChildTypeCount { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/HeterogeneousExpandableList.html#getGroupTypeCount()"/> 
-        /// </summary>
-        int GroupTypeCount { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/HeterogeneousExpandableList.html#getChildType(int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        int GetChildType(int arg0, int arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/HeterogeneousExpandableList.html#getGroupType(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        int GetGroupType(int arg0);
 
         #endregion
 

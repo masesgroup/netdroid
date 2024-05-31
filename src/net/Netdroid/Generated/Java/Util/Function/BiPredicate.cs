@@ -265,34 +265,6 @@ namespace Java.Util.Function
     public partial interface IBiPredicate<T, U>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool Test(T arg0, U arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
-        Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U;
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#negate()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
-        Java.Util.Function.BiPredicate<T, U> Negate();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
-        Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U;
 
         #endregion
 

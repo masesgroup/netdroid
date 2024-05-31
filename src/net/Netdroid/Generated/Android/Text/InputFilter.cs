@@ -32,17 +32,6 @@ namespace Android.Text
     public partial interface IInputFilter
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/InputFilter.html#filter(java.lang.CharSequence,int,int,android.text.Spanned,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Android.Text.Spanned"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-        Java.Lang.CharSequence Filter(Java.Lang.CharSequence arg0, int arg1, int arg2, Android.Text.Spanned arg3, int arg4, int arg5);
 
         #endregion
 

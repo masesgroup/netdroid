@@ -107,38 +107,6 @@ namespace Java.Nio.File
     public partial interface IFileVisitor<T>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitor.html#postVisitDirectory(java.lang.Object,java.io.IOException)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
-        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Nio.File.FileVisitResult PostVisitDirectory(T arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitor.html#preVisitDirectory(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></param>
-        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Nio.File.FileVisitResult PreVisitDirectory(T arg0, Java.Nio.File.Attribute.BasicFileAttributes arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitor.html#visitFile(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></param>
-        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Nio.File.FileVisitResult VisitFile(T arg0, Java.Nio.File.Attribute.BasicFileAttributes arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitor.html#visitFileFailed(java.lang.Object,java.io.IOException)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
-        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Nio.File.FileVisitResult VisitFileFailed(T arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1);
 
         #endregion
 

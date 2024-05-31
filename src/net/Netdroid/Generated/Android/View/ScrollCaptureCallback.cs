@@ -32,32 +32,6 @@ namespace Android.View
     public partial interface IScrollCaptureCallback
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureCallback.html#onScrollCaptureEnd(java.lang.Runnable)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        void OnScrollCaptureEnd(Java.Lang.Runnable arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureCallback.html#onScrollCaptureImageRequest(android.view.ScrollCaptureSession,android.os.CancellationSignal,android.graphics.Rect,java.util.function.Consumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.ScrollCaptureSession"/></param>
-        /// <param name="arg1"><see cref="Android.Os.CancellationSignal"/></param>
-        /// <param name="arg2"><see cref="Android.Graphics.Rect"/></param>
-        /// <param name="arg3"><see cref="Java.Util.Function.Consumer"/></param>
-        void OnScrollCaptureImageRequest(Android.View.ScrollCaptureSession arg0, Android.Os.CancellationSignal arg1, Android.Graphics.Rect arg2, Java.Util.Function.Consumer<Android.Graphics.Rect> arg3);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureCallback.html#onScrollCaptureSearch(android.os.CancellationSignal,java.util.function.Consumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Os.CancellationSignal"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
-        void OnScrollCaptureSearch(Android.Os.CancellationSignal arg0, Java.Util.Function.Consumer<Android.Graphics.Rect> arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureCallback.html#onScrollCaptureStart(android.view.ScrollCaptureSession,android.os.CancellationSignal,java.lang.Runnable)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.ScrollCaptureSession"/></param>
-        /// <param name="arg1"><see cref="Android.Os.CancellationSignal"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Runnable"/></param>
-        void OnScrollCaptureStart(Android.View.ScrollCaptureSession arg0, Android.Os.CancellationSignal arg1, Java.Lang.Runnable arg2);
 
         #endregion
 

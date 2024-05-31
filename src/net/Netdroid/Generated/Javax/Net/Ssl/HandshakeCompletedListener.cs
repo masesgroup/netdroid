@@ -32,11 +32,6 @@ namespace Javax.Net.Ssl
     public partial interface IHandshakeCompletedListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.HandshakeCompletedEvent"/></param>
-        void HandshakeCompleted(Javax.Net.Ssl.HandshakeCompletedEvent arg0);
 
         #endregion
 

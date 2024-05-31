@@ -32,21 +32,6 @@ namespace Java.Sql
     public partial interface IStruct
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Struct.html#getAttributes()"/> 
-        /// </summary>
-        object[] Attributes { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Struct.html#getSQLTypeName()"/> 
-        /// </summary>
-        Java.Lang.String SQLTypeName { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Struct.html#getAttributes(java.util.Map)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        object[] GetAttributes(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0);
 
         #endregion
 

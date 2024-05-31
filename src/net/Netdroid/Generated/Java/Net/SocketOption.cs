@@ -79,16 +79,6 @@ namespace Java.Net
     public partial interface ISocketOption<T>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/SocketOption.html#type()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.Class"/></returns>
-        Java.Lang.Class Type();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/SocketOption.html#name()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String Name();
 
         #endregion
 

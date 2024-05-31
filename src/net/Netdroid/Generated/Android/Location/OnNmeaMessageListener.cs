@@ -32,12 +32,6 @@ namespace Android.Location
     public partial interface IOnNmeaMessageListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/OnNmeaMessageListener.html#onNmeaMessage(java.lang.String,long)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        void OnNmeaMessage(Java.Lang.String arg0, long arg1);
 
         #endregion
 

@@ -32,28 +32,6 @@ namespace Javax.Sql
     public partial interface IRowSetInternal
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetInternal.html#getConnection()"/> 
-        /// </summary>
-        Java.Sql.Connection Connection { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetInternal.html#getOriginal()"/> 
-        /// </summary>
-        Java.Sql.ResultSet Original { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetInternal.html#getOriginalRow()"/> 
-        /// </summary>
-        Java.Sql.ResultSet OriginalRow { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetInternal.html#getParams()"/> 
-        /// </summary>
-        object[] Params { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetInternal.html#setMetaData(javax.sql.RowSetMetaData)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.RowSetMetaData"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
-        void SetMetaData(Javax.Sql.RowSetMetaData arg0);
 
         #endregion
 

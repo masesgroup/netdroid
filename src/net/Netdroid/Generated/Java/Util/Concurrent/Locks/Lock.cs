@@ -32,37 +32,6 @@ namespace Java.Util.Concurrent.Locks
     public partial interface ILock
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Lock.html#tryLock()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool TryLock();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Lock.html#tryLock(long,java.util.concurrent.TimeUnit)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        bool TryLock(long arg0, Java.Util.Concurrent.TimeUnit arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Lock.html#newCondition()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
-        Java.Util.Concurrent.Locks.Condition NewCondition();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Lock.html#lock()"/>
-        /// </summary>
-        void LockMethod();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Lock.html#lockInterruptibly()"/>
-        /// </summary>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        void LockInterruptibly();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Lock.html#unlock()"/>
-        /// </summary>
-        void Unlock();
 
         #endregion
 

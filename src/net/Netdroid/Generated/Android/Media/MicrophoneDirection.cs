@@ -32,18 +32,6 @@ namespace Android.Media
     public partial interface IMicrophoneDirection
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MicrophoneDirection.html#setPreferredMicrophoneDirection(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool SetPreferredMicrophoneDirection(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MicrophoneDirection.html#setPreferredMicrophoneFieldDimension(float)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool SetPreferredMicrophoneFieldDimension(float arg0);
 
         #endregion
 

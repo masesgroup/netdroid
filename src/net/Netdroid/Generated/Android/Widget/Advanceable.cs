@@ -32,14 +32,6 @@ namespace Android.Widget
     public partial interface IAdvanceable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Advanceable.html#advance()"/>
-        /// </summary>
-        void Advance();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Advanceable.html#fyiWillBeAdvancedByHostKThx()"/>
-        /// </summary>
-        void FyiWillBeAdvancedByHostKThx();
 
         #endregion
 

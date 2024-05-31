@@ -32,46 +32,6 @@ namespace Java.Sql
     public partial interface IDriver
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Driver.html#getMajorVersion()"/> 
-        /// </summary>
-        int MajorVersion { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Driver.html#getMinorVersion()"/> 
-        /// </summary>
-        int MinorVersion { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Driver.html#getParentLogger()"/> 
-        /// </summary>
-        Java.Util.Logging.Logger ParentLogger { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Driver.html#acceptsURL(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        bool AcceptsURL(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Driver.html#jdbcCompliant()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool JdbcCompliant();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Driver.html#connect(java.lang.String,java.util.Properties)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Properties"/></param>
-        /// <returns><see cref="Java.Sql.Connection"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.Connection Connect(Java.Lang.String arg0, Java.Util.Properties arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Driver.html#getPropertyInfo(java.lang.String,java.util.Properties)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Properties"/></param>
-        /// <returns><see cref="Java.Sql.DriverPropertyInfo"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        Java.Sql.DriverPropertyInfo[] GetPropertyInfo(Java.Lang.String arg0, Java.Util.Properties arg1);
 
         #endregion
 

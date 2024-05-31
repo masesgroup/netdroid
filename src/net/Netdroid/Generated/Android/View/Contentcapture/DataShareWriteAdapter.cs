@@ -32,20 +32,6 @@ namespace Android.View.Contentcapture
     public partial interface IDataShareWriteAdapter
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareWriteAdapter.html#onRejected()"/>
-        /// </summary>
-        void OnRejected();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareWriteAdapter.html#onWrite(android.os.ParcelFileDescriptor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Os.ParcelFileDescriptor"/></param>
-        void OnWrite(Android.Os.ParcelFileDescriptor arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareWriteAdapter.html#onError(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void OnError(int arg0);
 
         #endregion
 

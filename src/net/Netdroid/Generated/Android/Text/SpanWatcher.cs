@@ -32,32 +32,6 @@ namespace Android.Text
     public partial interface ISpanWatcher : Android.Text.INoCopySpan
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/SpanWatcher.html#onSpanAdded(android.text.Spannable,java.lang.Object,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Text.Spannable"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        void OnSpanAdded(Android.Text.Spannable arg0, object arg1, int arg2, int arg3);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/SpanWatcher.html#onSpanChanged(android.text.Spannable,java.lang.Object,int,int,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Text.Spannable"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        void OnSpanChanged(Android.Text.Spannable arg0, object arg1, int arg2, int arg3, int arg4, int arg5);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/SpanWatcher.html#onSpanRemoved(android.text.Spannable,java.lang.Object,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Text.Spannable"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        void OnSpanRemoved(Android.Text.Spannable arg0, object arg1, int arg2, int arg3);
 
         #endregion
 

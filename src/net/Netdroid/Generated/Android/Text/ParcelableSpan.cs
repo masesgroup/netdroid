@@ -32,10 +32,6 @@ namespace Android.Text
     public partial interface IParcelableSpan : Android.Os.IParcelable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/ParcelableSpan.html#getSpanTypeId()"/> 
-        /// </summary>
-        int SpanTypeId { get; }
 
         #endregion
 

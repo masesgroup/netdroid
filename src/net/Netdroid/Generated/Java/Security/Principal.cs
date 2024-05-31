@@ -32,16 +32,6 @@ namespace Java.Security
     public partial interface IPrincipal
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Principal.html#getName()"/> 
-        /// </summary>
-        Java.Lang.String Name { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Principal.html#implies(javax.security.auth.Subject)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool Implies(Javax.Security.Auth.Subject arg0);
 
         #endregion
 

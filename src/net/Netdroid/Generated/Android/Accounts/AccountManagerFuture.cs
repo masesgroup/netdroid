@@ -108,36 +108,6 @@ namespace Android.Accounts
     public partial interface IAccountManagerFuture<V>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accounts/AccountManagerFuture.html#getResult()"/> 
-        /// </summary>
-        V Result { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accounts/AccountManagerFuture.html#cancel(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool Cancel(bool arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accounts/AccountManagerFuture.html#isCancelled()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsCancelled();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accounts/AccountManagerFuture.html#isDone()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsDone();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accounts/AccountManagerFuture.html#getResult(long,java.util.concurrent.TimeUnit)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><typeparamref name="V"/></returns>
-        /// <exception cref="Android.Accounts.AuthenticatorException"/>
-        /// <exception cref="Java.Io.IOException"/>
-        /// <exception cref="Android.Accounts.OperationCanceledException"/>
-        V GetResult(long arg0, Java.Util.Concurrent.TimeUnit arg1);
 
         #endregion
 

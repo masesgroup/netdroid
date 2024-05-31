@@ -32,14 +32,6 @@ namespace Org.Xml.Sax.Ext
     public partial interface ILocator2 : Org.Xml.Sax.ILocator
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Locator2.html#getEncoding()"/> 
-        /// </summary>
-        Java.Lang.String Encoding { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Locator2.html#getXMLVersion()"/> 
-        /// </summary>
-        Java.Lang.String XMLVersion { get; }
 
         #endregion
 

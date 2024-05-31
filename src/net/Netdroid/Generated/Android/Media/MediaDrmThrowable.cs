@@ -32,18 +32,6 @@ namespace Android.Media
     public partial interface IMediaDrmThrowable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrmThrowable.html#getErrorContext()"/> 
-        /// </summary>
-        int ErrorContext { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrmThrowable.html#getOemError()"/> 
-        /// </summary>
-        int OemError { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrmThrowable.html#getVendorError()"/> 
-        /// </summary>
-        int VendorError { get; }
 
         #endregion
 

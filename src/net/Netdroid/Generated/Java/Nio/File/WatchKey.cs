@@ -32,30 +32,6 @@ namespace Java.Nio.File
     public partial interface IWatchKey
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchKey.html#isValid()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsValid();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchKey.html#reset()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool Reset();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchKey.html#watchable()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Nio.File.Watchable"/></returns>
-        Java.Nio.File.Watchable Watchable();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchKey.html#pollEvents()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        Java.Util.List<Java.Nio.File.WatchEvent<object>> PollEvents();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchKey.html#cancel()"/>
-        /// </summary>
-        void Cancel();
 
         #endregion
 

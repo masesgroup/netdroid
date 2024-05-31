@@ -32,51 +32,6 @@ namespace Java.Sql
     public partial interface ISQLXML
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLXML.html#getBinaryStream()"/> 
-        /// </summary>
-        Java.Io.InputStream BinaryStream { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLXML.html#getCharacterStream()"/> 
-        /// </summary>
-        Java.Io.Reader CharacterStream { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLXML.html#getString()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/SQLXML.html#setString(java.lang.String)"/>
-        /// </summary>
-        Java.Lang.String String { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLXML.html#setResult(java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Javax.Xml.Transform.IResult"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        T SetResult<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.IResult, new();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLXML.html#getSource(java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Javax.Xml.Transform.ISource"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        T GetSource<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.ISource, new();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLXML.html#setBinaryStream()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Io.OutputStream"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        Java.Io.OutputStream SetBinaryStream();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLXML.html#setCharacterStream()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Io.Writer"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        Java.Io.Writer SetCharacterStream();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLXML.html#free()"/>
-        /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
-        void Free();
 
         #endregion
 

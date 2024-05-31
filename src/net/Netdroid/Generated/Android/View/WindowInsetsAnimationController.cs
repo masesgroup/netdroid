@@ -32,57 +32,6 @@ namespace Android.View
     public partial interface IWindowInsetsAnimationController
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getCurrentAlpha()"/> 
-        /// </summary>
-        float CurrentAlpha { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getCurrentFraction()"/> 
-        /// </summary>
-        float CurrentFraction { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getCurrentInsets()"/> 
-        /// </summary>
-        Android.Graphics.Insets CurrentInsets { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getHiddenStateInsets()"/> 
-        /// </summary>
-        Android.Graphics.Insets HiddenStateInsets { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getShownStateInsets()"/> 
-        /// </summary>
-        Android.Graphics.Insets ShownStateInsets { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#getTypes()"/> 
-        /// </summary>
-        int Types { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#isCancelled()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsCancelled();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#isFinished()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsFinished();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#finish(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        void Finish(bool arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#setInsetsAndAlpha(android.graphics.Insets,float,float)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Graphics.Insets"/></param>
-        /// <param name="arg1"><see cref="float"/></param>
-        /// <param name="arg2"><see cref="float"/></param>
-        void SetInsetsAndAlpha(Android.Graphics.Insets arg0, float arg1, float arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationController.html#isReady()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsReady();
 
         #endregion
 

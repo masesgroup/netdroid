@@ -32,42 +32,6 @@ namespace Java.Io
     public partial interface IObjectOutput
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutput.html#close()"/>
-        /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
-        void Close();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutput.html#flush()"/>
-        /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
-        void Flush();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutput.html#write(byte[],int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        void Write(byte[] arg0, int arg1, int arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutput.html#write(byte[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        void Write(byte[] arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutput.html#write(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        void Write(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutput.html#writeObject(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        void WriteObject(object arg0);
 
         #endregion
 

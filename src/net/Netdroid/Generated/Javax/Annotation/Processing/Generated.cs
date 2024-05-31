@@ -32,21 +32,6 @@ namespace Javax.Annotation.Processing
     public partial interface IGenerated : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.compiler/javax/annotation/processing/Generated.html#comments()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String Comments();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.compiler/javax/annotation/processing/Generated.html#date()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String Date();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.compiler/javax/annotation/processing/Generated.html#value()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String[] Value();
 
         #endregion
 

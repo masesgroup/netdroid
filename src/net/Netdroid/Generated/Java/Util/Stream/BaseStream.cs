@@ -127,46 +127,6 @@ namespace Java.Util.Stream
     public partial interface IBaseStream<T, S> : Java.Lang.IAutoCloseable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#isParallel()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsParallel();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#iterator()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<T> Iterator();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#spliterator()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Spliterator"/></returns>
-        Java.Util.Spliterator<T> Spliterator();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#onClose(java.lang.Runnable)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <returns><typeparamref name="S"/></returns>
-        S OnClose(Java.Lang.Runnable arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#parallel()"/>
-        /// </summary>
-        /// <returns><typeparamref name="S"/></returns>
-        S Parallel();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#sequential()"/>
-        /// </summary>
-        /// <returns><typeparamref name="S"/></returns>
-        S Sequential();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#unordered()"/>
-        /// </summary>
-        /// <returns><typeparamref name="S"/></returns>
-        S Unordered();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#close()"/>
-        /// </summary>
-        void Close();
 
         #endregion
 

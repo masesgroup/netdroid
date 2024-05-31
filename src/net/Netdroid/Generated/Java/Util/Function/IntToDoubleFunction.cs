@@ -32,12 +32,6 @@ namespace Java.Util.Function
     public partial interface IIntToDoubleFunction
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntToDoubleFunction.html#applyAsDouble(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="double"/></returns>
-        double ApplyAsDouble(int arg0);
 
         #endregion
 

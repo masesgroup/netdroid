@@ -32,13 +32,6 @@ namespace Java.Util.Function
     public partial interface IIntBinaryOperator
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntBinaryOperator.html#applyAsInt(int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        int ApplyAsInt(int arg0, int arg1);
 
         #endregion
 

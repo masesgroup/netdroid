@@ -32,14 +32,6 @@ namespace Javax.Xml.Transform
     public partial interface IURIResolver
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/URIResolver.html#resolve(java.lang.String,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Xml.Transform.Source"/></returns>
-        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
-        Javax.Xml.Transform.Source Resolve(Java.Lang.String arg0, Java.Lang.String arg1);
 
         #endregion
 

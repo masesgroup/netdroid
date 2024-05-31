@@ -309,31 +309,6 @@ namespace Java.Util.Function
     public partial interface IPredicate<T>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool Test(T arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        Java.Util.Function.Predicate<T> And<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#negate()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        Java.Util.Function.Predicate<T> Negate();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        Java.Util.Function.Predicate<T> Or<Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
 
         #endregion
 

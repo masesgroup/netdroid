@@ -32,12 +32,6 @@ namespace Android.Media
     public partial interface IVolumeAutomation
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/VolumeAutomation.html#createVolumeShaper(android.media.VolumeShaper.Configuration)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Media.VolumeShaper.Configuration"/></param>
-        /// <returns><see cref="Android.Media.VolumeShaper"/></returns>
-        Android.Media.VolumeShaper CreateVolumeShaper(Android.Media.VolumeShaper.Configuration arg0);
 
         #endregion
 

@@ -32,13 +32,6 @@ namespace Java.Net
     public partial interface ICookiePolicy
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CookiePolicy.html#shouldAccept(java.net.URI,java.net.HttpCookie)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
-        /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool ShouldAccept(Java.Net.URI arg0, Java.Net.HttpCookie arg1);
 
         #endregion
 

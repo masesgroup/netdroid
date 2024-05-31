@@ -32,10 +32,6 @@ namespace Java.Security.Interfaces
     public partial interface IDSAPublicKey
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAPublicKey.html#getY()"/> 
-        /// </summary>
-        Java.Math.BigInteger Y { get; }
 
         #endregion
 

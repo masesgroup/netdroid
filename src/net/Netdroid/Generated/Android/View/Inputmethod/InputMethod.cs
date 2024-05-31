@@ -32,65 +32,6 @@ namespace Android.View.Inputmethod
     public partial interface IInputMethod
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#attachToken(android.os.IBinder)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Os.IBinder"/></param>
-        void AttachToken(Android.Os.IBinder arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#bindInput(android.view.inputmethod.InputBinding)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.Inputmethod.InputBinding"/></param>
-        void BindInput(Android.View.Inputmethod.InputBinding arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#changeInputMethodSubtype(android.view.inputmethod.InputMethodSubtype)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.Inputmethod.InputMethodSubtype"/></param>
-        void ChangeInputMethodSubtype(Android.View.Inputmethod.InputMethodSubtype arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#createSession(android.view.inputmethod.InputMethod.SessionCallback)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.Inputmethod.InputMethod.SessionCallback"/></param>
-        void CreateSession(Android.View.Inputmethod.InputMethod.SessionCallback arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#hideSoftInput(int,android.os.ResultReceiver)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Android.Os.ResultReceiver"/></param>
-        void HideSoftInput(int arg0, Android.Os.ResultReceiver arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#restartInput(android.view.inputmethod.InputConnection,android.view.inputmethod.EditorInfo)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.Inputmethod.InputConnection"/></param>
-        /// <param name="arg1"><see cref="Android.View.Inputmethod.EditorInfo"/></param>
-        void RestartInput(Android.View.Inputmethod.InputConnection arg0, Android.View.Inputmethod.EditorInfo arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#revokeSession(android.view.inputmethod.InputMethodSession)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.Inputmethod.InputMethodSession"/></param>
-        void RevokeSession(Android.View.Inputmethod.InputMethodSession arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#setSessionEnabled(android.view.inputmethod.InputMethodSession,boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.Inputmethod.InputMethodSession"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        void SetSessionEnabled(Android.View.Inputmethod.InputMethodSession arg0, bool arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#showSoftInput(int,android.os.ResultReceiver)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Android.Os.ResultReceiver"/></param>
-        void ShowSoftInput(int arg0, Android.Os.ResultReceiver arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#startInput(android.view.inputmethod.InputConnection,android.view.inputmethod.EditorInfo)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.Inputmethod.InputConnection"/></param>
-        /// <param name="arg1"><see cref="Android.View.Inputmethod.EditorInfo"/></param>
-        void StartInput(Android.View.Inputmethod.InputConnection arg0, Android.View.Inputmethod.EditorInfo arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethod.html#unbindInput()"/>
-        /// </summary>
-        void UnbindInput();
 
         #endregion
 

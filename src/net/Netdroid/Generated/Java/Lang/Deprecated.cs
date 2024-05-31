@@ -32,16 +32,6 @@ namespace Java.Lang
     public partial interface IDeprecated : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Deprecated.html#forRemoval()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool ForRemoval();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Deprecated.html#since()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String Since();
 
         #endregion
 

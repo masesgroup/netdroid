@@ -132,11 +132,6 @@ namespace Java.Util.Function
     public partial interface ISupplier<T>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Supplier.html#get()"/>
-        /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
-        T Get();
 
         #endregion
 

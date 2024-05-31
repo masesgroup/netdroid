@@ -32,25 +32,6 @@ namespace Java.Security.Cert
     public partial interface IX509Extension
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Extension.html#getCriticalExtensionOIDs()"/> 
-        /// </summary>
-        Java.Util.Set<Java.Lang.String> CriticalExtensionOIDs { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Extension.html#getNonCriticalExtensionOIDs()"/> 
-        /// </summary>
-        Java.Util.Set<Java.Lang.String> NonCriticalExtensionOIDs { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Extension.html#hasUnsupportedCriticalExtension()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool HasUnsupportedCriticalExtension();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Extension.html#getExtensionValue(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="byte"/></returns>
-        byte[] GetExtensionValue(Java.Lang.String arg0);
 
         #endregion
 

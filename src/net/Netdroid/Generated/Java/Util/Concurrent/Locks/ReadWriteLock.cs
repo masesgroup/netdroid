@@ -32,16 +32,6 @@ namespace Java.Util.Concurrent.Locks
     public partial interface IReadWriteLock
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReadWriteLock.html#readLock()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
-        Java.Util.Concurrent.Locks.Lock ReadLock();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReadWriteLock.html#writeLock()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
-        Java.Util.Concurrent.Locks.Lock WriteLock();
 
         #endregion
 

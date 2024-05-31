@@ -72,12 +72,6 @@ namespace Java.Time.Temporal
     public partial interface ITemporalQuery<R>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalQuery.html#queryFrom(java.time.temporal.TemporalAccessor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
-        /// <returns><typeparamref name="R"/></returns>
-        R QueryFrom(Java.Time.Temporal.TemporalAccessor arg0);
 
         #endregion
 

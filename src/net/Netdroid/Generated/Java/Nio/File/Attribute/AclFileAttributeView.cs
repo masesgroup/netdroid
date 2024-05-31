@@ -32,15 +32,6 @@ namespace Java.Nio.File.Attribute
     public partial interface IAclFileAttributeView : Java.Nio.File.Attribute.IFileOwnerAttributeView
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclFileAttributeView.html#getAcl()"/> <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclFileAttributeView.html#setAcl(java.util.List)"/>
-        /// </summary>
-        Java.Util.List<Java.Nio.File.Attribute.AclEntry> Acl { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclFileAttributeView.html#name()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String Name();
 
         #endregion
 

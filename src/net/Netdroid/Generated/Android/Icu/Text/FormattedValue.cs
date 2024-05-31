@@ -32,24 +32,6 @@ namespace Android.Icu.Text
     public partial interface IFormattedValue : Java.Lang.ICharSequence
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/FormattedValue.html#appendTo(java.lang.Appendable)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="A"/></param>
-        /// <typeparam name="A"><see cref="Java.Lang.IAppendable"/></typeparam>
-        /// <returns><typeparamref name="A"/></returns>
-        A AppendTo<A>(A arg0) where A: Java.Lang.IAppendable, new();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/FormattedValue.html#nextPosition(android.icu.text.ConstrainedFieldPosition)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Icu.Text.ConstrainedFieldPosition"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool NextPosition(Android.Icu.Text.ConstrainedFieldPosition arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/FormattedValue.html#toCharacterIterator()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
-        Java.Text.AttributedCharacterIterator ToCharacterIterator();
 
         #endregion
 

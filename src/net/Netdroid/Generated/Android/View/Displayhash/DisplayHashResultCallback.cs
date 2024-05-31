@@ -32,16 +32,6 @@ namespace Android.View.Displayhash
     public partial interface IDisplayHashResultCallback
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/displayhash/DisplayHashResultCallback.html#onDisplayHashError(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void OnDisplayHashError(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/displayhash/DisplayHashResultCallback.html#onDisplayHashResult(android.view.displayhash.DisplayHash)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.Displayhash.DisplayHash"/></param>
-        void OnDisplayHashResult(Android.View.Displayhash.DisplayHash arg0);
 
         #endregion
 

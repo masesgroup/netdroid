@@ -32,18 +32,6 @@ namespace Org.W3c.Dom
     public partial interface IDOMImplementationSource
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMImplementationSource.html#getDOMImplementation(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.DOMImplementation"/></returns>
-        Org.W3c.Dom.DOMImplementation GetDOMImplementation(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMImplementationSource.html#getDOMImplementationList(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.DOMImplementationList"/></returns>
-        Org.W3c.Dom.DOMImplementationList GetDOMImplementationList(Java.Lang.String arg0);
 
         #endregion
 

@@ -32,11 +32,6 @@ namespace Java.Io
     public partial interface ICloseable : Java.Lang.IAutoCloseable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Closeable.html#close()"/>
-        /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
-        void Close();
 
         #endregion
 

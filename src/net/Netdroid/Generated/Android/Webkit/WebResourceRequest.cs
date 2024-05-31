@@ -32,33 +32,6 @@ namespace Android.Webkit
     public partial interface IWebResourceRequest
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceRequest.html#getMethod()"/> 
-        /// </summary>
-        Java.Lang.String Method { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceRequest.html#getRequestHeaders()"/> 
-        /// </summary>
-        Java.Util.Map<Java.Lang.String, Java.Lang.String> RequestHeaders { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceRequest.html#getUrl()"/> 
-        /// </summary>
-        Android.Net.Uri Url { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceRequest.html#hasGesture()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool HasGesture();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceRequest.html#isForMainFrame()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsForMainFrame();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceRequest.html#isRedirect()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsRedirect();
 
         #endregion
 

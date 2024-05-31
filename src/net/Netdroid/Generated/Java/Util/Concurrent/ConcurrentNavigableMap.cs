@@ -163,68 +163,6 @@ namespace Java.Util.Concurrent
     public partial interface IConcurrentNavigableMap<K, V>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingKeySet()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
-        Java.Util.NavigableSet<K> DescendingKeySet();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#navigableKeySet()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
-        Java.Util.NavigableSet<K> NavigableKeySet();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingMap()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
-        Java.Util.NavigableMap DescendingMap();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object,boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
-        Java.Util.NavigableMap HeadMap(object arg0, bool arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="object"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
-        Java.Util.NavigableMap SubMap(object arg0, bool arg1, object arg2, bool arg3);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object,boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
-        Java.Util.NavigableMap TailMap(object arg0, bool arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#keySet()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Set"/></returns>
-        Java.Util.Set KeySet();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.SortedMap"/></returns>
-        Java.Util.SortedMap HeadMap(object arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object,java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.SortedMap"/></returns>
-        Java.Util.SortedMap SubMap(object arg0, object arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Java.Util.SortedMap"/></returns>
-        Java.Util.SortedMap TailMap(object arg0);
 
         #endregion
 

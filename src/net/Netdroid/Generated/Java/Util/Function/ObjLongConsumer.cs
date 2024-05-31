@@ -133,12 +133,6 @@ namespace Java.Util.Function
     public partial interface IObjLongConsumer<T>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        void Accept(T arg0, long arg1);
 
         #endregion
 

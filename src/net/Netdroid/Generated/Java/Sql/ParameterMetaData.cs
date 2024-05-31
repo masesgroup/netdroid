@@ -32,66 +32,6 @@ namespace Java.Sql
     public partial interface IParameterMetaData : Java.Sql.IWrapper
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#getParameterCount()"/> 
-        /// </summary>
-        int ParameterCount { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#isSigned(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        bool IsSigned(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#getParameterMode(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        int GetParameterMode(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#getParameterType(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        int GetParameterType(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#getPrecision(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        int GetPrecision(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#getScale(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        int GetScale(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#isNullable(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        int IsNullable(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#getParameterClassName(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        Java.Lang.String GetParameterClassName(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#getParameterTypeName(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        Java.Lang.String GetParameterTypeName(int arg0);
 
         #endregion
 

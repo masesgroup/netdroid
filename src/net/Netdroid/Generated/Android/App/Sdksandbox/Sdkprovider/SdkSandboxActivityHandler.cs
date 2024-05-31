@@ -32,11 +32,6 @@ namespace Android.App.Sdksandbox.Sdkprovider
     public partial interface ISdkSandboxActivityHandler
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxActivityHandler.html#onActivityCreated(android.app.Activity)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.App.Activity"/></param>
-        void OnActivityCreated(Android.App.Activity arg0);
 
         #endregion
 

@@ -102,15 +102,6 @@ namespace Android.Telephony
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#createTtsSpan(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Android.Text.Style.TtsSpan"/></returns>
-        public static Android.Text.Style.TtsSpan CreateTtsSpan(Java.Lang.String arg0)
-        {
-            return SExecuteWithSignature<Android.Text.Style.TtsSpan>(LocalBridgeClazz, "createTtsSpan", "(Ljava/lang/String;)Landroid/text/style/TtsSpan;", arg0);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneNumberUtils.html#areSamePhoneNumber(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

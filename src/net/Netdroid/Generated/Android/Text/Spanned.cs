@@ -32,41 +32,6 @@ namespace Android.Text
     public partial interface ISpanned : Java.Lang.ICharSequence
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Spanned.html#getSpans(int,int,java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        T[] GetSpans<T>(int arg0, int arg1, Java.Lang.Class arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Spanned.html#getSpanEnd(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
-        int GetSpanEnd(object arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Spanned.html#getSpanFlags(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
-        int GetSpanFlags(object arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Spanned.html#getSpanStart(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="int"/></returns>
-        int GetSpanStart(object arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Spanned.html#nextSpanTransition(int,int,java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="int"/></returns>
-        int NextSpanTransition(int arg0, int arg1, Java.Lang.Class arg2);
 
         #endregion
 

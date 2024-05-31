@@ -32,16 +32,6 @@ namespace Javax.Security.Auth
     public partial interface IDestroyable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Destroyable.html#isDestroyed()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsDestroyed();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Destroyable.html#destroy()"/>
-        /// </summary>
-        /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
-        void Destroy();
 
         #endregion
 

@@ -71,11 +71,6 @@ namespace Android.Webkit
     public partial interface IValueCallback<T>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/ValueCallback.html#onReceiveValue(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        void OnReceiveValue(T arg0);
 
         #endregion
 

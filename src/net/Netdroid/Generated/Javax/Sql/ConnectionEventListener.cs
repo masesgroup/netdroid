@@ -32,16 +32,6 @@ namespace Javax.Sql
     public partial interface IConnectionEventListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionEventListener.html#connectionClosed(javax.sql.ConnectionEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.ConnectionEvent"/></param>
-        void ConnectionClosed(Javax.Sql.ConnectionEvent arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionEventListener.html#connectionErrorOccurred(javax.sql.ConnectionEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.ConnectionEvent"/></param>
-        void ConnectionErrorOccurred(Javax.Sql.ConnectionEvent arg0);
 
         #endregion
 

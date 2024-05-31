@@ -32,41 +32,6 @@ namespace Java.Nio.File.Attribute
     public partial interface IDosFileAttributeView : Java.Nio.File.Attribute.IBasicFileAttributeView
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributeView.html#name()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String Name();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributeView.html#setArchive(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        void SetArchive(bool arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributeView.html#setHidden(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        void SetHidden(bool arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributeView.html#setReadOnly(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        void SetReadOnly(bool arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributeView.html#setSystem(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        void SetSystem(bool arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributeView.html#readAttributes()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes();
 
         #endregion
 

@@ -32,11 +32,6 @@ namespace Java.Net
     public partial interface IProtocolFamily
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ProtocolFamily.html#name()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String Name();
 
         #endregion
 

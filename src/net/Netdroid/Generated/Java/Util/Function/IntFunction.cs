@@ -134,12 +134,6 @@ namespace Java.Util.Function
     public partial interface IIntFunction<R>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntFunction.html#apply(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><typeparamref name="R"/></returns>
-        R Apply(int arg0);
 
         #endregion
 

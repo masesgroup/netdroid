@@ -32,35 +32,6 @@ namespace Javax.Sql
     public partial interface IPooledConnection
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/PooledConnection.html#getConnection()"/> 
-        /// </summary>
-        Java.Sql.Connection Connection { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/PooledConnection.html#addConnectionEventListener(javax.sql.ConnectionEventListener)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.ConnectionEventListener"/></param>
-        void AddConnectionEventListener(Javax.Sql.ConnectionEventListener arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/PooledConnection.html#addStatementEventListener(javax.sql.StatementEventListener)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.StatementEventListener"/></param>
-        void AddStatementEventListener(Javax.Sql.StatementEventListener arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/PooledConnection.html#close()"/>
-        /// </summary>
-        /// <exception cref="Java.Sql.SQLException"/>
-        void Close();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/PooledConnection.html#removeConnectionEventListener(javax.sql.ConnectionEventListener)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.ConnectionEventListener"/></param>
-        void RemoveConnectionEventListener(Javax.Sql.ConnectionEventListener arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/PooledConnection.html#removeStatementEventListener(javax.sql.StatementEventListener)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Sql.StatementEventListener"/></param>
-        void RemoveStatementEventListener(Javax.Sql.StatementEventListener arg0);
 
         #endregion
 

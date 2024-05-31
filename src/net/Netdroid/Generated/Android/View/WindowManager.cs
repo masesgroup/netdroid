@@ -32,51 +32,6 @@ namespace Android.View
     public partial interface IWindowManager : Android.View.IViewManager
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#getCurrentWindowMetrics()"/> 
-        /// </summary>
-        Android.View.WindowMetrics CurrentWindowMetrics { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#getMaximumWindowMetrics()"/> 
-        /// </summary>
-        Android.View.WindowMetrics MaximumWindowMetrics { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#removeViewImmediate(android.view.View)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.View"/></param>
-        void RemoveViewImmediate(Android.View.View arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#isCrossWindowBlurEnabled()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsCrossWindowBlurEnabled();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#addCrossWindowBlurEnabledListener(java.util.concurrent.Executor,java.util.function.Consumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
-        void AddCrossWindowBlurEnabledListener(Java.Util.Concurrent.Executor arg0, Java.Util.Function.Consumer<Java.Lang.Boolean> arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#addCrossWindowBlurEnabledListener(java.util.function.Consumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        void AddCrossWindowBlurEnabledListener(Java.Util.Function.Consumer<Java.Lang.Boolean> arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#addProposedRotationListener(java.util.concurrent.Executor,java.util.function.IntConsumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Function.IntConsumer"/></param>
-        void AddProposedRotationListener(Java.Util.Concurrent.Executor arg0, Java.Util.Function.IntConsumer arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#removeCrossWindowBlurEnabledListener(java.util.function.Consumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-        void RemoveCrossWindowBlurEnabledListener(Java.Util.Function.Consumer<Java.Lang.Boolean> arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#removeProposedRotationListener(java.util.function.IntConsumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
-        void RemoveProposedRotationListener(Java.Util.Function.IntConsumer arg0);
 
         #endregion
 

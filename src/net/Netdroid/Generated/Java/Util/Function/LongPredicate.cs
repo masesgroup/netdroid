@@ -32,29 +32,6 @@ namespace Java.Util.Function
     public partial interface ILongPredicate
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#test(long)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool Test(long arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
-        Java.Util.Function.LongPredicate And(Java.Util.Function.LongPredicate arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#negate()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
-        Java.Util.Function.LongPredicate Negate();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
-        /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
-        Java.Util.Function.LongPredicate Or(Java.Util.Function.LongPredicate arg0);
 
         #endregion
 

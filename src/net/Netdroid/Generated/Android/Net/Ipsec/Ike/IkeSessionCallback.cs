@@ -32,25 +32,6 @@ namespace Android.Net.Ipsec.Ike
     public partial interface IIkeSessionCallback
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionCallback.html#onClosed()"/>
-        /// </summary>
-        void OnClosed();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionCallback.html#onOpened(android.net.ipsec.ike.IkeSessionConfiguration)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Net.Ipsec.Ike.IkeSessionConfiguration"/></param>
-        void OnOpened(Android.Net.Ipsec.Ike.IkeSessionConfiguration arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionCallback.html#onClosedWithException(android.net.ipsec.ike.exceptions.IkeException)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Net.Ipsec.Ike.Exceptions.IkeException"/></param>
-        void OnClosedWithException(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionCallback.html#onError(android.net.ipsec.ike.exceptions.IkeException)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Net.Ipsec.Ike.Exceptions.IkeException"/></param>
-        void OnError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
 
         #endregion
 

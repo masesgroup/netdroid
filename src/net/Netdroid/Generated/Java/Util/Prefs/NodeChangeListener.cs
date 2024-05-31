@@ -32,16 +32,6 @@ namespace Java.Util.Prefs
     public partial interface INodeChangeListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
-        void ChildAdded(Java.Util.Prefs.NodeChangeEvent arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
-        void ChildRemoved(Java.Util.Prefs.NodeChangeEvent arg0);
 
         #endregion
 

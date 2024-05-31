@@ -72,12 +72,6 @@ namespace Java.Lang
     public partial interface IComparable<T>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Comparable.html#compareTo(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <returns><see cref="int"/></returns>
-        int CompareTo(T arg0);
 
         #endregion
 

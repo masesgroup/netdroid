@@ -32,11 +32,6 @@ namespace Android.Accounts
     public partial interface IOnAccountsUpdateListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accounts/OnAccountsUpdateListener.html#onAccountsUpdated(android.accounts.Account[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Accounts.Account"/></param>
-        void OnAccountsUpdated(Android.Accounts.Account[] arg0);
 
         #endregion
 

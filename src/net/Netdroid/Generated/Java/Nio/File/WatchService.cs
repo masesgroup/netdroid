@@ -32,30 +32,6 @@ namespace Java.Nio.File
     public partial interface IWatchService : Java.Io.ICloseable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchService.html#poll()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
-        Java.Nio.File.WatchKey Poll();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchService.html#poll(long,java.util.concurrent.TimeUnit)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        Java.Nio.File.WatchKey Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchService.html#take()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        Java.Nio.File.WatchKey Take();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchService.html#close()"/>
-        /// </summary>
-        /// <exception cref="Java.Io.IOException"/>
-        void Close();
 
         #endregion
 

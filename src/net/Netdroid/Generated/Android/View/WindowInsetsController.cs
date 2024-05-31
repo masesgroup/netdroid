@@ -32,49 +32,6 @@ namespace Android.View
     public partial interface IWindowInsetsController
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#getSystemBarsAppearance()"/> 
-        /// </summary>
-        int SystemBarsAppearance { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#getSystemBarsBehavior()"/> <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#setSystemBarsBehavior(int)"/>
-        /// </summary>
-        int SystemBarsBehavior { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#addOnControllableInsetsChangedListener(android.view.WindowInsetsController.OnControllableInsetsChangedListener)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.WindowInsetsController.OnControllableInsetsChangedListener"/></param>
-        void AddOnControllableInsetsChangedListener(Android.View.WindowInsetsController.OnControllableInsetsChangedListener arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#controlWindowInsetsAnimation(int,long,android.view.animation.Interpolator,android.os.CancellationSignal,android.view.WindowInsetsAnimationControlListener)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <param name="arg2"><see cref="Android.View.Animation.Interpolator"/></param>
-        /// <param name="arg3"><see cref="Android.Os.CancellationSignal"/></param>
-        /// <param name="arg4"><see cref="Android.View.WindowInsetsAnimationControlListener"/></param>
-        void ControlWindowInsetsAnimation(int arg0, long arg1, Android.View.Animation.Interpolator arg2, Android.Os.CancellationSignal arg3, Android.View.WindowInsetsAnimationControlListener arg4);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#hide(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void Hide(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#removeOnControllableInsetsChangedListener(android.view.WindowInsetsController.OnControllableInsetsChangedListener)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.WindowInsetsController.OnControllableInsetsChangedListener"/></param>
-        void RemoveOnControllableInsetsChangedListener(Android.View.WindowInsetsController.OnControllableInsetsChangedListener arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#setSystemBarsAppearance(int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        void SetSystemBarsAppearance(int arg0, int arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsController.html#show(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void Show(int arg0);
 
         #endregion
 

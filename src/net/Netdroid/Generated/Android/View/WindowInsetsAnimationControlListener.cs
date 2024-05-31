@@ -32,22 +32,6 @@ namespace Android.View
     public partial interface IWindowInsetsAnimationControlListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationControlListener.html#onCancelled(android.view.WindowInsetsAnimationController)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.WindowInsetsAnimationController"/></param>
-        void OnCancelled(Android.View.WindowInsetsAnimationController arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationControlListener.html#onFinished(android.view.WindowInsetsAnimationController)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.WindowInsetsAnimationController"/></param>
-        void OnFinished(Android.View.WindowInsetsAnimationController arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationControlListener.html#onReady(android.view.WindowInsetsAnimationController,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.WindowInsetsAnimationController"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        void OnReady(Android.View.WindowInsetsAnimationController arg0, int arg1);
 
         #endregion
 

@@ -32,48 +32,6 @@ namespace Javax.Net.Ssl
     public partial interface IX509KeyManager : Javax.Net.Ssl.IKeyManager
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509KeyManager.html#chooseClientAlias(java.lang.String[],java.security.Principal[],java.net.Socket)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
-        /// <param name="arg2"><see cref="Java.Net.Socket"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String ChooseClientAlias(Java.Lang.String[] arg0, Java.Security.Principal[] arg1, Java.Net.Socket arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509KeyManager.html#chooseServerAlias(java.lang.String,java.security.Principal[],java.net.Socket)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
-        /// <param name="arg2"><see cref="Java.Net.Socket"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String ChooseServerAlias(Java.Lang.String arg0, Java.Security.Principal[] arg1, Java.Net.Socket arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509KeyManager.html#getClientAliases(java.lang.String,java.security.Principal[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String[] GetClientAliases(Java.Lang.String arg0, Java.Security.Principal[] arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509KeyManager.html#getServerAliases(java.lang.String,java.security.Principal[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String[] GetServerAliases(Java.Lang.String arg0, Java.Security.Principal[] arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509KeyManager.html#getCertificateChain(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
-        Java.Security.Cert.X509Certificate[] GetCertificateChain(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509KeyManager.html#getPrivateKey(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.PrivateKey"/></returns>
-        Java.Security.PrivateKey GetPrivateKey(Java.Lang.String arg0);
 
         #endregion
 

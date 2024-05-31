@@ -99,22 +99,6 @@ namespace Java.Lang.Reflect
     public partial interface ITypeVariable<D>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/TypeVariable.html#getAnnotatedBounds()"/> 
-        /// </summary>
-        Java.Lang.Reflect.AnnotatedType[] AnnotatedBounds { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/TypeVariable.html#getBounds()"/> 
-        /// </summary>
-        Java.Lang.Reflect.Type[] Bounds { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/TypeVariable.html#getGenericDeclaration()"/> 
-        /// </summary>
-        D GenericDeclaration { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/TypeVariable.html#getName()"/> 
-        /// </summary>
-        Java.Lang.String Name { get; }
 
         #endregion
 

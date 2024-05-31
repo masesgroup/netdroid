@@ -32,13 +32,6 @@ namespace Java.Util.Function
     public partial interface ILongBinaryOperator
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongBinaryOperator.html#applyAsLong(long,long)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        long ApplyAsLong(long arg0, long arg1);
 
         #endregion
 

@@ -32,18 +32,6 @@ namespace Java.Lang.Reflect
     public partial interface IParameterizedType : Java.Lang.Reflect.IType
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/ParameterizedType.html#getActualTypeArguments()"/> 
-        /// </summary>
-        Java.Lang.Reflect.Type[] ActualTypeArguments { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/ParameterizedType.html#getOwnerType()"/> 
-        /// </summary>
-        Java.Lang.Reflect.Type OwnerType { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/ParameterizedType.html#getRawType()"/> 
-        /// </summary>
-        Java.Lang.Reflect.Type RawType { get; }
 
         #endregion
 

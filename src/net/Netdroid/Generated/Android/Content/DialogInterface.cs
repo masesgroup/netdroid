@@ -32,14 +32,6 @@ namespace Android.Content
     public partial interface IDialogInterface
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/DialogInterface.html#cancel()"/>
-        /// </summary>
-        void Cancel();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/DialogInterface.html#dismiss()"/>
-        /// </summary>
-        void Dismiss();
 
         #endregion
 

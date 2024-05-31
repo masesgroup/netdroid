@@ -32,15 +32,6 @@ namespace Org.Xml.Sax
     public partial interface IEntityResolver
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/EntityResolver.html#resolveEntity(java.lang.String,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.Xml.Sax.InputSource"/></returns>
-        /// <exception cref="Org.Xml.Sax.SAXException"/>
-        /// <exception cref="Java.Io.IOException"/>
-        Org.Xml.Sax.InputSource ResolveEntity(Java.Lang.String arg0, Java.Lang.String arg1);
 
         #endregion
 

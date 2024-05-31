@@ -134,12 +134,6 @@ namespace Java.Util.Function
     public partial interface IToLongFunction<T>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <returns><see cref="long"/></returns>
-        long ApplyAsLong(T arg0);
 
         #endregion
 

@@ -32,11 +32,6 @@ namespace Java.Lang
     public partial interface ISuppressWarnings : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/SuppressWarnings.html#value()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String[] Value();
 
         #endregion
 

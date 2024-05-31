@@ -87,21 +87,6 @@ namespace Android.Icu.Util
     public partial interface IFreezable<T> : Java.Lang.ICloneable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Freezable.html#isFrozen()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsFrozen();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Freezable.html#cloneAsThawed()"/>
-        /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
-        T CloneAsThawed();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/Freezable.html#freeze()"/>
-        /// </summary>
-        /// <returns><typeparamref name="T"/></returns>
-        T Freeze();
 
         #endregion
 

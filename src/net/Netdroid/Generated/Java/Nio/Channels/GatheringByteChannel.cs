@@ -32,22 +32,6 @@ namespace Java.Nio.Channels
     public partial interface IGatheringByteChannel : Java.Nio.Channels.IWritableByteChannel
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/GatheringByteChannel.html#write(java.nio.ByteBuffer[],int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        long Write(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/GatheringByteChannel.html#write(java.nio.ByteBuffer[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        long Write(Java.Nio.ByteBuffer[] arg0);
 
         #endregion
 

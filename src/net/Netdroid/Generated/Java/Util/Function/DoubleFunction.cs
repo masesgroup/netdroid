@@ -134,12 +134,6 @@ namespace Java.Util.Function
     public partial interface IDoubleFunction<R>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><typeparamref name="R"/></returns>
-        R Apply(double arg0);
 
         #endregion
 

@@ -32,17 +32,6 @@ namespace Java.Util.Function
     public partial interface ILongConsumer
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongConsumer.html#accept(long)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        void Accept(long arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
-        /// <returns><see cref="Java.Util.Function.LongConsumer"/></returns>
-        Java.Util.Function.LongConsumer AndThen(Java.Util.Function.LongConsumer arg0);
 
         #endregion
 

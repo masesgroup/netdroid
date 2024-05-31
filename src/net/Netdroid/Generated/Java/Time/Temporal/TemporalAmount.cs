@@ -32,28 +32,6 @@ namespace Java.Time.Temporal
     public partial interface ITemporalAmount
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAmount.html#getUnits()"/> 
-        /// </summary>
-        Java.Util.List<Java.Time.Temporal.TemporalUnit> Units { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAmount.html#addTo(java.time.temporal.Temporal)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
-        Java.Time.Temporal.Temporal AddTo(Java.Time.Temporal.Temporal arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAmount.html#subtractFrom(java.time.temporal.Temporal)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
-        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
-        Java.Time.Temporal.Temporal SubtractFrom(Java.Time.Temporal.Temporal arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAmount.html#get(java.time.temporal.TemporalUnit)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
-        /// <returns><see cref="long"/></returns>
-        long Get(Java.Time.Temporal.TemporalUnit arg0);
 
         #endregion
 

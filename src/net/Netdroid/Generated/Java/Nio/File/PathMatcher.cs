@@ -32,12 +32,6 @@ namespace Java.Nio.File
     public partial interface IPathMatcher
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/PathMatcher.html#matches(java.nio.file.Path)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool Matches(Java.Nio.File.Path arg0);
 
         #endregion
 

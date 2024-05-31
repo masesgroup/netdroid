@@ -32,23 +32,6 @@ namespace Java.Sql
     public partial interface ISQLData
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLData.html#getSQLTypeName()"/> 
-        /// </summary>
-        Java.Lang.String SQLTypeName { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLData.html#readSQL(java.sql.SQLInput,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.SQLInput"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
-        void ReadSQL(Java.Sql.SQLInput arg0, Java.Lang.String arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLData.html#writeSQL(java.sql.SQLOutput)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.SQLOutput"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
-        void WriteSQL(Java.Sql.SQLOutput arg0);
 
         #endregion
 

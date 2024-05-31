@@ -32,30 +32,6 @@ namespace Android.Media
     public partial interface IAudioMetadataReadMap
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioMetadataReadMap.html#containsKey(android.media.AudioMetadata.Key)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Media.AudioMetadata.Key"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="bool"/></returns>
-        bool ContainsKey<T>(Android.Media.AudioMetadata.Key<T> arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioMetadataReadMap.html#get(android.media.AudioMetadata.Key)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Media.AudioMetadata.Key"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        T Get<T>(Android.Media.AudioMetadata.Key<T> arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioMetadataReadMap.html#dup()"/>
-        /// </summary>
-        /// <returns><see cref="Android.Media.AudioMetadataMap"/></returns>
-        Android.Media.AudioMetadataMap Dup();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioMetadataReadMap.html#size()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        int Size();
 
         #endregion
 

@@ -32,39 +32,6 @@ namespace Java.Lang.Invoke
     public partial interface IMethodHandleInfo
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#getDeclaringClass()"/> 
-        /// </summary>
-        Java.Lang.Class DeclaringClass { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#getMethodType()"/> 
-        /// </summary>
-        Java.Lang.Invoke.MethodType MethodType { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#getModifiers()"/> 
-        /// </summary>
-        int Modifiers { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#getName()"/> 
-        /// </summary>
-        Java.Lang.String Name { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#getReferenceKind()"/> 
-        /// </summary>
-        int ReferenceKind { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#reflectAs(java.lang.Class,java.lang.invoke.MethodHandles.Lookup)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
-        /// <typeparam name="T"><see cref="Java.Lang.Reflect.IMember"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1) where T: Java.Lang.Reflect.IMember, new();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#isVarArgs()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsVarArgs();
 
         #endregion
 

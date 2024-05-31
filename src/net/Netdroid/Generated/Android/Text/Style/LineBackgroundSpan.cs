@@ -32,21 +32,6 @@ namespace Android.Text.Style
     public partial interface ILineBackgroundSpan : Android.Text.Style.IParagraphStyle
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/LineBackgroundSpan.html#drawBackground(android.graphics.Canvas,android.graphics.Paint,int,int,int,int,int,java.lang.CharSequence,int,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Graphics.Canvas"/></param>
-        /// <param name="arg1"><see cref="Android.Graphics.Paint"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        /// <param name="arg6"><see cref="int"/></param>
-        /// <param name="arg7"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg8"><see cref="int"/></param>
-        /// <param name="arg9"><see cref="int"/></param>
-        /// <param name="arg10"><see cref="int"/></param>
-        void DrawBackground(Android.Graphics.Canvas arg0, Android.Graphics.Paint arg1, int arg2, int arg3, int arg4, int arg5, int arg6, Java.Lang.CharSequence arg7, int arg8, int arg9, int arg10);
 
         #endregion
 

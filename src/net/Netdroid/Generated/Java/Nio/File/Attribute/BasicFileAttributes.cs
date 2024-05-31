@@ -32,51 +32,6 @@ namespace Java.Nio.File.Attribute
     public partial interface IBasicFileAttributes
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#isDirectory()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsDirectory();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#isOther()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsOther();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#isRegularFile()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsRegularFile();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#isSymbolicLink()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsSymbolicLink();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#fileKey()"/>
-        /// </summary>
-        /// <returns><see cref="object"/></returns>
-        object FileKey();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#creationTime()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
-        Java.Nio.File.Attribute.FileTime CreationTime();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#lastAccessTime()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
-        Java.Nio.File.Attribute.FileTime LastAccessTime();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#lastModifiedTime()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
-        Java.Nio.File.Attribute.FileTime LastModifiedTime();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#size()"/>
-        /// </summary>
-        /// <returns><see cref="long"/></returns>
-        long Size();
 
         #endregion
 

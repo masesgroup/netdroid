@@ -32,11 +32,6 @@ namespace Android.Content
     public partial interface IComponentCallbacks2 : Android.Content.IComponentCallbacks
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ComponentCallbacks2.html#onTrimMemory(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void OnTrimMemory(int arg0);
 
         #endregion
 

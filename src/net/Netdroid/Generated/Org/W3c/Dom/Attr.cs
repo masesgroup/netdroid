@@ -32,31 +32,6 @@ namespace Org.W3c.Dom
     public partial interface IAttr : Org.W3c.Dom.INode
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Attr.html#getName()"/> 
-        /// </summary>
-        Java.Lang.String Name { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Attr.html#getOwnerElement()"/> 
-        /// </summary>
-        Org.W3c.Dom.Element OwnerElement { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Attr.html#getSchemaTypeInfo()"/> 
-        /// </summary>
-        Org.W3c.Dom.TypeInfo SchemaTypeInfo { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Attr.html#getSpecified()"/> 
-        /// </summary>
-        bool Specified { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Attr.html#getValue()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Attr.html#setValue(java.lang.String)"/>
-        /// </summary>
-        Java.Lang.String Value { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Attr.html#isId()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsId();
 
         #endregion
 

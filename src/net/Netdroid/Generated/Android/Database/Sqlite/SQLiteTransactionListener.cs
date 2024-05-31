@@ -32,18 +32,6 @@ namespace Android.Database.Sqlite
     public partial interface ISQLiteTransactionListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteTransactionListener.html#onBegin()"/>
-        /// </summary>
-        void OnBegin();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteTransactionListener.html#onCommit()"/>
-        /// </summary>
-        void OnCommit();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteTransactionListener.html#onRollback()"/>
-        /// </summary>
-        void OnRollback();
 
         #endregion
 

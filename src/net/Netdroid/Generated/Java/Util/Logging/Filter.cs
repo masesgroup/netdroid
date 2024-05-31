@@ -32,12 +32,6 @@ namespace Java.Util.Logging
     public partial interface IFilter
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Filter.html#isLoggable(java.util.logging.LogRecord)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool IsLoggable(Java.Util.Logging.LogRecord arg0);
 
         #endregion
 

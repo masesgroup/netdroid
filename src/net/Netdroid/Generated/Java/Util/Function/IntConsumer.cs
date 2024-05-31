@@ -32,17 +32,6 @@ namespace Java.Util.Function
     public partial interface IIntConsumer
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntConsumer.html#accept(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void Accept(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
-        /// <returns><see cref="Java.Util.Function.IntConsumer"/></returns>
-        Java.Util.Function.IntConsumer AndThen(Java.Util.Function.IntConsumer arg0);
 
         #endregion
 

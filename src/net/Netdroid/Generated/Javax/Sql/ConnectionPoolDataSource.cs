@@ -32,32 +32,6 @@ namespace Javax.Sql
     public partial interface IConnectionPoolDataSource : Javax.Sql.ICommonDataSource
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionPoolDataSource.html#getLoginTimeout()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionPoolDataSource.html#setLoginTimeout(int)"/>
-        /// </summary>
-        int LoginTimeout { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionPoolDataSource.html#getLogWriter()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionPoolDataSource.html#setLogWriter(java.io.PrintWriter)"/>
-        /// </summary>
-        Java.Io.PrintWriter LogWriter { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionPoolDataSource.html#getPooledConnection()"/> 
-        /// </summary>
-        Javax.Sql.PooledConnection PooledConnection { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionPoolDataSource.html#getPooledConnection(java.lang.String,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Javax.Sql.PooledConnection"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        Javax.Sql.PooledConnection GetPooledConnection(Java.Lang.String arg0, Java.Lang.String arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionPoolDataSource.html#createPooledConnectionBuilder()"/>
-        /// </summary>
-        /// <returns><see cref="Javax.Sql.PooledConnectionBuilder"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        Javax.Sql.PooledConnectionBuilder CreatePooledConnectionBuilder();
 
         #endregion
 

@@ -74,14 +74,6 @@ namespace Android.Animation
     public partial interface ITypeEvaluator<T>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/TypeEvaluator.html#evaluate(float,java.lang.Object,java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
-        /// <param name="arg1"><typeparamref name="T"/></param>
-        /// <param name="arg2"><typeparamref name="T"/></param>
-        /// <returns><typeparamref name="T"/></returns>
-        T Evaluate(float arg0, T arg1, T arg2);
 
         #endregion
 

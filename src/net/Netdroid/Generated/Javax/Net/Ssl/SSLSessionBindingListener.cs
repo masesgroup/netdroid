@@ -32,16 +32,6 @@ namespace Javax.Net.Ssl
     public partial interface ISSLSessionBindingListener
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueBound(javax.net.ssl.SSLSessionBindingEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
-        void ValueBound(Javax.Net.Ssl.SSLSessionBindingEvent arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueUnbound(javax.net.ssl.SSLSessionBindingEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLSessionBindingEvent"/></param>
-        void ValueUnbound(Javax.Net.Ssl.SSLSessionBindingEvent arg0);
 
         #endregion
 

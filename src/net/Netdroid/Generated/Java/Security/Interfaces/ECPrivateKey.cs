@@ -32,10 +32,6 @@ namespace Java.Security.Interfaces
     public partial interface IECPrivateKey
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/ECPrivateKey.html#getS()"/> 
-        /// </summary>
-        Java.Math.BigInteger S { get; }
 
         #endregion
 

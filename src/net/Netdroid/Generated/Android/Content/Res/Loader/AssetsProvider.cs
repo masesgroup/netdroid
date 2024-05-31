@@ -32,13 +32,6 @@ namespace Android.Content.Res.Loader
     public partial interface IAssetsProvider
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/loader/AssetsProvider.html#loadAssetFd(java.lang.String,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Android.Content.Res.AssetFileDescriptor"/></returns>
-        Android.Content.Res.AssetFileDescriptor LoadAssetFd(Java.Lang.String arg0, int arg1);
 
         #endregion
 

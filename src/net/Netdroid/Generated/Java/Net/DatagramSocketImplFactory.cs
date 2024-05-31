@@ -32,11 +32,6 @@ namespace Java.Net
     public partial interface IDatagramSocketImplFactory
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/DatagramSocketImplFactory.html#createDatagramSocketImpl()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Net.DatagramSocketImpl"/></returns>
-        Java.Net.DatagramSocketImpl CreateDatagramSocketImpl();
 
         #endregion
 

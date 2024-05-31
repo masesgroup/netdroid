@@ -134,50 +134,6 @@ namespace Java.Util
     public partial interface IListIterator<E>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#hasNext()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool HasNext();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#hasPrevious()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool HasPrevious();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#next()"/>
-        /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
-        E Next();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#previous()"/>
-        /// </summary>
-        /// <returns><typeparamref name="E"/></returns>
-        E Previous();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#nextIndex()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        int NextIndex();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#previousIndex()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        int PreviousIndex();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#add(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        void Add(E arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#remove()"/>
-        /// </summary>
-        void Remove();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#set(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="E"/></param>
-        void Set(E arg0);
 
         #endregion
 

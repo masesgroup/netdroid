@@ -32,32 +32,6 @@ namespace Android.Telecom
     public partial interface ICallEventCallback
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallEventCallback.html#onAvailableCallEndpointsChanged(java.util.List)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        void OnAvailableCallEndpointsChanged(Java.Util.List<Android.Telecom.CallEndpoint> arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallEventCallback.html#onCallEndpointChanged(android.telecom.CallEndpoint)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Telecom.CallEndpoint"/></param>
-        void OnCallEndpointChanged(Android.Telecom.CallEndpoint arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallEventCallback.html#onCallStreamingFailed(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        void OnCallStreamingFailed(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallEventCallback.html#onEvent(java.lang.String,android.os.Bundle)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
-        void OnEvent(Java.Lang.String arg0, Android.Os.Bundle arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallEventCallback.html#onMuteStateChanged(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        void OnMuteStateChanged(bool arg0);
 
         #endregion
 

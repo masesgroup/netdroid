@@ -32,32 +32,6 @@ namespace Android.Net.Ipsec.Ike
     public partial interface IChildSessionCallback
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionCallback.html#onClosed()"/>
-        /// </summary>
-        void OnClosed();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionCallback.html#onIpSecTransformCreated(android.net.IpSecTransform,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Net.IpSecTransform"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        void OnIpSecTransformCreated(Android.Net.IpSecTransform arg0, int arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionCallback.html#onIpSecTransformDeleted(android.net.IpSecTransform,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Net.IpSecTransform"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        void OnIpSecTransformDeleted(Android.Net.IpSecTransform arg0, int arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionCallback.html#onOpened(android.net.ipsec.ike.ChildSessionConfiguration)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Net.Ipsec.Ike.ChildSessionConfiguration"/></param>
-        void OnOpened(Android.Net.Ipsec.Ike.ChildSessionConfiguration arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionCallback.html#onClosedWithException(android.net.ipsec.ike.exceptions.IkeException)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Net.Ipsec.Ike.Exceptions.IkeException"/></param>
-        void OnClosedWithException(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
 
         #endregion
 

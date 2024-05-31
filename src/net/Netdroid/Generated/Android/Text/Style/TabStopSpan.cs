@@ -32,10 +32,6 @@ namespace Android.Text.Style
     public partial interface ITabStopSpan : Android.Text.Style.IParagraphStyle
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TabStopSpan.html#getTabStop()"/> 
-        /// </summary>
-        int TabStop { get; }
 
         #endregion
 

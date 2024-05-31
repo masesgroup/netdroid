@@ -32,35 +32,6 @@ namespace Java.Security.Cert
     public partial interface IPolicyNode
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyNode.html#getChildren()"/> 
-        /// </summary>
-        Java.Util.Iterator Children { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyNode.html#getDepth()"/> 
-        /// </summary>
-        int Depth { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyNode.html#getExpectedPolicies()"/> 
-        /// </summary>
-        Java.Util.Set<Java.Lang.String> ExpectedPolicies { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyNode.html#getParent()"/> 
-        /// </summary>
-        Java.Security.Cert.PolicyNode Parent { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyNode.html#getPolicyQualifiers()"/> 
-        /// </summary>
-        Java.Util.Set PolicyQualifiers { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyNode.html#getValidPolicy()"/> 
-        /// </summary>
-        Java.Lang.String ValidPolicy { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyNode.html#isCritical()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsCritical();
 
         #endregion
 

@@ -180,22 +180,6 @@ namespace Java.Util.Function
     public partial interface IBiFunction<T, U, R>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><typeparamref name="U"/></param>
-        /// <returns><typeparamref name="R"/></returns>
-        R Apply(T arg0, U arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
-        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        Java.Util.Function.BiFunction<T, U, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V;
 
         #endregion
 

@@ -32,29 +32,6 @@ namespace Java.Nio.File.Attribute
     public partial interface IPosixFileAttributeView
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/PosixFileAttributeView.html#name()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String Name();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/PosixFileAttributeView.html#setGroup(java.nio.file.attribute.GroupPrincipal)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.GroupPrincipal"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        void SetGroup(Java.Nio.File.Attribute.GroupPrincipal arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/PosixFileAttributeView.html#setPermissions(java.util.Set)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        void SetPermissions(Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/PosixFileAttributeView.html#readAttributes()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes();
 
         #endregion
 

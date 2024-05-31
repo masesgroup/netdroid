@@ -32,44 +32,6 @@ namespace Org.Xml.Sax.Ext
     public partial interface IAttributes2 : Org.Xml.Sax.IAttributes
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Attributes2.html#isDeclared(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool IsDeclared(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Attributes2.html#isDeclared(java.lang.String,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool IsDeclared(Java.Lang.String arg0, Java.Lang.String arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Attributes2.html#isDeclared(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool IsDeclared(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Attributes2.html#isSpecified(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool IsSpecified(int arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Attributes2.html#isSpecified(java.lang.String,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool IsSpecified(Java.Lang.String arg0, Java.Lang.String arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Attributes2.html#isSpecified(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool IsSpecified(Java.Lang.String arg0);
 
         #endregion
 

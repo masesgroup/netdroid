@@ -161,11 +161,6 @@ namespace Java.Nio.File
     public partial interface IDirectoryStream<T>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/DirectoryStream.html#iterator()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<T> Iterator();
 
         #endregion
 

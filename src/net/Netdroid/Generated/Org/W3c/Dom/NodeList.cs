@@ -32,16 +32,6 @@ namespace Org.W3c.Dom
     public partial interface INodeList
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NodeList.html#getLength()"/> 
-        /// </summary>
-        int Length { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NodeList.html#item(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
-        Org.W3c.Dom.Node Item(int arg0);
 
         #endregion
 

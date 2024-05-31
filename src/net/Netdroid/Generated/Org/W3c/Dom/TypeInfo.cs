@@ -32,22 +32,6 @@ namespace Org.W3c.Dom
     public partial interface ITypeInfo
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/TypeInfo.html#getTypeName()"/> 
-        /// </summary>
-        Java.Lang.String TypeName { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/TypeInfo.html#getTypeNamespace()"/> 
-        /// </summary>
-        Java.Lang.String TypeNamespace { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/TypeInfo.html#isDerivedFrom(java.lang.String,java.lang.String,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool IsDerivedFrom(Java.Lang.String arg0, Java.Lang.String arg1, int arg2);
 
         #endregion
 

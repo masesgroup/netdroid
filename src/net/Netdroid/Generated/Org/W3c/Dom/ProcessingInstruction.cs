@@ -32,14 +32,6 @@ namespace Org.W3c.Dom
     public partial interface IProcessingInstruction : Org.W3c.Dom.INode
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ProcessingInstruction.html#getData()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ProcessingInstruction.html#setData(java.lang.String)"/>
-        /// </summary>
-        Java.Lang.String Data { get; set; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ProcessingInstruction.html#getTarget()"/> 
-        /// </summary>
-        Java.Lang.String Target { get; }
 
         #endregion
 

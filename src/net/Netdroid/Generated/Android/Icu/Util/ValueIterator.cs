@@ -32,22 +32,6 @@ namespace Android.Icu.Util
     public partial interface IValueIterator
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ValueIterator.html#next(android.icu.util.ValueIterator.Element)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Icu.Util.ValueIterator.Element"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool Next(Android.Icu.Util.ValueIterator.Element arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ValueIterator.html#reset()"/>
-        /// </summary>
-        void Reset();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/ValueIterator.html#setRange(int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        void SetRange(int arg0, int arg1);
 
         #endregion
 

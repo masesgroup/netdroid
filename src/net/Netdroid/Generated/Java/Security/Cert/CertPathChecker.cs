@@ -32,23 +32,6 @@ namespace Java.Security.Cert
     public partial interface ICertPathChecker
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathChecker.html#isForwardCheckingSupported()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsForwardCheckingSupported();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathChecker.html#check(java.security.cert.Certificate)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
-        /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
-        void Check(Java.Security.Cert.Certificate arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathChecker.html#init(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
-        void Init(bool arg0);
 
         #endregion
 

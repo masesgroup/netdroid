@@ -32,69 +32,6 @@ namespace Java.Time.Temporal
     public partial interface ITemporalField
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#getBaseUnit()"/> 
-        /// </summary>
-        Java.Time.Temporal.TemporalUnit BaseUnit { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#getRangeUnit()"/> 
-        /// </summary>
-        Java.Time.Temporal.TemporalUnit RangeUnit { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#adjustInto(java.time.temporal.Temporal,long)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="R"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <typeparam name="R"><see cref="Java.Time.Temporal.ITemporal"/></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        R AdjustInto<R>(R arg0, long arg1) where R: Java.Time.Temporal.ITemporal, new();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#isDateBased()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsDateBased();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#isSupportedBy(java.time.temporal.TemporalAccessor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool IsSupportedBy(Java.Time.Temporal.TemporalAccessor arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#isTimeBased()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsTimeBased();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#range()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
-        Java.Time.Temporal.ValueRange Range();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#rangeRefinedBy(java.time.temporal.TemporalAccessor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
-        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
-        Java.Time.Temporal.ValueRange RangeRefinedBy(Java.Time.Temporal.TemporalAccessor arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#getFrom(java.time.temporal.TemporalAccessor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
-        /// <returns><see cref="long"/></returns>
-        long GetFrom(Java.Time.Temporal.TemporalAccessor arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#getDisplayName(java.util.Locale)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        Java.Lang.String GetDisplayName(Java.Util.Locale arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#resolve(java.util.Map,java.time.temporal.TemporalAccessor,java.time.format.ResolverStyle)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
-        /// <param name="arg2"><see cref="Java.Time.Format.ResolverStyle"/></param>
-        /// <returns><see cref="Java.Time.Temporal.TemporalAccessor"/></returns>
-        Java.Time.Temporal.TemporalAccessor Resolve(Java.Util.Map<Java.Time.Temporal.TemporalField, Java.Lang.Long> arg0, Java.Time.Temporal.TemporalAccessor arg1, Java.Time.Format.ResolverStyle arg2);
 
         #endregion
 

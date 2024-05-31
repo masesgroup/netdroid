@@ -32,36 +32,6 @@ namespace Java.Nio.Channels
     public partial interface IAsynchronousByteChannel : Java.Nio.Channels.IAsynchronousChannel
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousByteChannel.html#read(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><typeparamref name="A"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
-        /// <typeparam name="A"></typeparam>
-        /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
-        void Read<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg2objectSuperA> arg2) where Arg2objectSuperA: A;
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousByteChannel.html#write(java.nio.ByteBuffer,java.lang.Object,java.nio.channels.CompletionHandler)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg1"><typeparamref name="A"/></param>
-        /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
-        /// <typeparam name="A"></typeparam>
-        /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
-        void Write<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg2objectSuperA> arg2) where Arg2objectSuperA: A;
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousByteChannel.html#read(java.nio.ByteBuffer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        Java.Util.Concurrent.Future<Java.Lang.Integer> Read(Java.Nio.ByteBuffer arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousByteChannel.html#write(java.nio.ByteBuffer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        Java.Util.Concurrent.Future<Java.Lang.Integer> Write(Java.Nio.ByteBuffer arg0);
 
         #endregion
 

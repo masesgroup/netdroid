@@ -32,21 +32,6 @@ namespace Android.Graphics.Drawable
     public partial interface IAnimatable2 : Android.Graphics.Drawable.IAnimatable
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Animatable2.html#unregisterAnimationCallback(android.graphics.drawable.Animatable2.AnimationCallback)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Animatable2.AnimationCallback"/></param>
-        /// <returns><see cref="bool"/></returns>
-        bool UnregisterAnimationCallback(Android.Graphics.Drawable.Animatable2.AnimationCallback arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Animatable2.html#clearAnimationCallbacks()"/>
-        /// </summary>
-        void ClearAnimationCallbacks();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Animatable2.html#registerAnimationCallback(android.graphics.drawable.Animatable2.AnimationCallback)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Animatable2.AnimationCallback"/></param>
-        void RegisterAnimationCallback(Android.Graphics.Drawable.Animatable2.AnimationCallback arg0);
 
         #endregion
 

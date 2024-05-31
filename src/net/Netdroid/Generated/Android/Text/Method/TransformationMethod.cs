@@ -32,22 +32,6 @@ namespace Android.Text.Method
     public partial interface ITransformationMethod
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/method/TransformationMethod.html#getTransformation(java.lang.CharSequence,android.view.View)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg1"><see cref="Android.View.View"/></param>
-        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-        Java.Lang.CharSequence GetTransformation(Java.Lang.CharSequence arg0, Android.View.View arg1);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/method/TransformationMethod.html#onFocusChanged(android.view.View,java.lang.CharSequence,boolean,int,android.graphics.Rect)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.View.View"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="Android.Graphics.Rect"/></param>
-        void OnFocusChanged(Android.View.View arg0, Java.Lang.CharSequence arg1, bool arg2, int arg3, Android.Graphics.Rect arg4);
 
         #endregion
 

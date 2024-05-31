@@ -32,11 +32,6 @@ namespace Java.Util.Function
     public partial interface IDoubleSupplier
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleSupplier.html#getAsDouble()"/>
-        /// </summary>
-        /// <returns><see cref="double"/></returns>
-        double GetAsDouble();
 
         #endregion
 

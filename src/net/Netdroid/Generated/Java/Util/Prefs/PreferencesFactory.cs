@@ -32,16 +32,6 @@ namespace Java.Util.Prefs
     public partial interface IPreferencesFactory
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/PreferencesFactory.html#systemRoot()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
-        Java.Util.Prefs.Preferences SystemRoot();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/PreferencesFactory.html#userRoot()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
-        Java.Util.Prefs.Preferences UserRoot();
 
         #endregion
 

@@ -32,29 +32,6 @@ namespace Org.W3c.Dom
     public partial interface IText : Org.W3c.Dom.ICharacterData
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Text.html#getWholeText()"/> 
-        /// </summary>
-        Java.Lang.String WholeText { get; }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Text.html#isElementContentWhitespace()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        bool IsElementContentWhitespace();
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Text.html#replaceWholeText(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Text"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.Text ReplaceWholeText(Java.Lang.String arg0);
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Text.html#splitText(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Org.W3c.Dom.Text"/></returns>
-        /// <exception cref="Org.W3c.Dom.DOMException"/>
-        Org.W3c.Dom.Text SplitText(int arg0);
 
         #endregion
 

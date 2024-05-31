@@ -32,12 +32,6 @@ namespace Javax.Xml.Xpath
     public partial interface IXPathVariableResolver
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPathVariableResolver.html#resolveVariable(javax.xml.namespace.QName)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
-        /// <returns><see cref="object"/></returns>
-        object ResolveVariable(Javax.Xml.Namespace.QName arg0);
 
         #endregion
 
