@@ -16,18 +16,18 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.netdroid.development.java.util.function;
 
 import org.mases.jcobridge.*;
 
 import java.util.function.ObjDoubleConsumer;
 
 /**
- * The {@link JNetObjDoubleConsumer} class represents a generic implementation of
+ * The {@link ObjDoubleConsumer} class represents a generic implementation of
  * {@link ObjDoubleConsumer}
  */
-public final class JNetObjDoubleConsumer extends JCListener implements ObjDoubleConsumer {
-    public JNetObjDoubleConsumer(String key) throws JCNativeException {
+public final class ObjDoubleConsumer extends JCListener implements ObjDoubleConsumer {
+    public ObjDoubleConsumer(String key) throws JCNativeException {
         super(key);
     }
 

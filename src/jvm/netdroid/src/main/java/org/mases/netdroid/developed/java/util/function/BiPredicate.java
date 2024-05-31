@@ -16,18 +16,18 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.netdroid.development.java.util.function;
 
 import org.mases.jcobridge.*;
 
 import java.util.function.BiPredicate;
 
 /**
- * The {@link JNetBiPredicate} class represents a generic implementation of
+ * The {@link BiPredicate} class represents a generic implementation of
  * {@link BiPredicate}
  */
-public final class JNetBiPredicate extends JCListener implements BiPredicate {
-    public JNetBiPredicate(String key) throws JCNativeException {
+public final class BiPredicate extends JCListener implements BiPredicate {
+    public BiPredicate(String key) throws JCNativeException {
         super(key);
     }
 

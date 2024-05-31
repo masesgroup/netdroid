@@ -41,7 +41,7 @@ namespace Java.Util.Function
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.util.function.JNetIntSupplier";
+        public override string BridgeClassName => "org.mases.netdroid.developed.java.util.function.IntSupplier";
 
         /// <summary>
         /// The <see cref="Func{Int32}"/> to be executed

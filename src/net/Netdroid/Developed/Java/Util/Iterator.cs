@@ -58,7 +58,6 @@ namespace Java.Util
         {
             get { return IExecute("next"); }
         }
-#if !JNETREFLECTOR
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)"/>
         /// </summary>
@@ -74,7 +73,6 @@ namespace Java.Util
         {
             IExecute("remove");
         }
-#endif
     }
     #endregion
 
@@ -92,7 +90,6 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#next()"/> 
         /// </summary>
         E Next { get; }
-#if !JNETREFLECTOR
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)"/>
         /// </summary>
@@ -103,7 +100,6 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#remove()"/>
         /// </summary>
         void Remove();
-#endif
     }
     #endregion
     /// <summary>
@@ -149,7 +145,6 @@ namespace Java.Util
         {
             get { return IExecute<E>("next"); }
         }
-#if !JNETREFLECTOR
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)"/>
         /// </summary>
@@ -166,6 +161,5 @@ namespace Java.Util
         {
             IExecute("remove");
         }
-#endif
     }
 }

@@ -16,18 +16,18 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.netdroid.development.java.util.function;
 
 import org.mases.jcobridge.*;
 
 import java.util.function.BiConsumer;
 
 /**
- * The {@link JNetBiConsumer} class represents a generic implementation of
+ * The {@link BiConsumer} class represents a generic implementation of
  * {@link BiConsumer}
  */
-public final class JNetBiConsumer extends JCListener implements BiConsumer {
-    public JNetBiConsumer(String key) throws JCNativeException {
+public final class BiConsumer extends JCListener implements BiConsumer {
+    public BiConsumer(String key) throws JCNativeException {
         super(key);
     }
 

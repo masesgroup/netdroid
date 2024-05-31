@@ -16,18 +16,18 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.netdroid.development.java.util.function;
 
 import org.mases.jcobridge.*;
 
 import java.util.function.Predicate;
 
 /**
- * The {@link JNetPredicate} class represents a generic implementation of
+ * The {@link Predicate} class represents a generic implementation of
  * {@link Predicate}
  */
-public final class JNetPredicate extends JCListener implements Predicate {
-    public JNetPredicate(String key) throws JCNativeException {
+public final class Predicate extends JCListener implements Predicate {
+    public Predicate(String key) throws JCNativeException {
         super(key);
     }
 

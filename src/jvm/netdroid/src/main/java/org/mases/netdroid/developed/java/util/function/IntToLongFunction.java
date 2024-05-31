@@ -16,18 +16,18 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.netdroid.development.java.util.function;
 
 import org.mases.jcobridge.*;
 
 import java.util.function.IntToLongFunction;
 
 /**
- * The {@link JNetIntToLongFunction} class represents a generic implementation of
+ * The {@link IntToLongFunction} class represents a generic implementation of
  * {@link IntToLongFunction}
  */
-public final class JNetIntToLongFunction extends JCListener implements IntToLongFunction {
-    public JNetIntToLongFunction(String key) throws JCNativeException {
+public final class IntToLongFunction extends JCListener implements IntToLongFunction {
+    public IntToLongFunction(String key) throws JCNativeException {
         super(key);
     }
 

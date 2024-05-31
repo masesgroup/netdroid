@@ -16,18 +16,18 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.netdroid.development.java.util.function;
 
 import org.mases.jcobridge.*;
 
 import java.util.function.LongBinaryOperator;
 
 /**
- * The {@link JNetLongBinaryOperator} class represents a generic implementation of
+ * The {@link LongBinaryOperator} class represents a generic implementation of
  * {@link LongBinaryOperator}
  */
-public final class JNetLongBinaryOperator extends JCListener implements LongBinaryOperator {
-    public JNetLongBinaryOperator(String key) throws JCNativeException {
+public final class LongBinaryOperator extends JCListener implements LongBinaryOperator {
+    public LongBinaryOperator(String key) throws JCNativeException {
         super(key);
     }
 

@@ -16,18 +16,18 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.jnet.util.function;
+package org.mases.netdroid.development.java.util.function;
 
 import org.mases.jcobridge.*;
 
 import java.util.function.IntSupplier;
 
 /**
- * The {@link JNetIntSupplier} class represents a generic implementation of
+ * The {@link IntSupplier} class represents a generic implementation of
  * {@link IntSupplier}
  */
-public final class JNetIntSupplier extends JCListener implements IntSupplier {
-    public JNetIntSupplier(String key) throws JCNativeException {
+public final class IntSupplier extends JCListener implements IntSupplier {
+    public IntSupplier(String key) throws JCNativeException {
         super(key);
     }
 

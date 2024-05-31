@@ -212,11 +212,8 @@ namespace MASES.Netdroid
 
         string classPath = string.Empty;
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_ClassPath.htm"/>
-#if JNETREFLECTOR
-        public override string ClassPath => buildClassPath();
-#else
         public sealed override string ClassPath => buildClassPath();
-#endif
+
         /// <summary>
         /// A list of paths to be used in initialization of JVM ClassPath
         /// </summary>
