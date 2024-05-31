@@ -11,7 +11,7 @@
   ],
   "OriginJavadocJARVersionAndUrls": [
     {
-      "Version": 17,
+      "Version": 11,
       "Url": "https://developer.android.com/reference/"
     }
   ],
@@ -30,6 +30,35 @@
   "ClassesToBeListener": [
     "javax.swing.Action",
     "javax.management.NotificationFilter"
+  ],
+  "ClassesToAvoidJavaListener": [
+    "android.bluetooth.BluetoothAdapter",
+    "android.content.AbstractThreadedSyncAdapter",
+    "android.hardware.TriggerEventListener",
+    "android.net.wifi.aware.IdentityChangedListener",
+    "android.nfc.NfcAdapter",
+    "android.os.storage.OnObbStateChangeListener",
+    "android.print.PrintDocumentAdapter",
+    "android.speech.tts.UtteranceProgressListener",
+    "android.telephony.OnOpportunisticSubscriptionsChangedListener",
+    "android.telephony.OnSubscriptionsChangedListener",
+    "android.telephony.ims.RcsUceAdapter",
+    "android.telephony.mbms.DownloadProgressListener",
+    "android.telephony.mbms.DownloadStatusListener",
+    "android.text.method.DateKeyListener",
+    "android.text.method.DateTimeKeyListener",
+    "android.text.method.DialerKeyListener",
+    "android.text.method.DigitsKeyListener",
+    "android.text.method.MetaKeyKeyListener",
+    "android.text.method.QwertyKeyListener",
+    "android.text.method.TimeKeyListener",
+    "android.widget.ResourceCursorAdapter",
+    "android.widget.ResourceCursorTreeAdapter",
+    "android.widget.SimpleCursorAdapter",
+    "android.widget.SimpleCursorTreeAdapter",
+    "android.widget.SimpleExpandableListAdapter",
+    "android.view.OrientationEventListener",
+    "android.view.accessibility.CaptioningChangeListener"
   ],
   "ClassesToAvoid": [
     "android.R",

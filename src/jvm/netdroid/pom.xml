@@ -43,6 +43,7 @@
         <netdroidVersion>1.0.0.0</netdroidVersion>
         <jcobridgeVersion>2.5.13</jcobridgeVersion>
 		<jcobridgepath>../../../bin/net8.0/JCOBridge.jar</jcobridgepath>
+		<androidJarPath>PLACE_HOLDER</androidJarPath>
     </properties>
     <distributionManagement>
         <snapshotRepository>
@@ -134,7 +135,7 @@
                 <configuration>
                     <compilerArgs>
                         <arg>-cp</arg>
-                        <arg>${originalClassPath}${path.separator}${basedir}/${jcobridgepath}</arg>
+                        <arg>${originalClassPath}${path.separator}${basedir}/${jcobridgepath}${path.separator}${androidJarPath}</arg>
                     </compilerArgs>
                 </configuration>
             </plugin>
@@ -142,53 +143,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.11.0</version>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>3.3.0</version>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar-no-fork</goal>
-                        </goals>
-                        <configuration>
-                            <excludes>
-                                <exclude>**/target/</exclude>
-                                <exclude>**/*.xml</exclude>
-                                <exclude>**/*.zip</exclude>
-                            </excludes>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.6.0</version>
-                <configuration>
-                    <links>
-                        <link>https://www.jcobridge.com/api-java</link>
-                    </links>
-                    <quiet>true</quiet>
-                    <source>8</source>
-                    <additionalDependencies>
-                        <additionalDependency>
-                            <groupId>JCOBridge</groupId>
-                            <artifactId>JCOBridge</artifactId>
-                            <version>${jcobridgeVersion}</version>
-                        </additionalDependency>
-                    </additionalDependencies>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
