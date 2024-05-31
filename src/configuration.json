@@ -67,7 +67,9 @@
   "ClassesToAvoid": [
     "android.R",
     "android.icu.number.NumberFormatterSettings",
+    "android.icu.number.NumberRangeFormatterSettings",
     "android.icu.text.UnicodeSetIterator",
+    "android.util.Range",
     "android.util.TypedValue",
     "android.widget.ArrayAdapter",
     "java.lang.ProcessBuilder$Redirect$Type",
