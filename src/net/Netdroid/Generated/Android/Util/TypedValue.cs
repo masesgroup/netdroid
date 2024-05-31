@@ -66,10 +66,6 @@ namespace Android.Util
         /// </summary>
         public int type { get { return IGetField<int>("type"); } set { ISetField("type", value); } }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/TypedValue.html#string"/>
-        /// </summary>
-        public Java.Lang.CharSequence string { get { return IGetField<Java.Lang.CharSequence>("string"); } set { ISetField("string", value); } }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TypedValue.html#COMPLEX_MANTISSA_MASK"/>
         /// </summary>
         public static int COMPLEX_MANTISSA_MASK { get { if (!_COMPLEX_MANTISSA_MASKReady) { _COMPLEX_MANTISSA_MASKContent = SGetField<int>(LocalBridgeClazz, "COMPLEX_MANTISSA_MASK"); _COMPLEX_MANTISSA_MASKReady = true; } return _COMPLEX_MANTISSA_MASKContent; } }
