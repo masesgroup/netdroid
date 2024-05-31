@@ -1813,7 +1813,7 @@ namespace Android.Text.Style
         /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.Builder.html"/>
         /// </summary>
         /// <typeparam name="C"></typeparam>
-        public partial class Builder<C> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder<C>> where C: Android.Text.Style.TtsSpan.Builder<C>
+        public partial class Builder<C> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder<C>> where C: Android.Text.Style.TtsSpan.Builder<?>
         {
             const string _bridgeClassName = "android.text.style.TtsSpan$Builder";
             /// <summary>
@@ -2298,7 +2298,7 @@ namespace Android.Text.Style
         /// <see href="https://developer.android.com/reference/android/text/style/TtsSpan.SemioticClassBuilder.html"/>
         /// </summary>
         /// <typeparam name="C"></typeparam>
-        public partial class SemioticClassBuilder<C> : Android.Text.Style.TtsSpan.Builder<C> where C: Android.Text.Style.TtsSpan.SemioticClassBuilder<C>
+        public partial class SemioticClassBuilder<C> : Android.Text.Style.TtsSpan.Builder<C> where C: Android.Text.Style.TtsSpan.SemioticClassBuilder<?>
         {
             const string _bridgeClassName = "android.text.style.TtsSpan$SemioticClassBuilder";
             /// <summary>

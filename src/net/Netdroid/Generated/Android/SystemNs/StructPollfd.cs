@@ -23,10 +23,10 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.System
+namespace Android.SystemNs
 {
-    #region SystemCleaner
-    public partial class SystemCleaner
+    #region StructPollfd
+    public partial class StructPollfd
     {
         #region Constructors
 
@@ -37,18 +37,26 @@ namespace Android.System
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/system/StructPollfd.html#fd"/>
+        /// </summary>
+        public Java.Io.FileDescriptor fd { get { return IGetField<Java.Io.FileDescriptor>("fd"); } set { ISetField("fd", value); } }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/system/StructPollfd.html#userData"/>
+        /// </summary>
+        public object userData { get { return IGetField("userData"); } set { ISetField("userData", value); } }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/system/StructPollfd.html#events"/>
+        /// </summary>
+        public short events { get { return IGetField<short>("events"); } set { ISetField("events", value); } }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/system/StructPollfd.html#revents"/>
+        /// </summary>
+        public short revents { get { return IGetField<short>("revents"); } set { ISetField("revents", value); } }
 
         #endregion
 
         #region Static methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/system/SystemCleaner.html#cleaner()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.Ref.Cleaner"/></returns>
-        public static Java.Lang.Ref.Cleaner Cleaner()
-        {
-            return SExecuteWithSignature<Java.Lang.Ref.Cleaner>(LocalBridgeClazz, "cleaner", "()Ljava/lang/ref/Cleaner;");
-        }
 
         #endregion
 

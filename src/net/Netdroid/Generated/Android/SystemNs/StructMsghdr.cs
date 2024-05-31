@@ -23,7 +23,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.System
+namespace Android.SystemNs
 {
     #region StructMsghdr
     public partial class StructMsghdr
@@ -34,9 +34,9 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
         /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg2"><see cref="Android.System.StructCmsghdr"/></param>
+        /// <param name="arg2"><see cref="Android.SystemNs.StructCmsghdr"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        public StructMsghdr(Java.Net.SocketAddress arg0, Java.Nio.ByteBuffer[] arg1, Android.System.StructCmsghdr[] arg2, int arg3)
+        public StructMsghdr(Java.Net.SocketAddress arg0, Java.Nio.ByteBuffer[] arg1, Android.SystemNs.StructCmsghdr[] arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -51,7 +51,7 @@ namespace Android.System
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/StructMsghdr.html#msg_control"/>
         /// </summary>
-        public Android.System.StructCmsghdr[] msg_control { get { return IGetFieldArray<Android.System.StructCmsghdr>("msg_control"); } set { ISetField("msg_control", value); } }
+        public Android.SystemNs.StructCmsghdr[] msg_control { get { return IGetFieldArray<Android.SystemNs.StructCmsghdr>("msg_control"); } set { ISetField("msg_control", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/StructMsghdr.html#msg_iov"/>
         /// </summary>

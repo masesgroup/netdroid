@@ -1952,7 +1952,7 @@ namespace Android.Util
     /// <see href="https://developer.android.com/reference/android/util/Range.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class Range<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Range<T>> where T: Java.Lang.Comparable<T>
+    public partial class Range<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Range<T>> where T: Java.Lang.Comparable<? super T>
     {
         const string _bridgeClassName = "android.util.Range";
         /// <summary>

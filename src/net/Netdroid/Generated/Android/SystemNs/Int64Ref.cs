@@ -23,12 +23,20 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.System
+namespace Android.SystemNs
 {
-    #region StructPollfd
-    public partial class StructPollfd
+    #region Int64Ref
+    public partial class Int64Ref
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/system/Int64Ref.html#%3Cinit%3E(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public Int64Ref(long arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 
@@ -38,21 +46,9 @@ namespace Android.System
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/system/StructPollfd.html#fd"/>
+        /// <see href="https://developer.android.com/reference/android/system/Int64Ref.html#value"/>
         /// </summary>
-        public Java.Io.FileDescriptor fd { get { return IGetField<Java.Io.FileDescriptor>("fd"); } set { ISetField("fd", value); } }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/system/StructPollfd.html#userData"/>
-        /// </summary>
-        public object userData { get { return IGetField("userData"); } set { ISetField("userData", value); } }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/system/StructPollfd.html#events"/>
-        /// </summary>
-        public short events { get { return IGetField<short>("events"); } set { ISetField("events", value); } }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/system/StructPollfd.html#revents"/>
-        /// </summary>
-        public short revents { get { return IGetField<short>("revents"); } set { ISetField("revents", value); } }
+        public long value { get { return IGetField<long>("value"); } set { ISetField("value", value); } }
 
         #endregion
 

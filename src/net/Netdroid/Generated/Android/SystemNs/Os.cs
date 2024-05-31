@@ -23,7 +23,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.System
+namespace Android.SystemNs
 {
     #region Os
     public partial class Os
@@ -94,51 +94,51 @@ namespace Android.System
         /// <see href="https://developer.android.com/reference/android/system/Os.html#fstat(java.io.FileDescriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
-        /// <returns><see cref="Android.System.StructStat"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
-        public static Android.System.StructStat Fstat(Java.Io.FileDescriptor arg0)
+        /// <returns><see cref="Android.SystemNs.StructStat"/></returns>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
+        public static Android.SystemNs.StructStat Fstat(Java.Io.FileDescriptor arg0)
         {
-            return SExecuteWithSignature<Android.System.StructStat>(LocalBridgeClazz, "fstat", "(Ljava/io/FileDescriptor;)Landroid/system/StructStat;", arg0);
+            return SExecuteWithSignature<Android.SystemNs.StructStat>(LocalBridgeClazz, "fstat", "(Ljava/io/FileDescriptor;)Landroid/system/StructStat;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#lstat(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Android.System.StructStat"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
-        public static Android.System.StructStat Lstat(Java.Lang.String arg0)
+        /// <returns><see cref="Android.SystemNs.StructStat"/></returns>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
+        public static Android.SystemNs.StructStat Lstat(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Android.System.StructStat>(LocalBridgeClazz, "lstat", "(Ljava/lang/String;)Landroid/system/StructStat;", arg0);
+            return SExecuteWithSignature<Android.SystemNs.StructStat>(LocalBridgeClazz, "lstat", "(Ljava/lang/String;)Landroid/system/StructStat;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#stat(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Android.System.StructStat"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
-        public static Android.System.StructStat Stat(Java.Lang.String arg0)
+        /// <returns><see cref="Android.SystemNs.StructStat"/></returns>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
+        public static Android.SystemNs.StructStat Stat(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Android.System.StructStat>(LocalBridgeClazz, "stat", "(Ljava/lang/String;)Landroid/system/StructStat;", arg0);
+            return SExecuteWithSignature<Android.SystemNs.StructStat>(LocalBridgeClazz, "stat", "(Ljava/lang/String;)Landroid/system/StructStat;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#fstatvfs(java.io.FileDescriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
-        /// <returns><see cref="Android.System.StructStatVfs"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
-        public static Android.System.StructStatVfs Fstatvfs(Java.Io.FileDescriptor arg0)
+        /// <returns><see cref="Android.SystemNs.StructStatVfs"/></returns>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
+        public static Android.SystemNs.StructStatVfs Fstatvfs(Java.Io.FileDescriptor arg0)
         {
-            return SExecuteWithSignature<Android.System.StructStatVfs>(LocalBridgeClazz, "fstatvfs", "(Ljava/io/FileDescriptor;)Landroid/system/StructStatVfs;", arg0);
+            return SExecuteWithSignature<Android.SystemNs.StructStatVfs>(LocalBridgeClazz, "fstatvfs", "(Ljava/io/FileDescriptor;)Landroid/system/StructStatVfs;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#statvfs(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Android.System.StructStatVfs"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
-        public static Android.System.StructStatVfs Statvfs(Java.Lang.String arg0)
+        /// <returns><see cref="Android.SystemNs.StructStatVfs"/></returns>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
+        public static Android.SystemNs.StructStatVfs Statvfs(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Android.System.StructStatVfs>(LocalBridgeClazz, "statvfs", "(Ljava/lang/String;)Landroid/system/StructStatVfs;", arg0);
+            return SExecuteWithSignature<Android.SystemNs.StructStatVfs>(LocalBridgeClazz, "statvfs", "(Ljava/lang/String;)Landroid/system/StructStatVfs;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#getsockoptTimeval(java.io.FileDescriptor,int,int)"/>
@@ -146,19 +146,19 @@ namespace Android.System
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Android.System.StructTimeval"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
-        public static Android.System.StructTimeval GetsockoptTimeval(Java.Io.FileDescriptor arg0, int arg1, int arg2)
+        /// <returns><see cref="Android.SystemNs.StructTimeval"/></returns>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
+        public static Android.SystemNs.StructTimeval GetsockoptTimeval(Java.Io.FileDescriptor arg0, int arg1, int arg2)
         {
-            return SExecute<Android.System.StructTimeval>(LocalBridgeClazz, "getsockoptTimeval", arg0, arg1, arg2);
+            return SExecute<Android.SystemNs.StructTimeval>(LocalBridgeClazz, "getsockoptTimeval", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#uname()"/>
         /// </summary>
-        /// <returns><see cref="Android.System.StructUtsname"/></returns>
-        public static Android.System.StructUtsname Uname()
+        /// <returns><see cref="Android.SystemNs.StructUtsname"/></returns>
+        public static Android.SystemNs.StructUtsname Uname()
         {
-            return SExecuteWithSignature<Android.System.StructUtsname>(LocalBridgeClazz, "uname", "()Landroid/system/StructUtsname;");
+            return SExecuteWithSignature<Android.SystemNs.StructUtsname>(LocalBridgeClazz, "uname", "()Landroid/system/StructUtsname;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#access(java.lang.String,int)"/>
@@ -166,7 +166,7 @@ namespace Android.System
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static bool Access(Java.Lang.String arg0, int arg1)
         {
             return SExecute<bool>(LocalBridgeClazz, "access", arg0, arg1);
@@ -186,7 +186,7 @@ namespace Android.System
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="byte"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static byte[] Getxattr(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecuteArray<byte>(LocalBridgeClazz, "getxattr", arg0, arg1);
@@ -198,7 +198,7 @@ namespace Android.System
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static int FcntlInt(Java.Io.FileDescriptor arg0, int arg1, int arg2)
         {
             return SExecute<int>(LocalBridgeClazz, "fcntlInt", arg0, arg1, arg2);
@@ -215,11 +215,11 @@ namespace Android.System
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#poll(android.system.StructPollfd[],int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Android.System.StructPollfd"/></param>
+        /// <param name="arg0"><see cref="Android.SystemNs.StructPollfd"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
-        public static int Poll(Android.System.StructPollfd[] arg0, int arg1)
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
+        public static int Poll(Android.SystemNs.StructPollfd[] arg0, int arg1)
         {
             return SExecute<int>(LocalBridgeClazz, "poll", arg0, arg1);
         }
@@ -232,7 +232,7 @@ namespace Android.System
         /// <param name="arg3"><see cref="long"/></param>
         /// <param name="arg4"><see cref="long"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static int Prctl(int arg0, long arg1, long arg2, long arg3, long arg4)
         {
             return SExecute<int>(LocalBridgeClazz, "prctl", arg0, arg1, arg2, arg3, arg4);
@@ -246,7 +246,7 @@ namespace Android.System
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="long"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Pread(Java.Io.FileDescriptor arg0, byte[] arg1, int arg2, int arg3, long arg4)
         {
@@ -259,7 +259,7 @@ namespace Android.System
         /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Pread(Java.Io.FileDescriptor arg0, Java.Nio.ByteBuffer arg1, long arg2)
         {
@@ -274,7 +274,7 @@ namespace Android.System
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="long"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Pwrite(Java.Io.FileDescriptor arg0, byte[] arg1, int arg2, int arg3, long arg4)
         {
@@ -287,7 +287,7 @@ namespace Android.System
         /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Pwrite(Java.Io.FileDescriptor arg0, Java.Nio.ByteBuffer arg1, long arg2)
         {
@@ -301,7 +301,7 @@ namespace Android.System
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Read(Java.Io.FileDescriptor arg0, byte[] arg1, int arg2, int arg3)
         {
@@ -313,7 +313,7 @@ namespace Android.System
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Read(Java.Io.FileDescriptor arg0, Java.Nio.ByteBuffer arg1)
         {
@@ -327,7 +327,7 @@ namespace Android.System
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Readv(Java.Io.FileDescriptor arg0, object[] arg1, int[] arg2, int[] arg3)
         {
@@ -343,7 +343,7 @@ namespace Android.System
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Java.Net.InetSocketAddress"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Net.SocketException"/>
         public static int Recvfrom(Java.Io.FileDescriptor arg0, byte[] arg1, int arg2, int arg3, int arg4, Java.Net.InetSocketAddress arg5)
         {
@@ -357,7 +357,7 @@ namespace Android.System
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Net.InetSocketAddress"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Net.SocketException"/>
         public static int Recvfrom(Java.Io.FileDescriptor arg0, Java.Nio.ByteBuffer arg1, int arg2, Java.Net.InetSocketAddress arg3)
         {
@@ -367,12 +367,12 @@ namespace Android.System
         /// <see href="https://developer.android.com/reference/android/system/Os.html#recvmsg(java.io.FileDescriptor,android.system.StructMsghdr,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
-        /// <param name="arg1"><see cref="Android.System.StructMsghdr"/></param>
+        /// <param name="arg1"><see cref="Android.SystemNs.StructMsghdr"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Net.SocketException"/>
-        public static int Recvmsg(Java.Io.FileDescriptor arg0, Android.System.StructMsghdr arg1, int arg2)
+        public static int Recvmsg(Java.Io.FileDescriptor arg0, Android.SystemNs.StructMsghdr arg1, int arg2)
         {
             return SExecute<int>(LocalBridgeClazz, "recvmsg", arg0, arg1, arg2);
         }
@@ -380,12 +380,12 @@ namespace Android.System
         /// <see href="https://developer.android.com/reference/android/system/Os.html#sendmsg(java.io.FileDescriptor,android.system.StructMsghdr,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
-        /// <param name="arg1"><see cref="Android.System.StructMsghdr"/></param>
+        /// <param name="arg1"><see cref="Android.SystemNs.StructMsghdr"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Net.SocketException"/>
-        public static int Sendmsg(Java.Io.FileDescriptor arg0, Android.System.StructMsghdr arg1, int arg2)
+        public static int Sendmsg(Java.Io.FileDescriptor arg0, Android.SystemNs.StructMsghdr arg1, int arg2)
         {
             return SExecute<int>(LocalBridgeClazz, "sendmsg", arg0, arg1, arg2);
         }
@@ -400,7 +400,7 @@ namespace Android.System
         /// <param name="arg5"><see cref="Java.Net.InetAddress"/></param>
         /// <param name="arg6"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Net.SocketException"/>
         public static int Sendto(Java.Io.FileDescriptor arg0, byte[] arg1, int arg2, int arg3, int arg4, Java.Net.InetAddress arg5, int arg6)
         {
@@ -416,7 +416,7 @@ namespace Android.System
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Java.Net.SocketAddress"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Net.SocketException"/>
         public static int Sendto(Java.Io.FileDescriptor arg0, byte[] arg1, int arg2, int arg3, int arg4, Java.Net.SocketAddress arg5)
         {
@@ -431,7 +431,7 @@ namespace Android.System
         /// <param name="arg3"><see cref="Java.Net.InetAddress"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Net.SocketException"/>
         public static int Sendto(Java.Io.FileDescriptor arg0, Java.Nio.ByteBuffer arg1, int arg2, Java.Net.InetAddress arg3, int arg4)
         {
@@ -441,7 +441,7 @@ namespace Android.System
         /// <see href="https://developer.android.com/reference/android/system/Os.html#setsid()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static int Setsid()
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "setsid", "()I");
@@ -463,7 +463,7 @@ namespace Android.System
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Write(Java.Io.FileDescriptor arg0, byte[] arg1, int arg2, int arg3)
         {
@@ -475,7 +475,7 @@ namespace Android.System
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Write(Java.Io.FileDescriptor arg0, Java.Nio.ByteBuffer arg1)
         {
@@ -489,7 +489,7 @@ namespace Android.System
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Io.InterruptedIOException"/>
         public static int Writev(Java.Io.FileDescriptor arg0, object[] arg1, int[] arg2, int[] arg3)
         {
@@ -501,7 +501,7 @@ namespace Android.System
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="Java.Net.InetSocketAddress"/></param>
         /// <returns><see cref="Java.Io.FileDescriptor"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Net.SocketException"/>
         public static Java.Io.FileDescriptor Accept(Java.Io.FileDescriptor arg0, Java.Net.InetSocketAddress arg1)
         {
@@ -512,7 +512,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <returns><see cref="Java.Io.FileDescriptor"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static Java.Io.FileDescriptor Dup(Java.Io.FileDescriptor arg0)
         {
             return SExecuteWithSignature<Java.Io.FileDescriptor>(LocalBridgeClazz, "dup", "(Ljava/io/FileDescriptor;)Ljava/io/FileDescriptor;", arg0);
@@ -523,7 +523,7 @@ namespace Android.System
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Io.FileDescriptor"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static Java.Io.FileDescriptor Dup2(Java.Io.FileDescriptor arg0, int arg1)
         {
             return SExecute<Java.Io.FileDescriptor>(LocalBridgeClazz, "dup2", arg0, arg1);
@@ -534,7 +534,7 @@ namespace Android.System
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Io.FileDescriptor"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static Java.Io.FileDescriptor Memfd_create(Java.Lang.String arg0, int arg1)
         {
             return SExecute<Java.Io.FileDescriptor>(LocalBridgeClazz, "memfd_create", arg0, arg1);
@@ -546,7 +546,7 @@ namespace Android.System
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Io.FileDescriptor"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static Java.Io.FileDescriptor Open(Java.Lang.String arg0, int arg1, int arg2)
         {
             return SExecute<Java.Io.FileDescriptor>(LocalBridgeClazz, "open", arg0, arg1, arg2);
@@ -558,7 +558,7 @@ namespace Android.System
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Io.FileDescriptor"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static Java.Io.FileDescriptor Socket(int arg0, int arg1, int arg2)
         {
             return SExecute<Java.Io.FileDescriptor>(LocalBridgeClazz, "socket", arg0, arg1, arg2);
@@ -567,7 +567,7 @@ namespace Android.System
         /// <see href="https://developer.android.com/reference/android/system/Os.html#pipe()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.FileDescriptor"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static Java.Io.FileDescriptor[] Pipe()
         {
             return SExecuteWithSignatureArray<Java.Io.FileDescriptor>(LocalBridgeClazz, "pipe", "()[Ljava/io/FileDescriptor;");
@@ -604,7 +604,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static Java.Lang.String Readlink(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "readlink", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -640,7 +640,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static Java.Lang.String[] Listxattr(Java.Lang.String arg0)
         {
             return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "listxattr", "(Ljava/lang/String;)[Ljava/lang/String;", arg0);
@@ -660,7 +660,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <returns><see cref="Java.Net.SocketAddress"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static Java.Net.SocketAddress Getpeername(Java.Io.FileDescriptor arg0)
         {
             return SExecuteWithSignature<Java.Net.SocketAddress>(LocalBridgeClazz, "getpeername", "(Ljava/io/FileDescriptor;)Ljava/net/SocketAddress;", arg0);
@@ -670,7 +670,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <returns><see cref="Java.Net.SocketAddress"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static Java.Net.SocketAddress Getsockname(Java.Io.FileDescriptor arg0)
         {
             return SExecuteWithSignature<Java.Net.SocketAddress>(LocalBridgeClazz, "getsockname", "(Ljava/io/FileDescriptor;)Ljava/net/SocketAddress;", arg0);
@@ -682,7 +682,7 @@ namespace Android.System
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="long"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static long Lseek(Java.Io.FileDescriptor arg0, long arg1, int arg2)
         {
             return SExecute<long>(LocalBridgeClazz, "lseek", arg0, arg1, arg2);
@@ -697,7 +697,7 @@ namespace Android.System
         /// <param name="arg4"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg5"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static long Mmap(long arg0, long arg1, int arg2, int arg3, Java.Io.FileDescriptor arg4, long arg5)
         {
             return SExecute<long>(LocalBridgeClazz, "mmap", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -707,11 +707,11 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="Java.Io.FileDescriptor"/></param>
-        /// <param name="arg2"><see cref="Android.System.Int64Ref"/></param>
+        /// <param name="arg2"><see cref="Android.SystemNs.Int64Ref"/></param>
         /// <param name="arg3"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
-        /// <exception cref="Android.System.ErrnoException"/>
-        public static long Sendfile(Java.Io.FileDescriptor arg0, Java.Io.FileDescriptor arg1, Android.System.Int64Ref arg2, long arg3)
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
+        public static long Sendfile(Java.Io.FileDescriptor arg0, Java.Io.FileDescriptor arg1, Android.SystemNs.Int64Ref arg2, long arg3)
         {
             return SExecute<long>(LocalBridgeClazz, "sendfile", arg0, arg1, arg2, arg3);
         }
@@ -730,7 +730,7 @@ namespace Android.System
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="Java.Net.InetAddress"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Net.SocketException"/>
         public static void Bind(Java.Io.FileDescriptor arg0, Java.Net.InetAddress arg1, int arg2)
         {
@@ -741,7 +741,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="Java.Net.SocketAddress"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Net.SocketException"/>
         public static void Bind(Java.Io.FileDescriptor arg0, Java.Net.SocketAddress arg1)
         {
@@ -752,7 +752,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Chmod(Java.Lang.String arg0, int arg1)
         {
             SExecute(LocalBridgeClazz, "chmod", arg0, arg1);
@@ -763,7 +763,7 @@ namespace Android.System
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Chown(Java.Lang.String arg0, int arg1, int arg2)
         {
             SExecute(LocalBridgeClazz, "chown", arg0, arg1, arg2);
@@ -772,7 +772,7 @@ namespace Android.System
         /// <see href="https://developer.android.com/reference/android/system/Os.html#close(java.io.FileDescriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Close(Java.Io.FileDescriptor arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "close", "(Ljava/io/FileDescriptor;)V", arg0);
@@ -783,7 +783,7 @@ namespace Android.System
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="Java.Net.InetAddress"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Net.SocketException"/>
         public static void Connect(Java.Io.FileDescriptor arg0, Java.Net.InetAddress arg1, int arg2)
         {
@@ -794,7 +794,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="Java.Net.SocketAddress"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         /// <exception cref="Java.Net.SocketException"/>
         public static void Connect(Java.Io.FileDescriptor arg0, Java.Net.SocketAddress arg1)
         {
@@ -805,7 +805,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Execv(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
             SExecute(LocalBridgeClazz, "execv", arg0, arg1);
@@ -816,7 +816,7 @@ namespace Android.System
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Execve(Java.Lang.String arg0, Java.Lang.String[] arg1, Java.Lang.String[] arg2)
         {
             SExecute(LocalBridgeClazz, "execve", arg0, arg1, arg2);
@@ -826,7 +826,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Fchmod(Java.Io.FileDescriptor arg0, int arg1)
         {
             SExecute(LocalBridgeClazz, "fchmod", arg0, arg1);
@@ -837,7 +837,7 @@ namespace Android.System
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Fchown(Java.Io.FileDescriptor arg0, int arg1, int arg2)
         {
             SExecute(LocalBridgeClazz, "fchown", arg0, arg1, arg2);
@@ -846,7 +846,7 @@ namespace Android.System
         /// <see href="https://developer.android.com/reference/android/system/Os.html#fdatasync(java.io.FileDescriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Fdatasync(Java.Io.FileDescriptor arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "fdatasync", "(Ljava/io/FileDescriptor;)V", arg0);
@@ -855,7 +855,7 @@ namespace Android.System
         /// <see href="https://developer.android.com/reference/android/system/Os.html#fsync(java.io.FileDescriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Fsync(Java.Io.FileDescriptor arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "fsync", "(Ljava/io/FileDescriptor;)V", arg0);
@@ -865,7 +865,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Ftruncate(Java.Io.FileDescriptor arg0, long arg1)
         {
             SExecute(LocalBridgeClazz, "ftruncate", arg0, arg1);
@@ -875,7 +875,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Kill(int arg0, int arg1)
         {
             SExecute(LocalBridgeClazz, "kill", arg0, arg1);
@@ -886,7 +886,7 @@ namespace Android.System
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Lchown(Java.Lang.String arg0, int arg1, int arg2)
         {
             SExecute(LocalBridgeClazz, "lchown", arg0, arg1, arg2);
@@ -896,7 +896,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Link(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             SExecute(LocalBridgeClazz, "link", arg0, arg1);
@@ -906,7 +906,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Listen(Java.Io.FileDescriptor arg0, int arg1)
         {
             SExecute(LocalBridgeClazz, "listen", arg0, arg1);
@@ -917,7 +917,7 @@ namespace Android.System
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="byte"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Mincore(long arg0, long arg1, byte[] arg2)
         {
             SExecute(LocalBridgeClazz, "mincore", arg0, arg1, arg2);
@@ -927,7 +927,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Mkdir(Java.Lang.String arg0, int arg1)
         {
             SExecute(LocalBridgeClazz, "mkdir", arg0, arg1);
@@ -937,7 +937,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Mkfifo(Java.Lang.String arg0, int arg1)
         {
             SExecute(LocalBridgeClazz, "mkfifo", arg0, arg1);
@@ -947,7 +947,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Mlock(long arg0, long arg1)
         {
             SExecute(LocalBridgeClazz, "mlock", arg0, arg1);
@@ -958,7 +958,7 @@ namespace Android.System
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Msync(long arg0, long arg1, int arg2)
         {
             SExecute(LocalBridgeClazz, "msync", arg0, arg1, arg2);
@@ -968,7 +968,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Munlock(long arg0, long arg1)
         {
             SExecute(LocalBridgeClazz, "munlock", arg0, arg1);
@@ -978,7 +978,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Munmap(long arg0, long arg1)
         {
             SExecute(LocalBridgeClazz, "munmap", arg0, arg1);
@@ -989,7 +989,7 @@ namespace Android.System
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="long"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Posix_fallocate(Java.Io.FileDescriptor arg0, long arg1, long arg2)
         {
             SExecute(LocalBridgeClazz, "posix_fallocate", arg0, arg1, arg2);
@@ -998,7 +998,7 @@ namespace Android.System
         /// <see href="https://developer.android.com/reference/android/system/Os.html#remove(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Remove(Java.Lang.String arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "remove", "(Ljava/lang/String;)V", arg0);
@@ -1008,7 +1008,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Removexattr(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             SExecute(LocalBridgeClazz, "removexattr", arg0, arg1);
@@ -1018,7 +1018,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Rename(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             SExecute(LocalBridgeClazz, "rename", arg0, arg1);
@@ -1029,7 +1029,7 @@ namespace Android.System
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Setenv(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2)
         {
             SExecute(LocalBridgeClazz, "setenv", arg0, arg1, arg2);
@@ -1041,7 +1041,7 @@ namespace Android.System
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void SetsockoptInt(Java.Io.FileDescriptor arg0, int arg1, int arg2, int arg3)
         {
             SExecute(LocalBridgeClazz, "setsockoptInt", arg0, arg1, arg2, arg3);
@@ -1052,9 +1052,9 @@ namespace Android.System
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Android.System.StructTimeval"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
-        public static void SetsockoptTimeval(Java.Io.FileDescriptor arg0, int arg1, int arg2, Android.System.StructTimeval arg3)
+        /// <param name="arg3"><see cref="Android.SystemNs.StructTimeval"/></param>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
+        public static void SetsockoptTimeval(Java.Io.FileDescriptor arg0, int arg1, int arg2, Android.SystemNs.StructTimeval arg3)
         {
             SExecute(LocalBridgeClazz, "setsockoptTimeval", arg0, arg1, arg2, arg3);
         }
@@ -1065,7 +1065,7 @@ namespace Android.System
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="byte"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Setxattr(Java.Lang.String arg0, Java.Lang.String arg1, byte[] arg2, int arg3)
         {
             SExecute(LocalBridgeClazz, "setxattr", arg0, arg1, arg2, arg3);
@@ -1075,7 +1075,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Shutdown(Java.Io.FileDescriptor arg0, int arg1)
         {
             SExecute(LocalBridgeClazz, "shutdown", arg0, arg1);
@@ -1088,7 +1088,7 @@ namespace Android.System
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg4"><see cref="Java.Io.FileDescriptor"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Socketpair(int arg0, int arg1, int arg2, Java.Io.FileDescriptor arg3, Java.Io.FileDescriptor arg4)
         {
             SExecute(LocalBridgeClazz, "socketpair", arg0, arg1, arg2, arg3, arg4);
@@ -1098,7 +1098,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Symlink(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             SExecute(LocalBridgeClazz, "symlink", arg0, arg1);
@@ -1107,7 +1107,7 @@ namespace Android.System
         /// <see href="https://developer.android.com/reference/android/system/Os.html#tcdrain(java.io.FileDescriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Tcdrain(Java.Io.FileDescriptor arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "tcdrain", "(Ljava/io/FileDescriptor;)V", arg0);
@@ -1117,7 +1117,7 @@ namespace Android.System
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Tcsendbreak(Java.Io.FileDescriptor arg0, int arg1)
         {
             SExecute(LocalBridgeClazz, "tcsendbreak", arg0, arg1);
@@ -1126,7 +1126,7 @@ namespace Android.System
         /// <see href="https://developer.android.com/reference/android/system/Os.html#unsetenv(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <exception cref="Android.System.ErrnoException"/>
+        /// <exception cref="Android.SystemNs.ErrnoException"/>
         public static void Unsetenv(Java.Lang.String arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "unsetenv", "(Ljava/lang/String;)V", arg0);
