@@ -43,7 +43,7 @@
         <netdroidVersion>1.0.0.0</netdroidVersion>
         <jcobridgeVersion>2.5.13</jcobridgeVersion>
 		<jcobridgepath>../../../bin/net8.0/JCOBridge.jar</jcobridgepath>
-		<androidJarPath>PLACE_HOLDER</androidJarPath>
+		<androidJarPath>${env.ANDROID_HOME}/platforms/android-34-ext8/android.jar</androidJarPath>
     </properties>
     <distributionManagement>
         <snapshotRepository>

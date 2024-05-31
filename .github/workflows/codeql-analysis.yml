@@ -119,7 +119,7 @@ jobs:
         GITHUB_SIMPLIFIED_GENERATION: true
           
     - if: matrix.language == 'java' 
-      run: mvn -DandroidJarPath=$ANDROID_HOME/platforms/android-34-ext8/android.jar --file ./src/jvm/netdroid/pom.xml --no-transfer-progress package
+      run: mvn --file ./src/jvm/netdroid/pom.xml --no-transfer-progress package
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
