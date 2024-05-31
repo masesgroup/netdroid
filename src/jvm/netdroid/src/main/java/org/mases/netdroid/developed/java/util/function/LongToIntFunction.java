@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.LongToIntFunction;
-
 /**
  * The {@link LongToIntFunction} class represents a generic implementation of
- * {@link LongToIntFunction}
+ * {@link java.util.function.LongToIntFunction}
  */
-public final class LongToIntFunction extends JCListener implements LongToIntFunction {
+public final class LongToIntFunction extends JCListener implements java.util.function.LongToIntFunction {
     public LongToIntFunction(String key) throws JCNativeException {
         super(key);
     }

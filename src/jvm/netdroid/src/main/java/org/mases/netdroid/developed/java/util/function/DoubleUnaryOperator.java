@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.DoubleUnaryOperator;
-
 /**
  * The {@link DoubleUnaryOperator} class represents a generic implementation of
- * {@link DoubleUnaryOperator}
+ * {@link java.util.function.DoubleUnaryOperator}
  */
-public final class DoubleUnaryOperator extends JCListener implements DoubleUnaryOperator {
+public final class DoubleUnaryOperator extends JCListener implements java.util.function.DoubleUnaryOperator {
     public DoubleUnaryOperator(String key) throws JCNativeException {
         super(key);
     }

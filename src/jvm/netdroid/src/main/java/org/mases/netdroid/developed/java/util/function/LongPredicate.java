@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.LongPredicate;
-
 /**
  * The {@link LongPredicate} class represents a generic implementation of
- * {@link LongPredicate}
+ * {@link java.util.function.LongPredicate}
  */
-public final class LongPredicate extends JCListener implements LongPredicate {
+public final class LongPredicate extends JCListener implements java.util.function.LongPredicate {
     public LongPredicate(String key) throws JCNativeException {
         super(key);
     }

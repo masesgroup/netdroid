@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.DoubleToIntFunction;
-
 /**
  * The {@link DoubleToIntFunction} class represents a generic implementation of
- * {@link DoubleToIntFunction}
+ * {@link java.util.function.DoubleToIntFunction}
  */
-public final class DoubleToIntFunction extends JCListener implements DoubleToIntFunction {
+public final class DoubleToIntFunction extends JCListener implements java.util.function.DoubleToIntFunction {
     public DoubleToIntFunction(String key) throws JCNativeException {
         super(key);
     }

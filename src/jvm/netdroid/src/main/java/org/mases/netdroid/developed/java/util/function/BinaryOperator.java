@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.BinaryOperator;
-
 /**
  * The {@link BinaryOperator} class represents a generic implementation of
- * {@link BinaryOperator}
+ * {@link java.util.function.BinaryOperator}
  */
-public final class BinaryOperator extends JCListener implements BinaryOperator {
+public final class BinaryOperator extends JCListener implements java.util.function.BinaryOperator {
     public BinaryOperator(String key) throws JCNativeException {
         super(key);
     }

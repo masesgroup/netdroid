@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.ToLongFunction;
-
 /**
  * The {@link ToLongFunction} class represents a generic implementation of
- * {@link ToLongFunction}
+ * {@link java.util.function.ToLongFunction}
  */
-public final class ToLongFunction extends JCListener implements ToLongFunction {
+public final class ToLongFunction extends JCListener implements java.util.function.ToLongFunction {
     public ToLongFunction(String key) throws JCNativeException {
         super(key);
     }

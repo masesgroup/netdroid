@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.DoubleSupplier;
-
 /**
  * The {@link DoubleSupplier} class represents a generic implementation of
- * {@link DoubleSupplier}
+ * {@link java.util.function.DoubleSupplier}
  */
-public final class DoubleSupplier extends JCListener implements DoubleSupplier {
+public final class DoubleSupplier extends JCListener implements java.util.function.DoubleSupplier {
     public DoubleSupplier(String key) throws JCNativeException {
         super(key);
     }

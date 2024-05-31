@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.IntBinaryOperator;
-
 /**
  * The {@link IntBinaryOperator} class represents a generic implementation of
- * {@link IntBinaryOperator}
+ * {@link java.util.function.IntBinaryOperator}
  */
-public final class IntBinaryOperator extends JCListener implements IntBinaryOperator {
+public final class IntBinaryOperator extends JCListener implements java.util.function.IntBinaryOperator {
     public IntBinaryOperator(String key) throws JCNativeException {
         super(key);
     }

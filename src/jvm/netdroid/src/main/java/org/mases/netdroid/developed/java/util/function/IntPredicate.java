@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.IntPredicate;
-
 /**
  * The {@link IntPredicate} class represents a generic implementation of
- * {@link IntPredicate}
+ * {@link java.util.function.IntPredicate}
  */
-public final class IntPredicate extends JCListener implements IntPredicate {
+public final class IntPredicate extends JCListener implements java.util.function.IntPredicate {
     public IntPredicate(String key) throws JCNativeException {
         super(key);
     }

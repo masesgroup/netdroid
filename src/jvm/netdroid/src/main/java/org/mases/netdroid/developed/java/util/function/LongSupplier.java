@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.LongSupplier;
-
 /**
  * The {@link LongSupplier} class represents a generic implementation of
- * {@link LongSupplier}
+ * {@link java.util.function.LongSupplier}
  */
-public final class LongSupplier extends JCListener implements LongSupplier {
+public final class LongSupplier extends JCListener implements java.util.function.LongSupplier {
     public LongSupplier(String key) throws JCNativeException {
         super(key);
     }

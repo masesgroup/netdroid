@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.DoubleBinaryOperator;
-
 /**
  * The {@link DoubleBinaryOperator} class represents a generic implementation of
- * {@link DoubleBinaryOperator}
+ * {@link java.util.function.DoubleBinaryOperator}
  */
-public final class DoubleBinaryOperator extends JCListener implements DoubleBinaryOperator {
+public final class DoubleBinaryOperator extends JCListener implements java.util.function.DoubleBinaryOperator {
     public DoubleBinaryOperator(String key) throws JCNativeException {
         super(key);
     }

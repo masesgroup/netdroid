@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.ToIntFunction;
-
 /**
  * The {@link ToIntFunction} class represents a generic implementation of
- * {@link ToIntFunction}
+ * {@link java.util.function.ToIntFunction}
  */
-public final class ToIntFunction extends JCListener implements ToIntFunction {
+public final class ToIntFunction extends JCListener implements java.util.function.ToIntFunction {
     public ToIntFunction(String key) throws JCNativeException {
         super(key);
     }

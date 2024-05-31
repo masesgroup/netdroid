@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.ToDoubleBiFunction;
-
 /**
  * The {@link ToDoubleBiFunction} class represents a generic implementation of
- * {@link ToDoubleBiFunction}
+ * {@link java.util.function.ToDoubleBiFunction}
  */
-public final class ToDoubleBiFunction extends JCListener implements ToDoubleBiFunction {
+public final class ToDoubleBiFunction extends JCListener implements java.util.function.ToDoubleBiFunction {
     public ToDoubleBiFunction(String key) throws JCNativeException {
         super(key);
     }

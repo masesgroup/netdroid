@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.DoubleFunction;
-
 /**
  * The {@link DoubleFunction} class represents a generic implementation of
- * {@link DoubleFunction}
+ * {@link java.util.function.DoubleFunction}
  */
-public final class DoubleFunction extends JCListener implements DoubleFunction {
+public final class DoubleFunction extends JCListener implements java.util.function.DoubleFunction {
     public DoubleFunction(String key) throws JCNativeException {
         super(key);
     }

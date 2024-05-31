@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.BooleanSupplier;
-
 /**
  * The {@link BooleanSupplier} class represents a generic implementation of
- * {@link BooleanSupplier}
+ * {@link java.util.function.BooleanSupplier}
  */
-public final class BooleanSupplier extends JCListener implements BooleanSupplier {
+public final class BooleanSupplier extends JCListener implements java.util.function.BooleanSupplier {
     public BooleanSupplier(String key) throws JCNativeException {
         super(key);
     }

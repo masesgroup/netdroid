@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.Consumer;
-
 /**
  * The {@link Consumer} class represents a generic implementation of
- * {@link Consumer}
+ * {@link java.util.function.Consumer}
  */
-public final class Consumer extends JCListener implements Consumer {
+public final class Consumer extends JCListener implements java.util.function.Consumer {
     public Consumer(String key) throws JCNativeException {
         super(key);
     }

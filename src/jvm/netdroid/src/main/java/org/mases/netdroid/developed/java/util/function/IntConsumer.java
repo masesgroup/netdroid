@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.IntConsumer;
-
 /**
  * The {@link IntConsumer} class represents a generic implementation of
- * {@link IntConsumer}
+ * {@link java.util.function.IntConsumer}
  */
-public final class IntConsumer extends JCListener implements IntConsumer {
+public final class IntConsumer extends JCListener implements java.util.function.IntConsumer {
     public IntConsumer(String key) throws JCNativeException {
         super(key);
     }

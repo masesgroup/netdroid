@@ -16,17 +16,15 @@
  *  Refer to LICENSE for more information.
  */
 
-package org.mases.netdroid.development.java.util.function;
+package org.mases.netdroid.developed.java.util.function;
 
 import org.mases.jcobridge.*;
 
-import java.util.function.Function;
-
 /**
  * The {@link Function} class represents a generic implementation of
- * {@link Function}
+ * {@link java.util.function.Function}
  */
-public final class Function extends JCListener implements Function {
+public final class Function extends JCListener implements java.util.function.Function {
     public Function(String key) throws JCNativeException {
         super(key);
     }
