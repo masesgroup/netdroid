@@ -23,21 +23,12 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.System
+namespace Android.SystemNs
 {
-    #region VmSocketAddress
-    public partial class VmSocketAddress
+    #region SystemCleaner
+    public partial class SystemCleaner
     {
         #region Constructors
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/system/VmSocketAddress.html#%3Cinit%3E(int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        public VmSocketAddress(int arg0, int arg1)
-            : base(arg0, arg1)
-        {
-        }
 
         #endregion
 
@@ -50,24 +41,18 @@ namespace Android.System
         #endregion
 
         #region Static methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/system/SystemCleaner.html#cleaner()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Ref.Cleaner"/></returns>
+        public static Java.Lang.Ref.Cleaner Cleaner()
+        {
+            return SExecuteWithSignature<Java.Lang.Ref.Cleaner>(LocalBridgeClazz, "cleaner", "()Ljava/lang/ref/Cleaner;");
+        }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/system/VmSocketAddress.html#getSvmCid()"/> 
-        /// </summary>
-        public int SvmCid
-        {
-            get { return IExecuteWithSignature<int>("getSvmCid", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/system/VmSocketAddress.html#getSvmPort()"/> 
-        /// </summary>
-        public int SvmPort
-        {
-            get { return IExecuteWithSignature<int>("getSvmPort", "()I"); }
-        }
 
         #endregion
 

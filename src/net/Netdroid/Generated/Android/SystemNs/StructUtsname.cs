@@ -23,7 +23,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.System
+namespace Android.SystemNs
 {
     #region StructUtsname
     public partial class StructUtsname

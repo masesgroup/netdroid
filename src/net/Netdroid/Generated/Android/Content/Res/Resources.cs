@@ -316,17 +316,6 @@ namespace Android.Content.Res
             return IExecuteWithSignatureArray<int>("getIntArray", "(I)[I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#openRawResource(int,android.util.TypedValue)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Android.Util.TypedValue"/></param>
-        /// <returns><see cref="Java.Io.InputStream"/></returns>
-        /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
-        public Java.Io.InputStream OpenRawResource(int arg0, Android.Util.TypedValue arg1)
-        {
-            return IExecute<Java.Io.InputStream>("openRawResource", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#openRawResource(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -480,40 +469,6 @@ namespace Android.Content.Res
             if (arg0.Length == 0) IExecuteWithSignature("addLoaders", "([Landroid/content/res/loader/ResourcesLoader;)V"); else IExecuteWithSignature("addLoaders", "([Landroid/content/res/loader/ResourcesLoader;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getValue(int,android.util.TypedValue,boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Android.Util.TypedValue"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
-        public void GetValue(int arg0, Android.Util.TypedValue arg1, bool arg2)
-        {
-            IExecute("getValue", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getValue(java.lang.String,android.util.TypedValue,boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Android.Util.TypedValue"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
-        public void GetValue(Java.Lang.String arg0, Android.Util.TypedValue arg1, bool arg2)
-        {
-            IExecute("getValue", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getValueForDensity(int,int,android.util.TypedValue,boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Android.Util.TypedValue"/></param>
-        /// <param name="arg3"><see cref="bool"/></param>
-        /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
-        public void GetValueForDensity(int arg0, int arg1, Android.Util.TypedValue arg2, bool arg3)
-        {
-            IExecute("getValueForDensity", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#parseBundleExtra(java.lang.String,android.util.AttributeSet,android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -653,17 +608,6 @@ namespace Android.Content.Res
             public Android.Graphics.Drawable.Drawable GetDrawable(int arg0)
             {
                 return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "(I)Landroid/graphics/drawable/Drawable;", arg0);
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/res/Resources.Theme.html#resolveAttribute(int,android.util.TypedValue,boolean)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="Android.Util.TypedValue"/></param>
-            /// <param name="arg2"><see cref="bool"/></param>
-            /// <returns><see cref="bool"/></returns>
-            public bool ResolveAttribute(int arg0, Android.Util.TypedValue arg1, bool arg2)
-            {
-                return IExecute<bool>("resolveAttribute", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/res/Resources.Theme.html#getExplicitStyle(android.util.AttributeSet)"/>

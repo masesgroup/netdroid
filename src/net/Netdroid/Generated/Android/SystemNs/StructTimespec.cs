@@ -23,7 +23,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.System
+namespace Android.SystemNs
 {
     #region StructTimespec
     public partial class StructTimespec
@@ -69,9 +69,9 @@ namespace Android.System
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/StructTimespec.html#compareTo(android.system.StructTimespec)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Android.System.StructTimespec"/></param>
+        /// <param name="arg0"><see cref="Android.SystemNs.StructTimespec"/></param>
         /// <returns><see cref="int"/></returns>
-        public int CompareTo(Android.System.StructTimespec arg0)
+        public int CompareTo(Android.SystemNs.StructTimespec arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Landroid/system/StructTimespec;)I", arg0);
         }

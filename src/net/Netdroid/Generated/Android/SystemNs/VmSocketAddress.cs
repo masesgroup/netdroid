@@ -23,18 +23,19 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Android.System
+namespace Android.SystemNs
 {
-    #region Int64Ref
-    public partial class Int64Ref
+    #region VmSocketAddress
+    public partial class VmSocketAddress
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/system/Int64Ref.html#%3Cinit%3E(long)"/>
+        /// <see href="https://developer.android.com/reference/android/system/VmSocketAddress.html#%3Cinit%3E(int,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        public Int64Ref(long arg0)
-            : base(arg0)
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public VmSocketAddress(int arg0, int arg1)
+            : base(arg0, arg1)
         {
         }
 
@@ -45,10 +46,6 @@ namespace Android.System
         #endregion
 
         #region Fields
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/system/Int64Ref.html#value"/>
-        /// </summary>
-        public long value { get { return IGetField<long>("value"); } set { ISetField("value", value); } }
 
         #endregion
 
@@ -57,6 +54,20 @@ namespace Android.System
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/system/VmSocketAddress.html#getSvmCid()"/> 
+        /// </summary>
+        public int SvmCid
+        {
+            get { return IExecuteWithSignature<int>("getSvmCid", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/system/VmSocketAddress.html#getSvmPort()"/> 
+        /// </summary>
+        public int SvmPort
+        {
+            get { return IExecuteWithSignature<int>("getSvmPort", "()I"); }
+        }
 
         #endregion
 
