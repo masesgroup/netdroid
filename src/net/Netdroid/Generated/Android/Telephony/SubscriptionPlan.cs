@@ -151,14 +151,6 @@ namespace Android.Telephony
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#cycleIterator()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Android.Util.Range<Java.Time.ZonedDateTime>> CycleIterator()
-        {
-            return IExecuteWithSignature<Java.Util.Iterator<Android.Util.Range<Java.Time.ZonedDateTime>>>("cycleIterator", "()Ljava/util/Iterator;");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#writeToParcel(android.os.Parcel,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>

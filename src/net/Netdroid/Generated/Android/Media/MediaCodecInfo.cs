@@ -140,20 +140,6 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.AudioCapabilities.html#getBitrateRange()"/> 
-            /// </summary>
-            public Android.Util.Range<Java.Lang.Integer> BitrateRange
-            {
-                get { return IExecuteWithSignature<Android.Util.Range<Java.Lang.Integer>>("getBitrateRange", "()Landroid/util/Range;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.AudioCapabilities.html#getInputChannelCountRanges()"/> 
-            /// </summary>
-            public Android.Util.Range<Java.Lang.Integer>[] InputChannelCountRanges
-            {
-                get { return IExecuteWithSignatureArray<Android.Util.Range<Java.Lang.Integer>>("getInputChannelCountRanges", "()[Landroid/util/Range;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.AudioCapabilities.html#getMaxInputChannelCount()"/> 
             /// </summary>
             public int MaxInputChannelCount
@@ -166,13 +152,6 @@ namespace Android.Media
             public int MinInputChannelCount
             {
                 get { return IExecuteWithSignature<int>("getMinInputChannelCount", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.AudioCapabilities.html#getSupportedSampleRateRanges()"/> 
-            /// </summary>
-            public Android.Util.Range<Java.Lang.Integer>[] SupportedSampleRateRanges
-            {
-                get { return IExecuteWithSignatureArray<Android.Util.Range<Java.Lang.Integer>>("getSupportedSampleRateRanges", "()[Landroid/util/Range;"); }
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.AudioCapabilities.html#getSupportedSampleRates()"/> 
@@ -1892,20 +1871,6 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.EncoderCapabilities.html#getComplexityRange()"/> 
-            /// </summary>
-            public Android.Util.Range<Java.Lang.Integer> ComplexityRange
-            {
-                get { return IExecuteWithSignature<Android.Util.Range<Java.Lang.Integer>>("getComplexityRange", "()Landroid/util/Range;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.EncoderCapabilities.html#getQualityRange()"/> 
-            /// </summary>
-            public Android.Util.Range<Java.Lang.Integer> QualityRange
-            {
-                get { return IExecuteWithSignature<Android.Util.Range<Java.Lang.Integer>>("getQualityRange", "()Landroid/util/Range;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.EncoderCapabilities.html#isBitrateModeSupported(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -1946,32 +1911,11 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#getBitrateRange()"/> 
-            /// </summary>
-            public Android.Util.Range<Java.Lang.Integer> BitrateRange
-            {
-                get { return IExecuteWithSignature<Android.Util.Range<Java.Lang.Integer>>("getBitrateRange", "()Landroid/util/Range;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#getHeightAlignment()"/> 
             /// </summary>
             public int HeightAlignment
             {
                 get { return IExecuteWithSignature<int>("getHeightAlignment", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#getSupportedFrameRates()"/> 
-            /// </summary>
-            public Android.Util.Range<Java.Lang.Integer> SupportedFrameRates
-            {
-                get { return IExecuteWithSignature<Android.Util.Range<Java.Lang.Integer>>("getSupportedFrameRates", "()Landroid/util/Range;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#getSupportedHeights()"/> 
-            /// </summary>
-            public Android.Util.Range<Java.Lang.Integer> SupportedHeights
-            {
-                get { return IExecuteWithSignature<Android.Util.Range<Java.Lang.Integer>>("getSupportedHeights", "()Landroid/util/Range;"); }
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#getSupportedPerformancePoints()"/> 
@@ -1981,56 +1925,11 @@ namespace Android.Media
                 get { return IExecuteWithSignature<Java.Util.List<Android.Media.MediaCodecInfo.VideoCapabilities.PerformancePoint>>("getSupportedPerformancePoints", "()Ljava/util/List;"); }
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#getSupportedWidths()"/> 
-            /// </summary>
-            public Android.Util.Range<Java.Lang.Integer> SupportedWidths
-            {
-                get { return IExecuteWithSignature<Android.Util.Range<Java.Lang.Integer>>("getSupportedWidths", "()Landroid/util/Range;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#getWidthAlignment()"/> 
             /// </summary>
             public int WidthAlignment
             {
                 get { return IExecuteWithSignature<int>("getWidthAlignment", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#getAchievableFrameRatesFor(int,int)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <returns><see cref="Android.Util.Range"/></returns>
-            public Android.Util.Range<Java.Lang.Double> GetAchievableFrameRatesFor(int arg0, int arg1)
-            {
-                return IExecute<Android.Util.Range<Java.Lang.Double>>("getAchievableFrameRatesFor", arg0, arg1);
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#getSupportedFrameRatesFor(int,int)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <param name="arg1"><see cref="int"/></param>
-            /// <returns><see cref="Android.Util.Range"/></returns>
-            public Android.Util.Range<Java.Lang.Double> GetSupportedFrameRatesFor(int arg0, int arg1)
-            {
-                return IExecute<Android.Util.Range<Java.Lang.Double>>("getSupportedFrameRatesFor", arg0, arg1);
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#getSupportedHeightsFor(int)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see cref="Android.Util.Range"/></returns>
-            public Android.Util.Range<Java.Lang.Integer> GetSupportedHeightsFor(int arg0)
-            {
-                return IExecuteWithSignature<Android.Util.Range<Java.Lang.Integer>>("getSupportedHeightsFor", "(I)Landroid/util/Range;", arg0);
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#getSupportedWidthsFor(int)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see cref="Android.Util.Range"/></returns>
-            public Android.Util.Range<Java.Lang.Integer> GetSupportedWidthsFor(int arg0)
-            {
-                return IExecuteWithSignature<Android.Util.Range<Java.Lang.Integer>>("getSupportedWidthsFor", "(I)Landroid/util/Range;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#areSizeAndRateSupported(int,int,double)"/>
