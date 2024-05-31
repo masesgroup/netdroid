@@ -28,7 +28,7 @@
 		<None Include="..\..\..\jars\*.jar" Pack="true" PackagePath="build\jars" />
 		<None Include="..\..\documentation\articles\usage.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
-	<ItemGroup Condition="'$(GITHUB_CLASS_GENERATION)' == 'true'">
+	<ItemGroup Condition="'$(GITHUB_SIMPLIFIED_GENERATION)' == 'true'">
 		<Compile Remove="Developed\**" />
 		<Compile Remove="Generated\**" />
 		<Compile Remove="Specific\**" />
