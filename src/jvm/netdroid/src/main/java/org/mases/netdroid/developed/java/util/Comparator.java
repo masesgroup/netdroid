@@ -20,7 +20,6 @@ package org.mases.netdroid.developed.java.util;
 
 import org.mases.jcobridge.*;
 
-import java.util.Comparator;
 import java.util.function.Function;
 import java.util.function.ToDoubleFunction;
 import java.util.function.ToIntFunction;
@@ -28,9 +27,9 @@ import java.util.function.ToLongFunction;
 
 /**
  * The {@link Comparator} class represents a generic implementation
- * of {@link Comparator}
+ * of {@link java.util.Comparator}
  */
-public class Comparator extends JCListener implements Comparator {
+public class Comparator extends JCListener implements java.util.Comparator {
     public Comparator(String key) throws JCNativeException {
         super(key);
     }
