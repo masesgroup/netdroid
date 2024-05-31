@@ -122,6 +122,22 @@ namespace Android.View.Animation
             get { return IExecuteWithSignature<int>("getBackdropColor", "()I"); } set { IExecuteWithSignature("setBackdropColor", "(I)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getBackgroundColor()"/> <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setBackgroundColor(int)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public int BackgroundColor
+        {
+            get { return IExecuteWithSignature<int>("getBackgroundColor", "()I"); } set { IExecuteWithSignature("setBackgroundColor", "(I)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getDetachWallpaper()"/> <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setDetachWallpaper(boolean)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public bool DetachWallpaper
+        {
+            get { return IExecuteWithSignature<bool>("getDetachWallpaper", "()Z"); } set { IExecuteWithSignature("setDetachWallpaper", "(Z)V", value); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getDuration()"/> <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setDuration(long)"/>
         /// </summary>
         public long Duration

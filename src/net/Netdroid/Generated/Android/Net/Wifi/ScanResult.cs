@@ -66,6 +66,16 @@ namespace Android.Net.Wifi
         /// </summary>
         public int level { get { return IGetField<int>("level"); } set { ISetField("level", value); } }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#operatorFriendlyName"/>
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.CharSequence operatorFriendlyName { get { return IGetField<Java.Lang.CharSequence>("operatorFriendlyName"); } set { ISetField("operatorFriendlyName", value); } }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#venueName"/>
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.CharSequence venueName { get { return IGetField<Java.Lang.CharSequence>("venueName"); } set { ISetField("venueName", value); } }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#BSSID"/>
         /// </summary>
         public Java.Lang.String BSSID { get { return IGetField<Java.Lang.String>("BSSID"); } set { ISetField("BSSID", value); } }
@@ -73,6 +83,11 @@ namespace Android.Net.Wifi
         /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#capabilities"/>
         /// </summary>
         public Java.Lang.String capabilities { get { return IGetField<Java.Lang.String>("capabilities"); } set { ISetField("capabilities", value); } }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#SSID"/>
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String SSID { get { return IGetField<Java.Lang.String>("SSID"); } set { ISetField("SSID", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#timestamp"/>
         /// </summary>

@@ -71,6 +71,47 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Geocoder.html#getFromLocation(double,double,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public Java.Util.List<Android.Location.Address> GetFromLocation(double arg0, double arg1, int arg2)
+        {
+            return IExecute<Java.Util.List<Android.Location.Address>>("getFromLocation", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Geocoder.html#getFromLocationName(java.lang.String,int,double,double,double,double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="double"/></param>
+        /// <param name="arg3"><see cref="double"/></param>
+        /// <param name="arg4"><see cref="double"/></param>
+        /// <param name="arg5"><see cref="double"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public Java.Util.List<Android.Location.Address> GetFromLocationName(Java.Lang.String arg0, int arg1, double arg2, double arg3, double arg4, double arg5)
+        {
+            return IExecute<Java.Util.List<Android.Location.Address>>("getFromLocationName", arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Geocoder.html#getFromLocationName(java.lang.String,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public Java.Util.List<Android.Location.Address> GetFromLocationName(Java.Lang.String arg0, int arg1)
+        {
+            return IExecute<Java.Util.List<Android.Location.Address>>("getFromLocationName", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Geocoder.html#getFromLocation(double,double,int,android.location.Geocoder.GeocodeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>

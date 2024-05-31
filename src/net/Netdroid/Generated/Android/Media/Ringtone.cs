@@ -53,6 +53,14 @@ namespace Android.Media
             get { return IExecuteWithSignature<Android.Media.AudioAttributes>("getAudioAttributes", "()Landroid/media/AudioAttributes;"); } set { IExecuteWithSignature("setAudioAttributes", "(Landroid/media/AudioAttributes;)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Ringtone.html#getStreamType()"/> <see href="https://developer.android.com/reference/android/media/Ringtone.html#setStreamType(int)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public int StreamType
+        {
+            get { return IExecuteWithSignature<int>("getStreamType", "()I"); } set { IExecuteWithSignature("setStreamType", "(I)V", value); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Ringtone.html#getVolume()"/> <see href="https://developer.android.com/reference/android/media/Ringtone.html#setVolume(float)"/>
         /// </summary>
         public float Volume

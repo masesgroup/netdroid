@@ -95,6 +95,14 @@ namespace Java.Security.Cert
             get { return IExecuteWithSignatureArray<byte>("getIssuerAsBytes", "()[B"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CertSelector.html#getIssuerAsString()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String IssuerAsString
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getIssuerAsString", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CertSelector.html#getKeyUsage()"/> <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CertSelector.html#setKeyUsage(boolean[])"/>
         /// </summary>
         public bool[] KeyUsage
@@ -163,6 +171,14 @@ namespace Java.Security.Cert
         public byte[] SubjectAsBytes
         {
             get { return IExecuteWithSignatureArray<byte>("getSubjectAsBytes", "()[B"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CertSelector.html#getSubjectAsString()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String SubjectAsString
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getSubjectAsString", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CertSelector.html#getSubjectKeyIdentifier()"/> <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CertSelector.html#setSubjectKeyIdentifier(byte[])"/>
@@ -244,6 +260,16 @@ namespace Java.Security.Cert
             IExecuteWithSignature("setIssuer", "([B)V", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CertSelector.html#setIssuer(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public void SetIssuer(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setIssuer", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CertSelector.html#setIssuer(javax.security.auth.x500.X500Principal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.X500.X500Principal"/></param>
@@ -259,6 +285,16 @@ namespace Java.Security.Cert
         public void SetSubject(byte[] arg0)
         {
             IExecuteWithSignature("setSubject", "([B)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CertSelector.html#setSubject(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public void SetSubject(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSubject", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CertSelector.html#setSubject(javax.security.auth.x500.X500Principal)"/>

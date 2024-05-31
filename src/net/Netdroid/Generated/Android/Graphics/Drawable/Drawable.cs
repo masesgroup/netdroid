@@ -225,6 +225,14 @@ namespace Android.Graphics.Drawable
             get { return IExecuteWithSignature<int>("getMinimumWidth", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getOpacity()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int Opacity
+        {
+            get { return IExecuteWithSignature<int>("getOpacity", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getOpticalInsets()"/> 
         /// </summary>
         public Android.Graphics.Insets OpticalInsets
@@ -493,6 +501,25 @@ namespace Android.Graphics.Drawable
         public void SetBounds(int arg0, int arg1, int arg2, int arg3)
         {
             IExecute("setBounds", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setColorFilter(int,android.graphics.PorterDuff.Mode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.Graphics.PorterDuff.Mode"/></param>
+        [System.Obsolete()]
+        public void SetColorFilter(int arg0, Android.Graphics.PorterDuff.Mode arg1)
+        {
+            IExecute("setColorFilter", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setDither(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetDither(bool arg0)
+        {
+            IExecuteWithSignature("setDither", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setFilterBitmap(boolean)"/>

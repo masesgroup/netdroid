@@ -109,6 +109,14 @@ namespace Android.Telephony
             get { return IExecuteWithSignature<Android.Telephony.CellSignalStrength>("getCellSignalStrength", "()Landroid/telephony/CellSignalStrength;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellInfo.html#getTimeStamp()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public long TimeStamp
+        {
+            get { return IExecuteWithSignature<long>("getTimeStamp", "()J"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellInfo.html#getTimestampMillis()"/> 
         /// </summary>
         public long TimestampMillis

@@ -1714,7 +1714,29 @@ namespace Android.Net.Wifi.P2p
             /// </summary>
             protected virtual void InitializeHandlers()
             {
+                AddEventHandler("onNetworkInfoAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.NetworkInfo>>>(OnNetworkInfoAvailableEventHandler));
 
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.NetworkInfoListener.html#onNetworkInfoAvailable(android.net.NetworkInfo)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnNetworkInfoAvailable"/> has a value it takes precedence over corresponding class method</remarks>
+            public System.Action<Android.Net.NetworkInfo> OnOnNetworkInfoAvailable { get; set; } = null;
+
+            void OnNetworkInfoAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.NetworkInfo>> data)
+            {
+                var methodToExecute = (OnOnNetworkInfoAvailable != null) ? OnOnNetworkInfoAvailable : OnNetworkInfoAvailable;
+                methodToExecute.Invoke(data.EventData.TypedEventData);
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.NetworkInfoListener.html#onNetworkInfoAvailable(android.net.NetworkInfo)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.NetworkInfo"/></param>
+            public virtual void OnNetworkInfoAvailable(Android.Net.NetworkInfo arg0)
+            {
+                
             }
 
             #endregion
@@ -1747,6 +1769,14 @@ namespace Android.Net.Wifi.P2p
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.NetworkInfoListener.html#onNetworkInfoAvailable(android.net.NetworkInfo)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.NetworkInfo"/></param>
+            public override void OnNetworkInfoAvailable(Android.Net.NetworkInfo arg0)
+            {
+                IExecuteWithSignature("onNetworkInfoAvailable", "(Landroid/net/NetworkInfo;)V", arg0);
+            }
 
             #endregion
 

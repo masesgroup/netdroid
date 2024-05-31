@@ -123,6 +123,19 @@ namespace Android.Service.Carrier
             IExecute("onDownloadMms", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onFilterSms(android.service.carrier.MessagePdu,java.lang.String,int,int,android.service.carrier.CarrierMessagingService.ResultCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Service.Carrier.MessagePdu"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="Android.Service.Carrier.CarrierMessagingService.ResultCallback"/></param>
+        [System.Obsolete()]
+        public void OnFilterSms(Android.Service.Carrier.MessagePdu arg0, Java.Lang.String arg1, int arg2, int arg3, Android.Service.Carrier.CarrierMessagingService.ResultCallback<Java.Lang.Boolean> arg4)
+        {
+            IExecute("onFilterSms", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onReceiveTextSms(android.service.carrier.MessagePdu,java.lang.String,int,int,android.service.carrier.CarrierMessagingService.ResultCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Service.Carrier.MessagePdu"/></param>
@@ -133,6 +146,19 @@ namespace Android.Service.Carrier
         public void OnReceiveTextSms(Android.Service.Carrier.MessagePdu arg0, Java.Lang.String arg1, int arg2, int arg3, Android.Service.Carrier.CarrierMessagingService.ResultCallback<Java.Lang.Integer> arg4)
         {
             IExecute("onReceiveTextSms", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendDataSms(byte[],int,java.lang.String,int,android.service.carrier.CarrierMessagingService.ResultCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="Android.Service.Carrier.CarrierMessagingService.ResultCallback"/></param>
+        [System.Obsolete()]
+        public void OnSendDataSms(byte[] arg0, int arg1, Java.Lang.String arg2, int arg3, Android.Service.Carrier.CarrierMessagingService.ResultCallback<Android.Service.Carrier.CarrierMessagingService.SendSmsResult> arg4)
+        {
+            IExecute("onSendDataSms", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendDataSms(byte[],int,java.lang.String,int,int,android.service.carrier.CarrierMessagingService.ResultCallback)"/>
@@ -159,6 +185,18 @@ namespace Android.Service.Carrier
             IExecute("onSendMms", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendMultipartTextSms(java.util.List,int,java.lang.String,android.service.carrier.CarrierMessagingService.ResultCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Android.Service.Carrier.CarrierMessagingService.ResultCallback"/></param>
+        [System.Obsolete()]
+        public void OnSendMultipartTextSms(Java.Util.List<Java.Lang.String> arg0, int arg1, Java.Lang.String arg2, Android.Service.Carrier.CarrierMessagingService.ResultCallback<Android.Service.Carrier.CarrierMessagingService.SendMultipartSmsResult> arg3)
+        {
+            IExecute("onSendMultipartTextSms", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendMultipartTextSms(java.util.List,int,java.lang.String,int,android.service.carrier.CarrierMessagingService.ResultCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
@@ -169,6 +207,18 @@ namespace Android.Service.Carrier
         public void OnSendMultipartTextSms(Java.Util.List<Java.Lang.String> arg0, int arg1, Java.Lang.String arg2, int arg3, Android.Service.Carrier.CarrierMessagingService.ResultCallback<Android.Service.Carrier.CarrierMessagingService.SendMultipartSmsResult> arg4)
         {
             IExecute("onSendMultipartTextSms", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendTextSms(java.lang.String,int,java.lang.String,android.service.carrier.CarrierMessagingService.ResultCallback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Android.Service.Carrier.CarrierMessagingService.ResultCallback"/></param>
+        [System.Obsolete()]
+        public void OnSendTextSms(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Android.Service.Carrier.CarrierMessagingService.ResultCallback<Android.Service.Carrier.CarrierMessagingService.SendSmsResult> arg3)
+        {
+            IExecute("onSendTextSms", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.html#onSendTextSms(java.lang.String,int,java.lang.String,int,android.service.carrier.CarrierMessagingService.ResultCallback)"/>

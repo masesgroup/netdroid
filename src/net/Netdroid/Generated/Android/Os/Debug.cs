@@ -55,6 +55,13 @@ namespace Android.Os
         public static int SHOW_INITIALIZED { get { if (!_SHOW_INITIALIZEDReady) { _SHOW_INITIALIZEDContent = SGetField<int>(LocalBridgeClazz, "SHOW_INITIALIZED"); _SHOW_INITIALIZEDReady = true; } return _SHOW_INITIALIZEDContent; } }
         private static int _SHOW_INITIALIZEDContent = default;
         private static bool _SHOW_INITIALIZEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#TRACE_COUNT_ALLOCS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int TRACE_COUNT_ALLOCS { get { if (!_TRACE_COUNT_ALLOCSReady) { _TRACE_COUNT_ALLOCSContent = SGetField<int>(LocalBridgeClazz, "TRACE_COUNT_ALLOCS"); _TRACE_COUNT_ALLOCSReady = true; } return _TRACE_COUNT_ALLOCSContent; } }
+        private static int _TRACE_COUNT_ALLOCSContent = default;
+        private static bool _TRACE_COUNT_ALLOCSReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -93,6 +100,94 @@ namespace Android.Os
         public static int BinderSentTransactions
         {
             get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getBinderSentTransactions", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#getGlobalAllocCount()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int GlobalAllocCount
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getGlobalAllocCount", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#getGlobalAllocSize()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int GlobalAllocSize
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getGlobalAllocSize", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#getGlobalClassInitCount()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int GlobalClassInitCount
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getGlobalClassInitCount", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#getGlobalClassInitTime()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int GlobalClassInitTime
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getGlobalClassInitTime", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#getGlobalExternalAllocCount()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int GlobalExternalAllocCount
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getGlobalExternalAllocCount", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#getGlobalExternalAllocSize()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int GlobalExternalAllocSize
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getGlobalExternalAllocSize", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#getGlobalExternalFreedCount()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int GlobalExternalFreedCount
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getGlobalExternalFreedCount", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#getGlobalExternalFreedSize()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int GlobalExternalFreedSize
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getGlobalExternalFreedSize", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#getGlobalFreedCount()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int GlobalFreedCount
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getGlobalFreedCount", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#getGlobalFreedSize()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int GlobalFreedSize
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getGlobalFreedSize", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#getGlobalGcInvocationCount()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int GlobalGcInvocationCount
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getGlobalGcInvocationCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Debug.html#getLoadedClassCount()"/> 
@@ -137,6 +232,46 @@ namespace Android.Os
             get { return SExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>(LocalBridgeClazz, "getRuntimeStats", "()Ljava/util/Map;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#getThreadAllocCount()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int ThreadAllocCount
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getThreadAllocCount", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#getThreadAllocSize()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int ThreadAllocSize
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getThreadAllocSize", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#getThreadExternalAllocCount()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int ThreadExternalAllocCount
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getThreadExternalAllocCount", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#getThreadExternalAllocSize()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int ThreadExternalAllocSize
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getThreadExternalAllocSize", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#getThreadGcInvocationCount()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public static int ThreadGcInvocationCount
+        {
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getThreadGcInvocationCount", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Debug.html#dumpService(java.lang.String,java.io.FileDescriptor,java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -162,6 +297,26 @@ namespace Android.Os
         public static bool WaitingForDebugger()
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "waitingForDebugger", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#setAllocationLimit(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public static int SetAllocationLimit(int arg0)
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "setAllocationLimit", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#setGlobalAllocationLimit(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public static int SetGlobalAllocationLimit(int arg0)
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "setGlobalAllocationLimit", "(I)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Debug.html#getRuntimeStat(java.lang.String)"/>
@@ -200,6 +355,15 @@ namespace Android.Os
             SExecute(LocalBridgeClazz, "attachJvmtiAgent", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#changeDebugPort(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [System.Obsolete()]
+        public static void ChangeDebugPort(int arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "changeDebugPort", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Debug.html#dumpHprofData(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -209,12 +373,164 @@ namespace Android.Os
             SExecuteWithSignature(LocalBridgeClazz, "dumpHprofData", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#enableEmulatorTraceOutput()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void EnableEmulatorTraceOutput()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "enableEmulatorTraceOutput", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Debug.html#printLoadedClasses(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public static void PrintLoadedClasses(int arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "printLoadedClasses", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#resetAllCounts()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void ResetAllCounts()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "resetAllCounts", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalAllocCount()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void ResetGlobalAllocCount()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "resetGlobalAllocCount", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalAllocSize()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void ResetGlobalAllocSize()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "resetGlobalAllocSize", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalClassInitCount()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void ResetGlobalClassInitCount()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "resetGlobalClassInitCount", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalClassInitTime()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void ResetGlobalClassInitTime()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "resetGlobalClassInitTime", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalExternalAllocCount()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void ResetGlobalExternalAllocCount()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "resetGlobalExternalAllocCount", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalExternalAllocSize()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void ResetGlobalExternalAllocSize()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "resetGlobalExternalAllocSize", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalExternalFreedCount()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void ResetGlobalExternalFreedCount()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "resetGlobalExternalFreedCount", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalExternalFreedSize()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void ResetGlobalExternalFreedSize()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "resetGlobalExternalFreedSize", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalFreedCount()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void ResetGlobalFreedCount()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "resetGlobalFreedCount", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalFreedSize()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void ResetGlobalFreedSize()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "resetGlobalFreedSize", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#resetGlobalGcInvocationCount()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void ResetGlobalGcInvocationCount()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "resetGlobalGcInvocationCount", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#resetThreadAllocCount()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void ResetThreadAllocCount()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "resetThreadAllocCount", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#resetThreadAllocSize()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void ResetThreadAllocSize()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "resetThreadAllocSize", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#resetThreadExternalAllocCount()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void ResetThreadExternalAllocCount()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "resetThreadExternalAllocCount", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#resetThreadExternalAllocSize()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void ResetThreadExternalAllocSize()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "resetThreadExternalAllocSize", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#resetThreadGcInvocationCount()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void ResetThreadGcInvocationCount()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "resetThreadGcInvocationCount", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#startAllocCounting()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void StartAllocCounting()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "startAllocCounting", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Debug.html#startMethodTracing()"/>
@@ -268,6 +584,14 @@ namespace Android.Os
             SExecuteWithSignature(LocalBridgeClazz, "startNativeTracing", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Debug.html#stopAllocCounting()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static void StopAllocCounting()
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "stopAllocCounting", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Debug.html#stopMethodTracing()"/>
         /// </summary>
         public static void StopMethodTracing()
@@ -296,6 +620,73 @@ namespace Android.Os
         #endregion
 
         #region Nested classes
+        #region InstructionCount
+        public partial class InstructionCount
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Debug.InstructionCount.html#collect()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            [System.Obsolete()]
+            public bool Collect()
+            {
+                return IExecuteWithSignature<bool>("collect", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Debug.InstructionCount.html#resetAndStart()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            [System.Obsolete()]
+            public bool ResetAndStart()
+            {
+                return IExecuteWithSignature<bool>("resetAndStart", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Debug.InstructionCount.html#globalMethodInvocations()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [System.Obsolete()]
+            public int GlobalMethodInvocations()
+            {
+                return IExecuteWithSignature<int>("globalMethodInvocations", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/Debug.InstructionCount.html#globalTotal()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [System.Obsolete()]
+            public int GlobalTotal()
+            {
+                return IExecuteWithSignature<int>("globalTotal", "()I");
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region MemoryInfo
         public partial class MemoryInfo
         {

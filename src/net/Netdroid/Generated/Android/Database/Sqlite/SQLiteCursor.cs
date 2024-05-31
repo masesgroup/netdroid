@@ -39,6 +39,18 @@ namespace Android.Database.Sqlite
             : base(arg0, arg1, arg2)
         {
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteCursor.html#%3Cinit%3E(android.database.sqlite.SQLiteDatabase,android.database.sqlite.SQLiteCursorDriver,java.lang.String,android.database.sqlite.SQLiteQuery)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Database.Sqlite.SQLiteDatabase"/></param>
+        /// <param name="arg1"><see cref="Android.Database.Sqlite.SQLiteCursorDriver"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Android.Database.Sqlite.SQLiteQuery"/></param>
+        [System.Obsolete()]
+        public SQLiteCursor(Android.Database.Sqlite.SQLiteDatabase arg0, Android.Database.Sqlite.SQLiteCursorDriver arg1, Java.Lang.String arg2, Android.Database.Sqlite.SQLiteQuery arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
 
         #endregion
 

@@ -235,6 +235,13 @@ namespace Java.Util.Jar
             private static Java.Util.Jar.Attributes.Name _CONTENT_TYPEContent = default;
             private static bool _CONTENT_TYPEReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/java.base/java/util/jar/Attributes.Name.html#EXTENSION_INSTALLATION"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Java.Util.Jar.Attributes.Name EXTENSION_INSTALLATION { get { if (!_EXTENSION_INSTALLATIONReady) { _EXTENSION_INSTALLATIONContent = SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "EXTENSION_INSTALLATION"); _EXTENSION_INSTALLATIONReady = true; } return _EXTENSION_INSTALLATIONContent; } }
+            private static Java.Util.Jar.Attributes.Name _EXTENSION_INSTALLATIONContent = default;
+            private static bool _EXTENSION_INSTALLATIONReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/java.base/java/util/jar/Attributes.Name.html#EXTENSION_LIST"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name EXTENSION_LIST { get { if (!_EXTENSION_LISTReady) { _EXTENSION_LISTContent = SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "EXTENSION_LIST"); _EXTENSION_LISTReady = true; } return _EXTENSION_LISTContent; } }
@@ -253,11 +260,25 @@ namespace Java.Util.Jar
             private static Java.Util.Jar.Attributes.Name _IMPLEMENTATION_TITLEContent = default;
             private static bool _IMPLEMENTATION_TITLEReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_URL"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_URL { get { if (!_IMPLEMENTATION_URLReady) { _IMPLEMENTATION_URLContent = SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "IMPLEMENTATION_URL"); _IMPLEMENTATION_URLReady = true; } return _IMPLEMENTATION_URLContent; } }
+            private static Java.Util.Jar.Attributes.Name _IMPLEMENTATION_URLContent = default;
+            private static bool _IMPLEMENTATION_URLReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VENDOR"/>
             /// </summary>
             public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VENDOR { get { if (!_IMPLEMENTATION_VENDORReady) { _IMPLEMENTATION_VENDORContent = SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "IMPLEMENTATION_VENDOR"); _IMPLEMENTATION_VENDORReady = true; } return _IMPLEMENTATION_VENDORContent; } }
             private static Java.Util.Jar.Attributes.Name _IMPLEMENTATION_VENDORContent = default;
             private static bool _IMPLEMENTATION_VENDORReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VENDOR_ID"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VENDOR_ID { get { if (!_IMPLEMENTATION_VENDOR_IDReady) { _IMPLEMENTATION_VENDOR_IDContent = SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "IMPLEMENTATION_VENDOR_ID"); _IMPLEMENTATION_VENDOR_IDReady = true; } return _IMPLEMENTATION_VENDOR_IDContent; } }
+            private static Java.Util.Jar.Attributes.Name _IMPLEMENTATION_VENDOR_IDContent = default;
+            private static bool _IMPLEMENTATION_VENDOR_IDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VERSION"/>
             /// </summary>

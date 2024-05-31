@@ -222,6 +222,14 @@ namespace Android.Icu.Text
             get { return IExecuteWithSignature<int>("getPadPosition", "()I"); } set { IExecuteWithSignature("setPadPosition", "(I)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getParseMaxDigits()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setParseMaxDigits(int)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public int ParseMaxDigits
+        {
+            get { return IExecuteWithSignature<int>("getParseMaxDigits", "()I"); } set { IExecuteWithSignature("setParseMaxDigits", "(I)V", value); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#getPositivePrefix()"/> <see href="https://developer.android.com/reference/android/icu/text/DecimalFormat.html#setPositivePrefix(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String PositivePrefix

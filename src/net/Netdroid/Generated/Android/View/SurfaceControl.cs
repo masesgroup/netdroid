@@ -435,6 +435,19 @@ namespace Android.View
                 return IExecute<Android.View.SurfaceControl.Transaction>("setFrameRate", arg0, arg1, arg2);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setGeometry(android.view.SurfaceControl,android.graphics.Rect,android.graphics.Rect,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.View.SurfaceControl"/></param>
+            /// <param name="arg1"><see cref="Android.Graphics.Rect"/></param>
+            /// <param name="arg2"><see cref="Android.Graphics.Rect"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
+            /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
+            [System.Obsolete()]
+            public Android.View.SurfaceControl.Transaction SetGeometry(Android.View.SurfaceControl arg0, Android.Graphics.Rect arg1, Android.Graphics.Rect arg2, int arg3)
+            {
+                return IExecute<Android.View.SurfaceControl.Transaction>("setGeometry", arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControl.Transaction.html#setLayer(android.view.SurfaceControl,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.View.SurfaceControl"/></param>

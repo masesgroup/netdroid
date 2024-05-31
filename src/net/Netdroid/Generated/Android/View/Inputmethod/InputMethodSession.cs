@@ -118,6 +118,16 @@ namespace Android.View.Inputmethod
             IExecuteWithSignature("finishInput", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSession.html#toggleSoftInput(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void ToggleSoftInput(int arg0, int arg1)
+        {
+            IExecute("toggleSoftInput", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSession.html#updateCursor(android.graphics.Rect)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>

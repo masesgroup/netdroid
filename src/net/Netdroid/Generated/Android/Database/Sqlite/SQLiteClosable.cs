@@ -66,6 +66,14 @@ namespace Android.Database.Sqlite
         {
             IExecuteWithSignature("releaseReference", "()V");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteClosable.html#releaseReferenceFromContainer()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void ReleaseReferenceFromContainer()
+        {
+            IExecuteWithSignature("releaseReferenceFromContainer", "()V");
+        }
 
         #endregion
 

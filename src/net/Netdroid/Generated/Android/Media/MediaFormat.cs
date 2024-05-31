@@ -226,6 +226,13 @@ namespace Android.Media
         private static Java.Lang.String _KEY_AAC_ENCODED_TARGET_LEVELContent = default;
         private static bool _KEY_AAC_ENCODED_TARGET_LEVELReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#KEY_AAC_MAX_OUTPUT_CHANNEL_COUNT"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String KEY_AAC_MAX_OUTPUT_CHANNEL_COUNT { get { if (!_KEY_AAC_MAX_OUTPUT_CHANNEL_COUNTReady) { _KEY_AAC_MAX_OUTPUT_CHANNEL_COUNTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_AAC_MAX_OUTPUT_CHANNEL_COUNT"); _KEY_AAC_MAX_OUTPUT_CHANNEL_COUNTReady = true; } return _KEY_AAC_MAX_OUTPUT_CHANNEL_COUNTContent; } }
+        private static Java.Lang.String _KEY_AAC_MAX_OUTPUT_CHANNEL_COUNTContent = default;
+        private static bool _KEY_AAC_MAX_OUTPUT_CHANNEL_COUNTReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaFormat.html#KEY_AAC_PROFILE"/>
         /// </summary>
         public static Java.Lang.String KEY_AAC_PROFILE { get { if (!_KEY_AAC_PROFILEReady) { _KEY_AAC_PROFILEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_AAC_PROFILE"); _KEY_AAC_PROFILEReady = true; } return _KEY_AAC_PROFILEContent; } }

@@ -120,6 +120,14 @@ namespace Javax.Net.Ssl
             get { return IExecuteWithSignature<int>("getPacketBufferSize", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSession.html#getPeerCertificateChain()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Javax.Security.Cert.X509Certificate[] PeerCertificateChain
+        {
+            get { return IExecuteWithSignatureArray<Javax.Security.Cert.X509Certificate>("getPeerCertificateChain", "()[Ljavax/security/cert/X509Certificate;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSession.html#getPeerCertificates()"/> 
         /// </summary>
         public Java.Security.Cert.Certificate[] PeerCertificates

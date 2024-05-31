@@ -326,6 +326,13 @@ namespace Android.Hardware.Camera2
         private static Android.Hardware.Camera2.CameraCharacteristics.Key _LENS_POSE_TRANSLATIONContent = default;
         private static bool _LENS_POSE_TRANSLATIONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#LENS_RADIAL_DISTORTION"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Android.Hardware.Camera2.CameraCharacteristics.Key LENS_RADIAL_DISTORTION { get { if (!_LENS_RADIAL_DISTORTIONReady) { _LENS_RADIAL_DISTORTIONContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "LENS_RADIAL_DISTORTION"); _LENS_RADIAL_DISTORTIONReady = true; } return _LENS_RADIAL_DISTORTIONContent; } }
+        private static Android.Hardware.Camera2.CameraCharacteristics.Key _LENS_RADIAL_DISTORTIONContent = default;
+        private static bool _LENS_RADIAL_DISTORTIONReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#AUTOMOTIVE_LENS_FACING"/>
         /// </summary>
         public static Android.Hardware.Camera2.CameraCharacteristics.Key AUTOMOTIVE_LENS_FACING { get { if (!_AUTOMOTIVE_LENS_FACINGReady) { _AUTOMOTIVE_LENS_FACINGContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "AUTOMOTIVE_LENS_FACING"); _AUTOMOTIVE_LENS_FACINGReady = true; } return _AUTOMOTIVE_LENS_FACINGContent; } }

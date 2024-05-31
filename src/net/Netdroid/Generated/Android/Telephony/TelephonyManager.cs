@@ -452,6 +452,13 @@ namespace Android.Telephony
         private static int _NETWORK_TYPE_HSUPAContent = default;
         private static bool _NETWORK_TYPE_HSUPAReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#NETWORK_TYPE_IDEN"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int NETWORK_TYPE_IDEN { get { if (!_NETWORK_TYPE_IDENReady) { _NETWORK_TYPE_IDENContent = SGetField<int>(LocalBridgeClazz, "NETWORK_TYPE_IDEN"); _NETWORK_TYPE_IDENReady = true; } return _NETWORK_TYPE_IDENContent; } }
+        private static int _NETWORK_TYPE_IDENContent = default;
+        private static bool _NETWORK_TYPE_IDENReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#NETWORK_TYPE_IWLAN"/>
         /// </summary>
         public static int NETWORK_TYPE_IWLAN { get { if (!_NETWORK_TYPE_IWLANReady) { _NETWORK_TYPE_IWLANContent = SGetField<int>(LocalBridgeClazz, "NETWORK_TYPE_IWLAN"); _NETWORK_TYPE_IWLANReady = true; } return _NETWORK_TYPE_IWLANContent; } }
@@ -944,6 +951,13 @@ namespace Android.Telephony
         private static Java.Lang.String _EXTRA_HIDE_PUBLIC_SETTINGSContent = default;
         private static bool _EXTRA_HIDE_PUBLIC_SETTINGSReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#EXTRA_INCOMING_NUMBER"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String EXTRA_INCOMING_NUMBER { get { if (!_EXTRA_INCOMING_NUMBERReady) { _EXTRA_INCOMING_NUMBERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_INCOMING_NUMBER"); _EXTRA_INCOMING_NUMBERReady = true; } return _EXTRA_INCOMING_NUMBERContent; } }
+        private static Java.Lang.String _EXTRA_INCOMING_NUMBERContent = default;
+        private static bool _EXTRA_INCOMING_NUMBERReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#EXTRA_IS_REFRESH"/>
         /// </summary>
         public static Java.Lang.String EXTRA_IS_REFRESH { get { if (!_EXTRA_IS_REFRESHReady) { _EXTRA_IS_REFRESHContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_IS_REFRESH"); _EXTRA_IS_REFRESHReady = true; } return _EXTRA_IS_REFRESHContent; } }
@@ -1154,6 +1168,13 @@ namespace Android.Telephony
         private static long _NETWORK_TYPE_BITMASK_LTEContent = default;
         private static bool _NETWORK_TYPE_BITMASK_LTEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#NETWORK_TYPE_BITMASK_LTE_CA"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static long NETWORK_TYPE_BITMASK_LTE_CA { get { if (!_NETWORK_TYPE_BITMASK_LTE_CAReady) { _NETWORK_TYPE_BITMASK_LTE_CAContent = SGetField<long>(LocalBridgeClazz, "NETWORK_TYPE_BITMASK_LTE_CA"); _NETWORK_TYPE_BITMASK_LTE_CAReady = true; } return _NETWORK_TYPE_BITMASK_LTE_CAContent; } }
+        private static long _NETWORK_TYPE_BITMASK_LTE_CAContent = default;
+        private static bool _NETWORK_TYPE_BITMASK_LTE_CAReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#NETWORK_TYPE_BITMASK_NR"/>
         /// </summary>
         public static long NETWORK_TYPE_BITMASK_NR { get { if (!_NETWORK_TYPE_BITMASK_NRReady) { _NETWORK_TYPE_BITMASK_NRContent = SGetField<long>(LocalBridgeClazz, "NETWORK_TYPE_BITMASK_NR"); _NETWORK_TYPE_BITMASK_NRReady = true; } return _NETWORK_TYPE_BITMASK_NRContent; } }
@@ -1214,6 +1235,14 @@ namespace Android.Telephony
             get { return IExecuteWithSignature<int>("getCallComposerStatus", "()I"); } set { IExecuteWithSignature("setCallComposerStatus", "(I)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getCallState()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int CallState
+        {
+            get { return IExecuteWithSignature<int>("getCallState", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getCallStateForSubscription()"/> 
         /// </summary>
         public int CallStateForSubscription
@@ -1242,6 +1271,14 @@ namespace Android.Telephony
             get { return IExecuteWithSignature<int>("getCarrierIdFromSimMccMnc", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getCellLocation()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Telephony.CellLocation CellLocation
+        {
+            get { return IExecuteWithSignature<Android.Telephony.CellLocation>("getCellLocation", "()Landroid/telephony/CellLocation;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getDataActivity()"/> 
         /// </summary>
         public int DataActivity
@@ -1261,6 +1298,14 @@ namespace Android.Telephony
         public int DataState
         {
             get { return IExecuteWithSignature<int>("getDataState", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getDeviceId()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String DeviceId
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getDeviceId", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getDeviceSoftwareVersion()"/> 
@@ -1303,6 +1348,14 @@ namespace Android.Telephony
         public Java.Lang.String Imei
         {
             get { return IExecuteWithSignature<Java.Lang.String>("getImei", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getLine1Number()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String Line1Number
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getLine1Number", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getManualNetworkSelectionPlmn()"/> 
@@ -1382,11 +1435,27 @@ namespace Android.Telephony
             get { return IExecuteWithSignature<Java.Lang.String>("getNetworkSpecifier", "()Ljava/lang/String;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getNetworkType()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int NetworkType
+        {
+            get { return IExecuteWithSignature<int>("getNetworkType", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getPhoneAccountHandle()"/> 
         /// </summary>
         public Android.Telecom.PhoneAccountHandle PhoneAccountHandle
         {
             get { return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getPhoneAccountHandle", "()Landroid/telecom/PhoneAccountHandle;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getPhoneCount()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int PhoneCount
+        {
+            get { return IExecuteWithSignature<int>("getPhoneCount", "()I"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getPhoneType()"/> 
@@ -1574,6 +1643,16 @@ namespace Android.Telephony
         public Android.Telephony.IccOpenLogicalChannelResponse IccOpenLogicalChannel(Java.Lang.String arg0, int arg1)
         {
             return IExecute<Android.Telephony.IccOpenLogicalChannelResponse>("iccOpenLogicalChannel", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#iccOpenLogicalChannel(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.Telephony.IccOpenLogicalChannelResponse"/></returns>
+        [System.Obsolete()]
+        public Android.Telephony.IccOpenLogicalChannelResponse IccOpenLogicalChannel(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<Android.Telephony.IccOpenLogicalChannelResponse>("iccOpenLogicalChannel", "(Ljava/lang/String;)Landroid/telephony/IccOpenLogicalChannelResponse;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#requestNetworkScan(android.telephony.NetworkScanRequest,java.util.concurrent.Executor,android.telephony.TelephonyScanManager.NetworkScanCallback)"/>
@@ -1792,6 +1871,15 @@ namespace Android.Telephony
             return IExecuteWithSignature<bool>("isSmsCapable", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#isTtyModeSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsTtyModeSupported()
+        {
+            return IExecuteWithSignature<bool>("isTtyModeSupported", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#isVoiceCapable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -1815,6 +1903,17 @@ namespace Android.Telephony
         public bool IsWorldPhone()
         {
             return IExecuteWithSignature<bool>("isWorldPhone", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#setLine1NumberForDisplay(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool SetLine1NumberForDisplay(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return IExecute<bool>("setLine1NumberForDisplay", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#setNetworkSelectionModeManual(java.lang.String,boolean,int)"/>
@@ -1912,6 +2011,16 @@ namespace Android.Telephony
         public int SetForbiddenPlmns(Java.Util.List<Java.Lang.String> arg0)
         {
             return IExecuteWithSignature<int>("setForbiddenPlmns", "(Ljava/util/List;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getDeviceId(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public Java.Lang.String GetDeviceId(int arg0)
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDeviceId", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#getIccAuthentication(int,int,java.lang.String)"/>
@@ -2052,6 +2161,16 @@ namespace Android.Telephony
             IExecute("getNetworkSlicingConfiguration", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#listen(android.telephony.PhoneStateListener,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Telephony.PhoneStateListener"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void Listen(Android.Telephony.PhoneStateListener arg0, int arg1)
+        {
+            IExecute("listen", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#purchasePremiumCapability(int,java.util.concurrent.Executor,java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -2135,6 +2254,15 @@ namespace Android.Telephony
             IExecute("setAllowedNetworkTypesForReason", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#setDataEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetDataEnabled(bool arg0)
+        {
+            IExecuteWithSignature("setDataEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#setDataEnabledForReason(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -2176,6 +2304,26 @@ namespace Android.Telephony
         public void SetVisualVoicemailSmsFilterSettings(Android.Telephony.VisualVoicemailSmsFilterSettings arg0)
         {
             IExecuteWithSignature("setVisualVoicemailSmsFilterSettings", "(Landroid/telephony/VisualVoicemailSmsFilterSettings;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#setVoicemailRingtoneUri(android.telecom.PhoneAccountHandle,android.net.Uri)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Telecom.PhoneAccountHandle"/></param>
+        /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
+        [System.Obsolete()]
+        public void SetVoicemailRingtoneUri(Android.Telecom.PhoneAccountHandle arg0, Android.Net.Uri arg1)
+        {
+            IExecute("setVoicemailRingtoneUri", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#setVoicemailVibrationEnabled(android.telecom.PhoneAccountHandle,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Telecom.PhoneAccountHandle"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetVoicemailVibrationEnabled(Android.Telecom.PhoneAccountHandle arg0, bool arg1)
+        {
+            IExecute("setVoicemailVibrationEnabled", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyManager.html#switchMultiSimConfig(int)"/>

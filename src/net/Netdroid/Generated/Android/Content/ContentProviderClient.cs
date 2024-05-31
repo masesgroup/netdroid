@@ -228,6 +228,15 @@ namespace Android.Content
             return IExecute<bool>("refresh", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#release()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool Release()
+        {
+            return IExecuteWithSignature<bool>("release", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#openTypedAssetFile(android.net.Uri,java.lang.String,android.os.Bundle,android.os.CancellationSignal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>

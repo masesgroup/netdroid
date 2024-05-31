@@ -1519,6 +1519,13 @@ namespace Android.Media.Tv
             private static Java.Lang.String _COLUMN_EPISODE_DISPLAY_NUMBERContent = default;
             private static bool _COLUMN_EPISODE_DISPLAY_NUMBERReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Programs.html#COLUMN_EPISODE_NUMBER"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Java.Lang.String COLUMN_EPISODE_NUMBER { get { if (!_COLUMN_EPISODE_NUMBERReady) { _COLUMN_EPISODE_NUMBERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "COLUMN_EPISODE_NUMBER"); _COLUMN_EPISODE_NUMBERReady = true; } return _COLUMN_EPISODE_NUMBERContent; } }
+            private static Java.Lang.String _COLUMN_EPISODE_NUMBERContent = default;
+            private static bool _COLUMN_EPISODE_NUMBERReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Programs.html#COLUMN_EPISODE_TITLE"/>
             /// </summary>
             public static Java.Lang.String COLUMN_EPISODE_TITLE { get { if (!_COLUMN_EPISODE_TITLEReady) { _COLUMN_EPISODE_TITLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "COLUMN_EPISODE_TITLE"); _COLUMN_EPISODE_TITLEReady = true; } return _COLUMN_EPISODE_TITLEContent; } }
@@ -1626,6 +1633,13 @@ namespace Android.Media.Tv
             public static Java.Lang.String COLUMN_SEASON_DISPLAY_NUMBER { get { if (!_COLUMN_SEASON_DISPLAY_NUMBERReady) { _COLUMN_SEASON_DISPLAY_NUMBERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "COLUMN_SEASON_DISPLAY_NUMBER"); _COLUMN_SEASON_DISPLAY_NUMBERReady = true; } return _COLUMN_SEASON_DISPLAY_NUMBERContent; } }
             private static Java.Lang.String _COLUMN_SEASON_DISPLAY_NUMBERContent = default;
             private static bool _COLUMN_SEASON_DISPLAY_NUMBERReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Programs.html#COLUMN_SEASON_NUMBER"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Java.Lang.String COLUMN_SEASON_NUMBER { get { if (!_COLUMN_SEASON_NUMBERReady) { _COLUMN_SEASON_NUMBERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "COLUMN_SEASON_NUMBER"); _COLUMN_SEASON_NUMBERReady = true; } return _COLUMN_SEASON_NUMBERContent; } }
+            private static Java.Lang.String _COLUMN_SEASON_NUMBERContent = default;
+            private static bool _COLUMN_SEASON_NUMBERReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Programs.html#COLUMN_SEASON_TITLE"/>
             /// </summary>

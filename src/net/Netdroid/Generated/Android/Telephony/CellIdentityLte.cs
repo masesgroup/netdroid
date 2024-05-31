@@ -94,11 +94,27 @@ namespace Android.Telephony
             get { return IExecuteWithSignature<int>("getEarfcn", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityLte.html#getMcc()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int Mcc
+        {
+            get { return IExecuteWithSignature<int>("getMcc", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityLte.html#getMccString()"/> 
         /// </summary>
         public Java.Lang.String MccString
         {
             get { return IExecuteWithSignature<Java.Lang.String>("getMccString", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityLte.html#getMnc()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int Mnc
+        {
+            get { return IExecuteWithSignature<int>("getMnc", "()I"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityLte.html#getMncString()"/> 

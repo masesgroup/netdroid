@@ -43,14 +43,37 @@ namespace Android.Text.Method
         #region Static methods
         
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/text/method/TimeKeyListener.html#getInstance(java.util.Locale)"/>
+        /// Handler for <see href="https://developer.android.com/reference/android/text/method/TimeKeyListener.html#getInstance()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetInstance"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Locale, Android.Text.Method.TimeKeyListener> OnGetInstance { get; set; } = null;
+        public System.Func<Android.Text.Method.TimeKeyListener> OnGetInstance { get; set; } = null;
 
-        void GetInstanceEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Locale>> data)
+        void GetInstanceEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
             var methodToExecute = (OnGetInstance != null) ? OnGetInstance : GetInstance;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
+        }
+
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/method/TimeKeyListener.html#getInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.Method.TimeKeyListener"/></returns>
+        [System.Obsolete()]
+        public virtual Android.Text.Method.TimeKeyListener GetInstance()
+        {
+            return default;
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://developer.android.com/reference/android/text/method/TimeKeyListener.html#getInstance(java.util.Locale)"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnGetInstance1"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Locale, Android.Text.Method.TimeKeyListener> OnGetInstance1 { get; set; } = null;
+
+        void GetInstance1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Locale>> data)
+        {
+            var methodToExecute = (OnGetInstance1 != null) ? OnGetInstance1 : GetInstance;
             var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
             data.SetReturnValue(executionResult);
         }

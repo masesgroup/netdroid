@@ -30,6 +30,18 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#%3Cinit%3E(byte[],int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        [System.Obsolete()]
+        public String(byte[] arg0, int arg1, int arg2, int arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#%3Cinit%3E(byte[],int,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -60,6 +72,16 @@ namespace Java.Lang
         /// <param name="arg2"><see cref="int"/></param>
         public String(byte[] arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#%3Cinit%3E(byte[],int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public String(byte[] arg0, int arg1)
+            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -895,6 +917,18 @@ namespace Java.Lang
         public Java.Lang.String Intern()
         {
             return IExecuteWithSignature<Java.Lang.String>("intern", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#getBytes(int,int,byte[],int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="byte"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void GetBytes(int arg0, int arg1, byte[] arg2, int arg3)
+        {
+            IExecute("getBytes", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html#getChars(int,int,char[],int)"/>

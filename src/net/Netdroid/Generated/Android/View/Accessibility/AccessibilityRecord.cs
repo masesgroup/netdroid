@@ -49,6 +49,25 @@ namespace Android.View.Accessibility
         #endregion
 
         #region Static methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#obtain()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Accessibility.AccessibilityRecord"/></returns>
+        [System.Obsolete()]
+        public static Android.View.Accessibility.AccessibilityRecord Obtain()
+        {
+            return SExecuteWithSignature<Android.View.Accessibility.AccessibilityRecord>(LocalBridgeClazz, "obtain", "()Landroid/view/accessibility/AccessibilityRecord;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#obtain(android.view.accessibility.AccessibilityRecord)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Accessibility.AccessibilityRecord"/></param>
+        /// <returns><see cref="Android.View.Accessibility.AccessibilityRecord"/></returns>
+        [System.Obsolete()]
+        public static Android.View.Accessibility.AccessibilityRecord Obtain(Android.View.Accessibility.AccessibilityRecord arg0)
+        {
+            return SExecuteWithSignature<Android.View.Accessibility.AccessibilityRecord>(LocalBridgeClazz, "obtain", "(Landroid/view/accessibility/AccessibilityRecord;)Landroid/view/accessibility/AccessibilityRecord;", arg0);
+        }
 
         #endregion
 
@@ -241,6 +260,14 @@ namespace Android.View.Accessibility
         public bool IsScrollable()
         {
             return IExecuteWithSignature<bool>("isScrollable", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#recycle()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void Recycle()
+        {
+            IExecuteWithSignature("recycle", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRecord.html#setChecked(boolean)"/>

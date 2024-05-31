@@ -212,6 +212,13 @@ namespace Android.Hardware
         private static int _TYPE_MOTION_DETECTContent = default;
         private static bool _TYPE_MOTION_DETECTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#TYPE_ORIENTATION"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int TYPE_ORIENTATION { get { if (!_TYPE_ORIENTATIONReady) { _TYPE_ORIENTATIONContent = SGetField<int>(LocalBridgeClazz, "TYPE_ORIENTATION"); _TYPE_ORIENTATIONReady = true; } return _TYPE_ORIENTATIONContent; } }
+        private static int _TYPE_ORIENTATIONContent = default;
+        private static bool _TYPE_ORIENTATIONReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#TYPE_POSE_6DOF"/>
         /// </summary>
         public static int TYPE_POSE_6DOF { get { if (!_TYPE_POSE_6DOFReady) { _TYPE_POSE_6DOFContent = SGetField<int>(LocalBridgeClazz, "TYPE_POSE_6DOF"); _TYPE_POSE_6DOFReady = true; } return _TYPE_POSE_6DOFContent; } }
@@ -265,6 +272,13 @@ namespace Android.Hardware
         public static int TYPE_STEP_DETECTOR { get { if (!_TYPE_STEP_DETECTORReady) { _TYPE_STEP_DETECTORContent = SGetField<int>(LocalBridgeClazz, "TYPE_STEP_DETECTOR"); _TYPE_STEP_DETECTORReady = true; } return _TYPE_STEP_DETECTORContent; } }
         private static int _TYPE_STEP_DETECTORContent = default;
         private static bool _TYPE_STEP_DETECTORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#TYPE_TEMPERATURE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int TYPE_TEMPERATURE { get { if (!_TYPE_TEMPERATUREReady) { _TYPE_TEMPERATUREContent = SGetField<int>(LocalBridgeClazz, "TYPE_TEMPERATURE"); _TYPE_TEMPERATUREReady = true; } return _TYPE_TEMPERATUREContent; } }
+        private static int _TYPE_TEMPERATUREContent = default;
+        private static bool _TYPE_TEMPERATUREReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#STRING_TYPE_ACCELEROMETER"/>
         /// </summary>
@@ -404,6 +418,13 @@ namespace Android.Hardware
         private static Java.Lang.String _STRING_TYPE_MOTION_DETECTContent = default;
         private static bool _STRING_TYPE_MOTION_DETECTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#STRING_TYPE_ORIENTATION"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String STRING_TYPE_ORIENTATION { get { if (!_STRING_TYPE_ORIENTATIONReady) { _STRING_TYPE_ORIENTATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "STRING_TYPE_ORIENTATION"); _STRING_TYPE_ORIENTATIONReady = true; } return _STRING_TYPE_ORIENTATIONContent; } }
+        private static Java.Lang.String _STRING_TYPE_ORIENTATIONContent = default;
+        private static bool _STRING_TYPE_ORIENTATIONReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#STRING_TYPE_POSE_6DOF"/>
         /// </summary>
         public static Java.Lang.String STRING_TYPE_POSE_6DOF { get { if (!_STRING_TYPE_POSE_6DOFReady) { _STRING_TYPE_POSE_6DOFContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "STRING_TYPE_POSE_6DOF"); _STRING_TYPE_POSE_6DOFReady = true; } return _STRING_TYPE_POSE_6DOFContent; } }
@@ -457,6 +478,13 @@ namespace Android.Hardware
         public static Java.Lang.String STRING_TYPE_STEP_DETECTOR { get { if (!_STRING_TYPE_STEP_DETECTORReady) { _STRING_TYPE_STEP_DETECTORContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "STRING_TYPE_STEP_DETECTOR"); _STRING_TYPE_STEP_DETECTORReady = true; } return _STRING_TYPE_STEP_DETECTORContent; } }
         private static Java.Lang.String _STRING_TYPE_STEP_DETECTORContent = default;
         private static bool _STRING_TYPE_STEP_DETECTORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/Sensor.html#STRING_TYPE_TEMPERATURE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String STRING_TYPE_TEMPERATURE { get { if (!_STRING_TYPE_TEMPERATUREReady) { _STRING_TYPE_TEMPERATUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "STRING_TYPE_TEMPERATURE"); _STRING_TYPE_TEMPERATUREReady = true; } return _STRING_TYPE_TEMPERATUREContent; } }
+        private static Java.Lang.String _STRING_TYPE_TEMPERATUREContent = default;
+        private static bool _STRING_TYPE_TEMPERATUREReady = false; // this is used because in case of generics 
 
         #endregion
 

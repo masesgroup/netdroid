@@ -306,6 +306,30 @@ namespace Android.App
             return IExecute<bool>("isOpActive", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#checkOp(java.lang.String,int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int CheckOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
+        {
+            return IExecute<int>("checkOp", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#checkOpNoThrow(java.lang.String,int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int CheckOpNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
+        {
+            return IExecute<int>("checkOpNoThrow", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteOp(java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -317,6 +341,18 @@ namespace Android.App
         public int NoteOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
             return IExecute<int>("noteOp", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteOp(java.lang.String,int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int NoteOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
+        {
+            return IExecute<int>("noteOp", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteOpNoThrow(java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -332,6 +368,18 @@ namespace Android.App
             return IExecute<int>("noteOpNoThrow", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteOpNoThrow(java.lang.String,int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int NoteOpNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
+        {
+            return IExecute<int>("noteOpNoThrow", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteProxyOp(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -343,6 +391,17 @@ namespace Android.App
         public int NoteProxyOp(Java.Lang.String arg0, Java.Lang.String arg1, int arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
             return IExecute<int>("noteProxyOp", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteProxyOp(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int NoteProxyOp(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return IExecute<int>("noteProxyOp", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteProxyOpNoThrow(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)"/>
@@ -358,6 +417,29 @@ namespace Android.App
             return IExecute<int>("noteProxyOpNoThrow", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteProxyOpNoThrow(java.lang.String,java.lang.String,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int NoteProxyOpNoThrow(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
+        {
+            return IExecute<int>("noteProxyOpNoThrow", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#noteProxyOpNoThrow(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int NoteProxyOpNoThrow(Java.Lang.String arg0, Java.Lang.String arg1)
+        {
+            return IExecute<int>("noteProxyOpNoThrow", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#startOp(java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -371,6 +453,18 @@ namespace Android.App
             return IExecute<int>("startOp", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#startOp(java.lang.String,int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int StartOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
+        {
+            return IExecute<int>("startOp", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#startOpNoThrow(java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -382,6 +476,18 @@ namespace Android.App
         public int StartOpNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
             return IExecute<int>("startOpNoThrow", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#startOpNoThrow(java.lang.String,int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int StartOpNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
+        {
+            return IExecute<int>("startOpNoThrow", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#startProxyOp(java.lang.String,int,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -454,6 +560,16 @@ namespace Android.App
             return IExecute<int>("unsafeCheckOpRawNoThrow", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#checkPackage(int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public void CheckPackage(int arg0, Java.Lang.String arg1)
+        {
+            IExecute("checkPackage", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#finishOp(java.lang.String,int,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -463,6 +579,17 @@ namespace Android.App
         public void FinishOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
             IExecute("finishOp", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#finishOp(java.lang.String,int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public void FinishOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
+        {
+            IExecute("finishOp", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AppOpsManager.html#finishProxyOp(java.lang.String,int,java.lang.String,java.lang.String)"/>

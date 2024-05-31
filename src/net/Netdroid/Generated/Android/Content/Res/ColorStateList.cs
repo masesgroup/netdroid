@@ -70,6 +70,19 @@ namespace Android.Content.Res
             return SExecute<Android.Content.Res.ColorStateList>(LocalBridgeClazz, "createFromXml", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#createFromXml(android.content.res.Resources,org.xmlpull.v1.XmlPullParser)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.Resources"/></param>
+        /// <param name="arg1"><see cref="Org.Xmlpull.V1.XmlPullParser"/></param>
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
+        [System.Obsolete()]
+        public static Android.Content.Res.ColorStateList CreateFromXml(Android.Content.Res.Resources arg0, Org.Xmlpull.V1.XmlPullParser arg1)
+        {
+            return SExecute<Android.Content.Res.ColorStateList>(LocalBridgeClazz, "createFromXml", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#valueOf(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

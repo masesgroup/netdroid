@@ -38,6 +38,20 @@ namespace Android.Text.Format
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#FORMAT_12HOUR"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FORMAT_12HOUR { get { if (!_FORMAT_12HOURReady) { _FORMAT_12HOURContent = SGetField<int>(LocalBridgeClazz, "FORMAT_12HOUR"); _FORMAT_12HOURReady = true; } return _FORMAT_12HOURContent; } }
+        private static int _FORMAT_12HOURContent = default;
+        private static bool _FORMAT_12HOURReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#FORMAT_24HOUR"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FORMAT_24HOUR { get { if (!_FORMAT_24HOURReady) { _FORMAT_24HOURContent = SGetField<int>(LocalBridgeClazz, "FORMAT_24HOUR"); _FORMAT_24HOURReady = true; } return _FORMAT_24HOURContent; } }
+        private static int _FORMAT_24HOURContent = default;
+        private static bool _FORMAT_24HOURReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#FORMAT_ABBREV_ALL"/>
         /// </summary>
         public static int FORMAT_ABBREV_ALL { get { if (!_FORMAT_ABBREV_ALLReady) { _FORMAT_ABBREV_ALLContent = SGetField<int>(LocalBridgeClazz, "FORMAT_ABBREV_ALL"); _FORMAT_ABBREV_ALLReady = true; } return _FORMAT_ABBREV_ALLContent; } }
@@ -68,6 +82,34 @@ namespace Android.Text.Format
         private static int _FORMAT_ABBREV_WEEKDAYContent = default;
         private static bool _FORMAT_ABBREV_WEEKDAYReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#FORMAT_CAP_AMPM"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FORMAT_CAP_AMPM { get { if (!_FORMAT_CAP_AMPMReady) { _FORMAT_CAP_AMPMContent = SGetField<int>(LocalBridgeClazz, "FORMAT_CAP_AMPM"); _FORMAT_CAP_AMPMReady = true; } return _FORMAT_CAP_AMPMContent; } }
+        private static int _FORMAT_CAP_AMPMContent = default;
+        private static bool _FORMAT_CAP_AMPMReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#FORMAT_CAP_MIDNIGHT"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FORMAT_CAP_MIDNIGHT { get { if (!_FORMAT_CAP_MIDNIGHTReady) { _FORMAT_CAP_MIDNIGHTContent = SGetField<int>(LocalBridgeClazz, "FORMAT_CAP_MIDNIGHT"); _FORMAT_CAP_MIDNIGHTReady = true; } return _FORMAT_CAP_MIDNIGHTContent; } }
+        private static int _FORMAT_CAP_MIDNIGHTContent = default;
+        private static bool _FORMAT_CAP_MIDNIGHTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#FORMAT_CAP_NOON"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FORMAT_CAP_NOON { get { if (!_FORMAT_CAP_NOONReady) { _FORMAT_CAP_NOONContent = SGetField<int>(LocalBridgeClazz, "FORMAT_CAP_NOON"); _FORMAT_CAP_NOONReady = true; } return _FORMAT_CAP_NOONContent; } }
+        private static int _FORMAT_CAP_NOONContent = default;
+        private static bool _FORMAT_CAP_NOONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#FORMAT_CAP_NOON_MIDNIGHT"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FORMAT_CAP_NOON_MIDNIGHT { get { if (!_FORMAT_CAP_NOON_MIDNIGHTReady) { _FORMAT_CAP_NOON_MIDNIGHTContent = SGetField<int>(LocalBridgeClazz, "FORMAT_CAP_NOON_MIDNIGHT"); _FORMAT_CAP_NOON_MIDNIGHTReady = true; } return _FORMAT_CAP_NOON_MIDNIGHTContent; } }
+        private static int _FORMAT_CAP_NOON_MIDNIGHTContent = default;
+        private static bool _FORMAT_CAP_NOON_MIDNIGHTReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#FORMAT_NO_MIDNIGHT"/>
         /// </summary>
         public static int FORMAT_NO_MIDNIGHT { get { if (!_FORMAT_NO_MIDNIGHTReady) { _FORMAT_NO_MIDNIGHTContent = SGetField<int>(LocalBridgeClazz, "FORMAT_NO_MIDNIGHT"); _FORMAT_NO_MIDNIGHTReady = true; } return _FORMAT_NO_MIDNIGHTContent; } }
@@ -85,6 +127,13 @@ namespace Android.Text.Format
         public static int FORMAT_NO_NOON { get { if (!_FORMAT_NO_NOONReady) { _FORMAT_NO_NOONContent = SGetField<int>(LocalBridgeClazz, "FORMAT_NO_NOON"); _FORMAT_NO_NOONReady = true; } return _FORMAT_NO_NOONContent; } }
         private static int _FORMAT_NO_NOONContent = default;
         private static bool _FORMAT_NO_NOONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#FORMAT_NO_NOON_MIDNIGHT"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FORMAT_NO_NOON_MIDNIGHT { get { if (!_FORMAT_NO_NOON_MIDNIGHTReady) { _FORMAT_NO_NOON_MIDNIGHTContent = SGetField<int>(LocalBridgeClazz, "FORMAT_NO_NOON_MIDNIGHT"); _FORMAT_NO_NOON_MIDNIGHTReady = true; } return _FORMAT_NO_NOON_MIDNIGHTContent; } }
+        private static int _FORMAT_NO_NOON_MIDNIGHTContent = default;
+        private static bool _FORMAT_NO_NOON_MIDNIGHTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#FORMAT_NO_YEAR"/>
         /// </summary>
@@ -122,11 +171,81 @@ namespace Android.Text.Format
         private static int _FORMAT_SHOW_YEARContent = default;
         private static bool _FORMAT_SHOW_YEARReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#FORMAT_UTC"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FORMAT_UTC { get { if (!_FORMAT_UTCReady) { _FORMAT_UTCContent = SGetField<int>(LocalBridgeClazz, "FORMAT_UTC"); _FORMAT_UTCReady = true; } return _FORMAT_UTCContent; } }
+        private static int _FORMAT_UTCContent = default;
+        private static bool _FORMAT_UTCReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#LENGTH_LONG"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int LENGTH_LONG { get { if (!_LENGTH_LONGReady) { _LENGTH_LONGContent = SGetField<int>(LocalBridgeClazz, "LENGTH_LONG"); _LENGTH_LONGReady = true; } return _LENGTH_LONGContent; } }
+        private static int _LENGTH_LONGContent = default;
+        private static bool _LENGTH_LONGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#LENGTH_MEDIUM"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int LENGTH_MEDIUM { get { if (!_LENGTH_MEDIUMReady) { _LENGTH_MEDIUMContent = SGetField<int>(LocalBridgeClazz, "LENGTH_MEDIUM"); _LENGTH_MEDIUMReady = true; } return _LENGTH_MEDIUMContent; } }
+        private static int _LENGTH_MEDIUMContent = default;
+        private static bool _LENGTH_MEDIUMReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#LENGTH_SHORT"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int LENGTH_SHORT { get { if (!_LENGTH_SHORTReady) { _LENGTH_SHORTContent = SGetField<int>(LocalBridgeClazz, "LENGTH_SHORT"); _LENGTH_SHORTReady = true; } return _LENGTH_SHORTContent; } }
+        private static int _LENGTH_SHORTContent = default;
+        private static bool _LENGTH_SHORTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#LENGTH_SHORTER"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int LENGTH_SHORTER { get { if (!_LENGTH_SHORTERReady) { _LENGTH_SHORTERContent = SGetField<int>(LocalBridgeClazz, "LENGTH_SHORTER"); _LENGTH_SHORTERReady = true; } return _LENGTH_SHORTERContent; } }
+        private static int _LENGTH_SHORTERContent = default;
+        private static bool _LENGTH_SHORTERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#LENGTH_SHORTEST"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int LENGTH_SHORTEST { get { if (!_LENGTH_SHORTESTReady) { _LENGTH_SHORTESTContent = SGetField<int>(LocalBridgeClazz, "LENGTH_SHORTEST"); _LENGTH_SHORTESTReady = true; } return _LENGTH_SHORTESTContent; } }
+        private static int _LENGTH_SHORTESTContent = default;
+        private static bool _LENGTH_SHORTESTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#sameMonthTable"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int[] sameMonthTable { get { if (!_sameMonthTableReady) { _sameMonthTableContent = SGetFieldArray<int>(LocalBridgeClazz, "sameMonthTable"); _sameMonthTableReady = true; } return _sameMonthTableContent; } }
+        private static int[] _sameMonthTableContent = default;
+        private static bool _sameMonthTableReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#sameYearTable"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int[] sameYearTable { get { if (!_sameYearTableReady) { _sameYearTableContent = SGetFieldArray<int>(LocalBridgeClazz, "sameYearTable"); _sameYearTableReady = true; } return _sameYearTableContent; } }
+        private static int[] _sameYearTableContent = default;
+        private static bool _sameYearTableReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#ABBREV_MONTH_FORMAT"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String ABBREV_MONTH_FORMAT { get { if (!_ABBREV_MONTH_FORMATReady) { _ABBREV_MONTH_FORMATContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ABBREV_MONTH_FORMAT"); _ABBREV_MONTH_FORMATReady = true; } return _ABBREV_MONTH_FORMATContent; } }
+        private static Java.Lang.String _ABBREV_MONTH_FORMATContent = default;
+        private static bool _ABBREV_MONTH_FORMATReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#ABBREV_WEEKDAY_FORMAT"/>
         /// </summary>
         public static Java.Lang.String ABBREV_WEEKDAY_FORMAT { get { if (!_ABBREV_WEEKDAY_FORMATReady) { _ABBREV_WEEKDAY_FORMATContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ABBREV_WEEKDAY_FORMAT"); _ABBREV_WEEKDAY_FORMATReady = true; } return _ABBREV_WEEKDAY_FORMATContent; } }
         private static Java.Lang.String _ABBREV_WEEKDAY_FORMATContent = default;
         private static bool _ABBREV_WEEKDAY_FORMATReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#HOUR_MINUTE_24"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String HOUR_MINUTE_24 { get { if (!_HOUR_MINUTE_24Ready) { _HOUR_MINUTE_24Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "HOUR_MINUTE_24"); _HOUR_MINUTE_24Ready = true; } return _HOUR_MINUTE_24Content; } }
+        private static Java.Lang.String _HOUR_MINUTE_24Content = default;
+        private static bool _HOUR_MINUTE_24Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#MONTH_DAY_FORMAT"/>
         /// </summary>
@@ -193,6 +312,13 @@ namespace Android.Text.Format
         public static long WEEK_IN_MILLIS { get { if (!_WEEK_IN_MILLISReady) { _WEEK_IN_MILLISContent = SGetField<long>(LocalBridgeClazz, "WEEK_IN_MILLIS"); _WEEK_IN_MILLISReady = true; } return _WEEK_IN_MILLISContent; } }
         private static long _WEEK_IN_MILLISContent = default;
         private static bool _WEEK_IN_MILLISReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#YEAR_IN_MILLIS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static long YEAR_IN_MILLIS { get { if (!_YEAR_IN_MILLISReady) { _YEAR_IN_MILLISContent = SGetField<long>(LocalBridgeClazz, "YEAR_IN_MILLIS"); _YEAR_IN_MILLISReady = true; } return _YEAR_IN_MILLISContent; } }
+        private static long _YEAR_IN_MILLISContent = default;
+        private static bool _YEAR_IN_MILLISReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -325,6 +451,38 @@ namespace Android.Text.Format
         public static Java.Lang.String FormatElapsedTime(long arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "formatElapsedTime", "(J)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#getAMPMString(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public static Java.Lang.String GetAMPMString(int arg0)
+        {
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getAMPMString", "(I)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#getDayOfWeekString(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public static Java.Lang.String GetDayOfWeekString(int arg0, int arg1)
+        {
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getDayOfWeekString", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#getMonthString(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public static Java.Lang.String GetMonthString(int arg0, int arg1)
+        {
+            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getMonthString", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/DateUtils.html#formatDateRange(android.content.Context,java.util.Formatter,long,long,int,java.lang.String)"/>

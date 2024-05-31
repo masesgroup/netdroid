@@ -769,7 +769,29 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
+                AddEventHandler("onCellLocationChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.CellLocation>>>(OnCellLocationChangedEventHandler));
 
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CellLocationListener.html#onCellLocationChanged(android.telephony.CellLocation)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnCellLocationChanged"/> has a value it takes precedence over corresponding class method</remarks>
+            public System.Action<Android.Telephony.CellLocation> OnOnCellLocationChanged { get; set; } = null;
+
+            void OnCellLocationChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.CellLocation>> data)
+            {
+                var methodToExecute = (OnOnCellLocationChanged != null) ? OnOnCellLocationChanged : OnCellLocationChanged;
+                methodToExecute.Invoke(data.EventData.TypedEventData);
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CellLocationListener.html#onCellLocationChanged(android.telephony.CellLocation)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Telephony.CellLocation"/></param>
+            public virtual void OnCellLocationChanged(Android.Telephony.CellLocation arg0)
+            {
+                
             }
 
             #endregion
@@ -802,6 +824,14 @@ namespace Android.Telephony
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CellLocationListener.html#onCellLocationChanged(android.telephony.CellLocation)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Telephony.CellLocation"/></param>
+            public override void OnCellLocationChanged(Android.Telephony.CellLocation arg0)
+            {
+                IExecuteWithSignature("onCellLocationChanged", "(Landroid/telephony/CellLocation;)V", arg0);
+            }
 
             #endregion
 

@@ -57,6 +57,14 @@ namespace Java.Security.Cert
             get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRL.html#getIssuerDN()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Security.Principal IssuerDN
+        {
+            get { return IExecuteWithSignature<Java.Security.Principal>("getIssuerDN", "()Ljava/security/Principal;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRL.html#getIssuerX500Principal()"/> 
         /// </summary>
         public Javax.Security.Auth.X500.X500Principal IssuerX500Principal

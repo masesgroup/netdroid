@@ -184,6 +184,62 @@ namespace Java.Math
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/math/BigDecimal.html#ROUND_CEILING"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ROUND_CEILING { get { if (!_ROUND_CEILINGReady) { _ROUND_CEILINGContent = SGetField<int>(LocalBridgeClazz, "ROUND_CEILING"); _ROUND_CEILINGReady = true; } return _ROUND_CEILINGContent; } }
+        private static int _ROUND_CEILINGContent = default;
+        private static bool _ROUND_CEILINGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/math/BigDecimal.html#ROUND_DOWN"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ROUND_DOWN { get { if (!_ROUND_DOWNReady) { _ROUND_DOWNContent = SGetField<int>(LocalBridgeClazz, "ROUND_DOWN"); _ROUND_DOWNReady = true; } return _ROUND_DOWNContent; } }
+        private static int _ROUND_DOWNContent = default;
+        private static bool _ROUND_DOWNReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/math/BigDecimal.html#ROUND_FLOOR"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ROUND_FLOOR { get { if (!_ROUND_FLOORReady) { _ROUND_FLOORContent = SGetField<int>(LocalBridgeClazz, "ROUND_FLOOR"); _ROUND_FLOORReady = true; } return _ROUND_FLOORContent; } }
+        private static int _ROUND_FLOORContent = default;
+        private static bool _ROUND_FLOORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/math/BigDecimal.html#ROUND_HALF_DOWN"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ROUND_HALF_DOWN { get { if (!_ROUND_HALF_DOWNReady) { _ROUND_HALF_DOWNContent = SGetField<int>(LocalBridgeClazz, "ROUND_HALF_DOWN"); _ROUND_HALF_DOWNReady = true; } return _ROUND_HALF_DOWNContent; } }
+        private static int _ROUND_HALF_DOWNContent = default;
+        private static bool _ROUND_HALF_DOWNReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/math/BigDecimal.html#ROUND_HALF_EVEN"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ROUND_HALF_EVEN { get { if (!_ROUND_HALF_EVENReady) { _ROUND_HALF_EVENContent = SGetField<int>(LocalBridgeClazz, "ROUND_HALF_EVEN"); _ROUND_HALF_EVENReady = true; } return _ROUND_HALF_EVENContent; } }
+        private static int _ROUND_HALF_EVENContent = default;
+        private static bool _ROUND_HALF_EVENReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/math/BigDecimal.html#ROUND_HALF_UP"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ROUND_HALF_UP { get { if (!_ROUND_HALF_UPReady) { _ROUND_HALF_UPContent = SGetField<int>(LocalBridgeClazz, "ROUND_HALF_UP"); _ROUND_HALF_UPReady = true; } return _ROUND_HALF_UPContent; } }
+        private static int _ROUND_HALF_UPContent = default;
+        private static bool _ROUND_HALF_UPReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/math/BigDecimal.html#ROUND_UNNECESSARY"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ROUND_UNNECESSARY { get { if (!_ROUND_UNNECESSARYReady) { _ROUND_UNNECESSARYContent = SGetField<int>(LocalBridgeClazz, "ROUND_UNNECESSARY"); _ROUND_UNNECESSARYReady = true; } return _ROUND_UNNECESSARYContent; } }
+        private static int _ROUND_UNNECESSARYContent = default;
+        private static bool _ROUND_UNNECESSARYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/math/BigDecimal.html#ROUND_UP"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ROUND_UP { get { if (!_ROUND_UPReady) { _ROUND_UPContent = SGetField<int>(LocalBridgeClazz, "ROUND_UP"); _ROUND_UPReady = true; } return _ROUND_UPContent; } }
+        private static int _ROUND_UPContent = default;
+        private static bool _ROUND_UPReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/math/BigDecimal.html#ONE"/>
         /// </summary>
         public static Java.Math.BigDecimal ONE { get { if (!_ONEReady) { _ONEContent = SGetField<Java.Math.BigDecimal>(LocalBridgeClazz, "ONE"); _ONEReady = true; } return _ONEContent; } }
@@ -348,6 +404,18 @@ namespace Java.Math
             return IExecuteWithSignature<Java.Math.BigDecimal>("add", "(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/math/BigDecimal.html#divide(java.math.BigDecimal,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigDecimal"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
+        [System.Obsolete()]
+        public Java.Math.BigDecimal Divide(Java.Math.BigDecimal arg0, int arg1, int arg2)
+        {
+            return IExecute<Java.Math.BigDecimal>("divide", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/math/BigDecimal.html#divide(java.math.BigDecimal,int,java.math.RoundingMode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigDecimal"/></param>
@@ -357,6 +425,17 @@ namespace Java.Math
         public Java.Math.BigDecimal Divide(Java.Math.BigDecimal arg0, int arg1, Java.Math.RoundingMode arg2)
         {
             return IExecute<Java.Math.BigDecimal>("divide", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/math/BigDecimal.html#divide(java.math.BigDecimal,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigDecimal"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
+        [System.Obsolete()]
+        public Java.Math.BigDecimal Divide(Java.Math.BigDecimal arg0, int arg1)
+        {
+            return IExecute<Java.Math.BigDecimal>("divide", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/math/BigDecimal.html#divide(java.math.BigDecimal,java.math.MathContext)"/>
@@ -550,6 +629,17 @@ namespace Java.Math
         public Java.Math.BigDecimal ScaleByPowerOfTen(int arg0)
         {
             return IExecuteWithSignature<Java.Math.BigDecimal>("scaleByPowerOfTen", "(I)Ljava/math/BigDecimal;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/math/BigDecimal.html#setScale(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
+        [System.Obsolete()]
+        public Java.Math.BigDecimal SetScale(int arg0, int arg1)
+        {
+            return IExecute<Java.Math.BigDecimal>("setScale", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/math/BigDecimal.html#setScale(int,java.math.RoundingMode)"/>

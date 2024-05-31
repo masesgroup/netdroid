@@ -875,6 +875,22 @@ namespace Android.Accessibilityservice
 
             #region Instance methods
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getCenterX()"/> 
+            /// </summary>
+            [System.Obsolete()]
+            public float CenterX
+            {
+                get { return IExecuteWithSignature<float>("getCenterX", "()F"); }
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getCenterY()"/> 
+            /// </summary>
+            [System.Obsolete()]
+            public float CenterY
+            {
+                get { return IExecuteWithSignature<float>("getCenterY", "()F"); }
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getCurrentMagnificationRegion()"/> 
             /// </summary>
             public Android.Graphics.Region CurrentMagnificationRegion
@@ -887,6 +903,22 @@ namespace Android.Accessibilityservice
             public Android.Accessibilityservice.MagnificationConfig MagnificationConfig
             {
                 get { return IExecuteWithSignature<Android.Accessibilityservice.MagnificationConfig>("getMagnificationConfig", "()Landroid/accessibilityservice/MagnificationConfig;"); }
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getMagnificationRegion()"/> 
+            /// </summary>
+            [System.Obsolete()]
+            public Android.Graphics.Region MagnificationRegion
+            {
+                get { return IExecuteWithSignature<Android.Graphics.Region>("getMagnificationRegion", "()Landroid/graphics/Region;"); }
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getScale()"/> 
+            /// </summary>
+            [System.Obsolete()]
+            public float Scale
+            {
+                get { return IExecuteWithSignature<float>("getScale", "()F"); }
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#removeListener(android.accessibilityservice.AccessibilityService.MagnificationController.OnMagnificationChangedListener)"/>
@@ -916,6 +948,18 @@ namespace Android.Accessibilityservice
                 return IExecuteWithSignature<bool>("resetCurrentMagnification", "(Z)Z", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#setCenter(float,float,boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
+            /// <param name="arg2"><see cref="bool"/></param>
+            /// <returns><see cref="bool"/></returns>
+            [System.Obsolete()]
+            public bool SetCenter(float arg0, float arg1, bool arg2)
+            {
+                return IExecute<bool>("setCenter", arg0, arg1, arg2);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#setMagnificationConfig(android.accessibilityservice.MagnificationConfig,boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Accessibilityservice.MagnificationConfig"/></param>
@@ -924,6 +968,17 @@ namespace Android.Accessibilityservice
             public bool SetMagnificationConfig(Android.Accessibilityservice.MagnificationConfig arg0, bool arg1)
             {
                 return IExecute<bool>("setMagnificationConfig", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#setScale(float,boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            /// <param name="arg1"><see cref="bool"/></param>
+            /// <returns><see cref="bool"/></returns>
+            [System.Obsolete()]
+            public bool SetScale(float arg0, bool arg1)
+            {
+                return IExecute<bool>("setScale", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#addListener(android.accessibilityservice.AccessibilityService.MagnificationController.OnMagnificationChangedListener,android.os.Handler)"/>
@@ -972,7 +1027,34 @@ namespace Android.Accessibilityservice
                 protected virtual void InitializeHandlers()
                 {
                     AddEventHandler("onMagnificationChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Accessibilityservice.AccessibilityService.MagnificationController>>>(OnMagnificationChangedEventHandler));
+                    AddEventHandler("onMagnificationChanged3", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Accessibilityservice.AccessibilityService.MagnificationController>>>(OnMagnificationChanged3EventHandler));
 
+                }
+
+                /// <summary>
+                /// Handler for <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.OnMagnificationChangedListener.html#onMagnificationChanged(android.accessibilityservice.AccessibilityService.MagnificationController,android.graphics.Region,float,float,float)"/>
+                /// </summary>
+                /// <remarks>If <see cref="OnOnMagnificationChanged"/> has a value it takes precedence over corresponding class method</remarks>
+                public System.Action<Android.Accessibilityservice.AccessibilityService.MagnificationController, Android.Graphics.Region, float, float, float> OnOnMagnificationChanged { get; set; } = null;
+
+                void OnMagnificationChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Accessibilityservice.AccessibilityService.MagnificationController>> data)
+                {
+                    var methodToExecute = (OnOnMagnificationChanged != null) ? OnOnMagnificationChanged : OnMagnificationChanged;
+                    methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Graphics.Region>(0), data.EventData.GetAt<float>(1), data.EventData.GetAt<float>(2), data.EventData.GetAt<float>(3));
+                }
+
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.OnMagnificationChangedListener.html#onMagnificationChanged(android.accessibilityservice.AccessibilityService.MagnificationController,android.graphics.Region,float,float,float)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Accessibilityservice.AccessibilityService.MagnificationController"/></param>
+                /// <param name="arg1"><see cref="Android.Graphics.Region"/></param>
+                /// <param name="arg2"><see cref="float"/></param>
+                /// <param name="arg3"><see cref="float"/></param>
+                /// <param name="arg4"><see cref="float"/></param>
+                [System.Obsolete()]
+                public virtual void OnMagnificationChanged(Android.Accessibilityservice.AccessibilityService.MagnificationController arg0, Android.Graphics.Region arg1, float arg2, float arg3, float arg4)
+                {
+                    
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.OnMagnificationChangedListener.html#onMagnificationChanged(android.accessibilityservice.AccessibilityService.MagnificationController,android.graphics.Region,android.accessibilityservice.MagnificationConfig)"/>
@@ -989,12 +1071,12 @@ namespace Android.Accessibilityservice
                 /// <summary>
                 /// Handler for <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.OnMagnificationChangedListener.html#onMagnificationChanged(android.accessibilityservice.AccessibilityService.MagnificationController,android.graphics.Region,android.accessibilityservice.MagnificationConfig)"/>
                 /// </summary>
-                /// <remarks>If <see cref="OnOnMagnificationChanged"/> has a value it takes precedence over corresponding class method</remarks>
-                public System.Action<Android.Accessibilityservice.AccessibilityService.MagnificationController, Android.Graphics.Region, Android.Accessibilityservice.MagnificationConfig> OnOnMagnificationChanged { get; set; } = null;
+                /// <remarks>If <see cref="OnOnMagnificationChanged3"/> has a value it takes precedence over corresponding class method</remarks>
+                public System.Action<Android.Accessibilityservice.AccessibilityService.MagnificationController, Android.Graphics.Region, Android.Accessibilityservice.MagnificationConfig> OnOnMagnificationChanged3 { get; set; } = null;
 
-                void OnMagnificationChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Accessibilityservice.AccessibilityService.MagnificationController>> data)
+                void OnMagnificationChanged3EventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Accessibilityservice.AccessibilityService.MagnificationController>> data)
                 {
-                    var methodToExecute = (OnOnMagnificationChanged != null) ? OnOnMagnificationChanged : OnMagnificationChanged;
+                    var methodToExecute = (OnOnMagnificationChanged3 != null) ? OnOnMagnificationChanged3 : OnMagnificationChanged;
                     methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Graphics.Region>(0), data.EventData.GetAt<Android.Accessibilityservice.MagnificationConfig>(1));
                 }
 
@@ -1040,6 +1122,19 @@ namespace Android.Accessibilityservice
                 #endregion
 
                 #region Instance methods
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.OnMagnificationChangedListener.html#onMagnificationChanged(android.accessibilityservice.AccessibilityService.MagnificationController,android.graphics.Region,float,float,float)"/>
+                /// </summary>
+                /// <param name="arg0"><see cref="Android.Accessibilityservice.AccessibilityService.MagnificationController"/></param>
+                /// <param name="arg1"><see cref="Android.Graphics.Region"/></param>
+                /// <param name="arg2"><see cref="float"/></param>
+                /// <param name="arg3"><see cref="float"/></param>
+                /// <param name="arg4"><see cref="float"/></param>
+                [System.Obsolete()]
+                public override void OnMagnificationChanged(Android.Accessibilityservice.AccessibilityService.MagnificationController arg0, Android.Graphics.Region arg1, float arg2, float arg3, float arg4)
+                {
+                    IExecute("onMagnificationChanged", arg0, arg1, arg2, arg3, arg4);
+                }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.OnMagnificationChangedListener.html#onMagnificationChanged(android.accessibilityservice.AccessibilityService.MagnificationController,android.graphics.Region,android.accessibilityservice.MagnificationConfig)"/>
                 /// </summary>

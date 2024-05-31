@@ -70,6 +70,16 @@ namespace Java.Io
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/io/ByteArrayOutputStream.html#toString(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public Java.Lang.String ToString(int arg0)
+        {
+            return IExecuteWithSignature<Java.Lang.String>("toString", "(I)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/io/ByteArrayOutputStream.html#toString(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

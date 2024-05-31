@@ -148,6 +148,45 @@ namespace Android.Service.Autofill
                 return IExecute<Android.Service.Autofill.FillResponse.Builder>("setAuthentication", arg0, arg1, arg2);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FillResponse.Builder.html#setAuthentication(android.view.autofill.AutofillId[],android.content.IntentSender,android.widget.RemoteViews,android.service.autofill.InlinePresentation,android.service.autofill.InlinePresentation)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.View.Autofill.AutofillId"/></param>
+            /// <param name="arg1"><see cref="Android.Content.IntentSender"/></param>
+            /// <param name="arg2"><see cref="Android.Widget.RemoteViews"/></param>
+            /// <param name="arg3"><see cref="Android.Service.Autofill.InlinePresentation"/></param>
+            /// <param name="arg4"><see cref="Android.Service.Autofill.InlinePresentation"/></param>
+            /// <returns><see cref="Android.Service.Autofill.FillResponse.Builder"/></returns>
+            [System.Obsolete()]
+            public Android.Service.Autofill.FillResponse.Builder SetAuthentication(Android.View.Autofill.AutofillId[] arg0, Android.Content.IntentSender arg1, Android.Widget.RemoteViews arg2, Android.Service.Autofill.InlinePresentation arg3, Android.Service.Autofill.InlinePresentation arg4)
+            {
+                return IExecute<Android.Service.Autofill.FillResponse.Builder>("setAuthentication", arg0, arg1, arg2, arg3, arg4);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FillResponse.Builder.html#setAuthentication(android.view.autofill.AutofillId[],android.content.IntentSender,android.widget.RemoteViews,android.service.autofill.InlinePresentation)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.View.Autofill.AutofillId"/></param>
+            /// <param name="arg1"><see cref="Android.Content.IntentSender"/></param>
+            /// <param name="arg2"><see cref="Android.Widget.RemoteViews"/></param>
+            /// <param name="arg3"><see cref="Android.Service.Autofill.InlinePresentation"/></param>
+            /// <returns><see cref="Android.Service.Autofill.FillResponse.Builder"/></returns>
+            [System.Obsolete()]
+            public Android.Service.Autofill.FillResponse.Builder SetAuthentication(Android.View.Autofill.AutofillId[] arg0, Android.Content.IntentSender arg1, Android.Widget.RemoteViews arg2, Android.Service.Autofill.InlinePresentation arg3)
+            {
+                return IExecute<Android.Service.Autofill.FillResponse.Builder>("setAuthentication", arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/autofill/FillResponse.Builder.html#setAuthentication(android.view.autofill.AutofillId[],android.content.IntentSender,android.widget.RemoteViews)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.View.Autofill.AutofillId"/></param>
+            /// <param name="arg1"><see cref="Android.Content.IntentSender"/></param>
+            /// <param name="arg2"><see cref="Android.Widget.RemoteViews"/></param>
+            /// <returns><see cref="Android.Service.Autofill.FillResponse.Builder"/></returns>
+            [System.Obsolete()]
+            public Android.Service.Autofill.FillResponse.Builder SetAuthentication(Android.View.Autofill.AutofillId[] arg0, Android.Content.IntentSender arg1, Android.Widget.RemoteViews arg2)
+            {
+                return IExecute<Android.Service.Autofill.FillResponse.Builder>("setAuthentication", arg0, arg1, arg2);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/autofill/FillResponse.Builder.html#setClientState(android.os.Bundle)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>

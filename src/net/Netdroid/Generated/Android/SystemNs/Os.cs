@@ -42,25 +42,28 @@ namespace Android.SystemNs
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/system/Os.html#getegid()"/> 
+        /// <see href="https://developer.android.com/reference/android/system/Os.html#getegid()"/> <see href="https://developer.android.com/reference/android/system/Os.html#setegid(int)"/>
         /// </summary>
+        [System.Obsolete()]
         public static int Egid
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getegid", "()I"); }
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getegid", "()I"); } set { SExecuteWithSignature(LocalBridgeClazz, "setegid", "(I)V", value); }
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/system/Os.html#geteuid()"/> 
+        /// <see href="https://developer.android.com/reference/android/system/Os.html#geteuid()"/> <see href="https://developer.android.com/reference/android/system/Os.html#seteuid(int)"/>
         /// </summary>
+        [System.Obsolete()]
         public static int Euid
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "geteuid", "()I"); }
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "geteuid", "()I"); } set { SExecuteWithSignature(LocalBridgeClazz, "seteuid", "(I)V", value); }
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/system/Os.html#getgid()"/> 
+        /// <see href="https://developer.android.com/reference/android/system/Os.html#getgid()"/> <see href="https://developer.android.com/reference/android/system/Os.html#setgid(int)"/>
         /// </summary>
+        [System.Obsolete()]
         public static int Gid
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getgid", "()I"); }
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getgid", "()I"); } set { SExecuteWithSignature(LocalBridgeClazz, "setgid", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#getpid()"/> 
@@ -84,11 +87,12 @@ namespace Android.SystemNs
             get { return SExecuteWithSignature<int>(LocalBridgeClazz, "gettid", "()I"); }
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/system/Os.html#getuid()"/> 
+        /// <see href="https://developer.android.com/reference/android/system/Os.html#getuid()"/> <see href="https://developer.android.com/reference/android/system/Os.html#setuid(int)"/>
         /// </summary>
+        [System.Obsolete()]
         public static int Uid
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getuid", "()I"); }
+            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getuid", "()I"); } set { SExecuteWithSignature(LocalBridgeClazz, "setuid", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/system/Os.html#fstat(java.io.FileDescriptor)"/>

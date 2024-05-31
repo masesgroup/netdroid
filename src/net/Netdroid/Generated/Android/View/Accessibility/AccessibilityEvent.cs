@@ -154,6 +154,13 @@ namespace Android.View.Accessibility
         private static int _INVALID_POSITIONContent = default;
         private static bool _INVALID_POSITIONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#MAX_TEXT_LENGTH"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MAX_TEXT_LENGTH { get { if (!_MAX_TEXT_LENGTHReady) { _MAX_TEXT_LENGTHContent = SGetField<int>(LocalBridgeClazz, "MAX_TEXT_LENGTH"); _MAX_TEXT_LENGTHReady = true; } return _MAX_TEXT_LENGTHContent; } }
+        private static int _MAX_TEXT_LENGTHContent = default;
+        private static bool _MAX_TEXT_LENGTHReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#SPEECH_STATE_LISTENING_END"/>
         /// </summary>
         public static int SPEECH_STATE_LISTENING_END { get { if (!_SPEECH_STATE_LISTENING_ENDReady) { _SPEECH_STATE_LISTENING_ENDContent = SGetField<int>(LocalBridgeClazz, "SPEECH_STATE_LISTENING_END"); _SPEECH_STATE_LISTENING_ENDReady = true; } return _SPEECH_STATE_LISTENING_ENDContent; } }
@@ -415,6 +422,26 @@ namespace Android.View.Accessibility
         #endregion
 
         #region Static methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#obtain(android.view.accessibility.AccessibilityEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Accessibility.AccessibilityEvent"/></param>
+        /// <returns><see cref="Android.View.Accessibility.AccessibilityEvent"/></returns>
+        [System.Obsolete()]
+        public static Android.View.Accessibility.AccessibilityEvent Obtain(Android.View.Accessibility.AccessibilityEvent arg0)
+        {
+            return SExecuteWithSignature<Android.View.Accessibility.AccessibilityEvent>(LocalBridgeClazz, "obtain", "(Landroid/view/accessibility/AccessibilityEvent;)Landroid/view/accessibility/AccessibilityEvent;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#obtain(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Android.View.Accessibility.AccessibilityEvent"/></returns>
+        [System.Obsolete()]
+        public static Android.View.Accessibility.AccessibilityEvent Obtain(int arg0)
+        {
+            return SExecuteWithSignature<Android.View.Accessibility.AccessibilityEvent>(LocalBridgeClazz, "obtain", "(I)Landroid/view/accessibility/AccessibilityEvent;", arg0);
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#eventTypeToString(int)"/>
         /// </summary>

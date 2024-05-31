@@ -29,6 +29,24 @@ namespace Java.Lang
     public partial class Boolean : Java.Io.ISerializable, Java.Lang.IComparable<Java.Lang.Boolean>, Java.Lang.Constant.IConstable
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#%3Cinit%3E(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public Boolean(bool arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#%3Cinit%3E(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public Boolean(Java.Lang.String arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 

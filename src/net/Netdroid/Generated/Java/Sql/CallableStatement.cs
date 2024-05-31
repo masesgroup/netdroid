@@ -339,6 +339,18 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getBigDecimal(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        [System.Obsolete()]
+        public Java.Math.BigDecimal GetBigDecimal(int arg0, int arg1)
+        {
+            return IExecute<Java.Math.BigDecimal>("getBigDecimal", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getBigDecimal(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

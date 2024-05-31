@@ -140,6 +140,17 @@ namespace Android.View
             return IExecute<Android.View.View>("keyboardNavigationClusterSearch", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#invalidateChildInParent(int[],android.graphics.Rect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.Graphics.Rect"/></param>
+        /// <returns><see cref="Android.View.ViewParent"/></returns>
+        [System.Obsolete()]
+        public Android.View.ViewParent InvalidateChildInParent(int[] arg0, Android.Graphics.Rect arg1)
+        {
+            return IExecute<Android.View.ViewParent>("invalidateChildInParent", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#canResolveLayoutDirection()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -340,6 +351,16 @@ namespace Android.View
         public void FocusableViewAvailable(Android.View.View arg0)
         {
             IExecuteWithSignature("focusableViewAvailable", "(Landroid/view/View;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#invalidateChild(android.view.View,android.graphics.Rect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <param name="arg1"><see cref="Android.Graphics.Rect"/></param>
+        [System.Obsolete()]
+        public void InvalidateChild(Android.View.View arg0, Android.Graphics.Rect arg1)
+        {
+            IExecute("invalidateChild", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#notifySubtreeAccessibilityStateChanged(android.view.View,android.view.View,int)"/>

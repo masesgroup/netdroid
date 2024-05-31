@@ -396,6 +396,46 @@ namespace Android.View.Accessibility
         #endregion
 
         #region Static methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#obtain()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo"/></returns>
+        [System.Obsolete()]
+        public static Android.View.Accessibility.AccessibilityNodeInfo Obtain()
+        {
+            return SExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>(LocalBridgeClazz, "obtain", "()Landroid/view/accessibility/AccessibilityNodeInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#obtain(android.view.accessibility.AccessibilityNodeInfo)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Accessibility.AccessibilityNodeInfo"/></param>
+        /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo"/></returns>
+        [System.Obsolete()]
+        public static Android.View.Accessibility.AccessibilityNodeInfo Obtain(Android.View.Accessibility.AccessibilityNodeInfo arg0)
+        {
+            return SExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>(LocalBridgeClazz, "obtain", "(Landroid/view/accessibility/AccessibilityNodeInfo;)Landroid/view/accessibility/AccessibilityNodeInfo;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#obtain(android.view.View,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo"/></returns>
+        [System.Obsolete()]
+        public static Android.View.Accessibility.AccessibilityNodeInfo Obtain(Android.View.View arg0, int arg1)
+        {
+            return SExecute<Android.View.Accessibility.AccessibilityNodeInfo>(LocalBridgeClazz, "obtain", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#obtain(android.view.View)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo"/></returns>
+        [System.Obsolete()]
+        public static Android.View.Accessibility.AccessibilityNodeInfo Obtain(Android.View.View arg0)
+        {
+            return SExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>(LocalBridgeClazz, "obtain", "(Landroid/view/View;)Landroid/view/accessibility/AccessibilityNodeInfo;", arg0);
+        }
 
         #endregion
 
@@ -406,6 +446,14 @@ namespace Android.View.Accessibility
         public Java.Util.List<Android.View.Accessibility.AccessibilityNodeInfo.AccessibilityAction> ActionList
         {
             get { return IExecuteWithSignature<Java.Util.List<Android.View.Accessibility.AccessibilityNodeInfo.AccessibilityAction>>("getActionList", "()Ljava/util/List;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#getActions()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int Actions
+        {
+            get { return IExecuteWithSignature<int>("getActions", "()I"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#getAvailableExtraData()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#setAvailableExtraData(java.util.List)"/>
@@ -1006,6 +1054,15 @@ namespace Android.View.Accessibility
             IExecuteWithSignature("addAction", "(Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#addAction(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void AddAction(int arg0)
+        {
+            IExecuteWithSignature("addAction", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#addChild(android.view.View,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
@@ -1021,6 +1078,15 @@ namespace Android.View.Accessibility
         public void AddChild(Android.View.View arg0)
         {
             IExecuteWithSignature("addChild", "(Landroid/view/View;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#getBoundsInParent(android.graphics.Rect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+        [System.Obsolete()]
+        public void GetBoundsInParent(Android.Graphics.Rect arg0)
+        {
+            IExecuteWithSignature("getBoundsInParent", "(Landroid/graphics/Rect;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#getBoundsInScreen(android.graphics.Rect)"/>
@@ -1039,6 +1105,23 @@ namespace Android.View.Accessibility
             IExecuteWithSignature("getBoundsInWindow", "(Landroid/graphics/Rect;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#recycle()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void Recycle()
+        {
+            IExecuteWithSignature("recycle", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#removeAction(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void RemoveAction(int arg0)
+        {
+            IExecuteWithSignature("removeAction", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#setAccessibilityDataSensitive(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -1053,6 +1136,15 @@ namespace Android.View.Accessibility
         public void SetAccessibilityFocused(bool arg0)
         {
             IExecuteWithSignature("setAccessibilityFocused", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#setBoundsInParent(android.graphics.Rect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+        [System.Obsolete()]
+        public void SetBoundsInParent(Android.Graphics.Rect arg0)
+        {
+            IExecuteWithSignature("setBoundsInParent", "(Landroid/graphics/Rect;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.html#setBoundsInScreen(android.graphics.Rect)"/>
@@ -1783,6 +1875,31 @@ namespace Android.View.Accessibility
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.html#obtain(int,int,boolean,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="bool"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
+            /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo"/></returns>
+            [System.Obsolete()]
+            public static Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo Obtain(int arg0, int arg1, bool arg2, int arg3)
+            {
+                return SExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionInfo.html#obtain(int,int,boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="bool"/></param>
+            /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo"/></returns>
+            [System.Obsolete()]
+            public static Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo Obtain(int arg0, int arg1, bool arg2)
+            {
+                return SExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionInfo>(LocalBridgeClazz, "obtain", arg0, arg1, arg2);
+            }
 
             #endregion
 
@@ -1868,6 +1985,35 @@ namespace Android.View.Accessibility
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo.html#obtain(int,int,int,int,boolean,boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg4"><see cref="bool"/></param>
+            /// <param name="arg5"><see cref="bool"/></param>
+            /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo"/></returns>
+            [System.Obsolete()]
+            public static Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo Obtain(int arg0, int arg1, int arg2, int arg3, bool arg4, bool arg5)
+            {
+                return SExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3, arg4, arg5);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo.html#obtain(int,int,int,int,boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            /// <param name="arg3"><see cref="int"/></param>
+            /// <param name="arg4"><see cref="bool"/></param>
+            /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo"/></returns>
+            [System.Obsolete()]
+            public static Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo Obtain(int arg0, int arg1, int arg2, int arg3, bool arg4)
+            {
+                return SExecute<Android.View.Accessibility.AccessibilityNodeInfo.CollectionItemInfo>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3, arg4);
+            }
 
             #endregion
 
@@ -1913,6 +2059,15 @@ namespace Android.View.Accessibility
             public Java.Lang.String RowTitle
             {
                 get { return IExecuteWithSignature<Java.Lang.String>("getRowTitle", "()Ljava/lang/String;"); }
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo.html#isHeading()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            [System.Obsolete()]
+            public bool IsHeading()
+            {
+                return IExecuteWithSignature<bool>("isHeading", "()Z");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.CollectionItemInfo.html#isSelected()"/>
@@ -2141,6 +2296,19 @@ namespace Android.View.Accessibility
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityNodeInfo.RangeInfo.html#obtain(int,float,float,float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
+            /// <param name="arg2"><see cref="float"/></param>
+            /// <param name="arg3"><see cref="float"/></param>
+            /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.RangeInfo"/></returns>
+            [System.Obsolete()]
+            public static Android.View.Accessibility.AccessibilityNodeInfo.RangeInfo Obtain(int arg0, float arg1, float arg2, float arg3)
+            {
+                return SExecute<Android.View.Accessibility.AccessibilityNodeInfo.RangeInfo>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3);
+            }
 
             #endregion
 

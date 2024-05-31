@@ -105,6 +105,39 @@ namespace Android.Os
             get { return IExecuteWithSignature<Java.Lang.ClassLoader>("getClassLoader", "()Ljava/lang/ClassLoader;"); } set { IExecuteWithSignature("setClassLoader", "(Ljava/lang/ClassLoader;)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getSparseParcelableArray(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        /// <returns><see cref="Android.Util.SparseArray"/></returns>
+        [System.Obsolete()]
+        public Android.Util.SparseArray<T> GetSparseParcelableArray<T>(Java.Lang.String arg0) where T: Android.Os.IParcelable, new()
+        {
+            return IExecuteWithSignature<Android.Util.SparseArray<T>>("getSparseParcelableArray", "(Ljava/lang/String;)Landroid/util/SparseArray;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getParcelableArrayList(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        /// <returns><see cref="Java.Util.ArrayList"/></returns>
+        [System.Obsolete()]
+        public Java.Util.ArrayList<T> GetParcelableArrayList<T>(Java.Lang.String arg0) where T: Android.Os.IParcelable, new()
+        {
+            return IExecuteWithSignature<Java.Util.ArrayList<T>>("getParcelableArrayList", "(Ljava/lang/String;)Ljava/util/ArrayList;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getParcelable(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        [System.Obsolete()]
+        public T GetParcelable<T>(Java.Lang.String arg0) where T: Android.Os.IParcelable, new()
+        {
+            return IExecuteWithSignature<T>("getParcelable", "(Ljava/lang/String;)Landroid/os/Parcelable;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getSerializable(java.lang.String,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -184,6 +217,16 @@ namespace Android.Os
         public Android.Os.IBinder GetBinder(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.Os.IBinder>("getBinder", "(Ljava/lang/String;)Landroid/os/IBinder;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getParcelableArray(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.Os.Parcelable"/></returns>
+        [System.Obsolete()]
+        public Android.Os.Parcelable[] GetParcelableArray(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignatureArray<Android.Os.Parcelable>("getParcelableArray", "(Ljava/lang/String;)[Landroid/os/Parcelable;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getSize(java.lang.String)"/>
@@ -292,6 +335,16 @@ namespace Android.Os
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getSerializable(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Io.Serializable"/></returns>
+        [System.Obsolete()]
+        public Java.Io.Serializable GetSerializable(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<Java.Io.Serializable>("getSerializable", "(Ljava/lang/String;)Ljava/io/Serializable;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getByte(java.lang.String,byte)"/>

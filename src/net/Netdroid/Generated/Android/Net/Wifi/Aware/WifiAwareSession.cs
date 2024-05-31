@@ -46,6 +46,29 @@ namespace Android.Net.Wifi.Aware
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareSession.html#createNetworkSpecifierOpen(int,byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <returns><see cref="Android.Net.NetworkSpecifier"/></returns>
+        [System.Obsolete()]
+        public Android.Net.NetworkSpecifier CreateNetworkSpecifierOpen(int arg0, byte[] arg1)
+        {
+            return IExecute<Android.Net.NetworkSpecifier>("createNetworkSpecifierOpen", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareSession.html#createNetworkSpecifierPassphrase(int,byte[],java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="byte"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.Net.NetworkSpecifier"/></returns>
+        [System.Obsolete()]
+        public Android.Net.NetworkSpecifier CreateNetworkSpecifierPassphrase(int arg0, byte[] arg1, Java.Lang.String arg2)
+        {
+            return IExecute<Android.Net.NetworkSpecifier>("createNetworkSpecifierPassphrase", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareSession.html#close()"/>
         /// </summary>
         public void Close()

@@ -76,6 +76,14 @@ namespace Javax.Net.Ssl
             get { return IExecuteWithSignature<Java.Security.Principal>("getLocalPrincipal", "()Ljava/security/Principal;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getPeerCertificateChain()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Javax.Security.Cert.X509Certificate[] PeerCertificateChain
+        {
+            get { return IExecuteWithSignatureArray<Javax.Security.Cert.X509Certificate>("getPeerCertificateChain", "()[Ljavax/security/cert/X509Certificate;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedEvent.html#getPeerCertificates()"/> 
         /// </summary>
         public Java.Security.Cert.Certificate[] PeerCertificates

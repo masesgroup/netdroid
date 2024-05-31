@@ -46,11 +46,46 @@ namespace Android.Graphics
         /// </summary>
         public int bytesPerPixel { get { return IGetField<int>("bytesPerPixel"); } set { ISetField("bytesPerPixel", value); } }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/PixelFormat.html#A_8"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int A_8 { get { if (!_A_8Ready) { _A_8Content = SGetField<int>(LocalBridgeClazz, "A_8"); _A_8Ready = true; } return _A_8Content; } }
+        private static int _A_8Content = default;
+        private static bool _A_8Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/PixelFormat.html#JPEG"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int JPEG { get { if (!_JPEGReady) { _JPEGContent = SGetField<int>(LocalBridgeClazz, "JPEG"); _JPEGReady = true; } return _JPEGContent; } }
+        private static int _JPEGContent = default;
+        private static bool _JPEGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/PixelFormat.html#L_8"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int L_8 { get { if (!_L_8Ready) { _L_8Content = SGetField<int>(LocalBridgeClazz, "L_8"); _L_8Ready = true; } return _L_8Content; } }
+        private static int _L_8Content = default;
+        private static bool _L_8Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/PixelFormat.html#LA_88"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int LA_88 { get { if (!_LA_88Ready) { _LA_88Content = SGetField<int>(LocalBridgeClazz, "LA_88"); _LA_88Ready = true; } return _LA_88Content; } }
+        private static int _LA_88Content = default;
+        private static bool _LA_88Ready = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/PixelFormat.html#OPAQUE"/>
         /// </summary>
         public static int OPAQUE { get { if (!_OPAQUEReady) { _OPAQUEContent = SGetField<int>(LocalBridgeClazz, "OPAQUE"); _OPAQUEReady = true; } return _OPAQUEContent; } }
         private static int _OPAQUEContent = default;
         private static bool _OPAQUEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/PixelFormat.html#RGB_332"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int RGB_332 { get { if (!_RGB_332Ready) { _RGB_332Content = SGetField<int>(LocalBridgeClazz, "RGB_332"); _RGB_332Ready = true; } return _RGB_332Content; } }
+        private static int _RGB_332Content = default;
+        private static bool _RGB_332Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/PixelFormat.html#RGB_565"/>
         /// </summary>
@@ -69,6 +104,20 @@ namespace Android.Graphics
         public static int RGBA_1010102 { get { if (!_RGBA_1010102Ready) { _RGBA_1010102Content = SGetField<int>(LocalBridgeClazz, "RGBA_1010102"); _RGBA_1010102Ready = true; } return _RGBA_1010102Content; } }
         private static int _RGBA_1010102Content = default;
         private static bool _RGBA_1010102Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/PixelFormat.html#RGBA_4444"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int RGBA_4444 { get { if (!_RGBA_4444Ready) { _RGBA_4444Content = SGetField<int>(LocalBridgeClazz, "RGBA_4444"); _RGBA_4444Ready = true; } return _RGBA_4444Content; } }
+        private static int _RGBA_4444Content = default;
+        private static bool _RGBA_4444Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/PixelFormat.html#RGBA_5551"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int RGBA_5551 { get { if (!_RGBA_5551Ready) { _RGBA_5551Content = SGetField<int>(LocalBridgeClazz, "RGBA_5551"); _RGBA_5551Ready = true; } return _RGBA_5551Content; } }
+        private static int _RGBA_5551Content = default;
+        private static bool _RGBA_5551Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/PixelFormat.html#RGBA_8888"/>
         /// </summary>
@@ -105,6 +154,27 @@ namespace Android.Graphics
         public static int UNKNOWN { get { if (!_UNKNOWNReady) { _UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "UNKNOWN"); _UNKNOWNReady = true; } return _UNKNOWNContent; } }
         private static int _UNKNOWNContent = default;
         private static bool _UNKNOWNReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/PixelFormat.html#YCbCr_420_SP"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int YCbCr_420_SP { get { if (!_YCbCr_420_SPReady) { _YCbCr_420_SPContent = SGetField<int>(LocalBridgeClazz, "YCbCr_420_SP"); _YCbCr_420_SPReady = true; } return _YCbCr_420_SPContent; } }
+        private static int _YCbCr_420_SPContent = default;
+        private static bool _YCbCr_420_SPReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/PixelFormat.html#YCbCr_422_I"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int YCbCr_422_I { get { if (!_YCbCr_422_IReady) { _YCbCr_422_IContent = SGetField<int>(LocalBridgeClazz, "YCbCr_422_I"); _YCbCr_422_IReady = true; } return _YCbCr_422_IContent; } }
+        private static int _YCbCr_422_IContent = default;
+        private static bool _YCbCr_422_IReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/PixelFormat.html#YCbCr_422_SP"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int YCbCr_422_SP { get { if (!_YCbCr_422_SPReady) { _YCbCr_422_SPContent = SGetField<int>(LocalBridgeClazz, "YCbCr_422_SP"); _YCbCr_422_SPReady = true; } return _YCbCr_422_SPContent; } }
+        private static int _YCbCr_422_SPContent = default;
+        private static bool _YCbCr_422_SPReady = false; // this is used because in case of generics 
 
         #endregion
 

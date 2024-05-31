@@ -275,6 +275,14 @@ namespace Android.Telephony.Data
             get { return IExecuteWithSignature<Android.Net.Uri>("getMmsc", "()Landroid/net/Uri;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getMmsProxyAddress()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Net.InetAddress MmsProxyAddress
+        {
+            get { return IExecuteWithSignature<Java.Net.InetAddress>("getMmsProxyAddress", "()Ljava/net/InetAddress;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getMmsProxyAddressAsString()"/> 
         /// </summary>
         public Java.Lang.String MmsProxyAddressAsString
@@ -343,6 +351,14 @@ namespace Android.Telephony.Data
         public int Protocol
         {
             get { return IExecuteWithSignature<int>("getProtocol", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getProxyAddress()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Net.InetAddress ProxyAddress
+        {
+            get { return IExecuteWithSignature<Java.Net.InetAddress>("getProxyAddress", "()Ljava/net/InetAddress;"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.html#getProxyAddressAsString()"/> 
@@ -510,6 +526,16 @@ namespace Android.Telephony.Data
                 return IExecuteWithSignature<Android.Telephony.Data.ApnSetting.Builder>("setMmsProxyAddress", "(Ljava/lang/String;)Landroid/telephony/data/ApnSetting$Builder;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.Builder.html#setMmsProxyAddress(java.net.InetAddress)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+            /// <returns><see cref="Android.Telephony.Data.ApnSetting.Builder"/></returns>
+            [System.Obsolete()]
+            public Android.Telephony.Data.ApnSetting.Builder SetMmsProxyAddress(Java.Net.InetAddress arg0)
+            {
+                return IExecuteWithSignature<Android.Telephony.Data.ApnSetting.Builder>("setMmsProxyAddress", "(Ljava/net/InetAddress;)Landroid/telephony/data/ApnSetting$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.Builder.html#setMmsProxyPort(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -607,6 +633,16 @@ namespace Android.Telephony.Data
             public Android.Telephony.Data.ApnSetting.Builder SetProxyAddress(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Telephony.Data.ApnSetting.Builder>("setProxyAddress", "(Ljava/lang/String;)Landroid/telephony/data/ApnSetting$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.Builder.html#setProxyAddress(java.net.InetAddress)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+            /// <returns><see cref="Android.Telephony.Data.ApnSetting.Builder"/></returns>
+            [System.Obsolete()]
+            public Android.Telephony.Data.ApnSetting.Builder SetProxyAddress(Java.Net.InetAddress arg0)
+            {
+                return IExecuteWithSignature<Android.Telephony.Data.ApnSetting.Builder>("setProxyAddress", "(Ljava/net/InetAddress;)Landroid/telephony/data/ApnSetting$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telephony/data/ApnSetting.Builder.html#setProxyPort(int)"/>

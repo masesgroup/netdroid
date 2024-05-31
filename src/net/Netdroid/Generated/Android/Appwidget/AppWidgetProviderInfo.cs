@@ -130,6 +130,11 @@ namespace Android.Appwidget
         /// </summary>
         public int widgetFeatures { get { return IGetField<int>("widgetFeatures"); } set { ISetField("widgetFeatures", value); } }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#label"/>
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String label { get { return IGetField<Java.Lang.String>("label"); } set { ISetField("label", value); } }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetProviderInfo.html#CREATOR"/>
         /// </summary>
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }

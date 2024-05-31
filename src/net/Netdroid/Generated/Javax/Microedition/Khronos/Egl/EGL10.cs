@@ -707,6 +707,19 @@ namespace Javax.Microedition.Khronos.Egl
             return IExecute<Javax.Microedition.Khronos.Egl.EGLSurface>("eglCreatePbufferSurface", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglCreatePixmapSurface(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig,java.lang.Object,int[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Microedition.Khronos.Egl.EGLDisplay"/></param>
+        /// <param name="arg1"><see cref="Javax.Microedition.Khronos.Egl.EGLConfig"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Javax.Microedition.Khronos.Egl.EGLSurface"/></returns>
+        [System.Obsolete()]
+        public Javax.Microedition.Khronos.Egl.EGLSurface EglCreatePixmapSurface(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, Javax.Microedition.Khronos.Egl.EGLConfig arg1, object arg2, int[] arg3)
+        {
+            return IExecute<Javax.Microedition.Khronos.Egl.EGLSurface>("eglCreatePixmapSurface", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglCreateWindowSurface(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig,java.lang.Object,int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Microedition.Khronos.Egl.EGLDisplay"/></param>

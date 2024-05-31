@@ -30,6 +30,30 @@ namespace Android.Net.Http
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/SslCertificate.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public SslCertificate(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/SslCertificate.html#%3Cinit%3E(java.lang.String,java.lang.String,java.util.Date,java.util.Date)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Date"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Date"/></param>
+        [System.Obsolete()]
+        public SslCertificate(Java.Lang.String arg0, Java.Lang.String arg1, Java.Util.Date arg2, Java.Util.Date arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/SslCertificate.html#%3Cinit%3E(java.security.cert.X509Certificate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
@@ -86,11 +110,27 @@ namespace Android.Net.Http
             get { return IExecuteWithSignature<Android.Net.Http.SslCertificate.DName>("getIssuedTo", "()Landroid/net/http/SslCertificate$DName;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/SslCertificate.html#getValidNotAfter()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String ValidNotAfter
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getValidNotAfter", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/SslCertificate.html#getValidNotAfterDate()"/> 
         /// </summary>
         public Java.Util.Date ValidNotAfterDate
         {
             get { return IExecuteWithSignature<Java.Util.Date>("getValidNotAfterDate", "()Ljava/util/Date;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/SslCertificate.html#getValidNotBefore()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String ValidNotBefore
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getValidNotBefore", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/SslCertificate.html#getValidNotBeforeDate()"/> 

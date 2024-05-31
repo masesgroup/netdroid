@@ -88,6 +88,14 @@ namespace Android.Graphics
             get { return IExecuteWithSignature<int>("getHeight", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#getMatrix()"/> <see href="https://developer.android.com/reference/android/graphics/Canvas.html#setMatrix(android.graphics.Matrix)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Graphics.Matrix Matrix
+        {
+            get { return IExecuteWithSignature<Android.Graphics.Matrix>("getMatrix", "()Landroid/graphics/Matrix;"); } set { IExecuteWithSignature("setMatrix", "(Landroid/graphics/Matrix;)V", value); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#getMaximumBitmapHeight()"/> 
         /// </summary>
         public int MaximumBitmapHeight
@@ -167,6 +175,17 @@ namespace Android.Graphics
             return IExecute<bool>("clipOutRect", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipPath(android.graphics.Path,android.graphics.Region.Op)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Path"/></param>
+        /// <param name="arg1"><see cref="Android.Graphics.Region.Op"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool ClipPath(Android.Graphics.Path arg0, Android.Graphics.Region.Op arg1)
+        {
+            return IExecute<bool>("clipPath", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipPath(android.graphics.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Path"/></param>
@@ -174,6 +193,17 @@ namespace Android.Graphics
         public bool ClipPath(Android.Graphics.Path arg0)
         {
             return IExecuteWithSignature<bool>("clipPath", "(Landroid/graphics/Path;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipRect(android.graphics.Rect,android.graphics.Region.Op)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+        /// <param name="arg1"><see cref="Android.Graphics.Region.Op"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool ClipRect(Android.Graphics.Rect arg0, Android.Graphics.Region.Op arg1)
+        {
+            return IExecute<bool>("clipRect", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipRect(android.graphics.Rect)"/>
@@ -185,6 +215,17 @@ namespace Android.Graphics
             return IExecuteWithSignature<bool>("clipRect", "(Landroid/graphics/Rect;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipRect(android.graphics.RectF,android.graphics.Region.Op)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.RectF"/></param>
+        /// <param name="arg1"><see cref="Android.Graphics.Region.Op"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool ClipRect(Android.Graphics.RectF arg0, Android.Graphics.Region.Op arg1)
+        {
+            return IExecute<bool>("clipRect", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipRect(android.graphics.RectF)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.RectF"/></param>
@@ -192,6 +233,20 @@ namespace Android.Graphics
         public bool ClipRect(Android.Graphics.RectF arg0)
         {
             return IExecuteWithSignature<bool>("clipRect", "(Landroid/graphics/RectF;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipRect(float,float,float,float,android.graphics.Region.Op)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
+        /// <param name="arg4"><see cref="Android.Graphics.Region.Op"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool ClipRect(float arg0, float arg1, float arg2, float arg3, Android.Graphics.Region.Op arg4)
+        {
+            return IExecute<bool>("clipRect", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#clipRect(float,float,float,float)"/>
@@ -243,6 +298,17 @@ namespace Android.Graphics
             return IExecuteWithSignature<bool>("isOpaque", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#quickReject(android.graphics.Path,android.graphics.Canvas.EdgeType)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Path"/></param>
+        /// <param name="arg1"><see cref="Android.Graphics.Canvas.EdgeType"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool QuickReject(Android.Graphics.Path arg0, Android.Graphics.Canvas.EdgeType arg1)
+        {
+            return IExecute<bool>("quickReject", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#quickReject(android.graphics.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Path"/></param>
@@ -252,6 +318,17 @@ namespace Android.Graphics
             return IExecuteWithSignature<bool>("quickReject", "(Landroid/graphics/Path;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#quickReject(android.graphics.RectF,android.graphics.Canvas.EdgeType)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.RectF"/></param>
+        /// <param name="arg1"><see cref="Android.Graphics.Canvas.EdgeType"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool QuickReject(Android.Graphics.RectF arg0, Android.Graphics.Canvas.EdgeType arg1)
+        {
+            return IExecute<bool>("quickReject", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#quickReject(android.graphics.RectF)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.RectF"/></param>
@@ -259,6 +336,20 @@ namespace Android.Graphics
         public bool QuickReject(Android.Graphics.RectF arg0)
         {
             return IExecuteWithSignature<bool>("quickReject", "(Landroid/graphics/RectF;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#quickReject(float,float,float,float,android.graphics.Canvas.EdgeType)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
+        /// <param name="arg4"><see cref="Android.Graphics.Canvas.EdgeType"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool QuickReject(float arg0, float arg1, float arg2, float arg3, Android.Graphics.Canvas.EdgeType arg4)
+        {
+            return IExecute<bool>("quickReject", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#quickReject(float,float,float,float)"/>
@@ -302,6 +393,18 @@ namespace Android.Graphics
             return IExecuteWithSignature<int>("save", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#saveLayer(android.graphics.RectF,android.graphics.Paint,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.RectF"/></param>
+        /// <param name="arg1"><see cref="Android.Graphics.Paint"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int SaveLayer(Android.Graphics.RectF arg0, Android.Graphics.Paint arg1, int arg2)
+        {
+            return IExecute<int>("saveLayer", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#saveLayer(android.graphics.RectF,android.graphics.Paint)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.RectF"/></param>
@@ -310,6 +413,21 @@ namespace Android.Graphics
         public int SaveLayer(Android.Graphics.RectF arg0, Android.Graphics.Paint arg1)
         {
             return IExecute<int>("saveLayer", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#saveLayer(float,float,float,float,android.graphics.Paint,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
+        /// <param name="arg4"><see cref="Android.Graphics.Paint"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int SaveLayer(float arg0, float arg1, float arg2, float arg3, Android.Graphics.Paint arg4, int arg5)
+        {
+            return IExecute<int>("saveLayer", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#saveLayer(float,float,float,float,android.graphics.Paint)"/>
@@ -325,6 +443,18 @@ namespace Android.Graphics
             return IExecute<int>("saveLayer", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#saveLayerAlpha(android.graphics.RectF,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.RectF"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int SaveLayerAlpha(Android.Graphics.RectF arg0, int arg1, int arg2)
+        {
+            return IExecute<int>("saveLayerAlpha", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#saveLayerAlpha(android.graphics.RectF,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.RectF"/></param>
@@ -333,6 +463,21 @@ namespace Android.Graphics
         public int SaveLayerAlpha(Android.Graphics.RectF arg0, int arg1)
         {
             return IExecute<int>("saveLayerAlpha", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#saveLayerAlpha(float,float,float,float,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int SaveLayerAlpha(float arg0, float arg1, float arg2, float arg3, int arg4, int arg5)
+        {
+            return IExecute<int>("saveLayerAlpha", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#saveLayerAlpha(float,float,float,float,int)"/>
@@ -442,6 +587,40 @@ namespace Android.Graphics
         public void DrawBitmap(Android.Graphics.Bitmap arg0, float arg1, float arg2, Android.Graphics.Paint arg3)
         {
             IExecute("drawBitmap", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawBitmap(int[],int,int,float,float,int,int,boolean,android.graphics.Paint)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
+        /// <param name="arg4"><see cref="float"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg7"><see cref="bool"/></param>
+        /// <param name="arg8"><see cref="Android.Graphics.Paint"/></param>
+        [System.Obsolete()]
+        public void DrawBitmap(int[] arg0, int arg1, int arg2, float arg3, float arg4, int arg5, int arg6, bool arg7, Android.Graphics.Paint arg8)
+        {
+            IExecute("drawBitmap", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawBitmap(int[],int,int,int,int,int,int,boolean,android.graphics.Paint)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg7"><see cref="bool"/></param>
+        /// <param name="arg8"><see cref="Android.Graphics.Paint"/></param>
+        [System.Obsolete()]
+        public void DrawBitmap(int[] arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, bool arg7, Android.Graphics.Paint arg8)
+        {
+            IExecute("drawBitmap", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawBitmapMesh(android.graphics.Bitmap,int,int,float[],int,int[],int,android.graphics.Paint)"/>
@@ -709,6 +888,30 @@ namespace Android.Graphics
             IExecute("drawPoints", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawPosText(char[],int,int,float[],android.graphics.Paint)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
+        /// <param name="arg4"><see cref="Android.Graphics.Paint"/></param>
+        [System.Obsolete()]
+        public void DrawPosText(char[] arg0, int arg1, int arg2, float[] arg3, Android.Graphics.Paint arg4)
+        {
+            IExecute("drawPosText", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawPosText(java.lang.String,float[],android.graphics.Paint)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="Android.Graphics.Paint"/></param>
+        [System.Obsolete()]
+        public void DrawPosText(Java.Lang.String arg0, float[] arg1, Android.Graphics.Paint arg2)
+        {
+            IExecute("drawPosText", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#drawRect(android.graphics.Rect,android.graphics.Paint)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
@@ -932,6 +1135,15 @@ namespace Android.Graphics
             IExecuteWithSignature("enableZ", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#getMatrix(android.graphics.Matrix)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Matrix"/></param>
+        [System.Obsolete()]
+        public void GetMatrix(Android.Graphics.Matrix arg0)
+        {
+            IExecuteWithSignature("getMatrix", "(Landroid/graphics/Matrix;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#restore()"/>
         /// </summary>
         public void Restore()
@@ -972,14 +1184,6 @@ namespace Android.Graphics
             IExecuteWithSignature("setBitmap", "(Landroid/graphics/Bitmap;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#setMatrix(android.graphics.Matrix)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Graphics.Matrix"/></param>
-        public void SetMatrix(Android.Graphics.Matrix arg0)
-        {
-            IExecuteWithSignature("setMatrix", "(Landroid/graphics/Matrix;)V", arg0);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Canvas.html#skew(float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -1001,6 +1205,68 @@ namespace Android.Graphics
         #endregion
 
         #region Nested classes
+        #region EdgeType
+        public partial class EdgeType
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/Canvas.EdgeType.html#AA"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Android.Graphics.Canvas.EdgeType AA { get { if (!_AAReady) { _AAContent = SGetField<Android.Graphics.Canvas.EdgeType>(LocalBridgeClazz, "AA"); _AAReady = true; } return _AAContent; } }
+            private static Android.Graphics.Canvas.EdgeType _AAContent = default;
+            private static bool _AAReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/Canvas.EdgeType.html#BW"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Android.Graphics.Canvas.EdgeType BW { get { if (!_BWReady) { _BWContent = SGetField<Android.Graphics.Canvas.EdgeType>(LocalBridgeClazz, "BW"); _BWReady = true; } return _BWContent; } }
+            private static Android.Graphics.Canvas.EdgeType _BWContent = default;
+            private static bool _BWReady = false; // this is used because in case of generics 
+
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/Canvas.EdgeType.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.Graphics.Canvas.EdgeType"/></returns>
+            public static Android.Graphics.Canvas.EdgeType ValueOf(Java.Lang.String arg0)
+            {
+                return SExecuteWithSignature<Android.Graphics.Canvas.EdgeType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Landroid/graphics/Canvas$EdgeType;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/Canvas.EdgeType.html#values()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Graphics.Canvas.EdgeType"/></returns>
+            public static Android.Graphics.Canvas.EdgeType[] Values()
+            {
+                return SExecuteWithSignatureArray<Android.Graphics.Canvas.EdgeType>(LocalBridgeClazz, "values", "()[Landroid/graphics/Canvas$EdgeType;");
+            }
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region VertexMode
         public partial class VertexMode
         {

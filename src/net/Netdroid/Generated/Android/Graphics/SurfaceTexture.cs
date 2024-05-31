@@ -265,6 +265,37 @@ namespace Android.Graphics
         }
         #endregion
 
+        #region OutOfResourcesException
+        public partial class OutOfResourcesException
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
     
         #endregion
 

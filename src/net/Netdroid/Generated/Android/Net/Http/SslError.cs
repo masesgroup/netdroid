@@ -40,6 +40,16 @@ namespace Android.Net.Http
         {
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/SslError.html#%3Cinit%3E(int,android.net.http.SslCertificate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.Net.Http.SslCertificate"/></param>
+        [System.Obsolete()]
+        public SslError(int arg0, Android.Net.Http.SslCertificate arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/SslError.html#%3Cinit%3E(int,java.security.cert.X509Certificate,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -47,6 +57,16 @@ namespace Android.Net.Http
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public SslError(int arg0, Java.Security.Cert.X509Certificate arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/SslError.html#%3Cinit%3E(int,java.security.cert.X509Certificate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Security.Cert.X509Certificate"/></param>
+        [System.Obsolete()]
+        public SslError(int arg0, Java.Security.Cert.X509Certificate arg1)
+            : base(arg0, arg1)
         {
         }
 
@@ -81,6 +101,13 @@ namespace Android.Net.Http
         public static int SSL_INVALID { get { if (!_SSL_INVALIDReady) { _SSL_INVALIDContent = SGetField<int>(LocalBridgeClazz, "SSL_INVALID"); _SSL_INVALIDReady = true; } return _SSL_INVALIDContent; } }
         private static int _SSL_INVALIDContent = default;
         private static bool _SSL_INVALIDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/SslError.html#SSL_MAX_ERROR"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SSL_MAX_ERROR { get { if (!_SSL_MAX_ERRORReady) { _SSL_MAX_ERRORContent = SGetField<int>(LocalBridgeClazz, "SSL_MAX_ERROR"); _SSL_MAX_ERRORReady = true; } return _SSL_MAX_ERRORContent; } }
+        private static int _SSL_MAX_ERRORContent = default;
+        private static bool _SSL_MAX_ERRORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/SslError.html#SSL_NOTYETVALID"/>
         /// </summary>

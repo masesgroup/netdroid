@@ -117,6 +117,14 @@ namespace Android.Content.Pm
             get { return IExecuteWithSignature<int>("getType", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#getVersion()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int Version
+        {
+            get { return IExecuteWithSignature<int>("getVersion", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/SharedLibraryInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>

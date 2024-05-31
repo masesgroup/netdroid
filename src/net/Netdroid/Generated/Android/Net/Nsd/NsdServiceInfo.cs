@@ -59,6 +59,14 @@ namespace Android.Net.Nsd
             get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, byte[]>>("getAttributes", "()Ljava/util/Map;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getHost()"/> <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#setHost(java.net.InetAddress)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Net.InetAddress Host
+        {
+            get { return IExecuteWithSignature<Java.Net.InetAddress>("getHost", "()Ljava/net/InetAddress;"); } set { IExecuteWithSignature("setHost", "(Ljava/net/InetAddress;)V", value); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#getHostAddresses()"/> <see href="https://developer.android.com/reference/android/net/nsd/NsdServiceInfo.html#setHostAddresses(java.util.List)"/>
         /// </summary>
         public Java.Util.List<Java.Net.InetAddress> HostAddresses

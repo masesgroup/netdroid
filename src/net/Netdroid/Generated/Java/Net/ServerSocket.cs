@@ -71,6 +71,16 @@ namespace Java.Net
         #endregion
 
         #region Static methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/net/ServerSocket.html#setSocketFactory(java.net.SocketImplFactory)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketImplFactory"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public static void SetSocketFactory(Java.Net.SocketImplFactory arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setSocketFactory", "(Ljava/net/SocketImplFactory;)V", arg0);
+        }
 
         #endregion
 

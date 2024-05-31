@@ -29,6 +29,34 @@ namespace Java.Lang
     public partial class Float : Java.Lang.IComparable<Java.Lang.Float>, Java.Lang.Constant.IConstable, Java.Lang.Constant.IConstantDesc
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#%3Cinit%3E(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        [System.Obsolete()]
+        public Float(double arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#%3Cinit%3E(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        [System.Obsolete()]
+        public Float(float arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html#%3Cinit%3E(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
+        [System.Obsolete()]
+        public Float(Java.Lang.String arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 

@@ -78,6 +78,17 @@ namespace Android.Hardware.Usb
             return IExecute<bool>("initialize", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#queue(java.nio.ByteBuffer,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool Queue(Java.Nio.ByteBuffer arg0, int arg1)
+        {
+            return IExecute<bool>("queue", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#queue(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>

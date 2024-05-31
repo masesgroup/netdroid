@@ -73,6 +73,27 @@ namespace Android.Content
         public static int BUTTON_POSITIVE { get { if (!_BUTTON_POSITIVEReady) { _BUTTON_POSITIVEContent = SGetField<int>(LocalBridgeClazz, "BUTTON_POSITIVE"); _BUTTON_POSITIVEReady = true; } return _BUTTON_POSITIVEContent; } }
         private static int _BUTTON_POSITIVEContent = default;
         private static bool _BUTTON_POSITIVEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/DialogInterface.html#BUTTON1"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int BUTTON1 { get { if (!_BUTTON1Ready) { _BUTTON1Content = SGetField<int>(LocalBridgeClazz, "BUTTON1"); _BUTTON1Ready = true; } return _BUTTON1Content; } }
+        private static int _BUTTON1Content = default;
+        private static bool _BUTTON1Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/DialogInterface.html#BUTTON2"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int BUTTON2 { get { if (!_BUTTON2Ready) { _BUTTON2Content = SGetField<int>(LocalBridgeClazz, "BUTTON2"); _BUTTON2Ready = true; } return _BUTTON2Content; } }
+        private static int _BUTTON2Content = default;
+        private static bool _BUTTON2Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/DialogInterface.html#BUTTON3"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int BUTTON3 { get { if (!_BUTTON3Ready) { _BUTTON3Content = SGetField<int>(LocalBridgeClazz, "BUTTON3"); _BUTTON3Ready = true; } return _BUTTON3Content; } }
+        private static int _BUTTON3Content = default;
+        private static bool _BUTTON3Ready = false; // this is used because in case of generics 
 
         #endregion
 

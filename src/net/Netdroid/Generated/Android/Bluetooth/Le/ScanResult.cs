@@ -30,6 +30,18 @@ namespace Android.Bluetooth.Le
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#%3Cinit%3E(android.bluetooth.BluetoothDevice,android.bluetooth.le.ScanRecord,int,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothDevice"/></param>
+        /// <param name="arg1"><see cref="Android.Bluetooth.Le.ScanRecord"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="long"/></param>
+        [System.Obsolete()]
+        public ScanResult(Android.Bluetooth.BluetoothDevice arg0, Android.Bluetooth.Le.ScanRecord arg1, int arg2, long arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#%3Cinit%3E(android.bluetooth.BluetoothDevice,int,int,int,int,int,int,int,android.bluetooth.le.ScanRecord,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothDevice"/></param>

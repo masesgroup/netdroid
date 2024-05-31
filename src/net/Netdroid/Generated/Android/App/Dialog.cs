@@ -539,6 +539,14 @@ namespace Android.App
             IExecuteWithSignature("onAttachedToWindow", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Dialog.html#onBackPressed()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void OnBackPressed()
+        {
+            IExecuteWithSignature("onBackPressed", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Dialog.html#onContentChanged()"/>
         /// </summary>
         public void OnContentChanged()

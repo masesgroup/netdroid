@@ -110,11 +110,32 @@ namespace Android.Content.Pm
         private static int _GET_ACTIVITIESContent = default;
         private static bool _GET_ACTIVITIESReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#GET_ATTRIBUTIONS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int GET_ATTRIBUTIONS { get { if (!_GET_ATTRIBUTIONSReady) { _GET_ATTRIBUTIONSContent = SGetField<int>(LocalBridgeClazz, "GET_ATTRIBUTIONS"); _GET_ATTRIBUTIONSReady = true; } return _GET_ATTRIBUTIONSContent; } }
+        private static int _GET_ATTRIBUTIONSContent = default;
+        private static bool _GET_ATTRIBUTIONSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#GET_CONFIGURATIONS"/>
         /// </summary>
         public static int GET_CONFIGURATIONS { get { if (!_GET_CONFIGURATIONSReady) { _GET_CONFIGURATIONSContent = SGetField<int>(LocalBridgeClazz, "GET_CONFIGURATIONS"); _GET_CONFIGURATIONSReady = true; } return _GET_CONFIGURATIONSContent; } }
         private static int _GET_CONFIGURATIONSContent = default;
         private static bool _GET_CONFIGURATIONSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#GET_DISABLED_COMPONENTS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int GET_DISABLED_COMPONENTS { get { if (!_GET_DISABLED_COMPONENTSReady) { _GET_DISABLED_COMPONENTSContent = SGetField<int>(LocalBridgeClazz, "GET_DISABLED_COMPONENTS"); _GET_DISABLED_COMPONENTSReady = true; } return _GET_DISABLED_COMPONENTSContent; } }
+        private static int _GET_DISABLED_COMPONENTSContent = default;
+        private static bool _GET_DISABLED_COMPONENTSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#GET_DISABLED_UNTIL_USED_COMPONENTS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int GET_DISABLED_UNTIL_USED_COMPONENTS { get { if (!_GET_DISABLED_UNTIL_USED_COMPONENTSReady) { _GET_DISABLED_UNTIL_USED_COMPONENTSContent = SGetField<int>(LocalBridgeClazz, "GET_DISABLED_UNTIL_USED_COMPONENTS"); _GET_DISABLED_UNTIL_USED_COMPONENTSReady = true; } return _GET_DISABLED_UNTIL_USED_COMPONENTSContent; } }
+        private static int _GET_DISABLED_UNTIL_USED_COMPONENTSContent = default;
+        private static bool _GET_DISABLED_UNTIL_USED_COMPONENTSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#GET_GIDS"/>
         /// </summary>
@@ -127,6 +148,13 @@ namespace Android.Content.Pm
         public static int GET_INSTRUMENTATION { get { if (!_GET_INSTRUMENTATIONReady) { _GET_INSTRUMENTATIONContent = SGetField<int>(LocalBridgeClazz, "GET_INSTRUMENTATION"); _GET_INSTRUMENTATIONReady = true; } return _GET_INSTRUMENTATIONContent; } }
         private static int _GET_INSTRUMENTATIONContent = default;
         private static bool _GET_INSTRUMENTATIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#GET_INTENT_FILTERS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int GET_INTENT_FILTERS { get { if (!_GET_INTENT_FILTERSReady) { _GET_INTENT_FILTERSContent = SGetField<int>(LocalBridgeClazz, "GET_INTENT_FILTERS"); _GET_INTENT_FILTERSReady = true; } return _GET_INTENT_FILTERSContent; } }
+        private static int _GET_INTENT_FILTERSContent = default;
+        private static bool _GET_INTENT_FILTERSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#GET_META_DATA"/>
         /// </summary>
@@ -170,11 +198,25 @@ namespace Android.Content.Pm
         private static int _GET_SHARED_LIBRARY_FILESContent = default;
         private static bool _GET_SHARED_LIBRARY_FILESReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#GET_SIGNATURES"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int GET_SIGNATURES { get { if (!_GET_SIGNATURESReady) { _GET_SIGNATURESContent = SGetField<int>(LocalBridgeClazz, "GET_SIGNATURES"); _GET_SIGNATURESReady = true; } return _GET_SIGNATURESContent; } }
+        private static int _GET_SIGNATURESContent = default;
+        private static bool _GET_SIGNATURESReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#GET_SIGNING_CERTIFICATES"/>
         /// </summary>
         public static int GET_SIGNING_CERTIFICATES { get { if (!_GET_SIGNING_CERTIFICATESReady) { _GET_SIGNING_CERTIFICATESContent = SGetField<int>(LocalBridgeClazz, "GET_SIGNING_CERTIFICATES"); _GET_SIGNING_CERTIFICATESReady = true; } return _GET_SIGNING_CERTIFICATESContent; } }
         private static int _GET_SIGNING_CERTIFICATESContent = default;
         private static bool _GET_SIGNING_CERTIFICATESReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#GET_UNINSTALLED_PACKAGES"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int GET_UNINSTALLED_PACKAGES { get { if (!_GET_UNINSTALLED_PACKAGESReady) { _GET_UNINSTALLED_PACKAGESContent = SGetField<int>(LocalBridgeClazz, "GET_UNINSTALLED_PACKAGES"); _GET_UNINSTALLED_PACKAGESReady = true; } return _GET_UNINSTALLED_PACKAGESContent; } }
+        private static int _GET_UNINSTALLED_PACKAGESContent = default;
+        private static bool _GET_UNINSTALLED_PACKAGESReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#GET_URI_PERMISSION_PATTERNS"/>
         /// </summary>
@@ -523,6 +565,13 @@ namespace Android.Content.Pm
         public static Java.Lang.String FEATURE_COMPANION_DEVICE_SETUP { get { if (!_FEATURE_COMPANION_DEVICE_SETUPReady) { _FEATURE_COMPANION_DEVICE_SETUPContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_COMPANION_DEVICE_SETUP"); _FEATURE_COMPANION_DEVICE_SETUPReady = true; } return _FEATURE_COMPANION_DEVICE_SETUPContent; } }
         private static Java.Lang.String _FEATURE_COMPANION_DEVICE_SETUPContent = default;
         private static bool _FEATURE_COMPANION_DEVICE_SETUPReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_CONNECTION_SERVICE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String FEATURE_CONNECTION_SERVICE { get { if (!_FEATURE_CONNECTION_SERVICEReady) { _FEATURE_CONNECTION_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_CONNECTION_SERVICE"); _FEATURE_CONNECTION_SERVICEReady = true; } return _FEATURE_CONNECTION_SERVICEContent; } }
+        private static Java.Lang.String _FEATURE_CONNECTION_SERVICEContent = default;
+        private static bool _FEATURE_CONNECTION_SERVICEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_CONSUMER_IR"/>
         /// </summary>
@@ -1082,6 +1131,13 @@ namespace Android.Content.Pm
         private static Java.Lang.String _FEATURE_TELEPHONY_SUBSCRIPTIONContent = default;
         private static bool _FEATURE_TELEPHONY_SUBSCRIPTIONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_TELEVISION"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String FEATURE_TELEVISION { get { if (!_FEATURE_TELEVISIONReady) { _FEATURE_TELEVISIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_TELEVISION"); _FEATURE_TELEVISIONReady = true; } return _FEATURE_TELEVISIONContent; } }
+        private static Java.Lang.String _FEATURE_TELEVISIONContent = default;
+        private static bool _FEATURE_TELEVISIONReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_TOUCHSCREEN"/>
         /// </summary>
         public static Java.Lang.String FEATURE_TOUCHSCREEN { get { if (!_FEATURE_TOUCHSCREENReady) { _FEATURE_TOUCHSCREENContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_TOUCHSCREEN"); _FEATURE_TOUCHSCREENReady = true; } return _FEATURE_TOUCHSCREENContent; } }
@@ -1135,6 +1191,13 @@ namespace Android.Content.Pm
         public static Java.Lang.String FEATURE_VR_HEADTRACKING { get { if (!_FEATURE_VR_HEADTRACKINGReady) { _FEATURE_VR_HEADTRACKINGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_VR_HEADTRACKING"); _FEATURE_VR_HEADTRACKINGReady = true; } return _FEATURE_VR_HEADTRACKINGContent; } }
         private static Java.Lang.String _FEATURE_VR_HEADTRACKINGContent = default;
         private static bool _FEATURE_VR_HEADTRACKINGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_VR_MODE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String FEATURE_VR_MODE { get { if (!_FEATURE_VR_MODEReady) { _FEATURE_VR_MODEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE_VR_MODE"); _FEATURE_VR_MODEReady = true; } return _FEATURE_VR_MODEContent; } }
+        private static Java.Lang.String _FEATURE_VR_MODEContent = default;
+        private static bool _FEATURE_VR_MODEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_VR_MODE_HIGH_PERFORMANCE"/>
         /// </summary>
@@ -1829,6 +1892,18 @@ namespace Android.Content.Pm
             return IExecute<int>("getPackageUid", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPreferredActivities(java.util.List,java.util.List,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int GetPreferredActivities(Java.Util.List<Android.Content.IntentFilter> arg0, Java.Util.List<Android.Content.ComponentName> arg1, Java.Lang.String arg2)
+        {
+            return IExecute<int>("getPreferredActivities", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPackageGids(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1878,6 +1953,16 @@ namespace Android.Content.Pm
         public Java.Lang.CharSequence GetUserBadgedLabel(Java.Lang.CharSequence arg0, Android.Os.UserHandle arg1)
         {
             return IExecute<Java.Lang.CharSequence>("getUserBadgedLabel", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getInstallerPackageName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public Java.Lang.String GetInstallerPackageName(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getInstallerPackageName", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getNameForUid(int)"/>
@@ -1952,6 +2037,16 @@ namespace Android.Content.Pm
         public Java.Util.List<Android.Content.Pm.PackageInfo> GetPackagesHoldingPermissions(Java.Lang.String[] arg0, int arg1)
         {
             return IExecute<Java.Util.List<Android.Content.Pm.PackageInfo>>("getPackagesHoldingPermissions", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getPreferredPackages(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        [System.Obsolete()]
+        public Java.Util.List<Android.Content.Pm.PackageInfo> GetPreferredPackages(int arg0)
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.PackageInfo>>("getPreferredPackages", "(I)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#getAllPermissionGroups(int)"/>
@@ -2046,11 +2141,41 @@ namespace Android.Content.Pm
             return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.SharedLibraryInfo>>("getSharedLibraries", "(I)Ljava/util/List;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#addPackageToPreferred(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public void AddPackageToPreferred(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("addPackageToPreferred", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#addPreferredActivity(android.content.IntentFilter,int,android.content.ComponentName[],android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.IntentFilter"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg3"><see cref="Android.Content.ComponentName"/></param>
+        [System.Obsolete()]
+        public void AddPreferredActivity(Android.Content.IntentFilter arg0, int arg1, Android.Content.ComponentName[] arg2, Android.Content.ComponentName arg3)
+        {
+            IExecute("addPreferredActivity", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#clearInstantAppCookie()"/>
         /// </summary>
         public void ClearInstantAppCookie()
         {
             IExecuteWithSignature("clearInstantAppCookie", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#clearPackagePreferredActivities(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public void ClearPackagePreferredActivities(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("clearPackagePreferredActivities", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#extendVerificationTimeout(int,int,long)"/>
@@ -2061,6 +2186,15 @@ namespace Android.Content.Pm
         public void ExtendVerificationTimeout(int arg0, int arg1, long arg2)
         {
             IExecute("extendVerificationTimeout", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#removePackageFromPreferred(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public void RemovePackageFromPreferred(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("removePackageFromPreferred", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageManager.html#removePermission(java.lang.String)"/>

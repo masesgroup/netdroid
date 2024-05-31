@@ -70,6 +70,14 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getCallAudioState()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Telecom.CallAudioState CallAudioState
+        {
+            get { return IExecuteWithSignature<Android.Telecom.CallAudioState>("getCallAudioState", "()Landroid/telecom/CallAudioState;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getConferenceableConnections()"/> <see href="https://developer.android.com/reference/android/telecom/Conference.html#setConferenceableConnections(java.util.List)"/>
         /// </summary>
         public Java.Util.List<Android.Telecom.Connection> ConferenceableConnections
@@ -231,6 +239,15 @@ namespace Android.Telecom
             IExecuteWithSignature("setActive", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#setConnectionStartElapsedRealTime(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        [System.Obsolete()]
+        public void SetConnectionStartElapsedRealTime(long arg0)
+        {
+            IExecuteWithSignature("setConnectionStartElapsedRealTime", "(J)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#setDialing()"/>
         /// </summary>
         public void SetDialing()
@@ -308,6 +325,15 @@ namespace Android.Telecom
         public void OnAvailableCallEndpointsChanged(Java.Util.List<Android.Telecom.CallEndpoint> arg0)
         {
             IExecuteWithSignature("onAvailableCallEndpointsChanged", "(Ljava/util/List;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#onCallAudioStateChanged(android.telecom.CallAudioState)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Telecom.CallAudioState"/></param>
+        [System.Obsolete()]
+        public void OnCallAudioStateChanged(Android.Telecom.CallAudioState arg0)
+        {
+            IExecuteWithSignature("onCallAudioStateChanged", "(Landroid/telecom/CallAudioState;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#onCallEndpointChanged(android.telecom.CallEndpoint)"/>

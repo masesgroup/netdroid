@@ -56,6 +56,20 @@ namespace Android.Media.Session
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#FLAG_HANDLES_MEDIA_BUTTONS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FLAG_HANDLES_MEDIA_BUTTONS { get { if (!_FLAG_HANDLES_MEDIA_BUTTONSReady) { _FLAG_HANDLES_MEDIA_BUTTONSContent = SGetField<int>(LocalBridgeClazz, "FLAG_HANDLES_MEDIA_BUTTONS"); _FLAG_HANDLES_MEDIA_BUTTONSReady = true; } return _FLAG_HANDLES_MEDIA_BUTTONSContent; } }
+        private static int _FLAG_HANDLES_MEDIA_BUTTONSContent = default;
+        private static bool _FLAG_HANDLES_MEDIA_BUTTONSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#FLAG_HANDLES_TRANSPORT_CONTROLS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FLAG_HANDLES_TRANSPORT_CONTROLS { get { if (!_FLAG_HANDLES_TRANSPORT_CONTROLSReady) { _FLAG_HANDLES_TRANSPORT_CONTROLSContent = SGetField<int>(LocalBridgeClazz, "FLAG_HANDLES_TRANSPORT_CONTROLS"); _FLAG_HANDLES_TRANSPORT_CONTROLSReady = true; } return _FLAG_HANDLES_TRANSPORT_CONTROLSContent; } }
+        private static int _FLAG_HANDLES_TRANSPORT_CONTROLSContent = default;
+        private static bool _FLAG_HANDLES_TRANSPORT_CONTROLSReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -157,6 +171,15 @@ namespace Android.Media.Session
         public void SetMediaButtonBroadcastReceiver(Android.Content.ComponentName arg0)
         {
             IExecuteWithSignature("setMediaButtonBroadcastReceiver", "(Landroid/content/ComponentName;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#setMediaButtonReceiver(android.app.PendingIntent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.PendingIntent"/></param>
+        [System.Obsolete()]
+        public void SetMediaButtonReceiver(Android.App.PendingIntent arg0)
+        {
+            IExecuteWithSignature("setMediaButtonReceiver", "(Landroid/app/PendingIntent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#setMetadata(android.media.MediaMetadata)"/>

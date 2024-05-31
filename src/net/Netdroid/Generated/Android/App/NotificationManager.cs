@@ -363,6 +363,15 @@ namespace Android.App
             return IExecuteWithSignature<Android.App.NotificationChannelGroup>("getNotificationChannelGroup", "(Ljava/lang/String;)Landroid/app/NotificationChannelGroup;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#areBubblesAllowed()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool AreBubblesAllowed()
+        {
+            return IExecuteWithSignature<bool>("areBubblesAllowed", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#areBubblesEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -805,6 +814,20 @@ namespace Android.App
             public static int SUPPRESSED_EFFECT_PEEK { get { if (!_SUPPRESSED_EFFECT_PEEKReady) { _SUPPRESSED_EFFECT_PEEKContent = SGetField<int>(LocalBridgeClazz, "SUPPRESSED_EFFECT_PEEK"); _SUPPRESSED_EFFECT_PEEKReady = true; } return _SUPPRESSED_EFFECT_PEEKContent; } }
             private static int _SUPPRESSED_EFFECT_PEEKContent = default;
             private static bool _SUPPRESSED_EFFECT_PEEKReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/NotificationManager.Policy.html#SUPPRESSED_EFFECT_SCREEN_OFF"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int SUPPRESSED_EFFECT_SCREEN_OFF { get { if (!_SUPPRESSED_EFFECT_SCREEN_OFFReady) { _SUPPRESSED_EFFECT_SCREEN_OFFContent = SGetField<int>(LocalBridgeClazz, "SUPPRESSED_EFFECT_SCREEN_OFF"); _SUPPRESSED_EFFECT_SCREEN_OFFReady = true; } return _SUPPRESSED_EFFECT_SCREEN_OFFContent; } }
+            private static int _SUPPRESSED_EFFECT_SCREEN_OFFContent = default;
+            private static bool _SUPPRESSED_EFFECT_SCREEN_OFFReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/NotificationManager.Policy.html#SUPPRESSED_EFFECT_SCREEN_ON"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int SUPPRESSED_EFFECT_SCREEN_ON { get { if (!_SUPPRESSED_EFFECT_SCREEN_ONReady) { _SUPPRESSED_EFFECT_SCREEN_ONContent = SGetField<int>(LocalBridgeClazz, "SUPPRESSED_EFFECT_SCREEN_ON"); _SUPPRESSED_EFFECT_SCREEN_ONReady = true; } return _SUPPRESSED_EFFECT_SCREEN_ONContent; } }
+            private static int _SUPPRESSED_EFFECT_SCREEN_ONContent = default;
+            private static bool _SUPPRESSED_EFFECT_SCREEN_ONReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/NotificationManager.Policy.html#SUPPRESSED_EFFECT_STATUS_BAR"/>
             /// </summary>

@@ -58,6 +58,14 @@ namespace Android.Media.Midi
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/midi/MidiManager.html#getDevices()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Media.Midi.MidiDeviceInfo[] Devices
+        {
+            get { return IExecuteWithSignatureArray<Android.Media.Midi.MidiDeviceInfo>("getDevices", "()[Landroid/media/midi/MidiDeviceInfo;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/midi/MidiManager.html#getDevicesForTransport(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -85,6 +93,16 @@ namespace Android.Media.Midi
         public void OpenDevice(Android.Media.Midi.MidiDeviceInfo arg0, Android.Media.Midi.MidiManager.OnDeviceOpenedListener arg1, Android.Os.Handler arg2)
         {
             IExecute("openDevice", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/midi/MidiManager.html#registerDeviceCallback(android.media.midi.MidiManager.DeviceCallback,android.os.Handler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.Midi.MidiManager.DeviceCallback"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
+        [System.Obsolete()]
+        public void RegisterDeviceCallback(Android.Media.Midi.MidiManager.DeviceCallback arg0, Android.Os.Handler arg1)
+        {
+            IExecute("registerDeviceCallback", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/midi/MidiManager.html#registerDeviceCallback(int,java.util.concurrent.Executor,android.media.midi.MidiManager.DeviceCallback)"/>

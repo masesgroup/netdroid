@@ -29,6 +29,20 @@ namespace Android.Media.Tv
     public partial class TableResponse
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TableResponse.html#%3Cinit%3E(int,int,int,android.net.Uri,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Android.Net.Uri"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        [System.Obsolete()]
+        public TableResponse(int arg0, int arg1, int arg2, Android.Net.Uri arg3, int arg4, int arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
+        {
+        }
 
         #endregion
 

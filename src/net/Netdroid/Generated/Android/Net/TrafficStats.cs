@@ -181,6 +181,46 @@ namespace Android.Net
             return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidRxPackets", "(I)J", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getUidTcpRxBytes(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="long"/></returns>
+        [System.Obsolete()]
+        public static long GetUidTcpRxBytes(int arg0)
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidTcpRxBytes", "(I)J", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getUidTcpRxSegments(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="long"/></returns>
+        [System.Obsolete()]
+        public static long GetUidTcpRxSegments(int arg0)
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidTcpRxSegments", "(I)J", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getUidTcpTxBytes(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="long"/></returns>
+        [System.Obsolete()]
+        public static long GetUidTcpTxBytes(int arg0)
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidTcpTxBytes", "(I)J", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getUidTcpTxSegments(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="long"/></returns>
+        [System.Obsolete()]
+        public static long GetUidTcpTxSegments(int arg0)
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidTcpTxSegments", "(I)J", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getUidTxBytes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -197,6 +237,46 @@ namespace Android.Net
         public static long GetUidTxPackets(int arg0)
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidTxPackets", "(I)J", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getUidUdpRxBytes(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="long"/></returns>
+        [System.Obsolete()]
+        public static long GetUidUdpRxBytes(int arg0)
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidUdpRxBytes", "(I)J", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getUidUdpRxPackets(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="long"/></returns>
+        [System.Obsolete()]
+        public static long GetUidUdpRxPackets(int arg0)
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidUdpRxPackets", "(I)J", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getUidUdpTxBytes(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="long"/></returns>
+        [System.Obsolete()]
+        public static long GetUidUdpTxBytes(int arg0)
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidUdpTxBytes", "(I)J", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getUidUdpTxPackets(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="long"/></returns>
+        [System.Obsolete()]
+        public static long GetUidUdpTxPackets(int arg0)
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidUdpTxPackets", "(I)J", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#clearThreadStatsTag()"/>

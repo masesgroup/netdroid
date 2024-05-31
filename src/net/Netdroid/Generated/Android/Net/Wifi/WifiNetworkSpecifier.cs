@@ -236,6 +236,16 @@ namespace Android.Net.Wifi
                 return IExecuteWithSignature<Android.Net.Wifi.WifiNetworkSpecifier.Builder>("setWpa3Enterprise192BitModeConfig", "(Landroid/net/wifi/WifiEnterpriseConfig;)Landroid/net/wifi/WifiNetworkSpecifier$Builder;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSpecifier.Builder.html#setWpa3EnterpriseConfig(android.net.wifi.WifiEnterpriseConfig)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Net.Wifi.WifiEnterpriseConfig"/></param>
+            /// <returns><see cref="Android.Net.Wifi.WifiNetworkSpecifier.Builder"/></returns>
+            [System.Obsolete()]
+            public Android.Net.Wifi.WifiNetworkSpecifier.Builder SetWpa3EnterpriseConfig(Android.Net.Wifi.WifiEnterpriseConfig arg0)
+            {
+                return IExecuteWithSignature<Android.Net.Wifi.WifiNetworkSpecifier.Builder>("setWpa3EnterpriseConfig", "(Landroid/net/wifi/WifiEnterpriseConfig;)Landroid/net/wifi/WifiNetworkSpecifier$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSpecifier.Builder.html#setWpa3EnterpriseStandardModeConfig(android.net.wifi.WifiEnterpriseConfig)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Wifi.WifiEnterpriseConfig"/></param>

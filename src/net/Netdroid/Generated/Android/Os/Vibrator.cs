@@ -153,6 +153,16 @@ namespace Android.Os
             if (arg0.Length == 0) return IExecuteWithSignatureArray<int>("getPrimitiveDurations", "([I)[I"); else return IExecuteWithSignatureArray<int>("getPrimitiveDurations", "([I)[I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#vibrate(android.os.VibrationEffect,android.media.AudioAttributes)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.VibrationEffect"/></param>
+        /// <param name="arg1"><see cref="Android.Media.AudioAttributes"/></param>
+        [System.Obsolete()]
+        public void Vibrate(Android.Os.VibrationEffect arg0, Android.Media.AudioAttributes arg1)
+        {
+            IExecute("vibrate", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#vibrate(android.os.VibrationEffect,android.os.VibrationAttributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.VibrationEffect"/></param>
@@ -168,6 +178,46 @@ namespace Android.Os
         public void Vibrate(Android.Os.VibrationEffect arg0)
         {
             IExecuteWithSignature("vibrate", "(Landroid/os/VibrationEffect;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#vibrate(long,android.media.AudioAttributes)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Android.Media.AudioAttributes"/></param>
+        [System.Obsolete()]
+        public void Vibrate(long arg0, Android.Media.AudioAttributes arg1)
+        {
+            IExecute("vibrate", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#vibrate(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        [System.Obsolete()]
+        public void Vibrate(long arg0)
+        {
+            IExecuteWithSignature("vibrate", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#vibrate(long[],int,android.media.AudioAttributes)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.Media.AudioAttributes"/></param>
+        [System.Obsolete()]
+        public void Vibrate(long[] arg0, int arg1, Android.Media.AudioAttributes arg2)
+        {
+            IExecute("vibrate", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#vibrate(long[],int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void Vibrate(long[] arg0, int arg1)
+        {
+            IExecute("vibrate", arg0, arg1);
         }
 
         #endregion

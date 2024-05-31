@@ -53,6 +53,14 @@ namespace Android.Hardware.Camera2
             get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.CaptureResult>>("getPartialResults", "()Ljava/util/List;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/TotalCaptureResult.html#getPhysicalCameraResults()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Util.Map<Java.Lang.String, Android.Hardware.Camera2.CaptureResult> PhysicalCameraResults
+        {
+            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Android.Hardware.Camera2.CaptureResult>>("getPhysicalCameraResults", "()Ljava/util/Map;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/TotalCaptureResult.html#getPhysicalCameraTotalResults()"/> 
         /// </summary>
         public Java.Util.Map<Java.Lang.String, Android.Hardware.Camera2.TotalCaptureResult> PhysicalCameraTotalResults

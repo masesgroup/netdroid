@@ -84,6 +84,14 @@ namespace Android.Content.Pm
             get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/VersionedPackage.html#getVersionCode()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int VersionCode
+        {
+            get { return IExecuteWithSignature<int>("getVersionCode", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/VersionedPackage.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>

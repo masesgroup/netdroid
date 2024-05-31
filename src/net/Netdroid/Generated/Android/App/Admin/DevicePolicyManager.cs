@@ -38,6 +38,13 @@ namespace Android.App.Admin
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#ENCRYPTION_STATUS_ACTIVATING"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ENCRYPTION_STATUS_ACTIVATING { get { if (!_ENCRYPTION_STATUS_ACTIVATINGReady) { _ENCRYPTION_STATUS_ACTIVATINGContent = SGetField<int>(LocalBridgeClazz, "ENCRYPTION_STATUS_ACTIVATING"); _ENCRYPTION_STATUS_ACTIVATINGReady = true; } return _ENCRYPTION_STATUS_ACTIVATINGContent; } }
+        private static int _ENCRYPTION_STATUS_ACTIVATINGContent = default;
+        private static bool _ENCRYPTION_STATUS_ACTIVATINGReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#ENCRYPTION_STATUS_ACTIVE"/>
         /// </summary>
         public static int ENCRYPTION_STATUS_ACTIVE { get { if (!_ENCRYPTION_STATUS_ACTIVEReady) { _ENCRYPTION_STATUS_ACTIVEContent = SGetField<int>(LocalBridgeClazz, "ENCRYPTION_STATUS_ACTIVE"); _ENCRYPTION_STATUS_ACTIVEReady = true; } return _ENCRYPTION_STATUS_ACTIVEContent; } }
@@ -175,6 +182,13 @@ namespace Android.App.Admin
         public static int KEYGUARD_DISABLE_IRIS { get { if (!_KEYGUARD_DISABLE_IRISReady) { _KEYGUARD_DISABLE_IRISContent = SGetField<int>(LocalBridgeClazz, "KEYGUARD_DISABLE_IRIS"); _KEYGUARD_DISABLE_IRISReady = true; } return _KEYGUARD_DISABLE_IRISContent; } }
         private static int _KEYGUARD_DISABLE_IRISContent = default;
         private static bool _KEYGUARD_DISABLE_IRISReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#KEYGUARD_DISABLE_REMOTE_INPUT"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int KEYGUARD_DISABLE_REMOTE_INPUT { get { if (!_KEYGUARD_DISABLE_REMOTE_INPUTReady) { _KEYGUARD_DISABLE_REMOTE_INPUTContent = SGetField<int>(LocalBridgeClazz, "KEYGUARD_DISABLE_REMOTE_INPUT"); _KEYGUARD_DISABLE_REMOTE_INPUTReady = true; } return _KEYGUARD_DISABLE_REMOTE_INPUTContent; } }
+        private static int _KEYGUARD_DISABLE_REMOTE_INPUTContent = default;
+        private static bool _KEYGUARD_DISABLE_REMOTE_INPUTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#KEYGUARD_DISABLE_SECURE_CAMERA"/>
         /// </summary>
@@ -638,6 +652,13 @@ namespace Android.App.Admin
         private static Java.Lang.String _ACTION_PROFILE_OWNER_CHANGEDContent = default;
         private static bool _ACTION_PROFILE_OWNER_CHANGEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#ACTION_PROVISION_MANAGED_DEVICE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String ACTION_PROVISION_MANAGED_DEVICE { get { if (!_ACTION_PROVISION_MANAGED_DEVICEReady) { _ACTION_PROVISION_MANAGED_DEVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_PROVISION_MANAGED_DEVICE"); _ACTION_PROVISION_MANAGED_DEVICEReady = true; } return _ACTION_PROVISION_MANAGED_DEVICEContent; } }
+        private static Java.Lang.String _ACTION_PROVISION_MANAGED_DEVICEContent = default;
+        private static bool _ACTION_PROVISION_MANAGED_DEVICEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#ACTION_PROVISION_MANAGED_PROFILE"/>
         /// </summary>
         public static Java.Lang.String ACTION_PROVISION_MANAGED_PROFILE { get { if (!_ACTION_PROVISION_MANAGED_PROFILEReady) { _ACTION_PROVISION_MANAGED_PROFILEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_PROVISION_MANAGED_PROFILE"); _ACTION_PROVISION_MANAGED_PROFILEReady = true; } return _ACTION_PROVISION_MANAGED_PROFILEContent; } }
@@ -824,6 +845,13 @@ namespace Android.App.Admin
         private static Java.Lang.String _EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATIONContent = default;
         private static bool _EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATIONReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_NAME"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_NAME { get { if (!_EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_NAMEReady) { _EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_NAME"); _EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_NAMEReady = true; } return _EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_NAMEContent; } }
+        private static Java.Lang.String _EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_NAMEContent = default;
+        private static bool _EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_NAMEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#EXTRA_PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM"/>
         /// </summary>
         public static Java.Lang.String EXTRA_PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM { get { if (!_EXTRA_PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUMReady) { _EXTRA_PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUMContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM"); _EXTRA_PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUMReady = true; } return _EXTRA_PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUMContent; } }
@@ -848,6 +876,13 @@ namespace Android.App.Admin
         private static Java.Lang.String _EXTRA_PROVISIONING_DISCLAIMERSContent = default;
         private static bool _EXTRA_PROVISIONING_DISCLAIMERSReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#EXTRA_PROVISIONING_EMAIL_ADDRESS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String EXTRA_PROVISIONING_EMAIL_ADDRESS { get { if (!_EXTRA_PROVISIONING_EMAIL_ADDRESSReady) { _EXTRA_PROVISIONING_EMAIL_ADDRESSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PROVISIONING_EMAIL_ADDRESS"); _EXTRA_PROVISIONING_EMAIL_ADDRESSReady = true; } return _EXTRA_PROVISIONING_EMAIL_ADDRESSContent; } }
+        private static Java.Lang.String _EXTRA_PROVISIONING_EMAIL_ADDRESSContent = default;
+        private static bool _EXTRA_PROVISIONING_EMAIL_ADDRESSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#EXTRA_PROVISIONING_IMEI"/>
         /// </summary>
         public static Java.Lang.String EXTRA_PROVISIONING_IMEI { get { if (!_EXTRA_PROVISIONING_IMEIReady) { _EXTRA_PROVISIONING_IMEIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PROVISIONING_IMEI"); _EXTRA_PROVISIONING_IMEIReady = true; } return _EXTRA_PROVISIONING_IMEIContent; } }
@@ -859,6 +894,13 @@ namespace Android.App.Admin
         public static Java.Lang.String EXTRA_PROVISIONING_KEEP_ACCOUNT_ON_MIGRATION { get { if (!_EXTRA_PROVISIONING_KEEP_ACCOUNT_ON_MIGRATIONReady) { _EXTRA_PROVISIONING_KEEP_ACCOUNT_ON_MIGRATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PROVISIONING_KEEP_ACCOUNT_ON_MIGRATION"); _EXTRA_PROVISIONING_KEEP_ACCOUNT_ON_MIGRATIONReady = true; } return _EXTRA_PROVISIONING_KEEP_ACCOUNT_ON_MIGRATIONContent; } }
         private static Java.Lang.String _EXTRA_PROVISIONING_KEEP_ACCOUNT_ON_MIGRATIONContent = default;
         private static bool _EXTRA_PROVISIONING_KEEP_ACCOUNT_ON_MIGRATIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#EXTRA_PROVISIONING_KEEP_SCREEN_ON"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String EXTRA_PROVISIONING_KEEP_SCREEN_ON { get { if (!_EXTRA_PROVISIONING_KEEP_SCREEN_ONReady) { _EXTRA_PROVISIONING_KEEP_SCREEN_ONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PROVISIONING_KEEP_SCREEN_ON"); _EXTRA_PROVISIONING_KEEP_SCREEN_ONReady = true; } return _EXTRA_PROVISIONING_KEEP_SCREEN_ONContent; } }
+        private static Java.Lang.String _EXTRA_PROVISIONING_KEEP_SCREEN_ONContent = default;
+        private static bool _EXTRA_PROVISIONING_KEEP_SCREEN_ONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#EXTRA_PROVISIONING_LEAVE_ALL_SYSTEM_APPS_ENABLED"/>
         /// </summary>
@@ -877,6 +919,20 @@ namespace Android.App.Admin
         public static Java.Lang.String EXTRA_PROVISIONING_LOCALE { get { if (!_EXTRA_PROVISIONING_LOCALEReady) { _EXTRA_PROVISIONING_LOCALEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PROVISIONING_LOCALE"); _EXTRA_PROVISIONING_LOCALEReady = true; } return _EXTRA_PROVISIONING_LOCALEContent; } }
         private static Java.Lang.String _EXTRA_PROVISIONING_LOCALEContent = default;
         private static bool _EXTRA_PROVISIONING_LOCALEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#EXTRA_PROVISIONING_LOGO_URI"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String EXTRA_PROVISIONING_LOGO_URI { get { if (!_EXTRA_PROVISIONING_LOGO_URIReady) { _EXTRA_PROVISIONING_LOGO_URIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PROVISIONING_LOGO_URI"); _EXTRA_PROVISIONING_LOGO_URIReady = true; } return _EXTRA_PROVISIONING_LOGO_URIContent; } }
+        private static Java.Lang.String _EXTRA_PROVISIONING_LOGO_URIContent = default;
+        private static bool _EXTRA_PROVISIONING_LOGO_URIReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#EXTRA_PROVISIONING_MAIN_COLOR"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String EXTRA_PROVISIONING_MAIN_COLOR { get { if (!_EXTRA_PROVISIONING_MAIN_COLORReady) { _EXTRA_PROVISIONING_MAIN_COLORContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PROVISIONING_MAIN_COLOR"); _EXTRA_PROVISIONING_MAIN_COLORReady = true; } return _EXTRA_PROVISIONING_MAIN_COLORContent; } }
+        private static Java.Lang.String _EXTRA_PROVISIONING_MAIN_COLORContent = default;
+        private static bool _EXTRA_PROVISIONING_MAIN_COLORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#EXTRA_PROVISIONING_MODE"/>
         /// </summary>
@@ -913,6 +969,13 @@ namespace Android.App.Admin
         public static Java.Lang.String EXTRA_PROVISIONING_SKIP_ENCRYPTION { get { if (!_EXTRA_PROVISIONING_SKIP_ENCRYPTIONReady) { _EXTRA_PROVISIONING_SKIP_ENCRYPTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PROVISIONING_SKIP_ENCRYPTION"); _EXTRA_PROVISIONING_SKIP_ENCRYPTIONReady = true; } return _EXTRA_PROVISIONING_SKIP_ENCRYPTIONContent; } }
         private static Java.Lang.String _EXTRA_PROVISIONING_SKIP_ENCRYPTIONContent = default;
         private static bool _EXTRA_PROVISIONING_SKIP_ENCRYPTIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#EXTRA_PROVISIONING_SKIP_USER_CONSENT"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String EXTRA_PROVISIONING_SKIP_USER_CONSENT { get { if (!_EXTRA_PROVISIONING_SKIP_USER_CONSENTReady) { _EXTRA_PROVISIONING_SKIP_USER_CONSENTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PROVISIONING_SKIP_USER_CONSENT"); _EXTRA_PROVISIONING_SKIP_USER_CONSENTReady = true; } return _EXTRA_PROVISIONING_SKIP_USER_CONSENTContent; } }
+        private static Java.Lang.String _EXTRA_PROVISIONING_SKIP_USER_CONSENTContent = default;
+        private static bool _EXTRA_PROVISIONING_SKIP_USER_CONSENTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#EXTRA_PROVISIONING_TIME_ZONE"/>
         /// </summary>
@@ -1072,6 +1135,14 @@ namespace Android.App.Admin
         public Java.Util.List<Android.Content.ComponentName> ActiveAdmins
         {
             get { return IExecuteWithSignature<Java.Util.List<Android.Content.ComponentName>>("getActiveAdmins", "()Ljava/util/List;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getAutoTimeRequired()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public bool AutoTimeRequired
+        {
+            get { return IExecuteWithSignature<bool>("getAutoTimeRequired", "()Z"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getCredentialManagerPolicy()"/> <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setCredentialManagerPolicy(android.app.admin.PackagePolicy)"/>
@@ -1398,6 +1469,26 @@ namespace Android.App.Admin
             return IExecuteWithSignature<bool>("getCameraDisabled", "(Landroid/content/ComponentName;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getCrossProfileCallerIdDisabled(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool GetCrossProfileCallerIdDisabled(Android.Content.ComponentName arg0)
+        {
+            return IExecuteWithSignature<bool>("getCrossProfileCallerIdDisabled", "(Landroid/content/ComponentName;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getCrossProfileContactsSearchDisabled(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool GetCrossProfileContactsSearchDisabled(Android.Content.ComponentName arg0)
+        {
+            return IExecuteWithSignature<bool>("getCrossProfileContactsSearchDisabled", "(Landroid/content/ComponentName;)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getScreenCaptureDisabled(android.content.ComponentName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
@@ -1405,6 +1496,16 @@ namespace Android.App.Admin
         public bool GetScreenCaptureDisabled(Android.Content.ComponentName arg0)
         {
             return IExecuteWithSignature<bool>("getScreenCaptureDisabled", "(Landroid/content/ComponentName;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getStorageEncryption(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool GetStorageEncryption(Android.Content.ComponentName arg0)
+        {
+            return IExecuteWithSignature<bool>("getStorageEncryption", "(Landroid/content/ComponentName;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#grantKeyPairToApp(android.content.ComponentName,java.lang.String,java.lang.String)"/>
@@ -1582,6 +1683,15 @@ namespace Android.App.Admin
         public bool IsBackupServiceEnabled(Android.Content.ComponentName arg0)
         {
             return IExecuteWithSignature<bool>("isBackupServiceEnabled", "(Landroid/content/ComponentName;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#isCallerApplicationRestrictionsManagingPackage()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsCallerApplicationRestrictionsManagingPackage()
+        {
+            return IExecuteWithSignature<bool>("isCallerApplicationRestrictionsManagingPackage", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#isCommonCriteriaModeEnabled(android.content.ComponentName)"/>
@@ -1861,6 +1971,17 @@ namespace Android.App.Admin
             return IExecuteWithSignature<bool>("requestBugreport", "(Landroid/content/ComponentName;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#resetPassword(java.lang.String,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool ResetPassword(Java.Lang.String arg0, int arg1)
+        {
+            return IExecute<bool>("resetPassword", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#resetPasswordWithToken(android.content.ComponentName,java.lang.String,byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
@@ -2085,6 +2206,16 @@ namespace Android.App.Admin
             return IExecuteWithSignature<int>("getMaximumFailedPasswordsForWipe", "(Landroid/content/ComponentName;)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getOrganizationColor(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int GetOrganizationColor(Android.Content.ComponentName arg0)
+        {
+            return IExecuteWithSignature<int>("getOrganizationColor", "(Landroid/content/ComponentName;)I", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getPasswordHistoryLength(android.content.ComponentName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
@@ -2101,6 +2232,86 @@ namespace Android.App.Admin
         public int GetPasswordMaximumLength(int arg0)
         {
             return IExecuteWithSignature<int>("getPasswordMaximumLength", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getPasswordMinimumLength(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int GetPasswordMinimumLength(Android.Content.ComponentName arg0)
+        {
+            return IExecuteWithSignature<int>("getPasswordMinimumLength", "(Landroid/content/ComponentName;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getPasswordMinimumLetters(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int GetPasswordMinimumLetters(Android.Content.ComponentName arg0)
+        {
+            return IExecuteWithSignature<int>("getPasswordMinimumLetters", "(Landroid/content/ComponentName;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getPasswordMinimumLowerCase(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int GetPasswordMinimumLowerCase(Android.Content.ComponentName arg0)
+        {
+            return IExecuteWithSignature<int>("getPasswordMinimumLowerCase", "(Landroid/content/ComponentName;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getPasswordMinimumNonLetter(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int GetPasswordMinimumNonLetter(Android.Content.ComponentName arg0)
+        {
+            return IExecuteWithSignature<int>("getPasswordMinimumNonLetter", "(Landroid/content/ComponentName;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getPasswordMinimumNumeric(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int GetPasswordMinimumNumeric(Android.Content.ComponentName arg0)
+        {
+            return IExecuteWithSignature<int>("getPasswordMinimumNumeric", "(Landroid/content/ComponentName;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getPasswordMinimumSymbols(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int GetPasswordMinimumSymbols(Android.Content.ComponentName arg0)
+        {
+            return IExecuteWithSignature<int>("getPasswordMinimumSymbols", "(Landroid/content/ComponentName;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getPasswordMinimumUpperCase(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int GetPasswordMinimumUpperCase(Android.Content.ComponentName arg0)
+        {
+            return IExecuteWithSignature<int>("getPasswordMinimumUpperCase", "(Landroid/content/ComponentName;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getPasswordQuality(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int GetPasswordQuality(Android.Content.ComponentName arg0)
+        {
+            return IExecuteWithSignature<int>("getPasswordQuality", "(Landroid/content/ComponentName;)I", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getPermissionGrantState(android.content.ComponentName,java.lang.String,java.lang.String)"/>
@@ -2158,6 +2369,17 @@ namespace Android.App.Admin
         public int SetGlobalPrivateDnsModeSpecifiedHost(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
             return IExecute<int>("setGlobalPrivateDnsModeSpecifiedHost", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setStorageEncryption(android.content.ComponentName,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int SetStorageEncryption(Android.Content.ComponentName arg0, bool arg1)
+        {
+            return IExecute<int>("setStorageEncryption", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#startUserInBackground(android.content.ComponentName,android.os.UserHandle)"/>
@@ -2232,6 +2454,27 @@ namespace Android.App.Admin
         public Java.Lang.String GetAlwaysOnVpnPackage(Android.Content.ComponentName arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getAlwaysOnVpnPackage", "(Landroid/content/ComponentName;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getApplicationRestrictionsManagingPackage(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public Java.Lang.String GetApplicationRestrictionsManagingPackage(Android.Content.ComponentName arg0)
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getApplicationRestrictionsManagingPackage", "(Landroid/content/ComponentName;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getCertInstallerPackage(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        [System.Obsolete()]
+        public Java.Lang.String GetCertInstallerPackage(Android.Content.ComponentName arg0)
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCertInstallerPackage", "(Landroid/content/ComponentName;)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getGlobalPrivateDnsHost(android.content.ComponentName)"/>
@@ -2474,6 +2717,16 @@ namespace Android.App.Admin
             return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getAlwaysOnVpnLockdownWhitelist", "(Landroid/content/ComponentName;)Ljava/util/Set;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getCrossProfileCalendarPackages(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        [System.Obsolete()]
+        public Java.Util.Set<Java.Lang.String> GetCrossProfileCalendarPackages(Android.Content.ComponentName arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getCrossProfileCalendarPackages", "(Landroid/content/ComponentName;)Ljava/util/Set;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#getCrossProfilePackages(android.content.ComponentName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
@@ -2591,6 +2844,15 @@ namespace Android.App.Admin
             IExecuteWithSignature("clearCrossProfileIntentFilters", "(Landroid/content/ComponentName;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#clearDeviceOwnerApp(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public void ClearDeviceOwnerApp(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("clearDeviceOwnerApp", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#clearPackagePersistentPreferredActivities(android.content.ComponentName,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
@@ -2598,6 +2860,15 @@ namespace Android.App.Admin
         public void ClearPackagePersistentPreferredActivities(Android.Content.ComponentName arg0, Java.Lang.String arg1)
         {
             IExecute("clearPackagePersistentPreferredActivities", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#clearProfileOwner(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        [System.Obsolete()]
+        public void ClearProfileOwner(Android.Content.ComponentName arg0)
+        {
+            IExecuteWithSignature("clearProfileOwner", "(Landroid/content/ComponentName;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#clearUserRestriction(android.content.ComponentName,java.lang.String)"/>
@@ -2712,6 +2983,17 @@ namespace Android.App.Admin
             IExecute("setApplicationRestrictions", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setApplicationRestrictionsManagingPackage(android.content.ComponentName,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Android.Content.Pm.PackageManager.NameNotFoundException"/>
+        [System.Obsolete()]
+        public void SetApplicationRestrictionsManagingPackage(Android.Content.ComponentName arg0, Java.Lang.String arg1)
+        {
+            IExecute("setApplicationRestrictionsManagingPackage", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setAutoTimeEnabled(android.content.ComponentName,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
@@ -2719,6 +3001,16 @@ namespace Android.App.Admin
         public void SetAutoTimeEnabled(Android.Content.ComponentName arg0, bool arg1)
         {
             IExecute("setAutoTimeEnabled", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setAutoTimeRequired(android.content.ComponentName,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetAutoTimeRequired(Android.Content.ComponentName arg0, bool arg1)
+        {
+            IExecute("setAutoTimeRequired", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setAutoTimeZoneEnabled(android.content.ComponentName,boolean)"/>
@@ -2757,6 +3049,17 @@ namespace Android.App.Admin
             IExecute("setCameraDisabled", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setCertInstallerPackage(android.content.ComponentName,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        [System.Obsolete()]
+        public void SetCertInstallerPackage(Android.Content.ComponentName arg0, Java.Lang.String arg1)
+        {
+            IExecute("setCertInstallerPackage", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setCommonCriteriaModeEnabled(android.content.ComponentName,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
@@ -2773,6 +3076,36 @@ namespace Android.App.Admin
         public void SetConfiguredNetworksLockdownState(Android.Content.ComponentName arg0, bool arg1)
         {
             IExecute("setConfiguredNetworksLockdownState", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setCrossProfileCalendarPackages(android.content.ComponentName,java.util.Set)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
+        [System.Obsolete()]
+        public void SetCrossProfileCalendarPackages(Android.Content.ComponentName arg0, Java.Util.Set<Java.Lang.String> arg1)
+        {
+            IExecute("setCrossProfileCalendarPackages", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setCrossProfileCallerIdDisabled(android.content.ComponentName,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetCrossProfileCallerIdDisabled(Android.Content.ComponentName arg0, bool arg1)
+        {
+            IExecute("setCrossProfileCallerIdDisabled", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setCrossProfileContactsSearchDisabled(android.content.ComponentName,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetCrossProfileContactsSearchDisabled(Android.Content.ComponentName arg0, bool arg1)
+        {
+            IExecute("setCrossProfileContactsSearchDisabled", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setCrossProfilePackages(android.content.ComponentName,java.util.Set)"/>
@@ -2957,6 +3290,16 @@ namespace Android.App.Admin
             IExecute("setNetworkLoggingEnabled", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setOrganizationColor(android.content.ComponentName,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetOrganizationColor(Android.Content.ComponentName arg0, int arg1)
+        {
+            IExecute("setOrganizationColor", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setOrganizationId(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -2999,6 +3342,86 @@ namespace Android.App.Admin
         public void SetPasswordHistoryLength(Android.Content.ComponentName arg0, int arg1)
         {
             IExecute("setPasswordHistoryLength", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordMinimumLength(android.content.ComponentName,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetPasswordMinimumLength(Android.Content.ComponentName arg0, int arg1)
+        {
+            IExecute("setPasswordMinimumLength", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordMinimumLetters(android.content.ComponentName,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetPasswordMinimumLetters(Android.Content.ComponentName arg0, int arg1)
+        {
+            IExecute("setPasswordMinimumLetters", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordMinimumLowerCase(android.content.ComponentName,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetPasswordMinimumLowerCase(Android.Content.ComponentName arg0, int arg1)
+        {
+            IExecute("setPasswordMinimumLowerCase", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordMinimumNonLetter(android.content.ComponentName,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetPasswordMinimumNonLetter(Android.Content.ComponentName arg0, int arg1)
+        {
+            IExecute("setPasswordMinimumNonLetter", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordMinimumNumeric(android.content.ComponentName,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetPasswordMinimumNumeric(Android.Content.ComponentName arg0, int arg1)
+        {
+            IExecute("setPasswordMinimumNumeric", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordMinimumSymbols(android.content.ComponentName,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetPasswordMinimumSymbols(Android.Content.ComponentName arg0, int arg1)
+        {
+            IExecute("setPasswordMinimumSymbols", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordMinimumUpperCase(android.content.ComponentName,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetPasswordMinimumUpperCase(Android.Content.ComponentName arg0, int arg1)
+        {
+            IExecute("setPasswordMinimumUpperCase", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPasswordQuality(android.content.ComponentName,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetPasswordQuality(Android.Content.ComponentName arg0, int arg1)
+        {
+            IExecute("setPasswordQuality", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setPermissionPolicy(android.content.ComponentName,int)"/>

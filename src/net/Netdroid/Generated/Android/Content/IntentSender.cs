@@ -91,6 +91,14 @@ namespace Android.Content
             get { return IExecuteWithSignature<Android.Os.UserHandle>("getCreatorUserHandle", "()Landroid/os/UserHandle;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/IntentSender.html#getTargetPackage()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String TargetPackage
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getTargetPackage", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentSender.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>

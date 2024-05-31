@@ -30,6 +30,17 @@ namespace Android.View
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#%3Cinit%3E(android.view.KeyEvent,long,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.KeyEvent"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        [System.Obsolete()]
+        public KeyEvent(Android.View.KeyEvent arg0, long arg1, int arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#%3Cinit%3E(android.view.KeyEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.KeyEvent"/></param>
@@ -151,6 +162,13 @@ namespace Android.View
         private static int _ACTION_DOWNContent = default;
         private static bool _ACTION_DOWNReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#ACTION_MULTIPLE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ACTION_MULTIPLE { get { if (!_ACTION_MULTIPLEReady) { _ACTION_MULTIPLEContent = SGetField<int>(LocalBridgeClazz, "ACTION_MULTIPLE"); _ACTION_MULTIPLEReady = true; } return _ACTION_MULTIPLEContent; } }
+        private static int _ACTION_MULTIPLEContent = default;
+        private static bool _ACTION_MULTIPLEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#ACTION_UP"/>
         /// </summary>
         public static int ACTION_UP { get { if (!_ACTION_UPReady) { _ACTION_UPContent = SGetField<int>(LocalBridgeClazz, "ACTION_UP"); _ACTION_UPReady = true; } return _ACTION_UPContent; } }
@@ -216,6 +234,13 @@ namespace Android.View
         public static int FLAG_VIRTUAL_HARD_KEY { get { if (!_FLAG_VIRTUAL_HARD_KEYReady) { _FLAG_VIRTUAL_HARD_KEYContent = SGetField<int>(LocalBridgeClazz, "FLAG_VIRTUAL_HARD_KEY"); _FLAG_VIRTUAL_HARD_KEYReady = true; } return _FLAG_VIRTUAL_HARD_KEYContent; } }
         private static int _FLAG_VIRTUAL_HARD_KEYContent = default;
         private static bool _FLAG_VIRTUAL_HARD_KEYReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#FLAG_WOKE_HERE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FLAG_WOKE_HERE { get { if (!_FLAG_WOKE_HEREReady) { _FLAG_WOKE_HEREContent = SGetField<int>(LocalBridgeClazz, "FLAG_WOKE_HERE"); _FLAG_WOKE_HEREReady = true; } return _FLAG_WOKE_HEREContent; } }
+        private static int _FLAG_WOKE_HEREContent = default;
+        private static bool _FLAG_WOKE_HEREReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#KEYCODE_0"/>
         /// </summary>
@@ -2119,6 +2144,13 @@ namespace Android.View
         private static int _KEYCODE_ZOOM_OUTContent = default;
         private static bool _KEYCODE_ZOOM_OUTReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#MAX_KEYCODE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MAX_KEYCODE { get { if (!_MAX_KEYCODEReady) { _MAX_KEYCODEContent = SGetField<int>(LocalBridgeClazz, "MAX_KEYCODE"); _MAX_KEYCODEReady = true; } return _MAX_KEYCODEContent; } }
+        private static int _MAX_KEYCODEContent = default;
+        private static bool _MAX_KEYCODEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#META_ALT_LEFT_ON"/>
         /// </summary>
         public static int META_ALT_LEFT_ON { get { if (!_META_ALT_LEFT_ONReady) { _META_ALT_LEFT_ONContent = SGetField<int>(LocalBridgeClazz, "META_ALT_LEFT_ON"); _META_ALT_LEFT_ONReady = true; } return _META_ALT_LEFT_ONContent; } }
@@ -2400,6 +2432,14 @@ namespace Android.View
             get { return IExecuteWithSignature<int>("getAction", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getCharacters()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String Characters
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getCharacters", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getDisplayLabel()"/> 
         /// </summary>
         public char DisplayLabel
@@ -2477,6 +2517,16 @@ namespace Android.View
             get { return IExecuteWithSignature<int>("getUnicodeChar", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getKeyData(android.view.KeyCharacterMap.KeyData)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.KeyCharacterMap.KeyData"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool GetKeyData(Android.View.KeyCharacterMap.KeyData arg0)
+        {
+            return IExecuteWithSignature<bool>("getKeyData", "(Landroid/view/KeyCharacterMap$KeyData;)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#isPrintingKey()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -2513,6 +2563,16 @@ namespace Android.View
         public bool Dispatch(Android.View.KeyEvent.Callback arg0, Android.View.KeyEvent.DispatcherState arg1, object arg2)
         {
             return IExecute<bool>("dispatch", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#dispatch(android.view.KeyEvent.Callback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.KeyEvent.Callback"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool Dispatch(Android.View.KeyEvent.Callback arg0)
+        {
+            return IExecuteWithSignature<bool>("dispatch", "(Landroid/view/KeyEvent$Callback;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#hasModifiers(int)"/>

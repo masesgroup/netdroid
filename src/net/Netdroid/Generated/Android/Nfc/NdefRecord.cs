@@ -30,6 +30,16 @@ namespace Android.Nfc
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#%3Cinit%3E(byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <exception cref="Android.Nfc.FormatException"/>
+        [System.Obsolete()]
+        public NdefRecord(byte[] arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#%3Cinit%3E(short,byte[],byte[],byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
@@ -239,6 +249,15 @@ namespace Android.Nfc
         public Android.Net.Uri ToUri()
         {
             return IExecuteWithSignature<Android.Net.Uri>("toUri", "()Landroid/net/Uri;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#toByteArray()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        [System.Obsolete()]
+        public byte[] ToByteArray()
+        {
+            return IExecuteWithSignatureArray<byte>("toByteArray", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#describeContents()"/>

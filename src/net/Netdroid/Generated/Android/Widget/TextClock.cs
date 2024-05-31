@@ -75,6 +75,20 @@ namespace Android.Widget
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextClock.html#DEFAULT_FORMAT_12_HOUR"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.CharSequence DEFAULT_FORMAT_12_HOUR { get { if (!_DEFAULT_FORMAT_12_HOURReady) { _DEFAULT_FORMAT_12_HOURContent = SGetField<Java.Lang.CharSequence>(LocalBridgeClazz, "DEFAULT_FORMAT_12_HOUR"); _DEFAULT_FORMAT_12_HOURReady = true; } return _DEFAULT_FORMAT_12_HOURContent; } }
+        private static Java.Lang.CharSequence _DEFAULT_FORMAT_12_HOURContent = default;
+        private static bool _DEFAULT_FORMAT_12_HOURReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextClock.html#DEFAULT_FORMAT_24_HOUR"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.CharSequence DEFAULT_FORMAT_24_HOUR { get { if (!_DEFAULT_FORMAT_24_HOURReady) { _DEFAULT_FORMAT_24_HOURContent = SGetField<Java.Lang.CharSequence>(LocalBridgeClazz, "DEFAULT_FORMAT_24_HOUR"); _DEFAULT_FORMAT_24_HOURReady = true; } return _DEFAULT_FORMAT_24_HOURContent; } }
+        private static Java.Lang.CharSequence _DEFAULT_FORMAT_24_HOURContent = default;
+        private static bool _DEFAULT_FORMAT_24_HOURReady = false; // this is used because in case of generics 
 
         #endregion
 

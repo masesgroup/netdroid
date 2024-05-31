@@ -90,6 +90,13 @@ namespace Android.App
         private static int _STOP_FOREGROUND_DETACHContent = default;
         private static bool _STOP_FOREGROUND_DETACHReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Service.html#STOP_FOREGROUND_LEGACY"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int STOP_FOREGROUND_LEGACY { get { if (!_STOP_FOREGROUND_LEGACYReady) { _STOP_FOREGROUND_LEGACYContent = SGetField<int>(LocalBridgeClazz, "STOP_FOREGROUND_LEGACY"); _STOP_FOREGROUND_LEGACYReady = true; } return _STOP_FOREGROUND_LEGACYContent; } }
+        private static int _STOP_FOREGROUND_LEGACYContent = default;
+        private static bool _STOP_FOREGROUND_LEGACYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Service.html#STOP_FOREGROUND_REMOVE"/>
         /// </summary>
         public static int STOP_FOREGROUND_REMOVE { get { if (!_STOP_FOREGROUND_REMOVEReady) { _STOP_FOREGROUND_REMOVEContent = SGetField<int>(LocalBridgeClazz, "STOP_FOREGROUND_REMOVE"); _STOP_FOREGROUND_REMOVEReady = true; } return _STOP_FOREGROUND_REMOVEContent; } }
@@ -164,6 +171,15 @@ namespace Android.App
             IExecute("startForeground", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Service.html#stopForeground(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void StopForeground(bool arg0)
+        {
+            IExecuteWithSignature("stopForeground", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Service.html#stopForeground(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -233,6 +249,16 @@ namespace Android.App
         public void OnRebind(Android.Content.Intent arg0)
         {
             IExecuteWithSignature("onRebind", "(Landroid/content/Intent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Service.html#onStart(android.content.Intent,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void OnStart(Android.Content.Intent arg0, int arg1)
+        {
+            IExecute("onStart", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Service.html#onTaskRemoved(android.content.Intent)"/>

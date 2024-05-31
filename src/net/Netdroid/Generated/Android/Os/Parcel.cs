@@ -176,6 +176,29 @@ namespace Android.Os
             return IExecuteWithSignature<Android.Util.SparseArray<T>>("createTypedSparseArray", "(Landroid/os/Parcelable$Creator;)Landroid/util/SparseArray;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readParcelableList(java.util.List,java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        [System.Obsolete()]
+        public Java.Util.List<T> ReadParcelableList<T>(Java.Util.List<T> arg0, Java.Lang.ClassLoader arg1) where T: Android.Os.IParcelable, new()
+        {
+            return IExecute<Java.Util.List<T>>("readParcelableList", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readParcelable(java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        [System.Obsolete()]
+        public T ReadParcelable<T>(Java.Lang.ClassLoader arg0) where T: Android.Os.IParcelable, new()
+        {
+            return IExecuteWithSignature<T>("readParcelable", "(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#writeParcelableArray(android.os.Parcelable[],int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
@@ -323,6 +346,17 @@ namespace Android.Os
         public Android.Util.SparseArray<T> ReadSparseArray<T>(Java.Lang.ClassLoader arg0, Java.Lang.Class arg1)
         {
             return IExecute<Android.Util.SparseArray<T>>("readSparseArray", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readSparseArray(java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref="Android.Util.SparseArray"/></returns>
+        [System.Obsolete()]
+        public Android.Util.SparseArray<T> ReadSparseArray<T>(Java.Lang.ClassLoader arg0)
+        {
+            return IExecuteWithSignature<Android.Util.SparseArray<T>>("readSparseArray", "(Ljava/lang/ClassLoader;)Landroid/util/SparseArray;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createTypedArrayList(android.os.Parcelable.Creator)"/>
@@ -525,6 +559,26 @@ namespace Android.Os
         public Android.Os.IBinder[] CreateBinderArray()
         {
             return IExecuteWithSignatureArray<Android.Os.IBinder>("createBinderArray", "()[Landroid/os/IBinder;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readParcelableArray(java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Android.Os.Parcelable"/></returns>
+        [System.Obsolete()]
+        public Android.Os.Parcelable[] ReadParcelableArray(Java.Lang.ClassLoader arg0)
+        {
+            return IExecuteWithSignatureArray<Android.Os.Parcelable>("readParcelableArray", "(Ljava/lang/ClassLoader;)[Landroid/os/Parcelable;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readParcelableCreator(java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Android.Os.Parcelable.Creator"/></returns>
+        [System.Obsolete()]
+        public Android.Os.Parcelable.Creator<object> ReadParcelableCreator(Java.Lang.ClassLoader arg0)
+        {
+            return IExecuteWithSignature<Android.Os.Parcelable.Creator<object>>("readParcelableCreator", "(Ljava/lang/ClassLoader;)Landroid/os/Parcelable$Creator;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readFileDescriptor()"/>
@@ -730,6 +784,15 @@ namespace Android.Os
             return IExecuteWithSignatureArray<int>("createIntArray", "()[I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readSerializable()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.Serializable"/></returns>
+        [System.Obsolete()]
+        public Java.Io.Serializable ReadSerializable()
+        {
+            return IExecuteWithSignature<Java.Io.Serializable>("readSerializable", "()Ljava/io/Serializable;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readValue(java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
@@ -737,6 +800,16 @@ namespace Android.Os
         public object ReadValue(Java.Lang.ClassLoader arg0)
         {
             return IExecuteWithSignature("readValue", "(Ljava/lang/ClassLoader;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readArray(java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="object"/></returns>
+        [System.Obsolete()]
+        public object[] ReadArray(Java.Lang.ClassLoader arg0)
+        {
+            return IExecuteWithSignatureArray<object>("readArray", "(Ljava/lang/ClassLoader;)[Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readString()"/>
@@ -755,6 +828,16 @@ namespace Android.Os
             return IExecuteWithSignatureArray<Java.Lang.String>("createStringArray", "()[Ljava/lang/String;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readArrayList(java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Java.Util.ArrayList"/></returns>
+        [System.Obsolete()]
+        public Java.Util.ArrayList ReadArrayList(Java.Lang.ClassLoader arg0)
+        {
+            return IExecuteWithSignature<Java.Util.ArrayList>("readArrayList", "(Ljava/lang/ClassLoader;)Ljava/util/ArrayList;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#createBinderArrayList()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.ArrayList"/></returns>
@@ -769,6 +852,16 @@ namespace Android.Os
         public Java.Util.ArrayList<Java.Lang.String> CreateStringArrayList()
         {
             return IExecuteWithSignature<Java.Util.ArrayList<Java.Lang.String>>("createStringArrayList", "()Ljava/util/ArrayList;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readHashMap(java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Java.Util.HashMap"/></returns>
+        [System.Obsolete()]
+        public Java.Util.HashMap ReadHashMap(Java.Lang.ClassLoader arg0)
+        {
+            return IExecuteWithSignature<Java.Util.HashMap>("readHashMap", "(Ljava/lang/ClassLoader;)Ljava/util/HashMap;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readLong()"/>
@@ -892,12 +985,32 @@ namespace Android.Os
             IExecuteWithSignature("readIntArray", "([I)V", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readList(java.util.List,java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        [System.Obsolete()]
+        public void ReadList(Java.Util.List arg0, Java.Lang.ClassLoader arg1)
+        {
+            IExecute("readList", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readLongArray(long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public void ReadLongArray(long[] arg0)
         {
             IExecuteWithSignature("readLongArray", "([J)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readMap(java.util.Map,java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        [System.Obsolete()]
+        public void ReadMap(Java.Util.Map arg0, Java.Lang.ClassLoader arg1)
+        {
+            IExecute("readMap", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Parcel.html#readStringArray(java.lang.String[])"/>

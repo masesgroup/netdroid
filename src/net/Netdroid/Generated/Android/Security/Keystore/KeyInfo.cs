@@ -151,6 +151,15 @@ namespace Android.Security.Keystore
             get { return IExecuteWithSignature<int>("getUserAuthenticationValidityDurationSeconds", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#isInsideSecureHardware()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsInsideSecureHardware()
+        {
+            return IExecuteWithSignature<bool>("isInsideSecureHardware", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#isInvalidatedByBiometricEnrollment()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>

@@ -113,6 +113,34 @@ namespace Android.View
         public static int LAYOUT_MODE_OPTICAL_BOUNDS { get { if (!_LAYOUT_MODE_OPTICAL_BOUNDSReady) { _LAYOUT_MODE_OPTICAL_BOUNDSContent = SGetField<int>(LocalBridgeClazz, "LAYOUT_MODE_OPTICAL_BOUNDS"); _LAYOUT_MODE_OPTICAL_BOUNDSReady = true; } return _LAYOUT_MODE_OPTICAL_BOUNDSContent; } }
         private static int _LAYOUT_MODE_OPTICAL_BOUNDSContent = default;
         private static bool _LAYOUT_MODE_OPTICAL_BOUNDSReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#PERSISTENT_ALL_CACHES"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int PERSISTENT_ALL_CACHES { get { if (!_PERSISTENT_ALL_CACHESReady) { _PERSISTENT_ALL_CACHESContent = SGetField<int>(LocalBridgeClazz, "PERSISTENT_ALL_CACHES"); _PERSISTENT_ALL_CACHESReady = true; } return _PERSISTENT_ALL_CACHESContent; } }
+        private static int _PERSISTENT_ALL_CACHESContent = default;
+        private static bool _PERSISTENT_ALL_CACHESReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#PERSISTENT_ANIMATION_CACHE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int PERSISTENT_ANIMATION_CACHE { get { if (!_PERSISTENT_ANIMATION_CACHEReady) { _PERSISTENT_ANIMATION_CACHEContent = SGetField<int>(LocalBridgeClazz, "PERSISTENT_ANIMATION_CACHE"); _PERSISTENT_ANIMATION_CACHEReady = true; } return _PERSISTENT_ANIMATION_CACHEContent; } }
+        private static int _PERSISTENT_ANIMATION_CACHEContent = default;
+        private static bool _PERSISTENT_ANIMATION_CACHEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#PERSISTENT_NO_CACHE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int PERSISTENT_NO_CACHE { get { if (!_PERSISTENT_NO_CACHEReady) { _PERSISTENT_NO_CACHEContent = SGetField<int>(LocalBridgeClazz, "PERSISTENT_NO_CACHE"); _PERSISTENT_NO_CACHEReady = true; } return _PERSISTENT_NO_CACHEContent; } }
+        private static int _PERSISTENT_NO_CACHEContent = default;
+        private static bool _PERSISTENT_NO_CACHEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#PERSISTENT_SCROLLING_CACHE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int PERSISTENT_SCROLLING_CACHE { get { if (!_PERSISTENT_SCROLLING_CACHEReady) { _PERSISTENT_SCROLLING_CACHEContent = SGetField<int>(LocalBridgeClazz, "PERSISTENT_SCROLLING_CACHE"); _PERSISTENT_SCROLLING_CACHEReady = true; } return _PERSISTENT_SCROLLING_CACHEContent; } }
+        private static int _PERSISTENT_SCROLLING_CACHEContent = default;
+        private static bool _PERSISTENT_SCROLLING_CACHEReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -203,6 +231,14 @@ namespace Android.View
             get { return IExecuteWithSignature<int>("getNestedScrollAxes", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getPersistentDrawingCache()"/> <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setPersistentDrawingCache(int)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public int PersistentDrawingCache
+        {
+            get { return IExecuteWithSignature<int>("getPersistentDrawingCache", "()I"); } set { IExecuteWithSignature("setPersistentDrawingCache", "(I)V", value); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getTouchscreenBlocksFocus()"/> <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setTouchscreenBlocksFocus(boolean)"/>
         /// </summary>
         public bool TouchscreenBlocksFocus
@@ -259,6 +295,17 @@ namespace Android.View
             return IExecuteWithSignature<Android.View.ViewGroup.LayoutParams>("generateLayoutParams", "(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#invalidateChildInParent(int[],android.graphics.Rect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.Graphics.Rect"/></param>
+        /// <returns><see cref="Android.View.ViewParent"/></returns>
+        [System.Obsolete()]
+        public Android.View.ViewParent InvalidateChildInParent(int[] arg0, Android.Graphics.Rect arg1)
+        {
+            return IExecute<Android.View.ViewParent>("invalidateChildInParent", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#findOnBackInvokedDispatcherForChild(android.view.View,android.view.View)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
@@ -286,6 +333,24 @@ namespace Android.View
         public bool GetChildVisibleRect(Android.View.View arg0, Android.Graphics.Rect arg1, Android.Graphics.Point arg2)
         {
             return IExecute<bool>("getChildVisibleRect", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#isAlwaysDrawnWithCacheEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsAlwaysDrawnWithCacheEnabled()
+        {
+            return IExecuteWithSignature<bool>("isAlwaysDrawnWithCacheEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#isAnimationCacheEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsAnimationCacheEnabled()
+        {
+            return IExecuteWithSignature<bool>("isAnimationCacheEnabled", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#isLayoutSuppressed()"/>
@@ -441,6 +506,16 @@ namespace Android.View
         public int GetChildDrawingOrder(int arg0)
         {
             return IExecuteWithSignature<int>("getChildDrawingOrder", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#invalidateChild(android.view.View,android.graphics.Rect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <param name="arg1"><see cref="Android.Graphics.Rect"/></param>
+        [System.Obsolete()]
+        public void InvalidateChild(Android.View.View arg0, Android.Graphics.Rect arg1)
+        {
+            IExecute("invalidateChild", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#offsetDescendantRectToMyCoords(android.view.View,android.graphics.Rect)"/>
@@ -768,6 +843,24 @@ namespace Android.View
             IExecuteWithSignature("setAddStatesFromChildren", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setAlwaysDrawnWithCacheEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetAlwaysDrawnWithCacheEnabled(bool arg0)
+        {
+            IExecuteWithSignature("setAlwaysDrawnWithCacheEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setAnimationCacheEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetAnimationCacheEnabled(bool arg0)
+        {
+            IExecuteWithSignature("setAnimationCacheEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setMotionEventSplittingEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -877,6 +970,13 @@ namespace Android.View
             /// <see href="https://developer.android.com/reference/android/view/ViewGroup.LayoutParams.html#width"/>
             /// </summary>
             public int width { get { return IGetField<int>("width"); } set { ISetField("width", value); } }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/ViewGroup.LayoutParams.html#FILL_PARENT"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int FILL_PARENT { get { if (!_FILL_PARENTReady) { _FILL_PARENTContent = SGetField<int>(LocalBridgeClazz, "FILL_PARENT"); _FILL_PARENTReady = true; } return _FILL_PARENTContent; } }
+            private static int _FILL_PARENTContent = default;
+            private static bool _FILL_PARENTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewGroup.LayoutParams.html#MATCH_PARENT"/>
             /// </summary>

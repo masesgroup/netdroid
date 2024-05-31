@@ -130,6 +130,15 @@ namespace Android.Widget
             get { return IExecuteWithSignature<Android.Widget.CursorAdapter>("getSuggestionsAdapter", "()Landroid/widget/CursorAdapter;"); } set { IExecuteWithSignature("setSuggestionsAdapter", "(Landroid/widget/CursorAdapter;)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#isIconfiedByDefault()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsIconfiedByDefault()
+        {
+            return IExecuteWithSignature<bool>("isIconfiedByDefault", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#isIconified()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>

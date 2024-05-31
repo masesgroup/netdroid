@@ -157,6 +157,15 @@ namespace Android.Net.Wifi
         #endregion
 
         #region Static methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getDetailedStateOf(android.net.wifi.SupplicantState)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.SupplicantState"/></param>
+        /// <returns><see cref="Android.Net.NetworkInfo.DetailedState"/></returns>
+        public static Android.Net.NetworkInfo.DetailedState GetDetailedStateOf(Android.Net.Wifi.SupplicantState arg0)
+        {
+            return SExecuteWithSignature<Android.Net.NetworkInfo.DetailedState>(LocalBridgeClazz, "getDetailedStateOf", "(Landroid/net/wifi/SupplicantState;)Landroid/net/NetworkInfo$DetailedState;", arg0);
+        }
 
         #endregion
 
@@ -230,6 +239,14 @@ namespace Android.Net.Wifi
         public Java.Util.List<Android.Net.Wifi.ScanResult.InformationElement> InformationElements
         {
             get { return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.ScanResult.InformationElement>>("getInformationElements", "()Ljava/util/List;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getIpAddress()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int IpAddress
+        {
+            get { return IExecuteWithSignature<int>("getIpAddress", "()I"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getLinkSpeed()"/> 

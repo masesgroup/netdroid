@@ -91,6 +91,24 @@ namespace Android.Os
         {
             return SExecute<long>(LocalBridgeClazz, "copy", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/FileUtils.html#closeQuietly(java.io.FileDescriptor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
+        [System.Obsolete()]
+        public static void CloseQuietly(Java.Io.FileDescriptor arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "closeQuietly", "(Ljava/io/FileDescriptor;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/FileUtils.html#closeQuietly(java.lang.AutoCloseable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.AutoCloseable"/></param>
+        [System.Obsolete()]
+        public static void CloseQuietly(Java.Lang.AutoCloseable arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "closeQuietly", "(Ljava/lang/AutoCloseable;)V", arg0);
+        }
 
         #endregion
 

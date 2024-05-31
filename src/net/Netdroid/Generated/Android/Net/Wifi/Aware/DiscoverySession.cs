@@ -46,6 +46,27 @@ namespace Android.Net.Wifi.Aware
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySession.html#createNetworkSpecifierOpen(android.net.wifi.aware.PeerHandle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.Aware.PeerHandle"/></param>
+        /// <returns><see cref="Android.Net.NetworkSpecifier"/></returns>
+        [System.Obsolete()]
+        public Android.Net.NetworkSpecifier CreateNetworkSpecifierOpen(Android.Net.Wifi.Aware.PeerHandle arg0)
+        {
+            return IExecuteWithSignature<Android.Net.NetworkSpecifier>("createNetworkSpecifierOpen", "(Landroid/net/wifi/aware/PeerHandle;)Landroid/net/NetworkSpecifier;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySession.html#createNetworkSpecifierPassphrase(android.net.wifi.aware.PeerHandle,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.Aware.PeerHandle"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.Net.NetworkSpecifier"/></returns>
+        [System.Obsolete()]
+        public Android.Net.NetworkSpecifier CreateNetworkSpecifierPassphrase(Android.Net.Wifi.Aware.PeerHandle arg0, Java.Lang.String arg1)
+        {
+            return IExecute<Android.Net.NetworkSpecifier>("createNetworkSpecifierPassphrase", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/DiscoverySession.html#acceptPairingRequest(int,android.net.wifi.aware.PeerHandle,java.lang.String,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

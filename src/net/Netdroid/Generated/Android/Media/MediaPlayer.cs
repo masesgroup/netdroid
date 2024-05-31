@@ -233,6 +233,13 @@ namespace Android.Media
         public static int VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING { get { if (!_VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPINGReady) { _VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPINGContent = SGetField<int>(LocalBridgeClazz, "VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING"); _VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPINGReady = true; } return _VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPINGContent; } }
         private static int _VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPINGContent = default;
         private static bool _VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPINGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#MEDIA_MIMETYPE_TEXT_SUBRIP"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String MEDIA_MIMETYPE_TEXT_SUBRIP { get { if (!_MEDIA_MIMETYPE_TEXT_SUBRIPReady) { _MEDIA_MIMETYPE_TEXT_SUBRIPContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEDIA_MIMETYPE_TEXT_SUBRIP"); _MEDIA_MIMETYPE_TEXT_SUBRIPReady = true; } return _MEDIA_MIMETYPE_TEXT_SUBRIPContent; } }
+        private static Java.Lang.String _MEDIA_MIMETYPE_TEXT_SUBRIPContent = default;
+        private static bool _MEDIA_MIMETYPE_TEXT_SUBRIPReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -684,6 +691,15 @@ namespace Android.Media
         public void SetAudioAttributes(Android.Media.AudioAttributes arg0)
         {
             IExecuteWithSignature("setAudioAttributes", "(Landroid/media/AudioAttributes;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#setAudioStreamType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetAudioStreamType(int arg0)
+        {
+            IExecuteWithSignature("setAudioStreamType", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#setAuxEffectSendLevel(float)"/>

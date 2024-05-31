@@ -321,6 +321,14 @@ namespace Java.Lang
             IExecuteWithSignature("join", "(J)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#checkAccess()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void CheckAccess()
+        {
+            IExecuteWithSignature("checkAccess", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#join()"/>
         /// </summary>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -329,12 +337,45 @@ namespace Java.Lang
             IExecuteWithSignature("join", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#resume()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void Resume()
+        {
+            IExecuteWithSignature("resume", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#setDaemon(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetDaemon(bool arg0)
         {
             IExecuteWithSignature("setDaemon", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#stop()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void Stop()
+        {
+            IExecuteWithSignature("stop", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#suspend()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void Suspend()
+        {
+            IExecuteWithSignature("suspend", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#countStackFrames()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [System.Obsolete()]
+        public int CountStackFrames()
+        {
+            return IExecuteWithSignature<int>("countStackFrames", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#start()"/>

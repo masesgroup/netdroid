@@ -73,6 +73,7 @@ namespace Android.Location
             AddEventHandler("onLocationChanged1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Location.Location>>>>(OnLocationChanged1EventHandler));
             AddEventHandler("onProviderDisabled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnProviderDisabledEventHandler));
             AddEventHandler("onProviderEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnProviderEnabledEventHandler));
+            AddEventHandler("onStatusChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnStatusChangedEventHandler));
 
         }
 
@@ -220,6 +221,43 @@ namespace Android.Location
         {
             OnProviderEnabledDefault(arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/LocationListener.html#onStatusChanged(java.lang.String,int,android.os.Bundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
+        [System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public void OnStatusChangedDefault(Java.Lang.String arg0, int arg1, Android.Os.Bundle arg2)
+        {
+            IExecute("onStatusChangedDefault", arg0, arg1, arg2);
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://developer.android.com/reference/android/location/LocationListener.html#onStatusChanged(java.lang.String,int,android.os.Bundle)"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnOnStatusChanged"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Lang.String, int, Android.Os.Bundle> OnOnStatusChanged { get; set; } = null;
+
+        void OnStatusChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+        {
+            var methodToExecute = (OnOnStatusChanged != null) ? OnOnStatusChanged : OnStatusChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<Android.Os.Bundle>(1));
+        }
+
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/LocationListener.html#onStatusChanged(java.lang.String,int,android.os.Bundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
+        [System.Obsolete()]
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnStatusChangedDefault"/>; override the method to implement a different behavior</remarks>
+        public virtual void OnStatusChanged(Java.Lang.String arg0, int arg1, Android.Os.Bundle arg2)
+        {
+            OnStatusChangedDefault(arg0, arg1, arg2);
+        }
 
         #endregion
 
@@ -290,6 +328,17 @@ namespace Android.Location
         public override void OnProviderEnabled(Java.Lang.String arg0)
         {
             IExecuteWithSignature("onProviderEnabled", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/LocationListener.html#onStatusChanged(java.lang.String,int,android.os.Bundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
+        [System.Obsolete()]
+        public override void OnStatusChanged(Java.Lang.String arg0, int arg1, Android.Os.Bundle arg2)
+        {
+            IExecute("onStatusChanged", arg0, arg1, arg2);
         }
 
         #endregion

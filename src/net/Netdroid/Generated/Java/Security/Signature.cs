@@ -143,6 +143,17 @@ namespace Java.Security
             return IExecute<int>("sign", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#getParameter(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Security.InvalidParameterException"/>
+        [System.Obsolete()]
+        public object GetParameter(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature("getParameter", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#initSign(java.security.PrivateKey,java.security.SecureRandom)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PrivateKey"/></param>
@@ -178,6 +189,17 @@ namespace Java.Security
         public void InitVerify(Java.Security.PublicKey arg0)
         {
             IExecuteWithSignature("initVerify", "(Ljava/security/PublicKey;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#setParameter(java.lang.String,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <exception cref="Java.Security.InvalidParameterException"/>
+        [System.Obsolete()]
+        public void SetParameter(Java.Lang.String arg0, object arg1)
+        {
+            IExecute("setParameter", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/security/Signature.html#setParameter(java.security.spec.AlgorithmParameterSpec)"/>

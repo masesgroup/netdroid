@@ -66,6 +66,11 @@ namespace Android.Content.Pm
         /// </summary>
         public bool grantUriPermissions { get { return IGetField<bool>("grantUriPermissions"); } set { ISetField("grantUriPermissions", value); } }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ProviderInfo.html#isSyncable"/>
+        /// </summary>
+        [System.Obsolete()]
+        public bool isSyncable { get { return IGetField<bool>("isSyncable"); } set { ISetField("isSyncable", value); } }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ProviderInfo.html#multiprocess"/>
         /// </summary>
         public bool multiprocess { get { return IGetField<bool>("multiprocess"); } set { ISetField("multiprocess", value); } }

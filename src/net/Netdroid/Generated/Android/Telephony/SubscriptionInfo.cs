@@ -115,6 +115,14 @@ namespace Android.Telephony
             get { return IExecuteWithSignature<int>("getIconTint", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getMcc()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int Mcc
+        {
+            get { return IExecuteWithSignature<int>("getMcc", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getMccString()"/> 
         /// </summary>
         public Java.Lang.String MccString
@@ -122,11 +130,27 @@ namespace Android.Telephony
             get { return IExecuteWithSignature<Java.Lang.String>("getMccString", "()Ljava/lang/String;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getMnc()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int Mnc
+        {
+            get { return IExecuteWithSignature<int>("getMnc", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getMncString()"/> 
         /// </summary>
         public Java.Lang.String MncString
         {
             get { return IExecuteWithSignature<Java.Lang.String>("getMncString", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getNumber()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String Number
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getNumber", "()Ljava/lang/String;"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getPortIndex()"/> 

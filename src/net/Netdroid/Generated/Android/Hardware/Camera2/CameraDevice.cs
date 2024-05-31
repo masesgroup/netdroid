@@ -141,6 +141,68 @@ namespace Android.Hardware.Camera2
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.html#createCaptureSession(java.util.List,android.hardware.camera2.CameraCaptureSession.StateCallback,android.os.Handler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Android.Hardware.Camera2.CameraCaptureSession.StateCallback"/></param>
+        /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
+        /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
+        [System.Obsolete()]
+        public void CreateCaptureSession(Java.Util.List<Android.View.Surface> arg0, Android.Hardware.Camera2.CameraCaptureSession.StateCallback arg1, Android.Os.Handler arg2)
+        {
+            IExecute("createCaptureSession", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.html#createCaptureSessionByOutputConfigurations(java.util.List,android.hardware.camera2.CameraCaptureSession.StateCallback,android.os.Handler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Android.Hardware.Camera2.CameraCaptureSession.StateCallback"/></param>
+        /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
+        /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
+        [System.Obsolete()]
+        public void CreateCaptureSessionByOutputConfigurations(Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration> arg0, Android.Hardware.Camera2.CameraCaptureSession.StateCallback arg1, Android.Os.Handler arg2)
+        {
+            IExecute("createCaptureSessionByOutputConfigurations", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.html#createConstrainedHighSpeedCaptureSession(java.util.List,android.hardware.camera2.CameraCaptureSession.StateCallback,android.os.Handler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <param name="arg1"><see cref="Android.Hardware.Camera2.CameraCaptureSession.StateCallback"/></param>
+        /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
+        /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
+        [System.Obsolete()]
+        public void CreateConstrainedHighSpeedCaptureSession(Java.Util.List<Android.View.Surface> arg0, Android.Hardware.Camera2.CameraCaptureSession.StateCallback arg1, Android.Os.Handler arg2)
+        {
+            IExecute("createConstrainedHighSpeedCaptureSession", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.html#createReprocessableCaptureSession(android.hardware.camera2.params.InputConfiguration,java.util.List,android.hardware.camera2.CameraCaptureSession.StateCallback,android.os.Handler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Hardware.Camera2.Params.InputConfiguration"/></param>
+        /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        /// <param name="arg2"><see cref="Android.Hardware.Camera2.CameraCaptureSession.StateCallback"/></param>
+        /// <param name="arg3"><see cref="Android.Os.Handler"/></param>
+        /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
+        [System.Obsolete()]
+        public void CreateReprocessableCaptureSession(Android.Hardware.Camera2.Params.InputConfiguration arg0, Java.Util.List<Android.View.Surface> arg1, Android.Hardware.Camera2.CameraCaptureSession.StateCallback arg2, Android.Os.Handler arg3)
+        {
+            IExecute("createReprocessableCaptureSession", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.html#createReprocessableCaptureSessionByConfigurations(android.hardware.camera2.params.InputConfiguration,java.util.List,android.hardware.camera2.CameraCaptureSession.StateCallback,android.os.Handler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Hardware.Camera2.Params.InputConfiguration"/></param>
+        /// <param name="arg1"><see cref="Java.Util.List"/></param>
+        /// <param name="arg2"><see cref="Android.Hardware.Camera2.CameraCaptureSession.StateCallback"/></param>
+        /// <param name="arg3"><see cref="Android.Os.Handler"/></param>
+        /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
+        [System.Obsolete()]
+        public void CreateReprocessableCaptureSessionByConfigurations(Android.Hardware.Camera2.Params.InputConfiguration arg0, Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration> arg1, Android.Hardware.Camera2.CameraCaptureSession.StateCallback arg2, Android.Os.Handler arg3)
+        {
+            IExecute("createReprocessableCaptureSessionByConfigurations", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraDevice.html#createCaptureRequest(int,java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

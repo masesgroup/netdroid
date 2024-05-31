@@ -38,6 +38,27 @@ namespace Android.Webkit
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#FORCE_DARK_AUTO"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FORCE_DARK_AUTO { get { if (!_FORCE_DARK_AUTOReady) { _FORCE_DARK_AUTOContent = SGetField<int>(LocalBridgeClazz, "FORCE_DARK_AUTO"); _FORCE_DARK_AUTOReady = true; } return _FORCE_DARK_AUTOContent; } }
+        private static int _FORCE_DARK_AUTOContent = default;
+        private static bool _FORCE_DARK_AUTOReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#FORCE_DARK_OFF"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FORCE_DARK_OFF { get { if (!_FORCE_DARK_OFFReady) { _FORCE_DARK_OFFContent = SGetField<int>(LocalBridgeClazz, "FORCE_DARK_OFF"); _FORCE_DARK_OFFReady = true; } return _FORCE_DARK_OFFContent; } }
+        private static int _FORCE_DARK_OFFContent = default;
+        private static bool _FORCE_DARK_OFFReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#FORCE_DARK_ON"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int FORCE_DARK_ON { get { if (!_FORCE_DARK_ONReady) { _FORCE_DARK_ONContent = SGetField<int>(LocalBridgeClazz, "FORCE_DARK_ON"); _FORCE_DARK_ONReady = true; } return _FORCE_DARK_ONContent; } }
+        private static int _FORCE_DARK_ONContent = default;
+        private static bool _FORCE_DARK_ONReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#LOAD_CACHE_ELSE_NETWORK"/>
         /// </summary>
         public static int LOAD_CACHE_ELSE_NETWORK { get { if (!_LOAD_CACHE_ELSE_NETWORKReady) { _LOAD_CACHE_ELSE_NETWORKContent = SGetField<int>(LocalBridgeClazz, "LOAD_CACHE_ELSE_NETWORK"); _LOAD_CACHE_ELSE_NETWORKReady = true; } return _LOAD_CACHE_ELSE_NETWORKContent; } }
@@ -61,6 +82,13 @@ namespace Android.Webkit
         public static int LOAD_NO_CACHE { get { if (!_LOAD_NO_CACHEReady) { _LOAD_NO_CACHEContent = SGetField<int>(LocalBridgeClazz, "LOAD_NO_CACHE"); _LOAD_NO_CACHEReady = true; } return _LOAD_NO_CACHEContent; } }
         private static int _LOAD_NO_CACHEContent = default;
         private static bool _LOAD_NO_CACHEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#LOAD_NORMAL"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int LOAD_NORMAL { get { if (!_LOAD_NORMALReady) { _LOAD_NORMALContent = SGetField<int>(LocalBridgeClazz, "LOAD_NORMAL"); _LOAD_NORMALReady = true; } return _LOAD_NORMALContent; } }
+        private static int _LOAD_NORMALContent = default;
+        private static bool _LOAD_NORMALReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#MENU_ITEM_NONE"/>
         /// </summary>
@@ -135,18 +163,20 @@ namespace Android.Webkit
             get { return IExecuteWithSignature<bool>("getAllowFileAccess", "()Z"); } set { IExecuteWithSignature("setAllowFileAccess", "(Z)V", value); }
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowFileAccessFromFileURLs()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowFileAccessFromFileURLs()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccessFromFileURLs(boolean)"/>
         /// </summary>
+        [System.Obsolete()]
         public bool AllowFileAccessFromFileURLs
         {
-            get { return IExecuteWithSignature<bool>("getAllowFileAccessFromFileURLs", "()Z"); }
+            get { return IExecuteWithSignature<bool>("getAllowFileAccessFromFileURLs", "()Z"); } set { IExecuteWithSignature("setAllowFileAccessFromFileURLs", "(Z)V", value); }
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowUniversalAccessFromFileURLs()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowUniversalAccessFromFileURLs()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowUniversalAccessFromFileURLs(boolean)"/>
         /// </summary>
+        [System.Obsolete()]
         public bool AllowUniversalAccessFromFileURLs
         {
-            get { return IExecuteWithSignature<bool>("getAllowUniversalAccessFromFileURLs", "()Z"); }
+            get { return IExecuteWithSignature<bool>("getAllowUniversalAccessFromFileURLs", "()Z"); } set { IExecuteWithSignature("setAllowUniversalAccessFromFileURLs", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getBlockNetworkImage()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setBlockNetworkImage(boolean)"/>
@@ -191,6 +221,14 @@ namespace Android.Webkit
             get { return IExecuteWithSignature<bool>("getDatabaseEnabled", "()Z"); } set { IExecuteWithSignature("setDatabaseEnabled", "(Z)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDatabasePath()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDatabasePath(java.lang.String)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String DatabasePath
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getDatabasePath", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDatabasePath", "(Ljava/lang/String;)V", value); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultFixedFontSize()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultFixedFontSize(int)"/>
         /// </summary>
         public int DefaultFixedFontSize
@@ -210,6 +248,14 @@ namespace Android.Webkit
         public Java.Lang.String DefaultTextEncodingName
         {
             get { return IExecuteWithSignature<Java.Lang.String>("getDefaultTextEncodingName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDefaultTextEncodingName", "(Ljava/lang/String;)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultZoom()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultZoom(android.webkit.WebSettings.ZoomDensity)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Webkit.WebSettings.ZoomDensity DefaultZoom
+        {
+            get { return IExecuteWithSignature<Android.Webkit.WebSettings.ZoomDensity>("getDefaultZoom", "()Landroid/webkit/WebSettings$ZoomDensity;"); } set { IExecuteWithSignature("setDefaultZoom", "(Landroid/webkit/WebSettings$ZoomDensity;)V", value); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDisabledActionModeMenuItems()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDisabledActionModeMenuItems(int)"/>
@@ -247,11 +293,35 @@ namespace Android.Webkit
             get { return IExecuteWithSignature<Java.Lang.String>("getFixedFontFamily", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFixedFontFamily", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getForceDark()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setForceDark(int)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public int ForceDark
+        {
+            get { return IExecuteWithSignature<int>("getForceDark", "()I"); } set { IExecuteWithSignature("setForceDark", "(I)V", value); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getLayoutAlgorithm()"/> 
         /// </summary>
         public Android.Webkit.WebSettings.LayoutAlgorithm GetLayoutAlgorithm
         {
             get { return IExecuteWithSignature<Android.Webkit.WebSettings.LayoutAlgorithm>("getLayoutAlgorithm", "()Landroid/webkit/WebSettings$LayoutAlgorithm;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getPluginState()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Webkit.WebSettings.PluginState GetPluginState
+        {
+            get { return IExecuteWithSignature<Android.Webkit.WebSettings.PluginState>("getPluginState", "()Landroid/webkit/WebSettings$PluginState;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getTextSize()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Webkit.WebSettings.TextSize GetTextSize
+        {
+            get { return IExecuteWithSignature<Android.Webkit.WebSettings.TextSize>("getTextSize", "()Landroid/webkit/WebSettings$TextSize;"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getJavaScriptCanOpenWindowsAutomatically()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setJavaScriptCanOpenWindowsAutomatically(boolean)"/>
@@ -266,6 +336,14 @@ namespace Android.Webkit
         public bool JavaScriptEnabled
         {
             get { return IExecuteWithSignature<bool>("getJavaScriptEnabled", "()Z"); } set { IExecuteWithSignature("setJavaScriptEnabled", "(Z)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getLightTouchEnabled()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setLightTouchEnabled(boolean)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public bool LightTouchEnabled
+        {
+            get { return IExecuteWithSignature<bool>("getLightTouchEnabled", "()Z"); } set { IExecuteWithSignature("setLightTouchEnabled", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getLoadsImagesAutomatically()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setLoadsImagesAutomatically(boolean)"/>
@@ -331,6 +409,22 @@ namespace Android.Webkit
             get { return IExecuteWithSignature<Java.Lang.String>("getSansSerifFontFamily", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSansSerifFontFamily", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSaveFormData()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSaveFormData(boolean)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public bool SaveFormData
+        {
+            get { return IExecuteWithSignature<bool>("getSaveFormData", "()Z"); } set { IExecuteWithSignature("setSaveFormData", "(Z)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSavePassword()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSavePassword(boolean)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public bool SavePassword
+        {
+            get { return IExecuteWithSignature<bool>("getSavePassword", "()Z"); } set { IExecuteWithSignature("setSavePassword", "(Z)V", value); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSerifFontFamily()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSerifFontFamily(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String SerifFontFamily
@@ -366,6 +460,15 @@ namespace Android.Webkit
             get { return IExecuteWithSignature<bool>("getUseWideViewPort", "()Z"); } set { IExecuteWithSignature("setUseWideViewPort", "(Z)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#enableSmoothTransition()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool EnableSmoothTransition()
+        {
+            return IExecuteWithSignature<bool>("enableSmoothTransition", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#supportMultipleWindows()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -380,6 +483,24 @@ namespace Android.Webkit
         public bool SupportZoom()
         {
             return IExecuteWithSignature<bool>("supportZoom", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setEnableSmoothTransition(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetEnableSmoothTransition(bool arg0)
+        {
+            IExecuteWithSignature("setEnableSmoothTransition", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setGeolocationDatabasePath(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public void SetGeolocationDatabasePath(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setGeolocationDatabasePath", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setGeolocationEnabled(boolean)"/>
@@ -406,6 +527,24 @@ namespace Android.Webkit
             IExecuteWithSignature("setNeedInitialFocus", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setPluginState(android.webkit.WebSettings.PluginState)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Webkit.WebSettings.PluginState"/></param>
+        [System.Obsolete()]
+        public void SetPluginState(Android.Webkit.WebSettings.PluginState arg0)
+        {
+            IExecuteWithSignature("setPluginState", "(Landroid/webkit/WebSettings$PluginState;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setRenderPriority(android.webkit.WebSettings.RenderPriority)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Webkit.WebSettings.RenderPriority"/></param>
+        [System.Obsolete()]
+        public void SetRenderPriority(Android.Webkit.WebSettings.RenderPriority arg0)
+        {
+            IExecuteWithSignature("setRenderPriority", "(Landroid/webkit/WebSettings$RenderPriority;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSupportMultipleWindows(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -428,6 +567,15 @@ namespace Android.Webkit
         public bool IsAlgorithmicDarkeningAllowed()
         {
             return IExecuteWithSignature<bool>("isAlgorithmicDarkeningAllowed", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setTextSize(android.webkit.WebSettings.TextSize)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Webkit.WebSettings.TextSize"/></param>
+        [System.Obsolete()]
+        public void SetTextSize(Android.Webkit.WebSettings.TextSize arg0)
+        {
+            IExecuteWithSignature("setTextSize", "(Landroid/webkit/WebSettings$TextSize;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setAlgorithmicDarkeningAllowed(boolean)"/>
@@ -454,11 +602,25 @@ namespace Android.Webkit
 
             #region Fields
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.LayoutAlgorithm.html#NARROW_COLUMNS"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Android.Webkit.WebSettings.LayoutAlgorithm NARROW_COLUMNS { get { if (!_NARROW_COLUMNSReady) { _NARROW_COLUMNSContent = SGetField<Android.Webkit.WebSettings.LayoutAlgorithm>(LocalBridgeClazz, "NARROW_COLUMNS"); _NARROW_COLUMNSReady = true; } return _NARROW_COLUMNSContent; } }
+            private static Android.Webkit.WebSettings.LayoutAlgorithm _NARROW_COLUMNSContent = default;
+            private static bool _NARROW_COLUMNSReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.LayoutAlgorithm.html#NORMAL"/>
             /// </summary>
             public static Android.Webkit.WebSettings.LayoutAlgorithm NORMAL { get { if (!_NORMALReady) { _NORMALContent = SGetField<Android.Webkit.WebSettings.LayoutAlgorithm>(LocalBridgeClazz, "NORMAL"); _NORMALReady = true; } return _NORMALContent; } }
             private static Android.Webkit.WebSettings.LayoutAlgorithm _NORMALContent = default;
             private static bool _NORMALReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.LayoutAlgorithm.html#SINGLE_COLUMN"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Android.Webkit.WebSettings.LayoutAlgorithm SINGLE_COLUMN { get { if (!_SINGLE_COLUMNReady) { _SINGLE_COLUMNContent = SGetField<Android.Webkit.WebSettings.LayoutAlgorithm>(LocalBridgeClazz, "SINGLE_COLUMN"); _SINGLE_COLUMNReady = true; } return _SINGLE_COLUMNContent; } }
+            private static Android.Webkit.WebSettings.LayoutAlgorithm _SINGLE_COLUMNContent = default;
+            private static bool _SINGLE_COLUMNReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.LayoutAlgorithm.html#TEXT_AUTOSIZING"/>
             /// </summary>
@@ -617,6 +779,89 @@ namespace Android.Webkit
             public static Android.Webkit.WebSettings.RenderPriority[] Values()
             {
                 return SExecuteWithSignatureArray<Android.Webkit.WebSettings.RenderPriority>(LocalBridgeClazz, "values", "()[Landroid/webkit/WebSettings$RenderPriority;");
+            }
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region TextSize
+        public partial class TextSize
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.TextSize.html#LARGER"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Android.Webkit.WebSettings.TextSize LARGER { get { if (!_LARGERReady) { _LARGERContent = SGetField<Android.Webkit.WebSettings.TextSize>(LocalBridgeClazz, "LARGER"); _LARGERReady = true; } return _LARGERContent; } }
+            private static Android.Webkit.WebSettings.TextSize _LARGERContent = default;
+            private static bool _LARGERReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.TextSize.html#LARGEST"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Android.Webkit.WebSettings.TextSize LARGEST { get { if (!_LARGESTReady) { _LARGESTContent = SGetField<Android.Webkit.WebSettings.TextSize>(LocalBridgeClazz, "LARGEST"); _LARGESTReady = true; } return _LARGESTContent; } }
+            private static Android.Webkit.WebSettings.TextSize _LARGESTContent = default;
+            private static bool _LARGESTReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.TextSize.html#NORMAL"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Android.Webkit.WebSettings.TextSize NORMAL { get { if (!_NORMALReady) { _NORMALContent = SGetField<Android.Webkit.WebSettings.TextSize>(LocalBridgeClazz, "NORMAL"); _NORMALReady = true; } return _NORMALContent; } }
+            private static Android.Webkit.WebSettings.TextSize _NORMALContent = default;
+            private static bool _NORMALReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.TextSize.html#SMALLER"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Android.Webkit.WebSettings.TextSize SMALLER { get { if (!_SMALLERReady) { _SMALLERContent = SGetField<Android.Webkit.WebSettings.TextSize>(LocalBridgeClazz, "SMALLER"); _SMALLERReady = true; } return _SMALLERContent; } }
+            private static Android.Webkit.WebSettings.TextSize _SMALLERContent = default;
+            private static bool _SMALLERReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.TextSize.html#SMALLEST"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Android.Webkit.WebSettings.TextSize SMALLEST { get { if (!_SMALLESTReady) { _SMALLESTContent = SGetField<Android.Webkit.WebSettings.TextSize>(LocalBridgeClazz, "SMALLEST"); _SMALLESTReady = true; } return _SMALLESTContent; } }
+            private static Android.Webkit.WebSettings.TextSize _SMALLESTContent = default;
+            private static bool _SMALLESTReady = false; // this is used because in case of generics 
+
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.TextSize.html#valueOf(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="Android.Webkit.WebSettings.TextSize"/></returns>
+            public static Android.Webkit.WebSettings.TextSize ValueOf(Java.Lang.String arg0)
+            {
+                return SExecuteWithSignature<Android.Webkit.WebSettings.TextSize>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Landroid/webkit/WebSettings$TextSize;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.TextSize.html#values()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Webkit.WebSettings.TextSize"/></returns>
+            public static Android.Webkit.WebSettings.TextSize[] Values()
+            {
+                return SExecuteWithSignatureArray<Android.Webkit.WebSettings.TextSize>(LocalBridgeClazz, "values", "()[Landroid/webkit/WebSettings$TextSize;");
             }
 
             #endregion

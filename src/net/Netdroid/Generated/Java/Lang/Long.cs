@@ -29,6 +29,25 @@ namespace Java.Lang
     public partial class Long : Java.Lang.IComparable<Java.Lang.Long>, Java.Lang.Constant.IConstable, Java.Lang.Constant.IConstantDesc
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Long.html#%3Cinit%3E(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Java.Lang.NumberFormatException"/>
+        [System.Obsolete()]
+        public Long(Java.Lang.String arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Long.html#%3Cinit%3E(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        [System.Obsolete()]
+        public Long(long arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 

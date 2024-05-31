@@ -155,6 +155,16 @@ namespace Android.Os
             return IExecuteWithSignatureArray<int>("getIntArray", "(Ljava/lang/String;)[I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#get(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="object"/></returns>
+        [System.Obsolete()]
+        public object Get(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature("get", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/BaseBundle.html#getString(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>

@@ -84,6 +84,22 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getCalendarView()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Widget.CalendarView CalendarView
+        {
+            get { return IExecuteWithSignature<Android.Widget.CalendarView>("getCalendarView", "()Landroid/widget/CalendarView;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getCalendarViewShown()"/> <see href="https://developer.android.com/reference/android/widget/DatePicker.html#setCalendarViewShown(boolean)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public bool CalendarViewShown
+        {
+            get { return IExecuteWithSignature<bool>("getCalendarViewShown", "()Z"); } set { IExecuteWithSignature("setCalendarViewShown", "(Z)V", value); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getDayOfMonth()"/> 
         /// </summary>
         public int DayOfMonth
@@ -117,6 +133,14 @@ namespace Android.Widget
         public int Month
         {
             get { return IExecuteWithSignature<int>("getMonth", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getSpinnersShown()"/> <see href="https://developer.android.com/reference/android/widget/DatePicker.html#setSpinnersShown(boolean)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public bool SpinnersShown
+        {
+            get { return IExecuteWithSignature<bool>("getSpinnersShown", "()Z"); } set { IExecuteWithSignature("setSpinnersShown", "(Z)V", value); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getYear()"/> 

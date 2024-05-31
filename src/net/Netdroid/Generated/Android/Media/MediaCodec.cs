@@ -68,6 +68,13 @@ namespace Android.Media
         private static int _BUFFER_FLAG_PARTIAL_FRAMEContent = default;
         private static bool _BUFFER_FLAG_PARTIAL_FRAMEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#BUFFER_FLAG_SYNC_FRAME"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int BUFFER_FLAG_SYNC_FRAME { get { if (!_BUFFER_FLAG_SYNC_FRAMEReady) { _BUFFER_FLAG_SYNC_FRAMEContent = SGetField<int>(LocalBridgeClazz, "BUFFER_FLAG_SYNC_FRAME"); _BUFFER_FLAG_SYNC_FRAMEReady = true; } return _BUFFER_FLAG_SYNC_FRAMEContent; } }
+        private static int _BUFFER_FLAG_SYNC_FRAMEContent = default;
+        private static bool _BUFFER_FLAG_SYNC_FRAMEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#CONFIGURE_FLAG_ENCODE"/>
         /// </summary>
         public static int CONFIGURE_FLAG_ENCODE { get { if (!_CONFIGURE_FLAG_ENCODEReady) { _CONFIGURE_FLAG_ENCODEContent = SGetField<int>(LocalBridgeClazz, "CONFIGURE_FLAG_ENCODE"); _CONFIGURE_FLAG_ENCODEReady = true; } return _CONFIGURE_FLAG_ENCODEContent; } }
@@ -103,6 +110,13 @@ namespace Android.Media
         public static int CRYPTO_MODE_UNENCRYPTED { get { if (!_CRYPTO_MODE_UNENCRYPTEDReady) { _CRYPTO_MODE_UNENCRYPTEDContent = SGetField<int>(LocalBridgeClazz, "CRYPTO_MODE_UNENCRYPTED"); _CRYPTO_MODE_UNENCRYPTEDReady = true; } return _CRYPTO_MODE_UNENCRYPTEDContent; } }
         private static int _CRYPTO_MODE_UNENCRYPTEDContent = default;
         private static bool _CRYPTO_MODE_UNENCRYPTEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#INFO_OUTPUT_BUFFERS_CHANGED"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int INFO_OUTPUT_BUFFERS_CHANGED { get { if (!_INFO_OUTPUT_BUFFERS_CHANGEDReady) { _INFO_OUTPUT_BUFFERS_CHANGEDContent = SGetField<int>(LocalBridgeClazz, "INFO_OUTPUT_BUFFERS_CHANGED"); _INFO_OUTPUT_BUFFERS_CHANGEDReady = true; } return _INFO_OUTPUT_BUFFERS_CHANGEDContent; } }
+        private static int _INFO_OUTPUT_BUFFERS_CHANGEDContent = default;
+        private static bool _INFO_OUTPUT_BUFFERS_CHANGEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#INFO_OUTPUT_FORMAT_CHANGED"/>
         /// </summary>
@@ -245,6 +259,14 @@ namespace Android.Media
             get { return IExecuteWithSignature<Android.Media.MediaCodecInfo>("getCodecInfo", "()Landroid/media/MediaCodecInfo;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getInputBuffers()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Nio.ByteBuffer[] InputBuffers
+        {
+            get { return IExecuteWithSignatureArray<Java.Nio.ByteBuffer>("getInputBuffers", "()[Ljava/nio/ByteBuffer;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getInputFormat()"/> 
         /// </summary>
         public Android.Media.MediaFormat InputFormat
@@ -264,6 +286,14 @@ namespace Android.Media
         public Java.Lang.String Name
         {
             get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getOutputBuffers()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Nio.ByteBuffer[] OutputBuffers
+        {
+            get { return IExecuteWithSignatureArray<Java.Nio.ByteBuffer>("getOutputBuffers", "()[Ljava/nio/ByteBuffer;"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getOutputFormat()"/> 

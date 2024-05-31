@@ -93,6 +93,16 @@ namespace Android.Webkit
         {
             IExecute("getUsageForOrigin", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebStorage.html#setQuotaForOrigin(java.lang.String,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        [System.Obsolete()]
+        public void SetQuotaForOrigin(Java.Lang.String arg0, long arg1)
+        {
+            IExecute("setQuotaForOrigin", arg0, arg1);
+        }
 
         #endregion
 
@@ -137,6 +147,46 @@ namespace Android.Webkit
             public long Usage
             {
                 get { return IExecuteWithSignature<long>("getUsage", "()J"); }
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region QuotaUpdater
+        public partial class QuotaUpdater
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebStorage.QuotaUpdater.html#updateQuota(long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="long"/></param>
+            [System.Obsolete()]
+            public void UpdateQuota(long arg0)
+            {
+                IExecuteWithSignature("updateQuota", "(J)V", arg0);
             }
 
             #endregion

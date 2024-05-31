@@ -39,6 +39,16 @@ namespace Android.Transition
         {
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Scene.html#%3Cinit%3E(android.view.ViewGroup,android.view.ViewGroup)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.ViewGroup"/></param>
+        /// <param name="arg1"><see cref="Android.View.ViewGroup"/></param>
+        [System.Obsolete()]
+        public Scene(Android.View.ViewGroup arg0, Android.View.ViewGroup arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Scene.html#%3Cinit%3E(android.view.ViewGroup)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.ViewGroup"/></param>

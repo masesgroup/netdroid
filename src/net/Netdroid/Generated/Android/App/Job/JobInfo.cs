@@ -74,6 +74,13 @@ namespace Android.App.Job
         private static int _NETWORK_TYPE_CELLULARContent = default;
         private static bool _NETWORK_TYPE_CELLULARReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#NETWORK_TYPE_METERED"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int NETWORK_TYPE_METERED { get { if (!_NETWORK_TYPE_METEREDReady) { _NETWORK_TYPE_METEREDContent = SGetField<int>(LocalBridgeClazz, "NETWORK_TYPE_METERED"); _NETWORK_TYPE_METEREDReady = true; } return _NETWORK_TYPE_METEREDContent; } }
+        private static int _NETWORK_TYPE_METEREDContent = default;
+        private static bool _NETWORK_TYPE_METEREDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#NETWORK_TYPE_NONE"/>
         /// </summary>
         public static int NETWORK_TYPE_NONE { get { if (!_NETWORK_TYPE_NONEReady) { _NETWORK_TYPE_NONEContent = SGetField<int>(LocalBridgeClazz, "NETWORK_TYPE_NONE"); _NETWORK_TYPE_NONEReady = true; } return _NETWORK_TYPE_NONEContent; } }
@@ -245,6 +252,14 @@ namespace Android.App.Job
         public long MinLatencyMillis
         {
             get { return IExecuteWithSignature<long>("getMinLatencyMillis", "()J"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getNetworkType()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int NetworkType
+        {
+            get { return IExecuteWithSignature<int>("getNetworkType", "()I"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getPriority()"/> 
@@ -489,6 +504,16 @@ namespace Android.App.Job
             public Android.App.Job.JobInfo.Builder SetExtras(Android.Os.PersistableBundle arg0)
             {
                 return IExecuteWithSignature<Android.App.Job.JobInfo.Builder>("setExtras", "(Landroid/os/PersistableBundle;)Landroid/app/job/JobInfo$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.Builder.html#setImportantWhileForeground(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.App.Job.JobInfo.Builder"/></returns>
+            [System.Obsolete()]
+            public Android.App.Job.JobInfo.Builder SetImportantWhileForeground(bool arg0)
+            {
+                return IExecuteWithSignature<Android.App.Job.JobInfo.Builder>("setImportantWhileForeground", "(Z)Landroid/app/job/JobInfo$Builder;", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.Builder.html#setMinimumLatency(long)"/>

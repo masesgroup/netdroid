@@ -50,6 +50,13 @@ namespace Android.Security
         private static Java.Lang.String _ACTION_KEYCHAIN_CHANGEDContent = default;
         private static bool _ACTION_KEYCHAIN_CHANGEDReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/KeyChain.html#ACTION_STORAGE_CHANGED"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String ACTION_STORAGE_CHANGED { get { if (!_ACTION_STORAGE_CHANGEDReady) { _ACTION_STORAGE_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_STORAGE_CHANGED"); _ACTION_STORAGE_CHANGEDReady = true; } return _ACTION_STORAGE_CHANGEDContent; } }
+        private static Java.Lang.String _ACTION_STORAGE_CHANGEDContent = default;
+        private static bool _ACTION_STORAGE_CHANGEDReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/KeyChain.html#ACTION_TRUST_STORE_CHANGED"/>
         /// </summary>
         public static Java.Lang.String ACTION_TRUST_STORE_CHANGED { get { if (!_ACTION_TRUST_STORE_CHANGEDReady) { _ACTION_TRUST_STORE_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_TRUST_STORE_CHANGED"); _ACTION_TRUST_STORE_CHANGEDReady = true; } return _ACTION_TRUST_STORE_CHANGEDContent; } }
@@ -121,6 +128,16 @@ namespace Android.Security
         public static Android.Security.AppUriAuthenticationPolicy GetCredentialManagementAppPolicy(Android.Content.Context arg0)
         {
             return SExecuteWithSignature<Android.Security.AppUriAuthenticationPolicy>(LocalBridgeClazz, "getCredentialManagementAppPolicy", "(Landroid/content/Context;)Landroid/security/AppUriAuthenticationPolicy;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/KeyChain.html#isBoundKeyAlgorithm(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public static bool IsBoundKeyAlgorithm(Java.Lang.String arg0)
+        {
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isBoundKeyAlgorithm", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/KeyChain.html#isCredentialManagementApp(android.content.Context)"/>

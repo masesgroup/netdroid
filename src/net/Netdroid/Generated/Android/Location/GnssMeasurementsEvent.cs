@@ -212,6 +212,34 @@ namespace Android.Location
             #endregion
 
             #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.Callback.html#STATUS_LOCATION_DISABLED"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int STATUS_LOCATION_DISABLED { get { if (!_STATUS_LOCATION_DISABLEDReady) { _STATUS_LOCATION_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "STATUS_LOCATION_DISABLED"); _STATUS_LOCATION_DISABLEDReady = true; } return _STATUS_LOCATION_DISABLEDContent; } }
+            private static int _STATUS_LOCATION_DISABLEDContent = default;
+            private static bool _STATUS_LOCATION_DISABLEDReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.Callback.html#STATUS_NOT_ALLOWED"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int STATUS_NOT_ALLOWED { get { if (!_STATUS_NOT_ALLOWEDReady) { _STATUS_NOT_ALLOWEDContent = SGetField<int>(LocalBridgeClazz, "STATUS_NOT_ALLOWED"); _STATUS_NOT_ALLOWEDReady = true; } return _STATUS_NOT_ALLOWEDContent; } }
+            private static int _STATUS_NOT_ALLOWEDContent = default;
+            private static bool _STATUS_NOT_ALLOWEDReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.Callback.html#STATUS_NOT_SUPPORTED"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int STATUS_NOT_SUPPORTED { get { if (!_STATUS_NOT_SUPPORTEDReady) { _STATUS_NOT_SUPPORTEDContent = SGetField<int>(LocalBridgeClazz, "STATUS_NOT_SUPPORTED"); _STATUS_NOT_SUPPORTEDReady = true; } return _STATUS_NOT_SUPPORTEDContent; } }
+            private static int _STATUS_NOT_SUPPORTEDContent = default;
+            private static bool _STATUS_NOT_SUPPORTEDReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.Callback.html#STATUS_READY"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int STATUS_READY { get { if (!_STATUS_READYReady) { _STATUS_READYContent = SGetField<int>(LocalBridgeClazz, "STATUS_READY"); _STATUS_READYReady = true; } return _STATUS_READYContent; } }
+            private static int _STATUS_READYContent = default;
+            private static bool _STATUS_READYReady = false; // this is used because in case of generics 
 
             #endregion
 
@@ -227,6 +255,15 @@ namespace Android.Location
             public void OnGnssMeasurementsReceived(Android.Location.GnssMeasurementsEvent arg0)
             {
                 IExecuteWithSignature("onGnssMeasurementsReceived", "(Landroid/location/GnssMeasurementsEvent;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.Callback.html#onStatusChanged(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            [System.Obsolete()]
+            public void OnStatusChanged(int arg0)
+            {
+                IExecuteWithSignature("onStatusChanged", "(I)V", arg0);
             }
 
             #endregion

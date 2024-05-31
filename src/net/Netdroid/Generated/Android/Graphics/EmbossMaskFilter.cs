@@ -29,6 +29,18 @@ namespace Android.Graphics
     public partial class EmbossMaskFilter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/EmbossMaskFilter.html#%3Cinit%3E(float[],float,float,float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
+        [System.Obsolete()]
+        public EmbossMaskFilter(float[] arg0, float arg1, float arg2, float arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
 
         #endregion
 

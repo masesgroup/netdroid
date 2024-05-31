@@ -66,6 +66,18 @@ namespace Android.Media
             IExecute("play", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AsyncPlayer.html#play(android.content.Context,android.net.Uri,boolean,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void Play(Android.Content.Context arg0, Android.Net.Uri arg1, bool arg2, int arg3)
+        {
+            IExecute("play", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AsyncPlayer.html#stop()"/>
         /// </summary>
         public void Stop()

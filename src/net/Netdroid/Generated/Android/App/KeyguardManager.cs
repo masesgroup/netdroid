@@ -46,6 +46,36 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/KeyguardManager.html#newKeyguardLock(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.App.KeyguardManager.KeyguardLock"/></returns>
+        [System.Obsolete()]
+        public Android.App.KeyguardManager.KeyguardLock NewKeyguardLock(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<Android.App.KeyguardManager.KeyguardLock>("newKeyguardLock", "(Ljava/lang/String;)Landroid/app/KeyguardManager$KeyguardLock;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/KeyguardManager.html#createConfirmDeviceCredentialIntent(java.lang.CharSequence,java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see cref="Android.Content.Intent"/></returns>
+        [System.Obsolete()]
+        public Android.Content.Intent CreateConfirmDeviceCredentialIntent(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1)
+        {
+            return IExecute<Android.Content.Intent>("createConfirmDeviceCredentialIntent", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/KeyguardManager.html#inKeyguardRestrictedInputMode()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool InKeyguardRestrictedInputMode()
+        {
+            return IExecuteWithSignature<bool>("inKeyguardRestrictedInputMode", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/KeyguardManager.html#isDeviceLocked()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -85,6 +115,15 @@ namespace Android.App
         public void AddKeyguardLockedStateListener(Java.Util.Concurrent.Executor arg0, Android.App.KeyguardManager.KeyguardLockedStateListener arg1)
         {
             IExecute("addKeyguardLockedStateListener", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/KeyguardManager.html#exitKeyguardSecurely(android.app.KeyguardManager.OnKeyguardExitResult)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.KeyguardManager.OnKeyguardExitResult"/></param>
+        [System.Obsolete()]
+        public void ExitKeyguardSecurely(Android.App.KeyguardManager.OnKeyguardExitResult arg0)
+        {
+            IExecuteWithSignature("exitKeyguardSecurely", "(Landroid/app/KeyguardManager$OnKeyguardExitResult;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/KeyguardManager.html#removeKeyguardLockedStateListener(android.app.KeyguardManager.KeyguardLockedStateListener)"/>
@@ -147,6 +186,53 @@ namespace Android.App
             public void OnDismissSucceeded()
             {
                 IExecuteWithSignature("onDismissSucceeded", "()V");
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region KeyguardLock
+        public partial class KeyguardLock
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/KeyguardManager.KeyguardLock.html#disableKeyguard()"/>
+            /// </summary>
+            [System.Obsolete()]
+            public void DisableKeyguard()
+            {
+                IExecuteWithSignature("disableKeyguard", "()V");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/KeyguardManager.KeyguardLock.html#reenableKeyguard()"/>
+            /// </summary>
+            [System.Obsolete()]
+            public void ReenableKeyguard()
+            {
+                IExecuteWithSignature("reenableKeyguard", "()V");
             }
 
             #endregion
@@ -246,6 +332,46 @@ namespace Android.App
             public override void OnKeyguardLockedStateChanged(bool arg0)
             {
                 IExecuteWithSignature("onKeyguardLockedStateChanged", "(Z)V", arg0);
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region OnKeyguardExitResult
+        public partial class OnKeyguardExitResult
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/KeyguardManager.OnKeyguardExitResult.html#onKeyguardExitResult(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            [System.Obsolete()]
+            public void OnKeyguardExitResultMethod(bool arg0)
+            {
+                IExecuteWithSignature("onKeyguardExitResult", "(Z)V", arg0);
             }
 
             #endregion

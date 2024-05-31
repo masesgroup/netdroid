@@ -55,6 +55,24 @@ namespace Android.Database
             IExecute("dispatchChange", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/ContentObservable.html#dispatchChange(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void DispatchChange(bool arg0)
+        {
+            IExecuteWithSignature("dispatchChange", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/ContentObservable.html#notifyChange(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void NotifyChange(bool arg0)
+        {
+            IExecuteWithSignature("notifyChange", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/ContentObservable.html#registerObserver(android.database.ContentObserver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Database.ContentObserver"/></param>

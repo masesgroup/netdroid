@@ -22,14 +22,22 @@
 
 package org.mases.netdroid.generated.android.media;
 
-public final class OnRoutingChangedListener extends org.mases.jcobridge.JCListener implements android.media.AudioRouting.OnRoutingChangedListener {
+public final class OnRoutingChangedListener extends org.mases.jcobridge.JCListener implements android.media.AudioTrack.OnRoutingChangedListener {
     public OnRoutingChangedListener(String key) throws org.mases.jcobridge.JCNativeException {
         super(key);
     }
 
     //@Override
-    public void onRoutingChanged(android.media.AudioRouting arg0) {
+    public void onRoutingChanged(android.media.AudioTrack arg0) {
         raiseEvent("onRoutingChanged", arg0);
+    }
+    //@Override
+    public void onRoutingChanged(android.media.AudioRouting arg0) {
+        raiseEvent("onRoutingChanged1", arg0);
+    }
+    //@Override
+    public void onRoutingChangedDefault(android.media.AudioRouting arg0) {
+        android.media.AudioTrack.OnRoutingChangedListener.super.onRoutingChanged(arg0);
     }
 
 }

@@ -87,11 +87,27 @@ namespace Android.Telephony
             get { return IExecuteWithSignature<int>("getLac", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityGsm.html#getMcc()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int Mcc
+        {
+            get { return IExecuteWithSignature<int>("getMcc", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityGsm.html#getMccString()"/> 
         /// </summary>
         public Java.Lang.String MccString
         {
             get { return IExecuteWithSignature<Java.Lang.String>("getMccString", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityGsm.html#getMnc()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int Mnc
+        {
+            get { return IExecuteWithSignature<int>("getMnc", "()I"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityGsm.html#getMncString()"/> 
@@ -106,6 +122,14 @@ namespace Android.Telephony
         public Java.Lang.String MobileNetworkOperator
         {
             get { return IExecuteWithSignature<Java.Lang.String>("getMobileNetworkOperator", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityGsm.html#getPsc()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int Psc
+        {
+            get { return IExecuteWithSignature<int>("getPsc", "()I"); }
         }
 
         #endregion

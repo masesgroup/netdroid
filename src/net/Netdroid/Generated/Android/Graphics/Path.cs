@@ -86,6 +86,15 @@ namespace Android.Graphics
             return IExecute<bool>("interpolate", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Path.html#isConvex()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsConvex()
+        {
+            return IExecuteWithSignature<bool>("isConvex", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Path.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>

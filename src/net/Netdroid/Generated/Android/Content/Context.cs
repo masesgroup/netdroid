@@ -158,6 +158,13 @@ namespace Android.Content
         private static int _MODE_ENABLE_WRITE_AHEAD_LOGGINGContent = default;
         private static bool _MODE_ENABLE_WRITE_AHEAD_LOGGINGReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#MODE_MULTI_PROCESS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MODE_MULTI_PROCESS { get { if (!_MODE_MULTI_PROCESSReady) { _MODE_MULTI_PROCESSContent = SGetField<int>(LocalBridgeClazz, "MODE_MULTI_PROCESS"); _MODE_MULTI_PROCESSReady = true; } return _MODE_MULTI_PROCESSContent; } }
+        private static int _MODE_MULTI_PROCESSContent = default;
+        private static bool _MODE_MULTI_PROCESSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#MODE_NO_LOCALIZED_COLLATORS"/>
         /// </summary>
         public static int MODE_NO_LOCALIZED_COLLATORS { get { if (!_MODE_NO_LOCALIZED_COLLATORSReady) { _MODE_NO_LOCALIZED_COLLATORSContent = SGetField<int>(LocalBridgeClazz, "MODE_NO_LOCALIZED_COLLATORS"); _MODE_NO_LOCALIZED_COLLATORSReady = true; } return _MODE_NO_LOCALIZED_COLLATORSContent; } }
@@ -169,6 +176,20 @@ namespace Android.Content
         public static int MODE_PRIVATE { get { if (!_MODE_PRIVATEReady) { _MODE_PRIVATEContent = SGetField<int>(LocalBridgeClazz, "MODE_PRIVATE"); _MODE_PRIVATEReady = true; } return _MODE_PRIVATEContent; } }
         private static int _MODE_PRIVATEContent = default;
         private static bool _MODE_PRIVATEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#MODE_WORLD_READABLE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MODE_WORLD_READABLE { get { if (!_MODE_WORLD_READABLEReady) { _MODE_WORLD_READABLEContent = SGetField<int>(LocalBridgeClazz, "MODE_WORLD_READABLE"); _MODE_WORLD_READABLEReady = true; } return _MODE_WORLD_READABLEContent; } }
+        private static int _MODE_WORLD_READABLEContent = default;
+        private static bool _MODE_WORLD_READABLEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#MODE_WORLD_WRITEABLE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MODE_WORLD_WRITEABLE { get { if (!_MODE_WORLD_WRITEABLEReady) { _MODE_WORLD_WRITEABLEContent = SGetField<int>(LocalBridgeClazz, "MODE_WORLD_WRITEABLE"); _MODE_WORLD_WRITEABLEReady = true; } return _MODE_WORLD_WRITEABLEContent; } }
+        private static int _MODE_WORLD_WRITEABLEContent = default;
+        private static bool _MODE_WORLD_WRITEABLEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#RECEIVER_EXPORTED"/>
         /// </summary>
@@ -686,6 +707,13 @@ namespace Android.Content
         private static Java.Lang.String _VIBRATOR_MANAGER_SERVICEContent = default;
         private static bool _VIBRATOR_MANAGER_SERVICEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#VIBRATOR_SERVICE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String VIBRATOR_SERVICE { get { if (!_VIBRATOR_SERVICEReady) { _VIBRATOR_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "VIBRATOR_SERVICE"); _VIBRATOR_SERVICEReady = true; } return _VIBRATOR_SERVICEContent; } }
+        private static Java.Lang.String _VIBRATOR_SERVICEContent = default;
+        private static bool _VIBRATOR_SERVICEReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#VIRTUAL_DEVICE_SERVICE"/>
         /// </summary>
         public static Java.Lang.String VIRTUAL_DEVICE_SERVICE { get { if (!_VIRTUAL_DEVICE_SERVICEReady) { _VIRTUAL_DEVICE_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "VIRTUAL_DEVICE_SERVICE"); _VIRTUAL_DEVICE_SERVICEReady = true; } return _VIRTUAL_DEVICE_SERVICEContent; } }
@@ -846,6 +874,14 @@ namespace Android.Content
             get { return IExecuteWithSignatureArray<Java.Io.File>("getExternalCacheDirs", "()[Ljava/io/File;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getExternalMediaDirs()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Io.File[] ExternalMediaDirs
+        {
+            get { return IExecuteWithSignatureArray<Java.Io.File>("getExternalMediaDirs", "()[Ljava/io/File;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getFilesDir()"/> 
         /// </summary>
         public Java.Io.File FilesDir
@@ -942,6 +978,30 @@ namespace Android.Content
         public Android.Content.Res.Resources.Theme Theme
         {
             get { return IExecuteWithSignature<Android.Content.Res.Resources.Theme>("getTheme", "()Landroid/content/res/Resources$Theme;"); } set { IExecuteWithSignature("setTheme", "(I)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getWallpaper()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Graphics.Drawable.Drawable Wallpaper
+        {
+            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getWallpaper", "()Landroid/graphics/drawable/Drawable;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getWallpaperDesiredMinimumHeight()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int WallpaperDesiredMinimumHeight
+        {
+            get { return IExecuteWithSignature<int>("getWallpaperDesiredMinimumHeight", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getWallpaperDesiredMinimumWidth()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int WallpaperDesiredMinimumWidth
+        {
+            get { return IExecuteWithSignature<int>("getWallpaperDesiredMinimumWidth", "()I"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#startForegroundService(android.content.Intent)"/>
@@ -1086,6 +1146,15 @@ namespace Android.Content
         public Android.Database.Sqlite.SQLiteDatabase OpenOrCreateDatabase(Java.Lang.String arg0, int arg1, Android.Database.Sqlite.SQLiteDatabase.CursorFactory arg2)
         {
             return IExecute<Android.Database.Sqlite.SQLiteDatabase>("openOrCreateDatabase", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#peekWallpaper()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        [System.Obsolete()]
+        public Android.Graphics.Drawable.Drawable PeekWallpaper()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("peekWallpaper", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#bindService(android.content.Intent,android.content.ServiceConnection,int)"/>
@@ -1359,6 +1428,15 @@ namespace Android.Content
             return IExecuteWithSignatureArray<Java.Lang.String>("fileList", "()[Ljava/lang/String;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#clearWallpaper()"/>
+        /// </summary>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public void ClearWallpaper()
+        {
+            IExecuteWithSignature("clearWallpaper", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#enforceCallingOrSelfPermission(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1442,6 +1520,25 @@ namespace Android.Content
         public void GrantUriPermission(Java.Lang.String arg0, Android.Net.Uri arg1, int arg2)
         {
             IExecute("grantUriPermission", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#removeStickyBroadcast(android.content.Intent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        [System.Obsolete()]
+        public void RemoveStickyBroadcast(Android.Content.Intent arg0)
+        {
+            IExecuteWithSignature("removeStickyBroadcast", "(Landroid/content/Intent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#removeStickyBroadcastAsUser(android.content.Intent,android.os.UserHandle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
+        [System.Obsolete()]
+        public void RemoveStickyBroadcastAsUser(Android.Content.Intent arg0, Android.Os.UserHandle arg1)
+        {
+            IExecute("removeStickyBroadcastAsUser", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#revokeUriPermission(android.net.Uri,int)"/>
@@ -1535,6 +1632,74 @@ namespace Android.Content
         public void SendOrderedBroadcastAsUser(Android.Content.Intent arg0, Android.Os.UserHandle arg1, Java.Lang.String arg2, Android.Content.BroadcastReceiver arg3, Android.Os.Handler arg4, int arg5, Java.Lang.String arg6, Android.Os.Bundle arg7)
         {
             IExecute("sendOrderedBroadcastAsUser", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#sendStickyBroadcast(android.content.Intent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        [System.Obsolete()]
+        public void SendStickyBroadcast(Android.Content.Intent arg0)
+        {
+            IExecuteWithSignature("sendStickyBroadcast", "(Landroid/content/Intent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#sendStickyBroadcastAsUser(android.content.Intent,android.os.UserHandle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
+        [System.Obsolete()]
+        public void SendStickyBroadcastAsUser(Android.Content.Intent arg0, Android.Os.UserHandle arg1)
+        {
+            IExecute("sendStickyBroadcastAsUser", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#sendStickyOrderedBroadcast(android.content.Intent,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        /// <param name="arg1"><see cref="Android.Content.BroadcastReceiver"/></param>
+        /// <param name="arg2"><see cref="Android.Os.Handler"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg5"><see cref="Android.Os.Bundle"/></param>
+        [System.Obsolete()]
+        public void SendStickyOrderedBroadcast(Android.Content.Intent arg0, Android.Content.BroadcastReceiver arg1, Android.Os.Handler arg2, int arg3, Java.Lang.String arg4, Android.Os.Bundle arg5)
+        {
+            IExecute("sendStickyOrderedBroadcast", arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#sendStickyOrderedBroadcastAsUser(android.content.Intent,android.os.UserHandle,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
+        /// <param name="arg2"><see cref="Android.Content.BroadcastReceiver"/></param>
+        /// <param name="arg3"><see cref="Android.Os.Handler"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg6"><see cref="Android.Os.Bundle"/></param>
+        [System.Obsolete()]
+        public void SendStickyOrderedBroadcastAsUser(Android.Content.Intent arg0, Android.Os.UserHandle arg1, Android.Content.BroadcastReceiver arg2, Android.Os.Handler arg3, int arg4, Java.Lang.String arg5, Android.Os.Bundle arg6)
+        {
+            IExecute("sendStickyOrderedBroadcastAsUser", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#setWallpaper(android.graphics.Bitmap)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public void SetWallpaper(Android.Graphics.Bitmap arg0)
+        {
+            IExecuteWithSignature("setWallpaper", "(Landroid/graphics/Bitmap;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#setWallpaper(java.io.InputStream)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public void SetWallpaper(Java.Io.InputStream arg0)
+        {
+            IExecuteWithSignature("setWallpaper", "(Ljava/io/InputStream;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#startActivities(android.content.Intent[],android.os.Bundle)"/>
@@ -1992,6 +2157,16 @@ namespace Android.Content
         public void SendOrderedBroadcast(Android.Content.Intent arg0, Java.Lang.String arg1, Java.Lang.String arg2, Android.Content.BroadcastReceiver arg3, Android.Os.Handler arg4, int arg5, Java.Lang.String arg6, Android.Os.Bundle arg7)
         {
             IExecute("sendOrderedBroadcast", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#sendStickyBroadcast(android.content.Intent,android.os.Bundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
+        [System.Obsolete()]
+        public void SendStickyBroadcast(Android.Content.Intent arg0, Android.Os.Bundle arg1)
+        {
+            IExecute("sendStickyBroadcast", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#unregisterComponentCallbacks(android.content.ComponentCallbacks)"/>

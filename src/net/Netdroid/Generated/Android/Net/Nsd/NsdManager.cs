@@ -171,6 +171,27 @@ namespace Android.Net.Nsd
             IExecute("registerServiceInfoCallback", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.html#resolveService(android.net.nsd.NsdServiceInfo,android.net.nsd.NsdManager.ResolveListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Nsd.NsdServiceInfo"/></param>
+        /// <param name="arg1"><see cref="Android.Net.Nsd.NsdManager.ResolveListener"/></param>
+        [System.Obsolete()]
+        public void ResolveService(Android.Net.Nsd.NsdServiceInfo arg0, Android.Net.Nsd.NsdManager.ResolveListener arg1)
+        {
+            IExecute("resolveService", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.html#resolveService(android.net.nsd.NsdServiceInfo,java.util.concurrent.Executor,android.net.nsd.NsdManager.ResolveListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Nsd.NsdServiceInfo"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Net.Nsd.NsdManager.ResolveListener"/></param>
+        [System.Obsolete()]
+        public void ResolveService(Android.Net.Nsd.NsdServiceInfo arg0, Java.Util.Concurrent.Executor arg1, Android.Net.Nsd.NsdManager.ResolveListener arg2)
+        {
+            IExecute("resolveService", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.html#stopServiceDiscovery(android.net.nsd.NsdManager.DiscoveryListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Nsd.NsdManager.DiscoveryListener"/></param>

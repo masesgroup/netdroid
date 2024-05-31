@@ -43,14 +43,62 @@ namespace Android.Text.Method
         #region Static methods
         
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/text/method/DigitsKeyListener.html#getInstance(java.lang.String)"/>
+        /// Handler for <see href="https://developer.android.com/reference/android/text/method/DigitsKeyListener.html#getInstance()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetInstance"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.String, Android.Text.Method.DigitsKeyListener> OnGetInstance { get; set; } = null;
+        public System.Func<Android.Text.Method.DigitsKeyListener> OnGetInstance { get; set; } = null;
 
-        void GetInstanceEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+        void GetInstanceEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
             var methodToExecute = (OnGetInstance != null) ? OnGetInstance : GetInstance;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
+        }
+
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/method/DigitsKeyListener.html#getInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.Method.DigitsKeyListener"/></returns>
+        [System.Obsolete()]
+        public virtual Android.Text.Method.DigitsKeyListener GetInstance()
+        {
+            return default;
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://developer.android.com/reference/android/text/method/DigitsKeyListener.html#getInstance(boolean,boolean)"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnGetInstance2"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<bool, bool, Android.Text.Method.DigitsKeyListener> OnGetInstance2 { get; set; } = null;
+
+        void GetInstance2EventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
+        {
+            var methodToExecute = (OnGetInstance2 != null) ? OnGetInstance2 : GetInstance;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<bool>(0));
+            data.SetReturnValue(executionResult);
+        }
+
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/method/DigitsKeyListener.html#getInstance(boolean,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Android.Text.Method.DigitsKeyListener"/></returns>
+        [System.Obsolete()]
+        public virtual Android.Text.Method.DigitsKeyListener GetInstance(bool arg0, bool arg1)
+        {
+            return default;
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://developer.android.com/reference/android/text/method/DigitsKeyListener.html#getInstance(java.lang.String)"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnGetInstance1_2"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Lang.String, Android.Text.Method.DigitsKeyListener> OnGetInstance1_2 { get; set; } = null;
+
+        void GetInstance1_2EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
+        {
+            var methodToExecute = (OnGetInstance1_2 != null) ? OnGetInstance1_2 : GetInstance;
             var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
             data.SetReturnValue(executionResult);
         }
@@ -68,12 +116,12 @@ namespace Android.Text.Method
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/DigitsKeyListener.html#getInstance(java.util.Locale,boolean,boolean)"/>
         /// </summary>
-        /// <remarks>If <see cref="OnGetInstance3"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Locale, bool, bool, Android.Text.Method.DigitsKeyListener> OnGetInstance3 { get; set; } = null;
+        /// <remarks>If <see cref="OnGetInstance3_3"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Locale, bool, bool, Android.Text.Method.DigitsKeyListener> OnGetInstance3_3 { get; set; } = null;
 
-        void GetInstance3EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Locale>> data)
+        void GetInstance3_3EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Locale>> data)
         {
-            var methodToExecute = (OnGetInstance3 != null) ? OnGetInstance3 : GetInstance;
+            var methodToExecute = (OnGetInstance3_3 != null) ? OnGetInstance3_3 : GetInstance;
             var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<bool>(0), data.EventData.GetAt<bool>(1));
             data.SetReturnValue(executionResult);
         }
@@ -93,12 +141,12 @@ namespace Android.Text.Method
         /// <summary>
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/DigitsKeyListener.html#getInstance(java.util.Locale)"/>
         /// </summary>
-        /// <remarks>If <see cref="OnGetInstance1_2"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Locale, Android.Text.Method.DigitsKeyListener> OnGetInstance1_2 { get; set; } = null;
+        /// <remarks>If <see cref="OnGetInstance1_4"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Locale, Android.Text.Method.DigitsKeyListener> OnGetInstance1_4 { get; set; } = null;
 
-        void GetInstance1_2EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Locale>> data)
+        void GetInstance1_4EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Locale>> data)
         {
-            var methodToExecute = (OnGetInstance1_2 != null) ? OnGetInstance1_2 : GetInstance;
+            var methodToExecute = (OnGetInstance1_4 != null) ? OnGetInstance1_4 : GetInstance;
             var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
             data.SetReturnValue(executionResult);
         }

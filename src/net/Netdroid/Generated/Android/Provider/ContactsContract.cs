@@ -1417,6 +1417,13 @@ namespace Android.Provider
                 private static int _TYPE_MAIDEN_NAMEContent = default;
                 private static bool _TYPE_MAIDEN_NAMEReady = false; // this is used because in case of generics 
                 /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Nickname.html#TYPE_MAINDEN_NAME"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static int TYPE_MAINDEN_NAME { get { if (!_TYPE_MAINDEN_NAMEReady) { _TYPE_MAINDEN_NAMEContent = SGetField<int>(LocalBridgeClazz, "TYPE_MAINDEN_NAME"); _TYPE_MAINDEN_NAMEReady = true; } return _TYPE_MAINDEN_NAMEContent; } }
+                private static int _TYPE_MAINDEN_NAMEContent = default;
+                private static bool _TYPE_MAINDEN_NAMEReady = false; // this is used because in case of generics 
+                /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Nickname.html#TYPE_OTHER_NAME"/>
                 /// </summary>
                 public static int TYPE_OTHER_NAME { get { if (!_TYPE_OTHER_NAMEReady) { _TYPE_OTHER_NAMEContent = SGetField<int>(LocalBridgeClazz, "TYPE_OTHER_NAME"); _TYPE_OTHER_NAMEReady = true; } return _TYPE_OTHER_NAMEContent; } }
@@ -1490,11 +1497,74 @@ namespace Android.Provider
 
                 #region Fields
                 /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#PROTOCOL_AIM"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static int PROTOCOL_AIM { get { if (!_PROTOCOL_AIMReady) { _PROTOCOL_AIMContent = SGetField<int>(LocalBridgeClazz, "PROTOCOL_AIM"); _PROTOCOL_AIMReady = true; } return _PROTOCOL_AIMContent; } }
+                private static int _PROTOCOL_AIMContent = default;
+                private static bool _PROTOCOL_AIMReady = false; // this is used because in case of generics 
+                /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#PROTOCOL_CUSTOM"/>
                 /// </summary>
                 public static int PROTOCOL_CUSTOM { get { if (!_PROTOCOL_CUSTOMReady) { _PROTOCOL_CUSTOMContent = SGetField<int>(LocalBridgeClazz, "PROTOCOL_CUSTOM"); _PROTOCOL_CUSTOMReady = true; } return _PROTOCOL_CUSTOMContent; } }
                 private static int _PROTOCOL_CUSTOMContent = default;
                 private static bool _PROTOCOL_CUSTOMReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#PROTOCOL_GOOGLE_TALK"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static int PROTOCOL_GOOGLE_TALK { get { if (!_PROTOCOL_GOOGLE_TALKReady) { _PROTOCOL_GOOGLE_TALKContent = SGetField<int>(LocalBridgeClazz, "PROTOCOL_GOOGLE_TALK"); _PROTOCOL_GOOGLE_TALKReady = true; } return _PROTOCOL_GOOGLE_TALKContent; } }
+                private static int _PROTOCOL_GOOGLE_TALKContent = default;
+                private static bool _PROTOCOL_GOOGLE_TALKReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#PROTOCOL_ICQ"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static int PROTOCOL_ICQ { get { if (!_PROTOCOL_ICQReady) { _PROTOCOL_ICQContent = SGetField<int>(LocalBridgeClazz, "PROTOCOL_ICQ"); _PROTOCOL_ICQReady = true; } return _PROTOCOL_ICQContent; } }
+                private static int _PROTOCOL_ICQContent = default;
+                private static bool _PROTOCOL_ICQReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#PROTOCOL_JABBER"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static int PROTOCOL_JABBER { get { if (!_PROTOCOL_JABBERReady) { _PROTOCOL_JABBERContent = SGetField<int>(LocalBridgeClazz, "PROTOCOL_JABBER"); _PROTOCOL_JABBERReady = true; } return _PROTOCOL_JABBERContent; } }
+                private static int _PROTOCOL_JABBERContent = default;
+                private static bool _PROTOCOL_JABBERReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#PROTOCOL_MSN"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static int PROTOCOL_MSN { get { if (!_PROTOCOL_MSNReady) { _PROTOCOL_MSNContent = SGetField<int>(LocalBridgeClazz, "PROTOCOL_MSN"); _PROTOCOL_MSNReady = true; } return _PROTOCOL_MSNContent; } }
+                private static int _PROTOCOL_MSNContent = default;
+                private static bool _PROTOCOL_MSNReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#PROTOCOL_NETMEETING"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static int PROTOCOL_NETMEETING { get { if (!_PROTOCOL_NETMEETINGReady) { _PROTOCOL_NETMEETINGContent = SGetField<int>(LocalBridgeClazz, "PROTOCOL_NETMEETING"); _PROTOCOL_NETMEETINGReady = true; } return _PROTOCOL_NETMEETINGContent; } }
+                private static int _PROTOCOL_NETMEETINGContent = default;
+                private static bool _PROTOCOL_NETMEETINGReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#PROTOCOL_QQ"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static int PROTOCOL_QQ { get { if (!_PROTOCOL_QQReady) { _PROTOCOL_QQContent = SGetField<int>(LocalBridgeClazz, "PROTOCOL_QQ"); _PROTOCOL_QQReady = true; } return _PROTOCOL_QQContent; } }
+                private static int _PROTOCOL_QQContent = default;
+                private static bool _PROTOCOL_QQReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#PROTOCOL_SKYPE"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static int PROTOCOL_SKYPE { get { if (!_PROTOCOL_SKYPEReady) { _PROTOCOL_SKYPEContent = SGetField<int>(LocalBridgeClazz, "PROTOCOL_SKYPE"); _PROTOCOL_SKYPEReady = true; } return _PROTOCOL_SKYPEContent; } }
+                private static int _PROTOCOL_SKYPEContent = default;
+                private static bool _PROTOCOL_SKYPEReady = false; // this is used because in case of generics 
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#PROTOCOL_YAHOO"/>
+                /// </summary>
+                [System.Obsolete()]
+                public static int PROTOCOL_YAHOO { get { if (!_PROTOCOL_YAHOOReady) { _PROTOCOL_YAHOOContent = SGetField<int>(LocalBridgeClazz, "PROTOCOL_YAHOO"); _PROTOCOL_YAHOOReady = true; } return _PROTOCOL_YAHOOContent; } }
+                private static int _PROTOCOL_YAHOOContent = default;
+                private static bool _PROTOCOL_YAHOOReady = false; // this is used because in case of generics 
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.CommonDataKinds.Im.html#TYPE_HOME"/>
                 /// </summary>
@@ -2189,6 +2259,13 @@ namespace Android.Provider
             private static Android.Net.Uri _CONTENT_FILTER_URIContent = default;
             private static bool _CONTENT_FILTER_URIReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.Contacts.html#CONTENT_FREQUENT_URI"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Android.Net.Uri CONTENT_FREQUENT_URI { get { if (!_CONTENT_FREQUENT_URIReady) { _CONTENT_FREQUENT_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "CONTENT_FREQUENT_URI"); _CONTENT_FREQUENT_URIReady = true; } return _CONTENT_FREQUENT_URIContent; } }
+            private static Android.Net.Uri _CONTENT_FREQUENT_URIContent = default;
+            private static bool _CONTENT_FREQUENT_URIReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.Contacts.html#CONTENT_GROUP_URI"/>
             /// </summary>
             public static Android.Net.Uri CONTENT_GROUP_URI { get { if (!_CONTENT_GROUP_URIReady) { _CONTENT_GROUP_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "CONTENT_GROUP_URI"); _CONTENT_GROUP_URIReady = true; } return _CONTENT_GROUP_URIContent; } }
@@ -2347,6 +2424,16 @@ namespace Android.Provider
             public static Java.Io.InputStream OpenContactPhotoInputStream(Android.Content.ContentResolver arg0, Android.Net.Uri arg1)
             {
                 return SExecute<Java.Io.InputStream>(LocalBridgeClazz, "openContactPhotoInputStream", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.Contacts.html#markAsContacted(android.content.ContentResolver,long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
+            /// <param name="arg1"><see cref="long"/></param>
+            [System.Obsolete()]
+            public static void MarkAsContacted(Android.Content.ContentResolver arg0, long arg1)
+            {
+                SExecute(LocalBridgeClazz, "markAsContacted", arg0, arg1);
             }
 
             #endregion
@@ -2685,6 +2772,79 @@ namespace Android.Provider
             {
                 return SExecute<Android.Net.Uri>(LocalBridgeClazz, "getContactLookupUri", arg0, arg1);
             }
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region DataUsageFeedback
+        public partial class DataUsageFeedback
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.DataUsageFeedback.html#DELETE_USAGE_URI"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Android.Net.Uri DELETE_USAGE_URI { get { if (!_DELETE_USAGE_URIReady) { _DELETE_USAGE_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "DELETE_USAGE_URI"); _DELETE_USAGE_URIReady = true; } return _DELETE_USAGE_URIContent; } }
+            private static Android.Net.Uri _DELETE_USAGE_URIContent = default;
+            private static bool _DELETE_USAGE_URIReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.DataUsageFeedback.html#FEEDBACK_URI"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Android.Net.Uri FEEDBACK_URI { get { if (!_FEEDBACK_URIReady) { _FEEDBACK_URIContent = SGetField<Android.Net.Uri>(LocalBridgeClazz, "FEEDBACK_URI"); _FEEDBACK_URIReady = true; } return _FEEDBACK_URIContent; } }
+            private static Android.Net.Uri _FEEDBACK_URIContent = default;
+            private static bool _FEEDBACK_URIReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.DataUsageFeedback.html#USAGE_TYPE"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Java.Lang.String USAGE_TYPE { get { if (!_USAGE_TYPEReady) { _USAGE_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USAGE_TYPE"); _USAGE_TYPEReady = true; } return _USAGE_TYPEContent; } }
+            private static Java.Lang.String _USAGE_TYPEContent = default;
+            private static bool _USAGE_TYPEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.DataUsageFeedback.html#USAGE_TYPE_CALL"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Java.Lang.String USAGE_TYPE_CALL { get { if (!_USAGE_TYPE_CALLReady) { _USAGE_TYPE_CALLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USAGE_TYPE_CALL"); _USAGE_TYPE_CALLReady = true; } return _USAGE_TYPE_CALLContent; } }
+            private static Java.Lang.String _USAGE_TYPE_CALLContent = default;
+            private static bool _USAGE_TYPE_CALLReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.DataUsageFeedback.html#USAGE_TYPE_LONG_TEXT"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Java.Lang.String USAGE_TYPE_LONG_TEXT { get { if (!_USAGE_TYPE_LONG_TEXTReady) { _USAGE_TYPE_LONG_TEXTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USAGE_TYPE_LONG_TEXT"); _USAGE_TYPE_LONG_TEXTReady = true; } return _USAGE_TYPE_LONG_TEXTContent; } }
+            private static Java.Lang.String _USAGE_TYPE_LONG_TEXTContent = default;
+            private static bool _USAGE_TYPE_LONG_TEXTReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.DataUsageFeedback.html#USAGE_TYPE_SHORT_TEXT"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Java.Lang.String USAGE_TYPE_SHORT_TEXT { get { if (!_USAGE_TYPE_SHORT_TEXTReady) { _USAGE_TYPE_SHORT_TEXTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USAGE_TYPE_SHORT_TEXT"); _USAGE_TYPE_SHORT_TEXTReady = true; } return _USAGE_TYPE_SHORT_TEXTContent; } }
+            private static Java.Lang.String _USAGE_TYPE_SHORT_TEXTContent = default;
+            private static bool _USAGE_TYPE_SHORT_TEXTReady = false; // this is used because in case of generics 
+
+            #endregion
+
+            #region Static methods
 
             #endregion
 
@@ -3733,6 +3893,37 @@ namespace Android.Provider
         }
         #endregion
 
+        #region Presence
+        public partial class Presence
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Profile
         public partial class Profile : Android.Provider.IBaseColumns
         {
@@ -4106,6 +4297,13 @@ namespace Android.Provider
             public static int AGGREGATION_MODE_DISABLED { get { if (!_AGGREGATION_MODE_DISABLEDReady) { _AGGREGATION_MODE_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "AGGREGATION_MODE_DISABLED"); _AGGREGATION_MODE_DISABLEDReady = true; } return _AGGREGATION_MODE_DISABLEDContent; } }
             private static int _AGGREGATION_MODE_DISABLEDContent = default;
             private static bool _AGGREGATION_MODE_DISABLEDReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.RawContacts.html#AGGREGATION_MODE_IMMEDIATE"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int AGGREGATION_MODE_IMMEDIATE { get { if (!_AGGREGATION_MODE_IMMEDIATEReady) { _AGGREGATION_MODE_IMMEDIATEContent = SGetField<int>(LocalBridgeClazz, "AGGREGATION_MODE_IMMEDIATE"); _AGGREGATION_MODE_IMMEDIATEReady = true; } return _AGGREGATION_MODE_IMMEDIATEContent; } }
+            private static int _AGGREGATION_MODE_IMMEDIATEContent = default;
+            private static bool _AGGREGATION_MODE_IMMEDIATEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/ContactsContract.RawContacts.html#AGGREGATION_MODE_SUSPENDED"/>
             /// </summary>

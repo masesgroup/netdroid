@@ -84,6 +84,25 @@ namespace Java.Lang
             get { return IExecuteWithSignature<Java.Lang.ThreadGroup>("getParent", "()Ljava/lang/ThreadGroup;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadGroup.html#allowThreadSuspension(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool AllowThreadSuspension(bool arg0)
+        {
+            return IExecuteWithSignature<bool>("allowThreadSuspension", "(Z)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadGroup.html#isDaemon()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsDaemon()
+        {
+            return IExecuteWithSignature<bool>("isDaemon", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadGroup.html#parentOf(java.lang.ThreadGroup)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
@@ -93,11 +112,60 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("parentOf", "(Ljava/lang/ThreadGroup;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadGroup.html#checkAccess()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void CheckAccess()
+        {
+            IExecuteWithSignature("checkAccess", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadGroup.html#destroy()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void Destroy()
+        {
+            IExecuteWithSignature("destroy", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadGroup.html#interrupt()"/>
         /// </summary>
         public void Interrupt()
         {
             IExecuteWithSignature("interrupt", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadGroup.html#resume()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void Resume()
+        {
+            IExecuteWithSignature("resume", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadGroup.html#setDaemon(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void SetDaemon(bool arg0)
+        {
+            IExecuteWithSignature("setDaemon", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadGroup.html#stop()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void Stop()
+        {
+            IExecuteWithSignature("stop", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadGroup.html#suspend()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void Suspend()
+        {
+            IExecuteWithSignature("suspend", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadGroup.html#activeCount()"/>
@@ -152,6 +220,15 @@ namespace Java.Lang
         public int Enumerate(Java.Lang.ThreadGroup[] arg0)
         {
             return IExecuteWithSignature<int>("enumerate", "([Ljava/lang/ThreadGroup;)I", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadGroup.html#isDestroyed()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsDestroyed()
+        {
+            return IExecuteWithSignature<bool>("isDestroyed", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadGroup.html#list()"/>

@@ -29,6 +29,55 @@ namespace Android.Text
     public partial class DynamicLayout
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/DynamicLayout.html#%3Cinit%3E(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout.Alignment,float,float,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Android.Text.TextPaint"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Android.Text.Layout.Alignment"/></param>
+        /// <param name="arg4"><see cref="float"/></param>
+        /// <param name="arg5"><see cref="float"/></param>
+        /// <param name="arg6"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public DynamicLayout(Java.Lang.CharSequence arg0, Android.Text.TextPaint arg1, int arg2, Android.Text.Layout.Alignment arg3, float arg4, float arg5, bool arg6)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/DynamicLayout.html#%3Cinit%3E(java.lang.CharSequence,java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout.Alignment,float,float,boolean,android.text.TextUtils.TruncateAt,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg2"><see cref="Android.Text.TextPaint"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="Android.Text.Layout.Alignment"/></param>
+        /// <param name="arg5"><see cref="float"/></param>
+        /// <param name="arg6"><see cref="float"/></param>
+        /// <param name="arg7"><see cref="bool"/></param>
+        /// <param name="arg8"><see cref="Android.Text.TextUtils.TruncateAt"/></param>
+        /// <param name="arg9"><see cref="int"/></param>
+        [System.Obsolete()]
+        public DynamicLayout(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Android.Text.TextPaint arg2, int arg3, Android.Text.Layout.Alignment arg4, float arg5, float arg6, bool arg7, Android.Text.TextUtils.TruncateAt arg8, int arg9)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/DynamicLayout.html#%3Cinit%3E(java.lang.CharSequence,java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout.Alignment,float,float,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg2"><see cref="Android.Text.TextPaint"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="Android.Text.Layout.Alignment"/></param>
+        /// <param name="arg5"><see cref="float"/></param>
+        /// <param name="arg6"><see cref="float"/></param>
+        /// <param name="arg7"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public DynamicLayout(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Android.Text.TextPaint arg2, int arg3, Android.Text.Layout.Alignment arg4, float arg5, float arg6, bool arg7)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
+        {
+        }
 
         #endregion
 

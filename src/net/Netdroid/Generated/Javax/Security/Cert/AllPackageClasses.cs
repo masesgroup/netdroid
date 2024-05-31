@@ -26,6 +26,190 @@ using System;
 
 namespace Javax.Security.Cert
 {
+    #region Certificate
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/Certificate.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class Certificate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Certificate>
+    {
+        const string _bridgeClassName = "javax.security.cert.Certificate";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        [Obsolete("Certificate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public Certificate() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        [Obsolete("Certificate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public Certificate(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CertificateEncodingException
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/CertificateEncodingException.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class CertificateEncodingException : Javax.Security.Cert.CertificateException
+    {
+        const string _bridgeClassName = "javax.security.cert.CertificateEncodingException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CertificateException
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/CertificateException.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class CertificateException : Java.Lang.Exception
+    {
+        const string _bridgeClassName = "javax.security.cert.CertificateException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CertificateExpiredException
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/CertificateExpiredException.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class CertificateExpiredException : Javax.Security.Cert.CertificateException
+    {
+        const string _bridgeClassName = "javax.security.cert.CertificateExpiredException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CertificateNotYetValidException
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/CertificateNotYetValidException.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class CertificateNotYetValidException : Javax.Security.Cert.CertificateException
+    {
+        const string _bridgeClassName = "javax.security.cert.CertificateNotYetValidException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CertificateParsingException
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/CertificateParsingException.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class CertificateParsingException : Javax.Security.Cert.CertificateException
+    {
+        const string _bridgeClassName = "javax.security.cert.CertificateParsingException";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region X509Certificate
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/X509Certificate.html"/>
+    /// </summary>
+    [System.Obsolete()]
+    public partial class X509Certificate : Javax.Security.Cert.Certificate
+    {
+        const string _bridgeClassName = "javax.security.cert.X509Certificate";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        [Obsolete("X509Certificate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public X509Certificate() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        [Obsolete("X509Certificate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public X509Certificate(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
 
 
 }

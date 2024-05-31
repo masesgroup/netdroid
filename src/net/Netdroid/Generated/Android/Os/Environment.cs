@@ -287,6 +287,16 @@ namespace Android.Os
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getExternalStorageState", "(Ljava/io/File;)Ljava/lang/String;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Environment.html#getStorageState(java.io.File)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public static Java.Lang.String GetStorageState(Java.Io.File arg0)
+        {
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getStorageState", "(Ljava/io/File;)Ljava/lang/String;", arg0);
+        }
 
         #endregion
 

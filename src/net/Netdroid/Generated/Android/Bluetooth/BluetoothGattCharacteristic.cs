@@ -266,6 +266,14 @@ namespace Android.Bluetooth
             get { return IExecuteWithSignature<Java.Util.UUID>("getUuid", "()Ljava/util/UUID;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getValue()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public byte[] Value
+        {
+            get { return IExecuteWithSignatureArray<byte>("getValue", "()[B"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getWriteType()"/> <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#setWriteType(int)"/>
         /// </summary>
         public int WriteType
@@ -291,12 +299,89 @@ namespace Android.Bluetooth
             return IExecuteWithSignature<bool>("addDescriptor", "(Landroid/bluetooth/BluetoothGattDescriptor;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#setValue(byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool SetValue(byte[] arg0)
+        {
+            return IExecuteWithSignature<bool>("setValue", "([B)Z", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#setValue(int,int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool SetValue(int arg0, int arg1, int arg2, int arg3)
+        {
+            return IExecute<bool>("setValue", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#setValue(int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool SetValue(int arg0, int arg1, int arg2)
+        {
+            return IExecute<bool>("setValue", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#setValue(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool SetValue(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<bool>("setValue", "(Ljava/lang/String;)Z", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getFloatValue(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.Float"/></returns>
+        [System.Obsolete()]
+        public Java.Lang.Float GetFloatValue(int arg0, int arg1)
+        {
+            return IExecute<Java.Lang.Float>("getFloatValue", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getIntValue(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
+        [System.Obsolete()]
+        public Java.Lang.Integer GetIntValue(int arg0, int arg1)
+        {
+            return IExecute<Java.Lang.Integer>("getIntValue", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#getStringValue(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public Java.Lang.String GetStringValue(int arg0)
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getStringValue", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#writeToParcel(android.os.Parcel,int)"/>

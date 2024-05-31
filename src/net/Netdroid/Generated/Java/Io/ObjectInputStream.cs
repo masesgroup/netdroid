@@ -182,6 +182,16 @@ namespace Java.Io
             return IExecuteWithSignature("readUnshared", "()Ljava/lang/Object;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readLine()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public Java.Lang.String ReadLine()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("readLine", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readUTF()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>

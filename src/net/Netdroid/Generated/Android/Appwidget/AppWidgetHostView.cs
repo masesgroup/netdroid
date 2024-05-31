@@ -145,6 +145,19 @@ namespace Android.Appwidget
             IExecuteWithSignature("updateAppWidgetOptions", "(Landroid/os/Bundle;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#updateAppWidgetSize(android.os.Bundle,int,int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void UpdateAppWidgetSize(Android.Os.Bundle arg0, int arg1, int arg2, int arg3, int arg4)
+        {
+            IExecute("updateAppWidgetSize", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/appwidget/AppWidgetHostView.html#updateAppWidgetSize(android.os.Bundle,java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>

@@ -122,6 +122,13 @@ namespace Android.Telecom
         private static int _STATE_SIMULATED_RINGINGContent = default;
         private static bool _STATE_SIMULATED_RINGINGReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#AVAILABLE_PHONE_ACCOUNTS"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Lang.String AVAILABLE_PHONE_ACCOUNTS { get { if (!_AVAILABLE_PHONE_ACCOUNTSReady) { _AVAILABLE_PHONE_ACCOUNTSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "AVAILABLE_PHONE_ACCOUNTS"); _AVAILABLE_PHONE_ACCOUNTSReady = true; } return _AVAILABLE_PHONE_ACCOUNTSContent; } }
+        private static Java.Lang.String _AVAILABLE_PHONE_ACCOUNTSContent = default;
+        private static bool _AVAILABLE_PHONE_ACCOUNTSReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Call.html#EVENT_CLEAR_DIAGNOSTIC_MESSAGE"/>
         /// </summary>
         public static Java.Lang.String EVENT_CLEAR_DIAGNOSTIC_MESSAGE { get { if (!_EVENT_CLEAR_DIAGNOSTIC_MESSAGEReady) { _EVENT_CLEAR_DIAGNOSTIC_MESSAGEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EVENT_CLEAR_DIAGNOSTIC_MESSAGE"); _EVENT_CLEAR_DIAGNOSTIC_MESSAGEReady = true; } return _EVENT_CLEAR_DIAGNOSTIC_MESSAGEContent; } }
@@ -232,6 +239,14 @@ namespace Android.Telecom
         public Java.Lang.String RemainingPostDialSequence
         {
             get { return IExecuteWithSignature<Java.Lang.String>("getRemainingPostDialSequence", "()Ljava/lang/String;"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getState()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int State
+        {
+            get { return IExecuteWithSignature<int>("getState", "()I"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getVideoCall()"/> 

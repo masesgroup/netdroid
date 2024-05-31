@@ -86,6 +86,14 @@ namespace Android.View.Accessibility
             get { return IExecuteWithSignature<int>("getAccessibilityFocusStrokeWidth", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#getAccessibilityServiceList()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Util.List<Android.Content.Pm.ServiceInfo> AccessibilityServiceList
+        {
+            get { return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ServiceInfo>>("getAccessibilityServiceList", "()Ljava/util/List;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html#getInstalledAccessibilityServiceList()"/> 
         /// </summary>
         public Java.Util.List<Android.Accessibilityservice.AccessibilityServiceInfo> InstalledAccessibilityServiceList

@@ -54,6 +54,14 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getAvailableBlocks()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int AvailableBlocks
+        {
+            get { return IExecuteWithSignature<int>("getAvailableBlocks", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getAvailableBlocksLong()"/> 
         /// </summary>
         public long AvailableBlocksLong
@@ -68,6 +76,14 @@ namespace Android.Os
             get { return IExecuteWithSignature<long>("getAvailableBytes", "()J"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getBlockCount()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int BlockCount
+        {
+            get { return IExecuteWithSignature<int>("getBlockCount", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getBlockCountLong()"/> 
         /// </summary>
         public long BlockCountLong
@@ -75,11 +91,27 @@ namespace Android.Os
             get { return IExecuteWithSignature<long>("getBlockCountLong", "()J"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getBlockSize()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int BlockSize
+        {
+            get { return IExecuteWithSignature<int>("getBlockSize", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getBlockSizeLong()"/> 
         /// </summary>
         public long BlockSizeLong
         {
             get { return IExecuteWithSignature<long>("getBlockSizeLong", "()J"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getFreeBlocks()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int FreeBlocks
+        {
+            get { return IExecuteWithSignature<int>("getFreeBlocks", "()I"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getFreeBlocksLong()"/> 

@@ -53,6 +53,16 @@ namespace Android.Media
             get { return IExecuteWithSignature<int>("getSchemeInitDataCount", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/DrmInitData.html#get(java.util.UUID)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.UUID"/></param>
+        /// <returns><see cref="Android.Media.DrmInitData.SchemeInitData"/></returns>
+        [System.Obsolete()]
+        public Android.Media.DrmInitData.SchemeInitData Get(Java.Util.UUID arg0)
+        {
+            return IExecuteWithSignature<Android.Media.DrmInitData.SchemeInitData>("get", "(Ljava/util/UUID;)Landroid/media/DrmInitData$SchemeInitData;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/DrmInitData.html#getSchemeInitDataAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>

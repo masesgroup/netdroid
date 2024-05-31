@@ -52,6 +52,14 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#getCallAudioState()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public Android.Telecom.CallAudioState CallAudioState
+        {
+            get { return IExecuteWithSignature<Android.Telecom.CallAudioState>("getCallAudioState", "()Landroid/telecom/CallAudioState;"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#getCalls()"/> 
         /// </summary>
         public Java.Util.List<Android.Telecom.Call> Calls
@@ -74,6 +82,15 @@ namespace Android.Telecom
             return IExecuteWithSignature<bool>("canAddCall", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#requestBluetoothAudio(android.bluetooth.BluetoothDevice)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothDevice"/></param>
+        [System.Obsolete()]
+        public void RequestBluetoothAudio(Android.Bluetooth.BluetoothDevice arg0)
+        {
+            IExecuteWithSignature("requestBluetoothAudio", "(Landroid/bluetooth/BluetoothDevice;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#requestCallEndpointChange(android.telecom.CallEndpoint,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Telecom.CallEndpoint"/></param>
@@ -82,6 +99,15 @@ namespace Android.Telecom
         public void RequestCallEndpointChange(Android.Telecom.CallEndpoint arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Java.Lang.Void, Android.Telecom.CallEndpointException> arg2)
         {
             IExecute("requestCallEndpointChange", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#setAudioRoute(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetAudioRoute(int arg0)
+        {
+            IExecuteWithSignature("setAudioRoute", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#setMuted(boolean)"/>
@@ -114,6 +140,15 @@ namespace Android.Telecom
         public void OnCallAdded(Android.Telecom.Call arg0)
         {
             IExecuteWithSignature("onCallAdded", "(Landroid/telecom/Call;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#onCallAudioStateChanged(android.telecom.CallAudioState)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Telecom.CallAudioState"/></param>
+        [System.Obsolete()]
+        public void OnCallAudioStateChanged(Android.Telecom.CallAudioState arg0)
+        {
+            IExecuteWithSignature("onCallAudioStateChanged", "(Landroid/telecom/CallAudioState;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#onCallEndpointChanged(android.telecom.CallEndpoint)"/>

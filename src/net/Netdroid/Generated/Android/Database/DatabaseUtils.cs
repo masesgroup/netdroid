@@ -481,6 +481,17 @@ namespace Android.Database
             SExecute(LocalBridgeClazz, "cursorStringToContentValuesIfPresent", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#cursorStringToInsertHelper(android.database.Cursor,java.lang.String,android.database.DatabaseUtils.InsertHelper,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Database.Cursor"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Android.Database.DatabaseUtils.InsertHelper"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        public static void CursorStringToInsertHelper(Android.Database.Cursor arg0, Java.Lang.String arg1, Android.Database.DatabaseUtils.InsertHelper arg2, int arg3)
+        {
+            SExecute(LocalBridgeClazz, "cursorStringToInsertHelper", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.html#dumpCurrentRow(android.database.Cursor,java.io.PrintStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Database.Cursor"/></param>
@@ -558,7 +569,190 @@ namespace Android.Database
         #endregion
 
         #region Nested classes
+        #region InsertHelper
+        public partial class InsertHelper
+        {
+            #region Constructors
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#%3Cinit%3E(android.database.sqlite.SQLiteDatabase,java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Database.Sqlite.SQLiteDatabase"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+            [System.Obsolete()]
+            public InsertHelper(Android.Database.Sqlite.SQLiteDatabase arg0, Java.Lang.String arg1)
+                : base(arg0, arg1)
+            {
+            }
 
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#getColumnIndex(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <returns><see cref="int"/></returns>
+            [System.Obsolete()]
+            public int GetColumnIndex(Java.Lang.String arg0)
+            {
+                return IExecuteWithSignature<int>("getColumnIndex", "(Ljava/lang/String;)I", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#execute()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            [System.Obsolete()]
+            public long Execute()
+            {
+                return IExecuteWithSignature<long>("execute", "()J");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#insert(android.content.ContentValues)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Content.ContentValues"/></param>
+            /// <returns><see cref="long"/></returns>
+            [System.Obsolete()]
+            public long Insert(Android.Content.ContentValues arg0)
+            {
+                return IExecuteWithSignature<long>("insert", "(Landroid/content/ContentValues;)J", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#replace(android.content.ContentValues)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Content.ContentValues"/></param>
+            /// <returns><see cref="long"/></returns>
+            [System.Obsolete()]
+            public long Replace(Android.Content.ContentValues arg0)
+            {
+                return IExecuteWithSignature<long>("replace", "(Landroid/content/ContentValues;)J", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#bind(int,boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="bool"/></param>
+            [System.Obsolete()]
+            public void Bind(int arg0, bool arg1)
+            {
+                IExecute("bind", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#bind(int,byte[])"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="byte"/></param>
+            [System.Obsolete()]
+            public void Bind(int arg0, byte[] arg1)
+            {
+                IExecute("bind", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#bind(int,double)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="double"/></param>
+            [System.Obsolete()]
+            public void Bind(int arg0, double arg1)
+            {
+                IExecute("bind", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#bind(int,float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="float"/></param>
+            [System.Obsolete()]
+            public void Bind(int arg0, float arg1)
+            {
+                IExecute("bind", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#bind(int,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            [System.Obsolete()]
+            public void Bind(int arg0, int arg1)
+            {
+                IExecute("bind", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#bind(int,java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+            [System.Obsolete()]
+            public void Bind(int arg0, Java.Lang.String arg1)
+            {
+                IExecute("bind", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#bind(int,long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="long"/></param>
+            [System.Obsolete()]
+            public void Bind(int arg0, long arg1)
+            {
+                IExecute("bind", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#bindNull(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            [System.Obsolete()]
+            public void BindNull(int arg0)
+            {
+                IExecuteWithSignature("bindNull", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#close()"/>
+            /// </summary>
+            [System.Obsolete()]
+            public void Close()
+            {
+                IExecuteWithSignature("close", "()V");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#prepareForInsert()"/>
+            /// </summary>
+            [System.Obsolete()]
+            public void PrepareForInsert()
+            {
+                IExecuteWithSignature("prepareForInsert", "()V");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#prepareForReplace()"/>
+            /// </summary>
+            [System.Obsolete()]
+            public void PrepareForReplace()
+            {
+                IExecuteWithSignature("prepareForReplace", "()V");
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+    
         #endregion
 
         // TODO: complete the class

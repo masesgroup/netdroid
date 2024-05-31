@@ -30,6 +30,31 @@ namespace Android.Widget
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#%3Cinit%3E(android.content.Context,android.view.animation.Interpolator,float,float,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="Android.View.Animation.Interpolator"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public OverScroller(Android.Content.Context arg0, Android.View.Animation.Interpolator arg1, float arg2, float arg3, bool arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#%3Cinit%3E(android.content.Context,android.view.animation.Interpolator,float,float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="Android.View.Animation.Interpolator"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
+        [System.Obsolete()]
+        public OverScroller(Android.Content.Context arg0, Android.View.Animation.Interpolator arg1, float arg2, float arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#%3Cinit%3E(android.content.Context,android.view.animation.Interpolator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>

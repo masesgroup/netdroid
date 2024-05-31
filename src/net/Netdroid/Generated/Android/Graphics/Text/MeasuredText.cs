@@ -185,6 +185,16 @@ namespace Android.Graphics.Text
                 return IExecute<Android.Graphics.Text.MeasuredText.Builder>("appendStyleRun", arg0, arg1, arg2);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/text/MeasuredText.Builder.html#setComputeHyphenation(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            /// <returns><see cref="Android.Graphics.Text.MeasuredText.Builder"/></returns>
+            [System.Obsolete()]
+            public Android.Graphics.Text.MeasuredText.Builder SetComputeHyphenation(bool arg0)
+            {
+                return IExecuteWithSignature<Android.Graphics.Text.MeasuredText.Builder>("setComputeHyphenation", "(Z)Landroid/graphics/text/MeasuredText$Builder;", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/text/MeasuredText.Builder.html#setComputeHyphenation(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>

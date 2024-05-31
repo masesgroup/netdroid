@@ -56,6 +56,13 @@ namespace Android.Hardware.Lights
         private static int _LIGHT_CAPABILITY_COLOR_RGBContent = default;
         private static bool _LIGHT_CAPABILITY_COLOR_RGBReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/lights/Light.html#LIGHT_CAPABILITY_RGB"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int LIGHT_CAPABILITY_RGB { get { if (!_LIGHT_CAPABILITY_RGBReady) { _LIGHT_CAPABILITY_RGBContent = SGetField<int>(LocalBridgeClazz, "LIGHT_CAPABILITY_RGB"); _LIGHT_CAPABILITY_RGBReady = true; } return _LIGHT_CAPABILITY_RGBContent; } }
+        private static int _LIGHT_CAPABILITY_RGBContent = default;
+        private static bool _LIGHT_CAPABILITY_RGBReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/lights/Light.html#LIGHT_TYPE_INPUT"/>
         /// </summary>
         public static int LIGHT_TYPE_INPUT { get { if (!_LIGHT_TYPE_INPUTReady) { _LIGHT_TYPE_INPUTContent = SGetField<int>(LocalBridgeClazz, "LIGHT_TYPE_INPUT"); _LIGHT_TYPE_INPUTReady = true; } return _LIGHT_TYPE_INPUTContent; } }

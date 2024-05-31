@@ -91,6 +91,15 @@ namespace Android.Database
             IExecute("dispatchChange", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/ContentObserver.html#dispatchChange(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [System.Obsolete()]
+        public void DispatchChange(bool arg0)
+        {
+            IExecuteWithSignature("dispatchChange", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/ContentObserver.html#onChange(boolean,android.net.Uri,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>

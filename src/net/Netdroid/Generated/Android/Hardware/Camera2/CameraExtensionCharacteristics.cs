@@ -44,6 +44,13 @@ namespace Android.Hardware.Camera2
         private static int _EXTENSION_AUTOMATICContent = default;
         private static bool _EXTENSION_AUTOMATICReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionCharacteristics.html#EXTENSION_BEAUTY"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int EXTENSION_BEAUTY { get { if (!_EXTENSION_BEAUTYReady) { _EXTENSION_BEAUTYContent = SGetField<int>(LocalBridgeClazz, "EXTENSION_BEAUTY"); _EXTENSION_BEAUTYReady = true; } return _EXTENSION_BEAUTYContent; } }
+        private static int _EXTENSION_BEAUTYContent = default;
+        private static bool _EXTENSION_BEAUTYReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionCharacteristics.html#EXTENSION_BOKEH"/>
         /// </summary>
         public static int EXTENSION_BOKEH { get { if (!_EXTENSION_BOKEHReady) { _EXTENSION_BOKEHContent = SGetField<int>(LocalBridgeClazz, "EXTENSION_BOKEH"); _EXTENSION_BOKEHReady = true; } return _EXTENSION_BOKEHContent; } }

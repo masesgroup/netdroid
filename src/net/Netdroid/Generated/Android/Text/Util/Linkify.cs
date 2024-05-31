@@ -56,11 +56,25 @@ namespace Android.Text.Util
         private static Android.Text.Util.Linkify.TransformFilter _sPhoneNumberTransformFilterContent = default;
         private static bool _sPhoneNumberTransformFilterReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/util/Linkify.html#ALL"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ALL { get { if (!_ALLReady) { _ALLContent = SGetField<int>(LocalBridgeClazz, "ALL"); _ALLReady = true; } return _ALLContent; } }
+        private static int _ALLContent = default;
+        private static bool _ALLReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/util/Linkify.html#EMAIL_ADDRESSES"/>
         /// </summary>
         public static int EMAIL_ADDRESSES { get { if (!_EMAIL_ADDRESSESReady) { _EMAIL_ADDRESSESContent = SGetField<int>(LocalBridgeClazz, "EMAIL_ADDRESSES"); _EMAIL_ADDRESSESReady = true; } return _EMAIL_ADDRESSESContent; } }
         private static int _EMAIL_ADDRESSESContent = default;
         private static bool _EMAIL_ADDRESSESReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/util/Linkify.html#MAP_ADDRESSES"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int MAP_ADDRESSES { get { if (!_MAP_ADDRESSESReady) { _MAP_ADDRESSESContent = SGetField<int>(LocalBridgeClazz, "MAP_ADDRESSES"); _MAP_ADDRESSESReady = true; } return _MAP_ADDRESSESContent; } }
+        private static int _MAP_ADDRESSESContent = default;
+        private static bool _MAP_ADDRESSESReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/util/Linkify.html#PHONE_NUMBERS"/>
         /// </summary>

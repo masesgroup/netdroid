@@ -118,6 +118,16 @@ namespace Android.Telephony
             return SExecute<Android.Telephony.SmsMessage>(LocalBridgeClazz, "createFromPdu", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#createFromPdu(byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <returns><see cref="Android.Telephony.SmsMessage"/></returns>
+        [System.Obsolete()]
+        public static Android.Telephony.SmsMessage CreateFromPdu(byte[] arg0)
+        {
+            return SExecuteWithSignature<Android.Telephony.SmsMessage>(LocalBridgeClazz, "createFromPdu", "([B)Landroid/telephony/SmsMessage;", new object[] { arg0 });
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getSubmitPdu(java.lang.String,java.lang.String,java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -218,6 +228,14 @@ namespace Android.Telephony
             get { return IExecuteWithSignature<int>("getIndexOnIcc", "()I"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getIndexOnSim()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int IndexOnSim
+        {
+            get { return IExecuteWithSignature<int>("getIndexOnSim", "()I"); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getMessageBody()"/> 
         /// </summary>
         public Java.Lang.String MessageBody
@@ -272,6 +290,14 @@ namespace Android.Telephony
         public int StatusOnIcc
         {
             get { return IExecuteWithSignature<int>("getStatusOnIcc", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getStatusOnSim()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int StatusOnSim
+        {
+            get { return IExecuteWithSignature<int>("getStatusOnSim", "()I"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getTimestampMillis()"/> 

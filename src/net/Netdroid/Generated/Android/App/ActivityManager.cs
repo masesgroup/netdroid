@@ -104,6 +104,15 @@ namespace Android.App
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isLowMemoryKillReportSupported", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#isRunningInTestHarness()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public static bool IsRunningInTestHarness()
+        {
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isRunningInTestHarness", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#isRunningInUserTestHarness()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -256,6 +265,15 @@ namespace Android.App
             return IExecuteWithSignature<bool>("isBackgroundRestricted", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#isInLockTaskMode()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool IsInLockTaskMode()
+        {
+            return IExecuteWithSignature<bool>("isInLockTaskMode", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#isLowRamDevice()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -274,6 +292,40 @@ namespace Android.App
         public int AddAppTask(Android.App.Activity arg0, Android.Content.Intent arg1, Android.App.ActivityManager.TaskDescription arg2, Android.Graphics.Bitmap arg3)
         {
             return IExecute<int>("addAppTask", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getRecentTasks(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        [System.Obsolete()]
+        public Java.Util.List<Android.App.ActivityManager.RecentTaskInfo> GetRecentTasks(int arg0, int arg1)
+        {
+            return IExecute<Java.Util.List<Android.App.ActivityManager.RecentTaskInfo>>("getRecentTasks", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getRunningServices(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        [System.Obsolete()]
+        public Java.Util.List<Android.App.ActivityManager.RunningServiceInfo> GetRunningServices(int arg0)
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.ActivityManager.RunningServiceInfo>>("getRunningServices", "(I)Ljava/util/List;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getRunningTasks(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Lang.SecurityException"/>
+        [System.Obsolete()]
+        public Java.Util.List<Android.App.ActivityManager.RunningTaskInfo> GetRunningTasks(int arg0)
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.ActivityManager.RunningTaskInfo>>("getRunningTasks", "(I)Ljava/util/List;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#getHistoricalProcessExitReasons(java.lang.String,int,int)"/>
@@ -344,6 +396,15 @@ namespace Android.App
         public void MoveTaskToFront(int arg0, int arg1)
         {
             IExecute("moveTaskToFront", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#restartPackage(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public void RestartPackage(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("restartPackage", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityManager.html#setProcessStateSummary(byte[])"/>
@@ -650,6 +711,26 @@ namespace Android.App
 
             #region Fields
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RecentTaskInfo.html#affiliatedTaskId"/>
+            /// </summary>
+            [System.Obsolete()]
+            public int affiliatedTaskId { get { return IGetField<int>("affiliatedTaskId"); } set { ISetField("affiliatedTaskId", value); } }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RecentTaskInfo.html#id"/>
+            /// </summary>
+            [System.Obsolete()]
+            public int id { get { return IGetField<int>("id"); } set { ISetField("id", value); } }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RecentTaskInfo.html#persistentId"/>
+            /// </summary>
+            [System.Obsolete()]
+            public int persistentId { get { return IGetField<int>("persistentId"); } set { ISetField("persistentId", value); } }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RecentTaskInfo.html#description"/>
+            /// </summary>
+            [System.Obsolete()]
+            public Java.Lang.CharSequence description { get { return IGetField<Java.Lang.CharSequence>("description"); } set { ISetField("description", value); } }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RecentTaskInfo.html#CREATOR"/>
             /// </summary>
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
@@ -768,6 +849,13 @@ namespace Android.App
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningAppProcessInfo.html#IMPORTANCE_BACKGROUND"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int IMPORTANCE_BACKGROUND { get { if (!_IMPORTANCE_BACKGROUNDReady) { _IMPORTANCE_BACKGROUNDContent = SGetField<int>(LocalBridgeClazz, "IMPORTANCE_BACKGROUND"); _IMPORTANCE_BACKGROUNDReady = true; } return _IMPORTANCE_BACKGROUNDContent; } }
+            private static int _IMPORTANCE_BACKGROUNDContent = default;
+            private static bool _IMPORTANCE_BACKGROUNDReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningAppProcessInfo.html#IMPORTANCE_CACHED"/>
             /// </summary>
             public static int IMPORTANCE_CACHED { get { if (!_IMPORTANCE_CACHEDReady) { _IMPORTANCE_CACHEDContent = SGetField<int>(LocalBridgeClazz, "IMPORTANCE_CACHED"); _IMPORTANCE_CACHEDReady = true; } return _IMPORTANCE_CACHEDContent; } }
@@ -779,6 +867,13 @@ namespace Android.App
             public static int IMPORTANCE_CANT_SAVE_STATE { get { if (!_IMPORTANCE_CANT_SAVE_STATEReady) { _IMPORTANCE_CANT_SAVE_STATEContent = SGetField<int>(LocalBridgeClazz, "IMPORTANCE_CANT_SAVE_STATE"); _IMPORTANCE_CANT_SAVE_STATEReady = true; } return _IMPORTANCE_CANT_SAVE_STATEContent; } }
             private static int _IMPORTANCE_CANT_SAVE_STATEContent = default;
             private static bool _IMPORTANCE_CANT_SAVE_STATEReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningAppProcessInfo.html#IMPORTANCE_EMPTY"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int IMPORTANCE_EMPTY { get { if (!_IMPORTANCE_EMPTYReady) { _IMPORTANCE_EMPTYContent = SGetField<int>(LocalBridgeClazz, "IMPORTANCE_EMPTY"); _IMPORTANCE_EMPTYReady = true; } return _IMPORTANCE_EMPTYContent; } }
+            private static int _IMPORTANCE_EMPTYContent = default;
+            private static bool _IMPORTANCE_EMPTYReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningAppProcessInfo.html#IMPORTANCE_FOREGROUND"/>
             /// </summary>
@@ -821,6 +916,13 @@ namespace Android.App
             public static int IMPORTANCE_TOP_SLEEPING { get { if (!_IMPORTANCE_TOP_SLEEPINGReady) { _IMPORTANCE_TOP_SLEEPINGContent = SGetField<int>(LocalBridgeClazz, "IMPORTANCE_TOP_SLEEPING"); _IMPORTANCE_TOP_SLEEPINGReady = true; } return _IMPORTANCE_TOP_SLEEPINGContent; } }
             private static int _IMPORTANCE_TOP_SLEEPINGContent = default;
             private static bool _IMPORTANCE_TOP_SLEEPINGReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningAppProcessInfo.html#IMPORTANCE_TOP_SLEEPING_PRE_28"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static int IMPORTANCE_TOP_SLEEPING_PRE_28 { get { if (!_IMPORTANCE_TOP_SLEEPING_PRE_28Ready) { _IMPORTANCE_TOP_SLEEPING_PRE_28Content = SGetField<int>(LocalBridgeClazz, "IMPORTANCE_TOP_SLEEPING_PRE_28"); _IMPORTANCE_TOP_SLEEPING_PRE_28Ready = true; } return _IMPORTANCE_TOP_SLEEPING_PRE_28Content; } }
+            private static int _IMPORTANCE_TOP_SLEEPING_PRE_28Content = default;
+            private static bool _IMPORTANCE_TOP_SLEEPING_PRE_28Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningAppProcessInfo.html#IMPORTANCE_VISIBLE"/>
             /// </summary>
@@ -1048,6 +1150,26 @@ namespace Android.App
 
             #region Fields
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningTaskInfo.html#thumbnail"/>
+            /// </summary>
+            [System.Obsolete()]
+            public Android.Graphics.Bitmap thumbnail { get { return IGetField<Android.Graphics.Bitmap>("thumbnail"); } set { ISetField("thumbnail", value); } }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningTaskInfo.html#id"/>
+            /// </summary>
+            [System.Obsolete()]
+            public int id { get { return IGetField<int>("id"); } set { ISetField("id", value); } }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningTaskInfo.html#numRunning"/>
+            /// </summary>
+            [System.Obsolete()]
+            public int numRunning { get { return IGetField<int>("numRunning"); } set { ISetField("numRunning", value); } }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningTaskInfo.html#description"/>
+            /// </summary>
+            [System.Obsolete()]
+            public Java.Lang.CharSequence description { get { return IGetField<Java.Lang.CharSequence>("description"); } set { ISetField("description", value); } }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.RunningTaskInfo.html#CREATOR"/>
             /// </summary>
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
@@ -1109,6 +1231,57 @@ namespace Android.App
                 : base(arg0)
             {
             }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#%3Cinit%3E(java.lang.String,android.graphics.Bitmap,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Android.Graphics.Bitmap"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            [System.Obsolete()]
+            public TaskDescription(Java.Lang.String arg0, Android.Graphics.Bitmap arg1, int arg2)
+                : base(arg0, arg1, arg2)
+            {
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#%3Cinit%3E(java.lang.String,android.graphics.Bitmap)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="Android.Graphics.Bitmap"/></param>
+            [System.Obsolete()]
+            public TaskDescription(Java.Lang.String arg0, Android.Graphics.Bitmap arg1)
+                : base(arg0, arg1)
+            {
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#%3Cinit%3E(java.lang.String,int,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            [System.Obsolete()]
+            public TaskDescription(Java.Lang.String arg0, int arg1, int arg2)
+                : base(arg0, arg1, arg2)
+            {
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#%3Cinit%3E(java.lang.String,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            [System.Obsolete()]
+            public TaskDescription(Java.Lang.String arg0, int arg1)
+                : base(arg0, arg1)
+            {
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#%3Cinit%3E(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            [System.Obsolete()]
+            public TaskDescription(Java.Lang.String arg0)
+                : base(arg0)
+            {
+            }
 
             #endregion
 
@@ -1137,6 +1310,14 @@ namespace Android.App
             public int BackgroundColor
             {
                 get { return IExecuteWithSignature<int>("getBackgroundColor", "()I"); }
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#getIcon()"/> 
+            /// </summary>
+            [System.Obsolete()]
+            public Android.Graphics.Bitmap Icon
+            {
+                get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getIcon", "()Landroid/graphics/Bitmap;"); }
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActivityManager.TaskDescription.html#getLabel()"/> 

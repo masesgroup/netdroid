@@ -69,6 +69,16 @@ namespace Java.Net
         #endregion
 
         #region Static methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/net/DatagramSocket.html#setDatagramSocketImplFactory(java.net.DatagramSocketImplFactory)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.DatagramSocketImplFactory"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        [System.Obsolete()]
+        public static void SetDatagramSocketImplFactory(Java.Net.DatagramSocketImplFactory arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setDatagramSocketImplFactory", "(Ljava/net/DatagramSocketImplFactory;)V", arg0);
+        }
 
         #endregion
 

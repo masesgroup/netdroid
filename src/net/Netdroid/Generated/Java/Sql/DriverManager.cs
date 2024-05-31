@@ -49,6 +49,14 @@ namespace Java.Sql
             get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getLoginTimeout", "()I"); } set { SExecuteWithSignature(LocalBridgeClazz, "setLoginTimeout", "(I)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#getLogStream()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#setLogStream(java.io.PrintStream)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static Java.Io.PrintStream LogStream
+        {
+            get { return SExecuteWithSignature<Java.Io.PrintStream>(LocalBridgeClazz, "getLogStream", "()Ljava/io/PrintStream;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setLogStream", "(Ljava/io/PrintStream;)V", value); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#getLogWriter()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#setLogWriter(java.io.PrintWriter)"/>
         /// </summary>
         public static Java.Io.PrintWriter LogWriter

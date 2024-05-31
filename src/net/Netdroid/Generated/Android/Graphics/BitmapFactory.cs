@@ -185,6 +185,16 @@ namespace Android.Graphics
             /// </summary>
             public Android.Graphics.ColorSpace outColorSpace { get { return IGetField<Android.Graphics.ColorSpace>("outColorSpace"); } set { ISetField("outColorSpace", value); } }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inDither"/>
+            /// </summary>
+            [System.Obsolete()]
+            public bool inDither { get { return IGetField<bool>("inDither"); } set { ISetField("inDither", value); } }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inInputShareable"/>
+            /// </summary>
+            [System.Obsolete()]
+            public bool inInputShareable { get { return IGetField<bool>("inInputShareable"); } set { ISetField("inInputShareable", value); } }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inJustDecodeBounds"/>
             /// </summary>
             public bool inJustDecodeBounds { get { return IGetField<bool>("inJustDecodeBounds"); } set { ISetField("inJustDecodeBounds", value); } }
@@ -193,13 +203,28 @@ namespace Android.Graphics
             /// </summary>
             public bool inMutable { get { return IGetField<bool>("inMutable"); } set { ISetField("inMutable", value); } }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inPreferQualityOverSpeed"/>
+            /// </summary>
+            [System.Obsolete()]
+            public bool inPreferQualityOverSpeed { get { return IGetField<bool>("inPreferQualityOverSpeed"); } set { ISetField("inPreferQualityOverSpeed", value); } }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inPremultiplied"/>
             /// </summary>
             public bool inPremultiplied { get { return IGetField<bool>("inPremultiplied"); } set { ISetField("inPremultiplied", value); } }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inPurgeable"/>
+            /// </summary>
+            [System.Obsolete()]
+            public bool inPurgeable { get { return IGetField<bool>("inPurgeable"); } set { ISetField("inPurgeable", value); } }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inScaled"/>
             /// </summary>
             public bool inScaled { get { return IGetField<bool>("inScaled"); } set { ISetField("inScaled", value); } }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#mCancel"/>
+            /// </summary>
+            [System.Obsolete()]
+            public bool mCancel { get { return IGetField<bool>("mCancel"); } set { ISetField("mCancel", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inTempStorage"/>
             /// </summary>
@@ -240,6 +265,14 @@ namespace Android.Graphics
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#requestCancelDecode()"/>
+            /// </summary>
+            [System.Obsolete()]
+            public void RequestCancelDecode()
+            {
+                IExecuteWithSignature("requestCancelDecode", "()V");
+            }
 
             #endregion
 

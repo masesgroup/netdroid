@@ -92,6 +92,13 @@ namespace Android.Bluetooth
         private static int _HEADSETContent = default;
         private static bool _HEADSETReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.html#HEALTH"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int HEALTH { get { if (!_HEALTHReady) { _HEALTHContent = SGetField<int>(LocalBridgeClazz, "HEALTH"); _HEALTHReady = true; } return _HEALTHContent; } }
+        private static int _HEALTHContent = default;
+        private static bool _HEALTHReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.html#HEARING_AID"/>
         /// </summary>
         public static int HEARING_AID { get { if (!_HEARING_AIDReady) { _HEARING_AIDContent = SGetField<int>(LocalBridgeClazz, "HEARING_AID"); _HEARING_AIDReady = true; } return _HEARING_AIDContent; } }

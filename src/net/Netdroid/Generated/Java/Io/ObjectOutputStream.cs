@@ -326,6 +326,16 @@ namespace Java.Io
             {
                 IExecute("put", arg0, arg1);
             }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.PutField.html#write(java.io.ObjectOutput)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Io.ObjectOutput"/></param>
+            /// <exception cref="Java.Io.IOException"/>
+            [System.Obsolete()]
+            public void Write(Java.Io.ObjectOutput arg0)
+            {
+                IExecuteWithSignature("write", "(Ljava/io/ObjectOutput;)V", arg0);
+            }
 
             #endregion
 

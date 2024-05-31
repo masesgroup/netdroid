@@ -95,6 +95,17 @@ namespace Android.Service.Autofill
                 : base(arg0, arg1, arg2, arg3)
             {
             }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/autofill/ImageTransformation.Builder.html#%3Cinit%3E(android.view.autofill.AutofillId,java.util.regex.Pattern,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.View.Autofill.AutofillId"/></param>
+            /// <param name="arg1"><see cref="Java.Util.Regex.Pattern"/></param>
+            /// <param name="arg2"><see cref="int"/></param>
+            [System.Obsolete()]
+            public Builder(Android.View.Autofill.AutofillId arg0, Java.Util.Regex.Pattern arg1, int arg2)
+                : base(arg0, arg1, arg2)
+            {
+            }
 
             #endregion
 
@@ -129,6 +140,17 @@ namespace Android.Service.Autofill
             public Android.Service.Autofill.ImageTransformation.Builder AddOption(Java.Util.Regex.Pattern arg0, int arg1, Java.Lang.CharSequence arg2)
             {
                 return IExecute<Android.Service.Autofill.ImageTransformation.Builder>("addOption", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/autofill/ImageTransformation.Builder.html#addOption(java.util.regex.Pattern,int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Regex.Pattern"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <returns><see cref="Android.Service.Autofill.ImageTransformation.Builder"/></returns>
+            [System.Obsolete()]
+            public Android.Service.Autofill.ImageTransformation.Builder AddOption(Java.Util.Regex.Pattern arg0, int arg1)
+            {
+                return IExecute<Android.Service.Autofill.ImageTransformation.Builder>("addOption", arg0, arg1);
             }
 
             #endregion

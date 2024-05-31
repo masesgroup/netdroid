@@ -224,6 +224,69 @@ namespace Android.Hardware
         private static int _AXIS_ZContent = default;
         private static bool _AXIS_ZReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#DATA_X"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int DATA_X { get { if (!_DATA_XReady) { _DATA_XContent = SGetField<int>(LocalBridgeClazz, "DATA_X"); _DATA_XReady = true; } return _DATA_XContent; } }
+        private static int _DATA_XContent = default;
+        private static bool _DATA_XReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#DATA_Y"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int DATA_Y { get { if (!_DATA_YReady) { _DATA_YContent = SGetField<int>(LocalBridgeClazz, "DATA_Y"); _DATA_YReady = true; } return _DATA_YContent; } }
+        private static int _DATA_YContent = default;
+        private static bool _DATA_YReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#DATA_Z"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int DATA_Z { get { if (!_DATA_ZReady) { _DATA_ZContent = SGetField<int>(LocalBridgeClazz, "DATA_Z"); _DATA_ZReady = true; } return _DATA_ZContent; } }
+        private static int _DATA_ZContent = default;
+        private static bool _DATA_ZReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#RAW_DATA_INDEX"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int RAW_DATA_INDEX { get { if (!_RAW_DATA_INDEXReady) { _RAW_DATA_INDEXContent = SGetField<int>(LocalBridgeClazz, "RAW_DATA_INDEX"); _RAW_DATA_INDEXReady = true; } return _RAW_DATA_INDEXContent; } }
+        private static int _RAW_DATA_INDEXContent = default;
+        private static bool _RAW_DATA_INDEXReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#RAW_DATA_X"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int RAW_DATA_X { get { if (!_RAW_DATA_XReady) { _RAW_DATA_XContent = SGetField<int>(LocalBridgeClazz, "RAW_DATA_X"); _RAW_DATA_XReady = true; } return _RAW_DATA_XContent; } }
+        private static int _RAW_DATA_XContent = default;
+        private static bool _RAW_DATA_XReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#RAW_DATA_Y"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int RAW_DATA_Y { get { if (!_RAW_DATA_YReady) { _RAW_DATA_YContent = SGetField<int>(LocalBridgeClazz, "RAW_DATA_Y"); _RAW_DATA_YReady = true; } return _RAW_DATA_YContent; } }
+        private static int _RAW_DATA_YContent = default;
+        private static bool _RAW_DATA_YReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#RAW_DATA_Z"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int RAW_DATA_Z { get { if (!_RAW_DATA_ZReady) { _RAW_DATA_ZContent = SGetField<int>(LocalBridgeClazz, "RAW_DATA_Z"); _RAW_DATA_ZReady = true; } return _RAW_DATA_ZContent; } }
+        private static int _RAW_DATA_ZContent = default;
+        private static bool _RAW_DATA_ZReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_ACCELEROMETER"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SENSOR_ACCELEROMETER { get { if (!_SENSOR_ACCELEROMETERReady) { _SENSOR_ACCELEROMETERContent = SGetField<int>(LocalBridgeClazz, "SENSOR_ACCELEROMETER"); _SENSOR_ACCELEROMETERReady = true; } return _SENSOR_ACCELEROMETERContent; } }
+        private static int _SENSOR_ACCELEROMETERContent = default;
+        private static bool _SENSOR_ACCELEROMETERReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_ALL"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SENSOR_ALL { get { if (!_SENSOR_ALLReady) { _SENSOR_ALLContent = SGetField<int>(LocalBridgeClazz, "SENSOR_ALL"); _SENSOR_ALLReady = true; } return _SENSOR_ALLContent; } }
+        private static int _SENSOR_ALLContent = default;
+        private static bool _SENSOR_ALLReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_DELAY_FASTEST"/>
         /// </summary>
         public static int SENSOR_DELAY_FASTEST { get { if (!_SENSOR_DELAY_FASTESTReady) { _SENSOR_DELAY_FASTESTContent = SGetField<int>(LocalBridgeClazz, "SENSOR_DELAY_FASTEST"); _SENSOR_DELAY_FASTESTReady = true; } return _SENSOR_DELAY_FASTESTContent; } }
@@ -247,6 +310,55 @@ namespace Android.Hardware
         public static int SENSOR_DELAY_UI { get { if (!_SENSOR_DELAY_UIReady) { _SENSOR_DELAY_UIContent = SGetField<int>(LocalBridgeClazz, "SENSOR_DELAY_UI"); _SENSOR_DELAY_UIReady = true; } return _SENSOR_DELAY_UIContent; } }
         private static int _SENSOR_DELAY_UIContent = default;
         private static bool _SENSOR_DELAY_UIReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_LIGHT"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SENSOR_LIGHT { get { if (!_SENSOR_LIGHTReady) { _SENSOR_LIGHTContent = SGetField<int>(LocalBridgeClazz, "SENSOR_LIGHT"); _SENSOR_LIGHTReady = true; } return _SENSOR_LIGHTContent; } }
+        private static int _SENSOR_LIGHTContent = default;
+        private static bool _SENSOR_LIGHTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_MAGNETIC_FIELD"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SENSOR_MAGNETIC_FIELD { get { if (!_SENSOR_MAGNETIC_FIELDReady) { _SENSOR_MAGNETIC_FIELDContent = SGetField<int>(LocalBridgeClazz, "SENSOR_MAGNETIC_FIELD"); _SENSOR_MAGNETIC_FIELDReady = true; } return _SENSOR_MAGNETIC_FIELDContent; } }
+        private static int _SENSOR_MAGNETIC_FIELDContent = default;
+        private static bool _SENSOR_MAGNETIC_FIELDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_MAX"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SENSOR_MAX { get { if (!_SENSOR_MAXReady) { _SENSOR_MAXContent = SGetField<int>(LocalBridgeClazz, "SENSOR_MAX"); _SENSOR_MAXReady = true; } return _SENSOR_MAXContent; } }
+        private static int _SENSOR_MAXContent = default;
+        private static bool _SENSOR_MAXReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_MIN"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SENSOR_MIN { get { if (!_SENSOR_MINReady) { _SENSOR_MINContent = SGetField<int>(LocalBridgeClazz, "SENSOR_MIN"); _SENSOR_MINReady = true; } return _SENSOR_MINContent; } }
+        private static int _SENSOR_MINContent = default;
+        private static bool _SENSOR_MINReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_ORIENTATION"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SENSOR_ORIENTATION { get { if (!_SENSOR_ORIENTATIONReady) { _SENSOR_ORIENTATIONContent = SGetField<int>(LocalBridgeClazz, "SENSOR_ORIENTATION"); _SENSOR_ORIENTATIONReady = true; } return _SENSOR_ORIENTATIONContent; } }
+        private static int _SENSOR_ORIENTATIONContent = default;
+        private static bool _SENSOR_ORIENTATIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_ORIENTATION_RAW"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SENSOR_ORIENTATION_RAW { get { if (!_SENSOR_ORIENTATION_RAWReady) { _SENSOR_ORIENTATION_RAWContent = SGetField<int>(LocalBridgeClazz, "SENSOR_ORIENTATION_RAW"); _SENSOR_ORIENTATION_RAWReady = true; } return _SENSOR_ORIENTATION_RAWContent; } }
+        private static int _SENSOR_ORIENTATION_RAWContent = default;
+        private static bool _SENSOR_ORIENTATION_RAWReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_PROXIMITY"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SENSOR_PROXIMITY { get { if (!_SENSOR_PROXIMITYReady) { _SENSOR_PROXIMITYContent = SGetField<int>(LocalBridgeClazz, "SENSOR_PROXIMITY"); _SENSOR_PROXIMITYReady = true; } return _SENSOR_PROXIMITYContent; } }
+        private static int _SENSOR_PROXIMITYContent = default;
+        private static bool _SENSOR_PROXIMITYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_STATUS_ACCURACY_HIGH"/>
         /// </summary>
@@ -277,6 +389,20 @@ namespace Android.Hardware
         public static int SENSOR_STATUS_UNRELIABLE { get { if (!_SENSOR_STATUS_UNRELIABLEReady) { _SENSOR_STATUS_UNRELIABLEContent = SGetField<int>(LocalBridgeClazz, "SENSOR_STATUS_UNRELIABLE"); _SENSOR_STATUS_UNRELIABLEReady = true; } return _SENSOR_STATUS_UNRELIABLEContent; } }
         private static int _SENSOR_STATUS_UNRELIABLEContent = default;
         private static bool _SENSOR_STATUS_UNRELIABLEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_TEMPERATURE"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SENSOR_TEMPERATURE { get { if (!_SENSOR_TEMPERATUREReady) { _SENSOR_TEMPERATUREContent = SGetField<int>(LocalBridgeClazz, "SENSOR_TEMPERATURE"); _SENSOR_TEMPERATUREReady = true; } return _SENSOR_TEMPERATUREContent; } }
+        private static int _SENSOR_TEMPERATUREContent = default;
+        private static bool _SENSOR_TEMPERATUREReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#SENSOR_TRICORDER"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int SENSOR_TRICORDER { get { if (!_SENSOR_TRICORDERReady) { _SENSOR_TRICORDERContent = SGetField<int>(LocalBridgeClazz, "SENSOR_TRICORDER"); _SENSOR_TRICORDERReady = true; } return _SENSOR_TRICORDERContent; } }
+        private static int _SENSOR_TRICORDERContent = default;
+        private static bool _SENSOR_TRICORDERReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -366,6 +492,14 @@ namespace Android.Hardware
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#getSensors()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int Sensors
+        {
+            get { return IExecuteWithSignature<int>("getSensors", "()I"); }
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#getDefaultSensor(int,boolean)"/>
         /// </summary>
@@ -479,6 +613,29 @@ namespace Android.Hardware
             return IExecute<bool>("registerListener", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorListener,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Hardware.SensorListener"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool RegisterListener(Android.Hardware.SensorListener arg0, int arg1, int arg2)
+        {
+            return IExecute<bool>("registerListener", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#registerListener(android.hardware.SensorListener,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Hardware.SensorListener"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool RegisterListener(Android.Hardware.SensorListener arg0, int arg1)
+        {
+            return IExecute<bool>("registerListener", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#requestTriggerSensor(android.hardware.TriggerEventListener,android.hardware.Sensor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Hardware.TriggerEventListener"/></param>
@@ -547,6 +704,25 @@ namespace Android.Hardware
         public void UnregisterListener(Android.Hardware.SensorEventListener arg0)
         {
             IExecuteWithSignature("unregisterListener", "(Landroid/hardware/SensorEventListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#unregisterListener(android.hardware.SensorListener,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Hardware.SensorListener"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void UnregisterListener(Android.Hardware.SensorListener arg0, int arg1)
+        {
+            IExecute("unregisterListener", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SensorManager.html#unregisterListener(android.hardware.SensorListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Hardware.SensorListener"/></param>
+        [System.Obsolete()]
+        public void UnregisterListener(Android.Hardware.SensorListener arg0)
+        {
+            IExecuteWithSignature("unregisterListener", "(Landroid/hardware/SensorListener;)V", arg0);
         }
 
         #endregion

@@ -684,6 +684,17 @@ namespace Java.Lang
         {
             return IExecuteWithSignature("cast", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#newInstance()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Lang.InstantiationException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
+        [System.Obsolete()]
+        public object NewInstance()
+        {
+            return IExecuteWithSignature("newInstance", "()Ljava/lang/Object;");
+        }
 
         #endregion
 
@@ -1363,6 +1374,17 @@ namespace Java.Lang
         public T Cast(object arg0)
         {
             return IExecuteWithSignature<T>("cast", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#newInstance()"/>
+        /// </summary>
+        /// <returns><typeparamref name="T"/></returns>
+        /// <exception cref="Java.Lang.InstantiationException"/>
+        /// <exception cref="Java.Lang.IllegalAccessException"/>
+        [System.Obsolete()]
+        public T NewInstance()
+        {
+            return IExecuteWithSignature<T>("newInstance", "()Ljava/lang/Object;");
         }
 
         #endregion

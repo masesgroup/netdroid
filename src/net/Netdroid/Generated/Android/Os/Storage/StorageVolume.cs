@@ -100,6 +100,16 @@ namespace Android.Os.Storage
             get { return IExecuteWithSignature<Java.Lang.String>("getUuid", "()Ljava/lang/String;"); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#createAccessIntent(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.Content.Intent"/></returns>
+        [System.Obsolete()]
+        public Android.Content.Intent CreateAccessIntent(Java.Lang.String arg0)
+        {
+            return IExecuteWithSignature<Android.Content.Intent>("createAccessIntent", "(Ljava/lang/String;)Landroid/content/Intent;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#createOpenDocumentTreeIntent()"/>
         /// </summary>
         /// <returns><see cref="Android.Content.Intent"/></returns>

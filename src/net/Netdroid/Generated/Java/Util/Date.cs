@@ -30,6 +30,53 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#%3Cinit%3E(int,int,int,int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        [System.Obsolete()]
+        public Date(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#%3Cinit%3E(int,int,int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        [System.Obsolete()]
+        public Date(int arg0, int arg1, int arg2, int arg3, int arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#%3Cinit%3E(int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        [System.Obsolete()]
+        public Date(int arg0, int arg1, int arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#%3Cinit%3E(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [System.Obsolete()]
+        public Date(Java.Lang.String arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#%3Cinit%3E(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -70,16 +117,105 @@ namespace Java.Util
         {
             return SExecuteWithSignature<Java.Util.Date>(LocalBridgeClazz, "from", "(Ljava/time/Instant;)Ljava/util/Date;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#parse(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="long"/></returns>
+        [System.Obsolete()]
+        public static long Parse(Java.Lang.String arg0)
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "parse", "(Ljava/lang/String;)J", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#UTC(int,int,int,int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <returns><see cref="long"/></returns>
+        [System.Obsolete()]
+        public static long UTC(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
+        {
+            return SExecute<long>(LocalBridgeClazz, "UTC", arg0, arg1, arg2, arg3, arg4, arg5);
+        }
 
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#getDay()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int Day
+        {
+            get { return IExecuteWithSignature<int>("getDay", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#getDate()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int GetDate
+        {
+            get { return IExecuteWithSignature<int>("getDate", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#getHours()"/> <see href="https://developer.android.com/reference/java.base/java/util/Date.html#setHours(int)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public int Hours
+        {
+            get { return IExecuteWithSignature<int>("getHours", "()I"); } set { IExecuteWithSignature("setHours", "(I)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#getMinutes()"/> <see href="https://developer.android.com/reference/java.base/java/util/Date.html#setMinutes(int)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public int Minutes
+        {
+            get { return IExecuteWithSignature<int>("getMinutes", "()I"); } set { IExecuteWithSignature("setMinutes", "(I)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#getMonth()"/> <see href="https://developer.android.com/reference/java.base/java/util/Date.html#setMonth(int)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public int Month
+        {
+            get { return IExecuteWithSignature<int>("getMonth", "()I"); } set { IExecuteWithSignature("setMonth", "(I)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#getSeconds()"/> <see href="https://developer.android.com/reference/java.base/java/util/Date.html#setSeconds(int)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public int Seconds
+        {
+            get { return IExecuteWithSignature<int>("getSeconds", "()I"); } set { IExecuteWithSignature("setSeconds", "(I)V", value); }
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#getTime()"/> <see href="https://developer.android.com/reference/java.base/java/util/Date.html#setTime(long)"/>
         /// </summary>
         public long Time
         {
             get { return IExecuteWithSignature<long>("getTime", "()J"); } set { IExecuteWithSignature("setTime", "(J)V", value); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#getTimezoneOffset()"/> 
+        /// </summary>
+        [System.Obsolete()]
+        public int TimezoneOffset
+        {
+            get { return IExecuteWithSignature<int>("getTimezoneOffset", "()I"); }
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#getYear()"/> <see href="https://developer.android.com/reference/java.base/java/util/Date.html#setYear(int)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public int Year
+        {
+            get { return IExecuteWithSignature<int>("getYear", "()I"); } set { IExecuteWithSignature("setYear", "(I)V", value); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#after(java.util.Date)"/>
@@ -118,12 +254,39 @@ namespace Java.Util
             return IExecuteWithSignature<int>("compareTo", "(Ljava/util/Date;)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#toGMTString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public Java.Lang.String ToGMTString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("toGMTString", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#toLocaleString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public Java.Lang.String ToLocaleString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("toLocaleString", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#toInstant()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public Java.Time.Instant ToInstant()
         {
             return IExecuteWithSignature<Java.Time.Instant>("toInstant", "()Ljava/time/Instant;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java.base/java/util/Date.html#setDate(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [System.Obsolete()]
+        public void SetDate(int arg0)
+        {
+            IExecuteWithSignature("setDate", "(I)V", arg0);
         }
 
         #endregion

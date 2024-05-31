@@ -239,6 +239,14 @@ namespace Android.Net.Wifi
             get { return IExecuteWithSignature<Java.Lang.String>("getRealm", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setRealm", "(Ljava/lang/String;)V", value); }
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getSubjectMatch()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setSubjectMatch(java.lang.String)"/>
+        /// </summary>
+        [System.Obsolete()]
+        public Java.Lang.String SubjectMatch
+        {
+            get { return IExecuteWithSignature<Java.Lang.String>("getSubjectMatch", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSubjectMatch", "(Ljava/lang/String;)V", value); }
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#hasCaCertificate()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>

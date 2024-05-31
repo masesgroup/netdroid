@@ -416,6 +416,16 @@ namespace Android.Media
             return IExecuteWithSignature<int>("setPositionNotificationPeriod", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#addOnRoutingChangedListener(android.media.AudioRecord.OnRoutingChangedListener,android.os.Handler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.AudioRecord.OnRoutingChangedListener"/></param>
+        /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
+        [System.Obsolete()]
+        public void AddOnRoutingChangedListener(Android.Media.AudioRecord.OnRoutingChangedListener arg0, Android.Os.Handler arg1)
+        {
+            IExecute("addOnRoutingChangedListener", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#addOnRoutingChangedListener(android.media.AudioRouting.OnRoutingChangedListener,android.os.Handler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.AudioRouting.OnRoutingChangedListener"/></param>
@@ -439,6 +449,15 @@ namespace Android.Media
         public void Release()
         {
             IExecuteWithSignature("release", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#removeOnRoutingChangedListener(android.media.AudioRecord.OnRoutingChangedListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.AudioRecord.OnRoutingChangedListener"/></param>
+        [System.Obsolete()]
+        public void RemoveOnRoutingChangedListener(Android.Media.AudioRecord.OnRoutingChangedListener arg0)
+        {
+            IExecuteWithSignature("removeOnRoutingChangedListener", "(Landroid/media/AudioRecord$OnRoutingChangedListener;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioRecord.html#removeOnRoutingChangedListener(android.media.AudioRouting.OnRoutingChangedListener)"/>
@@ -624,6 +643,13 @@ namespace Android.Media
             private static Java.Lang.String _ENCODINGContent = default;
             private static bool _ENCODINGReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/AudioRecord.MetricsConstants.html#LATENCY"/>
+            /// </summary>
+            [System.Obsolete()]
+            public static Java.Lang.String LATENCY { get { if (!_LATENCYReady) { _LATENCYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LATENCY"); _LATENCYReady = true; } return _LATENCYContent; } }
+            private static Java.Lang.String _LATENCYContent = default;
+            private static bool _LATENCYReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioRecord.MetricsConstants.html#SAMPLERATE"/>
             /// </summary>
             public static Java.Lang.String SAMPLERATE { get { if (!_SAMPLERATEReady) { _SAMPLERATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SAMPLERATE"); _SAMPLERATEReady = true; } return _SAMPLERATEContent; } }
@@ -771,6 +797,150 @@ namespace Android.Media
             public override void OnPeriodicNotification(Android.Media.AudioRecord arg0)
             {
                 IExecuteWithSignature("onPeriodicNotification", "(Landroid/media/AudioRecord;)V", arg0);
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region OnRoutingChangedListener
+        public partial class OnRoutingChangedListener
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// Handlers initializer for <see cref="OnRoutingChangedListener"/>
+            /// </summary>
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("onRoutingChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioRecord>>>(OnRoutingChangedEventHandler));
+                AddEventHandler("onRoutingChanged1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioRouting>>>(OnRoutingChanged1EventHandler));
+
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/media/AudioRecord.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRecord)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnRoutingChanged"/> has a value it takes precedence over corresponding class method</remarks>
+            public System.Action<Android.Media.AudioRecord> OnOnRoutingChanged { get; set; } = null;
+
+            void OnRoutingChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.AudioRecord>> data)
+            {
+                var methodToExecute = (OnOnRoutingChanged != null) ? OnOnRoutingChanged : OnRoutingChanged;
+                methodToExecute.Invoke(data.EventData.TypedEventData);
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/AudioRecord.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRecord)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Media.AudioRecord"/></param>
+            [System.Obsolete()]
+            public virtual void OnRoutingChanged(Android.Media.AudioRecord arg0)
+            {
+                
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/AudioRecord.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRouting)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Media.AudioRouting"/></param>
+            [System.Obsolete()]
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnRoutingChangedDefault(Android.Media.AudioRouting arg0)
+            {
+                IExecuteWithSignature("onRoutingChangedDefault", "(Landroid/media/AudioRouting;)V", arg0);
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://developer.android.com/reference/android/media/AudioRecord.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRouting)"/>
+            /// </summary>
+            /// <remarks>If <see cref="OnOnRoutingChanged1"/> has a value it takes precedence over corresponding class method</remarks>
+            public System.Action<Android.Media.AudioRouting> OnOnRoutingChanged1 { get; set; } = null;
+
+            void OnRoutingChanged1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.AudioRouting>> data)
+            {
+                var methodToExecute = (OnOnRoutingChanged1 != null) ? OnOnRoutingChanged1 : OnRoutingChanged;
+                methodToExecute.Invoke(data.EventData.TypedEventData);
+            }
+
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/AudioRecord.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRouting)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Media.AudioRouting"/></param>
+            [System.Obsolete()]
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnRoutingChangedDefault"/>; override the method to implement a different behavior</remarks>
+            public virtual void OnRoutingChanged(Android.Media.AudioRouting arg0)
+            {
+                OnRoutingChangedDefault(arg0);
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region OnRoutingChangedListenerDirect
+        public partial class OnRoutingChangedListenerDirect
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/AudioRecord.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRecord)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Media.AudioRecord"/></param>
+            [System.Obsolete()]
+            public override void OnRoutingChanged(Android.Media.AudioRecord arg0)
+            {
+                IExecuteWithSignature("onRoutingChanged", "(Landroid/media/AudioRecord;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/AudioRecord.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRouting)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Media.AudioRouting"/></param>
+            [System.Obsolete()]
+            public override void OnRoutingChanged(Android.Media.AudioRouting arg0)
+            {
+                IExecuteWithSignature("onRoutingChanged", "(Landroid/media/AudioRouting;)V", arg0);
             }
 
             #endregion

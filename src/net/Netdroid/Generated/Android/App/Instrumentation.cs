@@ -609,6 +609,14 @@ namespace Android.App
             IExecuteWithSignature("start", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#startAllocCounting()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void StartAllocCounting()
+        {
+            IExecuteWithSignature("startAllocCounting", "()V");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#startPerformanceSnapshot()"/>
         /// </summary>
         public void StartPerformanceSnapshot()
@@ -621,6 +629,14 @@ namespace Android.App
         public void StartProfiling()
         {
             IExecuteWithSignature("startProfiling", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#stopAllocCounting()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void StopAllocCounting()
+        {
+            IExecuteWithSignature("stopAllocCounting", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Instrumentation.html#stopProfiling()"/>

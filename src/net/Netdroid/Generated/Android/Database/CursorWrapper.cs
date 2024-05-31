@@ -225,6 +225,15 @@ namespace Android.Database
             return IExecuteWithSignature<bool>("moveToPrevious", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/CursorWrapper.html#requery()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [System.Obsolete()]
+        public bool Requery()
+        {
+            return IExecuteWithSignature<bool>("requery", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWrapper.html#getBlob(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -339,6 +348,14 @@ namespace Android.Database
         public void CopyStringToBuffer(int arg0, Android.Database.CharArrayBuffer arg1)
         {
             IExecute("copyStringToBuffer", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/CursorWrapper.html#deactivate()"/>
+        /// </summary>
+        [System.Obsolete()]
+        public void Deactivate()
+        {
+            IExecuteWithSignature("deactivate", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWrapper.html#registerContentObserver(android.database.ContentObserver)"/>

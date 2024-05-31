@@ -52,6 +52,16 @@ namespace Android.Text.Format
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "formatFileSize", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/format/Formatter.html#formatIpAddress(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [System.Obsolete()]
+        public static Java.Lang.String FormatIpAddress(int arg0)
+        {
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "formatIpAddress", "(I)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/format/Formatter.html#formatShortFileSize(android.content.Context,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>

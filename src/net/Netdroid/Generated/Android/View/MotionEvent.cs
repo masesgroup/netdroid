@@ -104,11 +104,67 @@ namespace Android.View
         private static int _ACTION_OUTSIDEContent = default;
         private static bool _ACTION_OUTSIDEReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_1_DOWN"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ACTION_POINTER_1_DOWN { get { if (!_ACTION_POINTER_1_DOWNReady) { _ACTION_POINTER_1_DOWNContent = SGetField<int>(LocalBridgeClazz, "ACTION_POINTER_1_DOWN"); _ACTION_POINTER_1_DOWNReady = true; } return _ACTION_POINTER_1_DOWNContent; } }
+        private static int _ACTION_POINTER_1_DOWNContent = default;
+        private static bool _ACTION_POINTER_1_DOWNReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_1_UP"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ACTION_POINTER_1_UP { get { if (!_ACTION_POINTER_1_UPReady) { _ACTION_POINTER_1_UPContent = SGetField<int>(LocalBridgeClazz, "ACTION_POINTER_1_UP"); _ACTION_POINTER_1_UPReady = true; } return _ACTION_POINTER_1_UPContent; } }
+        private static int _ACTION_POINTER_1_UPContent = default;
+        private static bool _ACTION_POINTER_1_UPReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_2_DOWN"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ACTION_POINTER_2_DOWN { get { if (!_ACTION_POINTER_2_DOWNReady) { _ACTION_POINTER_2_DOWNContent = SGetField<int>(LocalBridgeClazz, "ACTION_POINTER_2_DOWN"); _ACTION_POINTER_2_DOWNReady = true; } return _ACTION_POINTER_2_DOWNContent; } }
+        private static int _ACTION_POINTER_2_DOWNContent = default;
+        private static bool _ACTION_POINTER_2_DOWNReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_2_UP"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ACTION_POINTER_2_UP { get { if (!_ACTION_POINTER_2_UPReady) { _ACTION_POINTER_2_UPContent = SGetField<int>(LocalBridgeClazz, "ACTION_POINTER_2_UP"); _ACTION_POINTER_2_UPReady = true; } return _ACTION_POINTER_2_UPContent; } }
+        private static int _ACTION_POINTER_2_UPContent = default;
+        private static bool _ACTION_POINTER_2_UPReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_3_DOWN"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ACTION_POINTER_3_DOWN { get { if (!_ACTION_POINTER_3_DOWNReady) { _ACTION_POINTER_3_DOWNContent = SGetField<int>(LocalBridgeClazz, "ACTION_POINTER_3_DOWN"); _ACTION_POINTER_3_DOWNReady = true; } return _ACTION_POINTER_3_DOWNContent; } }
+        private static int _ACTION_POINTER_3_DOWNContent = default;
+        private static bool _ACTION_POINTER_3_DOWNReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_3_UP"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ACTION_POINTER_3_UP { get { if (!_ACTION_POINTER_3_UPReady) { _ACTION_POINTER_3_UPContent = SGetField<int>(LocalBridgeClazz, "ACTION_POINTER_3_UP"); _ACTION_POINTER_3_UPReady = true; } return _ACTION_POINTER_3_UPContent; } }
+        private static int _ACTION_POINTER_3_UPContent = default;
+        private static bool _ACTION_POINTER_3_UPReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_DOWN"/>
         /// </summary>
         public static int ACTION_POINTER_DOWN { get { if (!_ACTION_POINTER_DOWNReady) { _ACTION_POINTER_DOWNContent = SGetField<int>(LocalBridgeClazz, "ACTION_POINTER_DOWN"); _ACTION_POINTER_DOWNReady = true; } return _ACTION_POINTER_DOWNContent; } }
         private static int _ACTION_POINTER_DOWNContent = default;
         private static bool _ACTION_POINTER_DOWNReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_ID_MASK"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ACTION_POINTER_ID_MASK { get { if (!_ACTION_POINTER_ID_MASKReady) { _ACTION_POINTER_ID_MASKContent = SGetField<int>(LocalBridgeClazz, "ACTION_POINTER_ID_MASK"); _ACTION_POINTER_ID_MASKReady = true; } return _ACTION_POINTER_ID_MASKContent; } }
+        private static int _ACTION_POINTER_ID_MASKContent = default;
+        private static bool _ACTION_POINTER_ID_MASKReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_ID_SHIFT"/>
+        /// </summary>
+        [System.Obsolete()]
+        public static int ACTION_POINTER_ID_SHIFT { get { if (!_ACTION_POINTER_ID_SHIFTReady) { _ACTION_POINTER_ID_SHIFTContent = SGetField<int>(LocalBridgeClazz, "ACTION_POINTER_ID_SHIFT"); _ACTION_POINTER_ID_SHIFTReady = true; } return _ACTION_POINTER_ID_SHIFTContent; } }
+        private static int _ACTION_POINTER_ID_SHIFTContent = default;
+        private static bool _ACTION_POINTER_ID_SHIFTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_INDEX_MASK"/>
         /// </summary>
@@ -681,6 +737,50 @@ namespace Android.View
         public static Android.View.MotionEvent Obtain(long arg0, long arg1, int arg2, int arg3, Android.View.MotionEvent.PointerProperties[] arg4, Android.View.MotionEvent.PointerCoords[] arg5, int arg6, int arg7, float arg8, float arg9, int arg10, int arg11, int arg12, int arg13)
         {
             return SExecute<Android.View.MotionEvent>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#obtain(long,long,int,int,float,float,float,float,int,float,float,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="float"/></param>
+        /// <param name="arg5"><see cref="float"/></param>
+        /// <param name="arg6"><see cref="float"/></param>
+        /// <param name="arg7"><see cref="float"/></param>
+        /// <param name="arg8"><see cref="int"/></param>
+        /// <param name="arg9"><see cref="float"/></param>
+        /// <param name="arg10"><see cref="float"/></param>
+        /// <param name="arg11"><see cref="int"/></param>
+        /// <param name="arg12"><see cref="int"/></param>
+        /// <returns><see cref="Android.View.MotionEvent"/></returns>
+        [System.Obsolete()]
+        public static Android.View.MotionEvent Obtain(long arg0, long arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7, int arg8, float arg9, float arg10, int arg11, int arg12)
+        {
+            return SExecute<Android.View.MotionEvent>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#obtain(long,long,int,int,int[],android.view.MotionEvent.PointerCoords[],int,float,float,int,int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="Android.View.MotionEvent.PointerCoords"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg7"><see cref="float"/></param>
+        /// <param name="arg8"><see cref="float"/></param>
+        /// <param name="arg9"><see cref="int"/></param>
+        /// <param name="arg10"><see cref="int"/></param>
+        /// <param name="arg11"><see cref="int"/></param>
+        /// <param name="arg12"><see cref="int"/></param>
+        /// <returns><see cref="Android.View.MotionEvent"/></returns>
+        [System.Obsolete()]
+        public static Android.View.MotionEvent Obtain(long arg0, long arg1, int arg2, int arg3, int[] arg4, Android.View.MotionEvent.PointerCoords[] arg5, int arg6, float arg7, float arg8, int arg9, int arg10, int arg11, int arg12)
+        {
+            return SExecute<Android.View.MotionEvent>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#obtainNoHistory(android.view.MotionEvent)"/>

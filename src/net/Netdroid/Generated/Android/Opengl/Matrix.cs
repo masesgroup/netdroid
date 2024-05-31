@@ -215,6 +215,19 @@ namespace Android.Opengl
             SExecute(LocalBridgeClazz, "setLookAtM", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#setRotateEulerM(float[],int,float,float,float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="float"/></param>
+        /// <param name="arg3"><see cref="float"/></param>
+        /// <param name="arg4"><see cref="float"/></param>
+        [System.Obsolete()]
+        public static void SetRotateEulerM(float[] arg0, int arg1, float arg2, float arg3, float arg4)
+        {
+            SExecute(LocalBridgeClazz, "setRotateEulerM", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/opengl/Matrix.html#setRotateEulerM2(float[],int,float,float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>

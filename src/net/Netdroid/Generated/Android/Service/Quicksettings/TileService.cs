@@ -118,6 +118,15 @@ namespace Android.Service.Quicksettings
             IExecuteWithSignature("startActivityAndCollapse", "(Landroid/app/PendingIntent;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quicksettings/TileService.html#startActivityAndCollapse(android.content.Intent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        [System.Obsolete()]
+        public void StartActivityAndCollapse(Android.Content.Intent arg0)
+        {
+            IExecuteWithSignature("startActivityAndCollapse", "(Landroid/content/Intent;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quicksettings/TileService.html#unlockAndRun(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
