@@ -23,7 +23,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Dalvik.System
+namespace Dalvik.SystemNs
 {
     #region ZipPathValidator
     public partial class ZipPathValidator
@@ -51,8 +51,8 @@ namespace Dalvik.System
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/system/ZipPathValidator.html#setCallback(dalvik.system.ZipPathValidator.Callback)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Dalvik.System.ZipPathValidator.Callback"/></param>
-        public static void SetCallback(Dalvik.System.ZipPathValidator.Callback arg0)
+        /// <param name="arg0"><see cref="Dalvik.SystemNs.ZipPathValidator.Callback"/></param>
+        public static void SetCallback(Dalvik.SystemNs.ZipPathValidator.Callback arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setCallback", "(Ldalvik/system/ZipPathValidator$Callback;)V", arg0);
         }

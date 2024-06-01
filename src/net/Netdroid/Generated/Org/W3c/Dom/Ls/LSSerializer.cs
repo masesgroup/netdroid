@@ -71,13 +71,6 @@ namespace Org.W3c.Dom.Ls
             get { return IExecuteWithSignature<Org.W3c.Dom.DOMConfiguration>("getDomConfig", "()Lorg/w3c/dom/DOMConfiguration;"); }
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSSerializer.html#getFilter()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSSerializer.html#setFilter(org.w3c.dom.ls.LSSerializerFilter)"/>
-        /// </summary>
-        public Org.W3c.Dom.Ls.LSSerializerFilter Filter
-        {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Ls.LSSerializerFilter>("getFilter", "()Lorg/w3c/dom/ls/LSSerializerFilter;"); } set { IExecuteWithSignature("setFilter", "(Lorg/w3c/dom/ls/LSSerializerFilter;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSSerializer.html#getNewLine()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSSerializer.html#setNewLine(java.lang.String)"/>
         /// </summary>
         public Java.Lang.String NewLine

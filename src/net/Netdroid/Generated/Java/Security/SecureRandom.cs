@@ -89,42 +89,6 @@ namespace Java.Security
             return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.security.SecureRandomParameters,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.SecureRandomParameters"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Security.SecureRandom"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        /// <exception cref="Java.Security.NoSuchProviderException"/>
-        public static Java.Security.SecureRandom GetInstance(Java.Lang.String arg0, Java.Security.SecureRandomParameters arg1, Java.Lang.String arg2)
-        {
-            return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.security.SecureRandomParameters,java.security.Provider)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.SecureRandomParameters"/></param>
-        /// <param name="arg2"><see cref="Java.Security.Provider"/></param>
-        /// <returns><see cref="Java.Security.SecureRandom"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        public static Java.Security.SecureRandom GetInstance(Java.Lang.String arg0, Java.Security.SecureRandomParameters arg1, Java.Security.Provider arg2)
-        {
-            return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.security.SecureRandomParameters)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Security.SecureRandomParameters"/></param>
-        /// <returns><see cref="Java.Security.SecureRandom"/></returns>
-        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
-        public static Java.Security.SecureRandom GetInstance(Java.Lang.String arg0, Java.Security.SecureRandomParameters arg1)
-        {
-            return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -146,13 +110,6 @@ namespace Java.Security
             get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#getParameters()"/> 
-        /// </summary>
-        public Java.Security.SecureRandomParameters Parameters
-        {
-            get { return IExecuteWithSignature<Java.Security.SecureRandomParameters>("getParameters", "()Ljava/security/SecureRandomParameters;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
@@ -169,28 +126,11 @@ namespace Java.Security
             return IExecuteWithSignatureArray<byte>("generateSeed", "(I)[B", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#nextBytes(byte[],java.security.SecureRandomParameters)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <param name="arg1"><see cref="Java.Security.SecureRandomParameters"/></param>
-        public void NextBytes(byte[] arg0, Java.Security.SecureRandomParameters arg1)
-        {
-            IExecute("nextBytes", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#reseed()"/>
         /// </summary>
         public void Reseed()
         {
             IExecuteWithSignature("reseed", "()V");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#reseed(java.security.SecureRandomParameters)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.SecureRandomParameters"/></param>
-        public void Reseed(Java.Security.SecureRandomParameters arg0)
-        {
-            IExecuteWithSignature("reseed", "(Ljava/security/SecureRandomParameters;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#setSeed(byte[])"/>

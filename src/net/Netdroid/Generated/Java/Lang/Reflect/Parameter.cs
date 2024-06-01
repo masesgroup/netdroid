@@ -46,13 +46,6 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Parameter.html#getAnnotatedType()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.AnnotatedType AnnotatedType
-        {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.AnnotatedType>("getAnnotatedType", "()Ljava/lang/reflect/AnnotatedType;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Parameter.html#getAnnotations()"/> 
         /// </summary>
         public Java.Lang.Annotation.Annotation[] Annotations

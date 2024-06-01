@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region String
-    public partial class String : Java.Io.ISerializable, Java.Lang.IComparable<Java.Lang.String>, Java.Lang.ICharSequence, Java.Lang.Constant.IConstable, Java.Lang.Constant.IConstantDesc
+    public partial class String : Java.Io.ISerializable, Java.Lang.IComparable<Java.Lang.String>, Java.Lang.ICharSequence
     {
         #region Constructors
         /// <summary>
@@ -179,14 +179,6 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.String"/> to <see cref="Java.Lang.CharSequence"/>
         /// </summary>
         public static implicit operator Java.Lang.CharSequence(Java.Lang.String t) => t.Cast<Java.Lang.CharSequence>();
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.String"/> to <see cref="Java.Lang.Constant.Constable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Constant.Constable(Java.Lang.String t) => t.Cast<Java.Lang.Constant.Constable>();
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.String"/> to <see cref="Java.Lang.Constant.ConstantDesc"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Constant.ConstantDesc(Java.Lang.String t) => t.Cast<Java.Lang.Constant.ConstantDesc>();
 
         #endregion
 

@@ -1974,52 +1974,6 @@ namespace Java.Sql
         {
             IExecute("updateTimestamp", arg0, arg1);
         }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSet.html#updateObject(int,java.lang.Object,java.sql.SQLType,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Sql.SQLType"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateObject(int arg0, object arg1, Java.Sql.SQLType arg2, int arg3)
-        {
-            IExecute("updateObject", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSet.html#updateObject(int,java.lang.Object,java.sql.SQLType)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Sql.SQLType"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateObject(int arg0, object arg1, Java.Sql.SQLType arg2)
-        {
-            IExecute("updateObject", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object,java.sql.SQLType,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Sql.SQLType"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateObject(Java.Lang.String arg0, object arg1, Java.Sql.SQLType arg2, int arg3)
-        {
-            IExecute("updateObject", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object,java.sql.SQLType)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Sql.SQLType"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public void UpdateObject(Java.Lang.String arg0, object arg1, Java.Sql.SQLType arg2)
-        {
-            IExecute("updateObject", arg0, arg1, arg2);
-        }
 
         #endregion
 

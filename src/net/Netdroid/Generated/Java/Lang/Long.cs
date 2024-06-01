@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region Long
-    public partial class Long : Java.Lang.IComparable<Java.Lang.Long>, Java.Lang.Constant.IConstable, Java.Lang.Constant.IConstantDesc
+    public partial class Long : Java.Lang.IComparable<Java.Lang.Long>
     {
         #region Constructors
         /// <summary>
@@ -56,14 +56,6 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Long"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Long t) => t.Cast<Java.Lang.Comparable>();
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.Long"/> to <see cref="Java.Lang.Constant.Constable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Constant.Constable(Java.Lang.Long t) => t.Cast<Java.Lang.Constant.Constable>();
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.Long"/> to <see cref="Java.Lang.Constant.ConstantDesc"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Constant.ConstantDesc(Java.Lang.Long t) => t.Cast<Java.Lang.Constant.ConstantDesc>();
 
         #endregion
 

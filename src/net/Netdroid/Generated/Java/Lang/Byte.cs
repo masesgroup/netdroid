@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region Byte
-    public partial class Byte : Java.Lang.IComparable<Java.Lang.Byte>, Java.Lang.Constant.IConstable
+    public partial class Byte : Java.Lang.IComparable<Java.Lang.Byte>
     {
         #region Constructors
         /// <summary>
@@ -56,10 +56,6 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Byte"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Byte t) => t.Cast<Java.Lang.Comparable>();
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.Byte"/> to <see cref="Java.Lang.Constant.Constable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Constant.Constable(Java.Lang.Byte t) => t.Cast<Java.Lang.Constant.Constable>();
 
         #endregion
 
@@ -236,14 +232,6 @@ namespace Java.Lang
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html#describeConstable()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Lang.Constant.DynamicConstantDesc<Java.Lang.Byte>> DescribeConstable()
-        {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.Constant.DynamicConstantDesc<Java.Lang.Byte>>>("describeConstable", "()Ljava/util/Optional;");
         }
 
         #endregion

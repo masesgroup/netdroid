@@ -23,21 +23,29 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Dalvik.System
+namespace Dalvik.SystemNs
 {
-    #region BaseDexClassLoader
-    public partial class BaseDexClassLoader
+    #region PathClassLoader
+    public partial class PathClassLoader
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/dalvik/system/BaseDexClassLoader.html#%3Cinit%3E(java.lang.String,java.io.File,java.lang.String,java.lang.ClassLoader)"/>
+        /// <see href="https://developer.android.com/reference/dalvik/system/PathClassLoader.html#%3Cinit%3E(java.lang.String,java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Io.File"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.ClassLoader"/></param>
-        public BaseDexClassLoader(Java.Lang.String arg0, Java.Io.File arg1, Java.Lang.String arg2, Java.Lang.ClassLoader arg3)
-            : base(arg0, arg1, arg2, arg3)
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        public PathClassLoader(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/dalvik/system/PathClassLoader.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
+        public PathClassLoader(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2)
+            : base(arg0, arg1, arg2)
         {
         }
 
@@ -56,15 +64,6 @@ namespace Dalvik.System
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/dalvik/system/BaseDexClassLoader.html#findLibrary(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.String"/></returns>
-        public Java.Lang.String FindLibrary(Java.Lang.String arg0)
-        {
-            return IExecuteWithSignature<Java.Lang.String>("findLibrary", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
-        }
 
         #endregion
 

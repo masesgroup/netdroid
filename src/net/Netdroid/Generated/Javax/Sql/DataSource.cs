@@ -103,15 +103,6 @@ namespace Javax.Sql
         {
             return IExecute<Java.Sql.Connection>("getConnection", arg0, arg1);
         }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/DataSource.html#createConnectionBuilder()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.ConnectionBuilder CreateConnectionBuilder()
-        {
-            return IExecuteWithSignature<Java.Sql.ConnectionBuilder>("createConnectionBuilder", "()Ljava/sql/ConnectionBuilder;");
-        }
 
         #endregion
 

@@ -54,13 +54,6 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/TypeVariable.html#getAnnotatedBounds()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.AnnotatedType[] AnnotatedBounds
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedBounds", "()[Ljava/lang/reflect/AnnotatedType;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/TypeVariable.html#getBounds()"/> 
         /// </summary>
         public Java.Lang.Reflect.Type[] Bounds
@@ -142,13 +135,6 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/TypeVariable.html#getAnnotatedBounds()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.AnnotatedType[] AnnotatedBounds
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedBounds", "()[Ljava/lang/reflect/AnnotatedType;"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/TypeVariable.html#getBounds()"/> 
         /// </summary>

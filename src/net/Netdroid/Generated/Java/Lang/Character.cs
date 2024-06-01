@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region Character
-    public partial class Character : Java.Io.ISerializable, Java.Lang.IComparable<Java.Lang.Character>, Java.Lang.Constant.IConstable
+    public partial class Character : Java.Io.ISerializable, Java.Lang.IComparable<Java.Lang.Character>
     {
         #region Constructors
         /// <summary>
@@ -50,10 +50,6 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Character"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Character t) => t.Cast<Java.Lang.Comparable>();
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.Character"/> to <see cref="Java.Lang.Constant.Constable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Constant.Constable(Java.Lang.Character t) => t.Cast<Java.Lang.Constant.Constable>();
 
         #endregion
 
@@ -1287,14 +1283,6 @@ namespace Java.Lang
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Character.html#describeConstable()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Lang.Constant.DynamicConstantDesc<Java.Lang.Character>> DescribeConstable()
-        {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.Constant.DynamicConstantDesc<Java.Lang.Character>>>("describeConstable", "()Ljava/util/Optional;");
         }
 
         #endregion

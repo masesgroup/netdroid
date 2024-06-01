@@ -628,29 +628,6 @@ namespace Java.Sql
         {
             return IExecuteWithSignature<long>("executeLargeUpdate", "()J");
         }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/PreparedStatement.html#setObject(int,java.lang.Object,java.sql.SQLType,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Sql.SQLType"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public void SetObject(int arg0, object arg1, Java.Sql.SQLType arg2, int arg3)
-        {
-            IExecute("setObject", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/PreparedStatement.html#setObject(int,java.lang.Object,java.sql.SQLType)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="object"/></param>
-        /// <param name="arg2"><see cref="Java.Sql.SQLType"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public void SetObject(int arg0, object arg1, Java.Sql.SQLType arg2)
-        {
-            IExecute("setObject", arg0, arg1, arg2);
-        }
 
         #endregion
 

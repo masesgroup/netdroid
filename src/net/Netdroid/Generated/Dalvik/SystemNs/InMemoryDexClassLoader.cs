@@ -23,7 +23,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Dalvik.System
+namespace Dalvik.SystemNs
 {
     #region InMemoryDexClassLoader
     public partial class InMemoryDexClassLoader

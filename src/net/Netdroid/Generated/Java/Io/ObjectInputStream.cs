@@ -63,13 +63,6 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#getObjectInputFilter()"/> <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#setObjectInputFilter(java.io.ObjectInputFilter)"/>
-        /// </summary>
-        public Java.Io.ObjectInputFilter ObjectInputFilter
-        {
-            get { return IExecuteWithSignature<Java.Io.ObjectInputFilter>("getObjectInputFilter", "()Ljava/io/ObjectInputFilter;"); } set { IExecuteWithSignature("setObjectInputFilter", "(Ljava/io/ObjectInputFilter;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html#readBoolean()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>

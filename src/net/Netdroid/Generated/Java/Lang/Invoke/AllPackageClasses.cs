@@ -137,7 +137,7 @@ namespace Java.Lang.Invoke
     /// <summary>
     /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandle.html"/>
     /// </summary>
-    public partial class MethodHandle : Java.Lang.Constant.Constable
+    public partial class MethodHandle : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MethodHandle>
     {
         const string _bridgeClassName = "java.lang.invoke.MethodHandle";
         /// <summary>
@@ -682,7 +682,7 @@ namespace Java.Lang.Invoke
     /// <summary>
     /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html"/>
     /// </summary>
-    public partial class VarHandle : Java.Lang.Constant.Constable
+    public partial class VarHandle : MASES.JCOBridge.C2JBridge.JVMBridgeBase<VarHandle>
     {
         const string _bridgeClassName = "java.lang.invoke.VarHandle";
         /// <summary>

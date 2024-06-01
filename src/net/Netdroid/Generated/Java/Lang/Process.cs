@@ -177,14 +177,6 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Process>("destroyForcibly", "()Ljava/lang/Process;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#toHandle()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.ProcessHandle"/></returns>
-        public Java.Lang.ProcessHandle ToHandle()
-        {
-            return IExecuteWithSignature<Java.Lang.ProcessHandle>("toHandle", "()Ljava/lang/ProcessHandle;");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#info()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.ProcessHandle.Info"/></returns>
@@ -199,22 +191,6 @@ namespace Java.Lang
         public Java.Util.Concurrent.CompletableFuture<Java.Lang.Process> OnExit()
         {
             return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Lang.Process>>("onExit", "()Ljava/util/concurrent/CompletableFuture;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#children()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<Java.Lang.ProcessHandle> Children()
-        {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.ProcessHandle>>("children", "()Ljava/util/stream/Stream;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#descendants()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<Java.Lang.ProcessHandle> Descendants()
-        {
-            return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.ProcessHandle>>("descendants", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#pid()"/>
