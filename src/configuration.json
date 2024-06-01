@@ -80,6 +80,7 @@
     "android.util.TypedValue",
     "android.widget.ArrayAdapter",
     "java.io.ObjectInputFilter",
+    "java.lang.Enum$EnumDesc",
     "java.lang.Module",
     "java.lang.ModuleLayer",
     "java.lang.ProcessBuilder$Redirect$Type",
@@ -90,10 +91,12 @@
     "java.sql.ConnectionBuilder",
     "java.sql.DriverAction",
     "java.sql.ShardingKey",
+    "java.sql.ShardingKeyBuilder",
     "java.sql.SQLType",
     "java.util.Comparator",
     "java.util.EventListener",
     "java.util.random.RandomGenerator",
+    "java.util.random.RandomGenerator$SplittableGenerator",
     "java.util.stream.DoubleStream$Builder",
     "java.util.stream.IntStream$Builder",
     "java.util.stream.LongStream$Builder",
@@ -136,9 +139,5 @@
     "java.awt.image",
     "java.awt.event",
     "java.awt.font"
-  ],
-  "ClassesToAvoidInGenerics": [
-    "java.time.chrono.ChronoLocalDateTime",
-    "java.time.chrono.ChronoZonedDateTime"
   ]
 }
