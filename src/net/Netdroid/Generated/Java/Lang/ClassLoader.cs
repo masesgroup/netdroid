@@ -109,13 +109,6 @@ namespace Java.Lang
             get { return IExecuteWithSignature<Java.Lang.ClassLoader>("getParent", "()Ljava/lang/ClassLoader;"); }
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#getUnnamedModule()"/> 
-        /// </summary>
-        public Java.Lang.Module UnnamedModule
-        {
-            get { return IExecuteWithSignature<Java.Lang.Module>("getUnnamedModule", "()Ljava/lang/Module;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html#isRegisteredAsParallelCapable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>

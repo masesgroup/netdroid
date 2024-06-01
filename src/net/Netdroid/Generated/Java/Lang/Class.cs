@@ -49,10 +49,6 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Class"/> to <see cref="Java.Lang.Reflect.AnnotatedElement"/>
         /// </summary>
         public static implicit operator Java.Lang.Reflect.AnnotatedElement(Java.Lang.Class t) => t.Cast<Java.Lang.Reflect.AnnotatedElement>();
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.Class"/> to <see cref="Java.Lang.Constant.Constable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Constant.Constable(Java.Lang.Class t) => t.Cast<Java.Lang.Constant.Constable>();
 
         #endregion
 
@@ -61,16 +57,6 @@ namespace Java.Lang
         #endregion
 
         #region Static methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#forName(java.lang.Module,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.Class"/></returns>
-        public static Java.Lang.Class ForName(Java.Lang.Module arg0, Java.Lang.String arg1)
-        {
-            return SExecute<Java.Lang.Class>(LocalBridgeClazz, "forName", arg0, arg1);
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#forName(java.lang.String,boolean,java.lang.ClassLoader)"/>
         /// </summary>
@@ -97,20 +83,6 @@ namespace Java.Lang
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getAnnotatedInterfaces()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.AnnotatedType[] AnnotatedInterfaces
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedInterfaces", "()[Ljava/lang/reflect/AnnotatedType;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getAnnotatedSuperclass()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.AnnotatedType AnnotatedSuperclass
-        {
-            get { return IExecute<Java.Lang.Reflect.AnnotatedType>("getAnnotatedSuperclass"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getAnnotations()"/> 
         /// </summary>
@@ -257,13 +229,6 @@ namespace Java.Lang
         public int Modifiers
         {
             get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getModule()"/> 
-        /// </summary>
-        public Java.Lang.Module Module
-        {
-            get { return IExecuteWithSignature<Java.Lang.Module>("getModule", "()Ljava/lang/Module;"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getName()"/> 
@@ -618,14 +583,6 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Net.URL>("getResource", "(Ljava/lang/String;)Ljava/net/URL;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#describeConstable()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional DescribeConstable()
-        {
-            return IExecuteWithSignature<Java.Util.Optional>("describeConstable", "()Ljava/util/Optional;");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isArray()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -707,7 +664,7 @@ namespace Java.Lang
     #endregion
 
     #region Class<T>
-    public partial class Class<T> : Java.Io.ISerializable, Java.Lang.Reflect.IGenericDeclaration, Java.Lang.Reflect.IType, Java.Lang.Reflect.IAnnotatedElement, Java.Lang.Constant.IConstable
+    public partial class Class<T> : Java.Io.ISerializable, Java.Lang.Reflect.IGenericDeclaration, Java.Lang.Reflect.IType, Java.Lang.Reflect.IAnnotatedElement
     {
         #region Constructors
 
@@ -731,10 +688,6 @@ namespace Java.Lang
         /// </summary>
         public static implicit operator Java.Lang.Reflect.AnnotatedElement(Java.Lang.Class<T> t) => t.Cast<Java.Lang.Reflect.AnnotatedElement>();
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Class{T}"/> to <see cref="Java.Lang.Constant.Constable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Constant.Constable(Java.Lang.Class<T> t) => t.Cast<Java.Lang.Constant.Constable>();
-        /// <summary>
         /// Converter from <see cref="Java.Lang.Class{T}"/> to <see cref="Java.Lang.Class"/>
         /// </summary>
         public static implicit operator Java.Lang.Class(Java.Lang.Class<T> t) => t.Cast<Java.Lang.Class>();
@@ -746,16 +699,6 @@ namespace Java.Lang
         #endregion
 
         #region Static methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#forName(java.lang.Module,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.Class"/></returns>
-        public static Java.Lang.Class ForName(Java.Lang.Module arg0, Java.Lang.String arg1)
-        {
-            return SExecute<Java.Lang.Class>(LocalBridgeClazz, "forName", arg0, arg1);
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#forName(java.lang.String,boolean,java.lang.ClassLoader)"/>
         /// </summary>
@@ -782,20 +725,6 @@ namespace Java.Lang
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getAnnotatedInterfaces()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.AnnotatedType[] AnnotatedInterfaces
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedInterfaces", "()[Ljava/lang/reflect/AnnotatedType;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getAnnotatedSuperclass()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.AnnotatedType AnnotatedSuperclass
-        {
-            get { return IExecute<Java.Lang.Reflect.AnnotatedType>("getAnnotatedSuperclass"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getAnnotations()"/> 
         /// </summary>
@@ -942,13 +871,6 @@ namespace Java.Lang
         public int Modifiers
         {
             get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getModule()"/> 
-        /// </summary>
-        public Java.Lang.Module Module
-        {
-            get { return IExecuteWithSignature<Java.Lang.Module>("getModule", "()Ljava/lang/Module;"); }
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#getName()"/> 
@@ -1307,14 +1229,6 @@ namespace Java.Lang
         public Java.Net.URL GetResource(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Net.URL>("getResource", "(Ljava/lang/String;)Ljava/net/URL;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#describeConstable()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Lang.Constant.ClassDesc> DescribeConstable()
-        {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.Constant.ClassDesc>>("describeConstable", "()Ljava/util/Optional;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html#isArray()"/>

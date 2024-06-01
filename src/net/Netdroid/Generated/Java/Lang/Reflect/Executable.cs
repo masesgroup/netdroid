@@ -54,34 +54,6 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#getAnnotatedExceptionTypes()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.AnnotatedType[] AnnotatedExceptionTypes
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedExceptionTypes", "()[Ljava/lang/reflect/AnnotatedType;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#getAnnotatedParameterTypes()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.AnnotatedType[] AnnotatedParameterTypes
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.AnnotatedType>("getAnnotatedParameterTypes", "()[Ljava/lang/reflect/AnnotatedType;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#getAnnotatedReceiverType()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.AnnotatedType AnnotatedReceiverType
-        {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.AnnotatedType>("getAnnotatedReceiverType", "()Ljava/lang/reflect/AnnotatedType;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#getAnnotatedReturnType()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.AnnotatedType AnnotatedReturnType
-        {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.AnnotatedType>("getAnnotatedReturnType", "()Ljava/lang/reflect/AnnotatedType;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Executable.html#getDeclaringClass()"/> 
         /// </summary>
         public Java.Lang.Class DeclaringClass

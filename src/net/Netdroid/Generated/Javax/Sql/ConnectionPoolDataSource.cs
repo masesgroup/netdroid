@@ -95,15 +95,6 @@ namespace Javax.Sql
         {
             return IExecute<Javax.Sql.PooledConnection>("getPooledConnection", arg0, arg1);
         }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionPoolDataSource.html#createPooledConnectionBuilder()"/>
-        /// </summary>
-        /// <returns><see cref="Javax.Sql.PooledConnectionBuilder"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public Javax.Sql.PooledConnectionBuilder CreatePooledConnectionBuilder()
-        {
-            return IExecuteWithSignature<Javax.Sql.PooledConnectionBuilder>("createPooledConnectionBuilder", "()Ljavax/sql/PooledConnectionBuilder;");
-        }
 
         #endregion
 

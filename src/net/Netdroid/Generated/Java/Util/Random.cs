@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util
 {
     #region Random
-    public partial class Random : Java.Util.Random.IRandomGenerator, Java.Io.ISerializable
+    public partial class Random : Java.Io.ISerializable
     {
         #region Constructors
         /// <summary>
@@ -41,10 +41,6 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Random"/> to <see cref="Java.Util.Random.RandomGenerator"/>
-        /// </summary>
-        public static implicit operator Java.Util.Random.RandomGenerator(Java.Util.Random t) => t.Cast<Java.Util.Random.RandomGenerator>();
         /// <summary>
         /// Converter from <see cref="Java.Util.Random"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>

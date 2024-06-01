@@ -24,7 +24,7 @@
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using System;
 
-namespace Dalvik.System
+namespace Dalvik.SystemNs
 {
     #region ApplicationRuntime
     /// <summary>
@@ -118,7 +118,7 @@ namespace Dalvik.System
     /// <summary>
     /// <see href="https://developer.android.com/reference/dalvik/system/DelegateLastClassLoader.html"/>
     /// </summary>
-    public partial class DelegateLastClassLoader : Dalvik.System.PathClassLoader
+    public partial class DelegateLastClassLoader : Dalvik.SystemNs.PathClassLoader
     {
         const string _bridgeClassName = "dalvik.system.DelegateLastClassLoader";
         /// <summary>
@@ -162,7 +162,7 @@ namespace Dalvik.System
     /// <summary>
     /// <see href="https://developer.android.com/reference/dalvik/system/DexClassLoader.html"/>
     /// </summary>
-    public partial class DexClassLoader : Dalvik.System.BaseDexClassLoader
+    public partial class DexClassLoader : Dalvik.SystemNs.BaseDexClassLoader
     {
         const string _bridgeClassName = "dalvik.system.DexClassLoader";
         /// <summary>
@@ -294,7 +294,7 @@ namespace Dalvik.System
     /// <summary>
     /// <see href="https://developer.android.com/reference/dalvik/system/InMemoryDexClassLoader.html"/>
     /// </summary>
-    public partial class InMemoryDexClassLoader : Dalvik.System.BaseDexClassLoader
+    public partial class InMemoryDexClassLoader : Dalvik.SystemNs.BaseDexClassLoader
     {
         const string _bridgeClassName = "dalvik.system.InMemoryDexClassLoader";
         /// <summary>
@@ -338,7 +338,7 @@ namespace Dalvik.System
     /// <summary>
     /// <see href="https://developer.android.com/reference/dalvik/system/PathClassLoader.html"/>
     /// </summary>
-    public partial class PathClassLoader : Dalvik.System.BaseDexClassLoader
+    public partial class PathClassLoader : Dalvik.SystemNs.BaseDexClassLoader
     {
         const string _bridgeClassName = "dalvik.system.PathClassLoader";
         /// <summary>

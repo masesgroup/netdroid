@@ -306,16 +306,6 @@ namespace Java.Sql
         {
             IExecuteWithSignature("writeURL", "(Ljava/net/URL;)V", arg0);
         }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html#writeObject(java.lang.Object,java.sql.SQLType)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <param name="arg1"><see cref="Java.Sql.SQLType"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public void WriteObject(object arg0, Java.Sql.SQLType arg1)
-        {
-            IExecute("writeObject", arg0, arg1);
-        }
 
         #endregion
 

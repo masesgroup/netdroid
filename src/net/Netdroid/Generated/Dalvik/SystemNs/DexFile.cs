@@ -23,7 +23,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Dalvik.System
+namespace Dalvik.SystemNs
 {
     #region DexFile
     public partial class DexFile
@@ -67,12 +67,12 @@ namespace Dalvik.System
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="Dalvik.System.DexFile"/></returns>
+        /// <returns><see cref="Dalvik.SystemNs.DexFile"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         [System.Obsolete()]
-        public static Dalvik.System.DexFile LoadDex(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
+        public static Dalvik.SystemNs.DexFile LoadDex(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            return SExecute<Dalvik.System.DexFile>(LocalBridgeClazz, "loadDex", arg0, arg1, arg2);
+            return SExecute<Dalvik.SystemNs.DexFile>(LocalBridgeClazz, "loadDex", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/system/DexFile.html#isDexOptNeeded(java.lang.String)"/>

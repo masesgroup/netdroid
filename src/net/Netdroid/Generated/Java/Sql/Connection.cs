@@ -520,29 +520,6 @@ namespace Java.Sql
             IExecuteWithSignature("setReadOnly", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#setShardingKeyIfValid(java.sql.ShardingKey,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public bool SetShardingKeyIfValid(Java.Sql.ShardingKey arg0, int arg1)
-        {
-            return IExecute<bool>("setShardingKeyIfValid", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#setShardingKeyIfValid(java.sql.ShardingKey,java.sql.ShardingKey,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <param name="arg1"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public bool SetShardingKeyIfValid(Java.Sql.ShardingKey arg0, Java.Sql.ShardingKey arg1, int arg2)
-        {
-            return IExecute<bool>("setShardingKeyIfValid", arg0, arg1, arg2);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#beginRequest()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -557,25 +534,6 @@ namespace Java.Sql
         public void EndRequest()
         {
             IExecuteWithSignature("endRequest", "()V");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#setShardingKey(java.sql.ShardingKey,java.sql.ShardingKey)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <param name="arg1"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public void SetShardingKey(Java.Sql.ShardingKey arg0, Java.Sql.ShardingKey arg1)
-        {
-            IExecute("setShardingKey", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#setShardingKey(java.sql.ShardingKey)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public void SetShardingKey(Java.Sql.ShardingKey arg0)
-        {
-            IExecuteWithSignature("setShardingKey", "(Ljava/sql/ShardingKey;)V", arg0);
         }
 
         #endregion

@@ -187,14 +187,6 @@ namespace Java.Lang.Invoke
         {
             return IExecuteWithSignature("invokeWithArguments", "(Ljava/util/List;)Ljava/lang/Object;", arg0);
         }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandle.html#describeConstable()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Lang.Constant.MethodHandleDesc> DescribeConstable()
-        {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.Constant.MethodHandleDesc>>("describeConstable", "()Ljava/util/Optional;");
-        }
 
         #endregion
 

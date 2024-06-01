@@ -34,10 +34,6 @@ namespace Java.Lang
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Lang.Enum"/> to <see cref="Java.Lang.Constant.Constable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Constant.Constable(Java.Lang.Enum t) => t.Cast<Java.Lang.Constant.Constable>();
-        /// <summary>
         /// Converter from <see cref="Java.Lang.Enum"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Enum t) => t.Cast<Java.Lang.Comparable>();
@@ -128,17 +124,13 @@ namespace Java.Lang
     #endregion
 
     #region Enum<E>
-    public partial class Enum<E> : Java.Lang.Constant.IConstable, Java.Lang.IComparable<E>, Java.Io.ISerializable
+    public partial class Enum<E> : Java.Lang.IComparable<E>, Java.Io.ISerializable
     {
         #region Constructors
 
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.Enum{E}"/> to <see cref="Java.Lang.Constant.Constable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Constant.Constable(Java.Lang.Enum<E> t) => t.Cast<Java.Lang.Constant.Constable>();
         /// <summary>
         /// Converter from <see cref="Java.Lang.Enum{E}"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>

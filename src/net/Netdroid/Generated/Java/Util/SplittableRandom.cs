@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util
 {
     #region SplittableRandom
-    public partial class SplittableRandom : Java.Util.Random.IRandomGenerator
+    public partial class SplittableRandom
     {
         #region Constructors
         /// <summary>
@@ -41,10 +41,6 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.SplittableRandom"/> to <see cref="Java.Util.Random.RandomGenerator"/>
-        /// </summary>
-        public static implicit operator Java.Util.Random.RandomGenerator(Java.Util.SplittableRandom t) => t.Cast<Java.Util.Random.RandomGenerator>();
 
         #endregion
 

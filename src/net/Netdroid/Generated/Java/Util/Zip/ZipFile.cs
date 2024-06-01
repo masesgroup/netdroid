@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Zip
 {
     #region ZipFile
-    public partial class ZipFile : Java.Util.Zip.IZipConstants, Java.Io.ICloseable
+    public partial class ZipFile : Java.Io.ICloseable
     {
         #region Constructors
         /// <summary>

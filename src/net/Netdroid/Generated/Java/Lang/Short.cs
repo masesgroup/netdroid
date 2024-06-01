@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region Short
-    public partial class Short : Java.Lang.IComparable<Java.Lang.Short>, Java.Lang.Constant.IConstable
+    public partial class Short : Java.Lang.IComparable<Java.Lang.Short>
     {
         #region Constructors
         /// <summary>
@@ -56,10 +56,6 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Short"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Short t) => t.Cast<Java.Lang.Comparable>();
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.Short"/> to <see cref="Java.Lang.Constant.Constable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Constant.Constable(Java.Lang.Short t) => t.Cast<Java.Lang.Constant.Constable>();
 
         #endregion
 
@@ -245,14 +241,6 @@ namespace Java.Lang
         public int CompareTo(Java.Lang.Short arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Short;)I", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html#describeConstable()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Lang.Constant.DynamicConstantDesc<Java.Lang.Short>> DescribeConstable()
-        {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.Constant.DynamicConstantDesc<Java.Lang.Short>>>("describeConstable", "()Ljava/util/Optional;");
         }
 
         #endregion

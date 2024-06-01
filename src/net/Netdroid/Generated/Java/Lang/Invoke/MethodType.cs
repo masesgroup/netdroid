@@ -26,17 +26,13 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Invoke
 {
     #region MethodType
-    public partial class MethodType : Java.Lang.Constant.IConstable, Java.Io.ISerializable
+    public partial class MethodType : Java.Io.ISerializable
     {
         #region Constructors
 
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.Invoke.MethodType"/> to <see cref="Java.Lang.Constant.Constable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Constant.Constable(Java.Lang.Invoke.MethodType t) => t.Cast<Java.Lang.Constant.Constable>();
         /// <summary>
         /// Converter from <see cref="Java.Lang.Invoke.MethodType"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
@@ -352,14 +348,6 @@ namespace Java.Lang.Invoke
         public Java.Util.List<Java.Lang.Class> ParameterList()
         {
             return IExecuteWithSignature<Java.Util.List<Java.Lang.Class>>("parameterList", "()Ljava/util/List;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html#describeConstable()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Lang.Constant.MethodTypeDesc> DescribeConstable()
-        {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.Constant.MethodTypeDesc>>("describeConstable", "()Ljava/util/Optional;");
         }
 
         #endregion

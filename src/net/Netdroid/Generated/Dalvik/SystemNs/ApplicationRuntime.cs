@@ -23,31 +23,12 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Dalvik.System
+namespace Dalvik.SystemNs
 {
-    #region PathClassLoader
-    public partial class PathClassLoader
+    #region ApplicationRuntime
+    public partial class ApplicationRuntime
     {
         #region Constructors
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/dalvik/system/PathClassLoader.html#%3Cinit%3E(java.lang.String,java.lang.ClassLoader)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
-        public PathClassLoader(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/dalvik/system/PathClassLoader.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
-        public PathClassLoader(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
 
         #endregion
 
@@ -60,6 +41,13 @@ namespace Dalvik.System
         #endregion
 
         #region Static methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/dalvik/system/ApplicationRuntime.html#getBaseApkOptimizationInfo()"/> 
+        /// </summary>
+        public static Dalvik.SystemNs.DexFile.OptimizationInfo BaseApkOptimizationInfo
+        {
+            get { return SExecuteWithSignature<Dalvik.SystemNs.DexFile.OptimizationInfo>(LocalBridgeClazz, "getBaseApkOptimizationInfo", "()Ldalvik/system/DexFile$OptimizationInfo;"); }
+        }
 
         #endregion
 

@@ -61,16 +61,6 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ServiceLoader.html#load(java.lang.ModuleLayer,java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ModuleLayer"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
-        public static Java.Util.ServiceLoader Load(Java.Lang.ModuleLayer arg0, Java.Lang.Class arg1)
-        {
-            return SExecute<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/util/ServiceLoader.html#loadInstalled(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -155,16 +145,6 @@ namespace Java.Util
         public static Java.Util.ServiceLoader<S> Load(Java.Lang.Class arg0)
         {
             return SExecuteWithSignature<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "load", "(Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ServiceLoader.html#load(java.lang.ModuleLayer,java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.ModuleLayer"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
-        public static Java.Util.ServiceLoader<S> Load(Java.Lang.ModuleLayer arg0, Java.Lang.Class arg1)
-        {
-            return SExecute<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "load", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/util/ServiceLoader.html#loadInstalled(java.lang.Class)"/>

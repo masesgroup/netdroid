@@ -53,13 +53,6 @@ namespace Java.Lang.Reflect
             get { return IExecuteWithSignature<Java.Lang.Reflect.Method>("getAccessor", "()Ljava/lang/reflect/Method;"); }
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/RecordComponent.html#getAnnotatedType()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.AnnotatedType AnnotatedType
-        {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.AnnotatedType>("getAnnotatedType", "()Ljava/lang/reflect/AnnotatedType;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/RecordComponent.html#getAnnotations()"/> 
         /// </summary>
         public Java.Lang.Annotation.Annotation[] Annotations

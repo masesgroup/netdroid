@@ -97,16 +97,6 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "clearCache", "(Ljava/lang/ClassLoader;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.lang.Module)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Module"/></param>
-        /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
-        public static Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0, Java.Lang.Module arg1)
-        {
-            return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.lang.ClassLoader,java.util.ResourceBundle.Control)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -126,17 +116,6 @@ namespace Java.Util
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public static Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0, Java.Util.Locale arg1, Java.Lang.ClassLoader arg2)
-        {
-            return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.lang.Module)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Module"/></param>
-        /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
-        public static Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0, Java.Util.Locale arg1, Java.Lang.Module arg2)
         {
             return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1, arg2);
         }

@@ -453,15 +453,6 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("dropWhile", "(Ljava/util/function/LongPredicate;)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#mapMulti(java.util.stream.LongStream.LongMapMultiConsumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Stream.LongStream.LongMapMultiConsumer"/></param>
-        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
-        public Java.Util.Stream.LongStream MapMulti(Java.Util.Stream.LongStream.LongMapMultiConsumer arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Stream.LongStream>("mapMulti", "(Ljava/util/stream/LongStream$LongMapMultiConsumer;)Ljava/util/stream/LongStream;", arg0);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java.base/java/util/stream/LongStream.html#takeWhile(java.util.function.LongPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>

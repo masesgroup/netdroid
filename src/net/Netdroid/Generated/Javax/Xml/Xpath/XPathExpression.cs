@@ -129,26 +129,6 @@ namespace Javax.Xml.Xpath
         {
             return IExecute<T>("evaluateExpression", arg0, arg1);
         }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPathExpression.html#evaluateExpression(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult"/></returns>
-        /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
-        public Javax.Xml.Xpath.XPathEvaluationResult<object> EvaluateExpression(object arg0)
-        {
-            return IExecuteWithSignature<Javax.Xml.Xpath.XPathEvaluationResult<object>>("evaluateExpression", "(Ljava/lang/Object;)Ljavax/xml/xpath/XPathEvaluationResult;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPathExpression.html#evaluateExpression(org.xml.sax.InputSource)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
-        /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult"/></returns>
-        /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
-        public Javax.Xml.Xpath.XPathEvaluationResult<object> EvaluateExpression(Org.Xml.Sax.InputSource arg0)
-        {
-            return IExecuteWithSignature<Javax.Xml.Xpath.XPathEvaluationResult<object>>("evaluateExpression", "(Lorg/xml/sax/InputSource;)Ljavax/xml/xpath/XPathEvaluationResult;", arg0);
-        }
 
         #endregion
 

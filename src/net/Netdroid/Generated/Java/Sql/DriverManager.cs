@@ -140,16 +140,6 @@ namespace Java.Sql
             SExecuteWithSignature(LocalBridgeClazz, "println", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#registerDriver(java.sql.Driver,java.sql.DriverAction)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Sql.Driver"/></param>
-        /// <param name="arg1"><see cref="Java.Sql.DriverAction"/></param>
-        /// <exception cref="Java.Sql.SQLException"/>
-        public static void RegisterDriver(Java.Sql.Driver arg0, Java.Sql.DriverAction arg1)
-        {
-            SExecute(LocalBridgeClazz, "registerDriver", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html#registerDriver(java.sql.Driver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Driver"/></param>

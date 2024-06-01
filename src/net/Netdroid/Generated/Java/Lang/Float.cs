@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region Float
-    public partial class Float : Java.Lang.IComparable<Java.Lang.Float>, Java.Lang.Constant.IConstable, Java.Lang.Constant.IConstantDesc
+    public partial class Float : Java.Lang.IComparable<Java.Lang.Float>
     {
         #region Constructors
         /// <summary>
@@ -65,14 +65,6 @@ namespace Java.Lang
         /// Converter from <see cref="Java.Lang.Float"/> to <see cref="Java.Lang.Comparable"/>
         /// </summary>
         public static implicit operator Java.Lang.Comparable(Java.Lang.Float t) => t.Cast<Java.Lang.Comparable>();
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.Float"/> to <see cref="Java.Lang.Constant.Constable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Constant.Constable(Java.Lang.Float t) => t.Cast<Java.Lang.Constant.Constable>();
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.Float"/> to <see cref="Java.Lang.Constant.ConstantDesc"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Constant.ConstantDesc(Java.Lang.Float t) => t.Cast<Java.Lang.Constant.ConstantDesc>();
 
         #endregion
 
