@@ -57,32 +57,36 @@ namespace Android.Security.Keystore
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/WrappedKeyEntry.html#getAlgorithmParameterSpec()"/> 
+        /// <see href="https://developer.android.com/reference/android/security/keystore/WrappedKeyEntry.html#getWrappedKeyBytes()"/>
         /// </summary>
-        public Java.Security.Spec.AlgorithmParameterSpec AlgorithmParameterSpec
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetWrappedKeyBytes()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getAlgorithmParameterSpec", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
+            return IExecuteWithSignatureArray<byte>("getWrappedKeyBytes", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/WrappedKeyEntry.html#getTransformation()"/> 
+        /// <see href="https://developer.android.com/reference/android/security/keystore/WrappedKeyEntry.html#getTransformation()"/>
         /// </summary>
-        public Java.Lang.String Transformation
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTransformation()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTransformation", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getTransformation", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/WrappedKeyEntry.html#getWrappedKeyBytes()"/> 
+        /// <see href="https://developer.android.com/reference/android/security/keystore/WrappedKeyEntry.html#getWrappingKeyAlias()"/>
         /// </summary>
-        public byte[] WrappedKeyBytes
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetWrappingKeyAlias()
         {
-            get { return IExecuteWithSignatureArray<byte>("getWrappedKeyBytes", "()[B"); }
+            return IExecuteWithSignature<Java.Lang.String>("getWrappingKeyAlias", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/WrappedKeyEntry.html#getWrappingKeyAlias()"/> 
+        /// <see href="https://developer.android.com/reference/android/security/keystore/WrappedKeyEntry.html#getAlgorithmParameterSpec()"/>
         /// </summary>
-        public Java.Lang.String WrappingKeyAlias
+        /// <returns><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></returns>
+        public Java.Security.Spec.AlgorithmParameterSpec GetAlgorithmParameterSpec()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getWrappingKeyAlias", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getAlgorithmParameterSpec", "()Ljava/security/spec/AlgorithmParameterSpec;");
         }
 
         #endregion

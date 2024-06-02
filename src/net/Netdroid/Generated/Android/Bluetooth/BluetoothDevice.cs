@@ -328,53 +328,12 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getAddress()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getBluetoothClass()"/>
         /// </summary>
-        public Java.Lang.String Address
+        /// <returns><see cref="Android.Bluetooth.BluetoothClass"/></returns>
+        public Android.Bluetooth.BluetoothClass GetBluetoothClass()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAddress", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getAlias()"/> 
-        /// </summary>
-        public Java.Lang.String Alias
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlias", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getBluetoothClass()"/> 
-        /// </summary>
-        public Android.Bluetooth.BluetoothClass BluetoothClass
-        {
-            get { return IExecuteWithSignature<Android.Bluetooth.BluetoothClass>("getBluetoothClass", "()Landroid/bluetooth/BluetoothClass;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getBondState()"/> 
-        /// </summary>
-        public int BondState
-        {
-            get { return IExecuteWithSignature<int>("getBondState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getUuids()"/> 
-        /// </summary>
-        public Android.Os.ParcelUuid[] Uuids
-        {
-            get { return IExecuteWithSignatureArray<Android.Os.ParcelUuid>("getUuids", "()[Landroid/os/ParcelUuid;"); }
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothClass>("getBluetoothClass", "()Landroid/bluetooth/BluetoothClass;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#connectGatt(android.content.Context,boolean,android.bluetooth.BluetoothGattCallback,int,int,android.os.Handler)"/>
@@ -467,6 +426,14 @@ namespace Android.Bluetooth
             return IExecuteWithSignature<Android.Bluetooth.BluetoothSocket>("createRfcommSocketToServiceRecord", "(Ljava/util/UUID;)Landroid/bluetooth/BluetoothSocket;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getUuids()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.ParcelUuid"/></returns>
+        public Android.Os.ParcelUuid[] GetUuids()
+        {
+            return IExecuteWithSignatureArray<Android.Os.ParcelUuid>("getUuids", "()[Landroid/os/ParcelUuid;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#createBond()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -509,6 +476,22 @@ namespace Android.Bluetooth
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getBondState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBondState()
+        {
+            return IExecuteWithSignature<int>("getBondState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#setAlias(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -516,6 +499,30 @@ namespace Android.Bluetooth
         public int SetAlias(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<int>("setAlias", "(Ljava/lang/String;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAddress()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAddress", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getAlias()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlias()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAlias", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothDevice.html#writeToParcel(android.os.Parcel,int)"/>

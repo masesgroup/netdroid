@@ -79,11 +79,12 @@ namespace Android.Service.Quicksettings
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quicksettings/TileService.html#getQsTile()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/quicksettings/TileService.html#getQsTile()"/>
         /// </summary>
-        public Android.Service.Quicksettings.Tile QsTile
+        /// <returns><see cref="Android.Service.Quicksettings.Tile"/></returns>
+        public Android.Service.Quicksettings.Tile GetQsTile()
         {
-            get { return IExecuteWithSignature<Android.Service.Quicksettings.Tile>("getQsTile", "()Landroid/service/quicksettings/Tile;"); }
+            return IExecuteWithSignature<Android.Service.Quicksettings.Tile>("getQsTile", "()Landroid/service/quicksettings/Tile;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quicksettings/TileService.html#isLocked()"/>
@@ -121,7 +122,7 @@ namespace Android.Service.Quicksettings
         /// <see href="https://developer.android.com/reference/android/service/quicksettings/TileService.html#startActivityAndCollapse(android.content.Intent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartActivityAndCollapse(Android.Content.Intent arg0)
         {
             IExecuteWithSignature("startActivityAndCollapse", "(Landroid/content/Intent;)V", arg0);

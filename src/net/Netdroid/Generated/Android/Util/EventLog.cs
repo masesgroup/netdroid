@@ -148,39 +148,44 @@ namespace Android.Util
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/util/EventLog.Event.html#getData()"/> 
+            /// <see href="https://developer.android.com/reference/android/util/EventLog.Event.html#getProcessId()"/>
             /// </summary>
-            public object Data
+            /// <returns><see cref="int"/></returns>
+            public int GetProcessId()
             {
-                get { return IExecuteWithSignature("getData", "()Ljava/lang/Object;"); }
+                return IExecuteWithSignature<int>("getProcessId", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/util/EventLog.Event.html#getProcessId()"/> 
+            /// <see href="https://developer.android.com/reference/android/util/EventLog.Event.html#getTag()"/>
             /// </summary>
-            public int ProcessId
+            /// <returns><see cref="int"/></returns>
+            public int GetTag()
             {
-                get { return IExecuteWithSignature<int>("getProcessId", "()I"); }
+                return IExecuteWithSignature<int>("getTag", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/util/EventLog.Event.html#getTag()"/> 
+            /// <see href="https://developer.android.com/reference/android/util/EventLog.Event.html#getThreadId()"/>
             /// </summary>
-            public int Tag
+            /// <returns><see cref="int"/></returns>
+            public int GetThreadId()
             {
-                get { return IExecuteWithSignature<int>("getTag", "()I"); }
+                return IExecuteWithSignature<int>("getThreadId", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/util/EventLog.Event.html#getThreadId()"/> 
+            /// <see href="https://developer.android.com/reference/android/util/EventLog.Event.html#getTimeNanos()"/>
             /// </summary>
-            public int ThreadId
+            /// <returns><see cref="long"/></returns>
+            public long GetTimeNanos()
             {
-                get { return IExecuteWithSignature<int>("getThreadId", "()I"); }
+                return IExecuteWithSignature<long>("getTimeNanos", "()J");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/util/EventLog.Event.html#getTimeNanos()"/> 
+            /// <see href="https://developer.android.com/reference/android/util/EventLog.Event.html#getData()"/>
             /// </summary>
-            public long TimeNanos
+            /// <returns><see cref="object"/></returns>
+            public object GetData()
             {
-                get { return IExecuteWithSignature<long>("getTimeNanos", "()J"); }
+                return IExecuteWithSignature("getData", "()Ljava/lang/Object;");
             }
 
             #endregion

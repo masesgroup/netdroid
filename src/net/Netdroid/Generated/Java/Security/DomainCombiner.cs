@@ -64,7 +64,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/DomainCombiner.html#combine(java.security.ProtectionDomain[],java.security.ProtectionDomain[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/DomainCombiner.html#combine(java.security.ProtectionDomain[],java.security.ProtectionDomain[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.ProtectionDomain"/></param>
         /// <param name="arg1"><see cref="Java.Security.ProtectionDomain"/></param>

@@ -48,58 +48,49 @@ namespace Android.Service.Autofill
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/UserData.html#getMaxCategoryCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/UserData.html#getMaxCategoryCount()"/>
         /// </summary>
-        public static int MaxCategoryCount
+        /// <returns><see cref="int"/></returns>
+        public static int GetMaxCategoryCount()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxCategoryCount", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxCategoryCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/UserData.html#getMaxFieldClassificationIdsSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/UserData.html#getMaxFieldClassificationIdsSize()"/>
         /// </summary>
-        public static int MaxFieldClassificationIdsSize
+        /// <returns><see cref="int"/></returns>
+        public static int GetMaxFieldClassificationIdsSize()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxFieldClassificationIdsSize", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxFieldClassificationIdsSize", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/UserData.html#getMaxUserDataSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/UserData.html#getMaxUserDataSize()"/>
         /// </summary>
-        public static int MaxUserDataSize
+        /// <returns><see cref="int"/></returns>
+        public static int GetMaxUserDataSize()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxUserDataSize", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxUserDataSize", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/UserData.html#getMaxValueLength()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/UserData.html#getMaxValueLength()"/>
         /// </summary>
-        public static int MaxValueLength
+        /// <returns><see cref="int"/></returns>
+        public static int GetMaxValueLength()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxValueLength", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxValueLength", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/UserData.html#getMinValueLength()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/UserData.html#getMinValueLength()"/>
         /// </summary>
-        public static int MinValueLength
+        /// <returns><see cref="int"/></returns>
+        public static int GetMinValueLength()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMinValueLength", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMinValueLength", "()I");
         }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/UserData.html#getFieldClassificationAlgorithm()"/> 
-        /// </summary>
-        public Java.Lang.String FieldClassificationAlgorithm
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFieldClassificationAlgorithm", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/UserData.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/UserData.html#describeContents()"/>
         /// </summary>
@@ -109,6 +100,14 @@ namespace Android.Service.Autofill
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/autofill/UserData.html#getFieldClassificationAlgorithm()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFieldClassificationAlgorithm()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFieldClassificationAlgorithm", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/UserData.html#getFieldClassificationAlgorithmForCategory(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -116,6 +115,14 @@ namespace Android.Service.Autofill
         public Java.Lang.String GetFieldClassificationAlgorithmForCategory(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getFieldClassificationAlgorithmForCategory", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/autofill/UserData.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/UserData.html#writeToParcel(android.os.Parcel,int)"/>

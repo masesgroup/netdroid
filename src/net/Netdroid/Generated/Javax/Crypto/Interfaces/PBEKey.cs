@@ -56,9 +56,8 @@ namespace Javax.Crypto.Interfaces
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/interfaces/PBEKey.html#serialVersionUID"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/interfaces/PBEKey.html#serialVersionUID"/>
         /// </summary>
-        [System.Obsolete()]
         public static long serialVersionUID { get { if (!_serialVersionUIDReady) { _serialVersionUIDContent = SGetField<long>(LocalBridgeClazz, "serialVersionUID"); _serialVersionUIDReady = true; } return _serialVersionUIDContent; } }
         private static long _serialVersionUIDContent = default;
         private static bool _serialVersionUIDReady = false; // this is used because in case of generics 
@@ -71,25 +70,28 @@ namespace Javax.Crypto.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/interfaces/PBEKey.html#getIterationCount()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/interfaces/PBEKey.html#getSalt()"/>
         /// </summary>
-        public int IterationCount
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetSalt()
         {
-            get { return IExecuteWithSignature<int>("getIterationCount", "()I"); }
+            return IExecuteWithSignatureArray<byte>("getSalt", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/interfaces/PBEKey.html#getPassword()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/interfaces/PBEKey.html#getPassword()"/>
         /// </summary>
-        public char[] Password
+        /// <returns><see cref="char"/></returns>
+        public char[] GetPassword()
         {
-            get { return IExecuteWithSignatureArray<char>("getPassword", "()[C"); }
+            return IExecuteWithSignatureArray<char>("getPassword", "()[C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/interfaces/PBEKey.html#getSalt()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/interfaces/PBEKey.html#getIterationCount()"/>
         /// </summary>
-        public byte[] Salt
+        /// <returns><see cref="int"/></returns>
+        public int GetIterationCount()
         {
-            get { return IExecuteWithSignatureArray<byte>("getSalt", "()[B"); }
+            return IExecuteWithSignature<int>("getIterationCount", "()I");
         }
 
         #endregion

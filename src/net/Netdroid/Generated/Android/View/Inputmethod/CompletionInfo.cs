@@ -73,40 +73,44 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CompletionInfo.html#getId()"/> 
-        /// </summary>
-        public long Id
-        {
-            get { return IExecuteWithSignature<long>("getId", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CompletionInfo.html#getLabel()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Label
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CompletionInfo.html#getPosition()"/> 
-        /// </summary>
-        public int Position
-        {
-            get { return IExecuteWithSignature<int>("getPosition", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CompletionInfo.html#getText()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Text
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/CompletionInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CompletionInfo.html#getPosition()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPosition()
+        {
+            return IExecuteWithSignature<int>("getPosition", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CompletionInfo.html#getLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CompletionInfo.html#getText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetText()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CompletionInfo.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetId()
+        {
+            return IExecuteWithSignature<long>("getId", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/CompletionInfo.html#writeToParcel(android.os.Parcel,int)"/>

@@ -64,7 +64,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Observer.html#update(java.util.Observable,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Observer.html#update(java.util.Observable,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Observable"/></param>
         /// <param name="arg1"><see cref="object"/></param>

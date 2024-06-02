@@ -46,7 +46,7 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileAttribute.html#name()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileAttribute.html#name()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
@@ -54,7 +54,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileAttribute.html#value()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileAttribute.html#value()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Value()
@@ -115,7 +115,7 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileAttribute.html#name()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileAttribute.html#name()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
@@ -123,7 +123,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileAttribute.html#value()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileAttribute.html#value()"/>
         /// </summary>
         /// <returns><typeparamref name="T"/></returns>
         public T Value()

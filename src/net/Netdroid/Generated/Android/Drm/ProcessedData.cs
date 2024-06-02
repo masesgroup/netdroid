@@ -46,28 +46,31 @@ namespace Android.Drm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/drm/ProcessedData.html#getAccountId()"/> 
+        /// <see href="https://developer.android.com/reference/android/drm/ProcessedData.html#getData()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String AccountId
+        /// <returns><see cref="byte"/></returns>
+        [global::System.Obsolete()]
+        public byte[] GetData()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAccountId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<byte>("getData", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/drm/ProcessedData.html#getData()"/> 
+        /// <see href="https://developer.android.com/reference/android/drm/ProcessedData.html#getAccountId()"/>
         /// </summary>
-        [System.Obsolete()]
-        public byte[] Data
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetAccountId()
         {
-            get { return IExecuteWithSignatureArray<byte>("getData", "()[B"); }
+            return IExecuteWithSignature<Java.Lang.String>("getAccountId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/drm/ProcessedData.html#getSubscriptionId()"/> 
+        /// <see href="https://developer.android.com/reference/android/drm/ProcessedData.html#getSubscriptionId()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String SubscriptionId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetSubscriptionId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSubscriptionId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSubscriptionId", "()Ljava/lang/String;");
         }
 
         #endregion

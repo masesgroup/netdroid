@@ -72,32 +72,20 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputBinding.html#getConnection()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputBinding.html#getConnectionToken()"/>
         /// </summary>
-        public Android.View.Inputmethod.InputConnection Connection
+        /// <returns><see cref="Android.Os.IBinder"/></returns>
+        public Android.Os.IBinder GetConnectionToken()
         {
-            get { return IExecuteWithSignature<Android.View.Inputmethod.InputConnection>("getConnection", "()Landroid/view/inputmethod/InputConnection;"); }
+            return IExecuteWithSignature<Android.Os.IBinder>("getConnectionToken", "()Landroid/os/IBinder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputBinding.html#getConnectionToken()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputBinding.html#getConnection()"/>
         /// </summary>
-        public Android.Os.IBinder ConnectionToken
+        /// <returns><see cref="Android.View.Inputmethod.InputConnection"/></returns>
+        public Android.View.Inputmethod.InputConnection GetConnection()
         {
-            get { return IExecuteWithSignature<Android.Os.IBinder>("getConnectionToken", "()Landroid/os/IBinder;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputBinding.html#getPid()"/> 
-        /// </summary>
-        public int Pid
-        {
-            get { return IExecuteWithSignature<int>("getPid", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputBinding.html#getUid()"/> 
-        /// </summary>
-        public int Uid
-        {
-            get { return IExecuteWithSignature<int>("getUid", "()I"); }
+            return IExecuteWithSignature<Android.View.Inputmethod.InputConnection>("getConnection", "()Landroid/view/inputmethod/InputConnection;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputBinding.html#describeContents()"/>
@@ -106,6 +94,22 @@ namespace Android.View.Inputmethod
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputBinding.html#getPid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPid()
+        {
+            return IExecuteWithSignature<int>("getPid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputBinding.html#getUid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUid()
+        {
+            return IExecuteWithSignature<int>("getUid", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputBinding.html#writeToParcel(android.os.Parcel,int)"/>

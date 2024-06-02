@@ -30,7 +30,7 @@ namespace Javax.Xml.Namespace
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/namespace/QName.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/namespace/QName.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -40,7 +40,7 @@ namespace Javax.Xml.Namespace
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/namespace/QName.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/namespace/QName.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -49,7 +49,7 @@ namespace Javax.Xml.Namespace
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/namespace/QName.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/namespace/QName.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public QName(Java.Lang.String arg0)
@@ -69,7 +69,7 @@ namespace Javax.Xml.Namespace
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/namespace/QName.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/namespace/QName.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Xml.Namespace.QName"/></returns>
@@ -82,25 +82,28 @@ namespace Javax.Xml.Namespace
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/namespace/QName.html#getLocalPart()"/> 
+        /// <see href="https://developer.android.com/reference/javax/xml/namespace/QName.html#getLocalPart()"/>
         /// </summary>
-        public Java.Lang.String LocalPart
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLocalPart()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLocalPart", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getLocalPart", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/namespace/QName.html#getNamespaceURI()"/> 
+        /// <see href="https://developer.android.com/reference/javax/xml/namespace/QName.html#getNamespaceURI()"/>
         /// </summary>
-        public Java.Lang.String NamespaceURI
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNamespaceURI()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNamespaceURI", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getNamespaceURI", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/namespace/QName.html#getPrefix()"/> 
+        /// <see href="https://developer.android.com/reference/javax/xml/namespace/QName.html#getPrefix()"/>
         /// </summary>
-        public Java.Lang.String Prefix
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPrefix()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPrefix", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getPrefix", "()Ljava/lang/String;");
         }
 
         #endregion

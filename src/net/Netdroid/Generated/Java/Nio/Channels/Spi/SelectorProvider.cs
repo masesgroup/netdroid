@@ -42,7 +42,7 @@ namespace Java.Nio.Channels.Spi
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/SelectorProvider.html#provider()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/spi/SelectorProvider.html#provider()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.Spi.SelectorProvider"/></returns>
         public static Java.Nio.Channels.Spi.SelectorProvider Provider()
@@ -54,7 +54,7 @@ namespace Java.Nio.Channels.Spi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/SelectorProvider.html#openDatagramChannel()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/spi/SelectorProvider.html#openDatagramChannel()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.DatagramChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -63,7 +63,7 @@ namespace Java.Nio.Channels.Spi
             return IExecuteWithSignature<Java.Nio.Channels.DatagramChannel>("openDatagramChannel", "()Ljava/nio/channels/DatagramChannel;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/SelectorProvider.html#openDatagramChannel(java.net.ProtocolFamily)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/spi/SelectorProvider.html#openDatagramChannel(java.net.ProtocolFamily)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.ProtocolFamily"/></param>
         /// <returns><see cref="Java.Nio.Channels.DatagramChannel"/></returns>
@@ -73,7 +73,7 @@ namespace Java.Nio.Channels.Spi
             return IExecuteWithSignature<Java.Nio.Channels.DatagramChannel>("openDatagramChannel", "(Ljava/net/ProtocolFamily;)Ljava/nio/channels/DatagramChannel;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/SelectorProvider.html#openPipe()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/spi/SelectorProvider.html#openPipe()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.Pipe"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -82,7 +82,7 @@ namespace Java.Nio.Channels.Spi
             return IExecuteWithSignature<Java.Nio.Channels.Pipe>("openPipe", "()Ljava/nio/channels/Pipe;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/SelectorProvider.html#openServerSocketChannel()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/spi/SelectorProvider.html#openServerSocketChannel()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.ServerSocketChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -91,7 +91,7 @@ namespace Java.Nio.Channels.Spi
             return IExecuteWithSignature<Java.Nio.Channels.ServerSocketChannel>("openServerSocketChannel", "()Ljava/nio/channels/ServerSocketChannel;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/SelectorProvider.html#openSocketChannel()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/spi/SelectorProvider.html#openSocketChannel()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.SocketChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -100,7 +100,7 @@ namespace Java.Nio.Channels.Spi
             return IExecuteWithSignature<Java.Nio.Channels.SocketChannel>("openSocketChannel", "()Ljava/nio/channels/SocketChannel;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/SelectorProvider.html#openSelector()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/spi/SelectorProvider.html#openSelector()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.Spi.AbstractSelector"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -109,33 +109,13 @@ namespace Java.Nio.Channels.Spi
             return IExecuteWithSignature<Java.Nio.Channels.Spi.AbstractSelector>("openSelector", "()Ljava/nio/channels/spi/AbstractSelector;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/SelectorProvider.html#inheritedChannel()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/spi/SelectorProvider.html#inheritedChannel()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.Channel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.Channel InheritedChannel()
         {
             return IExecuteWithSignature<Java.Nio.Channels.Channel>("inheritedChannel", "()Ljava/nio/channels/Channel;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/SelectorProvider.html#openServerSocketChannel(java.net.ProtocolFamily)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.ProtocolFamily"/></param>
-        /// <returns><see cref="Java.Nio.Channels.ServerSocketChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.Channels.ServerSocketChannel OpenServerSocketChannel(Java.Net.ProtocolFamily arg0)
-        {
-            return IExecuteWithSignature<Java.Nio.Channels.ServerSocketChannel>("openServerSocketChannel", "(Ljava/net/ProtocolFamily;)Ljava/nio/channels/ServerSocketChannel;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/SelectorProvider.html#openSocketChannel(java.net.ProtocolFamily)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.ProtocolFamily"/></param>
-        /// <returns><see cref="Java.Nio.Channels.SocketChannel"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.Channels.SocketChannel OpenSocketChannel(Java.Net.ProtocolFamily arg0)
-        {
-            return IExecuteWithSignature<Java.Nio.Channels.SocketChannel>("openSocketChannel", "(Ljava/net/ProtocolFamily;)Ljava/nio/channels/SocketChannel;", arg0);
         }
 
         #endregion

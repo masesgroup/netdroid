@@ -62,43 +62,43 @@ namespace Java.Security.Cert
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#ALGORITHM_CONSTRAINED"/>
+            /// <see href="https://developer.android.com/reference/java/security/cert/CertPathValidatorException.BasicReason.html#ALGORITHM_CONSTRAINED"/>
             /// </summary>
             public static Java.Security.Cert.CertPathValidatorException.BasicReason ALGORITHM_CONSTRAINED { get { if (!_ALGORITHM_CONSTRAINEDReady) { _ALGORITHM_CONSTRAINEDContent = SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "ALGORITHM_CONSTRAINED"); _ALGORITHM_CONSTRAINEDReady = true; } return _ALGORITHM_CONSTRAINEDContent; } }
             private static Java.Security.Cert.CertPathValidatorException.BasicReason _ALGORITHM_CONSTRAINEDContent = default;
             private static bool _ALGORITHM_CONSTRAINEDReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#EXPIRED"/>
+            /// <see href="https://developer.android.com/reference/java/security/cert/CertPathValidatorException.BasicReason.html#EXPIRED"/>
             /// </summary>
             public static Java.Security.Cert.CertPathValidatorException.BasicReason EXPIRED { get { if (!_EXPIREDReady) { _EXPIREDContent = SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "EXPIRED"); _EXPIREDReady = true; } return _EXPIREDContent; } }
             private static Java.Security.Cert.CertPathValidatorException.BasicReason _EXPIREDContent = default;
             private static bool _EXPIREDReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#INVALID_SIGNATURE"/>
+            /// <see href="https://developer.android.com/reference/java/security/cert/CertPathValidatorException.BasicReason.html#INVALID_SIGNATURE"/>
             /// </summary>
             public static Java.Security.Cert.CertPathValidatorException.BasicReason INVALID_SIGNATURE { get { if (!_INVALID_SIGNATUREReady) { _INVALID_SIGNATUREContent = SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "INVALID_SIGNATURE"); _INVALID_SIGNATUREReady = true; } return _INVALID_SIGNATUREContent; } }
             private static Java.Security.Cert.CertPathValidatorException.BasicReason _INVALID_SIGNATUREContent = default;
             private static bool _INVALID_SIGNATUREReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#NOT_YET_VALID"/>
+            /// <see href="https://developer.android.com/reference/java/security/cert/CertPathValidatorException.BasicReason.html#NOT_YET_VALID"/>
             /// </summary>
             public static Java.Security.Cert.CertPathValidatorException.BasicReason NOT_YET_VALID { get { if (!_NOT_YET_VALIDReady) { _NOT_YET_VALIDContent = SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "NOT_YET_VALID"); _NOT_YET_VALIDReady = true; } return _NOT_YET_VALIDContent; } }
             private static Java.Security.Cert.CertPathValidatorException.BasicReason _NOT_YET_VALIDContent = default;
             private static bool _NOT_YET_VALIDReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#REVOKED"/>
+            /// <see href="https://developer.android.com/reference/java/security/cert/CertPathValidatorException.BasicReason.html#REVOKED"/>
             /// </summary>
             public static Java.Security.Cert.CertPathValidatorException.BasicReason REVOKED { get { if (!_REVOKEDReady) { _REVOKEDContent = SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "REVOKED"); _REVOKEDReady = true; } return _REVOKEDContent; } }
             private static Java.Security.Cert.CertPathValidatorException.BasicReason _REVOKEDContent = default;
             private static bool _REVOKEDReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#UNDETERMINED_REVOCATION_STATUS"/>
+            /// <see href="https://developer.android.com/reference/java/security/cert/CertPathValidatorException.BasicReason.html#UNDETERMINED_REVOCATION_STATUS"/>
             /// </summary>
             public static Java.Security.Cert.CertPathValidatorException.BasicReason UNDETERMINED_REVOCATION_STATUS { get { if (!_UNDETERMINED_REVOCATION_STATUSReady) { _UNDETERMINED_REVOCATION_STATUSContent = SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "UNDETERMINED_REVOCATION_STATUS"); _UNDETERMINED_REVOCATION_STATUSReady = true; } return _UNDETERMINED_REVOCATION_STATUSContent; } }
             private static Java.Security.Cert.CertPathValidatorException.BasicReason _UNDETERMINED_REVOCATION_STATUSContent = default;
             private static bool _UNDETERMINED_REVOCATION_STATUSReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#UNSPECIFIED"/>
+            /// <see href="https://developer.android.com/reference/java/security/cert/CertPathValidatorException.BasicReason.html#UNSPECIFIED"/>
             /// </summary>
             public static Java.Security.Cert.CertPathValidatorException.BasicReason UNSPECIFIED { get { if (!_UNSPECIFIEDReady) { _UNSPECIFIEDContent = SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "UNSPECIFIED"); _UNSPECIFIEDReady = true; } return _UNSPECIFIEDContent; } }
             private static Java.Security.Cert.CertPathValidatorException.BasicReason _UNSPECIFIEDContent = default;
@@ -108,7 +108,7 @@ namespace Java.Security.Cert
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#valueOf(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/security/cert/CertPathValidatorException.BasicReason.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Security.Cert.CertPathValidatorException.BasicReason"/></returns>
@@ -117,7 +117,7 @@ namespace Java.Security.Cert
                 return SExecuteWithSignature<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/security/cert/CertPathValidatorException$BasicReason;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#values()"/>
+            /// <see href="https://developer.android.com/reference/java/security/cert/CertPathValidatorException.BasicReason.html#values()"/>
             /// </summary>
             /// <returns><see cref="Java.Security.Cert.CertPathValidatorException.BasicReason"/></returns>
             public static Java.Security.Cert.CertPathValidatorException.BasicReason[] Values()

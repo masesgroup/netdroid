@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#%3Cinit%3E(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#%3Cinit%3E(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -55,21 +55,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#getReference()"/> 
-        /// </summary>
-        public object Reference
-        {
-            get { return IExecuteWithSignature("getReference", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#getStamp()"/> 
-        /// </summary>
-        public int Stamp
-        {
-            get { return IExecuteWithSignature<int>("getStamp", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#attemptStamp(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#attemptStamp(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -79,7 +65,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("attemptStamp", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#compareAndSet(java.lang.Object,java.lang.Object,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#compareAndSet(java.lang.Object,java.lang.Object,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -91,7 +77,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndSet", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -103,7 +89,15 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#get(int[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#getStamp()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStamp()
+        {
+            return IExecuteWithSignature<int>("getStamp", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#get(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="object"/></returns>
@@ -112,7 +106,15 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature("get", "([I)Ljava/lang/Object;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#set(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#getReference()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetReference()
+        {
+            return IExecuteWithSignature("getReference", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#set(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -136,7 +138,7 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#%3Cinit%3E(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#%3Cinit%3E(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -165,21 +167,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#getReference()"/> 
-        /// </summary>
-        public V Reference
-        {
-            get { return IExecuteWithSignature<V>("getReference", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#getStamp()"/> 
-        /// </summary>
-        public int Stamp
-        {
-            get { return IExecuteWithSignature<int>("getStamp", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#attemptStamp(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#attemptStamp(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -189,7 +177,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("attemptStamp", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#compareAndSet(java.lang.Object,java.lang.Object,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#compareAndSet(java.lang.Object,java.lang.Object,int,int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -201,7 +189,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndSet", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,int,int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -213,7 +201,15 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#get(int[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#getStamp()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStamp()
+        {
+            return IExecuteWithSignature<int>("getStamp", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#get(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><typeparamref name="V"/></returns>
@@ -222,7 +218,15 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<V>("get", "([I)Ljava/lang/Object;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html#set(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#getReference()"/>
+        /// </summary>
+        /// <returns><typeparamref name="V"/></returns>
+        public V GetReference()
+        {
+            return IExecuteWithSignature<V>("getReference", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html#set(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><see cref="int"/></param>

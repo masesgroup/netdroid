@@ -54,7 +54,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#add(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -63,7 +63,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#contains(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#contains(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -84,7 +84,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("offer", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#offer(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#offer(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -93,7 +93,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#offerFirst(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#offerFirst(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -105,7 +105,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("offerFirst", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#offerFirst(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#offerFirst(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -114,7 +114,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("offerFirst", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#offerLast(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#offerLast(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -126,7 +126,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("offerLast", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#offerLast(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#offerLast(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -135,7 +135,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("offerLast", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#remove(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -144,7 +144,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#removeFirstOccurrence(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#removeFirstOccurrence(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -153,7 +153,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("removeFirstOccurrence", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#removeLastOccurrence(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#removeLastOccurrence(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -162,7 +162,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("removeLastOccurrence", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#element()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#element()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Element()
@@ -170,7 +170,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("element", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#peek()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#peek()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Peek()
@@ -178,7 +178,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("peek", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#poll()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#poll()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Poll()
@@ -186,7 +186,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("poll", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#poll(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -197,7 +197,7 @@ namespace Java.Util.Concurrent
             return IExecute("poll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#pollFirst(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#pollFirst(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -208,7 +208,7 @@ namespace Java.Util.Concurrent
             return IExecute("pollFirst", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#pollLast(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#pollLast(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -219,7 +219,7 @@ namespace Java.Util.Concurrent
             return IExecute("pollLast", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#remove()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#remove()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Remove()
@@ -227,7 +227,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("remove", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#take()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#take()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -236,7 +236,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("take", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#takeFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#takeFirst()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -245,7 +245,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("takeFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#takeLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#takeLast()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -254,7 +254,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("takeLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
@@ -262,7 +262,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
@@ -270,7 +270,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#addFirst(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#addFirst(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void AddFirst(object arg0)
@@ -278,7 +278,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("addFirst", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#addLast(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#addLast(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void AddLast(object arg0)
@@ -286,7 +286,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("addLast", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#push(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#push(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void Push(object arg0)
@@ -294,7 +294,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("push", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#put(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#put(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -303,7 +303,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("put", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#putFirst(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#putFirst(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -312,7 +312,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("putFirst", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#putLast(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#putLast(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -382,7 +382,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#add(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -391,7 +391,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#contains(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#contains(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -400,7 +400,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -412,7 +412,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("offer", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#offer(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#offer(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -421,7 +421,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#offerFirst(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#offerFirst(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -433,7 +433,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("offerFirst", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#offerFirst(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#offerFirst(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -442,7 +442,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("offerFirst", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#offerLast(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#offerLast(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -454,7 +454,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("offerLast", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#offerLast(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#offerLast(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -463,7 +463,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("offerLast", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#remove(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -472,7 +472,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#removeFirstOccurrence(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#removeFirstOccurrence(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -481,7 +481,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("removeFirstOccurrence", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#removeLastOccurrence(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#removeLastOccurrence(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -490,7 +490,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("removeLastOccurrence", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#element()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#element()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Element()
@@ -498,7 +498,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("element", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#peek()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#peek()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Peek()
@@ -506,7 +506,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("peek", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#poll()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#poll()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Poll()
@@ -514,7 +514,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("poll", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#poll(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -525,7 +525,7 @@ namespace Java.Util.Concurrent
             return IExecute<E>("poll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#pollFirst(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#pollFirst(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -536,7 +536,7 @@ namespace Java.Util.Concurrent
             return IExecute<E>("pollFirst", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#pollLast(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#pollLast(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -547,7 +547,7 @@ namespace Java.Util.Concurrent
             return IExecute<E>("pollLast", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#remove()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#remove()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Remove()
@@ -555,7 +555,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("remove", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#take()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#take()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -564,7 +564,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("take", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#takeFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#takeFirst()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -573,7 +573,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("takeFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#takeLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#takeLast()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -582,7 +582,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("takeLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
@@ -590,7 +590,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> Iterator()
@@ -598,7 +598,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Iterator<E>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#addFirst(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#addFirst(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void AddFirst(E arg0)
@@ -606,7 +606,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("addFirst", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#addLast(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#addLast(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void AddLast(E arg0)
@@ -614,7 +614,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("addLast", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#push(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#push(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void Push(E arg0)
@@ -622,7 +622,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("push", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#put(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#put(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -631,7 +631,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("put", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#putFirst(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#putFirst(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -640,7 +640,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("putFirst", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html#putLast(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#putLast(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>

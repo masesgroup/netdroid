@@ -56,13 +56,13 @@ namespace Org.W3c.Dom.Ls
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#MODE_ASYNCHRONOUS"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/DOMImplementationLS.html#MODE_ASYNCHRONOUS"/>
         /// </summary>
         public static short MODE_ASYNCHRONOUS { get { if (!_MODE_ASYNCHRONOUSReady) { _MODE_ASYNCHRONOUSContent = SGetField<short>(LocalBridgeClazz, "MODE_ASYNCHRONOUS"); _MODE_ASYNCHRONOUSReady = true; } return _MODE_ASYNCHRONOUSContent; } }
         private static short _MODE_ASYNCHRONOUSContent = default;
         private static bool _MODE_ASYNCHRONOUSReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#MODE_SYNCHRONOUS"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/DOMImplementationLS.html#MODE_SYNCHRONOUS"/>
         /// </summary>
         public static short MODE_SYNCHRONOUS { get { if (!_MODE_SYNCHRONOUSReady) { _MODE_SYNCHRONOUSContent = SGetField<short>(LocalBridgeClazz, "MODE_SYNCHRONOUS"); _MODE_SYNCHRONOUSReady = true; } return _MODE_SYNCHRONOUSContent; } }
         private static short _MODE_SYNCHRONOUSContent = default;
@@ -76,7 +76,7 @@ namespace Org.W3c.Dom.Ls
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSInput()"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/DOMImplementationLS.html#createLSInput()"/>
         /// </summary>
         /// <returns><see cref="Org.W3c.Dom.Ls.LSInput"/></returns>
         public Org.W3c.Dom.Ls.LSInput CreateLSInput()
@@ -84,7 +84,7 @@ namespace Org.W3c.Dom.Ls
             return IExecuteWithSignature<Org.W3c.Dom.Ls.LSInput>("createLSInput", "()Lorg/w3c/dom/ls/LSInput;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSOutput()"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/DOMImplementationLS.html#createLSOutput()"/>
         /// </summary>
         /// <returns><see cref="Org.W3c.Dom.Ls.LSOutput"/></returns>
         public Org.W3c.Dom.Ls.LSOutput CreateLSOutput()
@@ -92,7 +92,7 @@ namespace Org.W3c.Dom.Ls
             return IExecuteWithSignature<Org.W3c.Dom.Ls.LSOutput>("createLSOutput", "()Lorg/w3c/dom/ls/LSOutput;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSParser(short,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/DOMImplementationLS.html#createLSParser(short,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -103,7 +103,7 @@ namespace Org.W3c.Dom.Ls
             return IExecute<Org.W3c.Dom.Ls.LSParser>("createLSParser", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSSerializer()"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/DOMImplementationLS.html#createLSSerializer()"/>
         /// </summary>
         /// <returns><see cref="Org.W3c.Dom.Ls.LSSerializer"/></returns>
         public Org.W3c.Dom.Ls.LSSerializer CreateLSSerializer()

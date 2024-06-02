@@ -114,7 +114,7 @@ namespace Android.Text
         /// <param name="arg1"><see cref="Android.Text.Html.ImageGetter"/></param>
         /// <param name="arg2"><see cref="Android.Text.Html.TagHandler"/></param>
         /// <returns><see cref="Android.Text.Spanned"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Text.Spanned FromHtml(Java.Lang.String arg0, Android.Text.Html.ImageGetter arg1, Android.Text.Html.TagHandler arg2)
         {
             return SExecute<Android.Text.Spanned>(LocalBridgeClazz, "fromHtml", arg0, arg1, arg2);
@@ -146,7 +146,7 @@ namespace Android.Text
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.Text.Spanned"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Text.Spanned FromHtml(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Android.Text.Spanned>(LocalBridgeClazz, "fromHtml", "(Ljava/lang/String;)Landroid/text/Spanned;", arg0);
@@ -175,7 +175,7 @@ namespace Android.Text
         /// </summary>
         /// <param name="arg0"><see cref="Android.Text.Spanned"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ToHtml(Android.Text.Spanned arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toHtml", "(Landroid/text/Spanned;)Ljava/lang/String;", arg0);

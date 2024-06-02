@@ -46,53 +46,60 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.html#getConferenceableConnections()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.html#getExtras()"/>
         /// </summary>
-        public Java.Util.List<Android.Telecom.RemoteConnection> ConferenceableConnections
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telecom.RemoteConnection>>("getConferenceableConnections", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.html#getConnectionCapabilities()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.html#getDisconnectCause()"/>
         /// </summary>
-        public int ConnectionCapabilities
+        /// <returns><see cref="Android.Telecom.DisconnectCause"/></returns>
+        public Android.Telecom.DisconnectCause GetDisconnectCause()
         {
-            get { return IExecuteWithSignature<int>("getConnectionCapabilities", "()I"); }
+            return IExecuteWithSignature<Android.Telecom.DisconnectCause>("getDisconnectCause", "()Landroid/telecom/DisconnectCause;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.html#getConnectionProperties()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.html#getConnectionCapabilities()"/>
         /// </summary>
-        public int ConnectionProperties
+        /// <returns><see cref="int"/></returns>
+        public int GetConnectionCapabilities()
         {
-            get { return IExecuteWithSignature<int>("getConnectionProperties", "()I"); }
+            return IExecuteWithSignature<int>("getConnectionCapabilities", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.html#getConnections()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.html#getConnectionProperties()"/>
         /// </summary>
-        public Java.Util.List<Android.Telecom.RemoteConnection> Connections
+        /// <returns><see cref="int"/></returns>
+        public int GetConnectionProperties()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telecom.RemoteConnection>>("getConnections", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<int>("getConnectionProperties", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.html#getDisconnectCause()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.html#getState()"/>
         /// </summary>
-        public Android.Telecom.DisconnectCause DisconnectCause
+        /// <returns><see cref="int"/></returns>
+        public int GetState()
         {
-            get { return IExecuteWithSignature<Android.Telecom.DisconnectCause>("getDisconnectCause", "()Landroid/telecom/DisconnectCause;"); }
+            return IExecuteWithSignature<int>("getState", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.html#getConferenceableConnections()"/>
         /// </summary>
-        public Android.Os.Bundle Extras
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telecom.RemoteConnection> GetConferenceableConnections()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Telecom.RemoteConnection>>("getConferenceableConnections", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.html#getState()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.html#getConnections()"/>
         /// </summary>
-        public int State
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telecom.RemoteConnection> GetConnections()
         {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Telecom.RemoteConnection>>("getConnections", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/RemoteConference.html#disconnect()"/>

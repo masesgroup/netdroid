@@ -103,11 +103,12 @@ namespace Android.Text
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/text/Spannable.Factory.html#getInstance()"/> 
+            /// <see href="https://developer.android.com/reference/android/text/Spannable.Factory.html#getInstance()"/>
             /// </summary>
-            public static Android.Text.Spannable.Factory Instance
+            /// <returns><see cref="Android.Text.Spannable.Factory"/></returns>
+            public static Android.Text.Spannable.Factory GetInstance()
             {
-                get { return SExecuteWithSignature<Android.Text.Spannable.Factory>(LocalBridgeClazz, "getInstance", "()Landroid/text/Spannable$Factory;"); }
+                return SExecuteWithSignature<Android.Text.Spannable.Factory>(LocalBridgeClazz, "getInstance", "()Landroid/text/Spannable$Factory;");
             }
 
             #endregion

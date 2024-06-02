@@ -52,32 +52,28 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputEvent.html#getDevice()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/InputEvent.html#getDeviceId()"/>
         /// </summary>
-        public Android.View.InputDevice Device
+        /// <returns><see cref="int"/></returns>
+        public int GetDeviceId()
         {
-            get { return IExecuteWithSignature<Android.View.InputDevice>("getDevice", "()Landroid/view/InputDevice;"); }
+            return IExecuteWithSignature<int>("getDeviceId", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputEvent.html#getDeviceId()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/InputEvent.html#getSource()"/>
         /// </summary>
-        public int DeviceId
+        /// <returns><see cref="int"/></returns>
+        public int GetSource()
         {
-            get { return IExecuteWithSignature<int>("getDeviceId", "()I"); }
+            return IExecuteWithSignature<int>("getSource", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputEvent.html#getEventTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/InputEvent.html#getEventTime()"/>
         /// </summary>
-        public long EventTime
+        /// <returns><see cref="long"/></returns>
+        public long GetEventTime()
         {
-            get { return IExecuteWithSignature<long>("getEventTime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputEvent.html#getSource()"/> 
-        /// </summary>
-        public int Source
-        {
-            get { return IExecuteWithSignature<int>("getSource", "()I"); }
+            return IExecuteWithSignature<long>("getEventTime", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputEvent.html#isFromSource(int)"/>
@@ -87,6 +83,14 @@ namespace Android.View
         public bool IsFromSource(int arg0)
         {
             return IExecuteWithSignature<bool>("isFromSource", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputEvent.html#getDevice()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.InputDevice"/></returns>
+        public Android.View.InputDevice GetDevice()
+        {
+            return IExecuteWithSignature<Android.View.InputDevice>("getDevice", "()Landroid/view/InputDevice;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputEvent.html#describeContents()"/>

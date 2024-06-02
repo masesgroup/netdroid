@@ -48,50 +48,40 @@ namespace Android.Telephony.Mbms
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadRequest.html#getMaxAppIntentSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadRequest.html#getMaxAppIntentSize()"/>
         /// </summary>
-        public static int MaxAppIntentSize
+        /// <returns><see cref="int"/></returns>
+        public static int GetMaxAppIntentSize()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxAppIntentSize", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxAppIntentSize", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadRequest.html#getMaxDestinationUriSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadRequest.html#getMaxDestinationUriSize()"/>
         /// </summary>
-        public static int MaxDestinationUriSize
+        /// <returns><see cref="int"/></returns>
+        public static int GetMaxDestinationUriSize()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxDestinationUriSize", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxDestinationUriSize", "()I");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadRequest.html#getDestinationUri()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadRequest.html#getDestinationUri()"/>
         /// </summary>
-        public Android.Net.Uri DestinationUri
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetDestinationUri()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getDestinationUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getDestinationUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadRequest.html#getFileServiceId()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadRequest.html#getSourceUri()"/>
         /// </summary>
-        public Java.Lang.String FileServiceId
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetSourceUri()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFileServiceId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadRequest.html#getSourceUri()"/> 
-        /// </summary>
-        public Android.Net.Uri SourceUri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getSourceUri", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadRequest.html#getSubscriptionId()"/> 
-        /// </summary>
-        public int SubscriptionId
-        {
-            get { return IExecuteWithSignature<int>("getSubscriptionId", "()I"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getSourceUri", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadRequest.html#toByteArray()"/>
@@ -108,6 +98,22 @@ namespace Android.Telephony.Mbms
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadRequest.html#getSubscriptionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSubscriptionId()
+        {
+            return IExecuteWithSignature<int>("getSubscriptionId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadRequest.html#getFileServiceId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFileServiceId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFileServiceId", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadRequest.html#writeToParcel(android.os.Parcel,int)"/>

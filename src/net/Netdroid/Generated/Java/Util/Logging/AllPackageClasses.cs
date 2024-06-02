@@ -28,7 +28,7 @@ namespace Java.Util.Logging
 {
     #region ConsoleHandler
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/ConsoleHandler.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/logging/ConsoleHandler.html"/>
     /// </summary>
     public partial class ConsoleHandler : Java.Util.Logging.StreamHandler
     {
@@ -72,7 +72,7 @@ namespace Java.Util.Logging
 
     #region ErrorManager
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/ErrorManager.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/logging/ErrorManager.html"/>
     /// </summary>
     public partial class ErrorManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ErrorManager>
     {
@@ -116,7 +116,7 @@ namespace Java.Util.Logging
 
     #region FileHandler
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/FileHandler.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/logging/FileHandler.html"/>
     /// </summary>
     public partial class FileHandler : Java.Util.Logging.StreamHandler
     {
@@ -160,7 +160,7 @@ namespace Java.Util.Logging
 
     #region Filter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Filter.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/logging/Filter.html"/>
     /// </summary>
     public partial class Filter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Filter>
     {
@@ -168,12 +168,12 @@ namespace Java.Util.Logging
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Filter() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Filter(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -206,7 +206,7 @@ namespace Java.Util.Logging
 
     #region Formatter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Formatter.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/logging/Formatter.html"/>
     /// </summary>
     public partial class Formatter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Formatter>
     {
@@ -214,12 +214,12 @@ namespace Java.Util.Logging
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Formatter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Formatter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Formatter() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Formatter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Formatter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Formatter(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -252,7 +252,7 @@ namespace Java.Util.Logging
 
     #region Handler
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Handler.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/logging/Handler.html"/>
     /// </summary>
     public partial class Handler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Handler>
     {
@@ -260,12 +260,12 @@ namespace Java.Util.Logging
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Handler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Handler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Handler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Handler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Handler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Handler(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -298,7 +298,7 @@ namespace Java.Util.Logging
 
     #region Level
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Level.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/logging/Level.html"/>
     /// </summary>
     public partial class Level : Java.Io.Serializable
     {
@@ -342,7 +342,7 @@ namespace Java.Util.Logging
 
     #region Logger
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Logger.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/logging/Logger.html"/>
     /// </summary>
     public partial class Logger : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Logger>
     {
@@ -386,21 +386,21 @@ namespace Java.Util.Logging
 
     #region LoggingMXBean
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LoggingMXBean.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/logging/LoggingMXBean.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class LoggingMXBean : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LoggingMXBean>
     {
         const string _bridgeClassName = "java.util.logging.LoggingMXBean";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("LoggingMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LoggingMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LoggingMXBean() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("LoggingMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LoggingMXBean class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LoggingMXBean(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -433,7 +433,7 @@ namespace Java.Util.Logging
 
     #region LoggingPermission
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LoggingPermission.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/logging/LoggingPermission.html"/>
     /// </summary>
     public partial class LoggingPermission : Java.Security.BasicPermission
     {
@@ -477,7 +477,7 @@ namespace Java.Util.Logging
 
     #region LogManager
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogManager.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/logging/LogManager.html"/>
     /// </summary>
     public partial class LogManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LogManager>
     {
@@ -521,7 +521,7 @@ namespace Java.Util.Logging
 
     #region LogRecord
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html"/>
     /// </summary>
     public partial class LogRecord : Java.Io.Serializable
     {
@@ -565,7 +565,7 @@ namespace Java.Util.Logging
 
     #region MemoryHandler
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/MemoryHandler.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/logging/MemoryHandler.html"/>
     /// </summary>
     public partial class MemoryHandler : Java.Util.Logging.Handler
     {
@@ -609,7 +609,7 @@ namespace Java.Util.Logging
 
     #region SimpleFormatter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/SimpleFormatter.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/logging/SimpleFormatter.html"/>
     /// </summary>
     public partial class SimpleFormatter : Java.Util.Logging.Formatter
     {
@@ -653,7 +653,7 @@ namespace Java.Util.Logging
 
     #region SocketHandler
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/SocketHandler.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/logging/SocketHandler.html"/>
     /// </summary>
     public partial class SocketHandler : Java.Util.Logging.StreamHandler
     {
@@ -697,7 +697,7 @@ namespace Java.Util.Logging
 
     #region StreamHandler
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/StreamHandler.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/logging/StreamHandler.html"/>
     /// </summary>
     public partial class StreamHandler : Java.Util.Logging.Handler
     {
@@ -741,7 +741,7 @@ namespace Java.Util.Logging
 
     #region XMLFormatter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/XMLFormatter.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/logging/XMLFormatter.html"/>
     /// </summary>
     public partial class XMLFormatter : Java.Util.Logging.Formatter
     {

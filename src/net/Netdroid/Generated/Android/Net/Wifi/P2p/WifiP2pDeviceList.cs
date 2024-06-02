@@ -60,13 +60,6 @@ namespace Android.Net.Wifi.P2p
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDeviceList.html#getDeviceList()"/> 
-        /// </summary>
-        public Java.Util.Collection<Android.Net.Wifi.P2p.WifiP2pDevice> DeviceList
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<Android.Net.Wifi.P2p.WifiP2pDevice>>("getDeviceList", "()Ljava/util/Collection;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDeviceList.html#get(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -82,6 +75,14 @@ namespace Android.Net.Wifi.P2p
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDeviceList.html#getDeviceList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Android.Net.Wifi.P2p.WifiP2pDevice> GetDeviceList()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Android.Net.Wifi.P2p.WifiP2pDevice>>("getDeviceList", "()Ljava/util/Collection;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDeviceList.html#writeToParcel(android.os.Parcel,int)"/>

@@ -97,109 +97,124 @@ namespace Android.Graphics.Drawable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getColor()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getColor()"/>
         /// </summary>
-        public Android.Content.Res.ColorStateList Color
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetColor()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getColor", "()Landroid/content/res/ColorStateList;"); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getColor", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getColors()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setColors(int[])"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getOrientation()"/>
         /// </summary>
-        public int[] Colors
+        /// <returns><see cref="Android.Graphics.Drawable.GradientDrawable.Orientation"/></returns>
+        public Android.Graphics.Drawable.GradientDrawable.Orientation GetOrientation()
         {
-            get { return IExecuteWithSignatureArray<int>("getColors", "()[I"); } set { IExecuteWithSignature("setColors", "([I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.GradientDrawable.Orientation>("getOrientation", "()Landroid/graphics/drawable/GradientDrawable$Orientation;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getCornerRadii()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setCornerRadii(float[])"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getUseLevel()"/>
         /// </summary>
-        public float[] CornerRadii
+        /// <returns><see cref="bool"/></returns>
+        public bool GetUseLevel()
         {
-            get { return IExecuteWithSignatureArray<float>("getCornerRadii", "()[F"); } set { IExecuteWithSignature("setCornerRadii", "([F)V", value); }
+            return IExecuteWithSignature<bool>("getUseLevel", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getCornerRadius()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setCornerRadius(float)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getCornerRadius()"/>
         /// </summary>
-        public float CornerRadius
+        /// <returns><see cref="float"/></returns>
+        public float GetCornerRadius()
         {
-            get { return IExecuteWithSignature<float>("getCornerRadius", "()F"); } set { IExecuteWithSignature("setCornerRadius", "(F)V", value); }
+            return IExecuteWithSignature<float>("getCornerRadius", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getOrientation()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getGradientCenterX()"/>
         /// </summary>
-        public Android.Graphics.Drawable.GradientDrawable.Orientation GetOrientation
+        /// <returns><see cref="float"/></returns>
+        public float GetGradientCenterX()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.GradientDrawable.Orientation>("getOrientation", "()Landroid/graphics/drawable/GradientDrawable$Orientation;"); }
+            return IExecuteWithSignature<float>("getGradientCenterX", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getGradientCenterX()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getGradientCenterY()"/>
         /// </summary>
-        public float GradientCenterX
+        /// <returns><see cref="float"/></returns>
+        public float GetGradientCenterY()
         {
-            get { return IExecuteWithSignature<float>("getGradientCenterX", "()F"); }
+            return IExecuteWithSignature<float>("getGradientCenterY", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getGradientCenterY()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getGradientRadius()"/>
         /// </summary>
-        public float GradientCenterY
+        /// <returns><see cref="float"/></returns>
+        public float GetGradientRadius()
         {
-            get { return IExecuteWithSignature<float>("getGradientCenterY", "()F"); }
+            return IExecuteWithSignature<float>("getGradientRadius", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getGradientRadius()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setGradientRadius(float)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getInnerRadiusRatio()"/>
         /// </summary>
-        public float GradientRadius
+        /// <returns><see cref="float"/></returns>
+        public float GetInnerRadiusRatio()
         {
-            get { return IExecuteWithSignature<float>("getGradientRadius", "()F"); } set { IExecuteWithSignature("setGradientRadius", "(F)V", value); }
+            return IExecuteWithSignature<float>("getInnerRadiusRatio", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getGradientType()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setGradientType(int)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getThicknessRatio()"/>
         /// </summary>
-        public int GradientType
+        /// <returns><see cref="float"/></returns>
+        public float GetThicknessRatio()
         {
-            get { return IExecuteWithSignature<int>("getGradientType", "()I"); } set { IExecuteWithSignature("setGradientType", "(I)V", value); }
+            return IExecuteWithSignature<float>("getThicknessRatio", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getInnerRadius()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setInnerRadius(int)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getCornerRadii()"/>
         /// </summary>
-        public int InnerRadius
+        /// <returns><see cref="float"/></returns>
+        public float[] GetCornerRadii()
         {
-            get { return IExecuteWithSignature<int>("getInnerRadius", "()I"); } set { IExecuteWithSignature("setInnerRadius", "(I)V", value); }
+            return IExecuteWithSignatureArray<float>("getCornerRadii", "()[F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getInnerRadiusRatio()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setInnerRadiusRatio(float)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getGradientType()"/>
         /// </summary>
-        public float InnerRadiusRatio
+        /// <returns><see cref="int"/></returns>
+        public int GetGradientType()
         {
-            get { return IExecuteWithSignature<float>("getInnerRadiusRatio", "()F"); } set { IExecuteWithSignature("setInnerRadiusRatio", "(F)V", value); }
+            return IExecuteWithSignature<int>("getGradientType", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getShape()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setShape(int)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getInnerRadius()"/>
         /// </summary>
-        public int Shape
+        /// <returns><see cref="int"/></returns>
+        public int GetInnerRadius()
         {
-            get { return IExecuteWithSignature<int>("getShape", "()I"); } set { IExecuteWithSignature("setShape", "(I)V", value); }
+            return IExecuteWithSignature<int>("getInnerRadius", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getThickness()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setThickness(int)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getShape()"/>
         /// </summary>
-        public int Thickness
+        /// <returns><see cref="int"/></returns>
+        public int GetShape()
         {
-            get { return IExecuteWithSignature<int>("getThickness", "()I"); } set { IExecuteWithSignature("setThickness", "(I)V", value); }
+            return IExecuteWithSignature<int>("getShape", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getThicknessRatio()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setThicknessRatio(float)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getThickness()"/>
         /// </summary>
-        public float ThicknessRatio
+        /// <returns><see cref="int"/></returns>
+        public int GetThickness()
         {
-            get { return IExecuteWithSignature<float>("getThicknessRatio", "()F"); } set { IExecuteWithSignature("setThicknessRatio", "(F)V", value); }
+            return IExecuteWithSignature<int>("getThickness", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getUseLevel()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setUseLevel(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#getColors()"/>
         /// </summary>
-        public bool UseLevel
+        /// <returns><see cref="int"/></returns>
+        public int[] GetColors()
         {
-            get { return IExecuteWithSignature<bool>("getUseLevel", "()Z"); } set { IExecuteWithSignature("setUseLevel", "(Z)V", value); }
+            return IExecuteWithSignatureArray<int>("getColors", "()[I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setColor(android.content.res.ColorStateList)"/>
@@ -227,6 +242,30 @@ namespace Android.Graphics.Drawable
             IExecute("setColors", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setColors(int[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetColors(int[] arg0)
+        {
+            IExecuteWithSignature("setColors", "([I)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setCornerRadii(float[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetCornerRadii(float[] arg0)
+        {
+            IExecuteWithSignature("setCornerRadii", "([F)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setCornerRadius(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetCornerRadius(float arg0)
+        {
+            IExecuteWithSignature("setCornerRadius", "(F)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setGradientCenter(float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -234,6 +273,38 @@ namespace Android.Graphics.Drawable
         public void SetGradientCenter(float arg0, float arg1)
         {
             IExecute("setGradientCenter", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setGradientRadius(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetGradientRadius(float arg0)
+        {
+            IExecuteWithSignature("setGradientRadius", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setGradientType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetGradientType(int arg0)
+        {
+            IExecuteWithSignature("setGradientType", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setInnerRadius(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetInnerRadius(int arg0)
+        {
+            IExecuteWithSignature("setInnerRadius", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setInnerRadiusRatio(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetInnerRadiusRatio(float arg0)
+        {
+            IExecuteWithSignature("setInnerRadiusRatio", "(F)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setOrientation(android.graphics.drawable.GradientDrawable.Orientation)"/>
@@ -253,6 +324,14 @@ namespace Android.Graphics.Drawable
         public void SetPadding(int arg0, int arg1, int arg2, int arg3)
         {
             IExecute("setPadding", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setShape(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetShape(int arg0)
+        {
+            IExecuteWithSignature("setShape", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setSize(int,int)"/>
@@ -302,6 +381,30 @@ namespace Android.Graphics.Drawable
         public void SetStroke(int arg0, int arg1)
         {
             IExecute("setStroke", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setThickness(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetThickness(int arg0)
+        {
+            IExecuteWithSignature("setThickness", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setThicknessRatio(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetThicknessRatio(float arg0)
+        {
+            IExecuteWithSignature("setThicknessRatio", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/GradientDrawable.html#setUseLevel(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetUseLevel(bool arg0)
+        {
+            IExecuteWithSignature("setUseLevel", "(Z)V", arg0);
         }
 
         #endregion

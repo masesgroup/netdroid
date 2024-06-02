@@ -60,54 +60,60 @@ namespace Android.App.Usage
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/EventStats.html#getCount()"/> 
-        /// </summary>
-        public int Count
-        {
-            get { return IExecuteWithSignature<int>("getCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/EventStats.html#getEventType()"/> 
-        /// </summary>
-        public int EventType
-        {
-            get { return IExecuteWithSignature<int>("getEventType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/EventStats.html#getFirstTimeStamp()"/> 
-        /// </summary>
-        public long FirstTimeStamp
-        {
-            get { return IExecuteWithSignature<long>("getFirstTimeStamp", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/EventStats.html#getLastEventTime()"/> 
-        /// </summary>
-        public long LastEventTime
-        {
-            get { return IExecuteWithSignature<long>("getLastEventTime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/EventStats.html#getLastTimeStamp()"/> 
-        /// </summary>
-        public long LastTimeStamp
-        {
-            get { return IExecuteWithSignature<long>("getLastTimeStamp", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/EventStats.html#getTotalTime()"/> 
-        /// </summary>
-        public long TotalTime
-        {
-            get { return IExecuteWithSignature<long>("getTotalTime", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/EventStats.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/EventStats.html#getCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCount()
+        {
+            return IExecuteWithSignature<int>("getCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/EventStats.html#getEventType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEventType()
+        {
+            return IExecuteWithSignature<int>("getEventType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/EventStats.html#getFirstTimeStamp()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetFirstTimeStamp()
+        {
+            return IExecuteWithSignature<long>("getFirstTimeStamp", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/EventStats.html#getLastEventTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLastEventTime()
+        {
+            return IExecuteWithSignature<long>("getLastEventTime", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/EventStats.html#getLastTimeStamp()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLastTimeStamp()
+        {
+            return IExecuteWithSignature<long>("getLastTimeStamp", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/EventStats.html#getTotalTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTotalTime()
+        {
+            return IExecuteWithSignature<long>("getTotalTime", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/EventStats.html#add(android.app.usage.EventStats)"/>

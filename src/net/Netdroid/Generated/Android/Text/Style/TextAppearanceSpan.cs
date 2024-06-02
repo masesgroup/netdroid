@@ -89,116 +89,36 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getFamily()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getLinkTextColor()"/>
         /// </summary>
-        public Java.Lang.String Family
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetLinkTextColor()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFamily", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getLinkTextColor", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getFontFeatureSettings()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTextColor()"/>
         /// </summary>
-        public Java.Lang.String FontFeatureSettings
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetTextColor()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFontFeatureSettings", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getTextColor", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getFontVariationSettings()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTypeface()"/>
         /// </summary>
-        public Java.Lang.String FontVariationSettings
+        /// <returns><see cref="Android.Graphics.Typeface"/></returns>
+        public Android.Graphics.Typeface GetTypeface()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFontVariationSettings", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Graphics.Typeface>("getTypeface", "()Landroid/graphics/Typeface;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getLetterSpacing()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTextLocales()"/>
         /// </summary>
-        public float LetterSpacing
+        /// <returns><see cref="Android.Os.LocaleList"/></returns>
+        public Android.Os.LocaleList GetTextLocales()
         {
-            get { return IExecuteWithSignature<float>("getLetterSpacing", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getLinkTextColor()"/> 
-        /// </summary>
-        public Android.Content.Res.ColorStateList LinkTextColor
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getLinkTextColor", "()Landroid/content/res/ColorStateList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getShadowColor()"/> 
-        /// </summary>
-        public int ShadowColor
-        {
-            get { return IExecuteWithSignature<int>("getShadowColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getShadowDx()"/> 
-        /// </summary>
-        public float ShadowDx
-        {
-            get { return IExecuteWithSignature<float>("getShadowDx", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getShadowDy()"/> 
-        /// </summary>
-        public float ShadowDy
-        {
-            get { return IExecuteWithSignature<float>("getShadowDy", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getShadowRadius()"/> 
-        /// </summary>
-        public float ShadowRadius
-        {
-            get { return IExecuteWithSignature<float>("getShadowRadius", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getSpanTypeId()"/> 
-        /// </summary>
-        public int SpanTypeId
-        {
-            get { return IExecuteWithSignature<int>("getSpanTypeId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTextColor()"/> 
-        /// </summary>
-        public Android.Content.Res.ColorStateList TextColor
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getTextColor", "()Landroid/content/res/ColorStateList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTextFontWeight()"/> 
-        /// </summary>
-        public int TextFontWeight
-        {
-            get { return IExecuteWithSignature<int>("getTextFontWeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTextLocales()"/> 
-        /// </summary>
-        public Android.Os.LocaleList TextLocales
-        {
-            get { return IExecuteWithSignature<Android.Os.LocaleList>("getTextLocales", "()Landroid/os/LocaleList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTextSize()"/> 
-        /// </summary>
-        public int TextSize
-        {
-            get { return IExecuteWithSignature<int>("getTextSize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTextStyle()"/> 
-        /// </summary>
-        public int TextStyle
-        {
-            get { return IExecuteWithSignature<int>("getTextStyle", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTypeface()"/> 
-        /// </summary>
-        public Android.Graphics.Typeface Typeface
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Typeface>("getTypeface", "()Landroid/graphics/Typeface;"); }
+            return IExecuteWithSignature<Android.Os.LocaleList>("getTextLocales", "()Landroid/os/LocaleList;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#isElegantTextHeight()"/>
@@ -209,12 +129,108 @@ namespace Android.Text.Style
             return IExecuteWithSignature<bool>("isElegantTextHeight", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getLetterSpacing()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetLetterSpacing()
+        {
+            return IExecuteWithSignature<float>("getLetterSpacing", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getShadowDx()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetShadowDx()
+        {
+            return IExecuteWithSignature<float>("getShadowDx", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getShadowDy()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetShadowDy()
+        {
+            return IExecuteWithSignature<float>("getShadowDy", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getShadowRadius()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetShadowRadius()
+        {
+            return IExecuteWithSignature<float>("getShadowRadius", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getShadowColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetShadowColor()
+        {
+            return IExecuteWithSignature<int>("getShadowColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getSpanTypeId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSpanTypeId()
+        {
+            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTextFontWeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTextFontWeight()
+        {
+            return IExecuteWithSignature<int>("getTextFontWeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTextSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTextSize()
+        {
+            return IExecuteWithSignature<int>("getTextSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getTextStyle()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTextStyle()
+        {
+            return IExecuteWithSignature<int>("getTextStyle", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getFamily()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFamily()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFamily", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getFontFeatureSettings()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFontFeatureSettings()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFontFeatureSettings", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#getFontVariationSettings()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFontVariationSettings()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFontVariationSettings", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/TextAppearanceSpan.html#writeToParcel(android.os.Parcel,int)"/>

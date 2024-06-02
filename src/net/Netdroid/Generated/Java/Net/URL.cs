@@ -30,7 +30,7 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,int,java.lang.String,java.net.URLStreamHandler)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,int,java.lang.String,java.net.URLStreamHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -43,7 +43,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -55,7 +55,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -66,7 +66,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Net.MalformedURLException"/>
@@ -75,7 +75,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#%3Cinit%3E(java.net.URL,java.lang.String,java.net.URLStreamHandler)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#%3Cinit%3E(java.net.URL,java.lang.String,java.net.URLStreamHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -86,7 +86,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#%3Cinit%3E(java.net.URL,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#%3Cinit%3E(java.net.URL,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -108,7 +108,7 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#setURLStreamHandlerFactory(java.net.URLStreamHandlerFactory)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#setURLStreamHandlerFactory(java.net.URLStreamHandlerFactory)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URLStreamHandlerFactory"/></param>
         public static void SetURLStreamHandlerFactory(Java.Net.URLStreamHandlerFactory arg0)
@@ -120,84 +120,7 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#getAuthority()"/> 
-        /// </summary>
-        public Java.Lang.String Authority
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAuthority", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#getContent()"/> 
-        /// </summary>
-        public object Content
-        {
-            get { return IExecuteWithSignature("getContent", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#getDefaultPort()"/> 
-        /// </summary>
-        public int DefaultPort
-        {
-            get { return IExecuteWithSignature<int>("getDefaultPort", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#getFile()"/> 
-        /// </summary>
-        public Java.Lang.String File
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFile", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#getHost()"/> 
-        /// </summary>
-        public Java.Lang.String Host
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHost", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#getPath()"/> 
-        /// </summary>
-        public Java.Lang.String Path
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPath", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#getPort()"/> 
-        /// </summary>
-        public int Port
-        {
-            get { return IExecuteWithSignature<int>("getPort", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#getProtocol()"/> 
-        /// </summary>
-        public Java.Lang.String Protocol
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getProtocol", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#getQuery()"/> 
-        /// </summary>
-        public Java.Lang.String Query
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getQuery", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#getRef()"/> 
-        /// </summary>
-        public Java.Lang.String Ref
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRef", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#getUserInfo()"/> 
-        /// </summary>
-        public Java.Lang.String UserInfo
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUserInfo", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#sameFile(java.net.URL)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#sameFile(java.net.URL)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -206,7 +129,7 @@ namespace Java.Net
             return IExecuteWithSignature<bool>("sameFile", "(Ljava/net/URL;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#openStream()"/>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#openStream()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -215,7 +138,16 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Io.InputStream>("openStream", "()Ljava/io/InputStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#getContent(java.lang.Class[])"/>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#getContent()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public object GetContent()
+        {
+            return IExecuteWithSignature("getContent", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#getContent(java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="object"/></returns>
@@ -225,7 +157,87 @@ namespace Java.Net
             return IExecuteWithSignature("getContent", "([Ljava/lang/Class;)Ljava/lang/Object;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#toExternalForm()"/>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#getDefaultPort()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDefaultPort()
+        {
+            return IExecuteWithSignature<int>("getDefaultPort", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#getPort()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPort()
+        {
+            return IExecuteWithSignature<int>("getPort", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#getAuthority()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAuthority()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAuthority", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#getFile()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFile()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFile", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#getHost()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHost()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getHost", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#getPath()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPath()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPath", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#getProtocol()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetProtocol()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getProtocol", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#getQuery()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetQuery()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getQuery", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#getRef()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetRef()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getRef", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#getUserInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUserInfo()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUserInfo", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#toExternalForm()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToExternalForm()
@@ -233,7 +245,7 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Lang.String>("toExternalForm", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#toURI()"/>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#toURI()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.URI"/></returns>
         /// <exception cref="Java.Net.URISyntaxException"/>
@@ -242,7 +254,7 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Net.URI>("toURI", "()Ljava/net/URI;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#openConnection()"/>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#openConnection()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.URLConnection"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -251,7 +263,7 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Net.URLConnection>("openConnection", "()Ljava/net/URLConnection;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URL.html#openConnection(java.net.Proxy)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URL.html#openConnection(java.net.Proxy)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.Proxy"/></param>
         /// <returns><see cref="Java.Net.URLConnection"/></returns>

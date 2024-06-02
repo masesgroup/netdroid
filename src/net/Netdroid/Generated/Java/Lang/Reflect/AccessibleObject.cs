@@ -42,7 +42,7 @@ namespace Java.Lang.Reflect
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/AccessibleObject.html#setAccessible(java.lang.reflect.AccessibleObject[],boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/AccessibleObject.html#setAccessible(java.lang.reflect.AccessibleObject[],boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Reflect.AccessibleObject"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -55,70 +55,56 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/AccessibleObject.html#getAnnotations()"/> 
-        /// </summary>
-        public Java.Lang.Annotation.Annotation[] Annotations
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotations()"/> 
-        /// </summary>
-        public Java.Lang.Annotation.Annotation[] DeclaredAnnotations
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/AccessibleObject.html#getAnnotation(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/AccessibleObject.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T GetAnnotation<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.IAnnotation, new()
+        public T GetAnnotation<T>(Java.Lang.Class arg0) where T : Java.Lang.Annotation.IAnnotation, new()
         {
-            return IExecuteWithSignature<T>("getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", arg0);
+            return IExecute<T>("getAnnotation", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotation(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T GetDeclaredAnnotation<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.IAnnotation, new()
+        public T GetDeclaredAnnotation<T>(Java.Lang.Class arg0) where T : Java.Lang.Annotation.IAnnotation, new()
         {
-            return IExecuteWithSignature<T>("getDeclaredAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", arg0);
+            return IExecute<T>("getDeclaredAnnotation", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/AccessibleObject.html#getAnnotationsByType(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/AccessibleObject.html#getAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T[] GetAnnotationsByType<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.IAnnotation, new()
+        public T[] GetAnnotationsByType<T>(Java.Lang.Class arg0) where T : Java.Lang.Annotation.IAnnotation, new()
         {
-            return IExecuteWithSignatureArray<T>("getAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;", arg0);
+            return IExecuteArray<T>("getAnnotationsByType", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T[] GetDeclaredAnnotationsByType<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.IAnnotation, new()
+        public T[] GetDeclaredAnnotationsByType<T>(Java.Lang.Class arg0) where T : Java.Lang.Annotation.IAnnotation, new()
         {
-            return IExecuteWithSignatureArray<T>("getDeclaredAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;", arg0);
+            return IExecuteArray<T>("getDeclaredAnnotationsByType", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/AccessibleObject.html#isAccessible()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/AccessibleObject.html#isAccessible()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsAccessible()
         {
             return IExecuteWithSignature<bool>("isAccessible", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/AccessibleObject.html#isAnnotationPresent(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/AccessibleObject.html#isAnnotationPresent(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -127,7 +113,7 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<bool>("isAnnotationPresent", "(Ljava/lang/Class;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/AccessibleObject.html#canAccess(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/AccessibleObject.html#canAccess(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -136,7 +122,7 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<bool>("canAccess", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/AccessibleObject.html#trySetAccessible()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/AccessibleObject.html#trySetAccessible()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool TrySetAccessible()
@@ -144,7 +130,23 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<bool>("trySetAccessible", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/AccessibleObject.html#setAccessible(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/AccessibleObject.html#getAnnotations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
+        public Java.Lang.Annotation.Annotation[] GetAnnotations()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getAnnotations", "()[Ljava/lang/annotation/Annotation;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/AccessibleObject.html#getDeclaredAnnotations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
+        public Java.Lang.Annotation.Annotation[] GetDeclaredAnnotations()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/AccessibleObject.html#setAccessible(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetAccessible(bool arg0)

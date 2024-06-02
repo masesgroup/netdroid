@@ -50,7 +50,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool GetVarB(int arg0)
         {
             return IExecuteWithSignature<bool>("getVarB", "(I)Z", arg0);
@@ -60,7 +60,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="double"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public double GetVarD(int arg0)
         {
             return IExecuteWithSignature<double>("getVarD", "(I)D", arg0);
@@ -70,7 +70,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="float"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public float GetVarF(int arg0)
         {
             return IExecuteWithSignature<float>("getVarF", "(I)F", arg0);
@@ -80,7 +80,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int GetVarI(int arg0)
         {
             return IExecuteWithSignature<int>("getVarI", "(I)I", arg0);
@@ -90,7 +90,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="long"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long GetVarJ(int arg0)
         {
             return IExecuteWithSignature<long>("getVarJ", "(I)J", arg0);
@@ -100,7 +100,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void BindAllocation(Android.Renderscript.Allocation arg0, int arg1)
         {
             IExecute("bindAllocation", arg0, arg1);
@@ -110,7 +110,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.FieldPacker"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void GetVarV(int arg0, Android.Renderscript.FieldPacker arg1)
         {
             IExecute("getVarV", arg0, arg1);
@@ -119,7 +119,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Script.html#setTimeZone(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetTimeZone(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setTimeZone", "(Ljava/lang/String;)V", arg0);
@@ -129,7 +129,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.BaseObj"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetVar(int arg0, Android.Renderscript.BaseObj arg1)
         {
             IExecute("setVar", arg0, arg1);
@@ -141,7 +141,7 @@ namespace Android.Renderscript
         /// <param name="arg1"><see cref="Android.Renderscript.FieldPacker"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Element"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetVar(int arg0, Android.Renderscript.FieldPacker arg1, Android.Renderscript.Element arg2, int[] arg3)
         {
             IExecute("setVar", arg0, arg1, arg2, arg3);
@@ -151,7 +151,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.FieldPacker"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetVar(int arg0, Android.Renderscript.FieldPacker arg1)
         {
             IExecute("setVar", arg0, arg1);
@@ -161,7 +161,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetVar(int arg0, bool arg1)
         {
             IExecute("setVar", arg0, arg1);
@@ -171,7 +171,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetVar(int arg0, double arg1)
         {
             IExecute("setVar", arg0, arg1);
@@ -181,7 +181,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetVar(int arg0, float arg1)
         {
             IExecute("setVar", arg0, arg1);
@@ -191,7 +191,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetVar(int arg0, int arg1)
         {
             IExecute("setVar", arg0, arg1);
@@ -201,7 +201,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetVar(int arg0, long arg1)
         {
             IExecute("setVar", arg0, arg1);
@@ -262,33 +262,36 @@ namespace Android.Renderscript
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/renderscript/Script.FieldBase.html#getAllocation()"/> 
+            /// <see href="https://developer.android.com/reference/android/renderscript/Script.FieldBase.html#getAllocation()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Android.Renderscript.Allocation Allocation
+            /// <returns><see cref="Android.Renderscript.Allocation"/></returns>
+            [global::System.Obsolete()]
+            public Android.Renderscript.Allocation GetAllocation()
             {
-                get { return IExecuteWithSignature<Android.Renderscript.Allocation>("getAllocation", "()Landroid/renderscript/Allocation;"); }
+                return IExecuteWithSignature<Android.Renderscript.Allocation>("getAllocation", "()Landroid/renderscript/Allocation;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/renderscript/Script.FieldBase.html#getElement()"/> 
+            /// <see href="https://developer.android.com/reference/android/renderscript/Script.FieldBase.html#getElement()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Android.Renderscript.Element Element
+            /// <returns><see cref="Android.Renderscript.Element"/></returns>
+            [global::System.Obsolete()]
+            public Android.Renderscript.Element GetElement()
             {
-                get { return IExecuteWithSignature<Android.Renderscript.Element>("getElement", "()Landroid/renderscript/Element;"); }
+                return IExecuteWithSignature<Android.Renderscript.Element>("getElement", "()Landroid/renderscript/Element;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/renderscript/Script.FieldBase.html#getType()"/> 
+            /// <see href="https://developer.android.com/reference/android/renderscript/Script.FieldBase.html#getType()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Android.Renderscript.Type Type
+            /// <returns><see cref="Android.Renderscript.Type"/></returns>
+            [global::System.Obsolete()]
+            public Android.Renderscript.Type GetType()
             {
-                get { return IExecuteWithSignature<Android.Renderscript.Type>("getType", "()Landroid/renderscript/Type;"); }
+                return IExecuteWithSignature<Android.Renderscript.Type>("getType", "()Landroid/renderscript/Type;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Script.FieldBase.html#updateAllocation()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void UpdateAllocation()
             {
                 IExecuteWithSignature("updateAllocation", "()V");
@@ -418,60 +421,12 @@ namespace Android.Renderscript
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html#getXEnd()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int XEnd
-            {
-                get { return IExecuteWithSignature<int>("getXEnd", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html#getXStart()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int XStart
-            {
-                get { return IExecuteWithSignature<int>("getXStart", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html#getYEnd()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int YEnd
-            {
-                get { return IExecuteWithSignature<int>("getYEnd", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html#getYStart()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int YStart
-            {
-                get { return IExecuteWithSignature<int>("getYStart", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html#getZEnd()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int ZEnd
-            {
-                get { return IExecuteWithSignature<int>("getZEnd", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html#getZStart()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int ZStart
-            {
-                get { return IExecuteWithSignature<int>("getZStart", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html#setX(int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see cref="Android.Renderscript.Script.LaunchOptions"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.Script.LaunchOptions SetX(int arg0, int arg1)
             {
                 return IExecute<Android.Renderscript.Script.LaunchOptions>("setX", arg0, arg1);
@@ -482,7 +437,7 @@ namespace Android.Renderscript
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see cref="Android.Renderscript.Script.LaunchOptions"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.Script.LaunchOptions SetY(int arg0, int arg1)
             {
                 return IExecute<Android.Renderscript.Script.LaunchOptions>("setY", arg0, arg1);
@@ -493,10 +448,64 @@ namespace Android.Renderscript
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see cref="Android.Renderscript.Script.LaunchOptions"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.Script.LaunchOptions SetZ(int arg0, int arg1)
             {
                 return IExecute<Android.Renderscript.Script.LaunchOptions>("setZ", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html#getXEnd()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetXEnd()
+            {
+                return IExecuteWithSignature<int>("getXEnd", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html#getXStart()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetXStart()
+            {
+                return IExecuteWithSignature<int>("getXStart", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html#getYEnd()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetYEnd()
+            {
+                return IExecuteWithSignature<int>("getYEnd", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html#getYStart()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetYStart()
+            {
+                return IExecuteWithSignature<int>("getYStart", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html#getZEnd()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetZEnd()
+            {
+                return IExecuteWithSignature<int>("getZEnd", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html#getZStart()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetZStart()
+            {
+                return IExecuteWithSignature<int>("getZStart", "()I");
             }
 
             #endregion

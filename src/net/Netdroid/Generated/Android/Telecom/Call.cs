@@ -124,7 +124,7 @@ namespace Android.Telecom
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Call.html#AVAILABLE_PHONE_ACCOUNTS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String AVAILABLE_PHONE_ACCOUNTS { get { if (!_AVAILABLE_PHONE_ACCOUNTSReady) { _AVAILABLE_PHONE_ACCOUNTSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "AVAILABLE_PHONE_ACCOUNTS"); _AVAILABLE_PHONE_ACCOUNTSReady = true; } return _AVAILABLE_PHONE_ACCOUNTSContent; } }
         private static Java.Lang.String _AVAILABLE_PHONE_ACCOUNTSContent = default;
         private static bool _AVAILABLE_PHONE_ACCOUNTSReady = false; // this is used because in case of generics 
@@ -185,75 +185,44 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getCannedTextResponses()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getGenericConferenceActiveChildCall()"/>
         /// </summary>
-        public Java.Util.List<Java.Lang.String> CannedTextResponses
+        /// <returns><see cref="Android.Telecom.Call"/></returns>
+        public Android.Telecom.Call GetGenericConferenceActiveChildCall()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getCannedTextResponses", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Telecom.Call>("getGenericConferenceActiveChildCall", "()Landroid/telecom/Call;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getChildren()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getParent()"/>
         /// </summary>
-        public Java.Util.List<Android.Telecom.Call> Children
+        /// <returns><see cref="Android.Telecom.Call"/></returns>
+        public Android.Telecom.Call GetParent()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telecom.Call>>("getChildren", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Telecom.Call>("getParent", "()Landroid/telecom/Call;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getConferenceableCalls()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getDetails()"/>
         /// </summary>
-        public Java.Util.List<Android.Telecom.Call> ConferenceableCalls
+        /// <returns><see cref="Android.Telecom.Call.Details"/></returns>
+        public Android.Telecom.Call.Details GetDetails()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telecom.Call>>("getConferenceableCalls", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Telecom.Call.Details>("getDetails", "()Landroid/telecom/Call$Details;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getGenericConferenceActiveChildCall()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getRttCall()"/>
         /// </summary>
-        public Android.Telecom.Call GenericConferenceActiveChildCall
+        /// <returns><see cref="Android.Telecom.Call.RttCall"/></returns>
+        public Android.Telecom.Call.RttCall GetRttCall()
         {
-            get { return IExecuteWithSignature<Android.Telecom.Call>("getGenericConferenceActiveChildCall", "()Landroid/telecom/Call;"); }
+            return IExecuteWithSignature<Android.Telecom.Call.RttCall>("getRttCall", "()Landroid/telecom/Call$RttCall;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getDetails()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getVideoCall()"/>
         /// </summary>
-        public Android.Telecom.Call.Details GetDetails
+        /// <returns><see cref="Android.Telecom.InCallService.VideoCall"/></returns>
+        public Android.Telecom.InCallService.VideoCall GetVideoCall()
         {
-            get { return IExecuteWithSignature<Android.Telecom.Call.Details>("getDetails", "()Landroid/telecom/Call$Details;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getRttCall()"/> 
-        /// </summary>
-        public Android.Telecom.Call.RttCall GetRttCall
-        {
-            get { return IExecuteWithSignature<Android.Telecom.Call.RttCall>("getRttCall", "()Landroid/telecom/Call$RttCall;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getParent()"/> 
-        /// </summary>
-        public Android.Telecom.Call Parent
-        {
-            get { return IExecuteWithSignature<Android.Telecom.Call>("getParent", "()Landroid/telecom/Call;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getRemainingPostDialSequence()"/> 
-        /// </summary>
-        public Java.Lang.String RemainingPostDialSequence
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRemainingPostDialSequence", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getState()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getVideoCall()"/> 
-        /// </summary>
-        public Android.Telecom.InCallService.VideoCall VideoCall
-        {
-            get { return IExecuteWithSignature<Android.Telecom.InCallService.VideoCall>("getVideoCall", "()Landroid/telecom/InCallService$VideoCall;"); }
+            return IExecuteWithSignature<Android.Telecom.InCallService.VideoCall>("getVideoCall", "()Landroid/telecom/InCallService$VideoCall;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Call.html#isRttActive()"/>
@@ -262,6 +231,47 @@ namespace Android.Telecom
         public bool IsRttActive()
         {
             return IExecuteWithSignature<bool>("isRttActive", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getRemainingPostDialSequence()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetRemainingPostDialSequence()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getRemainingPostDialSequence", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getChildren()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telecom.Call> GetChildren()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telecom.Call>>("getChildren", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getConferenceableCalls()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telecom.Call> GetConferenceableCalls()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telecom.Call>>("getConferenceableCalls", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Call.html#getCannedTextResponses()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetCannedTextResponses()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getCannedTextResponses", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Call.html#addConferenceParticipants(java.util.List)"/>
@@ -986,144 +996,68 @@ namespace Android.Telecom
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getAccountHandle()"/> 
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getContactPhotoUri()"/>
             /// </summary>
-            public Android.Telecom.PhoneAccountHandle AccountHandle
+            /// <returns><see cref="Android.Net.Uri"/></returns>
+            public Android.Net.Uri GetContactPhotoUri()
             {
-                get { return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getAccountHandle", "()Landroid/telecom/PhoneAccountHandle;"); }
+                return IExecuteWithSignature<Android.Net.Uri>("getContactPhotoUri", "()Landroid/net/Uri;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallCapabilities()"/> 
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getHandle()"/>
             /// </summary>
-            public int CallCapabilities
+            /// <returns><see cref="Android.Net.Uri"/></returns>
+            public Android.Net.Uri GetHandle()
             {
-                get { return IExecuteWithSignature<int>("getCallCapabilities", "()I"); }
+                return IExecuteWithSignature<Android.Net.Uri>("getHandle", "()Landroid/net/Uri;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallDirection()"/> 
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getExtras()"/>
             /// </summary>
-            public int CallDirection
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetExtras()
             {
-                get { return IExecuteWithSignature<int>("getCallDirection", "()I"); }
+                return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallerDisplayName()"/> 
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getIntentExtras()"/>
             /// </summary>
-            public Java.Lang.String CallerDisplayName
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetIntentExtras()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getCallerDisplayName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Android.Os.Bundle>("getIntentExtras", "()Landroid/os/Bundle;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallerDisplayNamePresentation()"/> 
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getDisconnectCause()"/>
             /// </summary>
-            public int CallerDisplayNamePresentation
+            /// <returns><see cref="Android.Telecom.DisconnectCause"/></returns>
+            public Android.Telecom.DisconnectCause GetDisconnectCause()
             {
-                get { return IExecuteWithSignature<int>("getCallerDisplayNamePresentation", "()I"); }
+                return IExecuteWithSignature<Android.Telecom.DisconnectCause>("getDisconnectCause", "()Landroid/telecom/DisconnectCause;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallerNumberVerificationStatus()"/> 
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getGatewayInfo()"/>
             /// </summary>
-            public int CallerNumberVerificationStatus
+            /// <returns><see cref="Android.Telecom.GatewayInfo"/></returns>
+            public Android.Telecom.GatewayInfo GetGatewayInfo()
             {
-                get { return IExecuteWithSignature<int>("getCallerNumberVerificationStatus", "()I"); }
+                return IExecuteWithSignature<Android.Telecom.GatewayInfo>("getGatewayInfo", "()Landroid/telecom/GatewayInfo;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallProperties()"/> 
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getAccountHandle()"/>
             /// </summary>
-            public int CallProperties
+            /// <returns><see cref="Android.Telecom.PhoneAccountHandle"/></returns>
+            public Android.Telecom.PhoneAccountHandle GetAccountHandle()
             {
-                get { return IExecuteWithSignature<int>("getCallProperties", "()I"); }
+                return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getAccountHandle", "()Landroid/telecom/PhoneAccountHandle;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getConnectTimeMillis()"/> 
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getStatusHints()"/>
             /// </summary>
-            public long ConnectTimeMillis
+            /// <returns><see cref="Android.Telecom.StatusHints"/></returns>
+            public Android.Telecom.StatusHints GetStatusHints()
             {
-                get { return IExecuteWithSignature<long>("getConnectTimeMillis", "()J"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getContactDisplayName()"/> 
-            /// </summary>
-            public Java.Lang.String ContactDisplayName
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getContactDisplayName", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getContactPhotoUri()"/> 
-            /// </summary>
-            public Android.Net.Uri ContactPhotoUri
-            {
-                get { return IExecuteWithSignature<Android.Net.Uri>("getContactPhotoUri", "()Landroid/net/Uri;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCreationTimeMillis()"/> 
-            /// </summary>
-            public long CreationTimeMillis
-            {
-                get { return IExecuteWithSignature<long>("getCreationTimeMillis", "()J"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getDisconnectCause()"/> 
-            /// </summary>
-            public Android.Telecom.DisconnectCause DisconnectCause
-            {
-                get { return IExecuteWithSignature<Android.Telecom.DisconnectCause>("getDisconnectCause", "()Landroid/telecom/DisconnectCause;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getExtras()"/> 
-            /// </summary>
-            public Android.Os.Bundle Extras
-            {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getGatewayInfo()"/> 
-            /// </summary>
-            public Android.Telecom.GatewayInfo GatewayInfo
-            {
-                get { return IExecuteWithSignature<Android.Telecom.GatewayInfo>("getGatewayInfo", "()Landroid/telecom/GatewayInfo;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getHandle()"/> 
-            /// </summary>
-            public Android.Net.Uri Handle
-            {
-                get { return IExecuteWithSignature<Android.Net.Uri>("getHandle", "()Landroid/net/Uri;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getHandlePresentation()"/> 
-            /// </summary>
-            public int HandlePresentation
-            {
-                get { return IExecuteWithSignature<int>("getHandlePresentation", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getIntentExtras()"/> 
-            /// </summary>
-            public Android.Os.Bundle IntentExtras
-            {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getIntentExtras", "()Landroid/os/Bundle;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getState()"/> 
-            /// </summary>
-            public int State
-            {
-                get { return IExecuteWithSignature<int>("getState", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getStatusHints()"/> 
-            /// </summary>
-            public Android.Telecom.StatusHints StatusHints
-            {
-                get { return IExecuteWithSignature<Android.Telecom.StatusHints>("getStatusHints", "()Landroid/telecom/StatusHints;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getVideoState()"/> 
-            /// </summary>
-            public int VideoState
-            {
-                get { return IExecuteWithSignature<int>("getVideoState", "()I"); }
+                return IExecuteWithSignature<Android.Telecom.StatusHints>("getStatusHints", "()Landroid/telecom/StatusHints;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#can(int)"/>
@@ -1142,6 +1076,102 @@ namespace Android.Telecom
             public bool HasProperty(int arg0)
             {
                 return IExecuteWithSignature<bool>("hasProperty", "(I)Z", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getState()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetState()
+            {
+                return IExecuteWithSignature<int>("getState", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getConnectTimeMillis()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetConnectTimeMillis()
+            {
+                return IExecuteWithSignature<long>("getConnectTimeMillis", "()J");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallCapabilities()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetCallCapabilities()
+            {
+                return IExecuteWithSignature<int>("getCallCapabilities", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallDirection()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetCallDirection()
+            {
+                return IExecuteWithSignature<int>("getCallDirection", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallerDisplayNamePresentation()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetCallerDisplayNamePresentation()
+            {
+                return IExecuteWithSignature<int>("getCallerDisplayNamePresentation", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallerNumberVerificationStatus()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetCallerNumberVerificationStatus()
+            {
+                return IExecuteWithSignature<int>("getCallerNumberVerificationStatus", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallProperties()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetCallProperties()
+            {
+                return IExecuteWithSignature<int>("getCallProperties", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getHandlePresentation()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetHandlePresentation()
+            {
+                return IExecuteWithSignature<int>("getHandlePresentation", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getVideoState()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetVideoState()
+            {
+                return IExecuteWithSignature<int>("getVideoState", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCallerDisplayName()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetCallerDisplayName()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getCallerDisplayName", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getContactDisplayName()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetContactDisplayName()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getContactDisplayName", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.Details.html#getCreationTimeMillis()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetCreationTimeMillis()
+            {
+                return IExecuteWithSignature<long>("getCreationTimeMillis", "()J");
             }
 
             #endregion
@@ -1193,11 +1223,12 @@ namespace Android.Telecom
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/Call.RttCall.html#getRttAudioMode()"/> 
+            /// <see href="https://developer.android.com/reference/android/telecom/Call.RttCall.html#getRttAudioMode()"/>
             /// </summary>
-            public int RttAudioMode
+            /// <returns><see cref="int"/></returns>
+            public int GetRttAudioMode()
             {
-                get { return IExecuteWithSignature<int>("getRttAudioMode", "()I"); }
+                return IExecuteWithSignature<int>("getRttAudioMode", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/Call.RttCall.html#read()"/>

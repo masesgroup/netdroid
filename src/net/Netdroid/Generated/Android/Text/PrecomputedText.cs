@@ -56,20 +56,6 @@ namespace Android.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.html#getParams()"/> 
-        /// </summary>
-        public Android.Text.PrecomputedText.Params GetParams
-        {
-            get { return IExecuteWithSignature<Android.Text.PrecomputedText.Params>("getParams", "()Landroid/text/PrecomputedText$Params;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.html#getParagraphCount()"/> 
-        /// </summary>
-        public int ParagraphCount
-        {
-            get { return IExecuteWithSignature<int>("getParagraphCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.html#getSpans(int,int,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -80,6 +66,14 @@ namespace Android.Text
         public T[] GetSpans<T>(int arg0, int arg1, Java.Lang.Class arg2)
         {
             return IExecuteArray<T>("getSpans", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.html#getParams()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.PrecomputedText.Params"/></returns>
+        public Android.Text.PrecomputedText.Params GetParams()
+        {
+            return IExecuteWithSignature<Android.Text.PrecomputedText.Params>("getParams", "()Landroid/text/PrecomputedText$Params;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.html#charAt(int)"/>
@@ -99,6 +93,14 @@ namespace Android.Text
         public float GetWidth(int arg0, int arg1)
         {
             return IExecute<float>("getWidth", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.html#getParagraphCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetParagraphCount()
+        {
+            return IExecuteWithSignature<int>("getParagraphCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.html#getParagraphEnd(int)"/>
@@ -238,39 +240,44 @@ namespace Android.Text
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.Params.html#getBreakStrategy()"/> 
+            /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.Params.html#getLineBreakConfig()"/>
             /// </summary>
-            public int BreakStrategy
+            /// <returns><see cref="Android.Graphics.Text.LineBreakConfig"/></returns>
+            public Android.Graphics.Text.LineBreakConfig GetLineBreakConfig()
             {
-                get { return IExecuteWithSignature<int>("getBreakStrategy", "()I"); }
+                return IExecuteWithSignature<Android.Graphics.Text.LineBreakConfig>("getLineBreakConfig", "()Landroid/graphics/text/LineBreakConfig;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.Params.html#getHyphenationFrequency()"/> 
+            /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.Params.html#getTextDirection()"/>
             /// </summary>
-            public int HyphenationFrequency
+            /// <returns><see cref="Android.Text.TextDirectionHeuristic"/></returns>
+            public Android.Text.TextDirectionHeuristic GetTextDirection()
             {
-                get { return IExecuteWithSignature<int>("getHyphenationFrequency", "()I"); }
+                return IExecuteWithSignature<Android.Text.TextDirectionHeuristic>("getTextDirection", "()Landroid/text/TextDirectionHeuristic;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.Params.html#getLineBreakConfig()"/> 
+            /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.Params.html#getTextPaint()"/>
             /// </summary>
-            public Android.Graphics.Text.LineBreakConfig LineBreakConfig
+            /// <returns><see cref="Android.Text.TextPaint"/></returns>
+            public Android.Text.TextPaint GetTextPaint()
             {
-                get { return IExecuteWithSignature<Android.Graphics.Text.LineBreakConfig>("getLineBreakConfig", "()Landroid/graphics/text/LineBreakConfig;"); }
+                return IExecuteWithSignature<Android.Text.TextPaint>("getTextPaint", "()Landroid/text/TextPaint;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.Params.html#getTextDirection()"/> 
+            /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.Params.html#getBreakStrategy()"/>
             /// </summary>
-            public Android.Text.TextDirectionHeuristic TextDirection
+            /// <returns><see cref="int"/></returns>
+            public int GetBreakStrategy()
             {
-                get { return IExecuteWithSignature<Android.Text.TextDirectionHeuristic>("getTextDirection", "()Landroid/text/TextDirectionHeuristic;"); }
+                return IExecuteWithSignature<int>("getBreakStrategy", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.Params.html#getTextPaint()"/> 
+            /// <see href="https://developer.android.com/reference/android/text/PrecomputedText.Params.html#getHyphenationFrequency()"/>
             /// </summary>
-            public Android.Text.TextPaint TextPaint
+            /// <returns><see cref="int"/></returns>
+            public int GetHyphenationFrequency()
             {
-                get { return IExecuteWithSignature<Android.Text.TextPaint>("getTextPaint", "()Landroid/text/TextPaint;"); }
+                return IExecuteWithSignature<int>("getHyphenationFrequency", "()I");
             }
 
             #endregion

@@ -62,11 +62,12 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/DsmccRequest.html#getUri()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/DsmccRequest.html#getUri()"/>
         /// </summary>
-        public Android.Net.Uri Uri
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetUri()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;");
         }
 
         #endregion

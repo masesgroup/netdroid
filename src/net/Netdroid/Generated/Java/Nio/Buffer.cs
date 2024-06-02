@@ -46,7 +46,7 @@ namespace Java.Nio
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#hasArray()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#hasArray()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasArray()
@@ -54,7 +54,7 @@ namespace Java.Nio
             return IExecuteWithSignature<bool>("hasArray", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#isDirect()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#isDirect()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDirect()
@@ -62,7 +62,7 @@ namespace Java.Nio
             return IExecuteWithSignature<bool>("isDirect", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#isReadOnly()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#isReadOnly()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
@@ -70,7 +70,7 @@ namespace Java.Nio
             return IExecuteWithSignature<bool>("isReadOnly", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#arrayOffset()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#arrayOffset()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int ArrayOffset()
@@ -78,7 +78,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("arrayOffset", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#array()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#array()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Array()
@@ -86,7 +86,7 @@ namespace Java.Nio
             return IExecuteWithSignature("array", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#duplicate()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#duplicate()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Duplicate()
@@ -94,7 +94,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.Buffer>("duplicate", "()Ljava/nio/Buffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#slice()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#slice()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Slice()
@@ -102,17 +102,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.Buffer>("slice", "()Ljava/nio/Buffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#slice(int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.Buffer"/></returns>
-        public Java.Nio.Buffer Slice(int arg0, int arg1)
-        {
-            return IExecute<Java.Nio.Buffer>("slice", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#hasRemaining()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#hasRemaining()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasRemaining()
@@ -120,7 +110,7 @@ namespace Java.Nio
             return IExecuteWithSignature<bool>("hasRemaining", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#capacity()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#capacity()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Capacity()
@@ -128,7 +118,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("capacity", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#limit()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#limit()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Limit()
@@ -136,7 +126,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("limit", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#position()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#position()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Position()
@@ -144,7 +134,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("position", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#remaining()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#remaining()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Remaining()
@@ -152,7 +142,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("remaining", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#clear()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Clear()
@@ -160,7 +150,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.Buffer>("clear", "()Ljava/nio/Buffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#flip()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#flip()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Flip()
@@ -168,7 +158,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.Buffer>("flip", "()Ljava/nio/Buffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#limit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#limit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
@@ -177,7 +167,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.Buffer>("limit", "(I)Ljava/nio/Buffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#mark()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#mark()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Mark()
@@ -185,7 +175,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.Buffer>("mark", "()Ljava/nio/Buffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#position(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#position(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
@@ -194,7 +184,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.Buffer>("position", "(I)Ljava/nio/Buffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#reset()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Reset()
@@ -202,7 +192,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.Buffer>("reset", "()Ljava/nio/Buffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html#rewind()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#rewind()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Buffer"/></returns>
         public Java.Nio.Buffer Rewind()

@@ -42,7 +42,7 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalLong.html#empty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalLong.html#empty()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalLong"/></returns>
         public static Java.Util.OptionalLong Empty()
@@ -50,7 +50,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.OptionalLong>(LocalBridgeClazz, "empty", "()Ljava/util/OptionalLong;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalLong.html#of(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalLong.html#of(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.OptionalLong"/></returns>
@@ -63,26 +63,19 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalLong.html#getAsLong()"/> 
-        /// </summary>
-        public long AsLong
-        {
-            get { return IExecuteWithSignature<long>("getAsLong", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalLong.html#orElseThrow(java.util.function.Supplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalLong.html#orElseThrow(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <typeparam name="Arg0ExtendsX"><typeparamref name="X"/></typeparam>
         /// <typeparam name="X"></typeparam>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Lang.Throwable"/>
-        public long OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX: X
+        public long OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX : X
         {
-            return IExecuteWithSignature<long>("orElseThrow", "(Ljava/util/function/Supplier;)J", arg0);
+            return IExecute<long>("orElseThrow", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalLong.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalLong.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -90,7 +83,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalLong.html#isPresent()"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalLong.html#isPresent()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsPresent()
@@ -98,7 +91,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isPresent", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalLong.html#stream()"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalLong.html#stream()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream Stream()
@@ -106,7 +99,15 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("stream", "()Ljava/util/stream/LongStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalLong.html#orElse(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalLong.html#getAsLong()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetAsLong()
+        {
+            return IExecuteWithSignature<long>("getAsLong", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalLong.html#orElse(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -115,7 +116,7 @@ namespace Java.Util
             return IExecuteWithSignature<long>("orElse", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalLong.html#orElseGet(java.util.function.LongSupplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalLong.html#orElseGet(java.util.function.LongSupplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongSupplier"/></param>
         /// <returns><see cref="long"/></returns>
@@ -124,7 +125,7 @@ namespace Java.Util
             return IExecuteWithSignature<long>("orElseGet", "(Ljava/util/function/LongSupplier;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalLong.html#orElseThrow()"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalLong.html#orElseThrow()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long OrElseThrow()
@@ -132,7 +133,7 @@ namespace Java.Util
             return IExecuteWithSignature<long>("orElseThrow", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalLong.html#ifPresent(java.util.function.LongConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalLong.html#ifPresent(java.util.function.LongConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
         public void IfPresent(Java.Util.Function.LongConsumer arg0)
@@ -140,7 +141,7 @@ namespace Java.Util
             IExecuteWithSignature("ifPresent", "(Ljava/util/function/LongConsumer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalLong.html#ifPresentOrElse(java.util.function.LongConsumer,java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalLong.html#ifPresentOrElse(java.util.function.LongConsumer,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>

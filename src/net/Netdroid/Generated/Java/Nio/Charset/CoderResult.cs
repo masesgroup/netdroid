@@ -38,13 +38,13 @@ namespace Java.Nio.Charset
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CoderResult.html#OVERFLOW"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CoderResult.html#OVERFLOW"/>
         /// </summary>
         public static Java.Nio.Charset.CoderResult OVERFLOW { get { if (!_OVERFLOWReady) { _OVERFLOWContent = SGetField<Java.Nio.Charset.CoderResult>(LocalBridgeClazz, "OVERFLOW"); _OVERFLOWReady = true; } return _OVERFLOWContent; } }
         private static Java.Nio.Charset.CoderResult _OVERFLOWContent = default;
         private static bool _OVERFLOWReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CoderResult.html#UNDERFLOW"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CoderResult.html#UNDERFLOW"/>
         /// </summary>
         public static Java.Nio.Charset.CoderResult UNDERFLOW { get { if (!_UNDERFLOWReady) { _UNDERFLOWContent = SGetField<Java.Nio.Charset.CoderResult>(LocalBridgeClazz, "UNDERFLOW"); _UNDERFLOWReady = true; } return _UNDERFLOWContent; } }
         private static Java.Nio.Charset.CoderResult _UNDERFLOWContent = default;
@@ -54,7 +54,7 @@ namespace Java.Nio.Charset
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CoderResult.html#malformedForLength(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CoderResult.html#malformedForLength(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.Charset.CoderResult"/></returns>
@@ -63,7 +63,7 @@ namespace Java.Nio.Charset
             return SExecuteWithSignature<Java.Nio.Charset.CoderResult>(LocalBridgeClazz, "malformedForLength", "(I)Ljava/nio/charset/CoderResult;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CoderResult.html#unmappableForLength(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CoderResult.html#unmappableForLength(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.Charset.CoderResult"/></returns>
@@ -76,7 +76,7 @@ namespace Java.Nio.Charset
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CoderResult.html#isError()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CoderResult.html#isError()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsError()
@@ -84,7 +84,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<bool>("isError", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CoderResult.html#isMalformed()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CoderResult.html#isMalformed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsMalformed()
@@ -92,7 +92,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<bool>("isMalformed", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CoderResult.html#isOverflow()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CoderResult.html#isOverflow()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsOverflow()
@@ -100,7 +100,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<bool>("isOverflow", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CoderResult.html#isUnderflow()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CoderResult.html#isUnderflow()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsUnderflow()
@@ -108,7 +108,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<bool>("isUnderflow", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CoderResult.html#isUnmappable()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CoderResult.html#isUnmappable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsUnmappable()
@@ -116,7 +116,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<bool>("isUnmappable", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CoderResult.html#length()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CoderResult.html#length()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Length()
@@ -124,7 +124,7 @@ namespace Java.Nio.Charset
             return IExecuteWithSignature<int>("length", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CoderResult.html#throwException()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CoderResult.html#throwException()"/>
         /// </summary>
         /// <exception cref="Java.Nio.Charset.CharacterCodingException"/>
         public void ThrowException()

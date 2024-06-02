@@ -110,18 +110,12 @@ namespace Android.Net.Wifi.P2p
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDevice.html#getVendorElements()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDevice.html#getWfdInfo()"/>
         /// </summary>
-        public Java.Util.List<Android.Net.Wifi.ScanResult.InformationElement> VendorElements
+        /// <returns><see cref="Android.Net.Wifi.P2p.WifiP2pWfdInfo"/></returns>
+        public Android.Net.Wifi.P2p.WifiP2pWfdInfo GetWfdInfo()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.ScanResult.InformationElement>>("getVendorElements", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDevice.html#getWfdInfo()"/> 
-        /// </summary>
-        public Android.Net.Wifi.P2p.WifiP2pWfdInfo WfdInfo
-        {
-            get { return IExecuteWithSignature<Android.Net.Wifi.P2p.WifiP2pWfdInfo>("getWfdInfo", "()Landroid/net/wifi/p2p/WifiP2pWfdInfo;"); }
+            return IExecuteWithSignature<Android.Net.Wifi.P2p.WifiP2pWfdInfo>("getWfdInfo", "()Landroid/net/wifi/p2p/WifiP2pWfdInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDevice.html#isGroupOwner()"/>
@@ -170,6 +164,14 @@ namespace Android.Net.Wifi.P2p
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDevice.html#getVendorElements()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Wifi.ScanResult.InformationElement> GetVendorElements()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.ScanResult.InformationElement>>("getVendorElements", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pDevice.html#update(android.net.wifi.p2p.WifiP2pDevice)"/>

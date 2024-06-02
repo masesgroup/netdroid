@@ -64,25 +64,28 @@ namespace Android.Net.Http
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/ConnectionMigrationOptions.html#getAllowNonDefaultNetworkUsage()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/ConnectionMigrationOptions.html#getAllowNonDefaultNetworkUsage()"/>
         /// </summary>
-        public int AllowNonDefaultNetworkUsage
+        /// <returns><see cref="int"/></returns>
+        public int GetAllowNonDefaultNetworkUsage()
         {
-            get { return IExecuteWithSignature<int>("getAllowNonDefaultNetworkUsage", "()I"); }
+            return IExecuteWithSignature<int>("getAllowNonDefaultNetworkUsage", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/ConnectionMigrationOptions.html#getDefaultNetworkMigration()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/ConnectionMigrationOptions.html#getDefaultNetworkMigration()"/>
         /// </summary>
-        public int DefaultNetworkMigration
+        /// <returns><see cref="int"/></returns>
+        public int GetDefaultNetworkMigration()
         {
-            get { return IExecuteWithSignature<int>("getDefaultNetworkMigration", "()I"); }
+            return IExecuteWithSignature<int>("getDefaultNetworkMigration", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/ConnectionMigrationOptions.html#getPathDegradationMigration()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/ConnectionMigrationOptions.html#getPathDegradationMigration()"/>
         /// </summary>
-        public int PathDegradationMigration
+        /// <returns><see cref="int"/></returns>
+        public int GetPathDegradationMigration()
         {
-            get { return IExecuteWithSignature<int>("getPathDegradationMigration", "()I"); }
+            return IExecuteWithSignature<int>("getPathDegradationMigration", "()I");
         }
 
         #endregion

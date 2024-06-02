@@ -64,11 +64,12 @@ namespace Javax.Xml.Transform.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/dom/DOMLocator.html#getOriginatingNode()"/> 
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/dom/DOMLocator.html#getOriginatingNode()"/>
         /// </summary>
-        public Org.W3c.Dom.Node OriginatingNode
+        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
+        public Org.W3c.Dom.Node GetOriginatingNode()
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getOriginatingNode", "()Lorg/w3c/dom/Node;"); }
+            return IExecuteWithSignature<Org.W3c.Dom.Node>("getOriginatingNode", "()Lorg/w3c/dom/Node;");
         }
 
         #endregion

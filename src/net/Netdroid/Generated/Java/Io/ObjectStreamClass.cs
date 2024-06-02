@@ -38,7 +38,7 @@ namespace Java.Io
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamClass.html#NO_FIELDS"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamClass.html#NO_FIELDS"/>
         /// </summary>
         public static Java.Io.ObjectStreamField[] NO_FIELDS { get { if (!_NO_FIELDSReady) { _NO_FIELDSContent = SGetFieldArray<Java.Io.ObjectStreamField>(LocalBridgeClazz, "NO_FIELDS"); _NO_FIELDSReady = true; } return _NO_FIELDSContent; } }
         private static Java.Io.ObjectStreamField[] _NO_FIELDSContent = default;
@@ -48,7 +48,7 @@ namespace Java.Io
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamClass.html#lookup(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamClass.html#lookup(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Io.ObjectStreamClass"/></returns>
@@ -57,7 +57,7 @@ namespace Java.Io
             return SExecuteWithSignature<Java.Io.ObjectStreamClass>(LocalBridgeClazz, "lookup", "(Ljava/lang/Class;)Ljava/io/ObjectStreamClass;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamClass.html#lookupAny(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamClass.html#lookupAny(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Io.ObjectStreamClass"/></returns>
@@ -70,28 +70,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamClass.html#getFields()"/> 
-        /// </summary>
-        public Java.Io.ObjectStreamField[] Fields
-        {
-            get { return IExecuteWithSignatureArray<Java.Io.ObjectStreamField>("getFields", "()[Ljava/io/ObjectStreamField;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamClass.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamClass.html#getSerialVersionUID()"/> 
-        /// </summary>
-        public long SerialVersionUID
-        {
-            get { return IExecuteWithSignature<long>("getSerialVersionUID", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamClass.html#getField(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamClass.html#getField(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.ObjectStreamField"/></returns>
@@ -100,12 +79,36 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Io.ObjectStreamField>("getField", "(Ljava/lang/String;)Ljava/io/ObjectStreamField;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamClass.html#forClass()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamClass.html#getFields()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.ObjectStreamField"/></returns>
+        public Java.Io.ObjectStreamField[] GetFields()
+        {
+            return IExecuteWithSignatureArray<Java.Io.ObjectStreamField>("getFields", "()[Ljava/io/ObjectStreamField;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamClass.html#forClass()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class ForClass()
         {
             return IExecuteWithSignature<Java.Lang.Class>("forClass", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamClass.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamClass.html#getSerialVersionUID()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetSerialVersionUID()
+        {
+            return IExecuteWithSignature<long>("getSerialVersionUID", "()J");
         }
 
         #endregion

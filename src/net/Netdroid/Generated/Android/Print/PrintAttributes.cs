@@ -82,39 +82,28 @@ namespace Android.Print
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.html#getColorMode()"/> 
+        /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.html#getMinMargins()"/>
         /// </summary>
-        public int ColorMode
+        /// <returns><see cref="Android.Print.PrintAttributes.Margins"/></returns>
+        public Android.Print.PrintAttributes.Margins GetMinMargins()
         {
-            get { return IExecuteWithSignature<int>("getColorMode", "()I"); }
+            return IExecuteWithSignature<Android.Print.PrintAttributes.Margins>("getMinMargins", "()Landroid/print/PrintAttributes$Margins;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.html#getDuplexMode()"/> 
+        /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.html#getMediaSize()"/>
         /// </summary>
-        public int DuplexMode
+        /// <returns><see cref="Android.Print.PrintAttributes.MediaSize"/></returns>
+        public Android.Print.PrintAttributes.MediaSize GetMediaSize()
         {
-            get { return IExecuteWithSignature<int>("getDuplexMode", "()I"); }
+            return IExecuteWithSignature<Android.Print.PrintAttributes.MediaSize>("getMediaSize", "()Landroid/print/PrintAttributes$MediaSize;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.html#getMediaSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.html#getResolution()"/>
         /// </summary>
-        public Android.Print.PrintAttributes.MediaSize GetMediaSize
+        /// <returns><see cref="Android.Print.PrintAttributes.Resolution"/></returns>
+        public Android.Print.PrintAttributes.Resolution GetResolution()
         {
-            get { return IExecuteWithSignature<Android.Print.PrintAttributes.MediaSize>("getMediaSize", "()Landroid/print/PrintAttributes$MediaSize;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.html#getResolution()"/> 
-        /// </summary>
-        public Android.Print.PrintAttributes.Resolution GetResolution
-        {
-            get { return IExecuteWithSignature<Android.Print.PrintAttributes.Resolution>("getResolution", "()Landroid/print/PrintAttributes$Resolution;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.html#getMinMargins()"/> 
-        /// </summary>
-        public Android.Print.PrintAttributes.Margins MinMargins
-        {
-            get { return IExecuteWithSignature<Android.Print.PrintAttributes.Margins>("getMinMargins", "()Landroid/print/PrintAttributes$Margins;"); }
+            return IExecuteWithSignature<Android.Print.PrintAttributes.Resolution>("getResolution", "()Landroid/print/PrintAttributes$Resolution;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.html#describeContents()"/>
@@ -123,6 +112,22 @@ namespace Android.Print
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.html#getColorMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetColorMode()
+        {
+            return IExecuteWithSignature<int>("getColorMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.html#getDuplexMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDuplexMode()
+        {
+            return IExecuteWithSignature<int>("getDuplexMode", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.html#writeToParcel(android.os.Parcel,int)"/>
@@ -259,32 +264,36 @@ namespace Android.Print
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.Margins.html#getBottomMils()"/> 
+            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.Margins.html#getBottomMils()"/>
             /// </summary>
-            public int BottomMils
+            /// <returns><see cref="int"/></returns>
+            public int GetBottomMils()
             {
-                get { return IExecuteWithSignature<int>("getBottomMils", "()I"); }
+                return IExecuteWithSignature<int>("getBottomMils", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.Margins.html#getLeftMils()"/> 
+            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.Margins.html#getLeftMils()"/>
             /// </summary>
-            public int LeftMils
+            /// <returns><see cref="int"/></returns>
+            public int GetLeftMils()
             {
-                get { return IExecuteWithSignature<int>("getLeftMils", "()I"); }
+                return IExecuteWithSignature<int>("getLeftMils", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.Margins.html#getRightMils()"/> 
+            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.Margins.html#getRightMils()"/>
             /// </summary>
-            public int RightMils
+            /// <returns><see cref="int"/></returns>
+            public int GetRightMils()
             {
-                get { return IExecuteWithSignature<int>("getRightMils", "()I"); }
+                return IExecuteWithSignature<int>("getRightMils", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.Margins.html#getTopMils()"/> 
+            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.Margins.html#getTopMils()"/>
             /// </summary>
-            public int TopMils
+            /// <returns><see cref="int"/></returns>
+            public int GetTopMils()
             {
-                get { return IExecuteWithSignature<int>("getTopMils", "()I"); }
+                return IExecuteWithSignature<int>("getTopMils", "()I");
             }
 
             #endregion
@@ -899,27 +908,6 @@ namespace Android.Print
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.MediaSize.html#getHeightMils()"/> 
-            /// </summary>
-            public int HeightMils
-            {
-                get { return IExecuteWithSignature<int>("getHeightMils", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.MediaSize.html#getId()"/> 
-            /// </summary>
-            public Java.Lang.String Id
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.MediaSize.html#getWidthMils()"/> 
-            /// </summary>
-            public int WidthMils
-            {
-                get { return IExecuteWithSignature<int>("getWidthMils", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.MediaSize.html#asLandscape()"/>
             /// </summary>
             /// <returns><see cref="Android.Print.PrintAttributes.MediaSize"/></returns>
@@ -942,6 +930,30 @@ namespace Android.Print
             public bool IsPortrait()
             {
                 return IExecuteWithSignature<bool>("isPortrait", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.MediaSize.html#getHeightMils()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetHeightMils()
+            {
+                return IExecuteWithSignature<int>("getHeightMils", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.MediaSize.html#getWidthMils()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetWidthMils()
+            {
+                return IExecuteWithSignature<int>("getWidthMils", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.MediaSize.html#getId()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetId()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.MediaSize.html#getLabel(android.content.pm.PackageManager)"/>
@@ -995,32 +1007,36 @@ namespace Android.Print
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.Resolution.html#getHorizontalDpi()"/> 
+            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.Resolution.html#getHorizontalDpi()"/>
             /// </summary>
-            public int HorizontalDpi
+            /// <returns><see cref="int"/></returns>
+            public int GetHorizontalDpi()
             {
-                get { return IExecuteWithSignature<int>("getHorizontalDpi", "()I"); }
+                return IExecuteWithSignature<int>("getHorizontalDpi", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.Resolution.html#getId()"/> 
+            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.Resolution.html#getVerticalDpi()"/>
             /// </summary>
-            public Java.Lang.String Id
+            /// <returns><see cref="int"/></returns>
+            public int GetVerticalDpi()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<int>("getVerticalDpi", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.Resolution.html#getLabel()"/> 
+            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.Resolution.html#getId()"/>
             /// </summary>
-            public Java.Lang.String Label
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetId()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getLabel", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.Resolution.html#getVerticalDpi()"/> 
+            /// <see href="https://developer.android.com/reference/android/print/PrintAttributes.Resolution.html#getLabel()"/>
             /// </summary>
-            public int VerticalDpi
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetLabel()
             {
-                get { return IExecuteWithSignature<int>("getVerticalDpi", "()I"); }
+                return IExecuteWithSignature<Java.Lang.String>("getLabel", "()Ljava/lang/String;");
             }
 
             #endregion

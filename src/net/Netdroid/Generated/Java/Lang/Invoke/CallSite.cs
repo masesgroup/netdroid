@@ -46,14 +46,7 @@ namespace Java.Lang.Invoke
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/CallSite.html#getTarget()"/> <see href="https://developer.android.com/reference/java.base/java/lang/invoke/CallSite.html#setTarget(java.lang.invoke.MethodHandle)"/>
-        /// </summary>
-        public Java.Lang.Invoke.MethodHandle Target
-        {
-            get { return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("getTarget", "()Ljava/lang/invoke/MethodHandle;"); } set { IExecuteWithSignature("setTarget", "(Ljava/lang/invoke/MethodHandle;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/CallSite.html#dynamicInvoker()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/CallSite.html#dynamicInvoker()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle DynamicInvoker()
@@ -61,7 +54,23 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("dynamicInvoker", "()Ljava/lang/invoke/MethodHandle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/CallSite.html#type()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/CallSite.html#getTarget()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
+        public Java.Lang.Invoke.MethodHandle GetTarget()
+        {
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("getTarget", "()Ljava/lang/invoke/MethodHandle;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/CallSite.html#setTarget(java.lang.invoke.MethodHandle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
+        public void SetTarget(Java.Lang.Invoke.MethodHandle arg0)
+        {
+            IExecuteWithSignature("setTarget", "(Ljava/lang/invoke/MethodHandle;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/CallSite.html#type()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
         public Java.Lang.Invoke.MethodType Type()

@@ -30,7 +30,7 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signer.html#%3Cinit%3E(java.lang.String,java.security.IdentityScope)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signer.html#%3Cinit%3E(java.lang.String,java.security.IdentityScope)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.IdentityScope"/></param>
@@ -40,7 +40,7 @@ namespace Java.Security
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signer.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signer.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public Signer(Java.Lang.String arg0)
@@ -64,14 +64,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signer.html#getPrivateKey()"/> 
-        /// </summary>
-        public Java.Security.PrivateKey PrivateKey
-        {
-            get { return IExecuteWithSignature<Java.Security.PrivateKey>("getPrivateKey", "()Ljava/security/PrivateKey;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Signer.html#setKeyPair(java.security.KeyPair)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Signer.html#setKeyPair(java.security.KeyPair)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.KeyPair"/></param>
         /// <exception cref="Java.Security.InvalidParameterException"/>
@@ -79,6 +72,14 @@ namespace Java.Security
         public void SetKeyPair(Java.Security.KeyPair arg0)
         {
             IExecuteWithSignature("setKeyPair", "(Ljava/security/KeyPair;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/Signer.html#getPrivateKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.PrivateKey"/></returns>
+        public Java.Security.PrivateKey GetPrivateKey()
+        {
+            return IExecuteWithSignature<Java.Security.PrivateKey>("getPrivateKey", "()Ljava/security/PrivateKey;");
         }
 
         #endregion

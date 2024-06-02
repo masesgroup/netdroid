@@ -30,7 +30,7 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/PasswordAuthentication.html#%3Cinit%3E(java.lang.String,char[])"/>
+        /// <see href="https://developer.android.com/reference/java/net/PasswordAuthentication.html#%3Cinit%3E(java.lang.String,char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="char"/></param>
@@ -55,18 +55,20 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/PasswordAuthentication.html#getPassword()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/PasswordAuthentication.html#getPassword()"/>
         /// </summary>
-        public char[] Password
+        /// <returns><see cref="char"/></returns>
+        public char[] GetPassword()
         {
-            get { return IExecuteWithSignatureArray<char>("getPassword", "()[C"); }
+            return IExecuteWithSignatureArray<char>("getPassword", "()[C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/PasswordAuthentication.html#getUserName()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/PasswordAuthentication.html#getUserName()"/>
         /// </summary>
-        public Java.Lang.String UserName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUserName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUserName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getUserName", "()Ljava/lang/String;");
         }
 
         #endregion

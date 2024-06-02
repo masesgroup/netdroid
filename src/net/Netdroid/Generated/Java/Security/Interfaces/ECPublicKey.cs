@@ -64,9 +64,8 @@ namespace Java.Security.Interfaces
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/ECPublicKey.html#serialVersionUID"/>
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/ECPublicKey.html#serialVersionUID"/>
         /// </summary>
-        [System.Obsolete()]
         public static long serialVersionUID { get { if (!_serialVersionUIDReady) { _serialVersionUIDContent = SGetField<long>(LocalBridgeClazz, "serialVersionUID"); _serialVersionUIDReady = true; } return _serialVersionUIDContent; } }
         private static long _serialVersionUIDContent = default;
         private static bool _serialVersionUIDReady = false; // this is used because in case of generics 
@@ -79,11 +78,12 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/ECPublicKey.html#getW()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/ECPublicKey.html#getW()"/>
         /// </summary>
-        public Java.Security.Spec.ECPoint W
+        /// <returns><see cref="Java.Security.Spec.ECPoint"/></returns>
+        public Java.Security.Spec.ECPoint GetW()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.ECPoint>("getW", "()Ljava/security/spec/ECPoint;"); }
+            return IExecuteWithSignature<Java.Security.Spec.ECPoint>("getW", "()Ljava/security/spec/ECPoint;");
         }
 
         #endregion

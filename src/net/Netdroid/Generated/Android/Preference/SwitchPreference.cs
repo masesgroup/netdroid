@@ -36,7 +36,7 @@ namespace Android.Preference
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public SwitchPreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Preference
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public SwitchPreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -57,7 +57,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public SwitchPreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -66,7 +66,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/SwitchPreference.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public SwitchPreference(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -88,26 +88,28 @@ namespace Android.Preference
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/SwitchPreference.html#getSwitchTextOff()"/> 
+        /// <see href="https://developer.android.com/reference/android/preference/SwitchPreference.html#getSwitchTextOff()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.CharSequence SwitchTextOff
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.CharSequence GetSwitchTextOff()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSwitchTextOff", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getSwitchTextOff", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/SwitchPreference.html#getSwitchTextOn()"/> 
+        /// <see href="https://developer.android.com/reference/android/preference/SwitchPreference.html#getSwitchTextOn()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.CharSequence SwitchTextOn
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.CharSequence GetSwitchTextOn()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSwitchTextOn", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getSwitchTextOn", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/SwitchPreference.html#setSwitchTextOff(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSwitchTextOff(int arg0)
         {
             IExecuteWithSignature("setSwitchTextOff", "(I)V", arg0);
@@ -116,7 +118,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/SwitchPreference.html#setSwitchTextOff(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSwitchTextOff(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("setSwitchTextOff", "(Ljava/lang/CharSequence;)V", arg0);
@@ -125,7 +127,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/SwitchPreference.html#setSwitchTextOn(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSwitchTextOn(int arg0)
         {
             IExecuteWithSignature("setSwitchTextOn", "(I)V", arg0);
@@ -134,7 +136,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/SwitchPreference.html#setSwitchTextOn(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSwitchTextOn(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("setSwitchTextOn", "(Ljava/lang/CharSequence;)V", arg0);

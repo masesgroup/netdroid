@@ -63,11 +63,12 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/PesResponse.html#getSharedFilterToken()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/PesResponse.html#getSharedFilterToken()"/>
         /// </summary>
-        public Java.Lang.String SharedFilterToken
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSharedFilterToken()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSharedFilterToken", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSharedFilterToken", "()Ljava/lang/String;");
         }
 
         #endregion

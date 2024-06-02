@@ -46,18 +46,20 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLServerSocketFactory.html#getDefaultCipherSuites()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLServerSocketFactory.html#getDefaultCipherSuites()"/>
         /// </summary>
-        public Java.Lang.String[] DefaultCipherSuites
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetDefaultCipherSuites()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getDefaultCipherSuites", "()[Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getDefaultCipherSuites", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLServerSocketFactory.html#getSupportedCipherSuites()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLServerSocketFactory.html#getSupportedCipherSuites()"/>
         /// </summary>
-        public Java.Lang.String[] SupportedCipherSuites
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetSupportedCipherSuites()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getSupportedCipherSuites", "()[Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getSupportedCipherSuites", "()[Ljava/lang/String;");
         }
 
         #endregion

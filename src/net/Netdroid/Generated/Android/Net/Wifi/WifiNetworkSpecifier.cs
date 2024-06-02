@@ -56,20 +56,6 @@ namespace Android.Net.Wifi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSpecifier.html#getBand()"/> 
-        /// </summary>
-        public int Band
-        {
-            get { return IExecuteWithSignature<int>("getBand", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSpecifier.html#getPreferredChannelFrequenciesMhz()"/> 
-        /// </summary>
-        public int[] PreferredChannelFrequenciesMhz
-        {
-            get { return IExecuteWithSignatureArray<int>("getPreferredChannelFrequenciesMhz", "()[I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSpecifier.html#redact()"/>
         /// </summary>
         /// <returns><see cref="Android.Net.NetworkSpecifier"/></returns>
@@ -93,6 +79,22 @@ namespace Android.Net.Wifi
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSpecifier.html#getBand()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBand()
+        {
+            return IExecuteWithSignature<int>("getBand", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSpecifier.html#getPreferredChannelFrequenciesMhz()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetPreferredChannelFrequenciesMhz()
+        {
+            return IExecuteWithSignatureArray<int>("getPreferredChannelFrequenciesMhz", "()[I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSpecifier.html#writeToParcel(android.os.Parcel,int)"/>
@@ -240,7 +242,7 @@ namespace Android.Net.Wifi
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Wifi.WifiEnterpriseConfig"/></param>
             /// <returns><see cref="Android.Net.Wifi.WifiNetworkSpecifier.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Net.Wifi.WifiNetworkSpecifier.Builder SetWpa3EnterpriseConfig(Android.Net.Wifi.WifiEnterpriseConfig arg0)
             {
                 return IExecuteWithSignature<Android.Net.Wifi.WifiNetworkSpecifier.Builder>("setWpa3EnterpriseConfig", "(Landroid/net/wifi/WifiEnterpriseConfig;)Landroid/net/wifi/WifiNetworkSpecifier$Builder;", arg0);

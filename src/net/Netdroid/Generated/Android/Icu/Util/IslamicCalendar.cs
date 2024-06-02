@@ -191,11 +191,12 @@ namespace Android.Icu.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/IslamicCalendar.html#getCalculationType()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/util/IslamicCalendar.html#getCalculationType()"/>
         /// </summary>
-        public Android.Icu.Util.IslamicCalendar.CalculationType GetCalculationType
+        /// <returns><see cref="Android.Icu.Util.IslamicCalendar.CalculationType"/></returns>
+        public Android.Icu.Util.IslamicCalendar.CalculationType GetCalculationType()
         {
-            get { return IExecuteWithSignature<Android.Icu.Util.IslamicCalendar.CalculationType>("getCalculationType", "()Landroid/icu/util/IslamicCalendar$CalculationType;"); }
+            return IExecuteWithSignature<Android.Icu.Util.IslamicCalendar.CalculationType>("getCalculationType", "()Landroid/icu/util/IslamicCalendar$CalculationType;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/IslamicCalendar.html#setCalculationType(android.icu.util.IslamicCalendar.CalculationType)"/>

@@ -67,39 +67,44 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TimelineResponse.html#getSelector()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/TimelineResponse.html#getSelector()"/>
         /// </summary>
-        public Android.Net.Uri Selector
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetSelector()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getSelector", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getSelector", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TimelineResponse.html#getTicks()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/TimelineResponse.html#getUnitsPerSecond()"/>
         /// </summary>
-        public long Ticks
+        /// <returns><see cref="int"/></returns>
+        public int GetUnitsPerSecond()
         {
-            get { return IExecuteWithSignature<long>("getTicks", "()J"); }
+            return IExecuteWithSignature<int>("getUnitsPerSecond", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TimelineResponse.html#getUnitsPerSecond()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/TimelineResponse.html#getUnitsPerTick()"/>
         /// </summary>
-        public int UnitsPerSecond
+        /// <returns><see cref="int"/></returns>
+        public int GetUnitsPerTick()
         {
-            get { return IExecuteWithSignature<int>("getUnitsPerSecond", "()I"); }
+            return IExecuteWithSignature<int>("getUnitsPerTick", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TimelineResponse.html#getUnitsPerTick()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/TimelineResponse.html#getTicks()"/>
         /// </summary>
-        public int UnitsPerTick
+        /// <returns><see cref="long"/></returns>
+        public long GetTicks()
         {
-            get { return IExecuteWithSignature<int>("getUnitsPerTick", "()I"); }
+            return IExecuteWithSignature<long>("getTicks", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TimelineResponse.html#getWallClock()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/TimelineResponse.html#getWallClock()"/>
         /// </summary>
-        public long WallClock
+        /// <returns><see cref="long"/></returns>
+        public long GetWallClock()
         {
-            get { return IExecuteWithSignature<long>("getWallClock", "()J"); }
+            return IExecuteWithSignature<long>("getWallClock", "()J");
         }
 
         #endregion

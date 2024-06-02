@@ -46,7 +46,7 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.html#count()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchEvent.html#count()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Count()
@@ -54,7 +54,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<int>("count", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.html#kind()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchEvent.html#kind()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.WatchEvent.Kind"/></returns>
         public Java.Nio.File.WatchEvent.Kind KindMethod()
@@ -62,7 +62,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<Java.Nio.File.WatchEvent.Kind>("kind", "()Ljava/nio/file/WatchEvent$Kind;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.html#context()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchEvent.html#context()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Context()
@@ -94,7 +94,7 @@ namespace Java.Nio.File
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.Kind.html#type()"/>
+            /// <see href="https://developer.android.com/reference/java/nio/file/WatchEvent.Kind.html#type()"/>
             /// </summary>
             /// <returns><see cref="Java.Lang.Class"/></returns>
             public Java.Lang.Class Type()
@@ -102,7 +102,7 @@ namespace Java.Nio.File
                 return IExecuteWithSignature<Java.Lang.Class>("type", "()Ljava/lang/Class;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.Kind.html#name()"/>
+            /// <see href="https://developer.android.com/reference/java/nio/file/WatchEvent.Kind.html#name()"/>
             /// </summary>
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String Name()
@@ -145,7 +145,7 @@ namespace Java.Nio.File
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.Kind.html#type()"/>
+            /// <see href="https://developer.android.com/reference/java/nio/file/WatchEvent.Kind.html#type()"/>
             /// </summary>
             /// <returns><see cref="Java.Lang.Class"/></returns>
             public Java.Lang.Class Type()
@@ -153,7 +153,7 @@ namespace Java.Nio.File
                 return IExecuteWithSignature<Java.Lang.Class>("type", "()Ljava/lang/Class;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.Kind.html#name()"/>
+            /// <see href="https://developer.android.com/reference/java/nio/file/WatchEvent.Kind.html#name()"/>
             /// </summary>
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String Name()
@@ -192,7 +192,7 @@ namespace Java.Nio.File
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.Modifier.html#name()"/>
+            /// <see href="https://developer.android.com/reference/java/nio/file/WatchEvent.Modifier.html#name()"/>
             /// </summary>
             /// <returns><see cref="Java.Lang.String"/></returns>
             public Java.Lang.String Name()
@@ -260,7 +260,7 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.html#count()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchEvent.html#count()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Count()
@@ -268,7 +268,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<int>("count", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.html#kind()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchEvent.html#kind()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.WatchEvent.Kind"/></returns>
         public Java.Nio.File.WatchEvent.Kind<T> KindMethod()
@@ -276,7 +276,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<Java.Nio.File.WatchEvent.Kind<T>>("kind", "()Ljava/nio/file/WatchEvent$Kind;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.html#context()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchEvent.html#context()"/>
         /// </summary>
         /// <returns><typeparamref name="T"/></returns>
         public T Context()

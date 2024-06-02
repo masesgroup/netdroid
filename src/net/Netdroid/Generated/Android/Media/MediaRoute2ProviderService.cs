@@ -88,13 +88,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2ProviderService.html#getAllSessionInfo()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Media.RoutingSessionInfo> AllSessionInfo
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.RoutingSessionInfo>>("getAllSessionInfo", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2ProviderService.html#onCreateSession(long,java.lang.String,java.lang.String,android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -172,6 +165,14 @@ namespace Android.Media
         public Android.Media.RoutingSessionInfo GetSessionInfo(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.Media.RoutingSessionInfo>("getSessionInfo", "(Ljava/lang/String;)Landroid/media/RoutingSessionInfo;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRoute2ProviderService.html#getAllSessionInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.RoutingSessionInfo> GetAllSessionInfo()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.RoutingSessionInfo>>("getAllSessionInfo", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRoute2ProviderService.html#notifyRequestFailed(long,int)"/>

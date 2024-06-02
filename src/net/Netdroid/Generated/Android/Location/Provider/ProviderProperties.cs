@@ -82,20 +82,6 @@ namespace Android.Location.Provider
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/provider/ProviderProperties.html#getAccuracy()"/> 
-        /// </summary>
-        public int Accuracy
-        {
-            get { return IExecuteWithSignature<int>("getAccuracy", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/provider/ProviderProperties.html#getPowerUsage()"/> 
-        /// </summary>
-        public int PowerUsage
-        {
-            get { return IExecuteWithSignature<int>("getPowerUsage", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/provider/ProviderProperties.html#hasAltitudeSupport()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -158,6 +144,22 @@ namespace Android.Location.Provider
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/provider/ProviderProperties.html#getAccuracy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAccuracy()
+        {
+            return IExecuteWithSignature<int>("getAccuracy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/provider/ProviderProperties.html#getPowerUsage()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPowerUsage()
+        {
+            return IExecuteWithSignature<int>("getPowerUsage", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/provider/ProviderProperties.html#writeToParcel(android.os.Parcel,int)"/>

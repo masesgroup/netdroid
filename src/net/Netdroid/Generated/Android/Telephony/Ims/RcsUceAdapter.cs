@@ -46,73 +46,11 @@ namespace Android.Telephony.Ims
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="RcsUceAdapter"/>
-        /// </summary>
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("isUceSettingEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsUceSettingEnabledEventHandler));
-
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/ims/RcsUceAdapter.html#isUceSettingEnabled()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsUceSettingEnabled"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnIsUceSettingEnabled { get; set; } = null;
-
-        void IsUceSettingEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIsUceSettingEnabled != null) ? OnIsUceSettingEnabled : IsUceSettingEnabled;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/RcsUceAdapter.html#isUceSettingEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Android.Telephony.Ims.ImsException"/>
-        public virtual bool IsUceSettingEnabled()
-        {
-            return default;
-        }
-
-        #endregion
-
-        #region Nested classes
-
-        #endregion
-
-        // TODO: complete the class
-    }
-    #endregion
-
-    #region RcsUceAdapterDirect
-    public partial class RcsUceAdapterDirect
-    {
-        #region Constructors
-
-        #endregion
-
-        #region Class/Interface conversion operators
-
-        #endregion
-
-        #region Fields
-
-        #endregion
-
-        #region Static methods
-
-        #endregion
-
-        #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/RcsUceAdapter.html#isUceSettingEnabled()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Android.Telephony.Ims.ImsException"/>
-        public override bool IsUceSettingEnabled()
+        public bool IsUceSettingEnabled()
         {
             return IExecuteWithSignature<bool>("isUceSettingEnabled", "()Z");
         }

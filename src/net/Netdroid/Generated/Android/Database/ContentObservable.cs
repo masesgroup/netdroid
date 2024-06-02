@@ -58,7 +58,7 @@ namespace Android.Database
         /// <see href="https://developer.android.com/reference/android/database/ContentObservable.html#dispatchChange(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DispatchChange(bool arg0)
         {
             IExecuteWithSignature("dispatchChange", "(Z)V", arg0);
@@ -67,7 +67,7 @@ namespace Android.Database
         /// <see href="https://developer.android.com/reference/android/database/ContentObservable.html#notifyChange(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void NotifyChange(bool arg0)
         {
             IExecuteWithSignature("notifyChange", "(Z)V", arg0);

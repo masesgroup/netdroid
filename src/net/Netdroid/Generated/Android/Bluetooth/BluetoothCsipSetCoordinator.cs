@@ -60,13 +60,6 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCsipSetCoordinator.html#getConnectedDevices()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Bluetooth.BluetoothDevice> ConnectedDevices
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getConnectedDevices", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCsipSetCoordinator.html#getConnectionState(android.bluetooth.BluetoothDevice)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothDevice"/></param>
@@ -74,6 +67,14 @@ namespace Android.Bluetooth
         public int GetConnectionState(Android.Bluetooth.BluetoothDevice arg0)
         {
             return IExecuteWithSignature<int>("getConnectionState", "(Landroid/bluetooth/BluetoothDevice;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCsipSetCoordinator.html#getConnectedDevices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Bluetooth.BluetoothDevice> GetConnectedDevices()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getConnectedDevices", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCsipSetCoordinator.html#getDevicesMatchingConnectionStates(int[])"/>

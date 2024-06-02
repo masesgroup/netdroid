@@ -50,15 +50,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyEventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/LongFunction.html#apply(long)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/LongFunction.html#apply(long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long, object> OnApply { get; set; } = null;
+        public global::System.Func<long, object> OnApply { get; set; } = null;
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
         {
@@ -68,7 +68,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongFunction.html#apply(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongFunction.html#apply(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="object"/></returns>
@@ -108,7 +108,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongFunction.html#apply(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongFunction.html#apply(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="object"/></returns>
@@ -129,7 +129,7 @@ namespace Java.Util.Function
 
     #region ILongFunction<R>
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.LongFunction implementing <see href="https://developer.android.com/reference/java.base/java/util/function/LongFunction.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.LongFunction implementing <see href="https://developer.android.com/reference/java/util/function/LongFunction.html"/>
     /// </summary>
     public partial interface ILongFunction<R>
     {
@@ -170,15 +170,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyEventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/LongFunction.html#apply(long)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/LongFunction.html#apply(long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long, R> OnApply { get; set; } = null;
+        public global::System.Func<long, R> OnApply { get; set; } = null;
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
         {
@@ -188,7 +188,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongFunction.html#apply(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongFunction.html#apply(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><typeparamref name="R"/></returns>
@@ -228,7 +228,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongFunction.html#apply(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongFunction.html#apply(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><typeparamref name="R"/></returns>

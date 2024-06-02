@@ -46,18 +46,20 @@ namespace Android.Health.Connect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsGroupedByPeriodResponse.html#getEndTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsGroupedByPeriodResponse.html#getEndTime()"/>
         /// </summary>
-        public Java.Time.LocalDateTime EndTime
+        /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
+        public Java.Time.LocalDateTime GetEndTime()
         {
-            get { return IExecuteWithSignature<Java.Time.LocalDateTime>("getEndTime", "()Ljava/time/LocalDateTime;"); }
+            return IExecuteWithSignature<Java.Time.LocalDateTime>("getEndTime", "()Ljava/time/LocalDateTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsGroupedByPeriodResponse.html#getStartTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsGroupedByPeriodResponse.html#getStartTime()"/>
         /// </summary>
-        public Java.Time.LocalDateTime StartTime
+        /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
+        public Java.Time.LocalDateTime GetStartTime()
         {
-            get { return IExecuteWithSignature<Java.Time.LocalDateTime>("getStartTime", "()Ljava/time/LocalDateTime;"); }
+            return IExecuteWithSignature<Java.Time.LocalDateTime>("getStartTime", "()Ljava/time/LocalDateTime;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsGroupedByPeriodResponse.html#getZoneOffset(android.health.connect.datatypes.AggregationType)"/>
@@ -113,18 +115,20 @@ namespace Android.Health.Connect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsGroupedByPeriodResponse.html#getEndTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsGroupedByPeriodResponse.html#getEndTime()"/>
         /// </summary>
-        public Java.Time.LocalDateTime EndTime
+        /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
+        public Java.Time.LocalDateTime GetEndTime()
         {
-            get { return IExecuteWithSignature<Java.Time.LocalDateTime>("getEndTime", "()Ljava/time/LocalDateTime;"); }
+            return IExecuteWithSignature<Java.Time.LocalDateTime>("getEndTime", "()Ljava/time/LocalDateTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsGroupedByPeriodResponse.html#getStartTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsGroupedByPeriodResponse.html#getStartTime()"/>
         /// </summary>
-        public Java.Time.LocalDateTime StartTime
+        /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
+        public Java.Time.LocalDateTime GetStartTime()
         {
-            get { return IExecuteWithSignature<Java.Time.LocalDateTime>("getStartTime", "()Ljava/time/LocalDateTime;"); }
+            return IExecuteWithSignature<Java.Time.LocalDateTime>("getStartTime", "()Ljava/time/LocalDateTime;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsGroupedByPeriodResponse.html#getZoneOffset(android.health.connect.datatypes.AggregationType)"/>

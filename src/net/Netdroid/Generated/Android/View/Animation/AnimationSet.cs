@@ -63,11 +63,12 @@ namespace Android.View.Animation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/AnimationSet.html#getAnimations()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/animation/AnimationSet.html#getAnimations()"/>
         /// </summary>
-        public Java.Util.List<Android.View.Animation.Animation> Animations
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.Animation.Animation> GetAnimations()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.View.Animation.Animation>>("getAnimations", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.View.Animation.Animation>>("getAnimations", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/AnimationSet.html#addAnimation(android.view.animation.Animation)"/>

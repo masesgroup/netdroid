@@ -55,27 +55,6 @@ namespace Android.Print.Pdf
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/pdf/PrintedPdfDocument.html#getPageContentRect()"/> 
-        /// </summary>
-        public Android.Graphics.Rect PageContentRect
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getPageContentRect", "()Landroid/graphics/Rect;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/pdf/PrintedPdfDocument.html#getPageHeight()"/> 
-        /// </summary>
-        public int PageHeight
-        {
-            get { return IExecuteWithSignature<int>("getPageHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/pdf/PrintedPdfDocument.html#getPageWidth()"/> 
-        /// </summary>
-        public int PageWidth
-        {
-            get { return IExecuteWithSignature<int>("getPageWidth", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/pdf/PrintedPdfDocument.html#startPage(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -83,6 +62,30 @@ namespace Android.Print.Pdf
         public Android.Graphics.Pdf.PdfDocument.Page StartPage(int arg0)
         {
             return IExecuteWithSignature<Android.Graphics.Pdf.PdfDocument.Page>("startPage", "(I)Landroid/graphics/pdf/PdfDocument$Page;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/pdf/PrintedPdfDocument.html#getPageContentRect()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetPageContentRect()
+        {
+            return IExecuteWithSignature<Android.Graphics.Rect>("getPageContentRect", "()Landroid/graphics/Rect;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/pdf/PrintedPdfDocument.html#getPageHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPageHeight()
+        {
+            return IExecuteWithSignature<int>("getPageHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/pdf/PrintedPdfDocument.html#getPageWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPageWidth()
+        {
+            return IExecuteWithSignature<int>("getPageWidth", "()I");
         }
 
         #endregion

@@ -68,12 +68,12 @@ namespace Android.Location
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("onLocationChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Location.Location>>>(OnLocationChangedEventHandler));
-            AddEventHandler("onFlushComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnFlushCompleteEventHandler));
-            AddEventHandler("onLocationChanged1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Location.Location>>>>(OnLocationChanged1EventHandler));
-            AddEventHandler("onProviderDisabled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnProviderDisabledEventHandler));
-            AddEventHandler("onProviderEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnProviderEnabledEventHandler));
-            AddEventHandler("onStatusChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnStatusChangedEventHandler));
+            AddEventHandler("onLocationChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Location.Location>>>(OnLocationChangedEventHandler));
+            AddEventHandler("onFlushComplete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnFlushCompleteEventHandler));
+            AddEventHandler("onLocationChanged1", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Location.Location>>>>(OnLocationChanged1EventHandler));
+            AddEventHandler("onProviderDisabled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnProviderDisabledEventHandler));
+            AddEventHandler("onProviderEnabled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnProviderEnabledEventHandler));
+            AddEventHandler("onStatusChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnStatusChangedEventHandler));
 
         }
 
@@ -81,7 +81,7 @@ namespace Android.Location
         /// Handler for <see href="https://developer.android.com/reference/android/location/LocationListener.html#onLocationChanged(android.location.Location)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnLocationChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Location.Location> OnOnLocationChanged { get; set; } = null;
+        public global::System.Action<Android.Location.Location> OnOnLocationChanged { get; set; } = null;
 
         void OnLocationChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Location.Location>> data)
         {
@@ -111,7 +111,7 @@ namespace Android.Location
         /// Handler for <see href="https://developer.android.com/reference/android/location/LocationListener.html#onFlushComplete(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnFlushComplete"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int> OnOnFlushComplete { get; set; } = null;
+        public global::System.Action<int> OnOnFlushComplete { get; set; } = null;
 
         void OnFlushCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -142,7 +142,7 @@ namespace Android.Location
         /// Handler for <see href="https://developer.android.com/reference/android/location/LocationListener.html#onLocationChanged(java.util.List)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnLocationChanged1"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Util.List<Android.Location.Location>> OnOnLocationChanged1 { get; set; } = null;
+        public global::System.Action<Java.Util.List<Android.Location.Location>> OnOnLocationChanged1 { get; set; } = null;
 
         void OnLocationChanged1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Location.Location>>> data)
         {
@@ -173,7 +173,7 @@ namespace Android.Location
         /// Handler for <see href="https://developer.android.com/reference/android/location/LocationListener.html#onProviderDisabled(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnProviderDisabled"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String> OnOnProviderDisabled { get; set; } = null;
+        public global::System.Action<Java.Lang.String> OnOnProviderDisabled { get; set; } = null;
 
         void OnProviderDisabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -204,7 +204,7 @@ namespace Android.Location
         /// Handler for <see href="https://developer.android.com/reference/android/location/LocationListener.html#onProviderEnabled(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnProviderEnabled"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String> OnOnProviderEnabled { get; set; } = null;
+        public global::System.Action<Java.Lang.String> OnOnProviderEnabled { get; set; } = null;
 
         void OnProviderEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -227,7 +227,7 @@ namespace Android.Location
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public void OnStatusChangedDefault(Java.Lang.String arg0, int arg1, Android.Os.Bundle arg2)
         {
@@ -238,7 +238,7 @@ namespace Android.Location
         /// Handler for <see href="https://developer.android.com/reference/android/location/LocationListener.html#onStatusChanged(java.lang.String,int,android.os.Bundle)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnStatusChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String, int, Android.Os.Bundle> OnOnStatusChanged { get; set; } = null;
+        public global::System.Action<Java.Lang.String, int, Android.Os.Bundle> OnOnStatusChanged { get; set; } = null;
 
         void OnStatusChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -252,7 +252,7 @@ namespace Android.Location
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnStatusChangedDefault"/>; override the method to implement a different behavior</remarks>
         public virtual void OnStatusChanged(Java.Lang.String arg0, int arg1, Android.Os.Bundle arg2)
         {
@@ -335,7 +335,7 @@ namespace Android.Location
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public override void OnStatusChanged(Java.Lang.String arg0, int arg1, Android.Os.Bundle arg2)
         {
             IExecute("onStatusChanged", arg0, arg1, arg2);

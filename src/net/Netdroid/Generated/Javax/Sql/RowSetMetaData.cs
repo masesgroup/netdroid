@@ -64,7 +64,7 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetMetaData.html#setAutoIncrement(int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setAutoIncrement(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -74,7 +74,7 @@ namespace Javax.Sql
             IExecute("setAutoIncrement", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetMetaData.html#setCaseSensitive(int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setCaseSensitive(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -84,7 +84,7 @@ namespace Javax.Sql
             IExecute("setCaseSensitive", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetMetaData.html#setCatalogName(int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setCatalogName(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -94,7 +94,7 @@ namespace Javax.Sql
             IExecute("setCatalogName", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetMetaData.html#setColumnCount(int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setColumnCount(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -103,7 +103,7 @@ namespace Javax.Sql
             IExecuteWithSignature("setColumnCount", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetMetaData.html#setColumnDisplaySize(int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setColumnDisplaySize(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -113,7 +113,7 @@ namespace Javax.Sql
             IExecute("setColumnDisplaySize", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetMetaData.html#setColumnLabel(int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setColumnLabel(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -123,7 +123,7 @@ namespace Javax.Sql
             IExecute("setColumnLabel", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetMetaData.html#setColumnName(int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setColumnName(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -133,7 +133,7 @@ namespace Javax.Sql
             IExecute("setColumnName", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetMetaData.html#setColumnType(int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setColumnType(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -143,7 +143,7 @@ namespace Javax.Sql
             IExecute("setColumnType", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetMetaData.html#setColumnTypeName(int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setColumnTypeName(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -153,7 +153,7 @@ namespace Javax.Sql
             IExecute("setColumnTypeName", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetMetaData.html#setCurrency(int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setCurrency(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -163,7 +163,7 @@ namespace Javax.Sql
             IExecute("setCurrency", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetMetaData.html#setNullable(int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setNullable(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -173,7 +173,7 @@ namespace Javax.Sql
             IExecute("setNullable", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetMetaData.html#setPrecision(int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setPrecision(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -183,7 +183,7 @@ namespace Javax.Sql
             IExecute("setPrecision", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetMetaData.html#setScale(int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setScale(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -193,7 +193,7 @@ namespace Javax.Sql
             IExecute("setScale", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetMetaData.html#setSchemaName(int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setSchemaName(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -203,7 +203,7 @@ namespace Javax.Sql
             IExecute("setSchemaName", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetMetaData.html#setSearchable(int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setSearchable(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -213,7 +213,7 @@ namespace Javax.Sql
             IExecute("setSearchable", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetMetaData.html#setSigned(int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setSigned(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -223,7 +223,7 @@ namespace Javax.Sql
             IExecute("setSigned", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetMetaData.html#setTableName(int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetMetaData.html#setTableName(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>

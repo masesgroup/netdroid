@@ -46,28 +46,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#getErrorStream()"/> 
-        /// </summary>
-        public Java.Io.InputStream ErrorStream
-        {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getErrorStream", "()Ljava/io/InputStream;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#getInputStream()"/> 
-        /// </summary>
-        public Java.Io.InputStream InputStream
-        {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "()Ljava/io/InputStream;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#getOutputStream()"/> 
-        /// </summary>
-        public Java.Io.OutputStream OutputStream
-        {
-            get { return IExecuteWithSignature<Java.Io.OutputStream>("getOutputStream", "()Ljava/io/OutputStream;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#exitValue()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#exitValue()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int ExitValue()
@@ -75,7 +54,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("exitValue", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#waitFor()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#waitFor()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -84,14 +63,38 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("waitFor", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#destroy()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#getErrorStream()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        public Java.Io.InputStream GetErrorStream()
+        {
+            return IExecuteWithSignature<Java.Io.InputStream>("getErrorStream", "()Ljava/io/InputStream;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#getInputStream()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        public Java.Io.InputStream GetInputStream()
+        {
+            return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "()Ljava/io/InputStream;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#getOutputStream()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        public Java.Io.OutputStream GetOutputStream()
+        {
+            return IExecuteWithSignature<Java.Io.OutputStream>("getOutputStream", "()Ljava/io/OutputStream;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#destroy()"/>
         /// </summary>
         public void Destroy()
         {
             IExecuteWithSignature("destroy", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#isAlive()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#isAlive()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsAlive()
@@ -99,7 +102,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isAlive", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#supportsNormalTermination()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#supportsNormalTermination()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool SupportsNormalTermination()
@@ -107,7 +110,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("supportsNormalTermination", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#waitFor(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#waitFor(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -118,58 +121,7 @@ namespace Java.Lang
             return IExecute<bool>("waitFor", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#errorReader()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Io.BufferedReader"/></returns>
-        public Java.Io.BufferedReader ErrorReader()
-        {
-            return IExecuteWithSignature<Java.Io.BufferedReader>("errorReader", "()Ljava/io/BufferedReader;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#errorReader(java.nio.charset.Charset)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <returns><see cref="Java.Io.BufferedReader"/></returns>
-        public Java.Io.BufferedReader ErrorReader(Java.Nio.Charset.Charset arg0)
-        {
-            return IExecuteWithSignature<Java.Io.BufferedReader>("errorReader", "(Ljava/nio/charset/Charset;)Ljava/io/BufferedReader;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#inputReader()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Io.BufferedReader"/></returns>
-        public Java.Io.BufferedReader InputReader()
-        {
-            return IExecuteWithSignature<Java.Io.BufferedReader>("inputReader", "()Ljava/io/BufferedReader;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#inputReader(java.nio.charset.Charset)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <returns><see cref="Java.Io.BufferedReader"/></returns>
-        public Java.Io.BufferedReader InputReader(Java.Nio.Charset.Charset arg0)
-        {
-            return IExecuteWithSignature<Java.Io.BufferedReader>("inputReader", "(Ljava/nio/charset/Charset;)Ljava/io/BufferedReader;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#outputWriter()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Io.BufferedWriter"/></returns>
-        public Java.Io.BufferedWriter OutputWriter()
-        {
-            return IExecuteWithSignature<Java.Io.BufferedWriter>("outputWriter", "()Ljava/io/BufferedWriter;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#outputWriter(java.nio.charset.Charset)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
-        /// <returns><see cref="Java.Io.BufferedWriter"/></returns>
-        public Java.Io.BufferedWriter OutputWriter(Java.Nio.Charset.Charset arg0)
-        {
-            return IExecuteWithSignature<Java.Io.BufferedWriter>("outputWriter", "(Ljava/nio/charset/Charset;)Ljava/io/BufferedWriter;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#destroyForcibly()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#destroyForcibly()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Process"/></returns>
         public Java.Lang.Process DestroyForcibly()
@@ -177,15 +129,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Process>("destroyForcibly", "()Ljava/lang/Process;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#info()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.ProcessHandle.Info"/></returns>
-        public Java.Lang.ProcessHandle.Info Info()
-        {
-            return IExecuteWithSignature<Java.Lang.ProcessHandle.Info>("info", "()Ljava/lang/ProcessHandle$Info;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#onExit()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#onExit()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<Java.Lang.Process> OnExit()
@@ -193,7 +137,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Lang.Process>>("onExit", "()Ljava/util/concurrent/CompletableFuture;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html#pid()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#pid()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long Pid()

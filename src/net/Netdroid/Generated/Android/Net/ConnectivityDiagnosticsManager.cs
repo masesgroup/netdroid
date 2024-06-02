@@ -234,39 +234,36 @@ namespace Android.Net
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.ConnectivityReport.html#getAdditionalInfo()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.ConnectivityReport.html#getLinkProperties()"/>
             /// </summary>
-            public Android.Os.PersistableBundle AdditionalInfo
+            /// <returns><see cref="Android.Net.LinkProperties"/></returns>
+            public Android.Net.LinkProperties GetLinkProperties()
             {
-                get { return IExecuteWithSignature<Android.Os.PersistableBundle>("getAdditionalInfo", "()Landroid/os/PersistableBundle;"); }
+                return IExecuteWithSignature<Android.Net.LinkProperties>("getLinkProperties", "()Landroid/net/LinkProperties;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.ConnectivityReport.html#getLinkProperties()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.ConnectivityReport.html#getNetwork()"/>
             /// </summary>
-            public Android.Net.LinkProperties LinkProperties
+            /// <returns><see cref="Android.Net.Network"/></returns>
+            public Android.Net.Network GetNetwork()
             {
-                get { return IExecuteWithSignature<Android.Net.LinkProperties>("getLinkProperties", "()Landroid/net/LinkProperties;"); }
+                return IExecuteWithSignature<Android.Net.Network>("getNetwork", "()Landroid/net/Network;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.ConnectivityReport.html#getNetwork()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.ConnectivityReport.html#getNetworkCapabilities()"/>
             /// </summary>
-            public Android.Net.Network Network
+            /// <returns><see cref="Android.Net.NetworkCapabilities"/></returns>
+            public Android.Net.NetworkCapabilities GetNetworkCapabilities()
             {
-                get { return IExecuteWithSignature<Android.Net.Network>("getNetwork", "()Landroid/net/Network;"); }
+                return IExecuteWithSignature<Android.Net.NetworkCapabilities>("getNetworkCapabilities", "()Landroid/net/NetworkCapabilities;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.ConnectivityReport.html#getNetworkCapabilities()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.ConnectivityReport.html#getAdditionalInfo()"/>
             /// </summary>
-            public Android.Net.NetworkCapabilities NetworkCapabilities
+            /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
+            public Android.Os.PersistableBundle GetAdditionalInfo()
             {
-                get { return IExecuteWithSignature<Android.Net.NetworkCapabilities>("getNetworkCapabilities", "()Landroid/net/NetworkCapabilities;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.ConnectivityReport.html#getReportTimestamp()"/> 
-            /// </summary>
-            public long ReportTimestamp
-            {
-                get { return IExecuteWithSignature<long>("getReportTimestamp", "()J"); }
+                return IExecuteWithSignature<Android.Os.PersistableBundle>("getAdditionalInfo", "()Landroid/os/PersistableBundle;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.ConnectivityReport.html#describeContents()"/>
@@ -275,6 +272,14 @@ namespace Android.Net
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.ConnectivityReport.html#getReportTimestamp()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetReportTimestamp()
+            {
+                return IExecuteWithSignature<long>("getReportTimestamp", "()J");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.ConnectivityReport.html#writeToParcel(android.os.Parcel,int)"/>
@@ -366,46 +371,36 @@ namespace Android.Net
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.DataStallReport.html#getDetectionMethod()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.DataStallReport.html#getLinkProperties()"/>
             /// </summary>
-            public int DetectionMethod
+            /// <returns><see cref="Android.Net.LinkProperties"/></returns>
+            public Android.Net.LinkProperties GetLinkProperties()
             {
-                get { return IExecuteWithSignature<int>("getDetectionMethod", "()I"); }
+                return IExecuteWithSignature<Android.Net.LinkProperties>("getLinkProperties", "()Landroid/net/LinkProperties;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.DataStallReport.html#getLinkProperties()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.DataStallReport.html#getNetwork()"/>
             /// </summary>
-            public Android.Net.LinkProperties LinkProperties
+            /// <returns><see cref="Android.Net.Network"/></returns>
+            public Android.Net.Network GetNetwork()
             {
-                get { return IExecuteWithSignature<Android.Net.LinkProperties>("getLinkProperties", "()Landroid/net/LinkProperties;"); }
+                return IExecuteWithSignature<Android.Net.Network>("getNetwork", "()Landroid/net/Network;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.DataStallReport.html#getNetwork()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.DataStallReport.html#getNetworkCapabilities()"/>
             /// </summary>
-            public Android.Net.Network Network
+            /// <returns><see cref="Android.Net.NetworkCapabilities"/></returns>
+            public Android.Net.NetworkCapabilities GetNetworkCapabilities()
             {
-                get { return IExecuteWithSignature<Android.Net.Network>("getNetwork", "()Landroid/net/Network;"); }
+                return IExecuteWithSignature<Android.Net.NetworkCapabilities>("getNetworkCapabilities", "()Landroid/net/NetworkCapabilities;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.DataStallReport.html#getNetworkCapabilities()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.DataStallReport.html#getStallDetails()"/>
             /// </summary>
-            public Android.Net.NetworkCapabilities NetworkCapabilities
+            /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
+            public Android.Os.PersistableBundle GetStallDetails()
             {
-                get { return IExecuteWithSignature<Android.Net.NetworkCapabilities>("getNetworkCapabilities", "()Landroid/net/NetworkCapabilities;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.DataStallReport.html#getReportTimestamp()"/> 
-            /// </summary>
-            public long ReportTimestamp
-            {
-                get { return IExecuteWithSignature<long>("getReportTimestamp", "()J"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.DataStallReport.html#getStallDetails()"/> 
-            /// </summary>
-            public Android.Os.PersistableBundle StallDetails
-            {
-                get { return IExecuteWithSignature<Android.Os.PersistableBundle>("getStallDetails", "()Landroid/os/PersistableBundle;"); }
+                return IExecuteWithSignature<Android.Os.PersistableBundle>("getStallDetails", "()Landroid/os/PersistableBundle;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.DataStallReport.html#describeContents()"/>
@@ -414,6 +409,22 @@ namespace Android.Net
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.DataStallReport.html#getDetectionMethod()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetDetectionMethod()
+            {
+                return IExecuteWithSignature<int>("getDetectionMethod", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.DataStallReport.html#getReportTimestamp()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetReportTimestamp()
+            {
+                return IExecuteWithSignature<long>("getReportTimestamp", "()J");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/ConnectivityDiagnosticsManager.DataStallReport.html#writeToParcel(android.os.Parcel,int)"/>

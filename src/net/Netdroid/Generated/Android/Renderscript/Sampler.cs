@@ -46,7 +46,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Sampler"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Sampler CLAMP_LINEAR_MIP_LINEAR(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Sampler>(LocalBridgeClazz, "CLAMP_LINEAR_MIP_LINEAR", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;", arg0);
@@ -56,7 +56,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Sampler"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Sampler CLAMP_LINEAR(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Sampler>(LocalBridgeClazz, "CLAMP_LINEAR", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;", arg0);
@@ -66,7 +66,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Sampler"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Sampler CLAMP_NEAREST(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Sampler>(LocalBridgeClazz, "CLAMP_NEAREST", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;", arg0);
@@ -76,7 +76,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Sampler"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Sampler MIRRORED_REPEAT_LINEAR_MIP_LINEAR(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Sampler>(LocalBridgeClazz, "MIRRORED_REPEAT_LINEAR_MIP_LINEAR", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;", arg0);
@@ -86,7 +86,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Sampler"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Sampler MIRRORED_REPEAT_LINEAR(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Sampler>(LocalBridgeClazz, "MIRRORED_REPEAT_LINEAR", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;", arg0);
@@ -96,7 +96,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Sampler"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Sampler MIRRORED_REPEAT_NEAREST(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Sampler>(LocalBridgeClazz, "MIRRORED_REPEAT_NEAREST", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;", arg0);
@@ -106,7 +106,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Sampler"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Sampler WRAP_LINEAR_MIP_LINEAR(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Sampler>(LocalBridgeClazz, "WRAP_LINEAR_MIP_LINEAR", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;", arg0);
@@ -116,7 +116,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Sampler"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Sampler WRAP_LINEAR(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Sampler>(LocalBridgeClazz, "WRAP_LINEAR", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;", arg0);
@@ -126,7 +126,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Sampler"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Sampler WRAP_NEAREST(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Sampler>(LocalBridgeClazz, "WRAP_NEAREST", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;", arg0);
@@ -136,44 +136,49 @@ namespace Android.Renderscript
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.html#getAnisotropy()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.html#getMagnification()"/>
         /// </summary>
-        [System.Obsolete()]
-        public float Anisotropy
+        /// <returns><see cref="Android.Renderscript.Sampler.Value"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Sampler.Value GetMagnification()
         {
-            get { return IExecuteWithSignature<float>("getAnisotropy", "()F"); }
+            return IExecuteWithSignature<Android.Renderscript.Sampler.Value>("getMagnification", "()Landroid/renderscript/Sampler$Value;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.html#getMagnification()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.html#getMinification()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Sampler.Value Magnification
+        /// <returns><see cref="Android.Renderscript.Sampler.Value"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Sampler.Value GetMinification()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Sampler.Value>("getMagnification", "()Landroid/renderscript/Sampler$Value;"); }
+            return IExecuteWithSignature<Android.Renderscript.Sampler.Value>("getMinification", "()Landroid/renderscript/Sampler$Value;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.html#getMinification()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.html#getWrapS()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Sampler.Value Minification
+        /// <returns><see cref="Android.Renderscript.Sampler.Value"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Sampler.Value GetWrapS()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Sampler.Value>("getMinification", "()Landroid/renderscript/Sampler$Value;"); }
+            return IExecuteWithSignature<Android.Renderscript.Sampler.Value>("getWrapS", "()Landroid/renderscript/Sampler$Value;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.html#getWrapS()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.html#getWrapT()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Sampler.Value WrapS
+        /// <returns><see cref="Android.Renderscript.Sampler.Value"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Sampler.Value GetWrapT()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Sampler.Value>("getWrapS", "()Landroid/renderscript/Sampler$Value;"); }
+            return IExecuteWithSignature<Android.Renderscript.Sampler.Value>("getWrapT", "()Landroid/renderscript/Sampler$Value;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.html#getWrapT()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.html#getAnisotropy()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Sampler.Value WrapT
+        /// <returns><see cref="float"/></returns>
+        [global::System.Obsolete()]
+        public float GetAnisotropy()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Sampler.Value>("getWrapT", "()Landroid/renderscript/Sampler$Value;"); }
+            return IExecuteWithSignature<float>("getAnisotropy", "()F");
         }
 
         #endregion
@@ -187,7 +192,7 @@ namespace Android.Renderscript
             /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.Builder.html#%3Cinit%3E(android.renderscript.RenderScript)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Builder(Android.Renderscript.RenderScript arg0)
                 : base(arg0)
             {
@@ -212,7 +217,7 @@ namespace Android.Renderscript
             /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.Builder.html#create()"/>
             /// </summary>
             /// <returns><see cref="Android.Renderscript.Sampler"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.Sampler Create()
             {
                 return IExecuteWithSignature<Android.Renderscript.Sampler>("create", "()Landroid/renderscript/Sampler;");
@@ -221,7 +226,7 @@ namespace Android.Renderscript
             /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.Builder.html#setAnisotropy(float)"/>
             /// </summary>
             /// <param name="arg0"><see cref="float"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetAnisotropy(float arg0)
             {
                 IExecuteWithSignature("setAnisotropy", "(F)V", arg0);
@@ -230,7 +235,7 @@ namespace Android.Renderscript
             /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.Builder.html#setMagnification(android.renderscript.Sampler.Value)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Renderscript.Sampler.Value"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetMagnification(Android.Renderscript.Sampler.Value arg0)
             {
                 IExecuteWithSignature("setMagnification", "(Landroid/renderscript/Sampler$Value;)V", arg0);
@@ -239,7 +244,7 @@ namespace Android.Renderscript
             /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.Builder.html#setMinification(android.renderscript.Sampler.Value)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Renderscript.Sampler.Value"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetMinification(Android.Renderscript.Sampler.Value arg0)
             {
                 IExecuteWithSignature("setMinification", "(Landroid/renderscript/Sampler$Value;)V", arg0);
@@ -248,7 +253,7 @@ namespace Android.Renderscript
             /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.Builder.html#setWrapS(android.renderscript.Sampler.Value)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Renderscript.Sampler.Value"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetWrapS(Android.Renderscript.Sampler.Value arg0)
             {
                 IExecuteWithSignature("setWrapS", "(Landroid/renderscript/Sampler$Value;)V", arg0);
@@ -257,7 +262,7 @@ namespace Android.Renderscript
             /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.Builder.html#setWrapT(android.renderscript.Sampler.Value)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Renderscript.Sampler.Value"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetWrapT(Android.Renderscript.Sampler.Value arg0)
             {
                 IExecuteWithSignature("setWrapT", "(Landroid/renderscript/Sampler$Value;)V", arg0);
@@ -288,49 +293,49 @@ namespace Android.Renderscript
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.Value.html#CLAMP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Sampler.Value CLAMP { get { if (!_CLAMPReady) { _CLAMPContent = SGetField<Android.Renderscript.Sampler.Value>(LocalBridgeClazz, "CLAMP"); _CLAMPReady = true; } return _CLAMPContent; } }
             private static Android.Renderscript.Sampler.Value _CLAMPContent = default;
             private static bool _CLAMPReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.Value.html#LINEAR"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Sampler.Value LINEAR { get { if (!_LINEARReady) { _LINEARContent = SGetField<Android.Renderscript.Sampler.Value>(LocalBridgeClazz, "LINEAR"); _LINEARReady = true; } return _LINEARContent; } }
             private static Android.Renderscript.Sampler.Value _LINEARContent = default;
             private static bool _LINEARReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.Value.html#LINEAR_MIP_LINEAR"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Sampler.Value LINEAR_MIP_LINEAR { get { if (!_LINEAR_MIP_LINEARReady) { _LINEAR_MIP_LINEARContent = SGetField<Android.Renderscript.Sampler.Value>(LocalBridgeClazz, "LINEAR_MIP_LINEAR"); _LINEAR_MIP_LINEARReady = true; } return _LINEAR_MIP_LINEARContent; } }
             private static Android.Renderscript.Sampler.Value _LINEAR_MIP_LINEARContent = default;
             private static bool _LINEAR_MIP_LINEARReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.Value.html#LINEAR_MIP_NEAREST"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Sampler.Value LINEAR_MIP_NEAREST { get { if (!_LINEAR_MIP_NEARESTReady) { _LINEAR_MIP_NEARESTContent = SGetField<Android.Renderscript.Sampler.Value>(LocalBridgeClazz, "LINEAR_MIP_NEAREST"); _LINEAR_MIP_NEARESTReady = true; } return _LINEAR_MIP_NEARESTContent; } }
             private static Android.Renderscript.Sampler.Value _LINEAR_MIP_NEARESTContent = default;
             private static bool _LINEAR_MIP_NEARESTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.Value.html#MIRRORED_REPEAT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Sampler.Value MIRRORED_REPEAT { get { if (!_MIRRORED_REPEATReady) { _MIRRORED_REPEATContent = SGetField<Android.Renderscript.Sampler.Value>(LocalBridgeClazz, "MIRRORED_REPEAT"); _MIRRORED_REPEATReady = true; } return _MIRRORED_REPEATContent; } }
             private static Android.Renderscript.Sampler.Value _MIRRORED_REPEATContent = default;
             private static bool _MIRRORED_REPEATReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.Value.html#NEAREST"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Sampler.Value NEAREST { get { if (!_NEARESTReady) { _NEARESTContent = SGetField<Android.Renderscript.Sampler.Value>(LocalBridgeClazz, "NEAREST"); _NEARESTReady = true; } return _NEARESTContent; } }
             private static Android.Renderscript.Sampler.Value _NEARESTContent = default;
             private static bool _NEARESTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.Value.html#WRAP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Sampler.Value WRAP { get { if (!_WRAPReady) { _WRAPContent = SGetField<Android.Renderscript.Sampler.Value>(LocalBridgeClazz, "WRAP"); _WRAPReady = true; } return _WRAPContent; } }
             private static Android.Renderscript.Sampler.Value _WRAPContent = default;
             private static bool _WRAPReady = false; // this is used because in case of generics 

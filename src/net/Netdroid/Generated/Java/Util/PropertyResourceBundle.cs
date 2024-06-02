@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/PropertyResourceBundle.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/PropertyResourceBundle.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -39,7 +39,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/PropertyResourceBundle.html#%3Cinit%3E(java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/java/util/PropertyResourceBundle.html#%3Cinit%3E(java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -64,7 +64,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/PropertyResourceBundle.html#handleGetObject(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/PropertyResourceBundle.html#handleGetObject(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>

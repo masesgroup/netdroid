@@ -46,7 +46,7 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="Android.Drm.DrmUtils.ExtendedMetadataParser"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Drm.DrmUtils.ExtendedMetadataParser GetExtendedMetadataParser(byte[] arg0)
         {
             return SExecuteWithSignature<Android.Drm.DrmUtils.ExtendedMetadataParser>(LocalBridgeClazz, "getExtendedMetadataParser", "([B)Landroid/drm/DrmUtils$ExtendedMetadataParser;", new object[] { arg0 });
@@ -84,7 +84,7 @@ namespace Android.Drm
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Lang.String"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.String Get(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Java.Lang.String>("get", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
@@ -93,7 +93,7 @@ namespace Android.Drm
             /// <see href="https://developer.android.com/reference/android/drm/DrmUtils.ExtendedMetadataParser.html#iterator()"/>
             /// </summary>
             /// <returns><see cref="Java.Util.Iterator"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Util.Iterator<Java.Lang.String> Iterator()
             {
                 return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("iterator", "()Ljava/util/Iterator;");
@@ -102,7 +102,7 @@ namespace Android.Drm
             /// <see href="https://developer.android.com/reference/android/drm/DrmUtils.ExtendedMetadataParser.html#keyIterator()"/>
             /// </summary>
             /// <returns><see cref="Java.Util.Iterator"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Util.Iterator<Java.Lang.String> KeyIterator()
             {
                 return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("keyIterator", "()Ljava/util/Iterator;");

@@ -33,7 +33,7 @@ namespace Android.Util
         /// <see href="https://developer.android.com/reference/android/util/MutableDouble.html#%3Cinit%3E(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public MutableDouble(double arg0)
             : base(arg0)
         {
@@ -49,7 +49,7 @@ namespace Android.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MutableDouble.html#value"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public double value { get { return IGetField<double>("value"); } set { ISetField("value", value); } }
 
         #endregion

@@ -117,46 +117,52 @@ namespace Android.Telecom
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.html#getCallComposerAttachmentsToShow()"/> 
+            /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.html#getDisallowCall()"/>
             /// </summary>
-            public int CallComposerAttachmentsToShow
+            /// <returns><see cref="bool"/></returns>
+            public bool GetDisallowCall()
             {
-                get { return IExecuteWithSignature<int>("getCallComposerAttachmentsToShow", "()I"); }
+                return IExecuteWithSignature<bool>("getDisallowCall", "()Z");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.html#getDisallowCall()"/> 
+            /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.html#getRejectCall()"/>
             /// </summary>
-            public bool DisallowCall
+            /// <returns><see cref="bool"/></returns>
+            public bool GetRejectCall()
             {
-                get { return IExecuteWithSignature<bool>("getDisallowCall", "()Z"); }
+                return IExecuteWithSignature<bool>("getRejectCall", "()Z");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.html#getRejectCall()"/> 
+            /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.html#getSilenceCall()"/>
             /// </summary>
-            public bool RejectCall
+            /// <returns><see cref="bool"/></returns>
+            public bool GetSilenceCall()
             {
-                get { return IExecuteWithSignature<bool>("getRejectCall", "()Z"); }
+                return IExecuteWithSignature<bool>("getSilenceCall", "()Z");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.html#getSilenceCall()"/> 
+            /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.html#getSkipCallLog()"/>
             /// </summary>
-            public bool SilenceCall
+            /// <returns><see cref="bool"/></returns>
+            public bool GetSkipCallLog()
             {
-                get { return IExecuteWithSignature<bool>("getSilenceCall", "()Z"); }
+                return IExecuteWithSignature<bool>("getSkipCallLog", "()Z");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.html#getSkipCallLog()"/> 
+            /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.html#getSkipNotification()"/>
             /// </summary>
-            public bool SkipCallLog
+            /// <returns><see cref="bool"/></returns>
+            public bool GetSkipNotification()
             {
-                get { return IExecuteWithSignature<bool>("getSkipCallLog", "()Z"); }
+                return IExecuteWithSignature<bool>("getSkipNotification", "()Z");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.html#getSkipNotification()"/> 
+            /// <see href="https://developer.android.com/reference/android/telecom/CallScreeningService.CallResponse.html#getCallComposerAttachmentsToShow()"/>
             /// </summary>
-            public bool SkipNotification
+            /// <returns><see cref="int"/></returns>
+            public int GetCallComposerAttachmentsToShow()
             {
-                get { return IExecuteWithSignature<bool>("getSkipNotification", "()Z"); }
+                return IExecuteWithSignature<int>("getCallComposerAttachmentsToShow", "()I");
             }
 
             #endregion

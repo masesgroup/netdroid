@@ -68,7 +68,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ProviderInfo.html#isSyncable"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool isSyncable { get { return IGetField<bool>("isSyncable"); } set { ISetField("isSyncable", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ProviderInfo.html#multiprocess"/>

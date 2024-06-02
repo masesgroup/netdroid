@@ -42,7 +42,7 @@ namespace Javax.Crypto
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/KeyAgreement.html#getInstance(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/KeyAgreement.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -54,7 +54,7 @@ namespace Javax.Crypto
             return SExecute<Javax.Crypto.KeyAgreement>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/KeyAgreement.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/KeyAgreement.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
@@ -65,7 +65,7 @@ namespace Javax.Crypto
             return SExecute<Javax.Crypto.KeyAgreement>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/KeyAgreement.html#getInstance(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/KeyAgreement.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Crypto.KeyAgreement"/></returns>
@@ -79,21 +79,7 @@ namespace Javax.Crypto
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/KeyAgreement.html#getAlgorithm()"/> 
-        /// </summary>
-        public Java.Lang.String Algorithm
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/KeyAgreement.html#getProvider()"/> 
-        /// </summary>
-        public Java.Security.Provider Provider
-        {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/KeyAgreement.html#generateSecret()"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/KeyAgreement.html#generateSecret()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Lang.IllegalStateException"/>
@@ -102,7 +88,7 @@ namespace Javax.Crypto
             return IExecuteWithSignatureArray<byte>("generateSecret", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/KeyAgreement.html#generateSecret(byte[],int)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/KeyAgreement.html#generateSecret(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -114,7 +100,15 @@ namespace Javax.Crypto
             return IExecute<int>("generateSecret", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/KeyAgreement.html#doPhase(java.security.Key,boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/KeyAgreement.html#getAlgorithm()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlgorithm()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/crypto/KeyAgreement.html#doPhase(java.security.Key,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -126,7 +120,15 @@ namespace Javax.Crypto
             return IExecute<Java.Security.Key>("doPhase", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/KeyAgreement.html#generateSecret(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/KeyAgreement.html#getProvider()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public Java.Security.Provider GetProvider()
+        {
+            return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/crypto/KeyAgreement.html#generateSecret(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Crypto.SecretKey"/></returns>
@@ -138,7 +140,7 @@ namespace Javax.Crypto
             return IExecuteWithSignature<Javax.Crypto.SecretKey>("generateSecret", "(Ljava/lang/String;)Ljavax/crypto/SecretKey;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/KeyAgreement.html#init(java.security.Key,java.security.SecureRandom)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/KeyAgreement.html#init(java.security.Key,java.security.SecureRandom)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <param name="arg1"><see cref="Java.Security.SecureRandom"/></param>
@@ -148,7 +150,7 @@ namespace Javax.Crypto
             IExecute("init", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/KeyAgreement.html#init(java.security.Key,java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/KeyAgreement.html#init(java.security.Key,java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <param name="arg1"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
@@ -160,7 +162,7 @@ namespace Javax.Crypto
             IExecute("init", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/KeyAgreement.html#init(java.security.Key,java.security.spec.AlgorithmParameterSpec)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/KeyAgreement.html#init(java.security.Key,java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <param name="arg1"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
@@ -171,7 +173,7 @@ namespace Javax.Crypto
             IExecute("init", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/KeyAgreement.html#init(java.security.Key)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/KeyAgreement.html#init(java.security.Key)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <exception cref="Java.Security.InvalidKeyException"/>

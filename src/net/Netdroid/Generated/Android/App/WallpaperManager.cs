@@ -115,48 +115,6 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getBuiltInDrawable()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable BuiltInDrawable
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getBuiltInDrawable", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getDesiredMinimumHeight()"/> 
-        /// </summary>
-        public int DesiredMinimumHeight
-        {
-            get { return IExecuteWithSignature<int>("getDesiredMinimumHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getDesiredMinimumWidth()"/> 
-        /// </summary>
-        public int DesiredMinimumWidth
-        {
-            get { return IExecuteWithSignature<int>("getDesiredMinimumWidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getDrawable()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable Drawable
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getFastDrawable()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable FastDrawable
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getFastDrawable", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getWallpaperInfo()"/> 
-        /// </summary>
-        public Android.App.WallpaperInfo WallpaperInfo
-        {
-            get { return IExecuteWithSignature<Android.App.WallpaperInfo>("getWallpaperInfo", "()Landroid/app/WallpaperInfo;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getWallpaperColors(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -164,6 +122,14 @@ namespace Android.App
         public Android.App.WallpaperColors GetWallpaperColors(int arg0)
         {
             return IExecuteWithSignature<Android.App.WallpaperColors>("getWallpaperColors", "(I)Landroid/app/WallpaperColors;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getWallpaperInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.WallpaperInfo"/></returns>
+        public Android.App.WallpaperInfo GetWallpaperInfo()
+        {
+            return IExecuteWithSignature<Android.App.WallpaperInfo>("getWallpaperInfo", "()Landroid/app/WallpaperInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getWallpaperInfo(int)"/>
@@ -182,6 +148,14 @@ namespace Android.App
         public Android.Content.Intent GetCropAndSetWallpaperIntent(Android.Net.Uri arg0)
         {
             return IExecuteWithSignature<Android.Content.Intent>("getCropAndSetWallpaperIntent", "(Landroid/net/Uri;)Landroid/content/Intent;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getBuiltInDrawable()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetBuiltInDrawable()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getBuiltInDrawable", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getBuiltInDrawable(int,int,boolean,float,float,int)"/>
@@ -220,6 +194,14 @@ namespace Android.App
             return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getBuiltInDrawable", "(I)Landroid/graphics/drawable/Drawable;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getDrawable()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetDrawable()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "()Landroid/graphics/drawable/Drawable;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getDrawable(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -227,6 +209,14 @@ namespace Android.App
         public Android.Graphics.Drawable.Drawable GetDrawable(int arg0)
         {
             return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "(I)Landroid/graphics/drawable/Drawable;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getFastDrawable()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetFastDrawable()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getFastDrawable", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getFastDrawable(int)"/>
@@ -304,6 +294,22 @@ namespace Android.App
         public bool IsWallpaperSupported()
         {
             return IExecuteWithSignature<bool>("isWallpaperSupported", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getDesiredMinimumHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDesiredMinimumHeight()
+        {
+            return IExecuteWithSignature<int>("getDesiredMinimumHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getDesiredMinimumWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDesiredMinimumWidth()
+        {
+            return IExecuteWithSignature<int>("getDesiredMinimumWidth", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperManager.html#getWallpaperId(int)"/>
@@ -536,7 +542,7 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onColorsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.App.WallpaperColors>>>(OnColorsChangedEventHandler));
+                AddEventHandler("onColorsChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.App.WallpaperColors>>>(OnColorsChangedEventHandler));
 
             }
 
@@ -544,7 +550,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/WallpaperManager.OnColorsChangedListener.html#onColorsChanged(android.app.WallpaperColors,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnColorsChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.App.WallpaperColors, int> OnOnColorsChanged { get; set; } = null;
+            public global::System.Action<Android.App.WallpaperColors, int> OnOnColorsChanged { get; set; } = null;
 
             void OnColorsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.App.WallpaperColors>> data)
             {

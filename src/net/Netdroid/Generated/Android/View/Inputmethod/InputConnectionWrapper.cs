@@ -55,11 +55,12 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#getHandler()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#getHandler()"/>
         /// </summary>
-        public Android.Os.Handler Handler
+        /// <returns><see cref="Android.Os.Handler"/></returns>
+        public Android.Os.Handler GetHandler()
         {
-            get { return IExecuteWithSignature<Android.Os.Handler>("getHandler", "()Landroid/os/Handler;"); }
+            return IExecuteWithSignature<Android.Os.Handler>("getHandler", "()Landroid/os/Handler;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputConnectionWrapper.html#getExtractedText(android.view.inputmethod.ExtractedTextRequest,int)"/>

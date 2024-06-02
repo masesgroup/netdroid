@@ -46,7 +46,7 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509ExtendedTrustManager.html#checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String,java.net.Socket)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/X509ExtendedTrustManager.html#checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String,java.net.Socket)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -57,7 +57,7 @@ namespace Javax.Net.Ssl
             IExecute("checkClientTrusted", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509ExtendedTrustManager.html#checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String,javax.net.ssl.SSLEngine)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/X509ExtendedTrustManager.html#checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String,javax.net.ssl.SSLEngine)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -68,7 +68,7 @@ namespace Javax.Net.Ssl
             IExecute("checkClientTrusted", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509ExtendedTrustManager.html#checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String,java.net.Socket)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/X509ExtendedTrustManager.html#checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String,java.net.Socket)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -79,7 +79,7 @@ namespace Javax.Net.Ssl
             IExecute("checkServerTrusted", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509ExtendedTrustManager.html#checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String,javax.net.ssl.SSLEngine)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/X509ExtendedTrustManager.html#checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String,javax.net.ssl.SSLEngine)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>

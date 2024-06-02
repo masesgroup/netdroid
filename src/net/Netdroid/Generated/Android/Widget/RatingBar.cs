@@ -84,32 +84,20 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/RatingBar.html#getOnRatingBarChangeListener()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/RatingBar.html#getOnRatingBarChangeListener()"/>
         /// </summary>
-        public Android.Widget.RatingBar.OnRatingBarChangeListener GetOnRatingBarChangeListener
+        /// <returns><see cref="Android.Widget.RatingBar.OnRatingBarChangeListener"/></returns>
+        public Android.Widget.RatingBar.OnRatingBarChangeListener GetOnRatingBarChangeListener()
         {
-            get { return IExecuteWithSignature<Android.Widget.RatingBar.OnRatingBarChangeListener>("getOnRatingBarChangeListener", "()Landroid/widget/RatingBar$OnRatingBarChangeListener;"); }
+            return IExecuteWithSignature<Android.Widget.RatingBar.OnRatingBarChangeListener>("getOnRatingBarChangeListener", "()Landroid/widget/RatingBar$OnRatingBarChangeListener;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/RatingBar.html#getNumStars()"/> <see href="https://developer.android.com/reference/android/widget/RatingBar.html#setNumStars(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/RatingBar.html#getOnRatingBarChangeListener()"/>
         /// </summary>
-        public int NumStars
+        /// <returns><see cref="Android.Widget.RatingBar.OnRatingBarChangeListener"/></returns>
+        public Android.Widget.RatingBar.OnRatingBarChangeListener GetOnRatingBarChangeListenerDirect()
         {
-            get { return IExecuteWithSignature<int>("getNumStars", "()I"); } set { IExecuteWithSignature("setNumStars", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/RatingBar.html#getRating()"/> <see href="https://developer.android.com/reference/android/widget/RatingBar.html#setRating(float)"/>
-        /// </summary>
-        public float Rating
-        {
-            get { return IExecuteWithSignature<float>("getRating", "()F"); } set { IExecuteWithSignature("setRating", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/RatingBar.html#getStepSize()"/> <see href="https://developer.android.com/reference/android/widget/RatingBar.html#setStepSize(float)"/>
-        /// </summary>
-        public float StepSize
-        {
-            get { return IExecuteWithSignature<float>("getStepSize", "()F"); } set { IExecuteWithSignature("setStepSize", "(F)V", value); }
+            return IExecuteWithSignature<Android.Widget.RatingBar.OnRatingBarChangeListenerDirect, Android.Widget.RatingBar.OnRatingBarChangeListener>("getOnRatingBarChangeListener", "()Landroid/widget/RatingBar$OnRatingBarChangeListener;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RatingBar.html#isIndicator()"/>
@@ -120,6 +108,30 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("isIndicator", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RatingBar.html#getRating()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetRating()
+        {
+            return IExecuteWithSignature<float>("getRating", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RatingBar.html#getStepSize()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetStepSize()
+        {
+            return IExecuteWithSignature<float>("getStepSize", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RatingBar.html#getNumStars()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumStars()
+        {
+            return IExecuteWithSignature<int>("getNumStars", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RatingBar.html#setIsIndicator(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -128,12 +140,36 @@ namespace Android.Widget
             IExecuteWithSignature("setIsIndicator", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RatingBar.html#setNumStars(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetNumStars(int arg0)
+        {
+            IExecuteWithSignature("setNumStars", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/RatingBar.html#setOnRatingBarChangeListener(android.widget.RatingBar.OnRatingBarChangeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Widget.RatingBar.OnRatingBarChangeListener"/></param>
         public void SetOnRatingBarChangeListener(Android.Widget.RatingBar.OnRatingBarChangeListener arg0)
         {
             IExecuteWithSignature("setOnRatingBarChangeListener", "(Landroid/widget/RatingBar$OnRatingBarChangeListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RatingBar.html#setRating(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetRating(float arg0)
+        {
+            IExecuteWithSignature("setRating", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/RatingBar.html#setStepSize(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetStepSize(float arg0)
+        {
+            IExecuteWithSignature("setStepSize", "(F)V", arg0);
         }
 
         #endregion
@@ -164,7 +200,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onRatingChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.RatingBar>>>(OnRatingChangedEventHandler));
+                AddEventHandler("onRatingChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.RatingBar>>>(OnRatingChangedEventHandler));
 
             }
 
@@ -172,7 +208,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/RatingBar.OnRatingBarChangeListener.html#onRatingChanged(android.widget.RatingBar,float,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnRatingChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Widget.RatingBar, float, bool> OnOnRatingChanged { get; set; } = null;
+            public global::System.Action<Android.Widget.RatingBar, float, bool> OnOnRatingChanged { get; set; } = null;
 
             void OnRatingChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.RatingBar>> data)
             {

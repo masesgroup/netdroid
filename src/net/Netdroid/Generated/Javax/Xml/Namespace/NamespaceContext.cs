@@ -64,7 +64,7 @@ namespace Javax.Xml.Namespace
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/namespace/NamespaceContext.html#getNamespaceURI(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/namespace/NamespaceContext.html#getNamespaceURI(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -73,7 +73,7 @@ namespace Javax.Xml.Namespace
             return IExecuteWithSignature<Java.Lang.String>("getNamespaceURI", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/namespace/NamespaceContext.html#getPrefix(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/namespace/NamespaceContext.html#getPrefix(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -82,7 +82,7 @@ namespace Javax.Xml.Namespace
             return IExecuteWithSignature<Java.Lang.String>("getPrefix", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/namespace/NamespaceContext.html#getPrefixes(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/namespace/NamespaceContext.html#getPrefixes(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Iterator"/></returns>

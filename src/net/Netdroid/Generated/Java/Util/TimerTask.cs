@@ -46,14 +46,14 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/TimerTask.html#run()"/>
+        /// <see href="https://developer.android.com/reference/java/util/TimerTask.html#run()"/>
         /// </summary>
         public void Run()
         {
             IExecuteWithSignature("run", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/TimerTask.html#cancel()"/>
+        /// <see href="https://developer.android.com/reference/java/util/TimerTask.html#cancel()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool Cancel()
@@ -61,7 +61,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("cancel", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/TimerTask.html#scheduledExecutionTime()"/>
+        /// <see href="https://developer.android.com/reference/java/util/TimerTask.html#scheduledExecutionTime()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long ScheduledExecutionTime()

@@ -36,7 +36,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public AbsoluteLayout(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Widget
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public AbsoluteLayout(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -57,7 +57,7 @@ namespace Android.Widget
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public AbsoluteLayout(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -66,7 +66,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/AbsoluteLayout.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public AbsoluteLayout(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -100,7 +100,7 @@ namespace Android.Widget
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Context"/></param>
             /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public LayoutParams(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
                 : base(arg0, arg1)
             {
@@ -109,7 +109,7 @@ namespace Android.Widget
             /// <see href="https://developer.android.com/reference/android/widget/AbsoluteLayout.LayoutParams.html#%3Cinit%3E(android.view.ViewGroup.LayoutParams)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.View.ViewGroup.LayoutParams"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public LayoutParams(Android.View.ViewGroup.LayoutParams arg0)
                 : base(arg0)
             {
@@ -121,7 +121,7 @@ namespace Android.Widget
             /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="int"/></param>
             /// <param name="arg3"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public LayoutParams(int arg0, int arg1, int arg2, int arg3)
                 : base(arg0, arg1, arg2, arg3)
             {
@@ -137,12 +137,12 @@ namespace Android.Widget
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AbsoluteLayout.LayoutParams.html#x"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int x { get { return IGetField<int>("x"); } set { ISetField("x", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/AbsoluteLayout.LayoutParams.html#y"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int y { get { return IGetField<int>("y"); } set { ISetField("y", value); } }
 
             #endregion
@@ -157,7 +157,7 @@ namespace Android.Widget
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Lang.String"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.String Debug(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Java.Lang.String>("debug", "(Ljava/lang/String;)Ljava/lang/String;", arg0);

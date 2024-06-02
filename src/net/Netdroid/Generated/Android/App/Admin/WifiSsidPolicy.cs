@@ -73,26 +73,28 @@ namespace Android.App.Admin
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/WifiSsidPolicy.html#getPolicyType()"/> 
-        /// </summary>
-        public int PolicyType
-        {
-            get { return IExecuteWithSignature<int>("getPolicyType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/WifiSsidPolicy.html#getSsids()"/> 
-        /// </summary>
-        public Java.Util.Set<Android.Net.Wifi.WifiSsid> Ssids
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Android.Net.Wifi.WifiSsid>>("getSsids", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/WifiSsidPolicy.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/WifiSsidPolicy.html#getPolicyType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPolicyType()
+        {
+            return IExecuteWithSignature<int>("getPolicyType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/WifiSsidPolicy.html#getSsids()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Android.Net.Wifi.WifiSsid> GetSsids()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Android.Net.Wifi.WifiSsid>>("getSsids", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/WifiSsidPolicy.html#writeToParcel(android.os.Parcel,int)"/>

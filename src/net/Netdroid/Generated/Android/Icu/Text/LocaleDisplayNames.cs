@@ -94,20 +94,6 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/LocaleDisplayNames.html#getDialectHandling()"/> 
-        /// </summary>
-        public Android.Icu.Text.LocaleDisplayNames.DialectHandling GetDialectHandling
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.LocaleDisplayNames.DialectHandling>("getDialectHandling", "()Landroid/icu/text/LocaleDisplayNames$DialectHandling;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/LocaleDisplayNames.html#getLocale()"/> 
-        /// </summary>
-        public Android.Icu.Util.ULocale Locale
-        {
-            get { return IExecuteWithSignature<Android.Icu.Util.ULocale>("getLocale", "()Landroid/icu/util/ULocale;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/LocaleDisplayNames.html#getContext(android.icu.text.DisplayContext.Type)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Text.DisplayContext.Type"/></param>
@@ -115,6 +101,22 @@ namespace Android.Icu.Text
         public Android.Icu.Text.DisplayContext GetContext(Android.Icu.Text.DisplayContext.Type arg0)
         {
             return IExecuteWithSignature<Android.Icu.Text.DisplayContext>("getContext", "(Landroid/icu/text/DisplayContext$Type;)Landroid/icu/text/DisplayContext;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/LocaleDisplayNames.html#getDialectHandling()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.LocaleDisplayNames.DialectHandling"/></returns>
+        public Android.Icu.Text.LocaleDisplayNames.DialectHandling GetDialectHandling()
+        {
+            return IExecuteWithSignature<Android.Icu.Text.LocaleDisplayNames.DialectHandling>("getDialectHandling", "()Landroid/icu/text/LocaleDisplayNames$DialectHandling;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/LocaleDisplayNames.html#getLocale()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
+        public Android.Icu.Util.ULocale GetLocale()
+        {
+            return IExecuteWithSignature<Android.Icu.Util.ULocale>("getLocale", "()Landroid/icu/util/ULocale;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/LocaleDisplayNames.html#keyDisplayName(java.lang.String)"/>

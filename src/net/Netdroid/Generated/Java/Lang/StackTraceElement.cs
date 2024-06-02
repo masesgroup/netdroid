@@ -30,7 +30,7 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/StackTraceElement.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/StackTraceElement.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -41,7 +41,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/StackTraceElement.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/StackTraceElement.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -71,61 +71,68 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/StackTraceElement.html#getClassLoaderName()"/> 
-        /// </summary>
-        public Java.Lang.String ClassLoaderName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClassLoaderName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/StackTraceElement.html#getClassName()"/> 
-        /// </summary>
-        public Java.Lang.String ClassName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/StackTraceElement.html#getFileName()"/> 
-        /// </summary>
-        public Java.Lang.String FileName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFileName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/StackTraceElement.html#getLineNumber()"/> 
-        /// </summary>
-        public int LineNumber
-        {
-            get { return IExecuteWithSignature<int>("getLineNumber", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/StackTraceElement.html#getMethodName()"/> 
-        /// </summary>
-        public Java.Lang.String MethodName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMethodName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/StackTraceElement.html#getModuleName()"/> 
-        /// </summary>
-        public Java.Lang.String ModuleName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getModuleName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/StackTraceElement.html#getModuleVersion()"/> 
-        /// </summary>
-        public Java.Lang.String ModuleVersion
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getModuleVersion", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/StackTraceElement.html#isNativeMethod()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/StackTraceElement.html#isNativeMethod()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsNativeMethod()
         {
             return IExecuteWithSignature<bool>("isNativeMethod", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/StackTraceElement.html#getLineNumber()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLineNumber()
+        {
+            return IExecuteWithSignature<int>("getLineNumber", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/StackTraceElement.html#getClassLoaderName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetClassLoaderName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getClassLoaderName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/StackTraceElement.html#getClassName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetClassName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getClassName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/StackTraceElement.html#getFileName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFileName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFileName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/StackTraceElement.html#getMethodName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMethodName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMethodName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/StackTraceElement.html#getModuleName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetModuleName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getModuleName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/StackTraceElement.html#getModuleVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetModuleVersion()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getModuleVersion", "()Ljava/lang/String;");
         }
 
         #endregion

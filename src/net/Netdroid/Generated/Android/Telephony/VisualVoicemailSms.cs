@@ -52,32 +52,20 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/VisualVoicemailSms.html#getFields()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/VisualVoicemailSms.html#getFields()"/>
         /// </summary>
-        public Android.Os.Bundle Fields
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetFields()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getFields", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getFields", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/VisualVoicemailSms.html#getMessageBody()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/VisualVoicemailSms.html#getPhoneAccountHandle()"/>
         /// </summary>
-        public Java.Lang.String MessageBody
+        /// <returns><see cref="Android.Telecom.PhoneAccountHandle"/></returns>
+        public Android.Telecom.PhoneAccountHandle GetPhoneAccountHandle()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMessageBody", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/VisualVoicemailSms.html#getPhoneAccountHandle()"/> 
-        /// </summary>
-        public Android.Telecom.PhoneAccountHandle PhoneAccountHandle
-        {
-            get { return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getPhoneAccountHandle", "()Landroid/telecom/PhoneAccountHandle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/VisualVoicemailSms.html#getPrefix()"/> 
-        /// </summary>
-        public Java.Lang.String Prefix
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPrefix", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getPhoneAccountHandle", "()Landroid/telecom/PhoneAccountHandle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/VisualVoicemailSms.html#describeContents()"/>
@@ -86,6 +74,22 @@ namespace Android.Telephony
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/VisualVoicemailSms.html#getMessageBody()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMessageBody()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMessageBody", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/VisualVoicemailSms.html#getPrefix()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPrefix()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPrefix", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/VisualVoicemailSms.html#writeToParcel(android.os.Parcel,int)"/>

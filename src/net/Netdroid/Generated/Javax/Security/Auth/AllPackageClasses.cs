@@ -28,7 +28,7 @@ namespace Javax.Security.Auth
 {
     #region AuthPermission
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/AuthPermission.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/auth/AuthPermission.html"/>
     /// </summary>
     public partial class AuthPermission : Java.Security.BasicPermission
     {
@@ -72,7 +72,7 @@ namespace Javax.Security.Auth
 
     #region Destroyable
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Destroyable.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/auth/Destroyable.html"/>
     /// </summary>
     public partial class Destroyable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Destroyable>
     {
@@ -80,12 +80,12 @@ namespace Javax.Security.Auth
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Destroyable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Destroyable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Destroyable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Destroyable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Destroyable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Destroyable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -118,7 +118,7 @@ namespace Javax.Security.Auth
 
     #region DestroyFailedException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/DestroyFailedException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/auth/DestroyFailedException.html"/>
     /// </summary>
     public partial class DestroyFailedException : Java.Lang.Exception
     {
@@ -135,7 +135,7 @@ namespace Javax.Security.Auth
 
     #region PrivateCredentialPermission
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/PrivateCredentialPermission.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/auth/PrivateCredentialPermission.html"/>
     /// </summary>
     public partial class PrivateCredentialPermission : Java.Security.Permission
     {
@@ -179,7 +179,7 @@ namespace Javax.Security.Auth
 
     #region Subject
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Subject.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html"/>
     /// </summary>
     public partial class Subject : Java.Io.Serializable
     {
@@ -223,9 +223,8 @@ namespace Javax.Security.Auth
 
     #region SubjectDomainCombiner
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/SubjectDomainCombiner.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/auth/SubjectDomainCombiner.html"/>
     /// </summary>
-    [System.Obsolete()]
     public partial class SubjectDomainCombiner : Java.Security.DomainCombiner
     {
         const string _bridgeClassName = "javax.security.auth.SubjectDomainCombiner";

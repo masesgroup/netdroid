@@ -718,12 +718,12 @@ namespace Android.Health.Connect
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ReadRecordsRequest class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ReadRecordsRequest class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ReadRecordsRequest() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ReadRecordsRequest class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ReadRecordsRequest class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ReadRecordsRequest(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -759,18 +759,18 @@ namespace Android.Health.Connect
     /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequest.html"/>
     /// </summary>
     /// <typeparam name="T"><see cref="Android.Health.Connect.Datatypes.Record"/></typeparam>
-    public partial class ReadRecordsRequest<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReadRecordsRequest<T>> where T: Android.Health.Connect.Datatypes.Record
+    public partial class ReadRecordsRequest<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReadRecordsRequest<T>> where T : Android.Health.Connect.Datatypes.Record
     {
         const string _bridgeClassName = "android.health.connect.ReadRecordsRequest";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ReadRecordsRequest class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ReadRecordsRequest class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ReadRecordsRequest() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ReadRecordsRequest class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ReadRecordsRequest class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ReadRecordsRequest(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -890,7 +890,7 @@ namespace Android.Health.Connect
         /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.Builder.html"/>
         /// </summary>
         /// <typeparam name="T"><see cref="Android.Health.Connect.Datatypes.Record"/></typeparam>
-        public partial class Builder<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder<T>> where T: Android.Health.Connect.Datatypes.Record
+        public partial class Builder<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder<T>> where T : Android.Health.Connect.Datatypes.Record
         {
             const string _bridgeClassName = "android.health.connect.ReadRecordsRequestUsingFilters$Builder";
             /// <summary>
@@ -939,7 +939,7 @@ namespace Android.Health.Connect
     /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingFilters.html"/>
     /// </summary>
     /// <typeparam name="T"><see cref="Android.Health.Connect.Datatypes.Record"/></typeparam>
-    public partial class ReadRecordsRequestUsingFilters<T> : Android.Health.Connect.ReadRecordsRequest<T> where T: Android.Health.Connect.Datatypes.Record
+    public partial class ReadRecordsRequestUsingFilters<T> : Android.Health.Connect.ReadRecordsRequest<T> where T : Android.Health.Connect.Datatypes.Record
     {
         const string _bridgeClassName = "android.health.connect.ReadRecordsRequestUsingFilters";
         /// <summary>
@@ -1068,7 +1068,7 @@ namespace Android.Health.Connect
         /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingIds.Builder.html"/>
         /// </summary>
         /// <typeparam name="T"><see cref="Android.Health.Connect.Datatypes.Record"/></typeparam>
-        public partial class Builder<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder<T>> where T: Android.Health.Connect.Datatypes.Record
+        public partial class Builder<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder<T>> where T : Android.Health.Connect.Datatypes.Record
         {
             const string _bridgeClassName = "android.health.connect.ReadRecordsRequestUsingIds$Builder";
             /// <summary>
@@ -1117,7 +1117,7 @@ namespace Android.Health.Connect
     /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingIds.html"/>
     /// </summary>
     /// <typeparam name="T"><see cref="Android.Health.Connect.Datatypes.Record"/></typeparam>
-    public partial class ReadRecordsRequestUsingIds<T> : Android.Health.Connect.ReadRecordsRequest<T> where T: Android.Health.Connect.Datatypes.Record
+    public partial class ReadRecordsRequestUsingIds<T> : Android.Health.Connect.ReadRecordsRequest<T> where T : Android.Health.Connect.Datatypes.Record
     {
         const string _bridgeClassName = "android.health.connect.ReadRecordsRequestUsingIds";
         /// <summary>
@@ -1206,7 +1206,7 @@ namespace Android.Health.Connect
     /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsResponse.html"/>
     /// </summary>
     /// <typeparam name="T"><see cref="Android.Health.Connect.Datatypes.Record"/></typeparam>
-    public partial class ReadRecordsResponse<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReadRecordsResponse<T>> where T: Android.Health.Connect.Datatypes.Record
+    public partial class ReadRecordsResponse<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReadRecordsResponse<T>> where T : Android.Health.Connect.Datatypes.Record
     {
         const string _bridgeClassName = "android.health.connect.ReadRecordsResponse";
         /// <summary>
@@ -1388,12 +1388,12 @@ namespace Android.Health.Connect
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TimeRangeFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TimeRangeFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TimeRangeFilter() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TimeRangeFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TimeRangeFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TimeRangeFilter(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

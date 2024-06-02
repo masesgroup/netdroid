@@ -244,7 +244,7 @@ namespace Android.Security.Keystore
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/keystore/KeyProperties.html#KEY_ALGORITHM_3DES"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String KEY_ALGORITHM_3DES { get { if (!_KEY_ALGORITHM_3DESReady) { _KEY_ALGORITHM_3DESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_ALGORITHM_3DES"); _KEY_ALGORITHM_3DESReady = true; } return _KEY_ALGORITHM_3DESContent; } }
         private static Java.Lang.String _KEY_ALGORITHM_3DESContent = default;
         private static bool _KEY_ALGORITHM_3DESReady = false; // this is used because in case of generics 

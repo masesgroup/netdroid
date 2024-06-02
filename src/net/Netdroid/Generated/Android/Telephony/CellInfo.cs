@@ -88,40 +88,20 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellInfo.html#getCellConnectionStatus()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellInfo.html#getCellIdentity()"/>
         /// </summary>
-        public int CellConnectionStatus
+        /// <returns><see cref="Android.Telephony.CellIdentity"/></returns>
+        public Android.Telephony.CellIdentity GetCellIdentity()
         {
-            get { return IExecuteWithSignature<int>("getCellConnectionStatus", "()I"); }
+            return IExecuteWithSignature<Android.Telephony.CellIdentity>("getCellIdentity", "()Landroid/telephony/CellIdentity;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellInfo.html#getCellIdentity()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellInfo.html#getCellSignalStrength()"/>
         /// </summary>
-        public Android.Telephony.CellIdentity CellIdentity
+        /// <returns><see cref="Android.Telephony.CellSignalStrength"/></returns>
+        public Android.Telephony.CellSignalStrength GetCellSignalStrength()
         {
-            get { return IExecuteWithSignature<Android.Telephony.CellIdentity>("getCellIdentity", "()Landroid/telephony/CellIdentity;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellInfo.html#getCellSignalStrength()"/> 
-        /// </summary>
-        public Android.Telephony.CellSignalStrength CellSignalStrength
-        {
-            get { return IExecuteWithSignature<Android.Telephony.CellSignalStrength>("getCellSignalStrength", "()Landroid/telephony/CellSignalStrength;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellInfo.html#getTimeStamp()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public long TimeStamp
-        {
-            get { return IExecuteWithSignature<long>("getTimeStamp", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellInfo.html#getTimestampMillis()"/> 
-        /// </summary>
-        public long TimestampMillis
-        {
-            get { return IExecuteWithSignature<long>("getTimestampMillis", "()J"); }
+            return IExecuteWithSignature<Android.Telephony.CellSignalStrength>("getCellSignalStrength", "()Landroid/telephony/CellSignalStrength;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellInfo.html#writeToParcel(android.os.Parcel,int)"/>
@@ -147,6 +127,31 @@ namespace Android.Telephony
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellInfo.html#getCellConnectionStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCellConnectionStatus()
+        {
+            return IExecuteWithSignature<int>("getCellConnectionStatus", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellInfo.html#getTimeStamp()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        [global::System.Obsolete()]
+        public long GetTimeStamp()
+        {
+            return IExecuteWithSignature<long>("getTimeStamp", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellInfo.html#getTimestampMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTimestampMillis()
+        {
+            return IExecuteWithSignature<long>("getTimestampMillis", "()J");
         }
 
         #endregion

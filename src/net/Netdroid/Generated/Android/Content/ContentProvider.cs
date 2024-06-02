@@ -46,62 +46,6 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getCallingAttributionSource()"/> 
-        /// </summary>
-        public Android.Content.AttributionSource CallingAttributionSource
-        {
-            get { return IExecuteWithSignature<Android.Content.AttributionSource>("getCallingAttributionSource", "()Landroid/content/AttributionSource;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getCallingAttributionTag()"/> 
-        /// </summary>
-        public Java.Lang.String CallingAttributionTag
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCallingAttributionTag", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getCallingPackage()"/> 
-        /// </summary>
-        public Java.Lang.String CallingPackage
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCallingPackage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getCallingPackageUnchecked()"/> 
-        /// </summary>
-        public Java.Lang.String CallingPackageUnchecked
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCallingPackageUnchecked", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getContext()"/> 
-        /// </summary>
-        public Android.Content.Context Context
-        {
-            get { return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getPathPermissions()"/> 
-        /// </summary>
-        public Android.Content.Pm.PathPermission[] PathPermissions
-        {
-            get { return IExecuteWithSignatureArray<Android.Content.Pm.PathPermission>("getPathPermissions", "()[Landroid/content/pm/PathPermission;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getReadPermission()"/> 
-        /// </summary>
-        public Java.Lang.String ReadPermission
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getReadPermission", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getWritePermission()"/> 
-        /// </summary>
-        public Java.Lang.String WritePermission
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getWritePermission", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#openPipeHelper(android.net.Uri,java.lang.String,android.os.Bundle,java.lang.Object,android.content.ContentProvider.PipeDataWriter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
@@ -361,6 +305,14 @@ namespace Android.Content
             return IExecute<bool>("refresh", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getCallingAttributionSource()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.AttributionSource"/></returns>
+        public Android.Content.AttributionSource GetCallingAttributionSource()
+        {
+            return IExecuteWithSignature<Android.Content.AttributionSource>("getCallingAttributionSource", "()Landroid/content/AttributionSource;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#clearCallingIdentity()"/>
         /// </summary>
         /// <returns><see cref="Android.Content.ContentProvider.CallingIdentity"/></returns>
@@ -369,12 +321,68 @@ namespace Android.Content
             return IExecuteWithSignature<Android.Content.ContentProvider.CallingIdentity>("clearCallingIdentity", "()Landroid/content/ContentProvider$CallingIdentity;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getContext()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        public Android.Content.Context GetContext()
+        {
+            return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#requireContext()"/>
         /// </summary>
         /// <returns><see cref="Android.Content.Context"/></returns>
         public Android.Content.Context RequireContext()
         {
             return IExecuteWithSignature<Android.Content.Context>("requireContext", "()Landroid/content/Context;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getPathPermissions()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Pm.PathPermission"/></returns>
+        public Android.Content.Pm.PathPermission[] GetPathPermissions()
+        {
+            return IExecuteWithSignatureArray<Android.Content.Pm.PathPermission>("getPathPermissions", "()[Landroid/content/pm/PathPermission;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getCallingAttributionTag()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCallingAttributionTag()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCallingAttributionTag", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getCallingPackage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCallingPackage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCallingPackage", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getCallingPackageUnchecked()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCallingPackageUnchecked()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCallingPackageUnchecked", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getReadPermission()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetReadPermission()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getReadPermission", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#getWritePermission()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetWritePermission()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getWritePermission", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProvider.html#restoreCallingIdentity(android.content.ContentProvider.CallingIdentity)"/>

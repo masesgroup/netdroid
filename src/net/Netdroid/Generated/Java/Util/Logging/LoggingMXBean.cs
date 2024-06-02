@@ -64,14 +64,7 @@ namespace Java.Util.Logging
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LoggingMXBean.html#getLoggerNames()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> LoggerNames
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getLoggerNames", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LoggingMXBean.html#getLoggerLevel(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LoggingMXBean.html#getLoggerLevel(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -80,7 +73,7 @@ namespace Java.Util.Logging
             return IExecuteWithSignature<Java.Lang.String>("getLoggerLevel", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LoggingMXBean.html#getParentLoggerName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LoggingMXBean.html#getParentLoggerName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -89,7 +82,15 @@ namespace Java.Util.Logging
             return IExecuteWithSignature<Java.Lang.String>("getParentLoggerName", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LoggingMXBean.html#setLoggerLevel(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LoggingMXBean.html#getLoggerNames()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetLoggerNames()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getLoggerNames", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LoggingMXBean.html#setLoggerLevel(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>

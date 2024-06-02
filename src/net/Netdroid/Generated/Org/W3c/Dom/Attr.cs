@@ -64,47 +64,61 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Attr.html#getName()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Attr.html#getSpecified()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="bool"/></returns>
+        public bool GetSpecified()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<bool>("getSpecified", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Attr.html#getOwnerElement()"/> 
-        /// </summary>
-        public Org.W3c.Dom.Element OwnerElement
-        {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Element>("getOwnerElement", "()Lorg/w3c/dom/Element;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Attr.html#getSchemaTypeInfo()"/> 
-        /// </summary>
-        public Org.W3c.Dom.TypeInfo SchemaTypeInfo
-        {
-            get { return IExecuteWithSignature<Org.W3c.Dom.TypeInfo>("getSchemaTypeInfo", "()Lorg/w3c/dom/TypeInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Attr.html#getSpecified()"/> 
-        /// </summary>
-        public bool Specified
-        {
-            get { return IExecuteWithSignature<bool>("getSpecified", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Attr.html#getValue()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Attr.html#setValue(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Value
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setValue", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Attr.html#isId()"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Attr.html#isId()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsId()
         {
             return IExecuteWithSignature<bool>("isId", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Attr.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Attr.html#getValue()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetValue()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Attr.html#getOwnerElement()"/>
+        /// </summary>
+        /// <returns><see cref="Org.W3c.Dom.Element"/></returns>
+        public Org.W3c.Dom.Element GetOwnerElement()
+        {
+            return IExecuteWithSignature<Org.W3c.Dom.Element>("getOwnerElement", "()Lorg/w3c/dom/Element;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Attr.html#getSchemaTypeInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Org.W3c.Dom.TypeInfo"/></returns>
+        public Org.W3c.Dom.TypeInfo GetSchemaTypeInfo()
+        {
+            return IExecuteWithSignature<Org.W3c.Dom.TypeInfo>("getSchemaTypeInfo", "()Lorg/w3c/dom/TypeInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Attr.html#setValue(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        public void SetValue(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setValue", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

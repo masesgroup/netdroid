@@ -64,11 +64,12 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/RowId.html#getBytes()"/> 
+        /// <see href="https://developer.android.com/reference/java/sql/RowId.html#getBytes()"/>
         /// </summary>
-        public byte[] Bytes
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetBytes()
         {
-            get { return IExecuteWithSignatureArray<byte>("getBytes", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getBytes", "()[B");
         }
 
         #endregion

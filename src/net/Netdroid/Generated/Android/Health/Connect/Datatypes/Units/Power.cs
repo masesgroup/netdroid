@@ -55,11 +55,12 @@ namespace Android.Health.Connect.Datatypes.Units
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Power.html#getInWatts()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Power.html#getInWatts()"/>
         /// </summary>
-        public double InWatts
+        /// <returns><see cref="double"/></returns>
+        public double GetInWatts()
         {
-            get { return IExecuteWithSignature<double>("getInWatts", "()D"); }
+            return IExecuteWithSignature<double>("getInWatts", "()D");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Power.html#compareTo(android.health.connect.datatypes.units.Power)"/>

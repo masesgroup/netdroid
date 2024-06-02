@@ -71,46 +71,20 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecStatus.html#getInputCodecConfig()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecStatus.html#getInputCodecConfig()"/>
         /// </summary>
-        public Android.Bluetooth.BluetoothLeAudioCodecConfig InputCodecConfig
+        /// <returns><see cref="Android.Bluetooth.BluetoothLeAudioCodecConfig"/></returns>
+        public Android.Bluetooth.BluetoothLeAudioCodecConfig GetInputCodecConfig()
         {
-            get { return IExecuteWithSignature<Android.Bluetooth.BluetoothLeAudioCodecConfig>("getInputCodecConfig", "()Landroid/bluetooth/BluetoothLeAudioCodecConfig;"); }
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothLeAudioCodecConfig>("getInputCodecConfig", "()Landroid/bluetooth/BluetoothLeAudioCodecConfig;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecStatus.html#getInputCodecLocalCapabilities()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecStatus.html#getOutputCodecConfig()"/>
         /// </summary>
-        public Java.Util.List<Android.Bluetooth.BluetoothLeAudioCodecConfig> InputCodecLocalCapabilities
+        /// <returns><see cref="Android.Bluetooth.BluetoothLeAudioCodecConfig"/></returns>
+        public Android.Bluetooth.BluetoothLeAudioCodecConfig GetOutputCodecConfig()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothLeAudioCodecConfig>>("getInputCodecLocalCapabilities", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecStatus.html#getInputCodecSelectableCapabilities()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Bluetooth.BluetoothLeAudioCodecConfig> InputCodecSelectableCapabilities
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothLeAudioCodecConfig>>("getInputCodecSelectableCapabilities", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecStatus.html#getOutputCodecConfig()"/> 
-        /// </summary>
-        public Android.Bluetooth.BluetoothLeAudioCodecConfig OutputCodecConfig
-        {
-            get { return IExecuteWithSignature<Android.Bluetooth.BluetoothLeAudioCodecConfig>("getOutputCodecConfig", "()Landroid/bluetooth/BluetoothLeAudioCodecConfig;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecStatus.html#getOutputCodecLocalCapabilities()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Bluetooth.BluetoothLeAudioCodecConfig> OutputCodecLocalCapabilities
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothLeAudioCodecConfig>>("getOutputCodecLocalCapabilities", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecStatus.html#getOutputCodecSelectableCapabilities()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Bluetooth.BluetoothLeAudioCodecConfig> OutputCodecSelectableCapabilities
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothLeAudioCodecConfig>>("getOutputCodecSelectableCapabilities", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothLeAudioCodecConfig>("getOutputCodecConfig", "()Landroid/bluetooth/BluetoothLeAudioCodecConfig;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecStatus.html#isInputCodecConfigSelectable(android.bluetooth.BluetoothLeAudioCodecConfig)"/>
@@ -137,6 +111,38 @@ namespace Android.Bluetooth
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecStatus.html#getInputCodecLocalCapabilities()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Bluetooth.BluetoothLeAudioCodecConfig> GetInputCodecLocalCapabilities()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothLeAudioCodecConfig>>("getInputCodecLocalCapabilities", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecStatus.html#getInputCodecSelectableCapabilities()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Bluetooth.BluetoothLeAudioCodecConfig> GetInputCodecSelectableCapabilities()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothLeAudioCodecConfig>>("getInputCodecSelectableCapabilities", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecStatus.html#getOutputCodecLocalCapabilities()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Bluetooth.BluetoothLeAudioCodecConfig> GetOutputCodecLocalCapabilities()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothLeAudioCodecConfig>>("getOutputCodecLocalCapabilities", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecStatus.html#getOutputCodecSelectableCapabilities()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Bluetooth.BluetoothLeAudioCodecConfig> GetOutputCodecSelectableCapabilities()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothLeAudioCodecConfig>>("getOutputCodecSelectableCapabilities", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecStatus.html#writeToParcel(android.os.Parcel,int)"/>

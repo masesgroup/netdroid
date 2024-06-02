@@ -122,7 +122,7 @@ namespace Android.View.Inputmethod
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ToggleSoftInput(int arg0, int arg1)
         {
             IExecute("toggleSoftInput", arg0, arg1);

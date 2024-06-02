@@ -55,18 +55,20 @@ namespace Android.Adservices.Customaudience
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/RemoveCustomAudienceOverrideRequest.html#getBuyer()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/RemoveCustomAudienceOverrideRequest.html#getBuyer()"/>
         /// </summary>
-        public Android.Adservices.Common.AdTechIdentifier Buyer
+        /// <returns><see cref="Android.Adservices.Common.AdTechIdentifier"/></returns>
+        public Android.Adservices.Common.AdTechIdentifier GetBuyer()
         {
-            get { return IExecuteWithSignature<Android.Adservices.Common.AdTechIdentifier>("getBuyer", "()Landroid/adservices/common/AdTechIdentifier;"); }
+            return IExecuteWithSignature<Android.Adservices.Common.AdTechIdentifier>("getBuyer", "()Landroid/adservices/common/AdTechIdentifier;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/RemoveCustomAudienceOverrideRequest.html#getName()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/RemoveCustomAudienceOverrideRequest.html#getName()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
 
         #endregion

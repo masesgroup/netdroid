@@ -28,7 +28,7 @@ namespace Java.Nio
 {
     #region Buffer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/Buffer.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/Buffer.html"/>
     /// </summary>
     public partial class Buffer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Buffer>
     {
@@ -36,12 +36,12 @@ namespace Java.Nio
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Buffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Buffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Buffer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Buffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Buffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Buffer(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Java.Nio
 
     #region BufferOverflowException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/BufferOverflowException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/BufferOverflowException.html"/>
     /// </summary>
     public partial class BufferOverflowException : Java.Lang.RuntimeException
     {
@@ -91,7 +91,7 @@ namespace Java.Nio
 
     #region BufferUnderflowException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/BufferUnderflowException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/BufferUnderflowException.html"/>
     /// </summary>
     public partial class BufferUnderflowException : Java.Lang.RuntimeException
     {
@@ -108,7 +108,7 @@ namespace Java.Nio
 
     #region ByteBuffer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html"/>
     /// </summary>
     public partial class ByteBuffer : Java.Nio.Buffer
     {
@@ -116,12 +116,12 @@ namespace Java.Nio
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ByteBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ByteBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ByteBuffer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ByteBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ByteBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ByteBuffer(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -154,7 +154,7 @@ namespace Java.Nio
 
     #region ByteOrder
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteOrder.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/ByteOrder.html"/>
     /// </summary>
     public partial class ByteOrder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ByteOrder>
     {
@@ -198,7 +198,7 @@ namespace Java.Nio
 
     #region CharBuffer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/CharBuffer.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html"/>
     /// </summary>
     public partial class CharBuffer : Java.Nio.Buffer
     {
@@ -206,12 +206,12 @@ namespace Java.Nio
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CharBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CharBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharBuffer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CharBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CharBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharBuffer(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -244,7 +244,7 @@ namespace Java.Nio
 
     #region DoubleBuffer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/DoubleBuffer.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/DoubleBuffer.html"/>
     /// </summary>
     public partial class DoubleBuffer : Java.Nio.Buffer
     {
@@ -252,12 +252,12 @@ namespace Java.Nio
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DoubleBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DoubleBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DoubleBuffer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DoubleBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DoubleBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DoubleBuffer(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -290,7 +290,7 @@ namespace Java.Nio
 
     #region FloatBuffer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/FloatBuffer.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/FloatBuffer.html"/>
     /// </summary>
     public partial class FloatBuffer : Java.Nio.Buffer
     {
@@ -298,12 +298,12 @@ namespace Java.Nio
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FloatBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FloatBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FloatBuffer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FloatBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FloatBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FloatBuffer(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -336,7 +336,7 @@ namespace Java.Nio
 
     #region IntBuffer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/IntBuffer.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/IntBuffer.html"/>
     /// </summary>
     public partial class IntBuffer : Java.Nio.Buffer
     {
@@ -344,12 +344,12 @@ namespace Java.Nio
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("IntBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("IntBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public IntBuffer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("IntBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("IntBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public IntBuffer(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -382,7 +382,7 @@ namespace Java.Nio
 
     #region InvalidMarkException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/InvalidMarkException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/InvalidMarkException.html"/>
     /// </summary>
     public partial class InvalidMarkException : Java.Lang.IllegalStateException
     {
@@ -399,7 +399,7 @@ namespace Java.Nio
 
     #region LongBuffer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/LongBuffer.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/LongBuffer.html"/>
     /// </summary>
     public partial class LongBuffer : Java.Nio.Buffer
     {
@@ -407,12 +407,12 @@ namespace Java.Nio
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("LongBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LongBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LongBuffer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("LongBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("LongBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public LongBuffer(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -445,7 +445,7 @@ namespace Java.Nio
 
     #region MappedByteBuffer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/MappedByteBuffer.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/MappedByteBuffer.html"/>
     /// </summary>
     public partial class MappedByteBuffer : Java.Nio.ByteBuffer
     {
@@ -453,12 +453,12 @@ namespace Java.Nio
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("MappedByteBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MappedByteBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MappedByteBuffer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("MappedByteBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MappedByteBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MappedByteBuffer(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -491,7 +491,7 @@ namespace Java.Nio
 
     #region ReadOnlyBufferException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/ReadOnlyBufferException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/ReadOnlyBufferException.html"/>
     /// </summary>
     public partial class ReadOnlyBufferException : Java.Lang.UnsupportedOperationException
     {
@@ -508,7 +508,7 @@ namespace Java.Nio
 
     #region ShortBuffer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html"/>
     /// </summary>
     public partial class ShortBuffer : Java.Nio.Buffer
     {
@@ -516,12 +516,12 @@ namespace Java.Nio
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ShortBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ShortBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ShortBuffer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ShortBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ShortBuffer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ShortBuffer(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

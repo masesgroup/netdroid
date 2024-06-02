@@ -28,7 +28,7 @@ namespace Java.Nio.Channels.Spi
 {
     #region AbstractInterruptibleChannel
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/AbstractInterruptibleChannel.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/channels/spi/AbstractInterruptibleChannel.html"/>
     /// </summary>
     public partial class AbstractInterruptibleChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractInterruptibleChannel>
     {
@@ -36,12 +36,12 @@ namespace Java.Nio.Channels.Spi
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AbstractInterruptibleChannel class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractInterruptibleChannel class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractInterruptibleChannel() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AbstractInterruptibleChannel class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractInterruptibleChannel class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractInterruptibleChannel(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Java.Nio.Channels.Spi
 
     #region AbstractSelectableChannel
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/AbstractSelectableChannel.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/channels/spi/AbstractSelectableChannel.html"/>
     /// </summary>
     public partial class AbstractSelectableChannel : Java.Nio.Channels.SelectableChannel
     {
@@ -82,12 +82,12 @@ namespace Java.Nio.Channels.Spi
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AbstractSelectableChannel class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractSelectableChannel class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractSelectableChannel() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AbstractSelectableChannel class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractSelectableChannel class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractSelectableChannel(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -120,7 +120,7 @@ namespace Java.Nio.Channels.Spi
 
     #region AbstractSelectionKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/AbstractSelectionKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/channels/spi/AbstractSelectionKey.html"/>
     /// </summary>
     public partial class AbstractSelectionKey : Java.Nio.Channels.SelectionKey
     {
@@ -128,12 +128,12 @@ namespace Java.Nio.Channels.Spi
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AbstractSelectionKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractSelectionKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractSelectionKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AbstractSelectionKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractSelectionKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractSelectionKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -166,7 +166,7 @@ namespace Java.Nio.Channels.Spi
 
     #region AbstractSelector
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/AbstractSelector.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/channels/spi/AbstractSelector.html"/>
     /// </summary>
     public partial class AbstractSelector : Java.Nio.Channels.Selector
     {
@@ -174,12 +174,12 @@ namespace Java.Nio.Channels.Spi
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AbstractSelector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractSelector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractSelector() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AbstractSelector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractSelector class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractSelector(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -212,7 +212,7 @@ namespace Java.Nio.Channels.Spi
 
     #region AsynchronousChannelProvider
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/channels/spi/AsynchronousChannelProvider.html"/>
     /// </summary>
     public partial class AsynchronousChannelProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AsynchronousChannelProvider>
     {
@@ -220,12 +220,12 @@ namespace Java.Nio.Channels.Spi
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AsynchronousChannelProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AsynchronousChannelProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AsynchronousChannelProvider() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AsynchronousChannelProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AsynchronousChannelProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AsynchronousChannelProvider(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -258,7 +258,7 @@ namespace Java.Nio.Channels.Spi
 
     #region SelectorProvider
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/SelectorProvider.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/channels/spi/SelectorProvider.html"/>
     /// </summary>
     public partial class SelectorProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SelectorProvider>
     {
@@ -266,12 +266,12 @@ namespace Java.Nio.Channels.Spi
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SelectorProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SelectorProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SelectorProvider() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SelectorProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SelectorProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SelectorProvider(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

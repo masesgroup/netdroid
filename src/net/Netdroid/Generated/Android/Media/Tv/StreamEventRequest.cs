@@ -63,18 +63,20 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/StreamEventRequest.html#getEventName()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/StreamEventRequest.html#getTargetUri()"/>
         /// </summary>
-        public Java.Lang.String EventName
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetTargetUri()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEventName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getTargetUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/StreamEventRequest.html#getTargetUri()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/StreamEventRequest.html#getEventName()"/>
         /// </summary>
-        public Android.Net.Uri TargetUri
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEventName()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getTargetUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getEventName", "()Ljava/lang/String;");
         }
 
         #endregion

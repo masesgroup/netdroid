@@ -46,46 +46,52 @@ namespace Android.Net.Eap
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.html#getEapIdentity()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.html#getEapAkaConfig()"/>
         /// </summary>
-        public byte[] EapIdentity
+        /// <returns><see cref="Android.Net.Eap.EapSessionConfig.EapAkaConfig"/></returns>
+        public Android.Net.Eap.EapSessionConfig.EapAkaConfig GetEapAkaConfig()
         {
-            get { return IExecuteWithSignatureArray<byte>("getEapIdentity", "()[B"); }
+            return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig.EapAkaConfig>("getEapAkaConfig", "()Landroid/net/eap/EapSessionConfig$EapAkaConfig;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.html#getEapAkaConfig()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.html#getEapAkaPrimeConfig()"/>
         /// </summary>
-        public Android.Net.Eap.EapSessionConfig.EapAkaConfig GetEapAkaConfig
+        /// <returns><see cref="Android.Net.Eap.EapSessionConfig.EapAkaPrimeConfig"/></returns>
+        public Android.Net.Eap.EapSessionConfig.EapAkaPrimeConfig GetEapAkaPrimeConfig()
         {
-            get { return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig.EapAkaConfig>("getEapAkaConfig", "()Landroid/net/eap/EapSessionConfig$EapAkaConfig;"); }
+            return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig.EapAkaPrimeConfig>("getEapAkaPrimeConfig", "()Landroid/net/eap/EapSessionConfig$EapAkaPrimeConfig;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.html#getEapAkaPrimeConfig()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.html#getEapMsChapV2Config()"/>
         /// </summary>
-        public Android.Net.Eap.EapSessionConfig.EapAkaPrimeConfig GetEapAkaPrimeConfig
+        /// <returns><see cref="Android.Net.Eap.EapSessionConfig.EapMsChapV2Config"/></returns>
+        public Android.Net.Eap.EapSessionConfig.EapMsChapV2Config GetEapMsChapV2Config()
         {
-            get { return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig.EapAkaPrimeConfig>("getEapAkaPrimeConfig", "()Landroid/net/eap/EapSessionConfig$EapAkaPrimeConfig;"); }
+            return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig.EapMsChapV2Config>("getEapMsChapV2Config", "()Landroid/net/eap/EapSessionConfig$EapMsChapV2Config;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.html#getEapMsChapV2Config()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.html#getEapSimConfig()"/>
         /// </summary>
-        public Android.Net.Eap.EapSessionConfig.EapMsChapV2Config GetEapMsChapV2Config
+        /// <returns><see cref="Android.Net.Eap.EapSessionConfig.EapSimConfig"/></returns>
+        public Android.Net.Eap.EapSessionConfig.EapSimConfig GetEapSimConfig()
         {
-            get { return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig.EapMsChapV2Config>("getEapMsChapV2Config", "()Landroid/net/eap/EapSessionConfig$EapMsChapV2Config;"); }
+            return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig.EapSimConfig>("getEapSimConfig", "()Landroid/net/eap/EapSessionConfig$EapSimConfig;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.html#getEapSimConfig()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.html#getEapTtlsConfig()"/>
         /// </summary>
-        public Android.Net.Eap.EapSessionConfig.EapSimConfig GetEapSimConfig
+        /// <returns><see cref="Android.Net.Eap.EapSessionConfig.EapTtlsConfig"/></returns>
+        public Android.Net.Eap.EapSessionConfig.EapTtlsConfig GetEapTtlsConfig()
         {
-            get { return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig.EapSimConfig>("getEapSimConfig", "()Landroid/net/eap/EapSessionConfig$EapSimConfig;"); }
+            return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig.EapTtlsConfig>("getEapTtlsConfig", "()Landroid/net/eap/EapSessionConfig$EapTtlsConfig;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.html#getEapTtlsConfig()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.html#getEapIdentity()"/>
         /// </summary>
-        public Android.Net.Eap.EapSessionConfig.EapTtlsConfig GetEapTtlsConfig
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetEapIdentity()
         {
-            get { return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig.EapTtlsConfig>("getEapTtlsConfig", "()Landroid/net/eap/EapSessionConfig$EapTtlsConfig;"); }
+            return IExecuteWithSignatureArray<byte>("getEapIdentity", "()[B");
         }
 
         #endregion
@@ -223,25 +229,28 @@ namespace Android.Net.Eap
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapAkaConfig.html#getAppType()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapAkaConfig.html#getEapAkaOption()"/>
             /// </summary>
-            public int AppType
+            /// <returns><see cref="Android.Net.Eap.EapSessionConfig.EapAkaOption"/></returns>
+            public Android.Net.Eap.EapSessionConfig.EapAkaOption GetEapAkaOption()
             {
-                get { return IExecuteWithSignature<int>("getAppType", "()I"); }
+                return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig.EapAkaOption>("getEapAkaOption", "()Landroid/net/eap/EapSessionConfig$EapAkaOption;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapAkaConfig.html#getEapAkaOption()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapAkaConfig.html#getAppType()"/>
             /// </summary>
-            public Android.Net.Eap.EapSessionConfig.EapAkaOption GetEapAkaOption
+            /// <returns><see cref="int"/></returns>
+            public int GetAppType()
             {
-                get { return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig.EapAkaOption>("getEapAkaOption", "()Landroid/net/eap/EapSessionConfig$EapAkaOption;"); }
+                return IExecuteWithSignature<int>("getAppType", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapAkaConfig.html#getSubId()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapAkaConfig.html#getSubId()"/>
             /// </summary>
-            public int SubId
+            /// <returns><see cref="int"/></returns>
+            public int GetSubId()
             {
-                get { return IExecuteWithSignature<int>("getSubId", "()I"); }
+                return IExecuteWithSignature<int>("getSubId", "()I");
             }
 
             #endregion
@@ -275,11 +284,12 @@ namespace Android.Net.Eap
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapAkaOption.html#getReauthId()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapAkaOption.html#getReauthId()"/>
             /// </summary>
-            public byte[] ReauthId
+            /// <returns><see cref="byte"/></returns>
+            public byte[] GetReauthId()
             {
-                get { return IExecuteWithSignatureArray<byte>("getReauthId", "()[B"); }
+                return IExecuteWithSignatureArray<byte>("getReauthId", "()[B");
             }
 
             #endregion
@@ -361,19 +371,20 @@ namespace Android.Net.Eap
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapAkaPrimeConfig.html#getNetworkName()"/> 
-            /// </summary>
-            public Java.Lang.String NetworkName
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getNetworkName", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapAkaPrimeConfig.html#allowsMismatchedNetworkNames()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool AllowsMismatchedNetworkNames()
             {
                 return IExecuteWithSignature<bool>("allowsMismatchedNetworkNames", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapAkaPrimeConfig.html#getNetworkName()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetNetworkName()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getNetworkName", "()Ljava/lang/String;");
             }
 
             #endregion
@@ -437,11 +448,12 @@ namespace Android.Net.Eap
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapMethodConfig.html#getMethodType()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapMethodConfig.html#getMethodType()"/>
             /// </summary>
-            public int MethodType
+            /// <returns><see cref="int"/></returns>
+            public int GetMethodType()
             {
-                get { return IExecuteWithSignature<int>("getMethodType", "()I"); }
+                return IExecuteWithSignature<int>("getMethodType", "()I");
             }
 
             #endregion
@@ -475,18 +487,20 @@ namespace Android.Net.Eap
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapMsChapV2Config.html#getPassword()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapMsChapV2Config.html#getPassword()"/>
             /// </summary>
-            public Java.Lang.String Password
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetPassword()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getPassword", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getPassword", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapMsChapV2Config.html#getUsername()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapMsChapV2Config.html#getUsername()"/>
             /// </summary>
-            public Java.Lang.String Username
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetUsername()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getUsername", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getUsername", "()Ljava/lang/String;");
             }
 
             #endregion
@@ -520,18 +534,20 @@ namespace Android.Net.Eap
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapSimConfig.html#getAppType()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapSimConfig.html#getAppType()"/>
             /// </summary>
-            public int AppType
+            /// <returns><see cref="int"/></returns>
+            public int GetAppType()
             {
-                get { return IExecuteWithSignature<int>("getAppType", "()I"); }
+                return IExecuteWithSignature<int>("getAppType", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapSimConfig.html#getSubId()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapSimConfig.html#getSubId()"/>
             /// </summary>
-            public int SubId
+            /// <returns><see cref="int"/></returns>
+            public int GetSubId()
             {
-                get { return IExecuteWithSignature<int>("getSubId", "()I"); }
+                return IExecuteWithSignature<int>("getSubId", "()I");
             }
 
             #endregion
@@ -565,18 +581,20 @@ namespace Android.Net.Eap
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapTtlsConfig.html#getInnerEapSessionConfig()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapTtlsConfig.html#getInnerEapSessionConfig()"/>
             /// </summary>
-            public Android.Net.Eap.EapSessionConfig InnerEapSessionConfig
+            /// <returns><see cref="Android.Net.Eap.EapSessionConfig"/></returns>
+            public Android.Net.Eap.EapSessionConfig GetInnerEapSessionConfig()
             {
-                get { return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig>("getInnerEapSessionConfig", "()Landroid/net/eap/EapSessionConfig;"); }
+                return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig>("getInnerEapSessionConfig", "()Landroid/net/eap/EapSessionConfig;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapTtlsConfig.html#getServerCaCert()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/eap/EapSessionConfig.EapTtlsConfig.html#getServerCaCert()"/>
             /// </summary>
-            public Java.Security.Cert.X509Certificate ServerCaCert
+            /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
+            public Java.Security.Cert.X509Certificate GetServerCaCert()
             {
-                get { return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getServerCaCert", "()Ljava/security/cert/X509Certificate;"); }
+                return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getServerCaCert", "()Ljava/security/cert/X509Certificate;");
             }
 
             #endregion

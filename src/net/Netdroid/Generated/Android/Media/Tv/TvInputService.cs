@@ -169,11 +169,12 @@ namespace Android.Media.Tv
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.HardwareSession.html#getHardwareInputId()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.HardwareSession.html#getHardwareInputId()"/>
             /// </summary>
-            public Java.Lang.String HardwareInputId
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetHardwareInputId()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getHardwareInputId", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getHardwareInputId", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvInputService.HardwareSession.html#onHardwareVideoAvailable()"/>

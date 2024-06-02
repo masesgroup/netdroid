@@ -175,18 +175,20 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/AudioMetadata.Key.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/AudioMetadata.Key.html#getValueClass()"/>
             /// </summary>
-            public Java.Lang.String Name
+            /// <returns><see cref="Java.Lang.Class"/></returns>
+            public Java.Lang.Class GetValueClass()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.Class>("getValueClass", "()Ljava/lang/Class;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/AudioMetadata.Key.html#getValueClass()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/AudioMetadata.Key.html#getName()"/>
             /// </summary>
-            public Java.Lang.Class ValueClass
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetName()
             {
-                get { return IExecuteWithSignature<Java.Lang.Class>("getValueClass", "()Ljava/lang/Class;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
 
             #endregion
@@ -224,18 +226,20 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/AudioMetadata.Key.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/AudioMetadata.Key.html#getValueClass()"/>
             /// </summary>
-            public Java.Lang.String Name
+            /// <returns><see cref="Java.Lang.Class"/></returns>
+            public Java.Lang.Class GetValueClass()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.Class>("getValueClass", "()Ljava/lang/Class;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/AudioMetadata.Key.html#getValueClass()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/AudioMetadata.Key.html#getName()"/>
             /// </summary>
-            public Java.Lang.Class ValueClass
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetName()
             {
-                get { return IExecuteWithSignature<Java.Lang.Class>("getValueClass", "()Ljava/lang/Class;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
 
             #endregion

@@ -142,46 +142,12 @@ namespace Android.Bluetooth.Le
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanSettings.html#getCallbackType()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanSettings.html#getLegacy()"/>
         /// </summary>
-        public int CallbackType
+        /// <returns><see cref="bool"/></returns>
+        public bool GetLegacy()
         {
-            get { return IExecuteWithSignature<int>("getCallbackType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanSettings.html#getLegacy()"/> 
-        /// </summary>
-        public bool Legacy
-        {
-            get { return IExecuteWithSignature<bool>("getLegacy", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanSettings.html#getPhy()"/> 
-        /// </summary>
-        public int Phy
-        {
-            get { return IExecuteWithSignature<int>("getPhy", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanSettings.html#getReportDelayMillis()"/> 
-        /// </summary>
-        public long ReportDelayMillis
-        {
-            get { return IExecuteWithSignature<long>("getReportDelayMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanSettings.html#getScanMode()"/> 
-        /// </summary>
-        public int ScanMode
-        {
-            get { return IExecuteWithSignature<int>("getScanMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanSettings.html#getScanResultType()"/> 
-        /// </summary>
-        public int ScanResultType
-        {
-            get { return IExecuteWithSignature<int>("getScanResultType", "()I"); }
+            return IExecuteWithSignature<bool>("getLegacy", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanSettings.html#describeContents()"/>
@@ -190,6 +156,46 @@ namespace Android.Bluetooth.Le
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanSettings.html#getCallbackType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCallbackType()
+        {
+            return IExecuteWithSignature<int>("getCallbackType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanSettings.html#getPhy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPhy()
+        {
+            return IExecuteWithSignature<int>("getPhy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanSettings.html#getScanMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScanMode()
+        {
+            return IExecuteWithSignature<int>("getScanMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanSettings.html#getScanResultType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScanResultType()
+        {
+            return IExecuteWithSignature<int>("getScanResultType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanSettings.html#getReportDelayMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetReportDelayMillis()
+        {
+            return IExecuteWithSignature<long>("getReportDelayMillis", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanSettings.html#writeToParcel(android.os.Parcel,int)"/>

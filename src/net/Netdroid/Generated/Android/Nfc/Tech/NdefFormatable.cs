@@ -55,11 +55,12 @@ namespace Android.Nfc.Tech
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/NdefFormatable.html#getTag()"/> 
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/NdefFormatable.html#getTag()"/>
         /// </summary>
-        public Android.Nfc.Tag Tag
+        /// <returns><see cref="Android.Nfc.Tag"/></returns>
+        public Android.Nfc.Tag GetTag()
         {
-            get { return IExecuteWithSignature<Android.Nfc.Tag>("getTag", "()Landroid/nfc/Tag;"); }
+            return IExecuteWithSignature<Android.Nfc.Tag>("getTag", "()Landroid/nfc/Tag;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/NdefFormatable.html#isConnected()"/>

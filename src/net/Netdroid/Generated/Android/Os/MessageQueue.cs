@@ -155,7 +155,7 @@ namespace Android.Os
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onFileDescriptorEvents", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Io.FileDescriptor>>>(OnFileDescriptorEventsEventHandler));
+                AddEventHandler("onFileDescriptorEvents", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Io.FileDescriptor>>>(OnFileDescriptorEventsEventHandler));
 
             }
 
@@ -163,7 +163,7 @@ namespace Android.Os
             /// Handler for <see href="https://developer.android.com/reference/android/os/MessageQueue.OnFileDescriptorEventListener.html#onFileDescriptorEvents(java.io.FileDescriptor,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFileDescriptorEvents"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Java.Io.FileDescriptor, int, int> OnOnFileDescriptorEvents { get; set; } = null;
+            public global::System.Func<Java.Io.FileDescriptor, int, int> OnOnFileDescriptorEvents { get; set; } = null;
 
             void OnFileDescriptorEventsEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Io.FileDescriptor>> data)
             {

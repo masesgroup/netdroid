@@ -119,33 +119,36 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#getErrorMessage()"/> 
-        /// </summary>
-        public Java.Lang.String ErrorMessage
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getErrorMessage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#getResultCode()"/> 
-        /// </summary>
-        public int ResultCode
-        {
-            get { return IExecuteWithSignature<int>("getResultCode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#getResultValue()"/> 
-        /// </summary>
-        public object ResultValue
-        {
-            get { return IExecuteWithSignature("getResultValue", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#isSuccess()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsSuccess()
         {
             return IExecuteWithSignature<bool>("isSuccess", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#getResultCode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetResultCode()
+        {
+            return IExecuteWithSignature<int>("getResultCode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#getErrorMessage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetErrorMessage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getErrorMessage", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#getResultValue()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetResultValue()
+        {
+            return IExecuteWithSignature("getResultValue", "()Ljava/lang/Object;");
         }
 
         #endregion
@@ -256,33 +259,36 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#getErrorMessage()"/> 
-        /// </summary>
-        public Java.Lang.String ErrorMessage
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getErrorMessage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#getResultCode()"/> 
-        /// </summary>
-        public int ResultCode
-        {
-            get { return IExecuteWithSignature<int>("getResultCode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#getResultValue()"/> 
-        /// </summary>
-        public ValueType ResultValue
-        {
-            get { return IExecuteWithSignature<ValueType>("getResultValue", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#isSuccess()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsSuccess()
         {
             return IExecuteWithSignature<bool>("isSuccess", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#getResultCode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetResultCode()
+        {
+            return IExecuteWithSignature<int>("getResultCode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#getErrorMessage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetErrorMessage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getErrorMessage", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchResult.html#getResultValue()"/>
+        /// </summary>
+        /// <returns><typeparamref name="ValueType"/></returns>
+        public ValueType GetResultValue()
+        {
+            return IExecuteWithSignature<ValueType>("getResultValue", "()Ljava/lang/Object;");
         }
 
         #endregion

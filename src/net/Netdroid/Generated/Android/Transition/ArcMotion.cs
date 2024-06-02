@@ -55,25 +55,52 @@ namespace Android.Transition
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/ArcMotion.html#getMaximumAngle()"/> <see href="https://developer.android.com/reference/android/transition/ArcMotion.html#setMaximumAngle(float)"/>
+        /// <see href="https://developer.android.com/reference/android/transition/ArcMotion.html#getMaximumAngle()"/>
         /// </summary>
-        public float MaximumAngle
+        /// <returns><see cref="float"/></returns>
+        public float GetMaximumAngle()
         {
-            get { return IExecuteWithSignature<float>("getMaximumAngle", "()F"); } set { IExecuteWithSignature("setMaximumAngle", "(F)V", value); }
+            return IExecuteWithSignature<float>("getMaximumAngle", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/ArcMotion.html#getMinimumHorizontalAngle()"/> <see href="https://developer.android.com/reference/android/transition/ArcMotion.html#setMinimumHorizontalAngle(float)"/>
+        /// <see href="https://developer.android.com/reference/android/transition/ArcMotion.html#getMinimumHorizontalAngle()"/>
         /// </summary>
-        public float MinimumHorizontalAngle
+        /// <returns><see cref="float"/></returns>
+        public float GetMinimumHorizontalAngle()
         {
-            get { return IExecuteWithSignature<float>("getMinimumHorizontalAngle", "()F"); } set { IExecuteWithSignature("setMinimumHorizontalAngle", "(F)V", value); }
+            return IExecuteWithSignature<float>("getMinimumHorizontalAngle", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/ArcMotion.html#getMinimumVerticalAngle()"/> <see href="https://developer.android.com/reference/android/transition/ArcMotion.html#setMinimumVerticalAngle(float)"/>
+        /// <see href="https://developer.android.com/reference/android/transition/ArcMotion.html#getMinimumVerticalAngle()"/>
         /// </summary>
-        public float MinimumVerticalAngle
+        /// <returns><see cref="float"/></returns>
+        public float GetMinimumVerticalAngle()
         {
-            get { return IExecuteWithSignature<float>("getMinimumVerticalAngle", "()F"); } set { IExecuteWithSignature("setMinimumVerticalAngle", "(F)V", value); }
+            return IExecuteWithSignature<float>("getMinimumVerticalAngle", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/ArcMotion.html#setMaximumAngle(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetMaximumAngle(float arg0)
+        {
+            IExecuteWithSignature("setMaximumAngle", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/ArcMotion.html#setMinimumHorizontalAngle(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetMinimumHorizontalAngle(float arg0)
+        {
+            IExecuteWithSignature("setMinimumHorizontalAngle", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/ArcMotion.html#setMinimumVerticalAngle(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetMinimumVerticalAngle(float arg0)
+        {
+            IExecuteWithSignature("setMinimumVerticalAngle", "(F)V", arg0);
         }
 
         #endregion

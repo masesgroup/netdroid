@@ -64,7 +64,7 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509KeyManager.html#chooseClientAlias(java.lang.String[],java.security.Principal[],java.net.Socket)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/X509KeyManager.html#chooseClientAlias(java.lang.String[],java.security.Principal[],java.net.Socket)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
@@ -75,7 +75,7 @@ namespace Javax.Net.Ssl
             return IExecute<Java.Lang.String>("chooseClientAlias", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509KeyManager.html#chooseServerAlias(java.lang.String,java.security.Principal[],java.net.Socket)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/X509KeyManager.html#chooseServerAlias(java.lang.String,java.security.Principal[],java.net.Socket)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
@@ -86,7 +86,7 @@ namespace Javax.Net.Ssl
             return IExecute<Java.Lang.String>("chooseServerAlias", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509KeyManager.html#getClientAliases(java.lang.String,java.security.Principal[])"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/X509KeyManager.html#getClientAliases(java.lang.String,java.security.Principal[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
@@ -96,7 +96,7 @@ namespace Javax.Net.Ssl
             return IExecuteArray<Java.Lang.String>("getClientAliases", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509KeyManager.html#getServerAliases(java.lang.String,java.security.Principal[])"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/X509KeyManager.html#getServerAliases(java.lang.String,java.security.Principal[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Principal"/></param>
@@ -106,7 +106,7 @@ namespace Javax.Net.Ssl
             return IExecuteArray<Java.Lang.String>("getServerAliases", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509KeyManager.html#getCertificateChain(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/X509KeyManager.html#getCertificateChain(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
@@ -115,7 +115,7 @@ namespace Javax.Net.Ssl
             return IExecuteWithSignatureArray<Java.Security.Cert.X509Certificate>("getCertificateChain", "(Ljava/lang/String;)[Ljava/security/cert/X509Certificate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509KeyManager.html#getPrivateKey(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/X509KeyManager.html#getPrivateKey(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.PrivateKey"/></returns>

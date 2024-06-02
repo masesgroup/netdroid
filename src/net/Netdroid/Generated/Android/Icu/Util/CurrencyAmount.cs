@@ -82,11 +82,12 @@ namespace Android.Icu.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/CurrencyAmount.html#getCurrency()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/util/CurrencyAmount.html#getCurrency()"/>
         /// </summary>
-        public Android.Icu.Util.Currency Currency
+        /// <returns><see cref="Android.Icu.Util.Currency"/></returns>
+        public Android.Icu.Util.Currency GetCurrency()
         {
-            get { return IExecuteWithSignature<Android.Icu.Util.Currency>("getCurrency", "()Landroid/icu/util/Currency;"); }
+            return IExecuteWithSignature<Android.Icu.Util.Currency>("getCurrency", "()Landroid/icu/util/Currency;");
         }
 
         #endregion

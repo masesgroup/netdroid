@@ -46,18 +46,20 @@ namespace Android.Printservice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/printservice/PrintDocument.html#getData()"/> 
+        /// <see href="https://developer.android.com/reference/android/printservice/PrintDocument.html#getData()"/>
         /// </summary>
-        public Android.Os.ParcelFileDescriptor Data
+        /// <returns><see cref="Android.Os.ParcelFileDescriptor"/></returns>
+        public Android.Os.ParcelFileDescriptor GetData()
         {
-            get { return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("getData", "()Landroid/os/ParcelFileDescriptor;"); }
+            return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("getData", "()Landroid/os/ParcelFileDescriptor;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/printservice/PrintDocument.html#getInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/printservice/PrintDocument.html#getInfo()"/>
         /// </summary>
-        public Android.Print.PrintDocumentInfo Info
+        /// <returns><see cref="Android.Print.PrintDocumentInfo"/></returns>
+        public Android.Print.PrintDocumentInfo GetInfo()
         {
-            get { return IExecuteWithSignature<Android.Print.PrintDocumentInfo>("getInfo", "()Landroid/print/PrintDocumentInfo;"); }
+            return IExecuteWithSignature<Android.Print.PrintDocumentInfo>("getInfo", "()Landroid/print/PrintDocumentInfo;");
         }
 
         #endregion

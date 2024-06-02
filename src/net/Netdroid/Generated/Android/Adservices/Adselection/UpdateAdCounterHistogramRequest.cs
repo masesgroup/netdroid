@@ -46,25 +46,28 @@ namespace Android.Adservices.Adselection
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/UpdateAdCounterHistogramRequest.html#getAdEventType()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/UpdateAdCounterHistogramRequest.html#getCallerAdTech()"/>
         /// </summary>
-        public int AdEventType
+        /// <returns><see cref="Android.Adservices.Common.AdTechIdentifier"/></returns>
+        public Android.Adservices.Common.AdTechIdentifier GetCallerAdTech()
         {
-            get { return IExecuteWithSignature<int>("getAdEventType", "()I"); }
+            return IExecuteWithSignature<Android.Adservices.Common.AdTechIdentifier>("getCallerAdTech", "()Landroid/adservices/common/AdTechIdentifier;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/UpdateAdCounterHistogramRequest.html#getAdSelectionId()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/UpdateAdCounterHistogramRequest.html#getAdEventType()"/>
         /// </summary>
-        public long AdSelectionId
+        /// <returns><see cref="int"/></returns>
+        public int GetAdEventType()
         {
-            get { return IExecuteWithSignature<long>("getAdSelectionId", "()J"); }
+            return IExecuteWithSignature<int>("getAdEventType", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/UpdateAdCounterHistogramRequest.html#getCallerAdTech()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/UpdateAdCounterHistogramRequest.html#getAdSelectionId()"/>
         /// </summary>
-        public Android.Adservices.Common.AdTechIdentifier CallerAdTech
+        /// <returns><see cref="long"/></returns>
+        public long GetAdSelectionId()
         {
-            get { return IExecuteWithSignature<Android.Adservices.Common.AdTechIdentifier>("getCallerAdTech", "()Landroid/adservices/common/AdTechIdentifier;"); }
+            return IExecuteWithSignature<long>("getAdSelectionId", "()J");
         }
 
         #endregion

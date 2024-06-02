@@ -42,7 +42,34 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(java.lang.Comparable[],int,int,java.lang.Comparable[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOf(java.lang.Object[],int,java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="U"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        public static T[] CopyOf<T, U>(U[] arg0, int arg1, Java.Lang.Class arg2)
+        {
+            return SExecuteArray<T>(LocalBridgeClazz, "copyOf", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOfRange(java.lang.Object[],int,int,java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="U"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        public static T[] CopyOfRange<T, U>(U[] arg0, int arg1, int arg2, Java.Lang.Class arg3)
+        {
+            return SExecuteArray<T>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(java.lang.Comparable[],int,int,java.lang.Comparable[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -57,7 +84,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(java.lang.Comparable[],java.lang.Comparable[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(java.lang.Comparable[],java.lang.Comparable[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="T"/></param>
@@ -68,54 +95,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSort(java.lang.Comparable[],int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <typeparam name="T"></typeparam>
-        public static void ParallelSort<T>(T[] arg0, int arg1, int arg2)
-        {
-            SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSort(java.lang.Comparable[])"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <typeparam name="T"></typeparam>
-        public static void ParallelSort<T>(T[] arg0)
-        {
-            SExecuteWithSignature(LocalBridgeClazz, "parallelSort", "([Ljava/lang/Comparable;)V", new object[] { arg0 });
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOf(java.lang.Object[],int,java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="U"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <typeparam name="U"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T[] CopyOf<T, U>(U[] arg0, int arg1, Java.Lang.Class arg2)
-        {
-            return SExecuteArray<T>(LocalBridgeClazz, "copyOf", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOfRange(java.lang.Object[],int,int,java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="U"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <typeparam name="U"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T[] CopyOfRange<T, U>(U[] arg0, int arg1, int arg2, Java.Lang.Class arg3)
-        {
-            return SExecuteArray<T>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#asList(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#asList(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"></typeparam>
@@ -125,7 +105,7 @@ namespace Java.Util
             if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "asList", "([Ljava/lang/Object;)Ljava/util/List;"); else return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "asList", "([Ljava/lang/Object;)Ljava/util/List;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#spliterator(java.lang.Object[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#spliterator(java.lang.Object[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -137,7 +117,7 @@ namespace Java.Util
             return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#spliterator(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#spliterator(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"></typeparam>
@@ -147,7 +127,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", "([Ljava/lang/Object;)Ljava/util/Spliterator;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#stream(java.lang.Object[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#stream(java.lang.Object[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -159,7 +139,7 @@ namespace Java.Util
             return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "stream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#stream(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#stream(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"></typeparam>
@@ -169,7 +149,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "stream", "([Ljava/lang/Object;)Ljava/util/stream/Stream;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOf(java.lang.Object[],int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOf(java.lang.Object[],int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -180,7 +160,7 @@ namespace Java.Util
             return SExecuteArray<T>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOfRange(java.lang.Object[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOfRange(java.lang.Object[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -192,7 +172,7 @@ namespace Java.Util
             return SExecuteArray<T>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelPrefix(java.lang.Object[],int,int,java.util.function.BinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelPrefix(java.lang.Object[],int,int,java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -204,7 +184,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelPrefix", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelPrefix(java.lang.Object[],java.util.function.BinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelPrefix(java.lang.Object[],java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BinaryOperator"/></param>
@@ -214,29 +194,49 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelPrefix", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSetAll(java.lang.Object[],java.util.function.IntFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSetAll(java.lang.Object[],java.util.function.IntFunction)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntFunction"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
-        public static void ParallelSetAll<T, Arg1ExtendsT>(T[] arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT: T
+        public static void ParallelSetAll<T, Arg1ExtendsT>(T[] arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT : T
         {
             SExecute(LocalBridgeClazz, "parallelSetAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#setAll(java.lang.Object[],java.util.function.IntFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(java.lang.Comparable[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <typeparam name="T"></typeparam>
+        public static void ParallelSort<T>(T[] arg0, int arg1, int arg2)
+        {
+            SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(java.lang.Comparable[])"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
+        public static void ParallelSort<T>(T[] arg0)
+        {
+            SExecute(LocalBridgeClazz, "parallelSort", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#setAll(java.lang.Object[],java.util.function.IntFunction)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntFunction"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
-        public static void SetAll<T, Arg1ExtendsT>(T[] arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT: T
+        public static void SetAll<T, Arg1ExtendsT>(T[] arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT : T
         {
             SExecute(LocalBridgeClazz, "setAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#deepEquals(java.lang.Object[],java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#deepEquals(java.lang.Object[],java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -246,7 +246,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "deepEquals", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(boolean[],boolean[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(boolean[],boolean[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -256,7 +256,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(boolean[],int,int,boolean[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(boolean[],int,int,boolean[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -270,7 +270,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(byte[],byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(byte[],byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -280,7 +280,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(byte[],int,int,byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(byte[],int,int,byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -294,7 +294,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(char[],char[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(char[],char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="char"/></param>
@@ -304,7 +304,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(char[],int,int,char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(char[],int,int,char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -318,7 +318,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(double[],double[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(double[],double[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -328,7 +328,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(double[],int,int,double[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(double[],int,int,double[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -342,7 +342,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(float[],float[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(float[],float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -352,7 +352,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(float[],int,int,float[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(float[],int,int,float[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -366,7 +366,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(int[],int,int,int[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(int[],int,int,int[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -380,7 +380,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(int[],int[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(int[],int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -390,7 +390,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(java.lang.Object[],int,int,java.lang.Object[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(java.lang.Object[],int,int,java.lang.Object[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -404,7 +404,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(java.lang.Object[],java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(java.lang.Object[],java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -414,7 +414,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(long[],int,int,long[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(long[],int,int,long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -428,7 +428,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(long[],long[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(long[],long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -438,7 +438,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(short[],int,int,short[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(short[],int,int,short[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -452,7 +452,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#equals(short[],short[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#equals(short[],short[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
@@ -462,7 +462,7 @@ namespace Java.Util
             return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOf(boolean[],int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOf(boolean[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -472,7 +472,7 @@ namespace Java.Util
             return SExecuteArray<bool>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOfRange(boolean[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOfRange(boolean[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -483,7 +483,7 @@ namespace Java.Util
             return SExecuteArray<bool>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOf(byte[],int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOf(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -493,7 +493,7 @@ namespace Java.Util
             return SExecuteArray<byte>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOfRange(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOfRange(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -504,7 +504,7 @@ namespace Java.Util
             return SExecuteArray<byte>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOf(char[],int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOf(char[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -514,7 +514,7 @@ namespace Java.Util
             return SExecuteArray<char>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOfRange(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOfRange(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -525,7 +525,7 @@ namespace Java.Util
             return SExecuteArray<char>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOf(double[],int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOf(double[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -535,7 +535,7 @@ namespace Java.Util
             return SExecuteArray<double>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOfRange(double[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOfRange(double[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -546,7 +546,7 @@ namespace Java.Util
             return SExecuteArray<double>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOf(float[],int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOf(float[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -556,7 +556,7 @@ namespace Java.Util
             return SExecuteArray<float>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOfRange(float[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOfRange(float[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -567,7 +567,7 @@ namespace Java.Util
             return SExecuteArray<float>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#binarySearch(byte[],byte)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#binarySearch(byte[],byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -577,7 +577,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#binarySearch(byte[],int,int,byte)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#binarySearch(byte[],int,int,byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -589,7 +589,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#binarySearch(char[],char)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#binarySearch(char[],char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="char"/></param>
@@ -599,7 +599,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#binarySearch(char[],int,int,char)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#binarySearch(char[],int,int,char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -611,7 +611,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#binarySearch(double[],double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#binarySearch(double[],double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -621,7 +621,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#binarySearch(double[],int,int,double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#binarySearch(double[],int,int,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -633,7 +633,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#binarySearch(float[],float)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#binarySearch(float[],float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -643,7 +643,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#binarySearch(float[],int,int,float)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#binarySearch(float[],int,int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -655,7 +655,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#binarySearch(int[],int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#binarySearch(int[],int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -667,7 +667,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#binarySearch(int[],int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#binarySearch(int[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -677,7 +677,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#binarySearch(java.lang.Object[],int,int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#binarySearch(java.lang.Object[],int,int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -689,7 +689,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#binarySearch(java.lang.Object[],java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#binarySearch(java.lang.Object[],java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -699,7 +699,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#binarySearch(long[],int,int,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#binarySearch(long[],int,int,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -711,7 +711,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#binarySearch(long[],long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#binarySearch(long[],long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -721,7 +721,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#binarySearch(short[],int,int,short)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#binarySearch(short[],int,int,short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -733,7 +733,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#binarySearch(short[],short)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#binarySearch(short[],short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
@@ -743,7 +743,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(boolean[],boolean[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(boolean[],boolean[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -753,7 +753,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(boolean[],int,int,boolean[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(boolean[],int,int,boolean[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -767,7 +767,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(byte[],byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(byte[],byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -777,7 +777,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(byte[],int,int,byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(byte[],int,int,byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -791,7 +791,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(char[],char[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(char[],char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="char"/></param>
@@ -801,7 +801,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(char[],int,int,char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(char[],int,int,char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -815,7 +815,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(double[],double[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(double[],double[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -825,7 +825,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(double[],int,int,double[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(double[],int,int,double[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -839,7 +839,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(float[],float[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(float[],float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -849,7 +849,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(float[],int,int,float[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(float[],int,int,float[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -863,7 +863,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(int[],int,int,int[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(int[],int,int,int[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -877,7 +877,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(int[],int[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(int[],int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -887,7 +887,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(long[],int,int,long[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(long[],int,int,long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -901,7 +901,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(long[],long[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(long[],long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -911,7 +911,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(short[],int,int,short[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(short[],int,int,short[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -925,7 +925,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compare(short[],short[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compare(short[],short[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
@@ -935,7 +935,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compareUnsigned(byte[],byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compareUnsigned(byte[],byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -945,7 +945,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compareUnsigned(byte[],int,int,byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compareUnsigned(byte[],int,int,byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -959,7 +959,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compareUnsigned(int[],int,int,int[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compareUnsigned(int[],int,int,int[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -973,7 +973,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compareUnsigned(int[],int[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compareUnsigned(int[],int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -983,7 +983,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compareUnsigned(long[],int,int,long[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compareUnsigned(long[],int,int,long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -997,7 +997,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compareUnsigned(long[],long[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compareUnsigned(long[],long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -1007,7 +1007,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compareUnsigned(short[],int,int,short[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compareUnsigned(short[],int,int,short[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1021,7 +1021,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#compareUnsigned(short[],short[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#compareUnsigned(short[],short[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
@@ -1031,7 +1031,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#deepHashCode(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#deepHashCode(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -1040,7 +1040,7 @@ namespace Java.Util
             return SExecuteWithSignature<int>(LocalBridgeClazz, "deepHashCode", "([Ljava/lang/Object;)I", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#hashCode(boolean[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#hashCode(boolean[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="int"/></returns>
@@ -1049,7 +1049,7 @@ namespace Java.Util
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([Z)I", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#hashCode(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#hashCode(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="int"/></returns>
@@ -1058,7 +1058,7 @@ namespace Java.Util
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([B)I", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#hashCode(char[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#hashCode(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="int"/></returns>
@@ -1067,7 +1067,7 @@ namespace Java.Util
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([C)I", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#hashCode(double[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#hashCode(double[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="int"/></returns>
@@ -1076,7 +1076,7 @@ namespace Java.Util
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([D)I", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#hashCode(float[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#hashCode(float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="int"/></returns>
@@ -1085,7 +1085,7 @@ namespace Java.Util
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([F)I", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#hashCode(int[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#hashCode(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -1094,7 +1094,7 @@ namespace Java.Util
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([I)I", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#hashCode(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#hashCode(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -1103,7 +1103,7 @@ namespace Java.Util
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([Ljava/lang/Object;)I", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#hashCode(long[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#hashCode(long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="int"/></returns>
@@ -1112,7 +1112,7 @@ namespace Java.Util
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([J)I", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#hashCode(short[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#hashCode(short[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="int"/></returns>
@@ -1121,7 +1121,7 @@ namespace Java.Util
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "([S)I", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(boolean[],boolean[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(boolean[],boolean[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -1131,7 +1131,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(boolean[],int,int,boolean[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(boolean[],int,int,boolean[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1145,7 +1145,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(byte[],byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(byte[],byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -1155,7 +1155,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(byte[],int,int,byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(byte[],int,int,byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1169,7 +1169,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(char[],char[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(char[],char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="char"/></param>
@@ -1179,7 +1179,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(char[],int,int,char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(char[],int,int,char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1193,7 +1193,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(double[],double[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(double[],double[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -1203,7 +1203,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(double[],int,int,double[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(double[],int,int,double[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1217,7 +1217,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(float[],float[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(float[],float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -1227,7 +1227,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(float[],int,int,float[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(float[],int,int,float[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1241,7 +1241,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(int[],int,int,int[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(int[],int,int,int[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1255,7 +1255,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(int[],int[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(int[],int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1265,7 +1265,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(java.lang.Object[],int,int,java.lang.Object[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(java.lang.Object[],int,int,java.lang.Object[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1279,7 +1279,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(java.lang.Object[],java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(java.lang.Object[],java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -1289,7 +1289,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(long[],int,int,long[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(long[],int,int,long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1303,7 +1303,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(long[],long[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(long[],long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -1313,7 +1313,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(short[],int,int,short[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(short[],int,int,short[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1327,7 +1327,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#mismatch(short[],short[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#mismatch(short[],short[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
@@ -1337,7 +1337,7 @@ namespace Java.Util
             return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOf(int[],int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOf(int[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1347,7 +1347,7 @@ namespace Java.Util
             return SExecuteArray<int>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOfRange(int[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOfRange(int[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1358,7 +1358,7 @@ namespace Java.Util
             return SExecuteArray<int>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#deepToString(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#deepToString(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -1367,7 +1367,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "deepToString", "([Ljava/lang/Object;)Ljava/lang/String;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#toString(boolean[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#toString(boolean[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -1376,7 +1376,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([Z)Ljava/lang/String;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#toString(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#toString(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -1385,7 +1385,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([B)Ljava/lang/String;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#toString(char[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#toString(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -1394,7 +1394,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([C)Ljava/lang/String;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#toString(double[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#toString(double[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -1403,7 +1403,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([D)Ljava/lang/String;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#toString(float[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#toString(float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -1412,7 +1412,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([F)Ljava/lang/String;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#toString(int[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#toString(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -1421,7 +1421,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([I)Ljava/lang/String;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#toString(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#toString(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -1430,7 +1430,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([Ljava/lang/Object;)Ljava/lang/String;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#toString(long[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#toString(long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -1439,7 +1439,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([J)Ljava/lang/String;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#toString(short[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#toString(short[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -1448,7 +1448,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "([S)Ljava/lang/String;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#spliterator(double[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#spliterator(double[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1459,7 +1459,7 @@ namespace Java.Util
             return SExecute<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#spliterator(double[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#spliterator(double[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="Java.Util.Spliterator.OfDouble"/></returns>
@@ -1468,7 +1468,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliterator", "([D)Ljava/util/Spliterator$OfDouble;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#spliterator(int[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#spliterator(int[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1479,7 +1479,7 @@ namespace Java.Util
             return SExecute<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#spliterator(int[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#spliterator(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Spliterator.OfInt"/></returns>
@@ -1488,7 +1488,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliterator", "([I)Ljava/util/Spliterator$OfInt;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#spliterator(long[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#spliterator(long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1499,7 +1499,7 @@ namespace Java.Util
             return SExecute<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#spliterator(long[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#spliterator(long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Spliterator.OfLong"/></returns>
@@ -1508,7 +1508,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliterator", "([J)Ljava/util/Spliterator$OfLong;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#stream(double[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#stream(double[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1519,7 +1519,7 @@ namespace Java.Util
             return SExecute<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "stream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#stream(double[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#stream(double[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
@@ -1528,7 +1528,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "stream", "([D)Ljava/util/stream/DoubleStream;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#stream(int[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#stream(int[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1539,7 +1539,7 @@ namespace Java.Util
             return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "stream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#stream(int[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#stream(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
@@ -1548,7 +1548,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "stream", "([I)Ljava/util/stream/IntStream;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#stream(long[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#stream(long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1559,7 +1559,7 @@ namespace Java.Util
             return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "stream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#stream(long[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#stream(long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
@@ -1568,7 +1568,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "stream", "([J)Ljava/util/stream/LongStream;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOf(long[],int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOf(long[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1578,7 +1578,7 @@ namespace Java.Util
             return SExecuteArray<long>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOfRange(long[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOfRange(long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1589,7 +1589,7 @@ namespace Java.Util
             return SExecuteArray<long>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOf(short[],int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOf(short[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1599,7 +1599,7 @@ namespace Java.Util
             return SExecuteArray<short>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#copyOfRange(short[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#copyOfRange(short[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1610,7 +1610,7 @@ namespace Java.Util
             return SExecuteArray<short>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(boolean[],boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(boolean[],boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -1619,7 +1619,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(boolean[],int,int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(boolean[],int,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1630,7 +1630,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(byte[],byte)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(byte[],byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -1639,7 +1639,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(byte[],int,int,byte)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(byte[],int,int,byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1650,7 +1650,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(char[],char)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(char[],char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="char"/></param>
@@ -1659,7 +1659,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(char[],int,int,char)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(char[],int,int,char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1670,7 +1670,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(double[],double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(double[],double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -1679,7 +1679,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(double[],int,int,double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(double[],int,int,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1690,7 +1690,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(float[],float)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(float[],float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -1699,7 +1699,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(float[],int,int,float)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(float[],int,int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1710,7 +1710,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(int[],int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(int[],int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1721,7 +1721,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(int[],int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(int[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1730,7 +1730,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(java.lang.Object[],int,int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(java.lang.Object[],int,int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1741,7 +1741,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(java.lang.Object[],java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(java.lang.Object[],java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -1750,7 +1750,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(long[],int,int,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(long[],int,int,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1761,7 +1761,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(long[],long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(long[],long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -1770,7 +1770,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(short[],int,int,short)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(short[],int,int,short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1781,7 +1781,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#fill(short[],short)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#fill(short[],short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
@@ -1790,7 +1790,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelPrefix(double[],int,int,java.util.function.DoubleBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelPrefix(double[],int,int,java.util.function.DoubleBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1801,7 +1801,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelPrefix", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelPrefix(double[],java.util.function.DoubleBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelPrefix(double[],java.util.function.DoubleBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
@@ -1810,7 +1810,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelPrefix", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelPrefix(int[],int,int,java.util.function.IntBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelPrefix(int[],int,int,java.util.function.IntBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1821,7 +1821,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelPrefix", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelPrefix(int[],java.util.function.IntBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelPrefix(int[],java.util.function.IntBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
@@ -1830,7 +1830,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelPrefix", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelPrefix(long[],int,int,java.util.function.LongBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelPrefix(long[],int,int,java.util.function.LongBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1841,7 +1841,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelPrefix", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelPrefix(long[],java.util.function.LongBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelPrefix(long[],java.util.function.LongBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
@@ -1850,7 +1850,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelPrefix", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSetAll(double[],java.util.function.IntToDoubleFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSetAll(double[],java.util.function.IntToDoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntToDoubleFunction"/></param>
@@ -1859,7 +1859,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelSetAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSetAll(int[],java.util.function.IntUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSetAll(int[],java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
@@ -1868,7 +1868,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelSetAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSetAll(long[],java.util.function.IntToLongFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSetAll(long[],java.util.function.IntToLongFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntToLongFunction"/></param>
@@ -1877,7 +1877,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelSetAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSort(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1887,7 +1887,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSort(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public static void ParallelSort(byte[] arg0)
@@ -1895,7 +1895,7 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "parallelSort", "([B)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSort(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1905,7 +1905,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSort(char[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         public static void ParallelSort(char[] arg0)
@@ -1913,7 +1913,7 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "parallelSort", "([C)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSort(double[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(double[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1923,7 +1923,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSort(double[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(double[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         public static void ParallelSort(double[] arg0)
@@ -1931,7 +1931,7 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "parallelSort", "([D)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSort(float[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(float[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1941,7 +1941,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSort(float[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         public static void ParallelSort(float[] arg0)
@@ -1949,7 +1949,7 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "parallelSort", "([F)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSort(int[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(int[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1959,7 +1959,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSort(int[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public static void ParallelSort(int[] arg0)
@@ -1967,7 +1967,7 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "parallelSort", "([I)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSort(long[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1977,7 +1977,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSort(long[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public static void ParallelSort(long[] arg0)
@@ -1985,7 +1985,7 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "parallelSort", "([J)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSort(short[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(short[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1995,7 +1995,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#parallelSort(short[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#parallelSort(short[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         public static void ParallelSort(short[] arg0)
@@ -2003,7 +2003,7 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "parallelSort", "([S)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#setAll(double[],java.util.function.IntToDoubleFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#setAll(double[],java.util.function.IntToDoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntToDoubleFunction"/></param>
@@ -2012,7 +2012,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "setAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#setAll(int[],java.util.function.IntUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#setAll(int[],java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
@@ -2021,7 +2021,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "setAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#setAll(long[],java.util.function.IntToLongFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#setAll(long[],java.util.function.IntToLongFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntToLongFunction"/></param>
@@ -2030,7 +2030,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "setAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#sort(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#sort(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -2040,7 +2040,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#sort(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#sort(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public static void Sort(byte[] arg0)
@@ -2048,7 +2048,7 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "sort", "([B)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#sort(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#sort(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -2058,7 +2058,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#sort(char[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#sort(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         public static void Sort(char[] arg0)
@@ -2066,7 +2066,7 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "sort", "([C)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#sort(double[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#sort(double[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -2076,7 +2076,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#sort(double[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#sort(double[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         public static void Sort(double[] arg0)
@@ -2084,7 +2084,7 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "sort", "([D)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#sort(float[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#sort(float[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -2094,7 +2094,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#sort(float[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#sort(float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         public static void Sort(float[] arg0)
@@ -2102,7 +2102,7 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "sort", "([F)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#sort(int[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#sort(int[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -2112,7 +2112,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#sort(int[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#sort(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public static void Sort(int[] arg0)
@@ -2120,7 +2120,7 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "sort", "([I)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#sort(java.lang.Object[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#sort(java.lang.Object[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -2130,7 +2130,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#sort(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#sort(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public static void Sort(object[] arg0)
@@ -2138,7 +2138,7 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "sort", "([Ljava/lang/Object;)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#sort(long[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#sort(long[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -2148,7 +2148,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#sort(long[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#sort(long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public static void Sort(long[] arg0)
@@ -2156,7 +2156,7 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "sort", "([J)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#sort(short[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#sort(short[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -2166,7 +2166,7 @@ namespace Java.Util
             SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Arrays.html#sort(short[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Arrays.html#sort(short[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         public static void Sort(short[] arg0)

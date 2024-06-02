@@ -106,42 +106,42 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_1_DOWN"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ACTION_POINTER_1_DOWN { get { if (!_ACTION_POINTER_1_DOWNReady) { _ACTION_POINTER_1_DOWNContent = SGetField<int>(LocalBridgeClazz, "ACTION_POINTER_1_DOWN"); _ACTION_POINTER_1_DOWNReady = true; } return _ACTION_POINTER_1_DOWNContent; } }
         private static int _ACTION_POINTER_1_DOWNContent = default;
         private static bool _ACTION_POINTER_1_DOWNReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_1_UP"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ACTION_POINTER_1_UP { get { if (!_ACTION_POINTER_1_UPReady) { _ACTION_POINTER_1_UPContent = SGetField<int>(LocalBridgeClazz, "ACTION_POINTER_1_UP"); _ACTION_POINTER_1_UPReady = true; } return _ACTION_POINTER_1_UPContent; } }
         private static int _ACTION_POINTER_1_UPContent = default;
         private static bool _ACTION_POINTER_1_UPReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_2_DOWN"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ACTION_POINTER_2_DOWN { get { if (!_ACTION_POINTER_2_DOWNReady) { _ACTION_POINTER_2_DOWNContent = SGetField<int>(LocalBridgeClazz, "ACTION_POINTER_2_DOWN"); _ACTION_POINTER_2_DOWNReady = true; } return _ACTION_POINTER_2_DOWNContent; } }
         private static int _ACTION_POINTER_2_DOWNContent = default;
         private static bool _ACTION_POINTER_2_DOWNReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_2_UP"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ACTION_POINTER_2_UP { get { if (!_ACTION_POINTER_2_UPReady) { _ACTION_POINTER_2_UPContent = SGetField<int>(LocalBridgeClazz, "ACTION_POINTER_2_UP"); _ACTION_POINTER_2_UPReady = true; } return _ACTION_POINTER_2_UPContent; } }
         private static int _ACTION_POINTER_2_UPContent = default;
         private static bool _ACTION_POINTER_2_UPReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_3_DOWN"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ACTION_POINTER_3_DOWN { get { if (!_ACTION_POINTER_3_DOWNReady) { _ACTION_POINTER_3_DOWNContent = SGetField<int>(LocalBridgeClazz, "ACTION_POINTER_3_DOWN"); _ACTION_POINTER_3_DOWNReady = true; } return _ACTION_POINTER_3_DOWNContent; } }
         private static int _ACTION_POINTER_3_DOWNContent = default;
         private static bool _ACTION_POINTER_3_DOWNReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_3_UP"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ACTION_POINTER_3_UP { get { if (!_ACTION_POINTER_3_UPReady) { _ACTION_POINTER_3_UPContent = SGetField<int>(LocalBridgeClazz, "ACTION_POINTER_3_UP"); _ACTION_POINTER_3_UPReady = true; } return _ACTION_POINTER_3_UPContent; } }
         private static int _ACTION_POINTER_3_UPContent = default;
         private static bool _ACTION_POINTER_3_UPReady = false; // this is used because in case of generics 
@@ -154,14 +154,14 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_ID_MASK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ACTION_POINTER_ID_MASK { get { if (!_ACTION_POINTER_ID_MASKReady) { _ACTION_POINTER_ID_MASKContent = SGetField<int>(LocalBridgeClazz, "ACTION_POINTER_ID_MASK"); _ACTION_POINTER_ID_MASKReady = true; } return _ACTION_POINTER_ID_MASKContent; } }
         private static int _ACTION_POINTER_ID_MASKContent = default;
         private static bool _ACTION_POINTER_ID_MASKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#ACTION_POINTER_ID_SHIFT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ACTION_POINTER_ID_SHIFT { get { if (!_ACTION_POINTER_ID_SHIFTReady) { _ACTION_POINTER_ID_SHIFTContent = SGetField<int>(LocalBridgeClazz, "ACTION_POINTER_ID_SHIFT"); _ACTION_POINTER_ID_SHIFTReady = true; } return _ACTION_POINTER_ID_SHIFTContent; } }
         private static int _ACTION_POINTER_ID_SHIFTContent = default;
         private static bool _ACTION_POINTER_ID_SHIFTReady = false; // this is used because in case of generics 
@@ -755,7 +755,7 @@ namespace Android.View
         /// <param name="arg11"><see cref="int"/></param>
         /// <param name="arg12"><see cref="int"/></param>
         /// <returns><see cref="Android.View.MotionEvent"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.View.MotionEvent Obtain(long arg0, long arg1, int arg2, int arg3, float arg4, float arg5, float arg6, float arg7, int arg8, float arg9, float arg10, int arg11, int arg12)
         {
             return SExecute<Android.View.MotionEvent>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
@@ -777,7 +777,7 @@ namespace Android.View
         /// <param name="arg11"><see cref="int"/></param>
         /// <param name="arg12"><see cref="int"/></param>
         /// <returns><see cref="Android.View.MotionEvent"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.View.MotionEvent Obtain(long arg0, long arg1, int arg2, int arg3, int[] arg4, Android.View.MotionEvent.PointerCoords[] arg5, int arg6, float arg7, float arg8, int arg9, int arg10, int arg11, int arg12)
         {
             return SExecute<Android.View.MotionEvent>(LocalBridgeClazz, "obtain", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
@@ -822,188 +822,6 @@ namespace Android.View
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getAction()"/> <see href="https://developer.android.com/reference/android/view/MotionEvent.html#setAction(int)"/>
-        /// </summary>
-        public int Action
-        {
-            get { return IExecuteWithSignature<int>("getAction", "()I"); } set { IExecuteWithSignature("setAction", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getActionButton()"/> 
-        /// </summary>
-        public int ActionButton
-        {
-            get { return IExecuteWithSignature<int>("getActionButton", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getActionIndex()"/> 
-        /// </summary>
-        public int ActionIndex
-        {
-            get { return IExecuteWithSignature<int>("getActionIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getActionMasked()"/> 
-        /// </summary>
-        public int ActionMasked
-        {
-            get { return IExecuteWithSignature<int>("getActionMasked", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getButtonState()"/> 
-        /// </summary>
-        public int ButtonState
-        {
-            get { return IExecuteWithSignature<int>("getButtonState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getClassification()"/> 
-        /// </summary>
-        public int Classification
-        {
-            get { return IExecuteWithSignature<int>("getClassification", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getDownTime()"/> 
-        /// </summary>
-        public long DownTime
-        {
-            get { return IExecuteWithSignature<long>("getDownTime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getEdgeFlags()"/> <see href="https://developer.android.com/reference/android/view/MotionEvent.html#setEdgeFlags(int)"/>
-        /// </summary>
-        public int EdgeFlags
-        {
-            get { return IExecuteWithSignature<int>("getEdgeFlags", "()I"); } set { IExecuteWithSignature("setEdgeFlags", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getEventTimeNanos()"/> 
-        /// </summary>
-        public long EventTimeNanos
-        {
-            get { return IExecuteWithSignature<long>("getEventTimeNanos", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getFlags()"/> 
-        /// </summary>
-        public int Flags
-        {
-            get { return IExecuteWithSignature<int>("getFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getHistorySize()"/> 
-        /// </summary>
-        public int HistorySize
-        {
-            get { return IExecuteWithSignature<int>("getHistorySize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getMetaState()"/> 
-        /// </summary>
-        public int MetaState
-        {
-            get { return IExecuteWithSignature<int>("getMetaState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getOrientation()"/> 
-        /// </summary>
-        public float Orientation
-        {
-            get { return IExecuteWithSignature<float>("getOrientation", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getPointerCount()"/> 
-        /// </summary>
-        public int PointerCount
-        {
-            get { return IExecuteWithSignature<int>("getPointerCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getPressure()"/> 
-        /// </summary>
-        public float Pressure
-        {
-            get { return IExecuteWithSignature<float>("getPressure", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getRawX()"/> 
-        /// </summary>
-        public float RawX
-        {
-            get { return IExecuteWithSignature<float>("getRawX", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getRawY()"/> 
-        /// </summary>
-        public float RawY
-        {
-            get { return IExecuteWithSignature<float>("getRawY", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getSize()"/> 
-        /// </summary>
-        public float Size
-        {
-            get { return IExecuteWithSignature<float>("getSize", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getToolMajor()"/> 
-        /// </summary>
-        public float ToolMajor
-        {
-            get { return IExecuteWithSignature<float>("getToolMajor", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getToolMinor()"/> 
-        /// </summary>
-        public float ToolMinor
-        {
-            get { return IExecuteWithSignature<float>("getToolMinor", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getTouchMajor()"/> 
-        /// </summary>
-        public float TouchMajor
-        {
-            get { return IExecuteWithSignature<float>("getTouchMajor", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getTouchMinor()"/> 
-        /// </summary>
-        public float TouchMinor
-        {
-            get { return IExecuteWithSignature<float>("getTouchMinor", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getX()"/> 
-        /// </summary>
-        public float X
-        {
-            get { return IExecuteWithSignature<float>("getX", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getXPrecision()"/> 
-        /// </summary>
-        public float XPrecision
-        {
-            get { return IExecuteWithSignature<float>("getXPrecision", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getY()"/> 
-        /// </summary>
-        public float Y
-        {
-            get { return IExecuteWithSignature<float>("getY", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getYPrecision()"/> 
-        /// </summary>
-        public float YPrecision
-        {
-            get { return IExecuteWithSignature<float>("getYPrecision", "()F"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#isButtonPressed(int)"/>
         /// </summary>
@@ -1225,6 +1043,14 @@ namespace Android.View
             return IExecuteWithSignature<float>("getHistoricalY", "(I)F", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getOrientation()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetOrientation()
+        {
+            return IExecuteWithSignature<float>("getOrientation", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getOrientation(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1232,6 +1058,14 @@ namespace Android.View
         public float GetOrientation(int arg0)
         {
             return IExecuteWithSignature<float>("getOrientation", "(I)F", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getPressure()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetPressure()
+        {
+            return IExecuteWithSignature<float>("getPressure", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getPressure(int)"/>
@@ -1243,6 +1077,14 @@ namespace Android.View
             return IExecuteWithSignature<float>("getPressure", "(I)F", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getRawX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetRawX()
+        {
+            return IExecuteWithSignature<float>("getRawX", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getRawX(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1250,6 +1092,14 @@ namespace Android.View
         public float GetRawX(int arg0)
         {
             return IExecuteWithSignature<float>("getRawX", "(I)F", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getRawY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetRawY()
+        {
+            return IExecuteWithSignature<float>("getRawY", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getRawY(int)"/>
@@ -1261,6 +1111,14 @@ namespace Android.View
             return IExecuteWithSignature<float>("getRawY", "(I)F", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getSize()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetSize()
+        {
+            return IExecuteWithSignature<float>("getSize", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getSize(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1268,6 +1126,14 @@ namespace Android.View
         public float GetSize(int arg0)
         {
             return IExecuteWithSignature<float>("getSize", "(I)F", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getToolMajor()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetToolMajor()
+        {
+            return IExecuteWithSignature<float>("getToolMajor", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getToolMajor(int)"/>
@@ -1279,6 +1145,14 @@ namespace Android.View
             return IExecuteWithSignature<float>("getToolMajor", "(I)F", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getToolMinor()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetToolMinor()
+        {
+            return IExecuteWithSignature<float>("getToolMinor", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getToolMinor(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1286,6 +1160,14 @@ namespace Android.View
         public float GetToolMinor(int arg0)
         {
             return IExecuteWithSignature<float>("getToolMinor", "(I)F", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getTouchMajor()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetTouchMajor()
+        {
+            return IExecuteWithSignature<float>("getTouchMajor", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getTouchMajor(int)"/>
@@ -1297,6 +1179,14 @@ namespace Android.View
             return IExecuteWithSignature<float>("getTouchMajor", "(I)F", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getTouchMinor()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetTouchMinor()
+        {
+            return IExecuteWithSignature<float>("getTouchMinor", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getTouchMinor(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1304,6 +1194,14 @@ namespace Android.View
         public float GetTouchMinor(int arg0)
         {
             return IExecuteWithSignature<float>("getTouchMinor", "(I)F", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetX()
+        {
+            return IExecuteWithSignature<float>("getX", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getX(int)"/>
@@ -1315,6 +1213,22 @@ namespace Android.View
             return IExecuteWithSignature<float>("getX", "(I)F", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getXPrecision()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetXPrecision()
+        {
+            return IExecuteWithSignature<float>("getXPrecision", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetY()
+        {
+            return IExecuteWithSignature<float>("getY", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getY(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1324,6 +1238,14 @@ namespace Android.View
             return IExecuteWithSignature<float>("getY", "(I)F", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getYPrecision()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetYPrecision()
+        {
+            return IExecuteWithSignature<float>("getYPrecision", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#findPointerIndex(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1331,6 +1253,94 @@ namespace Android.View
         public int FindPointerIndex(int arg0)
         {
             return IExecuteWithSignature<int>("findPointerIndex", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getAction()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAction()
+        {
+            return IExecuteWithSignature<int>("getAction", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getActionButton()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetActionButton()
+        {
+            return IExecuteWithSignature<int>("getActionButton", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getActionIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetActionIndex()
+        {
+            return IExecuteWithSignature<int>("getActionIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getActionMasked()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetActionMasked()
+        {
+            return IExecuteWithSignature<int>("getActionMasked", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getButtonState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetButtonState()
+        {
+            return IExecuteWithSignature<int>("getButtonState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getClassification()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetClassification()
+        {
+            return IExecuteWithSignature<int>("getClassification", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getEdgeFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEdgeFlags()
+        {
+            return IExecuteWithSignature<int>("getEdgeFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFlags()
+        {
+            return IExecuteWithSignature<int>("getFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getHistorySize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHistorySize()
+        {
+            return IExecuteWithSignature<int>("getHistorySize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getMetaState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMetaState()
+        {
+            return IExecuteWithSignature<int>("getMetaState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getPointerCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPointerCount()
+        {
+            return IExecuteWithSignature<int>("getPointerCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getPointerId(int)"/>
@@ -1349,6 +1359,22 @@ namespace Android.View
         public int GetToolType(int arg0)
         {
             return IExecuteWithSignature<int>("getToolType", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getDownTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDownTime()
+        {
+            return IExecuteWithSignature<long>("getDownTime", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getEventTimeNanos()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetEventTimeNanos()
+        {
+            return IExecuteWithSignature<long>("getEventTimeNanos", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#getHistoricalEventTime(int)"/>
@@ -1434,6 +1460,22 @@ namespace Android.View
         public void Recycle()
         {
             IExecuteWithSignature("recycle", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#setAction(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetAction(int arg0)
+        {
+            IExecuteWithSignature("setAction", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#setEdgeFlags(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetEdgeFlags(int arg0)
+        {
+            IExecuteWithSignature("setEdgeFlags", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MotionEvent.html#setLocation(float,float)"/>

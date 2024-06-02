@@ -114,60 +114,116 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#getColumnWidth()"/> <see href="https://developer.android.com/reference/android/widget/GridView.html#setColumnWidth(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#getColumnWidth()"/>
         /// </summary>
-        public int ColumnWidth
+        /// <returns><see cref="int"/></returns>
+        public int GetColumnWidth()
         {
-            get { return IExecuteWithSignature<int>("getColumnWidth", "()I"); } set { IExecuteWithSignature("setColumnWidth", "(I)V", value); }
+            return IExecuteWithSignature<int>("getColumnWidth", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#getGravity()"/> <see href="https://developer.android.com/reference/android/widget/GridView.html#setGravity(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#getGravity()"/>
         /// </summary>
-        public int Gravity
+        /// <returns><see cref="int"/></returns>
+        public int GetGravity()
         {
-            get { return IExecuteWithSignature<int>("getGravity", "()I"); } set { IExecuteWithSignature("setGravity", "(I)V", value); }
+            return IExecuteWithSignature<int>("getGravity", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#getHorizontalSpacing()"/> <see href="https://developer.android.com/reference/android/widget/GridView.html#setHorizontalSpacing(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#getHorizontalSpacing()"/>
         /// </summary>
-        public int HorizontalSpacing
+        /// <returns><see cref="int"/></returns>
+        public int GetHorizontalSpacing()
         {
-            get { return IExecuteWithSignature<int>("getHorizontalSpacing", "()I"); } set { IExecuteWithSignature("setHorizontalSpacing", "(I)V", value); }
+            return IExecuteWithSignature<int>("getHorizontalSpacing", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#getNumColumns()"/> <see href="https://developer.android.com/reference/android/widget/GridView.html#setNumColumns(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#getNumColumns()"/>
         /// </summary>
-        public int NumColumns
+        /// <returns><see cref="int"/></returns>
+        public int GetNumColumns()
         {
-            get { return IExecuteWithSignature<int>("getNumColumns", "()I"); } set { IExecuteWithSignature("setNumColumns", "(I)V", value); }
+            return IExecuteWithSignature<int>("getNumColumns", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#getRequestedColumnWidth()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#getRequestedColumnWidth()"/>
         /// </summary>
-        public int RequestedColumnWidth
+        /// <returns><see cref="int"/></returns>
+        public int GetRequestedColumnWidth()
         {
-            get { return IExecuteWithSignature<int>("getRequestedColumnWidth", "()I"); }
+            return IExecuteWithSignature<int>("getRequestedColumnWidth", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#getRequestedHorizontalSpacing()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#getRequestedHorizontalSpacing()"/>
         /// </summary>
-        public int RequestedHorizontalSpacing
+        /// <returns><see cref="int"/></returns>
+        public int GetRequestedHorizontalSpacing()
         {
-            get { return IExecuteWithSignature<int>("getRequestedHorizontalSpacing", "()I"); }
+            return IExecuteWithSignature<int>("getRequestedHorizontalSpacing", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#getStretchMode()"/> <see href="https://developer.android.com/reference/android/widget/GridView.html#setStretchMode(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#getStretchMode()"/>
         /// </summary>
-        public int StretchMode
+        /// <returns><see cref="int"/></returns>
+        public int GetStretchMode()
         {
-            get { return IExecuteWithSignature<int>("getStretchMode", "()I"); } set { IExecuteWithSignature("setStretchMode", "(I)V", value); }
+            return IExecuteWithSignature<int>("getStretchMode", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#getVerticalSpacing()"/> <see href="https://developer.android.com/reference/android/widget/GridView.html#setVerticalSpacing(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#getVerticalSpacing()"/>
         /// </summary>
-        public int VerticalSpacing
+        /// <returns><see cref="int"/></returns>
+        public int GetVerticalSpacing()
         {
-            get { return IExecuteWithSignature<int>("getVerticalSpacing", "()I"); } set { IExecuteWithSignature("setVerticalSpacing", "(I)V", value); }
+            return IExecuteWithSignature<int>("getVerticalSpacing", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#setColumnWidth(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetColumnWidth(int arg0)
+        {
+            IExecuteWithSignature("setColumnWidth", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#setGravity(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetGravity(int arg0)
+        {
+            IExecuteWithSignature("setGravity", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#setHorizontalSpacing(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetHorizontalSpacing(int arg0)
+        {
+            IExecuteWithSignature("setHorizontalSpacing", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#setNumColumns(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetNumColumns(int arg0)
+        {
+            IExecuteWithSignature("setNumColumns", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#setStretchMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetStretchMode(int arg0)
+        {
+            IExecuteWithSignature("setStretchMode", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/GridView.html#setVerticalSpacing(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetVerticalSpacing(int arg0)
+        {
+            IExecuteWithSignature("setVerticalSpacing", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/GridView.html#smoothScrollByOffset(int)"/>

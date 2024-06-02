@@ -40,7 +40,7 @@ namespace Android.Net
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#DEFAULT_NETWORK_PREFERENCE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int DEFAULT_NETWORK_PREFERENCE { get { if (!_DEFAULT_NETWORK_PREFERENCEReady) { _DEFAULT_NETWORK_PREFERENCEContent = SGetField<int>(LocalBridgeClazz, "DEFAULT_NETWORK_PREFERENCE"); _DEFAULT_NETWORK_PREFERENCEReady = true; } return _DEFAULT_NETWORK_PREFERENCEContent; } }
         private static int _DEFAULT_NETWORK_PREFERENCEContent = default;
         private static bool _DEFAULT_NETWORK_PREFERENCEReady = false; // this is used because in case of generics 
@@ -83,84 +83,84 @@ namespace Android.Net
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_BLUETOOTH"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_BLUETOOTH { get { if (!_TYPE_BLUETOOTHReady) { _TYPE_BLUETOOTHContent = SGetField<int>(LocalBridgeClazz, "TYPE_BLUETOOTH"); _TYPE_BLUETOOTHReady = true; } return _TYPE_BLUETOOTHContent; } }
         private static int _TYPE_BLUETOOTHContent = default;
         private static bool _TYPE_BLUETOOTHReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_DUMMY"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_DUMMY { get { if (!_TYPE_DUMMYReady) { _TYPE_DUMMYContent = SGetField<int>(LocalBridgeClazz, "TYPE_DUMMY"); _TYPE_DUMMYReady = true; } return _TYPE_DUMMYContent; } }
         private static int _TYPE_DUMMYContent = default;
         private static bool _TYPE_DUMMYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_ETHERNET"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_ETHERNET { get { if (!_TYPE_ETHERNETReady) { _TYPE_ETHERNETContent = SGetField<int>(LocalBridgeClazz, "TYPE_ETHERNET"); _TYPE_ETHERNETReady = true; } return _TYPE_ETHERNETContent; } }
         private static int _TYPE_ETHERNETContent = default;
         private static bool _TYPE_ETHERNETReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_MOBILE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_MOBILE { get { if (!_TYPE_MOBILEReady) { _TYPE_MOBILEContent = SGetField<int>(LocalBridgeClazz, "TYPE_MOBILE"); _TYPE_MOBILEReady = true; } return _TYPE_MOBILEContent; } }
         private static int _TYPE_MOBILEContent = default;
         private static bool _TYPE_MOBILEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_MOBILE_DUN"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_MOBILE_DUN { get { if (!_TYPE_MOBILE_DUNReady) { _TYPE_MOBILE_DUNContent = SGetField<int>(LocalBridgeClazz, "TYPE_MOBILE_DUN"); _TYPE_MOBILE_DUNReady = true; } return _TYPE_MOBILE_DUNContent; } }
         private static int _TYPE_MOBILE_DUNContent = default;
         private static bool _TYPE_MOBILE_DUNReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_MOBILE_HIPRI"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_MOBILE_HIPRI { get { if (!_TYPE_MOBILE_HIPRIReady) { _TYPE_MOBILE_HIPRIContent = SGetField<int>(LocalBridgeClazz, "TYPE_MOBILE_HIPRI"); _TYPE_MOBILE_HIPRIReady = true; } return _TYPE_MOBILE_HIPRIContent; } }
         private static int _TYPE_MOBILE_HIPRIContent = default;
         private static bool _TYPE_MOBILE_HIPRIReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_MOBILE_MMS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_MOBILE_MMS { get { if (!_TYPE_MOBILE_MMSReady) { _TYPE_MOBILE_MMSContent = SGetField<int>(LocalBridgeClazz, "TYPE_MOBILE_MMS"); _TYPE_MOBILE_MMSReady = true; } return _TYPE_MOBILE_MMSContent; } }
         private static int _TYPE_MOBILE_MMSContent = default;
         private static bool _TYPE_MOBILE_MMSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_MOBILE_SUPL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_MOBILE_SUPL { get { if (!_TYPE_MOBILE_SUPLReady) { _TYPE_MOBILE_SUPLContent = SGetField<int>(LocalBridgeClazz, "TYPE_MOBILE_SUPL"); _TYPE_MOBILE_SUPLReady = true; } return _TYPE_MOBILE_SUPLContent; } }
         private static int _TYPE_MOBILE_SUPLContent = default;
         private static bool _TYPE_MOBILE_SUPLReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_VPN"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_VPN { get { if (!_TYPE_VPNReady) { _TYPE_VPNContent = SGetField<int>(LocalBridgeClazz, "TYPE_VPN"); _TYPE_VPNReady = true; } return _TYPE_VPNContent; } }
         private static int _TYPE_VPNContent = default;
         private static bool _TYPE_VPNReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_WIFI"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_WIFI { get { if (!_TYPE_WIFIReady) { _TYPE_WIFIContent = SGetField<int>(LocalBridgeClazz, "TYPE_WIFI"); _TYPE_WIFIReady = true; } return _TYPE_WIFIContent; } }
         private static int _TYPE_WIFIContent = default;
         private static bool _TYPE_WIFIReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_WIMAX"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TYPE_WIMAX { get { if (!_TYPE_WIMAXReady) { _TYPE_WIMAXContent = SGetField<int>(LocalBridgeClazz, "TYPE_WIMAX"); _TYPE_WIMAXReady = true; } return _TYPE_WIMAXContent; } }
         private static int _TYPE_WIMAXContent = default;
         private static bool _TYPE_WIMAXReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#ACTION_BACKGROUND_DATA_SETTING_CHANGED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_BACKGROUND_DATA_SETTING_CHANGED { get { if (!_ACTION_BACKGROUND_DATA_SETTING_CHANGEDReady) { _ACTION_BACKGROUND_DATA_SETTING_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_BACKGROUND_DATA_SETTING_CHANGED"); _ACTION_BACKGROUND_DATA_SETTING_CHANGEDReady = true; } return _ACTION_BACKGROUND_DATA_SETTING_CHANGEDContent; } }
         private static Java.Lang.String _ACTION_BACKGROUND_DATA_SETTING_CHANGEDContent = default;
         private static bool _ACTION_BACKGROUND_DATA_SETTING_CHANGEDReady = false; // this is used because in case of generics 
@@ -179,7 +179,7 @@ namespace Android.Net
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#CONNECTIVITY_ACTION"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String CONNECTIVITY_ACTION { get { if (!_CONNECTIVITY_ACTIONReady) { _CONNECTIVITY_ACTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CONNECTIVITY_ACTION"); _CONNECTIVITY_ACTIONReady = true; } return _CONNECTIVITY_ACTIONContent; } }
         private static Java.Lang.String _CONNECTIVITY_ACTIONContent = default;
         private static bool _CONNECTIVITY_ACTIONReady = false; // this is used because in case of generics 
@@ -198,14 +198,14 @@ namespace Android.Net
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_EXTRA_INFO"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_EXTRA_INFO { get { if (!_EXTRA_EXTRA_INFOReady) { _EXTRA_EXTRA_INFOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_EXTRA_INFO"); _EXTRA_EXTRA_INFOReady = true; } return _EXTRA_EXTRA_INFOContent; } }
         private static Java.Lang.String _EXTRA_EXTRA_INFOContent = default;
         private static bool _EXTRA_EXTRA_INFOReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_IS_FAILOVER"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_IS_FAILOVER { get { if (!_EXTRA_IS_FAILOVERReady) { _EXTRA_IS_FAILOVERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_IS_FAILOVER"); _EXTRA_IS_FAILOVERReady = true; } return _EXTRA_IS_FAILOVERContent; } }
         private static Java.Lang.String _EXTRA_IS_FAILOVERContent = default;
         private static bool _EXTRA_IS_FAILOVERReady = false; // this is used because in case of generics 
@@ -218,7 +218,7 @@ namespace Android.Net
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_NETWORK_INFO"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_NETWORK_INFO { get { if (!_EXTRA_NETWORK_INFOReady) { _EXTRA_NETWORK_INFOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_NETWORK_INFO"); _EXTRA_NETWORK_INFOReady = true; } return _EXTRA_NETWORK_INFOContent; } }
         private static Java.Lang.String _EXTRA_NETWORK_INFOContent = default;
         private static bool _EXTRA_NETWORK_INFOReady = false; // this is used because in case of generics 
@@ -231,7 +231,7 @@ namespace Android.Net
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_NETWORK_TYPE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_NETWORK_TYPE { get { if (!_EXTRA_NETWORK_TYPEReady) { _EXTRA_NETWORK_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_NETWORK_TYPE"); _EXTRA_NETWORK_TYPEReady = true; } return _EXTRA_NETWORK_TYPEContent; } }
         private static Java.Lang.String _EXTRA_NETWORK_TYPEContent = default;
         private static bool _EXTRA_NETWORK_TYPEReady = false; // this is used because in case of generics 
@@ -244,7 +244,7 @@ namespace Android.Net
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_OTHER_NETWORK_INFO"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_OTHER_NETWORK_INFO { get { if (!_EXTRA_OTHER_NETWORK_INFOReady) { _EXTRA_OTHER_NETWORK_INFOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_OTHER_NETWORK_INFO"); _EXTRA_OTHER_NETWORK_INFOReady = true; } return _EXTRA_OTHER_NETWORK_INFOContent; } }
         private static Java.Lang.String _EXTRA_OTHER_NETWORK_INFOContent = default;
         private static bool _EXTRA_OTHER_NETWORK_INFOReady = false; // this is used because in case of generics 
@@ -259,19 +259,20 @@ namespace Android.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getProcessDefaultNetwork()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getProcessDefaultNetwork()"/>
         /// </summary>
-        [System.Obsolete()]
-        public static Android.Net.Network ProcessDefaultNetwork
+        /// <returns><see cref="Android.Net.Network"/></returns>
+        [global::System.Obsolete()]
+        public static Android.Net.Network GetProcessDefaultNetwork()
         {
-            get { return SExecuteWithSignature<Android.Net.Network>(LocalBridgeClazz, "getProcessDefaultNetwork", "()Landroid/net/Network;"); }
+            return SExecuteWithSignature<Android.Net.Network>(LocalBridgeClazz, "getProcessDefaultNetwork", "()Landroid/net/Network;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#isNetworkTypeValid(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool IsNetworkTypeValid(int arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isNetworkTypeValid", "(I)Z", arg0);
@@ -281,7 +282,7 @@ namespace Android.Net
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Network"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool SetProcessDefaultNetwork(Android.Net.Network arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "setProcessDefaultNetwork", "(Landroid/net/Network;)Z", arg0);
@@ -291,81 +292,6 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getActiveNetwork()"/> 
-        /// </summary>
-        public Android.Net.Network ActiveNetwork
-        {
-            get { return IExecuteWithSignature<Android.Net.Network>("getActiveNetwork", "()Landroid/net/Network;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getActiveNetworkInfo()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Net.NetworkInfo ActiveNetworkInfo
-        {
-            get { return IExecuteWithSignature<Android.Net.NetworkInfo>("getActiveNetworkInfo", "()Landroid/net/NetworkInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getAllNetworkInfo()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Net.NetworkInfo[] AllNetworkInfo
-        {
-            get { return IExecuteWithSignatureArray<Android.Net.NetworkInfo>("getAllNetworkInfo", "()[Landroid/net/NetworkInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getAllNetworks()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Net.Network[] AllNetworks
-        {
-            get { return IExecuteWithSignatureArray<Android.Net.Network>("getAllNetworks", "()[Landroid/net/Network;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getBackgroundDataSetting()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public bool BackgroundDataSetting
-        {
-            get { return IExecuteWithSignature<bool>("getBackgroundDataSetting", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getBoundNetworkForProcess()"/> 
-        /// </summary>
-        public Android.Net.Network BoundNetworkForProcess
-        {
-            get { return IExecuteWithSignature<Android.Net.Network>("getBoundNetworkForProcess", "()Landroid/net/Network;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getDefaultProxy()"/> 
-        /// </summary>
-        public Android.Net.ProxyInfo DefaultProxy
-        {
-            get { return IExecuteWithSignature<Android.Net.ProxyInfo>("getDefaultProxy", "()Landroid/net/ProxyInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getNetworkPreference()"/> <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#setNetworkPreference(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int NetworkPreference
-        {
-            get { return IExecuteWithSignature<int>("getNetworkPreference", "()I"); } set { IExecuteWithSignature("setNetworkPreference", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getNetworkWatchlistConfigHash()"/> 
-        /// </summary>
-        public byte[] NetworkWatchlistConfigHash
-        {
-            get { return IExecuteWithSignatureArray<byte>("getNetworkWatchlistConfigHash", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getRestrictBackgroundStatus()"/> 
-        /// </summary>
-        public int RestrictBackgroundStatus
-        {
-            get { return IExecuteWithSignature<int>("getRestrictBackgroundStatus", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getLinkProperties(android.net.Network)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Network"/></param>
@@ -373,6 +299,31 @@ namespace Android.Net
         public Android.Net.LinkProperties GetLinkProperties(Android.Net.Network arg0)
         {
             return IExecuteWithSignature<Android.Net.LinkProperties>("getLinkProperties", "(Landroid/net/Network;)Landroid/net/LinkProperties;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getActiveNetwork()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.Network"/></returns>
+        public Android.Net.Network GetActiveNetwork()
+        {
+            return IExecuteWithSignature<Android.Net.Network>("getActiveNetwork", "()Landroid/net/Network;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getBoundNetworkForProcess()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.Network"/></returns>
+        public Android.Net.Network GetBoundNetworkForProcess()
+        {
+            return IExecuteWithSignature<Android.Net.Network>("getBoundNetworkForProcess", "()Landroid/net/Network;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getAllNetworks()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.Network"/></returns>
+        [global::System.Obsolete()]
+        public Android.Net.Network[] GetAllNetworks()
+        {
+            return IExecuteWithSignatureArray<Android.Net.Network>("getAllNetworks", "()[Landroid/net/Network;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getNetworkCapabilities(android.net.Network)"/>
@@ -384,11 +335,20 @@ namespace Android.Net
             return IExecuteWithSignature<Android.Net.NetworkCapabilities>("getNetworkCapabilities", "(Landroid/net/Network;)Landroid/net/NetworkCapabilities;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getActiveNetworkInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.NetworkInfo"/></returns>
+        [global::System.Obsolete()]
+        public Android.Net.NetworkInfo GetActiveNetworkInfo()
+        {
+            return IExecuteWithSignature<Android.Net.NetworkInfo>("getActiveNetworkInfo", "()Landroid/net/NetworkInfo;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getNetworkInfo(android.net.Network)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Network"/></param>
         /// <returns><see cref="Android.Net.NetworkInfo"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Net.NetworkInfo GetNetworkInfo(Android.Net.Network arg0)
         {
             return IExecuteWithSignature<Android.Net.NetworkInfo>("getNetworkInfo", "(Landroid/net/Network;)Landroid/net/NetworkInfo;", arg0);
@@ -398,10 +358,27 @@ namespace Android.Net
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Android.Net.NetworkInfo"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Net.NetworkInfo GetNetworkInfo(int arg0)
         {
             return IExecuteWithSignature<Android.Net.NetworkInfo>("getNetworkInfo", "(I)Landroid/net/NetworkInfo;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getAllNetworkInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.NetworkInfo"/></returns>
+        [global::System.Obsolete()]
+        public Android.Net.NetworkInfo[] GetAllNetworkInfo()
+        {
+            return IExecuteWithSignatureArray<Android.Net.NetworkInfo>("getAllNetworkInfo", "()[Landroid/net/NetworkInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getDefaultProxy()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.ProxyInfo"/></returns>
+        public Android.Net.ProxyInfo GetDefaultProxy()
+        {
+            return IExecuteWithSignature<Android.Net.ProxyInfo>("getDefaultProxy", "()Landroid/net/ProxyInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#createSocketKeepalive(android.net.Network,android.net.IpSecManager.UdpEncapsulationSocket,java.net.InetAddress,java.net.InetAddress,java.util.concurrent.Executor,android.net.SocketKeepalive.Callback)"/>
@@ -425,6 +402,15 @@ namespace Android.Net
         public bool BindProcessToNetwork(Android.Net.Network arg0)
         {
             return IExecuteWithSignature<bool>("bindProcessToNetwork", "(Landroid/net/Network;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getBackgroundDataSetting()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetBackgroundDataSetting()
+        {
+            return IExecuteWithSignature<bool>("getBackgroundDataSetting", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#isActiveNetworkMetered()"/>
@@ -452,6 +438,14 @@ namespace Android.Net
             return IExecuteWithSignature<bool>("requestBandwidthUpdate", "(Landroid/net/Network;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getNetworkWatchlistConfigHash()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetNetworkWatchlistConfigHash()
+        {
+            return IExecuteWithSignatureArray<byte>("getNetworkWatchlistConfigHash", "()[B");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getConnectionOwnerUid(int,java.net.InetSocketAddress,java.net.InetSocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -470,6 +464,23 @@ namespace Android.Net
         public int GetMultipathPreference(Android.Net.Network arg0)
         {
             return IExecuteWithSignature<int>("getMultipathPreference", "(Landroid/net/Network;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getNetworkPreference()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetNetworkPreference()
+        {
+            return IExecuteWithSignature<int>("getNetworkPreference", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getRestrictBackgroundStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRestrictBackgroundStatus()
+        {
+            return IExecuteWithSignature<int>("getRestrictBackgroundStatus", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#addDefaultNetworkActiveListener(android.net.ConnectivityManager.OnNetworkActiveListener)"/>
@@ -554,7 +565,7 @@ namespace Android.Net
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#reportBadNetwork(android.net.Network)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Network"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ReportBadNetwork(Android.Net.Network arg0)
         {
             IExecuteWithSignature("reportBadNetwork", "(Landroid/net/Network;)V", arg0);
@@ -616,6 +627,15 @@ namespace Android.Net
         public void RequestNetwork(Android.Net.NetworkRequest arg0, Android.Net.ConnectivityManager.NetworkCallback arg1)
         {
             IExecute("requestNetwork", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#setNetworkPreference(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetNetworkPreference(int arg0)
+        {
+            IExecuteWithSignature("setNetworkPreference", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ConnectivityManager.html#unregisterNetworkCallback(android.app.PendingIntent)"/>
@@ -766,7 +786,7 @@ namespace Android.Net
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onNetworkActive", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnNetworkActiveEventHandler));
+                AddEventHandler("onNetworkActive", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnNetworkActiveEventHandler));
 
             }
 
@@ -774,7 +794,7 @@ namespace Android.Net
             /// Handler for <see href="https://developer.android.com/reference/android/net/ConnectivityManager.OnNetworkActiveListener.html#onNetworkActive()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnNetworkActive"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnNetworkActive { get; set; } = null;
+            public global::System.Action OnOnNetworkActive { get; set; } = null;
 
             void OnNetworkActiveEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {

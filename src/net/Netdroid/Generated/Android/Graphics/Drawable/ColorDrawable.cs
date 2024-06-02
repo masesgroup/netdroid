@@ -54,11 +54,20 @@ namespace Android.Graphics.Drawable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/ColorDrawable.html#getColor()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/ColorDrawable.html#setColor(int)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/ColorDrawable.html#getColor()"/>
         /// </summary>
-        public int Color
+        /// <returns><see cref="int"/></returns>
+        public int GetColor()
         {
-            get { return IExecuteWithSignature<int>("getColor", "()I"); } set { IExecuteWithSignature("setColor", "(I)V", value); }
+            return IExecuteWithSignature<int>("getColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/ColorDrawable.html#setColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetColor(int arg0)
+        {
+            IExecuteWithSignature("setColor", "(I)V", arg0);
         }
 
         #endregion

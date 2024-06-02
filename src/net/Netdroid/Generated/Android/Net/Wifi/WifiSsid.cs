@@ -61,11 +61,12 @@ namespace Android.Net.Wifi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiSsid.html#getBytes()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiSsid.html#getBytes()"/>
         /// </summary>
-        public byte[] Bytes
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetBytes()
         {
-            get { return IExecuteWithSignatureArray<byte>("getBytes", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getBytes", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiSsid.html#describeContents()"/>

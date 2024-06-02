@@ -45,7 +45,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/LoaderManager.html#enableDebugLogging(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void EnableDebugLogging(bool arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "enableDebugLogging", "(Z)V", arg0);
@@ -60,7 +60,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <typeparam name="D"></typeparam>
         /// <returns><see cref="Android.Content.Loader"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Content.Loader<D> GetLoader<D>(int arg0)
         {
             return IExecuteWithSignature<Android.Content.Loader<D>>("getLoader", "(I)Landroid/content/Loader;", arg0);
@@ -73,7 +73,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.App.LoaderManager.LoaderCallbacks"/></param>
         /// <typeparam name="D"></typeparam>
         /// <returns><see cref="Android.Content.Loader"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Content.Loader<D> InitLoader<D>(int arg0, Android.Os.Bundle arg1, Android.App.LoaderManager.LoaderCallbacks<D> arg2)
         {
             return IExecute<Android.Content.Loader<D>>("initLoader", arg0, arg1, arg2);
@@ -86,7 +86,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.App.LoaderManager.LoaderCallbacks"/></param>
         /// <typeparam name="D"></typeparam>
         /// <returns><see cref="Android.Content.Loader"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Content.Loader<D> RestartLoader<D>(int arg0, Android.Os.Bundle arg1, Android.App.LoaderManager.LoaderCallbacks<D> arg2)
         {
             return IExecute<Android.Content.Loader<D>>("restartLoader", arg0, arg1, arg2);
@@ -95,7 +95,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/LoaderManager.html#destroyLoader(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DestroyLoader(int arg0)
         {
             IExecuteWithSignature("destroyLoader", "(I)V", arg0);
@@ -107,7 +107,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg2"><see cref="Java.Io.PrintWriter"/></param>
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Dump(Java.Lang.String arg0, Java.Io.FileDescriptor arg1, Java.Io.PrintWriter arg2, Java.Lang.String[] arg3)
         {
             IExecute("dump", arg0, arg1, arg2, arg3);
@@ -142,7 +142,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             /// <returns><see cref="Android.Content.Loader"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Content.Loader OnCreateLoader(int arg0, Android.Os.Bundle arg1)
             {
                 return IExecute<Android.Content.Loader>("onCreateLoader", arg0, arg1);
@@ -151,7 +151,7 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/LoaderManager.LoaderCallbacks.html#onLoaderReset(android.content.Loader)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Loader"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnLoaderReset(Android.Content.Loader arg0)
             {
                 IExecuteWithSignature("onLoaderReset", "(Landroid/content/Loader;)V", arg0);
@@ -161,7 +161,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Loader"/></param>
             /// <param name="arg1"><see cref="object"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnLoadFinished(Android.Content.Loader arg0, object arg1)
             {
                 IExecute("onLoadFinished", arg0, arg1);
@@ -207,7 +207,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
             /// <returns><see cref="Android.Content.Loader"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Content.Loader<D> OnCreateLoader(int arg0, Android.Os.Bundle arg1)
             {
                 return IExecute<Android.Content.Loader<D>>("onCreateLoader", arg0, arg1);
@@ -216,7 +216,7 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/LoaderManager.LoaderCallbacks.html#onLoaderReset(android.content.Loader)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Loader"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnLoaderReset(Android.Content.Loader<D> arg0)
             {
                 IExecuteWithSignature("onLoaderReset", "(Landroid/content/Loader;)V", arg0);
@@ -226,7 +226,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Loader"/></param>
             /// <param name="arg1"><typeparamref name="D"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnLoadFinished(Android.Content.Loader<D> arg0, D arg1)
             {
                 IExecute("onLoadFinished", arg0, arg1);

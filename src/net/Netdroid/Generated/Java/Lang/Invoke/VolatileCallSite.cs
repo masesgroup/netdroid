@@ -30,7 +30,7 @@ namespace Java.Lang.Invoke
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VolatileCallSite.html#%3Cinit%3E(java.lang.invoke.MethodHandle)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VolatileCallSite.html#%3Cinit%3E(java.lang.invoke.MethodHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         public VolatileCallSite(Java.Lang.Invoke.MethodHandle arg0)
@@ -38,7 +38,7 @@ namespace Java.Lang.Invoke
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VolatileCallSite.html#%3Cinit%3E(java.lang.invoke.MethodType)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VolatileCallSite.html#%3Cinit%3E(java.lang.invoke.MethodType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodType"/></param>
         public VolatileCallSite(Java.Lang.Invoke.MethodType arg0)

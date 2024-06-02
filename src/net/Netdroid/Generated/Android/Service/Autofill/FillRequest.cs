@@ -70,53 +70,28 @@ namespace Android.Service.Autofill
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#getClientState()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#getDelayedFillIntentSender()"/>
         /// </summary>
-        public Android.Os.Bundle ClientState
+        /// <returns><see cref="Android.Content.IntentSender"/></returns>
+        public Android.Content.IntentSender GetDelayedFillIntentSender()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getClientState", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Content.IntentSender>("getDelayedFillIntentSender", "()Landroid/content/IntentSender;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#getDelayedFillIntentSender()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#getClientState()"/>
         /// </summary>
-        public Android.Content.IntentSender DelayedFillIntentSender
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetClientState()
         {
-            get { return IExecuteWithSignature<Android.Content.IntentSender>("getDelayedFillIntentSender", "()Landroid/content/IntentSender;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getClientState", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#getFillContexts()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#getInlineSuggestionsRequest()"/>
         /// </summary>
-        public Java.Util.List<Android.Service.Autofill.FillContext> FillContexts
+        /// <returns><see cref="Android.View.Inputmethod.InlineSuggestionsRequest"/></returns>
+        public Android.View.Inputmethod.InlineSuggestionsRequest GetInlineSuggestionsRequest()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Service.Autofill.FillContext>>("getFillContexts", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#getFlags()"/> 
-        /// </summary>
-        public int Flags
-        {
-            get { return IExecuteWithSignature<int>("getFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#getHints()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> Hints
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getHints", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#getId()"/> 
-        /// </summary>
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#getInlineSuggestionsRequest()"/> 
-        /// </summary>
-        public Android.View.Inputmethod.InlineSuggestionsRequest InlineSuggestionsRequest
-        {
-            get { return IExecuteWithSignature<Android.View.Inputmethod.InlineSuggestionsRequest>("getInlineSuggestionsRequest", "()Landroid/view/inputmethod/InlineSuggestionsRequest;"); }
+            return IExecuteWithSignature<Android.View.Inputmethod.InlineSuggestionsRequest>("getInlineSuggestionsRequest", "()Landroid/view/inputmethod/InlineSuggestionsRequest;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#describeContents()"/>
@@ -125,6 +100,38 @@ namespace Android.Service.Autofill
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#getFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFlags()
+        {
+            return IExecuteWithSignature<int>("getFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#getFillContexts()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Service.Autofill.FillContext> GetFillContexts()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Service.Autofill.FillContext>>("getFillContexts", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#getHints()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetHints()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getHints", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/FillRequest.html#writeToParcel(android.os.Parcel,int)"/>

@@ -30,7 +30,7 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAKeyGenParameterSpec.html#%3Cinit%3E(int,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/RSAKeyGenParameterSpec.html#%3Cinit%3E(int,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
@@ -40,7 +40,7 @@ namespace Java.Security.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAKeyGenParameterSpec.html#%3Cinit%3E(int,java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/RSAKeyGenParameterSpec.html#%3Cinit%3E(int,java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
@@ -57,13 +57,13 @@ namespace Java.Security.Spec
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAKeyGenParameterSpec.html#F0"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/RSAKeyGenParameterSpec.html#F0"/>
         /// </summary>
         public static Java.Math.BigInteger F0 { get { if (!_F0Ready) { _F0Content = SGetField<Java.Math.BigInteger>(LocalBridgeClazz, "F0"); _F0Ready = true; } return _F0Content; } }
         private static Java.Math.BigInteger _F0Content = default;
         private static bool _F0Ready = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAKeyGenParameterSpec.html#F4"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/RSAKeyGenParameterSpec.html#F4"/>
         /// </summary>
         public static Java.Math.BigInteger F4 { get { if (!_F4Ready) { _F4Content = SGetField<Java.Math.BigInteger>(LocalBridgeClazz, "F4"); _F4Ready = true; } return _F4Content; } }
         private static Java.Math.BigInteger _F4Content = default;
@@ -77,25 +77,28 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAKeyGenParameterSpec.html#getKeyParams()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/RSAKeyGenParameterSpec.html#getKeysize()"/>
         /// </summary>
-        public Java.Security.Spec.AlgorithmParameterSpec KeyParams
+        /// <returns><see cref="int"/></returns>
+        public int GetKeysize()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getKeyParams", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
+            return IExecuteWithSignature<int>("getKeysize", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAKeyGenParameterSpec.html#getKeysize()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/RSAKeyGenParameterSpec.html#getPublicExponent()"/>
         /// </summary>
-        public int Keysize
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetPublicExponent()
         {
-            get { return IExecuteWithSignature<int>("getKeysize", "()I"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getPublicExponent", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAKeyGenParameterSpec.html#getPublicExponent()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/RSAKeyGenParameterSpec.html#getKeyParams()"/>
         /// </summary>
-        public Java.Math.BigInteger PublicExponent
+        /// <returns><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></returns>
+        public Java.Security.Spec.AlgorithmParameterSpec GetKeyParams()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getPublicExponent", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getKeyParams", "()Ljava/security/spec/AlgorithmParameterSpec;");
         }
 
         #endregion

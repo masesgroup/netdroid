@@ -68,8 +68,8 @@ namespace Android.Hardware
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("onAccuracyChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnAccuracyChangedEventHandler));
-            AddEventHandler("onSensorChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnSensorChangedEventHandler));
+            AddEventHandler("onAccuracyChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnAccuracyChangedEventHandler));
+            AddEventHandler("onSensorChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnSensorChangedEventHandler));
 
         }
 
@@ -77,7 +77,7 @@ namespace Android.Hardware
         /// Handler for <see href="https://developer.android.com/reference/android/hardware/SensorListener.html#onAccuracyChanged(int,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnAccuracyChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int, int> OnOnAccuracyChanged { get; set; } = null;
+        public global::System.Action<int, int> OnOnAccuracyChanged { get; set; } = null;
 
         void OnAccuracyChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -90,7 +90,7 @@ namespace Android.Hardware
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public virtual void OnAccuracyChanged(int arg0, int arg1)
         {
             
@@ -100,7 +100,7 @@ namespace Android.Hardware
         /// Handler for <see href="https://developer.android.com/reference/android/hardware/SensorListener.html#onSensorChanged(int,float[])"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnSensorChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int, float[]> OnOnSensorChanged { get; set; } = null;
+        public global::System.Action<int, float[]> OnOnSensorChanged { get; set; } = null;
 
         void OnSensorChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -113,7 +113,7 @@ namespace Android.Hardware
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public virtual void OnSensorChanged(int arg0, float[] arg1)
         {
             
@@ -154,7 +154,7 @@ namespace Android.Hardware
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public override void OnAccuracyChanged(int arg0, int arg1)
         {
             IExecute("onAccuracyChanged", arg0, arg1);
@@ -164,7 +164,7 @@ namespace Android.Hardware
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public override void OnSensorChanged(int arg0, float[] arg1)
         {
             IExecute("onSensorChanged", arg0, arg1);

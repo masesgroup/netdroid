@@ -33,7 +33,7 @@ namespace Android.Telephony.Gsm
         /// <see href="https://developer.android.com/reference/android/telephony/gsm/GsmCellLocation.html#%3Cinit%3E(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public GsmCellLocation(Android.Os.Bundle arg0)
             : base(arg0)
         {
@@ -55,34 +55,37 @@ namespace Android.Telephony.Gsm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/gsm/GsmCellLocation.html#getCid()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/gsm/GsmCellLocation.html#getCid()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int Cid
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetCid()
         {
-            get { return IExecuteWithSignature<int>("getCid", "()I"); }
+            return IExecuteWithSignature<int>("getCid", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/gsm/GsmCellLocation.html#getLac()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/gsm/GsmCellLocation.html#getLac()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int Lac
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetLac()
         {
-            get { return IExecuteWithSignature<int>("getLac", "()I"); }
+            return IExecuteWithSignature<int>("getLac", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/gsm/GsmCellLocation.html#getPsc()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/gsm/GsmCellLocation.html#getPsc()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int Psc
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetPsc()
         {
-            get { return IExecuteWithSignature<int>("getPsc", "()I"); }
+            return IExecuteWithSignature<int>("getPsc", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/gsm/GsmCellLocation.html#fillInNotifierBundle(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void FillInNotifierBundle(Android.Os.Bundle arg0)
         {
             IExecuteWithSignature("fillInNotifierBundle", "(Landroid/os/Bundle;)V", arg0);
@@ -92,7 +95,7 @@ namespace Android.Telephony.Gsm
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetLacAndCid(int arg0, int arg1)
         {
             IExecute("setLacAndCid", arg0, arg1);
@@ -100,7 +103,7 @@ namespace Android.Telephony.Gsm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/gsm/GsmCellLocation.html#setStateInvalid()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetStateInvalid()
         {
             IExecuteWithSignature("setStateInvalid", "()V");

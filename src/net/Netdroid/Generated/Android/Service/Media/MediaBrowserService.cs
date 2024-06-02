@@ -52,27 +52,6 @@ namespace Android.Service.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/media/MediaBrowserService.html#getBrowserRootHints()"/> 
-        /// </summary>
-        public Android.Os.Bundle BrowserRootHints
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getBrowserRootHints", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/media/MediaBrowserService.html#getCurrentBrowserInfo()"/> 
-        /// </summary>
-        public Android.Media.Session.MediaSessionManager.RemoteUserInfo CurrentBrowserInfo
-        {
-            get { return IExecuteWithSignature<Android.Media.Session.MediaSessionManager.RemoteUserInfo>("getCurrentBrowserInfo", "()Landroid/media/session/MediaSessionManager$RemoteUserInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/media/MediaBrowserService.html#getSessionToken()"/> <see href="https://developer.android.com/reference/android/service/media/MediaBrowserService.html#setSessionToken(android.media.session.MediaSession.Token)"/>
-        /// </summary>
-        public Android.Media.Session.MediaSession.Token SessionToken
-        {
-            get { return IExecuteWithSignature<Android.Media.Session.MediaSession.Token>("getSessionToken", "()Landroid/media/session/MediaSession$Token;"); } set { IExecuteWithSignature("setSessionToken", "(Landroid/media/session/MediaSession$Token;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/media/MediaBrowserService.html#onGetRoot(java.lang.String,int,android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -91,6 +70,30 @@ namespace Android.Service.Media
         public void OnLoadChildren(Java.Lang.String arg0, Android.Service.Media.MediaBrowserService.Result<Java.Util.List<Android.Media.Browse.MediaBrowser.MediaItem>> arg1)
         {
             IExecute("onLoadChildren", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/media/MediaBrowserService.html#getSessionToken()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.Session.MediaSession.Token"/></returns>
+        public Android.Media.Session.MediaSession.Token GetSessionToken()
+        {
+            return IExecuteWithSignature<Android.Media.Session.MediaSession.Token>("getSessionToken", "()Landroid/media/session/MediaSession$Token;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/media/MediaBrowserService.html#getCurrentBrowserInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.Session.MediaSessionManager.RemoteUserInfo"/></returns>
+        public Android.Media.Session.MediaSessionManager.RemoteUserInfo GetCurrentBrowserInfo()
+        {
+            return IExecuteWithSignature<Android.Media.Session.MediaSessionManager.RemoteUserInfo>("getCurrentBrowserInfo", "()Landroid/media/session/MediaSessionManager$RemoteUserInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/media/MediaBrowserService.html#getBrowserRootHints()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetBrowserRootHints()
+        {
+            return IExecuteWithSignature<Android.Os.Bundle>("getBrowserRootHints", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/media/MediaBrowserService.html#dump(java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])"/>
@@ -137,6 +140,14 @@ namespace Android.Service.Media
         public void OnLoadItem(Java.Lang.String arg0, Android.Service.Media.MediaBrowserService.Result<Android.Media.Browse.MediaBrowser.MediaItem> arg1)
         {
             IExecute("onLoadItem", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/media/MediaBrowserService.html#setSessionToken(android.media.session.MediaSession.Token)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.Session.MediaSession.Token"/></param>
+        public void SetSessionToken(Android.Media.Session.MediaSession.Token arg0)
+        {
+            IExecuteWithSignature("setSessionToken", "(Landroid/media/session/MediaSession$Token;)V", arg0);
         }
 
         #endregion
@@ -190,18 +201,20 @@ namespace Android.Service.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/media/MediaBrowserService.BrowserRoot.html#getExtras()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/media/MediaBrowserService.BrowserRoot.html#getExtras()"/>
             /// </summary>
-            public Android.Os.Bundle Extras
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetExtras()
             {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
+                return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/media/MediaBrowserService.BrowserRoot.html#getRootId()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/media/MediaBrowserService.BrowserRoot.html#getRootId()"/>
             /// </summary>
-            public Java.Lang.String RootId
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetRootId()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getRootId", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getRootId", "()Ljava/lang/String;");
             }
 
             #endregion

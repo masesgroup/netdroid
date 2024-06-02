@@ -58,7 +58,7 @@ namespace Org.Xml.Sax.Ext
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/DefaultHandler2.html#getExternalSubset(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#getExternalSubset(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -70,7 +70,7 @@ namespace Org.Xml.Sax.Ext
             return IExecute<Org.Xml.Sax.InputSource>("getExternalSubset", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/DefaultHandler2.html#resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -84,7 +84,7 @@ namespace Org.Xml.Sax.Ext
             return IExecute<Org.Xml.Sax.InputSource>("resolveEntity", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/DefaultHandler2.html#attributeDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#attributeDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -97,7 +97,7 @@ namespace Org.Xml.Sax.Ext
             IExecute("attributeDecl", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/DefaultHandler2.html#comment(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#comment(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -108,7 +108,7 @@ namespace Org.Xml.Sax.Ext
             IExecute("comment", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/DefaultHandler2.html#elementDecl(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#elementDecl(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -118,7 +118,7 @@ namespace Org.Xml.Sax.Ext
             IExecute("elementDecl", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/DefaultHandler2.html#endCDATA()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#endCDATA()"/>
         /// </summary>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndCDATA()
@@ -126,7 +126,7 @@ namespace Org.Xml.Sax.Ext
             IExecuteWithSignature("endCDATA", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/DefaultHandler2.html#endDTD()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#endDTD()"/>
         /// </summary>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndDTD()
@@ -134,7 +134,7 @@ namespace Org.Xml.Sax.Ext
             IExecuteWithSignature("endDTD", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/DefaultHandler2.html#endEntity(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#endEntity(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -143,7 +143,7 @@ namespace Org.Xml.Sax.Ext
             IExecuteWithSignature("endEntity", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/DefaultHandler2.html#externalEntityDecl(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#externalEntityDecl(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -154,7 +154,7 @@ namespace Org.Xml.Sax.Ext
             IExecute("externalEntityDecl", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/DefaultHandler2.html#internalEntityDecl(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#internalEntityDecl(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -164,7 +164,7 @@ namespace Org.Xml.Sax.Ext
             IExecute("internalEntityDecl", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/DefaultHandler2.html#startCDATA()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#startCDATA()"/>
         /// </summary>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartCDATA()
@@ -172,7 +172,7 @@ namespace Org.Xml.Sax.Ext
             IExecuteWithSignature("startCDATA", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/DefaultHandler2.html#startDTD(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#startDTD(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -183,7 +183,7 @@ namespace Org.Xml.Sax.Ext
             IExecute("startDTD", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/DefaultHandler2.html#startEntity(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/DefaultHandler2.html#startEntity(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>

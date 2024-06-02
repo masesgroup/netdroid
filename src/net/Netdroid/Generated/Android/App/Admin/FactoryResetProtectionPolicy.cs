@@ -52,13 +52,6 @@ namespace Android.App.Admin
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/FactoryResetProtectionPolicy.html#getFactoryResetProtectionAccounts()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> FactoryResetProtectionAccounts
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getFactoryResetProtectionAccounts", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/FactoryResetProtectionPolicy.html#isFactoryResetProtectionEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -73,6 +66,14 @@ namespace Android.App.Admin
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/FactoryResetProtectionPolicy.html#getFactoryResetProtectionAccounts()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetFactoryResetProtectionAccounts()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getFactoryResetProtectionAccounts", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/FactoryResetProtectionPolicy.html#writeToParcel(android.os.Parcel,int)"/>

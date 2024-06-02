@@ -109,11 +109,20 @@ namespace Android.Media.Tv.Interactive
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#getOnUnhandledInputEventListener()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#getOnUnhandledInputEventListener()"/>
         /// </summary>
-        public Android.Media.Tv.Interactive.TvInteractiveAppView.OnUnhandledInputEventListener GetOnUnhandledInputEventListener
+        /// <returns><see cref="Android.Media.Tv.Interactive.TvInteractiveAppView.OnUnhandledInputEventListener"/></returns>
+        public Android.Media.Tv.Interactive.TvInteractiveAppView.OnUnhandledInputEventListener GetOnUnhandledInputEventListener()
         {
-            get { return IExecuteWithSignature<Android.Media.Tv.Interactive.TvInteractiveAppView.OnUnhandledInputEventListener>("getOnUnhandledInputEventListener", "()Landroid/media/tv/interactive/TvInteractiveAppView$OnUnhandledInputEventListener;"); }
+            return IExecuteWithSignature<Android.Media.Tv.Interactive.TvInteractiveAppView.OnUnhandledInputEventListener>("getOnUnhandledInputEventListener", "()Landroid/media/tv/interactive/TvInteractiveAppView$OnUnhandledInputEventListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#getOnUnhandledInputEventListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.Tv.Interactive.TvInteractiveAppView.OnUnhandledInputEventListener"/></returns>
+        public Android.Media.Tv.Interactive.TvInteractiveAppView.OnUnhandledInputEventListener GetOnUnhandledInputEventListenerDirect()
+        {
+            return IExecuteWithSignature<Android.Media.Tv.Interactive.TvInteractiveAppView.OnUnhandledInputEventListenerDirect, Android.Media.Tv.Interactive.TvInteractiveAppView.OnUnhandledInputEventListener>("getOnUnhandledInputEventListener", "()Landroid/media/tv/interactive/TvInteractiveAppView$OnUnhandledInputEventListener;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.html#dispatchUnhandledInputEvent(android.view.InputEvent)"/>
@@ -477,7 +486,7 @@ namespace Android.Media.Tv.Interactive
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onUnhandledInputEvent", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.InputEvent>>>(OnUnhandledInputEventEventHandler));
+                AddEventHandler("onUnhandledInputEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.InputEvent>>>(OnUnhandledInputEventEventHandler));
 
             }
 
@@ -485,7 +494,7 @@ namespace Android.Media.Tv.Interactive
             /// Handler for <see href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppView.OnUnhandledInputEventListener.html#onUnhandledInputEvent(android.view.InputEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnUnhandledInputEvent"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.InputEvent, bool> OnOnUnhandledInputEvent { get; set; } = null;
+            public global::System.Func<Android.View.InputEvent, bool> OnOnUnhandledInputEvent { get; set; } = null;
 
             void OnUnhandledInputEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.InputEvent>> data)
             {

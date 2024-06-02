@@ -46,11 +46,12 @@ namespace Android.Widget.Inline
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/inline/InlineContentView.html#getSurfaceControl()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/inline/InlineContentView.html#getSurfaceControl()"/>
         /// </summary>
-        public Android.View.SurfaceControl SurfaceControl
+        /// <returns><see cref="Android.View.SurfaceControl"/></returns>
+        public Android.View.SurfaceControl GetSurfaceControl()
         {
-            get { return IExecuteWithSignature<Android.View.SurfaceControl>("getSurfaceControl", "()Landroid/view/SurfaceControl;"); }
+            return IExecuteWithSignature<Android.View.SurfaceControl>("getSurfaceControl", "()Landroid/view/SurfaceControl;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/inline/InlineContentView.html#isZOrderedOnTop()"/>

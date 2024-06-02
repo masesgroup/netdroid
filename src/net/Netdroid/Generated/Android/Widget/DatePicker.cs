@@ -84,70 +84,79 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getCalendarView()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getCalendarView()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Widget.CalendarView CalendarView
+        /// <returns><see cref="Android.Widget.CalendarView"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.CalendarView GetCalendarView()
         {
-            get { return IExecuteWithSignature<Android.Widget.CalendarView>("getCalendarView", "()Landroid/widget/CalendarView;"); }
+            return IExecuteWithSignature<Android.Widget.CalendarView>("getCalendarView", "()Landroid/widget/CalendarView;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getCalendarViewShown()"/> <see href="https://developer.android.com/reference/android/widget/DatePicker.html#setCalendarViewShown(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getCalendarViewShown()"/>
         /// </summary>
-        [System.Obsolete()]
-        public bool CalendarViewShown
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetCalendarViewShown()
         {
-            get { return IExecuteWithSignature<bool>("getCalendarViewShown", "()Z"); } set { IExecuteWithSignature("setCalendarViewShown", "(Z)V", value); }
+            return IExecuteWithSignature<bool>("getCalendarViewShown", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getDayOfMonth()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getSpinnersShown()"/>
         /// </summary>
-        public int DayOfMonth
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetSpinnersShown()
         {
-            get { return IExecuteWithSignature<int>("getDayOfMonth", "()I"); }
+            return IExecuteWithSignature<bool>("getSpinnersShown", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getFirstDayOfWeek()"/> <see href="https://developer.android.com/reference/android/widget/DatePicker.html#setFirstDayOfWeek(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getDayOfMonth()"/>
         /// </summary>
-        public int FirstDayOfWeek
+        /// <returns><see cref="int"/></returns>
+        public int GetDayOfMonth()
         {
-            get { return IExecuteWithSignature<int>("getFirstDayOfWeek", "()I"); } set { IExecuteWithSignature("setFirstDayOfWeek", "(I)V", value); }
+            return IExecuteWithSignature<int>("getDayOfMonth", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getMaxDate()"/> <see href="https://developer.android.com/reference/android/widget/DatePicker.html#setMaxDate(long)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getFirstDayOfWeek()"/>
         /// </summary>
-        public long MaxDate
+        /// <returns><see cref="int"/></returns>
+        public int GetFirstDayOfWeek()
         {
-            get { return IExecuteWithSignature<long>("getMaxDate", "()J"); } set { IExecuteWithSignature("setMaxDate", "(J)V", value); }
+            return IExecuteWithSignature<int>("getFirstDayOfWeek", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getMinDate()"/> <see href="https://developer.android.com/reference/android/widget/DatePicker.html#setMinDate(long)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getMonth()"/>
         /// </summary>
-        public long MinDate
+        /// <returns><see cref="int"/></returns>
+        public int GetMonth()
         {
-            get { return IExecuteWithSignature<long>("getMinDate", "()J"); } set { IExecuteWithSignature("setMinDate", "(J)V", value); }
+            return IExecuteWithSignature<int>("getMonth", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getMonth()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getYear()"/>
         /// </summary>
-        public int Month
+        /// <returns><see cref="int"/></returns>
+        public int GetYear()
         {
-            get { return IExecuteWithSignature<int>("getMonth", "()I"); }
+            return IExecuteWithSignature<int>("getYear", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getSpinnersShown()"/> <see href="https://developer.android.com/reference/android/widget/DatePicker.html#setSpinnersShown(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getMaxDate()"/>
         /// </summary>
-        [System.Obsolete()]
-        public bool SpinnersShown
+        /// <returns><see cref="long"/></returns>
+        public long GetMaxDate()
         {
-            get { return IExecuteWithSignature<bool>("getSpinnersShown", "()Z"); } set { IExecuteWithSignature("setSpinnersShown", "(Z)V", value); }
+            return IExecuteWithSignature<long>("getMaxDate", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getYear()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#getMinDate()"/>
         /// </summary>
-        public int Year
+        /// <returns><see cref="long"/></returns>
+        public long GetMinDate()
         {
-            get { return IExecuteWithSignature<int>("getYear", "()I"); }
+            return IExecuteWithSignature<long>("getMinDate", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#init(int,int,int,android.widget.DatePicker.OnDateChangedListener)"/>
@@ -161,12 +170,54 @@ namespace Android.Widget
             IExecute("init", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#setCalendarViewShown(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetCalendarViewShown(bool arg0)
+        {
+            IExecuteWithSignature("setCalendarViewShown", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#setFirstDayOfWeek(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetFirstDayOfWeek(int arg0)
+        {
+            IExecuteWithSignature("setFirstDayOfWeek", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#setMaxDate(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetMaxDate(long arg0)
+        {
+            IExecuteWithSignature("setMaxDate", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#setMinDate(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetMinDate(long arg0)
+        {
+            IExecuteWithSignature("setMinDate", "(J)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#setOnDateChangedListener(android.widget.DatePicker.OnDateChangedListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Widget.DatePicker.OnDateChangedListener"/></param>
         public void SetOnDateChangedListener(Android.Widget.DatePicker.OnDateChangedListener arg0)
         {
             IExecuteWithSignature("setOnDateChangedListener", "(Landroid/widget/DatePicker$OnDateChangedListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#setSpinnersShown(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetSpinnersShown(bool arg0)
+        {
+            IExecuteWithSignature("setSpinnersShown", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/DatePicker.html#updateDate(int,int,int)"/>
@@ -207,7 +258,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.DatePicker>>>(OnDateChangedEventHandler));
+                AddEventHandler("onDateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.DatePicker>>>(OnDateChangedEventHandler));
 
             }
 
@@ -215,7 +266,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/DatePicker.OnDateChangedListener.html#onDateChanged(android.widget.DatePicker,int,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Widget.DatePicker, int, int, int> OnOnDateChanged { get; set; } = null;
+            public global::System.Action<Android.Widget.DatePicker, int, int, int> OnOnDateChanged { get; set; } = null;
 
             void OnDateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.DatePicker>> data)
             {

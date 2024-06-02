@@ -64,7 +64,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Deprecated.html#forRemoval()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Deprecated.html#forRemoval()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool ForRemoval()
@@ -72,7 +72,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("forRemoval", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Deprecated.html#since()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Deprecated.html#since()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Since()

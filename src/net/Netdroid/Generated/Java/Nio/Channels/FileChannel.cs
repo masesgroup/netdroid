@@ -54,7 +54,7 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#open(java.nio.file.Path,java.nio.file.OpenOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#open(java.nio.file.Path,java.nio.file.OpenOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
@@ -65,7 +65,7 @@ namespace Java.Nio.Channels
             if (arg1.Length == 0) return SExecute<Java.Nio.Channels.FileChannel>(LocalBridgeClazz, "open", arg0); else return SExecute<Java.Nio.Channels.FileChannel>(LocalBridgeClazz, "open", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#open(java.nio.file.Path,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#open(java.nio.file.Path,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
@@ -73,7 +73,7 @@ namespace Java.Nio.Channels
         /// <typeparam name="Arg1ExtendsJava_Nio_File_OpenOption"><see cref="Java.Nio.File.OpenOption"/></typeparam>
         /// <returns><see cref="Java.Nio.Channels.FileChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.Channels.FileChannel Open<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption: Java.Nio.File.OpenOption
+        public static Java.Nio.Channels.FileChannel Open<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption : Java.Nio.File.OpenOption
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.Channels.FileChannel>(LocalBridgeClazz, "open", arg0, arg1); else return SExecute<Java.Nio.Channels.FileChannel>(LocalBridgeClazz, "open", arg0, arg1, arg2);
         }
@@ -82,7 +82,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#read(java.nio.ByteBuffer,long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#read(java.nio.ByteBuffer,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -93,7 +93,7 @@ namespace Java.Nio.Channels
             return IExecute<int>("read", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#read(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#read(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -103,7 +103,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<int>("read", "(Ljava/nio/ByteBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#write(java.nio.ByteBuffer,long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#write(java.nio.ByteBuffer,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -114,7 +114,7 @@ namespace Java.Nio.Channels
             return IExecute<int>("write", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#write(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#write(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -124,7 +124,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<int>("write", "(Ljava/nio/ByteBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#lock(long,long,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#lock(long,long,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -136,7 +136,7 @@ namespace Java.Nio.Channels
             return IExecute<Java.Nio.Channels.FileLock>("lock", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#tryLock(long,long,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#tryLock(long,long,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -148,7 +148,7 @@ namespace Java.Nio.Channels
             return IExecute<Java.Nio.Channels.FileLock>("tryLock", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#map(java.nio.channels.FileChannel.MapMode,long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.FileChannel.MapMode"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -160,7 +160,7 @@ namespace Java.Nio.Channels
             return IExecute<Java.Nio.MappedByteBuffer>("map", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#position()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#position()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -169,7 +169,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<long>("position", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#read(java.nio.ByteBuffer[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#read(java.nio.ByteBuffer[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -181,7 +181,7 @@ namespace Java.Nio.Channels
             return IExecute<long>("read", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#size()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -190,7 +190,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<long>("size", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#transferFrom(java.nio.channels.ReadableByteChannel,long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#transferFrom(java.nio.channels.ReadableByteChannel,long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -202,7 +202,7 @@ namespace Java.Nio.Channels
             return IExecute<long>("transferFrom", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#transferTo(long,long,java.nio.channels.WritableByteChannel)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#transferTo(long,long,java.nio.channels.WritableByteChannel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -214,7 +214,7 @@ namespace Java.Nio.Channels
             return IExecute<long>("transferTo", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#write(java.nio.ByteBuffer[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#write(java.nio.ByteBuffer[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -226,7 +226,7 @@ namespace Java.Nio.Channels
             return IExecute<long>("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#force(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#force(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -235,7 +235,7 @@ namespace Java.Nio.Channels
             IExecuteWithSignature("force", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#lock()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#lock()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.FileLock"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -244,7 +244,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.FileLock>("lock", "()Ljava/nio/channels/FileLock;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#tryLock()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#tryLock()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.FileLock"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -253,7 +253,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.FileLock>("tryLock", "()Ljava/nio/channels/FileLock;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#read(java.nio.ByteBuffer[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#read(java.nio.ByteBuffer[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="long"/></returns>
@@ -263,7 +263,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<long>("read", "([Ljava/nio/ByteBuffer;)J", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#write(java.nio.ByteBuffer[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#write(java.nio.ByteBuffer[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="long"/></returns>
@@ -273,7 +273,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<long>("write", "([Ljava/nio/ByteBuffer;)J", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#position(long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#position(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Nio.Channels.SeekableByteChannel"/></returns>
@@ -283,7 +283,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.SeekableByteChannel>("position", "(J)Ljava/nio/channels/SeekableByteChannel;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.html#truncate(long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.html#truncate(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Nio.Channels.SeekableByteChannel"/></returns>
@@ -309,19 +309,19 @@ namespace Java.Nio.Channels
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.MapMode.html#PRIVATE"/>
+            /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.MapMode.html#PRIVATE"/>
             /// </summary>
             public static Java.Nio.Channels.FileChannel.MapMode PRIVATE { get { if (!_PRIVATEReady) { _PRIVATEContent = SGetField<Java.Nio.Channels.FileChannel.MapMode>(LocalBridgeClazz, "PRIVATE"); _PRIVATEReady = true; } return _PRIVATEContent; } }
             private static Java.Nio.Channels.FileChannel.MapMode _PRIVATEContent = default;
             private static bool _PRIVATEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.MapMode.html#READ_ONLY"/>
+            /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.MapMode.html#READ_ONLY"/>
             /// </summary>
             public static Java.Nio.Channels.FileChannel.MapMode READ_ONLY { get { if (!_READ_ONLYReady) { _READ_ONLYContent = SGetField<Java.Nio.Channels.FileChannel.MapMode>(LocalBridgeClazz, "READ_ONLY"); _READ_ONLYReady = true; } return _READ_ONLYContent; } }
             private static Java.Nio.Channels.FileChannel.MapMode _READ_ONLYContent = default;
             private static bool _READ_ONLYReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileChannel.MapMode.html#READ_WRITE"/>
+            /// <see href="https://developer.android.com/reference/java/nio/channels/FileChannel.MapMode.html#READ_WRITE"/>
             /// </summary>
             public static Java.Nio.Channels.FileChannel.MapMode READ_WRITE { get { if (!_READ_WRITEReady) { _READ_WRITEContent = SGetField<Java.Nio.Channels.FileChannel.MapMode>(LocalBridgeClazz, "READ_WRITE"); _READ_WRITEReady = true; } return _READ_WRITEContent; } }
             private static Java.Nio.Channels.FileChannel.MapMode _READ_WRITEContent = default;

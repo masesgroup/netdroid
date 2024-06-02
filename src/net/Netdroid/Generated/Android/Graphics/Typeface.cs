@@ -168,27 +168,6 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Typeface.html#getStyle()"/> 
-        /// </summary>
-        public int Style
-        {
-            get { return IExecuteWithSignature<int>("getStyle", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Typeface.html#getSystemFontFamilyName()"/> 
-        /// </summary>
-        public Java.Lang.String SystemFontFamilyName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemFontFamilyName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Typeface.html#getWeight()"/> 
-        /// </summary>
-        public int Weight
-        {
-            get { return IExecuteWithSignature<int>("getWeight", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Typeface.html#isBold()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -203,6 +182,30 @@ namespace Android.Graphics
         public bool IsItalic()
         {
             return IExecuteWithSignature<bool>("isItalic", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Typeface.html#getSystemFontFamilyName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemFontFamilyName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSystemFontFamilyName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Typeface.html#getStyle()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStyle()
+        {
+            return IExecuteWithSignature<int>("getStyle", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Typeface.html#getWeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWeight()
+        {
+            return IExecuteWithSignature<int>("getWeight", "()I");
         }
 
         #endregion
@@ -359,11 +362,12 @@ namespace Android.Graphics
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/Typeface.CustomFallbackBuilder.html#getMaxCustomFallbackCount()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/Typeface.CustomFallbackBuilder.html#getMaxCustomFallbackCount()"/>
             /// </summary>
-            public static int MaxCustomFallbackCount
+            /// <returns><see cref="int"/></returns>
+            public static int GetMaxCustomFallbackCount()
             {
-                get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxCustomFallbackCount", "()I"); }
+                return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxCustomFallbackCount", "()I");
             }
 
             #endregion

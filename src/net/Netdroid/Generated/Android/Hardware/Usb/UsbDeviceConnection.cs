@@ -46,27 +46,6 @@ namespace Android.Hardware.Usb
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#getFileDescriptor()"/> 
-        /// </summary>
-        public int FileDescriptor
-        {
-            get { return IExecuteWithSignature<int>("getFileDescriptor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#getRawDescriptors()"/> 
-        /// </summary>
-        public byte[] RawDescriptors
-        {
-            get { return IExecuteWithSignatureArray<byte>("getRawDescriptors", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#getSerial()"/> 
-        /// </summary>
-        public Java.Lang.String Serial
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSerial", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#requestWait()"/>
         /// </summary>
         /// <returns><see cref="Android.Hardware.Usb.UsbRequest"/></returns>
@@ -120,6 +99,14 @@ namespace Android.Hardware.Usb
         public bool SetInterface(Android.Hardware.Usb.UsbInterface arg0)
         {
             return IExecuteWithSignature<bool>("setInterface", "(Landroid/hardware/usb/UsbInterface;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#getRawDescriptors()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetRawDescriptors()
+        {
+            return IExecuteWithSignatureArray<byte>("getRawDescriptors", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#bulkTransfer(android.hardware.usb.UsbEndpoint,byte[],int,int,int)"/>
@@ -176,6 +163,22 @@ namespace Android.Hardware.Usb
         public int ControlTransfer(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6)
         {
             return IExecute<int>("controlTransfer", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#getFileDescriptor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFileDescriptor()
+        {
+            return IExecuteWithSignature<int>("getFileDescriptor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#getSerial()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSerial()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSerial", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbDeviceConnection.html#close()"/>

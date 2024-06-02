@@ -38,7 +38,7 @@ namespace Java.Text
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CollationElementIterator.html#NULLORDER"/>
+        /// <see href="https://developer.android.com/reference/java/text/CollationElementIterator.html#NULLORDER"/>
         /// </summary>
         public static int NULLORDER { get { if (!_NULLORDERReady) { _NULLORDERContent = SGetField<int>(LocalBridgeClazz, "NULLORDER"); _NULLORDERReady = true; } return _NULLORDERContent; } }
         private static int _NULLORDERContent = default;
@@ -48,7 +48,7 @@ namespace Java.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CollationElementIterator.html#primaryOrder(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/CollationElementIterator.html#primaryOrder(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -57,7 +57,7 @@ namespace Java.Text
             return SExecuteWithSignature<int>(LocalBridgeClazz, "primaryOrder", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CollationElementIterator.html#secondaryOrder(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/CollationElementIterator.html#secondaryOrder(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="short"/></returns>
@@ -66,7 +66,7 @@ namespace Java.Text
             return SExecuteWithSignature<short>(LocalBridgeClazz, "secondaryOrder", "(I)S", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CollationElementIterator.html#tertiaryOrder(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/CollationElementIterator.html#tertiaryOrder(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="short"/></returns>
@@ -79,14 +79,7 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CollationElementIterator.html#getOffset()"/> <see href="https://developer.android.com/reference/java.base/java/text/CollationElementIterator.html#setOffset(int)"/>
-        /// </summary>
-        public int Offset
-        {
-            get { return IExecuteWithSignature<int>("getOffset", "()I"); } set { IExecuteWithSignature("setOffset", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CollationElementIterator.html#getMaxExpansion(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/CollationElementIterator.html#getMaxExpansion(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -95,7 +88,15 @@ namespace Java.Text
             return IExecuteWithSignature<int>("getMaxExpansion", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CollationElementIterator.html#next()"/>
+        /// <see href="https://developer.android.com/reference/java/text/CollationElementIterator.html#getOffset()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOffset()
+        {
+            return IExecuteWithSignature<int>("getOffset", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/CollationElementIterator.html#next()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Next()
@@ -103,7 +104,7 @@ namespace Java.Text
             return IExecuteWithSignature<int>("next", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CollationElementIterator.html#previous()"/>
+        /// <see href="https://developer.android.com/reference/java/text/CollationElementIterator.html#previous()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Previous()
@@ -111,14 +112,22 @@ namespace Java.Text
             return IExecuteWithSignature<int>("previous", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CollationElementIterator.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/text/CollationElementIterator.html#reset()"/>
         /// </summary>
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CollationElementIterator.html#setText(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/text/CollationElementIterator.html#setOffset(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetOffset(int arg0)
+        {
+            IExecuteWithSignature("setOffset", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/CollationElementIterator.html#setText(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetText(Java.Lang.String arg0)
@@ -126,7 +135,7 @@ namespace Java.Text
             IExecuteWithSignature("setText", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CollationElementIterator.html#setText(java.text.CharacterIterator)"/>
+        /// <see href="https://developer.android.com/reference/java/text/CollationElementIterator.html#setText(java.text.CharacterIterator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
         public void SetText(Java.Text.CharacterIterator arg0)

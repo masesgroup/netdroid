@@ -153,7 +153,7 @@ namespace Android.Telephony.Ims
             /// <see href="https://developer.android.com/reference/android/telephony/ims/RegistrationManager.RegistrationCallback.html#onRegistered(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnRegistered(int arg0)
             {
                 IExecuteWithSignature("onRegistered", "(I)V", arg0);
@@ -170,7 +170,7 @@ namespace Android.Telephony.Ims
             /// <see href="https://developer.android.com/reference/android/telephony/ims/RegistrationManager.RegistrationCallback.html#onRegistering(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnRegistering(int arg0)
             {
                 IExecuteWithSignature("onRegistering", "(I)V", arg0);

@@ -58,39 +58,12 @@ namespace Android.Hardware.Camera2
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureFailure.html#getFrameNumber()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureFailure.html#getRequest()"/>
         /// </summary>
-        public long FrameNumber
+        /// <returns><see cref="Android.Hardware.Camera2.CaptureRequest"/></returns>
+        public Android.Hardware.Camera2.CaptureRequest GetRequest()
         {
-            get { return IExecuteWithSignature<long>("getFrameNumber", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureFailure.html#getPhysicalCameraId()"/> 
-        /// </summary>
-        public Java.Lang.String PhysicalCameraId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPhysicalCameraId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureFailure.html#getReason()"/> 
-        /// </summary>
-        public int Reason
-        {
-            get { return IExecuteWithSignature<int>("getReason", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureFailure.html#getRequest()"/> 
-        /// </summary>
-        public Android.Hardware.Camera2.CaptureRequest Request
-        {
-            get { return IExecuteWithSignature<Android.Hardware.Camera2.CaptureRequest>("getRequest", "()Landroid/hardware/camera2/CaptureRequest;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureFailure.html#getSequenceId()"/> 
-        /// </summary>
-        public int SequenceId
-        {
-            get { return IExecuteWithSignature<int>("getSequenceId", "()I"); }
+            return IExecuteWithSignature<Android.Hardware.Camera2.CaptureRequest>("getRequest", "()Landroid/hardware/camera2/CaptureRequest;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureFailure.html#wasImageCaptured()"/>
@@ -99,6 +72,38 @@ namespace Android.Hardware.Camera2
         public bool WasImageCaptured()
         {
             return IExecuteWithSignature<bool>("wasImageCaptured", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureFailure.html#getReason()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetReason()
+        {
+            return IExecuteWithSignature<int>("getReason", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureFailure.html#getSequenceId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSequenceId()
+        {
+            return IExecuteWithSignature<int>("getSequenceId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureFailure.html#getPhysicalCameraId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPhysicalCameraId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPhysicalCameraId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureFailure.html#getFrameNumber()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetFrameNumber()
+        {
+            return IExecuteWithSignature<long>("getFrameNumber", "()J");
         }
 
         #endregion

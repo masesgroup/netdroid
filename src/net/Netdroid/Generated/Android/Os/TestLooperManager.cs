@@ -46,19 +46,20 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/TestLooperManager.html#getMessageQueue()"/> 
-        /// </summary>
-        public Android.Os.MessageQueue MessageQueue
-        {
-            get { return IExecuteWithSignature<Android.Os.MessageQueue>("getMessageQueue", "()Landroid/os/MessageQueue;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/TestLooperManager.html#next()"/>
         /// </summary>
         /// <returns><see cref="Android.Os.Message"/></returns>
         public Android.Os.Message Next()
         {
             return IExecuteWithSignature<Android.Os.Message>("next", "()Landroid/os/Message;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/TestLooperManager.html#getMessageQueue()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.MessageQueue"/></returns>
+        public Android.Os.MessageQueue GetMessageQueue()
+        {
+            return IExecuteWithSignature<Android.Os.MessageQueue>("getMessageQueue", "()Landroid/os/MessageQueue;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/TestLooperManager.html#hasMessages(android.os.Handler,java.lang.Object,int)"/>

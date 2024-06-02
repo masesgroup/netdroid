@@ -67,13 +67,6 @@ namespace Android.Transition
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/Visibility.html#getMode()"/> <see href="https://developer.android.com/reference/android/transition/Visibility.html#setMode(int)"/>
-        /// </summary>
-        public int Mode
-        {
-            get { return IExecuteWithSignature<int>("getMode", "()I"); } set { IExecuteWithSignature("setMode", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Visibility.html#onAppear(android.view.ViewGroup,android.transition.TransitionValues,int,android.transition.TransitionValues,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.ViewGroup"/></param>
@@ -131,6 +124,22 @@ namespace Android.Transition
         public bool IsVisible(Android.Transition.TransitionValues arg0)
         {
             return IExecuteWithSignature<bool>("isVisible", "(Landroid/transition/TransitionValues;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Visibility.html#getMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMode()
+        {
+            return IExecuteWithSignature<int>("getMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Visibility.html#setMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMode(int arg0)
+        {
+            IExecuteWithSignature("setMode", "(I)V", arg0);
         }
 
         #endregion

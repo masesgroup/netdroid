@@ -89,54 +89,60 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppQosSettings.html#getDelayVariation()"/> 
-        /// </summary>
-        public int DelayVariation
-        {
-            get { return IExecuteWithSignature<int>("getDelayVariation", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppQosSettings.html#getLatency()"/> 
-        /// </summary>
-        public int Latency
-        {
-            get { return IExecuteWithSignature<int>("getLatency", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppQosSettings.html#getPeakBandwidth()"/> 
-        /// </summary>
-        public int PeakBandwidth
-        {
-            get { return IExecuteWithSignature<int>("getPeakBandwidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppQosSettings.html#getServiceType()"/> 
-        /// </summary>
-        public int ServiceType
-        {
-            get { return IExecuteWithSignature<int>("getServiceType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppQosSettings.html#getTokenBucketSize()"/> 
-        /// </summary>
-        public int TokenBucketSize
-        {
-            get { return IExecuteWithSignature<int>("getTokenBucketSize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppQosSettings.html#getTokenRate()"/> 
-        /// </summary>
-        public int TokenRate
-        {
-            get { return IExecuteWithSignature<int>("getTokenRate", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppQosSettings.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppQosSettings.html#getDelayVariation()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDelayVariation()
+        {
+            return IExecuteWithSignature<int>("getDelayVariation", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppQosSettings.html#getLatency()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLatency()
+        {
+            return IExecuteWithSignature<int>("getLatency", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppQosSettings.html#getPeakBandwidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPeakBandwidth()
+        {
+            return IExecuteWithSignature<int>("getPeakBandwidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppQosSettings.html#getServiceType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetServiceType()
+        {
+            return IExecuteWithSignature<int>("getServiceType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppQosSettings.html#getTokenBucketSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTokenBucketSize()
+        {
+            return IExecuteWithSignature<int>("getTokenBucketSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppQosSettings.html#getTokenRate()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTokenRate()
+        {
+            return IExecuteWithSignature<int>("getTokenRate", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppQosSettings.html#writeToParcel(android.os.Parcel,int)"/>

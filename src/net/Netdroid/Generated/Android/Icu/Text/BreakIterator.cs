@@ -64,7 +64,7 @@ namespace Android.Icu.Text
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#KIND_TITLE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int KIND_TITLE { get { if (!_KIND_TITLEReady) { _KIND_TITLEContent = SGetField<int>(LocalBridgeClazz, "KIND_TITLE"); _KIND_TITLEReady = true; } return _KIND_TITLEContent; } }
         private static int _KIND_TITLEContent = default;
         private static bool _KIND_TITLEReady = false; // this is used because in case of generics 
@@ -139,47 +139,12 @@ namespace Android.Icu.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getAvailableLocales()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getCharacterInstance()"/>
         /// </summary>
-        public static Java.Util.Locale[] AvailableLocales
+        /// <returns><see cref="Android.Icu.Text.BreakIterator"/></returns>
+        public static Android.Icu.Text.BreakIterator GetCharacterInstance()
         {
-            get { return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getCharacterInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.BreakIterator CharacterInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.BreakIterator>(LocalBridgeClazz, "getCharacterInstance", "()Landroid/icu/text/BreakIterator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getLineInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.BreakIterator LineInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.BreakIterator>(LocalBridgeClazz, "getLineInstance", "()Landroid/icu/text/BreakIterator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getSentenceInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.BreakIterator SentenceInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.BreakIterator>(LocalBridgeClazz, "getSentenceInstance", "()Landroid/icu/text/BreakIterator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getTitleInstance()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public static Android.Icu.Text.BreakIterator TitleInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.BreakIterator>(LocalBridgeClazz, "getTitleInstance", "()Landroid/icu/text/BreakIterator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getWordInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.BreakIterator WordInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.BreakIterator>(LocalBridgeClazz, "getWordInstance", "()Landroid/icu/text/BreakIterator;"); }
+            return SExecuteWithSignature<Android.Icu.Text.BreakIterator>(LocalBridgeClazz, "getCharacterInstance", "()Landroid/icu/text/BreakIterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getCharacterInstance(android.icu.util.ULocale)"/>
@@ -200,6 +165,14 @@ namespace Android.Icu.Text
             return SExecuteWithSignature<Android.Icu.Text.BreakIterator>(LocalBridgeClazz, "getCharacterInstance", "(Ljava/util/Locale;)Landroid/icu/text/BreakIterator;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getLineInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.BreakIterator"/></returns>
+        public static Android.Icu.Text.BreakIterator GetLineInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.BreakIterator>(LocalBridgeClazz, "getLineInstance", "()Landroid/icu/text/BreakIterator;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getLineInstance(android.icu.util.ULocale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.ULocale"/></param>
@@ -216,6 +189,14 @@ namespace Android.Icu.Text
         public static Android.Icu.Text.BreakIterator GetLineInstance(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Android.Icu.Text.BreakIterator>(LocalBridgeClazz, "getLineInstance", "(Ljava/util/Locale;)Landroid/icu/text/BreakIterator;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getSentenceInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.BreakIterator"/></returns>
+        public static Android.Icu.Text.BreakIterator GetSentenceInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.BreakIterator>(LocalBridgeClazz, "getSentenceInstance", "()Landroid/icu/text/BreakIterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getSentenceInstance(android.icu.util.ULocale)"/>
@@ -236,11 +217,20 @@ namespace Android.Icu.Text
             return SExecuteWithSignature<Android.Icu.Text.BreakIterator>(LocalBridgeClazz, "getSentenceInstance", "(Ljava/util/Locale;)Landroid/icu/text/BreakIterator;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getTitleInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.BreakIterator"/></returns>
+        [global::System.Obsolete()]
+        public static Android.Icu.Text.BreakIterator GetTitleInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.BreakIterator>(LocalBridgeClazz, "getTitleInstance", "()Landroid/icu/text/BreakIterator;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getTitleInstance(android.icu.util.ULocale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.ULocale"/></param>
         /// <returns><see cref="Android.Icu.Text.BreakIterator"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Icu.Text.BreakIterator GetTitleInstance(Android.Icu.Util.ULocale arg0)
         {
             return SExecuteWithSignature<Android.Icu.Text.BreakIterator>(LocalBridgeClazz, "getTitleInstance", "(Landroid/icu/util/ULocale;)Landroid/icu/text/BreakIterator;", arg0);
@@ -250,10 +240,18 @@ namespace Android.Icu.Text
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Android.Icu.Text.BreakIterator"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Icu.Text.BreakIterator GetTitleInstance(Java.Util.Locale arg0)
         {
             return SExecuteWithSignature<Android.Icu.Text.BreakIterator>(LocalBridgeClazz, "getTitleInstance", "(Ljava/util/Locale;)Landroid/icu/text/BreakIterator;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getWordInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.BreakIterator"/></returns>
+        public static Android.Icu.Text.BreakIterator GetWordInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.BreakIterator>(LocalBridgeClazz, "getWordInstance", "()Landroid/icu/text/BreakIterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getWordInstance(android.icu.util.ULocale)"/>
@@ -273,24 +271,18 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignature<Android.Icu.Text.BreakIterator>(LocalBridgeClazz, "getWordInstance", "(Ljava/util/Locale;)Landroid/icu/text/BreakIterator;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getAvailableLocales()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public static Java.Util.Locale[] GetAvailableLocales()
+        {
+            return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
+        }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getRuleStatus()"/> 
-        /// </summary>
-        public int RuleStatus
-        {
-            get { return IExecuteWithSignature<int>("getRuleStatus", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getText()"/> 
-        /// </summary>
-        public Java.Text.CharacterIterator Text
-        {
-            get { return IExecuteWithSignature<Java.Text.CharacterIterator>("getText", "()Ljava/text/CharacterIterator;"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#current()"/>
         /// </summary>
@@ -350,6 +342,14 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<int>("previous", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Text.CharacterIterator"/></returns>
+        public Java.Text.CharacterIterator GetText()
+        {
+            return IExecuteWithSignature<Java.Text.CharacterIterator>("getText", "()Ljava/text/CharacterIterator;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#setText(java.text.CharacterIterator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
@@ -365,6 +365,14 @@ namespace Android.Icu.Text
         public bool IsBoundary(int arg0)
         {
             return IExecuteWithSignature<bool>("isBoundary", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getRuleStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRuleStatus()
+        {
+            return IExecuteWithSignature<int>("getRuleStatus", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/BreakIterator.html#getRuleStatusVec(int[])"/>

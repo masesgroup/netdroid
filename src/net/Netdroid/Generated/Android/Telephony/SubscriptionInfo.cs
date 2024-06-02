@@ -52,142 +52,6 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getCardId()"/> 
-        /// </summary>
-        public int CardId
-        {
-            get { return IExecuteWithSignature<int>("getCardId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getCarrierId()"/> 
-        /// </summary>
-        public int CarrierId
-        {
-            get { return IExecuteWithSignature<int>("getCarrierId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getCarrierName()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence CarrierName
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getCarrierName", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getCountryIso()"/> 
-        /// </summary>
-        public Java.Lang.String CountryIso
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCountryIso", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getDataRoaming()"/> 
-        /// </summary>
-        public int DataRoaming
-        {
-            get { return IExecuteWithSignature<int>("getDataRoaming", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getDisplayName()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence DisplayName
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getDisplayName", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getGroupUuid()"/> 
-        /// </summary>
-        public Android.Os.ParcelUuid GroupUuid
-        {
-            get { return IExecuteWithSignature<Android.Os.ParcelUuid>("getGroupUuid", "()Landroid/os/ParcelUuid;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getIccId()"/> 
-        /// </summary>
-        public Java.Lang.String IccId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getIccId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getIconTint()"/> 
-        /// </summary>
-        public int IconTint
-        {
-            get { return IExecuteWithSignature<int>("getIconTint", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getMcc()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Mcc
-        {
-            get { return IExecuteWithSignature<int>("getMcc", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getMccString()"/> 
-        /// </summary>
-        public Java.Lang.String MccString
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMccString", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getMnc()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Mnc
-        {
-            get { return IExecuteWithSignature<int>("getMnc", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getMncString()"/> 
-        /// </summary>
-        public Java.Lang.String MncString
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMncString", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getNumber()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Number
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNumber", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getPortIndex()"/> 
-        /// </summary>
-        public int PortIndex
-        {
-            get { return IExecuteWithSignature<int>("getPortIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getSimSlotIndex()"/> 
-        /// </summary>
-        public int SimSlotIndex
-        {
-            get { return IExecuteWithSignature<int>("getSimSlotIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getSubscriptionId()"/> 
-        /// </summary>
-        public int SubscriptionId
-        {
-            get { return IExecuteWithSignature<int>("getSubscriptionId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getSubscriptionType()"/> 
-        /// </summary>
-        public int SubscriptionType
-        {
-            get { return IExecuteWithSignature<int>("getSubscriptionType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getUsageSetting()"/> 
-        /// </summary>
-        public int UsageSetting
-        {
-            get { return IExecuteWithSignature<int>("getUsageSetting", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#createIconBitmap(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -195,6 +59,14 @@ namespace Android.Telephony
         public Android.Graphics.Bitmap CreateIconBitmap(Android.Content.Context arg0)
         {
             return IExecuteWithSignature<Android.Graphics.Bitmap>("createIconBitmap", "(Landroid/content/Context;)Landroid/graphics/Bitmap;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getGroupUuid()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.ParcelUuid"/></returns>
+        public Android.Os.ParcelUuid GetGroupUuid()
+        {
+            return IExecuteWithSignature<Android.Os.ParcelUuid>("getGroupUuid", "()Landroid/os/ParcelUuid;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#isEmbedded()"/>
@@ -219,6 +91,153 @@ namespace Android.Telephony
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getCardId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCardId()
+        {
+            return IExecuteWithSignature<int>("getCardId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getCarrierId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCarrierId()
+        {
+            return IExecuteWithSignature<int>("getCarrierId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getDataRoaming()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDataRoaming()
+        {
+            return IExecuteWithSignature<int>("getDataRoaming", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getIconTint()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIconTint()
+        {
+            return IExecuteWithSignature<int>("getIconTint", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getMcc()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetMcc()
+        {
+            return IExecuteWithSignature<int>("getMcc", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getMnc()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetMnc()
+        {
+            return IExecuteWithSignature<int>("getMnc", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getPortIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPortIndex()
+        {
+            return IExecuteWithSignature<int>("getPortIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getSimSlotIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSimSlotIndex()
+        {
+            return IExecuteWithSignature<int>("getSimSlotIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getSubscriptionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSubscriptionId()
+        {
+            return IExecuteWithSignature<int>("getSubscriptionId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getSubscriptionType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSubscriptionType()
+        {
+            return IExecuteWithSignature<int>("getSubscriptionType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getUsageSetting()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUsageSetting()
+        {
+            return IExecuteWithSignature<int>("getUsageSetting", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getCarrierName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetCarrierName()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getCarrierName", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getDisplayName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetDisplayName()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getDisplayName", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getCountryIso()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCountryIso()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCountryIso", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getIccId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetIccId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getIccId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getMccString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMccString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMccString", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getMncString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMncString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMncString", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#getNumber()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetNumber()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getNumber", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionInfo.html#writeToParcel(android.os.Parcel,int)"/>

@@ -118,47 +118,52 @@ namespace Android.Telephony.Data
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSliceInfo.html#getMappedHplmnSliceDifferentiator()"/> 
-        /// </summary>
-        public int MappedHplmnSliceDifferentiator
-        {
-            get { return IExecuteWithSignature<int>("getMappedHplmnSliceDifferentiator", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSliceInfo.html#getMappedHplmnSliceServiceType()"/> 
-        /// </summary>
-        public int MappedHplmnSliceServiceType
-        {
-            get { return IExecuteWithSignature<int>("getMappedHplmnSliceServiceType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSliceInfo.html#getSliceDifferentiator()"/> 
-        /// </summary>
-        public int SliceDifferentiator
-        {
-            get { return IExecuteWithSignature<int>("getSliceDifferentiator", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSliceInfo.html#getSliceServiceType()"/> 
-        /// </summary>
-        public int SliceServiceType
-        {
-            get { return IExecuteWithSignature<int>("getSliceServiceType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSliceInfo.html#getStatus()"/> 
-        /// </summary>
-        public int Status
-        {
-            get { return IExecuteWithSignature<int>("getStatus", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSliceInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSliceInfo.html#getMappedHplmnSliceDifferentiator()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMappedHplmnSliceDifferentiator()
+        {
+            return IExecuteWithSignature<int>("getMappedHplmnSliceDifferentiator", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSliceInfo.html#getMappedHplmnSliceServiceType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMappedHplmnSliceServiceType()
+        {
+            return IExecuteWithSignature<int>("getMappedHplmnSliceServiceType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSliceInfo.html#getSliceDifferentiator()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSliceDifferentiator()
+        {
+            return IExecuteWithSignature<int>("getSliceDifferentiator", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSliceInfo.html#getSliceServiceType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSliceServiceType()
+        {
+            return IExecuteWithSignature<int>("getSliceServiceType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSliceInfo.html#getStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStatus()
+        {
+            return IExecuteWithSignature<int>("getStatus", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSliceInfo.html#writeToParcel(android.os.Parcel,int)"/>

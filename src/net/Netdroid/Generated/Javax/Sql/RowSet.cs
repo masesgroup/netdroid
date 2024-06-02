@@ -64,84 +64,16 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#getCommand()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setCommand(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#getEscapeProcessing()"/>
         /// </summary>
-        public Java.Lang.String Command
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool GetEscapeProcessing()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCommand", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCommand", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<bool>("getEscapeProcessing", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#getDataSourceName()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setDataSourceName(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String DataSourceName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDataSourceName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDataSourceName", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#getEscapeProcessing()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setEscapeProcessing(boolean)"/>
-        /// </summary>
-        public bool EscapeProcessing
-        {
-            get { return IExecuteWithSignature<bool>("getEscapeProcessing", "()Z"); } set { IExecuteWithSignature("setEscapeProcessing", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#getMaxFieldSize()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setMaxFieldSize(int)"/>
-        /// </summary>
-        public int MaxFieldSize
-        {
-            get { return IExecuteWithSignature<int>("getMaxFieldSize", "()I"); } set { IExecuteWithSignature("setMaxFieldSize", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#getMaxRows()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setMaxRows(int)"/>
-        /// </summary>
-        public int MaxRows
-        {
-            get { return IExecuteWithSignature<int>("getMaxRows", "()I"); } set { IExecuteWithSignature("setMaxRows", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#getPassword()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setPassword(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Password
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPassword", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPassword", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#getQueryTimeout()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setQueryTimeout(int)"/>
-        /// </summary>
-        public int QueryTimeout
-        {
-            get { return IExecuteWithSignature<int>("getQueryTimeout", "()I"); } set { IExecuteWithSignature("setQueryTimeout", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#getTransactionIsolation()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setTransactionIsolation(int)"/>
-        /// </summary>
-        public int TransactionIsolation
-        {
-            get { return IExecuteWithSignature<int>("getTransactionIsolation", "()I"); } set { IExecuteWithSignature("setTransactionIsolation", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#getTypeMap()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setTypeMap(java.util.Map)"/>
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Lang.Class> TypeMap
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.Class>>("getTypeMap", "()Ljava/util/Map;"); } set { IExecuteWithSignature("setTypeMap", "(Ljava/util/Map;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#getUrl()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setUrl(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Url
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUrl", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setUrl", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#getUsername()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setUsername(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Username
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUsername", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setUsername", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#isReadOnly()"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#isReadOnly()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
@@ -149,7 +81,92 @@ namespace Javax.Sql
             return IExecuteWithSignature<bool>("isReadOnly", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#addRowSetListener(javax.sql.RowSetListener)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#getMaxFieldSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetMaxFieldSize()
+        {
+            return IExecuteWithSignature<int>("getMaxFieldSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#getMaxRows()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetMaxRows()
+        {
+            return IExecuteWithSignature<int>("getMaxRows", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#getQueryTimeout()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetQueryTimeout()
+        {
+            return IExecuteWithSignature<int>("getQueryTimeout", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#getTransactionIsolation()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTransactionIsolation()
+        {
+            return IExecuteWithSignature<int>("getTransactionIsolation", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#getCommand()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCommand()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCommand", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#getDataSourceName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDataSourceName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDataSourceName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#getPassword()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPassword()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPassword", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#getUrl()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Lang.String GetUrl()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUrl", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#getUsername()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUsername()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUsername", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#getTypeMap()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Util.Map<Java.Lang.String, Java.Lang.Class> GetTypeMap()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.Class>>("getTypeMap", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#addRowSetListener(javax.sql.RowSetListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.RowSetListener"/></param>
         public void AddRowSetListener(Javax.Sql.RowSetListener arg0)
@@ -157,7 +174,7 @@ namespace Javax.Sql
             IExecuteWithSignature("addRowSetListener", "(Ljavax/sql/RowSetListener;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#clearParameters()"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#clearParameters()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearParameters()
@@ -165,7 +182,7 @@ namespace Javax.Sql
             IExecuteWithSignature("clearParameters", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#execute()"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#execute()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
         public void Execute()
@@ -173,7 +190,7 @@ namespace Javax.Sql
             IExecuteWithSignature("execute", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#removeRowSetListener(javax.sql.RowSetListener)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#removeRowSetListener(javax.sql.RowSetListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.RowSetListener"/></param>
         public void RemoveRowSetListener(Javax.Sql.RowSetListener arg0)
@@ -181,7 +198,7 @@ namespace Javax.Sql
             IExecuteWithSignature("removeRowSetListener", "(Ljavax/sql/RowSetListener;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setArray(int,java.sql.Array)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setArray(int,java.sql.Array)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Array"/></param>
@@ -191,7 +208,7 @@ namespace Javax.Sql
             IExecute("setArray", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setAsciiStream(int,java.io.InputStream,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setAsciiStream(int,java.io.InputStream,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -202,7 +219,7 @@ namespace Javax.Sql
             IExecute("setAsciiStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setAsciiStream(int,java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setAsciiStream(int,java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -212,7 +229,7 @@ namespace Javax.Sql
             IExecute("setAsciiStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setAsciiStream(java.lang.String,java.io.InputStream,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setAsciiStream(java.lang.String,java.io.InputStream,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -223,7 +240,7 @@ namespace Javax.Sql
             IExecute("setAsciiStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setAsciiStream(java.lang.String,java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setAsciiStream(java.lang.String,java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -233,7 +250,7 @@ namespace Javax.Sql
             IExecute("setAsciiStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setBigDecimal(int,java.math.BigDecimal)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setBigDecimal(int,java.math.BigDecimal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigDecimal"/></param>
@@ -243,7 +260,7 @@ namespace Javax.Sql
             IExecute("setBigDecimal", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setBigDecimal(java.lang.String,java.math.BigDecimal)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setBigDecimal(java.lang.String,java.math.BigDecimal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigDecimal"/></param>
@@ -253,7 +270,7 @@ namespace Javax.Sql
             IExecute("setBigDecimal", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setBinaryStream(int,java.io.InputStream,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setBinaryStream(int,java.io.InputStream,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -264,7 +281,7 @@ namespace Javax.Sql
             IExecute("setBinaryStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setBinaryStream(int,java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setBinaryStream(int,java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -274,7 +291,7 @@ namespace Javax.Sql
             IExecute("setBinaryStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setBinaryStream(java.lang.String,java.io.InputStream,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setBinaryStream(java.lang.String,java.io.InputStream,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -285,7 +302,7 @@ namespace Javax.Sql
             IExecute("setBinaryStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setBinaryStream(java.lang.String,java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setBinaryStream(java.lang.String,java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -295,7 +312,7 @@ namespace Javax.Sql
             IExecute("setBinaryStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setBlob(int,java.io.InputStream,long)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setBlob(int,java.io.InputStream,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -306,7 +323,7 @@ namespace Javax.Sql
             IExecute("setBlob", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setBlob(int,java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setBlob(int,java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -316,7 +333,7 @@ namespace Javax.Sql
             IExecute("setBlob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setBlob(int,java.sql.Blob)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setBlob(int,java.sql.Blob)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Blob"/></param>
@@ -326,7 +343,7 @@ namespace Javax.Sql
             IExecute("setBlob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setBlob(java.lang.String,java.io.InputStream,long)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setBlob(java.lang.String,java.io.InputStream,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -337,7 +354,7 @@ namespace Javax.Sql
             IExecute("setBlob", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setBlob(java.lang.String,java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setBlob(java.lang.String,java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -347,7 +364,7 @@ namespace Javax.Sql
             IExecute("setBlob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setBlob(java.lang.String,java.sql.Blob)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setBlob(java.lang.String,java.sql.Blob)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Blob"/></param>
@@ -357,7 +374,7 @@ namespace Javax.Sql
             IExecute("setBlob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setBoolean(int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setBoolean(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -367,7 +384,7 @@ namespace Javax.Sql
             IExecute("setBoolean", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setBoolean(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setBoolean(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -377,7 +394,7 @@ namespace Javax.Sql
             IExecute("setBoolean", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setByte(int,byte)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setByte(int,byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -387,7 +404,7 @@ namespace Javax.Sql
             IExecute("setByte", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setByte(java.lang.String,byte)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setByte(java.lang.String,byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -397,7 +414,7 @@ namespace Javax.Sql
             IExecute("setByte", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setBytes(int,byte[])"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setBytes(int,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -407,7 +424,7 @@ namespace Javax.Sql
             IExecute("setBytes", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setBytes(java.lang.String,byte[])"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setBytes(java.lang.String,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -417,7 +434,7 @@ namespace Javax.Sql
             IExecute("setBytes", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setCharacterStream(int,java.io.Reader,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setCharacterStream(int,java.io.Reader,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -428,7 +445,7 @@ namespace Javax.Sql
             IExecute("setCharacterStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setCharacterStream(int,java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setCharacterStream(int,java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -438,7 +455,7 @@ namespace Javax.Sql
             IExecute("setCharacterStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setCharacterStream(java.lang.String,java.io.Reader,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setCharacterStream(java.lang.String,java.io.Reader,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -449,7 +466,7 @@ namespace Javax.Sql
             IExecute("setCharacterStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setCharacterStream(java.lang.String,java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setCharacterStream(java.lang.String,java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -459,7 +476,7 @@ namespace Javax.Sql
             IExecute("setCharacterStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setClob(int,java.io.Reader,long)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setClob(int,java.io.Reader,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -470,7 +487,7 @@ namespace Javax.Sql
             IExecute("setClob", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setClob(int,java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setClob(int,java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -480,7 +497,7 @@ namespace Javax.Sql
             IExecute("setClob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setClob(int,java.sql.Clob)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setClob(int,java.sql.Clob)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Clob"/></param>
@@ -490,7 +507,7 @@ namespace Javax.Sql
             IExecute("setClob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setClob(java.lang.String,java.io.Reader,long)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setClob(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -501,7 +518,7 @@ namespace Javax.Sql
             IExecute("setClob", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setClob(java.lang.String,java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setClob(java.lang.String,java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -511,7 +528,7 @@ namespace Javax.Sql
             IExecute("setClob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setClob(java.lang.String,java.sql.Clob)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setClob(java.lang.String,java.sql.Clob)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Clob"/></param>
@@ -521,7 +538,16 @@ namespace Javax.Sql
             IExecute("setClob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setConcurrency(int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setCommand(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetCommand(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setCommand", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setConcurrency(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -530,7 +556,16 @@ namespace Javax.Sql
             IExecuteWithSignature("setConcurrency", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setDate(int,java.sql.Date,java.util.Calendar)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setDataSourceName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetDataSourceName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setDataSourceName", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setDate(int,java.sql.Date,java.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Date"/></param>
@@ -541,7 +576,7 @@ namespace Javax.Sql
             IExecute("setDate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setDate(int,java.sql.Date)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setDate(int,java.sql.Date)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Date"/></param>
@@ -551,7 +586,7 @@ namespace Javax.Sql
             IExecute("setDate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setDate(java.lang.String,java.sql.Date,java.util.Calendar)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setDate(java.lang.String,java.sql.Date,java.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Date"/></param>
@@ -562,7 +597,7 @@ namespace Javax.Sql
             IExecute("setDate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setDate(java.lang.String,java.sql.Date)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setDate(java.lang.String,java.sql.Date)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Date"/></param>
@@ -572,7 +607,7 @@ namespace Javax.Sql
             IExecute("setDate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setDouble(int,double)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setDouble(int,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -582,7 +617,7 @@ namespace Javax.Sql
             IExecute("setDouble", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setDouble(java.lang.String,double)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setDouble(java.lang.String,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -592,7 +627,16 @@ namespace Javax.Sql
             IExecute("setDouble", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setFloat(int,float)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setEscapeProcessing(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetEscapeProcessing(bool arg0)
+        {
+            IExecuteWithSignature("setEscapeProcessing", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setFloat(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -602,7 +646,7 @@ namespace Javax.Sql
             IExecute("setFloat", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setFloat(java.lang.String,float)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setFloat(java.lang.String,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -612,7 +656,7 @@ namespace Javax.Sql
             IExecute("setFloat", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setInt(int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setInt(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -622,7 +666,7 @@ namespace Javax.Sql
             IExecute("setInt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setInt(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setInt(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -632,7 +676,7 @@ namespace Javax.Sql
             IExecute("setInt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setLong(int,long)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setLong(int,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -642,7 +686,7 @@ namespace Javax.Sql
             IExecute("setLong", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setLong(java.lang.String,long)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setLong(java.lang.String,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -652,7 +696,25 @@ namespace Javax.Sql
             IExecute("setLong", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setNCharacterStream(int,java.io.Reader,long)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setMaxFieldSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetMaxFieldSize(int arg0)
+        {
+            IExecuteWithSignature("setMaxFieldSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setMaxRows(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetMaxRows(int arg0)
+        {
+            IExecuteWithSignature("setMaxRows", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setNCharacterStream(int,java.io.Reader,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -663,7 +725,7 @@ namespace Javax.Sql
             IExecute("setNCharacterStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setNCharacterStream(int,java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setNCharacterStream(int,java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -673,7 +735,7 @@ namespace Javax.Sql
             IExecute("setNCharacterStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setNCharacterStream(java.lang.String,java.io.Reader,long)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setNCharacterStream(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -684,7 +746,7 @@ namespace Javax.Sql
             IExecute("setNCharacterStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setNCharacterStream(java.lang.String,java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setNCharacterStream(java.lang.String,java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -694,7 +756,7 @@ namespace Javax.Sql
             IExecute("setNCharacterStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setNClob(int,java.io.Reader,long)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setNClob(int,java.io.Reader,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -705,7 +767,7 @@ namespace Javax.Sql
             IExecute("setNClob", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setNClob(int,java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setNClob(int,java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -715,7 +777,7 @@ namespace Javax.Sql
             IExecute("setNClob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setNClob(int,java.sql.NClob)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setNClob(int,java.sql.NClob)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.NClob"/></param>
@@ -725,7 +787,7 @@ namespace Javax.Sql
             IExecute("setNClob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setNClob(java.lang.String,java.io.Reader,long)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setNClob(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -736,7 +798,7 @@ namespace Javax.Sql
             IExecute("setNClob", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setNClob(java.lang.String,java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setNClob(java.lang.String,java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -746,7 +808,7 @@ namespace Javax.Sql
             IExecute("setNClob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setNClob(java.lang.String,java.sql.NClob)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setNClob(java.lang.String,java.sql.NClob)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.NClob"/></param>
@@ -756,7 +818,7 @@ namespace Javax.Sql
             IExecute("setNClob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setNString(int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setNString(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -766,7 +828,7 @@ namespace Javax.Sql
             IExecute("setNString", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setNString(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setNString(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -776,7 +838,7 @@ namespace Javax.Sql
             IExecute("setNString", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setNull(int,int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setNull(int,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -787,7 +849,7 @@ namespace Javax.Sql
             IExecute("setNull", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setNull(int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setNull(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -797,7 +859,7 @@ namespace Javax.Sql
             IExecute("setNull", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setNull(java.lang.String,int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setNull(java.lang.String,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -808,7 +870,7 @@ namespace Javax.Sql
             IExecute("setNull", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setNull(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setNull(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -818,7 +880,7 @@ namespace Javax.Sql
             IExecute("setNull", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setObject(int,java.lang.Object,int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setObject(int,java.lang.Object,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -830,7 +892,7 @@ namespace Javax.Sql
             IExecute("setObject", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setObject(int,java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setObject(int,java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -841,7 +903,7 @@ namespace Javax.Sql
             IExecute("setObject", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setObject(int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setObject(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -851,7 +913,7 @@ namespace Javax.Sql
             IExecute("setObject", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setObject(java.lang.String,java.lang.Object,int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setObject(java.lang.String,java.lang.Object,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -863,7 +925,7 @@ namespace Javax.Sql
             IExecute("setObject", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setObject(java.lang.String,java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setObject(java.lang.String,java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -874,7 +936,7 @@ namespace Javax.Sql
             IExecute("setObject", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setObject(java.lang.String,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setObject(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -884,7 +946,25 @@ namespace Javax.Sql
             IExecute("setObject", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setReadOnly(boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setPassword(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetPassword(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPassword", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setQueryTimeout(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetQueryTimeout(int arg0)
+        {
+            IExecuteWithSignature("setQueryTimeout", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setReadOnly(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -893,7 +973,7 @@ namespace Javax.Sql
             IExecuteWithSignature("setReadOnly", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setRef(int,java.sql.Ref)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setRef(int,java.sql.Ref)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Ref"/></param>
@@ -903,7 +983,7 @@ namespace Javax.Sql
             IExecute("setRef", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setRowId(int,java.sql.RowId)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setRowId(int,java.sql.RowId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.RowId"/></param>
@@ -913,7 +993,7 @@ namespace Javax.Sql
             IExecute("setRowId", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setRowId(java.lang.String,java.sql.RowId)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setRowId(java.lang.String,java.sql.RowId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.RowId"/></param>
@@ -923,7 +1003,7 @@ namespace Javax.Sql
             IExecute("setRowId", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setShort(int,short)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setShort(int,short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="short"/></param>
@@ -933,7 +1013,7 @@ namespace Javax.Sql
             IExecute("setShort", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setShort(java.lang.String,short)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setShort(java.lang.String,short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="short"/></param>
@@ -943,7 +1023,7 @@ namespace Javax.Sql
             IExecute("setShort", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setSQLXML(int,java.sql.SQLXML)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setSQLXML(int,java.sql.SQLXML)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.SQLXML"/></param>
@@ -953,7 +1033,7 @@ namespace Javax.Sql
             IExecute("setSQLXML", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setSQLXML(java.lang.String,java.sql.SQLXML)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setSQLXML(java.lang.String,java.sql.SQLXML)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.SQLXML"/></param>
@@ -963,7 +1043,7 @@ namespace Javax.Sql
             IExecute("setSQLXML", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setString(int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setString(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -973,7 +1053,7 @@ namespace Javax.Sql
             IExecute("setString", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setString(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setString(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -983,7 +1063,7 @@ namespace Javax.Sql
             IExecute("setString", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setTime(int,java.sql.Time,java.util.Calendar)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setTime(int,java.sql.Time,java.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Time"/></param>
@@ -994,7 +1074,7 @@ namespace Javax.Sql
             IExecute("setTime", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setTime(int,java.sql.Time)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setTime(int,java.sql.Time)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Time"/></param>
@@ -1004,7 +1084,7 @@ namespace Javax.Sql
             IExecute("setTime", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setTime(java.lang.String,java.sql.Time,java.util.Calendar)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setTime(java.lang.String,java.sql.Time,java.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Time"/></param>
@@ -1015,7 +1095,7 @@ namespace Javax.Sql
             IExecute("setTime", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setTime(java.lang.String,java.sql.Time)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setTime(java.lang.String,java.sql.Time)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Time"/></param>
@@ -1025,7 +1105,7 @@ namespace Javax.Sql
             IExecute("setTime", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setTimestamp(int,java.sql.Timestamp,java.util.Calendar)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setTimestamp(int,java.sql.Timestamp,java.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Timestamp"/></param>
@@ -1036,7 +1116,7 @@ namespace Javax.Sql
             IExecute("setTimestamp", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setTimestamp(int,java.sql.Timestamp)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setTimestamp(int,java.sql.Timestamp)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Timestamp"/></param>
@@ -1046,7 +1126,7 @@ namespace Javax.Sql
             IExecute("setTimestamp", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setTimestamp(java.lang.String,java.sql.Timestamp,java.util.Calendar)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setTimestamp(java.lang.String,java.sql.Timestamp,java.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Timestamp"/></param>
@@ -1057,7 +1137,7 @@ namespace Javax.Sql
             IExecute("setTimestamp", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setTimestamp(java.lang.String,java.sql.Timestamp)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setTimestamp(java.lang.String,java.sql.Timestamp)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Timestamp"/></param>
@@ -1067,7 +1147,16 @@ namespace Javax.Sql
             IExecute("setTimestamp", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setType(int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setTransactionIsolation(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetTransactionIsolation(int arg0)
+        {
+            IExecuteWithSignature("setTransactionIsolation", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setType(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -1076,7 +1165,16 @@ namespace Javax.Sql
             IExecuteWithSignature("setType", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSet.html#setURL(int,java.net.URL)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setTypeMap(java.util.Map)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetTypeMap(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0)
+        {
+            IExecuteWithSignature("setTypeMap", "(Ljava/util/Map;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setURL(int,java.net.URL)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Net.URL"/></param>
@@ -1084,6 +1182,24 @@ namespace Javax.Sql
         public void SetURL(int arg0, Java.Net.URL arg1)
         {
             IExecute("setURL", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setUrl(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetUrl(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setUrl", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSet.html#setUsername(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetUsername(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setUsername", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

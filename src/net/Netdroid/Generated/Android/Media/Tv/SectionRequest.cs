@@ -64,25 +64,28 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/SectionRequest.html#getTableId()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/SectionRequest.html#getTableId()"/>
         /// </summary>
-        public int TableId
+        /// <returns><see cref="int"/></returns>
+        public int GetTableId()
         {
-            get { return IExecuteWithSignature<int>("getTableId", "()I"); }
+            return IExecuteWithSignature<int>("getTableId", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/SectionRequest.html#getTsPid()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/SectionRequest.html#getTsPid()"/>
         /// </summary>
-        public int TsPid
+        /// <returns><see cref="int"/></returns>
+        public int GetTsPid()
         {
-            get { return IExecuteWithSignature<int>("getTsPid", "()I"); }
+            return IExecuteWithSignature<int>("getTsPid", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/SectionRequest.html#getVersion()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/SectionRequest.html#getVersion()"/>
         /// </summary>
-        public int Version
+        /// <returns><see cref="int"/></returns>
+        public int GetVersion()
         {
-            get { return IExecuteWithSignature<int>("getVersion", "()I"); }
+            return IExecuteWithSignature<int>("getVersion", "()I");
         }
 
         #endregion

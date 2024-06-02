@@ -62,33 +62,36 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CorrectionInfo.html#getNewText()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence NewText
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getNewText", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CorrectionInfo.html#getOffset()"/> 
-        /// </summary>
-        public int Offset
-        {
-            get { return IExecuteWithSignature<int>("getOffset", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CorrectionInfo.html#getOldText()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence OldText
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getOldText", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/CorrectionInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CorrectionInfo.html#getOffset()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOffset()
+        {
+            return IExecuteWithSignature<int>("getOffset", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CorrectionInfo.html#getNewText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetNewText()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getNewText", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CorrectionInfo.html#getOldText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetOldText()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getOldText", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/CorrectionInfo.html#writeToParcel(android.os.Parcel,int)"/>

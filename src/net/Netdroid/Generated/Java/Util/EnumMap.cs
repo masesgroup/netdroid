@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumMap.html#%3Cinit%3E(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumMap.html#%3Cinit%3E(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         public EnumMap(Java.Lang.Class arg0)
@@ -38,7 +38,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumMap.html#%3Cinit%3E(java.util.EnumMap)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumMap.html#%3Cinit%3E(java.util.EnumMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.EnumMap"/></param>
         public EnumMap(Java.Util.EnumMap arg0)
@@ -46,7 +46,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumMap.html#%3Cinit%3E(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public EnumMap(Java.Util.Map arg0)
@@ -78,7 +78,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumMap.html#clone()"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumMap.html#clone()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.EnumMap"/></returns>
         public Java.Util.EnumMap Clone()
@@ -86,7 +86,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.EnumMap>("clone", "()Ljava/util/EnumMap;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumMap.html#put(java.lang.Enum,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumMap.html#put(java.lang.Enum,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -111,7 +111,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumMap.html#%3Cinit%3E(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumMap.html#%3Cinit%3E(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         public EnumMap(Java.Lang.Class arg0)
@@ -119,7 +119,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumMap.html#%3Cinit%3E(java.util.EnumMap)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumMap.html#%3Cinit%3E(java.util.EnumMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.EnumMap"/></param>
         public EnumMap(Java.Util.EnumMap<K, V> arg0)
@@ -127,7 +127,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumMap.html#%3Cinit%3E(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public EnumMap(Java.Util.Map<K, V> arg0)
@@ -163,7 +163,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumMap.html#clone()"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumMap.html#clone()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.EnumMap"/></returns>
         public Java.Util.EnumMap Clone()
@@ -171,7 +171,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.EnumMap>("clone", "()Ljava/util/EnumMap;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumMap.html#put(java.lang.Enum,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumMap.html#put(java.lang.Enum,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>

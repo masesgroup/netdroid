@@ -46,20 +46,21 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CRL.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.String Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CRL.html#isRevoked(java.security.cert.Certificate)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CRL.html#isRevoked(java.security.cert.Certificate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <returns><see cref="bool"/></returns>
         public bool IsRevoked(Java.Security.Cert.Certificate arg0)
         {
             return IExecuteWithSignature<bool>("isRevoked", "(Ljava/security/cert/Certificate;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CRL.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
         }
 
         #endregion

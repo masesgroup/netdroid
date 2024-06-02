@@ -46,13 +46,6 @@ namespace Android.App.Sdksandbox
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SandboxedSdkProvider.html#getContext()"/> 
-        /// </summary>
-        public Android.Content.Context Context
-        {
-            get { return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SandboxedSdkProvider.html#onLoadSdk(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
@@ -73,6 +66,14 @@ namespace Android.App.Sdksandbox
         public Android.View.View GetView(Android.Content.Context arg0, Android.Os.Bundle arg1, int arg2, int arg3)
         {
             return IExecute<Android.View.View>("getView", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SandboxedSdkProvider.html#getContext()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        public Android.Content.Context GetContext()
+        {
+            return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SandboxedSdkProvider.html#attachContext(android.content.Context)"/>

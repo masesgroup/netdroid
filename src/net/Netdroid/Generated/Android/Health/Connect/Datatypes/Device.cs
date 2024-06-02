@@ -100,25 +100,28 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Device.html#getManufacturer()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Device.html#getType()"/>
         /// </summary>
-        public Java.Lang.String Manufacturer
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getManufacturer", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getType", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Device.html#getModel()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Device.html#getManufacturer()"/>
         /// </summary>
-        public Java.Lang.String Model
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetManufacturer()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getModel", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getManufacturer", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Device.html#getType()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Device.html#getModel()"/>
         /// </summary>
-        public int Type
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetModel()
         {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            return IExecuteWithSignature<Java.Lang.String>("getModel", "()Ljava/lang/String;");
         }
 
         #endregion

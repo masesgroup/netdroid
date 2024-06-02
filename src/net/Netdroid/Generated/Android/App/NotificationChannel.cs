@@ -110,88 +110,20 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getAudioAttributes()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getAudioAttributes()"/>
         /// </summary>
-        public Android.Media.AudioAttributes AudioAttributes
+        /// <returns><see cref="Android.Media.AudioAttributes"/></returns>
+        public Android.Media.AudioAttributes GetAudioAttributes()
         {
-            get { return IExecuteWithSignature<Android.Media.AudioAttributes>("getAudioAttributes", "()Landroid/media/AudioAttributes;"); }
+            return IExecuteWithSignature<Android.Media.AudioAttributes>("getAudioAttributes", "()Landroid/media/AudioAttributes;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getConversationId()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getSound()"/>
         /// </summary>
-        public Java.Lang.String ConversationId
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetSound()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getConversationId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getDescription()"/> <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setDescription(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Description
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDescription", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getGroup()"/> <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setGroup(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Group
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getGroup", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setGroup", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getImportance()"/> <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setImportance(int)"/>
-        /// </summary>
-        public int Importance
-        {
-            get { return IExecuteWithSignature<int>("getImportance", "()I"); } set { IExecuteWithSignature("setImportance", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getLightColor()"/> <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setLightColor(int)"/>
-        /// </summary>
-        public int LightColor
-        {
-            get { return IExecuteWithSignature<int>("getLightColor", "()I"); } set { IExecuteWithSignature("setLightColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getLockscreenVisibility()"/> <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setLockscreenVisibility(int)"/>
-        /// </summary>
-        public int LockscreenVisibility
-        {
-            get { return IExecuteWithSignature<int>("getLockscreenVisibility", "()I"); } set { IExecuteWithSignature("setLockscreenVisibility", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getName()"/> <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setName(java.lang.CharSequence)"/>
-        /// </summary>
-        public Java.Lang.CharSequence Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getParentChannelId()"/> 
-        /// </summary>
-        public Java.Lang.String ParentChannelId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getParentChannelId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getSound()"/> 
-        /// </summary>
-        public Android.Net.Uri Sound
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getSound", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getVibrationPattern()"/> <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setVibrationPattern(long[])"/>
-        /// </summary>
-        public long[] VibrationPattern
-        {
-            get { return IExecuteWithSignatureArray<long>("getVibrationPattern", "()[J"); } set { IExecuteWithSignature("setVibrationPattern", "([J)V", value); }
+            return IExecuteWithSignature<Android.Net.Uri>("getSound", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#canBubble()"/>
@@ -290,6 +222,86 @@ namespace Android.App
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getImportance()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetImportance()
+        {
+            return IExecuteWithSignature<int>("getImportance", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getLightColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLightColor()
+        {
+            return IExecuteWithSignature<int>("getLightColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getLockscreenVisibility()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLockscreenVisibility()
+        {
+            return IExecuteWithSignature<int>("getLockscreenVisibility", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getConversationId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetConversationId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getConversationId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getGroup()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetGroup()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getGroup", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getParentChannelId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetParentChannelId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getParentChannelId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#getVibrationPattern()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long[] GetVibrationPattern()
+        {
+            return IExecuteWithSignatureArray<long>("getVibrationPattern", "()[J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#enableLights(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -339,6 +351,54 @@ namespace Android.App
             IExecute("setConversationId", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setDescription(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetDescription(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setDescription", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setGroup(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetGroup(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setGroup", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setImportance(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetImportance(int arg0)
+        {
+            IExecuteWithSignature("setImportance", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setLightColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetLightColor(int arg0)
+        {
+            IExecuteWithSignature("setLightColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setLockscreenVisibility(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetLockscreenVisibility(int arg0)
+        {
+            IExecuteWithSignature("setLockscreenVisibility", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setName(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetName(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setName", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setShowBadge(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -354,6 +414,14 @@ namespace Android.App
         public void SetSound(Android.Net.Uri arg0, Android.Media.AudioAttributes arg1)
         {
             IExecute("setSound", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#setVibrationPattern(long[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetVibrationPattern(long[] arg0)
+        {
+            IExecuteWithSignature("setVibrationPattern", "([J)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationChannel.html#writeToParcel(android.os.Parcel,int)"/>

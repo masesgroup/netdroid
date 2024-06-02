@@ -1521,7 +1521,7 @@ namespace Android.Media.Tv
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Programs.html#COLUMN_EPISODE_NUMBER"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String COLUMN_EPISODE_NUMBER { get { if (!_COLUMN_EPISODE_NUMBERReady) { _COLUMN_EPISODE_NUMBERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "COLUMN_EPISODE_NUMBER"); _COLUMN_EPISODE_NUMBERReady = true; } return _COLUMN_EPISODE_NUMBERContent; } }
             private static Java.Lang.String _COLUMN_EPISODE_NUMBERContent = default;
             private static bool _COLUMN_EPISODE_NUMBERReady = false; // this is used because in case of generics 
@@ -1636,7 +1636,7 @@ namespace Android.Media.Tv
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/tv/TvContract.Programs.html#COLUMN_SEASON_NUMBER"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String COLUMN_SEASON_NUMBER { get { if (!_COLUMN_SEASON_NUMBERReady) { _COLUMN_SEASON_NUMBERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "COLUMN_SEASON_NUMBER"); _COLUMN_SEASON_NUMBERReady = true; } return _COLUMN_SEASON_NUMBERContent; } }
             private static Java.Lang.String _COLUMN_SEASON_NUMBERContent = default;
             private static bool _COLUMN_SEASON_NUMBERReady = false; // this is used because in case of generics 

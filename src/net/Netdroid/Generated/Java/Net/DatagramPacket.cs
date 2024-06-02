@@ -30,7 +30,7 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,int,java.net.InetAddress,int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,int,java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -42,7 +42,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,int,java.net.SocketAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,int,java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -53,7 +53,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -63,7 +63,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,java.net.InetAddress,int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,java.net.InetAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -74,7 +74,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,java.net.SocketAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int,java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -84,7 +84,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#%3Cinit%3E(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -109,49 +109,63 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#getAddress()"/> <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#setAddress(java.net.InetAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#getData()"/>
         /// </summary>
-        public Java.Net.InetAddress Address
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetData()
         {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getAddress", "()Ljava/net/InetAddress;"); } set { IExecuteWithSignature("setAddress", "(Ljava/net/InetAddress;)V", value); }
+            return IExecuteWithSignatureArray<byte>("getData", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#getData()"/> <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#setData(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#getLength()"/>
         /// </summary>
-        public byte[] Data
+        /// <returns><see cref="int"/></returns>
+        public int GetLength()
         {
-            get { return IExecuteWithSignatureArray<byte>("getData", "()[B"); } set { IExecuteWithSignature("setData", "([B)V", value); }
+            return IExecuteWithSignature<int>("getLength", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#getLength()"/> <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#setLength(int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#getOffset()"/>
         /// </summary>
-        public int Length
+        /// <returns><see cref="int"/></returns>
+        public int GetOffset()
         {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); } set { IExecuteWithSignature("setLength", "(I)V", value); }
+            return IExecuteWithSignature<int>("getOffset", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#getOffset()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#getPort()"/>
         /// </summary>
-        public int Offset
+        /// <returns><see cref="int"/></returns>
+        public int GetPort()
         {
-            get { return IExecuteWithSignature<int>("getOffset", "()I"); }
+            return IExecuteWithSignature<int>("getPort", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#getPort()"/> <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#setPort(int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#getAddress()"/>
         /// </summary>
-        public int Port
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        public Java.Net.InetAddress GetAddress()
         {
-            get { return IExecuteWithSignature<int>("getPort", "()I"); } set { IExecuteWithSignature("setPort", "(I)V", value); }
+            return IExecuteWithSignature<Java.Net.InetAddress>("getAddress", "()Ljava/net/InetAddress;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#getSocketAddress()"/> <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#setSocketAddress(java.net.SocketAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#getSocketAddress()"/>
         /// </summary>
-        public Java.Net.SocketAddress SocketAddress
+        /// <returns><see cref="Java.Net.SocketAddress"/></returns>
+        public Java.Net.SocketAddress GetSocketAddress()
         {
-            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getSocketAddress", "()Ljava/net/SocketAddress;"); } set { IExecuteWithSignature("setSocketAddress", "(Ljava/net/SocketAddress;)V", value); }
+            return IExecuteWithSignature<Java.Net.SocketAddress>("getSocketAddress", "()Ljava/net/SocketAddress;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/DatagramPacket.html#setData(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#setAddress(java.net.InetAddress)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
+        public void SetAddress(Java.Net.InetAddress arg0)
+        {
+            IExecuteWithSignature("setAddress", "(Ljava/net/InetAddress;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#setData(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -159,6 +173,38 @@ namespace Java.Net
         public void SetData(byte[] arg0, int arg1, int arg2)
         {
             IExecute("setData", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#setData(byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        public void SetData(byte[] arg0)
+        {
+            IExecuteWithSignature("setData", "([B)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#setLength(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetLength(int arg0)
+        {
+            IExecuteWithSignature("setLength", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#setPort(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetPort(int arg0)
+        {
+            IExecuteWithSignature("setPort", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramPacket.html#setSocketAddress(java.net.SocketAddress)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
+        public void SetSocketAddress(Java.Net.SocketAddress arg0)
+        {
+            IExecuteWithSignature("setSocketAddress", "(Ljava/net/SocketAddress;)V", arg0);
         }
 
         #endregion

@@ -42,65 +42,17 @@ namespace Android.App.Appsearch
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getMaxIndexedProperties()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getMaxIndexedProperties()"/>
         /// </summary>
-        public static int MaxIndexedProperties
+        /// <returns><see cref="int"/></returns>
+        public static int GetMaxIndexedProperties()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxIndexedProperties", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxIndexedProperties", "()I");
         }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getCreationTimestampMillis()"/> 
-        /// </summary>
-        public long CreationTimestampMillis
-        {
-            get { return IExecuteWithSignature<long>("getCreationTimestampMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getNamespace()"/> 
-        /// </summary>
-        public Java.Lang.String Namespace
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getPropertyNames()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> PropertyNames
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getPropertyNames", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getSchemaType()"/> 
-        /// </summary>
-        public Java.Lang.String SchemaType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSchemaType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getScore()"/> 
-        /// </summary>
-        public int Score
-        {
-            get { return IExecuteWithSignature<int>("getScore", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getTtlMillis()"/> 
-        /// </summary>
-        public long TtlMillis
-        {
-            get { return IExecuteWithSignature<long>("getTtlMillis", "()J"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getPropertyDocument(java.lang.String)"/>
         /// </summary>
@@ -174,6 +126,14 @@ namespace Android.App.Appsearch
             return IExecuteWithSignatureArray<double>("getPropertyDoubleArray", "(Ljava/lang/String;)[D", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getScore()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScore()
+        {
+            return IExecuteWithSignature<int>("getScore", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -181,6 +141,22 @@ namespace Android.App.Appsearch
         public object GetProperty(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getNamespace()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNamespace()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getPropertyString(java.lang.String)"/>
@@ -192,6 +168,14 @@ namespace Android.App.Appsearch
             return IExecuteWithSignature<Java.Lang.String>("getPropertyString", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getSchemaType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSchemaType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSchemaType", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getPropertyStringArray(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -201,6 +185,22 @@ namespace Android.App.Appsearch
             return IExecuteWithSignatureArray<Java.Lang.String>("getPropertyStringArray", "(Ljava/lang/String;)[Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getPropertyNames()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetPropertyNames()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getPropertyNames", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getCreationTimestampMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetCreationTimestampMillis()
+        {
+            return IExecuteWithSignature<long>("getCreationTimestampMillis", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getPropertyLong(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -208,6 +208,14 @@ namespace Android.App.Appsearch
         public long GetPropertyLong(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<long>("getPropertyLong", "(Ljava/lang/String;)J", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getTtlMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTtlMillis()
+        {
+            return IExecuteWithSignature<long>("getTtlMillis", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/GenericDocument.html#getPropertyLongArray(java.lang.String)"/>

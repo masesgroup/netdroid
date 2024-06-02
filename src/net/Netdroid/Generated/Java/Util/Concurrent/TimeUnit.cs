@@ -38,43 +38,43 @@ namespace Java.Util.Concurrent
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#DAYS"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#DAYS"/>
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit DAYS { get { if (!_DAYSReady) { _DAYSContent = SGetField<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "DAYS"); _DAYSReady = true; } return _DAYSContent; } }
         private static Java.Util.Concurrent.TimeUnit _DAYSContent = default;
         private static bool _DAYSReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#HOURS"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#HOURS"/>
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit HOURS { get { if (!_HOURSReady) { _HOURSContent = SGetField<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "HOURS"); _HOURSReady = true; } return _HOURSContent; } }
         private static Java.Util.Concurrent.TimeUnit _HOURSContent = default;
         private static bool _HOURSReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#MICROSECONDS"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#MICROSECONDS"/>
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit MICROSECONDS { get { if (!_MICROSECONDSReady) { _MICROSECONDSContent = SGetField<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "MICROSECONDS"); _MICROSECONDSReady = true; } return _MICROSECONDSContent; } }
         private static Java.Util.Concurrent.TimeUnit _MICROSECONDSContent = default;
         private static bool _MICROSECONDSReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#MILLISECONDS"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#MILLISECONDS"/>
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit MILLISECONDS { get { if (!_MILLISECONDSReady) { _MILLISECONDSContent = SGetField<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "MILLISECONDS"); _MILLISECONDSReady = true; } return _MILLISECONDSContent; } }
         private static Java.Util.Concurrent.TimeUnit _MILLISECONDSContent = default;
         private static bool _MILLISECONDSReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#MINUTES"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#MINUTES"/>
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit MINUTES { get { if (!_MINUTESReady) { _MINUTESContent = SGetField<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "MINUTES"); _MINUTESReady = true; } return _MINUTESContent; } }
         private static Java.Util.Concurrent.TimeUnit _MINUTESContent = default;
         private static bool _MINUTESReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#NANOSECONDS"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#NANOSECONDS"/>
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit NANOSECONDS { get { if (!_NANOSECONDSReady) { _NANOSECONDSContent = SGetField<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "NANOSECONDS"); _NANOSECONDSReady = true; } return _NANOSECONDSContent; } }
         private static Java.Util.Concurrent.TimeUnit _NANOSECONDSContent = default;
         private static bool _NANOSECONDSReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#SECONDS"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#SECONDS"/>
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit SECONDS { get { if (!_SECONDSReady) { _SECONDSContent = SGetField<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "SECONDS"); _SECONDSReady = true; } return _SECONDSContent; } }
         private static Java.Util.Concurrent.TimeUnit _SECONDSContent = default;
@@ -84,7 +84,7 @@ namespace Java.Util.Concurrent
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#of(java.time.temporal.ChronoUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#of(java.time.temporal.ChronoUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.ChronoUnit"/></param>
         /// <returns><see cref="Java.Util.Concurrent.TimeUnit"/></returns>
@@ -93,7 +93,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "of", "(Ljava/time/temporal/ChronoUnit;)Ljava/util/concurrent/TimeUnit;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Concurrent.TimeUnit"/></returns>
@@ -102,7 +102,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/util/concurrent/TimeUnit;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.TimeUnit"/></returns>
         public static Java.Util.Concurrent.TimeUnit[] Values()
@@ -114,7 +114,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#toChronoUnit()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#toChronoUnit()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.ChronoUnit"/></returns>
         public Java.Time.Temporal.ChronoUnit ToChronoUnit()
@@ -122,7 +122,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Time.Temporal.ChronoUnit>("toChronoUnit", "()Ljava/time/temporal/ChronoUnit;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#convert(java.time.Duration)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#convert(java.time.Duration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Duration"/></param>
         /// <returns><see cref="long"/></returns>
@@ -131,7 +131,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<long>("convert", "(Ljava/time/Duration;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#convert(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#convert(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -141,7 +141,7 @@ namespace Java.Util.Concurrent
             return IExecute<long>("convert", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#toDays(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#toDays(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -150,7 +150,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<long>("toDays", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#toHours(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#toHours(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -159,7 +159,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<long>("toHours", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#toMicros(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#toMicros(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -168,7 +168,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<long>("toMicros", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#toMillis(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#toMillis(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -177,7 +177,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<long>("toMillis", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#toMinutes(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#toMinutes(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -186,7 +186,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<long>("toMinutes", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#toNanos(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#toNanos(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -195,7 +195,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<long>("toNanos", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#toSeconds(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#toSeconds(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -204,7 +204,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<long>("toSeconds", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#sleep(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#sleep(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -213,7 +213,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("sleep", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#timedJoin(java.lang.Thread,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#timedJoin(java.lang.Thread,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -223,7 +223,7 @@ namespace Java.Util.Concurrent
             IExecute("timedJoin", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html#timedWait(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html#timedWait(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>

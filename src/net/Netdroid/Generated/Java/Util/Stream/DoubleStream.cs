@@ -60,7 +60,7 @@ namespace Java.Util.Stream
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#concat(java.util.stream.DoubleStream,java.util.stream.DoubleStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#concat(java.util.stream.DoubleStream,java.util.stream.DoubleStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Stream.DoubleStream"/></param>
         /// <param name="arg1"><see cref="Java.Util.Stream.DoubleStream"/></param>
@@ -70,7 +70,7 @@ namespace Java.Util.Stream
             return SExecute<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "concat", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#empty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#empty()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Empty()
@@ -78,7 +78,7 @@ namespace Java.Util.Stream
             return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "empty", "()Ljava/util/stream/DoubleStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#generate(java.util.function.DoubleSupplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#generate(java.util.function.DoubleSupplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleSupplier"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
@@ -87,7 +87,7 @@ namespace Java.Util.Stream
             return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "generate", "(Ljava/util/function/DoubleSupplier;)Ljava/util/stream/DoubleStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#iterate(double,java.util.function.DoublePredicate,java.util.function.DoubleUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#iterate(double,java.util.function.DoublePredicate,java.util.function.DoubleUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.DoublePredicate"/></param>
@@ -98,7 +98,7 @@ namespace Java.Util.Stream
             return SExecute<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "iterate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#iterate(double,java.util.function.DoubleUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#iterate(double,java.util.function.DoubleUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
@@ -108,7 +108,7 @@ namespace Java.Util.Stream
             return SExecute<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "iterate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#of(double[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#of(double[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
@@ -117,7 +117,7 @@ namespace Java.Util.Stream
             if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "of", "([D)Ljava/util/stream/DoubleStream;"); else return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "of", "([D)Ljava/util/stream/DoubleStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#of(double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#of(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
@@ -130,7 +130,7 @@ namespace Java.Util.Stream
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#collect(java.util.function.Supplier,java.util.function.ObjDoubleConsumer,java.util.function.BiConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#collect(java.util.function.Supplier,java.util.function.ObjDoubleConsumer,java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.ObjDoubleConsumer"/></param>
@@ -142,18 +142,18 @@ namespace Java.Util.Stream
             return IExecute<R>("collect", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#mapToObj(java.util.function.DoubleFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#mapToObj(java.util.function.DoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleFunction"/></param>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.DoubleFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU: U
+        public Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.DoubleFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU : U
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream<U>>("mapToObj", "(Ljava/util/function/DoubleFunction;)Ljava/util/stream/Stream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#allMatch(java.util.function.DoublePredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#allMatch(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -162,7 +162,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<bool>("allMatch", "(Ljava/util/function/DoublePredicate;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#anyMatch(java.util.function.DoublePredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#anyMatch(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -171,7 +171,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<bool>("anyMatch", "(Ljava/util/function/DoublePredicate;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#noneMatch(java.util.function.DoublePredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#noneMatch(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -180,7 +180,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<bool>("noneMatch", "(Ljava/util/function/DoublePredicate;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#reduce(double,java.util.function.DoubleBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#reduce(double,java.util.function.DoubleBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
@@ -190,7 +190,7 @@ namespace Java.Util.Stream
             return IExecute<double>("reduce", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#sum()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#sum()"/>
         /// </summary>
         /// <returns><see cref="double"/></returns>
         public double Sum()
@@ -198,7 +198,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<double>("sum", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#toArray()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#toArray()"/>
         /// </summary>
         /// <returns><see cref="double"/></returns>
         public double[] ToArray()
@@ -206,7 +206,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignatureArray<double>("toArray", "()[D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#summaryStatistics()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#summaryStatistics()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.DoubleSummaryStatistics"/></returns>
         public Java.Util.DoubleSummaryStatistics SummaryStatistics()
@@ -214,7 +214,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.DoubleSummaryStatistics>("summaryStatistics", "()Ljava/util/DoubleSummaryStatistics;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#average()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#average()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public Java.Util.OptionalDouble Average()
@@ -222,7 +222,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalDouble>("average", "()Ljava/util/OptionalDouble;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#findAny()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#findAny()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public Java.Util.OptionalDouble FindAny()
@@ -230,7 +230,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalDouble>("findAny", "()Ljava/util/OptionalDouble;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#findFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#findFirst()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public Java.Util.OptionalDouble FindFirst()
@@ -238,7 +238,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalDouble>("findFirst", "()Ljava/util/OptionalDouble;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#max()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#max()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public Java.Util.OptionalDouble Max()
@@ -246,7 +246,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalDouble>("max", "()Ljava/util/OptionalDouble;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#min()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#min()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public Java.Util.OptionalDouble Min()
@@ -254,7 +254,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalDouble>("min", "()Ljava/util/OptionalDouble;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#reduce(java.util.function.DoubleBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#reduce(java.util.function.DoubleBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
@@ -263,7 +263,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalDouble>("reduce", "(Ljava/util/function/DoubleBinaryOperator;)Ljava/util/OptionalDouble;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#distinct()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#distinct()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Distinct()
@@ -271,7 +271,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("distinct", "()Ljava/util/stream/DoubleStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#filter(java.util.function.DoublePredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#filter(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
@@ -280,17 +280,17 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("filter", "(Ljava/util/function/DoublePredicate;)Ljava/util/stream/DoubleStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#flatMap(java.util.function.DoubleFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#flatMap(java.util.function.DoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleFunction"/></param>
         /// <typeparam name="Arg0ExtendsJava_Util_Stream_DoubleStream"><see cref="Java.Util.Stream.DoubleStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
-        public Java.Util.Stream.DoubleStream FlatMap<Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.DoubleFunction<Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0ExtendsJava_Util_Stream_DoubleStream: Java.Util.Stream.DoubleStream
+        public Java.Util.Stream.DoubleStream FlatMap<Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.DoubleFunction<Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0ExtendsJava_Util_Stream_DoubleStream : Java.Util.Stream.DoubleStream
         {
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("flatMap", "(Ljava/util/function/DoubleFunction;)Ljava/util/stream/DoubleStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#limit(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#limit(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
@@ -299,7 +299,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("limit", "(J)Ljava/util/stream/DoubleStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#map(java.util.function.DoubleUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#map(java.util.function.DoubleUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
@@ -308,7 +308,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("map", "(Ljava/util/function/DoubleUnaryOperator;)Ljava/util/stream/DoubleStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#peek(java.util.function.DoubleConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#peek(java.util.function.DoubleConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
@@ -317,7 +317,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("peek", "(Ljava/util/function/DoubleConsumer;)Ljava/util/stream/DoubleStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#skip(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#skip(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
@@ -326,7 +326,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("skip", "(J)Ljava/util/stream/DoubleStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#sorted()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#sorted()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Sorted()
@@ -334,7 +334,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("sorted", "()Ljava/util/stream/DoubleStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#mapToInt(java.util.function.DoubleToIntFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#mapToInt(java.util.function.DoubleToIntFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleToIntFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
@@ -343,7 +343,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("mapToInt", "(Ljava/util/function/DoubleToIntFunction;)Ljava/util/stream/IntStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#mapToLong(java.util.function.DoubleToLongFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#mapToLong(java.util.function.DoubleToLongFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleToLongFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
@@ -352,7 +352,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("mapToLong", "(Ljava/util/function/DoubleToLongFunction;)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#boxed()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#boxed()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Lang.Double> Boxed()
@@ -360,7 +360,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.Double>>("boxed", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#count()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#count()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long Count()
@@ -368,7 +368,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<long>("count", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#forEach(java.util.function.DoubleConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#forEach(java.util.function.DoubleConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
         public void ForEach(Java.Util.Function.DoubleConsumer arg0)
@@ -376,7 +376,7 @@ namespace Java.Util.Stream
             IExecuteWithSignature("forEach", "(Ljava/util/function/DoubleConsumer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#forEachOrdered(java.util.function.DoubleConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#forEachOrdered(java.util.function.DoubleConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
         public void ForEachOrdered(Java.Util.Function.DoubleConsumer arg0)
@@ -384,7 +384,7 @@ namespace Java.Util.Stream
             IExecuteWithSignature("forEachOrdered", "(Ljava/util/function/DoubleConsumer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
@@ -392,7 +392,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#spliterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#spliterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator Spliterator()
@@ -400,7 +400,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Spliterator>("spliterator", "()Ljava/util/Spliterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#parallel()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#parallel()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         public Java.Util.Stream.BaseStream Parallel()
@@ -408,7 +408,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.BaseStream>("parallel", "()Ljava/util/stream/BaseStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#sequential()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#sequential()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         public Java.Util.Stream.BaseStream Sequential()
@@ -416,7 +416,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.BaseStream>("sequential", "()Ljava/util/stream/BaseStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#dropWhile(java.util.function.DoublePredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#dropWhile(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
@@ -425,16 +425,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("dropWhile", "(Ljava/util/function/DoublePredicate;)Ljava/util/stream/DoubleStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#mapMulti(java.util.stream.DoubleStream.DoubleMapMultiConsumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Stream.DoubleStream.DoubleMapMultiConsumer"/></param>
-        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
-        public Java.Util.Stream.DoubleStream MapMulti(Java.Util.Stream.DoubleStream.DoubleMapMultiConsumer arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("mapMulti", "(Ljava/util/stream/DoubleStream$DoubleMapMultiConsumer;)Ljava/util/stream/DoubleStream;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/DoubleStream.html#takeWhile(java.util.function.DoublePredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#takeWhile(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>

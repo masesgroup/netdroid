@@ -52,32 +52,20 @@ namespace Android.Adservices.Common
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/common/AdData.html#getAdCounterKeys()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/common/AdData.html#getAdFilters()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.Integer> AdCounterKeys
+        /// <returns><see cref="Android.Adservices.Common.AdFilters"/></returns>
+        public Android.Adservices.Common.AdFilters GetAdFilters()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>("getAdCounterKeys", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Android.Adservices.Common.AdFilters>("getAdFilters", "()Landroid/adservices/common/AdFilters;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/common/AdData.html#getAdFilters()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/common/AdData.html#getRenderUri()"/>
         /// </summary>
-        public Android.Adservices.Common.AdFilters AdFilters
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetRenderUri()
         {
-            get { return IExecuteWithSignature<Android.Adservices.Common.AdFilters>("getAdFilters", "()Landroid/adservices/common/AdFilters;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/common/AdData.html#getMetadata()"/> 
-        /// </summary>
-        public Java.Lang.String Metadata
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMetadata", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/common/AdData.html#getRenderUri()"/> 
-        /// </summary>
-        public Android.Net.Uri RenderUri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getRenderUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getRenderUri", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/common/AdData.html#describeContents()"/>
@@ -86,6 +74,22 @@ namespace Android.Adservices.Common
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/common/AdData.html#getMetadata()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMetadata()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMetadata", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/common/AdData.html#getAdCounterKeys()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.Integer> GetAdCounterKeys()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>("getAdCounterKeys", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/common/AdData.html#writeToParcel(android.os.Parcel,int)"/>

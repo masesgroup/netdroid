@@ -46,11 +46,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/OvulationTestRecord.html#getResult()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/OvulationTestRecord.html#getResult()"/>
         /// </summary>
-        public int Result
+        /// <returns><see cref="int"/></returns>
+        public int GetResult()
         {
-            get { return IExecuteWithSignature<int>("getResult", "()I"); }
+            return IExecuteWithSignature<int>("getResult", "()I");
         }
 
         #endregion

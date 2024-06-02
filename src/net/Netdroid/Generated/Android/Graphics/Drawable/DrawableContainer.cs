@@ -122,76 +122,6 @@ namespace Android.Graphics.Drawable
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getChildCount()"/> 
-            /// </summary>
-            public int ChildCount
-            {
-                get { return IExecuteWithSignature<int>("getChildCount", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getChildren()"/> 
-            /// </summary>
-            public Android.Graphics.Drawable.Drawable[] Children
-            {
-                get { return IExecuteWithSignatureArray<Android.Graphics.Drawable.Drawable>("getChildren", "()[Landroid/graphics/drawable/Drawable;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getConstantHeight()"/> 
-            /// </summary>
-            public int ConstantHeight
-            {
-                get { return IExecuteWithSignature<int>("getConstantHeight", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getConstantMinimumHeight()"/> 
-            /// </summary>
-            public int ConstantMinimumHeight
-            {
-                get { return IExecuteWithSignature<int>("getConstantMinimumHeight", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getConstantMinimumWidth()"/> 
-            /// </summary>
-            public int ConstantMinimumWidth
-            {
-                get { return IExecuteWithSignature<int>("getConstantMinimumWidth", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getConstantPadding()"/> 
-            /// </summary>
-            public Android.Graphics.Rect ConstantPadding
-            {
-                get { return IExecuteWithSignature<Android.Graphics.Rect>("getConstantPadding", "()Landroid/graphics/Rect;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getConstantWidth()"/> 
-            /// </summary>
-            public int ConstantWidth
-            {
-                get { return IExecuteWithSignature<int>("getConstantWidth", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getEnterFadeDuration()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#setEnterFadeDuration(int)"/>
-            /// </summary>
-            public int EnterFadeDuration
-            {
-                get { return IExecuteWithSignature<int>("getEnterFadeDuration", "()I"); } set { IExecuteWithSignature("setEnterFadeDuration", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getExitFadeDuration()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#setExitFadeDuration(int)"/>
-            /// </summary>
-            public int ExitFadeDuration
-            {
-                get { return IExecuteWithSignature<int>("getExitFadeDuration", "()I"); } set { IExecuteWithSignature("setExitFadeDuration", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getOpacity()"/> 
-            /// </summary>
-            public int Opacity
-            {
-                get { return IExecuteWithSignature<int>("getOpacity", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getChild(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -199,6 +129,22 @@ namespace Android.Graphics.Drawable
             public Android.Graphics.Drawable.Drawable GetChild(int arg0)
             {
                 return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getChild", "(I)Landroid/graphics/drawable/Drawable;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getChildren()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+            public Android.Graphics.Drawable.Drawable[] GetChildren()
+            {
+                return IExecuteWithSignatureArray<Android.Graphics.Drawable.Drawable>("getChildren", "()[Landroid/graphics/drawable/Drawable;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getConstantPadding()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Graphics.Rect"/></returns>
+            public Android.Graphics.Rect GetConstantPadding()
+            {
+                return IExecuteWithSignature<Android.Graphics.Rect>("getConstantPadding", "()Landroid/graphics/Rect;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#isConstantSize()"/>
@@ -226,12 +172,92 @@ namespace Android.Graphics.Drawable
                 return IExecuteWithSignature<int>("addChild", "(Landroid/graphics/drawable/Drawable;)I", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getChildCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetChildCount()
+            {
+                return IExecuteWithSignature<int>("getChildCount", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getConstantHeight()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetConstantHeight()
+            {
+                return IExecuteWithSignature<int>("getConstantHeight", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getConstantMinimumHeight()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetConstantMinimumHeight()
+            {
+                return IExecuteWithSignature<int>("getConstantMinimumHeight", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getConstantMinimumWidth()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetConstantMinimumWidth()
+            {
+                return IExecuteWithSignature<int>("getConstantMinimumWidth", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getConstantWidth()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetConstantWidth()
+            {
+                return IExecuteWithSignature<int>("getConstantWidth", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getEnterFadeDuration()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetEnterFadeDuration()
+            {
+                return IExecuteWithSignature<int>("getEnterFadeDuration", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getExitFadeDuration()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetExitFadeDuration()
+            {
+                return IExecuteWithSignature<int>("getExitFadeDuration", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#getOpacity()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetOpacity()
+            {
+                return IExecuteWithSignature<int>("getOpacity", "()I");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#setConstantSize(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             public void SetConstantSize(bool arg0)
             {
                 IExecuteWithSignature("setConstantSize", "(Z)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#setEnterFadeDuration(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void SetEnterFadeDuration(int arg0)
+            {
+                IExecuteWithSignature("setEnterFadeDuration", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#setExitFadeDuration(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void SetExitFadeDuration(int arg0)
+            {
+                IExecuteWithSignature("setExitFadeDuration", "(I)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/drawable/DrawableContainer.DrawableContainerState.html#setVariablePadding(boolean)"/>

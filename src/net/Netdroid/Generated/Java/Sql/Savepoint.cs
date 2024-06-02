@@ -64,18 +64,22 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Savepoint.html#getSavepointId()"/> 
+        /// <see href="https://developer.android.com/reference/java/sql/Savepoint.html#getSavepointId()"/>
         /// </summary>
-        public int SavepointId
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetSavepointId()
         {
-            get { return IExecuteWithSignature<int>("getSavepointId", "()I"); }
+            return IExecuteWithSignature<int>("getSavepointId", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Savepoint.html#getSavepointName()"/> 
+        /// <see href="https://developer.android.com/reference/java/sql/Savepoint.html#getSavepointName()"/>
         /// </summary>
-        public Java.Lang.String SavepointName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Lang.String GetSavepointName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSavepointName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSavepointName", "()Ljava/lang/String;");
         }
 
         #endregion

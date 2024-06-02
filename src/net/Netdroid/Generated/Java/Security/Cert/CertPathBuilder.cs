@@ -42,14 +42,15 @@ namespace Java.Security.Cert
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathBuilder.html#getDefaultType()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPathBuilder.html#getDefaultType()"/>
         /// </summary>
-        public static Java.Lang.String DefaultType
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GetDefaultType()
         {
-            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultType", "()Ljava/lang/String;"); }
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultType", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathBuilder.html#getInstance(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPathBuilder.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -61,7 +62,7 @@ namespace Java.Security.Cert
             return SExecute<Java.Security.Cert.CertPathBuilder>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathBuilder.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPathBuilder.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
@@ -72,7 +73,7 @@ namespace Java.Security.Cert
             return SExecute<Java.Security.Cert.CertPathBuilder>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathBuilder.html#getInstance(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPathBuilder.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.Cert.CertPathBuilder"/></returns>
@@ -86,28 +87,15 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathBuilder.html#getAlgorithm()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPathBuilder.html#getAlgorithm()"/>
         /// </summary>
-        public Java.Lang.String Algorithm
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlgorithm()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathBuilder.html#getProvider()"/> 
-        /// </summary>
-        public Java.Security.Provider Provider
-        {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathBuilder.html#getRevocationChecker()"/> 
-        /// </summary>
-        public Java.Security.Cert.CertPathChecker RevocationChecker
-        {
-            get { return IExecuteWithSignature<Java.Security.Cert.CertPathChecker>("getRevocationChecker", "()Ljava/security/cert/CertPathChecker;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathBuilder.html#build(java.security.cert.CertPathParameters)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPathBuilder.html#build(java.security.cert.CertPathParameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.CertPathParameters"/></param>
         /// <returns><see cref="Java.Security.Cert.CertPathBuilderResult"/></returns>
@@ -116,6 +104,22 @@ namespace Java.Security.Cert
         public Java.Security.Cert.CertPathBuilderResult Build(Java.Security.Cert.CertPathParameters arg0)
         {
             return IExecuteWithSignature<Java.Security.Cert.CertPathBuilderResult>("build", "(Ljava/security/cert/CertPathParameters;)Ljava/security/cert/CertPathBuilderResult;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPathBuilder.html#getRevocationChecker()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Cert.CertPathChecker"/></returns>
+        public Java.Security.Cert.CertPathChecker GetRevocationChecker()
+        {
+            return IExecuteWithSignature<Java.Security.Cert.CertPathChecker>("getRevocationChecker", "()Ljava/security/cert/CertPathChecker;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPathBuilder.html#getProvider()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public Java.Security.Provider GetProvider()
+        {
+            return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;");
         }
 
         #endregion

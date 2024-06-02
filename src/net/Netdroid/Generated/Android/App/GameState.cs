@@ -102,27 +102,6 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/GameState.html#getLabel()"/> 
-        /// </summary>
-        public int Label
-        {
-            get { return IExecuteWithSignature<int>("getLabel", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/GameState.html#getMode()"/> 
-        /// </summary>
-        public int Mode
-        {
-            get { return IExecuteWithSignature<int>("getMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/GameState.html#getQuality()"/> 
-        /// </summary>
-        public int Quality
-        {
-            get { return IExecuteWithSignature<int>("getQuality", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/GameState.html#isLoading()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -137,6 +116,30 @@ namespace Android.App
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/GameState.html#getLabel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLabel()
+        {
+            return IExecuteWithSignature<int>("getLabel", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/GameState.html#getMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMode()
+        {
+            return IExecuteWithSignature<int>("getMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/GameState.html#getQuality()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetQuality()
+        {
+            return IExecuteWithSignature<int>("getQuality", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/GameState.html#writeToParcel(android.os.Parcel,int)"/>

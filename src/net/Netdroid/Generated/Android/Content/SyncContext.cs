@@ -46,11 +46,12 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/SyncContext.html#getSyncContextBinder()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/SyncContext.html#getSyncContextBinder()"/>
         /// </summary>
-        public Android.Os.IBinder SyncContextBinder
+        /// <returns><see cref="Android.Os.IBinder"/></returns>
+        public Android.Os.IBinder GetSyncContextBinder()
         {
-            get { return IExecuteWithSignature<Android.Os.IBinder>("getSyncContextBinder", "()Landroid/os/IBinder;"); }
+            return IExecuteWithSignature<Android.Os.IBinder>("getSyncContextBinder", "()Landroid/os/IBinder;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/SyncContext.html#onFinished(android.content.SyncResult)"/>

@@ -71,25 +71,34 @@ namespace Android.Media.Audiofx
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/BassBoost.html#getProperties()"/> <see href="https://developer.android.com/reference/android/media/audiofx/BassBoost.html#setProperties(android.media.audiofx.BassBoost.Settings)"/>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/BassBoost.html#getProperties()"/>
         /// </summary>
-        public Android.Media.Audiofx.BassBoost.Settings Properties
+        /// <returns><see cref="Android.Media.Audiofx.BassBoost.Settings"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public Android.Media.Audiofx.BassBoost.Settings GetProperties()
         {
-            get { return IExecuteWithSignature<Android.Media.Audiofx.BassBoost.Settings>("getProperties", "()Landroid/media/audiofx/BassBoost$Settings;"); } set { IExecuteWithSignature("setProperties", "(Landroid/media/audiofx/BassBoost$Settings;)V", value); }
+            return IExecuteWithSignature<Android.Media.Audiofx.BassBoost.Settings>("getProperties", "()Landroid/media/audiofx/BassBoost$Settings;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/BassBoost.html#getRoundedStrength()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/BassBoost.html#getStrengthSupported()"/>
         /// </summary>
-        public short RoundedStrength
+        /// <returns><see cref="bool"/></returns>
+        public bool GetStrengthSupported()
         {
-            get { return IExecuteWithSignature<short>("getRoundedStrength", "()S"); }
+            return IExecuteWithSignature<bool>("getStrengthSupported", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/BassBoost.html#getStrengthSupported()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/BassBoost.html#getRoundedStrength()"/>
         /// </summary>
-        public bool StrengthSupported
+        /// <returns><see cref="short"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public short GetRoundedStrength()
         {
-            get { return IExecuteWithSignature<bool>("getStrengthSupported", "()Z"); }
+            return IExecuteWithSignature<short>("getRoundedStrength", "()S");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/BassBoost.html#setParameterListener(android.media.audiofx.BassBoost.OnParameterChangeListener)"/>
@@ -98,6 +107,17 @@ namespace Android.Media.Audiofx
         public void SetParameterListener(Android.Media.Audiofx.BassBoost.OnParameterChangeListener arg0)
         {
             IExecuteWithSignature("setParameterListener", "(Landroid/media/audiofx/BassBoost$OnParameterChangeListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/BassBoost.html#setProperties(android.media.audiofx.BassBoost.Settings)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.Audiofx.BassBoost.Settings"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public void SetProperties(Android.Media.Audiofx.BassBoost.Settings arg0)
+        {
+            IExecuteWithSignature("setProperties", "(Landroid/media/audiofx/BassBoost$Settings;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/BassBoost.html#setStrength(short)"/>
@@ -139,7 +159,7 @@ namespace Android.Media.Audiofx
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onParameterChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.BassBoost>>>(OnParameterChangeEventHandler));
+                AddEventHandler("onParameterChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.BassBoost>>>(OnParameterChangeEventHandler));
 
             }
 
@@ -147,7 +167,7 @@ namespace Android.Media.Audiofx
             /// Handler for <see href="https://developer.android.com/reference/android/media/audiofx/BassBoost.OnParameterChangeListener.html#onParameterChange(android.media.audiofx.BassBoost,int,int,short)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnParameterChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.Audiofx.BassBoost, int, int, short> OnOnParameterChange { get; set; } = null;
+            public global::System.Action<Android.Media.Audiofx.BassBoost, int, int, short> OnOnParameterChange { get; set; } = null;
 
             void OnParameterChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.BassBoost>> data)
             {

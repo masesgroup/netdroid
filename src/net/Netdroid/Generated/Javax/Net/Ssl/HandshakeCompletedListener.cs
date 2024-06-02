@@ -27,7 +27,7 @@ namespace Javax.Net.Ssl
 {
     #region IHandshakeCompletedListener
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.javax.net.ssl.HandshakeCompletedListener implementing <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedListener.html"/>
+    /// .NET interface for org.mases.netdroid.generated.javax.net.ssl.HandshakeCompletedListener implementing <see href="https://developer.android.com/reference/javax/net/ssl/HandshakeCompletedListener.html"/>
     /// </summary>
     public partial interface IHandshakeCompletedListener
     {
@@ -68,15 +68,15 @@ namespace Javax.Net.Ssl
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("handshakeCompleted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.HandshakeCompletedEvent>>>(HandshakeCompletedEventHandler));
+            AddEventHandler("handshakeCompleted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.HandshakeCompletedEvent>>>(HandshakeCompletedEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)"/>
+        /// Handler for <see href="https://developer.android.com/reference/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnHandshakeCompleted"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Net.Ssl.HandshakeCompletedEvent> OnHandshakeCompleted { get; set; } = null;
+        public global::System.Action<Javax.Net.Ssl.HandshakeCompletedEvent> OnHandshakeCompleted { get; set; } = null;
 
         void HandshakeCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.HandshakeCompletedEvent>> data)
         {
@@ -85,7 +85,7 @@ namespace Javax.Net.Ssl
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Net.Ssl.HandshakeCompletedEvent"/></param>
         public virtual void HandshakeCompleted(Javax.Net.Ssl.HandshakeCompletedEvent arg0)
@@ -124,7 +124,7 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Net.Ssl.HandshakeCompletedEvent"/></param>
         public override void HandshakeCompleted(Javax.Net.Ssl.HandshakeCompletedEvent arg0)

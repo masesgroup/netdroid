@@ -72,18 +72,20 @@ namespace Android.Service.Autofill
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/InlinePresentation.html#getInlinePresentationSpec()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/InlinePresentation.html#getSlice()"/>
         /// </summary>
-        public Android.Widget.Inline.InlinePresentationSpec InlinePresentationSpec
+        /// <returns><see cref="Android.App.Slice.Slice"/></returns>
+        public Android.App.Slice.Slice GetSlice()
         {
-            get { return IExecuteWithSignature<Android.Widget.Inline.InlinePresentationSpec>("getInlinePresentationSpec", "()Landroid/widget/inline/InlinePresentationSpec;"); }
+            return IExecuteWithSignature<Android.App.Slice.Slice>("getSlice", "()Landroid/app/slice/Slice;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/InlinePresentation.html#getSlice()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/InlinePresentation.html#getInlinePresentationSpec()"/>
         /// </summary>
-        public Android.App.Slice.Slice Slice
+        /// <returns><see cref="Android.Widget.Inline.InlinePresentationSpec"/></returns>
+        public Android.Widget.Inline.InlinePresentationSpec GetInlinePresentationSpec()
         {
-            get { return IExecuteWithSignature<Android.App.Slice.Slice>("getSlice", "()Landroid/app/slice/Slice;"); }
+            return IExecuteWithSignature<Android.Widget.Inline.InlinePresentationSpec>("getInlinePresentationSpec", "()Landroid/widget/inline/InlinePresentationSpec;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/autofill/InlinePresentation.html#isPinned()"/>

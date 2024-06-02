@@ -62,7 +62,7 @@ namespace Org.Xml.Sax
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/HandlerBase.html#resolveEntity(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#resolveEntity(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -73,7 +73,7 @@ namespace Org.Xml.Sax
             return IExecute<Org.Xml.Sax.InputSource>("resolveEntity", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/HandlerBase.html#characters(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#characters(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -84,7 +84,7 @@ namespace Org.Xml.Sax
             IExecute("characters", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/HandlerBase.html#endDocument()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#endDocument()"/>
         /// </summary>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndDocument()
@@ -92,7 +92,7 @@ namespace Org.Xml.Sax
             IExecuteWithSignature("endDocument", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/HandlerBase.html#endElement(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#endElement(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -101,7 +101,7 @@ namespace Org.Xml.Sax
             IExecuteWithSignature("endElement", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/HandlerBase.html#error(org.xml.sax.SAXParseException)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#error(org.xml.sax.SAXParseException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -110,7 +110,7 @@ namespace Org.Xml.Sax
             IExecuteWithSignature("error", "(Lorg/xml/sax/SAXParseException;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/HandlerBase.html#fatalError(org.xml.sax.SAXParseException)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#fatalError(org.xml.sax.SAXParseException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -119,7 +119,7 @@ namespace Org.Xml.Sax
             IExecuteWithSignature("fatalError", "(Lorg/xml/sax/SAXParseException;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/HandlerBase.html#ignorableWhitespace(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#ignorableWhitespace(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -130,7 +130,7 @@ namespace Org.Xml.Sax
             IExecute("ignorableWhitespace", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/HandlerBase.html#notationDecl(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#notationDecl(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -140,7 +140,7 @@ namespace Org.Xml.Sax
             IExecute("notationDecl", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/HandlerBase.html#processingInstruction(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#processingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -150,7 +150,7 @@ namespace Org.Xml.Sax
             IExecute("processingInstruction", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/HandlerBase.html#setDocumentLocator(org.xml.sax.Locator)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#setDocumentLocator(org.xml.sax.Locator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
         public void SetDocumentLocator(Org.Xml.Sax.Locator arg0)
@@ -158,7 +158,7 @@ namespace Org.Xml.Sax
             IExecuteWithSignature("setDocumentLocator", "(Lorg/xml/sax/Locator;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/HandlerBase.html#startDocument()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#startDocument()"/>
         /// </summary>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartDocument()
@@ -166,7 +166,7 @@ namespace Org.Xml.Sax
             IExecuteWithSignature("startDocument", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/HandlerBase.html#startElement(java.lang.String,org.xml.sax.AttributeList)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#startElement(java.lang.String,org.xml.sax.AttributeList)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Org.Xml.Sax.AttributeList"/></param>
@@ -176,7 +176,7 @@ namespace Org.Xml.Sax
             IExecute("startElement", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/HandlerBase.html#unparsedEntityDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#unparsedEntityDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -187,7 +187,7 @@ namespace Org.Xml.Sax
             IExecute("unparsedEntityDecl", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/HandlerBase.html#warning(org.xml.sax.SAXParseException)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/HandlerBase.html#warning(org.xml.sax.SAXParseException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>

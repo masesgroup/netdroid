@@ -60,19 +60,20 @@ namespace Android.Telephony.Euicc
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccInfo.html#getOsVersion()"/> 
-        /// </summary>
-        public Java.Lang.String OsVersion
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOsVersion", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccInfo.html#getOsVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOsVersion()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOsVersion", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/euicc/EuiccInfo.html#writeToParcel(android.os.Parcel,int)"/>

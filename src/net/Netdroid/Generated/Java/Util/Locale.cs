@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#%3Cinit%3E(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -40,7 +40,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -49,7 +49,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public Locale(Java.Lang.String arg0)
@@ -73,145 +73,145 @@ namespace Java.Util
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#PRIVATE_USE_EXTENSION"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#PRIVATE_USE_EXTENSION"/>
         /// </summary>
         public static char PRIVATE_USE_EXTENSION { get { if (!_PRIVATE_USE_EXTENSIONReady) { _PRIVATE_USE_EXTENSIONContent = SGetField<char>(LocalBridgeClazz, "PRIVATE_USE_EXTENSION"); _PRIVATE_USE_EXTENSIONReady = true; } return _PRIVATE_USE_EXTENSIONContent; } }
         private static char _PRIVATE_USE_EXTENSIONContent = default;
         private static bool _PRIVATE_USE_EXTENSIONReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#UNICODE_LOCALE_EXTENSION"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#UNICODE_LOCALE_EXTENSION"/>
         /// </summary>
         public static char UNICODE_LOCALE_EXTENSION { get { if (!_UNICODE_LOCALE_EXTENSIONReady) { _UNICODE_LOCALE_EXTENSIONContent = SGetField<char>(LocalBridgeClazz, "UNICODE_LOCALE_EXTENSION"); _UNICODE_LOCALE_EXTENSIONReady = true; } return _UNICODE_LOCALE_EXTENSIONContent; } }
         private static char _UNICODE_LOCALE_EXTENSIONContent = default;
         private static bool _UNICODE_LOCALE_EXTENSIONReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#CANADA"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#CANADA"/>
         /// </summary>
         public static Java.Util.Locale CANADA { get { if (!_CANADAReady) { _CANADAContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "CANADA"); _CANADAReady = true; } return _CANADAContent; } }
         private static Java.Util.Locale _CANADAContent = default;
         private static bool _CANADAReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#CANADA_FRENCH"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#CANADA_FRENCH"/>
         /// </summary>
         public static Java.Util.Locale CANADA_FRENCH { get { if (!_CANADA_FRENCHReady) { _CANADA_FRENCHContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "CANADA_FRENCH"); _CANADA_FRENCHReady = true; } return _CANADA_FRENCHContent; } }
         private static Java.Util.Locale _CANADA_FRENCHContent = default;
         private static bool _CANADA_FRENCHReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#CHINA"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#CHINA"/>
         /// </summary>
         public static Java.Util.Locale CHINA { get { if (!_CHINAReady) { _CHINAContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "CHINA"); _CHINAReady = true; } return _CHINAContent; } }
         private static Java.Util.Locale _CHINAContent = default;
         private static bool _CHINAReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#CHINESE"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#CHINESE"/>
         /// </summary>
         public static Java.Util.Locale CHINESE { get { if (!_CHINESEReady) { _CHINESEContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "CHINESE"); _CHINESEReady = true; } return _CHINESEContent; } }
         private static Java.Util.Locale _CHINESEContent = default;
         private static bool _CHINESEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#ENGLISH"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#ENGLISH"/>
         /// </summary>
         public static Java.Util.Locale ENGLISH { get { if (!_ENGLISHReady) { _ENGLISHContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "ENGLISH"); _ENGLISHReady = true; } return _ENGLISHContent; } }
         private static Java.Util.Locale _ENGLISHContent = default;
         private static bool _ENGLISHReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#FRANCE"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#FRANCE"/>
         /// </summary>
         public static Java.Util.Locale FRANCE { get { if (!_FRANCEReady) { _FRANCEContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "FRANCE"); _FRANCEReady = true; } return _FRANCEContent; } }
         private static Java.Util.Locale _FRANCEContent = default;
         private static bool _FRANCEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#FRENCH"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#FRENCH"/>
         /// </summary>
         public static Java.Util.Locale FRENCH { get { if (!_FRENCHReady) { _FRENCHContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "FRENCH"); _FRENCHReady = true; } return _FRENCHContent; } }
         private static Java.Util.Locale _FRENCHContent = default;
         private static bool _FRENCHReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#GERMAN"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#GERMAN"/>
         /// </summary>
         public static Java.Util.Locale GERMAN { get { if (!_GERMANReady) { _GERMANContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "GERMAN"); _GERMANReady = true; } return _GERMANContent; } }
         private static Java.Util.Locale _GERMANContent = default;
         private static bool _GERMANReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#GERMANY"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#GERMANY"/>
         /// </summary>
         public static Java.Util.Locale GERMANY { get { if (!_GERMANYReady) { _GERMANYContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "GERMANY"); _GERMANYReady = true; } return _GERMANYContent; } }
         private static Java.Util.Locale _GERMANYContent = default;
         private static bool _GERMANYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#ITALIAN"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#ITALIAN"/>
         /// </summary>
         public static Java.Util.Locale ITALIAN { get { if (!_ITALIANReady) { _ITALIANContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "ITALIAN"); _ITALIANReady = true; } return _ITALIANContent; } }
         private static Java.Util.Locale _ITALIANContent = default;
         private static bool _ITALIANReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#ITALY"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#ITALY"/>
         /// </summary>
         public static Java.Util.Locale ITALY { get { if (!_ITALYReady) { _ITALYContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "ITALY"); _ITALYReady = true; } return _ITALYContent; } }
         private static Java.Util.Locale _ITALYContent = default;
         private static bool _ITALYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#JAPAN"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#JAPAN"/>
         /// </summary>
         public static Java.Util.Locale JAPAN { get { if (!_JAPANReady) { _JAPANContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "JAPAN"); _JAPANReady = true; } return _JAPANContent; } }
         private static Java.Util.Locale _JAPANContent = default;
         private static bool _JAPANReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#JAPANESE"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#JAPANESE"/>
         /// </summary>
         public static Java.Util.Locale JAPANESE { get { if (!_JAPANESEReady) { _JAPANESEContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "JAPANESE"); _JAPANESEReady = true; } return _JAPANESEContent; } }
         private static Java.Util.Locale _JAPANESEContent = default;
         private static bool _JAPANESEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#KOREA"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#KOREA"/>
         /// </summary>
         public static Java.Util.Locale KOREA { get { if (!_KOREAReady) { _KOREAContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "KOREA"); _KOREAReady = true; } return _KOREAContent; } }
         private static Java.Util.Locale _KOREAContent = default;
         private static bool _KOREAReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#KOREAN"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#KOREAN"/>
         /// </summary>
         public static Java.Util.Locale KOREAN { get { if (!_KOREANReady) { _KOREANContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "KOREAN"); _KOREANReady = true; } return _KOREANContent; } }
         private static Java.Util.Locale _KOREANContent = default;
         private static bool _KOREANReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#PRC"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#PRC"/>
         /// </summary>
         public static Java.Util.Locale PRC { get { if (!_PRCReady) { _PRCContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "PRC"); _PRCReady = true; } return _PRCContent; } }
         private static Java.Util.Locale _PRCContent = default;
         private static bool _PRCReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#ROOT"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#ROOT"/>
         /// </summary>
         public static Java.Util.Locale ROOT { get { if (!_ROOTReady) { _ROOTContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "ROOT"); _ROOTReady = true; } return _ROOTContent; } }
         private static Java.Util.Locale _ROOTContent = default;
         private static bool _ROOTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#SIMPLIFIED_CHINESE"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#SIMPLIFIED_CHINESE"/>
         /// </summary>
         public static Java.Util.Locale SIMPLIFIED_CHINESE { get { if (!_SIMPLIFIED_CHINESEReady) { _SIMPLIFIED_CHINESEContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "SIMPLIFIED_CHINESE"); _SIMPLIFIED_CHINESEReady = true; } return _SIMPLIFIED_CHINESEContent; } }
         private static Java.Util.Locale _SIMPLIFIED_CHINESEContent = default;
         private static bool _SIMPLIFIED_CHINESEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#TAIWAN"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#TAIWAN"/>
         /// </summary>
         public static Java.Util.Locale TAIWAN { get { if (!_TAIWANReady) { _TAIWANContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "TAIWAN"); _TAIWANReady = true; } return _TAIWANContent; } }
         private static Java.Util.Locale _TAIWANContent = default;
         private static bool _TAIWANReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#TRADITIONAL_CHINESE"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#TRADITIONAL_CHINESE"/>
         /// </summary>
         public static Java.Util.Locale TRADITIONAL_CHINESE { get { if (!_TRADITIONAL_CHINESEReady) { _TRADITIONAL_CHINESEContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "TRADITIONAL_CHINESE"); _TRADITIONAL_CHINESEReady = true; } return _TRADITIONAL_CHINESEContent; } }
         private static Java.Util.Locale _TRADITIONAL_CHINESEContent = default;
         private static bool _TRADITIONAL_CHINESEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#UK"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#UK"/>
         /// </summary>
         public static Java.Util.Locale UK { get { if (!_UKReady) { _UKContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "UK"); _UKReady = true; } return _UKContent; } }
         private static Java.Util.Locale _UKContent = default;
         private static bool _UKReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#US"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#US"/>
         /// </summary>
         public static Java.Util.Locale US { get { if (!_USReady) { _USContent = SGetField<Java.Util.Locale>(LocalBridgeClazz, "US"); _USReady = true; } return _USContent; } }
         private static Java.Util.Locale _USContent = default;
@@ -221,35 +221,7 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getAvailableLocales()"/> 
-        /// </summary>
-        public static Java.Util.Locale[] AvailableLocales
-        {
-            get { return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getDefault()"/> <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#setDefault(java.util.Locale)"/>
-        /// </summary>
-        public static Java.Util.Locale Default
-        {
-            get { return SExecuteWithSignature<Java.Util.Locale>(LocalBridgeClazz, "getDefault", "()Ljava/util/Locale;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/util/Locale;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getISOCountries()"/> 
-        /// </summary>
-        public static Java.Lang.String[] ISOCountries
-        {
-            get { return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getISOCountries", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getISOLanguages()"/> 
-        /// </summary>
-        public static Java.Lang.String[] ISOLanguages
-        {
-            get { return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getISOLanguages", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#lookupTag(java.util.List,java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#lookupTag(java.util.List,java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
@@ -259,7 +231,23 @@ namespace Java.Util
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "lookupTag", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#filterTags(java.util.List,java.util.Collection,java.util.Locale.FilteringMode)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getISOCountries()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String[] GetISOCountries()
+        {
+            return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getISOCountries", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getISOLanguages()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String[] GetISOLanguages()
+        {
+            return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getISOLanguages", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#filterTags(java.util.List,java.util.Collection,java.util.Locale.FilteringMode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
@@ -270,7 +258,7 @@ namespace Java.Util
             return SExecute<Java.Util.List<Java.Lang.String>>(LocalBridgeClazz, "filterTags", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#filterTags(java.util.List,java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#filterTags(java.util.List,java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
@@ -280,7 +268,7 @@ namespace Java.Util
             return SExecute<Java.Util.List<Java.Lang.String>>(LocalBridgeClazz, "filterTags", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#filter(java.util.List,java.util.Collection,java.util.Locale.FilteringMode)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#filter(java.util.List,java.util.Collection,java.util.Locale.FilteringMode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
@@ -291,7 +279,7 @@ namespace Java.Util
             return SExecute<Java.Util.List<Java.Util.Locale>>(LocalBridgeClazz, "filter", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#filter(java.util.List,java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#filter(java.util.List,java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
@@ -301,7 +289,7 @@ namespace Java.Util
             return SExecute<Java.Util.List<Java.Util.Locale>>(LocalBridgeClazz, "filter", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#forLanguageTag(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#forLanguageTag(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Locale"/></returns>
@@ -310,7 +298,15 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Locale>(LocalBridgeClazz, "forLanguageTag", "(Ljava/lang/String;)Ljava/util/Locale;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getDefault(java.util.Locale.Category)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getDefault()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public static Java.Util.Locale GetDefault()
+        {
+            return SExecuteWithSignature<Java.Util.Locale>(LocalBridgeClazz, "getDefault", "()Ljava/util/Locale;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getDefault(java.util.Locale.Category)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale.Category"/></param>
         /// <returns><see cref="Java.Util.Locale"/></returns>
@@ -319,7 +315,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Locale>(LocalBridgeClazz, "getDefault", "(Ljava/util/Locale$Category;)Ljava/util/Locale;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#lookup(java.util.List,java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#lookup(java.util.List,java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
@@ -329,7 +325,15 @@ namespace Java.Util
             return SExecute<Java.Util.Locale>(LocalBridgeClazz, "lookup", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getISOCountries(java.util.Locale.IsoCountryCode)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getAvailableLocales()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public static Java.Util.Locale[] GetAvailableLocales()
+        {
+            return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getISOCountries(java.util.Locale.IsoCountryCode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale.IsoCountryCode"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
@@ -338,7 +342,15 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getISOCountries", "(Ljava/util/Locale$IsoCountryCode;)Ljava/util/Set;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#setDefault(java.util.Locale.Category,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#setDefault(java.util.Locale)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        public static void SetDefault(Java.Util.Locale arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/util/Locale;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#setDefault(java.util.Locale.Category,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale.Category"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -351,105 +363,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getCountry()"/> 
-        /// </summary>
-        public Java.Lang.String Country
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCountry", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getDisplayCountry()"/> 
-        /// </summary>
-        public Java.Lang.String DisplayCountry
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayCountry", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getDisplayLanguage()"/> 
-        /// </summary>
-        public Java.Lang.String DisplayLanguage
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayLanguage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getDisplayName()"/> 
-        /// </summary>
-        public Java.Lang.String DisplayName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getDisplayScript()"/> 
-        /// </summary>
-        public Java.Lang.String DisplayScript
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayScript", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getDisplayVariant()"/> 
-        /// </summary>
-        public Java.Lang.String DisplayVariant
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayVariant", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getExtensionKeys()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.Character> ExtensionKeys
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.Character>>("getExtensionKeys", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getISO3Country()"/> 
-        /// </summary>
-        public Java.Lang.String ISO3Country
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getISO3Country", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getISO3Language()"/> 
-        /// </summary>
-        public Java.Lang.String ISO3Language
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getISO3Language", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getLanguage()"/> 
-        /// </summary>
-        public Java.Lang.String Language
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLanguage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getScript()"/> 
-        /// </summary>
-        public Java.Lang.String Script
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getScript", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getUnicodeLocaleAttributes()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> UnicodeLocaleAttributes
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getUnicodeLocaleAttributes", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getUnicodeLocaleKeys()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> UnicodeLocaleKeys
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getUnicodeLocaleKeys", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getVariant()"/> 
-        /// </summary>
-        public Java.Lang.String Variant
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVariant", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#hasExtensions()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#hasExtensions()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasExtensions()
@@ -457,7 +371,47 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasExtensions", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getDisplayCountry(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getDisplayCountry()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayCountry()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayCountry", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getDisplayLanguage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayLanguage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayLanguage", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getDisplayName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getDisplayVariant()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayVariant()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayVariant", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getCountry()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCountry()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCountry", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getDisplayCountry(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -466,7 +420,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("getDisplayCountry", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getDisplayLanguage(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getDisplayLanguage(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -475,7 +429,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("getDisplayLanguage", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getDisplayName(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getDisplayName(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -484,7 +438,15 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getDisplayScript(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getDisplayScript()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayScript()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayScript", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getDisplayScript(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -493,7 +455,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("getDisplayScript", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getDisplayVariant(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getDisplayVariant(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -502,7 +464,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("getDisplayVariant", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getExtension(char)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getExtension(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -511,7 +473,41 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("getExtension", "(C)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#getUnicodeLocaleType(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getISO3Country()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <exception cref="Java.Util.MissingResourceException"/>
+        public Java.Lang.String GetISO3Country()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getISO3Country", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getISO3Language()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <exception cref="Java.Util.MissingResourceException"/>
+        public Java.Lang.String GetISO3Language()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getISO3Language", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getLanguage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLanguage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLanguage", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getScript()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetScript()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getScript", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getUnicodeLocaleType(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -520,7 +516,15 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("getUnicodeLocaleType", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#toLanguageTag()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getVariant()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetVariant()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getVariant", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#toLanguageTag()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToLanguageTag()
@@ -528,12 +532,36 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("toLanguageTag", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.html#stripExtensions()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#stripExtensions()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Locale"/></returns>
         public Java.Util.Locale StripExtensions()
         {
             return IExecuteWithSignature<Java.Util.Locale>("stripExtensions", "()Ljava/util/Locale;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getExtensionKeys()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.Character> GetExtensionKeys()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Character>>("getExtensionKeys", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getUnicodeLocaleAttributes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetUnicodeLocaleAttributes()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getUnicodeLocaleAttributes", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/Locale.html#getUnicodeLocaleKeys()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetUnicodeLocaleKeys()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getUnicodeLocaleKeys", "()Ljava/util/Set;");
         }
 
         #endregion
@@ -560,7 +588,7 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.Builder.html#build()"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.Builder.html#build()"/>
             /// </summary>
             /// <returns><see cref="Java.Util.Locale"/></returns>
             public Java.Util.Locale Build()
@@ -568,7 +596,7 @@ namespace Java.Util
                 return IExecuteWithSignature<Java.Util.Locale>("build", "()Ljava/util/Locale;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.Builder.html#addUnicodeLocaleAttribute(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.Builder.html#addUnicodeLocaleAttribute(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
@@ -577,7 +605,7 @@ namespace Java.Util
                 return IExecuteWithSignature<Java.Util.Locale.Builder>("addUnicodeLocaleAttribute", "(Ljava/lang/String;)Ljava/util/Locale$Builder;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.Builder.html#clear()"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.Builder.html#clear()"/>
             /// </summary>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
             public Java.Util.Locale.Builder Clear()
@@ -585,7 +613,7 @@ namespace Java.Util
                 return IExecuteWithSignature<Java.Util.Locale.Builder>("clear", "()Ljava/util/Locale$Builder;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.Builder.html#clearExtensions()"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.Builder.html#clearExtensions()"/>
             /// </summary>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
             public Java.Util.Locale.Builder ClearExtensions()
@@ -593,7 +621,7 @@ namespace Java.Util
                 return IExecuteWithSignature<Java.Util.Locale.Builder>("clearExtensions", "()Ljava/util/Locale$Builder;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.Builder.html#removeUnicodeLocaleAttribute(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.Builder.html#removeUnicodeLocaleAttribute(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
@@ -602,7 +630,7 @@ namespace Java.Util
                 return IExecuteWithSignature<Java.Util.Locale.Builder>("removeUnicodeLocaleAttribute", "(Ljava/lang/String;)Ljava/util/Locale$Builder;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.Builder.html#setExtension(char,java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.Builder.html#setExtension(char,java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="char"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -612,7 +640,7 @@ namespace Java.Util
                 return IExecute<Java.Util.Locale.Builder>("setExtension", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.Builder.html#setLanguage(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.Builder.html#setLanguage(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
@@ -621,7 +649,7 @@ namespace Java.Util
                 return IExecuteWithSignature<Java.Util.Locale.Builder>("setLanguage", "(Ljava/lang/String;)Ljava/util/Locale$Builder;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.Builder.html#setLanguageTag(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.Builder.html#setLanguageTag(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
@@ -630,7 +658,7 @@ namespace Java.Util
                 return IExecuteWithSignature<Java.Util.Locale.Builder>("setLanguageTag", "(Ljava/lang/String;)Ljava/util/Locale$Builder;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.Builder.html#setLocale(java.util.Locale)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.Builder.html#setLocale(java.util.Locale)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
@@ -639,7 +667,7 @@ namespace Java.Util
                 return IExecuteWithSignature<Java.Util.Locale.Builder>("setLocale", "(Ljava/util/Locale;)Ljava/util/Locale$Builder;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.Builder.html#setRegion(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.Builder.html#setRegion(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
@@ -648,7 +676,7 @@ namespace Java.Util
                 return IExecuteWithSignature<Java.Util.Locale.Builder>("setRegion", "(Ljava/lang/String;)Ljava/util/Locale$Builder;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.Builder.html#setScript(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.Builder.html#setScript(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
@@ -657,7 +685,7 @@ namespace Java.Util
                 return IExecuteWithSignature<Java.Util.Locale.Builder>("setScript", "(Ljava/lang/String;)Ljava/util/Locale$Builder;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.Builder.html#setUnicodeLocaleKeyword(java.lang.String,java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.Builder.html#setUnicodeLocaleKeyword(java.lang.String,java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -667,7 +695,7 @@ namespace Java.Util
                 return IExecute<Java.Util.Locale.Builder>("setUnicodeLocaleKeyword", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.Builder.html#setVariant(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.Builder.html#setVariant(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.Locale.Builder"/></returns>
@@ -699,13 +727,13 @@ namespace Java.Util
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.Category.html#DISPLAY"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.Category.html#DISPLAY"/>
             /// </summary>
             public static Java.Util.Locale.Category DISPLAY { get { if (!_DISPLAYReady) { _DISPLAYContent = SGetField<Java.Util.Locale.Category>(LocalBridgeClazz, "DISPLAY"); _DISPLAYReady = true; } return _DISPLAYContent; } }
             private static Java.Util.Locale.Category _DISPLAYContent = default;
             private static bool _DISPLAYReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.Category.html#FORMAT"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.Category.html#FORMAT"/>
             /// </summary>
             public static Java.Util.Locale.Category FORMAT { get { if (!_FORMATReady) { _FORMATContent = SGetField<Java.Util.Locale.Category>(LocalBridgeClazz, "FORMAT"); _FORMATReady = true; } return _FORMATContent; } }
             private static Java.Util.Locale.Category _FORMATContent = default;
@@ -715,7 +743,7 @@ namespace Java.Util
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.Category.html#valueOf(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.Category.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.Locale.Category"/></returns>
@@ -724,7 +752,7 @@ namespace Java.Util
                 return SExecuteWithSignature<Java.Util.Locale.Category>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/util/Locale$Category;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.Category.html#values()"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.Category.html#values()"/>
             /// </summary>
             /// <returns><see cref="Java.Util.Locale.Category"/></returns>
             public static Java.Util.Locale.Category[] Values()
@@ -759,31 +787,31 @@ namespace Java.Util
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.FilteringMode.html#AUTOSELECT_FILTERING"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.FilteringMode.html#AUTOSELECT_FILTERING"/>
             /// </summary>
             public static Java.Util.Locale.FilteringMode AUTOSELECT_FILTERING { get { if (!_AUTOSELECT_FILTERINGReady) { _AUTOSELECT_FILTERINGContent = SGetField<Java.Util.Locale.FilteringMode>(LocalBridgeClazz, "AUTOSELECT_FILTERING"); _AUTOSELECT_FILTERINGReady = true; } return _AUTOSELECT_FILTERINGContent; } }
             private static Java.Util.Locale.FilteringMode _AUTOSELECT_FILTERINGContent = default;
             private static bool _AUTOSELECT_FILTERINGReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.FilteringMode.html#EXTENDED_FILTERING"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.FilteringMode.html#EXTENDED_FILTERING"/>
             /// </summary>
             public static Java.Util.Locale.FilteringMode EXTENDED_FILTERING { get { if (!_EXTENDED_FILTERINGReady) { _EXTENDED_FILTERINGContent = SGetField<Java.Util.Locale.FilteringMode>(LocalBridgeClazz, "EXTENDED_FILTERING"); _EXTENDED_FILTERINGReady = true; } return _EXTENDED_FILTERINGContent; } }
             private static Java.Util.Locale.FilteringMode _EXTENDED_FILTERINGContent = default;
             private static bool _EXTENDED_FILTERINGReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.FilteringMode.html#IGNORE_EXTENDED_RANGES"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.FilteringMode.html#IGNORE_EXTENDED_RANGES"/>
             /// </summary>
             public static Java.Util.Locale.FilteringMode IGNORE_EXTENDED_RANGES { get { if (!_IGNORE_EXTENDED_RANGESReady) { _IGNORE_EXTENDED_RANGESContent = SGetField<Java.Util.Locale.FilteringMode>(LocalBridgeClazz, "IGNORE_EXTENDED_RANGES"); _IGNORE_EXTENDED_RANGESReady = true; } return _IGNORE_EXTENDED_RANGESContent; } }
             private static Java.Util.Locale.FilteringMode _IGNORE_EXTENDED_RANGESContent = default;
             private static bool _IGNORE_EXTENDED_RANGESReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.FilteringMode.html#MAP_EXTENDED_RANGES"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.FilteringMode.html#MAP_EXTENDED_RANGES"/>
             /// </summary>
             public static Java.Util.Locale.FilteringMode MAP_EXTENDED_RANGES { get { if (!_MAP_EXTENDED_RANGESReady) { _MAP_EXTENDED_RANGESContent = SGetField<Java.Util.Locale.FilteringMode>(LocalBridgeClazz, "MAP_EXTENDED_RANGES"); _MAP_EXTENDED_RANGESReady = true; } return _MAP_EXTENDED_RANGESContent; } }
             private static Java.Util.Locale.FilteringMode _MAP_EXTENDED_RANGESContent = default;
             private static bool _MAP_EXTENDED_RANGESReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.FilteringMode.html#REJECT_EXTENDED_RANGES"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.FilteringMode.html#REJECT_EXTENDED_RANGES"/>
             /// </summary>
             public static Java.Util.Locale.FilteringMode REJECT_EXTENDED_RANGES { get { if (!_REJECT_EXTENDED_RANGESReady) { _REJECT_EXTENDED_RANGESContent = SGetField<Java.Util.Locale.FilteringMode>(LocalBridgeClazz, "REJECT_EXTENDED_RANGES"); _REJECT_EXTENDED_RANGESReady = true; } return _REJECT_EXTENDED_RANGESContent; } }
             private static Java.Util.Locale.FilteringMode _REJECT_EXTENDED_RANGESContent = default;
@@ -793,7 +821,7 @@ namespace Java.Util
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.FilteringMode.html#valueOf(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.FilteringMode.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.Locale.FilteringMode"/></returns>
@@ -802,7 +830,7 @@ namespace Java.Util
                 return SExecuteWithSignature<Java.Util.Locale.FilteringMode>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/util/Locale$FilteringMode;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.FilteringMode.html#values()"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.FilteringMode.html#values()"/>
             /// </summary>
             /// <returns><see cref="Java.Util.Locale.FilteringMode"/></returns>
             public static Java.Util.Locale.FilteringMode[] Values()
@@ -837,19 +865,19 @@ namespace Java.Util
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.IsoCountryCode.html#PART1_ALPHA2"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.IsoCountryCode.html#PART1_ALPHA2"/>
             /// </summary>
             public static Java.Util.Locale.IsoCountryCode PART1_ALPHA2 { get { if (!_PART1_ALPHA2Ready) { _PART1_ALPHA2Content = SGetField<Java.Util.Locale.IsoCountryCode>(LocalBridgeClazz, "PART1_ALPHA2"); _PART1_ALPHA2Ready = true; } return _PART1_ALPHA2Content; } }
             private static Java.Util.Locale.IsoCountryCode _PART1_ALPHA2Content = default;
             private static bool _PART1_ALPHA2Ready = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.IsoCountryCode.html#PART1_ALPHA3"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.IsoCountryCode.html#PART1_ALPHA3"/>
             /// </summary>
             public static Java.Util.Locale.IsoCountryCode PART1_ALPHA3 { get { if (!_PART1_ALPHA3Ready) { _PART1_ALPHA3Content = SGetField<Java.Util.Locale.IsoCountryCode>(LocalBridgeClazz, "PART1_ALPHA3"); _PART1_ALPHA3Ready = true; } return _PART1_ALPHA3Content; } }
             private static Java.Util.Locale.IsoCountryCode _PART1_ALPHA3Content = default;
             private static bool _PART1_ALPHA3Ready = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.IsoCountryCode.html#PART3"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.IsoCountryCode.html#PART3"/>
             /// </summary>
             public static Java.Util.Locale.IsoCountryCode PART3 { get { if (!_PART3Ready) { _PART3Content = SGetField<Java.Util.Locale.IsoCountryCode>(LocalBridgeClazz, "PART3"); _PART3Ready = true; } return _PART3Content; } }
             private static Java.Util.Locale.IsoCountryCode _PART3Content = default;
@@ -859,7 +887,7 @@ namespace Java.Util
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.IsoCountryCode.html#valueOf(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.IsoCountryCode.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.Locale.IsoCountryCode"/></returns>
@@ -868,7 +896,7 @@ namespace Java.Util
                 return SExecuteWithSignature<Java.Util.Locale.IsoCountryCode>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/util/Locale$IsoCountryCode;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.IsoCountryCode.html#values()"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.IsoCountryCode.html#values()"/>
             /// </summary>
             /// <returns><see cref="Java.Util.Locale.IsoCountryCode"/></returns>
             public static Java.Util.Locale.IsoCountryCode[] Values()
@@ -895,7 +923,7 @@ namespace Java.Util
         {
             #region Constructors
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.LanguageRange.html#%3Cinit%3E(java.lang.String,double)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.LanguageRange.html#%3Cinit%3E(java.lang.String,double)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="double"/></param>
@@ -904,7 +932,7 @@ namespace Java.Util
             {
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.LanguageRange.html#%3Cinit%3E(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.LanguageRange.html#%3Cinit%3E(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             public LanguageRange(Java.Lang.String arg0)
@@ -920,13 +948,13 @@ namespace Java.Util
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.LanguageRange.html#MAX_WEIGHT"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.LanguageRange.html#MAX_WEIGHT"/>
             /// </summary>
             public static double MAX_WEIGHT { get { if (!_MAX_WEIGHTReady) { _MAX_WEIGHTContent = SGetField<double>(LocalBridgeClazz, "MAX_WEIGHT"); _MAX_WEIGHTReady = true; } return _MAX_WEIGHTContent; } }
             private static double _MAX_WEIGHTContent = default;
             private static bool _MAX_WEIGHTReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.LanguageRange.html#MIN_WEIGHT"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.LanguageRange.html#MIN_WEIGHT"/>
             /// </summary>
             public static double MIN_WEIGHT { get { if (!_MIN_WEIGHTReady) { _MIN_WEIGHTContent = SGetField<double>(LocalBridgeClazz, "MIN_WEIGHT"); _MIN_WEIGHTReady = true; } return _MIN_WEIGHTContent; } }
             private static double _MIN_WEIGHTContent = default;
@@ -936,7 +964,7 @@ namespace Java.Util
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.LanguageRange.html#mapEquivalents(java.util.List,java.util.Map)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.LanguageRange.html#mapEquivalents(java.util.List,java.util.Map)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.List"/></param>
             /// <param name="arg1"><see cref="Java.Util.Map"/></param>
@@ -946,7 +974,7 @@ namespace Java.Util
                 return SExecute<Java.Util.List<Java.Util.Locale.LanguageRange>>(LocalBridgeClazz, "mapEquivalents", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.LanguageRange.html#parse(java.lang.String,java.util.Map)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.LanguageRange.html#parse(java.lang.String,java.util.Map)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Util.Map"/></param>
@@ -956,7 +984,7 @@ namespace Java.Util
                 return SExecute<Java.Util.List<Java.Util.Locale.LanguageRange>>(LocalBridgeClazz, "parse", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.LanguageRange.html#parse(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Locale.LanguageRange.html#parse(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.List"/></returns>
@@ -969,18 +997,20 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.LanguageRange.html#getRange()"/> 
+            /// <see href="https://developer.android.com/reference/java/util/Locale.LanguageRange.html#getWeight()"/>
             /// </summary>
-            public Java.Lang.String Range
+            /// <returns><see cref="double"/></returns>
+            public double GetWeight()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getRange", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<double>("getWeight", "()D");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Locale.LanguageRange.html#getWeight()"/> 
+            /// <see href="https://developer.android.com/reference/java/util/Locale.LanguageRange.html#getRange()"/>
             /// </summary>
-            public double Weight
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetRange()
             {
-                get { return IExecuteWithSignature<double>("getWeight", "()D"); }
+                return IExecuteWithSignature<Java.Lang.String>("getRange", "()Ljava/lang/String;");
             }
 
             #endregion

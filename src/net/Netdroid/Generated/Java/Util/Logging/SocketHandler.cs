@@ -30,7 +30,7 @@ namespace Java.Util.Logging
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/SocketHandler.html#%3Cinit%3E(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/SocketHandler.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>

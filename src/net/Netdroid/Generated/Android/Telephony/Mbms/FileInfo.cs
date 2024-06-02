@@ -52,18 +52,12 @@ namespace Android.Telephony.Mbms
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/FileInfo.html#getMimeType()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/mbms/FileInfo.html#getUri()"/>
         /// </summary>
-        public Java.Lang.String MimeType
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetUri()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/mbms/FileInfo.html#getUri()"/> 
-        /// </summary>
-        public Android.Net.Uri Uri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/mbms/FileInfo.html#describeContents()"/>
@@ -72,6 +66,14 @@ namespace Android.Telephony.Mbms
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/mbms/FileInfo.html#getMimeType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMimeType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/mbms/FileInfo.html#writeToParcel(android.os.Parcel,int)"/>

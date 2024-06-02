@@ -84,172 +84,124 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getCurrentDrawable()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getIndeterminateTintList()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable CurrentDrawable
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetIndeterminateTintList()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getCurrentDrawable", "()Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getIndeterminateTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getIndeterminateDrawable()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setIndeterminateDrawable(android.graphics.drawable.Drawable)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getProgressBackgroundTintList()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable IndeterminateDrawable
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetProgressBackgroundTintList()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getIndeterminateDrawable", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setIndeterminateDrawable", "(Landroid/graphics/drawable/Drawable;)V", value); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getProgressBackgroundTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getIndeterminateTintBlendMode()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setIndeterminateTintBlendMode(android.graphics.BlendMode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getProgressTintList()"/>
         /// </summary>
-        public Android.Graphics.BlendMode IndeterminateTintBlendMode
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetProgressTintList()
         {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getIndeterminateTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setIndeterminateTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getProgressTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getIndeterminateTintList()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setIndeterminateTintList(android.content.res.ColorStateList)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getSecondaryProgressTintList()"/>
         /// </summary>
-        public Android.Content.Res.ColorStateList IndeterminateTintList
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetSecondaryProgressTintList()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getIndeterminateTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setIndeterminateTintList", "(Landroid/content/res/ColorStateList;)V", value); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getSecondaryProgressTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getIndeterminateTintMode()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setIndeterminateTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getIndeterminateTintBlendMode()"/>
         /// </summary>
-        public Android.Graphics.PorterDuff.Mode IndeterminateTintMode
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetIndeterminateTintBlendMode()
         {
-            get { return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getIndeterminateTintMode", "()Landroid/graphics/PorterDuff$Mode;"); } set { IExecuteWithSignature("setIndeterminateTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getIndeterminateTintBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getInterpolator()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setInterpolator(android.view.animation.Interpolator)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getProgressBackgroundTintBlendMode()"/>
         /// </summary>
-        public Android.View.Animation.Interpolator Interpolator
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetProgressBackgroundTintBlendMode()
         {
-            get { return IExecuteWithSignature<Android.View.Animation.Interpolator>("getInterpolator", "()Landroid/view/animation/Interpolator;"); } set { IExecuteWithSignature("setInterpolator", "(Landroid/view/animation/Interpolator;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getProgressBackgroundTintBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getMax()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setMax(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getProgressTintBlendMode()"/>
         /// </summary>
-        public int Max
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetProgressTintBlendMode()
         {
-            get { return IExecuteWithSignature<int>("getMax", "()I"); } set { IExecuteWithSignature("setMax", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getProgressTintBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getMaxHeight()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setMaxHeight(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getSecondaryProgressTintBlendMode()"/>
         /// </summary>
-        public int MaxHeight
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetSecondaryProgressTintBlendMode()
         {
-            get { return IExecuteWithSignature<int>("getMaxHeight", "()I"); } set { IExecuteWithSignature("setMaxHeight", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getSecondaryProgressTintBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getMaxWidth()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setMaxWidth(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getCurrentDrawable()"/>
         /// </summary>
-        public int MaxWidth
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetCurrentDrawable()
         {
-            get { return IExecuteWithSignature<int>("getMaxWidth", "()I"); } set { IExecuteWithSignature("setMaxWidth", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getCurrentDrawable", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getMin()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setMin(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getIndeterminateDrawable()"/>
         /// </summary>
-        public int Min
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetIndeterminateDrawable()
         {
-            get { return IExecuteWithSignature<int>("getMin", "()I"); } set { IExecuteWithSignature("setMin", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getIndeterminateDrawable", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getMinHeight()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setMinHeight(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getProgressDrawable()"/>
         /// </summary>
-        public int MinHeight
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetProgressDrawable()
         {
-            get { return IExecuteWithSignature<int>("getMinHeight", "()I"); } set { IExecuteWithSignature("setMinHeight", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getProgressDrawable", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getMinWidth()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setMinWidth(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getIndeterminateTintMode()"/>
         /// </summary>
-        public int MinWidth
+        /// <returns><see cref="Android.Graphics.PorterDuff.Mode"/></returns>
+        public Android.Graphics.PorterDuff.Mode GetIndeterminateTintMode()
         {
-            get { return IExecuteWithSignature<int>("getMinWidth", "()I"); } set { IExecuteWithSignature("setMinWidth", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getIndeterminateTintMode", "()Landroid/graphics/PorterDuff$Mode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getProgress()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgress(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getProgressBackgroundTintMode()"/>
         /// </summary>
-        public int Progress
+        /// <returns><see cref="Android.Graphics.PorterDuff.Mode"/></returns>
+        public Android.Graphics.PorterDuff.Mode GetProgressBackgroundTintMode()
         {
-            get { return IExecuteWithSignature<int>("getProgress", "()I"); } set { IExecuteWithSignature("setProgress", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getProgressBackgroundTintMode", "()Landroid/graphics/PorterDuff$Mode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getProgressBackgroundTintBlendMode()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgressBackgroundTintBlendMode(android.graphics.BlendMode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getProgressTintMode()"/>
         /// </summary>
-        public Android.Graphics.BlendMode ProgressBackgroundTintBlendMode
+        /// <returns><see cref="Android.Graphics.PorterDuff.Mode"/></returns>
+        public Android.Graphics.PorterDuff.Mode GetProgressTintMode()
         {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getProgressBackgroundTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setProgressBackgroundTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getProgressTintMode", "()Landroid/graphics/PorterDuff$Mode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getProgressBackgroundTintList()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgressBackgroundTintList(android.content.res.ColorStateList)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getSecondaryProgressTintMode()"/>
         /// </summary>
-        public Android.Content.Res.ColorStateList ProgressBackgroundTintList
+        /// <returns><see cref="Android.Graphics.PorterDuff.Mode"/></returns>
+        public Android.Graphics.PorterDuff.Mode GetSecondaryProgressTintMode()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getProgressBackgroundTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setProgressBackgroundTintList", "(Landroid/content/res/ColorStateList;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getProgressBackgroundTintMode()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgressBackgroundTintMode(android.graphics.PorterDuff.Mode)"/>
-        /// </summary>
-        public Android.Graphics.PorterDuff.Mode ProgressBackgroundTintMode
-        {
-            get { return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getProgressBackgroundTintMode", "()Landroid/graphics/PorterDuff$Mode;"); } set { IExecuteWithSignature("setProgressBackgroundTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getProgressDrawable()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgressDrawable(android.graphics.drawable.Drawable)"/>
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable ProgressDrawable
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getProgressDrawable", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setProgressDrawable", "(Landroid/graphics/drawable/Drawable;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getProgressTintBlendMode()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgressTintBlendMode(android.graphics.BlendMode)"/>
-        /// </summary>
-        public Android.Graphics.BlendMode ProgressTintBlendMode
-        {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getProgressTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setProgressTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getProgressTintList()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgressTintList(android.content.res.ColorStateList)"/>
-        /// </summary>
-        public Android.Content.Res.ColorStateList ProgressTintList
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getProgressTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setProgressTintList", "(Landroid/content/res/ColorStateList;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getProgressTintMode()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgressTintMode(android.graphics.PorterDuff.Mode)"/>
-        /// </summary>
-        public Android.Graphics.PorterDuff.Mode ProgressTintMode
-        {
-            get { return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getProgressTintMode", "()Landroid/graphics/PorterDuff$Mode;"); } set { IExecuteWithSignature("setProgressTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getSecondaryProgress()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setSecondaryProgress(int)"/>
-        /// </summary>
-        public int SecondaryProgress
-        {
-            get { return IExecuteWithSignature<int>("getSecondaryProgress", "()I"); } set { IExecuteWithSignature("setSecondaryProgress", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getSecondaryProgressTintBlendMode()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setSecondaryProgressTintBlendMode(android.graphics.BlendMode)"/>
-        /// </summary>
-        public Android.Graphics.BlendMode SecondaryProgressTintBlendMode
-        {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getSecondaryProgressTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setSecondaryProgressTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getSecondaryProgressTintList()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setSecondaryProgressTintList(android.content.res.ColorStateList)"/>
-        /// </summary>
-        public Android.Content.Res.ColorStateList SecondaryProgressTintList
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getSecondaryProgressTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setSecondaryProgressTintList", "(Landroid/content/res/ColorStateList;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getSecondaryProgressTintMode()"/> <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setSecondaryProgressTintMode(android.graphics.PorterDuff.Mode)"/>
-        /// </summary>
-        public Android.Graphics.PorterDuff.Mode SecondaryProgressTintMode
-        {
-            get { return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getSecondaryProgressTintMode", "()Landroid/graphics/PorterDuff$Mode;"); } set { IExecuteWithSignature("setSecondaryProgressTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getSecondaryProgressTintMode", "()Landroid/graphics/PorterDuff$Mode;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#onSaveInstanceState()"/>
@@ -258,6 +210,14 @@ namespace Android.Widget
         public Android.Os.Parcelable OnSaveInstanceState()
         {
             return IExecuteWithSignature<Android.Os.Parcelable>("onSaveInstanceState", "()Landroid/os/Parcelable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getInterpolator()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Animation.Interpolator"/></returns>
+        public Android.View.Animation.Interpolator GetInterpolator()
+        {
+            return IExecuteWithSignature<Android.View.Animation.Interpolator>("getInterpolator", "()Landroid/view/animation/Interpolator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#isAnimating()"/>
@@ -284,12 +244,76 @@ namespace Android.Widget
             IExecuteWithSignature("incrementSecondaryProgressBy", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getMaxHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxHeight()
+        {
+            return IExecuteWithSignature<int>("getMaxHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getMaxWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxWidth()
+        {
+            return IExecuteWithSignature<int>("getMaxWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getMinHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinHeight()
+        {
+            return IExecuteWithSignature<int>("getMinHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getMinWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinWidth()
+        {
+            return IExecuteWithSignature<int>("getMinWidth", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#isIndeterminate()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsIndeterminate()
         {
             return IExecuteWithSignature<bool>("isIndeterminate", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getMax()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMax()
+        {
+            return IExecuteWithSignature<int>("getMax", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getMin()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMin()
+        {
+            return IExecuteWithSignature<int>("getMin", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getProgress()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetProgress()
+        {
+            return IExecuteWithSignature<int>("getProgress", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#getSecondaryProgress()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSecondaryProgress()
+        {
+            return IExecuteWithSignature<int>("getSecondaryProgress", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setIndeterminate(boolean)"/>
@@ -300,6 +324,38 @@ namespace Android.Widget
             IExecuteWithSignature("setIndeterminate", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setMax(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMax(int arg0)
+        {
+            IExecuteWithSignature("setMax", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setMin(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMin(int arg0)
+        {
+            IExecuteWithSignature("setMin", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgress(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetProgress(int arg0)
+        {
+            IExecuteWithSignature("setProgress", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setSecondaryProgress(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetSecondaryProgress(int arg0)
+        {
+            IExecuteWithSignature("setSecondaryProgress", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#onRestoreInstanceState(android.os.Parcelable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcelable"/></param>
@@ -308,12 +364,44 @@ namespace Android.Widget
             IExecuteWithSignature("onRestoreInstanceState", "(Landroid/os/Parcelable;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setIndeterminateDrawable(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetIndeterminateDrawable(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setIndeterminateDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setIndeterminateDrawableTiled(android.graphics.drawable.Drawable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
         public void SetIndeterminateDrawableTiled(Android.Graphics.Drawable.Drawable arg0)
         {
             IExecuteWithSignature("setIndeterminateDrawableTiled", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setIndeterminateTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        public void SetIndeterminateTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setIndeterminateTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setIndeterminateTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        public void SetIndeterminateTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setIndeterminateTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setIndeterminateTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.PorterDuff.Mode"/></param>
+        public void SetIndeterminateTintMode(Android.Graphics.PorterDuff.Mode arg0)
+        {
+            IExecuteWithSignature("setIndeterminateTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setInterpolator(android.content.Context,int)"/>
@@ -325,6 +413,46 @@ namespace Android.Widget
             IExecute("setInterpolator", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setInterpolator(android.view.animation.Interpolator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Animation.Interpolator"/></param>
+        public void SetInterpolator(Android.View.Animation.Interpolator arg0)
+        {
+            IExecuteWithSignature("setInterpolator", "(Landroid/view/animation/Interpolator;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setMaxHeight(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaxHeight(int arg0)
+        {
+            IExecuteWithSignature("setMaxHeight", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setMaxWidth(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaxWidth(int arg0)
+        {
+            IExecuteWithSignature("setMaxWidth", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setMinHeight(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinHeight(int arg0)
+        {
+            IExecuteWithSignature("setMinHeight", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setMinWidth(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinWidth(int arg0)
+        {
+            IExecuteWithSignature("setMinWidth", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgress(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -334,12 +462,92 @@ namespace Android.Widget
             IExecute("setProgress", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgressBackgroundTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        public void SetProgressBackgroundTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setProgressBackgroundTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgressBackgroundTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        public void SetProgressBackgroundTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setProgressBackgroundTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgressBackgroundTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.PorterDuff.Mode"/></param>
+        public void SetProgressBackgroundTintMode(Android.Graphics.PorterDuff.Mode arg0)
+        {
+            IExecuteWithSignature("setProgressBackgroundTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgressDrawable(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetProgressDrawable(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setProgressDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgressDrawableTiled(android.graphics.drawable.Drawable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
         public void SetProgressDrawableTiled(Android.Graphics.Drawable.Drawable arg0)
         {
             IExecuteWithSignature("setProgressDrawableTiled", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgressTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        public void SetProgressTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setProgressTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgressTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        public void SetProgressTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setProgressTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setProgressTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.PorterDuff.Mode"/></param>
+        public void SetProgressTintMode(Android.Graphics.PorterDuff.Mode arg0)
+        {
+            IExecuteWithSignature("setProgressTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setSecondaryProgressTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        public void SetSecondaryProgressTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setSecondaryProgressTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setSecondaryProgressTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        public void SetSecondaryProgressTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setSecondaryProgressTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ProgressBar.html#setSecondaryProgressTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.PorterDuff.Mode"/></param>
+        public void SetSecondaryProgressTintMode(Android.Graphics.PorterDuff.Mode arg0)
+        {
+            IExecuteWithSignature("setSecondaryProgressTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", arg0);
         }
 
         #endregion

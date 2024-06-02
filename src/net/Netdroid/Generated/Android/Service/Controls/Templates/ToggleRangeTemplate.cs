@@ -67,18 +67,12 @@ namespace Android.Service.Controls.Templates
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/templates/ToggleRangeTemplate.html#getActionDescription()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/templates/ToggleRangeTemplate.html#getRange()"/>
         /// </summary>
-        public Java.Lang.CharSequence ActionDescription
+        /// <returns><see cref="Android.Service.Controls.Templates.RangeTemplate"/></returns>
+        public Android.Service.Controls.Templates.RangeTemplate GetRange()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getActionDescription", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/templates/ToggleRangeTemplate.html#getRange()"/> 
-        /// </summary>
-        public Android.Service.Controls.Templates.RangeTemplate Range
-        {
-            get { return IExecuteWithSignature<Android.Service.Controls.Templates.RangeTemplate>("getRange", "()Landroid/service/controls/templates/RangeTemplate;"); }
+            return IExecuteWithSignature<Android.Service.Controls.Templates.RangeTemplate>("getRange", "()Landroid/service/controls/templates/RangeTemplate;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/controls/templates/ToggleRangeTemplate.html#isChecked()"/>
@@ -87,6 +81,14 @@ namespace Android.Service.Controls.Templates
         public bool IsChecked()
         {
             return IExecuteWithSignature<bool>("isChecked", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/controls/templates/ToggleRangeTemplate.html#getActionDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetActionDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getActionDescription", "()Ljava/lang/CharSequence;");
         }
 
         #endregion

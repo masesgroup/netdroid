@@ -324,60 +324,20 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getCapabilities()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getNetworkSpecifier()"/>
         /// </summary>
-        public int[] Capabilities
+        /// <returns><see cref="Android.Net.NetworkSpecifier"/></returns>
+        public Android.Net.NetworkSpecifier GetNetworkSpecifier()
         {
-            get { return IExecuteWithSignatureArray<int>("getCapabilities", "()[I"); }
+            return IExecuteWithSignature<Android.Net.NetworkSpecifier>("getNetworkSpecifier", "()Landroid/net/NetworkSpecifier;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getEnterpriseIds()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getTransportInfo()"/>
         /// </summary>
-        public int[] EnterpriseIds
+        /// <returns><see cref="Android.Net.TransportInfo"/></returns>
+        public Android.Net.TransportInfo GetTransportInfo()
         {
-            get { return IExecuteWithSignatureArray<int>("getEnterpriseIds", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getLinkDownstreamBandwidthKbps()"/> 
-        /// </summary>
-        public int LinkDownstreamBandwidthKbps
-        {
-            get { return IExecuteWithSignature<int>("getLinkDownstreamBandwidthKbps", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getLinkUpstreamBandwidthKbps()"/> 
-        /// </summary>
-        public int LinkUpstreamBandwidthKbps
-        {
-            get { return IExecuteWithSignature<int>("getLinkUpstreamBandwidthKbps", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getNetworkSpecifier()"/> 
-        /// </summary>
-        public Android.Net.NetworkSpecifier NetworkSpecifier
-        {
-            get { return IExecuteWithSignature<Android.Net.NetworkSpecifier>("getNetworkSpecifier", "()Landroid/net/NetworkSpecifier;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getOwnerUid()"/> 
-        /// </summary>
-        public int OwnerUid
-        {
-            get { return IExecuteWithSignature<int>("getOwnerUid", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getSignalStrength()"/> 
-        /// </summary>
-        public int SignalStrength
-        {
-            get { return IExecuteWithSignature<int>("getSignalStrength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getTransportInfo()"/> 
-        /// </summary>
-        public Android.Net.TransportInfo TransportInfo
-        {
-            get { return IExecuteWithSignature<Android.Net.TransportInfo>("getTransportInfo", "()Landroid/net/TransportInfo;"); }
+            return IExecuteWithSignature<Android.Net.TransportInfo>("getTransportInfo", "()Landroid/net/TransportInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#hasCapability(int)"/>
@@ -413,6 +373,54 @@ namespace Android.Net
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getLinkDownstreamBandwidthKbps()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLinkDownstreamBandwidthKbps()
+        {
+            return IExecuteWithSignature<int>("getLinkDownstreamBandwidthKbps", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getLinkUpstreamBandwidthKbps()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLinkUpstreamBandwidthKbps()
+        {
+            return IExecuteWithSignature<int>("getLinkUpstreamBandwidthKbps", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getOwnerUid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOwnerUid()
+        {
+            return IExecuteWithSignature<int>("getOwnerUid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getSignalStrength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSignalStrength()
+        {
+            return IExecuteWithSignature<int>("getSignalStrength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getCapabilities()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetCapabilities()
+        {
+            return IExecuteWithSignatureArray<int>("getCapabilities", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getEnterpriseIds()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetEnterpriseIds()
+        {
+            return IExecuteWithSignatureArray<int>("getEnterpriseIds", "()[I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#writeToParcel(android.os.Parcel,int)"/>

@@ -310,27 +310,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#getEmbeddedPicture()"/> 
-        /// </summary>
-        public byte[] EmbeddedPicture
-        {
-            get { return IExecuteWithSignatureArray<byte>("getEmbeddedPicture", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#getFrameAtTime()"/> 
-        /// </summary>
-        public Android.Graphics.Bitmap FrameAtTime
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getFrameAtTime", "()Landroid/graphics/Bitmap;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#getPrimaryImage()"/> 
-        /// </summary>
-        public Android.Graphics.Bitmap PrimaryImage
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getPrimaryImage", "()Landroid/graphics/Bitmap;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#getFrameAtIndex(int,android.media.MediaMetadataRetriever.BitmapParams)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -348,6 +327,14 @@ namespace Android.Media
         public Android.Graphics.Bitmap GetFrameAtIndex(int arg0)
         {
             return IExecuteWithSignature<Android.Graphics.Bitmap>("getFrameAtIndex", "(I)Landroid/graphics/Bitmap;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#getFrameAtTime()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        public Android.Graphics.Bitmap GetFrameAtTime()
+        {
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getFrameAtTime", "()Landroid/graphics/Bitmap;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#getFrameAtTime(long,int,android.media.MediaMetadataRetriever.BitmapParams)"/>
@@ -399,6 +386,14 @@ namespace Android.Media
             return IExecuteWithSignature<Android.Graphics.Bitmap>("getImageAtIndex", "(I)Landroid/graphics/Bitmap;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#getPrimaryImage()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        public Android.Graphics.Bitmap GetPrimaryImage()
+        {
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getPrimaryImage", "()Landroid/graphics/Bitmap;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#getPrimaryImage(android.media.MediaMetadataRetriever.BitmapParams)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.MediaMetadataRetriever.BitmapParams"/></param>
@@ -431,6 +426,14 @@ namespace Android.Media
         public Android.Graphics.Bitmap GetScaledFrameAtTime(long arg0, int arg1, int arg2, int arg3)
         {
             return IExecute<Android.Graphics.Bitmap>("getScaledFrameAtTime", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#getEmbeddedPicture()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetEmbeddedPicture()
+        {
+            return IExecuteWithSignatureArray<byte>("getEmbeddedPicture", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.html#extractMetadata(int)"/>
@@ -562,18 +565,28 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.BitmapParams.html#getActualConfig()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.BitmapParams.html#getActualConfig()"/>
             /// </summary>
-            public Android.Graphics.Bitmap.Config ActualConfig
+            /// <returns><see cref="Android.Graphics.Bitmap.Config"/></returns>
+            public Android.Graphics.Bitmap.Config GetActualConfig()
             {
-                get { return IExecuteWithSignature<Android.Graphics.Bitmap.Config>("getActualConfig", "()Landroid/graphics/Bitmap$Config;"); }
+                return IExecuteWithSignature<Android.Graphics.Bitmap.Config>("getActualConfig", "()Landroid/graphics/Bitmap$Config;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.BitmapParams.html#getPreferredConfig()"/> <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.BitmapParams.html#setPreferredConfig(android.graphics.Bitmap.Config)"/>
+            /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.BitmapParams.html#getPreferredConfig()"/>
             /// </summary>
-            public Android.Graphics.Bitmap.Config PreferredConfig
+            /// <returns><see cref="Android.Graphics.Bitmap.Config"/></returns>
+            public Android.Graphics.Bitmap.Config GetPreferredConfig()
             {
-                get { return IExecuteWithSignature<Android.Graphics.Bitmap.Config>("getPreferredConfig", "()Landroid/graphics/Bitmap$Config;"); } set { IExecuteWithSignature("setPreferredConfig", "(Landroid/graphics/Bitmap$Config;)V", value); }
+                return IExecuteWithSignature<Android.Graphics.Bitmap.Config>("getPreferredConfig", "()Landroid/graphics/Bitmap$Config;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaMetadataRetriever.BitmapParams.html#setPreferredConfig(android.graphics.Bitmap.Config)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Graphics.Bitmap.Config"/></param>
+            public void SetPreferredConfig(Android.Graphics.Bitmap.Config arg0)
+            {
+                IExecuteWithSignature("setPreferredConfig", "(Landroid/graphics/Bitmap$Config;)V", arg0);
             }
 
             #endregion

@@ -71,18 +71,12 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/DrawableMarginSpan.html#getDrawable()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/style/DrawableMarginSpan.html#getDrawable()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable Drawable
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetDrawable()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/DrawableMarginSpan.html#getPadding()"/> 
-        /// </summary>
-        public int Padding
-        {
-            get { return IExecuteWithSignature<int>("getPadding", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/DrawableMarginSpan.html#getLeadingMargin(boolean)"/>
@@ -92,6 +86,14 @@ namespace Android.Text.Style
         public int GetLeadingMargin(bool arg0)
         {
             return IExecuteWithSignature<int>("getLeadingMargin", "(Z)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/DrawableMarginSpan.html#getPadding()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPadding()
+        {
+            return IExecuteWithSignature<int>("getPadding", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/DrawableMarginSpan.html#chooseHeight(java.lang.CharSequence,int,int,int,int,android.graphics.Paint.FontMetricsInt)"/>

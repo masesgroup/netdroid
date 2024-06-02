@@ -70,7 +70,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#BUFFER_FLAG_SYNC_FRAME"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int BUFFER_FLAG_SYNC_FRAME { get { if (!_BUFFER_FLAG_SYNC_FRAMEReady) { _BUFFER_FLAG_SYNC_FRAMEContent = SGetField<int>(LocalBridgeClazz, "BUFFER_FLAG_SYNC_FRAME"); _BUFFER_FLAG_SYNC_FRAMEReady = true; } return _BUFFER_FLAG_SYNC_FRAMEContent; } }
         private static int _BUFFER_FLAG_SYNC_FRAMEContent = default;
         private static bool _BUFFER_FLAG_SYNC_FRAMEReady = false; // this is used because in case of generics 
@@ -113,7 +113,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#INFO_OUTPUT_BUFFERS_CHANGED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int INFO_OUTPUT_BUFFERS_CHANGED { get { if (!_INFO_OUTPUT_BUFFERS_CHANGEDReady) { _INFO_OUTPUT_BUFFERS_CHANGEDContent = SGetField<int>(LocalBridgeClazz, "INFO_OUTPUT_BUFFERS_CHANGED"); _INFO_OUTPUT_BUFFERS_CHANGEDReady = true; } return _INFO_OUTPUT_BUFFERS_CHANGEDContent; } }
         private static int _INFO_OUTPUT_BUFFERS_CHANGEDContent = default;
         private static bool _INFO_OUTPUT_BUFFERS_CHANGEDReady = false; // this is used because in case of generics 
@@ -245,71 +245,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getCanonicalName()"/> 
-        /// </summary>
-        public Java.Lang.String CanonicalName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCanonicalName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getCodecInfo()"/> 
-        /// </summary>
-        public Android.Media.MediaCodecInfo CodecInfo
-        {
-            get { return IExecuteWithSignature<Android.Media.MediaCodecInfo>("getCodecInfo", "()Landroid/media/MediaCodecInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getInputBuffers()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Nio.ByteBuffer[] InputBuffers
-        {
-            get { return IExecuteWithSignatureArray<Java.Nio.ByteBuffer>("getInputBuffers", "()[Ljava/nio/ByteBuffer;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getInputFormat()"/> 
-        /// </summary>
-        public Android.Media.MediaFormat InputFormat
-        {
-            get { return IExecuteWithSignature<Android.Media.MediaFormat>("getInputFormat", "()Landroid/media/MediaFormat;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getMetrics()"/> 
-        /// </summary>
-        public Android.Os.PersistableBundle Metrics
-        {
-            get { return IExecuteWithSignature<Android.Os.PersistableBundle>("getMetrics", "()Landroid/os/PersistableBundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getOutputBuffers()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Nio.ByteBuffer[] OutputBuffers
-        {
-            get { return IExecuteWithSignatureArray<Java.Nio.ByteBuffer>("getOutputBuffers", "()[Ljava/nio/ByteBuffer;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getOutputFormat()"/> 
-        /// </summary>
-        public Android.Media.MediaFormat OutputFormat
-        {
-            get { return IExecuteWithSignature<Android.Media.MediaFormat>("getOutputFormat", "()Landroid/media/MediaFormat;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getSupportedVendorParameters()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> SupportedVendorParameters
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedVendorParameters", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getInputImage(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -355,6 +290,30 @@ namespace Android.Media
             return IExecuteWithSignature<Android.Media.MediaCodec.QueueRequest>("getQueueRequest", "(I)Landroid/media/MediaCodec$QueueRequest;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getCodecInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.MediaCodecInfo"/></returns>
+        public Android.Media.MediaCodecInfo GetCodecInfo()
+        {
+            return IExecuteWithSignature<Android.Media.MediaCodecInfo>("getCodecInfo", "()Landroid/media/MediaCodecInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getInputFormat()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.MediaFormat"/></returns>
+        public Android.Media.MediaFormat GetInputFormat()
+        {
+            return IExecuteWithSignature<Android.Media.MediaFormat>("getInputFormat", "()Landroid/media/MediaFormat;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getOutputFormat()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.MediaFormat"/></returns>
+        public Android.Media.MediaFormat GetOutputFormat()
+        {
+            return IExecuteWithSignature<Android.Media.MediaFormat>("getOutputFormat", "()Landroid/media/MediaFormat;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getOutputFormat(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -362,6 +321,14 @@ namespace Android.Media
         public Android.Media.MediaFormat GetOutputFormat(int arg0)
         {
             return IExecuteWithSignature<Android.Media.MediaFormat>("getOutputFormat", "(I)Landroid/media/MediaFormat;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getMetrics()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
+        public Android.Os.PersistableBundle GetMetrics()
+        {
+            return IExecuteWithSignature<Android.Os.PersistableBundle>("getMetrics", "()Landroid/os/PersistableBundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#dequeueInputBuffer(long)"/>
@@ -383,6 +350,14 @@ namespace Android.Media
             return IExecute<int>("dequeueOutputBuffer", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getInputBuffer(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -401,12 +376,46 @@ namespace Android.Media
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("getOutputBuffer", "(I)Ljava/nio/ByteBuffer;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getInputBuffers()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
+        [global::System.Obsolete()]
+        public Java.Nio.ByteBuffer[] GetInputBuffers()
+        {
+            return IExecuteWithSignatureArray<Java.Nio.ByteBuffer>("getInputBuffers", "()[Ljava/nio/ByteBuffer;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getOutputBuffers()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
+        [global::System.Obsolete()]
+        public Java.Nio.ByteBuffer[] GetOutputBuffers()
+        {
+            return IExecuteWithSignatureArray<Java.Nio.ByteBuffer>("getOutputBuffers", "()[Ljava/nio/ByteBuffer;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getSupportedVendorParameters()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetSupportedVendorParameters()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedVendorParameters", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#createInputSurface()"/>
         /// </summary>
         /// <returns><see cref="Android.View.Surface"/></returns>
         public Android.View.Surface CreateInputSurface()
         {
             return IExecuteWithSignature<Android.View.Surface>("createInputSurface", "()Landroid/view/Surface;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#getCanonicalName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCanonicalName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCanonicalName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodec.html#setVideoScalingMode(int)"/>
@@ -853,11 +862,12 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.CryptoInfo.html#getPattern()"/> <see href="https://developer.android.com/reference/android/media/MediaCodec.CryptoInfo.html#setPattern(android.media.MediaCodec.CryptoInfo.Pattern)"/>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.CryptoInfo.html#getPattern()"/>
             /// </summary>
-            public Android.Media.MediaCodec.CryptoInfo.Pattern Pattern
+            /// <returns><see cref="Android.Media.MediaCodec.CryptoInfo.Pattern"/></returns>
+            public Android.Media.MediaCodec.CryptoInfo.Pattern GetPattern()
             {
-                get { return IExecuteWithSignature<Android.Media.MediaCodec.CryptoInfo.Pattern>("getPattern", "()Landroid/media/MediaCodec$CryptoInfo$Pattern;"); } set { IExecuteWithSignature("setPattern", "(Landroid/media/MediaCodec$CryptoInfo$Pattern;)V", value); }
+                return IExecuteWithSignature<Android.Media.MediaCodec.CryptoInfo.Pattern>("getPattern", "()Landroid/media/MediaCodec$CryptoInfo$Pattern;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodec.CryptoInfo.html#set(int,int[],int[],byte[],byte[],int)"/>
@@ -871,6 +881,14 @@ namespace Android.Media
             public void Set(int arg0, int[] arg1, int[] arg2, byte[] arg3, byte[] arg4, int arg5)
             {
                 IExecute("set", arg0, arg1, arg2, arg3, arg4, arg5);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.CryptoInfo.html#setPattern(android.media.MediaCodec.CryptoInfo.Pattern)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Media.MediaCodec.CryptoInfo.Pattern"/></param>
+            public void SetPattern(Android.Media.MediaCodec.CryptoInfo.Pattern arg0)
+            {
+                IExecuteWithSignature("setPattern", "(Landroid/media/MediaCodec$CryptoInfo$Pattern;)V", arg0);
             }
 
             #endregion
@@ -906,18 +924,20 @@ namespace Android.Media
 
                 #region Instance methods
                 /// <summary>
-                /// <see href="https://developer.android.com/reference/android/media/MediaCodec.CryptoInfo.Pattern.html#getEncryptBlocks()"/> 
+                /// <see href="https://developer.android.com/reference/android/media/MediaCodec.CryptoInfo.Pattern.html#getEncryptBlocks()"/>
                 /// </summary>
-                public int EncryptBlocks
+                /// <returns><see cref="int"/></returns>
+                public int GetEncryptBlocks()
                 {
-                    get { return IExecuteWithSignature<int>("getEncryptBlocks", "()I"); }
+                    return IExecuteWithSignature<int>("getEncryptBlocks", "()I");
                 }
                 /// <summary>
-                /// <see href="https://developer.android.com/reference/android/media/MediaCodec.CryptoInfo.Pattern.html#getSkipBlocks()"/> 
+                /// <see href="https://developer.android.com/reference/android/media/MediaCodec.CryptoInfo.Pattern.html#getSkipBlocks()"/>
                 /// </summary>
-                public int SkipBlocks
+                /// <returns><see cref="int"/></returns>
+                public int GetSkipBlocks()
                 {
-                    get { return IExecuteWithSignature<int>("getSkipBlocks", "()I"); }
+                    return IExecuteWithSignature<int>("getSkipBlocks", "()I");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/media/MediaCodec.CryptoInfo.Pattern.html#set(int,int)"/>
@@ -1197,7 +1217,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onFirstTunnelFrameReady", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaCodec>>>(OnFirstTunnelFrameReadyEventHandler));
+                AddEventHandler("onFirstTunnelFrameReady", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaCodec>>>(OnFirstTunnelFrameReadyEventHandler));
 
             }
 
@@ -1205,7 +1225,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaCodec.OnFirstTunnelFrameReadyListener.html#onFirstTunnelFrameReady(android.media.MediaCodec)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFirstTunnelFrameReady"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaCodec> OnOnFirstTunnelFrameReady { get; set; } = null;
+            public global::System.Action<Android.Media.MediaCodec> OnOnFirstTunnelFrameReady { get; set; } = null;
 
             void OnFirstTunnelFrameReadyEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaCodec>> data)
             {
@@ -1296,7 +1316,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onFrameRendered", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaCodec>>>(OnFrameRenderedEventHandler));
+                AddEventHandler("onFrameRendered", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaCodec>>>(OnFrameRenderedEventHandler));
 
             }
 
@@ -1304,7 +1324,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaCodec.OnFrameRenderedListener.html#onFrameRendered(android.media.MediaCodec,long,long)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFrameRendered"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaCodec, long, long> OnOnFrameRendered { get; set; } = null;
+            public global::System.Action<Android.Media.MediaCodec, long, long> OnOnFrameRendered { get; set; } = null;
 
             void OnFrameRenderedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaCodec>> data)
             {
@@ -1395,46 +1415,52 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OutputFrame.html#getChangedKeys()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OutputFrame.html#getHardwareBuffer()"/>
             /// </summary>
-            public Java.Util.Set<Java.Lang.String> ChangedKeys
+            /// <returns><see cref="Android.Hardware.HardwareBuffer"/></returns>
+            public Android.Hardware.HardwareBuffer GetHardwareBuffer()
             {
-                get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getChangedKeys", "()Ljava/util/Set;"); }
+                return IExecuteWithSignature<Android.Hardware.HardwareBuffer>("getHardwareBuffer", "()Landroid/hardware/HardwareBuffer;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OutputFrame.html#getFlags()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OutputFrame.html#getLinearBlock()"/>
             /// </summary>
-            public int Flags
+            /// <returns><see cref="Android.Media.MediaCodec.LinearBlock"/></returns>
+            public Android.Media.MediaCodec.LinearBlock GetLinearBlock()
             {
-                get { return IExecuteWithSignature<int>("getFlags", "()I"); }
+                return IExecuteWithSignature<Android.Media.MediaCodec.LinearBlock>("getLinearBlock", "()Landroid/media/MediaCodec$LinearBlock;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OutputFrame.html#getFormat()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OutputFrame.html#getFormat()"/>
             /// </summary>
-            public Android.Media.MediaFormat Format
+            /// <returns><see cref="Android.Media.MediaFormat"/></returns>
+            public Android.Media.MediaFormat GetFormat()
             {
-                get { return IExecuteWithSignature<Android.Media.MediaFormat>("getFormat", "()Landroid/media/MediaFormat;"); }
+                return IExecuteWithSignature<Android.Media.MediaFormat>("getFormat", "()Landroid/media/MediaFormat;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OutputFrame.html#getLinearBlock()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OutputFrame.html#getFlags()"/>
             /// </summary>
-            public Android.Media.MediaCodec.LinearBlock GetLinearBlock
+            /// <returns><see cref="int"/></returns>
+            public int GetFlags()
             {
-                get { return IExecuteWithSignature<Android.Media.MediaCodec.LinearBlock>("getLinearBlock", "()Landroid/media/MediaCodec$LinearBlock;"); }
+                return IExecuteWithSignature<int>("getFlags", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OutputFrame.html#getHardwareBuffer()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OutputFrame.html#getChangedKeys()"/>
             /// </summary>
-            public Android.Hardware.HardwareBuffer HardwareBuffer
+            /// <returns><see cref="Java.Util.Set"/></returns>
+            public Java.Util.Set<Java.Lang.String> GetChangedKeys()
             {
-                get { return IExecuteWithSignature<Android.Hardware.HardwareBuffer>("getHardwareBuffer", "()Landroid/hardware/HardwareBuffer;"); }
+                return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getChangedKeys", "()Ljava/util/Set;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OutputFrame.html#getPresentationTimeUs()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.OutputFrame.html#getPresentationTimeUs()"/>
             /// </summary>
-            public long PresentationTimeUs
+            /// <returns><see cref="long"/></returns>
+            public long GetPresentationTimeUs()
             {
-                get { return IExecuteWithSignature<long>("getPresentationTimeUs", "()J"); }
+                return IExecuteWithSignature<long>("getPresentationTimeUs", "()J");
             }
 
             #endregion
@@ -1468,18 +1494,20 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.ParameterDescriptor.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.ParameterDescriptor.html#getType()"/>
             /// </summary>
-            public Java.Lang.String Name
+            /// <returns><see cref="int"/></returns>
+            public int GetType()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<int>("getType", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.ParameterDescriptor.html#getType()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodec.ParameterDescriptor.html#getName()"/>
             /// </summary>
-            public int Type
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetName()
             {
-                get { return IExecuteWithSignature<int>("getType", "()I"); }
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
 
             #endregion

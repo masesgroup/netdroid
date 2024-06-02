@@ -46,18 +46,12 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/VibratorManager.html#getDefaultVibrator()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/VibratorManager.html#getDefaultVibrator()"/>
         /// </summary>
-        public Android.Os.Vibrator DefaultVibrator
+        /// <returns><see cref="Android.Os.Vibrator"/></returns>
+        public Android.Os.Vibrator GetDefaultVibrator()
         {
-            get { return IExecuteWithSignature<Android.Os.Vibrator>("getDefaultVibrator", "()Landroid/os/Vibrator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/VibratorManager.html#getVibratorIds()"/> 
-        /// </summary>
-        public int[] VibratorIds
-        {
-            get { return IExecuteWithSignatureArray<int>("getVibratorIds", "()[I"); }
+            return IExecuteWithSignature<Android.Os.Vibrator>("getDefaultVibrator", "()Landroid/os/Vibrator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/VibratorManager.html#getVibrator(int)"/>
@@ -67,6 +61,14 @@ namespace Android.Os
         public Android.Os.Vibrator GetVibrator(int arg0)
         {
             return IExecuteWithSignature<Android.Os.Vibrator>("getVibrator", "(I)Landroid/os/Vibrator;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/VibratorManager.html#getVibratorIds()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetVibratorIds()
+        {
+            return IExecuteWithSignatureArray<int>("getVibratorIds", "()[I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/VibratorManager.html#cancel()"/>

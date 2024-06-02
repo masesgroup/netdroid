@@ -30,7 +30,7 @@ namespace Java.Security.Cert
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/TrustAnchor.html#%3Cinit%3E(java.lang.String,java.security.PublicKey,byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/TrustAnchor.html#%3Cinit%3E(java.lang.String,java.security.PublicKey,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.PublicKey"/></param>
@@ -40,7 +40,7 @@ namespace Java.Security.Cert
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/TrustAnchor.html#%3Cinit%3E(java.security.cert.X509Certificate,byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/TrustAnchor.html#%3Cinit%3E(java.security.cert.X509Certificate,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -49,7 +49,7 @@ namespace Java.Security.Cert
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/TrustAnchor.html#%3Cinit%3E(javax.security.auth.x500.X500Principal,java.security.PublicKey,byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/TrustAnchor.html#%3Cinit%3E(javax.security.auth.x500.X500Principal,java.security.PublicKey,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.X500.X500Principal"/></param>
         /// <param name="arg1"><see cref="Java.Security.PublicKey"/></param>
@@ -75,39 +75,44 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/TrustAnchor.html#getCA()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/TrustAnchor.html#getNameConstraints()"/>
         /// </summary>
-        public Javax.Security.Auth.X500.X500Principal CA
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetNameConstraints()
         {
-            get { return IExecuteWithSignature<Javax.Security.Auth.X500.X500Principal>("getCA", "()Ljavax/security/auth/x500/X500Principal;"); }
+            return IExecuteWithSignatureArray<byte>("getNameConstraints", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/TrustAnchor.html#getCAName()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/TrustAnchor.html#getCAName()"/>
         /// </summary>
-        public Java.Lang.String CAName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCAName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCAName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getCAName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/TrustAnchor.html#getCAPublicKey()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/TrustAnchor.html#getTrustedCert()"/>
         /// </summary>
-        public Java.Security.PublicKey CAPublicKey
+        /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
+        public Java.Security.Cert.X509Certificate GetTrustedCert()
         {
-            get { return IExecuteWithSignature<Java.Security.PublicKey>("getCAPublicKey", "()Ljava/security/PublicKey;"); }
+            return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getTrustedCert", "()Ljava/security/cert/X509Certificate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/TrustAnchor.html#getNameConstraints()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/TrustAnchor.html#getCAPublicKey()"/>
         /// </summary>
-        public byte[] NameConstraints
+        /// <returns><see cref="Java.Security.PublicKey"/></returns>
+        public Java.Security.PublicKey GetCAPublicKey()
         {
-            get { return IExecuteWithSignatureArray<byte>("getNameConstraints", "()[B"); }
+            return IExecuteWithSignature<Java.Security.PublicKey>("getCAPublicKey", "()Ljava/security/PublicKey;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/TrustAnchor.html#getTrustedCert()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/TrustAnchor.html#getCA()"/>
         /// </summary>
-        public Java.Security.Cert.X509Certificate TrustedCert
+        /// <returns><see cref="Javax.Security.Auth.X500.X500Principal"/></returns>
+        public Javax.Security.Auth.X500.X500Principal GetCA()
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getTrustedCert", "()Ljava/security/cert/X509Certificate;"); }
+            return IExecuteWithSignature<Javax.Security.Auth.X500.X500Principal>("getCA", "()Ljavax/security/auth/x500/X500Principal;");
         }
 
         #endregion

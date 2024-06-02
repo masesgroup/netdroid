@@ -106,18 +106,26 @@ namespace Android.Media.Audiofx
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/PresetReverb.html#getPreset()"/> <see href="https://developer.android.com/reference/android/media/audiofx/PresetReverb.html#setPreset(short)"/>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/PresetReverb.html#getProperties()"/>
         /// </summary>
-        public short Preset
+        /// <returns><see cref="Android.Media.Audiofx.PresetReverb.Settings"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public Android.Media.Audiofx.PresetReverb.Settings GetProperties()
         {
-            get { return IExecuteWithSignature<short>("getPreset", "()S"); } set { IExecuteWithSignature("setPreset", "(S)V", value); }
+            return IExecuteWithSignature<Android.Media.Audiofx.PresetReverb.Settings>("getProperties", "()Landroid/media/audiofx/PresetReverb$Settings;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/PresetReverb.html#getProperties()"/> <see href="https://developer.android.com/reference/android/media/audiofx/PresetReverb.html#setProperties(android.media.audiofx.PresetReverb.Settings)"/>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/PresetReverb.html#getPreset()"/>
         /// </summary>
-        public Android.Media.Audiofx.PresetReverb.Settings Properties
+        /// <returns><see cref="short"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public short GetPreset()
         {
-            get { return IExecuteWithSignature<Android.Media.Audiofx.PresetReverb.Settings>("getProperties", "()Landroid/media/audiofx/PresetReverb$Settings;"); } set { IExecuteWithSignature("setProperties", "(Landroid/media/audiofx/PresetReverb$Settings;)V", value); }
+            return IExecuteWithSignature<short>("getPreset", "()S");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/PresetReverb.html#setParameterListener(android.media.audiofx.PresetReverb.OnParameterChangeListener)"/>
@@ -126,6 +134,28 @@ namespace Android.Media.Audiofx
         public void SetParameterListener(Android.Media.Audiofx.PresetReverb.OnParameterChangeListener arg0)
         {
             IExecuteWithSignature("setParameterListener", "(Landroid/media/audiofx/PresetReverb$OnParameterChangeListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/PresetReverb.html#setPreset(short)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public void SetPreset(short arg0)
+        {
+            IExecuteWithSignature("setPreset", "(S)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/PresetReverb.html#setProperties(android.media.audiofx.PresetReverb.Settings)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.Audiofx.PresetReverb.Settings"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public void SetProperties(Android.Media.Audiofx.PresetReverb.Settings arg0)
+        {
+            IExecuteWithSignature("setProperties", "(Landroid/media/audiofx/PresetReverb$Settings;)V", arg0);
         }
 
         #endregion
@@ -156,7 +186,7 @@ namespace Android.Media.Audiofx
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onParameterChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.PresetReverb>>>(OnParameterChangeEventHandler));
+                AddEventHandler("onParameterChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.PresetReverb>>>(OnParameterChangeEventHandler));
 
             }
 
@@ -164,7 +194,7 @@ namespace Android.Media.Audiofx
             /// Handler for <see href="https://developer.android.com/reference/android/media/audiofx/PresetReverb.OnParameterChangeListener.html#onParameterChange(android.media.audiofx.PresetReverb,int,int,short)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnParameterChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.Audiofx.PresetReverb, int, int, short> OnOnParameterChange { get; set; } = null;
+            public global::System.Action<Android.Media.Audiofx.PresetReverb, int, int, short> OnOnParameterChange { get; set; } = null;
 
             void OnParameterChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.PresetReverb>> data)
             {

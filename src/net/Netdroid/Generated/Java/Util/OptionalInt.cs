@@ -42,7 +42,7 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalInt.html#empty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalInt.html#empty()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalInt"/></returns>
         public static Java.Util.OptionalInt Empty()
@@ -50,7 +50,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.OptionalInt>(LocalBridgeClazz, "empty", "()Ljava/util/OptionalInt;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalInt.html#of(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalInt.html#of(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.OptionalInt"/></returns>
@@ -63,26 +63,19 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalInt.html#getAsInt()"/> 
-        /// </summary>
-        public int AsInt
-        {
-            get { return IExecuteWithSignature<int>("getAsInt", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalInt.html#orElseThrow(java.util.function.Supplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalInt.html#orElseThrow(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <typeparam name="Arg0ExtendsX"><typeparamref name="X"/></typeparam>
         /// <typeparam name="X"></typeparam>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.Throwable"/>
-        public int OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX: X
+        public int OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX : X
         {
-            return IExecuteWithSignature<int>("orElseThrow", "(Ljava/util/function/Supplier;)I", arg0);
+            return IExecute<int>("orElseThrow", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalInt.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalInt.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -90,7 +83,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalInt.html#isPresent()"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalInt.html#isPresent()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsPresent()
@@ -98,7 +91,15 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isPresent", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalInt.html#orElse(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalInt.html#getAsInt()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAsInt()
+        {
+            return IExecuteWithSignature<int>("getAsInt", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalInt.html#orElse(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -107,7 +108,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("orElse", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalInt.html#orElseGet(java.util.function.IntSupplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalInt.html#orElseGet(java.util.function.IntSupplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntSupplier"/></param>
         /// <returns><see cref="int"/></returns>
@@ -116,7 +117,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("orElseGet", "(Ljava/util/function/IntSupplier;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalInt.html#orElseThrow()"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalInt.html#orElseThrow()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int OrElseThrow()
@@ -124,7 +125,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("orElseThrow", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalInt.html#stream()"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalInt.html#stream()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Stream()
@@ -132,7 +133,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("stream", "()Ljava/util/stream/IntStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalInt.html#ifPresent(java.util.function.IntConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalInt.html#ifPresent(java.util.function.IntConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
         public void IfPresent(Java.Util.Function.IntConsumer arg0)
@@ -140,7 +141,7 @@ namespace Java.Util
             IExecuteWithSignature("ifPresent", "(Ljava/util/function/IntConsumer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalInt.html#ifPresentOrElse(java.util.function.IntConsumer,java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalInt.html#ifPresentOrElse(java.util.function.IntConsumer,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>

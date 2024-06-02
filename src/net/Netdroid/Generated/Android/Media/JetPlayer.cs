@@ -42,18 +42,20 @@ namespace Android.Media
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/JetPlayer.html#getJetPlayer()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/JetPlayer.html#getJetPlayer()"/>
         /// </summary>
-        public static Android.Media.JetPlayer GetJetPlayer
+        /// <returns><see cref="Android.Media.JetPlayer"/></returns>
+        public static Android.Media.JetPlayer GetJetPlayer()
         {
-            get { return SExecuteWithSignature<Android.Media.JetPlayer>(LocalBridgeClazz, "getJetPlayer", "()Landroid/media/JetPlayer;"); }
+            return SExecuteWithSignature<Android.Media.JetPlayer>(LocalBridgeClazz, "getJetPlayer", "()Landroid/media/JetPlayer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/JetPlayer.html#getMaxTracks()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/JetPlayer.html#getMaxTracks()"/>
         /// </summary>
-        public static int MaxTracks
+        /// <returns><see cref="int"/></returns>
+        public static int GetMaxTracks()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxTracks", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxTracks", "()I");
         }
 
         #endregion
@@ -230,10 +232,10 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onJetEvent", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.JetPlayer>>>(OnJetEventEventHandler));
-                AddEventHandler("onJetNumQueuedSegmentUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.JetPlayer>>>(OnJetNumQueuedSegmentUpdateEventHandler));
-                AddEventHandler("onJetPauseUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.JetPlayer>>>(OnJetPauseUpdateEventHandler));
-                AddEventHandler("onJetUserIdUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.JetPlayer>>>(OnJetUserIdUpdateEventHandler));
+                AddEventHandler("onJetEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.JetPlayer>>>(OnJetEventEventHandler));
+                AddEventHandler("onJetNumQueuedSegmentUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.JetPlayer>>>(OnJetNumQueuedSegmentUpdateEventHandler));
+                AddEventHandler("onJetPauseUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.JetPlayer>>>(OnJetPauseUpdateEventHandler));
+                AddEventHandler("onJetUserIdUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.JetPlayer>>>(OnJetUserIdUpdateEventHandler));
 
             }
 
@@ -241,7 +243,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/JetPlayer.OnJetEventListener.html#onJetEvent(android.media.JetPlayer,short,byte,byte,byte,byte)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnJetEvent"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.JetPlayer, short, byte, byte, byte, byte> OnOnJetEvent { get; set; } = null;
+            public global::System.Action<Android.Media.JetPlayer, short, byte, byte, byte, byte> OnOnJetEvent { get; set; } = null;
 
             void OnJetEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.JetPlayer>> data)
             {
@@ -267,7 +269,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/JetPlayer.OnJetEventListener.html#onJetNumQueuedSegmentUpdate(android.media.JetPlayer,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnJetNumQueuedSegmentUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.JetPlayer, int> OnOnJetNumQueuedSegmentUpdate { get; set; } = null;
+            public global::System.Action<Android.Media.JetPlayer, int> OnOnJetNumQueuedSegmentUpdate { get; set; } = null;
 
             void OnJetNumQueuedSegmentUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.JetPlayer>> data)
             {
@@ -289,7 +291,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/JetPlayer.OnJetEventListener.html#onJetPauseUpdate(android.media.JetPlayer,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnJetPauseUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.JetPlayer, int> OnOnJetPauseUpdate { get; set; } = null;
+            public global::System.Action<Android.Media.JetPlayer, int> OnOnJetPauseUpdate { get; set; } = null;
 
             void OnJetPauseUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.JetPlayer>> data)
             {
@@ -311,7 +313,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/JetPlayer.OnJetEventListener.html#onJetUserIdUpdate(android.media.JetPlayer,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnJetUserIdUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.JetPlayer, int, int> OnOnJetUserIdUpdate { get; set; } = null;
+            public global::System.Action<Android.Media.JetPlayer, int, int> OnOnJetUserIdUpdate { get; set; } = null;
 
             void OnJetUserIdUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.JetPlayer>> data)
             {

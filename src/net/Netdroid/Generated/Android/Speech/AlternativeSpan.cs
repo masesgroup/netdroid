@@ -62,33 +62,36 @@ namespace Android.Speech
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/AlternativeSpan.html#getAlternatives()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> Alternatives
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAlternatives", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/AlternativeSpan.html#getEndPosition()"/> 
-        /// </summary>
-        public int EndPosition
-        {
-            get { return IExecuteWithSignature<int>("getEndPosition", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/AlternativeSpan.html#getStartPosition()"/> 
-        /// </summary>
-        public int StartPosition
-        {
-            get { return IExecuteWithSignature<int>("getStartPosition", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/AlternativeSpan.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/AlternativeSpan.html#getEndPosition()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEndPosition()
+        {
+            return IExecuteWithSignature<int>("getEndPosition", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/AlternativeSpan.html#getStartPosition()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStartPosition()
+        {
+            return IExecuteWithSignature<int>("getStartPosition", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/AlternativeSpan.html#getAlternatives()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetAlternatives()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAlternatives", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/AlternativeSpan.html#writeToParcel(android.os.Parcel,int)"/>

@@ -64,39 +64,20 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppSdpSettings.html#getDescription()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppSdpSettings.html#getSubclass()"/>
         /// </summary>
-        public Java.Lang.String Description
+        /// <returns><see cref="byte"/></returns>
+        public byte GetSubclass()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
+            return IExecute<byte>("getSubclass");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppSdpSettings.html#getDescriptors()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppSdpSettings.html#getDescriptors()"/>
         /// </summary>
-        public byte[] Descriptors
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetDescriptors()
         {
-            get { return IExecuteWithSignatureArray<byte>("getDescriptors", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppSdpSettings.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppSdpSettings.html#getProvider()"/> 
-        /// </summary>
-        public Java.Lang.String Provider
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getProvider", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppSdpSettings.html#getSubclass()"/> 
-        /// </summary>
-        public byte Subclass
-        {
-            get { return IExecute<byte>("getSubclass"); }
+            return IExecuteWithSignatureArray<byte>("getDescriptors", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppSdpSettings.html#describeContents()"/>
@@ -105,6 +86,30 @@ namespace Android.Bluetooth
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppSdpSettings.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppSdpSettings.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppSdpSettings.html#getProvider()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetProvider()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getProvider", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothHidDeviceAppSdpSettings.html#writeToParcel(android.os.Parcel,int)"/>

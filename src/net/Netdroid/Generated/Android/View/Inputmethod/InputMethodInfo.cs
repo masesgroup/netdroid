@@ -80,67 +80,12 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getComponent()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getComponent()"/>
         /// </summary>
-        public Android.Content.ComponentName Component
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetComponent()
         {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getComponent", "()Landroid/content/ComponentName;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getConfigChanges()"/> 
-        /// </summary>
-        public int ConfigChanges
-        {
-            get { return IExecuteWithSignature<int>("getConfigChanges", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getIsDefaultResourceId()"/> 
-        /// </summary>
-        public int IsDefaultResourceId
-        {
-            get { return IExecuteWithSignature<int>("getIsDefaultResourceId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getServiceInfo()"/> 
-        /// </summary>
-        public Android.Content.Pm.ServiceInfo ServiceInfo
-        {
-            get { return IExecuteWithSignature<Android.Content.Pm.ServiceInfo>("getServiceInfo", "()Landroid/content/pm/ServiceInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getServiceName()"/> 
-        /// </summary>
-        public Java.Lang.String ServiceName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getServiceName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getSettingsActivity()"/> 
-        /// </summary>
-        public Java.Lang.String SettingsActivity
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSettingsActivity", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getSubtypeCount()"/> 
-        /// </summary>
-        public int SubtypeCount
-        {
-            get { return IExecuteWithSignature<int>("getSubtypeCount", "()I"); }
+            return IExecuteWithSignature<Android.Content.ComponentName>("getComponent", "()Landroid/content/ComponentName;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#createStylusHandwritingSettingsActivityIntent()"/>
@@ -149,6 +94,14 @@ namespace Android.View.Inputmethod
         public Android.Content.Intent CreateStylusHandwritingSettingsActivityIntent()
         {
             return IExecuteWithSignature<Android.Content.Intent>("createStylusHandwritingSettingsActivityIntent", "()Landroid/content/Intent;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getServiceInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Pm.ServiceInfo"/></returns>
+        public Android.Content.Pm.ServiceInfo GetServiceInfo()
+        {
+            return IExecuteWithSignature<Android.Content.Pm.ServiceInfo>("getServiceInfo", "()Landroid/content/pm/ServiceInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#loadIcon(android.content.pm.PackageManager)"/>
@@ -201,6 +154,30 @@ namespace Android.View.Inputmethod
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getConfigChanges()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetConfigChanges()
+        {
+            return IExecuteWithSignature<int>("getConfigChanges", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getIsDefaultResourceId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIsDefaultResourceId()
+        {
+            return IExecuteWithSignature<int>("getIsDefaultResourceId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getSubtypeCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSubtypeCount()
+        {
+            return IExecuteWithSignature<int>("getSubtypeCount", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#loadLabel(android.content.pm.PackageManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.PackageManager"/></param>
@@ -208,6 +185,38 @@ namespace Android.View.Inputmethod
         public Java.Lang.CharSequence LoadLabel(Android.Content.Pm.PackageManager arg0)
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("loadLabel", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getServiceName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetServiceName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getServiceName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#getSettingsActivity()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSettingsActivity()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSettingsActivity", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodInfo.html#dump(android.util.Printer,java.lang.String)"/>

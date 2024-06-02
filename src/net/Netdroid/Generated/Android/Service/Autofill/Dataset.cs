@@ -88,7 +88,7 @@ namespace Android.Service.Autofill
             /// <see href="https://developer.android.com/reference/android/service/autofill/Dataset.Builder.html#%3Cinit%3E(android.widget.RemoteViews)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Widget.RemoteViews"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Builder(Android.Widget.RemoteViews arg0)
                 : base(arg0)
             {
@@ -170,7 +170,7 @@ namespace Android.Service.Autofill
             /// <param name="arg0"><see cref="Android.Service.Autofill.InlinePresentation"/></param>
             /// <param name="arg1"><see cref="Android.Service.Autofill.InlinePresentation"/></param>
             /// <returns><see cref="Android.Service.Autofill.Dataset.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetInlinePresentation(Android.Service.Autofill.InlinePresentation arg0, Android.Service.Autofill.InlinePresentation arg1)
             {
                 return IExecute<Android.Service.Autofill.Dataset.Builder>("setInlinePresentation", arg0, arg1);
@@ -180,7 +180,7 @@ namespace Android.Service.Autofill
             /// </summary>
             /// <param name="arg0"><see cref="Android.Service.Autofill.InlinePresentation"/></param>
             /// <returns><see cref="Android.Service.Autofill.Dataset.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetInlinePresentation(Android.Service.Autofill.InlinePresentation arg0)
             {
                 return IExecuteWithSignature<Android.Service.Autofill.Dataset.Builder>("setInlinePresentation", "(Landroid/service/autofill/InlinePresentation;)Landroid/service/autofill/Dataset$Builder;", arg0);
@@ -194,7 +194,7 @@ namespace Android.Service.Autofill
             /// <param name="arg3"><see cref="Android.Service.Autofill.InlinePresentation"/></param>
             /// <param name="arg4"><see cref="Android.Service.Autofill.InlinePresentation"/></param>
             /// <returns><see cref="Android.Service.Autofill.Dataset.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetValue(Android.View.Autofill.AutofillId arg0, Android.View.Autofill.AutofillValue arg1, Android.Widget.RemoteViews arg2, Android.Service.Autofill.InlinePresentation arg3, Android.Service.Autofill.InlinePresentation arg4)
             {
                 return IExecute<Android.Service.Autofill.Dataset.Builder>("setValue", arg0, arg1, arg2, arg3, arg4);
@@ -207,7 +207,7 @@ namespace Android.Service.Autofill
             /// <param name="arg2"><see cref="Android.Widget.RemoteViews"/></param>
             /// <param name="arg3"><see cref="Android.Service.Autofill.InlinePresentation"/></param>
             /// <returns><see cref="Android.Service.Autofill.Dataset.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetValue(Android.View.Autofill.AutofillId arg0, Android.View.Autofill.AutofillValue arg1, Android.Widget.RemoteViews arg2, Android.Service.Autofill.InlinePresentation arg3)
             {
                 return IExecute<Android.Service.Autofill.Dataset.Builder>("setValue", arg0, arg1, arg2, arg3);
@@ -219,7 +219,7 @@ namespace Android.Service.Autofill
             /// <param name="arg1"><see cref="Android.View.Autofill.AutofillValue"/></param>
             /// <param name="arg2"><see cref="Android.Widget.RemoteViews"/></param>
             /// <returns><see cref="Android.Service.Autofill.Dataset.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetValue(Android.View.Autofill.AutofillId arg0, Android.View.Autofill.AutofillValue arg1, Android.Widget.RemoteViews arg2)
             {
                 return IExecute<Android.Service.Autofill.Dataset.Builder>("setValue", arg0, arg1, arg2);
@@ -234,7 +234,7 @@ namespace Android.Service.Autofill
             /// <param name="arg4"><see cref="Android.Service.Autofill.InlinePresentation"/></param>
             /// <param name="arg5"><see cref="Android.Service.Autofill.InlinePresentation"/></param>
             /// <returns><see cref="Android.Service.Autofill.Dataset.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetValue(Android.View.Autofill.AutofillId arg0, Android.View.Autofill.AutofillValue arg1, Java.Util.Regex.Pattern arg2, Android.Widget.RemoteViews arg3, Android.Service.Autofill.InlinePresentation arg4, Android.Service.Autofill.InlinePresentation arg5)
             {
                 return IExecute<Android.Service.Autofill.Dataset.Builder>("setValue", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -248,7 +248,7 @@ namespace Android.Service.Autofill
             /// <param name="arg3"><see cref="Android.Widget.RemoteViews"/></param>
             /// <param name="arg4"><see cref="Android.Service.Autofill.InlinePresentation"/></param>
             /// <returns><see cref="Android.Service.Autofill.Dataset.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetValue(Android.View.Autofill.AutofillId arg0, Android.View.Autofill.AutofillValue arg1, Java.Util.Regex.Pattern arg2, Android.Widget.RemoteViews arg3, Android.Service.Autofill.InlinePresentation arg4)
             {
                 return IExecute<Android.Service.Autofill.Dataset.Builder>("setValue", arg0, arg1, arg2, arg3, arg4);
@@ -261,7 +261,7 @@ namespace Android.Service.Autofill
             /// <param name="arg2"><see cref="Java.Util.Regex.Pattern"/></param>
             /// <param name="arg3"><see cref="Android.Widget.RemoteViews"/></param>
             /// <returns><see cref="Android.Service.Autofill.Dataset.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetValue(Android.View.Autofill.AutofillId arg0, Android.View.Autofill.AutofillValue arg1, Java.Util.Regex.Pattern arg2, Android.Widget.RemoteViews arg3)
             {
                 return IExecute<Android.Service.Autofill.Dataset.Builder>("setValue", arg0, arg1, arg2, arg3);
@@ -273,7 +273,7 @@ namespace Android.Service.Autofill
             /// <param name="arg1"><see cref="Android.View.Autofill.AutofillValue"/></param>
             /// <param name="arg2"><see cref="Java.Util.Regex.Pattern"/></param>
             /// <returns><see cref="Android.Service.Autofill.Dataset.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetValue(Android.View.Autofill.AutofillId arg0, Android.View.Autofill.AutofillValue arg1, Java.Util.Regex.Pattern arg2)
             {
                 return IExecute<Android.Service.Autofill.Dataset.Builder>("setValue", arg0, arg1, arg2);
@@ -284,7 +284,7 @@ namespace Android.Service.Autofill
             /// <param name="arg0"><see cref="Android.View.Autofill.AutofillId"/></param>
             /// <param name="arg1"><see cref="Android.View.Autofill.AutofillValue"/></param>
             /// <returns><see cref="Android.Service.Autofill.Dataset.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Service.Autofill.Dataset.Builder SetValue(Android.View.Autofill.AutofillId arg0, Android.View.Autofill.AutofillValue arg1)
             {
                 return IExecute<Android.Service.Autofill.Dataset.Builder>("setValue", arg0, arg1);

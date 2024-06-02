@@ -64,11 +64,12 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/GenericArrayType.html#getGenericComponentType()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/GenericArrayType.html#getGenericComponentType()"/>
         /// </summary>
-        public Java.Lang.Reflect.Type GenericComponentType
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type GetGenericComponentType()
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Type>("getGenericComponentType", "()Ljava/lang/reflect/Type;"); }
+            return IExecuteWithSignature<Java.Lang.Reflect.Type>("getGenericComponentType", "()Ljava/lang/reflect/Type;");
         }
 
         #endregion

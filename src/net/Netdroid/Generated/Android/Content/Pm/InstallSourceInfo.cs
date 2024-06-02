@@ -52,46 +52,12 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/InstallSourceInfo.html#getInitiatingPackageName()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/InstallSourceInfo.html#getInitiatingPackageSigningInfo()"/>
         /// </summary>
-        public Java.Lang.String InitiatingPackageName
+        /// <returns><see cref="Android.Content.Pm.SigningInfo"/></returns>
+        public Android.Content.Pm.SigningInfo GetInitiatingPackageSigningInfo()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInitiatingPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/InstallSourceInfo.html#getInitiatingPackageSigningInfo()"/> 
-        /// </summary>
-        public Android.Content.Pm.SigningInfo InitiatingPackageSigningInfo
-        {
-            get { return IExecuteWithSignature<Android.Content.Pm.SigningInfo>("getInitiatingPackageSigningInfo", "()Landroid/content/pm/SigningInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/InstallSourceInfo.html#getInstallingPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String InstallingPackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInstallingPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/InstallSourceInfo.html#getOriginatingPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String OriginatingPackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOriginatingPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/InstallSourceInfo.html#getPackageSource()"/> 
-        /// </summary>
-        public int PackageSource
-        {
-            get { return IExecuteWithSignature<int>("getPackageSource", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/InstallSourceInfo.html#getUpdateOwnerPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String UpdateOwnerPackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUpdateOwnerPackageName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Content.Pm.SigningInfo>("getInitiatingPackageSigningInfo", "()Landroid/content/pm/SigningInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/InstallSourceInfo.html#describeContents()"/>
@@ -100,6 +66,46 @@ namespace Android.Content.Pm
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/InstallSourceInfo.html#getPackageSource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPackageSource()
+        {
+            return IExecuteWithSignature<int>("getPackageSource", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/InstallSourceInfo.html#getInitiatingPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetInitiatingPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getInitiatingPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/InstallSourceInfo.html#getInstallingPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetInstallingPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getInstallingPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/InstallSourceInfo.html#getOriginatingPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOriginatingPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOriginatingPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/InstallSourceInfo.html#getUpdateOwnerPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUpdateOwnerPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUpdateOwnerPackageName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/InstallSourceInfo.html#writeToParcel(android.os.Parcel,int)"/>

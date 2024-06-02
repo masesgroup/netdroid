@@ -78,14 +78,14 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextClock.html#DEFAULT_FORMAT_12_HOUR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.CharSequence DEFAULT_FORMAT_12_HOUR { get { if (!_DEFAULT_FORMAT_12_HOURReady) { _DEFAULT_FORMAT_12_HOURContent = SGetField<Java.Lang.CharSequence>(LocalBridgeClazz, "DEFAULT_FORMAT_12_HOUR"); _DEFAULT_FORMAT_12_HOURReady = true; } return _DEFAULT_FORMAT_12_HOURContent; } }
         private static Java.Lang.CharSequence _DEFAULT_FORMAT_12_HOURContent = default;
         private static bool _DEFAULT_FORMAT_12_HOURReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextClock.html#DEFAULT_FORMAT_24_HOUR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.CharSequence DEFAULT_FORMAT_24_HOUR { get { if (!_DEFAULT_FORMAT_24_HOURReady) { _DEFAULT_FORMAT_24_HOURContent = SGetField<Java.Lang.CharSequence>(LocalBridgeClazz, "DEFAULT_FORMAT_24_HOUR"); _DEFAULT_FORMAT_24_HOURReady = true; } return _DEFAULT_FORMAT_24_HOURContent; } }
         private static Java.Lang.CharSequence _DEFAULT_FORMAT_24_HOURContent = default;
         private static bool _DEFAULT_FORMAT_24_HOURReady = false; // this is used because in case of generics 
@@ -98,27 +98,6 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextClock.html#getFormat12Hour()"/> <see href="https://developer.android.com/reference/android/widget/TextClock.html#setFormat12Hour(java.lang.CharSequence)"/>
-        /// </summary>
-        public Java.Lang.CharSequence Format12Hour
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getFormat12Hour", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setFormat12Hour", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextClock.html#getFormat24Hour()"/> <see href="https://developer.android.com/reference/android/widget/TextClock.html#setFormat24Hour(java.lang.CharSequence)"/>
-        /// </summary>
-        public Java.Lang.CharSequence Format24Hour
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getFormat24Hour", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setFormat24Hour", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextClock.html#getTimeZone()"/> <see href="https://developer.android.com/reference/android/widget/TextClock.html#setTimeZone(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String TimeZone
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTimeZone", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setTimeZone", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextClock.html#is24HourModeEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -127,11 +106,59 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("is24HourModeEnabled", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextClock.html#getFormat12Hour()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetFormat12Hour()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getFormat12Hour", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextClock.html#getFormat24Hour()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetFormat24Hour()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getFormat24Hour", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextClock.html#getTimeZone()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTimeZone()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTimeZone", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextClock.html#refreshTime()"/>
         /// </summary>
         public void RefreshTime()
         {
             IExecuteWithSignature("refreshTime", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextClock.html#setFormat12Hour(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetFormat12Hour(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setFormat12Hour", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextClock.html#setFormat24Hour(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetFormat24Hour(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setFormat24Hour", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextClock.html#setTimeZone(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetTimeZone(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setTimeZone", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

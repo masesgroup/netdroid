@@ -94,60 +94,36 @@ namespace Android.Print
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#getAttributes()"/> 
+        /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#getPages()"/>
         /// </summary>
-        public Android.Print.PrintAttributes Attributes
+        /// <returns><see cref="Android.Print.PageRange"/></returns>
+        public Android.Print.PageRange[] GetPages()
         {
-            get { return IExecuteWithSignature<Android.Print.PrintAttributes>("getAttributes", "()Landroid/print/PrintAttributes;"); }
+            return IExecuteWithSignatureArray<Android.Print.PageRange>("getPages", "()[Landroid/print/PageRange;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#getCopies()"/> 
+        /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#getAttributes()"/>
         /// </summary>
-        public int Copies
+        /// <returns><see cref="Android.Print.PrintAttributes"/></returns>
+        public Android.Print.PrintAttributes GetAttributes()
         {
-            get { return IExecuteWithSignature<int>("getCopies", "()I"); }
+            return IExecuteWithSignature<Android.Print.PrintAttributes>("getAttributes", "()Landroid/print/PrintAttributes;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#getCreationTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#getPrinterId()"/>
         /// </summary>
-        public long CreationTime
+        /// <returns><see cref="Android.Print.PrinterId"/></returns>
+        public Android.Print.PrinterId GetPrinterId()
         {
-            get { return IExecuteWithSignature<long>("getCreationTime", "()J"); }
+            return IExecuteWithSignature<Android.Print.PrinterId>("getPrinterId", "()Landroid/print/PrinterId;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#getId()"/>
         /// </summary>
-        public Android.Print.PrintJobId Id
+        /// <returns><see cref="Android.Print.PrintJobId"/></returns>
+        public Android.Print.PrintJobId GetId()
         {
-            get { return IExecuteWithSignature<Android.Print.PrintJobId>("getId", "()Landroid/print/PrintJobId;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#getLabel()"/> 
-        /// </summary>
-        public Java.Lang.String Label
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLabel", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#getPages()"/> 
-        /// </summary>
-        public Android.Print.PageRange[] Pages
-        {
-            get { return IExecuteWithSignatureArray<Android.Print.PageRange>("getPages", "()[Landroid/print/PageRange;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#getPrinterId()"/> 
-        /// </summary>
-        public Android.Print.PrinterId PrinterId
-        {
-            get { return IExecuteWithSignature<Android.Print.PrinterId>("getPrinterId", "()Landroid/print/PrinterId;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#getState()"/> 
-        /// </summary>
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
+            return IExecuteWithSignature<Android.Print.PrintJobId>("getId", "()Landroid/print/PrintJobId;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#hasAdvancedOption(java.lang.String)"/>
@@ -176,6 +152,22 @@ namespace Android.Print
             return IExecuteWithSignature<int>("getAdvancedIntOption", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#getCopies()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCopies()
+        {
+            return IExecuteWithSignature<int>("getCopies", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#getAdvancedStringOption(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -183,6 +175,22 @@ namespace Android.Print
         public Java.Lang.String GetAdvancedStringOption(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getAdvancedStringOption", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#getLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLabel", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#getCreationTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetCreationTime()
+        {
+            return IExecuteWithSignature<long>("getCreationTime", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrintJobInfo.html#writeToParcel(android.os.Parcel,int)"/>

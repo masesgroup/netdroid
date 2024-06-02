@@ -42,7 +42,7 @@ namespace Java.Nio.File.Attribute
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/PosixFilePermissions.html#toString(java.util.Set)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/PosixFilePermissions.html#toString(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -51,7 +51,7 @@ namespace Java.Nio.File.Attribute
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(Ljava/util/Set;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/PosixFilePermissions.html#asFileAttribute(java.util.Set)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/PosixFilePermissions.html#asFileAttribute(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <returns><see cref="Java.Nio.File.Attribute.FileAttribute"/></returns>
@@ -60,7 +60,7 @@ namespace Java.Nio.File.Attribute
             return SExecuteWithSignature<Java.Nio.File.Attribute.FileAttribute<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>>>(LocalBridgeClazz, "asFileAttribute", "(Ljava/util/Set;)Ljava/nio/file/attribute/FileAttribute;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/PosixFilePermissions.html#fromString(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/PosixFilePermissions.html#fromString(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>

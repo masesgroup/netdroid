@@ -40,14 +40,14 @@ namespace Android.Os
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#ACQUIRE_CAUSES_WAKEUP"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ACQUIRE_CAUSES_WAKEUP { get { if (!_ACQUIRE_CAUSES_WAKEUPReady) { _ACQUIRE_CAUSES_WAKEUPContent = SGetField<int>(LocalBridgeClazz, "ACQUIRE_CAUSES_WAKEUP"); _ACQUIRE_CAUSES_WAKEUPReady = true; } return _ACQUIRE_CAUSES_WAKEUPContent; } }
         private static int _ACQUIRE_CAUSES_WAKEUPContent = default;
         private static bool _ACQUIRE_CAUSES_WAKEUPReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#FULL_WAKE_LOCK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FULL_WAKE_LOCK { get { if (!_FULL_WAKE_LOCKReady) { _FULL_WAKE_LOCKContent = SGetField<int>(LocalBridgeClazz, "FULL_WAKE_LOCK"); _FULL_WAKE_LOCKReady = true; } return _FULL_WAKE_LOCKContent; } }
         private static int _FULL_WAKE_LOCKContent = default;
         private static bool _FULL_WAKE_LOCKReady = false; // this is used because in case of generics 
@@ -126,14 +126,14 @@ namespace Android.Os
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#SCREEN_BRIGHT_WAKE_LOCK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SCREEN_BRIGHT_WAKE_LOCK { get { if (!_SCREEN_BRIGHT_WAKE_LOCKReady) { _SCREEN_BRIGHT_WAKE_LOCKContent = SGetField<int>(LocalBridgeClazz, "SCREEN_BRIGHT_WAKE_LOCK"); _SCREEN_BRIGHT_WAKE_LOCKReady = true; } return _SCREEN_BRIGHT_WAKE_LOCKContent; } }
         private static int _SCREEN_BRIGHT_WAKE_LOCKContent = default;
         private static bool _SCREEN_BRIGHT_WAKE_LOCKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#SCREEN_DIM_WAKE_LOCK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SCREEN_DIM_WAKE_LOCK { get { if (!_SCREEN_DIM_WAKE_LOCKReady) { _SCREEN_DIM_WAKE_LOCKContent = SGetField<int>(LocalBridgeClazz, "SCREEN_DIM_WAKE_LOCK"); _SCREEN_DIM_WAKE_LOCKReady = true; } return _SCREEN_DIM_WAKE_LOCKContent; } }
         private static int _SCREEN_DIM_WAKE_LOCKContent = default;
         private static bool _SCREEN_DIM_WAKE_LOCKReady = false; // this is used because in case of generics 
@@ -223,27 +223,6 @@ namespace Android.Os
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#getBatteryDischargePrediction()"/> 
-        /// </summary>
-        public Java.Time.Duration BatteryDischargePrediction
-        {
-            get { return IExecuteWithSignature<Java.Time.Duration>("getBatteryDischargePrediction", "()Ljava/time/Duration;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#getCurrentThermalStatus()"/> 
-        /// </summary>
-        public int CurrentThermalStatus
-        {
-            get { return IExecuteWithSignature<int>("getCurrentThermalStatus", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#getLocationPowerSaveMode()"/> 
-        /// </summary>
-        public int LocationPowerSaveMode
-        {
-            get { return IExecuteWithSignature<int>("getLocationPowerSaveMode", "()I"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#newWakeLock(int,java.lang.String)"/>
         /// </summary>
@@ -349,7 +328,7 @@ namespace Android.Os
         /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#isScreenOn()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsScreenOn()
         {
             return IExecuteWithSignature<bool>("isScreenOn", "()Z");
@@ -379,6 +358,30 @@ namespace Android.Os
         public float GetThermalHeadroom(int arg0)
         {
             return IExecuteWithSignature<float>("getThermalHeadroom", "(I)F", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#getCurrentThermalStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentThermalStatus()
+        {
+            return IExecuteWithSignature<int>("getCurrentThermalStatus", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#getLocationPowerSaveMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLocationPowerSaveMode()
+        {
+            return IExecuteWithSignature<int>("getLocationPowerSaveMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#getBatteryDischargePrediction()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Duration"/></returns>
+        public Java.Time.Duration GetBatteryDischargePrediction()
+        {
+            return IExecuteWithSignature<Java.Time.Duration>("getBatteryDischargePrediction", "()Ljava/time/Duration;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PowerManager.html#addThermalStatusListener(android.os.PowerManager.OnThermalStatusChangedListener)"/>
@@ -442,7 +445,7 @@ namespace Android.Os
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onThermalStatusChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnThermalStatusChangedEventHandler));
+                AddEventHandler("onThermalStatusChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnThermalStatusChangedEventHandler));
 
             }
 
@@ -450,7 +453,7 @@ namespace Android.Os
             /// Handler for <see href="https://developer.android.com/reference/android/os/PowerManager.OnThermalStatusChangedListener.html#onThermalStatusChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnThermalStatusChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnThermalStatusChanged { get; set; } = null;
+            public global::System.Action<int> OnOnThermalStatusChanged { get; set; } = null;
 
             void OnThermalStatusChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -635,7 +638,7 @@ namespace Android.Os
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnStateChangedEventHandler));
+                AddEventHandler("onStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnStateChangedEventHandler));
 
             }
 
@@ -643,7 +646,7 @@ namespace Android.Os
             /// Handler for <see href="https://developer.android.com/reference/android/os/PowerManager.WakeLockStateListener.html#onStateChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnStateChanged { get; set; } = null;
+            public global::System.Action<bool> OnOnStateChanged { get; set; } = null;
 
             void OnStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
             {

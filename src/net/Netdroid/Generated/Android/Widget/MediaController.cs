@@ -158,34 +158,6 @@ namespace Android.Widget
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/widget/MediaController.MediaPlayerControl.html#getAudioSessionId()"/> 
-            /// </summary>
-            public int AudioSessionId
-            {
-                get { return IExecuteWithSignature<int>("getAudioSessionId", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/widget/MediaController.MediaPlayerControl.html#getBufferPercentage()"/> 
-            /// </summary>
-            public int BufferPercentage
-            {
-                get { return IExecuteWithSignature<int>("getBufferPercentage", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/widget/MediaController.MediaPlayerControl.html#getCurrentPosition()"/> 
-            /// </summary>
-            public int CurrentPosition
-            {
-                get { return IExecuteWithSignature<int>("getCurrentPosition", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/widget/MediaController.MediaPlayerControl.html#getDuration()"/> 
-            /// </summary>
-            public int Duration
-            {
-                get { return IExecuteWithSignature<int>("getDuration", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/MediaController.MediaPlayerControl.html#canPause()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
@@ -216,6 +188,38 @@ namespace Android.Widget
             public bool IsPlaying()
             {
                 return IExecuteWithSignature<bool>("isPlaying", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/widget/MediaController.MediaPlayerControl.html#getAudioSessionId()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetAudioSessionId()
+            {
+                return IExecuteWithSignature<int>("getAudioSessionId", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/widget/MediaController.MediaPlayerControl.html#getBufferPercentage()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetBufferPercentage()
+            {
+                return IExecuteWithSignature<int>("getBufferPercentage", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/widget/MediaController.MediaPlayerControl.html#getCurrentPosition()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetCurrentPosition()
+            {
+                return IExecuteWithSignature<int>("getCurrentPosition", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/widget/MediaController.MediaPlayerControl.html#getDuration()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetDuration()
+            {
+                return IExecuteWithSignature<int>("getDuration", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/MediaController.MediaPlayerControl.html#pause()"/>

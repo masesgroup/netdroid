@@ -46,26 +46,28 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/TabActivity.html#getTabHost()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/TabActivity.html#getTabHost()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Widget.TabHost TabHost
+        /// <returns><see cref="Android.Widget.TabHost"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.TabHost GetTabHost()
         {
-            get { return IExecuteWithSignature<Android.Widget.TabHost>("getTabHost", "()Landroid/widget/TabHost;"); }
+            return IExecuteWithSignature<Android.Widget.TabHost>("getTabHost", "()Landroid/widget/TabHost;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/TabActivity.html#getTabWidget()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/TabActivity.html#getTabWidget()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Widget.TabWidget TabWidget
+        /// <returns><see cref="Android.Widget.TabWidget"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.TabWidget GetTabWidget()
         {
-            get { return IExecuteWithSignature<Android.Widget.TabWidget>("getTabWidget", "()Landroid/widget/TabWidget;"); }
+            return IExecuteWithSignature<Android.Widget.TabWidget>("getTabWidget", "()Landroid/widget/TabWidget;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/TabActivity.html#setDefaultTab(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetDefaultTab(int arg0)
         {
             IExecuteWithSignature("setDefaultTab", "(I)V", arg0);
@@ -74,7 +76,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/TabActivity.html#setDefaultTab(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetDefaultTab(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setDefaultTab", "(Ljava/lang/String;)V", arg0);

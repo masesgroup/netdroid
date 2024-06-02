@@ -56,25 +56,28 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Credentials.html#getGid()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/Credentials.html#getGid()"/>
         /// </summary>
-        public int Gid
+        /// <returns><see cref="int"/></returns>
+        public int GetGid()
         {
-            get { return IExecuteWithSignature<int>("getGid", "()I"); }
+            return IExecuteWithSignature<int>("getGid", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Credentials.html#getPid()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/Credentials.html#getPid()"/>
         /// </summary>
-        public int Pid
+        /// <returns><see cref="int"/></returns>
+        public int GetPid()
         {
-            get { return IExecuteWithSignature<int>("getPid", "()I"); }
+            return IExecuteWithSignature<int>("getPid", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/Credentials.html#getUid()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/Credentials.html#getUid()"/>
         /// </summary>
-        public int Uid
+        /// <returns><see cref="int"/></returns>
+        public int GetUid()
         {
-            get { return IExecuteWithSignature<int>("getUid", "()I"); }
+            return IExecuteWithSignature<int>("getUid", "()I");
         }
 
         #endregion

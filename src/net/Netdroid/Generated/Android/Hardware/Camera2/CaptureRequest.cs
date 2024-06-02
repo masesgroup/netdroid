@@ -434,13 +434,6 @@ namespace Android.Hardware.Camera2
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.html#getTag()"/> 
-        /// </summary>
-        public object Tag
-        {
-            get { return IExecuteWithSignature("getTag", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.html#get(android.hardware.camera2.CaptureRequest.Key)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Hardware.Camera2.CaptureRequest.Key"/></param>
@@ -465,6 +458,14 @@ namespace Android.Hardware.Camera2
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.html#getTag()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetTag()
+        {
+            return IExecuteWithSignature("getTag", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.html#writeToParcel(android.os.Parcel,int)"/>
@@ -615,11 +616,12 @@ namespace Android.Hardware.Camera2
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.Key.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.Key.html#getName()"/>
             /// </summary>
-            public Java.Lang.String Name
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetName()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
 
             #endregion
@@ -666,11 +668,12 @@ namespace Android.Hardware.Camera2
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.Key.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.Key.html#getName()"/>
             /// </summary>
-            public Java.Lang.String Name
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetName()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
 
             #endregion

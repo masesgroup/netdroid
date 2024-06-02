@@ -84,36 +84,6 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#getCurrentHour()"/> <see href="https://developer.android.com/reference/android/widget/TimePicker.html#setCurrentHour(java.lang.Integer)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.Integer CurrentHour
-        {
-            get { return IExecuteWithSignature<Java.Lang.Integer>("getCurrentHour", "()Ljava/lang/Integer;"); } set { IExecuteWithSignature("setCurrentHour", "(Ljava/lang/Integer;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#getCurrentMinute()"/> <see href="https://developer.android.com/reference/android/widget/TimePicker.html#setCurrentMinute(java.lang.Integer)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.Integer CurrentMinute
-        {
-            get { return IExecuteWithSignature<Java.Lang.Integer>("getCurrentMinute", "()Ljava/lang/Integer;"); } set { IExecuteWithSignature("setCurrentMinute", "(Ljava/lang/Integer;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#getHour()"/> <see href="https://developer.android.com/reference/android/widget/TimePicker.html#setHour(int)"/>
-        /// </summary>
-        public int Hour
-        {
-            get { return IExecuteWithSignature<int>("getHour", "()I"); } set { IExecuteWithSignature("setHour", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#getMinute()"/> <see href="https://developer.android.com/reference/android/widget/TimePicker.html#setMinute(int)"/>
-        /// </summary>
-        public int Minute
-        {
-            get { return IExecuteWithSignature<int>("getMinute", "()I"); } set { IExecuteWithSignature("setMinute", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#is24HourView()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -130,12 +100,80 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("validateInput", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#getHour()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHour()
+        {
+            return IExecuteWithSignature<int>("getHour", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#getMinute()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinute()
+        {
+            return IExecuteWithSignature<int>("getMinute", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#getCurrentHour()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.Integer GetCurrentHour()
+        {
+            return IExecuteWithSignature<Java.Lang.Integer>("getCurrentHour", "()Ljava/lang/Integer;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#getCurrentMinute()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.Integer GetCurrentMinute()
+        {
+            return IExecuteWithSignature<Java.Lang.Integer>("getCurrentMinute", "()Ljava/lang/Integer;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#setCurrentHour(java.lang.Integer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Integer"/></param>
+        [global::System.Obsolete()]
+        public void SetCurrentHour(Java.Lang.Integer arg0)
+        {
+            IExecuteWithSignature("setCurrentHour", "(Ljava/lang/Integer;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#setCurrentMinute(java.lang.Integer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Integer"/></param>
+        [global::System.Obsolete()]
+        public void SetCurrentMinute(Java.Lang.Integer arg0)
+        {
+            IExecuteWithSignature("setCurrentMinute", "(Ljava/lang/Integer;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#setHour(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetHour(int arg0)
+        {
+            IExecuteWithSignature("setHour", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#setIs24HourView(java.lang.Boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
         public void SetIs24HourView(Java.Lang.Boolean arg0)
         {
             IExecuteWithSignature("setIs24HourView", "(Ljava/lang/Boolean;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#setMinute(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinute(int arg0)
+        {
+            IExecuteWithSignature("setMinute", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TimePicker.html#setOnTimeChangedListener(android.widget.TimePicker.OnTimeChangedListener)"/>
@@ -174,7 +212,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onTimeChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.TimePicker>>>(OnTimeChangedEventHandler));
+                AddEventHandler("onTimeChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.TimePicker>>>(OnTimeChangedEventHandler));
 
             }
 
@@ -182,7 +220,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/TimePicker.OnTimeChangedListener.html#onTimeChanged(android.widget.TimePicker,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTimeChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Widget.TimePicker, int, int> OnOnTimeChanged { get; set; } = null;
+            public global::System.Action<Android.Widget.TimePicker, int, int> OnOnTimeChanged { get; set; } = null;
 
             void OnTimeChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.TimePicker>> data)
             {

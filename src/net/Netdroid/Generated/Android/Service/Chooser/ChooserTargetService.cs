@@ -40,21 +40,21 @@ namespace Android.Service.Chooser
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTargetService.html#BIND_PERMISSION"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String BIND_PERMISSION { get { if (!_BIND_PERMISSIONReady) { _BIND_PERMISSIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BIND_PERMISSION"); _BIND_PERMISSIONReady = true; } return _BIND_PERMISSIONContent; } }
         private static Java.Lang.String _BIND_PERMISSIONContent = default;
         private static bool _BIND_PERMISSIONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTargetService.html#META_DATA_NAME"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String META_DATA_NAME { get { if (!_META_DATA_NAMEReady) { _META_DATA_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "META_DATA_NAME"); _META_DATA_NAMEReady = true; } return _META_DATA_NAMEContent; } }
         private static Java.Lang.String _META_DATA_NAMEContent = default;
         private static bool _META_DATA_NAMEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/chooser/ChooserTargetService.html#SERVICE_INTERFACE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String SERVICE_INTERFACE { get { if (!_SERVICE_INTERFACEReady) { _SERVICE_INTERFACEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SERVICE_INTERFACE"); _SERVICE_INTERFACEReady = true; } return _SERVICE_INTERFACEContent; } }
         private static Java.Lang.String _SERVICE_INTERFACEContent = default;
         private static bool _SERVICE_INTERFACEReady = false; // this is used because in case of generics 
@@ -72,7 +72,7 @@ namespace Android.Service.Chooser
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
         /// <param name="arg1"><see cref="Android.Content.IntentFilter"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.List<Android.Service.Chooser.ChooserTarget> OnGetChooserTargets(Android.Content.ComponentName arg0, Android.Content.IntentFilter arg1)
         {
             return IExecute<Java.Util.List<Android.Service.Chooser.ChooserTarget>>("onGetChooserTargets", arg0, arg1);

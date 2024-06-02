@@ -36,7 +36,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public SlidingDrawer(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Widget
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public SlidingDrawer(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -57,7 +57,7 @@ namespace Android.Widget
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public SlidingDrawer(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -73,14 +73,14 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#ORIENTATION_HORIZONTAL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ORIENTATION_HORIZONTAL { get { if (!_ORIENTATION_HORIZONTALReady) { _ORIENTATION_HORIZONTALContent = SGetField<int>(LocalBridgeClazz, "ORIENTATION_HORIZONTAL"); _ORIENTATION_HORIZONTALReady = true; } return _ORIENTATION_HORIZONTALContent; } }
         private static int _ORIENTATION_HORIZONTALContent = default;
         private static bool _ORIENTATION_HORIZONTALReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#ORIENTATION_VERTICAL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ORIENTATION_VERTICAL { get { if (!_ORIENTATION_VERTICALReady) { _ORIENTATION_VERTICALContent = SGetField<int>(LocalBridgeClazz, "ORIENTATION_VERTICAL"); _ORIENTATION_VERTICALReady = true; } return _ORIENTATION_VERTICALContent; } }
         private static int _ORIENTATION_VERTICALContent = default;
         private static bool _ORIENTATION_VERTICALReady = false; // this is used because in case of generics 
@@ -93,26 +93,28 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#getContent()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#getContent()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.View.View Content
+        /// <returns><see cref="Android.View.View"/></returns>
+        [global::System.Obsolete()]
+        public Android.View.View GetContent()
         {
-            get { return IExecuteWithSignature<Android.View.View>("getContent", "()Landroid/view/View;"); }
+            return IExecuteWithSignature<Android.View.View>("getContent", "()Landroid/view/View;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#getHandle()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#getHandle()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.View.View Handle
+        /// <returns><see cref="Android.View.View"/></returns>
+        [global::System.Obsolete()]
+        public Android.View.View GetHandle()
         {
-            get { return IExecuteWithSignature<Android.View.View>("getHandle", "()Landroid/view/View;"); }
+            return IExecuteWithSignature<Android.View.View>("getHandle", "()Landroid/view/View;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#isMoving()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsMoving()
         {
             return IExecuteWithSignature<bool>("isMoving", "()Z");
@@ -121,7 +123,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#isOpened()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsOpened()
         {
             return IExecuteWithSignature<bool>("isOpened", "()Z");
@@ -129,7 +131,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#animateClose()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AnimateClose()
         {
             IExecuteWithSignature("animateClose", "()V");
@@ -137,7 +139,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#animateOpen()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AnimateOpen()
         {
             IExecuteWithSignature("animateOpen", "()V");
@@ -145,7 +147,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#animateToggle()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AnimateToggle()
         {
             IExecuteWithSignature("animateToggle", "()V");
@@ -153,7 +155,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#close()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -161,7 +163,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#lock()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Lock()
         {
             IExecuteWithSignature("lock", "()V");
@@ -169,7 +171,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#open()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Open()
         {
             IExecuteWithSignature("open", "()V");
@@ -178,7 +180,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#setOnDrawerCloseListener(android.widget.SlidingDrawer.OnDrawerCloseListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Widget.SlidingDrawer.OnDrawerCloseListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOnDrawerCloseListener(Android.Widget.SlidingDrawer.OnDrawerCloseListener arg0)
         {
             IExecuteWithSignature("setOnDrawerCloseListener", "(Landroid/widget/SlidingDrawer$OnDrawerCloseListener;)V", arg0);
@@ -187,7 +189,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#setOnDrawerOpenListener(android.widget.SlidingDrawer.OnDrawerOpenListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Widget.SlidingDrawer.OnDrawerOpenListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOnDrawerOpenListener(Android.Widget.SlidingDrawer.OnDrawerOpenListener arg0)
         {
             IExecuteWithSignature("setOnDrawerOpenListener", "(Landroid/widget/SlidingDrawer$OnDrawerOpenListener;)V", arg0);
@@ -196,7 +198,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#setOnDrawerScrollListener(android.widget.SlidingDrawer.OnDrawerScrollListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Widget.SlidingDrawer.OnDrawerScrollListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOnDrawerScrollListener(Android.Widget.SlidingDrawer.OnDrawerScrollListener arg0)
         {
             IExecuteWithSignature("setOnDrawerScrollListener", "(Landroid/widget/SlidingDrawer$OnDrawerScrollListener;)V", arg0);
@@ -204,7 +206,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#toggle()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Toggle()
         {
             IExecuteWithSignature("toggle", "()V");
@@ -212,7 +214,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html#unlock()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Unlock()
         {
             IExecuteWithSignature("unlock", "()V");
@@ -246,7 +248,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDrawerClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnDrawerClosedEventHandler));
+                AddEventHandler("onDrawerClosed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnDrawerClosedEventHandler));
 
             }
 
@@ -254,7 +256,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerCloseListener.html#onDrawerClosed()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDrawerClosed"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnDrawerClosed { get; set; } = null;
+            public global::System.Action OnOnDrawerClosed { get; set; } = null;
 
             void OnDrawerClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -265,7 +267,7 @@ namespace Android.Widget
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerCloseListener.html#onDrawerClosed()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnDrawerClosed()
             {
                 
@@ -304,7 +306,7 @@ namespace Android.Widget
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerCloseListener.html#onDrawerClosed()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnDrawerClosed()
             {
                 IExecuteWithSignature("onDrawerClosed", "()V");
@@ -345,7 +347,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDrawerOpened", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnDrawerOpenedEventHandler));
+                AddEventHandler("onDrawerOpened", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnDrawerOpenedEventHandler));
 
             }
 
@@ -353,7 +355,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerOpenListener.html#onDrawerOpened()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDrawerOpened"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnDrawerOpened { get; set; } = null;
+            public global::System.Action OnOnDrawerOpened { get; set; } = null;
 
             void OnDrawerOpenedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -364,7 +366,7 @@ namespace Android.Widget
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerOpenListener.html#onDrawerOpened()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnDrawerOpened()
             {
                 
@@ -403,7 +405,7 @@ namespace Android.Widget
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerOpenListener.html#onDrawerOpened()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnDrawerOpened()
             {
                 IExecuteWithSignature("onDrawerOpened", "()V");
@@ -444,8 +446,8 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onScrollEnded", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnScrollEndedEventHandler));
-                AddEventHandler("onScrollStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnScrollStartedEventHandler));
+                AddEventHandler("onScrollEnded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnScrollEndedEventHandler));
+                AddEventHandler("onScrollStarted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnScrollStartedEventHandler));
 
             }
 
@@ -453,7 +455,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerScrollListener.html#onScrollEnded()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScrollEnded"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnScrollEnded { get; set; } = null;
+            public global::System.Action OnOnScrollEnded { get; set; } = null;
 
             void OnScrollEndedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -464,7 +466,7 @@ namespace Android.Widget
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerScrollListener.html#onScrollEnded()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnScrollEnded()
             {
                 
@@ -474,7 +476,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerScrollListener.html#onScrollStarted()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScrollStarted"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnScrollStarted { get; set; } = null;
+            public global::System.Action OnOnScrollStarted { get; set; } = null;
 
             void OnScrollStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -485,7 +487,7 @@ namespace Android.Widget
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerScrollListener.html#onScrollStarted()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnScrollStarted()
             {
                 
@@ -524,7 +526,7 @@ namespace Android.Widget
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerScrollListener.html#onScrollEnded()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnScrollEnded()
             {
                 IExecuteWithSignature("onScrollEnded", "()V");
@@ -532,7 +534,7 @@ namespace Android.Widget
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerScrollListener.html#onScrollStarted()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnScrollStarted()
             {
                 IExecuteWithSignature("onScrollStarted", "()V");

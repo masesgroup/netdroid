@@ -67,7 +67,7 @@ namespace Dalvik.Annotation
         /// <see href="https://developer.android.com/reference/dalvik/annotation/TestTargetClass.html#value()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.Class Value()
         {
             return IExecuteWithSignature<Java.Lang.Class>("value", "()Ljava/lang/Class;");

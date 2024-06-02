@@ -28,7 +28,7 @@ namespace Javax.Net.Ssl
 {
     #region CertPathTrustManagerParameters
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/CertPathTrustManagerParameters.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/CertPathTrustManagerParameters.html"/>
     /// </summary>
     public partial class CertPathTrustManagerParameters : Javax.Net.Ssl.ManagerFactoryParameters
     {
@@ -72,7 +72,7 @@ namespace Javax.Net.Ssl
 
     #region ExtendedSSLSession
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/ExtendedSSLSession.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/ExtendedSSLSession.html"/>
     /// </summary>
     public partial class ExtendedSSLSession : Javax.Net.Ssl.SSLSession
     {
@@ -80,12 +80,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ExtendedSSLSession class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ExtendedSSLSession class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ExtendedSSLSession() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ExtendedSSLSession class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ExtendedSSLSession class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ExtendedSSLSession(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -118,7 +118,7 @@ namespace Javax.Net.Ssl
 
     #region HandshakeCompletedEvent
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedEvent.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/HandshakeCompletedEvent.html"/>
     /// </summary>
     public partial class HandshakeCompletedEvent : Java.Util.EventObject
     {
@@ -162,7 +162,7 @@ namespace Javax.Net.Ssl
 
     #region HandshakeCompletedListener
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HandshakeCompletedListener.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/HandshakeCompletedListener.html"/>
     /// </summary>
     public partial class HandshakeCompletedListener : Java.Util.EventListener
     {
@@ -171,10 +171,13 @@ namespace Javax.Net.Ssl
         /// </summary>
         public HandshakeCompletedListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.javax.net.ssl.HandshakeCompletedListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.javax.net.ssl.HandshakeCompletedListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -196,10 +199,13 @@ namespace Javax.Net.Ssl
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "javax.net.ssl.HandshakeCompletedListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "javax.net.ssl.HandshakeCompletedListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -221,7 +227,7 @@ namespace Javax.Net.Ssl
 
     #region HostnameVerifier
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HostnameVerifier.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/HostnameVerifier.html"/>
     /// </summary>
     public partial class HostnameVerifier : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HostnameVerifier>
     {
@@ -229,12 +235,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("HostnameVerifier class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("HostnameVerifier class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public HostnameVerifier() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("HostnameVerifier class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("HostnameVerifier class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public HostnameVerifier(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -267,7 +273,7 @@ namespace Javax.Net.Ssl
 
     #region HttpsURLConnection
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/HttpsURLConnection.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html"/>
     /// </summary>
     public partial class HttpsURLConnection : Java.Net.HttpURLConnection
     {
@@ -275,12 +281,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("HttpsURLConnection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("HttpsURLConnection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public HttpsURLConnection() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("HttpsURLConnection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("HttpsURLConnection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public HttpsURLConnection(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -313,7 +319,7 @@ namespace Javax.Net.Ssl
 
     #region KeyManager
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/KeyManager.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/KeyManager.html"/>
     /// </summary>
     public partial class KeyManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyManager>
     {
@@ -321,12 +327,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("KeyManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("KeyManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public KeyManager() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("KeyManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("KeyManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public KeyManager(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -359,7 +365,7 @@ namespace Javax.Net.Ssl
 
     #region KeyManagerFactory
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/KeyManagerFactory.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/KeyManagerFactory.html"/>
     /// </summary>
     public partial class KeyManagerFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyManagerFactory>
     {
@@ -403,7 +409,7 @@ namespace Javax.Net.Ssl
 
     #region KeyManagerFactorySpi
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/KeyManagerFactorySpi.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/KeyManagerFactorySpi.html"/>
     /// </summary>
     public partial class KeyManagerFactorySpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyManagerFactorySpi>
     {
@@ -411,12 +417,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("KeyManagerFactorySpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("KeyManagerFactorySpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public KeyManagerFactorySpi() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("KeyManagerFactorySpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("KeyManagerFactorySpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public KeyManagerFactorySpi(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -449,7 +455,7 @@ namespace Javax.Net.Ssl
 
     #region KeyStoreBuilderParameters
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/KeyStoreBuilderParameters.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/KeyStoreBuilderParameters.html"/>
     /// </summary>
     public partial class KeyStoreBuilderParameters : Javax.Net.Ssl.ManagerFactoryParameters
     {
@@ -493,7 +499,7 @@ namespace Javax.Net.Ssl
 
     #region ManagerFactoryParameters
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/ManagerFactoryParameters.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/ManagerFactoryParameters.html"/>
     /// </summary>
     public partial class ManagerFactoryParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ManagerFactoryParameters>
     {
@@ -501,12 +507,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ManagerFactoryParameters class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ManagerFactoryParameters class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ManagerFactoryParameters() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ManagerFactoryParameters class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ManagerFactoryParameters class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ManagerFactoryParameters(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -539,7 +545,7 @@ namespace Javax.Net.Ssl
 
     #region SNIHostName
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SNIHostName.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SNIHostName.html"/>
     /// </summary>
     public partial class SNIHostName : Javax.Net.Ssl.SNIServerName
     {
@@ -583,7 +589,7 @@ namespace Javax.Net.Ssl
 
     #region SNIMatcher
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SNIMatcher.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SNIMatcher.html"/>
     /// </summary>
     public partial class SNIMatcher : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SNIMatcher>
     {
@@ -591,12 +597,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SNIMatcher class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SNIMatcher class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SNIMatcher() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SNIMatcher class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SNIMatcher class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SNIMatcher(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -629,7 +635,7 @@ namespace Javax.Net.Ssl
 
     #region SNIServerName
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SNIServerName.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SNIServerName.html"/>
     /// </summary>
     public partial class SNIServerName : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SNIServerName>
     {
@@ -637,12 +643,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SNIServerName class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SNIServerName class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SNIServerName() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SNIServerName class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SNIServerName class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SNIServerName(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -675,7 +681,7 @@ namespace Javax.Net.Ssl
 
     #region SSLContext
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContext.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html"/>
     /// </summary>
     public partial class SSLContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SSLContext>
     {
@@ -719,7 +725,7 @@ namespace Javax.Net.Ssl
 
     #region SSLContextSpi
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContextSpi.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContextSpi.html"/>
     /// </summary>
     public partial class SSLContextSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SSLContextSpi>
     {
@@ -727,12 +733,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SSLContextSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SSLContextSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SSLContextSpi() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SSLContextSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SSLContextSpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SSLContextSpi(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -765,7 +771,7 @@ namespace Javax.Net.Ssl
 
     #region SSLEngine
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLEngine.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLEngine.html"/>
     /// </summary>
     public partial class SSLEngine : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SSLEngine>
     {
@@ -773,12 +779,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SSLEngine class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SSLEngine class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SSLEngine() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SSLEngine class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SSLEngine class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SSLEngine(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -811,7 +817,7 @@ namespace Javax.Net.Ssl
 
     #region SSLEngineResult
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLEngineResult.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLEngineResult.html"/>
     /// </summary>
     public partial class SSLEngineResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SSLEngineResult>
     {
@@ -851,7 +857,7 @@ namespace Javax.Net.Ssl
         // TODO: complete the class
         #region HandshakeStatus
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLEngineResult.HandshakeStatus.html"/>
         /// </summary>
         public partial class HandshakeStatus : Java.Lang.Enum<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>
         {
@@ -895,7 +901,7 @@ namespace Javax.Net.Ssl
 
         #region Status
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLEngineResult.Status.html"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLEngineResult.Status.html"/>
         /// </summary>
         public partial class Status : Java.Lang.Enum<Javax.Net.Ssl.SSLEngineResult.Status>
         {
@@ -943,7 +949,7 @@ namespace Javax.Net.Ssl
 
     #region SSLException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLException.html"/>
     /// </summary>
     public partial class SSLException : Java.Io.IOException
     {
@@ -960,7 +966,7 @@ namespace Javax.Net.Ssl
 
     #region SSLHandshakeException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLHandshakeException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLHandshakeException.html"/>
     /// </summary>
     public partial class SSLHandshakeException : Javax.Net.Ssl.SSLException
     {
@@ -977,7 +983,7 @@ namespace Javax.Net.Ssl
 
     #region SSLKeyException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLKeyException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLKeyException.html"/>
     /// </summary>
     public partial class SSLKeyException : Javax.Net.Ssl.SSLException
     {
@@ -994,7 +1000,7 @@ namespace Javax.Net.Ssl
 
     #region SSLParameters
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLParameters.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLParameters.html"/>
     /// </summary>
     public partial class SSLParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SSLParameters>
     {
@@ -1038,7 +1044,7 @@ namespace Javax.Net.Ssl
 
     #region SSLPeerUnverifiedException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLPeerUnverifiedException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLPeerUnverifiedException.html"/>
     /// </summary>
     public partial class SSLPeerUnverifiedException : Javax.Net.Ssl.SSLException
     {
@@ -1055,7 +1061,7 @@ namespace Javax.Net.Ssl
 
     #region SSLPermission
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLPermission.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLPermission.html"/>
     /// </summary>
     public partial class SSLPermission : Java.Security.BasicPermission
     {
@@ -1099,7 +1105,7 @@ namespace Javax.Net.Ssl
 
     #region SSLProtocolException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLProtocolException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLProtocolException.html"/>
     /// </summary>
     public partial class SSLProtocolException : Javax.Net.Ssl.SSLException
     {
@@ -1116,7 +1122,7 @@ namespace Javax.Net.Ssl
 
     #region SSLServerSocket
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLServerSocket.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLServerSocket.html"/>
     /// </summary>
     public partial class SSLServerSocket : Java.Net.ServerSocket
     {
@@ -1124,12 +1130,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SSLServerSocket class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SSLServerSocket class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SSLServerSocket() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SSLServerSocket class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SSLServerSocket class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SSLServerSocket(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1162,7 +1168,7 @@ namespace Javax.Net.Ssl
 
     #region SSLServerSocketFactory
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLServerSocketFactory.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLServerSocketFactory.html"/>
     /// </summary>
     public partial class SSLServerSocketFactory : Javax.Net.ServerSocketFactory
     {
@@ -1170,12 +1176,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SSLServerSocketFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SSLServerSocketFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SSLServerSocketFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SSLServerSocketFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SSLServerSocketFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SSLServerSocketFactory(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1208,7 +1214,7 @@ namespace Javax.Net.Ssl
 
     #region SSLSession
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSession.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSession.html"/>
     /// </summary>
     public partial class SSLSession : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SSLSession>
     {
@@ -1216,12 +1222,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SSLSession class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SSLSession class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SSLSession() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SSLSession class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SSLSession class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SSLSession(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1254,7 +1260,7 @@ namespace Javax.Net.Ssl
 
     #region SSLSessionBindingEvent
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionBindingEvent.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionBindingEvent.html"/>
     /// </summary>
     public partial class SSLSessionBindingEvent : Java.Util.EventObject
     {
@@ -1298,7 +1304,7 @@ namespace Javax.Net.Ssl
 
     #region SSLSessionBindingListener
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionBindingListener.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionBindingListener.html"/>
     /// </summary>
     public partial class SSLSessionBindingListener : Java.Util.EventListener
     {
@@ -1307,10 +1313,13 @@ namespace Javax.Net.Ssl
         /// </summary>
         public SSLSessionBindingListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.javax.net.ssl.SSLSessionBindingListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.javax.net.ssl.SSLSessionBindingListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1332,10 +1341,13 @@ namespace Javax.Net.Ssl
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "javax.net.ssl.SSLSessionBindingListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "javax.net.ssl.SSLSessionBindingListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1357,7 +1369,7 @@ namespace Javax.Net.Ssl
 
     #region SSLSessionContext
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSessionContext.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSessionContext.html"/>
     /// </summary>
     public partial class SSLSessionContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SSLSessionContext>
     {
@@ -1365,12 +1377,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SSLSessionContext class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SSLSessionContext class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SSLSessionContext() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SSLSessionContext class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SSLSessionContext class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SSLSessionContext(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1403,7 +1415,7 @@ namespace Javax.Net.Ssl
 
     #region SSLSocket
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html"/>
     /// </summary>
     public partial class SSLSocket : Java.Net.Socket
     {
@@ -1411,12 +1423,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SSLSocket class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SSLSocket class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SSLSocket() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SSLSocket class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SSLSocket class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SSLSocket(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1449,7 +1461,7 @@ namespace Javax.Net.Ssl
 
     #region SSLSocketFactory
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocketFactory.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocketFactory.html"/>
     /// </summary>
     public partial class SSLSocketFactory : Javax.Net.SocketFactory
     {
@@ -1457,12 +1469,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SSLSocketFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SSLSocketFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SSLSocketFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SSLSocketFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SSLSocketFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SSLSocketFactory(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1495,7 +1507,7 @@ namespace Javax.Net.Ssl
 
     #region StandardConstants
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/StandardConstants.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/StandardConstants.html"/>
     /// </summary>
     public partial class StandardConstants : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StandardConstants>
     {
@@ -1539,7 +1551,7 @@ namespace Javax.Net.Ssl
 
     #region TrustManager
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/TrustManager.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/TrustManager.html"/>
     /// </summary>
     public partial class TrustManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TrustManager>
     {
@@ -1547,12 +1559,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TrustManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TrustManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TrustManager() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TrustManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TrustManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TrustManager(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1585,7 +1597,7 @@ namespace Javax.Net.Ssl
 
     #region TrustManagerFactory
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/TrustManagerFactory.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/TrustManagerFactory.html"/>
     /// </summary>
     public partial class TrustManagerFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TrustManagerFactory>
     {
@@ -1629,7 +1641,7 @@ namespace Javax.Net.Ssl
 
     #region TrustManagerFactorySpi
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/TrustManagerFactorySpi.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/TrustManagerFactorySpi.html"/>
     /// </summary>
     public partial class TrustManagerFactorySpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TrustManagerFactorySpi>
     {
@@ -1637,12 +1649,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TrustManagerFactorySpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TrustManagerFactorySpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TrustManagerFactorySpi() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TrustManagerFactorySpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TrustManagerFactorySpi class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TrustManagerFactorySpi(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1675,7 +1687,7 @@ namespace Javax.Net.Ssl
 
     #region X509ExtendedKeyManager
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509ExtendedKeyManager.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/X509ExtendedKeyManager.html"/>
     /// </summary>
     public partial class X509ExtendedKeyManager : Javax.Net.Ssl.X509KeyManager
     {
@@ -1683,12 +1695,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("X509ExtendedKeyManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("X509ExtendedKeyManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public X509ExtendedKeyManager() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("X509ExtendedKeyManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("X509ExtendedKeyManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public X509ExtendedKeyManager(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1721,7 +1733,7 @@ namespace Javax.Net.Ssl
 
     #region X509ExtendedTrustManager
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509ExtendedTrustManager.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/X509ExtendedTrustManager.html"/>
     /// </summary>
     public partial class X509ExtendedTrustManager : Javax.Net.Ssl.X509TrustManager
     {
@@ -1729,12 +1741,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("X509ExtendedTrustManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("X509ExtendedTrustManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public X509ExtendedTrustManager() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("X509ExtendedTrustManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("X509ExtendedTrustManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public X509ExtendedTrustManager(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1767,7 +1779,7 @@ namespace Javax.Net.Ssl
 
     #region X509KeyManager
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509KeyManager.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/X509KeyManager.html"/>
     /// </summary>
     public partial class X509KeyManager : Javax.Net.Ssl.KeyManager
     {
@@ -1775,12 +1787,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("X509KeyManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("X509KeyManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public X509KeyManager() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("X509KeyManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("X509KeyManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public X509KeyManager(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1813,7 +1825,7 @@ namespace Javax.Net.Ssl
 
     #region X509TrustManager
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509TrustManager.html"/>
+    /// <see href="https://developer.android.com/reference/javax/net/ssl/X509TrustManager.html"/>
     /// </summary>
     public partial class X509TrustManager : Javax.Net.Ssl.TrustManager
     {
@@ -1821,12 +1833,12 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("X509TrustManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("X509TrustManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public X509TrustManager() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("X509TrustManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("X509TrustManager class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public X509TrustManager(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

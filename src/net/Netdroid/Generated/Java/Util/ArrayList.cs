@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayList.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayList.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public ArrayList(int arg0)
@@ -38,7 +38,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayList.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayList.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ArrayList(Java.Util.Collection arg0)
@@ -74,7 +74,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayList.html#ensureCapacity(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayList.html#ensureCapacity(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void EnsureCapacity(int arg0)
@@ -82,7 +82,7 @@ namespace Java.Util
             IExecuteWithSignature("ensureCapacity", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayList.html#trimToSize()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayList.html#trimToSize()"/>
         /// </summary>
         public void TrimToSize()
         {
@@ -104,7 +104,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayList.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayList.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public ArrayList(int arg0)
@@ -112,7 +112,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayList.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayList.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ArrayList(Java.Util.Collection<E> arg0)
@@ -152,7 +152,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayList.html#ensureCapacity(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayList.html#ensureCapacity(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void EnsureCapacity(int arg0)
@@ -160,7 +160,7 @@ namespace Java.Util
             IExecuteWithSignature("ensureCapacity", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ArrayList.html#trimToSize()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ArrayList.html#trimToSize()"/>
         /// </summary>
         public void TrimToSize()
         {

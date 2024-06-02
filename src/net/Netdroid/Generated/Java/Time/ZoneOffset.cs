@@ -50,19 +50,19 @@ namespace Java.Time
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneOffset.html#MAX"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#MAX"/>
         /// </summary>
         public static Java.Time.ZoneOffset MAX { get { if (!_MAXReady) { _MAXContent = SGetField<Java.Time.ZoneOffset>(LocalBridgeClazz, "MAX"); _MAXReady = true; } return _MAXContent; } }
         private static Java.Time.ZoneOffset _MAXContent = default;
         private static bool _MAXReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneOffset.html#MIN"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#MIN"/>
         /// </summary>
         public static Java.Time.ZoneOffset MIN { get { if (!_MINReady) { _MINContent = SGetField<Java.Time.ZoneOffset>(LocalBridgeClazz, "MIN"); _MINReady = true; } return _MINContent; } }
         private static Java.Time.ZoneOffset _MINContent = default;
         private static bool _MINReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneOffset.html#UTC"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#UTC"/>
         /// </summary>
         public static Java.Time.ZoneOffset UTC { get { if (!_UTCReady) { _UTCContent = SGetField<Java.Time.ZoneOffset>(LocalBridgeClazz, "UTC"); _UTCReady = true; } return _UTCContent; } }
         private static Java.Time.ZoneOffset _UTCContent = default;
@@ -72,7 +72,7 @@ namespace Java.Time
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneOffset.html#ofHours(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#ofHours(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
@@ -81,7 +81,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.ZoneOffset>(LocalBridgeClazz, "ofHours", "(I)Ljava/time/ZoneOffset;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneOffset.html#ofHoursMinutes(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#ofHoursMinutes(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -91,7 +91,7 @@ namespace Java.Time
             return SExecute<Java.Time.ZoneOffset>(LocalBridgeClazz, "ofHoursMinutes", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneOffset.html#ofHoursMinutesSeconds(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#ofHoursMinutesSeconds(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -102,7 +102,7 @@ namespace Java.Time
             return SExecute<Java.Time.ZoneOffset>(LocalBridgeClazz, "ofHoursMinutesSeconds", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneOffset.html#ofTotalSeconds(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#ofTotalSeconds(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
@@ -115,14 +115,7 @@ namespace Java.Time
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneOffset.html#getTotalSeconds()"/> 
-        /// </summary>
-        public int TotalSeconds
-        {
-            get { return IExecuteWithSignature<int>("getTotalSeconds", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneOffset.html#query(java.time.temporal.TemporalQuery)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#query(java.time.temporal.TemporalQuery)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
         /// <typeparam name="R"></typeparam>
@@ -132,7 +125,7 @@ namespace Java.Time
             return IExecuteWithSignature<R>("query", "(Ljava/time/temporal/TemporalQuery;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneOffset.html#isSupported(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#isSupported(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -141,7 +134,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalField;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneOffset.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -150,7 +143,7 @@ namespace Java.Time
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneOffset.html#compareTo(java.time.ZoneOffset)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#compareTo(java.time.ZoneOffset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneOffset"/></param>
         /// <returns><see cref="int"/></returns>
@@ -159,7 +152,7 @@ namespace Java.Time
             return IExecuteWithSignature<int>("compareTo", "(Ljava/time/ZoneOffset;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneOffset.html#get(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#get(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="int"/></returns>
@@ -168,7 +161,15 @@ namespace Java.Time
             return IExecuteWithSignature<int>("get", "(Ljava/time/temporal/TemporalField;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneOffset.html#adjustInto(java.time.temporal.Temporal)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#getTotalSeconds()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTotalSeconds()
+        {
+            return IExecuteWithSignature<int>("getTotalSeconds", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#adjustInto(java.time.temporal.Temporal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
@@ -177,7 +178,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("adjustInto", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneOffset.html#range(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#range(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
@@ -186,7 +187,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneOffset.html#getLong(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html#getLong(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="long"/></returns>

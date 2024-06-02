@@ -30,7 +30,7 @@ namespace Android.Telephony.Cdma
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/telephony/cdma/CdmaCellLocation.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class CdmaCellLocation : Android.Telephony.CellLocation
     {
         const string _bridgeClassName = "android.telephony.cdma.CdmaCellLocation";

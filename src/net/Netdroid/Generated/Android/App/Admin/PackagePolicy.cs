@@ -87,26 +87,28 @@ namespace Android.App.Admin
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/PackagePolicy.html#getPackageNames()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> PackageNames
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getPackageNames", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/PackagePolicy.html#getPolicyType()"/> 
-        /// </summary>
-        public int PolicyType
-        {
-            get { return IExecuteWithSignature<int>("getPolicyType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/PackagePolicy.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/PackagePolicy.html#getPolicyType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPolicyType()
+        {
+            return IExecuteWithSignature<int>("getPolicyType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/PackagePolicy.html#getPackageNames()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetPackageNames()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getPackageNames", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/PackagePolicy.html#writeToParcel(android.os.Parcel,int)"/>

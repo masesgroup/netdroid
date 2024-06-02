@@ -46,32 +46,68 @@ namespace Android.Webkit
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerWebSettings.html#getAllowContentAccess()"/> <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerWebSettings.html#setAllowContentAccess(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerWebSettings.html#getAllowContentAccess()"/>
         /// </summary>
-        public bool AllowContentAccess
+        /// <returns><see cref="bool"/></returns>
+        public bool GetAllowContentAccess()
         {
-            get { return IExecuteWithSignature<bool>("getAllowContentAccess", "()Z"); } set { IExecuteWithSignature("setAllowContentAccess", "(Z)V", value); }
+            return IExecuteWithSignature<bool>("getAllowContentAccess", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerWebSettings.html#getAllowFileAccess()"/> <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerWebSettings.html#setAllowFileAccess(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerWebSettings.html#getAllowFileAccess()"/>
         /// </summary>
-        public bool AllowFileAccess
+        /// <returns><see cref="bool"/></returns>
+        public bool GetAllowFileAccess()
         {
-            get { return IExecuteWithSignature<bool>("getAllowFileAccess", "()Z"); } set { IExecuteWithSignature("setAllowFileAccess", "(Z)V", value); }
+            return IExecuteWithSignature<bool>("getAllowFileAccess", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerWebSettings.html#getBlockNetworkLoads()"/> <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerWebSettings.html#setBlockNetworkLoads(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerWebSettings.html#getBlockNetworkLoads()"/>
         /// </summary>
-        public bool BlockNetworkLoads
+        /// <returns><see cref="bool"/></returns>
+        public bool GetBlockNetworkLoads()
         {
-            get { return IExecuteWithSignature<bool>("getBlockNetworkLoads", "()Z"); } set { IExecuteWithSignature("setBlockNetworkLoads", "(Z)V", value); }
+            return IExecuteWithSignature<bool>("getBlockNetworkLoads", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerWebSettings.html#getCacheMode()"/> <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerWebSettings.html#setCacheMode(int)"/>
+        /// <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerWebSettings.html#getCacheMode()"/>
         /// </summary>
-        public int CacheMode
+        /// <returns><see cref="int"/></returns>
+        public int GetCacheMode()
         {
-            get { return IExecuteWithSignature<int>("getCacheMode", "()I"); } set { IExecuteWithSignature("setCacheMode", "(I)V", value); }
+            return IExecuteWithSignature<int>("getCacheMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerWebSettings.html#setAllowContentAccess(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetAllowContentAccess(bool arg0)
+        {
+            IExecuteWithSignature("setAllowContentAccess", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerWebSettings.html#setAllowFileAccess(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetAllowFileAccess(bool arg0)
+        {
+            IExecuteWithSignature("setAllowFileAccess", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerWebSettings.html#setBlockNetworkLoads(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetBlockNetworkLoads(bool arg0)
+        {
+            IExecuteWithSignature("setBlockNetworkLoads", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerWebSettings.html#setCacheMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetCacheMode(int arg0)
+        {
+            IExecuteWithSignature("setCacheMode", "(I)V", arg0);
         }
 
         #endregion

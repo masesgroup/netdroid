@@ -64,7 +64,7 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getObject(int,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getObject(int,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -76,7 +76,7 @@ namespace Java.Sql
             return IExecute<T>("getObject", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getObject(java.lang.String,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getObject(java.lang.String,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -88,7 +88,7 @@ namespace Java.Sql
             return IExecute<T>("getObject", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getBoolean(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getBoolean(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -98,7 +98,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("getBoolean", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getBoolean(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getBoolean(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -108,7 +108,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("getBoolean", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#wasNull()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#wasNull()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -117,7 +117,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("wasNull", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getByte(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getByte(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -127,7 +127,7 @@ namespace Java.Sql
             return IExecuteWithSignature<byte>("getByte", "(I)B", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getByte(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getByte(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -137,7 +137,7 @@ namespace Java.Sql
             return IExecuteWithSignature<byte>("getByte", "(Ljava/lang/String;)B", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getBytes(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getBytes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -147,7 +147,7 @@ namespace Java.Sql
             return IExecuteWithSignatureArray<byte>("getBytes", "(I)[B", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getBytes(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getBytes(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -157,7 +157,7 @@ namespace Java.Sql
             return IExecuteWithSignatureArray<byte>("getBytes", "(Ljava/lang/String;)[B", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getDouble(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getDouble(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="double"/></returns>
@@ -167,7 +167,7 @@ namespace Java.Sql
             return IExecuteWithSignature<double>("getDouble", "(I)D", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getDouble(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getDouble(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="double"/></returns>
@@ -177,7 +177,7 @@ namespace Java.Sql
             return IExecuteWithSignature<double>("getDouble", "(Ljava/lang/String;)D", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getFloat(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getFloat(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="float"/></returns>
@@ -187,7 +187,7 @@ namespace Java.Sql
             return IExecuteWithSignature<float>("getFloat", "(I)F", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getFloat(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getFloat(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="float"/></returns>
@@ -197,7 +197,7 @@ namespace Java.Sql
             return IExecuteWithSignature<float>("getFloat", "(Ljava/lang/String;)F", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getInt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getInt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -207,7 +207,7 @@ namespace Java.Sql
             return IExecuteWithSignature<int>("getInt", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getInt(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getInt(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
@@ -217,7 +217,7 @@ namespace Java.Sql
             return IExecuteWithSignature<int>("getInt", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getCharacterStream(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getCharacterStream(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Io.Reader"/></returns>
@@ -227,7 +227,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Io.Reader>("getCharacterStream", "(I)Ljava/io/Reader;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getCharacterStream(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getCharacterStream(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.Reader"/></returns>
@@ -237,7 +237,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Io.Reader>("getCharacterStream", "(Ljava/lang/String;)Ljava/io/Reader;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getNCharacterStream(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getNCharacterStream(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Io.Reader"/></returns>
@@ -247,7 +247,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Io.Reader>("getNCharacterStream", "(I)Ljava/io/Reader;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getNCharacterStream(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getNCharacterStream(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.Reader"/></returns>
@@ -257,7 +257,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Io.Reader>("getNCharacterStream", "(Ljava/lang/String;)Ljava/io/Reader;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getObject(int,java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getObject(int,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
@@ -268,7 +268,7 @@ namespace Java.Sql
             return IExecute("getObject", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getObject(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getObject(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="object"/></returns>
@@ -278,7 +278,7 @@ namespace Java.Sql
             return IExecuteWithSignature("getObject", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getObject(java.lang.String,java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getObject(java.lang.String,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
@@ -289,7 +289,7 @@ namespace Java.Sql
             return IExecute("getObject", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getObject(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getObject(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
@@ -299,7 +299,7 @@ namespace Java.Sql
             return IExecuteWithSignature("getObject", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getNString(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getNString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -309,7 +309,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("getNString", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getNString(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getNString(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -319,7 +319,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("getNString", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getString(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -329,7 +329,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("getString", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getString(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getString(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -339,19 +339,19 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getBigDecimal(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getBigDecimal(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Math.BigDecimal GetBigDecimal(int arg0, int arg1)
         {
             return IExecute<Java.Math.BigDecimal>("getBigDecimal", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getBigDecimal(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getBigDecimal(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
@@ -361,7 +361,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Math.BigDecimal>("getBigDecimal", "(I)Ljava/math/BigDecimal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getBigDecimal(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getBigDecimal(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
@@ -371,7 +371,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Math.BigDecimal>("getBigDecimal", "(Ljava/lang/String;)Ljava/math/BigDecimal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getURL(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getURL(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Net.URL"/></returns>
@@ -381,7 +381,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Net.URL>("getURL", "(I)Ljava/net/URL;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getURL(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getURL(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.URL"/></returns>
@@ -391,7 +391,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Net.URL>("getURL", "(Ljava/lang/String;)Ljava/net/URL;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getArray(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getArray(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.Array"/></returns>
@@ -401,7 +401,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Array>("getArray", "(I)Ljava/sql/Array;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getArray(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getArray(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Array"/></returns>
@@ -411,7 +411,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Array>("getArray", "(Ljava/lang/String;)Ljava/sql/Array;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getBlob(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getBlob(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.Blob"/></returns>
@@ -421,7 +421,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Blob>("getBlob", "(I)Ljava/sql/Blob;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getBlob(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getBlob(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Blob"/></returns>
@@ -431,7 +431,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Blob>("getBlob", "(Ljava/lang/String;)Ljava/sql/Blob;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getClob(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getClob(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.Clob"/></returns>
@@ -441,7 +441,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Clob>("getClob", "(I)Ljava/sql/Clob;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getClob(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getClob(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Clob"/></returns>
@@ -451,7 +451,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Clob>("getClob", "(Ljava/lang/String;)Ljava/sql/Clob;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getDate(int,java.util.Calendar)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getDate(int,java.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
@@ -462,7 +462,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.Date>("getDate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getDate(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getDate(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.Date"/></returns>
@@ -472,7 +472,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Date>("getDate", "(I)Ljava/sql/Date;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getDate(java.lang.String,java.util.Calendar)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getDate(java.lang.String,java.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
@@ -483,7 +483,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.Date>("getDate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getDate(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getDate(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Date"/></returns>
@@ -493,7 +493,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Date>("getDate", "(Ljava/lang/String;)Ljava/sql/Date;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getNClob(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getNClob(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.NClob"/></returns>
@@ -503,7 +503,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.NClob>("getNClob", "(I)Ljava/sql/NClob;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getNClob(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getNClob(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.NClob"/></returns>
@@ -513,7 +513,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.NClob>("getNClob", "(Ljava/lang/String;)Ljava/sql/NClob;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getRef(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getRef(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.Ref"/></returns>
@@ -523,7 +523,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Ref>("getRef", "(I)Ljava/sql/Ref;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getRef(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getRef(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Ref"/></returns>
@@ -533,7 +533,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Ref>("getRef", "(Ljava/lang/String;)Ljava/sql/Ref;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getRowId(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getRowId(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.RowId"/></returns>
@@ -543,7 +543,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.RowId>("getRowId", "(I)Ljava/sql/RowId;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getRowId(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getRowId(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.RowId"/></returns>
@@ -553,7 +553,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.RowId>("getRowId", "(Ljava/lang/String;)Ljava/sql/RowId;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getSQLXML(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getSQLXML(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.SQLXML"/></returns>
@@ -563,7 +563,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.SQLXML>("getSQLXML", "(I)Ljava/sql/SQLXML;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getSQLXML(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getSQLXML(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.SQLXML"/></returns>
@@ -573,7 +573,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.SQLXML>("getSQLXML", "(Ljava/lang/String;)Ljava/sql/SQLXML;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getTime(int,java.util.Calendar)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getTime(int,java.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
@@ -584,7 +584,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.Time>("getTime", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getTime(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getTime(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.Time"/></returns>
@@ -594,7 +594,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Time>("getTime", "(I)Ljava/sql/Time;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getTime(java.lang.String,java.util.Calendar)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getTime(java.lang.String,java.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
@@ -605,7 +605,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.Time>("getTime", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getTime(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getTime(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Time"/></returns>
@@ -615,7 +615,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Time>("getTime", "(Ljava/lang/String;)Ljava/sql/Time;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getTimestamp(int,java.util.Calendar)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getTimestamp(int,java.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
@@ -626,7 +626,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.Timestamp>("getTimestamp", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getTimestamp(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getTimestamp(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Sql.Timestamp"/></returns>
@@ -636,7 +636,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Timestamp>("getTimestamp", "(I)Ljava/sql/Timestamp;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getTimestamp(java.lang.String,java.util.Calendar)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getTimestamp(java.lang.String,java.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Calendar"/></param>
@@ -647,7 +647,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.Timestamp>("getTimestamp", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getTimestamp(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getTimestamp(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Timestamp"/></returns>
@@ -657,7 +657,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Timestamp>("getTimestamp", "(Ljava/lang/String;)Ljava/sql/Timestamp;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getLong(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getLong(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="long"/></returns>
@@ -667,7 +667,7 @@ namespace Java.Sql
             return IExecuteWithSignature<long>("getLong", "(I)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getLong(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getLong(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="long"/></returns>
@@ -677,7 +677,7 @@ namespace Java.Sql
             return IExecuteWithSignature<long>("getLong", "(Ljava/lang/String;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getShort(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getShort(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="short"/></returns>
@@ -687,7 +687,7 @@ namespace Java.Sql
             return IExecuteWithSignature<short>("getShort", "(I)S", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#getShort(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#getShort(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="short"/></returns>
@@ -697,7 +697,7 @@ namespace Java.Sql
             return IExecuteWithSignature<short>("getShort", "(Ljava/lang/String;)S", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#registerOutParameter(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#registerOutParameter(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -708,7 +708,7 @@ namespace Java.Sql
             IExecute("registerOutParameter", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#registerOutParameter(int,int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#registerOutParameter(int,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -719,7 +719,7 @@ namespace Java.Sql
             IExecute("registerOutParameter", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#registerOutParameter(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#registerOutParameter(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -729,7 +729,7 @@ namespace Java.Sql
             IExecute("registerOutParameter", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#registerOutParameter(java.lang.String,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#registerOutParameter(java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -740,7 +740,7 @@ namespace Java.Sql
             IExecute("registerOutParameter", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#registerOutParameter(java.lang.String,int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#registerOutParameter(java.lang.String,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -751,7 +751,7 @@ namespace Java.Sql
             IExecute("registerOutParameter", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#registerOutParameter(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#registerOutParameter(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -761,7 +761,7 @@ namespace Java.Sql
             IExecute("registerOutParameter", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setAsciiStream(java.lang.String,java.io.InputStream,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setAsciiStream(java.lang.String,java.io.InputStream,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -772,7 +772,7 @@ namespace Java.Sql
             IExecute("setAsciiStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setAsciiStream(java.lang.String,java.io.InputStream,long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setAsciiStream(java.lang.String,java.io.InputStream,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -783,7 +783,7 @@ namespace Java.Sql
             IExecute("setAsciiStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setAsciiStream(java.lang.String,java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setAsciiStream(java.lang.String,java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -793,7 +793,7 @@ namespace Java.Sql
             IExecute("setAsciiStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setBigDecimal(java.lang.String,java.math.BigDecimal)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setBigDecimal(java.lang.String,java.math.BigDecimal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigDecimal"/></param>
@@ -803,7 +803,7 @@ namespace Java.Sql
             IExecute("setBigDecimal", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setBinaryStream(java.lang.String,java.io.InputStream,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setBinaryStream(java.lang.String,java.io.InputStream,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -814,7 +814,7 @@ namespace Java.Sql
             IExecute("setBinaryStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setBinaryStream(java.lang.String,java.io.InputStream,long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setBinaryStream(java.lang.String,java.io.InputStream,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -825,7 +825,7 @@ namespace Java.Sql
             IExecute("setBinaryStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setBinaryStream(java.lang.String,java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setBinaryStream(java.lang.String,java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -835,7 +835,7 @@ namespace Java.Sql
             IExecute("setBinaryStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setBlob(java.lang.String,java.io.InputStream,long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setBlob(java.lang.String,java.io.InputStream,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -846,7 +846,7 @@ namespace Java.Sql
             IExecute("setBlob", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setBlob(java.lang.String,java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setBlob(java.lang.String,java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.InputStream"/></param>
@@ -856,7 +856,7 @@ namespace Java.Sql
             IExecute("setBlob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setBlob(java.lang.String,java.sql.Blob)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setBlob(java.lang.String,java.sql.Blob)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Blob"/></param>
@@ -866,7 +866,7 @@ namespace Java.Sql
             IExecute("setBlob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setBoolean(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setBoolean(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -876,7 +876,7 @@ namespace Java.Sql
             IExecute("setBoolean", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setByte(java.lang.String,byte)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setByte(java.lang.String,byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -886,7 +886,7 @@ namespace Java.Sql
             IExecute("setByte", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setBytes(java.lang.String,byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setBytes(java.lang.String,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -896,7 +896,7 @@ namespace Java.Sql
             IExecute("setBytes", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setCharacterStream(java.lang.String,java.io.Reader,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setCharacterStream(java.lang.String,java.io.Reader,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -907,7 +907,7 @@ namespace Java.Sql
             IExecute("setCharacterStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setCharacterStream(java.lang.String,java.io.Reader,long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setCharacterStream(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -918,7 +918,7 @@ namespace Java.Sql
             IExecute("setCharacterStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setCharacterStream(java.lang.String,java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setCharacterStream(java.lang.String,java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -928,7 +928,7 @@ namespace Java.Sql
             IExecute("setCharacterStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setClob(java.lang.String,java.io.Reader,long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setClob(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -939,7 +939,7 @@ namespace Java.Sql
             IExecute("setClob", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setClob(java.lang.String,java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setClob(java.lang.String,java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -949,7 +949,7 @@ namespace Java.Sql
             IExecute("setClob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setClob(java.lang.String,java.sql.Clob)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setClob(java.lang.String,java.sql.Clob)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Clob"/></param>
@@ -959,7 +959,7 @@ namespace Java.Sql
             IExecute("setClob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setDate(java.lang.String,java.sql.Date,java.util.Calendar)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setDate(java.lang.String,java.sql.Date,java.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Date"/></param>
@@ -970,7 +970,7 @@ namespace Java.Sql
             IExecute("setDate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setDate(java.lang.String,java.sql.Date)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setDate(java.lang.String,java.sql.Date)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Date"/></param>
@@ -980,7 +980,7 @@ namespace Java.Sql
             IExecute("setDate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setDouble(java.lang.String,double)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setDouble(java.lang.String,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -990,7 +990,7 @@ namespace Java.Sql
             IExecute("setDouble", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setFloat(java.lang.String,float)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setFloat(java.lang.String,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -1000,7 +1000,7 @@ namespace Java.Sql
             IExecute("setFloat", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setInt(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setInt(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1010,7 +1010,7 @@ namespace Java.Sql
             IExecute("setInt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setLong(java.lang.String,long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setLong(java.lang.String,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -1020,7 +1020,7 @@ namespace Java.Sql
             IExecute("setLong", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setNCharacterStream(java.lang.String,java.io.Reader,long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setNCharacterStream(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -1031,7 +1031,7 @@ namespace Java.Sql
             IExecute("setNCharacterStream", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setNCharacterStream(java.lang.String,java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setNCharacterStream(java.lang.String,java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -1041,7 +1041,7 @@ namespace Java.Sql
             IExecute("setNCharacterStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setNClob(java.lang.String,java.io.Reader,long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setNClob(java.lang.String,java.io.Reader,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -1052,7 +1052,7 @@ namespace Java.Sql
             IExecute("setNClob", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setNClob(java.lang.String,java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setNClob(java.lang.String,java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
@@ -1062,7 +1062,7 @@ namespace Java.Sql
             IExecute("setNClob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setNClob(java.lang.String,java.sql.NClob)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setNClob(java.lang.String,java.sql.NClob)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.NClob"/></param>
@@ -1072,7 +1072,7 @@ namespace Java.Sql
             IExecute("setNClob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setNString(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setNString(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -1082,7 +1082,7 @@ namespace Java.Sql
             IExecute("setNString", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setNull(java.lang.String,int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setNull(java.lang.String,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1093,7 +1093,7 @@ namespace Java.Sql
             IExecute("setNull", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setNull(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setNull(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -1103,7 +1103,7 @@ namespace Java.Sql
             IExecute("setNull", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setObject(java.lang.String,java.lang.Object,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setObject(java.lang.String,java.lang.Object,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -1115,7 +1115,7 @@ namespace Java.Sql
             IExecute("setObject", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setObject(java.lang.String,java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setObject(java.lang.String,java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -1126,7 +1126,7 @@ namespace Java.Sql
             IExecute("setObject", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setObject(java.lang.String,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setObject(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -1136,7 +1136,7 @@ namespace Java.Sql
             IExecute("setObject", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setRowId(java.lang.String,java.sql.RowId)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setRowId(java.lang.String,java.sql.RowId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.RowId"/></param>
@@ -1146,7 +1146,7 @@ namespace Java.Sql
             IExecute("setRowId", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setShort(java.lang.String,short)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setShort(java.lang.String,short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="short"/></param>
@@ -1156,7 +1156,7 @@ namespace Java.Sql
             IExecute("setShort", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setSQLXML(java.lang.String,java.sql.SQLXML)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setSQLXML(java.lang.String,java.sql.SQLXML)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.SQLXML"/></param>
@@ -1166,7 +1166,7 @@ namespace Java.Sql
             IExecute("setSQLXML", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setString(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setString(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -1176,7 +1176,7 @@ namespace Java.Sql
             IExecute("setString", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setTime(java.lang.String,java.sql.Time,java.util.Calendar)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setTime(java.lang.String,java.sql.Time,java.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Time"/></param>
@@ -1187,7 +1187,7 @@ namespace Java.Sql
             IExecute("setTime", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setTime(java.lang.String,java.sql.Time)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setTime(java.lang.String,java.sql.Time)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Time"/></param>
@@ -1197,7 +1197,7 @@ namespace Java.Sql
             IExecute("setTime", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setTimestamp(java.lang.String,java.sql.Timestamp,java.util.Calendar)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setTimestamp(java.lang.String,java.sql.Timestamp,java.util.Calendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Timestamp"/></param>
@@ -1208,7 +1208,7 @@ namespace Java.Sql
             IExecute("setTimestamp", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setTimestamp(java.lang.String,java.sql.Timestamp)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setTimestamp(java.lang.String,java.sql.Timestamp)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Sql.Timestamp"/></param>
@@ -1218,7 +1218,7 @@ namespace Java.Sql
             IExecute("setTimestamp", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html#setURL(java.lang.String,java.net.URL)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html#setURL(java.lang.String,java.net.URL)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Net.URL"/></param>

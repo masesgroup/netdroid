@@ -46,13 +46,6 @@ namespace Android.Graphics.Pdf
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfDocument.html#getPages()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Graphics.Pdf.PdfDocument.PageInfo> Pages
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Graphics.Pdf.PdfDocument.PageInfo>>("getPages", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfDocument.html#startPage(android.graphics.pdf.PdfDocument.PageInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Pdf.PdfDocument.PageInfo"/></param>
@@ -60,6 +53,14 @@ namespace Android.Graphics.Pdf
         public Android.Graphics.Pdf.PdfDocument.Page StartPage(Android.Graphics.Pdf.PdfDocument.PageInfo arg0)
         {
             return IExecuteWithSignature<Android.Graphics.Pdf.PdfDocument.Page>("startPage", "(Landroid/graphics/pdf/PdfDocument$PageInfo;)Landroid/graphics/pdf/PdfDocument$Page;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfDocument.html#getPages()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Graphics.Pdf.PdfDocument.PageInfo> GetPages()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Graphics.Pdf.PdfDocument.PageInfo>>("getPages", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfDocument.html#close()"/>
@@ -110,18 +111,20 @@ namespace Android.Graphics.Pdf
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfDocument.Page.html#getCanvas()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfDocument.Page.html#getCanvas()"/>
             /// </summary>
-            public Android.Graphics.Canvas Canvas
+            /// <returns><see cref="Android.Graphics.Canvas"/></returns>
+            public Android.Graphics.Canvas GetCanvas()
             {
-                get { return IExecuteWithSignature<Android.Graphics.Canvas>("getCanvas", "()Landroid/graphics/Canvas;"); }
+                return IExecuteWithSignature<Android.Graphics.Canvas>("getCanvas", "()Landroid/graphics/Canvas;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfDocument.Page.html#getInfo()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfDocument.Page.html#getInfo()"/>
             /// </summary>
-            public Android.Graphics.Pdf.PdfDocument.PageInfo Info
+            /// <returns><see cref="Android.Graphics.Pdf.PdfDocument.PageInfo"/></returns>
+            public Android.Graphics.Pdf.PdfDocument.PageInfo GetInfo()
             {
-                get { return IExecuteWithSignature<Android.Graphics.Pdf.PdfDocument.PageInfo>("getInfo", "()Landroid/graphics/pdf/PdfDocument$PageInfo;"); }
+                return IExecuteWithSignature<Android.Graphics.Pdf.PdfDocument.PageInfo>("getInfo", "()Landroid/graphics/pdf/PdfDocument$PageInfo;");
             }
 
             #endregion
@@ -155,32 +158,36 @@ namespace Android.Graphics.Pdf
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfDocument.PageInfo.html#getContentRect()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfDocument.PageInfo.html#getContentRect()"/>
             /// </summary>
-            public Android.Graphics.Rect ContentRect
+            /// <returns><see cref="Android.Graphics.Rect"/></returns>
+            public Android.Graphics.Rect GetContentRect()
             {
-                get { return IExecuteWithSignature<Android.Graphics.Rect>("getContentRect", "()Landroid/graphics/Rect;"); }
+                return IExecuteWithSignature<Android.Graphics.Rect>("getContentRect", "()Landroid/graphics/Rect;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfDocument.PageInfo.html#getPageHeight()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfDocument.PageInfo.html#getPageHeight()"/>
             /// </summary>
-            public int PageHeight
+            /// <returns><see cref="int"/></returns>
+            public int GetPageHeight()
             {
-                get { return IExecuteWithSignature<int>("getPageHeight", "()I"); }
+                return IExecuteWithSignature<int>("getPageHeight", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfDocument.PageInfo.html#getPageNumber()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfDocument.PageInfo.html#getPageNumber()"/>
             /// </summary>
-            public int PageNumber
+            /// <returns><see cref="int"/></returns>
+            public int GetPageNumber()
             {
-                get { return IExecuteWithSignature<int>("getPageNumber", "()I"); }
+                return IExecuteWithSignature<int>("getPageNumber", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfDocument.PageInfo.html#getPageWidth()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfDocument.PageInfo.html#getPageWidth()"/>
             /// </summary>
-            public int PageWidth
+            /// <returns><see cref="int"/></returns>
+            public int GetPageWidth()
             {
-                get { return IExecuteWithSignature<int>("getPageWidth", "()I"); }
+                return IExecuteWithSignature<int>("getPageWidth", "()I");
             }
 
             #endregion

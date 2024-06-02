@@ -42,7 +42,7 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AlgorithmParameters.html#getInstance(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/AlgorithmParameters.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -54,7 +54,7 @@ namespace Java.Security
             return SExecute<Java.Security.AlgorithmParameters>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AlgorithmParameters.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/java/security/AlgorithmParameters.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
@@ -65,7 +65,7 @@ namespace Java.Security
             return SExecute<Java.Security.AlgorithmParameters>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AlgorithmParameters.html#getInstance(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/AlgorithmParameters.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.AlgorithmParameters"/></returns>
@@ -79,39 +79,27 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AlgorithmParameters.html#getAlgorithm()"/> 
-        /// </summary>
-        public Java.Lang.String Algorithm
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AlgorithmParameters.html#getEncoded()"/> 
-        /// </summary>
-        public byte[] Encoded
-        {
-            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AlgorithmParameters.html#getProvider()"/> 
-        /// </summary>
-        public Java.Security.Provider Provider
-        {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AlgorithmParameters.html#getParameterSpec(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/security/AlgorithmParameters.html#getParameterSpec(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Security.Spec.IAlgorithmParameterSpec"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Security.Spec.InvalidParameterSpecException"/>
-        public T GetParameterSpec<T>(Java.Lang.Class arg0) where T: Java.Security.Spec.IAlgorithmParameterSpec, new()
+        public T GetParameterSpec<T>(Java.Lang.Class arg0) where T : Java.Security.Spec.IAlgorithmParameterSpec, new()
         {
-            return IExecuteWithSignature<T>("getParameterSpec", "(Ljava/lang/Class;)Ljava/security/spec/AlgorithmParameterSpec;", arg0);
+            return IExecute<T>("getParameterSpec", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AlgorithmParameters.html#getEncoded(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/AlgorithmParameters.html#getEncoded()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public byte[] GetEncoded()
+        {
+            return IExecuteWithSignatureArray<byte>("getEncoded", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/AlgorithmParameters.html#getEncoded(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -121,7 +109,23 @@ namespace Java.Security
             return IExecuteWithSignatureArray<byte>("getEncoded", "(Ljava/lang/String;)[B", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AlgorithmParameters.html#init(byte[],java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/AlgorithmParameters.html#getAlgorithm()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlgorithm()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/AlgorithmParameters.html#getProvider()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public Java.Security.Provider GetProvider()
+        {
+            return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/AlgorithmParameters.html#init(byte[],java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -131,7 +135,7 @@ namespace Java.Security
             IExecute("init", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AlgorithmParameters.html#init(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/AlgorithmParameters.html#init(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -140,7 +144,7 @@ namespace Java.Security
             IExecuteWithSignature("init", "([B)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AlgorithmParameters.html#init(java.security.spec.AlgorithmParameterSpec)"/>
+        /// <see href="https://developer.android.com/reference/java/security/AlgorithmParameters.html#init(java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
         /// <exception cref="Java.Security.Spec.InvalidParameterSpecException"/>

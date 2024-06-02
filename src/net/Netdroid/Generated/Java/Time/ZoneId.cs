@@ -38,7 +38,7 @@ namespace Java.Time
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneId.html#SHORT_IDS"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneId.html#SHORT_IDS"/>
         /// </summary>
         public static Java.Util.Map SHORT_IDS { get { if (!_SHORT_IDSReady) { _SHORT_IDSContent = SGetField<Java.Util.Map>(LocalBridgeClazz, "SHORT_IDS"); _SHORT_IDSReady = true; } return _SHORT_IDSContent; } }
         private static Java.Util.Map _SHORT_IDSContent = default;
@@ -48,14 +48,7 @@ namespace Java.Time
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneId.html#getAvailableZoneIds()"/> 
-        /// </summary>
-        public static Java.Util.Set<Java.Lang.String> AvailableZoneIds
-        {
-            get { return SExecuteWithSignature<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAvailableZoneIds", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneId.html#from(java.time.temporal.TemporalAccessor)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneId.html#from(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
@@ -64,7 +57,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.ZoneId>(LocalBridgeClazz, "from", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/ZoneId;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneId.html#of(java.lang.String,java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneId.html#of(java.lang.String,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
@@ -74,7 +67,7 @@ namespace Java.Time
             return SExecute<Java.Time.ZoneId>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneId.html#of(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneId.html#of(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
@@ -83,7 +76,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.ZoneId>(LocalBridgeClazz, "of", "(Ljava/lang/String;)Ljava/time/ZoneId;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneId.html#ofOffset(java.lang.String,java.time.ZoneOffset)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneId.html#ofOffset(java.lang.String,java.time.ZoneOffset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Time.ZoneOffset"/></param>
@@ -93,33 +86,43 @@ namespace Java.Time
             return SExecute<Java.Time.ZoneId>(LocalBridgeClazz, "ofOffset", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneId.html#systemDefault()"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneId.html#systemDefault()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public static Java.Time.ZoneId SystemDefault()
         {
             return SExecuteWithSignature<Java.Time.ZoneId>(LocalBridgeClazz, "systemDefault", "()Ljava/time/ZoneId;");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneId.html#getAvailableZoneIds()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set<Java.Lang.String> GetAvailableZoneIds()
+        {
+            return SExecuteWithSignature<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAvailableZoneIds", "()Ljava/util/Set;");
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneId.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/java/time/ZoneId.html#getId()"/>
         /// </summary>
-        public Java.Lang.String Id
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneId.html#getRules()"/> 
+        /// <see href="https://developer.android.com/reference/java/time/ZoneId.html#getRules()"/>
         /// </summary>
-        public Java.Time.Zone.ZoneRules Rules
+        /// <returns><see cref="Java.Time.Zone.ZoneRules"/></returns>
+        public Java.Time.Zone.ZoneRules GetRules()
         {
-            get { return IExecuteWithSignature<Java.Time.Zone.ZoneRules>("getRules", "()Ljava/time/zone/ZoneRules;"); }
+            return IExecuteWithSignature<Java.Time.Zone.ZoneRules>("getRules", "()Ljava/time/zone/ZoneRules;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneId.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneId.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -129,7 +132,7 @@ namespace Java.Time
             return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneId.html#normalized()"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZoneId.html#normalized()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.ZoneId"/></returns>
         public Java.Time.ZoneId Normalized()

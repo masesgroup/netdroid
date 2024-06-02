@@ -135,13 +135,6 @@ namespace Android.Icu.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/GregorianCalendar.html#getGregorianChange()"/> <see href="https://developer.android.com/reference/android/icu/util/GregorianCalendar.html#setGregorianChange(java.util.Date)"/>
-        /// </summary>
-        public Java.Util.Date GregorianChange
-        {
-            get { return IExecuteWithSignature<Java.Util.Date>("getGregorianChange", "()Ljava/util/Date;"); } set { IExecuteWithSignature("setGregorianChange", "(Ljava/util/Date;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/GregorianCalendar.html#isLeapYear(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -149,6 +142,22 @@ namespace Android.Icu.Util
         public bool IsLeapYear(int arg0)
         {
             return IExecuteWithSignature<bool>("isLeapYear", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/GregorianCalendar.html#getGregorianChange()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Date"/></returns>
+        public Java.Util.Date GetGregorianChange()
+        {
+            return IExecuteWithSignature<Java.Util.Date>("getGregorianChange", "()Ljava/util/Date;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/GregorianCalendar.html#setGregorianChange(java.util.Date)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Date"/></param>
+        public void SetGregorianChange(Java.Util.Date arg0)
+        {
+            IExecuteWithSignature("setGregorianChange", "(Ljava/util/Date;)V", arg0);
         }
 
         #endregion

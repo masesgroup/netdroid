@@ -160,7 +160,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#MODE_MULTI_PROCESS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MODE_MULTI_PROCESS { get { if (!_MODE_MULTI_PROCESSReady) { _MODE_MULTI_PROCESSContent = SGetField<int>(LocalBridgeClazz, "MODE_MULTI_PROCESS"); _MODE_MULTI_PROCESSReady = true; } return _MODE_MULTI_PROCESSContent; } }
         private static int _MODE_MULTI_PROCESSContent = default;
         private static bool _MODE_MULTI_PROCESSReady = false; // this is used because in case of generics 
@@ -179,14 +179,14 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#MODE_WORLD_READABLE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MODE_WORLD_READABLE { get { if (!_MODE_WORLD_READABLEReady) { _MODE_WORLD_READABLEContent = SGetField<int>(LocalBridgeClazz, "MODE_WORLD_READABLE"); _MODE_WORLD_READABLEReady = true; } return _MODE_WORLD_READABLEContent; } }
         private static int _MODE_WORLD_READABLEContent = default;
         private static bool _MODE_WORLD_READABLEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#MODE_WORLD_WRITEABLE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MODE_WORLD_WRITEABLE { get { if (!_MODE_WORLD_WRITEABLEReady) { _MODE_WORLD_WRITEABLEContent = SGetField<int>(LocalBridgeClazz, "MODE_WORLD_WRITEABLE"); _MODE_WORLD_WRITEABLEReady = true; } return _MODE_WORLD_WRITEABLEContent; } }
         private static int _MODE_WORLD_WRITEABLEContent = default;
         private static bool _MODE_WORLD_WRITEABLEReady = false; // this is used because in case of generics 
@@ -709,7 +709,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#VIBRATOR_SERVICE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String VIBRATOR_SERVICE { get { if (!_VIBRATOR_SERVICEReady) { _VIBRATOR_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "VIBRATOR_SERVICE"); _VIBRATOR_SERVICEReady = true; } return _VIBRATOR_SERVICEContent; } }
         private static Java.Lang.String _VIBRATOR_SERVICEContent = default;
         private static bool _VIBRATOR_SERVICEReady = false; // this is used because in case of generics 
@@ -776,234 +776,6 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getApplicationContext()"/> 
-        /// </summary>
-        public Android.Content.Context ApplicationContext
-        {
-            get { return IExecuteWithSignature<Android.Content.Context>("getApplicationContext", "()Landroid/content/Context;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getApplicationInfo()"/> 
-        /// </summary>
-        public Android.Content.Pm.ApplicationInfo ApplicationInfo
-        {
-            get { return IExecuteWithSignature<Android.Content.Pm.ApplicationInfo>("getApplicationInfo", "()Landroid/content/pm/ApplicationInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getAssets()"/> 
-        /// </summary>
-        public Android.Content.Res.AssetManager Assets
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.AssetManager>("getAssets", "()Landroid/content/res/AssetManager;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getAttributionSource()"/> 
-        /// </summary>
-        public Android.Content.AttributionSource AttributionSource
-        {
-            get { return IExecuteWithSignature<Android.Content.AttributionSource>("getAttributionSource", "()Landroid/content/AttributionSource;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getAttributionTag()"/> 
-        /// </summary>
-        public Java.Lang.String AttributionTag
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAttributionTag", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getCacheDir()"/> 
-        /// </summary>
-        public Java.Io.File CacheDir
-        {
-            get { return IExecuteWithSignature<Java.Io.File>("getCacheDir", "()Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getClassLoader()"/> 
-        /// </summary>
-        public Java.Lang.ClassLoader ClassLoader
-        {
-            get { return IExecuteWithSignature<Java.Lang.ClassLoader>("getClassLoader", "()Ljava/lang/ClassLoader;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getCodeCacheDir()"/> 
-        /// </summary>
-        public Java.Io.File CodeCacheDir
-        {
-            get { return IExecuteWithSignature<Java.Io.File>("getCodeCacheDir", "()Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getContentResolver()"/> 
-        /// </summary>
-        public Android.Content.ContentResolver ContentResolver
-        {
-            get { return IExecuteWithSignature<Android.Content.ContentResolver>("getContentResolver", "()Landroid/content/ContentResolver;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getDataDir()"/> 
-        /// </summary>
-        public Java.Io.File DataDir
-        {
-            get { return IExecuteWithSignature<Java.Io.File>("getDataDir", "()Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getDeviceId()"/> 
-        /// </summary>
-        public int DeviceId
-        {
-            get { return IExecuteWithSignature<int>("getDeviceId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getDisplay()"/> 
-        /// </summary>
-        public Android.View.Display Display
-        {
-            get { return IExecuteWithSignature<Android.View.Display>("getDisplay", "()Landroid/view/Display;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getExternalCacheDir()"/> 
-        /// </summary>
-        public Java.Io.File ExternalCacheDir
-        {
-            get { return IExecuteWithSignature<Java.Io.File>("getExternalCacheDir", "()Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getExternalCacheDirs()"/> 
-        /// </summary>
-        public Java.Io.File[] ExternalCacheDirs
-        {
-            get { return IExecuteWithSignatureArray<Java.Io.File>("getExternalCacheDirs", "()[Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getExternalMediaDirs()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Io.File[] ExternalMediaDirs
-        {
-            get { return IExecuteWithSignatureArray<Java.Io.File>("getExternalMediaDirs", "()[Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getFilesDir()"/> 
-        /// </summary>
-        public Java.Io.File FilesDir
-        {
-            get { return IExecuteWithSignature<Java.Io.File>("getFilesDir", "()Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getMainExecutor()"/> 
-        /// </summary>
-        public Java.Util.Concurrent.Executor MainExecutor
-        {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.Executor>("getMainExecutor", "()Ljava/util/concurrent/Executor;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getMainLooper()"/> 
-        /// </summary>
-        public Android.Os.Looper MainLooper
-        {
-            get { return IExecuteWithSignature<Android.Os.Looper>("getMainLooper", "()Landroid/os/Looper;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getNoBackupFilesDir()"/> 
-        /// </summary>
-        public Java.Io.File NoBackupFilesDir
-        {
-            get { return IExecuteWithSignature<Java.Io.File>("getNoBackupFilesDir", "()Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getObbDir()"/> 
-        /// </summary>
-        public Java.Io.File ObbDir
-        {
-            get { return IExecuteWithSignature<Java.Io.File>("getObbDir", "()Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getObbDirs()"/> 
-        /// </summary>
-        public Java.Io.File[] ObbDirs
-        {
-            get { return IExecuteWithSignatureArray<Java.Io.File>("getObbDirs", "()[Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getOpPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String OpPackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOpPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getPackageCodePath()"/> 
-        /// </summary>
-        public Java.Lang.String PackageCodePath
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageCodePath", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getPackageManager()"/> 
-        /// </summary>
-        public Android.Content.Pm.PackageManager PackageManager
-        {
-            get { return IExecuteWithSignature<Android.Content.Pm.PackageManager>("getPackageManager", "()Landroid/content/pm/PackageManager;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getPackageResourcePath()"/> 
-        /// </summary>
-        public Java.Lang.String PackageResourcePath
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageResourcePath", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getParams()"/> 
-        /// </summary>
-        public Android.Content.ContextParams Params
-        {
-            get { return IExecuteWithSignature<Android.Content.ContextParams>("getParams", "()Landroid/content/ContextParams;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getResources()"/> 
-        /// </summary>
-        public Android.Content.Res.Resources Resources
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.Resources>("getResources", "()Landroid/content/res/Resources;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getTheme()"/> <see href="https://developer.android.com/reference/android/content/Context.html#setTheme(int)"/>
-        /// </summary>
-        public Android.Content.Res.Resources.Theme Theme
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.Resources.Theme>("getTheme", "()Landroid/content/res/Resources$Theme;"); } set { IExecuteWithSignature("setTheme", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getWallpaper()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.Drawable.Drawable Wallpaper
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getWallpaper", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getWallpaperDesiredMinimumHeight()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int WallpaperDesiredMinimumHeight
-        {
-            get { return IExecuteWithSignature<int>("getWallpaperDesiredMinimumHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Context.html#getWallpaperDesiredMinimumWidth()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int WallpaperDesiredMinimumWidth
-        {
-            get { return IExecuteWithSignature<int>("getWallpaperDesiredMinimumWidth", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#startForegroundService(android.content.Intent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
@@ -1020,6 +792,14 @@ namespace Android.Content
         public Android.Content.ComponentName StartService(Android.Content.Intent arg0)
         {
             return IExecuteWithSignature<Android.Content.ComponentName>("startService", "(Landroid/content/Intent;)Landroid/content/ComponentName;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getContentResolver()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.ContentResolver"/></returns>
+        public Android.Content.ContentResolver GetContentResolver()
+        {
+            return IExecuteWithSignature<Android.Content.ContentResolver>("getContentResolver", "()Landroid/content/ContentResolver;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#createConfigurationContext(android.content.res.Configuration)"/>
@@ -1069,6 +849,14 @@ namespace Android.Content
             return IExecute<Android.Content.Context>("createPackageContext", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getApplicationContext()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        public Android.Content.Context GetApplicationContext()
+        {
+            return IExecuteWithSignature<Android.Content.Context>("getApplicationContext", "()Landroid/content/Context;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.BroadcastReceiver"/></param>
@@ -1115,6 +903,46 @@ namespace Android.Content
             return IExecute<Android.Content.Intent>("registerReceiver", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getApplicationInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Pm.ApplicationInfo"/></returns>
+        public Android.Content.Pm.ApplicationInfo GetApplicationInfo()
+        {
+            return IExecuteWithSignature<Android.Content.Pm.ApplicationInfo>("getApplicationInfo", "()Landroid/content/pm/ApplicationInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getPackageManager()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Pm.PackageManager"/></returns>
+        public Android.Content.Pm.PackageManager GetPackageManager()
+        {
+            return IExecuteWithSignature<Android.Content.Pm.PackageManager>("getPackageManager", "()Landroid/content/pm/PackageManager;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getAssets()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Res.AssetManager"/></returns>
+        public Android.Content.Res.AssetManager GetAssets()
+        {
+            return IExecuteWithSignature<Android.Content.Res.AssetManager>("getAssets", "()Landroid/content/res/AssetManager;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getResources()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Res.Resources"/></returns>
+        public Android.Content.Res.Resources GetResources()
+        {
+            return IExecuteWithSignature<Android.Content.Res.Resources>("getResources", "()Landroid/content/res/Resources;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getTheme()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Res.Resources.Theme"/></returns>
+        public Android.Content.Res.Resources.Theme GetTheme()
+        {
+            return IExecuteWithSignature<Android.Content.Res.Resources.Theme>("getTheme", "()Landroid/content/res/Resources$Theme;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getSharedPreferences(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1148,13 +976,30 @@ namespace Android.Content
             return IExecute<Android.Database.Sqlite.SQLiteDatabase>("openOrCreateDatabase", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getWallpaper()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.Drawable.Drawable GetWallpaper()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getWallpaper", "()Landroid/graphics/drawable/Drawable;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#peekWallpaper()"/>
         /// </summary>
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Graphics.Drawable.Drawable PeekWallpaper()
         {
             return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("peekWallpaper", "()Landroid/graphics/drawable/Drawable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getMainLooper()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Looper"/></returns>
+        public Android.Os.Looper GetMainLooper()
+        {
+            return IExecuteWithSignature<Android.Os.Looper>("getMainLooper", "()Landroid/os/Looper;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#bindService(android.content.Intent,android.content.ServiceConnection,int)"/>
@@ -1327,6 +1172,40 @@ namespace Android.Content
             return IExecute<int>("checkUriPermission", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getWallpaperDesiredMinimumHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetWallpaperDesiredMinimumHeight()
+        {
+            return IExecuteWithSignature<int>("getWallpaperDesiredMinimumHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getWallpaperDesiredMinimumWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetWallpaperDesiredMinimumWidth()
+        {
+            return IExecuteWithSignature<int>("getWallpaperDesiredMinimumWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getCacheDir()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public Java.Io.File GetCacheDir()
+        {
+            return IExecuteWithSignature<Java.Io.File>("getCacheDir", "()Ljava/io/File;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getCodeCacheDir()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public Java.Io.File GetCodeCacheDir()
+        {
+            return IExecuteWithSignature<Java.Io.File>("getCodeCacheDir", "()Ljava/io/File;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getDatabasePath(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1334,6 +1213,14 @@ namespace Android.Content
         public Java.Io.File GetDatabasePath(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Io.File>("getDatabasePath", "(Ljava/lang/String;)Ljava/io/File;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getDataDir()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public Java.Io.File GetDataDir()
+        {
+            return IExecuteWithSignature<Java.Io.File>("getDataDir", "()Ljava/io/File;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getDir(java.lang.String,int)"/>
@@ -1346,6 +1233,14 @@ namespace Android.Content
             return IExecute<Java.Io.File>("getDir", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getExternalCacheDir()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public Java.Io.File GetExternalCacheDir()
+        {
+            return IExecuteWithSignature<Java.Io.File>("getExternalCacheDir", "()Ljava/io/File;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getExternalFilesDir(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1353,6 +1248,14 @@ namespace Android.Content
         public Java.Io.File GetExternalFilesDir(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Io.File>("getExternalFilesDir", "(Ljava/lang/String;)Ljava/io/File;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getFilesDir()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public Java.Io.File GetFilesDir()
+        {
+            return IExecuteWithSignature<Java.Io.File>("getFilesDir", "()Ljava/io/File;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getFileStreamPath(java.lang.String)"/>
@@ -1364,6 +1267,30 @@ namespace Android.Content
             return IExecuteWithSignature<Java.Io.File>("getFileStreamPath", "(Ljava/lang/String;)Ljava/io/File;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getNoBackupFilesDir()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public Java.Io.File GetNoBackupFilesDir()
+        {
+            return IExecuteWithSignature<Java.Io.File>("getNoBackupFilesDir", "()Ljava/io/File;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getObbDir()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public Java.Io.File GetObbDir()
+        {
+            return IExecuteWithSignature<Java.Io.File>("getObbDir", "()Ljava/io/File;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getExternalCacheDirs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public Java.Io.File[] GetExternalCacheDirs()
+        {
+            return IExecuteWithSignatureArray<Java.Io.File>("getExternalCacheDirs", "()[Ljava/io/File;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getExternalFilesDirs(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1371,6 +1298,23 @@ namespace Android.Content
         public Java.Io.File[] GetExternalFilesDirs(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<Java.Io.File>("getExternalFilesDirs", "(Ljava/lang/String;)[Ljava/io/File;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getExternalMediaDirs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        [global::System.Obsolete()]
+        public Java.Io.File[] GetExternalMediaDirs()
+        {
+            return IExecuteWithSignatureArray<Java.Io.File>("getExternalMediaDirs", "()[Ljava/io/File;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getObbDirs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public Java.Io.File[] GetObbDirs()
+        {
+            return IExecuteWithSignatureArray<Java.Io.File>("getObbDirs", "()[Ljava/io/File;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#openFileInput(java.lang.String)"/>
@@ -1394,6 +1338,14 @@ namespace Android.Content
             return IExecute<Java.Io.FileOutputStream>("openFileOutput", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getClassLoader()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.ClassLoader"/></returns>
+        public Java.Lang.ClassLoader GetClassLoader()
+        {
+            return IExecuteWithSignature<Java.Lang.ClassLoader>("getClassLoader", "()Ljava/lang/ClassLoader;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getSystemService(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1401,6 +1353,30 @@ namespace Android.Content
         public object GetSystemService(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getSystemService", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getPackageCodePath()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageCodePath()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageCodePath", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getPackageResourcePath()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageResourcePath()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageResourcePath", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#getSystemServiceName(java.lang.Class)"/>
@@ -1431,7 +1407,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Context.html#clearWallpaper()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ClearWallpaper()
         {
             IExecuteWithSignature("clearWallpaper", "()V");
@@ -1525,7 +1501,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Context.html#removeStickyBroadcast(android.content.Intent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveStickyBroadcast(Android.Content.Intent arg0)
         {
             IExecuteWithSignature("removeStickyBroadcast", "(Landroid/content/Intent;)V", arg0);
@@ -1535,7 +1511,7 @@ namespace Android.Content
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
         /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveStickyBroadcastAsUser(Android.Content.Intent arg0, Android.Os.UserHandle arg1)
         {
             IExecute("removeStickyBroadcastAsUser", arg0, arg1);
@@ -1637,7 +1613,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Context.html#sendStickyBroadcast(android.content.Intent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SendStickyBroadcast(Android.Content.Intent arg0)
         {
             IExecuteWithSignature("sendStickyBroadcast", "(Landroid/content/Intent;)V", arg0);
@@ -1647,7 +1623,7 @@ namespace Android.Content
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
         /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SendStickyBroadcastAsUser(Android.Content.Intent arg0, Android.Os.UserHandle arg1)
         {
             IExecute("sendStickyBroadcastAsUser", arg0, arg1);
@@ -1661,7 +1637,7 @@ namespace Android.Content
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Java.Lang.String"/></param>
         /// <param name="arg5"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SendStickyOrderedBroadcast(Android.Content.Intent arg0, Android.Content.BroadcastReceiver arg1, Android.Os.Handler arg2, int arg3, Java.Lang.String arg4, Android.Os.Bundle arg5)
         {
             IExecute("sendStickyOrderedBroadcast", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -1676,17 +1652,25 @@ namespace Android.Content
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Java.Lang.String"/></param>
         /// <param name="arg6"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SendStickyOrderedBroadcastAsUser(Android.Content.Intent arg0, Android.Os.UserHandle arg1, Android.Content.BroadcastReceiver arg2, Android.Os.Handler arg3, int arg4, Java.Lang.String arg5, Android.Os.Bundle arg6)
         {
             IExecute("sendStickyOrderedBroadcastAsUser", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#setTheme(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTheme(int arg0)
+        {
+            IExecuteWithSignature("setTheme", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#setWallpaper(android.graphics.Bitmap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetWallpaper(Android.Graphics.Bitmap arg0)
         {
             IExecuteWithSignature("setWallpaper", "(Landroid/graphics/Bitmap;)V", arg0);
@@ -1696,7 +1680,7 @@ namespace Android.Content
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetWallpaper(Java.Io.InputStream arg0)
         {
             IExecuteWithSignature("setWallpaper", "(Ljava/io/InputStream;)V", arg0);
@@ -1779,6 +1763,14 @@ namespace Android.Content
             IExecuteWithSignature("unregisterReceiver", "(Landroid/content/BroadcastReceiver;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getAttributionSource()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.AttributionSource"/></returns>
+        public Android.Content.AttributionSource GetAttributionSource()
+        {
+            return IExecuteWithSignature<Android.Content.AttributionSource>("getAttributionSource", "()Landroid/content/AttributionSource;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#createAttributionContext(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1825,6 +1817,22 @@ namespace Android.Content
         public Android.Content.Context CreateWindowContext(int arg0, Android.Os.Bundle arg1)
         {
             return IExecute<Android.Content.Context>("createWindowContext", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getParams()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.ContextParams"/></returns>
+        public Android.Content.ContextParams GetParams()
+        {
+            return IExecuteWithSignature<Android.Content.ContextParams>("getParams", "()Landroid/content/ContextParams;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getDisplay()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Display"/></returns>
+        public Android.View.Display GetDisplay()
+        {
+            return IExecuteWithSignature<Android.View.Display>("getDisplay", "()Landroid/view/Display;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#bindIsolatedService(android.content.Intent,android.content.Context.BindServiceFlags,java.lang.String,java.util.concurrent.Executor,android.content.ServiceConnection)"/>
@@ -2035,6 +2043,14 @@ namespace Android.Content
             return IExecuteWithSignature<Java.Lang.String>("getString", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getDeviceId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDeviceId()
+        {
+            return IExecuteWithSignature<int>("getDeviceId", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#checkCallingOrSelfUriPermissions(java.util.List,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
@@ -2065,6 +2081,30 @@ namespace Android.Content
         public int[] CheckUriPermissions(Java.Util.List<Android.Net.Uri> arg0, int arg1, int arg2, int arg3)
         {
             return IExecuteArray<int>("checkUriPermissions", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getAttributionTag()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAttributionTag()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAttributionTag", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getOpPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOpPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOpPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Context.html#getMainExecutor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.Executor"/></returns>
+        public Java.Util.Concurrent.Executor GetMainExecutor()
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.Executor>("getMainExecutor", "()Ljava/util/concurrent/Executor;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Context.html#registerComponentCallbacks(android.content.ComponentCallbacks)"/>
@@ -2163,7 +2203,7 @@ namespace Android.Content
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SendStickyBroadcast(Android.Content.Intent arg0, Android.Os.Bundle arg1)
         {
             IExecute("sendStickyBroadcast", arg0, arg1);

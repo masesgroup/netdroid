@@ -50,15 +50,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsIntEventHandler));
+            AddEventHandler("applyAsInt", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsIntEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsInt"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<object, int> OnApplyAsInt { get; set; } = null;
+        public global::System.Func<object, int> OnApplyAsInt { get; set; } = null;
 
         void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
@@ -68,7 +68,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -108,7 +108,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -129,7 +129,7 @@ namespace Java.Util.Function
 
     #region IToIntFunction<T>
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.ToIntFunction implementing <see href="https://developer.android.com/reference/java.base/java/util/function/ToIntFunction.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.ToIntFunction implementing <see href="https://developer.android.com/reference/java/util/function/ToIntFunction.html"/>
     /// </summary>
     public partial interface IToIntFunction<T>
     {
@@ -170,15 +170,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsIntEventHandler));
+            AddEventHandler("applyAsInt", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsIntEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsInt"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<T, int> OnApplyAsInt { get; set; } = null;
+        public global::System.Func<T, int> OnApplyAsInt { get; set; } = null;
 
         void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
@@ -188,7 +188,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="int"/></returns>
@@ -228,7 +228,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="int"/></returns>

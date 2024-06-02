@@ -47,7 +47,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Element"/></param>
         /// <returns><see cref="Android.Renderscript.ScriptIntrinsicBlend"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.ScriptIntrinsicBlend Create(Android.Renderscript.RenderScript arg0, Android.Renderscript.Element arg1)
         {
             return SExecute<Android.Renderscript.ScriptIntrinsicBlend>(LocalBridgeClazz, "create", arg0, arg1);
@@ -57,124 +57,139 @@ namespace Android.Renderscript
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDAdd()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDAdd()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelIDAdd
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelIDAdd()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDAdd", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDAdd", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDClear()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDClear()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelIDClear
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelIDClear()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDClear", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDClear", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDDst()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDDst()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelIDDst
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelIDDst()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDDst", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDDst", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDDstAtop()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDDstAtop()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelIDDstAtop
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelIDDstAtop()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDDstAtop", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDDstAtop", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDDstIn()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDDstIn()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelIDDstIn
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelIDDstIn()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDDstIn", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDDstIn", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDDstOut()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDDstOut()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelIDDstOut
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelIDDstOut()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDDstOut", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDDstOut", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDDstOver()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDDstOver()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelIDDstOver
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelIDDstOver()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDDstOver", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDDstOver", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDMultiply()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDMultiply()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelIDMultiply
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelIDMultiply()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDMultiply", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDMultiply", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDSrc()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDSrc()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelIDSrc
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelIDSrc()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDSrc", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDSrc", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDSrcAtop()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDSrcAtop()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelIDSrcAtop
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelIDSrcAtop()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDSrcAtop", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDSrcAtop", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDSrcIn()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDSrcIn()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelIDSrcIn
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelIDSrcIn()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDSrcIn", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDSrcIn", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDSrcOut()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDSrcOut()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelIDSrcOut
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelIDSrcOut()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDSrcOut", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDSrcOut", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDSrcOver()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDSrcOver()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelIDSrcOver
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelIDSrcOver()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDSrcOver", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDSrcOver", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDSubtract()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDSubtract()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelIDSubtract
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelIDSubtract()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDSubtract", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDSubtract", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDXor()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#getKernelIDXor()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelIDXor
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelIDXor()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDXor", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelIDXor", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html#forEachAdd(android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
@@ -182,7 +197,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachAdd(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
             IExecute("forEachAdd", arg0, arg1, arg2);
@@ -192,7 +207,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachAdd(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("forEachAdd", arg0, arg1);
@@ -203,7 +218,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachClear(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
             IExecute("forEachClear", arg0, arg1, arg2);
@@ -213,7 +228,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachClear(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("forEachClear", arg0, arg1);
@@ -224,7 +239,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachDst(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
             IExecute("forEachDst", arg0, arg1, arg2);
@@ -234,7 +249,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachDst(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("forEachDst", arg0, arg1);
@@ -245,7 +260,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachDstAtop(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
             IExecute("forEachDstAtop", arg0, arg1, arg2);
@@ -255,7 +270,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachDstAtop(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("forEachDstAtop", arg0, arg1);
@@ -266,7 +281,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachDstIn(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
             IExecute("forEachDstIn", arg0, arg1, arg2);
@@ -276,7 +291,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachDstIn(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("forEachDstIn", arg0, arg1);
@@ -287,7 +302,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachDstOut(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
             IExecute("forEachDstOut", arg0, arg1, arg2);
@@ -297,7 +312,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachDstOut(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("forEachDstOut", arg0, arg1);
@@ -308,7 +323,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachDstOver(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
             IExecute("forEachDstOver", arg0, arg1, arg2);
@@ -318,7 +333,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachDstOver(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("forEachDstOver", arg0, arg1);
@@ -329,7 +344,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachMultiply(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
             IExecute("forEachMultiply", arg0, arg1, arg2);
@@ -339,7 +354,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachMultiply(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("forEachMultiply", arg0, arg1);
@@ -350,7 +365,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachSrc(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
             IExecute("forEachSrc", arg0, arg1, arg2);
@@ -360,7 +375,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachSrc(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("forEachSrc", arg0, arg1);
@@ -371,7 +386,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachSrcAtop(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
             IExecute("forEachSrcAtop", arg0, arg1, arg2);
@@ -381,7 +396,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachSrcAtop(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("forEachSrcAtop", arg0, arg1);
@@ -392,7 +407,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachSrcIn(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
             IExecute("forEachSrcIn", arg0, arg1, arg2);
@@ -402,7 +417,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachSrcIn(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("forEachSrcIn", arg0, arg1);
@@ -413,7 +428,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachSrcOut(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
             IExecute("forEachSrcOut", arg0, arg1, arg2);
@@ -423,7 +438,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachSrcOut(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("forEachSrcOut", arg0, arg1);
@@ -434,7 +449,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachSrcOver(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
             IExecute("forEachSrcOver", arg0, arg1, arg2);
@@ -444,7 +459,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachSrcOver(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("forEachSrcOver", arg0, arg1);
@@ -455,7 +470,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachSubtract(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
             IExecute("forEachSubtract", arg0, arg1, arg2);
@@ -465,7 +480,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachSubtract(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("forEachSubtract", arg0, arg1);
@@ -476,7 +491,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachXor(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
             IExecute("forEachXor", arg0, arg1, arg2);
@@ -486,7 +501,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEachXor(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("forEachXor", arg0, arg1);

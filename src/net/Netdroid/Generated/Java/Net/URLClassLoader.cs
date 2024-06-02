@@ -30,7 +30,7 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.lang.String,java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLClassLoader.html#%3Cinit%3E(java.lang.String,java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Net.URL"/></param>
@@ -41,7 +41,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.lang.String,java.net.URL[],java.lang.ClassLoader)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLClassLoader.html#%3Cinit%3E(java.lang.String,java.net.URL[],java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Net.URL"/></param>
@@ -51,7 +51,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLClassLoader.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
@@ -61,7 +61,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLClassLoader.html#%3Cinit%3E(java.net.URL[],java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
@@ -70,7 +70,7 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLClassLoader.html#%3Cinit%3E(java.net.URL[])"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLClassLoader.html#%3Cinit%3E(java.net.URL[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         public URLClassLoader(Java.Net.URL[] arg0)
@@ -94,7 +94,7 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLClassLoader.html#newInstance(java.net.URL[],java.lang.ClassLoader)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLClassLoader.html#newInstance(java.net.URL[],java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
@@ -104,7 +104,7 @@ namespace Java.Net
             return SExecute<Java.Net.URLClassLoader>(LocalBridgeClazz, "newInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLClassLoader.html#newInstance(java.net.URL[])"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLClassLoader.html#newInstance(java.net.URL[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         /// <returns><see cref="Java.Net.URLClassLoader"/></returns>
@@ -117,14 +117,7 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLClassLoader.html#getURLs()"/> 
-        /// </summary>
-        public Java.Net.URL[] URLs
-        {
-            get { return IExecuteWithSignatureArray<Java.Net.URL>("getURLs", "()[Ljava/net/URL;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLClassLoader.html#findResource(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLClassLoader.html#findResource(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Net.URL"/></returns>
@@ -133,7 +126,15 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Net.URL>("findResource", "(Ljava/lang/String;)Ljava/net/URL;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLClassLoader.html#findResources(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLClassLoader.html#getURLs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.URL"/></returns>
+        public Java.Net.URL[] GetURLs()
+        {
+            return IExecuteWithSignatureArray<Java.Net.URL>("getURLs", "()[Ljava/net/URL;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/URLClassLoader.html#findResources(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
@@ -143,7 +144,7 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Util.Enumeration<Java.Net.URL>>("findResources", "(Ljava/lang/String;)Ljava/util/Enumeration;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/URLClassLoader.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/net/URLClassLoader.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()

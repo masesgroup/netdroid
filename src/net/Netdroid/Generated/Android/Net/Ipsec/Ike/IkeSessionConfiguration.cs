@@ -58,32 +58,20 @@ namespace Android.Net.Ipsec.Ike
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConfiguration.html#getEapInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConfiguration.html#getEapInfo()"/>
         /// </summary>
-        public Android.Net.Eap.EapInfo EapInfo
+        /// <returns><see cref="Android.Net.Eap.EapInfo"/></returns>
+        public Android.Net.Eap.EapInfo GetEapInfo()
         {
-            get { return IExecuteWithSignature<Android.Net.Eap.EapInfo>("getEapInfo", "()Landroid/net/eap/EapInfo;"); }
+            return IExecuteWithSignature<Android.Net.Eap.EapInfo>("getEapInfo", "()Landroid/net/eap/EapInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConfiguration.html#getIkeSessionConnectionInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConfiguration.html#getIkeSessionConnectionInfo()"/>
         /// </summary>
-        public Android.Net.Ipsec.Ike.IkeSessionConnectionInfo IkeSessionConnectionInfo
+        /// <returns><see cref="Android.Net.Ipsec.Ike.IkeSessionConnectionInfo"/></returns>
+        public Android.Net.Ipsec.Ike.IkeSessionConnectionInfo GetIkeSessionConnectionInfo()
         {
-            get { return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeSessionConnectionInfo>("getIkeSessionConnectionInfo", "()Landroid/net/ipsec/ike/IkeSessionConnectionInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConfiguration.html#getRemoteApplicationVersion()"/> 
-        /// </summary>
-        public Java.Lang.String RemoteApplicationVersion
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRemoteApplicationVersion", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConfiguration.html#getRemoteVendorIds()"/> 
-        /// </summary>
-        public Java.Util.List<byte[]> RemoteVendorIds
-        {
-            get { return IExecuteWithSignature<Java.Util.List<byte[]>>("getRemoteVendorIds", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeSessionConnectionInfo>("getIkeSessionConnectionInfo", "()Landroid/net/ipsec/ike/IkeSessionConnectionInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConfiguration.html#isIkeExtensionEnabled(int)"/>
@@ -93,6 +81,22 @@ namespace Android.Net.Ipsec.Ike
         public bool IsIkeExtensionEnabled(int arg0)
         {
             return IExecuteWithSignature<bool>("isIkeExtensionEnabled", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConfiguration.html#getRemoteApplicationVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetRemoteApplicationVersion()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getRemoteApplicationVersion", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionConfiguration.html#getRemoteVendorIds()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<byte[]> GetRemoteVendorIds()
+        {
+            return IExecuteWithSignature<Java.Util.List<byte[]>>("getRemoteVendorIds", "()Ljava/util/List;");
         }
 
         #endregion

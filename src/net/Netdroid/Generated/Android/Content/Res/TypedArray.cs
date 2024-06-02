@@ -46,34 +46,6 @@ namespace Android.Content.Res
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getChangingConfigurations()"/> 
-        /// </summary>
-        public int ChangingConfigurations
-        {
-            get { return IExecuteWithSignature<int>("getChangingConfigurations", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getIndexCount()"/> 
-        /// </summary>
-        public int IndexCount
-        {
-            get { return IExecuteWithSignature<int>("getIndexCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getPositionDescription()"/> 
-        /// </summary>
-        public Java.Lang.String PositionDescription
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPositionDescription", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getResources()"/> 
-        /// </summary>
-        public Android.Content.Res.Resources Resources
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.Resources>("getResources", "()Landroid/content/res/Resources;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getColorStateList(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -81,6 +53,14 @@ namespace Android.Content.Res
         public Android.Content.Res.ColorStateList GetColorStateList(int arg0)
         {
             return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getColorStateList", "(I)Landroid/content/res/ColorStateList;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getResources()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Res.Resources"/></returns>
+        public Android.Content.Res.Resources GetResources()
+        {
+            return IExecuteWithSignature<Android.Content.Res.Resources>("getResources", "()Landroid/content/res/Resources;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getDrawable(int)"/>
@@ -101,6 +81,15 @@ namespace Android.Content.Res
             return IExecuteWithSignature<Android.Graphics.Typeface>("getFont", "(I)Landroid/graphics/Typeface;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#peekValue(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Android.Util.TypedValue"/></returns>
+        public Android.Util.TypedValue PeekValue(int arg0)
+        {
+            return IExecuteWithSignature<Android.Util.TypedValue>("peekValue", "(I)Landroid/util/TypedValue;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getBoolean(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -109,6 +98,16 @@ namespace Android.Content.Res
         public bool GetBoolean(int arg0, bool arg1)
         {
             return IExecute<bool>("getBoolean", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getValue(int,android.util.TypedValue)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.Util.TypedValue"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetValue(int arg0, Android.Util.TypedValue arg1)
+        {
+            return IExecute<bool>("getValue", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#hasValue(int)"/>
@@ -161,6 +160,14 @@ namespace Android.Content.Res
             return IExecute<float>("getFraction", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getChangingConfigurations()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChangingConfigurations()
+        {
+            return IExecuteWithSignature<int>("getChangingConfigurations", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getColor(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -198,6 +205,14 @@ namespace Android.Content.Res
         public int GetIndex(int arg0)
         {
             return IExecuteWithSignature<int>("getIndex", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getIndexCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIndexCount()
+        {
+            return IExecuteWithSignature<int>("getIndexCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getInt(int,int)"/>
@@ -302,6 +317,14 @@ namespace Android.Content.Res
         public Java.Lang.String GetNonResourceString(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getNonResourceString", "(I)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getPositionDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPositionDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPositionDescription", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/TypedArray.html#getString(int)"/>

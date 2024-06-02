@@ -77,7 +77,7 @@ namespace Android.Content.Res
         /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Content.Res.ColorStateList CreateFromXml(Android.Content.Res.Resources arg0, Org.Xmlpull.V1.XmlPullParser arg1)
         {
             return SExecute<Android.Content.Res.ColorStateList>(LocalBridgeClazz, "createFromXml", arg0, arg1);
@@ -95,20 +95,6 @@ namespace Android.Content.Res
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#getChangingConfigurations()"/> 
-        /// </summary>
-        public int ChangingConfigurations
-        {
-            get { return IExecuteWithSignature<int>("getChangingConfigurations", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#getDefaultColor()"/> 
-        /// </summary>
-        public int DefaultColor
-        {
-            get { return IExecuteWithSignature<int>("getDefaultColor", "()I"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#withAlpha(int)"/>
         /// </summary>
@@ -152,6 +138,14 @@ namespace Android.Content.Res
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#getChangingConfigurations()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChangingConfigurations()
+        {
+            return IExecuteWithSignature<int>("getChangingConfigurations", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#getColorForState(int[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -160,6 +154,14 @@ namespace Android.Content.Res
         public int GetColorForState(int[] arg0, int arg1)
         {
             return IExecute<int>("getColorForState", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#getDefaultColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDefaultColor()
+        {
+            return IExecuteWithSignature<int>("getDefaultColor", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/ColorStateList.html#writeToParcel(android.os.Parcel,int)"/>

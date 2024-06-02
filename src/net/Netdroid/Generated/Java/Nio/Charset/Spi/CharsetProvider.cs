@@ -46,7 +46,7 @@ namespace Java.Nio.Charset.Spi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/spi/CharsetProvider.html#charsetForName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/spi/CharsetProvider.html#charsetForName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Nio.Charset.Charset"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Nio.Charset.Spi
             return IExecuteWithSignature<Java.Nio.Charset.Charset>("charsetForName", "(Ljava/lang/String;)Ljava/nio/charset/Charset;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/spi/CharsetProvider.html#charsets()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/spi/CharsetProvider.html#charsets()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<Java.Nio.Charset.Charset> Charsets()

@@ -84,27 +84,6 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/HorizontalScrollView.html#getLeftEdgeEffectColor()"/> <see href="https://developer.android.com/reference/android/widget/HorizontalScrollView.html#setLeftEdgeEffectColor(int)"/>
-        /// </summary>
-        public int LeftEdgeEffectColor
-        {
-            get { return IExecuteWithSignature<int>("getLeftEdgeEffectColor", "()I"); } set { IExecuteWithSignature("setLeftEdgeEffectColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/HorizontalScrollView.html#getMaxScrollAmount()"/> 
-        /// </summary>
-        public int MaxScrollAmount
-        {
-            get { return IExecuteWithSignature<int>("getMaxScrollAmount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/HorizontalScrollView.html#getRightEdgeEffectColor()"/> <see href="https://developer.android.com/reference/android/widget/HorizontalScrollView.html#setRightEdgeEffectColor(int)"/>
-        /// </summary>
-        public int RightEdgeEffectColor
-        {
-            get { return IExecuteWithSignature<int>("getRightEdgeEffectColor", "()I"); } set { IExecuteWithSignature("setRightEdgeEffectColor", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/HorizontalScrollView.html#arrowScroll(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -175,6 +154,30 @@ namespace Android.Widget
             IExecute("smoothScrollTo", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/HorizontalScrollView.html#getLeftEdgeEffectColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLeftEdgeEffectColor()
+        {
+            return IExecuteWithSignature<int>("getLeftEdgeEffectColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/HorizontalScrollView.html#getMaxScrollAmount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxScrollAmount()
+        {
+            return IExecuteWithSignature<int>("getMaxScrollAmount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/HorizontalScrollView.html#getRightEdgeEffectColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRightEdgeEffectColor()
+        {
+            return IExecuteWithSignature<int>("getRightEdgeEffectColor", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/HorizontalScrollView.html#fling(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -197,6 +200,22 @@ namespace Android.Widget
         public void SetFillViewport(bool arg0)
         {
             IExecuteWithSignature("setFillViewport", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/HorizontalScrollView.html#setLeftEdgeEffectColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetLeftEdgeEffectColor(int arg0)
+        {
+            IExecuteWithSignature("setLeftEdgeEffectColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/HorizontalScrollView.html#setRightEdgeEffectColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRightEdgeEffectColor(int arg0)
+        {
+            IExecuteWithSignature("setRightEdgeEffectColor", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/HorizontalScrollView.html#setSmoothScrollingEnabled(boolean)"/>

@@ -52,50 +52,6 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#getCardId()"/> 
-        /// </summary>
-        public int CardId
-        {
-            get { return IExecuteWithSignature<int>("getCardId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#getEid()"/> 
-        /// </summary>
-        public Java.Lang.String Eid
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEid", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#getIccId()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String IccId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getIccId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#getPhysicalSlotIndex()"/> 
-        /// </summary>
-        public int PhysicalSlotIndex
-        {
-            get { return IExecuteWithSignature<int>("getPhysicalSlotIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#getPorts()"/> 
-        /// </summary>
-        public Java.Util.Collection<Android.Telephony.UiccPortInfo> Ports
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<Android.Telephony.UiccPortInfo>>("getPorts", "()Ljava/util/Collection;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#getSlotIndex()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int SlotIndex
-        {
-            get { return IExecuteWithSignature<int>("getSlotIndex", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#isEuicc()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -126,6 +82,56 @@ namespace Android.Telephony
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#getCardId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCardId()
+        {
+            return IExecuteWithSignature<int>("getCardId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#getPhysicalSlotIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPhysicalSlotIndex()
+        {
+            return IExecuteWithSignature<int>("getPhysicalSlotIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#getSlotIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetSlotIndex()
+        {
+            return IExecuteWithSignature<int>("getSlotIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#getEid()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEid()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getEid", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#getIccId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetIccId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getIccId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#getPorts()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Android.Telephony.UiccPortInfo> GetPorts()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Android.Telephony.UiccPortInfo>>("getPorts", "()Ljava/util/Collection;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/UiccCardInfo.html#writeToParcel(android.os.Parcel,int)"/>

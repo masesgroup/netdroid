@@ -46,18 +46,20 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.html#getProperties()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.html#getSchemaType()"/>
         /// </summary>
-        public Java.Util.List<Android.App.Appsearch.AppSearchSchema.PropertyConfig> Properties
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSchemaType()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.Appsearch.AppSearchSchema.PropertyConfig>>("getProperties", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSchemaType", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.html#getSchemaType()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.html#getProperties()"/>
         /// </summary>
-        public Java.Lang.String SchemaType
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.Appsearch.AppSearchSchema.PropertyConfig> GetProperties()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSchemaType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.App.Appsearch.AppSearchSchema.PropertyConfig>>("getProperties", "()Ljava/util/List;");
         }
 
         #endregion
@@ -314,19 +316,20 @@ namespace Android.App.Appsearch
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DocumentPropertyConfig.html#getSchemaType()"/> 
-            /// </summary>
-            public Java.Lang.String SchemaType
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getSchemaType", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DocumentPropertyConfig.html#shouldIndexNestedProperties()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool ShouldIndexNestedProperties()
             {
                 return IExecuteWithSignature<bool>("shouldIndexNestedProperties", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.DocumentPropertyConfig.html#getSchemaType()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetSchemaType()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getSchemaType", "()Ljava/lang/String;");
             }
 
             #endregion
@@ -525,11 +528,12 @@ namespace Android.App.Appsearch
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.LongPropertyConfig.html#getIndexingType()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.LongPropertyConfig.html#getIndexingType()"/>
             /// </summary>
-            public int IndexingType
+            /// <returns><see cref="int"/></returns>
+            public int GetIndexingType()
             {
-                get { return IExecuteWithSignature<int>("getIndexingType", "()I"); }
+                return IExecuteWithSignature<int>("getIndexingType", "()I");
             }
 
             #endregion
@@ -646,18 +650,20 @@ namespace Android.App.Appsearch
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.PropertyConfig.html#getCardinality()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.PropertyConfig.html#getCardinality()"/>
             /// </summary>
-            public int Cardinality
+            /// <returns><see cref="int"/></returns>
+            public int GetCardinality()
             {
-                get { return IExecuteWithSignature<int>("getCardinality", "()I"); }
+                return IExecuteWithSignature<int>("getCardinality", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.PropertyConfig.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.PropertyConfig.html#getName()"/>
             /// </summary>
-            public Java.Lang.String Name
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetName()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
 
             #endregion
@@ -745,25 +751,28 @@ namespace Android.App.Appsearch
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.StringPropertyConfig.html#getIndexingType()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.StringPropertyConfig.html#getIndexingType()"/>
             /// </summary>
-            public int IndexingType
+            /// <returns><see cref="int"/></returns>
+            public int GetIndexingType()
             {
-                get { return IExecuteWithSignature<int>("getIndexingType", "()I"); }
+                return IExecuteWithSignature<int>("getIndexingType", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.StringPropertyConfig.html#getJoinableValueType()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.StringPropertyConfig.html#getJoinableValueType()"/>
             /// </summary>
-            public int JoinableValueType
+            /// <returns><see cref="int"/></returns>
+            public int GetJoinableValueType()
             {
-                get { return IExecuteWithSignature<int>("getJoinableValueType", "()I"); }
+                return IExecuteWithSignature<int>("getJoinableValueType", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.StringPropertyConfig.html#getTokenizerType()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchSchema.StringPropertyConfig.html#getTokenizerType()"/>
             /// </summary>
-            public int TokenizerType
+            /// <returns><see cref="int"/></returns>
+            public int GetTokenizerType()
             {
-                get { return IExecuteWithSignature<int>("getTokenizerType", "()I"); }
+                return IExecuteWithSignature<int>("getTokenizerType", "()I");
             }
 
             #endregion

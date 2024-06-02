@@ -93,20 +93,6 @@ namespace Android.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/Rational.html#getDenominator()"/> 
-        /// </summary>
-        public int Denominator
-        {
-            get { return IExecuteWithSignature<int>("getDenominator", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/Rational.html#getNumerator()"/> 
-        /// </summary>
-        public int Numerator
-        {
-            get { return IExecuteWithSignature<int>("getNumerator", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/Rational.html#isFinite()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -155,6 +141,22 @@ namespace Android.Util
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/Rational.html#getDenominator()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDenominator()
+        {
+            return IExecuteWithSignature<int>("getDenominator", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/Rational.html#getNumerator()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumerator()
+        {
+            return IExecuteWithSignature<int>("getNumerator", "()I");
         }
 
         #endregion

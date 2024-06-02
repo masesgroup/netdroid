@@ -46,18 +46,20 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContextParams.html#getAttributionTag()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/ContextParams.html#getNextAttributionSource()"/>
         /// </summary>
-        public Java.Lang.String AttributionTag
+        /// <returns><see cref="Android.Content.AttributionSource"/></returns>
+        public Android.Content.AttributionSource GetNextAttributionSource()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAttributionTag", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Content.AttributionSource>("getNextAttributionSource", "()Landroid/content/AttributionSource;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContextParams.html#getNextAttributionSource()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/ContextParams.html#getAttributionTag()"/>
         /// </summary>
-        public Android.Content.AttributionSource NextAttributionSource
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAttributionTag()
         {
-            get { return IExecuteWithSignature<Android.Content.AttributionSource>("getNextAttributionSource", "()Landroid/content/AttributionSource;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getAttributionTag", "()Ljava/lang/String;");
         }
 
         #endregion

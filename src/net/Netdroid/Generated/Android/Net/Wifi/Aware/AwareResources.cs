@@ -62,33 +62,36 @@ namespace Android.Net.Wifi.Aware
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/AwareResources.html#getAvailableDataPathsCount()"/> 
-        /// </summary>
-        public int AvailableDataPathsCount
-        {
-            get { return IExecuteWithSignature<int>("getAvailableDataPathsCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/AwareResources.html#getAvailablePublishSessionsCount()"/> 
-        /// </summary>
-        public int AvailablePublishSessionsCount
-        {
-            get { return IExecuteWithSignature<int>("getAvailablePublishSessionsCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/AwareResources.html#getAvailableSubscribeSessionsCount()"/> 
-        /// </summary>
-        public int AvailableSubscribeSessionsCount
-        {
-            get { return IExecuteWithSignature<int>("getAvailableSubscribeSessionsCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/AwareResources.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/AwareResources.html#getAvailableDataPathsCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAvailableDataPathsCount()
+        {
+            return IExecuteWithSignature<int>("getAvailableDataPathsCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/AwareResources.html#getAvailablePublishSessionsCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAvailablePublishSessionsCount()
+        {
+            return IExecuteWithSignature<int>("getAvailablePublishSessionsCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/AwareResources.html#getAvailableSubscribeSessionsCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAvailableSubscribeSessionsCount()
+        {
+            return IExecuteWithSignature<int>("getAvailableSubscribeSessionsCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/AwareResources.html#writeToParcel(android.os.Parcel,int)"/>

@@ -64,35 +64,15 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Certificate.html#getFormat()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/Certificate.html#getFormat()"/>
         /// </summary>
-        public Java.Lang.String Format
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFormat()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFormat", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getFormat", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Certificate.html#getGuarantor()"/> 
-        /// </summary>
-        public Java.Security.Principal Guarantor
-        {
-            get { return IExecuteWithSignature<Java.Security.Principal>("getGuarantor", "()Ljava/security/Principal;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Certificate.html#getPrincipal()"/> 
-        /// </summary>
-        public Java.Security.Principal Principal
-        {
-            get { return IExecuteWithSignature<Java.Security.Principal>("getPrincipal", "()Ljava/security/Principal;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Certificate.html#getPublicKey()"/> 
-        /// </summary>
-        public Java.Security.PublicKey PublicKey
-        {
-            get { return IExecuteWithSignature<Java.Security.PublicKey>("getPublicKey", "()Ljava/security/PublicKey;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Certificate.html#toString(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Certificate.html#toString(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -101,7 +81,31 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Lang.String>("toString", "(Z)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Certificate.html#decode(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Certificate.html#getGuarantor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Principal"/></returns>
+        public Java.Security.Principal GetGuarantor()
+        {
+            return IExecuteWithSignature<Java.Security.Principal>("getGuarantor", "()Ljava/security/Principal;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/Certificate.html#getPrincipal()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Principal"/></returns>
+        public Java.Security.Principal GetPrincipal()
+        {
+            return IExecuteWithSignature<Java.Security.Principal>("getPrincipal", "()Ljava/security/Principal;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/Certificate.html#getPublicKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.PublicKey"/></returns>
+        public Java.Security.PublicKey GetPublicKey()
+        {
+            return IExecuteWithSignature<Java.Security.PublicKey>("getPublicKey", "()Ljava/security/PublicKey;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/Certificate.html#decode(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Security.KeyException"/>
@@ -111,7 +115,7 @@ namespace Java.Security
             IExecuteWithSignature("decode", "(Ljava/io/InputStream;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Certificate.html#encode(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Certificate.html#encode(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <exception cref="Java.Security.KeyException"/>

@@ -46,13 +46,6 @@ namespace Android.Accounts
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accounts/AccountManagerFuture.html#getResult()"/> 
-        /// </summary>
-        public object Result
-        {
-            get { return IExecuteWithSignature("getResult", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManagerFuture.html#cancel(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -76,6 +69,17 @@ namespace Android.Accounts
         public bool IsDone()
         {
             return IExecuteWithSignature<bool>("isDone", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accounts/AccountManagerFuture.html#getResult()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Android.Accounts.AuthenticatorException"/>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Android.Accounts.OperationCanceledException"/>
+        public object GetResult()
+        {
+            return IExecuteWithSignature("getResult", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManagerFuture.html#getResult(long,java.util.concurrent.TimeUnit)"/>
@@ -144,13 +148,6 @@ namespace Android.Accounts
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accounts/AccountManagerFuture.html#getResult()"/> 
-        /// </summary>
-        public V Result
-        {
-            get { return IExecuteWithSignature<V>("getResult", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManagerFuture.html#cancel(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -174,6 +171,17 @@ namespace Android.Accounts
         public bool IsDone()
         {
             return IExecuteWithSignature<bool>("isDone", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accounts/AccountManagerFuture.html#getResult()"/>
+        /// </summary>
+        /// <returns><typeparamref name="V"/></returns>
+        /// <exception cref="Android.Accounts.AuthenticatorException"/>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Android.Accounts.OperationCanceledException"/>
+        public V GetResult()
+        {
+            return IExecuteWithSignature<V>("getResult", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AccountManagerFuture.html#getResult(long,java.util.concurrent.TimeUnit)"/>

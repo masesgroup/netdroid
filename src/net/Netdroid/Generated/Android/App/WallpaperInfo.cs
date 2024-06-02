@@ -63,53 +63,20 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#getComponent()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#getComponent()"/>
         /// </summary>
-        public Android.Content.ComponentName Component
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetComponent()
         {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getComponent", "()Landroid/content/ComponentName;"); }
+            return IExecuteWithSignature<Android.Content.ComponentName>("getComponent", "()Landroid/content/ComponentName;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#getPackageName()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#getServiceInfo()"/>
         /// </summary>
-        public Java.Lang.String PackageName
+        /// <returns><see cref="Android.Content.Pm.ServiceInfo"/></returns>
+        public Android.Content.Pm.ServiceInfo GetServiceInfo()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#getServiceInfo()"/> 
-        /// </summary>
-        public Android.Content.Pm.ServiceInfo ServiceInfo
-        {
-            get { return IExecuteWithSignature<Android.Content.Pm.ServiceInfo>("getServiceInfo", "()Landroid/content/pm/ServiceInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#getServiceName()"/> 
-        /// </summary>
-        public Java.Lang.String ServiceName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getServiceName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#getSettingsActivity()"/> 
-        /// </summary>
-        public Java.Lang.String SettingsActivity
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSettingsActivity", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#getSettingsSliceUri()"/> 
-        /// </summary>
-        public Android.Net.Uri SettingsSliceUri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getSettingsSliceUri", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#getShowMetadataInPreview()"/> 
-        /// </summary>
-        public bool ShowMetadataInPreview
-        {
-            get { return IExecuteWithSignature<bool>("getShowMetadataInPreview", "()Z"); }
+            return IExecuteWithSignature<Android.Content.Pm.ServiceInfo>("getServiceInfo", "()Landroid/content/pm/ServiceInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#loadIcon(android.content.pm.PackageManager)"/>
@@ -130,6 +97,14 @@ namespace Android.App
             return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("loadThumbnail", "(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#getSettingsSliceUri()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetSettingsSliceUri()
+        {
+            return IExecuteWithSignature<Android.Net.Uri>("getSettingsSliceUri", "()Landroid/net/Uri;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#loadContextUri(android.content.pm.PackageManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.PackageManager"/></param>
@@ -138,6 +113,14 @@ namespace Android.App
         public Android.Net.Uri LoadContextUri(Android.Content.Pm.PackageManager arg0)
         {
             return IExecuteWithSignature<Android.Net.Uri>("loadContextUri", "(Landroid/content/pm/PackageManager;)Landroid/net/Uri;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#getShowMetadataInPreview()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetShowMetadataInPreview()
+        {
+            return IExecuteWithSignature<bool>("getShowMetadataInPreview", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#shouldUseDefaultUnfoldTransition()"/>
@@ -201,6 +184,30 @@ namespace Android.App
         public Java.Lang.CharSequence LoadLabel(Android.Content.Pm.PackageManager arg0)
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("loadLabel", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#getServiceName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetServiceName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getServiceName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#getSettingsActivity()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSettingsActivity()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSettingsActivity", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/WallpaperInfo.html#dump(android.util.Printer,java.lang.String)"/>

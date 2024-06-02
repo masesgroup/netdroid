@@ -42,11 +42,12 @@ namespace Android.Net.Http
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/HttpEngine.html#getVersionString()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/HttpEngine.html#getVersionString()"/>
         /// </summary>
-        public static Java.Lang.String VersionString
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GetVersionString()
         {
-            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getVersionString", "()Ljava/lang/String;"); }
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getVersionString", "()Ljava/lang/String;");
         }
 
         #endregion
@@ -163,13 +164,6 @@ namespace Android.Net.Http
             #endregion
 
             #region Instance methods
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/http/HttpEngine.Builder.html#getDefaultUserAgent()"/> 
-            /// </summary>
-            public Java.Lang.String DefaultUserAgent
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getDefaultUserAgent", "()Ljava/lang/String;"); }
-            }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/http/HttpEngine.Builder.html#build()"/>
             /// </summary>
@@ -291,6 +285,14 @@ namespace Android.Net.Http
             public Android.Net.Http.HttpEngine.Builder SetUserAgent(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Net.Http.HttpEngine.Builder>("setUserAgent", "(Ljava/lang/String;)Landroid/net/http/HttpEngine$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/http/HttpEngine.Builder.html#getDefaultUserAgent()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetDefaultUserAgent()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getDefaultUserAgent", "()Ljava/lang/String;");
             }
 
             #endregion

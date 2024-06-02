@@ -93,20 +93,6 @@ namespace Android.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#getFilters()"/> <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#setFilters(android.text.InputFilter[])"/>
-        /// </summary>
-        public Android.Text.InputFilter[] Filters
-        {
-            get { return IExecuteWithSignatureArray<Android.Text.InputFilter>("getFilters", "()[Landroid/text/InputFilter;"); } set { IExecuteWithSignature("setFilters", "([Landroid/text/InputFilter;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#getTextWatcherDepth()"/> 
-        /// </summary>
-        public int TextWatcherDepth
-        {
-            get { return IExecuteWithSignature<int>("getTextWatcherDepth", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#getSpans(int,int,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -175,6 +161,14 @@ namespace Android.Text
             return IExecute<Android.Text.Editable>("replace", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#getFilters()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.InputFilter"/></returns>
+        public Android.Text.InputFilter[] GetFilters()
+        {
+            return IExecuteWithSignatureArray<Android.Text.InputFilter>("getFilters", "()[Landroid/text/InputFilter;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#append(java.lang.CharSequence,java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -231,10 +225,18 @@ namespace Android.Text
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Android.Graphics.Paint"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int GetTextRunCursor(int arg0, int arg1, int arg2, int arg3, int arg4, Android.Graphics.Paint arg5)
         {
             return IExecute<int>("getTextRunCursor", arg0, arg1, arg2, arg3, arg4, arg5);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#getTextWatcherDepth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTextWatcherDepth()
+        {
+            return IExecuteWithSignature<int>("getTextWatcherDepth", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#length()"/>
@@ -297,6 +299,14 @@ namespace Android.Text
         public void RemoveSpan(object arg0)
         {
             IExecuteWithSignature("removeSpan", "(Ljava/lang/Object;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#setFilters(android.text.InputFilter[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Text.InputFilter"/></param>
+        public void SetFilters(Android.Text.InputFilter[] arg0)
+        {
+            IExecuteWithSignature("setFilters", "([Landroid/text/InputFilter;)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/SpannableStringBuilder.html#setSpan(java.lang.Object,int,int,int)"/>

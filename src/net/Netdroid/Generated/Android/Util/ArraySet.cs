@@ -357,7 +357,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
+        public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
             return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
         }
@@ -402,7 +402,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="Android.Util.ArraySet"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool RemoveAll<Arg0ExtendsE>(Android.Util.ArraySet<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
+        public bool RemoveAll<Arg0ExtendsE>(Android.Util.ArraySet<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
             return IExecuteWithSignature<bool>("removeAll", "(Landroid/util/ArraySet;)Z", arg0);
         }
@@ -421,7 +421,7 @@ namespace Android.Util
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool RemoveIf<Arg0objectSuperE>(Java.Util.Function.Predicate<Arg0objectSuperE> arg0) where Arg0objectSuperE: E
+        public bool RemoveIf<Arg0objectSuperE>(Java.Util.Function.Predicate<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
             return IExecuteWithSignature<bool>("removeIf", "(Ljava/util/function/Predicate;)Z", arg0);
         }
@@ -490,7 +490,7 @@ namespace Android.Util
         /// </summary>
         /// <param name="arg0"><see cref="Android.Util.ArraySet"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
-        public void AddAll<Arg0ExtendsE>(Android.Util.ArraySet<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
+        public void AddAll<Arg0ExtendsE>(Android.Util.ArraySet<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
             IExecuteWithSignature("addAll", "(Landroid/util/ArraySet;)V", arg0);
         }
@@ -514,7 +514,7 @@ namespace Android.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
-        public void ForEach<Arg0objectSuperE>(Java.Util.Function.Consumer<Arg0objectSuperE> arg0) where Arg0objectSuperE: E
+        public void ForEach<Arg0objectSuperE>(Java.Util.Function.Consumer<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
             IExecuteWithSignature("forEach", "(Ljava/util/function/Consumer;)V", arg0);
         }

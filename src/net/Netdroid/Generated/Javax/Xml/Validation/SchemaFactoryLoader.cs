@@ -46,7 +46,7 @@ namespace Javax.Xml.Validation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/SchemaFactoryLoader.html#newFactory(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/SchemaFactoryLoader.html#newFactory(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Xml.Validation.SchemaFactory"/></returns>

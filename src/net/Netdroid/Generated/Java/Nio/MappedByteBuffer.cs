@@ -46,7 +46,7 @@ namespace Java.Nio
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/MappedByteBuffer.html#isLoaded()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/MappedByteBuffer.html#isLoaded()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsLoaded()
@@ -54,7 +54,7 @@ namespace Java.Nio
             return IExecuteWithSignature<bool>("isLoaded", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/MappedByteBuffer.html#force()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/MappedByteBuffer.html#force()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.MappedByteBuffer"/></returns>
         public Java.Nio.MappedByteBuffer Force()
@@ -62,17 +62,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.MappedByteBuffer>("force", "()Ljava/nio/MappedByteBuffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/MappedByteBuffer.html#force(int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.MappedByteBuffer"/></returns>
-        public Java.Nio.MappedByteBuffer Force(int arg0, int arg1)
-        {
-            return IExecute<Java.Nio.MappedByteBuffer>("force", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/MappedByteBuffer.html#load()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/MappedByteBuffer.html#load()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.MappedByteBuffer"/></returns>
         public Java.Nio.MappedByteBuffer Load()

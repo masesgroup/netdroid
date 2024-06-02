@@ -33,7 +33,7 @@ namespace Android.Content.Pm
         /// <see href="https://developer.android.com/reference/android/content/pm/PermissionGroupInfo.html#%3Cinit%3E(android.content.pm.PermissionGroupInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.PermissionGroupInfo"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public PermissionGroupInfo(Android.Content.Pm.PermissionGroupInfo arg0)
             : base(arg0)
         {

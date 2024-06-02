@@ -100,60 +100,36 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#getDescription()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#getIconBitmap()"/>
         /// </summary>
-        public Java.Lang.CharSequence Description
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        public Android.Graphics.Bitmap GetIconBitmap()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getIconBitmap", "()Landroid/graphics/Bitmap;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#getIconUri()"/>
         /// </summary>
-        public Android.Os.Bundle Extras
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetIconUri()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getIconUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#getIconBitmap()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#getMediaUri()"/>
         /// </summary>
-        public Android.Graphics.Bitmap IconBitmap
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetMediaUri()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getIconBitmap", "()Landroid/graphics/Bitmap;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getMediaUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#getIconUri()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#getExtras()"/>
         /// </summary>
-        public Android.Net.Uri IconUri
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getIconUri", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#getMediaId()"/> 
-        /// </summary>
-        public Java.Lang.String MediaId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMediaId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#getMediaUri()"/> 
-        /// </summary>
-        public Android.Net.Uri MediaUri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getMediaUri", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#getSubtitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Subtitle
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSubtitle", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#getTitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Title
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#describeContents()"/>
@@ -162,6 +138,38 @@ namespace Android.Media
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#getSubtitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetSubtitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getSubtitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#getTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#getMediaId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMediaId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMediaId", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaDescription.html#writeToParcel(android.os.Parcel,int)"/>

@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#%3Cinit%3E(int,java.util.concurrent.RejectedExecutionHandler)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#%3Cinit%3E(int,java.util.concurrent.RejectedExecutionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.RejectedExecutionHandler"/></param>
@@ -39,7 +39,7 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#%3Cinit%3E(int,java.util.concurrent.ThreadFactory,java.util.concurrent.RejectedExecutionHandler)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#%3Cinit%3E(int,java.util.concurrent.ThreadFactory,java.util.concurrent.RejectedExecutionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
@@ -49,7 +49,7 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#%3Cinit%3E(int,java.util.concurrent.ThreadFactory)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#%3Cinit%3E(int,java.util.concurrent.ThreadFactory)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
@@ -58,7 +58,7 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public ScheduledThreadPoolExecutor(int arg0)
@@ -86,28 +86,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#getContinueExistingPeriodicTasksAfterShutdownPolicy()"/> <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#setContinueExistingPeriodicTasksAfterShutdownPolicy(boolean)"/>
-        /// </summary>
-        public bool ContinueExistingPeriodicTasksAfterShutdownPolicy
-        {
-            get { return IExecuteWithSignature<bool>("getContinueExistingPeriodicTasksAfterShutdownPolicy", "()Z"); } set { IExecuteWithSignature("setContinueExistingPeriodicTasksAfterShutdownPolicy", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#getExecuteExistingDelayedTasksAfterShutdownPolicy()"/> <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#setExecuteExistingDelayedTasksAfterShutdownPolicy(boolean)"/>
-        /// </summary>
-        public bool ExecuteExistingDelayedTasksAfterShutdownPolicy
-        {
-            get { return IExecuteWithSignature<bool>("getExecuteExistingDelayedTasksAfterShutdownPolicy", "()Z"); } set { IExecuteWithSignature("setExecuteExistingDelayedTasksAfterShutdownPolicy", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#getRemoveOnCancelPolicy()"/> <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#setRemoveOnCancelPolicy(boolean)"/>
-        /// </summary>
-        public bool RemoveOnCancelPolicy
-        {
-            get { return IExecuteWithSignature<bool>("getRemoveOnCancelPolicy", "()Z"); } set { IExecuteWithSignature("setRemoveOnCancelPolicy", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#schedule(java.util.concurrent.Callable,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#schedule(java.util.concurrent.Callable,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -119,7 +98,31 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.ScheduledFuture<V>>("schedule", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#schedule(java.lang.Runnable,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#getContinueExistingPeriodicTasksAfterShutdownPolicy()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetContinueExistingPeriodicTasksAfterShutdownPolicy()
+        {
+            return IExecuteWithSignature<bool>("getContinueExistingPeriodicTasksAfterShutdownPolicy", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#getExecuteExistingDelayedTasksAfterShutdownPolicy()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetExecuteExistingDelayedTasksAfterShutdownPolicy()
+        {
+            return IExecuteWithSignature<bool>("getExecuteExistingDelayedTasksAfterShutdownPolicy", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#getRemoveOnCancelPolicy()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetRemoveOnCancelPolicy()
+        {
+            return IExecuteWithSignature<bool>("getRemoveOnCancelPolicy", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#schedule(java.lang.Runnable,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -130,7 +133,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.ScheduledFuture<object>>("schedule", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#scheduleAtFixedRate(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#scheduleAtFixedRate(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -142,7 +145,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.ScheduledFuture<object>>("scheduleAtFixedRate", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -152,6 +155,30 @@ namespace Java.Util.Concurrent
         public Java.Util.Concurrent.ScheduledFuture<object> ScheduleWithFixedDelay(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3)
         {
             return IExecute<Java.Util.Concurrent.ScheduledFuture<object>>("scheduleWithFixedDelay", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#setContinueExistingPeriodicTasksAfterShutdownPolicy(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetContinueExistingPeriodicTasksAfterShutdownPolicy(bool arg0)
+        {
+            IExecuteWithSignature("setContinueExistingPeriodicTasksAfterShutdownPolicy", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#setExecuteExistingDelayedTasksAfterShutdownPolicy(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetExecuteExistingDelayedTasksAfterShutdownPolicy(bool arg0)
+        {
+            IExecuteWithSignature("setExecuteExistingDelayedTasksAfterShutdownPolicy", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html#setRemoveOnCancelPolicy(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetRemoveOnCancelPolicy(bool arg0)
+        {
+            IExecuteWithSignature("setRemoveOnCancelPolicy", "(Z)V", arg0);
         }
 
         #endregion

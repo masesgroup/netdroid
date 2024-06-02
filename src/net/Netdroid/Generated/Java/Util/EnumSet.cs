@@ -50,52 +50,52 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#allOf(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#allOf(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet AllOf(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Util.EnumSet>(LocalBridgeClazz, "allOf", "(Ljava/lang/Class;)Ljava/util/EnumSet;", arg0);
+            return SExecute<Java.Util.EnumSet>(LocalBridgeClazz, "allOf", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#complementOf(java.util.EnumSet)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#complementOf(java.util.EnumSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.EnumSet"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet ComplementOf(Java.Util.EnumSet arg0)
         {
-            return SExecuteWithSignature<Java.Util.EnumSet>(LocalBridgeClazz, "complementOf", "(Ljava/util/EnumSet;)Ljava/util/EnumSet;", arg0);
+            return SExecute<Java.Util.EnumSet>(LocalBridgeClazz, "complementOf", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#copyOf(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#copyOf(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet CopyOf(Java.Util.Collection arg0)
         {
-            return SExecuteWithSignature<Java.Util.EnumSet>(LocalBridgeClazz, "copyOf", "(Ljava/util/Collection;)Ljava/util/EnumSet;", arg0);
+            return SExecute<Java.Util.EnumSet>(LocalBridgeClazz, "copyOf", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#copyOf(java.util.EnumSet)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#copyOf(java.util.EnumSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.EnumSet"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet CopyOf(Java.Util.EnumSet arg0)
         {
-            return SExecuteWithSignature<Java.Util.EnumSet>(LocalBridgeClazz, "copyOf", "(Ljava/util/EnumSet;)Ljava/util/EnumSet;", arg0);
+            return SExecute<Java.Util.EnumSet>(LocalBridgeClazz, "copyOf", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#noneOf(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#noneOf(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet NoneOf(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Util.EnumSet>(LocalBridgeClazz, "noneOf", "(Ljava/lang/Class;)Ljava/util/EnumSet;", arg0);
+            return SExecute<Java.Util.EnumSet>(LocalBridgeClazz, "noneOf", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum,java.lang.Enum,java.lang.Enum,java.lang.Enum)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum,java.lang.Enum,java.lang.Enum,java.lang.Enum)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Enum"/></param>
@@ -108,7 +108,7 @@ namespace Java.Util
             return SExecute<Java.Util.EnumSet>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum,java.lang.Enum,java.lang.Enum)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum,java.lang.Enum,java.lang.Enum)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Enum"/></param>
@@ -120,7 +120,7 @@ namespace Java.Util
             return SExecute<Java.Util.EnumSet>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum,java.lang.Enum)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum,java.lang.Enum)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Enum"/></param>
@@ -131,7 +131,7 @@ namespace Java.Util
             return SExecute<Java.Util.EnumSet>(LocalBridgeClazz, "of", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Enum"/></param>
@@ -141,7 +141,7 @@ namespace Java.Util
             if (arg1.Length == 0) return SExecute<Java.Util.EnumSet>(LocalBridgeClazz, "of", arg0); else return SExecute<Java.Util.EnumSet>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Enum"/></param>
@@ -151,16 +151,16 @@ namespace Java.Util
             return SExecute<Java.Util.EnumSet>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#of(java.lang.Enum)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#of(java.lang.Enum)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet Of(Java.Lang.Enum arg0)
         {
-            return SExecuteWithSignature<Java.Util.EnumSet>(LocalBridgeClazz, "of", "(Ljava/lang/Enum;)Ljava/util/EnumSet;", arg0);
+            return SExecute<Java.Util.EnumSet>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#range(java.lang.Enum,java.lang.Enum)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#range(java.lang.Enum,java.lang.Enum)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Enum"/></param>
@@ -174,7 +174,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#clone()"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#clone()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public Java.Util.EnumSet Clone()
@@ -221,52 +221,52 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#allOf(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#allOf(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet<E> AllOf(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Util.EnumSet<E>>(LocalBridgeClazz, "allOf", "(Ljava/lang/Class;)Ljava/util/EnumSet;", arg0);
+            return SExecute<Java.Util.EnumSet<E>>(LocalBridgeClazz, "allOf", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#complementOf(java.util.EnumSet)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#complementOf(java.util.EnumSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.EnumSet"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet<E> ComplementOf(Java.Util.EnumSet<E> arg0)
         {
-            return SExecuteWithSignature<Java.Util.EnumSet<E>>(LocalBridgeClazz, "complementOf", "(Ljava/util/EnumSet;)Ljava/util/EnumSet;", arg0);
+            return SExecute<Java.Util.EnumSet<E>>(LocalBridgeClazz, "complementOf", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#copyOf(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#copyOf(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet<E> CopyOf(Java.Util.Collection<E> arg0)
         {
-            return SExecuteWithSignature<Java.Util.EnumSet<E>>(LocalBridgeClazz, "copyOf", "(Ljava/util/Collection;)Ljava/util/EnumSet;", arg0);
+            return SExecute<Java.Util.EnumSet<E>>(LocalBridgeClazz, "copyOf", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#copyOf(java.util.EnumSet)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#copyOf(java.util.EnumSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.EnumSet"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet<E> CopyOf(Java.Util.EnumSet<E> arg0)
         {
-            return SExecuteWithSignature<Java.Util.EnumSet<E>>(LocalBridgeClazz, "copyOf", "(Ljava/util/EnumSet;)Ljava/util/EnumSet;", arg0);
+            return SExecute<Java.Util.EnumSet<E>>(LocalBridgeClazz, "copyOf", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#noneOf(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#noneOf(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet<E> NoneOf(Java.Lang.Class arg0)
         {
-            return SExecuteWithSignature<Java.Util.EnumSet<E>>(LocalBridgeClazz, "noneOf", "(Ljava/lang/Class;)Ljava/util/EnumSet;", arg0);
+            return SExecute<Java.Util.EnumSet<E>>(LocalBridgeClazz, "noneOf", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum,java.lang.Enum,java.lang.Enum,java.lang.Enum)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum,java.lang.Enum,java.lang.Enum,java.lang.Enum)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -279,7 +279,7 @@ namespace Java.Util
             return SExecute<Java.Util.EnumSet<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum,java.lang.Enum,java.lang.Enum)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum,java.lang.Enum,java.lang.Enum)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -291,7 +291,7 @@ namespace Java.Util
             return SExecute<Java.Util.EnumSet<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum,java.lang.Enum)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum,java.lang.Enum)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -302,7 +302,7 @@ namespace Java.Util
             return SExecute<Java.Util.EnumSet<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -312,7 +312,7 @@ namespace Java.Util
             if (arg1.Length == 0) return SExecute<Java.Util.EnumSet<E>>(LocalBridgeClazz, "of", arg0); else return SExecute<Java.Util.EnumSet<E>>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -322,16 +322,16 @@ namespace Java.Util
             return SExecute<Java.Util.EnumSet<E>>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#of(java.lang.Enum)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#of(java.lang.Enum)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public static Java.Util.EnumSet<E> Of(E arg0)
         {
-            return SExecuteWithSignature<Java.Util.EnumSet<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Enum;)Ljava/util/EnumSet;", arg0);
+            return SExecute<Java.Util.EnumSet<E>>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#range(java.lang.Enum,java.lang.Enum)"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#range(java.lang.Enum,java.lang.Enum)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -345,7 +345,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/EnumSet.html#clone()"/>
+        /// <see href="https://developer.android.com/reference/java/util/EnumSet.html#clone()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.EnumSet"/></returns>
         public Java.Util.EnumSet<E> Clone()

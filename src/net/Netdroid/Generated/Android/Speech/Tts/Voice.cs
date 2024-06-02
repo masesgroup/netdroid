@@ -125,41 +125,6 @@ namespace Android.Speech.Tts
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/Voice.html#getFeatures()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> Features
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getFeatures", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/Voice.html#getLatency()"/> 
-        /// </summary>
-        public int Latency
-        {
-            get { return IExecuteWithSignature<int>("getLatency", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/Voice.html#getLocale()"/> 
-        /// </summary>
-        public Java.Util.Locale Locale
-        {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/Voice.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/Voice.html#getQuality()"/> 
-        /// </summary>
-        public int Quality
-        {
-            get { return IExecuteWithSignature<int>("getQuality", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/Voice.html#isNetworkConnectionRequired()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -174,6 +139,46 @@ namespace Android.Speech.Tts
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/tts/Voice.html#getLatency()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLatency()
+        {
+            return IExecuteWithSignature<int>("getLatency", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/tts/Voice.html#getQuality()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetQuality()
+        {
+            return IExecuteWithSignature<int>("getQuality", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/tts/Voice.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/tts/Voice.html#getLocale()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public Java.Util.Locale GetLocale()
+        {
+            return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/tts/Voice.html#getFeatures()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetFeatures()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getFeatures", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/Voice.html#writeToParcel(android.os.Parcel,int)"/>

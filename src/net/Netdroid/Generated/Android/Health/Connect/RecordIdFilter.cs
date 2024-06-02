@@ -66,25 +66,29 @@ namespace Android.Health.Connect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/RecordIdFilter.html#getClientRecordId()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/RecordIdFilter.html#getRecordType()"/>
         /// </summary>
-        public Java.Lang.String ClientRecordId
+        /// <typeparam name="ReturnExtendsAndroid_Health_Connect_Datatypes_Record"><see cref="Android.Health.Connect.Datatypes.Record"/></typeparam>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetRecordType<ReturnExtendsAndroid_Health_Connect_Datatypes_Record>() where ReturnExtendsAndroid_Health_Connect_Datatypes_Record : Android.Health.Connect.Datatypes.Record
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClientRecordId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.Class>("getRecordType", "()Ljava/lang/Class;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/RecordIdFilter.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/RecordIdFilter.html#getClientRecordId()"/>
         /// </summary>
-        public Java.Lang.String Id
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetClientRecordId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getClientRecordId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/RecordIdFilter.html#getRecordType()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/RecordIdFilter.html#getId()"/>
         /// </summary>
-        public Java.Lang.Class RecordType
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
         {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getRecordType", "()Ljava/lang/Class;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
         }
 
         #endregion

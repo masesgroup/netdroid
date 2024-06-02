@@ -108,51 +108,25 @@ namespace Android.Telephony
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SignalThresholdInfo.html#getMaximumNumberOfThresholdsAllowed()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/SignalThresholdInfo.html#getMaximumNumberOfThresholdsAllowed()"/>
         /// </summary>
-        public static int MaximumNumberOfThresholdsAllowed
+        /// <returns><see cref="int"/></returns>
+        public static int GetMaximumNumberOfThresholdsAllowed()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaximumNumberOfThresholdsAllowed", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaximumNumberOfThresholdsAllowed", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SignalThresholdInfo.html#getMinimumNumberOfThresholdsAllowed()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/SignalThresholdInfo.html#getMinimumNumberOfThresholdsAllowed()"/>
         /// </summary>
-        public static int MinimumNumberOfThresholdsAllowed
+        /// <returns><see cref="int"/></returns>
+        public static int GetMinimumNumberOfThresholdsAllowed()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMinimumNumberOfThresholdsAllowed", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMinimumNumberOfThresholdsAllowed", "()I");
         }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SignalThresholdInfo.html#getHysteresisDb()"/> 
-        /// </summary>
-        public int HysteresisDb
-        {
-            get { return IExecuteWithSignature<int>("getHysteresisDb", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SignalThresholdInfo.html#getRadioAccessNetworkType()"/> 
-        /// </summary>
-        public int RadioAccessNetworkType
-        {
-            get { return IExecuteWithSignature<int>("getRadioAccessNetworkType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SignalThresholdInfo.html#getSignalMeasurementType()"/> 
-        /// </summary>
-        public int SignalMeasurementType
-        {
-            get { return IExecuteWithSignature<int>("getSignalMeasurementType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SignalThresholdInfo.html#getThresholds()"/> 
-        /// </summary>
-        public int[] Thresholds
-        {
-            get { return IExecuteWithSignatureArray<int>("getThresholds", "()[I"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SignalThresholdInfo.html#describeContents()"/>
         /// </summary>
@@ -160,6 +134,38 @@ namespace Android.Telephony
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SignalThresholdInfo.html#getHysteresisDb()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHysteresisDb()
+        {
+            return IExecuteWithSignature<int>("getHysteresisDb", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SignalThresholdInfo.html#getRadioAccessNetworkType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRadioAccessNetworkType()
+        {
+            return IExecuteWithSignature<int>("getRadioAccessNetworkType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SignalThresholdInfo.html#getSignalMeasurementType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSignalMeasurementType()
+        {
+            return IExecuteWithSignature<int>("getSignalMeasurementType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SignalThresholdInfo.html#getThresholds()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetThresholds()
+        {
+            return IExecuteWithSignatureArray<int>("getThresholds", "()[I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SignalThresholdInfo.html#writeToParcel(android.os.Parcel,int)"/>

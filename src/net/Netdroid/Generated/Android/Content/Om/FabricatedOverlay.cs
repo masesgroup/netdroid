@@ -55,11 +55,12 @@ namespace Android.Content.Om
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/om/FabricatedOverlay.html#getIdentifier()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/om/FabricatedOverlay.html#getIdentifier()"/>
         /// </summary>
-        public Android.Content.Om.OverlayIdentifier Identifier
+        /// <returns><see cref="Android.Content.Om.OverlayIdentifier"/></returns>
+        public Android.Content.Om.OverlayIdentifier GetIdentifier()
         {
-            get { return IExecuteWithSignature<Android.Content.Om.OverlayIdentifier>("getIdentifier", "()Landroid/content/om/OverlayIdentifier;"); }
+            return IExecuteWithSignature<Android.Content.Om.OverlayIdentifier>("getIdentifier", "()Landroid/content/om/OverlayIdentifier;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/om/FabricatedOverlay.html#setResourceValue(java.lang.String,android.os.ParcelFileDescriptor,java.lang.String)"/>

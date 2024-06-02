@@ -56,18 +56,20 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#getSurfacePackage()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#getSurfacePackage()"/>
         /// </summary>
-        public Android.View.SurfaceControlViewHost.SurfacePackage GetSurfacePackage
+        /// <returns><see cref="Android.View.SurfaceControlViewHost.SurfacePackage"/></returns>
+        public Android.View.SurfaceControlViewHost.SurfacePackage GetSurfacePackage()
         {
-            get { return IExecuteWithSignature<Android.View.SurfaceControlViewHost.SurfacePackage>("getSurfacePackage", "()Landroid/view/SurfaceControlViewHost$SurfacePackage;"); }
+            return IExecuteWithSignature<Android.View.SurfaceControlViewHost.SurfacePackage>("getSurfacePackage", "()Landroid/view/SurfaceControlViewHost$SurfacePackage;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#getView()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#getView()"/>
         /// </summary>
-        public Android.View.View View
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetView()
         {
-            get { return IExecuteWithSignature<Android.View.View>("getView", "()Landroid/view/View;"); }
+            return IExecuteWithSignature<Android.View.View>("getView", "()Landroid/view/View;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.html#transferTouchGestureToHost()"/>
@@ -142,11 +144,12 @@ namespace Android.View
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.SurfacePackage.html#getSurfaceControl()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.SurfacePackage.html#getSurfaceControl()"/>
             /// </summary>
-            public Android.View.SurfaceControl SurfaceControl
+            /// <returns><see cref="Android.View.SurfaceControl"/></returns>
+            public Android.View.SurfaceControl GetSurfaceControl()
             {
-                get { return IExecuteWithSignature<Android.View.SurfaceControl>("getSurfaceControl", "()Landroid/view/SurfaceControl;"); }
+                return IExecuteWithSignature<Android.View.SurfaceControl>("getSurfaceControl", "()Landroid/view/SurfaceControl;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/SurfaceControlViewHost.SurfacePackage.html#describeContents()"/>

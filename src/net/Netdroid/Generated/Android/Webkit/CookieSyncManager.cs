@@ -42,22 +42,23 @@ namespace Android.Webkit
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/CookieSyncManager.html#getInstance()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public static Android.Webkit.CookieSyncManager Instance
-        {
-            get { return SExecuteWithSignature<Android.Webkit.CookieSyncManager>(LocalBridgeClazz, "getInstance", "()Landroid/webkit/CookieSyncManager;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/CookieSyncManager.html#createInstance(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <returns><see cref="Android.Webkit.CookieSyncManager"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Webkit.CookieSyncManager CreateInstance(Android.Content.Context arg0)
         {
             return SExecuteWithSignature<Android.Webkit.CookieSyncManager>(LocalBridgeClazz, "createInstance", "(Landroid/content/Context;)Landroid/webkit/CookieSyncManager;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/CookieSyncManager.html#getInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Webkit.CookieSyncManager"/></returns>
+        [global::System.Obsolete()]
+        public static Android.Webkit.CookieSyncManager GetInstance()
+        {
+            return SExecuteWithSignature<Android.Webkit.CookieSyncManager>(LocalBridgeClazz, "getInstance", "()Landroid/webkit/CookieSyncManager;");
         }
 
         #endregion
@@ -66,7 +67,7 @@ namespace Android.Webkit
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/CookieSyncManager.html#resetSync()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ResetSync()
         {
             IExecuteWithSignature("resetSync", "()V");
@@ -74,7 +75,7 @@ namespace Android.Webkit
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/CookieSyncManager.html#run()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Run()
         {
             IExecuteWithSignature("run", "()V");
@@ -82,7 +83,7 @@ namespace Android.Webkit
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/CookieSyncManager.html#startSync()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartSync()
         {
             IExecuteWithSignature("startSync", "()V");
@@ -90,7 +91,7 @@ namespace Android.Webkit
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/CookieSyncManager.html#stopSync()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StopSync()
         {
             IExecuteWithSignature("stopSync", "()V");
@@ -98,7 +99,7 @@ namespace Android.Webkit
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/CookieSyncManager.html#sync()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Sync()
         {
             IExecuteWithSignature("sync", "()V");

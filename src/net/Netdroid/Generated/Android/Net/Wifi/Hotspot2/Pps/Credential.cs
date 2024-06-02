@@ -60,60 +60,28 @@ namespace Android.Net.Wifi.Hotspot2.Pps
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#getCaCertificate()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#setCaCertificate(java.security.cert.X509Certificate)"/>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#getCertCredential()"/>
         /// </summary>
-        public Java.Security.Cert.X509Certificate CaCertificate
+        /// <returns><see cref="Android.Net.Wifi.Hotspot2.Pps.Credential.CertificateCredential"/></returns>
+        public Android.Net.Wifi.Hotspot2.Pps.Credential.CertificateCredential GetCertCredential()
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getCaCertificate", "()Ljava/security/cert/X509Certificate;"); } set { IExecuteWithSignature("setCaCertificate", "(Ljava/security/cert/X509Certificate;)V", value); }
+            return IExecuteWithSignature<Android.Net.Wifi.Hotspot2.Pps.Credential.CertificateCredential>("getCertCredential", "()Landroid/net/wifi/hotspot2/pps/Credential$CertificateCredential;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#getCertCredential()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#setCertCredential(android.net.wifi.hotspot2.pps.Credential.CertificateCredential)"/>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#getSimCredential()"/>
         /// </summary>
-        public Android.Net.Wifi.Hotspot2.Pps.Credential.CertificateCredential CertCredential
+        /// <returns><see cref="Android.Net.Wifi.Hotspot2.Pps.Credential.SimCredential"/></returns>
+        public Android.Net.Wifi.Hotspot2.Pps.Credential.SimCredential GetSimCredential()
         {
-            get { return IExecuteWithSignature<Android.Net.Wifi.Hotspot2.Pps.Credential.CertificateCredential>("getCertCredential", "()Landroid/net/wifi/hotspot2/pps/Credential$CertificateCredential;"); } set { IExecuteWithSignature("setCertCredential", "(Landroid/net/wifi/hotspot2/pps/Credential$CertificateCredential;)V", value); }
+            return IExecuteWithSignature<Android.Net.Wifi.Hotspot2.Pps.Credential.SimCredential>("getSimCredential", "()Landroid/net/wifi/hotspot2/pps/Credential$SimCredential;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#getClientCertificateChain()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#setClientCertificateChain(java.security.cert.X509Certificate[])"/>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#getUserCredential()"/>
         /// </summary>
-        public Java.Security.Cert.X509Certificate[] ClientCertificateChain
+        /// <returns><see cref="Android.Net.Wifi.Hotspot2.Pps.Credential.UserCredential"/></returns>
+        public Android.Net.Wifi.Hotspot2.Pps.Credential.UserCredential GetUserCredential()
         {
-            get { return IExecuteWithSignatureArray<Java.Security.Cert.X509Certificate>("getClientCertificateChain", "()[Ljava/security/cert/X509Certificate;"); } set { IExecuteWithSignature("setClientCertificateChain", "([Ljava/security/cert/X509Certificate;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#getClientPrivateKey()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#setClientPrivateKey(java.security.PrivateKey)"/>
-        /// </summary>
-        public Java.Security.PrivateKey ClientPrivateKey
-        {
-            get { return IExecuteWithSignature<Java.Security.PrivateKey>("getClientPrivateKey", "()Ljava/security/PrivateKey;"); } set { IExecuteWithSignature("setClientPrivateKey", "(Ljava/security/PrivateKey;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#getSimCredential()"/> 
-        /// </summary>
-        public Android.Net.Wifi.Hotspot2.Pps.Credential.SimCredential GetSimCredential
-        {
-            get { return IExecuteWithSignature<Android.Net.Wifi.Hotspot2.Pps.Credential.SimCredential>("getSimCredential", "()Landroid/net/wifi/hotspot2/pps/Credential$SimCredential;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#getUserCredential()"/> 
-        /// </summary>
-        public Android.Net.Wifi.Hotspot2.Pps.Credential.UserCredential GetUserCredential
-        {
-            get { return IExecuteWithSignature<Android.Net.Wifi.Hotspot2.Pps.Credential.UserCredential>("getUserCredential", "()Landroid/net/wifi/hotspot2/pps/Credential$UserCredential;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#getMinimumTlsVersion()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#setMinimumTlsVersion(int)"/>
-        /// </summary>
-        public int MinimumTlsVersion
-        {
-            get { return IExecuteWithSignature<int>("getMinimumTlsVersion", "()I"); } set { IExecuteWithSignature("setMinimumTlsVersion", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#getRealm()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#setRealm(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Realm
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRealm", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setRealm", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Android.Net.Wifi.Hotspot2.Pps.Credential.UserCredential>("getUserCredential", "()Landroid/net/wifi/hotspot2/pps/Credential$UserCredential;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#describeContents()"/>
@@ -122,6 +90,95 @@ namespace Android.Net.Wifi.Hotspot2.Pps
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#getMinimumTlsVersion()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinimumTlsVersion()
+        {
+            return IExecuteWithSignature<int>("getMinimumTlsVersion", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#getRealm()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetRealm()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getRealm", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#getCaCertificate()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
+        public Java.Security.Cert.X509Certificate GetCaCertificate()
+        {
+            return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getCaCertificate", "()Ljava/security/cert/X509Certificate;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#getClientCertificateChain()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
+        public Java.Security.Cert.X509Certificate[] GetClientCertificateChain()
+        {
+            return IExecuteWithSignatureArray<Java.Security.Cert.X509Certificate>("getClientCertificateChain", "()[Ljava/security/cert/X509Certificate;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#getClientPrivateKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.PrivateKey"/></returns>
+        public Java.Security.PrivateKey GetClientPrivateKey()
+        {
+            return IExecuteWithSignature<Java.Security.PrivateKey>("getClientPrivateKey", "()Ljava/security/PrivateKey;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#setCaCertificate(java.security.cert.X509Certificate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
+        public void SetCaCertificate(Java.Security.Cert.X509Certificate arg0)
+        {
+            IExecuteWithSignature("setCaCertificate", "(Ljava/security/cert/X509Certificate;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#setCertCredential(android.net.wifi.hotspot2.pps.Credential.CertificateCredential)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.Hotspot2.Pps.Credential.CertificateCredential"/></param>
+        public void SetCertCredential(Android.Net.Wifi.Hotspot2.Pps.Credential.CertificateCredential arg0)
+        {
+            IExecuteWithSignature("setCertCredential", "(Landroid/net/wifi/hotspot2/pps/Credential$CertificateCredential;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#setClientCertificateChain(java.security.cert.X509Certificate[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
+        public void SetClientCertificateChain(Java.Security.Cert.X509Certificate[] arg0)
+        {
+            IExecuteWithSignature("setClientCertificateChain", "([Ljava/security/cert/X509Certificate;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#setClientPrivateKey(java.security.PrivateKey)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivateKey"/></param>
+        public void SetClientPrivateKey(Java.Security.PrivateKey arg0)
+        {
+            IExecuteWithSignature("setClientPrivateKey", "(Ljava/security/PrivateKey;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#setMinimumTlsVersion(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        public void SetMinimumTlsVersion(int arg0)
+        {
+            IExecuteWithSignature("setMinimumTlsVersion", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#setRealm(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetRealm(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setRealm", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.html#setSimCredential(android.net.wifi.hotspot2.pps.Credential.SimCredential)"/>
@@ -187,18 +244,12 @@ namespace Android.Net.Wifi.Hotspot2.Pps
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.CertificateCredential.html#getCertSha256Fingerprint()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.CertificateCredential.html#setCertSha256Fingerprint(byte[])"/>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.CertificateCredential.html#getCertSha256Fingerprint()"/>
             /// </summary>
-            public byte[] CertSha256Fingerprint
+            /// <returns><see cref="byte"/></returns>
+            public byte[] GetCertSha256Fingerprint()
             {
-                get { return IExecuteWithSignatureArray<byte>("getCertSha256Fingerprint", "()[B"); } set { IExecuteWithSignature("setCertSha256Fingerprint", "([B)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.CertificateCredential.html#getCertType()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.CertificateCredential.html#setCertType(java.lang.String)"/>
-            /// </summary>
-            public Java.Lang.String CertType
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getCertType", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCertType", "(Ljava/lang/String;)V", value); }
+                return IExecuteWithSignatureArray<byte>("getCertSha256Fingerprint", "()[B");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.CertificateCredential.html#describeContents()"/>
@@ -207,6 +258,30 @@ namespace Android.Net.Wifi.Hotspot2.Pps
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.CertificateCredential.html#getCertType()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetCertType()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getCertType", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.CertificateCredential.html#setCertSha256Fingerprint(byte[])"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="byte"/></param>
+            public void SetCertSha256Fingerprint(byte[] arg0)
+            {
+                IExecuteWithSignature("setCertSha256Fingerprint", "([B)V", new object[] { arg0 });
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.CertificateCredential.html#setCertType(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public void SetCertType(Java.Lang.String arg0)
+            {
+                IExecuteWithSignature("setCertType", "(Ljava/lang/String;)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.CertificateCredential.html#writeToParcel(android.os.Parcel,int)"/>
@@ -263,26 +338,44 @@ namespace Android.Net.Wifi.Hotspot2.Pps
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.SimCredential.html#getEapType()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.SimCredential.html#setEapType(int)"/>
-            /// </summary>
-            public int EapType
-            {
-                get { return IExecuteWithSignature<int>("getEapType", "()I"); } set { IExecuteWithSignature("setEapType", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.SimCredential.html#getImsi()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.SimCredential.html#setImsi(java.lang.String)"/>
-            /// </summary>
-            public Java.Lang.String Imsi
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getImsi", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setImsi", "(Ljava/lang/String;)V", value); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.SimCredential.html#describeContents()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.SimCredential.html#getEapType()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetEapType()
+            {
+                return IExecuteWithSignature<int>("getEapType", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.SimCredential.html#getImsi()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetImsi()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getImsi", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.SimCredential.html#setEapType(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void SetEapType(int arg0)
+            {
+                IExecuteWithSignature("setEapType", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.SimCredential.html#setImsi(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public void SetImsi(Java.Lang.String arg0)
+            {
+                IExecuteWithSignature("setImsi", "(Ljava/lang/String;)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.SimCredential.html#writeToParcel(android.os.Parcel,int)"/>
@@ -339,40 +432,76 @@ namespace Android.Net.Wifi.Hotspot2.Pps
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#getEapType()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#setEapType(int)"/>
-            /// </summary>
-            public int EapType
-            {
-                get { return IExecuteWithSignature<int>("getEapType", "()I"); } set { IExecuteWithSignature("setEapType", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#getNonEapInnerMethod()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#setNonEapInnerMethod(java.lang.String)"/>
-            /// </summary>
-            public Java.Lang.String NonEapInnerMethod
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getNonEapInnerMethod", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setNonEapInnerMethod", "(Ljava/lang/String;)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#getPassword()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#setPassword(java.lang.String)"/>
-            /// </summary>
-            public Java.Lang.String Password
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getPassword", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPassword", "(Ljava/lang/String;)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#getUsername()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#setUsername(java.lang.String)"/>
-            /// </summary>
-            public Java.Lang.String Username
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getUsername", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setUsername", "(Ljava/lang/String;)V", value); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#describeContents()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#getEapType()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetEapType()
+            {
+                return IExecuteWithSignature<int>("getEapType", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#getNonEapInnerMethod()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetNonEapInnerMethod()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getNonEapInnerMethod", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#getPassword()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetPassword()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getPassword", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#getUsername()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetUsername()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getUsername", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#setEapType(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void SetEapType(int arg0)
+            {
+                IExecuteWithSignature("setEapType", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#setNonEapInnerMethod(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public void SetNonEapInnerMethod(Java.Lang.String arg0)
+            {
+                IExecuteWithSignature("setNonEapInnerMethod", "(Ljava/lang/String;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#setPassword(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public void SetPassword(Java.Lang.String arg0)
+            {
+                IExecuteWithSignature("setPassword", "(Ljava/lang/String;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#setUsername(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public void SetUsername(Java.Lang.String arg0)
+            {
+                IExecuteWithSignature("setUsername", "(Ljava/lang/String;)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/Credential.UserCredential.html#writeToParcel(android.os.Parcel,int)"/>

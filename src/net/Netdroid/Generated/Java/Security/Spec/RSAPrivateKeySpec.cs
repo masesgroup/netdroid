@@ -30,7 +30,7 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAPrivateKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/RSAPrivateKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
@@ -40,7 +40,7 @@ namespace Java.Security.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAPrivateKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/RSAPrivateKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
@@ -65,25 +65,28 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAPrivateKeySpec.html#getModulus()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/RSAPrivateKeySpec.html#getModulus()"/>
         /// </summary>
-        public Java.Math.BigInteger Modulus
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetModulus()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getModulus", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getModulus", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAPrivateKeySpec.html#getParams()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/RSAPrivateKeySpec.html#getPrivateExponent()"/>
         /// </summary>
-        public Java.Security.Spec.AlgorithmParameterSpec Params
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetPrivateExponent()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getParams", "()Ljava/security/spec/AlgorithmParameterSpec;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getPrivateExponent", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAPrivateKeySpec.html#getPrivateExponent()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/RSAPrivateKeySpec.html#getParams()"/>
         /// </summary>
-        public Java.Math.BigInteger PrivateExponent
+        /// <returns><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></returns>
+        public Java.Security.Spec.AlgorithmParameterSpec GetParams()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getPrivateExponent", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Security.Spec.AlgorithmParameterSpec>("getParams", "()Ljava/security/spec/AlgorithmParameterSpec;");
         }
 
         #endregion

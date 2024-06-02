@@ -98,32 +98,12 @@ namespace Android.Icu.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getAvailableLocales()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getInstance()"/>
         /// </summary>
-        public static Java.Util.Locale[] AvailableLocales
+        /// <returns><see cref="Android.Icu.Text.Collator"/></returns>
+        public static Android.Icu.Text.Collator GetInstance()
         {
-            get { return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getAvailableULocales()"/> 
-        /// </summary>
-        public static Android.Icu.Util.ULocale[] AvailableULocales
-        {
-            get { return SExecuteWithSignatureArray<Android.Icu.Util.ULocale>(LocalBridgeClazz, "getAvailableULocales", "()[Landroid/icu/util/ULocale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.Collator Instance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.Collator>(LocalBridgeClazz, "getInstance", "()Landroid/icu/text/Collator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getKeywords()"/> 
-        /// </summary>
-        public static Java.Lang.String[] Keywords
-        {
-            get { return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getKeywords", "()[Ljava/lang/String;"); }
+            return SExecuteWithSignature<Android.Icu.Text.Collator>(LocalBridgeClazz, "getInstance", "()Landroid/icu/text/Collator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getInstance(android.icu.util.ULocale)"/>
@@ -163,6 +143,22 @@ namespace Android.Icu.Text
         public static Android.Icu.Util.ULocale GetFunctionalEquivalent(Java.Lang.String arg0, Android.Icu.Util.ULocale arg1)
         {
             return SExecute<Android.Icu.Util.ULocale>(LocalBridgeClazz, "getFunctionalEquivalent", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getAvailableULocales()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
+        public static Android.Icu.Util.ULocale[] GetAvailableULocales()
+        {
+            return SExecuteWithSignatureArray<Android.Icu.Util.ULocale>(LocalBridgeClazz, "getAvailableULocales", "()[Landroid/icu/util/ULocale;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getKeywords()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String[] GetKeywords()
+        {
+            return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getKeywords", "()[Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getKeywordValues(java.lang.String)"/>
@@ -231,66 +227,18 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getAvailableLocales()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public static Java.Util.Locale[] GetAvailableLocales()
+        {
+            return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
+        }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getDecomposition()"/> <see href="https://developer.android.com/reference/android/icu/text/Collator.html#setDecomposition(int)"/>
-        /// </summary>
-        public int Decomposition
-        {
-            get { return IExecuteWithSignature<int>("getDecomposition", "()I"); } set { IExecuteWithSignature("setDecomposition", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getReorderCodes()"/> 
-        /// </summary>
-        public int[] GetReorderCodes
-        {
-            get { return IExecuteWithSignatureArray<int>("getReorderCodes", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getMaxVariable()"/> 
-        /// </summary>
-        public int MaxVariable
-        {
-            get { return IExecuteWithSignature<int>("getMaxVariable", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getStrength()"/> <see href="https://developer.android.com/reference/android/icu/text/Collator.html#setStrength(int)"/>
-        /// </summary>
-        public int Strength
-        {
-            get { return IExecuteWithSignature<int>("getStrength", "()I"); } set { IExecuteWithSignature("setStrength", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getTailoredSet()"/> 
-        /// </summary>
-        public Android.Icu.Text.UnicodeSet TailoredSet
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("getTailoredSet", "()Landroid/icu/text/UnicodeSet;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getUCAVersion()"/> 
-        /// </summary>
-        public Android.Icu.Util.VersionInfo UCAVersion
-        {
-            get { return IExecuteWithSignature<Android.Icu.Util.VersionInfo>("getUCAVersion", "()Landroid/icu/util/VersionInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getVariableTop()"/> 
-        /// </summary>
-        public int VariableTop
-        {
-            get { return IExecuteWithSignature<int>("getVariableTop", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getVersion()"/> 
-        /// </summary>
-        public Android.Icu.Util.VersionInfo Version
-        {
-            get { return IExecuteWithSignature<Android.Icu.Util.VersionInfo>("getVersion", "()Landroid/icu/util/VersionInfo;"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getCollationKey(java.lang.String)"/>
         /// </summary>
@@ -299,6 +247,22 @@ namespace Android.Icu.Text
         public Android.Icu.Text.CollationKey GetCollationKey(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.Icu.Text.CollationKey>("getCollationKey", "(Ljava/lang/String;)Landroid/icu/text/CollationKey;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getUCAVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.VersionInfo"/></returns>
+        public Android.Icu.Util.VersionInfo GetUCAVersion()
+        {
+            return IExecuteWithSignature<Android.Icu.Util.VersionInfo>("getUCAVersion", "()Landroid/icu/util/VersionInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.VersionInfo"/></returns>
+        public Android.Icu.Util.VersionInfo GetVersion()
+        {
+            return IExecuteWithSignature<Android.Icu.Util.VersionInfo>("getVersion", "()Landroid/icu/util/VersionInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#compare(java.lang.String,java.lang.String)"/>
@@ -311,6 +275,14 @@ namespace Android.Icu.Text
             return IExecute<int>("compare", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getVariableTop()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVariableTop()
+        {
+            return IExecuteWithSignature<int>("getVariableTop", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#setMaxVariable(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -318,6 +290,14 @@ namespace Android.Icu.Text
         public Android.Icu.Text.Collator SetMaxVariable(int arg0)
         {
             return IExecuteWithSignature<Android.Icu.Text.Collator>("setMaxVariable", "(I)Landroid/icu/text/Collator;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getTailoredSet()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
+        public Android.Icu.Text.UnicodeSet GetTailoredSet()
+        {
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("getTailoredSet", "()Landroid/icu/text/UnicodeSet;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#equals(java.lang.String,java.lang.String)"/>
@@ -348,6 +328,38 @@ namespace Android.Icu.Text
             return IExecute<int>("compare", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getDecomposition()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDecomposition()
+        {
+            return IExecuteWithSignature<int>("getDecomposition", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getMaxVariable()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxVariable()
+        {
+            return IExecuteWithSignature<int>("getMaxVariable", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getStrength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStrength()
+        {
+            return IExecuteWithSignature<int>("getStrength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#getReorderCodes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetReorderCodes()
+        {
+            return IExecuteWithSignatureArray<int>("getReorderCodes", "()[I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#cloneAsThawed()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
@@ -364,12 +376,28 @@ namespace Android.Icu.Text
             return IExecuteWithSignature("freeze", "()Ljava/lang/Object;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#setDecomposition(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDecomposition(int arg0)
+        {
+            IExecuteWithSignature("setDecomposition", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#setReorderCodes(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void SetReorderCodes(params int[] arg0)
         {
             if (arg0.Length == 0) IExecuteWithSignature("setReorderCodes", "([I)V"); else IExecuteWithSignature("setReorderCodes", "([I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Collator.html#setStrength(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetStrength(int arg0)
+        {
+            IExecuteWithSignature("setStrength", "(I)V", arg0);
         }
 
         #endregion

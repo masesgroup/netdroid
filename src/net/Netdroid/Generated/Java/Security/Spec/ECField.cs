@@ -64,11 +64,12 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECField.html#getFieldSize()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECField.html#getFieldSize()"/>
         /// </summary>
-        public int FieldSize
+        /// <returns><see cref="int"/></returns>
+        public int GetFieldSize()
         {
-            get { return IExecuteWithSignature<int>("getFieldSize", "()I"); }
+            return IExecuteWithSignature<int>("getFieldSize", "()I");
         }
 
         #endregion

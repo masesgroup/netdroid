@@ -60,40 +60,44 @@ namespace Android.Net.Wifi.Aware
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareNetworkInfo.html#getChannelInfoList()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Net.Wifi.Aware.WifiAwareChannelInfo> ChannelInfoList
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.Aware.WifiAwareChannelInfo>>("getChannelInfoList", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareNetworkInfo.html#getPeerIpv6Addr()"/> 
-        /// </summary>
-        public Java.Net.Inet6Address PeerIpv6Addr
-        {
-            get { return IExecuteWithSignature<Java.Net.Inet6Address>("getPeerIpv6Addr", "()Ljava/net/Inet6Address;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareNetworkInfo.html#getPort()"/> 
-        /// </summary>
-        public int Port
-        {
-            get { return IExecuteWithSignature<int>("getPort", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareNetworkInfo.html#getTransportProtocol()"/> 
-        /// </summary>
-        public int TransportProtocol
-        {
-            get { return IExecuteWithSignature<int>("getTransportProtocol", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareNetworkInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareNetworkInfo.html#getPort()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPort()
+        {
+            return IExecuteWithSignature<int>("getPort", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareNetworkInfo.html#getTransportProtocol()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTransportProtocol()
+        {
+            return IExecuteWithSignature<int>("getTransportProtocol", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareNetworkInfo.html#getPeerIpv6Addr()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.Inet6Address"/></returns>
+        public Java.Net.Inet6Address GetPeerIpv6Addr()
+        {
+            return IExecuteWithSignature<Java.Net.Inet6Address>("getPeerIpv6Addr", "()Ljava/net/Inet6Address;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareNetworkInfo.html#getChannelInfoList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Wifi.Aware.WifiAwareChannelInfo> GetChannelInfoList()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.Aware.WifiAwareChannelInfo>>("getChannelInfoList", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareNetworkInfo.html#writeToParcel(android.os.Parcel,int)"/>

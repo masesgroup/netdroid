@@ -35,7 +35,7 @@ namespace Android.Content.Res
         /// <param name="arg0"><see cref="Android.Content.Res.AssetManager"/></param>
         /// <param name="arg1"><see cref="Android.Util.DisplayMetrics"/></param>
         /// <param name="arg2"><see cref="Android.Content.Res.Configuration"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Resources(Android.Content.Res.AssetManager arg0, Android.Util.DisplayMetrics arg1, Android.Content.Res.Configuration arg2)
             : base(arg0, arg1, arg2)
         {
@@ -59,11 +59,12 @@ namespace Android.Content.Res
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getSystem()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getSystem()"/>
         /// </summary>
-        public static Android.Content.Res.Resources System
+        /// <returns><see cref="Android.Content.Res.Resources"/></returns>
+        public static Android.Content.Res.Resources GetSystem()
         {
-            get { return SExecuteWithSignature<Android.Content.Res.Resources>(LocalBridgeClazz, "getSystem", "()Landroid/content/res/Resources;"); }
+            return SExecuteWithSignature<Android.Content.Res.Resources>(LocalBridgeClazz, "getSystem", "()Landroid/content/res/Resources;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getAttributeSetSourceResId(android.util.AttributeSet)"/>
@@ -78,27 +79,6 @@ namespace Android.Content.Res
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getAssets()"/> 
-        /// </summary>
-        public Android.Content.Res.AssetManager Assets
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.AssetManager>("getAssets", "()Landroid/content/res/AssetManager;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getConfiguration()"/> 
-        /// </summary>
-        public Android.Content.Res.Configuration Configuration
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.Configuration>("getConfiguration", "()Landroid/content/res/Configuration;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getDisplayMetrics()"/> 
-        /// </summary>
-        public Android.Util.DisplayMetrics DisplayMetrics
-        {
-            get { return IExecuteWithSignature<Android.Util.DisplayMetrics>("getDisplayMetrics", "()Landroid/util/DisplayMetrics;"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#openRawResourceFd(int)"/>
         /// </summary>
@@ -126,10 +106,18 @@ namespace Android.Content.Res
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Content.Res.ColorStateList GetColorStateList(int arg0)
         {
             return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getColorStateList", "(I)Landroid/content/res/ColorStateList;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getConfiguration()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Res.Configuration"/></returns>
+        public Android.Content.Res.Configuration GetConfiguration()
+        {
+            return IExecuteWithSignature<Android.Content.Res.Configuration>("getConfiguration", "()Landroid/content/res/Configuration;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#obtainAttributes(android.util.AttributeSet,int[])"/>
@@ -198,7 +186,7 @@ namespace Android.Content.Res
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Graphics.Drawable.Drawable GetDrawable(int arg0)
         {
             return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "(I)Landroid/graphics/drawable/Drawable;", arg0);
@@ -221,7 +209,7 @@ namespace Android.Content.Res
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Graphics.Drawable.Drawable GetDrawableForDensity(int arg0, int arg1)
         {
             return IExecute<Android.Graphics.Drawable.Drawable>("getDrawableForDensity", arg0, arg1);
@@ -232,7 +220,7 @@ namespace Android.Content.Res
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Android.Graphics.Movie"/></returns>
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Graphics.Movie GetMovie(int arg0)
         {
             return IExecuteWithSignature<Android.Graphics.Movie>("getMovie", "(I)Landroid/graphics/Movie;", arg0);
@@ -248,6 +236,14 @@ namespace Android.Content.Res
             return IExecuteWithSignature<Android.Graphics.Typeface>("getFont", "(I)Landroid/graphics/Typeface;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getDisplayMetrics()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Util.DisplayMetrics"/></returns>
+        public Android.Util.DisplayMetrics GetDisplayMetrics()
+        {
+            return IExecuteWithSignature<Android.Util.DisplayMetrics>("getDisplayMetrics", "()Landroid/util/DisplayMetrics;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getBoolean(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -256,6 +252,14 @@ namespace Android.Content.Res
         public bool GetBoolean(int arg0)
         {
             return IExecuteWithSignature<bool>("getBoolean", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getAssets()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Res.AssetManager"/></returns>
+        public Android.Content.Res.AssetManager GetAssets()
+        {
+            return IExecuteWithSignature<Android.Content.Res.AssetManager>("getAssets", "()Landroid/content/res/AssetManager;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#newTheme()"/>
@@ -326,7 +330,7 @@ namespace Android.Content.Res
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int GetColor(int arg0)
         {
             return IExecuteWithSignature<int>("getColor", "(I)I", arg0);
@@ -381,6 +385,17 @@ namespace Android.Content.Res
         public int[] GetIntArray(int arg0)
         {
             return IExecuteWithSignatureArray<int>("getIntArray", "(I)[I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#openRawResource(int,android.util.TypedValue)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.Util.TypedValue"/></param>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
+        public Java.Io.InputStream OpenRawResource(int arg0, Android.Util.TypedValue arg1)
+        {
+            return IExecute<Java.Io.InputStream>("openRawResource", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#openRawResource(int)"/>
@@ -536,6 +551,40 @@ namespace Android.Content.Res
             if (arg0.Length == 0) IExecuteWithSignature("addLoaders", "([Landroid/content/res/loader/ResourcesLoader;)V"); else IExecuteWithSignature("addLoaders", "([Landroid/content/res/loader/ResourcesLoader;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getValue(int,android.util.TypedValue,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Android.Util.TypedValue"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
+        public void GetValue(int arg0, Android.Util.TypedValue arg1, bool arg2)
+        {
+            IExecute("getValue", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getValue(java.lang.String,android.util.TypedValue,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Android.Util.TypedValue"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
+        public void GetValue(Java.Lang.String arg0, Android.Util.TypedValue arg1, bool arg2)
+        {
+            IExecute("getValue", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#getValueForDensity(int,int,android.util.TypedValue,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.Util.TypedValue"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <exception cref="Android.Content.Res.Resources.NotFoundException"/>
+        public void GetValueForDensity(int arg0, int arg1, Android.Util.TypedValue arg2, bool arg3)
+        {
+            IExecute("getValueForDensity", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/Resources.html#parseBundleExtra(java.lang.String,android.util.AttributeSet,android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -570,7 +619,7 @@ namespace Android.Content.Res
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Res.Configuration"/></param>
         /// <param name="arg1"><see cref="Android.Util.DisplayMetrics"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void UpdateConfiguration(Android.Content.Res.Configuration arg0, Android.Util.DisplayMetrics arg1)
         {
             IExecute("updateConfiguration", arg0, arg1);
@@ -631,18 +680,12 @@ namespace Android.Content.Res
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/res/Resources.Theme.html#getChangingConfigurations()"/> 
+            /// <see href="https://developer.android.com/reference/android/content/res/Resources.Theme.html#getResources()"/>
             /// </summary>
-            public int ChangingConfigurations
+            /// <returns><see cref="Android.Content.Res.Resources"/></returns>
+            public Android.Content.Res.Resources GetResources()
             {
-                get { return IExecuteWithSignature<int>("getChangingConfigurations", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/res/Resources.Theme.html#getResources()"/> 
-            /// </summary>
-            public Android.Content.Res.Resources GetResources
-            {
-                get { return IExecuteWithSignature<Android.Content.Res.Resources>("getResources", "()Landroid/content/res/Resources;"); }
+                return IExecuteWithSignature<Android.Content.Res.Resources>("getResources", "()Landroid/content/res/Resources;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/res/Resources.Theme.html#obtainStyledAttributes(android.util.AttributeSet,int[],int,int)"/>
@@ -685,6 +728,25 @@ namespace Android.Content.Res
             public Android.Graphics.Drawable.Drawable GetDrawable(int arg0)
             {
                 return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "(I)Landroid/graphics/drawable/Drawable;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/res/Resources.Theme.html#resolveAttribute(int,android.util.TypedValue,boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <param name="arg1"><see cref="Android.Util.TypedValue"/></param>
+            /// <param name="arg2"><see cref="bool"/></param>
+            /// <returns><see cref="bool"/></returns>
+            public bool ResolveAttribute(int arg0, Android.Util.TypedValue arg1, bool arg2)
+            {
+                return IExecute<bool>("resolveAttribute", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/res/Resources.Theme.html#getChangingConfigurations()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetChangingConfigurations()
+            {
+                return IExecuteWithSignature<int>("getChangingConfigurations", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/res/Resources.Theme.html#getExplicitStyle(android.util.AttributeSet)"/>

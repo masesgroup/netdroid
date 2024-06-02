@@ -34,7 +34,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Float2(float arg0, float arg1)
             : base(arg0, arg1)
         {
@@ -50,12 +50,12 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Float2.html#x"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public float x { get { return IGetField<float>("x"); } set { ISetField("x", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Float2.html#y"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public float y { get { return IGetField<float>("y"); } set { ISetField("y", value); } }
 
         #endregion

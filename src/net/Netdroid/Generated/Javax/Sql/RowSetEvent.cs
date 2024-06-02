@@ -30,7 +30,7 @@ namespace Javax.Sql
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetEvent.html#%3Cinit%3E(javax.sql.RowSet)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetEvent.html#%3Cinit%3E(javax.sql.RowSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.RowSet"/></param>
         public RowSetEvent(Javax.Sql.RowSet arg0)

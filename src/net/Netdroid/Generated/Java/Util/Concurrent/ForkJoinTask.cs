@@ -50,37 +50,16 @@ namespace Java.Util.Concurrent
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#getPool()"/> 
-        /// </summary>
-        public static Java.Util.Concurrent.ForkJoinPool Pool
-        {
-            get { return SExecuteWithSignature<Java.Util.Concurrent.ForkJoinPool>(LocalBridgeClazz, "getPool", "()Ljava/util/concurrent/ForkJoinPool;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#getQueuedTaskCount()"/> 
-        /// </summary>
-        public static int QueuedTaskCount
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getQueuedTaskCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#getSurplusQueuedTaskCount()"/> 
-        /// </summary>
-        public static int SurplusQueuedTaskCount
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getSurplusQueuedTaskCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public static Java.Util.Collection InvokeAll(Java.Util.Collection arg0)
         {
-            return SExecuteWithSignature<Java.Util.Collection>(LocalBridgeClazz, "invokeAll", "(Ljava/util/Collection;)Ljava/util/Collection;", arg0);
+            return SExecute<Java.Util.Collection>(LocalBridgeClazz, "invokeAll", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -90,7 +69,7 @@ namespace Java.Util.Concurrent
             return SExecute<Java.Util.Concurrent.ForkJoinTask>(LocalBridgeClazz, "adapt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.util.concurrent.Callable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#adapt(java.util.concurrent.Callable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
@@ -99,7 +78,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.ForkJoinTask>(LocalBridgeClazz, "adapt", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/ForkJoinTask;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#inForkJoinPool()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#inForkJoinPool()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public static bool InForkJoinPool()
@@ -107,7 +86,31 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "inForkJoinPool", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#getQueuedTaskCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int GetQueuedTaskCount()
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getQueuedTaskCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#getSurplusQueuedTaskCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int GetSurplusQueuedTaskCount()
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getSurplusQueuedTaskCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#getPool()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.ForkJoinPool"/></returns>
+        public static Java.Util.Concurrent.ForkJoinPool GetPool()
+        {
+            return SExecuteWithSignature<Java.Util.Concurrent.ForkJoinPool>(LocalBridgeClazz, "getPool", "()Ljava/util/concurrent/ForkJoinPool;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
@@ -116,14 +119,14 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.ForkJoinTask>(LocalBridgeClazz, "adapt", "(Ljava/lang/Runnable;)Ljava/util/concurrent/ForkJoinTask;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#helpQuiesce()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#helpQuiesce()"/>
         /// </summary>
         public static void HelpQuiesce()
         {
             SExecuteWithSignature(LocalBridgeClazz, "helpQuiesce", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask,java.util.concurrent.ForkJoinTask)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask,java.util.concurrent.ForkJoinTask)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
@@ -132,7 +135,7 @@ namespace Java.Util.Concurrent
             SExecute(LocalBridgeClazz, "invokeAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         public static void InvokeAll(params Java.Util.Concurrent.ForkJoinTask[] arg0)
@@ -144,28 +147,15 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#getException()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#getRawResult()"/>
         /// </summary>
-        public Java.Lang.Throwable Exception
+        /// <returns><see cref="object"/></returns>
+        public object GetRawResult()
         {
-            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getException", "()Ljava/lang/Throwable;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); }
+            return IExecuteWithSignature("getRawResult", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#getForkJoinTaskTag()"/> 
-        /// </summary>
-        public short ForkJoinTaskTag
-        {
-            get { return IExecuteWithSignature<short>("getForkJoinTaskTag", "()S"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#getRawResult()"/> 
-        /// </summary>
-        public object RawResult
-        {
-            get { return IExecuteWithSignature("getRawResult", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#cancel(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#cancel(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -174,7 +164,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("cancel", "(Z)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#tryUnfork()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#tryUnfork()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool TryUnfork()
@@ -182,7 +172,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("tryUnfork", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#compareAndSetForkJoinTaskTag(short,short)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#compareAndSetForkJoinTaskTag(short,short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
@@ -192,7 +182,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("compareAndSetForkJoinTaskTag", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#isCancelled()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#isCancelled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
@@ -200,7 +190,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isCancelled", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#isCompletedAbnormally()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#isCompletedAbnormally()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCompletedAbnormally()
@@ -208,7 +198,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isCompletedAbnormally", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#isCompletedNormally()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#isCompletedNormally()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCompletedNormally()
@@ -216,7 +206,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isCompletedNormally", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#isDone()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#isDone()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
@@ -224,7 +214,15 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isDone", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#fork()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#getException()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Throwable"/></returns>
+        public Java.Lang.Throwable GetException()
+        {
+            var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getException", "()Ljava/lang/Throwable;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#fork()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
         public Java.Util.Concurrent.ForkJoinTask Fork()
@@ -232,7 +230,15 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.ForkJoinTask>("fork", "()Ljava/util/concurrent/ForkJoinTask;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#setForkJoinTaskTag(short)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#getForkJoinTaskTag()"/>
+        /// </summary>
+        /// <returns><see cref="short"/></returns>
+        public short GetForkJoinTaskTag()
+        {
+            return IExecuteWithSignature<short>("getForkJoinTaskTag", "()S");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#setForkJoinTaskTag(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="short"/></returns>
@@ -241,7 +247,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<short>("setForkJoinTaskTag", "(S)S", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#get()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -251,7 +257,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("get", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#get(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#get(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -264,7 +270,7 @@ namespace Java.Util.Concurrent
             return IExecute("get", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#invoke()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#invoke()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Invoke()
@@ -272,7 +278,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("invoke", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#join()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#join()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Join()
@@ -280,28 +286,28 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("join", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#quietlyComplete()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#quietlyComplete()"/>
         /// </summary>
         public void QuietlyComplete()
         {
             IExecuteWithSignature("quietlyComplete", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#quietlyInvoke()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#quietlyInvoke()"/>
         /// </summary>
         public void QuietlyInvoke()
         {
             IExecuteWithSignature("quietlyInvoke", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#quietlyJoin()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#quietlyJoin()"/>
         /// </summary>
         public void QuietlyJoin()
         {
             IExecuteWithSignature("quietlyJoin", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#complete(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#complete(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void Complete(object arg0)
@@ -309,7 +315,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("complete", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#completeExceptionally(java.lang.Throwable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#completeExceptionally(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         public void CompleteExceptionally(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
@@ -317,7 +323,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("completeExceptionally", "(Ljava/lang/Throwable;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#reinitialize()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#reinitialize()"/>
         /// </summary>
         public void Reinitialize()
         {
@@ -363,38 +369,17 @@ namespace Java.Util.Concurrent
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#getPool()"/> 
-        /// </summary>
-        public static Java.Util.Concurrent.ForkJoinPool Pool
-        {
-            get { return SExecuteWithSignature<Java.Util.Concurrent.ForkJoinPool>(LocalBridgeClazz, "getPool", "()Ljava/util/concurrent/ForkJoinPool;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#getQueuedTaskCount()"/> 
-        /// </summary>
-        public static int QueuedTaskCount
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getQueuedTaskCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#getSurplusQueuedTaskCount()"/> 
-        /// </summary>
-        public static int SurplusQueuedTaskCount
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getSurplusQueuedTaskCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public static Java.Util.Collection<T> InvokeAll<T>(Java.Util.Collection<T> arg0)
         {
-            return SExecuteWithSignature<Java.Util.Collection<T>>(LocalBridgeClazz, "invokeAll", "(Ljava/util/Collection;)Ljava/util/Collection;", arg0);
+            return SExecute<Java.Util.Collection<T>>(LocalBridgeClazz, "invokeAll", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><typeparamref name="T"/></param>
@@ -405,18 +390,18 @@ namespace Java.Util.Concurrent
             return SExecute<Java.Util.Concurrent.ForkJoinTask<T>>(LocalBridgeClazz, "adapt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.util.concurrent.Callable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#adapt(java.util.concurrent.Callable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
-        public static Java.Util.Concurrent.ForkJoinTask<T> Adapt<T, Arg0ExtendsT>(Java.Util.Concurrent.Callable<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
+        public static Java.Util.Concurrent.ForkJoinTask<T> Adapt<T, Arg0ExtendsT>(Java.Util.Concurrent.Callable<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return SExecuteWithSignature<Java.Util.Concurrent.ForkJoinTask<T>>(LocalBridgeClazz, "adapt", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/ForkJoinTask;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#inForkJoinPool()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#inForkJoinPool()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public static bool InForkJoinPool()
@@ -424,7 +409,31 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "inForkJoinPool", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#getQueuedTaskCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int GetQueuedTaskCount()
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getQueuedTaskCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#getSurplusQueuedTaskCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int GetSurplusQueuedTaskCount()
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getSurplusQueuedTaskCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#getPool()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.ForkJoinPool"/></returns>
+        public static Java.Util.Concurrent.ForkJoinPool GetPool()
+        {
+            return SExecuteWithSignature<Java.Util.Concurrent.ForkJoinPool>(LocalBridgeClazz, "getPool", "()Ljava/util/concurrent/ForkJoinPool;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
@@ -433,14 +442,14 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.ForkJoinTask<object>>(LocalBridgeClazz, "adapt", "(Ljava/lang/Runnable;)Ljava/util/concurrent/ForkJoinTask;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#helpQuiesce()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#helpQuiesce()"/>
         /// </summary>
         public static void HelpQuiesce()
         {
             SExecuteWithSignature(LocalBridgeClazz, "helpQuiesce", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask,java.util.concurrent.ForkJoinTask)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask,java.util.concurrent.ForkJoinTask)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
@@ -449,7 +458,7 @@ namespace Java.Util.Concurrent
             SExecute(LocalBridgeClazz, "invokeAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         public static void InvokeAll(params Java.Util.Concurrent.ForkJoinTask<object>[] arg0)
@@ -461,28 +470,15 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#getException()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#getRawResult()"/>
         /// </summary>
-        public Java.Lang.Throwable Exception
+        /// <returns><typeparamref name="V"/></returns>
+        public V GetRawResult()
         {
-            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getException", "()Ljava/lang/Throwable;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); }
+            return IExecuteWithSignature<V>("getRawResult", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#getForkJoinTaskTag()"/> 
-        /// </summary>
-        public short ForkJoinTaskTag
-        {
-            get { return IExecuteWithSignature<short>("getForkJoinTaskTag", "()S"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#getRawResult()"/> 
-        /// </summary>
-        public V RawResult
-        {
-            get { return IExecuteWithSignature<V>("getRawResult", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#cancel(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#cancel(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -491,7 +487,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("cancel", "(Z)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#tryUnfork()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#tryUnfork()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool TryUnfork()
@@ -499,7 +495,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("tryUnfork", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#compareAndSetForkJoinTaskTag(short,short)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#compareAndSetForkJoinTaskTag(short,short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
@@ -509,7 +505,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("compareAndSetForkJoinTaskTag", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#isCancelled()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#isCancelled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
@@ -517,7 +513,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isCancelled", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#isCompletedAbnormally()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#isCompletedAbnormally()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCompletedAbnormally()
@@ -525,7 +521,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isCompletedAbnormally", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#isCompletedNormally()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#isCompletedNormally()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCompletedNormally()
@@ -533,7 +529,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isCompletedNormally", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#isDone()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#isDone()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
@@ -541,7 +537,15 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isDone", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#fork()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#getException()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Throwable"/></returns>
+        public Java.Lang.Throwable GetException()
+        {
+            var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getException", "()Ljava/lang/Throwable;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#fork()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
         public Java.Util.Concurrent.ForkJoinTask<V> Fork()
@@ -549,7 +553,15 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.ForkJoinTask<V>>("fork", "()Ljava/util/concurrent/ForkJoinTask;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#setForkJoinTaskTag(short)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#getForkJoinTaskTag()"/>
+        /// </summary>
+        /// <returns><see cref="short"/></returns>
+        public short GetForkJoinTaskTag()
+        {
+            return IExecuteWithSignature<short>("getForkJoinTaskTag", "()S");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#setForkJoinTaskTag(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="short"/></returns>
@@ -558,7 +570,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<short>("setForkJoinTaskTag", "(S)S", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#get()"/>
         /// </summary>
         /// <returns><typeparamref name="V"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -568,7 +580,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<V>("get", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#get(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#get(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -581,7 +593,7 @@ namespace Java.Util.Concurrent
             return IExecute<V>("get", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#invoke()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#invoke()"/>
         /// </summary>
         /// <returns><typeparamref name="V"/></returns>
         public V Invoke()
@@ -589,7 +601,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<V>("invoke", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#join()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#join()"/>
         /// </summary>
         /// <returns><typeparamref name="V"/></returns>
         public V Join()
@@ -597,28 +609,28 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<V>("join", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#quietlyComplete()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#quietlyComplete()"/>
         /// </summary>
         public void QuietlyComplete()
         {
             IExecuteWithSignature("quietlyComplete", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#quietlyInvoke()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#quietlyInvoke()"/>
         /// </summary>
         public void QuietlyInvoke()
         {
             IExecuteWithSignature("quietlyInvoke", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#quietlyJoin()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#quietlyJoin()"/>
         /// </summary>
         public void QuietlyJoin()
         {
             IExecuteWithSignature("quietlyJoin", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#complete(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#complete(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         public void Complete(V arg0)
@@ -626,7 +638,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("complete", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#completeExceptionally(java.lang.Throwable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#completeExceptionally(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         public void CompleteExceptionally(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
@@ -634,7 +646,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("completeExceptionally", "(Ljava/lang/Throwable;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html#reinitialize()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html#reinitialize()"/>
         /// </summary>
         public void Reinitialize()
         {

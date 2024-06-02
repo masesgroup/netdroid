@@ -46,18 +46,21 @@ namespace Android.Hardware.Camera2
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionSession.html#getDevice()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionSession.html#getDevice()"/>
         /// </summary>
-        public Android.Hardware.Camera2.CameraDevice Device
+        /// <returns><see cref="Android.Hardware.Camera2.CameraDevice"/></returns>
+        public Android.Hardware.Camera2.CameraDevice GetDevice()
         {
-            get { return IExecuteWithSignature<Android.Hardware.Camera2.CameraDevice>("getDevice", "()Landroid/hardware/camera2/CameraDevice;"); }
+            return IExecuteWithSignature<Android.Hardware.Camera2.CameraDevice>("getDevice", "()Landroid/hardware/camera2/CameraDevice;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionSession.html#getRealtimeStillCaptureLatency()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionSession.html#getRealtimeStillCaptureLatency()"/>
         /// </summary>
-        public Android.Hardware.Camera2.CameraExtensionSession.StillCaptureLatency RealtimeStillCaptureLatency
+        /// <returns><see cref="Android.Hardware.Camera2.CameraExtensionSession.StillCaptureLatency"/></returns>
+        /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
+        public Android.Hardware.Camera2.CameraExtensionSession.StillCaptureLatency GetRealtimeStillCaptureLatency()
         {
-            get { return IExecuteWithSignature<Android.Hardware.Camera2.CameraExtensionSession.StillCaptureLatency>("getRealtimeStillCaptureLatency", "()Landroid/hardware/camera2/CameraExtensionSession$StillCaptureLatency;"); }
+            return IExecuteWithSignature<Android.Hardware.Camera2.CameraExtensionSession.StillCaptureLatency>("getRealtimeStillCaptureLatency", "()Landroid/hardware/camera2/CameraExtensionSession$StillCaptureLatency;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionSession.html#capture(android.hardware.camera2.CaptureRequest,java.util.concurrent.Executor,android.hardware.camera2.CameraExtensionSession.ExtensionCaptureCallback)"/>
@@ -285,18 +288,20 @@ namespace Android.Hardware.Camera2
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionSession.StillCaptureLatency.html#getCaptureLatency()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionSession.StillCaptureLatency.html#getCaptureLatency()"/>
             /// </summary>
-            public long CaptureLatency
+            /// <returns><see cref="long"/></returns>
+            public long GetCaptureLatency()
             {
-                get { return IExecuteWithSignature<long>("getCaptureLatency", "()J"); }
+                return IExecuteWithSignature<long>("getCaptureLatency", "()J");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionSession.StillCaptureLatency.html#getProcessingLatency()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionSession.StillCaptureLatency.html#getProcessingLatency()"/>
             /// </summary>
-            public long ProcessingLatency
+            /// <returns><see cref="long"/></returns>
+            public long GetProcessingLatency()
             {
-                get { return IExecuteWithSignature<long>("getProcessingLatency", "()J"); }
+                return IExecuteWithSignature<long>("getProcessingLatency", "()J");
             }
 
             #endregion

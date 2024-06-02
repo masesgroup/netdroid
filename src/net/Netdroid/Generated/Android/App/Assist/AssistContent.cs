@@ -52,39 +52,36 @@ namespace Android.App.Assist
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#getClipData()"/> <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#setClipData(android.content.ClipData)"/>
+        /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#getClipData()"/>
         /// </summary>
-        public Android.Content.ClipData ClipData
+        /// <returns><see cref="Android.Content.ClipData"/></returns>
+        public Android.Content.ClipData GetClipData()
         {
-            get { return IExecuteWithSignature<Android.Content.ClipData>("getClipData", "()Landroid/content/ClipData;"); } set { IExecuteWithSignature("setClipData", "(Landroid/content/ClipData;)V", value); }
+            return IExecuteWithSignature<Android.Content.ClipData>("getClipData", "()Landroid/content/ClipData;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#getIntent()"/>
         /// </summary>
-        public Android.Os.Bundle Extras
+        /// <returns><see cref="Android.Content.Intent"/></returns>
+        public Android.Content.Intent GetIntent()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#getIntent()"/> <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#setIntent(android.content.Intent)"/>
+        /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#getWebUri()"/>
         /// </summary>
-        public Android.Content.Intent Intent
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetWebUri()
         {
-            get { return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;"); } set { IExecuteWithSignature("setIntent", "(Landroid/content/Intent;)V", value); }
+            return IExecuteWithSignature<Android.Net.Uri>("getWebUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#getStructuredData()"/> <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#setStructuredData(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#getExtras()"/>
         /// </summary>
-        public Java.Lang.String StructuredData
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getStructuredData", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setStructuredData", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#getWebUri()"/> <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#setWebUri(android.net.Uri)"/>
-        /// </summary>
-        public Android.Net.Uri WebUri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getWebUri", "()Landroid/net/Uri;"); } set { IExecuteWithSignature("setWebUri", "(Landroid/net/Uri;)V", value); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#isAppProvidedIntent()"/>
@@ -109,6 +106,46 @@ namespace Android.App.Assist
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#getStructuredData()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetStructuredData()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getStructuredData", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#setClipData(android.content.ClipData)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ClipData"/></param>
+        public void SetClipData(Android.Content.ClipData arg0)
+        {
+            IExecuteWithSignature("setClipData", "(Landroid/content/ClipData;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#setIntent(android.content.Intent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        public void SetIntent(Android.Content.Intent arg0)
+        {
+            IExecuteWithSignature("setIntent", "(Landroid/content/Intent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#setStructuredData(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetStructuredData(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setStructuredData", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#setWebUri(android.net.Uri)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
+        public void SetWebUri(Android.Net.Uri arg0)
+        {
+            IExecuteWithSignature("setWebUri", "(Landroid/net/Uri;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/assist/AssistContent.html#writeToParcel(android.os.Parcel,int)"/>

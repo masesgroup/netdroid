@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/StringTokenizer.html#%3Cinit%3E(java.lang.String,java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/StringTokenizer.html#%3Cinit%3E(java.lang.String,java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -40,7 +40,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/StringTokenizer.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/StringTokenizer.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -49,7 +49,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/StringTokenizer.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/StringTokenizer.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public StringTokenizer(Java.Lang.String arg0)
@@ -73,7 +73,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/StringTokenizer.html#hasMoreElements()"/>
+        /// <see href="https://developer.android.com/reference/java/util/StringTokenizer.html#hasMoreElements()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasMoreElements()
@@ -81,7 +81,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasMoreElements", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/StringTokenizer.html#hasMoreTokens()"/>
+        /// <see href="https://developer.android.com/reference/java/util/StringTokenizer.html#hasMoreTokens()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasMoreTokens()
@@ -89,7 +89,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasMoreTokens", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/StringTokenizer.html#countTokens()"/>
+        /// <see href="https://developer.android.com/reference/java/util/StringTokenizer.html#countTokens()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int CountTokens()
@@ -97,7 +97,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("countTokens", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/StringTokenizer.html#nextElement()"/>
+        /// <see href="https://developer.android.com/reference/java/util/StringTokenizer.html#nextElement()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object NextElement()
@@ -105,7 +105,7 @@ namespace Java.Util
             return IExecuteWithSignature("nextElement", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/StringTokenizer.html#nextToken()"/>
+        /// <see href="https://developer.android.com/reference/java/util/StringTokenizer.html#nextToken()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String NextToken()
@@ -113,7 +113,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("nextToken", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/StringTokenizer.html#nextToken(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/StringTokenizer.html#nextToken(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>

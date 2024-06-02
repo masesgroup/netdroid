@@ -76,11 +76,12 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/GameManager.html#getGameMode()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/GameManager.html#getGameMode()"/>
         /// </summary>
-        public int GameMode
+        /// <returns><see cref="int"/></returns>
+        public int GetGameMode()
         {
-            get { return IExecuteWithSignature<int>("getGameMode", "()I"); }
+            return IExecuteWithSignature<int>("getGameMode", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/GameManager.html#setGameState(android.app.GameState)"/>

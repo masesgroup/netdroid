@@ -64,34 +64,49 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/CommonDataSource.html#getLoginTimeout()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/CommonDataSource.html#setLoginTimeout(int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/CommonDataSource.html#getLoginTimeout()"/>
         /// </summary>
-        public int LoginTimeout
-        {
-            get { return IExecuteWithSignature<int>("getLoginTimeout", "()I"); } set { IExecuteWithSignature("setLoginTimeout", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/CommonDataSource.html#getLogWriter()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/CommonDataSource.html#setLogWriter(java.io.PrintWriter)"/>
-        /// </summary>
-        public Java.Io.PrintWriter LogWriter
-        {
-            get { return IExecuteWithSignature<Java.Io.PrintWriter>("getLogWriter", "()Ljava/io/PrintWriter;"); } set { IExecuteWithSignature("setLogWriter", "(Ljava/io/PrintWriter;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/CommonDataSource.html#getParentLogger()"/> 
-        /// </summary>
-        public Java.Util.Logging.Logger ParentLogger
-        {
-            get { return IExecuteWithSignature<Java.Util.Logging.Logger>("getParentLogger", "()Ljava/util/logging/Logger;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/CommonDataSource.html#createShardingKeyBuilder()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Sql.ShardingKeyBuilder"/></returns>
+        /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Sql.ShardingKeyBuilder CreateShardingKeyBuilder()
+        public int GetLoginTimeout()
         {
-            return IExecuteWithSignature<Java.Sql.ShardingKeyBuilder>("createShardingKeyBuilder", "()Ljava/sql/ShardingKeyBuilder;");
+            return IExecuteWithSignature<int>("getLoginTimeout", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/CommonDataSource.html#getLogWriter()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.PrintWriter"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Io.PrintWriter GetLogWriter()
+        {
+            return IExecuteWithSignature<Java.Io.PrintWriter>("getLogWriter", "()Ljava/io/PrintWriter;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/CommonDataSource.html#getParentLogger()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Logging.Logger"/></returns>
+        /// <exception cref="Java.Sql.SQLFeatureNotSupportedException"/>
+        public Java.Util.Logging.Logger GetParentLogger()
+        {
+            return IExecuteWithSignature<Java.Util.Logging.Logger>("getParentLogger", "()Ljava/util/logging/Logger;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/CommonDataSource.html#setLoginTimeout(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetLoginTimeout(int arg0)
+        {
+            IExecuteWithSignature("setLoginTimeout", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/CommonDataSource.html#setLogWriter(java.io.PrintWriter)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetLogWriter(Java.Io.PrintWriter arg0)
+        {
+            IExecuteWithSignature("setLogWriter", "(Ljava/io/PrintWriter;)V", arg0);
         }
 
         #endregion

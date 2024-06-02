@@ -46,91 +46,7 @@ namespace Javax.Xml.Datatype
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getDay()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setDay(int)"/>
-        /// </summary>
-        public int Day
-        {
-            get { return IExecuteWithSignature<int>("getDay", "()I"); } set { IExecuteWithSignature("setDay", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getEon()"/> 
-        /// </summary>
-        public Java.Math.BigInteger Eon
-        {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getEon", "()Ljava/math/BigInteger;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getEonAndYear()"/> 
-        /// </summary>
-        public Java.Math.BigInteger EonAndYear
-        {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getEonAndYear", "()Ljava/math/BigInteger;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getFractionalSecond()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setFractionalSecond(java.math.BigDecimal)"/>
-        /// </summary>
-        public Java.Math.BigDecimal FractionalSecond
-        {
-            get { return IExecuteWithSignature<Java.Math.BigDecimal>("getFractionalSecond", "()Ljava/math/BigDecimal;"); } set { IExecuteWithSignature("setFractionalSecond", "(Ljava/math/BigDecimal;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getHour()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setHour(int)"/>
-        /// </summary>
-        public int Hour
-        {
-            get { return IExecuteWithSignature<int>("getHour", "()I"); } set { IExecuteWithSignature("setHour", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getMillisecond()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setMillisecond(int)"/>
-        /// </summary>
-        public int Millisecond
-        {
-            get { return IExecuteWithSignature<int>("getMillisecond", "()I"); } set { IExecuteWithSignature("setMillisecond", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getMinute()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setMinute(int)"/>
-        /// </summary>
-        public int Minute
-        {
-            get { return IExecuteWithSignature<int>("getMinute", "()I"); } set { IExecuteWithSignature("setMinute", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getMonth()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setMonth(int)"/>
-        /// </summary>
-        public int Month
-        {
-            get { return IExecuteWithSignature<int>("getMonth", "()I"); } set { IExecuteWithSignature("setMonth", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getSecond()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setSecond(int)"/>
-        /// </summary>
-        public int Second
-        {
-            get { return IExecuteWithSignature<int>("getSecond", "()I"); } set { IExecuteWithSignature("setSecond", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getTimezone()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setTimezone(int)"/>
-        /// </summary>
-        public int Timezone
-        {
-            get { return IExecuteWithSignature<int>("getTimezone", "()I"); } set { IExecuteWithSignature("setTimezone", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getXMLSchemaType()"/> 
-        /// </summary>
-        public Javax.Xml.Namespace.QName XMLSchemaType
-        {
-            get { return IExecuteWithSignature<Javax.Xml.Namespace.QName>("getXMLSchemaType", "()Ljavax/xml/namespace/QName;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getYear()"/> 
-        /// </summary>
-        public int Year
-        {
-            get { return IExecuteWithSignature<int>("getYear", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#isValid()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#isValid()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
@@ -138,7 +54,7 @@ namespace Javax.Xml.Datatype
             return IExecuteWithSignature<bool>("isValid", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#compare(javax.xml.datatype.XMLGregorianCalendar)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#compare(javax.xml.datatype.XMLGregorianCalendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/></param>
         /// <returns><see cref="int"/></returns>
@@ -147,7 +63,63 @@ namespace Javax.Xml.Datatype
             return IExecuteWithSignature<int>("compare", "(Ljavax/xml/datatype/XMLGregorianCalendar;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#toXMLFormat()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#getDay()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDay()
+        {
+            return IExecuteWithSignature<int>("getDay", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#getHour()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHour()
+        {
+            return IExecuteWithSignature<int>("getHour", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#getMinute()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinute()
+        {
+            return IExecuteWithSignature<int>("getMinute", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#getMonth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMonth()
+        {
+            return IExecuteWithSignature<int>("getMonth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#getSecond()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSecond()
+        {
+            return IExecuteWithSignature<int>("getSecond", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#getTimezone()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTimezone()
+        {
+            return IExecuteWithSignature<int>("getTimezone", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#getYear()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetYear()
+        {
+            return IExecuteWithSignature<int>("getYear", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#toXMLFormat()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToXMLFormat()
@@ -155,7 +127,31 @@ namespace Javax.Xml.Datatype
             return IExecuteWithSignature<Java.Lang.String>("toXMLFormat", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#toGregorianCalendar()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#getFractionalSecond()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
+        public Java.Math.BigDecimal GetFractionalSecond()
+        {
+            return IExecuteWithSignature<Java.Math.BigDecimal>("getFractionalSecond", "()Ljava/math/BigDecimal;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#getEon()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetEon()
+        {
+            return IExecuteWithSignature<Java.Math.BigInteger>("getEon", "()Ljava/math/BigInteger;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#getEonAndYear()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetEonAndYear()
+        {
+            return IExecuteWithSignature<Java.Math.BigInteger>("getEonAndYear", "()Ljava/math/BigInteger;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#toGregorianCalendar()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.GregorianCalendar"/></returns>
         public Java.Util.GregorianCalendar ToGregorianCalendar()
@@ -163,7 +159,7 @@ namespace Javax.Xml.Datatype
             return IExecuteWithSignature<Java.Util.GregorianCalendar>("toGregorianCalendar", "()Ljava/util/GregorianCalendar;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#toGregorianCalendar(java.util.TimeZone,java.util.Locale,javax.xml.datatype.XMLGregorianCalendar)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#toGregorianCalendar(java.util.TimeZone,java.util.Locale,javax.xml.datatype.XMLGregorianCalendar)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.TimeZone"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -174,7 +170,7 @@ namespace Javax.Xml.Datatype
             return IExecute<Java.Util.GregorianCalendar>("toGregorianCalendar", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getTimeZone(int)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#getTimeZone(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.TimeZone"/></returns>
@@ -183,7 +179,7 @@ namespace Javax.Xml.Datatype
             return IExecuteWithSignature<Java.Util.TimeZone>("getTimeZone", "(I)Ljava/util/TimeZone;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#normalize()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#normalize()"/>
         /// </summary>
         /// <returns><see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/></returns>
         public Javax.Xml.Datatype.XMLGregorianCalendar Normalize()
@@ -191,7 +187,15 @@ namespace Javax.Xml.Datatype
             return IExecuteWithSignature<Javax.Xml.Datatype.XMLGregorianCalendar>("normalize", "()Ljavax/xml/datatype/XMLGregorianCalendar;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#add(javax.xml.datatype.Duration)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#getXMLSchemaType()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Xml.Namespace.QName"/></returns>
+        public Javax.Xml.Namespace.QName GetXMLSchemaType()
+        {
+            return IExecuteWithSignature<Javax.Xml.Namespace.QName>("getXMLSchemaType", "()Ljavax/xml/namespace/QName;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#add(javax.xml.datatype.Duration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Datatype.Duration"/></param>
         public void Add(Javax.Xml.Datatype.Duration arg0)
@@ -199,21 +203,85 @@ namespace Javax.Xml.Datatype
             IExecuteWithSignature("add", "(Ljavax/xml/datatype/Duration;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#reset()"/>
         /// </summary>
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setYear(int)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#setDay(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDay(int arg0)
+        {
+            IExecuteWithSignature("setDay", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#setFractionalSecond(java.math.BigDecimal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Math.BigDecimal"/></param>
+        public void SetFractionalSecond(Java.Math.BigDecimal arg0)
+        {
+            IExecuteWithSignature("setFractionalSecond", "(Ljava/math/BigDecimal;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#setHour(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetHour(int arg0)
+        {
+            IExecuteWithSignature("setHour", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#setMillisecond(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMillisecond(int arg0)
+        {
+            IExecuteWithSignature("setMillisecond", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#setMinute(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinute(int arg0)
+        {
+            IExecuteWithSignature("setMinute", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#setMonth(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMonth(int arg0)
+        {
+            IExecuteWithSignature("setMonth", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#setSecond(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetSecond(int arg0)
+        {
+            IExecuteWithSignature("setSecond", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#setTimezone(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTimezone(int arg0)
+        {
+            IExecuteWithSignature("setTimezone", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#setYear(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void SetYear(int arg0)
@@ -221,7 +289,7 @@ namespace Javax.Xml.Datatype
             IExecuteWithSignature("setYear", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setYear(java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#setYear(java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         public void SetYear(Java.Math.BigInteger arg0)
@@ -229,7 +297,15 @@ namespace Javax.Xml.Datatype
             IExecuteWithSignature("setYear", "(Ljava/math/BigInteger;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setTime(int,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#getMillisecond()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMillisecond()
+        {
+            return IExecuteWithSignature<int>("getMillisecond", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#setTime(int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -240,7 +316,7 @@ namespace Javax.Xml.Datatype
             IExecute("setTime", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setTime(int,int,int,java.math.BigDecimal)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#setTime(int,int,int,java.math.BigDecimal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -251,7 +327,7 @@ namespace Javax.Xml.Datatype
             IExecute("setTime", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setTime(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/datatype/XMLGregorianCalendar.html#setTime(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>

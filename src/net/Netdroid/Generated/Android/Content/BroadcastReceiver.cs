@@ -46,41 +46,6 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#getDebugUnregister()"/> <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#setDebugUnregister(boolean)"/>
-        /// </summary>
-        public bool DebugUnregister
-        {
-            get { return IExecuteWithSignature<bool>("getDebugUnregister", "()Z"); } set { IExecuteWithSignature("setDebugUnregister", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#getResultCode()"/> <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#setResultCode(int)"/>
-        /// </summary>
-        public int ResultCode
-        {
-            get { return IExecuteWithSignature<int>("getResultCode", "()I"); } set { IExecuteWithSignature("setResultCode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#getResultData()"/> <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#setResultData(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String ResultData
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getResultData", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setResultData", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#getSentFromPackage()"/> 
-        /// </summary>
-        public Java.Lang.String SentFromPackage
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSentFromPackage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#getSentFromUid()"/> 
-        /// </summary>
-        public int SentFromUid
-        {
-            get { return IExecuteWithSignature<int>("getSentFromUid", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#onReceive(android.content.Context,android.content.Intent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -125,6 +90,14 @@ namespace Android.Content
             return IExecuteWithSignature<bool>("getAbortBroadcast", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#getDebugUnregister()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetDebugUnregister()
+        {
+            return IExecuteWithSignature<bool>("getDebugUnregister", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#isInitialStickyBroadcast()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -141,6 +114,22 @@ namespace Android.Content
             return IExecuteWithSignature<bool>("isOrderedBroadcast", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#getResultCode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetResultCode()
+        {
+            return IExecuteWithSignature<int>("getResultCode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#getResultData()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetResultData()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getResultData", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#abortBroadcast()"/>
         /// </summary>
         public void AbortBroadcast()
@@ -153,6 +142,14 @@ namespace Android.Content
         public void ClearAbortBroadcast()
         {
             IExecuteWithSignature("clearAbortBroadcast", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#setDebugUnregister(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetDebugUnregister(bool arg0)
+        {
+            IExecuteWithSignature("setDebugUnregister", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#setOrderedHint(boolean)"/>
@@ -173,12 +170,44 @@ namespace Android.Content
             IExecute("setResult", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#setResultCode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetResultCode(int arg0)
+        {
+            IExecuteWithSignature("setResultCode", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#setResultData(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetResultData(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setResultData", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#setResultExtras(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
         public void SetResultExtras(Android.Os.Bundle arg0)
         {
             IExecuteWithSignature("setResultExtras", "(Landroid/os/Bundle;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#getSentFromUid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSentFromUid()
+        {
+            return IExecuteWithSignature<int>("getSentFromUid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.html#getSentFromPackage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSentFromPackage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSentFromPackage", "()Ljava/lang/String;");
         }
 
         #endregion
@@ -205,20 +234,6 @@ namespace Android.Content
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.PendingResult.html#getResultCode()"/> <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.PendingResult.html#setResultCode(int)"/>
-            /// </summary>
-            public int ResultCode
-            {
-                get { return IExecuteWithSignature<int>("getResultCode", "()I"); } set { IExecuteWithSignature("setResultCode", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.PendingResult.html#getResultData()"/> <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.PendingResult.html#setResultData(java.lang.String)"/>
-            /// </summary>
-            public Java.Lang.String ResultData
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getResultData", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setResultData", "(Ljava/lang/String;)V", value); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.PendingResult.html#getResultExtras(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
@@ -234,6 +249,22 @@ namespace Android.Content
             public bool GetAbortBroadcast()
             {
                 return IExecuteWithSignature<bool>("getAbortBroadcast", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.PendingResult.html#getResultCode()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetResultCode()
+            {
+                return IExecuteWithSignature<int>("getResultCode", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.PendingResult.html#getResultData()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetResultData()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getResultData", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.PendingResult.html#abortBroadcast()"/>
@@ -265,6 +296,22 @@ namespace Android.Content
             public void SetResult(int arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
             {
                 IExecute("setResult", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.PendingResult.html#setResultCode(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void SetResultCode(int arg0)
+            {
+                IExecuteWithSignature("setResultCode", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.PendingResult.html#setResultData(java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+            public void SetResultData(Java.Lang.String arg0)
+            {
+                IExecuteWithSignature("setResultData", "(Ljava/lang/String;)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/BroadcastReceiver.PendingResult.html#setResultExtras(android.os.Bundle)"/>

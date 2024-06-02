@@ -130,156 +130,60 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getAppVsyncOffsetNanos()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getPreferredWideGamutColorSpace()"/>
         /// </summary>
-        public long AppVsyncOffsetNanos
+        /// <returns><see cref="Android.Graphics.ColorSpace"/></returns>
+        public Android.Graphics.ColorSpace GetPreferredWideGamutColorSpace()
         {
-            get { return IExecuteWithSignature<long>("getAppVsyncOffsetNanos", "()J"); }
+            return IExecuteWithSignature<Android.Graphics.ColorSpace>("getPreferredWideGamutColorSpace", "()Landroid/graphics/ColorSpace;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getCutout()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getDeviceProductInfo()"/>
         /// </summary>
-        public Android.View.DisplayCutout Cutout
+        /// <returns><see cref="Android.Hardware.Display.DeviceProductInfo"/></returns>
+        public Android.Hardware.Display.DeviceProductInfo GetDeviceProductInfo()
         {
-            get { return IExecuteWithSignature<Android.View.DisplayCutout>("getCutout", "()Landroid/view/DisplayCutout;"); }
+            return IExecuteWithSignature<Android.Hardware.Display.DeviceProductInfo>("getDeviceProductInfo", "()Landroid/hardware/display/DeviceProductInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getDeviceProductInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getHdrCapabilities()"/>
         /// </summary>
-        public Android.Hardware.Display.DeviceProductInfo DeviceProductInfo
+        /// <returns><see cref="Android.View.Display.HdrCapabilities"/></returns>
+        public Android.View.Display.HdrCapabilities GetHdrCapabilities()
         {
-            get { return IExecuteWithSignature<Android.Hardware.Display.DeviceProductInfo>("getDeviceProductInfo", "()Landroid/hardware/display/DeviceProductInfo;"); }
+            return IExecuteWithSignature<Android.View.Display.HdrCapabilities>("getHdrCapabilities", "()Landroid/view/Display$HdrCapabilities;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getDisplayId()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getMode()"/>
         /// </summary>
-        public int DisplayId
+        /// <returns><see cref="Android.View.Display.Mode"/></returns>
+        public Android.View.Display.Mode GetMode()
         {
-            get { return IExecuteWithSignature<int>("getDisplayId", "()I"); }
+            return IExecuteWithSignature<Android.View.Display.Mode>("getMode", "()Landroid/view/Display$Mode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getFlags()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getSupportedModes()"/>
         /// </summary>
-        public int Flags
+        /// <returns><see cref="Android.View.Display.Mode"/></returns>
+        public Android.View.Display.Mode[] GetSupportedModes()
         {
-            get { return IExecuteWithSignature<int>("getFlags", "()I"); }
+            return IExecuteWithSignatureArray<Android.View.Display.Mode>("getSupportedModes", "()[Landroid/view/Display$Mode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getHdrCapabilities()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getCutout()"/>
         /// </summary>
-        public Android.View.Display.HdrCapabilities GetHdrCapabilities
+        /// <returns><see cref="Android.View.DisplayCutout"/></returns>
+        public Android.View.DisplayCutout GetCutout()
         {
-            get { return IExecuteWithSignature<Android.View.Display.HdrCapabilities>("getHdrCapabilities", "()Landroid/view/Display$HdrCapabilities;"); }
+            return IExecuteWithSignature<Android.View.DisplayCutout>("getCutout", "()Landroid/view/DisplayCutout;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getMode()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getShape()"/>
         /// </summary>
-        public Android.View.Display.Mode GetMode
+        /// <returns><see cref="Android.View.DisplayShape"/></returns>
+        public Android.View.DisplayShape GetShape()
         {
-            get { return IExecuteWithSignature<Android.View.Display.Mode>("getMode", "()Landroid/view/Display$Mode;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getHdrSdrRatio()"/> 
-        /// </summary>
-        public float HdrSdrRatio
-        {
-            get { return IExecuteWithSignature<float>("getHdrSdrRatio", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getHeight()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getOrientation()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Orientation
-        {
-            get { return IExecuteWithSignature<int>("getOrientation", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getPixelFormat()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int PixelFormat
-        {
-            get { return IExecuteWithSignature<int>("getPixelFormat", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getPreferredWideGamutColorSpace()"/> 
-        /// </summary>
-        public Android.Graphics.ColorSpace PreferredWideGamutColorSpace
-        {
-            get { return IExecuteWithSignature<Android.Graphics.ColorSpace>("getPreferredWideGamutColorSpace", "()Landroid/graphics/ColorSpace;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getPresentationDeadlineNanos()"/> 
-        /// </summary>
-        public long PresentationDeadlineNanos
-        {
-            get { return IExecuteWithSignature<long>("getPresentationDeadlineNanos", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getRefreshRate()"/> 
-        /// </summary>
-        public float RefreshRate
-        {
-            get { return IExecuteWithSignature<float>("getRefreshRate", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getRotation()"/> 
-        /// </summary>
-        public int Rotation
-        {
-            get { return IExecuteWithSignature<int>("getRotation", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getShape()"/> 
-        /// </summary>
-        public Android.View.DisplayShape Shape
-        {
-            get { return IExecuteWithSignature<Android.View.DisplayShape>("getShape", "()Landroid/view/DisplayShape;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getState()"/> 
-        /// </summary>
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getSupportedModes()"/> 
-        /// </summary>
-        public Android.View.Display.Mode[] SupportedModes
-        {
-            get { return IExecuteWithSignatureArray<Android.View.Display.Mode>("getSupportedModes", "()[Landroid/view/Display$Mode;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getSupportedRefreshRates()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public float[] SupportedRefreshRates
-        {
-            get { return IExecuteWithSignatureArray<float>("getSupportedRefreshRates", "()[F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Display.html#getWidth()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+            return IExecuteWithSignature<Android.View.DisplayShape>("getShape", "()Landroid/view/DisplayShape;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Display.html#getRoundedCorner(int)"/>
@@ -331,6 +235,123 @@ namespace Android.View
             return IExecuteWithSignature<bool>("isWideColorGamut", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getHdrSdrRatio()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetHdrSdrRatio()
+        {
+            return IExecuteWithSignature<float>("getHdrSdrRatio", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getRefreshRate()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetRefreshRate()
+        {
+            return IExecuteWithSignature<float>("getRefreshRate", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getSupportedRefreshRates()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        [global::System.Obsolete()]
+        public float[] GetSupportedRefreshRates()
+        {
+            return IExecuteWithSignatureArray<float>("getSupportedRefreshRates", "()[F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getDisplayId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDisplayId()
+        {
+            return IExecuteWithSignature<int>("getDisplayId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFlags()
+        {
+            return IExecuteWithSignature<int>("getFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getOrientation()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetOrientation()
+        {
+            return IExecuteWithSignature<int>("getOrientation", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getPixelFormat()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetPixelFormat()
+        {
+            return IExecuteWithSignature<int>("getPixelFormat", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getRotation()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRotation()
+        {
+            return IExecuteWithSignature<int>("getRotation", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetWidth()
+        {
+            return IExecuteWithSignature<int>("getWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getAppVsyncOffsetNanos()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetAppVsyncOffsetNanos()
+        {
+            return IExecuteWithSignature<long>("getAppVsyncOffsetNanos", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Display.html#getPresentationDeadlineNanos()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetPresentationDeadlineNanos()
+        {
+            return IExecuteWithSignature<long>("getPresentationDeadlineNanos", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Display.html#getCurrentSizeRange(android.graphics.Point,android.graphics.Point)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Point"/></param>
@@ -343,7 +364,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/Display.html#getMetrics(android.util.DisplayMetrics)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Util.DisplayMetrics"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void GetMetrics(Android.Util.DisplayMetrics arg0)
         {
             IExecuteWithSignature("getMetrics", "(Landroid/util/DisplayMetrics;)V", arg0);
@@ -352,7 +373,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/Display.html#getRealMetrics(android.util.DisplayMetrics)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Util.DisplayMetrics"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void GetRealMetrics(Android.Util.DisplayMetrics arg0)
         {
             IExecuteWithSignature("getRealMetrics", "(Landroid/util/DisplayMetrics;)V", arg0);
@@ -361,7 +382,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/Display.html#getRealSize(android.graphics.Point)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Point"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void GetRealSize(Android.Graphics.Point arg0)
         {
             IExecuteWithSignature("getRealSize", "(Landroid/graphics/Point;)V", arg0);
@@ -370,7 +391,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/Display.html#getRectSize(android.graphics.Rect)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void GetRectSize(Android.Graphics.Rect arg0)
         {
             IExecuteWithSignature("getRectSize", "(Landroid/graphics/Rect;)V", arg0);
@@ -379,7 +400,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/Display.html#getSize(android.graphics.Point)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Point"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void GetSize(Android.Graphics.Point arg0)
         {
             IExecuteWithSignature("getSize", "(Landroid/graphics/Point;)V", arg0);
@@ -468,33 +489,28 @@ namespace Android.View
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/Display.HdrCapabilities.html#getDesiredMaxAverageLuminance()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/Display.HdrCapabilities.html#getDesiredMaxAverageLuminance()"/>
             /// </summary>
-            public float DesiredMaxAverageLuminance
+            /// <returns><see cref="float"/></returns>
+            public float GetDesiredMaxAverageLuminance()
             {
-                get { return IExecuteWithSignature<float>("getDesiredMaxAverageLuminance", "()F"); }
+                return IExecuteWithSignature<float>("getDesiredMaxAverageLuminance", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/Display.HdrCapabilities.html#getDesiredMaxLuminance()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/Display.HdrCapabilities.html#getDesiredMaxLuminance()"/>
             /// </summary>
-            public float DesiredMaxLuminance
+            /// <returns><see cref="float"/></returns>
+            public float GetDesiredMaxLuminance()
             {
-                get { return IExecuteWithSignature<float>("getDesiredMaxLuminance", "()F"); }
+                return IExecuteWithSignature<float>("getDesiredMaxLuminance", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/Display.HdrCapabilities.html#getDesiredMinLuminance()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/Display.HdrCapabilities.html#getDesiredMinLuminance()"/>
             /// </summary>
-            public float DesiredMinLuminance
+            /// <returns><see cref="float"/></returns>
+            public float GetDesiredMinLuminance()
             {
-                get { return IExecuteWithSignature<float>("getDesiredMinLuminance", "()F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/Display.HdrCapabilities.html#getSupportedHdrTypes()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int[] SupportedHdrTypes
-            {
-                get { return IExecuteWithSignatureArray<int>("getSupportedHdrTypes", "()[I"); }
+                return IExecuteWithSignature<float>("getDesiredMinLuminance", "()F");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/Display.HdrCapabilities.html#describeContents()"/>
@@ -503,6 +519,15 @@ namespace Android.View
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/Display.HdrCapabilities.html#getSupportedHdrTypes()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int[] GetSupportedHdrTypes()
+            {
+                return IExecuteWithSignatureArray<int>("getSupportedHdrTypes", "()[I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/Display.HdrCapabilities.html#writeToParcel(android.os.Parcel,int)"/>
@@ -551,46 +576,20 @@ namespace Android.View
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/Display.Mode.html#getAlternativeRefreshRates()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/Display.Mode.html#getRefreshRate()"/>
             /// </summary>
-            public float[] AlternativeRefreshRates
+            /// <returns><see cref="float"/></returns>
+            public float GetRefreshRate()
             {
-                get { return IExecuteWithSignatureArray<float>("getAlternativeRefreshRates", "()[F"); }
+                return IExecuteWithSignature<float>("getRefreshRate", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/Display.Mode.html#getModeId()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/Display.Mode.html#getAlternativeRefreshRates()"/>
             /// </summary>
-            public int ModeId
+            /// <returns><see cref="float"/></returns>
+            public float[] GetAlternativeRefreshRates()
             {
-                get { return IExecuteWithSignature<int>("getModeId", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/Display.Mode.html#getPhysicalHeight()"/> 
-            /// </summary>
-            public int PhysicalHeight
-            {
-                get { return IExecuteWithSignature<int>("getPhysicalHeight", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/Display.Mode.html#getPhysicalWidth()"/> 
-            /// </summary>
-            public int PhysicalWidth
-            {
-                get { return IExecuteWithSignature<int>("getPhysicalWidth", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/Display.Mode.html#getRefreshRate()"/> 
-            /// </summary>
-            public float RefreshRate
-            {
-                get { return IExecuteWithSignature<float>("getRefreshRate", "()F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/Display.Mode.html#getSupportedHdrTypes()"/> 
-            /// </summary>
-            public int[] SupportedHdrTypes
-            {
-                get { return IExecuteWithSignatureArray<int>("getSupportedHdrTypes", "()[I"); }
+                return IExecuteWithSignatureArray<float>("getAlternativeRefreshRates", "()[F");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/Display.Mode.html#describeContents()"/>
@@ -599,6 +598,38 @@ namespace Android.View
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/Display.Mode.html#getModeId()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetModeId()
+            {
+                return IExecuteWithSignature<int>("getModeId", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/Display.Mode.html#getPhysicalHeight()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetPhysicalHeight()
+            {
+                return IExecuteWithSignature<int>("getPhysicalHeight", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/Display.Mode.html#getPhysicalWidth()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetPhysicalWidth()
+            {
+                return IExecuteWithSignature<int>("getPhysicalWidth", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/Display.Mode.html#getSupportedHdrTypes()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int[] GetSupportedHdrTypes()
+            {
+                return IExecuteWithSignatureArray<int>("getSupportedHdrTypes", "()[I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/Display.Mode.html#writeToParcel(android.os.Parcel,int)"/>

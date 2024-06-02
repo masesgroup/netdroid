@@ -58,11 +58,12 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/MaskFilterSpan.html#getMaskFilter()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/style/MaskFilterSpan.html#getMaskFilter()"/>
         /// </summary>
-        public Android.Graphics.MaskFilter MaskFilter
+        /// <returns><see cref="Android.Graphics.MaskFilter"/></returns>
+        public Android.Graphics.MaskFilter GetMaskFilter()
         {
-            get { return IExecuteWithSignature<Android.Graphics.MaskFilter>("getMaskFilter", "()Landroid/graphics/MaskFilter;"); }
+            return IExecuteWithSignature<Android.Graphics.MaskFilter>("getMaskFilter", "()Landroid/graphics/MaskFilter;");
         }
 
         #endregion

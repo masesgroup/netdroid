@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ConcurrentLinkedDeque(Java.Util.Collection arg0)
@@ -62,21 +62,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#getFirst()"/> 
-        /// </summary>
-        public object First
-        {
-            get { return IExecuteWithSignature("getFirst", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#getLast()"/> 
-        /// </summary>
-        public object Last
-        {
-            get { return IExecuteWithSignature("getLast", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offer(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#offer(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -85,7 +71,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offerFirst(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#offerFirst(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -94,7 +80,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("offerFirst", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offerLast(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#offerLast(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -103,7 +89,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("offerLast", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeFirstOccurrence(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#removeFirstOccurrence(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -112,7 +98,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("removeFirstOccurrence", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeLastOccurrence(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#removeLastOccurrence(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -121,7 +107,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("removeLastOccurrence", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#element()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#element()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Element()
@@ -129,7 +115,23 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("element", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peek()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#getFirst()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetFirst()
+        {
+            return IExecuteWithSignature("getFirst", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#getLast()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetLast()
+        {
+            return IExecuteWithSignature("getLast", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#peek()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Peek()
@@ -137,7 +139,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("peek", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peekFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#peekFirst()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object PeekFirst()
@@ -145,7 +147,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("peekFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peekLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#peekLast()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object PeekLast()
@@ -153,7 +155,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("peekLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#poll()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#poll()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Poll()
@@ -161,7 +163,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("poll", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pollFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#pollFirst()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object PollFirst()
@@ -169,7 +171,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("pollFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pollLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#pollLast()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object PollLast()
@@ -177,7 +179,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("pollLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pop()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#pop()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Pop()
@@ -185,7 +187,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("pop", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#remove()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#remove()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Remove()
@@ -193,7 +195,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("remove", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#removeFirst()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object RemoveFirst()
@@ -201,7 +203,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("removeFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#removeLast()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object RemoveLast()
@@ -209,7 +211,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("removeLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#descendingIterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#descendingIterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator DescendingIterator()
@@ -217,7 +219,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Iterator>("descendingIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#addFirst(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#addFirst(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void AddFirst(object arg0)
@@ -225,7 +227,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("addFirst", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#addLast(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#addLast(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void AddLast(object arg0)
@@ -233,7 +235,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("addLast", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#push(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#push(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void Push(object arg0)
@@ -256,7 +258,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public ConcurrentLinkedDeque(Java.Util.Collection<E> arg0)
@@ -292,21 +294,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#getFirst()"/> 
-        /// </summary>
-        public E First
-        {
-            get { return IExecuteWithSignature<E>("getFirst", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#getLast()"/> 
-        /// </summary>
-        public E Last
-        {
-            get { return IExecuteWithSignature<E>("getLast", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offer(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#offer(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -315,7 +303,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offerFirst(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#offerFirst(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -324,7 +312,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("offerFirst", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#offerLast(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#offerLast(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -333,7 +321,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("offerLast", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeFirstOccurrence(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#removeFirstOccurrence(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -342,7 +330,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("removeFirstOccurrence", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeLastOccurrence(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#removeLastOccurrence(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -351,7 +339,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("removeLastOccurrence", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#element()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#element()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Element()
@@ -359,7 +347,23 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("element", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peek()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#getFirst()"/>
+        /// </summary>
+        /// <returns><typeparamref name="E"/></returns>
+        public E GetFirst()
+        {
+            return IExecuteWithSignature<E>("getFirst", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#getLast()"/>
+        /// </summary>
+        /// <returns><typeparamref name="E"/></returns>
+        public E GetLast()
+        {
+            return IExecuteWithSignature<E>("getLast", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#peek()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Peek()
@@ -367,7 +371,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("peek", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peekFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#peekFirst()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E PeekFirst()
@@ -375,7 +379,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("peekFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#peekLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#peekLast()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E PeekLast()
@@ -383,7 +387,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("peekLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#poll()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#poll()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Poll()
@@ -391,7 +395,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("poll", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pollFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#pollFirst()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E PollFirst()
@@ -399,7 +403,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("pollFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pollLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#pollLast()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E PollLast()
@@ -407,7 +411,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("pollLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#pop()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#pop()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Pop()
@@ -415,7 +419,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("pop", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#remove()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#remove()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Remove()
@@ -423,7 +427,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("remove", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#removeFirst()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E RemoveFirst()
@@ -431,7 +435,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("removeFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#removeLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#removeLast()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E RemoveLast()
@@ -439,7 +443,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("removeLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#descendingIterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#descendingIterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> DescendingIterator()
@@ -447,7 +451,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Iterator<E>>("descendingIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#addFirst(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#addFirst(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void AddFirst(E arg0)
@@ -455,7 +459,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("addFirst", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#addLast(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#addLast(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void AddLast(E arg0)
@@ -463,7 +467,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("addLast", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html#push(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html#push(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void Push(E arg0)

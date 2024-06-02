@@ -127,53 +127,12 @@ namespace Android.Nfc.Tech
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#getBlockCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#getTag()"/>
         /// </summary>
-        public int BlockCount
+        /// <returns><see cref="Android.Nfc.Tag"/></returns>
+        public Android.Nfc.Tag GetTag()
         {
-            get { return IExecuteWithSignature<int>("getBlockCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#getMaxTransceiveLength()"/> 
-        /// </summary>
-        public int MaxTransceiveLength
-        {
-            get { return IExecuteWithSignature<int>("getMaxTransceiveLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#getSectorCount()"/> 
-        /// </summary>
-        public int SectorCount
-        {
-            get { return IExecuteWithSignature<int>("getSectorCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#getSize()"/> 
-        /// </summary>
-        public int Size
-        {
-            get { return IExecuteWithSignature<int>("getSize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#getTag()"/> 
-        /// </summary>
-        public Android.Nfc.Tag Tag
-        {
-            get { return IExecuteWithSignature<Android.Nfc.Tag>("getTag", "()Landroid/nfc/Tag;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#getTimeout()"/> <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#setTimeout(int)"/>
-        /// </summary>
-        public int Timeout
-        {
-            get { return IExecuteWithSignature<int>("getTimeout", "()I"); } set { IExecuteWithSignature("setTimeout", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            return IExecuteWithSignature<Android.Nfc.Tag>("getTag", "()Landroid/nfc/Tag;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#authenticateSectorWithKeyA(int,byte[])"/>
@@ -235,6 +194,14 @@ namespace Android.Nfc.Tech
             return IExecuteWithSignature<int>("blockToSector", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#getBlockCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBlockCount()
+        {
+            return IExecuteWithSignature<int>("getBlockCount", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#getBlockCountInSector(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -242,6 +209,46 @@ namespace Android.Nfc.Tech
         public int GetBlockCountInSector(int arg0)
         {
             return IExecuteWithSignature<int>("getBlockCountInSector", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#getMaxTransceiveLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxTransceiveLength()
+        {
+            return IExecuteWithSignature<int>("getMaxTransceiveLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#getSectorCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSectorCount()
+        {
+            return IExecuteWithSignature<int>("getSectorCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#getSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSize()
+        {
+            return IExecuteWithSignature<int>("getSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#getTimeout()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTimeout()
+        {
+            return IExecuteWithSignature<int>("getTimeout", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#sectorToBlock(int)"/>
@@ -296,6 +303,14 @@ namespace Android.Nfc.Tech
         public void Restore(int arg0)
         {
             IExecuteWithSignature("restore", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#setTimeout(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTimeout(int arg0)
+        {
+            IExecuteWithSignature("setTimeout", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/tech/MifareClassic.html#transfer(int)"/>

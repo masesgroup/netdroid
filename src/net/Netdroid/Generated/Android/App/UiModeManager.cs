@@ -104,39 +104,44 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/UiModeManager.html#getContrast()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/UiModeManager.html#getContrast()"/>
         /// </summary>
-        public float Contrast
+        /// <returns><see cref="float"/></returns>
+        public float GetContrast()
         {
-            get { return IExecuteWithSignature<float>("getContrast", "()F"); }
+            return IExecuteWithSignature<float>("getContrast", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/UiModeManager.html#getCurrentModeType()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/UiModeManager.html#getCurrentModeType()"/>
         /// </summary>
-        public int CurrentModeType
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentModeType()
         {
-            get { return IExecuteWithSignature<int>("getCurrentModeType", "()I"); }
+            return IExecuteWithSignature<int>("getCurrentModeType", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/UiModeManager.html#getCustomNightModeEnd()"/> <see href="https://developer.android.com/reference/android/app/UiModeManager.html#setCustomNightModeEnd(java.time.LocalTime)"/>
+        /// <see href="https://developer.android.com/reference/android/app/UiModeManager.html#getNightMode()"/>
         /// </summary>
-        public Java.Time.LocalTime CustomNightModeEnd
+        /// <returns><see cref="int"/></returns>
+        public int GetNightMode()
         {
-            get { return IExecuteWithSignature<Java.Time.LocalTime>("getCustomNightModeEnd", "()Ljava/time/LocalTime;"); } set { IExecuteWithSignature("setCustomNightModeEnd", "(Ljava/time/LocalTime;)V", value); }
+            return IExecuteWithSignature<int>("getNightMode", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/UiModeManager.html#getCustomNightModeStart()"/> <see href="https://developer.android.com/reference/android/app/UiModeManager.html#setCustomNightModeStart(java.time.LocalTime)"/>
+        /// <see href="https://developer.android.com/reference/android/app/UiModeManager.html#getCustomNightModeEnd()"/>
         /// </summary>
-        public Java.Time.LocalTime CustomNightModeStart
+        /// <returns><see cref="Java.Time.LocalTime"/></returns>
+        public Java.Time.LocalTime GetCustomNightModeEnd()
         {
-            get { return IExecuteWithSignature<Java.Time.LocalTime>("getCustomNightModeStart", "()Ljava/time/LocalTime;"); } set { IExecuteWithSignature("setCustomNightModeStart", "(Ljava/time/LocalTime;)V", value); }
+            return IExecuteWithSignature<Java.Time.LocalTime>("getCustomNightModeEnd", "()Ljava/time/LocalTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/UiModeManager.html#getNightMode()"/> <see href="https://developer.android.com/reference/android/app/UiModeManager.html#setNightMode(int)"/>
+        /// <see href="https://developer.android.com/reference/android/app/UiModeManager.html#getCustomNightModeStart()"/>
         /// </summary>
-        public int NightMode
+        /// <returns><see cref="Java.Time.LocalTime"/></returns>
+        public Java.Time.LocalTime GetCustomNightModeStart()
         {
-            get { return IExecuteWithSignature<int>("getNightMode", "()I"); } set { IExecuteWithSignature("setNightMode", "(I)V", value); }
+            return IExecuteWithSignature<Java.Time.LocalTime>("getCustomNightModeStart", "()Ljava/time/LocalTime;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/UiModeManager.html#addContrastChangeListener(java.util.concurrent.Executor,android.app.UiModeManager.ContrastChangeListener)"/>
@@ -179,6 +184,30 @@ namespace Android.App
         {
             IExecuteWithSignature("setApplicationNightMode", "(I)V", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/UiModeManager.html#setCustomNightModeEnd(java.time.LocalTime)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.LocalTime"/></param>
+        public void SetCustomNightModeEnd(Java.Time.LocalTime arg0)
+        {
+            IExecuteWithSignature("setCustomNightModeEnd", "(Ljava/time/LocalTime;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/UiModeManager.html#setCustomNightModeStart(java.time.LocalTime)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.LocalTime"/></param>
+        public void SetCustomNightModeStart(Java.Time.LocalTime arg0)
+        {
+            IExecuteWithSignature("setCustomNightModeStart", "(Ljava/time/LocalTime;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/UiModeManager.html#setNightMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetNightMode(int arg0)
+        {
+            IExecuteWithSignature("setNightMode", "(I)V", arg0);
+        }
 
         #endregion
 
@@ -208,7 +237,7 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onContrastChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<float>>>(OnContrastChangedEventHandler));
+                AddEventHandler("onContrastChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<float>>>(OnContrastChangedEventHandler));
 
             }
 
@@ -216,7 +245,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/UiModeManager.ContrastChangeListener.html#onContrastChanged(float)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnContrastChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<float> OnOnContrastChanged { get; set; } = null;
+            public global::System.Action<float> OnOnContrastChanged { get; set; } = null;
 
             void OnContrastChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<float>> data)
             {

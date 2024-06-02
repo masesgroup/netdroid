@@ -64,14 +64,15 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509TrustManager.html#getAcceptedIssuers()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/X509TrustManager.html#getAcceptedIssuers()"/>
         /// </summary>
-        public Java.Security.Cert.X509Certificate[] AcceptedIssuers
+        /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
+        public Java.Security.Cert.X509Certificate[] GetAcceptedIssuers()
         {
-            get { return IExecuteWithSignatureArray<Java.Security.Cert.X509Certificate>("getAcceptedIssuers", "()[Ljava/security/cert/X509Certificate;"); }
+            return IExecuteWithSignatureArray<Java.Security.Cert.X509Certificate>("getAcceptedIssuers", "()[Ljava/security/cert/X509Certificate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509TrustManager.html#checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/X509TrustManager.html#checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -81,7 +82,7 @@ namespace Javax.Net.Ssl
             IExecute("checkClientTrusted", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/X509TrustManager.html#checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/X509TrustManager.html#checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>

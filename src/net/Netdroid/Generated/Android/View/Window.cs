@@ -108,7 +108,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#FEATURE_INDETERMINATE_PROGRESS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FEATURE_INDETERMINATE_PROGRESS { get { if (!_FEATURE_INDETERMINATE_PROGRESSReady) { _FEATURE_INDETERMINATE_PROGRESSContent = SGetField<int>(LocalBridgeClazz, "FEATURE_INDETERMINATE_PROGRESS"); _FEATURE_INDETERMINATE_PROGRESSReady = true; } return _FEATURE_INDETERMINATE_PROGRESSContent; } }
         private static int _FEATURE_INDETERMINATE_PROGRESSContent = default;
         private static bool _FEATURE_INDETERMINATE_PROGRESSReady = false; // this is used because in case of generics 
@@ -133,7 +133,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#FEATURE_PROGRESS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FEATURE_PROGRESS { get { if (!_FEATURE_PROGRESSReady) { _FEATURE_PROGRESSContent = SGetField<int>(LocalBridgeClazz, "FEATURE_PROGRESS"); _FEATURE_PROGRESSReady = true; } return _FEATURE_PROGRESSContent; } }
         private static int _FEATURE_PROGRESSContent = default;
         private static bool _FEATURE_PROGRESSReady = false; // this is used because in case of generics 
@@ -146,7 +146,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#FEATURE_SWIPE_TO_DISMISS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FEATURE_SWIPE_TO_DISMISS { get { if (!_FEATURE_SWIPE_TO_DISMISSReady) { _FEATURE_SWIPE_TO_DISMISSContent = SGetField<int>(LocalBridgeClazz, "FEATURE_SWIPE_TO_DISMISS"); _FEATURE_SWIPE_TO_DISMISSReady = true; } return _FEATURE_SWIPE_TO_DISMISSContent; } }
         private static int _FEATURE_SWIPE_TO_DISMISSContent = default;
         private static bool _FEATURE_SWIPE_TO_DISMISSReady = false; // this is used because in case of generics 
@@ -159,56 +159,56 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#PROGRESS_END"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PROGRESS_END { get { if (!_PROGRESS_ENDReady) { _PROGRESS_ENDContent = SGetField<int>(LocalBridgeClazz, "PROGRESS_END"); _PROGRESS_ENDReady = true; } return _PROGRESS_ENDContent; } }
         private static int _PROGRESS_ENDContent = default;
         private static bool _PROGRESS_ENDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#PROGRESS_INDETERMINATE_OFF"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PROGRESS_INDETERMINATE_OFF { get { if (!_PROGRESS_INDETERMINATE_OFFReady) { _PROGRESS_INDETERMINATE_OFFContent = SGetField<int>(LocalBridgeClazz, "PROGRESS_INDETERMINATE_OFF"); _PROGRESS_INDETERMINATE_OFFReady = true; } return _PROGRESS_INDETERMINATE_OFFContent; } }
         private static int _PROGRESS_INDETERMINATE_OFFContent = default;
         private static bool _PROGRESS_INDETERMINATE_OFFReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#PROGRESS_INDETERMINATE_ON"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PROGRESS_INDETERMINATE_ON { get { if (!_PROGRESS_INDETERMINATE_ONReady) { _PROGRESS_INDETERMINATE_ONContent = SGetField<int>(LocalBridgeClazz, "PROGRESS_INDETERMINATE_ON"); _PROGRESS_INDETERMINATE_ONReady = true; } return _PROGRESS_INDETERMINATE_ONContent; } }
         private static int _PROGRESS_INDETERMINATE_ONContent = default;
         private static bool _PROGRESS_INDETERMINATE_ONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#PROGRESS_SECONDARY_END"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PROGRESS_SECONDARY_END { get { if (!_PROGRESS_SECONDARY_ENDReady) { _PROGRESS_SECONDARY_ENDContent = SGetField<int>(LocalBridgeClazz, "PROGRESS_SECONDARY_END"); _PROGRESS_SECONDARY_ENDReady = true; } return _PROGRESS_SECONDARY_ENDContent; } }
         private static int _PROGRESS_SECONDARY_ENDContent = default;
         private static bool _PROGRESS_SECONDARY_ENDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#PROGRESS_SECONDARY_START"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PROGRESS_SECONDARY_START { get { if (!_PROGRESS_SECONDARY_STARTReady) { _PROGRESS_SECONDARY_STARTContent = SGetField<int>(LocalBridgeClazz, "PROGRESS_SECONDARY_START"); _PROGRESS_SECONDARY_STARTReady = true; } return _PROGRESS_SECONDARY_STARTContent; } }
         private static int _PROGRESS_SECONDARY_STARTContent = default;
         private static bool _PROGRESS_SECONDARY_STARTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#PROGRESS_START"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PROGRESS_START { get { if (!_PROGRESS_STARTReady) { _PROGRESS_STARTContent = SGetField<int>(LocalBridgeClazz, "PROGRESS_START"); _PROGRESS_STARTReady = true; } return _PROGRESS_STARTContent; } }
         private static int _PROGRESS_STARTContent = default;
         private static bool _PROGRESS_STARTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#PROGRESS_VISIBILITY_OFF"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PROGRESS_VISIBILITY_OFF { get { if (!_PROGRESS_VISIBILITY_OFFReady) { _PROGRESS_VISIBILITY_OFFContent = SGetField<int>(LocalBridgeClazz, "PROGRESS_VISIBILITY_OFF"); _PROGRESS_VISIBILITY_OFFReady = true; } return _PROGRESS_VISIBILITY_OFFContent; } }
         private static int _PROGRESS_VISIBILITY_OFFContent = default;
         private static bool _PROGRESS_VISIBILITY_OFFReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#PROGRESS_VISIBILITY_ON"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PROGRESS_VISIBILITY_ON { get { if (!_PROGRESS_VISIBILITY_ONReady) { _PROGRESS_VISIBILITY_ONContent = SGetField<int>(LocalBridgeClazz, "PROGRESS_VISIBILITY_ON"); _PROGRESS_VISIBILITY_ONReady = true; } return _PROGRESS_VISIBILITY_ONContent; } }
         private static int _PROGRESS_VISIBILITY_ONContent = default;
         private static bool _PROGRESS_VISIBILITY_ONReady = false; // this is used because in case of generics 
@@ -242,245 +242,14 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getAllowEnterTransitionOverlap()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setAllowEnterTransitionOverlap(boolean)"/>
-        /// </summary>
-        public bool AllowEnterTransitionOverlap
-        {
-            get { return IExecuteWithSignature<bool>("getAllowEnterTransitionOverlap", "()Z"); } set { IExecuteWithSignature("setAllowEnterTransitionOverlap", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getAllowReturnTransitionOverlap()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setAllowReturnTransitionOverlap(boolean)"/>
-        /// </summary>
-        public bool AllowReturnTransitionOverlap
-        {
-            get { return IExecuteWithSignature<bool>("getAllowReturnTransitionOverlap", "()Z"); } set { IExecuteWithSignature("setAllowReturnTransitionOverlap", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getAttributes()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setAttributes(android.view.WindowManager.LayoutParams)"/>
-        /// </summary>
-        public Android.View.WindowManager.LayoutParams Attributes
-        {
-            get { return IExecuteWithSignature<Android.View.WindowManager.LayoutParams>("getAttributes", "()Landroid/view/WindowManager$LayoutParams;"); } set { IExecuteWithSignature("setAttributes", "(Landroid/view/WindowManager$LayoutParams;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getColorMode()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setColorMode(int)"/>
-        /// </summary>
-        public int ColorMode
-        {
-            get { return IExecuteWithSignature<int>("getColorMode", "()I"); } set { IExecuteWithSignature("setColorMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getContainer()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setContainer(android.view.Window)"/>
-        /// </summary>
-        public Android.View.Window Container
-        {
-            get { return IExecuteWithSignature<Android.View.Window>("getContainer", "()Landroid/view/Window;"); } set { IExecuteWithSignature("setContainer", "(Landroid/view/Window;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getContentScene()"/> 
-        /// </summary>
-        public Android.Transition.Scene ContentScene
-        {
-            get { return IExecuteWithSignature<Android.Transition.Scene>("getContentScene", "()Landroid/transition/Scene;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getContext()"/> 
-        /// </summary>
-        public Android.Content.Context Context
-        {
-            get { return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getCurrentFocus()"/> 
-        /// </summary>
-        public Android.View.View CurrentFocus
-        {
-            get { return IExecuteWithSignature<Android.View.View>("getCurrentFocus", "()Landroid/view/View;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getDecorView()"/> 
-        /// </summary>
-        public Android.View.View DecorView
-        {
-            get { return IExecuteWithSignature<Android.View.View>("getDecorView", "()Landroid/view/View;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getEnterTransition()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setEnterTransition(android.transition.Transition)"/>
-        /// </summary>
-        public Android.Transition.Transition EnterTransition
-        {
-            get { return IExecuteWithSignature<Android.Transition.Transition>("getEnterTransition", "()Landroid/transition/Transition;"); } set { IExecuteWithSignature("setEnterTransition", "(Landroid/transition/Transition;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getExitTransition()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setExitTransition(android.transition.Transition)"/>
-        /// </summary>
-        public Android.Transition.Transition ExitTransition
-        {
-            get { return IExecuteWithSignature<Android.Transition.Transition>("getExitTransition", "()Landroid/transition/Transition;"); } set { IExecuteWithSignature("setExitTransition", "(Landroid/transition/Transition;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getCallback()"/> 
-        /// </summary>
-        public Android.View.Window.Callback GetCallback
-        {
-            get { return IExecuteWithSignature<Android.View.Window.Callback>("getCallback", "()Landroid/view/Window$Callback;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getInsetsController()"/> 
-        /// </summary>
-        public Android.View.WindowInsetsController InsetsController
-        {
-            get { return IExecuteWithSignature<Android.View.WindowInsetsController>("getInsetsController", "()Landroid/view/WindowInsetsController;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getLayoutInflater()"/> 
-        /// </summary>
-        public Android.View.LayoutInflater LayoutInflater
-        {
-            get { return IExecuteWithSignature<Android.View.LayoutInflater>("getLayoutInflater", "()Landroid/view/LayoutInflater;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getMediaController()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setMediaController(android.media.session.MediaController)"/>
-        /// </summary>
-        public Android.Media.Session.MediaController MediaController
-        {
-            get { return IExecuteWithSignature<Android.Media.Session.MediaController>("getMediaController", "()Landroid/media/session/MediaController;"); } set { IExecuteWithSignature("setMediaController", "(Landroid/media/session/MediaController;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getNavigationBarColor()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setNavigationBarColor(int)"/>
-        /// </summary>
-        public int NavigationBarColor
-        {
-            get { return IExecuteWithSignature<int>("getNavigationBarColor", "()I"); } set { IExecuteWithSignature("setNavigationBarColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getNavigationBarDividerColor()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setNavigationBarDividerColor(int)"/>
-        /// </summary>
-        public int NavigationBarDividerColor
-        {
-            get { return IExecuteWithSignature<int>("getNavigationBarDividerColor", "()I"); } set { IExecuteWithSignature("setNavigationBarDividerColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getOnBackInvokedDispatcher()"/> 
-        /// </summary>
-        public Android.Window.OnBackInvokedDispatcher OnBackInvokedDispatcher
-        {
-            get { return IExecuteWithSignature<Android.Window.OnBackInvokedDispatcher>("getOnBackInvokedDispatcher", "()Landroid/window/OnBackInvokedDispatcher;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getReenterTransition()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setReenterTransition(android.transition.Transition)"/>
-        /// </summary>
-        public Android.Transition.Transition ReenterTransition
-        {
-            get { return IExecuteWithSignature<Android.Transition.Transition>("getReenterTransition", "()Landroid/transition/Transition;"); } set { IExecuteWithSignature("setReenterTransition", "(Landroid/transition/Transition;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getReturnTransition()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setReturnTransition(android.transition.Transition)"/>
-        /// </summary>
-        public Android.Transition.Transition ReturnTransition
-        {
-            get { return IExecuteWithSignature<Android.Transition.Transition>("getReturnTransition", "()Landroid/transition/Transition;"); } set { IExecuteWithSignature("setReturnTransition", "(Landroid/transition/Transition;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getRootSurfaceControl()"/> 
-        /// </summary>
-        public Android.View.AttachedSurfaceControl RootSurfaceControl
-        {
-            get { return IExecuteWithSignature<Android.View.AttachedSurfaceControl>("getRootSurfaceControl", "()Landroid/view/AttachedSurfaceControl;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getSharedElementEnterTransition()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setSharedElementEnterTransition(android.transition.Transition)"/>
-        /// </summary>
-        public Android.Transition.Transition SharedElementEnterTransition
-        {
-            get { return IExecuteWithSignature<Android.Transition.Transition>("getSharedElementEnterTransition", "()Landroid/transition/Transition;"); } set { IExecuteWithSignature("setSharedElementEnterTransition", "(Landroid/transition/Transition;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getSharedElementExitTransition()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setSharedElementExitTransition(android.transition.Transition)"/>
-        /// </summary>
-        public Android.Transition.Transition SharedElementExitTransition
-        {
-            get { return IExecuteWithSignature<Android.Transition.Transition>("getSharedElementExitTransition", "()Landroid/transition/Transition;"); } set { IExecuteWithSignature("setSharedElementExitTransition", "(Landroid/transition/Transition;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getSharedElementReenterTransition()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setSharedElementReenterTransition(android.transition.Transition)"/>
-        /// </summary>
-        public Android.Transition.Transition SharedElementReenterTransition
-        {
-            get { return IExecuteWithSignature<Android.Transition.Transition>("getSharedElementReenterTransition", "()Landroid/transition/Transition;"); } set { IExecuteWithSignature("setSharedElementReenterTransition", "(Landroid/transition/Transition;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getSharedElementReturnTransition()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setSharedElementReturnTransition(android.transition.Transition)"/>
-        /// </summary>
-        public Android.Transition.Transition SharedElementReturnTransition
-        {
-            get { return IExecuteWithSignature<Android.Transition.Transition>("getSharedElementReturnTransition", "()Landroid/transition/Transition;"); } set { IExecuteWithSignature("setSharedElementReturnTransition", "(Landroid/transition/Transition;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getSharedElementsUseOverlay()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setSharedElementsUseOverlay(boolean)"/>
-        /// </summary>
-        public bool SharedElementsUseOverlay
-        {
-            get { return IExecuteWithSignature<bool>("getSharedElementsUseOverlay", "()Z"); } set { IExecuteWithSignature("setSharedElementsUseOverlay", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getStatusBarColor()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setStatusBarColor(int)"/>
-        /// </summary>
-        public int StatusBarColor
-        {
-            get { return IExecuteWithSignature<int>("getStatusBarColor", "()I"); } set { IExecuteWithSignature("setStatusBarColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getSystemGestureExclusionRects()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setSystemGestureExclusionRects(java.util.List)"/>
-        /// </summary>
-        public Java.Util.List<Android.Graphics.Rect> SystemGestureExclusionRects
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Graphics.Rect>>("getSystemGestureExclusionRects", "()Ljava/util/List;"); } set { IExecuteWithSignature("setSystemGestureExclusionRects", "(Ljava/util/List;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getTransitionBackgroundFadeDuration()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setTransitionBackgroundFadeDuration(long)"/>
-        /// </summary>
-        public long TransitionBackgroundFadeDuration
-        {
-            get { return IExecuteWithSignature<long>("getTransitionBackgroundFadeDuration", "()J"); } set { IExecuteWithSignature("setTransitionBackgroundFadeDuration", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getTransitionManager()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setTransitionManager(android.transition.TransitionManager)"/>
-        /// </summary>
-        public Android.Transition.TransitionManager TransitionManager
-        {
-            get { return IExecuteWithSignature<Android.Transition.TransitionManager>("getTransitionManager", "()Landroid/transition/TransitionManager;"); } set { IExecuteWithSignature("setTransitionManager", "(Landroid/transition/TransitionManager;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getVolumeControlStream()"/> <see href="https://developer.android.com/reference/android/view/Window.html#setVolumeControlStream(int)"/>
-        /// </summary>
-        public int VolumeControlStream
-        {
-            get { return IExecuteWithSignature<int>("getVolumeControlStream", "()I"); } set { IExecuteWithSignature("setVolumeControlStream", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getWindowManager()"/> 
-        /// </summary>
-        public Android.View.WindowManager WindowManager
-        {
-            get { return IExecuteWithSignature<Android.View.WindowManager>("getWindowManager", "()Landroid/view/WindowManager;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Window.html#getWindowStyle()"/> 
-        /// </summary>
-        public Android.Content.Res.TypedArray WindowStyle
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.TypedArray>("getWindowStyle", "()Landroid/content/res/TypedArray;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#findViewById(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <typeparam name="T"><see cref="Android.View.View"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T FindViewById<T>(int arg0) where T: Android.View.View
+        public T FindViewById<T>(int arg0) where T : Android.View.View
         {
-            return IExecuteWithSignature<T>("findViewById", "(I)Landroid/view/View;", arg0);
+            return IExecute<T>("findViewById", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#saveHierarchyState()"/>
@@ -489,6 +258,30 @@ namespace Android.View
         public Android.Os.Bundle SaveHierarchyState()
         {
             return IExecuteWithSignature<Android.Os.Bundle>("saveHierarchyState", "()Landroid/os/Bundle;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getLayoutInflater()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.LayoutInflater"/></returns>
+        public Android.View.LayoutInflater GetLayoutInflater()
+        {
+            return IExecuteWithSignature<Android.View.LayoutInflater>("getLayoutInflater", "()Landroid/view/LayoutInflater;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getCurrentFocus()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetCurrentFocus()
+        {
+            return IExecuteWithSignature<Android.View.View>("getCurrentFocus", "()Landroid/view/View;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getDecorView()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetDecorView()
+        {
+            return IExecuteWithSignature<Android.View.View>("getDecorView", "()Landroid/view/View;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#peekDecorView()"/>
@@ -593,6 +386,30 @@ namespace Android.View
         public bool SuperDispatchTrackballEvent(Android.View.MotionEvent arg0)
         {
             return IExecuteWithSignature<bool>("superDispatchTrackballEvent", "(Landroid/view/MotionEvent;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getNavigationBarColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNavigationBarColor()
+        {
+            return IExecuteWithSignature<int>("getNavigationBarColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getStatusBarColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStatusBarColor()
+        {
+            return IExecuteWithSignature<int>("getStatusBarColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getVolumeControlStream()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVolumeControlStream()
+        {
+            return IExecuteWithSignature<int>("getVolumeControlStream", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#addContentView(android.view.View,android.view.ViewGroup.LayoutParams)"/>
@@ -756,12 +573,28 @@ namespace Android.View
             IExecute("setFeatureInt", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setNavigationBarColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetNavigationBarColor(int arg0)
+        {
+            IExecuteWithSignature("setNavigationBarColor", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setResizingCaptionDrawable(android.graphics.drawable.Drawable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
         public void SetResizingCaptionDrawable(Android.Graphics.Drawable.Drawable arg0)
         {
             IExecuteWithSignature("setResizingCaptionDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setStatusBarColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetStatusBarColor(int arg0)
+        {
+            IExecuteWithSignature("setStatusBarColor", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setTitle(java.lang.CharSequence)"/>
@@ -775,10 +608,18 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setTitleColor(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetTitleColor(int arg0)
         {
             IExecuteWithSignature("setTitleColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setVolumeControlStream(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetVolumeControlStream(int arg0)
+        {
+            IExecuteWithSignature("setVolumeControlStream", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#takeInputQueue(android.view.InputQueue.Callback)"/>
@@ -812,6 +653,150 @@ namespace Android.View
         public void TogglePanel(int arg0, Android.View.KeyEvent arg1)
         {
             IExecute("togglePanel", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getMediaController()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.Session.MediaController"/></returns>
+        public Android.Media.Session.MediaController GetMediaController()
+        {
+            return IExecuteWithSignature<Android.Media.Session.MediaController>("getMediaController", "()Landroid/media/session/MediaController;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getContentScene()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.Scene"/></returns>
+        public Android.Transition.Scene GetContentScene()
+        {
+            return IExecuteWithSignature<Android.Transition.Scene>("getContentScene", "()Landroid/transition/Scene;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getEnterTransition()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.Transition"/></returns>
+        public Android.Transition.Transition GetEnterTransition()
+        {
+            return IExecuteWithSignature<Android.Transition.Transition>("getEnterTransition", "()Landroid/transition/Transition;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getExitTransition()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.Transition"/></returns>
+        public Android.Transition.Transition GetExitTransition()
+        {
+            return IExecuteWithSignature<Android.Transition.Transition>("getExitTransition", "()Landroid/transition/Transition;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getReenterTransition()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.Transition"/></returns>
+        public Android.Transition.Transition GetReenterTransition()
+        {
+            return IExecuteWithSignature<Android.Transition.Transition>("getReenterTransition", "()Landroid/transition/Transition;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getReturnTransition()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.Transition"/></returns>
+        public Android.Transition.Transition GetReturnTransition()
+        {
+            return IExecuteWithSignature<Android.Transition.Transition>("getReturnTransition", "()Landroid/transition/Transition;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getSharedElementEnterTransition()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.Transition"/></returns>
+        public Android.Transition.Transition GetSharedElementEnterTransition()
+        {
+            return IExecuteWithSignature<Android.Transition.Transition>("getSharedElementEnterTransition", "()Landroid/transition/Transition;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getSharedElementExitTransition()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.Transition"/></returns>
+        public Android.Transition.Transition GetSharedElementExitTransition()
+        {
+            return IExecuteWithSignature<Android.Transition.Transition>("getSharedElementExitTransition", "()Landroid/transition/Transition;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getSharedElementReenterTransition()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.Transition"/></returns>
+        public Android.Transition.Transition GetSharedElementReenterTransition()
+        {
+            return IExecuteWithSignature<Android.Transition.Transition>("getSharedElementReenterTransition", "()Landroid/transition/Transition;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getSharedElementReturnTransition()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.Transition"/></returns>
+        public Android.Transition.Transition GetSharedElementReturnTransition()
+        {
+            return IExecuteWithSignature<Android.Transition.Transition>("getSharedElementReturnTransition", "()Landroid/transition/Transition;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getTransitionManager()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.TransitionManager"/></returns>
+        public Android.Transition.TransitionManager GetTransitionManager()
+        {
+            return IExecuteWithSignature<Android.Transition.TransitionManager>("getTransitionManager", "()Landroid/transition/TransitionManager;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getRootSurfaceControl()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.AttachedSurfaceControl"/></returns>
+        public Android.View.AttachedSurfaceControl GetRootSurfaceControl()
+        {
+            return IExecuteWithSignature<Android.View.AttachedSurfaceControl>("getRootSurfaceControl", "()Landroid/view/AttachedSurfaceControl;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getInsetsController()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.WindowInsetsController"/></returns>
+        public Android.View.WindowInsetsController GetInsetsController()
+        {
+            return IExecuteWithSignature<Android.View.WindowInsetsController>("getInsetsController", "()Landroid/view/WindowInsetsController;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getWindowManager()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.WindowManager"/></returns>
+        public Android.View.WindowManager GetWindowManager()
+        {
+            return IExecuteWithSignature<Android.View.WindowManager>("getWindowManager", "()Landroid/view/WindowManager;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getOnBackInvokedDispatcher()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Window.OnBackInvokedDispatcher"/></returns>
+        public Android.Window.OnBackInvokedDispatcher GetOnBackInvokedDispatcher()
+        {
+            return IExecuteWithSignature<Android.Window.OnBackInvokedDispatcher>("getOnBackInvokedDispatcher", "()Landroid/window/OnBackInvokedDispatcher;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getAllowEnterTransitionOverlap()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetAllowEnterTransitionOverlap()
+        {
+            return IExecuteWithSignature<bool>("getAllowEnterTransitionOverlap", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getAllowReturnTransitionOverlap()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetAllowReturnTransitionOverlap()
+        {
+            return IExecuteWithSignature<bool>("getAllowReturnTransitionOverlap", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getSharedElementsUseOverlay()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetSharedElementsUseOverlay()
+        {
+            return IExecuteWithSignature<bool>("getSharedElementsUseOverlay", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#hasFeature(int)"/>
@@ -861,9 +846,49 @@ namespace Android.View
         /// <param name="arg0"><see cref="int"/></param>
         /// <typeparam name="T"><see cref="Android.View.View"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T RequireViewById<T>(int arg0) where T: Android.View.View
+        public T RequireViewById<T>(int arg0) where T : Android.View.View
         {
-            return IExecuteWithSignature<T>("requireViewById", "(I)Landroid/view/View;", arg0);
+            return IExecute<T>("requireViewById", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getContext()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        public Android.Content.Context GetContext()
+        {
+            return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getWindowStyle()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Res.TypedArray"/></returns>
+        public Android.Content.Res.TypedArray GetWindowStyle()
+        {
+            return IExecuteWithSignature<Android.Content.Res.TypedArray>("getWindowStyle", "()Landroid/content/res/TypedArray;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getContainer()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Window"/></returns>
+        public Android.View.Window GetContainer()
+        {
+            return IExecuteWithSignature<Android.View.Window>("getContainer", "()Landroid/view/Window;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getCallback()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Window.Callback"/></returns>
+        public Android.View.Window.Callback GetCallback()
+        {
+            return IExecuteWithSignature<Android.View.Window.Callback>("getCallback", "()Landroid/view/Window$Callback;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getAttributes()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.WindowManager.LayoutParams"/></returns>
+        public Android.View.WindowManager.LayoutParams GetAttributes()
+        {
+            return IExecuteWithSignature<Android.View.WindowManager.LayoutParams>("getAttributes", "()Landroid/view/WindowManager$LayoutParams;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#hasChildren()"/>
@@ -922,6 +947,38 @@ namespace Android.View
             IExecuteWithSignature("setRestrictedCaptionAreaListener", "(Landroid/view/Window$OnRestrictedCaptionAreaChangedListener;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getColorMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetColorMode()
+        {
+            return IExecuteWithSignature<int>("getColorMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getNavigationBarDividerColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNavigationBarDividerColor()
+        {
+            return IExecuteWithSignature<int>("getNavigationBarDividerColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getSystemGestureExclusionRects()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Graphics.Rect> GetSystemGestureExclusionRects()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Graphics.Rect>>("getSystemGestureExclusionRects", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#getTransitionBackgroundFadeDuration()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTransitionBackgroundFadeDuration()
+        {
+            return IExecuteWithSignature<long>("getTransitionBackgroundFadeDuration", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#addFlags(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -952,6 +1009,30 @@ namespace Android.View
         public void RegisterScrollCaptureCallback(Android.View.ScrollCaptureCallback arg0)
         {
             IExecuteWithSignature("registerScrollCaptureCallback", "(Landroid/view/ScrollCaptureCallback;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setAllowEnterTransitionOverlap(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetAllowEnterTransitionOverlap(bool arg0)
+        {
+            IExecuteWithSignature("setAllowEnterTransitionOverlap", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setAllowReturnTransitionOverlap(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetAllowReturnTransitionOverlap(bool arg0)
+        {
+            IExecuteWithSignature("setAllowReturnTransitionOverlap", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setAttributes(android.view.WindowManager.LayoutParams)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.WindowManager.LayoutParams"/></param>
+        public void SetAttributes(Android.View.WindowManager.LayoutParams arg0)
+        {
+            IExecuteWithSignature("setAttributes", "(Landroid/view/WindowManager$LayoutParams;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setBackgroundBlurRadius(int)"/>
@@ -986,6 +1067,22 @@ namespace Android.View
             IExecuteWithSignature("setClipToOutline", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setColorMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetColorMode(int arg0)
+        {
+            IExecuteWithSignature("setColorMode", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setContainer(android.view.Window)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Window"/></param>
+        public void SetContainer(Android.View.Window arg0)
+        {
+            IExecuteWithSignature("setContainer", "(Landroid/view/Window;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setDecorFitsSystemWindows(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -1008,6 +1105,22 @@ namespace Android.View
         public void SetElevation(float arg0)
         {
             IExecuteWithSignature("setElevation", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setEnterTransition(android.transition.Transition)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.Transition"/></param>
+        public void SetEnterTransition(Android.Transition.Transition arg0)
+        {
+            IExecuteWithSignature("setEnterTransition", "(Landroid/transition/Transition;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setExitTransition(android.transition.Transition)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.Transition"/></param>
+        public void SetExitTransition(Android.Transition.Transition arg0)
+        {
+            IExecuteWithSignature("setExitTransition", "(Landroid/transition/Transition;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setFlags(int,int)"/>
@@ -1069,6 +1182,14 @@ namespace Android.View
             IExecuteWithSignature("setLogo", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setMediaController(android.media.session.MediaController)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.Session.MediaController"/></param>
+        public void SetMediaController(Android.Media.Session.MediaController arg0)
+        {
+            IExecuteWithSignature("setMediaController", "(Landroid/media/session/MediaController;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setNavigationBarContrastEnforced(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -1077,12 +1198,76 @@ namespace Android.View
             IExecuteWithSignature("setNavigationBarContrastEnforced", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setNavigationBarDividerColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetNavigationBarDividerColor(int arg0)
+        {
+            IExecuteWithSignature("setNavigationBarDividerColor", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setPreferMinimalPostProcessing(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetPreferMinimalPostProcessing(bool arg0)
         {
             IExecuteWithSignature("setPreferMinimalPostProcessing", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setReenterTransition(android.transition.Transition)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.Transition"/></param>
+        public void SetReenterTransition(Android.Transition.Transition arg0)
+        {
+            IExecuteWithSignature("setReenterTransition", "(Landroid/transition/Transition;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setReturnTransition(android.transition.Transition)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.Transition"/></param>
+        public void SetReturnTransition(Android.Transition.Transition arg0)
+        {
+            IExecuteWithSignature("setReturnTransition", "(Landroid/transition/Transition;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setSharedElementEnterTransition(android.transition.Transition)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.Transition"/></param>
+        public void SetSharedElementEnterTransition(Android.Transition.Transition arg0)
+        {
+            IExecuteWithSignature("setSharedElementEnterTransition", "(Landroid/transition/Transition;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setSharedElementExitTransition(android.transition.Transition)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.Transition"/></param>
+        public void SetSharedElementExitTransition(Android.Transition.Transition arg0)
+        {
+            IExecuteWithSignature("setSharedElementExitTransition", "(Landroid/transition/Transition;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setSharedElementReenterTransition(android.transition.Transition)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.Transition"/></param>
+        public void SetSharedElementReenterTransition(Android.Transition.Transition arg0)
+        {
+            IExecuteWithSignature("setSharedElementReenterTransition", "(Landroid/transition/Transition;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setSharedElementReturnTransition(android.transition.Transition)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.Transition"/></param>
+        public void SetSharedElementReturnTransition(Android.Transition.Transition arg0)
+        {
+            IExecuteWithSignature("setSharedElementReturnTransition", "(Landroid/transition/Transition;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setSharedElementsUseOverlay(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetSharedElementsUseOverlay(bool arg0)
+        {
+            IExecuteWithSignature("setSharedElementsUseOverlay", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setSoftInputMode(int)"/>
@@ -1107,6 +1292,30 @@ namespace Android.View
         public void SetSustainedPerformanceMode(bool arg0)
         {
             IExecuteWithSignature("setSustainedPerformanceMode", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setSystemGestureExclusionRects(java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public void SetSystemGestureExclusionRects(Java.Util.List<Android.Graphics.Rect> arg0)
+        {
+            IExecuteWithSignature("setSystemGestureExclusionRects", "(Ljava/util/List;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setTransitionBackgroundFadeDuration(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetTransitionBackgroundFadeDuration(long arg0)
+        {
+            IExecuteWithSignature("setTransitionBackgroundFadeDuration", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/Window.html#setTransitionManager(android.transition.TransitionManager)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.TransitionManager"/></param>
+        public void SetTransitionManager(Android.Transition.TransitionManager arg0)
+        {
+            IExecuteWithSignature("setTransitionManager", "(Landroid/transition/TransitionManager;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#setType(int)"/>
@@ -1450,7 +1659,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onFrameMetricsAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.Window>>>(OnFrameMetricsAvailableEventHandler));
+                AddEventHandler("onFrameMetricsAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.Window>>>(OnFrameMetricsAvailableEventHandler));
 
             }
 
@@ -1458,7 +1667,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/Window.OnFrameMetricsAvailableListener.html#onFrameMetricsAvailable(android.view.Window,android.view.FrameMetrics,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFrameMetricsAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.Window, Android.View.FrameMetrics, int> OnOnFrameMetricsAvailable { get; set; } = null;
+            public global::System.Action<Android.View.Window, Android.View.FrameMetrics, int> OnOnFrameMetricsAvailable { get; set; } = null;
 
             void OnFrameMetricsAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.Window>> data)
             {
@@ -1553,7 +1762,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onRestrictedCaptionAreaChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Graphics.Rect>>>(OnRestrictedCaptionAreaChangedEventHandler));
+                AddEventHandler("onRestrictedCaptionAreaChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Graphics.Rect>>>(OnRestrictedCaptionAreaChangedEventHandler));
 
             }
 
@@ -1561,7 +1770,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/Window.OnRestrictedCaptionAreaChangedListener.html#onRestrictedCaptionAreaChanged(android.graphics.Rect)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnRestrictedCaptionAreaChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Graphics.Rect> OnOnRestrictedCaptionAreaChanged { get; set; } = null;
+            public global::System.Action<Android.Graphics.Rect> OnOnRestrictedCaptionAreaChanged { get; set; } = null;
 
             void OnRestrictedCaptionAreaChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Graphics.Rect>> data)
             {

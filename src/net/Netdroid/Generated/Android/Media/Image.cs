@@ -46,67 +46,44 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Image.html#getCropRect()"/> <see href="https://developer.android.com/reference/android/media/Image.html#setCropRect(android.graphics.Rect)"/>
+        /// <see href="https://developer.android.com/reference/android/media/Image.html#getPlanes()"/>
         /// </summary>
-        public Android.Graphics.Rect CropRect
+        /// <returns><see cref="Android.Media.Image.Plane"/></returns>
+        public Android.Media.Image.Plane[] GetPlanes()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getCropRect", "()Landroid/graphics/Rect;"); } set { IExecuteWithSignature("setCropRect", "(Landroid/graphics/Rect;)V", value); }
+            return IExecuteWithSignatureArray<Android.Media.Image.Plane>("getPlanes", "()[Landroid/media/Image$Plane;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Image.html#getDataSpace()"/> <see href="https://developer.android.com/reference/android/media/Image.html#setDataSpace(int)"/>
+        /// <see href="https://developer.android.com/reference/android/media/Image.html#getFormat()"/>
         /// </summary>
-        public int DataSpace
+        /// <returns><see cref="int"/></returns>
+        public int GetFormat()
         {
-            get { return IExecuteWithSignature<int>("getDataSpace", "()I"); } set { IExecuteWithSignature("setDataSpace", "(I)V", value); }
+            return IExecuteWithSignature<int>("getFormat", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Image.html#getFence()"/> <see href="https://developer.android.com/reference/android/media/Image.html#setFence(android.hardware.SyncFence)"/>
+        /// <see href="https://developer.android.com/reference/android/media/Image.html#getHeight()"/>
         /// </summary>
-        public Android.Hardware.SyncFence Fence
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
         {
-            get { return IExecuteWithSignature<Android.Hardware.SyncFence>("getFence", "()Landroid/hardware/SyncFence;"); } set { IExecuteWithSignature("setFence", "(Landroid/hardware/SyncFence;)V", value); }
+            return IExecuteWithSignature<int>("getHeight", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Image.html#getFormat()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/Image.html#getWidth()"/>
         /// </summary>
-        public int Format
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
         {
-            get { return IExecuteWithSignature<int>("getFormat", "()I"); }
+            return IExecuteWithSignature<int>("getWidth", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Image.html#getHardwareBuffer()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/Image.html#getTimestamp()"/>
         /// </summary>
-        public Android.Hardware.HardwareBuffer HardwareBuffer
+        /// <returns><see cref="long"/></returns>
+        public long GetTimestamp()
         {
-            get { return IExecuteWithSignature<Android.Hardware.HardwareBuffer>("getHardwareBuffer", "()Landroid/hardware/HardwareBuffer;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Image.html#getHeight()"/> 
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Image.html#getPlanes()"/> 
-        /// </summary>
-        public Android.Media.Image.Plane[] Planes
-        {
-            get { return IExecuteWithSignatureArray<Android.Media.Image.Plane>("getPlanes", "()[Landroid/media/Image$Plane;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Image.html#getTimestamp()"/> <see href="https://developer.android.com/reference/android/media/Image.html#setTimestamp(long)"/>
-        /// </summary>
-        public long Timestamp
-        {
-            get { return IExecuteWithSignature<long>("getTimestamp", "()J"); } set { IExecuteWithSignature("setTimestamp", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Image.html#getWidth()"/> 
-        /// </summary>
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+            return IExecuteWithSignature<long>("getTimestamp", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Image.html#close()"/>
@@ -114,6 +91,72 @@ namespace Android.Media
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Image.html#getCropRect()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetCropRect()
+        {
+            return IExecuteWithSignature<Android.Graphics.Rect>("getCropRect", "()Landroid/graphics/Rect;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Image.html#getHardwareBuffer()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Hardware.HardwareBuffer"/></returns>
+        public Android.Hardware.HardwareBuffer GetHardwareBuffer()
+        {
+            return IExecuteWithSignature<Android.Hardware.HardwareBuffer>("getHardwareBuffer", "()Landroid/hardware/HardwareBuffer;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Image.html#getFence()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Hardware.SyncFence"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Android.Hardware.SyncFence GetFence()
+        {
+            return IExecuteWithSignature<Android.Hardware.SyncFence>("getFence", "()Landroid/hardware/SyncFence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Image.html#getDataSpace()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDataSpace()
+        {
+            return IExecuteWithSignature<int>("getDataSpace", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Image.html#setCropRect(android.graphics.Rect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+        public void SetCropRect(Android.Graphics.Rect arg0)
+        {
+            IExecuteWithSignature("setCropRect", "(Landroid/graphics/Rect;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Image.html#setDataSpace(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDataSpace(int arg0)
+        {
+            IExecuteWithSignature("setDataSpace", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Image.html#setFence(android.hardware.SyncFence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Hardware.SyncFence"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void SetFence(Android.Hardware.SyncFence arg0)
+        {
+            IExecuteWithSignature("setFence", "(Landroid/hardware/SyncFence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Image.html#setTimestamp(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetTimestamp(long arg0)
+        {
+            IExecuteWithSignature("setTimestamp", "(J)V", arg0);
         }
 
         #endregion
@@ -140,25 +183,28 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/Image.Plane.html#getBuffer()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/Image.Plane.html#getPixelStride()"/>
             /// </summary>
-            public Java.Nio.ByteBuffer Buffer
+            /// <returns><see cref="int"/></returns>
+            public int GetPixelStride()
             {
-                get { return IExecuteWithSignature<Java.Nio.ByteBuffer>("getBuffer", "()Ljava/nio/ByteBuffer;"); }
+                return IExecuteWithSignature<int>("getPixelStride", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/Image.Plane.html#getPixelStride()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/Image.Plane.html#getRowStride()"/>
             /// </summary>
-            public int PixelStride
+            /// <returns><see cref="int"/></returns>
+            public int GetRowStride()
             {
-                get { return IExecuteWithSignature<int>("getPixelStride", "()I"); }
+                return IExecuteWithSignature<int>("getRowStride", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/Image.Plane.html#getRowStride()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/Image.Plane.html#getBuffer()"/>
             /// </summary>
-            public int RowStride
+            /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
+            public Java.Nio.ByteBuffer GetBuffer()
             {
-                get { return IExecuteWithSignature<int>("getRowStride", "()I"); }
+                return IExecuteWithSignature<Java.Nio.ByteBuffer>("getBuffer", "()Ljava/nio/ByteBuffer;");
             }
 
             #endregion

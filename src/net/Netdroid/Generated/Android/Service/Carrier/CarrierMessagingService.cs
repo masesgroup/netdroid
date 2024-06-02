@@ -130,7 +130,7 @@ namespace Android.Service.Carrier
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Android.Service.Carrier.CarrierMessagingService.ResultCallback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnFilterSms(Android.Service.Carrier.MessagePdu arg0, Java.Lang.String arg1, int arg2, int arg3, Android.Service.Carrier.CarrierMessagingService.ResultCallback<Java.Lang.Boolean> arg4)
         {
             IExecute("onFilterSms", arg0, arg1, arg2, arg3, arg4);
@@ -155,7 +155,7 @@ namespace Android.Service.Carrier
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Android.Service.Carrier.CarrierMessagingService.ResultCallback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnSendDataSms(byte[] arg0, int arg1, Java.Lang.String arg2, int arg3, Android.Service.Carrier.CarrierMessagingService.ResultCallback<Android.Service.Carrier.CarrierMessagingService.SendSmsResult> arg4)
         {
             IExecute("onSendDataSms", arg0, arg1, arg2, arg3, arg4);
@@ -191,7 +191,7 @@ namespace Android.Service.Carrier
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="Android.Service.Carrier.CarrierMessagingService.ResultCallback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnSendMultipartTextSms(Java.Util.List<Java.Lang.String> arg0, int arg1, Java.Lang.String arg2, Android.Service.Carrier.CarrierMessagingService.ResultCallback<Android.Service.Carrier.CarrierMessagingService.SendMultipartSmsResult> arg3)
         {
             IExecute("onSendMultipartTextSms", arg0, arg1, arg2, arg3);
@@ -215,7 +215,7 @@ namespace Android.Service.Carrier
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="Android.Service.Carrier.CarrierMessagingService.ResultCallback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnSendTextSms(Java.Lang.String arg0, int arg1, Java.Lang.String arg2, Android.Service.Carrier.CarrierMessagingService.ResultCallback<Android.Service.Carrier.CarrierMessagingService.SendSmsResult> arg3)
         {
             IExecute("onSendTextSms", arg0, arg1, arg2, arg3);
@@ -350,18 +350,20 @@ namespace Android.Service.Carrier
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.SendMmsResult.html#getSendConfPdu()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.SendMmsResult.html#getSendConfPdu()"/>
             /// </summary>
-            public byte[] SendConfPdu
+            /// <returns><see cref="byte"/></returns>
+            public byte[] GetSendConfPdu()
             {
-                get { return IExecuteWithSignatureArray<byte>("getSendConfPdu", "()[B"); }
+                return IExecuteWithSignatureArray<byte>("getSendConfPdu", "()[B");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.SendMmsResult.html#getSendStatus()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.SendMmsResult.html#getSendStatus()"/>
             /// </summary>
-            public int SendStatus
+            /// <returns><see cref="int"/></returns>
+            public int GetSendStatus()
             {
-                get { return IExecuteWithSignature<int>("getSendStatus", "()I"); }
+                return IExecuteWithSignature<int>("getSendStatus", "()I");
             }
 
             #endregion
@@ -404,18 +406,20 @@ namespace Android.Service.Carrier
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.SendMultipartSmsResult.html#getMessageRefs()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.SendMultipartSmsResult.html#getSendStatus()"/>
             /// </summary>
-            public int[] MessageRefs
+            /// <returns><see cref="int"/></returns>
+            public int GetSendStatus()
             {
-                get { return IExecuteWithSignatureArray<int>("getMessageRefs", "()[I"); }
+                return IExecuteWithSignature<int>("getSendStatus", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.SendMultipartSmsResult.html#getSendStatus()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.SendMultipartSmsResult.html#getMessageRefs()"/>
             /// </summary>
-            public int SendStatus
+            /// <returns><see cref="int"/></returns>
+            public int[] GetMessageRefs()
             {
-                get { return IExecuteWithSignature<int>("getSendStatus", "()I"); }
+                return IExecuteWithSignatureArray<int>("getMessageRefs", "()[I");
             }
 
             #endregion
@@ -458,18 +462,20 @@ namespace Android.Service.Carrier
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.SendSmsResult.html#getMessageRef()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.SendSmsResult.html#getMessageRef()"/>
             /// </summary>
-            public int MessageRef
+            /// <returns><see cref="int"/></returns>
+            public int GetMessageRef()
             {
-                get { return IExecuteWithSignature<int>("getMessageRef", "()I"); }
+                return IExecuteWithSignature<int>("getMessageRef", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.SendSmsResult.html#getSendStatus()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierMessagingService.SendSmsResult.html#getSendStatus()"/>
             /// </summary>
-            public int SendStatus
+            /// <returns><see cref="int"/></returns>
+            public int GetSendStatus()
             {
-                get { return IExecuteWithSignature<int>("getSendStatus", "()I"); }
+                return IExecuteWithSignature<int>("getSendStatus", "()I");
             }
 
             #endregion

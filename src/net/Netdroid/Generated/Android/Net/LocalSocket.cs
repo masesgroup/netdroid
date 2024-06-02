@@ -72,74 +72,29 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getAncillaryFileDescriptors()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getPeerCredentials()"/>
         /// </summary>
-        public Java.Io.FileDescriptor[] AncillaryFileDescriptors
+        /// <returns><see cref="Android.Net.Credentials"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Android.Net.Credentials GetPeerCredentials()
         {
-            get { return IExecuteWithSignatureArray<Java.Io.FileDescriptor>("getAncillaryFileDescriptors", "()[Ljava/io/FileDescriptor;"); }
+            return IExecuteWithSignature<Android.Net.Credentials>("getPeerCredentials", "()Landroid/net/Credentials;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getFileDescriptor()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getLocalSocketAddress()"/>
         /// </summary>
-        public Java.Io.FileDescriptor FileDescriptor
+        /// <returns><see cref="Android.Net.LocalSocketAddress"/></returns>
+        public Android.Net.LocalSocketAddress GetLocalSocketAddress()
         {
-            get { return IExecuteWithSignature<Java.Io.FileDescriptor>("getFileDescriptor", "()Ljava/io/FileDescriptor;"); }
+            return IExecuteWithSignature<Android.Net.LocalSocketAddress>("getLocalSocketAddress", "()Landroid/net/LocalSocketAddress;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getInputStream()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getRemoteSocketAddress()"/>
         /// </summary>
-        public Java.Io.InputStream InputStream
+        /// <returns><see cref="Android.Net.LocalSocketAddress"/></returns>
+        public Android.Net.LocalSocketAddress GetRemoteSocketAddress()
         {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "()Ljava/io/InputStream;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getLocalSocketAddress()"/> 
-        /// </summary>
-        public Android.Net.LocalSocketAddress LocalSocketAddress
-        {
-            get { return IExecuteWithSignature<Android.Net.LocalSocketAddress>("getLocalSocketAddress", "()Landroid/net/LocalSocketAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getOutputStream()"/> 
-        /// </summary>
-        public Java.Io.OutputStream OutputStream
-        {
-            get { return IExecuteWithSignature<Java.Io.OutputStream>("getOutputStream", "()Ljava/io/OutputStream;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getPeerCredentials()"/> 
-        /// </summary>
-        public Android.Net.Credentials PeerCredentials
-        {
-            get { return IExecuteWithSignature<Android.Net.Credentials>("getPeerCredentials", "()Landroid/net/Credentials;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getReceiveBufferSize()"/> <see href="https://developer.android.com/reference/android/net/LocalSocket.html#setReceiveBufferSize(int)"/>
-        /// </summary>
-        public int ReceiveBufferSize
-        {
-            get { return IExecuteWithSignature<int>("getReceiveBufferSize", "()I"); } set { IExecuteWithSignature("setReceiveBufferSize", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getRemoteSocketAddress()"/> 
-        /// </summary>
-        public Android.Net.LocalSocketAddress RemoteSocketAddress
-        {
-            get { return IExecuteWithSignature<Android.Net.LocalSocketAddress>("getRemoteSocketAddress", "()Landroid/net/LocalSocketAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getSendBufferSize()"/> <see href="https://developer.android.com/reference/android/net/LocalSocket.html#setSendBufferSize(int)"/>
-        /// </summary>
-        public int SendBufferSize
-        {
-            get { return IExecuteWithSignature<int>("getSendBufferSize", "()I"); } set { IExecuteWithSignature("setSendBufferSize", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getSoTimeout()"/> <see href="https://developer.android.com/reference/android/net/LocalSocket.html#setSoTimeout(int)"/>
-        /// </summary>
-        public int SoTimeout
-        {
-            get { return IExecuteWithSignature<int>("getSoTimeout", "()I"); } set { IExecuteWithSignature("setSoTimeout", "(I)V", value); }
+            return IExecuteWithSignature<Android.Net.LocalSocketAddress>("getRemoteSocketAddress", "()Landroid/net/LocalSocketAddress;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#isClosed()"/>
@@ -164,6 +119,68 @@ namespace Android.Net
         public bool IsOutputShutdown()
         {
             return IExecuteWithSignature<bool>("isOutputShutdown", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getReceiveBufferSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public int GetReceiveBufferSize()
+        {
+            return IExecuteWithSignature<int>("getReceiveBufferSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getSendBufferSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public int GetSendBufferSize()
+        {
+            return IExecuteWithSignature<int>("getSendBufferSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getSoTimeout()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public int GetSoTimeout()
+        {
+            return IExecuteWithSignature<int>("getSoTimeout", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getFileDescriptor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.FileDescriptor"/></returns>
+        public Java.Io.FileDescriptor GetFileDescriptor()
+        {
+            return IExecuteWithSignature<Java.Io.FileDescriptor>("getFileDescriptor", "()Ljava/io/FileDescriptor;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getAncillaryFileDescriptors()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.FileDescriptor"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Io.FileDescriptor[] GetAncillaryFileDescriptors()
+        {
+            return IExecuteWithSignatureArray<Java.Io.FileDescriptor>("getAncillaryFileDescriptors", "()[Ljava/io/FileDescriptor;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getInputStream()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Io.InputStream GetInputStream()
+        {
+            return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "()Ljava/io/InputStream;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#getOutputStream()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Io.OutputStream GetOutputStream()
+        {
+            return IExecuteWithSignature<Java.Io.OutputStream>("getOutputStream", "()Ljava/io/OutputStream;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#isBound()"/>
@@ -224,6 +241,33 @@ namespace Android.Net
         public void SetFileDescriptorsForSend(Java.Io.FileDescriptor[] arg0)
         {
             IExecuteWithSignature("setFileDescriptorsForSend", "([Ljava/io/FileDescriptor;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#setReceiveBufferSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void SetReceiveBufferSize(int arg0)
+        {
+            IExecuteWithSignature("setReceiveBufferSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#setSendBufferSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void SetSendBufferSize(int arg0)
+        {
+            IExecuteWithSignature("setSendBufferSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#setSoTimeout(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void SetSoTimeout(int arg0)
+        {
+            IExecuteWithSignature("setSoTimeout", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/LocalSocket.html#shutdownInput()"/>

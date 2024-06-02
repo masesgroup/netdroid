@@ -27,7 +27,7 @@ namespace Javax.Sql
 {
     #region IRowSetListener
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.javax.sql.RowSetListener implementing <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetListener.html"/>
+    /// .NET interface for org.mases.netdroid.generated.javax.sql.RowSetListener implementing <see href="https://developer.android.com/reference/javax/sql/RowSetListener.html"/>
     /// </summary>
     public partial interface IRowSetListener
     {
@@ -68,17 +68,17 @@ namespace Javax.Sql
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("cursorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(CursorMovedEventHandler));
-            AddEventHandler("rowChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(RowChangedEventHandler));
-            AddEventHandler("rowSetChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(RowSetChangedEventHandler));
+            AddEventHandler("cursorMoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(CursorMovedEventHandler));
+            AddEventHandler("rowChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(RowChangedEventHandler));
+            AddEventHandler("rowSetChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(RowSetChangedEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
+        /// Handler for <see href="https://developer.android.com/reference/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnCursorMoved"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Sql.RowSetEvent> OnCursorMoved { get; set; } = null;
+        public global::System.Action<Javax.Sql.RowSetEvent> OnCursorMoved { get; set; } = null;
 
         void CursorMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>> data)
         {
@@ -87,7 +87,7 @@ namespace Javax.Sql
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
         public virtual void CursorMoved(Javax.Sql.RowSetEvent arg0)
@@ -96,10 +96,10 @@ namespace Javax.Sql
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetListener.html#rowChanged(javax.sql.RowSetEvent)"/>
+        /// Handler for <see href="https://developer.android.com/reference/javax/sql/RowSetListener.html#rowChanged(javax.sql.RowSetEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnRowChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Sql.RowSetEvent> OnRowChanged { get; set; } = null;
+        public global::System.Action<Javax.Sql.RowSetEvent> OnRowChanged { get; set; } = null;
 
         void RowChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>> data)
         {
@@ -108,7 +108,7 @@ namespace Javax.Sql
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetListener.html#rowChanged(javax.sql.RowSetEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetListener.html#rowChanged(javax.sql.RowSetEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
         public virtual void RowChanged(Javax.Sql.RowSetEvent arg0)
@@ -117,10 +117,10 @@ namespace Javax.Sql
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetListener.html#rowSetChanged(javax.sql.RowSetEvent)"/>
+        /// Handler for <see href="https://developer.android.com/reference/javax/sql/RowSetListener.html#rowSetChanged(javax.sql.RowSetEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnRowSetChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Sql.RowSetEvent> OnRowSetChanged { get; set; } = null;
+        public global::System.Action<Javax.Sql.RowSetEvent> OnRowSetChanged { get; set; } = null;
 
         void RowSetChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>> data)
         {
@@ -129,7 +129,7 @@ namespace Javax.Sql
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetListener.html#rowSetChanged(javax.sql.RowSetEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetListener.html#rowSetChanged(javax.sql.RowSetEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
         public virtual void RowSetChanged(Javax.Sql.RowSetEvent arg0)
@@ -168,7 +168,7 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
         public override void CursorMoved(Javax.Sql.RowSetEvent arg0)
@@ -176,7 +176,7 @@ namespace Javax.Sql
             IExecuteWithSignature("cursorMoved", "(Ljavax/sql/RowSetEvent;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetListener.html#rowChanged(javax.sql.RowSetEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetListener.html#rowChanged(javax.sql.RowSetEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
         public override void RowChanged(Javax.Sql.RowSetEvent arg0)
@@ -184,7 +184,7 @@ namespace Javax.Sql
             IExecuteWithSignature("rowChanged", "(Ljavax/sql/RowSetEvent;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetListener.html#rowSetChanged(javax.sql.RowSetEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetListener.html#rowSetChanged(javax.sql.RowSetEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
         public override void RowSetChanged(Javax.Sql.RowSetEvent arg0)

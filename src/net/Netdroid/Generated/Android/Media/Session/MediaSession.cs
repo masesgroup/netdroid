@@ -59,14 +59,14 @@ namespace Android.Media.Session
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#FLAG_HANDLES_MEDIA_BUTTONS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_HANDLES_MEDIA_BUTTONS { get { if (!_FLAG_HANDLES_MEDIA_BUTTONSReady) { _FLAG_HANDLES_MEDIA_BUTTONSContent = SGetField<int>(LocalBridgeClazz, "FLAG_HANDLES_MEDIA_BUTTONS"); _FLAG_HANDLES_MEDIA_BUTTONSReady = true; } return _FLAG_HANDLES_MEDIA_BUTTONSContent; } }
         private static int _FLAG_HANDLES_MEDIA_BUTTONSContent = default;
         private static bool _FLAG_HANDLES_MEDIA_BUTTONSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#FLAG_HANDLES_TRANSPORT_CONTROLS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_HANDLES_TRANSPORT_CONTROLS { get { if (!_FLAG_HANDLES_TRANSPORT_CONTROLSReady) { _FLAG_HANDLES_TRANSPORT_CONTROLSContent = SGetField<int>(LocalBridgeClazz, "FLAG_HANDLES_TRANSPORT_CONTROLS"); _FLAG_HANDLES_TRANSPORT_CONTROLSReady = true; } return _FLAG_HANDLES_TRANSPORT_CONTROLSContent; } }
         private static int _FLAG_HANDLES_TRANSPORT_CONTROLSContent = default;
         private static bool _FLAG_HANDLES_TRANSPORT_CONTROLSReady = false; // this is used because in case of generics 
@@ -79,25 +79,28 @@ namespace Android.Media.Session
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#getController()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#getController()"/>
         /// </summary>
-        public Android.Media.Session.MediaController Controller
+        /// <returns><see cref="Android.Media.Session.MediaController"/></returns>
+        public Android.Media.Session.MediaController GetController()
         {
-            get { return IExecuteWithSignature<Android.Media.Session.MediaController>("getController", "()Landroid/media/session/MediaController;"); }
+            return IExecuteWithSignature<Android.Media.Session.MediaController>("getController", "()Landroid/media/session/MediaController;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#getCurrentControllerInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#getSessionToken()"/>
         /// </summary>
-        public Android.Media.Session.MediaSessionManager.RemoteUserInfo CurrentControllerInfo
+        /// <returns><see cref="Android.Media.Session.MediaSession.Token"/></returns>
+        public Android.Media.Session.MediaSession.Token GetSessionToken()
         {
-            get { return IExecuteWithSignature<Android.Media.Session.MediaSessionManager.RemoteUserInfo>("getCurrentControllerInfo", "()Landroid/media/session/MediaSessionManager$RemoteUserInfo;"); }
+            return IExecuteWithSignature<Android.Media.Session.MediaSession.Token>("getSessionToken", "()Landroid/media/session/MediaSession$Token;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#getSessionToken()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#getCurrentControllerInfo()"/>
         /// </summary>
-        public Android.Media.Session.MediaSession.Token SessionToken
+        /// <returns><see cref="Android.Media.Session.MediaSessionManager.RemoteUserInfo"/></returns>
+        public Android.Media.Session.MediaSessionManager.RemoteUserInfo GetCurrentControllerInfo()
         {
-            get { return IExecuteWithSignature<Android.Media.Session.MediaSession.Token>("getSessionToken", "()Landroid/media/session/MediaSession$Token;"); }
+            return IExecuteWithSignature<Android.Media.Session.MediaSessionManager.RemoteUserInfo>("getCurrentControllerInfo", "()Landroid/media/session/MediaSessionManager$RemoteUserInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#isActive()"/>
@@ -176,7 +179,7 @@ namespace Android.Media.Session
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.html#setMediaButtonReceiver(android.app.PendingIntent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.PendingIntent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetMediaButtonReceiver(Android.App.PendingIntent arg0)
         {
             IExecuteWithSignature("setMediaButtonReceiver", "(Landroid/app/PendingIntent;)V", arg0);
@@ -492,18 +495,12 @@ namespace Android.Media.Session
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.QueueItem.html#getDescription()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.QueueItem.html#getDescription()"/>
             /// </summary>
-            public Android.Media.MediaDescription Description
+            /// <returns><see cref="Android.Media.MediaDescription"/></returns>
+            public Android.Media.MediaDescription GetDescription()
             {
-                get { return IExecuteWithSignature<Android.Media.MediaDescription>("getDescription", "()Landroid/media/MediaDescription;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.QueueItem.html#getQueueId()"/> 
-            /// </summary>
-            public long QueueId
-            {
-                get { return IExecuteWithSignature<long>("getQueueId", "()J"); }
+                return IExecuteWithSignature<Android.Media.MediaDescription>("getDescription", "()Landroid/media/MediaDescription;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.QueueItem.html#describeContents()"/>
@@ -512,6 +509,14 @@ namespace Android.Media.Session
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.QueueItem.html#getQueueId()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetQueueId()
+            {
+                return IExecuteWithSignature<long>("getQueueId", "()J");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaSession.QueueItem.html#writeToParcel(android.os.Parcel,int)"/>

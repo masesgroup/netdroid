@@ -30,7 +30,7 @@ namespace Org.Xml.Sax.Helpers
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/LocatorImpl.html#%3Cinit%3E(org.xml.sax.Locator)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/LocatorImpl.html#%3Cinit%3E(org.xml.sax.Locator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
         public LocatorImpl(Org.Xml.Sax.Locator arg0)
@@ -54,32 +54,68 @@ namespace Org.Xml.Sax.Helpers
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/LocatorImpl.html#getColumnNumber()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/LocatorImpl.html#setColumnNumber(int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/LocatorImpl.html#getColumnNumber()"/>
         /// </summary>
-        public int ColumnNumber
+        /// <returns><see cref="int"/></returns>
+        public int GetColumnNumber()
         {
-            get { return IExecuteWithSignature<int>("getColumnNumber", "()I"); } set { IExecuteWithSignature("setColumnNumber", "(I)V", value); }
+            return IExecuteWithSignature<int>("getColumnNumber", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/LocatorImpl.html#getLineNumber()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/LocatorImpl.html#setLineNumber(int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/LocatorImpl.html#getLineNumber()"/>
         /// </summary>
-        public int LineNumber
+        /// <returns><see cref="int"/></returns>
+        public int GetLineNumber()
         {
-            get { return IExecuteWithSignature<int>("getLineNumber", "()I"); } set { IExecuteWithSignature("setLineNumber", "(I)V", value); }
+            return IExecuteWithSignature<int>("getLineNumber", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/LocatorImpl.html#getPublicId()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/LocatorImpl.html#setPublicId(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/LocatorImpl.html#getPublicId()"/>
         /// </summary>
-        public Java.Lang.String PublicId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPublicId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPublicId", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/LocatorImpl.html#getSystemId()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/LocatorImpl.html#setSystemId(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/LocatorImpl.html#getSystemId()"/>
         /// </summary>
-        public Java.Lang.String SystemId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/LocatorImpl.html#setColumnNumber(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetColumnNumber(int arg0)
+        {
+            IExecuteWithSignature("setColumnNumber", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/LocatorImpl.html#setLineNumber(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetLineNumber(int arg0)
+        {
+            IExecuteWithSignature("setLineNumber", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/LocatorImpl.html#setPublicId(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPublicId(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPublicId", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/LocatorImpl.html#setSystemId(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetSystemId(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

@@ -67,18 +67,12 @@ namespace Android.View.Contentcapture
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureCondition.html#getFlags()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureCondition.html#getLocusId()"/>
         /// </summary>
-        public int Flags
+        /// <returns><see cref="Android.Content.LocusId"/></returns>
+        public Android.Content.LocusId GetLocusId()
         {
-            get { return IExecuteWithSignature<int>("getFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureCondition.html#getLocusId()"/> 
-        /// </summary>
-        public Android.Content.LocusId LocusId
-        {
-            get { return IExecuteWithSignature<Android.Content.LocusId>("getLocusId", "()Landroid/content/LocusId;"); }
+            return IExecuteWithSignature<Android.Content.LocusId>("getLocusId", "()Landroid/content/LocusId;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureCondition.html#describeContents()"/>
@@ -87,6 +81,14 @@ namespace Android.View.Contentcapture
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureCondition.html#getFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFlags()
+        {
+            return IExecuteWithSignature<int>("getFlags", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureCondition.html#writeToParcel(android.os.Parcel,int)"/>

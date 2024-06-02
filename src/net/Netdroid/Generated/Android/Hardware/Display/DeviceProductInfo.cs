@@ -88,61 +88,68 @@ namespace Android.Hardware.Display
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/DeviceProductInfo.html#getConnectionToSinkType()"/> 
-        /// </summary>
-        public int ConnectionToSinkType
-        {
-            get { return IExecuteWithSignature<int>("getConnectionToSinkType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/DeviceProductInfo.html#getManufacturerPnpId()"/> 
-        /// </summary>
-        public Java.Lang.String ManufacturerPnpId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getManufacturerPnpId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/DeviceProductInfo.html#getManufactureWeek()"/> 
-        /// </summary>
-        public int ManufactureWeek
-        {
-            get { return IExecuteWithSignature<int>("getManufactureWeek", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/DeviceProductInfo.html#getManufactureYear()"/> 
-        /// </summary>
-        public int ManufactureYear
-        {
-            get { return IExecuteWithSignature<int>("getManufactureYear", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/DeviceProductInfo.html#getModelYear()"/> 
-        /// </summary>
-        public int ModelYear
-        {
-            get { return IExecuteWithSignature<int>("getModelYear", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/DeviceProductInfo.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/DeviceProductInfo.html#getProductId()"/> 
-        /// </summary>
-        public Java.Lang.String ProductId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getProductId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/display/DeviceProductInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/DeviceProductInfo.html#getConnectionToSinkType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetConnectionToSinkType()
+        {
+            return IExecuteWithSignature<int>("getConnectionToSinkType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/DeviceProductInfo.html#getManufactureWeek()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetManufactureWeek()
+        {
+            return IExecuteWithSignature<int>("getManufactureWeek", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/DeviceProductInfo.html#getManufactureYear()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetManufactureYear()
+        {
+            return IExecuteWithSignature<int>("getManufactureYear", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/DeviceProductInfo.html#getModelYear()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetModelYear()
+        {
+            return IExecuteWithSignature<int>("getModelYear", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/DeviceProductInfo.html#getManufacturerPnpId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetManufacturerPnpId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getManufacturerPnpId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/DeviceProductInfo.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/DeviceProductInfo.html#getProductId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetProductId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getProductId", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/display/DeviceProductInfo.html#writeToParcel(android.os.Parcel,int)"/>

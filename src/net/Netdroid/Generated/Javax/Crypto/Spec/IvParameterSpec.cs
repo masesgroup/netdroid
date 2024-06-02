@@ -30,7 +30,7 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/IvParameterSpec.html#%3Cinit%3E(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/IvParameterSpec.html#%3Cinit%3E(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -40,7 +40,7 @@ namespace Javax.Crypto.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/IvParameterSpec.html#%3Cinit%3E(byte[])"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/IvParameterSpec.html#%3Cinit%3E(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public IvParameterSpec(byte[] arg0)
@@ -64,11 +64,12 @@ namespace Javax.Crypto.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/IvParameterSpec.html#getIV()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/IvParameterSpec.html#getIV()"/>
         /// </summary>
-        public byte[] IV
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetIV()
         {
-            get { return IExecuteWithSignatureArray<byte>("getIV", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getIV", "()[B");
         }
 
         #endregion

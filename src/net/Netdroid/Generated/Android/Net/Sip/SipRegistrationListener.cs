@@ -68,9 +68,9 @@ namespace Android.Net.Sip
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("onRegistering", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnRegisteringEventHandler));
-            AddEventHandler("onRegistrationDone", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnRegistrationDoneEventHandler));
-            AddEventHandler("onRegistrationFailed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnRegistrationFailedEventHandler));
+            AddEventHandler("onRegistering", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnRegisteringEventHandler));
+            AddEventHandler("onRegistrationDone", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnRegistrationDoneEventHandler));
+            AddEventHandler("onRegistrationFailed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnRegistrationFailedEventHandler));
 
         }
 
@@ -78,7 +78,7 @@ namespace Android.Net.Sip
         /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipRegistrationListener.html#onRegistering(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnRegistering"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String> OnOnRegistering { get; set; } = null;
+        public global::System.Action<Java.Lang.String> OnOnRegistering { get; set; } = null;
 
         void OnRegisteringEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -90,7 +90,7 @@ namespace Android.Net.Sip
         /// <see href="https://developer.android.com/reference/android/net/sip/SipRegistrationListener.html#onRegistering(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public virtual void OnRegistering(Java.Lang.String arg0)
         {
             
@@ -100,7 +100,7 @@ namespace Android.Net.Sip
         /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipRegistrationListener.html#onRegistrationDone(java.lang.String,long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnRegistrationDone"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String, long> OnOnRegistrationDone { get; set; } = null;
+        public global::System.Action<Java.Lang.String, long> OnOnRegistrationDone { get; set; } = null;
 
         void OnRegistrationDoneEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -113,7 +113,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public virtual void OnRegistrationDone(Java.Lang.String arg0, long arg1)
         {
             
@@ -123,7 +123,7 @@ namespace Android.Net.Sip
         /// Handler for <see href="https://developer.android.com/reference/android/net/sip/SipRegistrationListener.html#onRegistrationFailed(java.lang.String,int,java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnRegistrationFailed"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String, int, Java.Lang.String> OnOnRegistrationFailed { get; set; } = null;
+        public global::System.Action<Java.Lang.String, int, Java.Lang.String> OnOnRegistrationFailed { get; set; } = null;
 
         void OnRegistrationFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -137,7 +137,7 @@ namespace Android.Net.Sip
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public virtual void OnRegistrationFailed(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
             
@@ -177,7 +177,7 @@ namespace Android.Net.Sip
         /// <see href="https://developer.android.com/reference/android/net/sip/SipRegistrationListener.html#onRegistering(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public override void OnRegistering(Java.Lang.String arg0)
         {
             IExecuteWithSignature("onRegistering", "(Ljava/lang/String;)V", arg0);
@@ -187,7 +187,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public override void OnRegistrationDone(Java.Lang.String arg0, long arg1)
         {
             IExecute("onRegistrationDone", arg0, arg1);
@@ -198,7 +198,7 @@ namespace Android.Net.Sip
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public override void OnRegistrationFailed(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
             IExecute("onRegistrationFailed", arg0, arg1, arg2);

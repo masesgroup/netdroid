@@ -50,7 +50,7 @@ namespace Java.Time.Zone
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransition.html#of(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneOffset)"/>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransition.html#of(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneOffset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
         /// <param name="arg1"><see cref="Java.Time.ZoneOffset"/></param>
@@ -65,49 +65,7 @@ namespace Java.Time.Zone
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransition.html#getDateTimeAfter()"/> 
-        /// </summary>
-        public Java.Time.LocalDateTime DateTimeAfter
-        {
-            get { return IExecuteWithSignature<Java.Time.LocalDateTime>("getDateTimeAfter", "()Ljava/time/LocalDateTime;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransition.html#getDateTimeBefore()"/> 
-        /// </summary>
-        public Java.Time.LocalDateTime DateTimeBefore
-        {
-            get { return IExecuteWithSignature<Java.Time.LocalDateTime>("getDateTimeBefore", "()Ljava/time/LocalDateTime;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransition.html#getDuration()"/> 
-        /// </summary>
-        public Java.Time.Duration Duration
-        {
-            get { return IExecuteWithSignature<Java.Time.Duration>("getDuration", "()Ljava/time/Duration;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransition.html#getInstant()"/> 
-        /// </summary>
-        public Java.Time.Instant Instant
-        {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getInstant", "()Ljava/time/Instant;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransition.html#getOffsetAfter()"/> 
-        /// </summary>
-        public Java.Time.ZoneOffset OffsetAfter
-        {
-            get { return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffsetAfter", "()Ljava/time/ZoneOffset;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransition.html#getOffsetBefore()"/> 
-        /// </summary>
-        public Java.Time.ZoneOffset OffsetBefore
-        {
-            get { return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffsetBefore", "()Ljava/time/ZoneOffset;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransition.html#isGap()"/>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransition.html#isGap()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsGap()
@@ -115,7 +73,7 @@ namespace Java.Time.Zone
             return IExecuteWithSignature<bool>("isGap", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransition.html#isOverlap()"/>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransition.html#isOverlap()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsOverlap()
@@ -123,7 +81,7 @@ namespace Java.Time.Zone
             return IExecuteWithSignature<bool>("isOverlap", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransition.html#isValidOffset(java.time.ZoneOffset)"/>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransition.html#isValidOffset(java.time.ZoneOffset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneOffset"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -132,7 +90,7 @@ namespace Java.Time.Zone
             return IExecuteWithSignature<bool>("isValidOffset", "(Ljava/time/ZoneOffset;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransition.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransition.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -141,7 +99,7 @@ namespace Java.Time.Zone
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransition.html#compareTo(java.time.zone.ZoneOffsetTransition)"/>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransition.html#compareTo(java.time.zone.ZoneOffsetTransition)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Zone.ZoneOffsetTransition"/></param>
         /// <returns><see cref="int"/></returns>
@@ -150,7 +108,55 @@ namespace Java.Time.Zone
             return IExecuteWithSignature<int>("compareTo", "(Ljava/time/zone/ZoneOffsetTransition;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransition.html#toEpochSecond()"/>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransition.html#getDuration()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Duration"/></returns>
+        public Java.Time.Duration GetDuration()
+        {
+            return IExecuteWithSignature<Java.Time.Duration>("getDuration", "()Ljava/time/Duration;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransition.html#getInstant()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetInstant()
+        {
+            return IExecuteWithSignature<Java.Time.Instant>("getInstant", "()Ljava/time/Instant;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransition.html#getDateTimeAfter()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
+        public Java.Time.LocalDateTime GetDateTimeAfter()
+        {
+            return IExecuteWithSignature<Java.Time.LocalDateTime>("getDateTimeAfter", "()Ljava/time/LocalDateTime;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransition.html#getDateTimeBefore()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
+        public Java.Time.LocalDateTime GetDateTimeBefore()
+        {
+            return IExecuteWithSignature<Java.Time.LocalDateTime>("getDateTimeBefore", "()Ljava/time/LocalDateTime;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransition.html#getOffsetAfter()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
+        public Java.Time.ZoneOffset GetOffsetAfter()
+        {
+            return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffsetAfter", "()Ljava/time/ZoneOffset;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransition.html#getOffsetBefore()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
+        public Java.Time.ZoneOffset GetOffsetBefore()
+        {
+            return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffsetBefore", "()Ljava/time/ZoneOffset;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransition.html#toEpochSecond()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long ToEpochSecond()

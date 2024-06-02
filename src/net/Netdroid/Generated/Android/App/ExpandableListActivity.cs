@@ -46,36 +46,31 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ExpandableListActivity.html#getExpandableListAdapter()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/ExpandableListActivity.html#getExpandableListAdapter()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Widget.ExpandableListAdapter ExpandableListAdapter
+        /// <returns><see cref="Android.Widget.ExpandableListAdapter"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.ExpandableListAdapter GetExpandableListAdapter()
         {
-            get { return IExecuteWithSignature<Android.Widget.ExpandableListAdapter>("getExpandableListAdapter", "()Landroid/widget/ExpandableListAdapter;"); }
+            return IExecuteWithSignature<Android.Widget.ExpandableListAdapter>("getExpandableListAdapter", "()Landroid/widget/ExpandableListAdapter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ExpandableListActivity.html#getExpandableListView()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/ExpandableListActivity.html#getExpandableListAdapter()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Widget.ExpandableListView ExpandableListView
+        /// <returns><see cref="Android.Widget.ExpandableListAdapter"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.ExpandableListAdapter GetExpandableListAdapterDirect()
         {
-            get { return IExecuteWithSignature<Android.Widget.ExpandableListView>("getExpandableListView", "()Landroid/widget/ExpandableListView;"); }
+            return IExecuteWithSignature<Android.Widget.ExpandableListAdapterDirect, Android.Widget.ExpandableListAdapter>("getExpandableListAdapter", "()Landroid/widget/ExpandableListAdapter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ExpandableListActivity.html#getSelectedId()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/ExpandableListActivity.html#getExpandableListView()"/>
         /// </summary>
-        [System.Obsolete()]
-        public long SelectedId
+        /// <returns><see cref="Android.Widget.ExpandableListView"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.ExpandableListView GetExpandableListView()
         {
-            get { return IExecuteWithSignature<long>("getSelectedId", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ExpandableListActivity.html#getSelectedPosition()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public long SelectedPosition
-        {
-            get { return IExecuteWithSignature<long>("getSelectedPosition", "()J"); }
+            return IExecuteWithSignature<Android.Widget.ExpandableListView>("getExpandableListView", "()Landroid/widget/ExpandableListView;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ExpandableListActivity.html#onChildClick(android.widget.ExpandableListView,android.view.View,int,int,long)"/>
@@ -86,7 +81,7 @@ namespace Android.App
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="long"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnChildClick(Android.Widget.ExpandableListView arg0, Android.View.View arg1, int arg2, int arg3, long arg4)
         {
             return IExecute<bool>("onChildClick", arg0, arg1, arg2, arg3, arg4);
@@ -98,16 +93,34 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SetSelectedChild(int arg0, int arg1, bool arg2)
         {
             return IExecute<bool>("setSelectedChild", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ExpandableListActivity.html#getSelectedId()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        [global::System.Obsolete()]
+        public long GetSelectedId()
+        {
+            return IExecuteWithSignature<long>("getSelectedId", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ExpandableListActivity.html#getSelectedPosition()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        [global::System.Obsolete()]
+        public long GetSelectedPosition()
+        {
+            return IExecuteWithSignature<long>("getSelectedPosition", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ExpandableListActivity.html#onGroupCollapse(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnGroupCollapse(int arg0)
         {
             IExecuteWithSignature("onGroupCollapse", "(I)V", arg0);
@@ -116,7 +129,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ExpandableListActivity.html#onGroupExpand(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnGroupExpand(int arg0)
         {
             IExecuteWithSignature("onGroupExpand", "(I)V", arg0);
@@ -125,7 +138,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ExpandableListActivity.html#setListAdapter(android.widget.ExpandableListAdapter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Widget.ExpandableListAdapter"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetListAdapter(Android.Widget.ExpandableListAdapter arg0)
         {
             IExecuteWithSignature("setListAdapter", "(Landroid/widget/ExpandableListAdapter;)V", arg0);
@@ -134,7 +147,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ExpandableListActivity.html#setSelectedGroup(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSelectedGroup(int arg0)
         {
             IExecuteWithSignature("setSelectedGroup", "(I)V", arg0);

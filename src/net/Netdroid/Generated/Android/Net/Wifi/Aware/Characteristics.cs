@@ -94,69 +94,6 @@ namespace Android.Net.Wifi.Aware
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getMaxMatchFilterLength()"/> 
-        /// </summary>
-        public int MaxMatchFilterLength
-        {
-            get { return IExecuteWithSignature<int>("getMaxMatchFilterLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getMaxServiceNameLength()"/> 
-        /// </summary>
-        public int MaxServiceNameLength
-        {
-            get { return IExecuteWithSignature<int>("getMaxServiceNameLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getMaxServiceSpecificInfoLength()"/> 
-        /// </summary>
-        public int MaxServiceSpecificInfoLength
-        {
-            get { return IExecuteWithSignature<int>("getMaxServiceSpecificInfoLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getNumberOfSupportedDataInterfaces()"/> 
-        /// </summary>
-        public int NumberOfSupportedDataInterfaces
-        {
-            get { return IExecuteWithSignature<int>("getNumberOfSupportedDataInterfaces", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getNumberOfSupportedDataPaths()"/> 
-        /// </summary>
-        public int NumberOfSupportedDataPaths
-        {
-            get { return IExecuteWithSignature<int>("getNumberOfSupportedDataPaths", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getNumberOfSupportedPublishSessions()"/> 
-        /// </summary>
-        public int NumberOfSupportedPublishSessions
-        {
-            get { return IExecuteWithSignature<int>("getNumberOfSupportedPublishSessions", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getNumberOfSupportedSubscribeSessions()"/> 
-        /// </summary>
-        public int NumberOfSupportedSubscribeSessions
-        {
-            get { return IExecuteWithSignature<int>("getNumberOfSupportedSubscribeSessions", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getSupportedCipherSuites()"/> 
-        /// </summary>
-        public int SupportedCipherSuites
-        {
-            get { return IExecuteWithSignature<int>("getSupportedCipherSuites", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getSupportedPairingCipherSuites()"/> 
-        /// </summary>
-        public int SupportedPairingCipherSuites
-        {
-            get { return IExecuteWithSignature<int>("getSupportedPairingCipherSuites", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#isAwarePairingSupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -187,6 +124,78 @@ namespace Android.Net.Wifi.Aware
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getMaxMatchFilterLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxMatchFilterLength()
+        {
+            return IExecuteWithSignature<int>("getMaxMatchFilterLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getMaxServiceNameLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxServiceNameLength()
+        {
+            return IExecuteWithSignature<int>("getMaxServiceNameLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getMaxServiceSpecificInfoLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxServiceSpecificInfoLength()
+        {
+            return IExecuteWithSignature<int>("getMaxServiceSpecificInfoLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getNumberOfSupportedDataInterfaces()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumberOfSupportedDataInterfaces()
+        {
+            return IExecuteWithSignature<int>("getNumberOfSupportedDataInterfaces", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getNumberOfSupportedDataPaths()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumberOfSupportedDataPaths()
+        {
+            return IExecuteWithSignature<int>("getNumberOfSupportedDataPaths", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getNumberOfSupportedPublishSessions()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumberOfSupportedPublishSessions()
+        {
+            return IExecuteWithSignature<int>("getNumberOfSupportedPublishSessions", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getNumberOfSupportedSubscribeSessions()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumberOfSupportedSubscribeSessions()
+        {
+            return IExecuteWithSignature<int>("getNumberOfSupportedSubscribeSessions", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getSupportedCipherSuites()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSupportedCipherSuites()
+        {
+            return IExecuteWithSignature<int>("getSupportedCipherSuites", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#getSupportedPairingCipherSuites()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSupportedPairingCipherSuites()
+        {
+            return IExecuteWithSignature<int>("getSupportedPairingCipherSuites", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/Characteristics.html#writeToParcel(android.os.Parcel,int)"/>

@@ -64,32 +64,12 @@ namespace Android.App.Blob
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/blob/BlobHandle.html#getExpiryTimeMillis()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/blob/BlobHandle.html#getSha256Digest()"/>
         /// </summary>
-        public long ExpiryTimeMillis
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetSha256Digest()
         {
-            get { return IExecuteWithSignature<long>("getExpiryTimeMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/blob/BlobHandle.html#getLabel()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Label
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/blob/BlobHandle.html#getSha256Digest()"/> 
-        /// </summary>
-        public byte[] Sha256Digest
-        {
-            get { return IExecuteWithSignatureArray<byte>("getSha256Digest", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/blob/BlobHandle.html#getTag()"/> 
-        /// </summary>
-        public Java.Lang.String Tag
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<byte>("getSha256Digest", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/blob/BlobHandle.html#describeContents()"/>
@@ -98,6 +78,30 @@ namespace Android.App.Blob
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/blob/BlobHandle.html#getLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/blob/BlobHandle.html#getTag()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTag()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/blob/BlobHandle.html#getExpiryTimeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetExpiryTimeMillis()
+        {
+            return IExecuteWithSignature<long>("getExpiryTimeMillis", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/blob/BlobHandle.html#writeToParcel(android.os.Parcel,int)"/>

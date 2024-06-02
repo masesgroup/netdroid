@@ -162,7 +162,7 @@ namespace Android.Text.Format
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/text/format/Time.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Time : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Time>
     {
         const string _bridgeClassName = "android.text.format.Time";

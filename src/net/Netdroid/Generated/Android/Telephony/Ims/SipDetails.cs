@@ -76,61 +76,68 @@ namespace Android.Telephony.Ims
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/SipDetails.html#getCallId()"/> 
-        /// </summary>
-        public Java.Lang.String CallId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCallId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/SipDetails.html#getCSeq()"/> 
-        /// </summary>
-        public int CSeq
-        {
-            get { return IExecuteWithSignature<int>("getCSeq", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/SipDetails.html#getMethod()"/> 
-        /// </summary>
-        public int Method
-        {
-            get { return IExecuteWithSignature<int>("getMethod", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/SipDetails.html#getReasonHeaderCause()"/> 
-        /// </summary>
-        public int ReasonHeaderCause
-        {
-            get { return IExecuteWithSignature<int>("getReasonHeaderCause", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/SipDetails.html#getReasonHeaderText()"/> 
-        /// </summary>
-        public Java.Lang.String ReasonHeaderText
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getReasonHeaderText", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/SipDetails.html#getResponseCode()"/> 
-        /// </summary>
-        public int ResponseCode
-        {
-            get { return IExecuteWithSignature<int>("getResponseCode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/SipDetails.html#getResponsePhrase()"/> 
-        /// </summary>
-        public Java.Lang.String ResponsePhrase
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getResponsePhrase", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/SipDetails.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ims/SipDetails.html#getCSeq()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCSeq()
+        {
+            return IExecuteWithSignature<int>("getCSeq", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ims/SipDetails.html#getMethod()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMethod()
+        {
+            return IExecuteWithSignature<int>("getMethod", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ims/SipDetails.html#getReasonHeaderCause()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetReasonHeaderCause()
+        {
+            return IExecuteWithSignature<int>("getReasonHeaderCause", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ims/SipDetails.html#getResponseCode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetResponseCode()
+        {
+            return IExecuteWithSignature<int>("getResponseCode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ims/SipDetails.html#getCallId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCallId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCallId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ims/SipDetails.html#getReasonHeaderText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetReasonHeaderText()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getReasonHeaderText", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ims/SipDetails.html#getResponsePhrase()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetResponsePhrase()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getResponsePhrase", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/SipDetails.html#writeToParcel(android.os.Parcel,int)"/>

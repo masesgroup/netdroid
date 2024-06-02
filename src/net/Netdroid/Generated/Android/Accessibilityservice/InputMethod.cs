@@ -54,25 +54,28 @@ namespace Android.Accessibilityservice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/InputMethod.html#getCurrentInputConnection()"/> 
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/InputMethod.html#getCurrentInputConnection()"/>
         /// </summary>
-        public Android.Accessibilityservice.InputMethod.AccessibilityInputConnection CurrentInputConnection
+        /// <returns><see cref="Android.Accessibilityservice.InputMethod.AccessibilityInputConnection"/></returns>
+        public Android.Accessibilityservice.InputMethod.AccessibilityInputConnection GetCurrentInputConnection()
         {
-            get { return IExecuteWithSignature<Android.Accessibilityservice.InputMethod.AccessibilityInputConnection>("getCurrentInputConnection", "()Landroid/accessibilityservice/InputMethod$AccessibilityInputConnection;"); }
+            return IExecuteWithSignature<Android.Accessibilityservice.InputMethod.AccessibilityInputConnection>("getCurrentInputConnection", "()Landroid/accessibilityservice/InputMethod$AccessibilityInputConnection;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/InputMethod.html#getCurrentInputEditorInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/InputMethod.html#getCurrentInputEditorInfo()"/>
         /// </summary>
-        public Android.View.Inputmethod.EditorInfo CurrentInputEditorInfo
+        /// <returns><see cref="Android.View.Inputmethod.EditorInfo"/></returns>
+        public Android.View.Inputmethod.EditorInfo GetCurrentInputEditorInfo()
         {
-            get { return IExecuteWithSignature<Android.View.Inputmethod.EditorInfo>("getCurrentInputEditorInfo", "()Landroid/view/inputmethod/EditorInfo;"); }
+            return IExecuteWithSignature<Android.View.Inputmethod.EditorInfo>("getCurrentInputEditorInfo", "()Landroid/view/inputmethod/EditorInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/InputMethod.html#getCurrentInputStarted()"/> 
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/InputMethod.html#getCurrentInputStarted()"/>
         /// </summary>
-        public bool CurrentInputStarted
+        /// <returns><see cref="bool"/></returns>
+        public bool GetCurrentInputStarted()
         {
-            get { return IExecuteWithSignature<bool>("getCurrentInputStarted", "()Z"); }
+            return IExecuteWithSignature<bool>("getCurrentInputStarted", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/InputMethod.html#onFinishInput()"/>

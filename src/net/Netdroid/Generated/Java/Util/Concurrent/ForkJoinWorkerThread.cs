@@ -46,18 +46,20 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinWorkerThread.html#getPool()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinWorkerThread.html#getPoolIndex()"/>
         /// </summary>
-        public Java.Util.Concurrent.ForkJoinPool Pool
+        /// <returns><see cref="int"/></returns>
+        public int GetPoolIndex()
         {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.ForkJoinPool>("getPool", "()Ljava/util/concurrent/ForkJoinPool;"); }
+            return IExecuteWithSignature<int>("getPoolIndex", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinWorkerThread.html#getPoolIndex()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinWorkerThread.html#getPool()"/>
         /// </summary>
-        public int PoolIndex
+        /// <returns><see cref="Java.Util.Concurrent.ForkJoinPool"/></returns>
+        public Java.Util.Concurrent.ForkJoinPool GetPool()
         {
-            get { return IExecuteWithSignature<int>("getPoolIndex", "()I"); }
+            return IExecuteWithSignature<Java.Util.Concurrent.ForkJoinPool>("getPool", "()Ljava/util/concurrent/ForkJoinPool;");
         }
 
         #endregion

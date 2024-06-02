@@ -64,39 +64,44 @@ namespace Android.Net.Vcn
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnUnderlyingNetworkTemplate.html#getMetered()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnUnderlyingNetworkTemplate.html#getMetered()"/>
         /// </summary>
-        public int Metered
+        /// <returns><see cref="int"/></returns>
+        public int GetMetered()
         {
-            get { return IExecuteWithSignature<int>("getMetered", "()I"); }
+            return IExecuteWithSignature<int>("getMetered", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnUnderlyingNetworkTemplate.html#getMinEntryDownstreamBandwidthKbps()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnUnderlyingNetworkTemplate.html#getMinEntryDownstreamBandwidthKbps()"/>
         /// </summary>
-        public int MinEntryDownstreamBandwidthKbps
+        /// <returns><see cref="int"/></returns>
+        public int GetMinEntryDownstreamBandwidthKbps()
         {
-            get { return IExecuteWithSignature<int>("getMinEntryDownstreamBandwidthKbps", "()I"); }
+            return IExecuteWithSignature<int>("getMinEntryDownstreamBandwidthKbps", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnUnderlyingNetworkTemplate.html#getMinEntryUpstreamBandwidthKbps()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnUnderlyingNetworkTemplate.html#getMinEntryUpstreamBandwidthKbps()"/>
         /// </summary>
-        public int MinEntryUpstreamBandwidthKbps
+        /// <returns><see cref="int"/></returns>
+        public int GetMinEntryUpstreamBandwidthKbps()
         {
-            get { return IExecuteWithSignature<int>("getMinEntryUpstreamBandwidthKbps", "()I"); }
+            return IExecuteWithSignature<int>("getMinEntryUpstreamBandwidthKbps", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnUnderlyingNetworkTemplate.html#getMinExitDownstreamBandwidthKbps()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnUnderlyingNetworkTemplate.html#getMinExitDownstreamBandwidthKbps()"/>
         /// </summary>
-        public int MinExitDownstreamBandwidthKbps
+        /// <returns><see cref="int"/></returns>
+        public int GetMinExitDownstreamBandwidthKbps()
         {
-            get { return IExecuteWithSignature<int>("getMinExitDownstreamBandwidthKbps", "()I"); }
+            return IExecuteWithSignature<int>("getMinExitDownstreamBandwidthKbps", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnUnderlyingNetworkTemplate.html#getMinExitUpstreamBandwidthKbps()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnUnderlyingNetworkTemplate.html#getMinExitUpstreamBandwidthKbps()"/>
         /// </summary>
-        public int MinExitUpstreamBandwidthKbps
+        /// <returns><see cref="int"/></returns>
+        public int GetMinExitUpstreamBandwidthKbps()
         {
-            get { return IExecuteWithSignature<int>("getMinExitUpstreamBandwidthKbps", "()I"); }
+            return IExecuteWithSignature<int>("getMinExitUpstreamBandwidthKbps", "()I");
         }
 
         #endregion

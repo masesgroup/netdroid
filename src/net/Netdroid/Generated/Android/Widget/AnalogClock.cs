@@ -36,7 +36,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public AnalogClock(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Widget
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public AnalogClock(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -57,7 +57,7 @@ namespace Android.Widget
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public AnalogClock(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -66,7 +66,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public AnalogClock(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -88,112 +88,202 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getDialTintBlendMode()"/> <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setDialTintBlendMode(android.graphics.BlendMode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getDialTintList()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.BlendMode DialTintBlendMode
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        [global::System.Obsolete()]
+        public Android.Content.Res.ColorStateList GetDialTintList()
         {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getDialTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setDialTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getDialTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getDialTintList()"/> <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setDialTintList(android.content.res.ColorStateList)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getHourHandTintList()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Content.Res.ColorStateList DialTintList
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        [global::System.Obsolete()]
+        public Android.Content.Res.ColorStateList GetHourHandTintList()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getDialTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setDialTintList", "(Landroid/content/res/ColorStateList;)V", value); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getHourHandTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getHourHandTintBlendMode()"/> <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setHourHandTintBlendMode(android.graphics.BlendMode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getMinuteHandTintList()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.BlendMode HourHandTintBlendMode
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        [global::System.Obsolete()]
+        public Android.Content.Res.ColorStateList GetMinuteHandTintList()
         {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getHourHandTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setHourHandTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getMinuteHandTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getHourHandTintList()"/> <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setHourHandTintList(android.content.res.ColorStateList)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getSecondHandTintList()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Content.Res.ColorStateList HourHandTintList
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        [global::System.Obsolete()]
+        public Android.Content.Res.ColorStateList GetSecondHandTintList()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getHourHandTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setHourHandTintList", "(Landroid/content/res/ColorStateList;)V", value); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getSecondHandTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getMinuteHandTintBlendMode()"/> <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setMinuteHandTintBlendMode(android.graphics.BlendMode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getDialTintBlendMode()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.BlendMode MinuteHandTintBlendMode
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.BlendMode GetDialTintBlendMode()
         {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getMinuteHandTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setMinuteHandTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getDialTintBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getMinuteHandTintList()"/> <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setMinuteHandTintList(android.content.res.ColorStateList)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getHourHandTintBlendMode()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Content.Res.ColorStateList MinuteHandTintList
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.BlendMode GetHourHandTintBlendMode()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getMinuteHandTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setMinuteHandTintList", "(Landroid/content/res/ColorStateList;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getHourHandTintBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getSecondHandTintBlendMode()"/> <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setSecondHandTintBlendMode(android.graphics.BlendMode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getMinuteHandTintBlendMode()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.BlendMode SecondHandTintBlendMode
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.BlendMode GetMinuteHandTintBlendMode()
         {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getSecondHandTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setSecondHandTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getMinuteHandTintBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getSecondHandTintList()"/> <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setSecondHandTintList(android.content.res.ColorStateList)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getSecondHandTintBlendMode()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Content.Res.ColorStateList SecondHandTintList
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.BlendMode GetSecondHandTintBlendMode()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getSecondHandTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setSecondHandTintList", "(Landroid/content/res/ColorStateList;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getSecondHandTintBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getTimeZone()"/> <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setTimeZone(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#getTimeZone()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String TimeZone
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetTimeZone()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTimeZone", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setTimeZone", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getTimeZone", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setDial(android.graphics.drawable.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Icon"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetDial(Android.Graphics.Drawable.Icon arg0)
         {
             IExecuteWithSignature("setDial", "(Landroid/graphics/drawable/Icon;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setDialTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        [global::System.Obsolete()]
+        public void SetDialTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setDialTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setDialTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        [global::System.Obsolete()]
+        public void SetDialTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setDialTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setHourHand(android.graphics.drawable.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Icon"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetHourHand(Android.Graphics.Drawable.Icon arg0)
         {
             IExecuteWithSignature("setHourHand", "(Landroid/graphics/drawable/Icon;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setHourHandTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        [global::System.Obsolete()]
+        public void SetHourHandTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setHourHandTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setHourHandTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        [global::System.Obsolete()]
+        public void SetHourHandTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setHourHandTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setMinuteHand(android.graphics.drawable.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Icon"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetMinuteHand(Android.Graphics.Drawable.Icon arg0)
         {
             IExecuteWithSignature("setMinuteHand", "(Landroid/graphics/drawable/Icon;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setMinuteHandTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        [global::System.Obsolete()]
+        public void SetMinuteHandTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setMinuteHandTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setMinuteHandTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        [global::System.Obsolete()]
+        public void SetMinuteHandTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setMinuteHandTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setSecondHand(android.graphics.drawable.Icon)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Icon"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSecondHand(Android.Graphics.Drawable.Icon arg0)
         {
             IExecuteWithSignature("setSecondHand", "(Landroid/graphics/drawable/Icon;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setSecondHandTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        [global::System.Obsolete()]
+        public void SetSecondHandTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setSecondHandTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setSecondHandTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        [global::System.Obsolete()]
+        public void SetSecondHandTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setSecondHandTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html#setTimeZone(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [global::System.Obsolete()]
+        public void SetTimeZone(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setTimeZone", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

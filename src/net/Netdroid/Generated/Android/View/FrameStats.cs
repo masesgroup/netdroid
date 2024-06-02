@@ -52,32 +52,20 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/FrameStats.html#getEndTimeNano()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/FrameStats.html#getFrameCount()"/>
         /// </summary>
-        public long EndTimeNano
+        /// <returns><see cref="int"/></returns>
+        public int GetFrameCount()
         {
-            get { return IExecuteWithSignature<long>("getEndTimeNano", "()J"); }
+            return IExecuteWithSignature<int>("getFrameCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/FrameStats.html#getFrameCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/FrameStats.html#getEndTimeNano()"/>
         /// </summary>
-        public int FrameCount
+        /// <returns><see cref="long"/></returns>
+        public long GetEndTimeNano()
         {
-            get { return IExecuteWithSignature<int>("getFrameCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/FrameStats.html#getRefreshPeriodNano()"/> 
-        /// </summary>
-        public long RefreshPeriodNano
-        {
-            get { return IExecuteWithSignature<long>("getRefreshPeriodNano", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/FrameStats.html#getStartTimeNano()"/> 
-        /// </summary>
-        public long StartTimeNano
-        {
-            get { return IExecuteWithSignature<long>("getStartTimeNano", "()J"); }
+            return IExecuteWithSignature<long>("getEndTimeNano", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/FrameStats.html#getFramePresentedTimeNano(int)"/>
@@ -87,6 +75,22 @@ namespace Android.View
         public long GetFramePresentedTimeNano(int arg0)
         {
             return IExecuteWithSignature<long>("getFramePresentedTimeNano", "(I)J", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/FrameStats.html#getRefreshPeriodNano()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetRefreshPeriodNano()
+        {
+            return IExecuteWithSignature<long>("getRefreshPeriodNano", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/FrameStats.html#getStartTimeNano()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetStartTimeNano()
+        {
+            return IExecuteWithSignature<long>("getStartTimeNano", "()J");
         }
 
         #endregion

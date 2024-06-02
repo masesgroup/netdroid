@@ -42,14 +42,15 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ProxySelector.html#getDefault()"/> <see href="https://developer.android.com/reference/java.base/java/net/ProxySelector.html#setDefault(java.net.ProxySelector)"/>
+        /// <see href="https://developer.android.com/reference/java/net/ProxySelector.html#getDefault()"/>
         /// </summary>
-        public static Java.Net.ProxySelector Default
+        /// <returns><see cref="Java.Net.ProxySelector"/></returns>
+        public static Java.Net.ProxySelector GetDefault()
         {
-            get { return SExecuteWithSignature<Java.Net.ProxySelector>(LocalBridgeClazz, "getDefault", "()Ljava/net/ProxySelector;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/net/ProxySelector;)V", value); }
+            return SExecuteWithSignature<Java.Net.ProxySelector>(LocalBridgeClazz, "getDefault", "()Ljava/net/ProxySelector;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ProxySelector.html#of(java.net.InetSocketAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/net/ProxySelector.html#of(java.net.InetSocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetSocketAddress"/></param>
         /// <returns><see cref="Java.Net.ProxySelector"/></returns>
@@ -57,12 +58,20 @@ namespace Java.Net
         {
             return SExecuteWithSignature<Java.Net.ProxySelector>(LocalBridgeClazz, "of", "(Ljava/net/InetSocketAddress;)Ljava/net/ProxySelector;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/ProxySelector.html#setDefault(java.net.ProxySelector)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.ProxySelector"/></param>
+        public static void SetDefault(Java.Net.ProxySelector arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/net/ProxySelector;)V", arg0);
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ProxySelector.html#select(java.net.URI)"/>
+        /// <see href="https://developer.android.com/reference/java/net/ProxySelector.html#select(java.net.URI)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
@@ -71,7 +80,7 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Util.List<Java.Net.Proxy>>("select", "(Ljava/net/URI;)Ljava/util/List;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ProxySelector.html#connectFailed(java.net.URI,java.net.SocketAddress,java.io.IOException)"/>
+        /// <see href="https://developer.android.com/reference/java/net/ProxySelector.html#connectFailed(java.net.URI,java.net.SocketAddress,java.io.IOException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <param name="arg1"><see cref="Java.Net.SocketAddress"/></param>

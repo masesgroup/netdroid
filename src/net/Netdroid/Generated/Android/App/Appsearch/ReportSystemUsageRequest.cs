@@ -46,39 +46,44 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/ReportSystemUsageRequest.html#getDatabaseName()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/ReportSystemUsageRequest.html#getDatabaseName()"/>
         /// </summary>
-        public Java.Lang.String DatabaseName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDatabaseName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDatabaseName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getDatabaseName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/ReportSystemUsageRequest.html#getDocumentId()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/ReportSystemUsageRequest.html#getDocumentId()"/>
         /// </summary>
-        public Java.Lang.String DocumentId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDocumentId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDocumentId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getDocumentId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/ReportSystemUsageRequest.html#getNamespace()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/ReportSystemUsageRequest.html#getNamespace()"/>
         /// </summary>
-        public Java.Lang.String Namespace
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNamespace()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/ReportSystemUsageRequest.html#getPackageName()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/ReportSystemUsageRequest.html#getPackageName()"/>
         /// </summary>
-        public Java.Lang.String PackageName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/ReportSystemUsageRequest.html#getUsageTimestampMillis()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/ReportSystemUsageRequest.html#getUsageTimestampMillis()"/>
         /// </summary>
-        public long UsageTimestampMillis
+        /// <returns><see cref="long"/></returns>
+        public long GetUsageTimestampMillis()
         {
-            get { return IExecuteWithSignature<long>("getUsageTimestampMillis", "()J"); }
+            return IExecuteWithSignature<long>("getUsageTimestampMillis", "()J");
         }
 
         #endregion

@@ -40,7 +40,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#POP_BACK_STACK_INCLUSIVE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int POP_BACK_STACK_INCLUSIVE { get { if (!_POP_BACK_STACK_INCLUSIVEReady) { _POP_BACK_STACK_INCLUSIVEContent = SGetField<int>(LocalBridgeClazz, "POP_BACK_STACK_INCLUSIVE"); _POP_BACK_STACK_INCLUSIVEReady = true; } return _POP_BACK_STACK_INCLUSIVEContent; } }
         private static int _POP_BACK_STACK_INCLUSIVEContent = default;
         private static bool _POP_BACK_STACK_INCLUSIVEReady = false; // this is used because in case of generics 
@@ -52,7 +52,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#enableDebugLogging(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void EnableDebugLogging(bool arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "enableDebugLogging", "(Z)V", arg0);
@@ -62,35 +62,11 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#getBackStackEntryCount()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int BackStackEntryCount
-        {
-            get { return IExecuteWithSignature<int>("getBackStackEntryCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#getFragments()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Util.List<Android.App.Fragment> Fragments
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.Fragment>>("getFragments", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#getPrimaryNavigationFragment()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.App.Fragment PrimaryNavigationFragment
-        {
-            get { return IExecuteWithSignature<Android.App.Fragment>("getPrimaryNavigationFragment", "()Landroid/app/Fragment;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#findFragmentById(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Android.App.Fragment"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.App.Fragment FindFragmentById(int arg0)
         {
             return IExecuteWithSignature<Android.App.Fragment>("findFragmentById", "(I)Landroid/app/Fragment;", arg0);
@@ -100,7 +76,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.App.Fragment"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.App.Fragment FindFragmentByTag(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.App.Fragment>("findFragmentByTag", "(Ljava/lang/String;)Landroid/app/Fragment;", arg0);
@@ -111,17 +87,26 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.App.Fragment"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.App.Fragment GetFragment(Android.Os.Bundle arg0, Java.Lang.String arg1)
         {
             return IExecute<Android.App.Fragment>("getFragment", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#getPrimaryNavigationFragment()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.Fragment"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.Fragment GetPrimaryNavigationFragment()
+        {
+            return IExecuteWithSignature<Android.App.Fragment>("getPrimaryNavigationFragment", "()Landroid/app/Fragment;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#saveFragmentInstanceState(android.app.Fragment)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Fragment"/></param>
         /// <returns><see cref="Android.App.Fragment.SavedState"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.App.Fragment.SavedState SaveFragmentInstanceState(Android.App.Fragment arg0)
         {
             return IExecuteWithSignature<Android.App.Fragment.SavedState>("saveFragmentInstanceState", "(Landroid/app/Fragment;)Landroid/app/Fragment$SavedState;", arg0);
@@ -131,7 +116,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Android.App.FragmentManager.BackStackEntry"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.App.FragmentManager.BackStackEntry GetBackStackEntryAt(int arg0)
         {
             return IExecuteWithSignature<Android.App.FragmentManager.BackStackEntry>("getBackStackEntryAt", "(I)Landroid/app/FragmentManager$BackStackEntry;", arg0);
@@ -140,7 +125,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#beginTransaction()"/>
         /// </summary>
         /// <returns><see cref="Android.App.FragmentTransaction"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.App.FragmentTransaction BeginTransaction()
         {
             return IExecuteWithSignature<Android.App.FragmentTransaction>("beginTransaction", "()Landroid/app/FragmentTransaction;");
@@ -149,7 +134,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#executePendingTransactions()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool ExecutePendingTransactions()
         {
             return IExecuteWithSignature<bool>("executePendingTransactions", "()Z");
@@ -158,7 +143,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#isDestroyed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsDestroyed()
         {
             return IExecuteWithSignature<bool>("isDestroyed", "()Z");
@@ -167,7 +152,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#isStateSaved()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsStateSaved()
         {
             return IExecuteWithSignature<bool>("isStateSaved", "()Z");
@@ -176,7 +161,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#popBackStackImmediate()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool PopBackStackImmediate()
         {
             return IExecuteWithSignature<bool>("popBackStackImmediate", "()Z");
@@ -187,7 +172,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool PopBackStackImmediate(int arg0, int arg1)
         {
             return IExecute<bool>("popBackStackImmediate", arg0, arg1);
@@ -198,16 +183,34 @@ namespace Android.App
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool PopBackStackImmediate(Java.Lang.String arg0, int arg1)
         {
             return IExecute<bool>("popBackStackImmediate", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#getBackStackEntryCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetBackStackEntryCount()
+        {
+            return IExecuteWithSignature<int>("getBackStackEntryCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#getFragments()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.List<Android.App.Fragment> GetFragments()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.Fragment>>("getFragments", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#addOnBackStackChangedListener(android.app.FragmentManager.OnBackStackChangedListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.FragmentManager.OnBackStackChangedListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddOnBackStackChangedListener(Android.App.FragmentManager.OnBackStackChangedListener arg0)
         {
             IExecuteWithSignature("addOnBackStackChangedListener", "(Landroid/app/FragmentManager$OnBackStackChangedListener;)V", arg0);
@@ -219,7 +222,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg2"><see cref="Java.Io.PrintWriter"/></param>
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Dump(Java.Lang.String arg0, Java.Io.FileDescriptor arg1, Java.Io.PrintWriter arg2, Java.Lang.String[] arg3)
         {
             IExecute("dump", arg0, arg1, arg2, arg3);
@@ -227,7 +230,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#popBackStack()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void PopBackStack()
         {
             IExecuteWithSignature("popBackStack", "()V");
@@ -237,7 +240,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void PopBackStack(int arg0, int arg1)
         {
             IExecute("popBackStack", arg0, arg1);
@@ -247,7 +250,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void PopBackStack(Java.Lang.String arg0, int arg1)
         {
             IExecute("popBackStack", arg0, arg1);
@@ -258,7 +261,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Android.App.Fragment"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void PutFragment(Android.Os.Bundle arg0, Java.Lang.String arg1, Android.App.Fragment arg2)
         {
             IExecute("putFragment", arg0, arg1, arg2);
@@ -268,7 +271,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.FragmentManager.FragmentLifecycleCallbacks"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RegisterFragmentLifecycleCallbacks(Android.App.FragmentManager.FragmentLifecycleCallbacks arg0, bool arg1)
         {
             IExecute("registerFragmentLifecycleCallbacks", arg0, arg1);
@@ -277,7 +280,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#removeOnBackStackChangedListener(android.app.FragmentManager.OnBackStackChangedListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.FragmentManager.OnBackStackChangedListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveOnBackStackChangedListener(Android.App.FragmentManager.OnBackStackChangedListener arg0)
         {
             IExecuteWithSignature("removeOnBackStackChangedListener", "(Landroid/app/FragmentManager$OnBackStackChangedListener;)V", arg0);
@@ -286,7 +289,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#unregisterFragmentLifecycleCallbacks(android.app.FragmentManager.FragmentLifecycleCallbacks)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.FragmentManager.FragmentLifecycleCallbacks"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void UnregisterFragmentLifecycleCallbacks(Android.App.FragmentManager.FragmentLifecycleCallbacks arg0)
         {
             IExecuteWithSignature("unregisterFragmentLifecycleCallbacks", "(Landroid/app/FragmentManager$FragmentLifecycleCallbacks;)V", arg0);
@@ -294,7 +297,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentManager.html#invalidateOptionsMenu()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void InvalidateOptionsMenu()
         {
             IExecuteWithSignature("invalidateOptionsMenu", "()V");
@@ -324,52 +327,58 @@ namespace Android.App
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/FragmentManager.BackStackEntry.html#getBreadCrumbShortTitle()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/FragmentManager.BackStackEntry.html#getBreadCrumbShortTitleRes()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Java.Lang.CharSequence BreadCrumbShortTitle
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetBreadCrumbShortTitleRes()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getBreadCrumbShortTitle", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<int>("getBreadCrumbShortTitleRes", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/FragmentManager.BackStackEntry.html#getBreadCrumbShortTitleRes()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/FragmentManager.BackStackEntry.html#getBreadCrumbTitleRes()"/>
             /// </summary>
-            [System.Obsolete()]
-            public int BreadCrumbShortTitleRes
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetBreadCrumbTitleRes()
             {
-                get { return IExecuteWithSignature<int>("getBreadCrumbShortTitleRes", "()I"); }
+                return IExecuteWithSignature<int>("getBreadCrumbTitleRes", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/FragmentManager.BackStackEntry.html#getBreadCrumbTitle()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/FragmentManager.BackStackEntry.html#getId()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Java.Lang.CharSequence BreadCrumbTitle
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetId()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getBreadCrumbTitle", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<int>("getId", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/FragmentManager.BackStackEntry.html#getBreadCrumbTitleRes()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/FragmentManager.BackStackEntry.html#getBreadCrumbShortTitle()"/>
             /// </summary>
-            [System.Obsolete()]
-            public int BreadCrumbTitleRes
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            [global::System.Obsolete()]
+            public Java.Lang.CharSequence GetBreadCrumbShortTitle()
             {
-                get { return IExecuteWithSignature<int>("getBreadCrumbTitleRes", "()I"); }
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getBreadCrumbShortTitle", "()Ljava/lang/CharSequence;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/FragmentManager.BackStackEntry.html#getId()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/FragmentManager.BackStackEntry.html#getBreadCrumbTitle()"/>
             /// </summary>
-            [System.Obsolete()]
-            public int Id
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            [global::System.Obsolete()]
+            public Java.Lang.CharSequence GetBreadCrumbTitle()
             {
-                get { return IExecuteWithSignature<int>("getId", "()I"); }
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getBreadCrumbTitle", "()Ljava/lang/CharSequence;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/FragmentManager.BackStackEntry.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/FragmentManager.BackStackEntry.html#getName()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Java.Lang.String Name
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            [global::System.Obsolete()]
+            public Java.Lang.String GetName()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
 
             #endregion
@@ -408,7 +417,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="Android.App.FragmentManager"/></param>
             /// <param name="arg1"><see cref="Android.App.Fragment"/></param>
             /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnFragmentActivityCreated(Android.App.FragmentManager arg0, Android.App.Fragment arg1, Android.Os.Bundle arg2)
             {
                 IExecute("onFragmentActivityCreated", arg0, arg1, arg2);
@@ -419,7 +428,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="Android.App.FragmentManager"/></param>
             /// <param name="arg1"><see cref="Android.App.Fragment"/></param>
             /// <param name="arg2"><see cref="Android.Content.Context"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnFragmentAttached(Android.App.FragmentManager arg0, Android.App.Fragment arg1, Android.Content.Context arg2)
             {
                 IExecute("onFragmentAttached", arg0, arg1, arg2);
@@ -430,7 +439,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="Android.App.FragmentManager"/></param>
             /// <param name="arg1"><see cref="Android.App.Fragment"/></param>
             /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnFragmentCreated(Android.App.FragmentManager arg0, Android.App.Fragment arg1, Android.Os.Bundle arg2)
             {
                 IExecute("onFragmentCreated", arg0, arg1, arg2);
@@ -440,7 +449,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.FragmentManager"/></param>
             /// <param name="arg1"><see cref="Android.App.Fragment"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnFragmentDestroyed(Android.App.FragmentManager arg0, Android.App.Fragment arg1)
             {
                 IExecute("onFragmentDestroyed", arg0, arg1);
@@ -450,7 +459,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.FragmentManager"/></param>
             /// <param name="arg1"><see cref="Android.App.Fragment"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnFragmentDetached(Android.App.FragmentManager arg0, Android.App.Fragment arg1)
             {
                 IExecute("onFragmentDetached", arg0, arg1);
@@ -460,7 +469,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.FragmentManager"/></param>
             /// <param name="arg1"><see cref="Android.App.Fragment"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnFragmentPaused(Android.App.FragmentManager arg0, Android.App.Fragment arg1)
             {
                 IExecute("onFragmentPaused", arg0, arg1);
@@ -471,7 +480,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="Android.App.FragmentManager"/></param>
             /// <param name="arg1"><see cref="Android.App.Fragment"/></param>
             /// <param name="arg2"><see cref="Android.Content.Context"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnFragmentPreAttached(Android.App.FragmentManager arg0, Android.App.Fragment arg1, Android.Content.Context arg2)
             {
                 IExecute("onFragmentPreAttached", arg0, arg1, arg2);
@@ -482,7 +491,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="Android.App.FragmentManager"/></param>
             /// <param name="arg1"><see cref="Android.App.Fragment"/></param>
             /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnFragmentPreCreated(Android.App.FragmentManager arg0, Android.App.Fragment arg1, Android.Os.Bundle arg2)
             {
                 IExecute("onFragmentPreCreated", arg0, arg1, arg2);
@@ -492,7 +501,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.FragmentManager"/></param>
             /// <param name="arg1"><see cref="Android.App.Fragment"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnFragmentResumed(Android.App.FragmentManager arg0, Android.App.Fragment arg1)
             {
                 IExecute("onFragmentResumed", arg0, arg1);
@@ -503,7 +512,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="Android.App.FragmentManager"/></param>
             /// <param name="arg1"><see cref="Android.App.Fragment"/></param>
             /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnFragmentSaveInstanceState(Android.App.FragmentManager arg0, Android.App.Fragment arg1, Android.Os.Bundle arg2)
             {
                 IExecute("onFragmentSaveInstanceState", arg0, arg1, arg2);
@@ -513,7 +522,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.FragmentManager"/></param>
             /// <param name="arg1"><see cref="Android.App.Fragment"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnFragmentStarted(Android.App.FragmentManager arg0, Android.App.Fragment arg1)
             {
                 IExecute("onFragmentStarted", arg0, arg1);
@@ -523,7 +532,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.FragmentManager"/></param>
             /// <param name="arg1"><see cref="Android.App.Fragment"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnFragmentStopped(Android.App.FragmentManager arg0, Android.App.Fragment arg1)
             {
                 IExecute("onFragmentStopped", arg0, arg1);
@@ -535,7 +544,7 @@ namespace Android.App
             /// <param name="arg1"><see cref="Android.App.Fragment"/></param>
             /// <param name="arg2"><see cref="Android.View.View"/></param>
             /// <param name="arg3"><see cref="Android.Os.Bundle"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnFragmentViewCreated(Android.App.FragmentManager arg0, Android.App.Fragment arg1, Android.View.View arg2, Android.Os.Bundle arg3)
             {
                 IExecute("onFragmentViewCreated", arg0, arg1, arg2, arg3);
@@ -545,7 +554,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.FragmentManager"/></param>
             /// <param name="arg1"><see cref="Android.App.Fragment"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnFragmentViewDestroyed(Android.App.FragmentManager arg0, Android.App.Fragment arg1)
             {
                 IExecute("onFragmentViewDestroyed", arg0, arg1);
@@ -586,7 +595,7 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onBackStackChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnBackStackChangedEventHandler));
+                AddEventHandler("onBackStackChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnBackStackChangedEventHandler));
 
             }
 
@@ -594,7 +603,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/FragmentManager.OnBackStackChangedListener.html#onBackStackChanged()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnBackStackChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnBackStackChanged { get; set; } = null;
+            public global::System.Action OnOnBackStackChanged { get; set; } = null;
 
             void OnBackStackChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -605,7 +614,7 @@ namespace Android.App
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.OnBackStackChangedListener.html#onBackStackChanged()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnBackStackChanged()
             {
                 
@@ -644,7 +653,7 @@ namespace Android.App
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/FragmentManager.OnBackStackChangedListener.html#onBackStackChanged()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnBackStackChanged()
             {
                 IExecuteWithSignature("onBackStackChanged", "()V");

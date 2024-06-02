@@ -66,18 +66,12 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/ScaleXSpan.html#getScaleX()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/style/ScaleXSpan.html#getScaleX()"/>
         /// </summary>
-        public float ScaleX
+        /// <returns><see cref="float"/></returns>
+        public float GetScaleX()
         {
-            get { return IExecuteWithSignature<float>("getScaleX", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/ScaleXSpan.html#getSpanTypeId()"/> 
-        /// </summary>
-        public int SpanTypeId
-        {
-            get { return IExecuteWithSignature<int>("getSpanTypeId", "()I"); }
+            return IExecuteWithSignature<float>("getScaleX", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/ScaleXSpan.html#describeContents()"/>
@@ -86,6 +80,14 @@ namespace Android.Text.Style
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/ScaleXSpan.html#getSpanTypeId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSpanTypeId()
+        {
+            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/ScaleXSpan.html#writeToParcel(android.os.Parcel,int)"/>

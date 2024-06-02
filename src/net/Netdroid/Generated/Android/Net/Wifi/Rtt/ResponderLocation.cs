@@ -124,125 +124,6 @@ namespace Android.Net.Wifi.Rtt
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getAltitude()"/> 
-        /// </summary>
-        public double Altitude
-        {
-            get { return IExecuteWithSignature<double>("getAltitude", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getAltitudeType()"/> 
-        /// </summary>
-        public int AltitudeType
-        {
-            get { return IExecuteWithSignature<int>("getAltitudeType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getAltitudeUncertainty()"/> 
-        /// </summary>
-        public double AltitudeUncertainty
-        {
-            get { return IExecuteWithSignature<double>("getAltitudeUncertainty", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getColocatedBssids()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Net.MacAddress> ColocatedBssids
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.MacAddress>>("getColocatedBssids", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getDatum()"/> 
-        /// </summary>
-        public int Datum
-        {
-            get { return IExecuteWithSignature<int>("getDatum", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getExpectedToMove()"/> 
-        /// </summary>
-        public int ExpectedToMove
-        {
-            get { return IExecuteWithSignature<int>("getExpectedToMove", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getFloorNumber()"/> 
-        /// </summary>
-        public double FloorNumber
-        {
-            get { return IExecuteWithSignature<double>("getFloorNumber", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getHeightAboveFloorMeters()"/> 
-        /// </summary>
-        public double HeightAboveFloorMeters
-        {
-            get { return IExecuteWithSignature<double>("getHeightAboveFloorMeters", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getHeightAboveFloorUncertaintyMeters()"/> 
-        /// </summary>
-        public double HeightAboveFloorUncertaintyMeters
-        {
-            get { return IExecuteWithSignature<double>("getHeightAboveFloorUncertaintyMeters", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getLatitude()"/> 
-        /// </summary>
-        public double Latitude
-        {
-            get { return IExecuteWithSignature<double>("getLatitude", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getLatitudeUncertainty()"/> 
-        /// </summary>
-        public double LatitudeUncertainty
-        {
-            get { return IExecuteWithSignature<double>("getLatitudeUncertainty", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getLciVersion()"/> 
-        /// </summary>
-        public int LciVersion
-        {
-            get { return IExecuteWithSignature<int>("getLciVersion", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getLongitude()"/> 
-        /// </summary>
-        public double Longitude
-        {
-            get { return IExecuteWithSignature<double>("getLongitude", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getLongitudeUncertainty()"/> 
-        /// </summary>
-        public double LongitudeUncertainty
-        {
-            get { return IExecuteWithSignature<double>("getLongitudeUncertainty", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getMapImageMimeType()"/> 
-        /// </summary>
-        public Java.Lang.String MapImageMimeType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMapImageMimeType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getMapImageUri()"/> 
-        /// </summary>
-        public Android.Net.Uri MapImageUri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getMapImageUri", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getRegisteredLocationAgreementIndication()"/> 
-        /// </summary>
-        public bool RegisteredLocationAgreementIndication
-        {
-            get { return IExecuteWithSignature<bool>("getRegisteredLocationAgreementIndication", "()Z"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#toCivicLocationAddress()"/>
         /// </summary>
         /// <returns><see cref="Android.Location.Address"/></returns>
@@ -259,12 +140,28 @@ namespace Android.Net.Wifi.Rtt
             return IExecuteWithSignature<Android.Location.Location>("toLocation", "()Landroid/location/Location;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getMapImageUri()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetMapImageUri()
+        {
+            return IExecuteWithSignature<Android.Net.Uri>("getMapImageUri", "()Landroid/net/Uri;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#toCivicLocationSparseArray()"/>
         /// </summary>
         /// <returns><see cref="Android.Util.SparseArray"/></returns>
         public Android.Util.SparseArray<Java.Lang.String> ToCivicLocationSparseArray()
         {
             return IExecuteWithSignature<Android.Util.SparseArray<Java.Lang.String>>("toCivicLocationSparseArray", "()Landroid/util/SparseArray;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getRegisteredLocationAgreementIndication()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetRegisteredLocationAgreementIndication()
+        {
+            return IExecuteWithSignature<bool>("getRegisteredLocationAgreementIndication", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#isLciSubelementValid()"/>
@@ -283,12 +180,132 @@ namespace Android.Net.Wifi.Rtt
             return IExecuteWithSignature<bool>("isZaxisSubelementValid", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getAltitude()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetAltitude()
+        {
+            return IExecuteWithSignature<double>("getAltitude", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getAltitudeUncertainty()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetAltitudeUncertainty()
+        {
+            return IExecuteWithSignature<double>("getAltitudeUncertainty", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getFloorNumber()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetFloorNumber()
+        {
+            return IExecuteWithSignature<double>("getFloorNumber", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getHeightAboveFloorMeters()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetHeightAboveFloorMeters()
+        {
+            return IExecuteWithSignature<double>("getHeightAboveFloorMeters", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getHeightAboveFloorUncertaintyMeters()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetHeightAboveFloorUncertaintyMeters()
+        {
+            return IExecuteWithSignature<double>("getHeightAboveFloorUncertaintyMeters", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getLatitude()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetLatitude()
+        {
+            return IExecuteWithSignature<double>("getLatitude", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getLatitudeUncertainty()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetLatitudeUncertainty()
+        {
+            return IExecuteWithSignature<double>("getLatitudeUncertainty", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getLongitude()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetLongitude()
+        {
+            return IExecuteWithSignature<double>("getLongitude", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getLongitudeUncertainty()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetLongitudeUncertainty()
+        {
+            return IExecuteWithSignature<double>("getLongitudeUncertainty", "()D");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getAltitudeType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAltitudeType()
+        {
+            return IExecuteWithSignature<int>("getAltitudeType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getDatum()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDatum()
+        {
+            return IExecuteWithSignature<int>("getDatum", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getExpectedToMove()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetExpectedToMove()
+        {
+            return IExecuteWithSignature<int>("getExpectedToMove", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getLciVersion()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLciVersion()
+        {
+            return IExecuteWithSignature<int>("getLciVersion", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getMapImageMimeType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMapImageMimeType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMapImageMimeType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#getColocatedBssids()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.MacAddress> GetColocatedBssids()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.MacAddress>>("getColocatedBssids", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/ResponderLocation.html#writeToParcel(android.os.Parcel,int)"/>

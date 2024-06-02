@@ -127,32 +127,68 @@ namespace Android.View.Animation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/GridLayoutAnimationController.html#getColumnDelay()"/> <see href="https://developer.android.com/reference/android/view/animation/GridLayoutAnimationController.html#setColumnDelay(float)"/>
+        /// <see href="https://developer.android.com/reference/android/view/animation/GridLayoutAnimationController.html#getColumnDelay()"/>
         /// </summary>
-        public float ColumnDelay
+        /// <returns><see cref="float"/></returns>
+        public float GetColumnDelay()
         {
-            get { return IExecuteWithSignature<float>("getColumnDelay", "()F"); } set { IExecuteWithSignature("setColumnDelay", "(F)V", value); }
+            return IExecuteWithSignature<float>("getColumnDelay", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/GridLayoutAnimationController.html#getDirection()"/> <see href="https://developer.android.com/reference/android/view/animation/GridLayoutAnimationController.html#setDirection(int)"/>
+        /// <see href="https://developer.android.com/reference/android/view/animation/GridLayoutAnimationController.html#getRowDelay()"/>
         /// </summary>
-        public int Direction
+        /// <returns><see cref="float"/></returns>
+        public float GetRowDelay()
         {
-            get { return IExecuteWithSignature<int>("getDirection", "()I"); } set { IExecuteWithSignature("setDirection", "(I)V", value); }
+            return IExecuteWithSignature<float>("getRowDelay", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/GridLayoutAnimationController.html#getDirectionPriority()"/> <see href="https://developer.android.com/reference/android/view/animation/GridLayoutAnimationController.html#setDirectionPriority(int)"/>
+        /// <see href="https://developer.android.com/reference/android/view/animation/GridLayoutAnimationController.html#getDirection()"/>
         /// </summary>
-        public int DirectionPriority
+        /// <returns><see cref="int"/></returns>
+        public int GetDirection()
         {
-            get { return IExecuteWithSignature<int>("getDirectionPriority", "()I"); } set { IExecuteWithSignature("setDirectionPriority", "(I)V", value); }
+            return IExecuteWithSignature<int>("getDirection", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/GridLayoutAnimationController.html#getRowDelay()"/> <see href="https://developer.android.com/reference/android/view/animation/GridLayoutAnimationController.html#setRowDelay(float)"/>
+        /// <see href="https://developer.android.com/reference/android/view/animation/GridLayoutAnimationController.html#getDirectionPriority()"/>
         /// </summary>
-        public float RowDelay
+        /// <returns><see cref="int"/></returns>
+        public int GetDirectionPriority()
         {
-            get { return IExecuteWithSignature<float>("getRowDelay", "()F"); } set { IExecuteWithSignature("setRowDelay", "(F)V", value); }
+            return IExecuteWithSignature<int>("getDirectionPriority", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/GridLayoutAnimationController.html#setColumnDelay(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetColumnDelay(float arg0)
+        {
+            IExecuteWithSignature("setColumnDelay", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/GridLayoutAnimationController.html#setDirection(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDirection(int arg0)
+        {
+            IExecuteWithSignature("setDirection", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/GridLayoutAnimationController.html#setDirectionPriority(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDirectionPriority(int arg0)
+        {
+            IExecuteWithSignature("setDirectionPriority", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/GridLayoutAnimationController.html#setRowDelay(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetRowDelay(float arg0)
+        {
+            IExecuteWithSignature("setRowDelay", "(F)V", arg0);
         }
 
         #endregion

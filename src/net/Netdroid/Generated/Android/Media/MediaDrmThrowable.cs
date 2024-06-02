@@ -64,25 +64,28 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrmThrowable.html#getErrorContext()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrmThrowable.html#getErrorContext()"/>
         /// </summary>
-        public int ErrorContext
+        /// <returns><see cref="int"/></returns>
+        public int GetErrorContext()
         {
-            get { return IExecuteWithSignature<int>("getErrorContext", "()I"); }
+            return IExecuteWithSignature<int>("getErrorContext", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrmThrowable.html#getOemError()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrmThrowable.html#getOemError()"/>
         /// </summary>
-        public int OemError
+        /// <returns><see cref="int"/></returns>
+        public int GetOemError()
         {
-            get { return IExecuteWithSignature<int>("getOemError", "()I"); }
+            return IExecuteWithSignature<int>("getOemError", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaDrmThrowable.html#getVendorError()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaDrmThrowable.html#getVendorError()"/>
         /// </summary>
-        public int VendorError
+        /// <returns><see cref="int"/></returns>
+        public int GetVendorError()
         {
-            get { return IExecuteWithSignature<int>("getVendorError", "()I"); }
+            return IExecuteWithSignature<int>("getVendorError", "()I");
         }
 
         #endregion

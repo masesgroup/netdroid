@@ -64,7 +64,7 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAKeyPairGenerator.html#initialize(int,boolean,java.security.SecureRandom)"/>
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/DSAKeyPairGenerator.html#initialize(int,boolean,java.security.SecureRandom)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -75,7 +75,7 @@ namespace Java.Security.Interfaces
             IExecute("initialize", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAKeyPairGenerator.html#initialize(java.security.interfaces.DSAParams,java.security.SecureRandom)"/>
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/DSAKeyPairGenerator.html#initialize(java.security.interfaces.DSAParams,java.security.SecureRandom)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Interfaces.DSAParams"/></param>
         /// <param name="arg1"><see cref="Java.Security.SecureRandom"/></param>

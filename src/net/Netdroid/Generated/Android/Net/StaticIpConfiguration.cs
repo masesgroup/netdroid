@@ -52,32 +52,12 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/StaticIpConfiguration.html#getDnsServers()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/StaticIpConfiguration.html#getIpAddress()"/>
         /// </summary>
-        public Java.Util.List<Java.Net.InetAddress> DnsServers
+        /// <returns><see cref="Android.Net.LinkAddress"/></returns>
+        public Android.Net.LinkAddress GetIpAddress()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Net.InetAddress>>("getDnsServers", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/StaticIpConfiguration.html#getDomains()"/> 
-        /// </summary>
-        public Java.Lang.String Domains
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDomains", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/StaticIpConfiguration.html#getGateway()"/> 
-        /// </summary>
-        public Java.Net.InetAddress Gateway
-        {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getGateway", "()Ljava/net/InetAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/StaticIpConfiguration.html#getIpAddress()"/> 
-        /// </summary>
-        public Android.Net.LinkAddress IpAddress
-        {
-            get { return IExecuteWithSignature<Android.Net.LinkAddress>("getIpAddress", "()Landroid/net/LinkAddress;"); }
+            return IExecuteWithSignature<Android.Net.LinkAddress>("getIpAddress", "()Landroid/net/LinkAddress;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/StaticIpConfiguration.html#describeContents()"/>
@@ -86,6 +66,30 @@ namespace Android.Net
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/StaticIpConfiguration.html#getDomains()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDomains()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDomains", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/StaticIpConfiguration.html#getGateway()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        public Java.Net.InetAddress GetGateway()
+        {
+            return IExecuteWithSignature<Java.Net.InetAddress>("getGateway", "()Ljava/net/InetAddress;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/StaticIpConfiguration.html#getDnsServers()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Net.InetAddress> GetDnsServers()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Net.InetAddress>>("getDnsServers", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/StaticIpConfiguration.html#writeToParcel(android.os.Parcel,int)"/>

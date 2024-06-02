@@ -46,32 +46,36 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodGlucoseRecord.html#getSpecimenSource()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodGlucoseRecord.html#getLevel()"/>
         /// </summary>
-        public int GetSpecimenSource
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.BloodGlucose"/></returns>
+        public Android.Health.Connect.Datatypes.Units.BloodGlucose GetLevel()
         {
-            get { return IExecuteWithSignature<int>("getSpecimenSource", "()I"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.BloodGlucose>("getLevel", "()Landroid/health/connect/datatypes/units/BloodGlucose;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodGlucoseRecord.html#getLevel()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodGlucoseRecord.html#getMealType()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.BloodGlucose Level
+        /// <returns><see cref="int"/></returns>
+        public int GetMealType()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.BloodGlucose>("getLevel", "()Landroid/health/connect/datatypes/units/BloodGlucose;"); }
+            return IExecuteWithSignature<int>("getMealType", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodGlucoseRecord.html#getMealType()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodGlucoseRecord.html#getRelationToMeal()"/>
         /// </summary>
-        public int MealType
+        /// <returns><see cref="int"/></returns>
+        public int GetRelationToMeal()
         {
-            get { return IExecuteWithSignature<int>("getMealType", "()I"); }
+            return IExecuteWithSignature<int>("getRelationToMeal", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodGlucoseRecord.html#getRelationToMeal()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BloodGlucoseRecord.html#getSpecimenSource()"/>
         /// </summary>
-        public int RelationToMeal
+        /// <returns><see cref="int"/></returns>
+        public int GetSpecimenSource()
         {
-            get { return IExecuteWithSignature<int>("getRelationToMeal", "()I"); }
+            return IExecuteWithSignature<int>("getSpecimenSource", "()I");
         }
 
         #endregion

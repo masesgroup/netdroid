@@ -2908,7 +2908,7 @@ namespace Android.Opengl
         /// <param name="arg4"><see cref="Java.Nio.IntBuffer"/></param>
         /// <param name="arg5"><see cref="Java.Nio.IntBuffer"/></param>
         /// <param name="arg6"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void GlGetTransformFeedbackVarying(int arg0, int arg1, int arg2, Java.Nio.IntBuffer arg3, Java.Nio.IntBuffer arg4, Java.Nio.IntBuffer arg5, byte arg6)
         {
             SExecute(LocalBridgeClazz, "glGetTransformFeedbackVarying", arg0, arg1, arg2, arg3, arg4, arg5, arg6);

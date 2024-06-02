@@ -46,16 +46,16 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SecureDirectoryStream.html#getFileAttributeView(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#getFileAttributeView(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Nio.File.Attribute.FileAttributeView"/></returns>
         public Java.Nio.File.Attribute.FileAttributeView GetFileAttributeView(Java.Lang.Class arg0)
         {
-            return IExecuteWithSignature<Java.Nio.File.Attribute.FileAttributeView>("getFileAttributeView", "(Ljava/lang/Class;)Ljava/nio/file/attribute/FileAttributeView;", arg0);
+            return IExecute<Java.Nio.File.Attribute.FileAttributeView>("getFileAttributeView", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SecureDirectoryStream.html#getFileAttributeView(java.lang.Object,java.lang.Class,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#getFileAttributeView(java.lang.Object,java.lang.Class,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -66,7 +66,7 @@ namespace Java.Nio.File
             if (arg2.Length == 0) return IExecute<Java.Nio.File.Attribute.FileAttributeView>("getFileAttributeView", arg0, arg1); else return IExecute<Java.Nio.File.Attribute.FileAttributeView>("getFileAttributeView", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SecureDirectoryStream.html#newByteChannel(java.lang.Object,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#newByteChannel(java.lang.Object,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
@@ -78,7 +78,7 @@ namespace Java.Nio.File
             if (arg2.Length == 0) return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1); else return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SecureDirectoryStream.html#newDirectoryStream(java.lang.Object,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#newDirectoryStream(java.lang.Object,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.LinkOption"/></param>
@@ -89,7 +89,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return IExecute<Java.Nio.File.SecureDirectoryStream>("newDirectoryStream", arg0); else return IExecute<Java.Nio.File.SecureDirectoryStream>("newDirectoryStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SecureDirectoryStream.html#deleteDirectory(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#deleteDirectory(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -98,7 +98,7 @@ namespace Java.Nio.File
             IExecuteWithSignature("deleteDirectory", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SecureDirectoryStream.html#deleteFile(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#deleteFile(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -107,7 +107,7 @@ namespace Java.Nio.File
             IExecuteWithSignature("deleteFile", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SecureDirectoryStream.html#move(java.lang.Object,java.nio.file.SecureDirectoryStream,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#move(java.lang.Object,java.nio.file.SecureDirectoryStream,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.SecureDirectoryStream"/></param>
@@ -171,29 +171,29 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SecureDirectoryStream.html#getFileAttributeView(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#getFileAttributeView(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.IFileAttributeView"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V GetFileAttributeView<V>(Java.Lang.Class arg0) where V: Java.Nio.File.Attribute.IFileAttributeView, new()
+        public V GetFileAttributeView<V>(Java.Lang.Class arg0) where V : Java.Nio.File.Attribute.IFileAttributeView, new()
         {
-            return IExecuteWithSignature<V>("getFileAttributeView", "(Ljava/lang/Class;)Ljava/nio/file/attribute/FileAttributeView;", arg0);
+            return IExecute<V>("getFileAttributeView", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SecureDirectoryStream.html#getFileAttributeView(java.lang.Object,java.lang.Class,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#getFileAttributeView(java.lang.Object,java.lang.Class,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
         /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.IFileAttributeView"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V GetFileAttributeView<V>(T arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V: Java.Nio.File.Attribute.IFileAttributeView, new()
+        public V GetFileAttributeView<V>(T arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V : Java.Nio.File.Attribute.IFileAttributeView, new()
         {
             if (arg2.Length == 0) return IExecute<V>("getFileAttributeView", arg0, arg1); else return IExecute<V>("getFileAttributeView", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SecureDirectoryStream.html#newByteChannel(java.lang.Object,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#newByteChannel(java.lang.Object,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
@@ -201,12 +201,12 @@ namespace Java.Nio.File
         /// <typeparam name="Arg1ExtendsJava_Nio_File_OpenOption"><see cref="Java.Nio.File.OpenOption"/></typeparam>
         /// <returns><see cref="Java.Nio.Channels.SeekableByteChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.Channels.SeekableByteChannel NewByteChannel<Arg1ExtendsJava_Nio_File_OpenOption>(T arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption: Java.Nio.File.OpenOption
+        public Java.Nio.Channels.SeekableByteChannel NewByteChannel<Arg1ExtendsJava_Nio_File_OpenOption>(T arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption : Java.Nio.File.OpenOption
         {
             if (arg2.Length == 0) return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1); else return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SecureDirectoryStream.html#newDirectoryStream(java.lang.Object,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#newDirectoryStream(java.lang.Object,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.LinkOption"/></param>
@@ -217,7 +217,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return IExecute<Java.Nio.File.SecureDirectoryStream<T>>("newDirectoryStream", arg0); else return IExecute<Java.Nio.File.SecureDirectoryStream<T>>("newDirectoryStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SecureDirectoryStream.html#deleteDirectory(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#deleteDirectory(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -226,7 +226,7 @@ namespace Java.Nio.File
             IExecuteWithSignature("deleteDirectory", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SecureDirectoryStream.html#deleteFile(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#deleteFile(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -235,7 +235,7 @@ namespace Java.Nio.File
             IExecuteWithSignature("deleteFile", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SecureDirectoryStream.html#move(java.lang.Object,java.nio.file.SecureDirectoryStream,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html#move(java.lang.Object,java.nio.file.SecureDirectoryStream,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.SecureDirectoryStream"/></param>

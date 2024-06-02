@@ -42,7 +42,7 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalDouble.html#empty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalDouble.html#empty()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public static Java.Util.OptionalDouble Empty()
@@ -50,7 +50,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.OptionalDouble>(LocalBridgeClazz, "empty", "()Ljava/util/OptionalDouble;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalDouble.html#of(double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalDouble.html#of(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
@@ -63,26 +63,19 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalDouble.html#getAsDouble()"/> 
-        /// </summary>
-        public double AsDouble
-        {
-            get { return IExecuteWithSignature<double>("getAsDouble", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalDouble.html#orElseThrow(java.util.function.Supplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalDouble.html#orElseThrow(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <typeparam name="Arg0ExtendsX"><typeparamref name="X"/></typeparam>
         /// <typeparam name="X"></typeparam>
         /// <returns><see cref="double"/></returns>
         /// <exception cref="Java.Lang.Throwable"/>
-        public double OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX: X
+        public double OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX : X
         {
-            return IExecuteWithSignature<double>("orElseThrow", "(Ljava/util/function/Supplier;)D", arg0);
+            return IExecute<double>("orElseThrow", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalDouble.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalDouble.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -90,7 +83,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalDouble.html#isPresent()"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalDouble.html#isPresent()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsPresent()
@@ -98,7 +91,15 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isPresent", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalDouble.html#orElse(double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalDouble.html#getAsDouble()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetAsDouble()
+        {
+            return IExecuteWithSignature<double>("getAsDouble", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalDouble.html#orElse(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="double"/></returns>
@@ -107,7 +108,7 @@ namespace Java.Util
             return IExecuteWithSignature<double>("orElse", "(D)D", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalDouble.html#orElseGet(java.util.function.DoubleSupplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalDouble.html#orElseGet(java.util.function.DoubleSupplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleSupplier"/></param>
         /// <returns><see cref="double"/></returns>
@@ -116,7 +117,7 @@ namespace Java.Util
             return IExecuteWithSignature<double>("orElseGet", "(Ljava/util/function/DoubleSupplier;)D", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalDouble.html#orElseThrow()"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalDouble.html#orElseThrow()"/>
         /// </summary>
         /// <returns><see cref="double"/></returns>
         public double OrElseThrow()
@@ -124,7 +125,7 @@ namespace Java.Util
             return IExecuteWithSignature<double>("orElseThrow", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalDouble.html#stream()"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalDouble.html#stream()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream Stream()
@@ -132,7 +133,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("stream", "()Ljava/util/stream/DoubleStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalDouble.html#ifPresent(java.util.function.DoubleConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalDouble.html#ifPresent(java.util.function.DoubleConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
         public void IfPresent(Java.Util.Function.DoubleConsumer arg0)
@@ -140,7 +141,7 @@ namespace Java.Util
             IExecuteWithSignature("ifPresent", "(Ljava/util/function/DoubleConsumer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/OptionalDouble.html#ifPresentOrElse(java.util.function.DoubleConsumer,java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/OptionalDouble.html#ifPresentOrElse(java.util.function.DoubleConsumer,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>

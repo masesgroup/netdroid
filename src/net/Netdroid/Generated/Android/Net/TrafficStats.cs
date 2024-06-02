@@ -48,76 +48,6 @@ namespace Android.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getMobileRxBytes()"/> 
-        /// </summary>
-        public static long MobileRxBytes
-        {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getMobileRxBytes", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getMobileRxPackets()"/> 
-        /// </summary>
-        public static long MobileRxPackets
-        {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getMobileRxPackets", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getMobileTxBytes()"/> 
-        /// </summary>
-        public static long MobileTxBytes
-        {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getMobileTxBytes", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getMobileTxPackets()"/> 
-        /// </summary>
-        public static long MobileTxPackets
-        {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getMobileTxPackets", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getThreadStatsTag()"/> <see href="https://developer.android.com/reference/android/net/TrafficStats.html#setThreadStatsTag(int)"/>
-        /// </summary>
-        public static int ThreadStatsTag
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getThreadStatsTag", "()I"); } set { SExecuteWithSignature(LocalBridgeClazz, "setThreadStatsTag", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getThreadStatsUid()"/> <see href="https://developer.android.com/reference/android/net/TrafficStats.html#setThreadStatsUid(int)"/>
-        /// </summary>
-        public static int ThreadStatsUid
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getThreadStatsUid", "()I"); } set { SExecuteWithSignature(LocalBridgeClazz, "setThreadStatsUid", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getTotalRxBytes()"/> 
-        /// </summary>
-        public static long TotalRxBytes
-        {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getTotalRxBytes", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getTotalRxPackets()"/> 
-        /// </summary>
-        public static long TotalRxPackets
-        {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getTotalRxPackets", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getTotalTxBytes()"/> 
-        /// </summary>
-        public static long TotalTxBytes
-        {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getTotalTxBytes", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getTotalTxPackets()"/> 
-        /// </summary>
-        public static long TotalTxPackets
-        {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getTotalTxPackets", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getAndSetThreadStatsTag(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -125,6 +55,54 @@ namespace Android.Net
         public static int GetAndSetThreadStatsTag(int arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getAndSetThreadStatsTag", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getThreadStatsTag()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int GetThreadStatsTag()
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getThreadStatsTag", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getThreadStatsUid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int GetThreadStatsUid()
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getThreadStatsUid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getMobileRxBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public static long GetMobileRxBytes()
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getMobileRxBytes", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getMobileRxPackets()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public static long GetMobileRxPackets()
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getMobileRxPackets", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getMobileTxBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public static long GetMobileTxBytes()
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getMobileTxBytes", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getMobileTxPackets()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public static long GetMobileTxPackets()
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getMobileTxPackets", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getRxBytes(java.lang.String)"/>
@@ -143,6 +121,38 @@ namespace Android.Net
         public static long GetRxPackets(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "getRxPackets", "(Ljava/lang/String;)J", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getTotalRxBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public static long GetTotalRxBytes()
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getTotalRxBytes", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getTotalRxPackets()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public static long GetTotalRxPackets()
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getTotalRxPackets", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getTotalTxBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public static long GetTotalTxBytes()
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getTotalTxBytes", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getTotalTxPackets()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public static long GetTotalTxPackets()
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getTotalTxPackets", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#getTxBytes(java.lang.String)"/>
@@ -185,7 +195,7 @@ namespace Android.Net
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="long"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static long GetUidTcpRxBytes(int arg0)
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidTcpRxBytes", "(I)J", arg0);
@@ -195,7 +205,7 @@ namespace Android.Net
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="long"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static long GetUidTcpRxSegments(int arg0)
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidTcpRxSegments", "(I)J", arg0);
@@ -205,7 +215,7 @@ namespace Android.Net
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="long"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static long GetUidTcpTxBytes(int arg0)
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidTcpTxBytes", "(I)J", arg0);
@@ -215,7 +225,7 @@ namespace Android.Net
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="long"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static long GetUidTcpTxSegments(int arg0)
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidTcpTxSegments", "(I)J", arg0);
@@ -243,7 +253,7 @@ namespace Android.Net
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="long"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static long GetUidUdpRxBytes(int arg0)
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidUdpRxBytes", "(I)J", arg0);
@@ -253,7 +263,7 @@ namespace Android.Net
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="long"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static long GetUidUdpRxPackets(int arg0)
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidUdpRxPackets", "(I)J", arg0);
@@ -263,7 +273,7 @@ namespace Android.Net
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="long"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static long GetUidUdpTxBytes(int arg0)
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidUdpTxBytes", "(I)J", arg0);
@@ -273,7 +283,7 @@ namespace Android.Net
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="long"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static long GetUidUdpTxPackets(int arg0)
         {
             return SExecuteWithSignature<long>(LocalBridgeClazz, "getUidUdpTxPackets", "(I)J", arg0);
@@ -308,6 +318,22 @@ namespace Android.Net
         public static void IncrementOperationCount(int arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "incrementOperationCount", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#setThreadStatsTag(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public static void SetThreadStatsTag(int arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setThreadStatsTag", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#setThreadStatsUid(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public static void SetThreadStatsUid(int arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setThreadStatsUid", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/TrafficStats.html#tagDatagramSocket(java.net.DatagramSocket)"/>

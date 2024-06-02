@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PushbackInputStream.html#%3Cinit%3E(java.io.InputStream,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PushbackInputStream.html#%3Cinit%3E(java.io.InputStream,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -39,7 +39,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PushbackInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PushbackInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public PushbackInputStream(Java.Io.InputStream arg0)
@@ -63,7 +63,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PushbackInputStream.html#unread(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PushbackInputStream.html#unread(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -74,7 +74,7 @@ namespace Java.Io
             IExecute("unread", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PushbackInputStream.html#unread(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/PushbackInputStream.html#unread(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -83,7 +83,7 @@ namespace Java.Io
             IExecuteWithSignature("unread", "([B)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PushbackInputStream.html#unread(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PushbackInputStream.html#unread(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>

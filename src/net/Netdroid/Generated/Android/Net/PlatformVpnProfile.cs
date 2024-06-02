@@ -64,20 +64,6 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/PlatformVpnProfile.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/PlatformVpnProfile.html#getTypeString()"/> 
-        /// </summary>
-        public Java.Lang.String TypeString
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTypeString", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/PlatformVpnProfile.html#areLocalRoutesExcluded()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -92,6 +78,22 @@ namespace Android.Net
         public bool IsInternetValidationRequired()
         {
             return IExecuteWithSignature<bool>("isInternetValidationRequired", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/PlatformVpnProfile.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/PlatformVpnProfile.html#getTypeString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTypeString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTypeString", "()Ljava/lang/String;");
         }
 
         #endregion

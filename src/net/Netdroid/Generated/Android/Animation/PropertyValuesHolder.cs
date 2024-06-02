@@ -258,19 +258,20 @@ namespace Android.Animation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#getPropertyName()"/> <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#setPropertyName(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String PropertyName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPropertyName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPropertyName", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#clone()"/>
         /// </summary>
         /// <returns><see cref="Android.Animation.PropertyValuesHolder"/></returns>
         public Android.Animation.PropertyValuesHolder Clone()
         {
             return IExecuteWithSignature<Android.Animation.PropertyValuesHolder>("clone", "()Landroid/animation/PropertyValuesHolder;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#getPropertyName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPropertyName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPropertyName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#setConverter(android.animation.TypeConverter)"/>
@@ -327,6 +328,14 @@ namespace Android.Animation
         public void SetProperty(Android.Util.Property arg0)
         {
             IExecuteWithSignature("setProperty", "(Landroid/util/Property;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/PropertyValuesHolder.html#setPropertyName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPropertyName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPropertyName", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

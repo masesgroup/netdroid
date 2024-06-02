@@ -104,7 +104,7 @@ namespace Android.Os
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onCancel", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnCancelEventHandler));
+                AddEventHandler("onCancel", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnCancelEventHandler));
 
             }
 
@@ -112,7 +112,7 @@ namespace Android.Os
             /// Handler for <see href="https://developer.android.com/reference/android/os/CancellationSignal.OnCancelListener.html#onCancel()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCancel"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnCancel { get; set; } = null;
+            public global::System.Action OnOnCancel { get; set; } = null;
 
             void OnCancelEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {

@@ -86,33 +86,36 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ComponentInfo.html#getBannerResource()"/> 
-        /// </summary>
-        public int BannerResource
-        {
-            get { return IExecuteWithSignature<int>("getBannerResource", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ComponentInfo.html#getIconResource()"/> 
-        /// </summary>
-        public int IconResource
-        {
-            get { return IExecuteWithSignature<int>("getIconResource", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ComponentInfo.html#getLogoResource()"/> 
-        /// </summary>
-        public int LogoResource
-        {
-            get { return IExecuteWithSignature<int>("getLogoResource", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ComponentInfo.html#isEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEnabled()
         {
             return IExecuteWithSignature<bool>("isEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ComponentInfo.html#getBannerResource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBannerResource()
+        {
+            return IExecuteWithSignature<int>("getBannerResource", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ComponentInfo.html#getIconResource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIconResource()
+        {
+            return IExecuteWithSignature<int>("getIconResource", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ComponentInfo.html#getLogoResource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLogoResource()
+        {
+            return IExecuteWithSignature<int>("getLogoResource", "()I");
         }
 
         #endregion

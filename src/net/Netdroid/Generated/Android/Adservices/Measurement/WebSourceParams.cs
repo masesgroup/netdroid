@@ -52,11 +52,12 @@ namespace Android.Adservices.Measurement
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebSourceParams.html#getRegistrationUri()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebSourceParams.html#getRegistrationUri()"/>
         /// </summary>
-        public Android.Net.Uri RegistrationUri
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetRegistrationUri()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getRegistrationUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getRegistrationUri", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebSourceParams.html#isDebugKeyAllowed()"/>

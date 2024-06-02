@@ -47,7 +47,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Element"/></param>
         /// <returns><see cref="Android.Renderscript.ScriptIntrinsicHistogram"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.ScriptIntrinsicHistogram Create(Android.Renderscript.RenderScript arg0, Android.Renderscript.Element arg1)
         {
             return SExecute<Android.Renderscript.ScriptIntrinsicHistogram>(LocalBridgeClazz, "create", arg0, arg1);
@@ -57,27 +57,29 @@ namespace Android.Renderscript
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicHistogram.html#getFieldID_Input()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicHistogram.html#getFieldID_Input()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.FieldID FieldID_Input
+        /// <returns><see cref="Android.Renderscript.Script.FieldID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.FieldID GetFieldID_Input()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.FieldID>("getFieldID_Input", "()Landroid/renderscript/Script$FieldID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.FieldID>("getFieldID_Input", "()Landroid/renderscript/Script$FieldID;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicHistogram.html#getKernelID_Separate()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicHistogram.html#getKernelID_Separate()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelID_Separate
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelID_Separate()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelID_Separate", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelID_Separate", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicHistogram.html#forEach_Dot(android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEach_Dot(Android.Renderscript.Allocation arg0, Android.Renderscript.Script.LaunchOptions arg1)
         {
             IExecute("forEach_Dot", arg0, arg1);
@@ -86,7 +88,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicHistogram.html#forEach_Dot(android.renderscript.Allocation)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEach_Dot(Android.Renderscript.Allocation arg0)
         {
             IExecuteWithSignature("forEach_Dot", "(Landroid/renderscript/Allocation;)V", arg0);
@@ -96,7 +98,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEach(Android.Renderscript.Allocation arg0, Android.Renderscript.Script.LaunchOptions arg1)
         {
             IExecute("forEach", arg0, arg1);
@@ -105,7 +107,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicHistogram.html#forEach(android.renderscript.Allocation)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEach(Android.Renderscript.Allocation arg0)
         {
             IExecuteWithSignature("forEach", "(Landroid/renderscript/Allocation;)V", arg0);
@@ -117,7 +119,7 @@ namespace Android.Renderscript
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="float"/></param>
         /// <param name="arg3"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetDotCoefficients(float arg0, float arg1, float arg2, float arg3)
         {
             IExecute("setDotCoefficients", arg0, arg1, arg2, arg3);
@@ -126,7 +128,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicHistogram.html#setOutput(android.renderscript.Allocation)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOutput(Android.Renderscript.Allocation arg0)
         {
             IExecuteWithSignature("setOutput", "(Landroid/renderscript/Allocation;)V", arg0);

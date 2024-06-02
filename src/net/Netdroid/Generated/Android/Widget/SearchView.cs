@@ -88,52 +88,26 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#getImeOptions()"/> <see href="https://developer.android.com/reference/android/widget/SearchView.html#setImeOptions(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#getSuggestionsAdapter()"/>
         /// </summary>
-        public int ImeOptions
+        /// <returns><see cref="Android.Widget.CursorAdapter"/></returns>
+        public Android.Widget.CursorAdapter GetSuggestionsAdapter()
         {
-            get { return IExecuteWithSignature<int>("getImeOptions", "()I"); } set { IExecuteWithSignature("setImeOptions", "(I)V", value); }
+            return IExecuteWithSignature<Android.Widget.CursorAdapter>("getSuggestionsAdapter", "()Landroid/widget/CursorAdapter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#getInputType()"/> <see href="https://developer.android.com/reference/android/widget/SearchView.html#setInputType(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#getSuggestionsAdapter()"/>
         /// </summary>
-        public int InputType
+        /// <returns><see cref="Android.Widget.CursorAdapter"/></returns>
+        public Android.Widget.CursorAdapter GetSuggestionsAdapterDirect()
         {
-            get { return IExecuteWithSignature<int>("getInputType", "()I"); } set { IExecuteWithSignature("setInputType", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#getMaxWidth()"/> <see href="https://developer.android.com/reference/android/widget/SearchView.html#setMaxWidth(int)"/>
-        /// </summary>
-        public int MaxWidth
-        {
-            get { return IExecuteWithSignature<int>("getMaxWidth", "()I"); } set { IExecuteWithSignature("setMaxWidth", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#getQuery()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Query
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getQuery", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#getQueryHint()"/> <see href="https://developer.android.com/reference/android/widget/SearchView.html#setQueryHint(java.lang.CharSequence)"/>
-        /// </summary>
-        public Java.Lang.CharSequence QueryHint
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getQueryHint", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setQueryHint", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#getSuggestionsAdapter()"/> <see href="https://developer.android.com/reference/android/widget/SearchView.html#setSuggestionsAdapter(android.widget.CursorAdapter)"/>
-        /// </summary>
-        public Android.Widget.CursorAdapter SuggestionsAdapter
-        {
-            get { return IExecuteWithSignature<Android.Widget.CursorAdapter>("getSuggestionsAdapter", "()Landroid/widget/CursorAdapter;"); } set { IExecuteWithSignature("setSuggestionsAdapter", "(Landroid/widget/CursorAdapter;)V", value); }
+            return IExecuteWithSignature<Android.Widget.CursorAdapterDirect, Android.Widget.CursorAdapter>("getSuggestionsAdapter", "()Landroid/widget/CursorAdapter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#isIconfiedByDefault()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsIconfiedByDefault()
         {
             return IExecuteWithSignature<bool>("isIconfiedByDefault", "()Z");
@@ -171,6 +145,46 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("isSubmitButtonEnabled", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#getImeOptions()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetImeOptions()
+        {
+            return IExecuteWithSignature<int>("getImeOptions", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#getInputType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInputType()
+        {
+            return IExecuteWithSignature<int>("getInputType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#getMaxWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxWidth()
+        {
+            return IExecuteWithSignature<int>("getMaxWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#getQuery()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetQuery()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getQuery", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#getQueryHint()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetQueryHint()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getQueryHint", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#onActionViewCollapsed()"/>
         /// </summary>
         public void OnActionViewCollapsed()
@@ -199,6 +213,30 @@ namespace Android.Widget
         public void SetIconifiedByDefault(bool arg0)
         {
             IExecuteWithSignature("setIconifiedByDefault", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#setImeOptions(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetImeOptions(int arg0)
+        {
+            IExecuteWithSignature("setImeOptions", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#setInputType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetInputType(int arg0)
+        {
+            IExecuteWithSignature("setInputType", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#setMaxWidth(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaxWidth(int arg0)
+        {
+            IExecuteWithSignature("setMaxWidth", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#setOnCloseListener(android.widget.SearchView.OnCloseListener)"/>
@@ -250,6 +288,14 @@ namespace Android.Widget
             IExecute("setQuery", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#setQueryHint(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetQueryHint(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setQueryHint", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#setQueryRefinementEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -272,6 +318,14 @@ namespace Android.Widget
         public void SetSubmitButtonEnabled(bool arg0)
         {
             IExecuteWithSignature("setSubmitButtonEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/SearchView.html#setSuggestionsAdapter(android.widget.CursorAdapter)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Widget.CursorAdapter"/></param>
+        public void SetSuggestionsAdapter(Android.Widget.CursorAdapter arg0)
+        {
+            IExecuteWithSignature("setSuggestionsAdapter", "(Landroid/widget/CursorAdapter;)V", arg0);
         }
 
         #endregion
@@ -302,7 +356,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onClose", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnCloseEventHandler));
+                AddEventHandler("onClose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnCloseEventHandler));
 
             }
 
@@ -310,7 +364,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/SearchView.OnCloseListener.html#onClose()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnClose"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<bool> OnOnClose { get; set; } = null;
+            public global::System.Func<bool> OnOnClose { get; set; } = null;
 
             void OnCloseEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -402,8 +456,8 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onQueryTextChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnQueryTextChangeEventHandler));
-                AddEventHandler("onQueryTextSubmit", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnQueryTextSubmitEventHandler));
+                AddEventHandler("onQueryTextChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnQueryTextChangeEventHandler));
+                AddEventHandler("onQueryTextSubmit", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnQueryTextSubmitEventHandler));
 
             }
 
@@ -411,7 +465,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/SearchView.OnQueryTextListener.html#onQueryTextChange(java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnQueryTextChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Java.Lang.String, bool> OnOnQueryTextChange { get; set; } = null;
+            public global::System.Func<Java.Lang.String, bool> OnOnQueryTextChange { get; set; } = null;
 
             void OnQueryTextChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
             {
@@ -434,7 +488,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/SearchView.OnQueryTextListener.html#onQueryTextSubmit(java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnQueryTextSubmit"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Java.Lang.String, bool> OnOnQueryTextSubmit { get; set; } = null;
+            public global::System.Func<Java.Lang.String, bool> OnOnQueryTextSubmit { get; set; } = null;
 
             void OnQueryTextSubmitEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
             {
@@ -537,8 +591,8 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onSuggestionClick", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnSuggestionClickEventHandler));
-                AddEventHandler("onSuggestionSelect", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnSuggestionSelectEventHandler));
+                AddEventHandler("onSuggestionClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnSuggestionClickEventHandler));
+                AddEventHandler("onSuggestionSelect", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnSuggestionSelectEventHandler));
 
             }
 
@@ -546,7 +600,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/SearchView.OnSuggestionListener.html#onSuggestionClick(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSuggestionClick"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<int, bool> OnOnSuggestionClick { get; set; } = null;
+            public global::System.Func<int, bool> OnOnSuggestionClick { get; set; } = null;
 
             void OnSuggestionClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -569,7 +623,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/SearchView.OnSuggestionListener.html#onSuggestionSelect(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSuggestionSelect"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<int, bool> OnOnSuggestionSelect { get; set; } = null;
+            public global::System.Func<int, bool> OnOnSuggestionSelect { get; set; } = null;
 
             void OnSuggestionSelectEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {

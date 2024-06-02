@@ -63,13 +63,6 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TableRow.html#getVirtualChildCount()"/> 
-        /// </summary>
-        public int VirtualChildCount
-        {
-            get { return IExecuteWithSignature<int>("getVirtualChildCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TableRow.html#getVirtualChildAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -77,6 +70,14 @@ namespace Android.Widget
         public Android.View.View GetVirtualChildAt(int arg0)
         {
             return IExecuteWithSignature<Android.View.View>("getVirtualChildAt", "(I)Landroid/view/View;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TableRow.html#getVirtualChildCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVirtualChildCount()
+        {
+            return IExecuteWithSignature<int>("getVirtualChildCount", "()I");
         }
 
         #endregion

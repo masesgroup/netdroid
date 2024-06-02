@@ -46,18 +46,20 @@ namespace Android.Net.Http
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/HeaderBlock.html#getAsList()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/HeaderBlock.html#getAsList()"/>
         /// </summary>
-        public Java.Util.List<Java.Util.Map.Entry<Java.Lang.String, Java.Lang.String>> AsList
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Util.Map.Entry<Java.Lang.String, Java.Lang.String>> GetAsList()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Util.Map.Entry<Java.Lang.String, Java.Lang.String>>>("getAsList", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Java.Util.Map.Entry<Java.Lang.String, Java.Lang.String>>>("getAsList", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/HeaderBlock.html#getAsMap()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/HeaderBlock.html#getAsMap()"/>
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> AsMap
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> GetAsMap()
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getAsMap", "()Ljava/util/Map;"); }
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getAsMap", "()Ljava/util/Map;");
         }
 
         #endregion

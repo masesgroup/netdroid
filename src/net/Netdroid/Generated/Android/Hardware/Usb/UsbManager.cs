@@ -88,18 +88,12 @@ namespace Android.Hardware.Usb
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#getAccessoryList()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#getAccessoryList()"/>
         /// </summary>
-        public Android.Hardware.Usb.UsbAccessory[] AccessoryList
+        /// <returns><see cref="Android.Hardware.Usb.UsbAccessory"/></returns>
+        public Android.Hardware.Usb.UsbAccessory[] GetAccessoryList()
         {
-            get { return IExecuteWithSignatureArray<Android.Hardware.Usb.UsbAccessory>("getAccessoryList", "()[Landroid/hardware/usb/UsbAccessory;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#getDeviceList()"/> 
-        /// </summary>
-        public Java.Util.HashMap<Java.Lang.String, Android.Hardware.Usb.UsbDevice> DeviceList
-        {
-            get { return IExecuteWithSignature<Java.Util.HashMap<Java.Lang.String, Android.Hardware.Usb.UsbDevice>>("getDeviceList", "()Ljava/util/HashMap;"); }
+            return IExecuteWithSignatureArray<Android.Hardware.Usb.UsbAccessory>("getAccessoryList", "()[Landroid/hardware/usb/UsbAccessory;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#openDevice(android.hardware.usb.UsbDevice)"/>
@@ -136,6 +130,14 @@ namespace Android.Hardware.Usb
         public bool HasPermission(Android.Hardware.Usb.UsbDevice arg0)
         {
             return IExecuteWithSignature<bool>("hasPermission", "(Landroid/hardware/usb/UsbDevice;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#getDeviceList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.HashMap"/></returns>
+        public Java.Util.HashMap<Java.Lang.String, Android.Hardware.Usb.UsbDevice> GetDeviceList()
+        {
+            return IExecuteWithSignature<Java.Util.HashMap<Java.Lang.String, Android.Hardware.Usb.UsbDevice>>("getDeviceList", "()Ljava/util/HashMap;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbManager.html#requestPermission(android.hardware.usb.UsbAccessory,android.app.PendingIntent)"/>

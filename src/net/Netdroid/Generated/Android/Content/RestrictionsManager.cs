@@ -235,26 +235,20 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/RestrictionsManager.html#getApplicationRestrictions()"/> 
-        /// </summary>
-        public Android.Os.Bundle ApplicationRestrictions
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getApplicationRestrictions", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/RestrictionsManager.html#getApplicationRestrictionsPerAdmin()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Os.Bundle> ApplicationRestrictionsPerAdmin
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Os.Bundle>>("getApplicationRestrictionsPerAdmin", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/RestrictionsManager.html#createLocalApprovalIntent()"/>
         /// </summary>
         /// <returns><see cref="Android.Content.Intent"/></returns>
         public Android.Content.Intent CreateLocalApprovalIntent()
         {
             return IExecuteWithSignature<Android.Content.Intent>("createLocalApprovalIntent", "()Landroid/content/Intent;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionsManager.html#getApplicationRestrictions()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetApplicationRestrictions()
+        {
+            return IExecuteWithSignature<Android.Os.Bundle>("getApplicationRestrictions", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/RestrictionsManager.html#hasRestrictionsProvider()"/>
@@ -272,6 +266,14 @@ namespace Android.Content
         public Java.Util.List<Android.Content.RestrictionEntry> GetManifestRestrictions(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Util.List<Android.Content.RestrictionEntry>>("getManifestRestrictions", "(Ljava/lang/String;)Ljava/util/List;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/RestrictionsManager.html#getApplicationRestrictionsPerAdmin()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Os.Bundle> GetApplicationRestrictionsPerAdmin()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Os.Bundle>>("getApplicationRestrictionsPerAdmin", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/RestrictionsManager.html#notifyPermissionResponse(java.lang.String,android.os.PersistableBundle)"/>

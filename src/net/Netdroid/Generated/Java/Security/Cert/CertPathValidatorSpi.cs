@@ -46,7 +46,7 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathValidatorSpi.html#engineValidate(java.security.cert.CertPath,java.security.cert.CertPathParameters)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPathValidatorSpi.html#engineValidate(java.security.cert.CertPath,java.security.cert.CertPathParameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.CertPath"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.CertPathParameters"/></param>
@@ -58,7 +58,7 @@ namespace Java.Security.Cert
             return IExecute<Java.Security.Cert.CertPathValidatorResult>("engineValidate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPathValidatorSpi.html#engineGetRevocationChecker()"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPathValidatorSpi.html#engineGetRevocationChecker()"/>
         /// </summary>
         /// <returns><see cref="Java.Security.Cert.CertPathChecker"/></returns>
         public Java.Security.Cert.CertPathChecker EngineGetRevocationChecker()

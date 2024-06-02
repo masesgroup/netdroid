@@ -163,11 +163,12 @@ namespace Android.Text
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/text/InputFilter.LengthFilter.html#getMax()"/> 
+            /// <see href="https://developer.android.com/reference/android/text/InputFilter.LengthFilter.html#getMax()"/>
             /// </summary>
-            public int Max
+            /// <returns><see cref="int"/></returns>
+            public int GetMax()
             {
-                get { return IExecuteWithSignature<int>("getMax", "()I"); }
+                return IExecuteWithSignature<int>("getMax", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/InputFilter.LengthFilter.html#filter(java.lang.CharSequence,int,int,android.text.Spanned,int,int)"/>

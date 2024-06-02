@@ -30,7 +30,7 @@ namespace Android.Net.Sip
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class SipAudioCall : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SipAudioCall>
     {
         const string _bridgeClassName = "android.net.sip.SipAudioCall";
@@ -71,39 +71,25 @@ namespace Android.Net.Sip
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipAudioCall.Listener.html"/>
         /// </summary>
-        [System.Obsolete()]
-        public partial class Listener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+        [global::System.Obsolete()]
+        public partial class Listener : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Listener>
         {
+            const string _bridgeClassName = "android.net.sip.SipAudioCall$Listener";
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public Listener() { InitializeHandlers(); }
-
-        #warning Remember to build the Java class for event listener
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
-        #region ListenerDirect
-        /// <summary>
-        /// Direct override of <see cref="Listener"/> or its generic type if there is one
-        /// </summary>
-        public partial class ListenerDirect : Listener
-        {
+            public Listener() { }
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public override bool AutoInit => false;
+            public Listener(params object[] args) : base(args) { }
 
-            /// <inheritdoc />
-            protected override void InitializeHandlers() { }
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.net.sip.SipAudioCall$Listener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -120,6 +106,9 @@ namespace Android.Net.Sip
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
         }
         #endregion
 
@@ -131,7 +120,7 @@ namespace Android.Net.Sip
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/net/sip/SipErrorCode.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class SipErrorCode : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SipErrorCode>
     {
         const string _bridgeClassName = "android.net.sip.SipErrorCode";
@@ -176,7 +165,7 @@ namespace Android.Net.Sip
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/net/sip/SipException.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class SipException : Java.Lang.Exception
     {
         const string _bridgeClassName = "android.net.sip.SipException";
@@ -194,7 +183,7 @@ namespace Android.Net.Sip
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/net/sip/SipManager.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class SipManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SipManager>
     {
         const string _bridgeClassName = "android.net.sip.SipManager";
@@ -239,7 +228,7 @@ namespace Android.Net.Sip
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class SipProfile : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SipProfile>
     {
         const string _bridgeClassName = "android.net.sip.SipProfile";
@@ -280,7 +269,7 @@ namespace Android.Net.Sip
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.Builder.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
         {
             const string _bridgeClassName = "android.net.sip.SipProfile$Builder";
@@ -329,7 +318,7 @@ namespace Android.Net.Sip
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/net/sip/SipRegistrationListener.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class SipRegistrationListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
         /// <summary>
@@ -337,10 +326,13 @@ namespace Android.Net.Sip
         /// </summary>
         public SipRegistrationListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.android.net.sip.SipRegistrationListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.net.sip.SipRegistrationListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -362,10 +354,13 @@ namespace Android.Net.Sip
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "android.net.sip.SipRegistrationListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.net.sip.SipRegistrationListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -389,7 +384,7 @@ namespace Android.Net.Sip
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class SipSession : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SipSession>
     {
         const string _bridgeClassName = "android.net.sip.SipSession";
@@ -430,39 +425,25 @@ namespace Android.Net.Sip
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.Listener.html"/>
         /// </summary>
-        [System.Obsolete()]
-        public partial class Listener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+        [global::System.Obsolete()]
+        public partial class Listener : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Listener>
         {
+            const string _bridgeClassName = "android.net.sip.SipSession$Listener";
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public Listener() { InitializeHandlers(); }
-
-        #warning Remember to build the Java class for event listener
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
-        #region ListenerDirect
-        /// <summary>
-        /// Direct override of <see cref="Listener"/> or its generic type if there is one
-        /// </summary>
-        public partial class ListenerDirect : Listener
-        {
+            public Listener() { }
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public override bool AutoInit => false;
+            public Listener(params object[] args) : base(args) { }
 
-            /// <inheritdoc />
-            protected override void InitializeHandlers() { }
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.net.sip.SipSession$Listener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -479,6 +460,9 @@ namespace Android.Net.Sip
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
         }
         #endregion
 
@@ -486,7 +470,7 @@ namespace Android.Net.Sip
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipSession.State.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class State : MASES.JCOBridge.C2JBridge.JVMBridgeBase<State>
         {
             const string _bridgeClassName = "android.net.sip.SipSession$State";

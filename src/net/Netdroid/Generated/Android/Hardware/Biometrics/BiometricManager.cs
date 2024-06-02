@@ -88,7 +88,7 @@ namespace Android.Hardware.Biometrics
         /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricManager.html#canAuthenticate()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int CanAuthenticate()
         {
             return IExecuteWithSignature<int>("canAuthenticate", "()I");
@@ -176,25 +176,28 @@ namespace Android.Hardware.Biometrics
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricManager.Strings.html#getButtonLabel()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricManager.Strings.html#getButtonLabel()"/>
             /// </summary>
-            public Java.Lang.CharSequence ButtonLabel
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetButtonLabel()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getButtonLabel", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getButtonLabel", "()Ljava/lang/CharSequence;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricManager.Strings.html#getPromptMessage()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricManager.Strings.html#getPromptMessage()"/>
             /// </summary>
-            public Java.Lang.CharSequence PromptMessage
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetPromptMessage()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getPromptMessage", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getPromptMessage", "()Ljava/lang/CharSequence;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricManager.Strings.html#getSettingName()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricManager.Strings.html#getSettingName()"/>
             /// </summary>
-            public Java.Lang.CharSequence SettingName
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetSettingName()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSettingName", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getSettingName", "()Ljava/lang/CharSequence;");
             }
 
             #endregion

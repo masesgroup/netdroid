@@ -64,11 +64,12 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/TabStopSpan.html#getTabStop()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/style/TabStopSpan.html#getTabStop()"/>
         /// </summary>
-        public int TabStop
+        /// <returns><see cref="int"/></returns>
+        public int GetTabStop()
         {
-            get { return IExecuteWithSignature<int>("getTabStop", "()I"); }
+            return IExecuteWithSignature<int>("getTabStop", "()I");
         }
 
         #endregion
@@ -103,11 +104,12 @@ namespace Android.Text.Style
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/text/style/TabStopSpan.Standard.html#getTabStop()"/> 
+            /// <see href="https://developer.android.com/reference/android/text/style/TabStopSpan.Standard.html#getTabStop()"/>
             /// </summary>
-            public int TabStop
+            /// <returns><see cref="int"/></returns>
+            public int GetTabStop()
             {
-                get { return IExecuteWithSignature<int>("getTabStop", "()I"); }
+                return IExecuteWithSignature<int>("getTabStop", "()I");
             }
 
             #endregion

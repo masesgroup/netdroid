@@ -64,13 +64,6 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SectionIndexer.html#getSections()"/> 
-        /// </summary>
-        public object[] Sections
-        {
-            get { return IExecuteWithSignatureArray<object>("getSections", "()[Ljava/lang/Object;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SectionIndexer.html#getPositionForSection(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -87,6 +80,14 @@ namespace Android.Widget
         public int GetSectionForPosition(int arg0)
         {
             return IExecuteWithSignature<int>("getSectionForPosition", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/SectionIndexer.html#getSections()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object[] GetSections()
+        {
+            return IExecuteWithSignatureArray<object>("getSections", "()[Ljava/lang/Object;");
         }
 
         #endregion

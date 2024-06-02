@@ -52,11 +52,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ElevationGainedRecord.html#getElevation()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ElevationGainedRecord.html#getElevation()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Length Elevation
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Length"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Length GetElevation()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Length>("getElevation", "()Landroid/health/connect/datatypes/units/Length;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Length>("getElevation", "()Landroid/health/connect/datatypes/units/Length;");
         }
 
         #endregion

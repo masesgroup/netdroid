@@ -76,7 +76,7 @@ namespace Android.App.Job
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#NETWORK_TYPE_METERED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int NETWORK_TYPE_METERED { get { if (!_NETWORK_TYPE_METEREDReady) { _NETWORK_TYPE_METEREDContent = SGetField<int>(LocalBridgeClazz, "NETWORK_TYPE_METERED"); _NETWORK_TYPE_METEREDReady = true; } return _NETWORK_TYPE_METEREDContent; } }
         private static int _NETWORK_TYPE_METEREDContent = default;
         private static bool _NETWORK_TYPE_METEREDReady = false; // this is used because in case of generics 
@@ -145,170 +145,72 @@ namespace Android.App.Job
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getMinFlexMillis()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getMinFlexMillis()"/>
         /// </summary>
-        public static long MinFlexMillis
+        /// <returns><see cref="long"/></returns>
+        public static long GetMinFlexMillis()
         {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getMinFlexMillis", "()J"); }
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getMinFlexMillis", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getMinPeriodMillis()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getMinPeriodMillis()"/>
         /// </summary>
-        public static long MinPeriodMillis
+        /// <returns><see cref="long"/></returns>
+        public static long GetMinPeriodMillis()
         {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getMinPeriodMillis", "()J"); }
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getMinPeriodMillis", "()J");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getBackoffPolicy()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getTriggerContentUris()"/>
         /// </summary>
-        public int BackoffPolicy
+        /// <returns><see cref="Android.App.Job.JobInfo.TriggerContentUri"/></returns>
+        public Android.App.Job.JobInfo.TriggerContentUri[] GetTriggerContentUris()
         {
-            get { return IExecuteWithSignature<int>("getBackoffPolicy", "()I"); }
+            return IExecuteWithSignatureArray<Android.App.Job.JobInfo.TriggerContentUri>("getTriggerContentUris", "()[Landroid/app/job/JobInfo$TriggerContentUri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getClipData()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getClipData()"/>
         /// </summary>
-        public Android.Content.ClipData ClipData
+        /// <returns><see cref="Android.Content.ClipData"/></returns>
+        public Android.Content.ClipData GetClipData()
         {
-            get { return IExecuteWithSignature<Android.Content.ClipData>("getClipData", "()Landroid/content/ClipData;"); }
+            return IExecuteWithSignature<Android.Content.ClipData>("getClipData", "()Landroid/content/ClipData;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getClipGrantFlags()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getService()"/>
         /// </summary>
-        public int ClipGrantFlags
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetService()
         {
-            get { return IExecuteWithSignature<int>("getClipGrantFlags", "()I"); }
+            return IExecuteWithSignature<Android.Content.ComponentName>("getService", "()Landroid/content/ComponentName;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getEstimatedNetworkDownloadBytes()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getRequiredNetwork()"/>
         /// </summary>
-        public long EstimatedNetworkDownloadBytes
+        /// <returns><see cref="Android.Net.NetworkRequest"/></returns>
+        public Android.Net.NetworkRequest GetRequiredNetwork()
         {
-            get { return IExecuteWithSignature<long>("getEstimatedNetworkDownloadBytes", "()J"); }
+            return IExecuteWithSignature<Android.Net.NetworkRequest>("getRequiredNetwork", "()Landroid/net/NetworkRequest;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getEstimatedNetworkUploadBytes()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getTransientExtras()"/>
         /// </summary>
-        public long EstimatedNetworkUploadBytes
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetTransientExtras()
         {
-            get { return IExecuteWithSignature<long>("getEstimatedNetworkUploadBytes", "()J"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getTransientExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getExtras()"/>
         /// </summary>
-        public Android.Os.PersistableBundle Extras
+        /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
+        public Android.Os.PersistableBundle GetExtras()
         {
-            get { return IExecuteWithSignature<Android.Os.PersistableBundle>("getExtras", "()Landroid/os/PersistableBundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getFlexMillis()"/> 
-        /// </summary>
-        public long FlexMillis
-        {
-            get { return IExecuteWithSignature<long>("getFlexMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getId()"/> 
-        /// </summary>
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getInitialBackoffMillis()"/> 
-        /// </summary>
-        public long InitialBackoffMillis
-        {
-            get { return IExecuteWithSignature<long>("getInitialBackoffMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getIntervalMillis()"/> 
-        /// </summary>
-        public long IntervalMillis
-        {
-            get { return IExecuteWithSignature<long>("getIntervalMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getMaxExecutionDelayMillis()"/> 
-        /// </summary>
-        public long MaxExecutionDelayMillis
-        {
-            get { return IExecuteWithSignature<long>("getMaxExecutionDelayMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getMinimumNetworkChunkBytes()"/> 
-        /// </summary>
-        public long MinimumNetworkChunkBytes
-        {
-            get { return IExecuteWithSignature<long>("getMinimumNetworkChunkBytes", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getMinLatencyMillis()"/> 
-        /// </summary>
-        public long MinLatencyMillis
-        {
-            get { return IExecuteWithSignature<long>("getMinLatencyMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getNetworkType()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int NetworkType
-        {
-            get { return IExecuteWithSignature<int>("getNetworkType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getPriority()"/> 
-        /// </summary>
-        public int Priority
-        {
-            get { return IExecuteWithSignature<int>("getPriority", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getRequiredNetwork()"/> 
-        /// </summary>
-        public Android.Net.NetworkRequest RequiredNetwork
-        {
-            get { return IExecuteWithSignature<Android.Net.NetworkRequest>("getRequiredNetwork", "()Landroid/net/NetworkRequest;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getService()"/> 
-        /// </summary>
-        public Android.Content.ComponentName Service
-        {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getService", "()Landroid/content/ComponentName;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getTransientExtras()"/> 
-        /// </summary>
-        public Android.Os.Bundle TransientExtras
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getTransientExtras", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getTriggerContentMaxDelay()"/> 
-        /// </summary>
-        public long TriggerContentMaxDelay
-        {
-            get { return IExecuteWithSignature<long>("getTriggerContentMaxDelay", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getTriggerContentUpdateDelay()"/> 
-        /// </summary>
-        public long TriggerContentUpdateDelay
-        {
-            get { return IExecuteWithSignature<long>("getTriggerContentUpdateDelay", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getTriggerContentUris()"/> 
-        /// </summary>
-        public Android.App.Job.JobInfo.TriggerContentUri[] TriggerContentUris
-        {
-            get { return IExecuteWithSignatureArray<Android.App.Job.JobInfo.TriggerContentUri>("getTriggerContentUris", "()[Landroid/app/job/JobInfo$TriggerContentUri;"); }
+            return IExecuteWithSignature<Android.Os.PersistableBundle>("getExtras", "()Landroid/os/PersistableBundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#isExpedited()"/>
@@ -397,6 +299,127 @@ namespace Android.App.Job
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getBackoffPolicy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBackoffPolicy()
+        {
+            return IExecuteWithSignature<int>("getBackoffPolicy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getClipGrantFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetClipGrantFlags()
+        {
+            return IExecuteWithSignature<int>("getClipGrantFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getNetworkType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetNetworkType()
+        {
+            return IExecuteWithSignature<int>("getNetworkType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getPriority()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriority()
+        {
+            return IExecuteWithSignature<int>("getPriority", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getEstimatedNetworkDownloadBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetEstimatedNetworkDownloadBytes()
+        {
+            return IExecuteWithSignature<long>("getEstimatedNetworkDownloadBytes", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getEstimatedNetworkUploadBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetEstimatedNetworkUploadBytes()
+        {
+            return IExecuteWithSignature<long>("getEstimatedNetworkUploadBytes", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getFlexMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetFlexMillis()
+        {
+            return IExecuteWithSignature<long>("getFlexMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getInitialBackoffMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetInitialBackoffMillis()
+        {
+            return IExecuteWithSignature<long>("getInitialBackoffMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getIntervalMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetIntervalMillis()
+        {
+            return IExecuteWithSignature<long>("getIntervalMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getMaxExecutionDelayMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetMaxExecutionDelayMillis()
+        {
+            return IExecuteWithSignature<long>("getMaxExecutionDelayMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getMinimumNetworkChunkBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetMinimumNetworkChunkBytes()
+        {
+            return IExecuteWithSignature<long>("getMinimumNetworkChunkBytes", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getMinLatencyMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetMinLatencyMillis()
+        {
+            return IExecuteWithSignature<long>("getMinLatencyMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getTriggerContentMaxDelay()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTriggerContentMaxDelay()
+        {
+            return IExecuteWithSignature<long>("getTriggerContentMaxDelay", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#getTriggerContentUpdateDelay()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTriggerContentUpdateDelay()
+        {
+            return IExecuteWithSignature<long>("getTriggerContentUpdateDelay", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.html#writeToParcel(android.os.Parcel,int)"/>
@@ -510,7 +533,7 @@ namespace Android.App.Job
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             /// <returns><see cref="Android.App.Job.JobInfo.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Job.JobInfo.Builder SetImportantWhileForeground(bool arg0)
             {
                 return IExecuteWithSignature<Android.App.Job.JobInfo.Builder>("setImportantWhileForeground", "(Z)Landroid/app/job/JobInfo$Builder;", arg0);
@@ -731,18 +754,12 @@ namespace Android.App.Job
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.TriggerContentUri.html#getFlags()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.TriggerContentUri.html#getUri()"/>
             /// </summary>
-            public int Flags
+            /// <returns><see cref="Android.Net.Uri"/></returns>
+            public Android.Net.Uri GetUri()
             {
-                get { return IExecuteWithSignature<int>("getFlags", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.TriggerContentUri.html#getUri()"/> 
-            /// </summary>
-            public Android.Net.Uri Uri
-            {
-                get { return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;"); }
+                return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.TriggerContentUri.html#describeContents()"/>
@@ -751,6 +768,14 @@ namespace Android.App.Job
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.TriggerContentUri.html#getFlags()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetFlags()
+            {
+                return IExecuteWithSignature<int>("getFlags", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/job/JobInfo.TriggerContentUri.html#writeToParcel(android.os.Parcel,int)"/>

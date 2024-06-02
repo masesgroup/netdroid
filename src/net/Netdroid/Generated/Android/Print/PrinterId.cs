@@ -52,19 +52,20 @@ namespace Android.Print
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrinterId.html#getLocalId()"/> 
-        /// </summary>
-        public Java.Lang.String LocalId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLocalId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrinterId.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrinterId.html#getLocalId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLocalId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLocalId", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrinterId.html#writeToParcel(android.os.Parcel,int)"/>

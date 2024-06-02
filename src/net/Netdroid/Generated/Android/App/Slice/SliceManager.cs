@@ -58,13 +58,6 @@ namespace Android.App.Slice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/SliceManager.html#getPinnedSlices()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Net.Uri> PinnedSlices
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Uri>>("getPinnedSlices", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceManager.html#bindSlice(android.content.Intent,java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
@@ -112,6 +105,14 @@ namespace Android.App.Slice
         public Java.Util.Collection<Android.Net.Uri> GetSliceDescendants(Android.Net.Uri arg0)
         {
             return IExecuteWithSignature<Java.Util.Collection<Android.Net.Uri>>("getSliceDescendants", "(Landroid/net/Uri;)Ljava/util/Collection;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/slice/SliceManager.html#getPinnedSlices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Uri> GetPinnedSlices()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Uri>>("getPinnedSlices", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceManager.html#getPinnedSpecs(android.net.Uri)"/>

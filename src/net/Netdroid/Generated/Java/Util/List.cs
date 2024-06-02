@@ -42,7 +42,7 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#copyOf(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#copyOf(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
@@ -51,7 +51,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "copyOf", "(Ljava/util/Collection;)Ljava/util/List;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of()"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List Of()
@@ -59,7 +59,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -77,7 +77,7 @@ namespace Java.Util
             return SExecute<Java.Util.List>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -94,7 +94,7 @@ namespace Java.Util
             return SExecute<Java.Util.List>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -110,7 +110,7 @@ namespace Java.Util
             return SExecute<Java.Util.List>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -125,7 +125,7 @@ namespace Java.Util
             return SExecute<Java.Util.List>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -139,7 +139,7 @@ namespace Java.Util
             return SExecute<Java.Util.List>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -152,7 +152,7 @@ namespace Java.Util
             return SExecute<Java.Util.List>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -164,7 +164,7 @@ namespace Java.Util
             return SExecute<Java.Util.List>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -175,7 +175,7 @@ namespace Java.Util
             return SExecute<Java.Util.List>(LocalBridgeClazz, "of", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -185,7 +185,7 @@ namespace Java.Util
             return SExecute<Java.Util.List>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
@@ -194,7 +194,7 @@ namespace Java.Util
             if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "([Ljava/lang/Object;)Ljava/util/List;"); else return SExecuteWithSignature<Java.Util.List>(LocalBridgeClazz, "of", "([Ljava/lang/Object;)Ljava/util/List;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
@@ -207,7 +207,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#toArray(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#toArray(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -216,7 +216,7 @@ namespace Java.Util
             return IExecuteWithSignatureArray<object>("toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#add(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -225,7 +225,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#addAll(int,java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#addAll(int,java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
@@ -235,7 +235,7 @@ namespace Java.Util
             return IExecute<bool>("addAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#addAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#addAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -244,7 +244,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#contains(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#contains(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -253,7 +253,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#containsAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#containsAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -262,7 +262,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("containsAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -270,7 +270,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#remove(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -279,7 +279,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#removeAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#removeAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -288,7 +288,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("removeAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#retainAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#retainAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -297,7 +297,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("retainAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#get(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="object"/></returns>
@@ -306,7 +306,7 @@ namespace Java.Util
             return IExecuteWithSignature("get", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#remove(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#remove(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="object"/></returns>
@@ -315,7 +315,7 @@ namespace Java.Util
             return IExecuteWithSignature("remove", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#set(int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#set(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -325,7 +325,7 @@ namespace Java.Util
             return IExecute("set", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#indexOf(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#indexOf(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -334,7 +334,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#lastIndexOf(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#lastIndexOf(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -343,7 +343,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
@@ -351,7 +351,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#toArray()"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#toArray()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
@@ -359,7 +359,7 @@ namespace Java.Util
             return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
@@ -367,7 +367,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#subList(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#subList(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -377,7 +377,7 @@ namespace Java.Util
             return IExecute<Java.Util.List>("subList", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#listIterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#listIterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator ListIterator()
@@ -385,7 +385,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "()Ljava/util/ListIterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#listIterator(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#listIterator(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
@@ -394,7 +394,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "(I)Ljava/util/ListIterator;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#add(int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#add(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -403,14 +403,14 @@ namespace Java.Util
             IExecute("add", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#spliterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#spliterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator Spliterator()
@@ -418,7 +418,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Spliterator>("spliterator", "()Ljava/util/Spliterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#replaceAll(java.util.function.UnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#replaceAll(java.util.function.UnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
         public void ReplaceAll(Java.Util.Function.UnaryOperator arg0)
@@ -475,17 +475,17 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#copyOf(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#copyOf(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<E> CopyOf<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
+        public static Java.Util.List<E> CopyOf<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
             return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "copyOf", "(Ljava/util/Collection;)Ljava/util/List;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of()"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<E> Of()
@@ -493,7 +493,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "of", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -511,7 +511,7 @@ namespace Java.Util
             return SExecute<Java.Util.List<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -528,7 +528,7 @@ namespace Java.Util
             return SExecute<Java.Util.List<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -544,7 +544,7 @@ namespace Java.Util
             return SExecute<Java.Util.List<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -559,7 +559,7 @@ namespace Java.Util
             return SExecute<Java.Util.List<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -573,7 +573,7 @@ namespace Java.Util
             return SExecute<Java.Util.List<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -586,7 +586,7 @@ namespace Java.Util
             return SExecute<Java.Util.List<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -598,7 +598,7 @@ namespace Java.Util
             return SExecute<Java.Util.List<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -609,7 +609,7 @@ namespace Java.Util
             return SExecute<Java.Util.List<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -619,7 +619,7 @@ namespace Java.Util
             return SExecute<Java.Util.List<E>>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
@@ -628,7 +628,7 @@ namespace Java.Util
             if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "of", "([Ljava/lang/Object;)Ljava/util/List;"); else return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "of", "([Ljava/lang/Object;)Ljava/util/List;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#of(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#of(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
@@ -641,7 +641,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#toArray(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#toArray(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"></typeparam>
@@ -651,7 +651,7 @@ namespace Java.Util
             return IExecuteWithSignatureArray<T>("toArray", "([Ljava/lang/Object;)[Ljava/lang/Object;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#add(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -660,28 +660,28 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#addAll(int,java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#addAll(int,java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg1ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE: E
+        public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE : E
         {
             return IExecute<bool>("addAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#addAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#addAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E
+        public bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE : E
         {
             return IExecuteWithSignature<bool>("addAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#contains(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#contains(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -690,7 +690,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#containsAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#containsAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -699,7 +699,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("containsAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -707,7 +707,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#remove(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -716,7 +716,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#removeAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#removeAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -725,7 +725,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("removeAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#retainAll(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#retainAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -734,7 +734,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("retainAll", "(Ljava/util/Collection;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#get(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><typeparamref name="E"/></returns>
@@ -743,7 +743,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("get", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#remove(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#remove(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><typeparamref name="E"/></returns>
@@ -752,7 +752,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("remove", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#set(int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#set(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -762,7 +762,7 @@ namespace Java.Util
             return IExecute<E>("set", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#indexOf(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#indexOf(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -771,7 +771,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#lastIndexOf(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#lastIndexOf(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -780,7 +780,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
@@ -788,7 +788,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#toArray()"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#toArray()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object[] ToArray()
@@ -796,7 +796,7 @@ namespace Java.Util
             return IExecuteWithSignatureArray<object>("toArray", "()[Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> Iterator()
@@ -804,7 +804,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Iterator<E>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#subList(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#subList(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -814,7 +814,7 @@ namespace Java.Util
             return IExecute<Java.Util.List<E>>("subList", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#listIterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#listIterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator<E> ListIterator()
@@ -822,7 +822,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.ListIterator<E>>("listIterator", "()Ljava/util/ListIterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#listIterator(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#listIterator(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
@@ -831,7 +831,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.ListIterator<E>>("listIterator", "(I)Ljava/util/ListIterator;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#add(int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#add(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -840,14 +840,14 @@ namespace Java.Util
             IExecute("add", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#spliterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#spliterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator<E> Spliterator()
@@ -855,7 +855,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Spliterator<E>>("spliterator", "()Ljava/util/Spliterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/List.html#replaceAll(java.util.function.UnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/List.html#replaceAll(java.util.function.UnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
         public void ReplaceAll(Java.Util.Function.UnaryOperator<E> arg0)

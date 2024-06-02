@@ -42,7 +42,7 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Paths.html#get(java.lang.String,java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Paths.html#get(java.lang.String,java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -52,7 +52,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "get", arg0); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "get", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Paths.html#get(java.net.URI)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Paths.html#get(java.net.URI)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>

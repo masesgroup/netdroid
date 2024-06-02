@@ -52,53 +52,28 @@ namespace Android.Bluetooth.Le
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseData.html#getIncludeDeviceName()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseData.html#getManufacturerSpecificData()"/>
         /// </summary>
-        public bool IncludeDeviceName
+        /// <returns><see cref="Android.Util.SparseArray"/></returns>
+        public Android.Util.SparseArray<byte[]> GetManufacturerSpecificData()
         {
-            get { return IExecuteWithSignature<bool>("getIncludeDeviceName", "()Z"); }
+            return IExecuteWithSignature<Android.Util.SparseArray<byte[]>>("getManufacturerSpecificData", "()Landroid/util/SparseArray;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseData.html#getIncludeTxPowerLevel()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseData.html#getIncludeDeviceName()"/>
         /// </summary>
-        public bool IncludeTxPowerLevel
+        /// <returns><see cref="bool"/></returns>
+        public bool GetIncludeDeviceName()
         {
-            get { return IExecuteWithSignature<bool>("getIncludeTxPowerLevel", "()Z"); }
+            return IExecuteWithSignature<bool>("getIncludeDeviceName", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseData.html#getManufacturerSpecificData()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseData.html#getIncludeTxPowerLevel()"/>
         /// </summary>
-        public Android.Util.SparseArray<byte[]> ManufacturerSpecificData
+        /// <returns><see cref="bool"/></returns>
+        public bool GetIncludeTxPowerLevel()
         {
-            get { return IExecuteWithSignature<Android.Util.SparseArray<byte[]>>("getManufacturerSpecificData", "()Landroid/util/SparseArray;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseData.html#getServiceData()"/> 
-        /// </summary>
-        public Java.Util.Map<Android.Os.ParcelUuid, byte[]> ServiceData
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Android.Os.ParcelUuid, byte[]>>("getServiceData", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseData.html#getServiceSolicitationUuids()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Os.ParcelUuid> ServiceSolicitationUuids
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Os.ParcelUuid>>("getServiceSolicitationUuids", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseData.html#getServiceUuids()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Os.ParcelUuid> ServiceUuids
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Os.ParcelUuid>>("getServiceUuids", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseData.html#getTransportDiscoveryData()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Bluetooth.Le.TransportDiscoveryData> TransportDiscoveryData
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.Le.TransportDiscoveryData>>("getTransportDiscoveryData", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<bool>("getIncludeTxPowerLevel", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseData.html#describeContents()"/>
@@ -107,6 +82,38 @@ namespace Android.Bluetooth.Le
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseData.html#getTransportDiscoveryData()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Bluetooth.Le.TransportDiscoveryData> GetTransportDiscoveryData()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.Le.TransportDiscoveryData>>("getTransportDiscoveryData", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseData.html#getServiceSolicitationUuids()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Os.ParcelUuid> GetServiceSolicitationUuids()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Os.ParcelUuid>>("getServiceSolicitationUuids", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseData.html#getServiceUuids()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Os.ParcelUuid> GetServiceUuids()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Os.ParcelUuid>>("getServiceUuids", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseData.html#getServiceData()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Android.Os.ParcelUuid, byte[]> GetServiceData()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Android.Os.ParcelUuid, byte[]>>("getServiceData", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseData.html#writeToParcel(android.os.Parcel,int)"/>

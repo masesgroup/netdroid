@@ -43,7 +43,7 @@ namespace Android.Transition
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.ViewGroup"/></param>
         /// <param name="arg1"><see cref="Android.View.ViewGroup"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Scene(Android.View.ViewGroup arg0, Android.View.ViewGroup arg1)
             : base(arg0, arg1)
         {
@@ -93,11 +93,12 @@ namespace Android.Transition
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/Scene.html#getSceneRoot()"/> 
+        /// <see href="https://developer.android.com/reference/android/transition/Scene.html#getSceneRoot()"/>
         /// </summary>
-        public Android.View.ViewGroup SceneRoot
+        /// <returns><see cref="Android.View.ViewGroup"/></returns>
+        public Android.View.ViewGroup GetSceneRoot()
         {
-            get { return IExecuteWithSignature<Android.View.ViewGroup>("getSceneRoot", "()Landroid/view/ViewGroup;"); }
+            return IExecuteWithSignature<Android.View.ViewGroup>("getSceneRoot", "()Landroid/view/ViewGroup;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Scene.html#enter()"/>

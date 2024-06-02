@@ -64,39 +64,44 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#getFilterDocumentIds()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#getMaximumResultCount()"/>
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> FilterDocumentIds
+        /// <returns><see cref="int"/></returns>
+        public int GetMaximumResultCount()
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getFilterDocumentIds", "()Ljava/util/Map;"); }
+            return IExecuteWithSignature<int>("getMaximumResultCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#getFilterNamespaces()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#getRankingStrategy()"/>
         /// </summary>
-        public Java.Util.List<Java.Lang.String> FilterNamespaces
+        /// <returns><see cref="int"/></returns>
+        public int GetRankingStrategy()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getFilterNamespaces", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<int>("getRankingStrategy", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#getFilterSchemas()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#getFilterNamespaces()"/>
         /// </summary>
-        public Java.Util.List<Java.Lang.String> FilterSchemas
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetFilterNamespaces()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getFilterSchemas", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getFilterNamespaces", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#getMaximumResultCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#getFilterSchemas()"/>
         /// </summary>
-        public int MaximumResultCount
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetFilterSchemas()
         {
-            get { return IExecuteWithSignature<int>("getMaximumResultCount", "()I"); }
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getFilterSchemas", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#getRankingStrategy()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SearchSuggestionSpec.html#getFilterDocumentIds()"/>
         /// </summary>
-        public int RankingStrategy
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> GetFilterDocumentIds()
         {
-            get { return IExecuteWithSignature<int>("getRankingStrategy", "()I"); }
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getFilterDocumentIds", "()Ljava/util/Map;");
         }
 
         #endregion

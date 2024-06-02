@@ -52,74 +52,20 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getDhcpServerAddress()"/> <see href="https://developer.android.com/reference/android/net/LinkProperties.html#setDhcpServerAddress(java.net.Inet4Address)"/>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getNat64Prefix()"/>
         /// </summary>
-        public Java.Net.Inet4Address DhcpServerAddress
+        /// <returns><see cref="Android.Net.IpPrefix"/></returns>
+        public Android.Net.IpPrefix GetNat64Prefix()
         {
-            get { return IExecuteWithSignature<Java.Net.Inet4Address>("getDhcpServerAddress", "()Ljava/net/Inet4Address;"); } set { IExecuteWithSignature("setDhcpServerAddress", "(Ljava/net/Inet4Address;)V", value); }
+            return IExecuteWithSignature<Android.Net.IpPrefix>("getNat64Prefix", "()Landroid/net/IpPrefix;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getDnsServers()"/> <see href="https://developer.android.com/reference/android/net/LinkProperties.html#setDnsServers(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getHttpProxy()"/>
         /// </summary>
-        public Java.Util.List<Java.Net.InetAddress> DnsServers
+        /// <returns><see cref="Android.Net.ProxyInfo"/></returns>
+        public Android.Net.ProxyInfo GetHttpProxy()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Net.InetAddress>>("getDnsServers", "()Ljava/util/List;"); } set { IExecuteWithSignature("setDnsServers", "(Ljava/util/Collection;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getDomains()"/> <see href="https://developer.android.com/reference/android/net/LinkProperties.html#setDomains(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Domains
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDomains", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDomains", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getHttpProxy()"/> <see href="https://developer.android.com/reference/android/net/LinkProperties.html#setHttpProxy(android.net.ProxyInfo)"/>
-        /// </summary>
-        public Android.Net.ProxyInfo HttpProxy
-        {
-            get { return IExecuteWithSignature<Android.Net.ProxyInfo>("getHttpProxy", "()Landroid/net/ProxyInfo;"); } set { IExecuteWithSignature("setHttpProxy", "(Landroid/net/ProxyInfo;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getInterfaceName()"/> <see href="https://developer.android.com/reference/android/net/LinkProperties.html#setInterfaceName(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String InterfaceName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInterfaceName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setInterfaceName", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getLinkAddresses()"/> <see href="https://developer.android.com/reference/android/net/LinkProperties.html#setLinkAddresses(java.util.Collection)"/>
-        /// </summary>
-        public Java.Util.List<Android.Net.LinkAddress> LinkAddresses
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.LinkAddress>>("getLinkAddresses", "()Ljava/util/List;"); } set { IExecuteWithSignature("setLinkAddresses", "(Ljava/util/Collection;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getMtu()"/> <see href="https://developer.android.com/reference/android/net/LinkProperties.html#setMtu(int)"/>
-        /// </summary>
-        public int Mtu
-        {
-            get { return IExecuteWithSignature<int>("getMtu", "()I"); } set { IExecuteWithSignature("setMtu", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getNat64Prefix()"/> <see href="https://developer.android.com/reference/android/net/LinkProperties.html#setNat64Prefix(android.net.IpPrefix)"/>
-        /// </summary>
-        public Android.Net.IpPrefix Nat64Prefix
-        {
-            get { return IExecuteWithSignature<Android.Net.IpPrefix>("getNat64Prefix", "()Landroid/net/IpPrefix;"); } set { IExecuteWithSignature("setNat64Prefix", "(Landroid/net/IpPrefix;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getPrivateDnsServerName()"/> 
-        /// </summary>
-        public Java.Lang.String PrivateDnsServerName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPrivateDnsServerName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getRoutes()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Net.RouteInfo> Routes
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.RouteInfo>>("getRoutes", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Net.ProxyInfo>("getHttpProxy", "()Landroid/net/ProxyInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#addRoute(android.net.RouteInfo)"/>
@@ -155,11 +101,139 @@ namespace Android.Net
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getMtu()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMtu()
+        {
+            return IExecuteWithSignature<int>("getMtu", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getDomains()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDomains()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDomains", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getInterfaceName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetInterfaceName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getInterfaceName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getPrivateDnsServerName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPrivateDnsServerName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPrivateDnsServerName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getDhcpServerAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.Inet4Address"/></returns>
+        public Java.Net.Inet4Address GetDhcpServerAddress()
+        {
+            return IExecuteWithSignature<Java.Net.Inet4Address>("getDhcpServerAddress", "()Ljava/net/Inet4Address;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getLinkAddresses()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.LinkAddress> GetLinkAddresses()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.LinkAddress>>("getLinkAddresses", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getRoutes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.RouteInfo> GetRoutes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.RouteInfo>>("getRoutes", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#getDnsServers()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Net.InetAddress> GetDnsServers()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Net.InetAddress>>("getDnsServers", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#setDhcpServerAddress(java.net.Inet4Address)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.Inet4Address"/></param>
+        public void SetDhcpServerAddress(Java.Net.Inet4Address arg0)
+        {
+            IExecuteWithSignature("setDhcpServerAddress", "(Ljava/net/Inet4Address;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#setDnsServers(java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public void SetDnsServers(Java.Util.Collection<Java.Net.InetAddress> arg0)
+        {
+            IExecuteWithSignature("setDnsServers", "(Ljava/util/Collection;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#setDomains(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetDomains(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setDomains", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#setHttpProxy(android.net.ProxyInfo)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.ProxyInfo"/></param>
+        public void SetHttpProxy(Android.Net.ProxyInfo arg0)
+        {
+            IExecuteWithSignature("setHttpProxy", "(Landroid/net/ProxyInfo;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#setInterfaceName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetInterfaceName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setInterfaceName", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#setLinkAddresses(java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public void SetLinkAddresses(Java.Util.Collection<Android.Net.LinkAddress> arg0)
+        {
+            IExecuteWithSignature("setLinkAddresses", "(Ljava/util/Collection;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#setMtu(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMtu(int arg0)
+        {
+            IExecuteWithSignature("setMtu", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#setNat64Prefix(android.net.IpPrefix)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.IpPrefix"/></param>
+        public void SetNat64Prefix(Android.Net.IpPrefix arg0)
+        {
+            IExecuteWithSignature("setNat64Prefix", "(Landroid/net/IpPrefix;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/LinkProperties.html#writeToParcel(android.os.Parcel,int)"/>

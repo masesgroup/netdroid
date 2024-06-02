@@ -27,7 +27,7 @@ namespace Java.Util.Prefs
 {
     #region INodeChangeListener
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.prefs.NodeChangeListener implementing <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/NodeChangeListener.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.prefs.NodeChangeListener implementing <see href="https://developer.android.com/reference/java/util/prefs/NodeChangeListener.html"/>
     /// </summary>
     public partial interface INodeChangeListener
     {
@@ -68,16 +68,16 @@ namespace Java.Util.Prefs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("childAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>>>(ChildAddedEventHandler));
-            AddEventHandler("childRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>>>(ChildRemovedEventHandler));
+            AddEventHandler("childAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>>>(ChildAddedEventHandler));
+            AddEventHandler("childRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>>>(ChildRemovedEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnChildAdded"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Util.Prefs.NodeChangeEvent> OnChildAdded { get; set; } = null;
+        public global::System.Action<Java.Util.Prefs.NodeChangeEvent> OnChildAdded { get; set; } = null;
 
         void ChildAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>> data)
         {
@@ -86,7 +86,7 @@ namespace Java.Util.Prefs
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
         public virtual void ChildAdded(Java.Util.Prefs.NodeChangeEvent arg0)
@@ -95,10 +95,10 @@ namespace Java.Util.Prefs
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnChildRemoved"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Util.Prefs.NodeChangeEvent> OnChildRemoved { get; set; } = null;
+        public global::System.Action<Java.Util.Prefs.NodeChangeEvent> OnChildRemoved { get; set; } = null;
 
         void ChildRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>> data)
         {
@@ -107,7 +107,7 @@ namespace Java.Util.Prefs
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
         public virtual void ChildRemoved(Java.Util.Prefs.NodeChangeEvent arg0)
@@ -146,7 +146,7 @@ namespace Java.Util.Prefs
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
         public override void ChildAdded(Java.Util.Prefs.NodeChangeEvent arg0)
@@ -154,7 +154,7 @@ namespace Java.Util.Prefs
             IExecuteWithSignature("childAdded", "(Ljava/util/prefs/NodeChangeEvent;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
         public override void ChildRemoved(Java.Util.Prefs.NodeChangeEvent arg0)

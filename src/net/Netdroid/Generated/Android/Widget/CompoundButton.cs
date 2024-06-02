@@ -88,32 +88,36 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CompoundButton.html#getButtonDrawable()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/CompoundButton.html#getButtonTintList()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable ButtonDrawable
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetButtonTintList()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getButtonDrawable", "()Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getButtonTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CompoundButton.html#getButtonTintBlendMode()"/> <see href="https://developer.android.com/reference/android/widget/CompoundButton.html#setButtonTintBlendMode(android.graphics.BlendMode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CompoundButton.html#getButtonTintBlendMode()"/>
         /// </summary>
-        public Android.Graphics.BlendMode ButtonTintBlendMode
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetButtonTintBlendMode()
         {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getButtonTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setButtonTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getButtonTintBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CompoundButton.html#getButtonTintList()"/> <see href="https://developer.android.com/reference/android/widget/CompoundButton.html#setButtonTintList(android.content.res.ColorStateList)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CompoundButton.html#getButtonDrawable()"/>
         /// </summary>
-        public Android.Content.Res.ColorStateList ButtonTintList
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetButtonDrawable()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getButtonTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setButtonTintList", "(Landroid/content/res/ColorStateList;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getButtonDrawable", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CompoundButton.html#getButtonTintMode()"/> <see href="https://developer.android.com/reference/android/widget/CompoundButton.html#setButtonTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CompoundButton.html#getButtonTintMode()"/>
         /// </summary>
-        public Android.Graphics.PorterDuff.Mode ButtonTintMode
+        /// <returns><see cref="Android.Graphics.PorterDuff.Mode"/></returns>
+        public Android.Graphics.PorterDuff.Mode GetButtonTintMode()
         {
-            get { return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getButtonTintMode", "()Landroid/graphics/PorterDuff$Mode;"); } set { IExecuteWithSignature("setButtonTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getButtonTintMode", "()Landroid/graphics/PorterDuff$Mode;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/CompoundButton.html#isChecked()"/>
@@ -146,6 +150,30 @@ namespace Android.Widget
         public void SetButtonIcon(Android.Graphics.Drawable.Icon arg0)
         {
             IExecuteWithSignature("setButtonIcon", "(Landroid/graphics/drawable/Icon;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CompoundButton.html#setButtonTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        public void SetButtonTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setButtonTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CompoundButton.html#setButtonTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        public void SetButtonTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setButtonTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CompoundButton.html#setButtonTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.PorterDuff.Mode"/></param>
+        public void SetButtonTintMode(Android.Graphics.PorterDuff.Mode arg0)
+        {
+            IExecuteWithSignature("setButtonTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/CompoundButton.html#setChecked(boolean)"/>
@@ -199,7 +227,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onCheckedChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.CompoundButton>>>(OnCheckedChangedEventHandler));
+                AddEventHandler("onCheckedChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.CompoundButton>>>(OnCheckedChangedEventHandler));
 
             }
 
@@ -207,7 +235,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/CompoundButton.OnCheckedChangeListener.html#onCheckedChanged(android.widget.CompoundButton,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCheckedChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Widget.CompoundButton, bool> OnOnCheckedChanged { get; set; } = null;
+            public global::System.Action<Android.Widget.CompoundButton, bool> OnOnCheckedChanged { get; set; } = null;
 
             void OnCheckedChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.CompoundButton>> data)
             {

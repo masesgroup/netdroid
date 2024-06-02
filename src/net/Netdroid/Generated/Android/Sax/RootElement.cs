@@ -63,11 +63,12 @@ namespace Android.Sax
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/sax/RootElement.html#getContentHandler()"/> 
+        /// <see href="https://developer.android.com/reference/android/sax/RootElement.html#getContentHandler()"/>
         /// </summary>
-        public Org.Xml.Sax.ContentHandler ContentHandler
+        /// <returns><see cref="Org.Xml.Sax.ContentHandler"/></returns>
+        public Org.Xml.Sax.ContentHandler GetContentHandler()
         {
-            get { return IExecuteWithSignature<Org.Xml.Sax.ContentHandler>("getContentHandler", "()Lorg/xml/sax/ContentHandler;"); }
+            return IExecuteWithSignature<Org.Xml.Sax.ContentHandler>("getContentHandler", "()Lorg/xml/sax/ContentHandler;");
         }
 
         #endregion

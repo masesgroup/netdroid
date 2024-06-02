@@ -30,7 +30,7 @@ namespace Javax.Xml.Transform.Stream
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         public StreamSource(Java.Io.File arg0)
@@ -38,7 +38,7 @@ namespace Javax.Xml.Transform.Stream
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.InputStream,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.InputStream,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -47,7 +47,7 @@ namespace Javax.Xml.Transform.Stream
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public StreamSource(Java.Io.InputStream arg0)
@@ -55,7 +55,7 @@ namespace Javax.Xml.Transform.Stream
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.Reader,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.Reader,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -64,7 +64,7 @@ namespace Javax.Xml.Transform.Stream
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         public StreamSource(Java.Io.Reader arg0)
@@ -72,7 +72,7 @@ namespace Javax.Xml.Transform.Stream
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public StreamSource(Java.Lang.String arg0)
@@ -88,7 +88,7 @@ namespace Javax.Xml.Transform.Stream
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html#FEATURE"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html#FEATURE"/>
         /// </summary>
         public static Java.Lang.String FEATURE { get { if (!_FEATUREReady) { _FEATUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE"); _FEATUREReady = true; } return _FEATUREContent; } }
         private static Java.Lang.String _FEATUREContent = default;
@@ -102,35 +102,7 @@ namespace Javax.Xml.Transform.Stream
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html#getInputStream()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html#setInputStream(java.io.InputStream)"/>
-        /// </summary>
-        public Java.Io.InputStream InputStream
-        {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "()Ljava/io/InputStream;"); } set { IExecuteWithSignature("setInputStream", "(Ljava/io/InputStream;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html#getPublicId()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html#setPublicId(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String PublicId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPublicId", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html#getReader()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html#setReader(java.io.Reader)"/>
-        /// </summary>
-        public Java.Io.Reader Reader
-        {
-            get { return IExecuteWithSignature<Java.Io.Reader>("getReader", "()Ljava/io/Reader;"); } set { IExecuteWithSignature("setReader", "(Ljava/io/Reader;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html#getSystemId()"/> 
-        /// </summary>
-        public Java.Lang.String SystemId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -138,7 +110,63 @@ namespace Javax.Xml.Transform.Stream
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html#setSystemId(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html#getInputStream()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        public Java.Io.InputStream GetInputStream()
+        {
+            return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "()Ljava/io/InputStream;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html#getReader()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.Reader"/></returns>
+        public Java.Io.Reader GetReader()
+        {
+            return IExecuteWithSignature<Java.Io.Reader>("getReader", "()Ljava/io/Reader;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html#getPublicId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPublicId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html#getSystemId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html#setInputStream(java.io.InputStream)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        public void SetInputStream(Java.Io.InputStream arg0)
+        {
+            IExecuteWithSignature("setInputStream", "(Ljava/io/InputStream;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html#setPublicId(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPublicId(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPublicId", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html#setReader(java.io.Reader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        public void SetReader(Java.Io.Reader arg0)
+        {
+            IExecuteWithSignature("setReader", "(Ljava/io/Reader;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html#setSystemId(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         public void SetSystemId(Java.Io.File arg0)
@@ -146,7 +174,7 @@ namespace Javax.Xml.Transform.Stream
             IExecuteWithSignature("setSystemId", "(Ljava/io/File;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html#setSystemId(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html#setSystemId(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetSystemId(Java.Lang.String arg0)

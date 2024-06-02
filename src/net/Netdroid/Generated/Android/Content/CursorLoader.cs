@@ -38,7 +38,7 @@ namespace Android.Content
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         /// <param name="arg4"><see cref="Java.Lang.String"/></param>
         /// <param name="arg5"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public CursorLoader(Android.Content.Context arg0, Android.Net.Uri arg1, Java.Lang.String[] arg2, Java.Lang.String arg3, Java.Lang.String[] arg4, Java.Lang.String arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -47,7 +47,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public CursorLoader(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -69,50 +69,55 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#getProjection()"/> <see href="https://developer.android.com/reference/android/content/CursorLoader.html#setProjection(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#getUri()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String[] Projection
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        [global::System.Obsolete()]
+        public Android.Net.Uri GetUri()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getProjection", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setProjection", "([Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#getSelection()"/> <see href="https://developer.android.com/reference/android/content/CursorLoader.html#setSelection(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#getSelection()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Selection
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetSelection()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSelection", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSelection", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getSelection", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#getSelectionArgs()"/> <see href="https://developer.android.com/reference/android/content/CursorLoader.html#setSelectionArgs(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#getSortOrder()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String[] SelectionArgs
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetSortOrder()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getSelectionArgs", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setSelectionArgs", "([Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getSortOrder", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#getSortOrder()"/> <see href="https://developer.android.com/reference/android/content/CursorLoader.html#setSortOrder(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#getProjection()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String SortOrder
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String[] GetProjection()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSortOrder", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSortOrder", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getProjection", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#getUri()"/> <see href="https://developer.android.com/reference/android/content/CursorLoader.html#setUri(android.net.Uri)"/>
+        /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#getSelectionArgs()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Net.Uri Uri
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String[] GetSelectionArgs()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;"); } set { IExecuteWithSignature("setUri", "(Landroid/net/Uri;)V", value); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getSelectionArgs", "()[Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#deliverResult(android.database.Cursor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Database.Cursor"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DeliverResult(Android.Database.Cursor arg0)
         {
             IExecuteWithSignature("deliverResult", "(Landroid/database/Cursor;)V", arg0);
@@ -121,10 +126,55 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#onCanceled(android.database.Cursor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Database.Cursor"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnCanceled(Android.Database.Cursor arg0)
         {
             IExecuteWithSignature("onCanceled", "(Landroid/database/Cursor;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#setProjection(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [global::System.Obsolete()]
+        public void SetProjection(Java.Lang.String[] arg0)
+        {
+            IExecuteWithSignature("setProjection", "([Ljava/lang/String;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#setSelection(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [global::System.Obsolete()]
+        public void SetSelection(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSelection", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#setSelectionArgs(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [global::System.Obsolete()]
+        public void SetSelectionArgs(Java.Lang.String[] arg0)
+        {
+            IExecuteWithSignature("setSelectionArgs", "([Ljava/lang/String;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#setSortOrder(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [global::System.Obsolete()]
+        public void SetSortOrder(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSortOrder", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/CursorLoader.html#setUri(android.net.Uri)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
+        [global::System.Obsolete()]
+        public void SetUri(Android.Net.Uri arg0)
+        {
+            IExecuteWithSignature("setUri", "(Landroid/net/Uri;)V", arg0);
         }
 
         #endregion

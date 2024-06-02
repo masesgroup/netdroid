@@ -116,19 +116,20 @@ namespace Android.Media.Metrics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/NetworkEvent.html#getNetworkType()"/> 
-        /// </summary>
-        public int NetworkType
-        {
-            get { return IExecuteWithSignature<int>("getNetworkType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/metrics/NetworkEvent.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/NetworkEvent.html#getNetworkType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNetworkType()
+        {
+            return IExecuteWithSignature<int>("getNetworkType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/metrics/NetworkEvent.html#writeToParcel(android.os.Parcel,int)"/>

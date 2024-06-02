@@ -84,19 +84,29 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/FrameLayout.html#getConsiderGoneChildrenWhenMeasuring()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/FrameLayout.html#getConsiderGoneChildrenWhenMeasuring()"/>
         /// </summary>
-        [System.Obsolete()]
-        public bool ConsiderGoneChildrenWhenMeasuring
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetConsiderGoneChildrenWhenMeasuring()
         {
-            get { return IExecuteWithSignature<bool>("getConsiderGoneChildrenWhenMeasuring", "()Z"); }
+            return IExecuteWithSignature<bool>("getConsiderGoneChildrenWhenMeasuring", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/FrameLayout.html#getMeasureAllChildren()"/> <see href="https://developer.android.com/reference/android/widget/FrameLayout.html#setMeasureAllChildren(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/FrameLayout.html#getMeasureAllChildren()"/>
         /// </summary>
-        public bool MeasureAllChildren
+        /// <returns><see cref="bool"/></returns>
+        public bool GetMeasureAllChildren()
         {
-            get { return IExecuteWithSignature<bool>("getMeasureAllChildren", "()Z"); } set { IExecuteWithSignature("setMeasureAllChildren", "(Z)V", value); }
+            return IExecuteWithSignature<bool>("getMeasureAllChildren", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/FrameLayout.html#setMeasureAllChildren(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetMeasureAllChildren(bool arg0)
+        {
+            IExecuteWithSignature("setMeasureAllChildren", "(Z)V", arg0);
         }
 
         #endregion

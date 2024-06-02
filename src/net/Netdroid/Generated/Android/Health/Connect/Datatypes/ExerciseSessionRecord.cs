@@ -52,46 +52,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSessionRecord.html#getExerciseType()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSessionRecord.html#getRoute()"/>
         /// </summary>
-        public int ExerciseType
+        /// <returns><see cref="Android.Health.Connect.Datatypes.ExerciseRoute"/></returns>
+        public Android.Health.Connect.Datatypes.ExerciseRoute GetRoute()
         {
-            get { return IExecuteWithSignature<int>("getExerciseType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSessionRecord.html#getLaps()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Health.Connect.Datatypes.ExerciseLap> Laps
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.ExerciseLap>>("getLaps", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSessionRecord.html#getNotes()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Notes
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getNotes", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSessionRecord.html#getRoute()"/> 
-        /// </summary>
-        public Android.Health.Connect.Datatypes.ExerciseRoute Route
-        {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.ExerciseRoute>("getRoute", "()Landroid/health/connect/datatypes/ExerciseRoute;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSessionRecord.html#getSegments()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Health.Connect.Datatypes.ExerciseSegment> Segments
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.ExerciseSegment>>("getSegments", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSessionRecord.html#getTitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Title
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.ExerciseRoute>("getRoute", "()Landroid/health/connect/datatypes/ExerciseRoute;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSessionRecord.html#hasRoute()"/>
@@ -100,6 +66,46 @@ namespace Android.Health.Connect.Datatypes
         public bool HasRoute()
         {
             return IExecuteWithSignature<bool>("hasRoute", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSessionRecord.html#getExerciseType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetExerciseType()
+        {
+            return IExecuteWithSignature<int>("getExerciseType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSessionRecord.html#getNotes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetNotes()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getNotes", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSessionRecord.html#getTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSessionRecord.html#getLaps()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Health.Connect.Datatypes.ExerciseLap> GetLaps()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.ExerciseLap>>("getLaps", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSessionRecord.html#getSegments()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Health.Connect.Datatypes.ExerciseSegment> GetSegments()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.ExerciseSegment>>("getSegments", "()Ljava/util/List;");
         }
 
         #endregion

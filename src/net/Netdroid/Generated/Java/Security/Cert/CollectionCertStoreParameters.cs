@@ -30,7 +30,7 @@ namespace Java.Security.Cert
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CollectionCertStoreParameters.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CollectionCertStoreParameters.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public CollectionCertStoreParameters(Java.Util.Collection<object> arg0)
@@ -54,11 +54,12 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CollectionCertStoreParameters.html#getCollection()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/CollectionCertStoreParameters.html#getCollection()"/>
         /// </summary>
-        public Java.Util.Collection<object> Collection
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<object> GetCollection()
         {
-            get { return IExecuteWithSignature<Java.Util.Collection<object>>("getCollection", "()Ljava/util/Collection;"); }
+            return IExecuteWithSignature<Java.Util.Collection<object>>("getCollection", "()Ljava/util/Collection;");
         }
 
         #endregion

@@ -50,7 +50,7 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#open()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousServerSocketChannel.html#open()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.AsynchronousServerSocketChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -59,7 +59,7 @@ namespace Java.Nio.Channels
             return SExecuteWithSignature<Java.Nio.Channels.AsynchronousServerSocketChannel>(LocalBridgeClazz, "open", "()Ljava/nio/channels/AsynchronousServerSocketChannel;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#open(java.nio.channels.AsynchronousChannelGroup)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousServerSocketChannel.html#open(java.nio.channels.AsynchronousChannelGroup)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.AsynchronousChannelGroup"/></param>
         /// <returns><see cref="Java.Nio.Channels.AsynchronousServerSocketChannel"/></returns>
@@ -73,25 +73,27 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#getLocalAddress()"/> 
-        /// </summary>
-        public Java.Net.SocketAddress LocalAddress
-        {
-            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getLocalAddress", "()Ljava/net/SocketAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#accept(java.lang.Object,java.nio.channels.CompletionHandler)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousServerSocketChannel.html#accept(java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="A"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
         /// <typeparam name="A"></typeparam>
         /// <typeparam name="Arg1objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Accept<A, Arg1objectSuperA>(A arg0, Java.Nio.Channels.CompletionHandler<Java.Nio.Channels.AsynchronousSocketChannel, Arg1objectSuperA> arg1) where Arg1objectSuperA: A
+        public void Accept<A, Arg1objectSuperA>(A arg0, Java.Nio.Channels.CompletionHandler<Java.Nio.Channels.AsynchronousSocketChannel, Arg1objectSuperA> arg1) where Arg1objectSuperA : A
         {
             IExecute("accept", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#bind(java.net.SocketAddress,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousServerSocketChannel.html#getLocalAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.SocketAddress"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Net.SocketAddress GetLocalAddress()
+        {
+            return IExecuteWithSignature<Java.Net.SocketAddress>("getLocalAddress", "()Ljava/net/SocketAddress;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousServerSocketChannel.html#bind(java.net.SocketAddress,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -102,7 +104,7 @@ namespace Java.Nio.Channels
             return IExecute<Java.Nio.Channels.AsynchronousServerSocketChannel>("bind", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#accept()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousServerSocketChannel.html#accept()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<Java.Nio.Channels.AsynchronousSocketChannel> Accept()
@@ -110,7 +112,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Util.Concurrent.Future<Java.Nio.Channels.AsynchronousSocketChannel>>("accept", "()Ljava/util/concurrent/Future;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#provider()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousServerSocketChannel.html#provider()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.Spi.AsynchronousChannelProvider"/></returns>
         public Java.Nio.Channels.Spi.AsynchronousChannelProvider Provider()
@@ -118,7 +120,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.Spi.AsynchronousChannelProvider>("provider", "()Ljava/nio/channels/spi/AsynchronousChannelProvider;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#bind(java.net.SocketAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousServerSocketChannel.html#bind(java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
         /// <returns><see cref="Java.Nio.Channels.NetworkChannel"/></returns>
@@ -128,7 +130,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("bind", "(Ljava/net/SocketAddress;)Ljava/nio/channels/NetworkChannel;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousServerSocketChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousServerSocketChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
         /// <param name="arg1"><see cref="object"/></param>

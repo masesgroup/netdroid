@@ -156,7 +156,7 @@ namespace Android.View.Accessibility
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#MAX_TEXT_LENGTH"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MAX_TEXT_LENGTH { get { if (!_MAX_TEXT_LENGTHReady) { _MAX_TEXT_LENGTHContent = SGetField<int>(LocalBridgeClazz, "MAX_TEXT_LENGTH"); _MAX_TEXT_LENGTHReady = true; } return _MAX_TEXT_LENGTHContent; } }
         private static int _MAX_TEXT_LENGTHContent = default;
         private static bool _MAX_TEXT_LENGTHReady = false; // this is used because in case of generics 
@@ -427,7 +427,7 @@ namespace Android.View.Accessibility
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Accessibility.AccessibilityEvent"/></param>
         /// <returns><see cref="Android.View.Accessibility.AccessibilityEvent"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.View.Accessibility.AccessibilityEvent Obtain(Android.View.Accessibility.AccessibilityEvent arg0)
         {
             return SExecuteWithSignature<Android.View.Accessibility.AccessibilityEvent>(LocalBridgeClazz, "obtain", "(Landroid/view/accessibility/AccessibilityEvent;)Landroid/view/accessibility/AccessibilityEvent;", arg0);
@@ -437,7 +437,7 @@ namespace Android.View.Accessibility
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Android.View.Accessibility.AccessibilityEvent"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.View.Accessibility.AccessibilityEvent Obtain(int arg0)
         {
             return SExecuteWithSignature<Android.View.Accessibility.AccessibilityEvent>(LocalBridgeClazz, "obtain", "(I)Landroid/view/accessibility/AccessibilityEvent;", arg0);
@@ -455,69 +455,6 @@ namespace Android.View.Accessibility
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getAction()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setAction(int)"/>
-        /// </summary>
-        public int Action
-        {
-            get { return IExecuteWithSignature<int>("getAction", "()I"); } set { IExecuteWithSignature("setAction", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getContentChangeTypes()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setContentChangeTypes(int)"/>
-        /// </summary>
-        public int ContentChangeTypes
-        {
-            get { return IExecuteWithSignature<int>("getContentChangeTypes", "()I"); } set { IExecuteWithSignature("setContentChangeTypes", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getEventTime()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setEventTime(long)"/>
-        /// </summary>
-        public long EventTime
-        {
-            get { return IExecuteWithSignature<long>("getEventTime", "()J"); } set { IExecuteWithSignature("setEventTime", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getEventType()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setEventType(int)"/>
-        /// </summary>
-        public int EventType
-        {
-            get { return IExecuteWithSignature<int>("getEventType", "()I"); } set { IExecuteWithSignature("setEventType", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getMovementGranularity()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setMovementGranularity(int)"/>
-        /// </summary>
-        public int MovementGranularity
-        {
-            get { return IExecuteWithSignature<int>("getMovementGranularity", "()I"); } set { IExecuteWithSignature("setMovementGranularity", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getPackageName()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setPackageName(java.lang.CharSequence)"/>
-        /// </summary>
-        public Java.Lang.CharSequence PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getPackageName", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setPackageName", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getRecordCount()"/> 
-        /// </summary>
-        public int RecordCount
-        {
-            get { return IExecuteWithSignature<int>("getRecordCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getSpeechStateChangeTypes()"/> <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setSpeechStateChangeTypes(int)"/>
-        /// </summary>
-        public int SpeechStateChangeTypes
-        {
-            get { return IExecuteWithSignature<int>("getSpeechStateChangeTypes", "()I"); } set { IExecuteWithSignature("setSpeechStateChangeTypes", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getWindowChanges()"/> 
-        /// </summary>
-        public int WindowChanges
-        {
-            get { return IExecuteWithSignature<int>("getWindowChanges", "()I"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getRecord(int)"/>
         /// </summary>
@@ -544,6 +481,78 @@ namespace Android.View.Accessibility
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getAction()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAction()
+        {
+            return IExecuteWithSignature<int>("getAction", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getContentChangeTypes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetContentChangeTypes()
+        {
+            return IExecuteWithSignature<int>("getContentChangeTypes", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getEventType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEventType()
+        {
+            return IExecuteWithSignature<int>("getEventType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getMovementGranularity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMovementGranularity()
+        {
+            return IExecuteWithSignature<int>("getMovementGranularity", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getRecordCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRecordCount()
+        {
+            return IExecuteWithSignature<int>("getRecordCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getSpeechStateChangeTypes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSpeechStateChangeTypes()
+        {
+            return IExecuteWithSignature<int>("getSpeechStateChangeTypes", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getWindowChanges()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWindowChanges()
+        {
+            return IExecuteWithSignature<int>("getWindowChanges", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getPackageName", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#getEventTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetEventTime()
+        {
+            return IExecuteWithSignature<long>("getEventTime", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#appendRecord(android.view.accessibility.AccessibilityRecord)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Accessibility.AccessibilityRecord"/></param>
@@ -566,6 +575,62 @@ namespace Android.View.Accessibility
         public void SetAccessibilityDataSensitive(bool arg0)
         {
             IExecuteWithSignature("setAccessibilityDataSensitive", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setAction(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetAction(int arg0)
+        {
+            IExecuteWithSignature("setAction", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setContentChangeTypes(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetContentChangeTypes(int arg0)
+        {
+            IExecuteWithSignature("setContentChangeTypes", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setEventTime(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetEventTime(long arg0)
+        {
+            IExecuteWithSignature("setEventTime", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setEventType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetEventType(int arg0)
+        {
+            IExecuteWithSignature("setEventType", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setMovementGranularity(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMovementGranularity(int arg0)
+        {
+            IExecuteWithSignature("setMovementGranularity", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setPackageName(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetPackageName(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setPackageName", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#setSpeechStateChangeTypes(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetSpeechStateChangeTypes(int arg0)
+        {
+            IExecuteWithSignature("setSpeechStateChangeTypes", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityEvent.html#writeToParcel(android.os.Parcel,int)"/>

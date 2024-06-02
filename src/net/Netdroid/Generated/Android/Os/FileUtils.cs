@@ -95,7 +95,7 @@ namespace Android.Os
         /// <see href="https://developer.android.com/reference/android/os/FileUtils.html#closeQuietly(java.io.FileDescriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void CloseQuietly(Java.Io.FileDescriptor arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "closeQuietly", "(Ljava/io/FileDescriptor;)V", arg0);
@@ -104,7 +104,7 @@ namespace Android.Os
         /// <see href="https://developer.android.com/reference/android/os/FileUtils.html#closeQuietly(java.lang.AutoCloseable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.AutoCloseable"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void CloseQuietly(Java.Lang.AutoCloseable arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "closeQuietly", "(Ljava/lang/AutoCloseable;)V", arg0);
@@ -142,7 +142,7 @@ namespace Android.Os
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(OnProgressEventHandler));
+                AddEventHandler("onProgress", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(OnProgressEventHandler));
 
             }
 
@@ -150,7 +150,7 @@ namespace Android.Os
             /// Handler for <see href="https://developer.android.com/reference/android/os/FileUtils.ProgressListener.html#onProgress(long)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnProgress"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<long> OnOnProgress { get; set; } = null;
+            public global::System.Action<long> OnOnProgress { get; set; } = null;
 
             void OnProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
             {

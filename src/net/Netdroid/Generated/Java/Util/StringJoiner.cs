@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/StringJoiner.html#%3Cinit%3E(java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/util/StringJoiner.html#%3Cinit%3E(java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
@@ -40,7 +40,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/StringJoiner.html#%3Cinit%3E(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/util/StringJoiner.html#%3Cinit%3E(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         public StringJoiner(Java.Lang.CharSequence arg0)
@@ -64,7 +64,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/StringJoiner.html#length()"/>
+        /// <see href="https://developer.android.com/reference/java/util/StringJoiner.html#length()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Length()
@@ -72,7 +72,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("length", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/StringJoiner.html#add(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/util/StringJoiner.html#add(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Java.Util.StringJoiner"/></returns>
@@ -81,7 +81,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.StringJoiner>("add", "(Ljava/lang/CharSequence;)Ljava/util/StringJoiner;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/StringJoiner.html#merge(java.util.StringJoiner)"/>
+        /// <see href="https://developer.android.com/reference/java/util/StringJoiner.html#merge(java.util.StringJoiner)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.StringJoiner"/></param>
         /// <returns><see cref="Java.Util.StringJoiner"/></returns>
@@ -90,7 +90,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.StringJoiner>("merge", "(Ljava/util/StringJoiner;)Ljava/util/StringJoiner;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/StringJoiner.html#setEmptyValue(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/util/StringJoiner.html#setEmptyValue(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Java.Util.StringJoiner"/></returns>

@@ -30,7 +30,7 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/PKCS12Attribute.html#%3Cinit%3E(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/PKCS12Attribute.html#%3Cinit%3E(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public PKCS12Attribute(byte[] arg0)
@@ -38,7 +38,7 @@ namespace Java.Security
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/PKCS12Attribute.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/PKCS12Attribute.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -63,25 +63,28 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/PKCS12Attribute.html#getEncoded()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/PKCS12Attribute.html#getEncoded()"/>
         /// </summary>
-        public byte[] Encoded
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetEncoded()
         {
-            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getEncoded", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/PKCS12Attribute.html#getName()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/PKCS12Attribute.html#getName()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/PKCS12Attribute.html#getValue()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/PKCS12Attribute.html#getValue()"/>
         /// </summary>
-        public Java.Lang.String Value
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetValue()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;");
         }
 
         #endregion

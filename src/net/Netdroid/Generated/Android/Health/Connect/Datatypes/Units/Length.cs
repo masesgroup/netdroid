@@ -55,11 +55,12 @@ namespace Android.Health.Connect.Datatypes.Units
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Length.html#getInMeters()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Length.html#getInMeters()"/>
         /// </summary>
-        public double InMeters
+        /// <returns><see cref="double"/></returns>
+        public double GetInMeters()
         {
-            get { return IExecuteWithSignature<double>("getInMeters", "()D"); }
+            return IExecuteWithSignature<double>("getInMeters", "()D");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Length.html#compareTo(android.health.connect.datatypes.units.Length)"/>

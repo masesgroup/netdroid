@@ -28,7 +28,7 @@ namespace Javax.Xml
 {
     #region XMLConstants
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/XMLConstants.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/XMLConstants.html"/>
     /// </summary>
     public partial class XMLConstants : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLConstants>
     {

@@ -46,18 +46,20 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/RemoveByDocumentIdRequest.html#getIds()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/RemoveByDocumentIdRequest.html#getNamespace()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> Ids
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNamespace()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getIds", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/RemoveByDocumentIdRequest.html#getNamespace()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/RemoveByDocumentIdRequest.html#getIds()"/>
         /// </summary>
-        public Java.Lang.String Namespace
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetIds()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getIds", "()Ljava/util/Set;");
         }
 
         #endregion

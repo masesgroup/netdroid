@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamField.html#%3Cinit%3E(java.lang.String,java.lang.Class,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamField.html#%3Cinit%3E(java.lang.String,java.lang.Class,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -40,7 +40,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamField.html#%3Cinit%3E(java.lang.String,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamField.html#%3Cinit%3E(java.lang.String,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -65,42 +65,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamField.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamField.html#getOffset()"/> 
-        /// </summary>
-        public int Offset
-        {
-            get { return IExecuteWithSignature<int>("getOffset", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamField.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.Class Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamField.html#getTypeCode()"/> 
-        /// </summary>
-        public char TypeCode
-        {
-            get { return IExecuteWithSignature<char>("getTypeCode", "()C"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamField.html#getTypeString()"/> 
-        /// </summary>
-        public Java.Lang.String TypeString
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTypeString", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamField.html#isPrimitive()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamField.html#isPrimitive()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsPrimitive()
@@ -108,7 +73,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("isPrimitive", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamField.html#isUnshared()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamField.html#isUnshared()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsUnshared()
@@ -116,13 +81,53 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("isUnshared", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamField.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamField.html#getTypeCode()"/>
+        /// </summary>
+        /// <returns><see cref="char"/></returns>
+        public char GetTypeCode()
+        {
+            return IExecuteWithSignature<char>("getTypeCode", "()C");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamField.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamField.html#getOffset()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOffset()
+        {
+            return IExecuteWithSignature<int>("getOffset", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamField.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamField.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectStreamField.html#getTypeString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTypeString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTypeString", "()Ljava/lang/String;");
         }
 
         #endregion

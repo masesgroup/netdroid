@@ -61,26 +61,28 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AitInfo.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AitInfo.html#getVersion()"/> 
-        /// </summary>
-        public int Version
-        {
-            get { return IExecuteWithSignature<int>("getVersion", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/AitInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/AitInfo.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/AitInfo.html#getVersion()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVersion()
+        {
+            return IExecuteWithSignature<int>("getVersion", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/AitInfo.html#writeToParcel(android.os.Parcel,int)"/>

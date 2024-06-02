@@ -256,76 +256,6 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getActiveNotifications()"/> 
-        /// </summary>
-        public Android.Service.Notification.StatusBarNotification[] ActiveNotifications
-        {
-            get { return IExecuteWithSignatureArray<Android.Service.Notification.StatusBarNotification>("getActiveNotifications", "()[Landroid/service/notification/StatusBarNotification;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getAutomaticZenRules()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Android.App.AutomaticZenRule> AutomaticZenRules
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Android.App.AutomaticZenRule>>("getAutomaticZenRules", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getBubblePreference()"/> 
-        /// </summary>
-        public int BubblePreference
-        {
-            get { return IExecuteWithSignature<int>("getBubblePreference", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getConsolidatedNotificationPolicy()"/> 
-        /// </summary>
-        public Android.App.NotificationManager.Policy ConsolidatedNotificationPolicy
-        {
-            get { return IExecuteWithSignature<Android.App.NotificationManager.Policy>("getConsolidatedNotificationPolicy", "()Landroid/app/NotificationManager$Policy;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getCurrentInterruptionFilter()"/> 
-        /// </summary>
-        public int CurrentInterruptionFilter
-        {
-            get { return IExecuteWithSignature<int>("getCurrentInterruptionFilter", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getImportance()"/> 
-        /// </summary>
-        public int Importance
-        {
-            get { return IExecuteWithSignature<int>("getImportance", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationChannelGroups()"/> 
-        /// </summary>
-        public Java.Util.List<Android.App.NotificationChannelGroup> NotificationChannelGroups
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.NotificationChannelGroup>>("getNotificationChannelGroups", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationChannels()"/> 
-        /// </summary>
-        public Java.Util.List<Android.App.NotificationChannel> NotificationChannels
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.NotificationChannel>>("getNotificationChannels", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationDelegate()"/> <see href="https://developer.android.com/reference/android/app/NotificationManager.html#setNotificationDelegate(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String NotificationDelegate
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNotificationDelegate", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setNotificationDelegate", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationPolicy()"/> <see href="https://developer.android.com/reference/android/app/NotificationManager.html#setNotificationPolicy(android.app.NotificationManager.Policy)"/>
-        /// </summary>
-        public Android.App.NotificationManager.Policy NotificationPolicy
-        {
-            get { return IExecuteWithSignature<Android.App.NotificationManager.Policy>("getNotificationPolicy", "()Landroid/app/NotificationManager$Policy;"); } set { IExecuteWithSignature("setNotificationPolicy", "(Landroid/app/NotificationManager$Policy;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getAutomaticZenRule(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -363,10 +293,34 @@ namespace Android.App
             return IExecuteWithSignature<Android.App.NotificationChannelGroup>("getNotificationChannelGroup", "(Ljava/lang/String;)Landroid/app/NotificationChannelGroup;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getConsolidatedNotificationPolicy()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.NotificationManager.Policy"/></returns>
+        public Android.App.NotificationManager.Policy GetConsolidatedNotificationPolicy()
+        {
+            return IExecuteWithSignature<Android.App.NotificationManager.Policy>("getConsolidatedNotificationPolicy", "()Landroid/app/NotificationManager$Policy;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationPolicy()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.NotificationManager.Policy"/></returns>
+        public Android.App.NotificationManager.Policy GetNotificationPolicy()
+        {
+            return IExecuteWithSignature<Android.App.NotificationManager.Policy>("getNotificationPolicy", "()Landroid/app/NotificationManager$Policy;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getActiveNotifications()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Service.Notification.StatusBarNotification"/></returns>
+        public Android.Service.Notification.StatusBarNotification[] GetActiveNotifications()
+        {
+            return IExecuteWithSignatureArray<Android.Service.Notification.StatusBarNotification>("getActiveNotifications", "()[Landroid/service/notification/StatusBarNotification;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#areBubblesAllowed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool AreBubblesAllowed()
         {
             return IExecuteWithSignature<bool>("areBubblesAllowed", "()Z");
@@ -466,12 +420,36 @@ namespace Android.App
             return IExecute<bool>("updateAutomaticZenRule", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getCurrentInterruptionFilter()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentInterruptionFilter()
+        {
+            return IExecuteWithSignature<int>("getCurrentInterruptionFilter", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#setInterruptionFilter(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void SetInterruptionFilter(int arg0)
         {
             IExecuteWithSignature("setInterruptionFilter", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getBubblePreference()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBubblePreference()
+        {
+            return IExecuteWithSignature<int>("getBubblePreference", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getImportance()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetImportance()
+        {
+            return IExecuteWithSignature<int>("getImportance", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#addAutomaticZenRule(android.app.AutomaticZenRule)"/>
@@ -481,6 +459,38 @@ namespace Android.App
         public Java.Lang.String AddAutomaticZenRule(Android.App.AutomaticZenRule arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("addAutomaticZenRule", "(Landroid/app/AutomaticZenRule;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationDelegate()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNotificationDelegate()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getNotificationDelegate", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationChannels()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.NotificationChannel> GetNotificationChannels()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.NotificationChannel>>("getNotificationChannels", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationChannelGroups()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.NotificationChannelGroup> GetNotificationChannelGroups()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.NotificationChannelGroup>>("getNotificationChannelGroups", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#getAutomaticZenRules()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Android.App.AutomaticZenRule> GetAutomaticZenRules()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Android.App.AutomaticZenRule>>("getAutomaticZenRules", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#cancel(int)"/>
@@ -602,6 +612,22 @@ namespace Android.App
         public void SetAutomaticZenRuleState(Java.Lang.String arg0, Android.Service.Notification.Condition arg1)
         {
             IExecute("setAutomaticZenRuleState", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#setNotificationDelegate(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetNotificationDelegate(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setNotificationDelegate", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationManager.html#setNotificationPolicy(android.app.NotificationManager.Policy)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.App.NotificationManager.Policy"/></param>
+        public void SetNotificationPolicy(Android.App.NotificationManager.Policy arg0)
+        {
+            IExecuteWithSignature("setNotificationPolicy", "(Landroid/app/NotificationManager$Policy;)V", arg0);
         }
 
         #endregion
@@ -817,14 +843,14 @@ namespace Android.App
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/NotificationManager.Policy.html#SUPPRESSED_EFFECT_SCREEN_OFF"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int SUPPRESSED_EFFECT_SCREEN_OFF { get { if (!_SUPPRESSED_EFFECT_SCREEN_OFFReady) { _SUPPRESSED_EFFECT_SCREEN_OFFContent = SGetField<int>(LocalBridgeClazz, "SUPPRESSED_EFFECT_SCREEN_OFF"); _SUPPRESSED_EFFECT_SCREEN_OFFReady = true; } return _SUPPRESSED_EFFECT_SCREEN_OFFContent; } }
             private static int _SUPPRESSED_EFFECT_SCREEN_OFFContent = default;
             private static bool _SUPPRESSED_EFFECT_SCREEN_OFFReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/NotificationManager.Policy.html#SUPPRESSED_EFFECT_SCREEN_ON"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int SUPPRESSED_EFFECT_SCREEN_ON { get { if (!_SUPPRESSED_EFFECT_SCREEN_ONReady) { _SUPPRESSED_EFFECT_SCREEN_ONContent = SGetField<int>(LocalBridgeClazz, "SUPPRESSED_EFFECT_SCREEN_ON"); _SUPPRESSED_EFFECT_SCREEN_ONReady = true; } return _SUPPRESSED_EFFECT_SCREEN_ONContent; } }
             private static int _SUPPRESSED_EFFECT_SCREEN_ONContent = default;
             private static bool _SUPPRESSED_EFFECT_SCREEN_ONReady = false; // this is used because in case of generics 

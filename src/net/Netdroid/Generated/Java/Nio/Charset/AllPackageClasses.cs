@@ -28,7 +28,7 @@ namespace Java.Nio.Charset
 {
     #region CharacterCodingException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharacterCodingException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/charset/CharacterCodingException.html"/>
     /// </summary>
     public partial class CharacterCodingException : Java.Io.IOException
     {
@@ -45,7 +45,7 @@ namespace Java.Nio.Charset
 
     #region Charset
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/Charset.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/charset/Charset.html"/>
     /// </summary>
     public partial class Charset : Java.Lang.Comparable<Java.Nio.Charset.Charset>
     {
@@ -53,12 +53,12 @@ namespace Java.Nio.Charset
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Charset class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Charset class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Charset() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Charset class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Charset class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Charset(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -91,7 +91,7 @@ namespace Java.Nio.Charset
 
     #region CharsetDecoder
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetDecoder.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetDecoder.html"/>
     /// </summary>
     public partial class CharsetDecoder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CharsetDecoder>
     {
@@ -99,12 +99,12 @@ namespace Java.Nio.Charset
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CharsetDecoder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CharsetDecoder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharsetDecoder() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CharsetDecoder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CharsetDecoder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharsetDecoder(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -137,7 +137,7 @@ namespace Java.Nio.Charset
 
     #region CharsetEncoder
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CharsetEncoder.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/charset/CharsetEncoder.html"/>
     /// </summary>
     public partial class CharsetEncoder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CharsetEncoder>
     {
@@ -145,12 +145,12 @@ namespace Java.Nio.Charset
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CharsetEncoder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CharsetEncoder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharsetEncoder() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CharsetEncoder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CharsetEncoder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharsetEncoder(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -183,7 +183,7 @@ namespace Java.Nio.Charset
 
     #region CoderMalfunctionError
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CoderMalfunctionError.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/charset/CoderMalfunctionError.html"/>
     /// </summary>
     public partial class CoderMalfunctionError : Java.Lang.Error
     {
@@ -200,7 +200,7 @@ namespace Java.Nio.Charset
 
     #region CoderResult
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CoderResult.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/charset/CoderResult.html"/>
     /// </summary>
     public partial class CoderResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CoderResult>
     {
@@ -244,7 +244,7 @@ namespace Java.Nio.Charset
 
     #region CodingErrorAction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CodingErrorAction.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/charset/CodingErrorAction.html"/>
     /// </summary>
     public partial class CodingErrorAction : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CodingErrorAction>
     {
@@ -288,7 +288,7 @@ namespace Java.Nio.Charset
 
     #region IllegalCharsetNameException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/IllegalCharsetNameException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/charset/IllegalCharsetNameException.html"/>
     /// </summary>
     public partial class IllegalCharsetNameException : Java.Lang.IllegalArgumentException
     {
@@ -305,7 +305,7 @@ namespace Java.Nio.Charset
 
     #region MalformedInputException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/MalformedInputException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/charset/MalformedInputException.html"/>
     /// </summary>
     public partial class MalformedInputException : Java.Nio.Charset.CharacterCodingException
     {
@@ -322,7 +322,7 @@ namespace Java.Nio.Charset
 
     #region StandardCharsets
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/StandardCharsets.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/charset/StandardCharsets.html"/>
     /// </summary>
     public partial class StandardCharsets : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StandardCharsets>
     {
@@ -366,7 +366,7 @@ namespace Java.Nio.Charset
 
     #region UnmappableCharacterException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/UnmappableCharacterException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/charset/UnmappableCharacterException.html"/>
     /// </summary>
     public partial class UnmappableCharacterException : Java.Nio.Charset.CharacterCodingException
     {
@@ -383,7 +383,7 @@ namespace Java.Nio.Charset
 
     #region UnsupportedCharsetException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/UnsupportedCharsetException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/charset/UnsupportedCharsetException.html"/>
     /// </summary>
     public partial class UnsupportedCharsetException : Java.Lang.IllegalArgumentException
     {

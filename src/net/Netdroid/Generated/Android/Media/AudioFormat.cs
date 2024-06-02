@@ -46,28 +46,28 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_CONFIGURATION_DEFAULT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CHANNEL_CONFIGURATION_DEFAULT { get { if (!_CHANNEL_CONFIGURATION_DEFAULTReady) { _CHANNEL_CONFIGURATION_DEFAULTContent = SGetField<int>(LocalBridgeClazz, "CHANNEL_CONFIGURATION_DEFAULT"); _CHANNEL_CONFIGURATION_DEFAULTReady = true; } return _CHANNEL_CONFIGURATION_DEFAULTContent; } }
         private static int _CHANNEL_CONFIGURATION_DEFAULTContent = default;
         private static bool _CHANNEL_CONFIGURATION_DEFAULTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_CONFIGURATION_INVALID"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CHANNEL_CONFIGURATION_INVALID { get { if (!_CHANNEL_CONFIGURATION_INVALIDReady) { _CHANNEL_CONFIGURATION_INVALIDContent = SGetField<int>(LocalBridgeClazz, "CHANNEL_CONFIGURATION_INVALID"); _CHANNEL_CONFIGURATION_INVALIDReady = true; } return _CHANNEL_CONFIGURATION_INVALIDContent; } }
         private static int _CHANNEL_CONFIGURATION_INVALIDContent = default;
         private static bool _CHANNEL_CONFIGURATION_INVALIDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_CONFIGURATION_MONO"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CHANNEL_CONFIGURATION_MONO { get { if (!_CHANNEL_CONFIGURATION_MONOReady) { _CHANNEL_CONFIGURATION_MONOContent = SGetField<int>(LocalBridgeClazz, "CHANNEL_CONFIGURATION_MONO"); _CHANNEL_CONFIGURATION_MONOReady = true; } return _CHANNEL_CONFIGURATION_MONOContent; } }
         private static int _CHANNEL_CONFIGURATION_MONOContent = default;
         private static bool _CHANNEL_CONFIGURATION_MONOReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_CONFIGURATION_STEREO"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CHANNEL_CONFIGURATION_STEREO { get { if (!_CHANNEL_CONFIGURATION_STEREOReady) { _CHANNEL_CONFIGURATION_STEREOContent = SGetField<int>(LocalBridgeClazz, "CHANNEL_CONFIGURATION_STEREO"); _CHANNEL_CONFIGURATION_STEREOReady = true; } return _CHANNEL_CONFIGURATION_STEREOContent; } }
         private static int _CHANNEL_CONFIGURATION_STEREOContent = default;
         private static bool _CHANNEL_CONFIGURATION_STEREOReady = false; // this is used because in case of generics 
@@ -206,7 +206,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_7POINT1"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CHANNEL_OUT_7POINT1 { get { if (!_CHANNEL_OUT_7POINT1Ready) { _CHANNEL_OUT_7POINT1Content = SGetField<int>(LocalBridgeClazz, "CHANNEL_OUT_7POINT1"); _CHANNEL_OUT_7POINT1Ready = true; } return _CHANNEL_OUT_7POINT1Content; } }
         private static int _CHANNEL_OUT_7POINT1Content = default;
         private static bool _CHANNEL_OUT_7POINT1Ready = false; // this is used because in case of generics 
@@ -519,7 +519,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DTS_UHD"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ENCODING_DTS_UHD { get { if (!_ENCODING_DTS_UHDReady) { _ENCODING_DTS_UHDContent = SGetField<int>(LocalBridgeClazz, "ENCODING_DTS_UHD"); _ENCODING_DTS_UHDReady = true; } return _ENCODING_DTS_UHDContent; } }
         private static int _ENCODING_DTS_UHDContent = default;
         private static bool _ENCODING_DTS_UHDReady = false; // this is used because in case of generics 
@@ -640,54 +640,60 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#getChannelCount()"/> 
-        /// </summary>
-        public int ChannelCount
-        {
-            get { return IExecuteWithSignature<int>("getChannelCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#getChannelIndexMask()"/> 
-        /// </summary>
-        public int ChannelIndexMask
-        {
-            get { return IExecuteWithSignature<int>("getChannelIndexMask", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#getChannelMask()"/> 
-        /// </summary>
-        public int ChannelMask
-        {
-            get { return IExecuteWithSignature<int>("getChannelMask", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#getEncoding()"/> 
-        /// </summary>
-        public int Encoding
-        {
-            get { return IExecuteWithSignature<int>("getEncoding", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#getFrameSizeInBytes()"/> 
-        /// </summary>
-        public int FrameSizeInBytes
-        {
-            get { return IExecuteWithSignature<int>("getFrameSizeInBytes", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#getSampleRate()"/> 
-        /// </summary>
-        public int SampleRate
-        {
-            get { return IExecuteWithSignature<int>("getSampleRate", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#getChannelCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannelCount()
+        {
+            return IExecuteWithSignature<int>("getChannelCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#getChannelIndexMask()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannelIndexMask()
+        {
+            return IExecuteWithSignature<int>("getChannelIndexMask", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#getChannelMask()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannelMask()
+        {
+            return IExecuteWithSignature<int>("getChannelMask", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#getEncoding()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEncoding()
+        {
+            return IExecuteWithSignature<int>("getEncoding", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#getFrameSizeInBytes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFrameSizeInBytes()
+        {
+            return IExecuteWithSignature<int>("getFrameSizeInBytes", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#getSampleRate()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSampleRate()
+        {
+            return IExecuteWithSignature<int>("getSampleRate", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioFormat.html#writeToParcel(android.os.Parcel,int)"/>

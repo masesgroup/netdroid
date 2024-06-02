@@ -36,7 +36,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TabWidget(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Widget
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TabWidget(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -57,7 +57,7 @@ namespace Android.Widget
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TabWidget(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -66,7 +66,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TabWidget(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -88,35 +88,29 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#getLeftStripDrawable()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#getLeftStripDrawable()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.Drawable.Drawable LeftStripDrawable
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.Drawable.Drawable GetLeftStripDrawable()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getLeftStripDrawable", "()Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getLeftStripDrawable", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#getRightStripDrawable()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#getRightStripDrawable()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.Drawable.Drawable RightStripDrawable
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.Drawable.Drawable GetRightStripDrawable()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getRightStripDrawable", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#getTabCount()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int TabCount
-        {
-            get { return IExecuteWithSignature<int>("getTabCount", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getRightStripDrawable", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#getChildTabViewAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Android.View.View"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.View.View GetChildTabViewAt(int arg0)
         {
             return IExecuteWithSignature<Android.View.View>("getChildTabViewAt", "(I)Landroid/view/View;", arg0);
@@ -125,16 +119,25 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#isStripEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsStripEnabled()
         {
             return IExecuteWithSignature<bool>("isStripEnabled", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#getTabCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetTabCount()
+        {
+            return IExecuteWithSignature<int>("getTabCount", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#dispatchDraw(android.graphics.Canvas)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Canvas"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DispatchDraw(Android.Graphics.Canvas arg0)
         {
             IExecuteWithSignature("dispatchDraw", "(Landroid/graphics/Canvas;)V", arg0);
@@ -143,7 +146,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#focusCurrentTab(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void FocusCurrentTab(int arg0)
         {
             IExecuteWithSignature("focusCurrentTab", "(I)V", arg0);
@@ -153,7 +156,7 @@ namespace Android.Widget
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnFocusChange(Android.View.View arg0, bool arg1)
         {
             IExecute("onFocusChange", arg0, arg1);
@@ -162,7 +165,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#setCurrentTab(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetCurrentTab(int arg0)
         {
             IExecuteWithSignature("setCurrentTab", "(I)V", arg0);
@@ -171,7 +174,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#setDividerDrawable(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetDividerDrawable(int arg0)
         {
             IExecuteWithSignature("setDividerDrawable", "(I)V", arg0);
@@ -180,7 +183,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#setLeftStripDrawable(android.graphics.drawable.Drawable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetLeftStripDrawable(Android.Graphics.Drawable.Drawable arg0)
         {
             IExecuteWithSignature("setLeftStripDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
@@ -189,7 +192,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#setLeftStripDrawable(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetLeftStripDrawable(int arg0)
         {
             IExecuteWithSignature("setLeftStripDrawable", "(I)V", arg0);
@@ -198,7 +201,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#setRightStripDrawable(android.graphics.drawable.Drawable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetRightStripDrawable(Android.Graphics.Drawable.Drawable arg0)
         {
             IExecuteWithSignature("setRightStripDrawable", "(Landroid/graphics/drawable/Drawable;)V", arg0);
@@ -207,7 +210,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#setRightStripDrawable(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetRightStripDrawable(int arg0)
         {
             IExecuteWithSignature("setRightStripDrawable", "(I)V", arg0);
@@ -216,7 +219,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html#setStripEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetStripEnabled(bool arg0)
         {
             IExecuteWithSignature("setStripEnabled", "(Z)V", arg0);

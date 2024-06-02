@@ -46,7 +46,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#first()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedSet.html#first()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object First()
@@ -54,7 +54,7 @@ namespace Java.Util
             return IExecuteWithSignature("first", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#last()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedSet.html#last()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Last()
@@ -62,7 +62,7 @@ namespace Java.Util
             return IExecuteWithSignature("last", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#headSet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedSet.html#headSet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
@@ -71,7 +71,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.SortedSet>("headSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#subSet(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedSet.html#subSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -81,7 +81,7 @@ namespace Java.Util
             return IExecute<Java.Util.SortedSet>("subSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#tailSet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedSet.html#tailSet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
@@ -90,7 +90,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.SortedSet>("tailSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#spliterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedSet.html#spliterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator Spliterator()
@@ -151,7 +151,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#first()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedSet.html#first()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E First()
@@ -159,7 +159,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("first", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#last()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedSet.html#last()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Last()
@@ -167,7 +167,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("last", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#headSet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedSet.html#headSet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
@@ -176,7 +176,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.SortedSet<E>>("headSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#subSet(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedSet.html#subSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -186,7 +186,7 @@ namespace Java.Util
             return IExecute<Java.Util.SortedSet<E>>("subSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#tailSet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedSet.html#tailSet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
@@ -195,7 +195,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.SortedSet<E>>("tailSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedSet.html#spliterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedSet.html#spliterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator<E> Spliterator()

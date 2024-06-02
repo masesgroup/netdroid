@@ -64,7 +64,7 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readBoolean()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readBoolean()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -73,7 +73,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("readBoolean", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#wasNull()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#wasNull()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -82,7 +82,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("wasNull", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readByte()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readByte()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -91,7 +91,7 @@ namespace Java.Sql
             return IExecuteWithSignature<byte>("readByte", "()B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readBytes()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readBytes()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -100,7 +100,7 @@ namespace Java.Sql
             return IExecuteWithSignatureArray<byte>("readBytes", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readDouble()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readDouble()"/>
         /// </summary>
         /// <returns><see cref="double"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -109,7 +109,7 @@ namespace Java.Sql
             return IExecuteWithSignature<double>("readDouble", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readFloat()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readFloat()"/>
         /// </summary>
         /// <returns><see cref="float"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -118,7 +118,7 @@ namespace Java.Sql
             return IExecuteWithSignature<float>("readFloat", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readInt()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readInt()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -127,7 +127,7 @@ namespace Java.Sql
             return IExecuteWithSignature<int>("readInt", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readAsciiStream()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readAsciiStream()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -136,7 +136,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Io.InputStream>("readAsciiStream", "()Ljava/io/InputStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readBinaryStream()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readBinaryStream()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -145,7 +145,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Io.InputStream>("readBinaryStream", "()Ljava/io/InputStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readCharacterStream()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readCharacterStream()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.Reader"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -154,7 +154,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Io.Reader>("readCharacterStream", "()Ljava/io/Reader;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readObject()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readObject()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -163,7 +163,7 @@ namespace Java.Sql
             return IExecuteWithSignature("readObject", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readNString()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readNString()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -172,7 +172,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("readNString", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readString()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readString()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -181,7 +181,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("readString", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readBigDecimal()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readBigDecimal()"/>
         /// </summary>
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -190,7 +190,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Math.BigDecimal>("readBigDecimal", "()Ljava/math/BigDecimal;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readURL()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readURL()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.URL"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -199,7 +199,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Net.URL>("readURL", "()Ljava/net/URL;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readArray()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readArray()"/>
         /// </summary>
         /// <returns><see cref="Java.Sql.Array"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -208,7 +208,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Array>("readArray", "()Ljava/sql/Array;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readBlob()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readBlob()"/>
         /// </summary>
         /// <returns><see cref="Java.Sql.Blob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -217,7 +217,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Blob>("readBlob", "()Ljava/sql/Blob;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readClob()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readClob()"/>
         /// </summary>
         /// <returns><see cref="Java.Sql.Clob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -226,7 +226,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Clob>("readClob", "()Ljava/sql/Clob;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readDate()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readDate()"/>
         /// </summary>
         /// <returns><see cref="Java.Sql.Date"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -235,7 +235,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Date>("readDate", "()Ljava/sql/Date;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readNClob()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readNClob()"/>
         /// </summary>
         /// <returns><see cref="Java.Sql.NClob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -244,7 +244,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.NClob>("readNClob", "()Ljava/sql/NClob;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readRef()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readRef()"/>
         /// </summary>
         /// <returns><see cref="Java.Sql.Ref"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -253,7 +253,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Ref>("readRef", "()Ljava/sql/Ref;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readRowId()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readRowId()"/>
         /// </summary>
         /// <returns><see cref="Java.Sql.RowId"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -262,7 +262,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.RowId>("readRowId", "()Ljava/sql/RowId;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readSQLXML()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readSQLXML()"/>
         /// </summary>
         /// <returns><see cref="Java.Sql.SQLXML"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -271,7 +271,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.SQLXML>("readSQLXML", "()Ljava/sql/SQLXML;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readTime()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readTime()"/>
         /// </summary>
         /// <returns><see cref="Java.Sql.Time"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -280,7 +280,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Time>("readTime", "()Ljava/sql/Time;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readTimestamp()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readTimestamp()"/>
         /// </summary>
         /// <returns><see cref="Java.Sql.Timestamp"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -289,7 +289,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Timestamp>("readTimestamp", "()Ljava/sql/Timestamp;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readLong()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readLong()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -298,7 +298,7 @@ namespace Java.Sql
             return IExecuteWithSignature<long>("readLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readShort()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readShort()"/>
         /// </summary>
         /// <returns><see cref="short"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -307,7 +307,7 @@ namespace Java.Sql
             return IExecuteWithSignature<short>("readShort", "()S");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html#readObject(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html#readObject(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"></typeparam>

@@ -46,96 +46,47 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Parameter.html#getAnnotations()"/> 
-        /// </summary>
-        public Java.Lang.Annotation.Annotation[] Annotations
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Parameter.html#getDeclaredAnnotations()"/> 
-        /// </summary>
-        public Java.Lang.Annotation.Annotation[] DeclaredAnnotations
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Parameter.html#getDeclaringExecutable()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Executable DeclaringExecutable
-        {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Executable>("getDeclaringExecutable", "()Ljava/lang/reflect/Executable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Parameter.html#getModifiers()"/> 
-        /// </summary>
-        public int Modifiers
-        {
-            get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Parameter.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Parameter.html#getParameterizedType()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Type ParameterizedType
-        {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Type>("getParameterizedType", "()Ljava/lang/reflect/Type;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Parameter.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.Class Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Parameter.html#getAnnotation(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Parameter.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T GetAnnotation<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.IAnnotation, new()
+        public T GetAnnotation<T>(Java.Lang.Class arg0) where T : Java.Lang.Annotation.IAnnotation, new()
         {
-            return IExecuteWithSignature<T>("getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", arg0);
+            return IExecute<T>("getAnnotation", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Parameter.html#getDeclaredAnnotation(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Parameter.html#getDeclaredAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T GetDeclaredAnnotation<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.IAnnotation, new()
+        public T GetDeclaredAnnotation<T>(Java.Lang.Class arg0) where T : Java.Lang.Annotation.IAnnotation, new()
         {
-            return IExecuteWithSignature<T>("getDeclaredAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", arg0);
+            return IExecute<T>("getDeclaredAnnotation", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Parameter.html#getAnnotationsByType(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Parameter.html#getAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T[] GetAnnotationsByType<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.IAnnotation, new()
+        public T[] GetAnnotationsByType<T>(Java.Lang.Class arg0) where T : Java.Lang.Annotation.IAnnotation, new()
         {
-            return IExecuteWithSignatureArray<T>("getAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;", arg0);
+            return IExecuteArray<T>("getAnnotationsByType", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Parameter.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Parameter.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T[] GetDeclaredAnnotationsByType<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.IAnnotation, new()
+        public T[] GetDeclaredAnnotationsByType<T>(Java.Lang.Class arg0) where T : Java.Lang.Annotation.IAnnotation, new()
         {
-            return IExecuteWithSignatureArray<T>("getDeclaredAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;", arg0);
+            return IExecuteArray<T>("getDeclaredAnnotationsByType", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Parameter.html#isImplicit()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Parameter.html#isImplicit()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsImplicit()
@@ -143,7 +94,7 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<bool>("isImplicit", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Parameter.html#isNamePresent()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Parameter.html#isNamePresent()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsNamePresent()
@@ -151,7 +102,7 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<bool>("isNamePresent", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Parameter.html#isSynthetic()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Parameter.html#isSynthetic()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsSynthetic()
@@ -159,12 +110,68 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<bool>("isSynthetic", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Parameter.html#isVarArgs()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Parameter.html#isVarArgs()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsVarArgs()
         {
             return IExecuteWithSignature<bool>("isVarArgs", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Parameter.html#getModifiers()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetModifiers()
+        {
+            return IExecuteWithSignature<int>("getModifiers", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Parameter.html#getAnnotations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
+        public Java.Lang.Annotation.Annotation[] GetAnnotations()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getAnnotations", "()[Ljava/lang/annotation/Annotation;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Parameter.html#getDeclaredAnnotations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Annotation.Annotation"/></returns>
+        public Java.Lang.Annotation.Annotation[] GetDeclaredAnnotations()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Parameter.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Parameter.html#getDeclaringExecutable()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Executable"/></returns>
+        public Java.Lang.Reflect.Executable GetDeclaringExecutable()
+        {
+            return IExecuteWithSignature<Java.Lang.Reflect.Executable>("getDeclaringExecutable", "()Ljava/lang/reflect/Executable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Parameter.html#getParameterizedType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type GetParameterizedType()
+        {
+            return IExecuteWithSignature<Java.Lang.Reflect.Type>("getParameterizedType", "()Ljava/lang/reflect/Type;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Parameter.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
 
         #endregion

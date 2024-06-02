@@ -73,34 +73,6 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvContentRating.html#getDomain()"/> 
-        /// </summary>
-        public Java.Lang.String Domain
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDomain", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvContentRating.html#getMainRating()"/> 
-        /// </summary>
-        public Java.Lang.String MainRating
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMainRating", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvContentRating.html#getRatingSystem()"/> 
-        /// </summary>
-        public Java.Lang.String RatingSystem
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRatingSystem", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvContentRating.html#getSubRatings()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> SubRatings
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSubRatings", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvContentRating.html#contains(android.media.tv.TvContentRating)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.Tv.TvContentRating"/></param>
@@ -116,6 +88,38 @@ namespace Android.Media.Tv
         public Java.Lang.String FlattenToString()
         {
             return IExecuteWithSignature<Java.Lang.String>("flattenToString", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvContentRating.html#getDomain()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDomain()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDomain", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvContentRating.html#getMainRating()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMainRating()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMainRating", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvContentRating.html#getRatingSystem()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetRatingSystem()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getRatingSystem", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvContentRating.html#getSubRatings()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetSubRatings()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSubRatings", "()Ljava/util/List;");
         }
 
         #endregion

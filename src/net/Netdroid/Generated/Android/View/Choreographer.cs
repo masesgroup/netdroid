@@ -42,11 +42,12 @@ namespace Android.View
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/Choreographer.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/Choreographer.html#getInstance()"/>
         /// </summary>
-        public static Android.View.Choreographer Instance
+        /// <returns><see cref="Android.View.Choreographer"/></returns>
+        public static Android.View.Choreographer GetInstance()
         {
-            get { return SExecuteWithSignature<Android.View.Choreographer>(LocalBridgeClazz, "getInstance", "()Landroid/view/Choreographer;"); }
+            return SExecuteWithSignature<Android.View.Choreographer>(LocalBridgeClazz, "getInstance", "()Landroid/view/Choreographer;");
         }
 
         #endregion
@@ -157,25 +158,28 @@ namespace Android.View
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/Choreographer.FrameData.html#getFrameTimelines()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/Choreographer.FrameData.html#getPreferredFrameTimeline()"/>
             /// </summary>
-            public Android.View.Choreographer.FrameTimeline[] FrameTimelines
+            /// <returns><see cref="Android.View.Choreographer.FrameTimeline"/></returns>
+            public Android.View.Choreographer.FrameTimeline GetPreferredFrameTimeline()
             {
-                get { return IExecuteWithSignatureArray<Android.View.Choreographer.FrameTimeline>("getFrameTimelines", "()[Landroid/view/Choreographer$FrameTimeline;"); }
+                return IExecuteWithSignature<Android.View.Choreographer.FrameTimeline>("getPreferredFrameTimeline", "()Landroid/view/Choreographer$FrameTimeline;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/Choreographer.FrameData.html#getFrameTimeNanos()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/Choreographer.FrameData.html#getFrameTimelines()"/>
             /// </summary>
-            public long FrameTimeNanos
+            /// <returns><see cref="Android.View.Choreographer.FrameTimeline"/></returns>
+            public Android.View.Choreographer.FrameTimeline[] GetFrameTimelines()
             {
-                get { return IExecuteWithSignature<long>("getFrameTimeNanos", "()J"); }
+                return IExecuteWithSignatureArray<Android.View.Choreographer.FrameTimeline>("getFrameTimelines", "()[Landroid/view/Choreographer$FrameTimeline;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/Choreographer.FrameData.html#getPreferredFrameTimeline()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/Choreographer.FrameData.html#getFrameTimeNanos()"/>
             /// </summary>
-            public Android.View.Choreographer.FrameTimeline PreferredFrameTimeline
+            /// <returns><see cref="long"/></returns>
+            public long GetFrameTimeNanos()
             {
-                get { return IExecuteWithSignature<Android.View.Choreographer.FrameTimeline>("getPreferredFrameTimeline", "()Landroid/view/Choreographer$FrameTimeline;"); }
+                return IExecuteWithSignature<long>("getFrameTimeNanos", "()J");
             }
 
             #endregion
@@ -209,25 +213,28 @@ namespace Android.View
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/Choreographer.FrameTimeline.html#getDeadlineNanos()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/Choreographer.FrameTimeline.html#getDeadlineNanos()"/>
             /// </summary>
-            public long DeadlineNanos
+            /// <returns><see cref="long"/></returns>
+            public long GetDeadlineNanos()
             {
-                get { return IExecuteWithSignature<long>("getDeadlineNanos", "()J"); }
+                return IExecuteWithSignature<long>("getDeadlineNanos", "()J");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/Choreographer.FrameTimeline.html#getExpectedPresentationTimeNanos()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/Choreographer.FrameTimeline.html#getExpectedPresentationTimeNanos()"/>
             /// </summary>
-            public long ExpectedPresentationTimeNanos
+            /// <returns><see cref="long"/></returns>
+            public long GetExpectedPresentationTimeNanos()
             {
-                get { return IExecuteWithSignature<long>("getExpectedPresentationTimeNanos", "()J"); }
+                return IExecuteWithSignature<long>("getExpectedPresentationTimeNanos", "()J");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/Choreographer.FrameTimeline.html#getVsyncId()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/Choreographer.FrameTimeline.html#getVsyncId()"/>
             /// </summary>
-            public long VsyncId
+            /// <returns><see cref="long"/></returns>
+            public long GetVsyncId()
             {
-                get { return IExecuteWithSignature<long>("getVsyncId", "()J"); }
+                return IExecuteWithSignature<long>("getVsyncId", "()J");
             }
 
             #endregion

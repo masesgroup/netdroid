@@ -33,7 +33,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#%3Cinit%3E(android.os.Parcel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public ServiceState(Android.Os.Parcel arg0)
             : base(arg0)
         {
@@ -117,88 +117,20 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getCdmaNetworkId()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getIsManualSelection()"/>
         /// </summary>
-        public int CdmaNetworkId
+        /// <returns><see cref="bool"/></returns>
+        public bool GetIsManualSelection()
         {
-            get { return IExecuteWithSignature<int>("getCdmaNetworkId", "()I"); }
+            return IExecuteWithSignature<bool>("getIsManualSelection", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getCdmaSystemId()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getRoaming()"/>
         /// </summary>
-        public int CdmaSystemId
+        /// <returns><see cref="bool"/></returns>
+        public bool GetRoaming()
         {
-            get { return IExecuteWithSignature<int>("getCdmaSystemId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getCellBandwidths()"/> 
-        /// </summary>
-        public int[] CellBandwidths
-        {
-            get { return IExecuteWithSignatureArray<int>("getCellBandwidths", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getChannelNumber()"/> 
-        /// </summary>
-        public int ChannelNumber
-        {
-            get { return IExecuteWithSignature<int>("getChannelNumber", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getDuplexMode()"/> 
-        /// </summary>
-        public int DuplexMode
-        {
-            get { return IExecuteWithSignature<int>("getDuplexMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getIsManualSelection()"/> <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#setIsManualSelection(boolean)"/>
-        /// </summary>
-        public bool IsManualSelection
-        {
-            get { return IExecuteWithSignature<bool>("getIsManualSelection", "()Z"); } set { IExecuteWithSignature("setIsManualSelection", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getNetworkRegistrationInfoList()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Telephony.NetworkRegistrationInfo> NetworkRegistrationInfoList
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telephony.NetworkRegistrationInfo>>("getNetworkRegistrationInfoList", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getOperatorAlphaLong()"/> 
-        /// </summary>
-        public Java.Lang.String OperatorAlphaLong
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOperatorAlphaLong", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getOperatorAlphaShort()"/> 
-        /// </summary>
-        public Java.Lang.String OperatorAlphaShort
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOperatorAlphaShort", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getOperatorNumeric()"/> 
-        /// </summary>
-        public Java.Lang.String OperatorNumeric
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOperatorNumeric", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getRoaming()"/> <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#setRoaming(boolean)"/>
-        /// </summary>
-        public bool Roaming
-        {
-            get { return IExecuteWithSignature<bool>("getRoaming", "()Z"); } set { IExecuteWithSignature("setRoaming", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getState()"/> <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#setState(int)"/>
-        /// </summary>
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); } set { IExecuteWithSignature("setState", "(I)V", value); }
+            return IExecuteWithSignature<bool>("getRoaming", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#isSearching()"/>
@@ -217,6 +149,94 @@ namespace Android.Telephony
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getCdmaNetworkId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCdmaNetworkId()
+        {
+            return IExecuteWithSignature<int>("getCdmaNetworkId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getCdmaSystemId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCdmaSystemId()
+        {
+            return IExecuteWithSignature<int>("getCdmaSystemId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getChannelNumber()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannelNumber()
+        {
+            return IExecuteWithSignature<int>("getChannelNumber", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getDuplexMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDuplexMode()
+        {
+            return IExecuteWithSignature<int>("getDuplexMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getCellBandwidths()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetCellBandwidths()
+        {
+            return IExecuteWithSignatureArray<int>("getCellBandwidths", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getOperatorAlphaLong()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOperatorAlphaLong()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOperatorAlphaLong", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getOperatorAlphaShort()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOperatorAlphaShort()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOperatorAlphaShort", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getOperatorNumeric()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOperatorNumeric()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOperatorNumeric", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#getNetworkRegistrationInfoList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telephony.NetworkRegistrationInfo> GetNetworkRegistrationInfoList()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telephony.NetworkRegistrationInfo>>("getNetworkRegistrationInfoList", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#setIsManualSelection(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetIsManualSelection(bool arg0)
+        {
+            IExecuteWithSignature("setIsManualSelection", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#setOperatorName(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -225,6 +245,22 @@ namespace Android.Telephony
         public void SetOperatorName(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             IExecute("setOperatorName", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#setRoaming(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetRoaming(bool arg0)
+        {
+            IExecuteWithSignature("setRoaming", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#setState(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetState(int arg0)
+        {
+            IExecuteWithSignature("setState", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ServiceState.html#setStateOff()"/>

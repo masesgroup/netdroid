@@ -63,40 +63,44 @@ namespace Android.Service.Quickaccesswallet
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsRequest.html#getCardHeightPx()"/> 
-        /// </summary>
-        public int CardHeightPx
-        {
-            get { return IExecuteWithSignature<int>("getCardHeightPx", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsRequest.html#getCardWidthPx()"/> 
-        /// </summary>
-        public int CardWidthPx
-        {
-            get { return IExecuteWithSignature<int>("getCardWidthPx", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsRequest.html#getIconSizePx()"/> 
-        /// </summary>
-        public int IconSizePx
-        {
-            get { return IExecuteWithSignature<int>("getIconSizePx", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsRequest.html#getMaxCards()"/> 
-        /// </summary>
-        public int MaxCards
-        {
-            get { return IExecuteWithSignature<int>("getMaxCards", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsRequest.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsRequest.html#getCardHeightPx()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCardHeightPx()
+        {
+            return IExecuteWithSignature<int>("getCardHeightPx", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsRequest.html#getCardWidthPx()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCardWidthPx()
+        {
+            return IExecuteWithSignature<int>("getCardWidthPx", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsRequest.html#getIconSizePx()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIconSizePx()
+        {
+            return IExecuteWithSignature<int>("getIconSizePx", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsRequest.html#getMaxCards()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxCards()
+        {
+            return IExecuteWithSignature<int>("getMaxCards", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsRequest.html#writeToParcel(android.os.Parcel,int)"/>

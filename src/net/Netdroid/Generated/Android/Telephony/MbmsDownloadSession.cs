@@ -150,13 +150,6 @@ namespace Android.Telephony
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#getMaximumServiceAnnouncementSize()"/> 
-        /// </summary>
-        public static int MaximumServiceAnnouncementSize
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaximumServiceAnnouncementSize", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#create(android.content.Context,java.util.concurrent.Executor,android.telephony.mbms.MbmsDownloadSessionCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -179,16 +172,25 @@ namespace Android.Telephony
         {
             return SExecute<Android.Telephony.MbmsDownloadSession>(LocalBridgeClazz, "create", arg0, arg1, arg2, arg3);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#getMaximumServiceAnnouncementSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int GetMaximumServiceAnnouncementSize()
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaximumServiceAnnouncementSize", "()I");
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#getTempFileRootDirectory()"/> <see href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#setTempFileRootDirectory(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#getTempFileRootDirectory()"/>
         /// </summary>
-        public Java.Io.File TempFileRootDirectory
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public Java.Io.File GetTempFileRootDirectory()
         {
-            get { return IExecuteWithSignature<Java.Io.File>("getTempFileRootDirectory", "()Ljava/io/File;"); } set { IExecuteWithSignature("setTempFileRootDirectory", "(Ljava/io/File;)V", value); }
+            return IExecuteWithSignature<Java.Io.File>("getTempFileRootDirectory", "()Ljava/io/File;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#listPendingDownloads()"/>
@@ -291,6 +293,14 @@ namespace Android.Telephony
         public void ResetDownloadKnowledge(Android.Telephony.Mbms.DownloadRequest arg0)
         {
             IExecuteWithSignature("resetDownloadKnowledge", "(Landroid/telephony/mbms/DownloadRequest;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/MbmsDownloadSession.html#setTempFileRootDirectory(java.io.File)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        public void SetTempFileRootDirectory(Java.Io.File arg0)
+        {
+            IExecuteWithSignature("setTempFileRootDirectory", "(Ljava/io/File;)V", arg0);
         }
 
         #endregion

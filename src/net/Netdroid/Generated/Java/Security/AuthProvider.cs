@@ -46,7 +46,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AuthProvider.html#login(javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler)"/>
+        /// <see href="https://developer.android.com/reference/java/security/AuthProvider.html#login(javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <param name="arg1"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
@@ -56,7 +56,7 @@ namespace Java.Security
             IExecute("login", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AuthProvider.html#logout()"/>
+        /// <see href="https://developer.android.com/reference/java/security/AuthProvider.html#logout()"/>
         /// </summary>
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public void Logout()
@@ -64,7 +64,7 @@ namespace Java.Security
             IExecuteWithSignature("logout", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/AuthProvider.html#setCallbackHandler(javax.security.auth.callback.CallbackHandler)"/>
+        /// <see href="https://developer.android.com/reference/java/security/AuthProvider.html#setCallbackHandler(javax.security.auth.callback.CallbackHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
         public void SetCallbackHandler(Javax.Security.Auth.Callback.CallbackHandler arg0)

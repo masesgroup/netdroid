@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#%3Cinit%3E(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#%3Cinit%3E(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -39,7 +39,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public Vector(int arg0)
@@ -47,7 +47,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public Vector(Java.Util.Collection arg0)
@@ -83,7 +83,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#elements()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#elements()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration Elements()
@@ -91,7 +91,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Enumeration>("elements", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#removeElement(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#removeElement(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -100,7 +100,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("removeElement", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#elementAt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#elementAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="object"/></returns>
@@ -109,7 +109,7 @@ namespace Java.Util
             return IExecuteWithSignature("elementAt", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#firstElement()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#firstElement()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object FirstElement()
@@ -117,7 +117,7 @@ namespace Java.Util
             return IExecuteWithSignature("firstElement", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#lastElement()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#lastElement()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object LastElement()
@@ -125,7 +125,7 @@ namespace Java.Util
             return IExecuteWithSignature("lastElement", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#capacity()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#capacity()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Capacity()
@@ -133,7 +133,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("capacity", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#indexOf(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#indexOf(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -143,7 +143,7 @@ namespace Java.Util
             return IExecute<int>("indexOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#lastIndexOf(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#lastIndexOf(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -153,7 +153,7 @@ namespace Java.Util
             return IExecute<int>("lastIndexOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#addElement(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#addElement(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void AddElement(object arg0)
@@ -161,7 +161,7 @@ namespace Java.Util
             IExecuteWithSignature("addElement", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#copyInto(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#copyInto(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void CopyInto(object[] arg0)
@@ -169,7 +169,7 @@ namespace Java.Util
             IExecuteWithSignature("copyInto", "([Ljava/lang/Object;)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#ensureCapacity(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#ensureCapacity(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void EnsureCapacity(int arg0)
@@ -177,7 +177,7 @@ namespace Java.Util
             IExecuteWithSignature("ensureCapacity", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#insertElementAt(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#insertElementAt(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -186,14 +186,14 @@ namespace Java.Util
             IExecute("insertElementAt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#removeAllElements()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#removeAllElements()"/>
         /// </summary>
         public void RemoveAllElements()
         {
             IExecuteWithSignature("removeAllElements", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#removeElementAt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#removeElementAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void RemoveElementAt(int arg0)
@@ -201,7 +201,7 @@ namespace Java.Util
             IExecuteWithSignature("removeElementAt", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#setElementAt(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#setElementAt(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -210,7 +210,7 @@ namespace Java.Util
             IExecute("setElementAt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#setSize(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#setSize(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void SetSize(int arg0)
@@ -218,7 +218,7 @@ namespace Java.Util
             IExecuteWithSignature("setSize", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#trimToSize()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#trimToSize()"/>
         /// </summary>
         public void TrimToSize()
         {
@@ -240,7 +240,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#%3Cinit%3E(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#%3Cinit%3E(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -249,7 +249,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public Vector(int arg0)
@@ -257,7 +257,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public Vector(Java.Util.Collection<E> arg0)
@@ -297,7 +297,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#elements()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#elements()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<E> Elements()
@@ -305,7 +305,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Enumeration<E>>("elements", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#removeElement(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#removeElement(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -314,7 +314,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("removeElement", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#elementAt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#elementAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><typeparamref name="E"/></returns>
@@ -323,7 +323,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("elementAt", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#firstElement()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#firstElement()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E FirstElement()
@@ -331,7 +331,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("firstElement", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#lastElement()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#lastElement()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E LastElement()
@@ -339,7 +339,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("lastElement", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#capacity()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#capacity()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Capacity()
@@ -347,7 +347,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("capacity", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#indexOf(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#indexOf(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -357,7 +357,7 @@ namespace Java.Util
             return IExecute<int>("indexOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#lastIndexOf(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#lastIndexOf(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -367,7 +367,7 @@ namespace Java.Util
             return IExecute<int>("lastIndexOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#addElement(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#addElement(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void AddElement(E arg0)
@@ -375,7 +375,7 @@ namespace Java.Util
             IExecuteWithSignature("addElement", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#copyInto(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#copyInto(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void CopyInto(object[] arg0)
@@ -383,7 +383,7 @@ namespace Java.Util
             IExecuteWithSignature("copyInto", "([Ljava/lang/Object;)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#ensureCapacity(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#ensureCapacity(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void EnsureCapacity(int arg0)
@@ -391,7 +391,7 @@ namespace Java.Util
             IExecuteWithSignature("ensureCapacity", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#insertElementAt(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#insertElementAt(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -400,14 +400,14 @@ namespace Java.Util
             IExecute("insertElementAt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#removeAllElements()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#removeAllElements()"/>
         /// </summary>
         public void RemoveAllElements()
         {
             IExecuteWithSignature("removeAllElements", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#removeElementAt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#removeElementAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void RemoveElementAt(int arg0)
@@ -415,7 +415,7 @@ namespace Java.Util
             IExecuteWithSignature("removeElementAt", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#setElementAt(java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#setElementAt(java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -424,7 +424,7 @@ namespace Java.Util
             IExecute("setElementAt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#setSize(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#setSize(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void SetSize(int arg0)
@@ -432,7 +432,7 @@ namespace Java.Util
             IExecuteWithSignature("setSize", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Vector.html#trimToSize()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Vector.html#trimToSize()"/>
         /// </summary>
         public void TrimToSize()
         {

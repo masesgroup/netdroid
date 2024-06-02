@@ -317,7 +317,7 @@ namespace Android.Media
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Android.Media.CamcorderProfile"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Media.CamcorderProfile Get(int arg0, int arg1)
         {
             return SExecute<Android.Media.CamcorderProfile>(LocalBridgeClazz, "get", arg0, arg1);
@@ -327,7 +327,7 @@ namespace Android.Media
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Android.Media.CamcorderProfile"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Media.CamcorderProfile Get(int arg0)
         {
             return SExecuteWithSignature<Android.Media.CamcorderProfile>(LocalBridgeClazz, "get", "(I)Landroid/media/CamcorderProfile;", arg0);

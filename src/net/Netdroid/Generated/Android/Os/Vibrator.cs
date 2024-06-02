@@ -64,27 +64,6 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#getId()"/> 
-        /// </summary>
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#getQFactor()"/> 
-        /// </summary>
-        public float QFactor
-        {
-            get { return IExecuteWithSignature<float>("getQFactor", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#getResonantFrequency()"/> 
-        /// </summary>
-        public float ResonantFrequency
-        {
-            get { return IExecuteWithSignature<float>("getResonantFrequency", "()F"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#hasAmplitudeControl()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -135,6 +114,30 @@ namespace Android.Os
             if (arg0.Length == 0) return IExecuteWithSignature<int>("areAllEffectsSupported", "([I)I"); else return IExecuteWithSignature<int>("areAllEffectsSupported", "([I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#getQFactor()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetQFactor()
+        {
+            return IExecuteWithSignature<float>("getQFactor", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#getResonantFrequency()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetResonantFrequency()
+        {
+            return IExecuteWithSignature<float>("getResonantFrequency", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#areEffectsSupported(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -157,7 +160,7 @@ namespace Android.Os
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.VibrationEffect"/></param>
         /// <param name="arg1"><see cref="Android.Media.AudioAttributes"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Vibrate(Android.Os.VibrationEffect arg0, Android.Media.AudioAttributes arg1)
         {
             IExecute("vibrate", arg0, arg1);
@@ -184,7 +187,7 @@ namespace Android.Os
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Android.Media.AudioAttributes"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Vibrate(long arg0, Android.Media.AudioAttributes arg1)
         {
             IExecute("vibrate", arg0, arg1);
@@ -193,7 +196,7 @@ namespace Android.Os
         /// <see href="https://developer.android.com/reference/android/os/Vibrator.html#vibrate(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Vibrate(long arg0)
         {
             IExecuteWithSignature("vibrate", "(J)V", arg0);
@@ -204,7 +207,7 @@ namespace Android.Os
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Media.AudioAttributes"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Vibrate(long[] arg0, int arg1, Android.Media.AudioAttributes arg2)
         {
             IExecute("vibrate", arg0, arg1, arg2);
@@ -214,7 +217,7 @@ namespace Android.Os
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Vibrate(long[] arg0, int arg1)
         {
             IExecute("vibrate", arg0, arg1);

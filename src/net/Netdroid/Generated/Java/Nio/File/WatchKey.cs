@@ -64,7 +64,7 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchKey.html#isValid()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchKey.html#isValid()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
@@ -72,7 +72,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<bool>("isValid", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchKey.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchKey.html#reset()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool Reset()
@@ -80,7 +80,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<bool>("reset", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchKey.html#watchable()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchKey.html#watchable()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.Watchable"/></returns>
         public Java.Nio.File.Watchable Watchable()
@@ -88,7 +88,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<Java.Nio.File.Watchable>("watchable", "()Ljava/nio/file/Watchable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchKey.html#pollEvents()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchKey.html#pollEvents()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Nio.File.WatchEvent<object>> PollEvents()
@@ -96,7 +96,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<Java.Util.List<Java.Nio.File.WatchEvent<object>>>("pollEvents", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchKey.html#cancel()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchKey.html#cancel()"/>
         /// </summary>
         public void Cancel()
         {

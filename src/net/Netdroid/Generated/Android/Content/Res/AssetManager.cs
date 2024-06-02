@@ -70,13 +70,6 @@ namespace Android.Content.Res
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#getLocales()"/> 
-        /// </summary>
-        public Java.Lang.String[] Locales
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getLocales", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#openFd(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -148,6 +141,14 @@ namespace Android.Content.Res
         public Java.Io.InputStream Open(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Io.InputStream>("open", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#getLocales()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetLocales()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getLocales", "()[Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/AssetManager.html#list(java.lang.String)"/>

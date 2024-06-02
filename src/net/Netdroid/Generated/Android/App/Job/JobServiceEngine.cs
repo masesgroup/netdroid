@@ -54,13 +54,6 @@ namespace Android.App.Job
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobServiceEngine.html#getBinder()"/> 
-        /// </summary>
-        public Android.Os.IBinder Binder
-        {
-            get { return IExecuteWithSignature<Android.Os.IBinder>("getBinder", "()Landroid/os/IBinder;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobServiceEngine.html#onStartJob(android.app.job.JobParameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Job.JobParameters"/></param>
@@ -77,6 +70,14 @@ namespace Android.App.Job
         public bool OnStopJob(Android.App.Job.JobParameters arg0)
         {
             return IExecuteWithSignature<bool>("onStopJob", "(Landroid/app/job/JobParameters;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobServiceEngine.html#getBinder()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.IBinder"/></returns>
+        public Android.Os.IBinder GetBinder()
+        {
+            return IExecuteWithSignature<Android.Os.IBinder>("getBinder", "()Landroid/os/IBinder;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobServiceEngine.html#jobFinished(android.app.job.JobParameters,boolean)"/>

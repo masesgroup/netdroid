@@ -64,7 +64,7 @@ namespace Java.Util.Concurrent.Locks
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReadWriteLock.html#readLock()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReadWriteLock.html#readLock()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         public Java.Util.Concurrent.Locks.Lock ReadLock()
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<Java.Util.Concurrent.Locks.Lock>("readLock", "()Ljava/util/concurrent/locks/Lock;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReadWriteLock.html#writeLock()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReadWriteLock.html#writeLock()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         public Java.Util.Concurrent.Locks.Lock WriteLock()

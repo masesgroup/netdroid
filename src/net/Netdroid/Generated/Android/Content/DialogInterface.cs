@@ -76,21 +76,21 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/DialogInterface.html#BUTTON1"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int BUTTON1 { get { if (!_BUTTON1Ready) { _BUTTON1Content = SGetField<int>(LocalBridgeClazz, "BUTTON1"); _BUTTON1Ready = true; } return _BUTTON1Content; } }
         private static int _BUTTON1Content = default;
         private static bool _BUTTON1Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/DialogInterface.html#BUTTON2"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int BUTTON2 { get { if (!_BUTTON2Ready) { _BUTTON2Content = SGetField<int>(LocalBridgeClazz, "BUTTON2"); _BUTTON2Ready = true; } return _BUTTON2Content; } }
         private static int _BUTTON2Content = default;
         private static bool _BUTTON2Ready = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/DialogInterface.html#BUTTON3"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int BUTTON3 { get { if (!_BUTTON3Ready) { _BUTTON3Content = SGetField<int>(LocalBridgeClazz, "BUTTON3"); _BUTTON3Ready = true; } return _BUTTON3Content; } }
         private static int _BUTTON3Content = default;
         private static bool _BUTTON3Ready = false; // this is used because in case of generics 
@@ -145,7 +145,7 @@ namespace Android.Content
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onCancel", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>>>(OnCancelEventHandler));
+                AddEventHandler("onCancel", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>>>(OnCancelEventHandler));
 
             }
 
@@ -153,7 +153,7 @@ namespace Android.Content
             /// Handler for <see href="https://developer.android.com/reference/android/content/DialogInterface.OnCancelListener.html#onCancel(android.content.DialogInterface)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCancel"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Content.DialogInterface> OnOnCancel { get; set; } = null;
+            public global::System.Action<Android.Content.DialogInterface> OnOnCancel { get; set; } = null;
 
             void OnCancelEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>> data)
             {
@@ -244,7 +244,7 @@ namespace Android.Content
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onClick", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>>>(OnClickEventHandler));
+                AddEventHandler("onClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>>>(OnClickEventHandler));
 
             }
 
@@ -252,7 +252,7 @@ namespace Android.Content
             /// Handler for <see href="https://developer.android.com/reference/android/content/DialogInterface.OnClickListener.html#onClick(android.content.DialogInterface,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnClick"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Content.DialogInterface, int> OnOnClick { get; set; } = null;
+            public global::System.Action<Android.Content.DialogInterface, int> OnOnClick { get; set; } = null;
 
             void OnClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>> data)
             {
@@ -345,7 +345,7 @@ namespace Android.Content
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDismiss", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>>>(OnDismissEventHandler));
+                AddEventHandler("onDismiss", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>>>(OnDismissEventHandler));
 
             }
 
@@ -353,7 +353,7 @@ namespace Android.Content
             /// Handler for <see href="https://developer.android.com/reference/android/content/DialogInterface.OnDismissListener.html#onDismiss(android.content.DialogInterface)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDismiss"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Content.DialogInterface> OnOnDismiss { get; set; } = null;
+            public global::System.Action<Android.Content.DialogInterface> OnOnDismiss { get; set; } = null;
 
             void OnDismissEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>> data)
             {
@@ -444,7 +444,7 @@ namespace Android.Content
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onKey", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>>>(OnKeyEventHandler));
+                AddEventHandler("onKey", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>>>(OnKeyEventHandler));
 
             }
 
@@ -452,7 +452,7 @@ namespace Android.Content
             /// Handler for <see href="https://developer.android.com/reference/android/content/DialogInterface.OnKeyListener.html#onKey(android.content.DialogInterface,int,android.view.KeyEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnKey"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.Content.DialogInterface, int, Android.View.KeyEvent, bool> OnOnKey { get; set; } = null;
+            public global::System.Func<Android.Content.DialogInterface, int, Android.View.KeyEvent, bool> OnOnKey { get; set; } = null;
 
             void OnKeyEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>> data)
             {
@@ -550,7 +550,7 @@ namespace Android.Content
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onClick", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>>>(OnClickEventHandler));
+                AddEventHandler("onClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>>>(OnClickEventHandler));
 
             }
 
@@ -558,7 +558,7 @@ namespace Android.Content
             /// Handler for <see href="https://developer.android.com/reference/android/content/DialogInterface.OnMultiChoiceClickListener.html#onClick(android.content.DialogInterface,int,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnClick"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Content.DialogInterface, int, bool> OnOnClick { get; set; } = null;
+            public global::System.Action<Android.Content.DialogInterface, int, bool> OnOnClick { get; set; } = null;
 
             void OnClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>> data)
             {
@@ -653,7 +653,7 @@ namespace Android.Content
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onShow", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>>>(OnShowEventHandler));
+                AddEventHandler("onShow", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>>>(OnShowEventHandler));
 
             }
 
@@ -661,7 +661,7 @@ namespace Android.Content
             /// Handler for <see href="https://developer.android.com/reference/android/content/DialogInterface.OnShowListener.html#onShow(android.content.DialogInterface)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnShow"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Content.DialogInterface> OnOnShow { get; set; } = null;
+            public global::System.Action<Android.Content.DialogInterface> OnOnShow { get; set; } = null;
 
             void OnShowEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Content.DialogInterface>> data)
             {

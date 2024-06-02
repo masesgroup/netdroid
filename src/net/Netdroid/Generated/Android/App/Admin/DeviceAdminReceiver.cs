@@ -311,7 +311,7 @@ namespace Android.App.Admin
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnPasswordChanged(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
             IExecute("onPasswordChanged", arg0, arg1);
@@ -331,7 +331,7 @@ namespace Android.App.Admin
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnPasswordExpiring(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
             IExecute("onPasswordExpiring", arg0, arg1);
@@ -351,7 +351,7 @@ namespace Android.App.Admin
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnPasswordFailed(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
             IExecute("onPasswordFailed", arg0, arg1);
@@ -371,7 +371,7 @@ namespace Android.App.Admin
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnPasswordSucceeded(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
             IExecute("onPasswordSucceeded", arg0, arg1);
@@ -390,7 +390,7 @@ namespace Android.App.Admin
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnReadyForUserInitialization(Android.Content.Context arg0, Android.Content.Intent arg1)
         {
             IExecute("onReadyForUserInitialization", arg0, arg1);

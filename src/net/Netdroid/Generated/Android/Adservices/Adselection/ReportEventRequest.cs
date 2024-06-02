@@ -58,32 +58,36 @@ namespace Android.Adservices.Adselection
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/ReportEventRequest.html#getAdSelectionId()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/ReportEventRequest.html#getReportingDestinations()"/>
         /// </summary>
-        public long AdSelectionId
+        /// <returns><see cref="int"/></returns>
+        public int GetReportingDestinations()
         {
-            get { return IExecuteWithSignature<long>("getAdSelectionId", "()J"); }
+            return IExecuteWithSignature<int>("getReportingDestinations", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/ReportEventRequest.html#getData()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/ReportEventRequest.html#getData()"/>
         /// </summary>
-        public Java.Lang.String Data
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetData()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getData", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getData", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/ReportEventRequest.html#getKey()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/ReportEventRequest.html#getKey()"/>
         /// </summary>
-        public Java.Lang.String Key
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetKey()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/ReportEventRequest.html#getReportingDestinations()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/ReportEventRequest.html#getAdSelectionId()"/>
         /// </summary>
-        public int ReportingDestinations
+        /// <returns><see cref="long"/></returns>
+        public long GetAdSelectionId()
         {
-            get { return IExecuteWithSignature<int>("getReportingDestinations", "()I"); }
+            return IExecuteWithSignature<long>("getAdSelectionId", "()J");
         }
 
         #endregion

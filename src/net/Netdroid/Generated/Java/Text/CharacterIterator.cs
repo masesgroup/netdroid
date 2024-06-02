@@ -56,7 +56,7 @@ namespace Java.Text
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#DONE"/>
+        /// <see href="https://developer.android.com/reference/java/text/CharacterIterator.html#DONE"/>
         /// </summary>
         public static char DONE { get { if (!_DONEReady) { _DONEContent = SGetField<char>(LocalBridgeClazz, "DONE"); _DONEReady = true; } return _DONEContent; } }
         private static char _DONEContent = default;
@@ -70,28 +70,7 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#getBeginIndex()"/> 
-        /// </summary>
-        public int BeginIndex
-        {
-            get { return IExecuteWithSignature<int>("getBeginIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#getEndIndex()"/> 
-        /// </summary>
-        public int EndIndex
-        {
-            get { return IExecuteWithSignature<int>("getEndIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#getIndex()"/> 
-        /// </summary>
-        public int Index
-        {
-            get { return IExecuteWithSignature<int>("getIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#current()"/>
+        /// <see href="https://developer.android.com/reference/java/text/CharacterIterator.html#current()"/>
         /// </summary>
         /// <returns><see cref="char"/></returns>
         public char Current()
@@ -99,7 +78,7 @@ namespace Java.Text
             return IExecuteWithSignature<char>("current", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#first()"/>
+        /// <see href="https://developer.android.com/reference/java/text/CharacterIterator.html#first()"/>
         /// </summary>
         /// <returns><see cref="char"/></returns>
         public char First()
@@ -107,7 +86,7 @@ namespace Java.Text
             return IExecuteWithSignature<char>("first", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#last()"/>
+        /// <see href="https://developer.android.com/reference/java/text/CharacterIterator.html#last()"/>
         /// </summary>
         /// <returns><see cref="char"/></returns>
         public char Last()
@@ -115,7 +94,7 @@ namespace Java.Text
             return IExecuteWithSignature<char>("last", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#next()"/>
+        /// <see href="https://developer.android.com/reference/java/text/CharacterIterator.html#next()"/>
         /// </summary>
         /// <returns><see cref="char"/></returns>
         public char Next()
@@ -123,7 +102,7 @@ namespace Java.Text
             return IExecuteWithSignature<char>("next", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#previous()"/>
+        /// <see href="https://developer.android.com/reference/java/text/CharacterIterator.html#previous()"/>
         /// </summary>
         /// <returns><see cref="char"/></returns>
         public char Previous()
@@ -131,13 +110,37 @@ namespace Java.Text
             return IExecuteWithSignature<char>("previous", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html#setIndex(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/CharacterIterator.html#setIndex(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="char"/></returns>
         public char SetIndex(int arg0)
         {
             return IExecuteWithSignature<char>("setIndex", "(I)C", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/CharacterIterator.html#getBeginIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBeginIndex()
+        {
+            return IExecuteWithSignature<int>("getBeginIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/CharacterIterator.html#getEndIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEndIndex()
+        {
+            return IExecuteWithSignature<int>("getEndIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/CharacterIterator.html#getIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIndex()
+        {
+            return IExecuteWithSignature<int>("getIndex", "()I");
         }
 
         #endregion

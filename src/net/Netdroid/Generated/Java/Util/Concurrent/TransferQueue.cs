@@ -46,14 +46,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TransferQueue.html#getWaitingConsumerCount()"/> 
-        /// </summary>
-        public int WaitingConsumerCount
-        {
-            get { return IExecuteWithSignature<int>("getWaitingConsumerCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TransferQueue.html#hasWaitingConsumer()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TransferQueue.html#hasWaitingConsumer()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasWaitingConsumer()
@@ -61,7 +54,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("hasWaitingConsumer", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TransferQueue.html#tryTransfer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TransferQueue.html#tryTransfer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -73,7 +66,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("tryTransfer", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TransferQueue.html#tryTransfer(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TransferQueue.html#tryTransfer(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -82,7 +75,15 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("tryTransfer", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TransferQueue.html#transfer(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TransferQueue.html#getWaitingConsumerCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWaitingConsumerCount()
+        {
+            return IExecuteWithSignature<int>("getWaitingConsumerCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TransferQueue.html#transfer(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -144,14 +145,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TransferQueue.html#getWaitingConsumerCount()"/> 
-        /// </summary>
-        public int WaitingConsumerCount
-        {
-            get { return IExecuteWithSignature<int>("getWaitingConsumerCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TransferQueue.html#hasWaitingConsumer()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TransferQueue.html#hasWaitingConsumer()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasWaitingConsumer()
@@ -159,7 +153,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("hasWaitingConsumer", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TransferQueue.html#tryTransfer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TransferQueue.html#tryTransfer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -171,7 +165,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("tryTransfer", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TransferQueue.html#tryTransfer(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TransferQueue.html#tryTransfer(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -180,7 +174,15 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("tryTransfer", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TransferQueue.html#transfer(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TransferQueue.html#getWaitingConsumerCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWaitingConsumerCount()
+        {
+            return IExecuteWithSignature<int>("getWaitingConsumerCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/TransferQueue.html#transfer(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>

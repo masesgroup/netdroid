@@ -100,32 +100,12 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ProxyInfo.html#getExclusionList()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ProxyInfo.html#getPacFileUrl()"/>
         /// </summary>
-        public Java.Lang.String[] ExclusionList
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetPacFileUrl()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getExclusionList", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ProxyInfo.html#getHost()"/> 
-        /// </summary>
-        public Java.Lang.String Host
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHost", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ProxyInfo.html#getPacFileUrl()"/> 
-        /// </summary>
-        public Android.Net.Uri PacFileUrl
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getPacFileUrl", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ProxyInfo.html#getPort()"/> 
-        /// </summary>
-        public int Port
-        {
-            get { return IExecuteWithSignature<int>("getPort", "()I"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getPacFileUrl", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ProxyInfo.html#isValid()"/>
@@ -142,6 +122,30 @@ namespace Android.Net
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ProxyInfo.html#getPort()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPort()
+        {
+            return IExecuteWithSignature<int>("getPort", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ProxyInfo.html#getHost()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHost()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getHost", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ProxyInfo.html#getExclusionList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetExclusionList()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getExclusionList", "()[Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ProxyInfo.html#writeToParcel(android.os.Parcel,int)"/>

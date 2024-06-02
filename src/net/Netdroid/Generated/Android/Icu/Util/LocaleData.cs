@@ -66,18 +66,12 @@ namespace Android.Icu.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/LocaleData.html#getCLDRVersion()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/util/LocaleData.html#getInstance()"/>
         /// </summary>
-        public static Android.Icu.Util.VersionInfo CLDRVersion
+        /// <returns><see cref="Android.Icu.Util.LocaleData"/></returns>
+        public static Android.Icu.Util.LocaleData GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Icu.Util.VersionInfo>(LocalBridgeClazz, "getCLDRVersion", "()Landroid/icu/util/VersionInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/LocaleData.html#getInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Util.LocaleData Instance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Util.LocaleData>(LocalBridgeClazz, "getInstance", "()Landroid/icu/util/LocaleData;"); }
+            return SExecuteWithSignature<Android.Icu.Util.LocaleData>(LocalBridgeClazz, "getInstance", "()Landroid/icu/util/LocaleData;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/LocaleData.html#getInstance(android.icu.util.ULocale)"/>
@@ -106,16 +100,25 @@ namespace Android.Icu.Util
         {
             return SExecuteWithSignature<Android.Icu.Util.LocaleData.PaperSize>(LocalBridgeClazz, "getPaperSize", "(Landroid/icu/util/ULocale;)Landroid/icu/util/LocaleData$PaperSize;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/LocaleData.html#getCLDRVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.VersionInfo"/></returns>
+        public static Android.Icu.Util.VersionInfo GetCLDRVersion()
+        {
+            return SExecuteWithSignature<Android.Icu.Util.VersionInfo>(LocalBridgeClazz, "getCLDRVersion", "()Landroid/icu/util/VersionInfo;");
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/LocaleData.html#getNoSubstitute()"/> <see href="https://developer.android.com/reference/android/icu/util/LocaleData.html#setNoSubstitute(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/icu/util/LocaleData.html#getNoSubstitute()"/>
         /// </summary>
-        public bool NoSubstitute
+        /// <returns><see cref="bool"/></returns>
+        public bool GetNoSubstitute()
         {
-            get { return IExecuteWithSignature<bool>("getNoSubstitute", "()Z"); } set { IExecuteWithSignature("setNoSubstitute", "(Z)V", value); }
+            return IExecuteWithSignature<bool>("getNoSubstitute", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/LocaleData.html#getDelimiter(int)"/>
@@ -125,6 +128,14 @@ namespace Android.Icu.Util
         public Java.Lang.String GetDelimiter(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDelimiter", "(I)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/LocaleData.html#setNoSubstitute(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetNoSubstitute(bool arg0)
+        {
+            IExecuteWithSignature("setNoSubstitute", "(Z)V", arg0);
         }
 
         #endregion
@@ -200,18 +211,20 @@ namespace Android.Icu.Util
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/util/LocaleData.PaperSize.html#getHeight()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/util/LocaleData.PaperSize.html#getHeight()"/>
             /// </summary>
-            public int Height
+            /// <returns><see cref="int"/></returns>
+            public int GetHeight()
             {
-                get { return IExecuteWithSignature<int>("getHeight", "()I"); }
+                return IExecuteWithSignature<int>("getHeight", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/util/LocaleData.PaperSize.html#getWidth()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/util/LocaleData.PaperSize.html#getWidth()"/>
             /// </summary>
-            public int Width
+            /// <returns><see cref="int"/></returns>
+            public int GetWidth()
             {
-                get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+                return IExecuteWithSignature<int>("getWidth", "()I");
             }
 
             #endregion

@@ -42,7 +42,7 @@ namespace Java.Lang.Reflect
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Proxy.html#isProxyClass(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Proxy.html#isProxyClass(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -51,19 +51,19 @@ namespace Java.Lang.Reflect
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isProxyClass", "(Ljava/lang/Class;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Proxy.html#getProxyClass(java.lang.ClassLoader,java.lang.Class[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Proxy.html#getProxyClass(java.lang.ClassLoader,java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.Class GetProxyClass(Java.Lang.ClassLoader arg0, params Java.Lang.Class[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Lang.Class>(LocalBridgeClazz, "getProxyClass", arg0); else return SExecute<Java.Lang.Class>(LocalBridgeClazz, "getProxyClass", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Proxy.html#newProxyInstance(java.lang.ClassLoader,java.lang.Class[],java.lang.reflect.InvocationHandler)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Proxy.html#newProxyInstance(java.lang.ClassLoader,java.lang.Class[],java.lang.reflect.InvocationHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -74,7 +74,7 @@ namespace Java.Lang.Reflect
             return SExecute(LocalBridgeClazz, "newProxyInstance", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Proxy.html#getInvocationHandler(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Proxy.html#getInvocationHandler(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Lang.Reflect.InvocationHandler"/></returns>

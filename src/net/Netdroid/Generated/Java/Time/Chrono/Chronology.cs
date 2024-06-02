@@ -60,14 +60,7 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#getAvailableChronologies()"/> 
-        /// </summary>
-        public static Java.Util.Set<Java.Time.Chrono.Chronology> AvailableChronologies
-        {
-            get { return SExecuteWithSignature<Java.Util.Set<Java.Time.Chrono.Chronology>>(LocalBridgeClazz, "getAvailableChronologies", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#from(java.time.temporal.TemporalAccessor)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#from(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <returns><see cref="Java.Time.Chrono.Chronology"/></returns>
@@ -76,7 +69,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.Chronology>(LocalBridgeClazz, "from", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/Chronology;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#of(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#of(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Time.Chrono.Chronology"/></returns>
@@ -85,7 +78,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.Chronology>(LocalBridgeClazz, "of", "(Ljava/lang/String;)Ljava/time/chrono/Chronology;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#ofLocale(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#ofLocale(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Time.Chrono.Chronology"/></returns>
@@ -93,26 +86,20 @@ namespace Java.Time.Chrono
         {
             return SExecuteWithSignature<Java.Time.Chrono.Chronology>(LocalBridgeClazz, "ofLocale", "(Ljava/util/Locale;)Ljava/time/chrono/Chronology;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#getAvailableChronologies()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set<Java.Time.Chrono.Chronology> GetAvailableChronologies()
+        {
+            return SExecuteWithSignature<Java.Util.Set<Java.Time.Chrono.Chronology>>(LocalBridgeClazz, "getAvailableChronologies", "()Ljava/util/Set;");
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#getCalendarType()"/> 
-        /// </summary>
-        public Java.Lang.String CalendarType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCalendarType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#isLeapYear(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#isLeapYear(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -121,7 +108,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<bool>("isLeapYear", "(J)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#compareTo(java.time.chrono.Chronology)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#compareTo(java.time.chrono.Chronology)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Chrono.Chronology"/></param>
         /// <returns><see cref="int"/></returns>
@@ -130,7 +117,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<int>("compareTo", "(Ljava/time/chrono/Chronology;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#prolepticYear(java.time.chrono.Era,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#prolepticYear(java.time.chrono.Era,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Chrono.Era"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -140,7 +127,23 @@ namespace Java.Time.Chrono
             return IExecute<int>("prolepticYear", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#date(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#getCalendarType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCalendarType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCalendarType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#date(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -151,7 +154,7 @@ namespace Java.Time.Chrono
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("date", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#date(java.time.temporal.TemporalAccessor)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#date(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
@@ -160,7 +163,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>("date", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoLocalDate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#dateEpochDay(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#dateEpochDay(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
@@ -169,7 +172,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>("dateEpochDay", "(J)Ljava/time/chrono/ChronoLocalDate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#dateYearDay(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#dateYearDay(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -179,7 +182,7 @@ namespace Java.Time.Chrono
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("dateYearDay", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#resolveDate(java.util.Map,java.time.format.ResolverStyle)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#resolveDate(java.util.Map,java.time.format.ResolverStyle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <param name="arg1"><see cref="Java.Time.Format.ResolverStyle"/></param>
@@ -189,7 +192,7 @@ namespace Java.Time.Chrono
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("resolveDate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#eraOf(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#eraOf(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Chrono.Era"/></returns>
@@ -198,7 +201,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<Java.Time.Chrono.Era>("eraOf", "(I)Ljava/time/chrono/Era;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#range(java.time.temporal.ChronoField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#range(java.time.temporal.ChronoField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.ChronoField"/></param>
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
@@ -207,7 +210,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/ChronoField;)Ljava/time/temporal/ValueRange;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#eras()"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#eras()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>
         public Java.Util.List<Java.Time.Chrono.Era> Eras()
@@ -215,7 +218,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<Java.Util.List<Java.Time.Chrono.Era>>("eras", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -224,7 +227,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -234,7 +237,7 @@ namespace Java.Time.Chrono
             return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#date(java.time.chrono.Era,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#date(java.time.chrono.Era,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Chrono.Era"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -246,7 +249,7 @@ namespace Java.Time.Chrono
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("date", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#dateNow()"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#dateNow()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate DateNow()
@@ -254,7 +257,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>("dateNow", "()Ljava/time/chrono/ChronoLocalDate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#dateNow(java.time.Clock)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#dateNow(java.time.Clock)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Clock"/></param>
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
@@ -263,7 +266,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>("dateNow", "(Ljava/time/Clock;)Ljava/time/chrono/ChronoLocalDate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#dateNow(java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#dateNow(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
@@ -272,7 +275,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>("dateNow", "(Ljava/time/ZoneId;)Ljava/time/chrono/ChronoLocalDate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#dateYearDay(java.time.chrono.Era,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#dateYearDay(java.time.chrono.Era,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Chrono.Era"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -283,16 +286,17 @@ namespace Java.Time.Chrono
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("dateYearDay", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#localDateTime(java.time.temporal.TemporalAccessor)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#localDateTime(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
+        /// <typeparam name="ReturnExtendsJava_Time_Chrono_ChronoLocalDate"><see cref="Java.Time.Chrono.ChronoLocalDate"/></typeparam>
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></returns>
-        public Java.Time.Chrono.ChronoLocalDateTime LocalDateTime(Java.Time.Temporal.TemporalAccessor arg0)
+        public Java.Time.Chrono.ChronoLocalDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate> LocalDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate>(Java.Time.Temporal.TemporalAccessor arg0) where ReturnExtendsJava_Time_Chrono_ChronoLocalDate : Java.Time.Chrono.ChronoLocalDate, new()
         {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDateTime>("localDateTime", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoLocalDateTime;", arg0);
+            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate>>("localDateTime", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoLocalDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#period(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#period(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -303,26 +307,28 @@ namespace Java.Time.Chrono
             return IExecute<Java.Time.Chrono.ChronoPeriod>("period", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#zonedDateTime(java.time.Instant,java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#zonedDateTime(java.time.Instant,java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
         /// <param name="arg1"><see cref="Java.Time.ZoneId"/></param>
+        /// <typeparam name="ReturnExtendsJava_Time_Chrono_ChronoLocalDate"><see cref="Java.Time.Chrono.ChronoLocalDate"/></typeparam>
         /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
-        public Java.Time.Chrono.ChronoZonedDateTime ZonedDateTime(Java.Time.Instant arg0, Java.Time.ZoneId arg1)
+        public Java.Time.Chrono.ChronoZonedDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate> ZonedDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate>(Java.Time.Instant arg0, Java.Time.ZoneId arg1) where ReturnExtendsJava_Time_Chrono_ChronoLocalDate : Java.Time.Chrono.ChronoLocalDate, new()
         {
-            return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("zonedDateTime", arg0, arg1);
+            return IExecute<Java.Time.Chrono.ChronoZonedDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate>>("zonedDateTime", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#zonedDateTime(java.time.temporal.TemporalAccessor)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#zonedDateTime(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
+        /// <typeparam name="ReturnExtendsJava_Time_Chrono_ChronoLocalDate"><see cref="Java.Time.Chrono.ChronoLocalDate"/></typeparam>
         /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
-        public Java.Time.Chrono.ChronoZonedDateTime ZonedDateTime(Java.Time.Temporal.TemporalAccessor arg0)
+        public Java.Time.Chrono.ChronoZonedDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate> ZonedDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate>(Java.Time.Temporal.TemporalAccessor arg0) where ReturnExtendsJava_Time_Chrono_ChronoLocalDate : Java.Time.Chrono.ChronoLocalDate, new()
         {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoZonedDateTime>("zonedDateTime", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoZonedDateTime;", arg0);
+            return IExecuteWithSignature<Java.Time.Chrono.ChronoZonedDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate>>("zonedDateTime", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#epochSecond(int,int,int,int,int,int,java.time.ZoneOffset)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#epochSecond(int,int,int,int,int,int,java.time.ZoneOffset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -337,7 +343,7 @@ namespace Java.Time.Chrono
             return IExecute<long>("epochSecond", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html#epochSecond(java.time.chrono.Era,int,int,int,int,int,int,java.time.ZoneOffset)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#epochSecond(java.time.chrono.Era,int,int,int,int,int,int,java.time.ZoneOffset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Chrono.Era"/></param>
         /// <param name="arg1"><see cref="int"/></param>

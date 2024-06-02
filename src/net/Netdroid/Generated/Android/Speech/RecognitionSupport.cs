@@ -52,40 +52,44 @@ namespace Android.Speech
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionSupport.html#getInstalledOnDeviceLanguages()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> InstalledOnDeviceLanguages
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getInstalledOnDeviceLanguages", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionSupport.html#getOnlineLanguages()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> OnlineLanguages
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getOnlineLanguages", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionSupport.html#getPendingOnDeviceLanguages()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> PendingOnDeviceLanguages
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getPendingOnDeviceLanguages", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionSupport.html#getSupportedOnDeviceLanguages()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> SupportedOnDeviceLanguages
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedOnDeviceLanguages", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/RecognitionSupport.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/RecognitionSupport.html#getInstalledOnDeviceLanguages()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetInstalledOnDeviceLanguages()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getInstalledOnDeviceLanguages", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/RecognitionSupport.html#getOnlineLanguages()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetOnlineLanguages()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getOnlineLanguages", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/RecognitionSupport.html#getPendingOnDeviceLanguages()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetPendingOnDeviceLanguages()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getPendingOnDeviceLanguages", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/RecognitionSupport.html#getSupportedOnDeviceLanguages()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetSupportedOnDeviceLanguages()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getSupportedOnDeviceLanguages", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/RecognitionSupport.html#writeToParcel(android.os.Parcel,int)"/>

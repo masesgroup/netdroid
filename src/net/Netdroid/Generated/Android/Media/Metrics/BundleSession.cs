@@ -52,11 +52,12 @@ namespace Android.Media.Metrics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/BundleSession.html#getSessionId()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/metrics/BundleSession.html#getSessionId()"/>
         /// </summary>
-        public Android.Media.Metrics.LogSessionId SessionId
+        /// <returns><see cref="Android.Media.Metrics.LogSessionId"/></returns>
+        public Android.Media.Metrics.LogSessionId GetSessionId()
         {
-            get { return IExecuteWithSignature<Android.Media.Metrics.LogSessionId>("getSessionId", "()Landroid/media/metrics/LogSessionId;"); }
+            return IExecuteWithSignature<Android.Media.Metrics.LogSessionId>("getSessionId", "()Landroid/media/metrics/LogSessionId;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/metrics/BundleSession.html#close()"/>

@@ -148,7 +148,7 @@ namespace Android.Telecom
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#ACTION_INCOMING_CALL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_INCOMING_CALL { get { if (!_ACTION_INCOMING_CALLReady) { _ACTION_INCOMING_CALLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_INCOMING_CALL"); _ACTION_INCOMING_CALLReady = true; } return _ACTION_INCOMING_CALLContent; } }
         private static Java.Lang.String _ACTION_INCOMING_CALLContent = default;
         private static bool _ACTION_INCOMING_CALLReady = false; // this is used because in case of generics 
@@ -407,55 +407,6 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getCallCapablePhoneAccounts()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Telecom.PhoneAccountHandle> CallCapablePhoneAccounts
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telecom.PhoneAccountHandle>>("getCallCapablePhoneAccounts", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getDefaultDialerPackage()"/> 
-        /// </summary>
-        public Java.Lang.String DefaultDialerPackage
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDefaultDialerPackage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getOwnSelfManagedPhoneAccounts()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Telecom.PhoneAccountHandle> OwnSelfManagedPhoneAccounts
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telecom.PhoneAccountHandle>>("getOwnSelfManagedPhoneAccounts", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getSelfManagedPhoneAccounts()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Telecom.PhoneAccountHandle> SelfManagedPhoneAccounts
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telecom.PhoneAccountHandle>>("getSelfManagedPhoneAccounts", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getSimCallManager()"/> 
-        /// </summary>
-        public Android.Telecom.PhoneAccountHandle SimCallManager
-        {
-            get { return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getSimCallManager", "()Landroid/telecom/PhoneAccountHandle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getSystemDialerPackage()"/> 
-        /// </summary>
-        public Java.Lang.String SystemDialerPackage
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemDialerPackage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getUserSelectedOutgoingPhoneAccount()"/> 
-        /// </summary>
-        public Android.Telecom.PhoneAccountHandle UserSelectedOutgoingPhoneAccount
-        {
-            get { return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getUserSelectedOutgoingPhoneAccount", "()Landroid/telecom/PhoneAccountHandle;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#createManageBlockedNumbersIntent()"/>
         /// </summary>
         /// <returns><see cref="Android.Content.Intent"/></returns>
@@ -491,6 +442,14 @@ namespace Android.Telecom
             return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getDefaultOutgoingPhoneAccount", "(Ljava/lang/String;)Landroid/telecom/PhoneAccountHandle;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getSimCallManager()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Telecom.PhoneAccountHandle"/></returns>
+        public Android.Telecom.PhoneAccountHandle GetSimCallManager()
+        {
+            return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getSimCallManager", "()Landroid/telecom/PhoneAccountHandle;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getSimCallManagerForSubscription(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -500,10 +459,18 @@ namespace Android.Telecom
             return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getSimCallManagerForSubscription", "(I)Landroid/telecom/PhoneAccountHandle;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getUserSelectedOutgoingPhoneAccount()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Telecom.PhoneAccountHandle"/></returns>
+        public Android.Telecom.PhoneAccountHandle GetUserSelectedOutgoingPhoneAccount()
+        {
+            return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getUserSelectedOutgoingPhoneAccount", "()Landroid/telecom/PhoneAccountHandle;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#endCall()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool EndCall()
         {
             return IExecuteWithSignature<bool>("endCall", "()Z");
@@ -588,14 +555,30 @@ namespace Android.Telecom
             return IExecute<bool>("isVoiceMailNumber", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getDefaultDialerPackage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDefaultDialerPackage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDefaultDialerPackage", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getLine1Number(android.telecom.PhoneAccountHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Telecom.PhoneAccountHandle"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String GetLine1Number(Android.Telecom.PhoneAccountHandle arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getLine1Number", "(Landroid/telecom/PhoneAccountHandle;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getSystemDialerPackage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemDialerPackage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSystemDialerPackage", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getVoiceMailNumber(android.telecom.PhoneAccountHandle)"/>
@@ -605,6 +588,30 @@ namespace Android.Telecom
         public Java.Lang.String GetVoiceMailNumber(Android.Telecom.PhoneAccountHandle arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getVoiceMailNumber", "(Landroid/telecom/PhoneAccountHandle;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getCallCapablePhoneAccounts()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telecom.PhoneAccountHandle> GetCallCapablePhoneAccounts()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telecom.PhoneAccountHandle>>("getCallCapablePhoneAccounts", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getOwnSelfManagedPhoneAccounts()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telecom.PhoneAccountHandle> GetOwnSelfManagedPhoneAccounts()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telecom.PhoneAccountHandle>>("getOwnSelfManagedPhoneAccounts", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#getSelfManagedPhoneAccounts()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telecom.PhoneAccountHandle> GetSelfManagedPhoneAccounts()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telecom.PhoneAccountHandle>>("getSelfManagedPhoneAccounts", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#acceptHandover(android.net.Uri,int,android.telecom.PhoneAccountHandle)"/>
@@ -619,7 +626,7 @@ namespace Android.Telecom
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#acceptRingingCall()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AcceptRingingCall()
         {
             IExecuteWithSignature("acceptRingingCall", "()V");
@@ -628,7 +635,7 @@ namespace Android.Telecom
         /// <see href="https://developer.android.com/reference/android/telecom/TelecomManager.html#acceptRingingCall(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AcceptRingingCall(int arg0)
         {
             IExecuteWithSignature("acceptRingingCall", "(I)V", arg0);

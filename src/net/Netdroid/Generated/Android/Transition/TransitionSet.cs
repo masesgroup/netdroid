@@ -67,20 +67,6 @@ namespace Android.Transition
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/TransitionSet.html#getOrdering()"/> 
-        /// </summary>
-        public int Ordering
-        {
-            get { return IExecuteWithSignature<int>("getOrdering", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/TransitionSet.html#getTransitionCount()"/> 
-        /// </summary>
-        public int TransitionCount
-        {
-            get { return IExecuteWithSignature<int>("getTransitionCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/TransitionSet.html#getTransitionAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -115,6 +101,22 @@ namespace Android.Transition
         public Android.Transition.TransitionSet SetOrdering(int arg0)
         {
             return IExecuteWithSignature<Android.Transition.TransitionSet>("setOrdering", "(I)Landroid/transition/TransitionSet;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/TransitionSet.html#getOrdering()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOrdering()
+        {
+            return IExecuteWithSignature<int>("getOrdering", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/TransitionSet.html#getTransitionCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTransitionCount()
+        {
+            return IExecuteWithSignature<int>("getTransitionCount", "()I");
         }
 
         #endregion

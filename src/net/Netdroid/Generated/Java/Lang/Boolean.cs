@@ -30,19 +30,19 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#%3Cinit%3E(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#%3Cinit%3E(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Boolean(bool arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Boolean(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -64,19 +64,19 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#FALSE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#FALSE"/>
         /// </summary>
         public static Java.Lang.Boolean FALSE { get { if (!_FALSEReady) { _FALSEContent = SGetField<Java.Lang.Boolean>(LocalBridgeClazz, "FALSE"); _FALSEReady = true; } return _FALSEContent; } }
         private static Java.Lang.Boolean _FALSEContent = default;
         private static bool _FALSEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#TRUE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#TRUE"/>
         /// </summary>
         public static Java.Lang.Boolean TRUE { get { if (!_TRUEReady) { _TRUEContent = SGetField<Java.Lang.Boolean>(LocalBridgeClazz, "TRUE"); _TRUEReady = true; } return _TRUEContent; } }
         private static Java.Lang.Boolean _TRUEContent = default;
         private static bool _TRUEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#TYPE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<Java.Lang.Class>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
         private static Java.Lang.Class _TYPEContent = default;
@@ -86,7 +86,7 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#getBoolean(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#getBoolean(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -95,7 +95,7 @@ namespace Java.Lang
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "getBoolean", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#logicalAnd(boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#logicalAnd(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -105,7 +105,7 @@ namespace Java.Lang
             return SExecute<bool>(LocalBridgeClazz, "logicalAnd", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#logicalOr(boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#logicalOr(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -115,7 +115,7 @@ namespace Java.Lang
             return SExecute<bool>(LocalBridgeClazz, "logicalOr", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#logicalXor(boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#logicalXor(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -125,7 +125,7 @@ namespace Java.Lang
             return SExecute<bool>(LocalBridgeClazz, "logicalXor", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#parseBoolean(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#parseBoolean(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -134,7 +134,7 @@ namespace Java.Lang
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "parseBoolean", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#compare(boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#compare(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -144,7 +144,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#hashCode(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#hashCode(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="int"/></returns>
@@ -153,7 +153,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "(Z)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#valueOf(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#valueOf(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Lang.Boolean"/></returns>
@@ -162,7 +162,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.Boolean>(LocalBridgeClazz, "valueOf", "(Z)Ljava/lang/Boolean;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Boolean"/></returns>
@@ -171,7 +171,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.Boolean>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/Boolean;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#toString(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#toString(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -184,7 +184,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#booleanValue()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#booleanValue()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool BooleanValue()
@@ -192,7 +192,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("booleanValue", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#compareTo(java.lang.Boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#compareTo(java.lang.Boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
         /// <returns><see cref="int"/></returns>
@@ -201,7 +201,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Boolean;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Boolean.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>

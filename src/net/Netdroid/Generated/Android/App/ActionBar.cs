@@ -70,21 +70,21 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#NAVIGATION_MODE_LIST"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int NAVIGATION_MODE_LIST { get { if (!_NAVIGATION_MODE_LISTReady) { _NAVIGATION_MODE_LISTContent = SGetField<int>(LocalBridgeClazz, "NAVIGATION_MODE_LIST"); _NAVIGATION_MODE_LISTReady = true; } return _NAVIGATION_MODE_LISTContent; } }
         private static int _NAVIGATION_MODE_LISTContent = default;
         private static bool _NAVIGATION_MODE_LISTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#NAVIGATION_MODE_STANDARD"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int NAVIGATION_MODE_STANDARD { get { if (!_NAVIGATION_MODE_STANDARDReady) { _NAVIGATION_MODE_STANDARDContent = SGetField<int>(LocalBridgeClazz, "NAVIGATION_MODE_STANDARD"); _NAVIGATION_MODE_STANDARDReady = true; } return _NAVIGATION_MODE_STANDARDContent; } }
         private static int _NAVIGATION_MODE_STANDARDContent = default;
         private static bool _NAVIGATION_MODE_STANDARDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#NAVIGATION_MODE_TABS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int NAVIGATION_MODE_TABS { get { if (!_NAVIGATION_MODE_TABSReady) { _NAVIGATION_MODE_TABSContent = SGetField<int>(LocalBridgeClazz, "NAVIGATION_MODE_TABS"); _NAVIGATION_MODE_TABSReady = true; } return _NAVIGATION_MODE_TABSContent; } }
         private static int _NAVIGATION_MODE_TABSContent = default;
         private static bool _NAVIGATION_MODE_TABSReady = false; // this is used because in case of generics 
@@ -97,107 +97,20 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getCustomView()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getSelectedTab()"/>
         /// </summary>
-        public Android.View.View CustomView
+        /// <returns><see cref="Android.App.ActionBar.Tab"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.ActionBar.Tab GetSelectedTab()
         {
-            get { return IExecuteWithSignature<Android.View.View>("getCustomView", "()Landroid/view/View;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getDisplayOptions()"/> <see href="https://developer.android.com/reference/android/app/ActionBar.html#setDisplayOptions(int)"/>
-        /// </summary>
-        public int DisplayOptions
-        {
-            get { return IExecuteWithSignature<int>("getDisplayOptions", "()I"); } set { IExecuteWithSignature("setDisplayOptions", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getElevation()"/> <see href="https://developer.android.com/reference/android/app/ActionBar.html#setElevation(float)"/>
-        /// </summary>
-        public float Elevation
-        {
-            get { return IExecuteWithSignature<float>("getElevation", "()F"); } set { IExecuteWithSignature("setElevation", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getHeight()"/> 
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getHideOffset()"/> <see href="https://developer.android.com/reference/android/app/ActionBar.html#setHideOffset(int)"/>
-        /// </summary>
-        public int HideOffset
-        {
-            get { return IExecuteWithSignature<int>("getHideOffset", "()I"); } set { IExecuteWithSignature("setHideOffset", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getNavigationItemCount()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int NavigationItemCount
-        {
-            get { return IExecuteWithSignature<int>("getNavigationItemCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getNavigationMode()"/> <see href="https://developer.android.com/reference/android/app/ActionBar.html#setNavigationMode(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int NavigationMode
-        {
-            get { return IExecuteWithSignature<int>("getNavigationMode", "()I"); } set { IExecuteWithSignature("setNavigationMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getSelectedNavigationIndex()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int SelectedNavigationIndex
-        {
-            get { return IExecuteWithSignature<int>("getSelectedNavigationIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getSelectedTab()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.App.ActionBar.Tab SelectedTab
-        {
-            get { return IExecuteWithSignature<Android.App.ActionBar.Tab>("getSelectedTab", "()Landroid/app/ActionBar$Tab;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getSubtitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Subtitle
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSubtitle", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getTabCount()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int TabCount
-        {
-            get { return IExecuteWithSignature<int>("getTabCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getThemedContext()"/> 
-        /// </summary>
-        public Android.Content.Context ThemedContext
-        {
-            get { return IExecuteWithSignature<Android.Content.Context>("getThemedContext", "()Landroid/content/Context;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getTitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Title
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Android.App.ActionBar.Tab>("getSelectedTab", "()Landroid/app/ActionBar$Tab;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getTabAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Android.App.ActionBar.Tab"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.App.ActionBar.Tab GetTabAt(int arg0)
         {
             return IExecuteWithSignature<Android.App.ActionBar.Tab>("getTabAt", "(I)Landroid/app/ActionBar$Tab;", arg0);
@@ -206,10 +119,18 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#newTab()"/>
         /// </summary>
         /// <returns><see cref="Android.App.ActionBar.Tab"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.App.ActionBar.Tab NewTab()
         {
             return IExecuteWithSignature<Android.App.ActionBar.Tab>("newTab", "()Landroid/app/ActionBar$Tab;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getCustomView()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetCustomView()
+        {
+            return IExecuteWithSignature<Android.View.View>("getCustomView", "()Landroid/view/View;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#isShowing()"/>
@@ -218,6 +139,74 @@ namespace Android.App
         public bool IsShowing()
         {
             return IExecuteWithSignature<bool>("isShowing", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getDisplayOptions()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDisplayOptions()
+        {
+            return IExecuteWithSignature<int>("getDisplayOptions", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getNavigationItemCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetNavigationItemCount()
+        {
+            return IExecuteWithSignature<int>("getNavigationItemCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getNavigationMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetNavigationMode()
+        {
+            return IExecuteWithSignature<int>("getNavigationMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getSelectedNavigationIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetSelectedNavigationIndex()
+        {
+            return IExecuteWithSignature<int>("getSelectedNavigationIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getTabCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetTabCount()
+        {
+            return IExecuteWithSignature<int>("getTabCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getSubtitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetSubtitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getSubtitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#addOnMenuVisibilityListener(android.app.ActionBar.OnMenuVisibilityListener)"/>
@@ -232,7 +221,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.ActionBar.Tab"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddTab(Android.App.ActionBar.Tab arg0, bool arg1)
         {
             IExecute("addTab", arg0, arg1);
@@ -243,7 +232,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.App.ActionBar.Tab"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddTab(Android.App.ActionBar.Tab arg0, int arg1, bool arg2)
         {
             IExecute("addTab", arg0, arg1, arg2);
@@ -253,7 +242,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.ActionBar.Tab"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddTab(Android.App.ActionBar.Tab arg0, int arg1)
         {
             IExecute("addTab", arg0, arg1);
@@ -262,7 +251,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#addTab(android.app.ActionBar.Tab)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.ActionBar.Tab"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddTab(Android.App.ActionBar.Tab arg0)
         {
             IExecuteWithSignature("addTab", "(Landroid/app/ActionBar$Tab;)V", arg0);
@@ -277,7 +266,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#removeAllTabs()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveAllTabs()
         {
             IExecuteWithSignature("removeAllTabs", "()V");
@@ -294,7 +283,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#removeTab(android.app.ActionBar.Tab)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.ActionBar.Tab"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveTab(Android.App.ActionBar.Tab arg0)
         {
             IExecuteWithSignature("removeTab", "(Landroid/app/ActionBar$Tab;)V", arg0);
@@ -303,7 +292,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#removeTabAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveTabAt(int arg0)
         {
             IExecuteWithSignature("removeTabAt", "(I)V", arg0);
@@ -312,7 +301,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#selectTab(android.app.ActionBar.Tab)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.ActionBar.Tab"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SelectTab(Android.App.ActionBar.Tab arg0)
         {
             IExecuteWithSignature("selectTab", "(Landroid/app/ActionBar$Tab;)V", arg0);
@@ -368,6 +357,14 @@ namespace Android.App
             IExecute("setDisplayOptions", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#setDisplayOptions(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDisplayOptions(int arg0)
+        {
+            IExecuteWithSignature("setDisplayOptions", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#setDisplayShowCustomEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -420,7 +417,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.Widget.SpinnerAdapter"/></param>
         /// <param name="arg1"><see cref="Android.App.ActionBar.OnNavigationListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetListNavigationCallbacks(Android.Widget.SpinnerAdapter arg0, Android.App.ActionBar.OnNavigationListener arg1)
         {
             IExecute("setListNavigationCallbacks", arg0, arg1);
@@ -442,10 +439,19 @@ namespace Android.App
             IExecuteWithSignature("setLogo", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#setNavigationMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetNavigationMode(int arg0)
+        {
+            IExecuteWithSignature("setNavigationMode", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#setSelectedNavigationItem(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSelectedNavigationItem(int arg0)
         {
             IExecuteWithSignature("setSelectedNavigationItem", "(I)V", arg0);
@@ -490,12 +496,52 @@ namespace Android.App
             IExecuteWithSignature("show", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getThemedContext()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        public Android.Content.Context GetThemedContext()
+        {
+            return IExecuteWithSignature<Android.Content.Context>("getThemedContext", "()Landroid/content/Context;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#isHideOnContentScrollEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsHideOnContentScrollEnabled()
         {
             return IExecuteWithSignature<bool>("isHideOnContentScrollEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getElevation()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetElevation()
+        {
+            return IExecuteWithSignature<float>("getElevation", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#getHideOffset()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHideOffset()
+        {
+            return IExecuteWithSignature<int>("getHideOffset", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#setElevation(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetElevation(float arg0)
+        {
+            IExecuteWithSignature("setElevation", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#setHideOffset(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetHideOffset(int arg0)
+        {
+            IExecuteWithSignature("setHideOffset", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActionBar.html#setHideOnContentScrollEnabled(boolean)"/>
@@ -677,7 +723,7 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onMenuVisibilityChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnMenuVisibilityChangedEventHandler));
+                AddEventHandler("onMenuVisibilityChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnMenuVisibilityChangedEventHandler));
 
             }
 
@@ -685,7 +731,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/ActionBar.OnMenuVisibilityListener.html#onMenuVisibilityChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMenuVisibilityChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnMenuVisibilityChanged { get; set; } = null;
+            public global::System.Action<bool> OnOnMenuVisibilityChanged { get; set; } = null;
 
             void OnMenuVisibilityChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
             {
@@ -776,7 +822,7 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onNavigationItemSelected", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnNavigationItemSelectedEventHandler));
+                AddEventHandler("onNavigationItemSelected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnNavigationItemSelectedEventHandler));
 
             }
 
@@ -784,7 +830,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/ActionBar.OnNavigationListener.html#onNavigationItemSelected(int,long)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnNavigationItemSelected"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<int, long, bool> OnOnNavigationItemSelected { get; set; } = null;
+            public global::System.Func<int, long, bool> OnOnNavigationItemSelected { get; set; } = null;
 
             void OnNavigationItemSelectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -799,7 +845,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="long"/></param>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual bool OnNavigationItemSelected(int arg0, long arg1)
             {
                 return default;
@@ -841,7 +887,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="long"/></param>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override bool OnNavigationItemSelected(int arg0, long arg1)
             {
                 return IExecute<bool>("onNavigationItemSelected", arg0, arg1);
@@ -872,7 +918,7 @@ namespace Android.App
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActionBar.Tab.html#INVALID_POSITION"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int INVALID_POSITION { get { if (!_INVALID_POSITIONReady) { _INVALID_POSITIONContent = SGetField<int>(LocalBridgeClazz, "INVALID_POSITION"); _INVALID_POSITIONReady = true; } return _INVALID_POSITIONContent; } }
             private static int _INVALID_POSITIONContent = default;
             private static bool _INVALID_POSITIONReady = false; // this is used because in case of generics 
@@ -885,59 +931,11 @@ namespace Android.App
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/ActionBar.Tab.html#getContentDescription()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Lang.CharSequence ContentDescription
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/ActionBar.Tab.html#getCustomView()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Android.View.View CustomView
-            {
-                get { return IExecuteWithSignature<Android.View.View>("getCustomView", "()Landroid/view/View;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/ActionBar.Tab.html#getIcon()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Android.Graphics.Drawable.Drawable Icon
-            {
-                get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getIcon", "()Landroid/graphics/drawable/Drawable;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/ActionBar.Tab.html#getPosition()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int Position
-            {
-                get { return IExecuteWithSignature<int>("getPosition", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/ActionBar.Tab.html#getTag()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public object Tag
-            {
-                get { return IExecuteWithSignature("getTag", "()Ljava/lang/Object;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/ActionBar.Tab.html#getText()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Lang.CharSequence Text
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActionBar.Tab.html#setContentDescription(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.App.ActionBar.Tab"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.ActionBar.Tab SetContentDescription(int arg0)
             {
                 return IExecuteWithSignature<Android.App.ActionBar.Tab>("setContentDescription", "(I)Landroid/app/ActionBar$Tab;", arg0);
@@ -947,7 +945,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
             /// <returns><see cref="Android.App.ActionBar.Tab"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.ActionBar.Tab SetContentDescription(Java.Lang.CharSequence arg0)
             {
                 return IExecuteWithSignature<Android.App.ActionBar.Tab>("setContentDescription", "(Ljava/lang/CharSequence;)Landroid/app/ActionBar$Tab;", arg0);
@@ -957,7 +955,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.View.View"/></param>
             /// <returns><see cref="Android.App.ActionBar.Tab"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.ActionBar.Tab SetCustomView(Android.View.View arg0)
             {
                 return IExecuteWithSignature<Android.App.ActionBar.Tab>("setCustomView", "(Landroid/view/View;)Landroid/app/ActionBar$Tab;", arg0);
@@ -967,7 +965,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.App.ActionBar.Tab"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.ActionBar.Tab SetCustomView(int arg0)
             {
                 return IExecuteWithSignature<Android.App.ActionBar.Tab>("setCustomView", "(I)Landroid/app/ActionBar$Tab;", arg0);
@@ -977,7 +975,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
             /// <returns><see cref="Android.App.ActionBar.Tab"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.ActionBar.Tab SetIcon(Android.Graphics.Drawable.Drawable arg0)
             {
                 return IExecuteWithSignature<Android.App.ActionBar.Tab>("setIcon", "(Landroid/graphics/drawable/Drawable;)Landroid/app/ActionBar$Tab;", arg0);
@@ -987,7 +985,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.App.ActionBar.Tab"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.ActionBar.Tab SetIcon(int arg0)
             {
                 return IExecuteWithSignature<Android.App.ActionBar.Tab>("setIcon", "(I)Landroid/app/ActionBar$Tab;", arg0);
@@ -997,7 +995,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.ActionBar.TabListener"/></param>
             /// <returns><see cref="Android.App.ActionBar.Tab"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.ActionBar.Tab SetTabListener(Android.App.ActionBar.TabListener arg0)
             {
                 return IExecuteWithSignature<Android.App.ActionBar.Tab>("setTabListener", "(Landroid/app/ActionBar$TabListener;)Landroid/app/ActionBar$Tab;", arg0);
@@ -1007,7 +1005,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
             /// <returns><see cref="Android.App.ActionBar.Tab"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.ActionBar.Tab SetTag(object arg0)
             {
                 return IExecuteWithSignature<Android.App.ActionBar.Tab>("setTag", "(Ljava/lang/Object;)Landroid/app/ActionBar$Tab;", arg0);
@@ -1017,7 +1015,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.App.ActionBar.Tab"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.ActionBar.Tab SetText(int arg0)
             {
                 return IExecuteWithSignature<Android.App.ActionBar.Tab>("setText", "(I)Landroid/app/ActionBar$Tab;", arg0);
@@ -1027,15 +1025,69 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
             /// <returns><see cref="Android.App.ActionBar.Tab"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.ActionBar.Tab SetText(Java.Lang.CharSequence arg0)
             {
                 return IExecuteWithSignature<Android.App.ActionBar.Tab>("setText", "(Ljava/lang/CharSequence;)Landroid/app/ActionBar$Tab;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActionBar.Tab.html#getIcon()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+            [global::System.Obsolete()]
+            public Android.Graphics.Drawable.Drawable GetIcon()
+            {
+                return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getIcon", "()Landroid/graphics/drawable/Drawable;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActionBar.Tab.html#getCustomView()"/>
+            /// </summary>
+            /// <returns><see cref="Android.View.View"/></returns>
+            [global::System.Obsolete()]
+            public Android.View.View GetCustomView()
+            {
+                return IExecuteWithSignature<Android.View.View>("getCustomView", "()Landroid/view/View;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActionBar.Tab.html#getPosition()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetPosition()
+            {
+                return IExecuteWithSignature<int>("getPosition", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActionBar.Tab.html#getContentDescription()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            [global::System.Obsolete()]
+            public Java.Lang.CharSequence GetContentDescription()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActionBar.Tab.html#getText()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            [global::System.Obsolete()]
+            public Java.Lang.CharSequence GetText()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/ActionBar.Tab.html#getTag()"/>
+            /// </summary>
+            /// <returns><see cref="object"/></returns>
+            [global::System.Obsolete()]
+            public object GetTag()
+            {
+                return IExecuteWithSignature("getTag", "()Ljava/lang/Object;");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/ActionBar.Tab.html#select()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void Select()
             {
                 IExecuteWithSignature("select", "()V");
@@ -1076,9 +1128,9 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onTabReselected", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.App.ActionBar.Tab>>>(OnTabReselectedEventHandler));
-                AddEventHandler("onTabSelected", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.App.ActionBar.Tab>>>(OnTabSelectedEventHandler));
-                AddEventHandler("onTabUnselected", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.App.ActionBar.Tab>>>(OnTabUnselectedEventHandler));
+                AddEventHandler("onTabReselected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.App.ActionBar.Tab>>>(OnTabReselectedEventHandler));
+                AddEventHandler("onTabSelected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.App.ActionBar.Tab>>>(OnTabSelectedEventHandler));
+                AddEventHandler("onTabUnselected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.App.ActionBar.Tab>>>(OnTabUnselectedEventHandler));
 
             }
 
@@ -1086,7 +1138,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/ActionBar.TabListener.html#onTabReselected(android.app.ActionBar.Tab,android.app.FragmentTransaction)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTabReselected"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.App.ActionBar.Tab, Android.App.FragmentTransaction> OnOnTabReselected { get; set; } = null;
+            public global::System.Action<Android.App.ActionBar.Tab, Android.App.FragmentTransaction> OnOnTabReselected { get; set; } = null;
 
             void OnTabReselectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.App.ActionBar.Tab>> data)
             {
@@ -1099,7 +1151,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.ActionBar.Tab"/></param>
             /// <param name="arg1"><see cref="Android.App.FragmentTransaction"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnTabReselected(Android.App.ActionBar.Tab arg0, Android.App.FragmentTransaction arg1)
             {
                 
@@ -1109,7 +1161,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/ActionBar.TabListener.html#onTabSelected(android.app.ActionBar.Tab,android.app.FragmentTransaction)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTabSelected"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.App.ActionBar.Tab, Android.App.FragmentTransaction> OnOnTabSelected { get; set; } = null;
+            public global::System.Action<Android.App.ActionBar.Tab, Android.App.FragmentTransaction> OnOnTabSelected { get; set; } = null;
 
             void OnTabSelectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.App.ActionBar.Tab>> data)
             {
@@ -1122,7 +1174,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.ActionBar.Tab"/></param>
             /// <param name="arg1"><see cref="Android.App.FragmentTransaction"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnTabSelected(Android.App.ActionBar.Tab arg0, Android.App.FragmentTransaction arg1)
             {
                 
@@ -1132,7 +1184,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/ActionBar.TabListener.html#onTabUnselected(android.app.ActionBar.Tab,android.app.FragmentTransaction)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTabUnselected"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.App.ActionBar.Tab, Android.App.FragmentTransaction> OnOnTabUnselected { get; set; } = null;
+            public global::System.Action<Android.App.ActionBar.Tab, Android.App.FragmentTransaction> OnOnTabUnselected { get; set; } = null;
 
             void OnTabUnselectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.App.ActionBar.Tab>> data)
             {
@@ -1145,7 +1197,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.ActionBar.Tab"/></param>
             /// <param name="arg1"><see cref="Android.App.FragmentTransaction"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnTabUnselected(Android.App.ActionBar.Tab arg0, Android.App.FragmentTransaction arg1)
             {
                 
@@ -1186,7 +1238,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.ActionBar.Tab"/></param>
             /// <param name="arg1"><see cref="Android.App.FragmentTransaction"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnTabReselected(Android.App.ActionBar.Tab arg0, Android.App.FragmentTransaction arg1)
             {
                 IExecute("onTabReselected", arg0, arg1);
@@ -1196,7 +1248,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.ActionBar.Tab"/></param>
             /// <param name="arg1"><see cref="Android.App.FragmentTransaction"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnTabSelected(Android.App.ActionBar.Tab arg0, Android.App.FragmentTransaction arg1)
             {
                 IExecute("onTabSelected", arg0, arg1);
@@ -1206,7 +1258,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.ActionBar.Tab"/></param>
             /// <param name="arg1"><see cref="Android.App.FragmentTransaction"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnTabUnselected(Android.App.ActionBar.Tab arg0, Android.App.FragmentTransaction arg1)
             {
                 IExecute("onTabUnselected", arg0, arg1);

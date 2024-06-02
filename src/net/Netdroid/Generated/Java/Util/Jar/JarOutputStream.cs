@@ -30,7 +30,7 @@ namespace Java.Util.Jar
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.util.jar.Manifest)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.util.jar.Manifest)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Util.Jar.Manifest"/></param>
@@ -40,7 +40,7 @@ namespace Java.Util.Jar
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarOutputStream.html#%3Cinit%3E(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarOutputStream.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>

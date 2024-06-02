@@ -28,7 +28,7 @@ namespace Java.Nio.File.Attribute
 {
     #region AclEntry
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclEntry.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclEntry.html"/>
     /// </summary>
     public partial class AclEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AclEntry>
     {
@@ -68,7 +68,7 @@ namespace Java.Nio.File.Attribute
         // TODO: complete the class
         #region Builder
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclEntry.Builder.html"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclEntry.Builder.html"/>
         /// </summary>
         public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
         {
@@ -116,7 +116,7 @@ namespace Java.Nio.File.Attribute
 
     #region AclEntryFlag
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclEntryFlag.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclEntryFlag.html"/>
     /// </summary>
     public partial class AclEntryFlag : Java.Lang.Enum<Java.Nio.File.Attribute.AclEntryFlag>
     {
@@ -160,7 +160,7 @@ namespace Java.Nio.File.Attribute
 
     #region AclEntryPermission
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclEntryPermission.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclEntryPermission.html"/>
     /// </summary>
     public partial class AclEntryPermission : Java.Lang.Enum<Java.Nio.File.Attribute.AclEntryPermission>
     {
@@ -204,7 +204,7 @@ namespace Java.Nio.File.Attribute
 
     #region AclEntryType
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclEntryType.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclEntryType.html"/>
     /// </summary>
     public partial class AclEntryType : Java.Lang.Enum<Java.Nio.File.Attribute.AclEntryType>
     {
@@ -248,7 +248,7 @@ namespace Java.Nio.File.Attribute
 
     #region AclFileAttributeView
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclFileAttributeView.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclFileAttributeView.html"/>
     /// </summary>
     public partial class AclFileAttributeView : Java.Nio.File.Attribute.FileOwnerAttributeView
     {
@@ -256,12 +256,12 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AclFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AclFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AclFileAttributeView() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AclFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AclFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AclFileAttributeView(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -294,7 +294,7 @@ namespace Java.Nio.File.Attribute
 
     #region AttributeView
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AttributeView.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AttributeView.html"/>
     /// </summary>
     public partial class AttributeView : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AttributeView>
     {
@@ -302,12 +302,12 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AttributeView() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AttributeView(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -340,7 +340,7 @@ namespace Java.Nio.File.Attribute
 
     #region BasicFileAttributes
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/BasicFileAttributes.html"/>
     /// </summary>
     public partial class BasicFileAttributes : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BasicFileAttributes>
     {
@@ -348,12 +348,12 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("BasicFileAttributes class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BasicFileAttributes class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BasicFileAttributes() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("BasicFileAttributes class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BasicFileAttributes class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BasicFileAttributes(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -386,7 +386,7 @@ namespace Java.Nio.File.Attribute
 
     #region BasicFileAttributeView
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributeView.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/BasicFileAttributeView.html"/>
     /// </summary>
     public partial class BasicFileAttributeView : Java.Nio.File.Attribute.FileAttributeView
     {
@@ -394,12 +394,12 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("BasicFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BasicFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BasicFileAttributeView() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("BasicFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BasicFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BasicFileAttributeView(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -432,7 +432,7 @@ namespace Java.Nio.File.Attribute
 
     #region DosFileAttributes
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributes.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/DosFileAttributes.html"/>
     /// </summary>
     public partial class DosFileAttributes : Java.Nio.File.Attribute.BasicFileAttributes
     {
@@ -440,12 +440,12 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DosFileAttributes class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DosFileAttributes class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DosFileAttributes() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DosFileAttributes class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DosFileAttributes class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DosFileAttributes(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -478,7 +478,7 @@ namespace Java.Nio.File.Attribute
 
     #region DosFileAttributeView
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributeView.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/DosFileAttributeView.html"/>
     /// </summary>
     public partial class DosFileAttributeView : Java.Nio.File.Attribute.BasicFileAttributeView
     {
@@ -486,12 +486,12 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DosFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DosFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DosFileAttributeView() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DosFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DosFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DosFileAttributeView(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -524,7 +524,7 @@ namespace Java.Nio.File.Attribute
 
     #region FileAttribute
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileAttribute.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileAttribute.html"/>
     /// </summary>
     public partial class FileAttribute : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileAttribute>
     {
@@ -532,12 +532,12 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FileAttribute class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileAttribute class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileAttribute() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FileAttribute class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileAttribute class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileAttribute(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -570,7 +570,7 @@ namespace Java.Nio.File.Attribute
 
     #region FileAttribute<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileAttribute.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileAttribute.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class FileAttribute<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileAttribute<T>>
@@ -579,12 +579,12 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FileAttribute class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileAttribute class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileAttribute() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FileAttribute class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileAttribute class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileAttribute(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -617,7 +617,7 @@ namespace Java.Nio.File.Attribute
 
     #region FileAttributeView
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileAttributeView.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileAttributeView.html"/>
     /// </summary>
     public partial class FileAttributeView : Java.Nio.File.Attribute.AttributeView
     {
@@ -625,12 +625,12 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileAttributeView() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileAttributeView(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -663,7 +663,7 @@ namespace Java.Nio.File.Attribute
 
     #region FileOwnerAttributeView
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileOwnerAttributeView.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileOwnerAttributeView.html"/>
     /// </summary>
     public partial class FileOwnerAttributeView : Java.Nio.File.Attribute.FileAttributeView
     {
@@ -671,12 +671,12 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FileOwnerAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileOwnerAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileOwnerAttributeView() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FileOwnerAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileOwnerAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileOwnerAttributeView(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -709,7 +709,7 @@ namespace Java.Nio.File.Attribute
 
     #region FileStoreAttributeView
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileStoreAttributeView.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileStoreAttributeView.html"/>
     /// </summary>
     public partial class FileStoreAttributeView : Java.Nio.File.Attribute.AttributeView
     {
@@ -717,12 +717,12 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FileStoreAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileStoreAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileStoreAttributeView() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FileStoreAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileStoreAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileStoreAttributeView(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -755,7 +755,7 @@ namespace Java.Nio.File.Attribute
 
     #region FileTime
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileTime.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileTime.html"/>
     /// </summary>
     public partial class FileTime : Java.Lang.Comparable<Java.Nio.File.Attribute.FileTime>
     {
@@ -799,7 +799,7 @@ namespace Java.Nio.File.Attribute
 
     #region GroupPrincipal
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/GroupPrincipal.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/GroupPrincipal.html"/>
     /// </summary>
     public partial class GroupPrincipal : Java.Nio.File.Attribute.UserPrincipal
     {
@@ -807,12 +807,12 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("GroupPrincipal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("GroupPrincipal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public GroupPrincipal() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("GroupPrincipal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("GroupPrincipal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public GroupPrincipal(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -845,7 +845,7 @@ namespace Java.Nio.File.Attribute
 
     #region PosixFileAttributes
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/PosixFileAttributes.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/PosixFileAttributes.html"/>
     /// </summary>
     public partial class PosixFileAttributes : Java.Nio.File.Attribute.BasicFileAttributes
     {
@@ -853,12 +853,12 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("PosixFileAttributes class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PosixFileAttributes class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PosixFileAttributes() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("PosixFileAttributes class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PosixFileAttributes class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PosixFileAttributes(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -891,7 +891,7 @@ namespace Java.Nio.File.Attribute
 
     #region PosixFileAttributeView
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/PosixFileAttributeView.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/PosixFileAttributeView.html"/>
     /// </summary>
     public partial class PosixFileAttributeView : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PosixFileAttributeView>
     {
@@ -899,12 +899,12 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("PosixFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PosixFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PosixFileAttributeView() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("PosixFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PosixFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PosixFileAttributeView(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -937,7 +937,7 @@ namespace Java.Nio.File.Attribute
 
     #region PosixFilePermission
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/PosixFilePermission.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/PosixFilePermission.html"/>
     /// </summary>
     public partial class PosixFilePermission : Java.Lang.Enum<Java.Nio.File.Attribute.PosixFilePermission>
     {
@@ -981,7 +981,7 @@ namespace Java.Nio.File.Attribute
 
     #region PosixFilePermissions
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/PosixFilePermissions.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/PosixFilePermissions.html"/>
     /// </summary>
     public partial class PosixFilePermissions : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PosixFilePermissions>
     {
@@ -1025,7 +1025,7 @@ namespace Java.Nio.File.Attribute
 
     #region UserDefinedFileAttributeView
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/UserDefinedFileAttributeView.html"/>
     /// </summary>
     public partial class UserDefinedFileAttributeView : Java.Nio.File.Attribute.FileAttributeView
     {
@@ -1033,12 +1033,12 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("UserDefinedFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("UserDefinedFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public UserDefinedFileAttributeView() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("UserDefinedFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("UserDefinedFileAttributeView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public UserDefinedFileAttributeView(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1071,7 +1071,7 @@ namespace Java.Nio.File.Attribute
 
     #region UserPrincipal
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/UserPrincipal.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/UserPrincipal.html"/>
     /// </summary>
     public partial class UserPrincipal : Java.Security.Principal
     {
@@ -1079,12 +1079,12 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("UserPrincipal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("UserPrincipal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public UserPrincipal() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("UserPrincipal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("UserPrincipal class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public UserPrincipal(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1117,7 +1117,7 @@ namespace Java.Nio.File.Attribute
 
     #region UserPrincipalLookupService
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/UserPrincipalLookupService.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/UserPrincipalLookupService.html"/>
     /// </summary>
     public partial class UserPrincipalLookupService : MASES.JCOBridge.C2JBridge.JVMBridgeBase<UserPrincipalLookupService>
     {
@@ -1125,12 +1125,12 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("UserPrincipalLookupService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("UserPrincipalLookupService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public UserPrincipalLookupService() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("UserPrincipalLookupService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("UserPrincipalLookupService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public UserPrincipalLookupService(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1163,7 +1163,7 @@ namespace Java.Nio.File.Attribute
 
     #region UserPrincipalNotFoundException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/UserPrincipalNotFoundException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/attribute/UserPrincipalNotFoundException.html"/>
     /// </summary>
     public partial class UserPrincipalNotFoundException : Java.Io.IOException
     {

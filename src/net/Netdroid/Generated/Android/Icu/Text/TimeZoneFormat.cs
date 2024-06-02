@@ -72,41 +72,6 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getDefaultParseOptions()"/> 
-        /// </summary>
-        public Java.Util.EnumSet<Android.Icu.Text.TimeZoneFormat.ParseOption> DefaultParseOptions
-        {
-            get { return IExecuteWithSignature<Java.Util.EnumSet<Android.Icu.Text.TimeZoneFormat.ParseOption>>("getDefaultParseOptions", "()Ljava/util/EnumSet;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getGMTOffsetDigits()"/> 
-        /// </summary>
-        public Java.Lang.String GMTOffsetDigits
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getGMTOffsetDigits", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getGMTPattern()"/> 
-        /// </summary>
-        public Java.Lang.String GMTPattern
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getGMTPattern", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getGMTZeroFormat()"/> 
-        /// </summary>
-        public Java.Lang.String GMTZeroFormat
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getGMTZeroFormat", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getTimeZoneNames()"/> 
-        /// </summary>
-        public Android.Icu.Text.TimeZoneNames TimeZoneNames
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.TimeZoneNames>("getTimeZoneNames", "()Landroid/icu/text/TimeZoneNames;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#setDefaultParseOptions(java.util.EnumSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.EnumSet"/></param>
@@ -160,6 +125,14 @@ namespace Android.Icu.Text
         public Android.Icu.Text.TimeZoneFormat SetTimeZoneNames(Android.Icu.Text.TimeZoneNames arg0)
         {
             return IExecuteWithSignature<Android.Icu.Text.TimeZoneFormat>("setTimeZoneNames", "(Landroid/icu/text/TimeZoneNames;)Landroid/icu/text/TimeZoneFormat;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getTimeZoneNames()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.TimeZoneNames"/></returns>
+        public Android.Icu.Text.TimeZoneNames GetTimeZoneNames()
+        {
+            return IExecuteWithSignature<Android.Icu.Text.TimeZoneNames>("getTimeZoneNames", "()Landroid/icu/text/TimeZoneNames;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#parse(android.icu.text.TimeZoneFormat.Style,java.lang.String,java.text.ParsePosition,android.icu.util.Output)"/>
@@ -326,6 +299,14 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<Java.Lang.String>("formatOffsetShortLocalizedGMT", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getGMTOffsetDigits()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetGMTOffsetDigits()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getGMTOffsetDigits", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getGMTOffsetPattern(android.icu.text.TimeZoneFormat.GMTOffsetPatternType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Text.TimeZoneFormat.GMTOffsetPatternType"/></param>
@@ -333,6 +314,30 @@ namespace Android.Icu.Text
         public Java.Lang.String GetGMTOffsetPattern(Android.Icu.Text.TimeZoneFormat.GMTOffsetPatternType arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getGMTOffsetPattern", "(Landroid/icu/text/TimeZoneFormat$GMTOffsetPatternType;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getGMTPattern()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetGMTPattern()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getGMTPattern", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getGMTZeroFormat()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetGMTZeroFormat()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getGMTZeroFormat", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneFormat.html#getDefaultParseOptions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.EnumSet"/></returns>
+        public Java.Util.EnumSet<Android.Icu.Text.TimeZoneFormat.ParseOption> GetDefaultParseOptions()
+        {
+            return IExecuteWithSignature<Java.Util.EnumSet<Android.Icu.Text.TimeZoneFormat.ParseOption>>("getDefaultParseOptions", "()Ljava/util/EnumSet;");
         }
 
         #endregion

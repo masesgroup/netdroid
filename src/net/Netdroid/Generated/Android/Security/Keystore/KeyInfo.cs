@@ -46,115 +46,10 @@ namespace Android.Security.Keystore
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getBlockModes()"/> 
-        /// </summary>
-        public Java.Lang.String[] BlockModes
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getBlockModes", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getDigests()"/> 
-        /// </summary>
-        public Java.Lang.String[] Digests
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getDigests", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getEncryptionPaddings()"/> 
-        /// </summary>
-        public Java.Lang.String[] EncryptionPaddings
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getEncryptionPaddings", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getKeySize()"/> 
-        /// </summary>
-        public int KeySize
-        {
-            get { return IExecuteWithSignature<int>("getKeySize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getKeystoreAlias()"/> 
-        /// </summary>
-        public Java.Lang.String KeystoreAlias
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getKeystoreAlias", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getKeyValidityForConsumptionEnd()"/> 
-        /// </summary>
-        public Java.Util.Date KeyValidityForConsumptionEnd
-        {
-            get { return IExecuteWithSignature<Java.Util.Date>("getKeyValidityForConsumptionEnd", "()Ljava/util/Date;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getKeyValidityForOriginationEnd()"/> 
-        /// </summary>
-        public Java.Util.Date KeyValidityForOriginationEnd
-        {
-            get { return IExecuteWithSignature<Java.Util.Date>("getKeyValidityForOriginationEnd", "()Ljava/util/Date;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getKeyValidityStart()"/> 
-        /// </summary>
-        public Java.Util.Date KeyValidityStart
-        {
-            get { return IExecuteWithSignature<Java.Util.Date>("getKeyValidityStart", "()Ljava/util/Date;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getOrigin()"/> 
-        /// </summary>
-        public int Origin
-        {
-            get { return IExecuteWithSignature<int>("getOrigin", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getPurposes()"/> 
-        /// </summary>
-        public int Purposes
-        {
-            get { return IExecuteWithSignature<int>("getPurposes", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getRemainingUsageCount()"/> 
-        /// </summary>
-        public int RemainingUsageCount
-        {
-            get { return IExecuteWithSignature<int>("getRemainingUsageCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getSecurityLevel()"/> 
-        /// </summary>
-        public int SecurityLevel
-        {
-            get { return IExecuteWithSignature<int>("getSecurityLevel", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getSignaturePaddings()"/> 
-        /// </summary>
-        public Java.Lang.String[] SignaturePaddings
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getSignaturePaddings", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getUserAuthenticationType()"/> 
-        /// </summary>
-        public int UserAuthenticationType
-        {
-            get { return IExecuteWithSignature<int>("getUserAuthenticationType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getUserAuthenticationValidityDurationSeconds()"/> 
-        /// </summary>
-        public int UserAuthenticationValidityDurationSeconds
-        {
-            get { return IExecuteWithSignature<int>("getUserAuthenticationValidityDurationSeconds", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#isInsideSecureHardware()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsInsideSecureHardware()
         {
             return IExecuteWithSignature<bool>("isInsideSecureHardware", "()Z");
@@ -206,6 +101,126 @@ namespace Android.Security.Keystore
         public bool IsUserConfirmationRequired()
         {
             return IExecuteWithSignature<bool>("isUserConfirmationRequired", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getKeySize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetKeySize()
+        {
+            return IExecuteWithSignature<int>("getKeySize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getOrigin()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOrigin()
+        {
+            return IExecuteWithSignature<int>("getOrigin", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getPurposes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPurposes()
+        {
+            return IExecuteWithSignature<int>("getPurposes", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getRemainingUsageCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRemainingUsageCount()
+        {
+            return IExecuteWithSignature<int>("getRemainingUsageCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getSecurityLevel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSecurityLevel()
+        {
+            return IExecuteWithSignature<int>("getSecurityLevel", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getUserAuthenticationType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUserAuthenticationType()
+        {
+            return IExecuteWithSignature<int>("getUserAuthenticationType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getUserAuthenticationValidityDurationSeconds()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUserAuthenticationValidityDurationSeconds()
+        {
+            return IExecuteWithSignature<int>("getUserAuthenticationValidityDurationSeconds", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getKeystoreAlias()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetKeystoreAlias()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getKeystoreAlias", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getBlockModes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetBlockModes()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getBlockModes", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getDigests()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetDigests()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getDigests", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getEncryptionPaddings()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetEncryptionPaddings()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getEncryptionPaddings", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getSignaturePaddings()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetSignaturePaddings()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getSignaturePaddings", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getKeyValidityForConsumptionEnd()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Date"/></returns>
+        public Java.Util.Date GetKeyValidityForConsumptionEnd()
+        {
+            return IExecuteWithSignature<Java.Util.Date>("getKeyValidityForConsumptionEnd", "()Ljava/util/Date;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getKeyValidityForOriginationEnd()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Date"/></returns>
+        public Java.Util.Date GetKeyValidityForOriginationEnd()
+        {
+            return IExecuteWithSignature<Java.Util.Date>("getKeyValidityForOriginationEnd", "()Ljava/util/Date;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/keystore/KeyInfo.html#getKeyValidityStart()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Date"/></returns>
+        public Java.Util.Date GetKeyValidityStart()
+        {
+            return IExecuteWithSignature<Java.Util.Date>("getKeyValidityStart", "()Ljava/util/Date;");
         }
 
         #endregion

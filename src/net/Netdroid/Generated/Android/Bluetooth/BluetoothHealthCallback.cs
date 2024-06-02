@@ -50,7 +50,7 @@ namespace Android.Bluetooth
         /// </summary>
         /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothHealthAppConfiguration"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnHealthAppConfigurationStatusChange(Android.Bluetooth.BluetoothHealthAppConfiguration arg0, int arg1)
         {
             IExecute("onHealthAppConfigurationStatusChange", arg0, arg1);
@@ -64,7 +64,7 @@ namespace Android.Bluetooth
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="Android.Os.ParcelFileDescriptor"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnHealthChannelStateChange(Android.Bluetooth.BluetoothHealthAppConfiguration arg0, Android.Bluetooth.BluetoothDevice arg1, int arg2, int arg3, Android.Os.ParcelFileDescriptor arg4, int arg5)
         {
             IExecute("onHealthChannelStateChange", arg0, arg1, arg2, arg3, arg4, arg5);

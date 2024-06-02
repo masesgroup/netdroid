@@ -54,11 +54,12 @@ namespace Android.Adservices.Adselection
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/RemoveAdSelectionOverrideRequest.html#getAdSelectionConfig()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/RemoveAdSelectionOverrideRequest.html#getAdSelectionConfig()"/>
         /// </summary>
-        public Android.Adservices.Adselection.AdSelectionConfig AdSelectionConfig
+        /// <returns><see cref="Android.Adservices.Adselection.AdSelectionConfig"/></returns>
+        public Android.Adservices.Adselection.AdSelectionConfig GetAdSelectionConfig()
         {
-            get { return IExecuteWithSignature<Android.Adservices.Adselection.AdSelectionConfig>("getAdSelectionConfig", "()Landroid/adservices/adselection/AdSelectionConfig;"); }
+            return IExecuteWithSignature<Android.Adservices.Adselection.AdSelectionConfig>("getAdSelectionConfig", "()Landroid/adservices/adselection/AdSelectionConfig;");
         }
 
         #endregion

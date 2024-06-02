@@ -73,13 +73,6 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#getAudioPresentations()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Media.AudioPresentation> AudioPresentations
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.AudioPresentation>>("getAudioPresentations", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#dispatchUnhandledInputEvent(android.view.InputEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.InputEvent"/></param>
@@ -105,6 +98,14 @@ namespace Android.Media.Tv
         public Java.Lang.String GetSelectedTrack(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getSelectedTrack", "(I)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#getAudioPresentations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.AudioPresentation> GetAudioPresentations()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.AudioPresentation>>("getAudioPresentations", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvView.html#getTracks(int)"/>
@@ -325,7 +326,7 @@ namespace Android.Media.Tv
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onUnhandledInputEvent", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.InputEvent>>>(OnUnhandledInputEventEventHandler));
+                AddEventHandler("onUnhandledInputEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.InputEvent>>>(OnUnhandledInputEventEventHandler));
 
             }
 
@@ -333,7 +334,7 @@ namespace Android.Media.Tv
             /// Handler for <see href="https://developer.android.com/reference/android/media/tv/TvView.OnUnhandledInputEventListener.html#onUnhandledInputEvent(android.view.InputEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnUnhandledInputEvent"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.InputEvent, bool> OnOnUnhandledInputEvent { get; set; } = null;
+            public global::System.Func<Android.View.InputEvent, bool> OnOnUnhandledInputEvent { get; set; } = null;
 
             void OnUnhandledInputEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.InputEvent>> data)
             {

@@ -84,179 +84,44 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getCollapseContentDescription()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getCollapseIcon()"/>
         /// </summary>
-        public Java.Lang.CharSequence CollapseContentDescription
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetCollapseIcon()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getCollapseContentDescription", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getCollapseIcon", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getCollapseIcon()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getLogo()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable CollapseIcon
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetLogo()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getCollapseIcon", "()Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getLogo", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getContentInsetEnd()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getNavigationIcon()"/>
         /// </summary>
-        public int ContentInsetEnd
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetNavigationIcon()
         {
-            get { return IExecuteWithSignature<int>("getContentInsetEnd", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getNavigationIcon", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getContentInsetEndWithActions()"/> <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setContentInsetEndWithActions(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getOverflowIcon()"/>
         /// </summary>
-        public int ContentInsetEndWithActions
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetOverflowIcon()
         {
-            get { return IExecuteWithSignature<int>("getContentInsetEndWithActions", "()I"); } set { IExecuteWithSignature("setContentInsetEndWithActions", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getOverflowIcon", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getContentInsetLeft()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getMenu()"/>
         /// </summary>
-        public int ContentInsetLeft
+        /// <returns><see cref="Android.View.Menu"/></returns>
+        public Android.View.Menu GetMenu()
         {
-            get { return IExecuteWithSignature<int>("getContentInsetLeft", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getContentInsetRight()"/> 
-        /// </summary>
-        public int ContentInsetRight
-        {
-            get { return IExecuteWithSignature<int>("getContentInsetRight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getContentInsetStart()"/> 
-        /// </summary>
-        public int ContentInsetStart
-        {
-            get { return IExecuteWithSignature<int>("getContentInsetStart", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getContentInsetStartWithNavigation()"/> <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setContentInsetStartWithNavigation(int)"/>
-        /// </summary>
-        public int ContentInsetStartWithNavigation
-        {
-            get { return IExecuteWithSignature<int>("getContentInsetStartWithNavigation", "()I"); } set { IExecuteWithSignature("setContentInsetStartWithNavigation", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getCurrentContentInsetEnd()"/> 
-        /// </summary>
-        public int CurrentContentInsetEnd
-        {
-            get { return IExecuteWithSignature<int>("getCurrentContentInsetEnd", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getCurrentContentInsetLeft()"/> 
-        /// </summary>
-        public int CurrentContentInsetLeft
-        {
-            get { return IExecuteWithSignature<int>("getCurrentContentInsetLeft", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getCurrentContentInsetRight()"/> 
-        /// </summary>
-        public int CurrentContentInsetRight
-        {
-            get { return IExecuteWithSignature<int>("getCurrentContentInsetRight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getCurrentContentInsetStart()"/> 
-        /// </summary>
-        public int CurrentContentInsetStart
-        {
-            get { return IExecuteWithSignature<int>("getCurrentContentInsetStart", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getLogo()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable Logo
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getLogo", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getLogoDescription()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence LogoDescription
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getLogoDescription", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getMenu()"/> 
-        /// </summary>
-        public Android.View.Menu Menu
-        {
-            get { return IExecuteWithSignature<Android.View.Menu>("getMenu", "()Landroid/view/Menu;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getNavigationContentDescription()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence NavigationContentDescription
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getNavigationContentDescription", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getNavigationIcon()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable NavigationIcon
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getNavigationIcon", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getOverflowIcon()"/> <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setOverflowIcon(android.graphics.drawable.Drawable)"/>
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable OverflowIcon
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getOverflowIcon", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setOverflowIcon", "(Landroid/graphics/drawable/Drawable;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getPopupTheme()"/> <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setPopupTheme(int)"/>
-        /// </summary>
-        public int PopupTheme
-        {
-            get { return IExecuteWithSignature<int>("getPopupTheme", "()I"); } set { IExecuteWithSignature("setPopupTheme", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getSubtitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Subtitle
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSubtitle", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getTitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Title
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getTitleMarginBottom()"/> <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setTitleMarginBottom(int)"/>
-        /// </summary>
-        public int TitleMarginBottom
-        {
-            get { return IExecuteWithSignature<int>("getTitleMarginBottom", "()I"); } set { IExecuteWithSignature("setTitleMarginBottom", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getTitleMarginEnd()"/> <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setTitleMarginEnd(int)"/>
-        /// </summary>
-        public int TitleMarginEnd
-        {
-            get { return IExecuteWithSignature<int>("getTitleMarginEnd", "()I"); } set { IExecuteWithSignature("setTitleMarginEnd", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getTitleMarginStart()"/> <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setTitleMarginStart(int)"/>
-        /// </summary>
-        public int TitleMarginStart
-        {
-            get { return IExecuteWithSignature<int>("getTitleMarginStart", "()I"); } set { IExecuteWithSignature("setTitleMarginStart", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getTitleMarginTop()"/> <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setTitleMarginTop(int)"/>
-        /// </summary>
-        public int TitleMarginTop
-        {
-            get { return IExecuteWithSignature<int>("getTitleMarginTop", "()I"); } set { IExecuteWithSignature("setTitleMarginTop", "(I)V", value); }
+            return IExecuteWithSignature<Android.View.Menu>("getMenu", "()Landroid/view/Menu;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#hasExpandedActionView()"/>
@@ -289,6 +154,166 @@ namespace Android.Widget
         public bool ShowOverflowMenu()
         {
             return IExecuteWithSignature<bool>("showOverflowMenu", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getContentInsetEnd()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetContentInsetEnd()
+        {
+            return IExecuteWithSignature<int>("getContentInsetEnd", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getContentInsetEndWithActions()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetContentInsetEndWithActions()
+        {
+            return IExecuteWithSignature<int>("getContentInsetEndWithActions", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getContentInsetLeft()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetContentInsetLeft()
+        {
+            return IExecuteWithSignature<int>("getContentInsetLeft", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getContentInsetRight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetContentInsetRight()
+        {
+            return IExecuteWithSignature<int>("getContentInsetRight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getContentInsetStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetContentInsetStart()
+        {
+            return IExecuteWithSignature<int>("getContentInsetStart", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getContentInsetStartWithNavigation()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetContentInsetStartWithNavigation()
+        {
+            return IExecuteWithSignature<int>("getContentInsetStartWithNavigation", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getCurrentContentInsetEnd()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentContentInsetEnd()
+        {
+            return IExecuteWithSignature<int>("getCurrentContentInsetEnd", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getCurrentContentInsetLeft()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentContentInsetLeft()
+        {
+            return IExecuteWithSignature<int>("getCurrentContentInsetLeft", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getCurrentContentInsetRight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentContentInsetRight()
+        {
+            return IExecuteWithSignature<int>("getCurrentContentInsetRight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getCurrentContentInsetStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentContentInsetStart()
+        {
+            return IExecuteWithSignature<int>("getCurrentContentInsetStart", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getPopupTheme()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPopupTheme()
+        {
+            return IExecuteWithSignature<int>("getPopupTheme", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getTitleMarginBottom()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTitleMarginBottom()
+        {
+            return IExecuteWithSignature<int>("getTitleMarginBottom", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getTitleMarginEnd()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTitleMarginEnd()
+        {
+            return IExecuteWithSignature<int>("getTitleMarginEnd", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getTitleMarginStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTitleMarginStart()
+        {
+            return IExecuteWithSignature<int>("getTitleMarginStart", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getTitleMarginTop()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTitleMarginTop()
+        {
+            return IExecuteWithSignature<int>("getTitleMarginTop", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getCollapseContentDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetCollapseContentDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getCollapseContentDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getLogoDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetLogoDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getLogoDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getNavigationContentDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetNavigationContentDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getNavigationContentDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getSubtitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetSubtitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getSubtitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#getTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#collapseActionView()"/>
@@ -345,6 +370,14 @@ namespace Android.Widget
             IExecuteWithSignature("setCollapseIcon", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setContentInsetEndWithActions(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetContentInsetEndWithActions(int arg0)
+        {
+            IExecuteWithSignature("setContentInsetEndWithActions", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setContentInsetsAbsolute(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -361,6 +394,14 @@ namespace Android.Widget
         public void SetContentInsetsRelative(int arg0, int arg1)
         {
             IExecute("setContentInsetsRelative", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setContentInsetStartWithNavigation(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetContentInsetStartWithNavigation(int arg0)
+        {
+            IExecuteWithSignature("setContentInsetStartWithNavigation", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setLogo(android.graphics.drawable.Drawable)"/>
@@ -443,6 +484,22 @@ namespace Android.Widget
             IExecuteWithSignature("setOnMenuItemClickListener", "(Landroid/widget/Toolbar$OnMenuItemClickListener;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setOverflowIcon(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetOverflowIcon(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setOverflowIcon", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setPopupTheme(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetPopupTheme(int arg0)
+        {
+            IExecuteWithSignature("setPopupTheme", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setSubtitle(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -501,6 +558,38 @@ namespace Android.Widget
         public void SetTitleMargin(int arg0, int arg1, int arg2, int arg3)
         {
             IExecute("setTitleMargin", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setTitleMarginBottom(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTitleMarginBottom(int arg0)
+        {
+            IExecuteWithSignature("setTitleMarginBottom", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setTitleMarginEnd(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTitleMarginEnd(int arg0)
+        {
+            IExecuteWithSignature("setTitleMarginEnd", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setTitleMarginStart(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTitleMarginStart(int arg0)
+        {
+            IExecuteWithSignature("setTitleMarginStart", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setTitleMarginTop(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTitleMarginTop(int arg0)
+        {
+            IExecuteWithSignature("setTitleMarginTop", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Toolbar.html#setTitleTextAppearance(android.content.Context,int)"/>
@@ -647,7 +736,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onMenuItemClick", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MenuItem>>>(OnMenuItemClickEventHandler));
+                AddEventHandler("onMenuItemClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MenuItem>>>(OnMenuItemClickEventHandler));
 
             }
 
@@ -655,7 +744,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/Toolbar.OnMenuItemClickListener.html#onMenuItemClick(android.view.MenuItem)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMenuItemClick"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MenuItem, bool> OnOnMenuItemClick { get; set; } = null;
+            public global::System.Func<Android.View.MenuItem, bool> OnOnMenuItemClick { get; set; } = null;
 
             void OnMenuItemClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MenuItem>> data)
             {

@@ -79,97 +79,6 @@ namespace Android.Transition
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getDuration()"/> 
-        /// </summary>
-        public long Duration
-        {
-            get { return IExecuteWithSignature<long>("getDuration", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getEpicenter()"/> 
-        /// </summary>
-        public Android.Graphics.Rect Epicenter
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getEpicenter", "()Landroid/graphics/Rect;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getEpicenterCallback()"/> 
-        /// </summary>
-        public Android.Transition.Transition.EpicenterCallback GetEpicenterCallback
-        {
-            get { return IExecuteWithSignature<Android.Transition.Transition.EpicenterCallback>("getEpicenterCallback", "()Landroid/transition/Transition$EpicenterCallback;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getInterpolator()"/> 
-        /// </summary>
-        public Android.Animation.TimeInterpolator Interpolator
-        {
-            get { return IExecuteWithSignature<Android.Animation.TimeInterpolator>("getInterpolator", "()Landroid/animation/TimeInterpolator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getPathMotion()"/> <see href="https://developer.android.com/reference/android/transition/Transition.html#setPathMotion(android.transition.PathMotion)"/>
-        /// </summary>
-        public Android.Transition.PathMotion PathMotion
-        {
-            get { return IExecuteWithSignature<Android.Transition.PathMotion>("getPathMotion", "()Landroid/transition/PathMotion;"); } set { IExecuteWithSignature("setPathMotion", "(Landroid/transition/PathMotion;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getPropagation()"/> <see href="https://developer.android.com/reference/android/transition/Transition.html#setPropagation(android.transition.TransitionPropagation)"/>
-        /// </summary>
-        public Android.Transition.TransitionPropagation Propagation
-        {
-            get { return IExecuteWithSignature<Android.Transition.TransitionPropagation>("getPropagation", "()Landroid/transition/TransitionPropagation;"); } set { IExecuteWithSignature("setPropagation", "(Landroid/transition/TransitionPropagation;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getStartDelay()"/> 
-        /// </summary>
-        public long StartDelay
-        {
-            get { return IExecuteWithSignature<long>("getStartDelay", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getTargetIds()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.Integer> TargetIds
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getTargetIds", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getTargetNames()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> TargetNames
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getTargetNames", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getTargets()"/> 
-        /// </summary>
-        public Java.Util.List<Android.View.View> Targets
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.View.View>>("getTargets", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getTargetTypes()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.Class> TargetTypes
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.Class>>("getTargetTypes", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getTransitionProperties()"/> 
-        /// </summary>
-        public Java.Lang.String[] TransitionProperties
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getTransitionProperties", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Transition.html#captureEndValues(android.transition.TransitionValues)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Transition.TransitionValues"/></param>
@@ -195,6 +104,30 @@ namespace Android.Transition
         public Android.Animation.Animator CreateAnimator(Android.View.ViewGroup arg0, Android.Transition.TransitionValues arg1, Android.Transition.TransitionValues arg2)
         {
             return IExecute<Android.Animation.Animator>("createAnimator", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getInterpolator()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Animation.TimeInterpolator"/></returns>
+        public Android.Animation.TimeInterpolator GetInterpolator()
+        {
+            return IExecuteWithSignature<Android.Animation.TimeInterpolator>("getInterpolator", "()Landroid/animation/TimeInterpolator;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getEpicenter()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetEpicenter()
+        {
+            return IExecuteWithSignature<Android.Graphics.Rect>("getEpicenter", "()Landroid/graphics/Rect;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getPathMotion()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.PathMotion"/></returns>
+        public Android.Transition.PathMotion GetPathMotion()
+        {
+            return IExecuteWithSignature<Android.Transition.PathMotion>("getPathMotion", "()Landroid/transition/PathMotion;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Transition.html#addListener(android.transition.Transition.TransitionListener)"/>
@@ -392,6 +325,22 @@ namespace Android.Transition
             return IExecuteWithSignature<Android.Transition.Transition>("setStartDelay", "(J)Landroid/transition/Transition;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getEpicenterCallback()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.Transition.EpicenterCallback"/></returns>
+        public Android.Transition.Transition.EpicenterCallback GetEpicenterCallback()
+        {
+            return IExecuteWithSignature<Android.Transition.Transition.EpicenterCallback>("getEpicenterCallback", "()Landroid/transition/Transition$EpicenterCallback;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getPropagation()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.TransitionPropagation"/></returns>
+        public Android.Transition.TransitionPropagation GetPropagation()
+        {
+            return IExecuteWithSignature<Android.Transition.TransitionPropagation>("getPropagation", "()Landroid/transition/TransitionPropagation;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getTransitionValues(android.view.View,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
@@ -420,6 +369,70 @@ namespace Android.Transition
             return IExecute<bool>("isTransitionRequired", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getTransitionProperties()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetTransitionProperties()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getTransitionProperties", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getTargets()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.View> GetTargets()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.View.View>>("getTargets", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getTargetTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.Class> GetTargetTypes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.Class>>("getTargetTypes", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getTargetIds()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.Integer> GetTargetIds()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getTargetIds", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getTargetNames()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetTargetNames()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getTargetNames", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getDuration()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDuration()
+        {
+            return IExecuteWithSignature<long>("getDuration", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#getStartDelay()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetStartDelay()
+        {
+            return IExecuteWithSignature<long>("getStartDelay", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/Transition.html#setEpicenterCallback(android.transition.Transition.EpicenterCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Transition.Transition.EpicenterCallback"/></param>
@@ -434,6 +447,22 @@ namespace Android.Transition
         public void SetMatchOrder(params int[] arg0)
         {
             if (arg0.Length == 0) IExecuteWithSignature("setMatchOrder", "([I)V"); else IExecuteWithSignature("setMatchOrder", "([I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#setPathMotion(android.transition.PathMotion)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.PathMotion"/></param>
+        public void SetPathMotion(Android.Transition.PathMotion arg0)
+        {
+            IExecuteWithSignature("setPathMotion", "(Landroid/transition/PathMotion;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/Transition.html#setPropagation(android.transition.TransitionPropagation)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.TransitionPropagation"/></param>
+        public void SetPropagation(Android.Transition.TransitionPropagation arg0)
+        {
+            IExecuteWithSignature("setPropagation", "(Landroid/transition/TransitionPropagation;)V", arg0);
         }
 
         #endregion
@@ -504,11 +533,11 @@ namespace Android.Transition
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onTransitionCancel", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionCancelEventHandler));
-                AddEventHandler("onTransitionEnd", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionEndEventHandler));
-                AddEventHandler("onTransitionPause", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionPauseEventHandler));
-                AddEventHandler("onTransitionResume", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionResumeEventHandler));
-                AddEventHandler("onTransitionStart", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionStartEventHandler));
+                AddEventHandler("onTransitionCancel", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionCancelEventHandler));
+                AddEventHandler("onTransitionEnd", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionEndEventHandler));
+                AddEventHandler("onTransitionPause", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionPauseEventHandler));
+                AddEventHandler("onTransitionResume", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionResumeEventHandler));
+                AddEventHandler("onTransitionStart", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionStartEventHandler));
 
             }
 
@@ -516,7 +545,7 @@ namespace Android.Transition
             /// Handler for <see href="https://developer.android.com/reference/android/transition/Transition.TransitionListener.html#onTransitionCancel(android.transition.Transition)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTransitionCancel"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Transition.Transition> OnOnTransitionCancel { get; set; } = null;
+            public global::System.Action<Android.Transition.Transition> OnOnTransitionCancel { get; set; } = null;
 
             void OnTransitionCancelEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Transition.Transition>> data)
             {
@@ -537,7 +566,7 @@ namespace Android.Transition
             /// Handler for <see href="https://developer.android.com/reference/android/transition/Transition.TransitionListener.html#onTransitionEnd(android.transition.Transition)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTransitionEnd"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Transition.Transition> OnOnTransitionEnd { get; set; } = null;
+            public global::System.Action<Android.Transition.Transition> OnOnTransitionEnd { get; set; } = null;
 
             void OnTransitionEndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Transition.Transition>> data)
             {
@@ -558,7 +587,7 @@ namespace Android.Transition
             /// Handler for <see href="https://developer.android.com/reference/android/transition/Transition.TransitionListener.html#onTransitionPause(android.transition.Transition)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTransitionPause"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Transition.Transition> OnOnTransitionPause { get; set; } = null;
+            public global::System.Action<Android.Transition.Transition> OnOnTransitionPause { get; set; } = null;
 
             void OnTransitionPauseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Transition.Transition>> data)
             {
@@ -579,7 +608,7 @@ namespace Android.Transition
             /// Handler for <see href="https://developer.android.com/reference/android/transition/Transition.TransitionListener.html#onTransitionResume(android.transition.Transition)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTransitionResume"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Transition.Transition> OnOnTransitionResume { get; set; } = null;
+            public global::System.Action<Android.Transition.Transition> OnOnTransitionResume { get; set; } = null;
 
             void OnTransitionResumeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Transition.Transition>> data)
             {
@@ -600,7 +629,7 @@ namespace Android.Transition
             /// Handler for <see href="https://developer.android.com/reference/android/transition/Transition.TransitionListener.html#onTransitionStart(android.transition.Transition)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTransitionStart"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Transition.Transition> OnOnTransitionStart { get; set; } = null;
+            public global::System.Action<Android.Transition.Transition> OnOnTransitionStart { get; set; } = null;
 
             void OnTransitionStartEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Transition.Transition>> data)
             {

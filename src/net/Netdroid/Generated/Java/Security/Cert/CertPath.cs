@@ -46,35 +46,16 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPath.html#getCertificates()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPath.html#getEncoded()"/>
         /// </summary>
-        public Java.Util.List Certificates
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Java.Security.Cert.CertificateEncodingException"/>
+        public byte[] GetEncoded()
         {
-            get { return IExecuteWithSignature<Java.Util.List>("getCertificates", "()Ljava/util/List;"); }
+            return IExecuteWithSignatureArray<byte>("getEncoded", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPath.html#getEncoded()"/> 
-        /// </summary>
-        public byte[] Encoded
-        {
-            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPath.html#getEncodings()"/> 
-        /// </summary>
-        public Java.Util.Iterator<Java.Lang.String> Encodings
-        {
-            get { return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getEncodings", "()Ljava/util/Iterator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPath.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.String Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertPath.html#getEncoded(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPath.html#getEncoded(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -82,6 +63,31 @@ namespace Java.Security.Cert
         public byte[] GetEncoded(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<byte>("getEncoded", "(Ljava/lang/String;)[B", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPath.html#getEncodings()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator<Java.Lang.String> GetEncodings()
+        {
+            return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getEncodings", "()Ljava/util/Iterator;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPath.html#getCertificates()"/>
+        /// </summary>
+        /// <typeparam name="ReturnExtendsJava_Security_Cert_Certificate"><see cref="Java.Security.Cert.Certificate"/></typeparam>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<ReturnExtendsJava_Security_Cert_Certificate> GetCertificates<ReturnExtendsJava_Security_Cert_Certificate>() where ReturnExtendsJava_Security_Cert_Certificate : Java.Security.Cert.Certificate
+        {
+            return IExecuteWithSignature<Java.Util.List<ReturnExtendsJava_Security_Cert_Certificate>>("getCertificates", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertPath.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
         }
 
         #endregion

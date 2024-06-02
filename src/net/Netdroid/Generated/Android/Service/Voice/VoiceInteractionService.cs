@@ -68,19 +68,20 @@ namespace Android.Service.Voice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionService.html#getDisabledShowContext()"/> <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionService.html#setDisabledShowContext(int)"/>
-        /// </summary>
-        public int DisabledShowContext
-        {
-            get { return IExecuteWithSignature<int>("getDisabledShowContext", "()I"); } set { IExecuteWithSignature("setDisabledShowContext", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionService.html#setUiHints(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
         public void SetUiHints(Android.Os.Bundle arg0)
         {
             IExecuteWithSignature("setUiHints", "(Landroid/os/Bundle;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionService.html#getDisabledShowContext()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDisabledShowContext()
+        {
+            return IExecuteWithSignature<int>("getDisabledShowContext", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionService.html#onGetSupportedVoiceActions(java.util.Set)"/>
@@ -128,6 +129,14 @@ namespace Android.Service.Voice
         public void OnShutdown()
         {
             IExecuteWithSignature("onShutdown", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionService.html#setDisabledShowContext(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDisabledShowContext(int arg0)
+        {
+            IExecuteWithSignature("setDisabledShowContext", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionService.html#showSession(android.os.Bundle,int)"/>

@@ -30,7 +30,7 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/ProtectionDomain.html#%3Cinit%3E(java.security.CodeSource,java.security.PermissionCollection,java.lang.ClassLoader,java.security.Principal[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/ProtectionDomain.html#%3Cinit%3E(java.security.CodeSource,java.security.PermissionCollection,java.lang.ClassLoader,java.security.Principal[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.CodeSource"/></param>
         /// <param name="arg1"><see cref="Java.Security.PermissionCollection"/></param>
@@ -41,7 +41,7 @@ namespace Java.Security
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/ProtectionDomain.html#%3Cinit%3E(java.security.CodeSource,java.security.PermissionCollection)"/>
+        /// <see href="https://developer.android.com/reference/java/security/ProtectionDomain.html#%3Cinit%3E(java.security.CodeSource,java.security.PermissionCollection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.CodeSource"/></param>
         /// <param name="arg1"><see cref="Java.Security.PermissionCollection"/></param>
@@ -66,35 +66,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/ProtectionDomain.html#getClassLoader()"/> 
-        /// </summary>
-        public Java.Lang.ClassLoader ClassLoader
-        {
-            get { return IExecuteWithSignature<Java.Lang.ClassLoader>("getClassLoader", "()Ljava/lang/ClassLoader;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/ProtectionDomain.html#getCodeSource()"/> 
-        /// </summary>
-        public Java.Security.CodeSource CodeSource
-        {
-            get { return IExecuteWithSignature<Java.Security.CodeSource>("getCodeSource", "()Ljava/security/CodeSource;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/ProtectionDomain.html#getPermissions()"/> 
-        /// </summary>
-        public Java.Security.PermissionCollection Permissions
-        {
-            get { return IExecuteWithSignature<Java.Security.PermissionCollection>("getPermissions", "()Ljava/security/PermissionCollection;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/ProtectionDomain.html#getPrincipals()"/> 
-        /// </summary>
-        public Java.Security.Principal[] Principals
-        {
-            get { return IExecuteWithSignatureArray<Java.Security.Principal>("getPrincipals", "()[Ljava/security/Principal;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/ProtectionDomain.html#implies(java.security.Permission)"/>
+        /// <see href="https://developer.android.com/reference/java/security/ProtectionDomain.html#implies(java.security.Permission)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -103,12 +75,44 @@ namespace Java.Security
             return IExecuteWithSignature<bool>("implies", "(Ljava/security/Permission;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/ProtectionDomain.html#staticPermissionsOnly()"/>
+        /// <see href="https://developer.android.com/reference/java/security/ProtectionDomain.html#staticPermissionsOnly()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool StaticPermissionsOnly()
         {
             return IExecuteWithSignature<bool>("staticPermissionsOnly", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/ProtectionDomain.html#getClassLoader()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.ClassLoader"/></returns>
+        public Java.Lang.ClassLoader GetClassLoader()
+        {
+            return IExecuteWithSignature<Java.Lang.ClassLoader>("getClassLoader", "()Ljava/lang/ClassLoader;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/ProtectionDomain.html#getCodeSource()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.CodeSource"/></returns>
+        public Java.Security.CodeSource GetCodeSource()
+        {
+            return IExecuteWithSignature<Java.Security.CodeSource>("getCodeSource", "()Ljava/security/CodeSource;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/ProtectionDomain.html#getPermissions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.PermissionCollection"/></returns>
+        public Java.Security.PermissionCollection GetPermissions()
+        {
+            return IExecuteWithSignature<Java.Security.PermissionCollection>("getPermissions", "()Ljava/security/PermissionCollection;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/ProtectionDomain.html#getPrincipals()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Principal"/></returns>
+        public Java.Security.Principal[] GetPrincipals()
+        {
+            return IExecuteWithSignatureArray<Java.Security.Principal>("getPrincipals", "()[Ljava/security/Principal;");
         }
 
         #endregion

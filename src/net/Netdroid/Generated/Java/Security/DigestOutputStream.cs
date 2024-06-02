@@ -30,7 +30,7 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/DigestOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.security.MessageDigest)"/>
+        /// <see href="https://developer.android.com/reference/java/security/DigestOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.security.MessageDigest)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Security.MessageDigest"/></param>
@@ -55,19 +55,28 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/DigestOutputStream.html#getMessageDigest()"/> <see href="https://developer.android.com/reference/java.base/java/security/DigestOutputStream.html#setMessageDigest(java.security.MessageDigest)"/>
+        /// <see href="https://developer.android.com/reference/java/security/DigestOutputStream.html#getMessageDigest()"/>
         /// </summary>
-        public Java.Security.MessageDigest MessageDigest
+        /// <returns><see cref="Java.Security.MessageDigest"/></returns>
+        public Java.Security.MessageDigest GetMessageDigest()
         {
-            get { return IExecuteWithSignature<Java.Security.MessageDigest>("getMessageDigest", "()Ljava/security/MessageDigest;"); } set { IExecuteWithSignature("setMessageDigest", "(Ljava/security/MessageDigest;)V", value); }
+            return IExecuteWithSignature<Java.Security.MessageDigest>("getMessageDigest", "()Ljava/security/MessageDigest;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/DigestOutputStream.html#on(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/security/DigestOutputStream.html#on(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void On(bool arg0)
         {
             IExecuteWithSignature("on", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/DigestOutputStream.html#setMessageDigest(java.security.MessageDigest)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.MessageDigest"/></param>
+        public void SetMessageDigest(Java.Security.MessageDigest arg0)
+        {
+            IExecuteWithSignature("setMessageDigest", "(Ljava/security/MessageDigest;)V", arg0);
         }
 
         #endregion

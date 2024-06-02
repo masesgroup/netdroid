@@ -46,39 +46,44 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioPlaybackCaptureConfiguration.html#getExcludeUids()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioPlaybackCaptureConfiguration.html#getMediaProjection()"/>
         /// </summary>
-        public int[] ExcludeUids
+        /// <returns><see cref="Android.Media.Projection.MediaProjection"/></returns>
+        public Android.Media.Projection.MediaProjection GetMediaProjection()
         {
-            get { return IExecuteWithSignatureArray<int>("getExcludeUids", "()[I"); }
+            return IExecuteWithSignature<Android.Media.Projection.MediaProjection>("getMediaProjection", "()Landroid/media/projection/MediaProjection;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioPlaybackCaptureConfiguration.html#getExcludeUsages()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioPlaybackCaptureConfiguration.html#getExcludeUids()"/>
         /// </summary>
-        public int[] ExcludeUsages
+        /// <returns><see cref="int"/></returns>
+        public int[] GetExcludeUids()
         {
-            get { return IExecuteWithSignatureArray<int>("getExcludeUsages", "()[I"); }
+            return IExecuteWithSignatureArray<int>("getExcludeUids", "()[I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioPlaybackCaptureConfiguration.html#getMatchingUids()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioPlaybackCaptureConfiguration.html#getExcludeUsages()"/>
         /// </summary>
-        public int[] MatchingUids
+        /// <returns><see cref="int"/></returns>
+        public int[] GetExcludeUsages()
         {
-            get { return IExecuteWithSignatureArray<int>("getMatchingUids", "()[I"); }
+            return IExecuteWithSignatureArray<int>("getExcludeUsages", "()[I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioPlaybackCaptureConfiguration.html#getMatchingUsages()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioPlaybackCaptureConfiguration.html#getMatchingUids()"/>
         /// </summary>
-        public int[] MatchingUsages
+        /// <returns><see cref="int"/></returns>
+        public int[] GetMatchingUids()
         {
-            get { return IExecuteWithSignatureArray<int>("getMatchingUsages", "()[I"); }
+            return IExecuteWithSignatureArray<int>("getMatchingUids", "()[I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioPlaybackCaptureConfiguration.html#getMediaProjection()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioPlaybackCaptureConfiguration.html#getMatchingUsages()"/>
         /// </summary>
-        public Android.Media.Projection.MediaProjection MediaProjection
+        /// <returns><see cref="int"/></returns>
+        public int[] GetMatchingUsages()
         {
-            get { return IExecuteWithSignature<Android.Media.Projection.MediaProjection>("getMediaProjection", "()Landroid/media/projection/MediaProjection;"); }
+            return IExecuteWithSignatureArray<int>("getMatchingUsages", "()[I");
         }
 
         #endregion

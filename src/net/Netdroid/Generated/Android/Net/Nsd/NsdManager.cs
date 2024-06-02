@@ -175,7 +175,7 @@ namespace Android.Net.Nsd
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Nsd.NsdServiceInfo"/></param>
         /// <param name="arg1"><see cref="Android.Net.Nsd.NsdManager.ResolveListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ResolveService(Android.Net.Nsd.NsdServiceInfo arg0, Android.Net.Nsd.NsdManager.ResolveListener arg1)
         {
             IExecute("resolveService", arg0, arg1);
@@ -186,7 +186,7 @@ namespace Android.Net.Nsd
         /// <param name="arg0"><see cref="Android.Net.Nsd.NsdServiceInfo"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg2"><see cref="Android.Net.Nsd.NsdManager.ResolveListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ResolveService(Android.Net.Nsd.NsdServiceInfo arg0, Java.Util.Concurrent.Executor arg1, Android.Net.Nsd.NsdManager.ResolveListener arg2)
         {
             IExecute("resolveService", arg0, arg1, arg2);
@@ -252,12 +252,12 @@ namespace Android.Net.Nsd
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDiscoveryStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnDiscoveryStartedEventHandler));
-                AddEventHandler("onDiscoveryStopped", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnDiscoveryStoppedEventHandler));
-                AddEventHandler("onServiceFound", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnServiceFoundEventHandler));
-                AddEventHandler("onServiceLost", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnServiceLostEventHandler));
-                AddEventHandler("onStartDiscoveryFailed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnStartDiscoveryFailedEventHandler));
-                AddEventHandler("onStopDiscoveryFailed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnStopDiscoveryFailedEventHandler));
+                AddEventHandler("onDiscoveryStarted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnDiscoveryStartedEventHandler));
+                AddEventHandler("onDiscoveryStopped", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnDiscoveryStoppedEventHandler));
+                AddEventHandler("onServiceFound", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnServiceFoundEventHandler));
+                AddEventHandler("onServiceLost", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnServiceLostEventHandler));
+                AddEventHandler("onStartDiscoveryFailed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnStartDiscoveryFailedEventHandler));
+                AddEventHandler("onStopDiscoveryFailed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnStopDiscoveryFailedEventHandler));
 
             }
 
@@ -265,7 +265,7 @@ namespace Android.Net.Nsd
             /// Handler for <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.DiscoveryListener.html#onDiscoveryStarted(java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDiscoveryStarted"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Lang.String> OnOnDiscoveryStarted { get; set; } = null;
+            public global::System.Action<Java.Lang.String> OnOnDiscoveryStarted { get; set; } = null;
 
             void OnDiscoveryStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
             {
@@ -286,7 +286,7 @@ namespace Android.Net.Nsd
             /// Handler for <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.DiscoveryListener.html#onDiscoveryStopped(java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDiscoveryStopped"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Lang.String> OnOnDiscoveryStopped { get; set; } = null;
+            public global::System.Action<Java.Lang.String> OnOnDiscoveryStopped { get; set; } = null;
 
             void OnDiscoveryStoppedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
             {
@@ -307,7 +307,7 @@ namespace Android.Net.Nsd
             /// Handler for <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.DiscoveryListener.html#onServiceFound(android.net.nsd.NsdServiceInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnServiceFound"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Nsd.NsdServiceInfo> OnOnServiceFound { get; set; } = null;
+            public global::System.Action<Android.Net.Nsd.NsdServiceInfo> OnOnServiceFound { get; set; } = null;
 
             void OnServiceFoundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>> data)
             {
@@ -328,7 +328,7 @@ namespace Android.Net.Nsd
             /// Handler for <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.DiscoveryListener.html#onServiceLost(android.net.nsd.NsdServiceInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnServiceLost"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Nsd.NsdServiceInfo> OnOnServiceLost { get; set; } = null;
+            public global::System.Action<Android.Net.Nsd.NsdServiceInfo> OnOnServiceLost { get; set; } = null;
 
             void OnServiceLostEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>> data)
             {
@@ -349,7 +349,7 @@ namespace Android.Net.Nsd
             /// Handler for <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.DiscoveryListener.html#onStartDiscoveryFailed(java.lang.String,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnStartDiscoveryFailed"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Lang.String, int> OnOnStartDiscoveryFailed { get; set; } = null;
+            public global::System.Action<Java.Lang.String, int> OnOnStartDiscoveryFailed { get; set; } = null;
 
             void OnStartDiscoveryFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
             {
@@ -371,7 +371,7 @@ namespace Android.Net.Nsd
             /// Handler for <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.DiscoveryListener.html#onStopDiscoveryFailed(java.lang.String,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnStopDiscoveryFailed"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Lang.String, int> OnOnStopDiscoveryFailed { get; set; } = null;
+            public global::System.Action<Java.Lang.String, int> OnOnStopDiscoveryFailed { get; set; } = null;
 
             void OnStopDiscoveryFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
             {
@@ -505,10 +505,10 @@ namespace Android.Net.Nsd
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onRegistrationFailed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnRegistrationFailedEventHandler));
-                AddEventHandler("onServiceRegistered", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnServiceRegisteredEventHandler));
-                AddEventHandler("onServiceUnregistered", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnServiceUnregisteredEventHandler));
-                AddEventHandler("onUnregistrationFailed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnUnregistrationFailedEventHandler));
+                AddEventHandler("onRegistrationFailed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnRegistrationFailedEventHandler));
+                AddEventHandler("onServiceRegistered", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnServiceRegisteredEventHandler));
+                AddEventHandler("onServiceUnregistered", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnServiceUnregisteredEventHandler));
+                AddEventHandler("onUnregistrationFailed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnUnregistrationFailedEventHandler));
 
             }
 
@@ -516,7 +516,7 @@ namespace Android.Net.Nsd
             /// Handler for <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.RegistrationListener.html#onRegistrationFailed(android.net.nsd.NsdServiceInfo,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnRegistrationFailed"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Nsd.NsdServiceInfo, int> OnOnRegistrationFailed { get; set; } = null;
+            public global::System.Action<Android.Net.Nsd.NsdServiceInfo, int> OnOnRegistrationFailed { get; set; } = null;
 
             void OnRegistrationFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>> data)
             {
@@ -538,7 +538,7 @@ namespace Android.Net.Nsd
             /// Handler for <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.RegistrationListener.html#onServiceRegistered(android.net.nsd.NsdServiceInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnServiceRegistered"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Nsd.NsdServiceInfo> OnOnServiceRegistered { get; set; } = null;
+            public global::System.Action<Android.Net.Nsd.NsdServiceInfo> OnOnServiceRegistered { get; set; } = null;
 
             void OnServiceRegisteredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>> data)
             {
@@ -559,7 +559,7 @@ namespace Android.Net.Nsd
             /// Handler for <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.RegistrationListener.html#onServiceUnregistered(android.net.nsd.NsdServiceInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnServiceUnregistered"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Nsd.NsdServiceInfo> OnOnServiceUnregistered { get; set; } = null;
+            public global::System.Action<Android.Net.Nsd.NsdServiceInfo> OnOnServiceUnregistered { get; set; } = null;
 
             void OnServiceUnregisteredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>> data)
             {
@@ -580,7 +580,7 @@ namespace Android.Net.Nsd
             /// Handler for <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.RegistrationListener.html#onUnregistrationFailed(android.net.nsd.NsdServiceInfo,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnUnregistrationFailed"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Nsd.NsdServiceInfo, int> OnOnUnregistrationFailed { get; set; } = null;
+            public global::System.Action<Android.Net.Nsd.NsdServiceInfo, int> OnOnUnregistrationFailed { get; set; } = null;
 
             void OnUnregistrationFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>> data)
             {
@@ -698,10 +698,10 @@ namespace Android.Net.Nsd
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onResolveFailed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnResolveFailedEventHandler));
-                AddEventHandler("onServiceResolved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnServiceResolvedEventHandler));
-                AddEventHandler("onResolutionStopped", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnResolutionStoppedEventHandler));
-                AddEventHandler("onStopResolutionFailed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnStopResolutionFailedEventHandler));
+                AddEventHandler("onResolveFailed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnResolveFailedEventHandler));
+                AddEventHandler("onServiceResolved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnServiceResolvedEventHandler));
+                AddEventHandler("onResolutionStopped", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnResolutionStoppedEventHandler));
+                AddEventHandler("onStopResolutionFailed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>>>(OnStopResolutionFailedEventHandler));
 
             }
 
@@ -709,7 +709,7 @@ namespace Android.Net.Nsd
             /// Handler for <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.ResolveListener.html#onResolveFailed(android.net.nsd.NsdServiceInfo,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnResolveFailed"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Nsd.NsdServiceInfo, int> OnOnResolveFailed { get; set; } = null;
+            public global::System.Action<Android.Net.Nsd.NsdServiceInfo, int> OnOnResolveFailed { get; set; } = null;
 
             void OnResolveFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>> data)
             {
@@ -731,7 +731,7 @@ namespace Android.Net.Nsd
             /// Handler for <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.ResolveListener.html#onServiceResolved(android.net.nsd.NsdServiceInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnServiceResolved"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Nsd.NsdServiceInfo> OnOnServiceResolved { get; set; } = null;
+            public global::System.Action<Android.Net.Nsd.NsdServiceInfo> OnOnServiceResolved { get; set; } = null;
 
             void OnServiceResolvedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>> data)
             {
@@ -761,7 +761,7 @@ namespace Android.Net.Nsd
             /// Handler for <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.ResolveListener.html#onResolutionStopped(android.net.nsd.NsdServiceInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnResolutionStopped"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Nsd.NsdServiceInfo> OnOnResolutionStopped { get; set; } = null;
+            public global::System.Action<Android.Net.Nsd.NsdServiceInfo> OnOnResolutionStopped { get; set; } = null;
 
             void OnResolutionStoppedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>> data)
             {
@@ -793,7 +793,7 @@ namespace Android.Net.Nsd
             /// Handler for <see href="https://developer.android.com/reference/android/net/nsd/NsdManager.ResolveListener.html#onStopResolutionFailed(android.net.nsd.NsdServiceInfo,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnStopResolutionFailed"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Nsd.NsdServiceInfo, int> OnOnStopResolutionFailed { get; set; } = null;
+            public global::System.Action<Android.Net.Nsd.NsdServiceInfo, int> OnOnStopResolutionFailed { get; set; } = null;
 
             void OnStopResolutionFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Nsd.NsdServiceInfo>> data)
             {

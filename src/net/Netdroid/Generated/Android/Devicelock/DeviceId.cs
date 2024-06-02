@@ -58,18 +58,20 @@ namespace Android.Devicelock
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/devicelock/DeviceId.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/devicelock/DeviceId.html#getType()"/>
         /// </summary>
-        public Java.Lang.String Id
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getType", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/devicelock/DeviceId.html#getType()"/> 
+        /// <see href="https://developer.android.com/reference/android/devicelock/DeviceId.html#getId()"/>
         /// </summary>
-        public int Type
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
         {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
         }
 
         #endregion

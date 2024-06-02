@@ -97,20 +97,6 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.html#getApostropheMode()"/> 
-        /// </summary>
-        public Android.Icu.Text.MessagePattern.ApostropheMode GetApostropheMode
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.MessagePattern.ApostropheMode>("getApostropheMode", "()Landroid/icu/text/MessagePattern$ApostropheMode;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.html#getPatternString()"/> 
-        /// </summary>
-        public Java.Lang.String PatternString
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPatternString", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.html#parse(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -145,6 +131,14 @@ namespace Android.Icu.Text
         public Android.Icu.Text.MessagePattern ParseSelectStyle(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.Icu.Text.MessagePattern>("parseSelectStyle", "(Ljava/lang/String;)Landroid/icu/text/MessagePattern;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.html#getApostropheMode()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.MessagePattern.ApostropheMode"/></returns>
+        public Android.Icu.Text.MessagePattern.ApostropheMode GetApostropheMode()
+        {
+            return IExecuteWithSignature<Android.Icu.Text.MessagePattern.ApostropheMode>("getApostropheMode", "()Landroid/icu/text/MessagePattern$ApostropheMode;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.html#getPart(int)"/>
@@ -265,6 +259,14 @@ namespace Android.Icu.Text
         public Java.Lang.String AutoQuoteApostropheDeep()
         {
             return IExecuteWithSignature<Java.Lang.String>("autoQuoteApostropheDeep", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.html#getPatternString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPatternString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPatternString", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.html#getSubstring(android.icu.text.MessagePattern.Part)"/>
@@ -467,46 +469,52 @@ namespace Android.Icu.Text
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.Part.html#getArgType()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.Part.html#getArgType()"/>
             /// </summary>
-            public Android.Icu.Text.MessagePattern.ArgType GetArgType
+            /// <returns><see cref="Android.Icu.Text.MessagePattern.ArgType"/></returns>
+            public Android.Icu.Text.MessagePattern.ArgType GetArgType()
             {
-                get { return IExecuteWithSignature<Android.Icu.Text.MessagePattern.ArgType>("getArgType", "()Landroid/icu/text/MessagePattern$ArgType;"); }
+                return IExecuteWithSignature<Android.Icu.Text.MessagePattern.ArgType>("getArgType", "()Landroid/icu/text/MessagePattern$ArgType;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.Part.html#getIndex()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.Part.html#getType()"/>
             /// </summary>
-            public int Index
+            /// <returns><see cref="Android.Icu.Text.MessagePattern.Part.Type"/></returns>
+            public Android.Icu.Text.MessagePattern.Part.Type GetType()
             {
-                get { return IExecuteWithSignature<int>("getIndex", "()I"); }
+                return IExecuteWithSignature<Android.Icu.Text.MessagePattern.Part.Type>("getType", "()Landroid/icu/text/MessagePattern$Part$Type;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.Part.html#getLength()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.Part.html#getIndex()"/>
             /// </summary>
-            public int Length
+            /// <returns><see cref="int"/></returns>
+            public int GetIndex()
             {
-                get { return IExecuteWithSignature<int>("getLength", "()I"); }
+                return IExecuteWithSignature<int>("getIndex", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.Part.html#getLimit()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.Part.html#getLength()"/>
             /// </summary>
-            public int Limit
+            /// <returns><see cref="int"/></returns>
+            public int GetLength()
             {
-                get { return IExecuteWithSignature<int>("getLimit", "()I"); }
+                return IExecuteWithSignature<int>("getLength", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.Part.html#getType()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.Part.html#getLimit()"/>
             /// </summary>
-            public Android.Icu.Text.MessagePattern.Part.Type Type
+            /// <returns><see cref="int"/></returns>
+            public int GetLimit()
             {
-                get { return IExecuteWithSignature<Android.Icu.Text.MessagePattern.Part.Type>("getType", "()Landroid/icu/text/MessagePattern$Part$Type;"); }
+                return IExecuteWithSignature<int>("getLimit", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.Part.html#getValue()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/text/MessagePattern.Part.html#getValue()"/>
             /// </summary>
-            public int Value
+            /// <returns><see cref="int"/></returns>
+            public int GetValue()
             {
-                get { return IExecuteWithSignature<int>("getValue", "()I"); }
+                return IExecuteWithSignature<int>("getValue", "()I");
             }
 
             #endregion

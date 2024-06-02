@@ -72,13 +72,6 @@ namespace Android.Hardware
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/SyncFence.html#getSignalTime()"/> 
-        /// </summary>
-        public long SignalTime
-        {
-            get { return IExecuteWithSignature<long>("getSignalTime", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SyncFence.html#await(java.time.Duration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Duration"/></param>
@@ -110,6 +103,14 @@ namespace Android.Hardware
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/SyncFence.html#getSignalTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetSignalTime()
+        {
+            return IExecuteWithSignature<long>("getSignalTime", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/SyncFence.html#close()"/>

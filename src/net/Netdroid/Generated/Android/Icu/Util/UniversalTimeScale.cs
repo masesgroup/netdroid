@@ -106,7 +106,7 @@ namespace Android.Icu.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/UniversalTimeScale.html#MAX_SCALE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MAX_SCALE { get { if (!_MAX_SCALEReady) { _MAX_SCALEContent = SGetField<int>(LocalBridgeClazz, "MAX_SCALE"); _MAX_SCALEReady = true; } return _MAX_SCALEContent; } }
         private static int _MAX_SCALEContent = default;
         private static bool _MAX_SCALEReady = false; // this is used because in case of generics 

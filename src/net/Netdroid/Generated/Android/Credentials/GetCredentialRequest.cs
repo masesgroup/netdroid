@@ -52,25 +52,12 @@ namespace Android.Credentials
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/GetCredentialRequest.html#getCredentialOptions()"/> 
+        /// <see href="https://developer.android.com/reference/android/credentials/GetCredentialRequest.html#getData()"/>
         /// </summary>
-        public Java.Util.List<Android.Credentials.CredentialOption> CredentialOptions
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetData()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Credentials.CredentialOption>>("getCredentialOptions", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/GetCredentialRequest.html#getData()"/> 
-        /// </summary>
-        public Android.Os.Bundle Data
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getData", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/GetCredentialRequest.html#getOrigin()"/> 
-        /// </summary>
-        public Java.Lang.String Origin
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOrigin", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getData", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/GetCredentialRequest.html#alwaysSendAppInfoToProvider()"/>
@@ -87,6 +74,22 @@ namespace Android.Credentials
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/credentials/GetCredentialRequest.html#getOrigin()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOrigin()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOrigin", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/credentials/GetCredentialRequest.html#getCredentialOptions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Credentials.CredentialOption> GetCredentialOptions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Credentials.CredentialOption>>("getCredentialOptions", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/GetCredentialRequest.html#writeToParcel(android.os.Parcel,int)"/>

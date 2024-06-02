@@ -46,12 +46,13 @@ namespace Android.Database.Sqlite
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteProgram.html#getUniqueId()"/> 
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteProgram.html#getUniqueId()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int UniqueId
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetUniqueId()
         {
-            get { return IExecuteWithSignature<int>("getUniqueId", "()I"); }
+            return IExecuteWithSignature<int>("getUniqueId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteProgram.html#bindAllArgsAsStrings(java.lang.String[])"/>

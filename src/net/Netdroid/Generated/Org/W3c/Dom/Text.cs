@@ -64,14 +64,7 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Text.html#getWholeText()"/> 
-        /// </summary>
-        public Java.Lang.String WholeText
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getWholeText", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Text.html#isElementContentWhitespace()"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Text.html#isElementContentWhitespace()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsElementContentWhitespace()
@@ -79,7 +72,15 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<bool>("isElementContentWhitespace", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Text.html#replaceWholeText(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Text.html#getWholeText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetWholeText()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getWholeText", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Text.html#replaceWholeText(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Text"/></returns>
@@ -89,7 +90,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.Text>("replaceWholeText", "(Ljava/lang/String;)Lorg/w3c/dom/Text;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/Text.html#splitText(int)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/Text.html#splitText(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Org.W3c.Dom.Text"/></returns>

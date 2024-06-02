@@ -76,39 +76,12 @@ namespace Android.Net.Http
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.html#getHeaders()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.html#getHeaders()"/>
         /// </summary>
-        public Android.Net.Http.HeaderBlock Headers
+        /// <returns><see cref="Android.Net.Http.HeaderBlock"/></returns>
+        public Android.Net.Http.HeaderBlock GetHeaders()
         {
-            get { return IExecuteWithSignature<Android.Net.Http.HeaderBlock>("getHeaders", "()Landroid/net/http/HeaderBlock;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.html#getHttpMethod()"/> 
-        /// </summary>
-        public Java.Lang.String HttpMethod
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHttpMethod", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.html#getPriority()"/> 
-        /// </summary>
-        public int Priority
-        {
-            get { return IExecuteWithSignature<int>("getPriority", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.html#getTrafficStatsTag()"/> 
-        /// </summary>
-        public int TrafficStatsTag
-        {
-            get { return IExecuteWithSignature<int>("getTrafficStatsTag", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.html#getTrafficStatsUid()"/> 
-        /// </summary>
-        public int TrafficStatsUid
-        {
-            get { return IExecuteWithSignature<int>("getTrafficStatsUid", "()I"); }
+            return IExecuteWithSignature<Android.Net.Http.HeaderBlock>("getHeaders", "()Landroid/net/http/HeaderBlock;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.html#hasTrafficStatsTag()"/>
@@ -149,6 +122,38 @@ namespace Android.Net.Http
         public bool IsDone()
         {
             return IExecuteWithSignature<bool>("isDone", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.html#getPriority()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriority()
+        {
+            return IExecuteWithSignature<int>("getPriority", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.html#getTrafficStatsTag()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTrafficStatsTag()
+        {
+            return IExecuteWithSignature<int>("getTrafficStatsTag", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.html#getTrafficStatsUid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTrafficStatsUid()
+        {
+            return IExecuteWithSignature<int>("getTrafficStatsUid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.html#getHttpMethod()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHttpMethod()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getHttpMethod", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/UrlRequest.html#cancel()"/>
@@ -556,7 +561,7 @@ namespace Android.Net.Http
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onStatus", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnStatusEventHandler));
+                AddEventHandler("onStatus", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnStatusEventHandler));
 
             }
 
@@ -564,7 +569,7 @@ namespace Android.Net.Http
             /// Handler for <see href="https://developer.android.com/reference/android/net/http/UrlRequest.StatusListener.html#onStatus(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnStatus"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnStatus { get; set; } = null;
+            public global::System.Action<int> OnOnStatus { get; set; } = null;
 
             void OnStatusEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {

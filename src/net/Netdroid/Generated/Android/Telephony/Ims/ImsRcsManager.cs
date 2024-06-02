@@ -70,11 +70,12 @@ namespace Android.Telephony.Ims
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRcsManager.html#getUceAdapter()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRcsManager.html#getUceAdapter()"/>
         /// </summary>
-        public Android.Telephony.Ims.RcsUceAdapter UceAdapter
+        /// <returns><see cref="Android.Telephony.Ims.RcsUceAdapter"/></returns>
+        public Android.Telephony.Ims.RcsUceAdapter GetUceAdapter()
         {
-            get { return IExecuteWithSignature<Android.Telephony.Ims.RcsUceAdapter>("getUceAdapter", "()Landroid/telephony/ims/RcsUceAdapter;"); }
+            return IExecuteWithSignature<Android.Telephony.Ims.RcsUceAdapter>("getUceAdapter", "()Landroid/telephony/ims/RcsUceAdapter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsRcsManager.html#getRegistrationState(java.util.concurrent.Executor,java.util.function.Consumer)"/>

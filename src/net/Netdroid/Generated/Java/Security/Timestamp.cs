@@ -30,7 +30,7 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Timestamp.html#%3Cinit%3E(java.util.Date,java.security.cert.CertPath)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Timestamp.html#%3Cinit%3E(java.util.Date,java.security.cert.CertPath)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Date"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.CertPath"/></param>
@@ -55,18 +55,20 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Timestamp.html#getTimestamp()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/Timestamp.html#getSignerCertPath()"/>
         /// </summary>
-        public Java.Util.Date GetTimestamp
+        /// <returns><see cref="Java.Security.Cert.CertPath"/></returns>
+        public Java.Security.Cert.CertPath GetSignerCertPath()
         {
-            get { return IExecuteWithSignature<Java.Util.Date>("getTimestamp", "()Ljava/util/Date;"); }
+            return IExecuteWithSignature<Java.Security.Cert.CertPath>("getSignerCertPath", "()Ljava/security/cert/CertPath;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Timestamp.html#getSignerCertPath()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/Timestamp.html#getTimestamp()"/>
         /// </summary>
-        public Java.Security.Cert.CertPath SignerCertPath
+        /// <returns><see cref="Java.Util.Date"/></returns>
+        public Java.Util.Date GetTimestamp()
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.CertPath>("getSignerCertPath", "()Ljava/security/cert/CertPath;"); }
+            return IExecuteWithSignature<Java.Util.Date>("getTimestamp", "()Ljava/util/Date;");
         }
 
         #endregion

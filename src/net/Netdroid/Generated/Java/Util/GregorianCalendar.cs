@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(int,int,int,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/GregorianCalendar.html#%3Cinit%3E(int,int,int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -43,7 +43,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(int,int,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/GregorianCalendar.html#%3Cinit%3E(int,int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -55,7 +55,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/GregorianCalendar.html#%3Cinit%3E(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -65,7 +65,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/GregorianCalendar.html#%3Cinit%3E(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public GregorianCalendar(Java.Util.Locale arg0)
@@ -73,7 +73,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(java.util.TimeZone,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/GregorianCalendar.html#%3Cinit%3E(java.util.TimeZone,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.TimeZone"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -82,7 +82,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/GregorianCalendar.html#%3Cinit%3E(java.util.TimeZone)"/>
+        /// <see href="https://developer.android.com/reference/java/util/GregorianCalendar.html#%3Cinit%3E(java.util.TimeZone)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.TimeZone"/></param>
         public GregorianCalendar(Java.Util.TimeZone arg0)
@@ -98,13 +98,13 @@ namespace Java.Util
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/GregorianCalendar.html#AD"/>
+        /// <see href="https://developer.android.com/reference/java/util/GregorianCalendar.html#AD"/>
         /// </summary>
         public static int AD { get { if (!_ADReady) { _ADContent = SGetField<int>(LocalBridgeClazz, "AD"); _ADReady = true; } return _ADContent; } }
         private static int _ADContent = default;
         private static bool _ADReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/GregorianCalendar.html#BC"/>
+        /// <see href="https://developer.android.com/reference/java/util/GregorianCalendar.html#BC"/>
         /// </summary>
         public static int BC { get { if (!_BCReady) { _BCContent = SGetField<int>(LocalBridgeClazz, "BC"); _BCReady = true; } return _BCContent; } }
         private static int _BCContent = default;
@@ -114,7 +114,7 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/GregorianCalendar.html#from(java.time.ZonedDateTime)"/>
+        /// <see href="https://developer.android.com/reference/java/util/GregorianCalendar.html#from(java.time.ZonedDateTime)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZonedDateTime"/></param>
         /// <returns><see cref="Java.Util.GregorianCalendar"/></returns>
@@ -127,14 +127,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/GregorianCalendar.html#getGregorianChange()"/> <see href="https://developer.android.com/reference/java.base/java/util/GregorianCalendar.html#setGregorianChange(java.util.Date)"/>
-        /// </summary>
-        public Java.Util.Date GregorianChange
-        {
-            get { return IExecuteWithSignature<Java.Util.Date>("getGregorianChange", "()Ljava/util/Date;"); } set { IExecuteWithSignature("setGregorianChange", "(Ljava/util/Date;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/GregorianCalendar.html#isLeapYear(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/GregorianCalendar.html#isLeapYear(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -143,12 +136,28 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isLeapYear", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/GregorianCalendar.html#toZonedDateTime()"/>
+        /// <see href="https://developer.android.com/reference/java/util/GregorianCalendar.html#getGregorianChange()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Date"/></returns>
+        public Java.Util.Date GetGregorianChange()
+        {
+            return IExecuteWithSignature<Java.Util.Date>("getGregorianChange", "()Ljava/util/Date;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/GregorianCalendar.html#toZonedDateTime()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime ToZonedDateTime()
         {
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("toZonedDateTime", "()Ljava/time/ZonedDateTime;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/GregorianCalendar.html#setGregorianChange(java.util.Date)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Date"/></param>
+        public void SetGregorianChange(Java.Util.Date arg0)
+        {
+            IExecuteWithSignature("setGregorianChange", "(Ljava/util/Date;)V", arg0);
         }
 
         #endregion

@@ -514,27 +514,6 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Color.html#getComponentCount()"/> 
-        /// </summary>
-        public int ComponentCount
-        {
-            get { return IExecuteWithSignature<int>("getComponentCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Color.html#getComponents()"/> 
-        /// </summary>
-        public float[] Components
-        {
-            get { return IExecuteWithSignatureArray<float>("getComponents", "()[F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Color.html#getModel()"/> 
-        /// </summary>
-        public Android.Graphics.ColorSpace.Model Model
-        {
-            get { return IExecuteWithSignature<Android.Graphics.ColorSpace.Model>("getModel", "()Landroid/graphics/ColorSpace$Model;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#convert(android.graphics.ColorSpace)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.ColorSpace"/></param>
@@ -550,6 +529,14 @@ namespace Android.Graphics
         public Android.Graphics.ColorSpace GetColorSpace()
         {
             return IExecuteWithSignature<Android.Graphics.ColorSpace>("getColorSpace", "()Landroid/graphics/ColorSpace;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Color.html#getModel()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.ColorSpace.Model"/></returns>
+        public Android.Graphics.ColorSpace.Model GetModel()
+        {
+            return IExecuteWithSignature<Android.Graphics.ColorSpace.Model>("getModel", "()Landroid/graphics/ColorSpace$Model;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#isSrgb()"/>
@@ -617,6 +604,14 @@ namespace Android.Graphics
             return IExecuteWithSignature<float>("red", "()F");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Color.html#getComponents()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float[] GetComponents()
+        {
+            return IExecuteWithSignatureArray<float>("getComponents", "()[F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#getComponents(float[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -624,6 +619,14 @@ namespace Android.Graphics
         public float[] GetComponents(float[] arg0)
         {
             return IExecuteWithSignatureArray<float>("getComponents", "([F)[F", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Color.html#getComponentCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetComponentCount()
+        {
+            return IExecuteWithSignature<int>("getComponentCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Color.html#toArgb()"/>

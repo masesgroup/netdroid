@@ -38,7 +38,7 @@ namespace Java.Time.Format
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DecimalStyle.html#STANDARD"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DecimalStyle.html#STANDARD"/>
         /// </summary>
         public static Java.Time.Format.DecimalStyle STANDARD { get { if (!_STANDARDReady) { _STANDARDContent = SGetField<Java.Time.Format.DecimalStyle>(LocalBridgeClazz, "STANDARD"); _STANDARDReady = true; } return _STANDARDContent; } }
         private static Java.Time.Format.DecimalStyle _STANDARDContent = default;
@@ -48,14 +48,7 @@ namespace Java.Time.Format
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DecimalStyle.html#getAvailableLocales()"/> 
-        /// </summary>
-        public static Java.Util.Set<Java.Util.Locale> AvailableLocales
-        {
-            get { return SExecuteWithSignature<Java.Util.Set<Java.Util.Locale>>(LocalBridgeClazz, "getAvailableLocales", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DecimalStyle.html#of(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DecimalStyle.html#of(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Time.Format.DecimalStyle"/></returns>
@@ -64,47 +57,59 @@ namespace Java.Time.Format
             return SExecuteWithSignature<Java.Time.Format.DecimalStyle>(LocalBridgeClazz, "of", "(Ljava/util/Locale;)Ljava/time/format/DecimalStyle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DecimalStyle.html#ofDefaultLocale()"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DecimalStyle.html#ofDefaultLocale()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Format.DecimalStyle"/></returns>
         public static Java.Time.Format.DecimalStyle OfDefaultLocale()
         {
             return SExecuteWithSignature<Java.Time.Format.DecimalStyle>(LocalBridgeClazz, "ofDefaultLocale", "()Ljava/time/format/DecimalStyle;");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/format/DecimalStyle.html#getAvailableLocales()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set<Java.Util.Locale> GetAvailableLocales()
+        {
+            return SExecuteWithSignature<Java.Util.Set<Java.Util.Locale>>(LocalBridgeClazz, "getAvailableLocales", "()Ljava/util/Set;");
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DecimalStyle.html#getDecimalSeparator()"/> 
+        /// <see href="https://developer.android.com/reference/java/time/format/DecimalStyle.html#getDecimalSeparator()"/>
         /// </summary>
-        public char DecimalSeparator
+        /// <returns><see cref="char"/></returns>
+        public char GetDecimalSeparator()
         {
-            get { return IExecuteWithSignature<char>("getDecimalSeparator", "()C"); }
+            return IExecuteWithSignature<char>("getDecimalSeparator", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DecimalStyle.html#getNegativeSign()"/> 
+        /// <see href="https://developer.android.com/reference/java/time/format/DecimalStyle.html#getNegativeSign()"/>
         /// </summary>
-        public char NegativeSign
+        /// <returns><see cref="char"/></returns>
+        public char GetNegativeSign()
         {
-            get { return IExecuteWithSignature<char>("getNegativeSign", "()C"); }
+            return IExecuteWithSignature<char>("getNegativeSign", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DecimalStyle.html#getPositiveSign()"/> 
+        /// <see href="https://developer.android.com/reference/java/time/format/DecimalStyle.html#getPositiveSign()"/>
         /// </summary>
-        public char PositiveSign
+        /// <returns><see cref="char"/></returns>
+        public char GetPositiveSign()
         {
-            get { return IExecuteWithSignature<char>("getPositiveSign", "()C"); }
+            return IExecuteWithSignature<char>("getPositiveSign", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DecimalStyle.html#getZeroDigit()"/> 
+        /// <see href="https://developer.android.com/reference/java/time/format/DecimalStyle.html#getZeroDigit()"/>
         /// </summary>
-        public char ZeroDigit
+        /// <returns><see cref="char"/></returns>
+        public char GetZeroDigit()
         {
-            get { return IExecuteWithSignature<char>("getZeroDigit", "()C"); }
+            return IExecuteWithSignature<char>("getZeroDigit", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DecimalStyle.html#withDecimalSeparator(char)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DecimalStyle.html#withDecimalSeparator(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Time.Format.DecimalStyle"/></returns>
@@ -113,7 +118,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DecimalStyle>("withDecimalSeparator", "(C)Ljava/time/format/DecimalStyle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DecimalStyle.html#withNegativeSign(char)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DecimalStyle.html#withNegativeSign(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Time.Format.DecimalStyle"/></returns>
@@ -122,7 +127,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DecimalStyle>("withNegativeSign", "(C)Ljava/time/format/DecimalStyle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DecimalStyle.html#withPositiveSign(char)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DecimalStyle.html#withPositiveSign(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Time.Format.DecimalStyle"/></returns>
@@ -131,7 +136,7 @@ namespace Java.Time.Format
             return IExecuteWithSignature<Java.Time.Format.DecimalStyle>("withPositiveSign", "(C)Ljava/time/format/DecimalStyle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/DecimalStyle.html#withZeroDigit(char)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/DecimalStyle.html#withZeroDigit(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Time.Format.DecimalStyle"/></returns>

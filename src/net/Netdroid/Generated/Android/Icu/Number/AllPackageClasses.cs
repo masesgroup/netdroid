@@ -80,12 +80,12 @@ namespace Android.Icu.Number
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CurrencyPrecision class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CurrencyPrecision class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CurrencyPrecision() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CurrencyPrecision class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CurrencyPrecision class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CurrencyPrecision(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -214,12 +214,12 @@ namespace Android.Icu.Number
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FractionPrecision class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FractionPrecision class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FractionPrecision() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FractionPrecision class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FractionPrecision class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FractionPrecision(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -298,7 +298,7 @@ namespace Android.Icu.Number
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/icu/number/LocalizedNumberFormatter.html"/>
     /// </summary>
-    public partial class LocalizedNumberFormatter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LocalizedNumberFormatter>
+    public partial class LocalizedNumberFormatter : Android.Icu.Number.NumberFormatterSettings<Android.Icu.Number.LocalizedNumberFormatter>
     {
         const string _bridgeClassName = "android.icu.number.LocalizedNumberFormatter";
         /// <summary>
@@ -342,7 +342,7 @@ namespace Android.Icu.Number
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/icu/number/LocalizedNumberRangeFormatter.html"/>
     /// </summary>
-    public partial class LocalizedNumberRangeFormatter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LocalizedNumberRangeFormatter>
+    public partial class LocalizedNumberRangeFormatter : Android.Icu.Number.NumberRangeFormatterSettings<Android.Icu.Number.LocalizedNumberRangeFormatter>
     {
         const string _bridgeClassName = "android.icu.number.LocalizedNumberRangeFormatter";
         /// <summary>
@@ -734,6 +734,99 @@ namespace Android.Icu.Number
     }
     #endregion
 
+    #region NumberFormatterSettings
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/icu/number/NumberFormatterSettings.html"/>
+    /// </summary>
+    public partial class NumberFormatterSettings : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NumberFormatterSettings>
+    {
+        const string _bridgeClassName = "android.icu.number.NumberFormatterSettings";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        [global::System.Obsolete("NumberFormatterSettings class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public NumberFormatterSettings() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        [global::System.Obsolete("NumberFormatterSettings class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public NumberFormatterSettings(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NumberFormatterSettings<T>
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/icu/number/NumberFormatterSettings.html"/>
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public partial class NumberFormatterSettings<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NumberFormatterSettings<T>> where T : Android.Icu.Number.NumberFormatterSettings<T>
+    {
+        const string _bridgeClassName = "android.icu.number.NumberFormatterSettings";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        [global::System.Obsolete("NumberFormatterSettings class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public NumberFormatterSettings() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        [global::System.Obsolete("NumberFormatterSettings class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public NumberFormatterSettings(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+    
+    }
+    #endregion
+
     #region NumberRangeFormatter
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/icu/number/NumberRangeFormatter.html"/>
@@ -744,12 +837,12 @@ namespace Android.Icu.Number
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("NumberRangeFormatter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NumberRangeFormatter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NumberRangeFormatter() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("NumberRangeFormatter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NumberRangeFormatter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NumberRangeFormatter(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -912,6 +1005,99 @@ namespace Android.Icu.Number
     }
     #endregion
 
+    #region NumberRangeFormatterSettings
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/icu/number/NumberRangeFormatterSettings.html"/>
+    /// </summary>
+    public partial class NumberRangeFormatterSettings : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NumberRangeFormatterSettings>
+    {
+        const string _bridgeClassName = "android.icu.number.NumberRangeFormatterSettings";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        [global::System.Obsolete("NumberRangeFormatterSettings class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public NumberRangeFormatterSettings() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        [global::System.Obsolete("NumberRangeFormatterSettings class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public NumberRangeFormatterSettings(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NumberRangeFormatterSettings<T>
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/icu/number/NumberRangeFormatterSettings.html"/>
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public partial class NumberRangeFormatterSettings<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NumberRangeFormatterSettings<T>> where T : Android.Icu.Number.NumberRangeFormatterSettings<T>
+    {
+        const string _bridgeClassName = "android.icu.number.NumberRangeFormatterSettings";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        [global::System.Obsolete("NumberRangeFormatterSettings class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public NumberRangeFormatterSettings() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        [global::System.Obsolete("NumberRangeFormatterSettings class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public NumberRangeFormatterSettings(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+    
+    }
+    #endregion
+
     #region Precision
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/icu/number/Precision.html"/>
@@ -922,12 +1108,12 @@ namespace Android.Icu.Number
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Precision class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Precision class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Precision() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Precision class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Precision class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Precision(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1094,7 +1280,7 @@ namespace Android.Icu.Number
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/icu/number/UnlocalizedNumberFormatter.html"/>
     /// </summary>
-    public partial class UnlocalizedNumberFormatter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<UnlocalizedNumberFormatter>
+    public partial class UnlocalizedNumberFormatter : Android.Icu.Number.NumberFormatterSettings<Android.Icu.Number.UnlocalizedNumberFormatter>
     {
         const string _bridgeClassName = "android.icu.number.UnlocalizedNumberFormatter";
         /// <summary>
@@ -1138,7 +1324,7 @@ namespace Android.Icu.Number
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/icu/number/UnlocalizedNumberRangeFormatter.html"/>
     /// </summary>
-    public partial class UnlocalizedNumberRangeFormatter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<UnlocalizedNumberRangeFormatter>
+    public partial class UnlocalizedNumberRangeFormatter : Android.Icu.Number.NumberRangeFormatterSettings<Android.Icu.Number.UnlocalizedNumberRangeFormatter>
     {
         const string _bridgeClassName = "android.icu.number.UnlocalizedNumberRangeFormatter";
         /// <summary>

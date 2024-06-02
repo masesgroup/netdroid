@@ -40,7 +40,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg5"><see cref="bool"/></param>
         /// <param name="arg6"><see cref="bool"/></param>
         /// <param name="arg7"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public InputMethodSubtype(int arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, bool arg5, bool arg6, int arg7)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
@@ -55,7 +55,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg4"><see cref="Java.Lang.String"/></param>
         /// <param name="arg5"><see cref="bool"/></param>
         /// <param name="arg6"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public InputMethodSubtype(int arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, bool arg5, bool arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
@@ -83,68 +83,12 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getExtraValue()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getPhysicalKeyboardHintLanguageTag()"/>
         /// </summary>
-        public Java.Lang.String ExtraValue
+        /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
+        public Android.Icu.Util.ULocale GetPhysicalKeyboardHintLanguageTag()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getExtraValue", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getIconResId()"/> 
-        /// </summary>
-        public int IconResId
-        {
-            get { return IExecuteWithSignature<int>("getIconResId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getLanguageTag()"/> 
-        /// </summary>
-        public Java.Lang.String LanguageTag
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLanguageTag", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getLocale()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Locale
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLocale", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getMode()"/> 
-        /// </summary>
-        public Java.Lang.String Mode
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMode", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getNameOverride()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence NameOverride
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getNameOverride", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getNameResId()"/> 
-        /// </summary>
-        public int NameResId
-        {
-            get { return IExecuteWithSignature<int>("getNameResId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getPhysicalKeyboardHintLanguageTag()"/> 
-        /// </summary>
-        public Android.Icu.Util.ULocale PhysicalKeyboardHintLanguageTag
-        {
-            get { return IExecuteWithSignature<Android.Icu.Util.ULocale>("getPhysicalKeyboardHintLanguageTag", "()Landroid/icu/util/ULocale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getPhysicalKeyboardHintLayoutType()"/> 
-        /// </summary>
-        public Java.Lang.String PhysicalKeyboardHintLayoutType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPhysicalKeyboardHintLayoutType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Icu.Util.ULocale>("getPhysicalKeyboardHintLanguageTag", "()Landroid/icu/util/ULocale;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#containsExtraValueKey(java.lang.String)"/>
@@ -188,6 +132,22 @@ namespace Android.View.Inputmethod
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getIconResId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIconResId()
+        {
+            return IExecuteWithSignature<int>("getIconResId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getNameResId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNameResId()
+        {
+            return IExecuteWithSignature<int>("getNameResId", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getDisplayName(android.content.Context,java.lang.String,android.content.pm.ApplicationInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -199,6 +159,22 @@ namespace Android.View.Inputmethod
             return IExecute<Java.Lang.CharSequence>("getDisplayName", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getNameOverride()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetNameOverride()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getNameOverride", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getExtraValue()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetExtraValue()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getExtraValue", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getExtraValueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -206,6 +182,39 @@ namespace Android.View.Inputmethod
         public Java.Lang.String GetExtraValueOf(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getExtraValueOf", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getLanguageTag()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLanguageTag()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLanguageTag", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getLocale()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetLocale()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLocale", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getMode()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMode()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMode", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#getPhysicalKeyboardHintLayoutType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPhysicalKeyboardHintLayoutType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPhysicalKeyboardHintLayoutType", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodSubtype.html#writeToParcel(android.os.Parcel,int)"/>

@@ -96,34 +96,6 @@ namespace Android.App.Admin
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdatePolicy.html#getFreezePeriods()"/> 
-        /// </summary>
-        public Java.Util.List<Android.App.Admin.FreezePeriod> FreezePeriods
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.Admin.FreezePeriod>>("getFreezePeriods", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdatePolicy.html#getInstallWindowEnd()"/> 
-        /// </summary>
-        public int InstallWindowEnd
-        {
-            get { return IExecuteWithSignature<int>("getInstallWindowEnd", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdatePolicy.html#getInstallWindowStart()"/> 
-        /// </summary>
-        public int InstallWindowStart
-        {
-            get { return IExecuteWithSignature<int>("getInstallWindowStart", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdatePolicy.html#getPolicyType()"/> 
-        /// </summary>
-        public int PolicyType
-        {
-            get { return IExecuteWithSignature<int>("getPolicyType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdatePolicy.html#setFreezePeriods(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
@@ -139,6 +111,38 @@ namespace Android.App.Admin
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdatePolicy.html#getInstallWindowEnd()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInstallWindowEnd()
+        {
+            return IExecuteWithSignature<int>("getInstallWindowEnd", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdatePolicy.html#getInstallWindowStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInstallWindowStart()
+        {
+            return IExecuteWithSignature<int>("getInstallWindowStart", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdatePolicy.html#getPolicyType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPolicyType()
+        {
+            return IExecuteWithSignature<int>("getPolicyType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdatePolicy.html#getFreezePeriods()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.Admin.FreezePeriod> GetFreezePeriods()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.Admin.FreezePeriod>>("getFreezePeriods", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/SystemUpdatePolicy.html#writeToParcel(android.os.Parcel,int)"/>

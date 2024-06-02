@@ -101,7 +101,7 @@ namespace Android.Service.Autofill
             /// <param name="arg0"><see cref="Android.View.Autofill.AutofillId"/></param>
             /// <param name="arg1"><see cref="Java.Util.Regex.Pattern"/></param>
             /// <param name="arg2"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Builder(Android.View.Autofill.AutofillId arg0, Java.Util.Regex.Pattern arg1, int arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -147,7 +147,7 @@ namespace Android.Service.Autofill
             /// <param name="arg0"><see cref="Java.Util.Regex.Pattern"/></param>
             /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see cref="Android.Service.Autofill.ImageTransformation.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Service.Autofill.ImageTransformation.Builder AddOption(Java.Util.Regex.Pattern arg0, int arg1)
             {
                 return IExecute<Android.Service.Autofill.ImageTransformation.Builder>("addOption", arg0, arg1);

@@ -60,60 +60,68 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getDisplayRatioForFullHdr()"/> <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#setDisplayRatioForFullHdr(float)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getGainmapContents()"/>
         /// </summary>
-        public float DisplayRatioForFullHdr
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        public Android.Graphics.Bitmap GetGainmapContents()
         {
-            get { return IExecuteWithSignature<float>("getDisplayRatioForFullHdr", "()F"); } set { IExecuteWithSignature("setDisplayRatioForFullHdr", "(F)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getGainmapContents", "()Landroid/graphics/Bitmap;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getEpsilonHdr()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getDisplayRatioForFullHdr()"/>
         /// </summary>
-        public float[] EpsilonHdr
+        /// <returns><see cref="float"/></returns>
+        public float GetDisplayRatioForFullHdr()
         {
-            get { return IExecuteWithSignatureArray<float>("getEpsilonHdr", "()[F"); }
+            return IExecuteWithSignature<float>("getDisplayRatioForFullHdr", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getEpsilonSdr()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getMinDisplayRatioForHdrTransition()"/>
         /// </summary>
-        public float[] EpsilonSdr
+        /// <returns><see cref="float"/></returns>
+        public float GetMinDisplayRatioForHdrTransition()
         {
-            get { return IExecuteWithSignatureArray<float>("getEpsilonSdr", "()[F"); }
+            return IExecuteWithSignature<float>("getMinDisplayRatioForHdrTransition", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getGainmapContents()"/> <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#setGainmapContents(android.graphics.Bitmap)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getEpsilonHdr()"/>
         /// </summary>
-        public Android.Graphics.Bitmap GainmapContents
+        /// <returns><see cref="float"/></returns>
+        public float[] GetEpsilonHdr()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getGainmapContents", "()Landroid/graphics/Bitmap;"); } set { IExecuteWithSignature("setGainmapContents", "(Landroid/graphics/Bitmap;)V", value); }
+            return IExecuteWithSignatureArray<float>("getEpsilonHdr", "()[F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getGamma()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getEpsilonSdr()"/>
         /// </summary>
-        public float[] Gamma
+        /// <returns><see cref="float"/></returns>
+        public float[] GetEpsilonSdr()
         {
-            get { return IExecuteWithSignatureArray<float>("getGamma", "()[F"); }
+            return IExecuteWithSignatureArray<float>("getEpsilonSdr", "()[F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getMinDisplayRatioForHdrTransition()"/> <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#setMinDisplayRatioForHdrTransition(float)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getGamma()"/>
         /// </summary>
-        public float MinDisplayRatioForHdrTransition
+        /// <returns><see cref="float"/></returns>
+        public float[] GetGamma()
         {
-            get { return IExecuteWithSignature<float>("getMinDisplayRatioForHdrTransition", "()F"); } set { IExecuteWithSignature("setMinDisplayRatioForHdrTransition", "(F)V", value); }
+            return IExecuteWithSignatureArray<float>("getGamma", "()[F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getRatioMax()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getRatioMax()"/>
         /// </summary>
-        public float[] RatioMax
+        /// <returns><see cref="float"/></returns>
+        public float[] GetRatioMax()
         {
-            get { return IExecuteWithSignatureArray<float>("getRatioMax", "()[F"); }
+            return IExecuteWithSignatureArray<float>("getRatioMax", "()[F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getRatioMin()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#getRatioMin()"/>
         /// </summary>
-        public float[] RatioMin
+        /// <returns><see cref="float"/></returns>
+        public float[] GetRatioMin()
         {
-            get { return IExecuteWithSignatureArray<float>("getRatioMin", "()[F"); }
+            return IExecuteWithSignatureArray<float>("getRatioMin", "()[F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#describeContents()"/>
@@ -122,6 +130,14 @@ namespace Android.Graphics
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#setDisplayRatioForFullHdr(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetDisplayRatioForFullHdr(float arg0)
+        {
+            IExecuteWithSignature("setDisplayRatioForFullHdr", "(F)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#setEpsilonHdr(float,float,float)"/>
@@ -144,6 +160,14 @@ namespace Android.Graphics
             IExecute("setEpsilonSdr", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#setGainmapContents(android.graphics.Bitmap)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
+        public void SetGainmapContents(Android.Graphics.Bitmap arg0)
+        {
+            IExecuteWithSignature("setGainmapContents", "(Landroid/graphics/Bitmap;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#setGamma(float,float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -152,6 +176,14 @@ namespace Android.Graphics
         public void SetGamma(float arg0, float arg1, float arg2)
         {
             IExecute("setGamma", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#setMinDisplayRatioForHdrTransition(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetMinDisplayRatioForHdrTransition(float arg0)
+        {
+            IExecuteWithSignature("setMinDisplayRatioForHdrTransition", "(F)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Gainmap.html#setRatioMax(float,float,float)"/>

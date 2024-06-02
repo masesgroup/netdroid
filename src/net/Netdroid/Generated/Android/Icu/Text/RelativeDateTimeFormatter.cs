@@ -42,11 +42,12 @@ namespace Android.Icu.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/RelativeDateTimeFormatter.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/RelativeDateTimeFormatter.html#getInstance()"/>
         /// </summary>
-        public static Android.Icu.Text.RelativeDateTimeFormatter Instance
+        /// <returns><see cref="Android.Icu.Text.RelativeDateTimeFormatter"/></returns>
+        public static Android.Icu.Text.RelativeDateTimeFormatter GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Icu.Text.RelativeDateTimeFormatter>(LocalBridgeClazz, "getInstance", "()Landroid/icu/text/RelativeDateTimeFormatter;"); }
+            return SExecuteWithSignature<Android.Icu.Text.RelativeDateTimeFormatter>(LocalBridgeClazz, "getInstance", "()Landroid/icu/text/RelativeDateTimeFormatter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/RelativeDateTimeFormatter.html#getInstance(android.icu.util.ULocale,android.icu.text.NumberFormat,android.icu.text.RelativeDateTimeFormatter.Style,android.icu.text.DisplayContext)"/>
@@ -103,25 +104,20 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/RelativeDateTimeFormatter.html#getCapitalizationContext()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/RelativeDateTimeFormatter.html#getCapitalizationContext()"/>
         /// </summary>
-        public Android.Icu.Text.DisplayContext CapitalizationContext
+        /// <returns><see cref="Android.Icu.Text.DisplayContext"/></returns>
+        public Android.Icu.Text.DisplayContext GetCapitalizationContext()
         {
-            get { return IExecuteWithSignature<Android.Icu.Text.DisplayContext>("getCapitalizationContext", "()Landroid/icu/text/DisplayContext;"); }
+            return IExecuteWithSignature<Android.Icu.Text.DisplayContext>("getCapitalizationContext", "()Landroid/icu/text/DisplayContext;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/RelativeDateTimeFormatter.html#getFormatStyle()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/RelativeDateTimeFormatter.html#getNumberFormat()"/>
         /// </summary>
-        public Android.Icu.Text.RelativeDateTimeFormatter.Style FormatStyle
+        /// <returns><see cref="Android.Icu.Text.NumberFormat"/></returns>
+        public Android.Icu.Text.NumberFormat GetNumberFormat()
         {
-            get { return IExecuteWithSignature<Android.Icu.Text.RelativeDateTimeFormatter.Style>("getFormatStyle", "()Landroid/icu/text/RelativeDateTimeFormatter$Style;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/RelativeDateTimeFormatter.html#getNumberFormat()"/> 
-        /// </summary>
-        public Android.Icu.Text.NumberFormat NumberFormat
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.NumberFormat>("getNumberFormat", "()Landroid/icu/text/NumberFormat;"); }
+            return IExecuteWithSignature<Android.Icu.Text.NumberFormat>("getNumberFormat", "()Landroid/icu/text/NumberFormat;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/RelativeDateTimeFormatter.html#formatNumericToValue(double,android.icu.text.RelativeDateTimeFormatter.RelativeDateTimeUnit)"/>
@@ -163,6 +159,14 @@ namespace Android.Icu.Text
         public Android.Icu.Text.RelativeDateTimeFormatter.FormattedRelativeDateTime FormatToValue(double arg0, Android.Icu.Text.RelativeDateTimeFormatter.RelativeDateTimeUnit arg1)
         {
             return IExecute<Android.Icu.Text.RelativeDateTimeFormatter.FormattedRelativeDateTime>("formatToValue", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/RelativeDateTimeFormatter.html#getFormatStyle()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.RelativeDateTimeFormatter.Style"/></returns>
+        public Android.Icu.Text.RelativeDateTimeFormatter.Style GetFormatStyle()
+        {
+            return IExecuteWithSignature<Android.Icu.Text.RelativeDateTimeFormatter.Style>("getFormatStyle", "()Landroid/icu/text/RelativeDateTimeFormatter$Style;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/RelativeDateTimeFormatter.html#combineDateAndTime(java.lang.String,java.lang.String)"/>
@@ -467,9 +471,9 @@ namespace Android.Icu.Text
             /// <param name="arg0"><typeparamref name="A"/></param>
             /// <typeparam name="A"><see cref="Java.Lang.IAppendable"/></typeparam>
             /// <returns><typeparamref name="A"/></returns>
-            public A AppendTo<A>(A arg0) where A: Java.Lang.IAppendable, new()
+            public A AppendTo<A>(A arg0) where A : Java.Lang.IAppendable, new()
             {
-                return IExecuteWithSignature<A>("appendTo", "(Ljava/lang/Appendable;)Ljava/lang/Appendable;", arg0);
+                return IExecute<A>("appendTo", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime.html#nextPosition(android.icu.text.ConstrainedFieldPosition)"/>

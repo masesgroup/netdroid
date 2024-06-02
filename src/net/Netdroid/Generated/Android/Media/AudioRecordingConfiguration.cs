@@ -52,60 +52,28 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#getAudioDevice()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#getAudioDevice()"/>
         /// </summary>
-        public Android.Media.AudioDeviceInfo AudioDevice
+        /// <returns><see cref="Android.Media.AudioDeviceInfo"/></returns>
+        public Android.Media.AudioDeviceInfo GetAudioDevice()
         {
-            get { return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getAudioDevice", "()Landroid/media/AudioDeviceInfo;"); }
+            return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getAudioDevice", "()Landroid/media/AudioDeviceInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#getAudioSource()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#getClientFormat()"/>
         /// </summary>
-        public int AudioSource
+        /// <returns><see cref="Android.Media.AudioFormat"/></returns>
+        public Android.Media.AudioFormat GetClientFormat()
         {
-            get { return IExecuteWithSignature<int>("getAudioSource", "()I"); }
+            return IExecuteWithSignature<Android.Media.AudioFormat>("getClientFormat", "()Landroid/media/AudioFormat;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#getClientAudioSessionId()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#getFormat()"/>
         /// </summary>
-        public int ClientAudioSessionId
+        /// <returns><see cref="Android.Media.AudioFormat"/></returns>
+        public Android.Media.AudioFormat GetFormat()
         {
-            get { return IExecuteWithSignature<int>("getClientAudioSessionId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#getClientAudioSource()"/> 
-        /// </summary>
-        public int ClientAudioSource
-        {
-            get { return IExecuteWithSignature<int>("getClientAudioSource", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#getClientEffects()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Media.Audiofx.AudioEffect.Descriptor> ClientEffects
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.Audiofx.AudioEffect.Descriptor>>("getClientEffects", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#getClientFormat()"/> 
-        /// </summary>
-        public Android.Media.AudioFormat ClientFormat
-        {
-            get { return IExecuteWithSignature<Android.Media.AudioFormat>("getClientFormat", "()Landroid/media/AudioFormat;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#getEffects()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Media.Audiofx.AudioEffect.Descriptor> Effects
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.Audiofx.AudioEffect.Descriptor>>("getEffects", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#getFormat()"/> 
-        /// </summary>
-        public Android.Media.AudioFormat Format
-        {
-            get { return IExecuteWithSignature<Android.Media.AudioFormat>("getFormat", "()Landroid/media/AudioFormat;"); }
+            return IExecuteWithSignature<Android.Media.AudioFormat>("getFormat", "()Landroid/media/AudioFormat;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#isClientSilenced()"/>
@@ -122,6 +90,46 @@ namespace Android.Media
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#getAudioSource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAudioSource()
+        {
+            return IExecuteWithSignature<int>("getAudioSource", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#getClientAudioSessionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetClientAudioSessionId()
+        {
+            return IExecuteWithSignature<int>("getClientAudioSessionId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#getClientAudioSource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetClientAudioSource()
+        {
+            return IExecuteWithSignature<int>("getClientAudioSource", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#getClientEffects()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.Audiofx.AudioEffect.Descriptor> GetClientEffects()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.Audiofx.AudioEffect.Descriptor>>("getClientEffects", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#getEffects()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.Audiofx.AudioEffect.Descriptor> GetEffects()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.Audiofx.AudioEffect.Descriptor>>("getEffects", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioRecordingConfiguration.html#writeToParcel(android.os.Parcel,int)"/>

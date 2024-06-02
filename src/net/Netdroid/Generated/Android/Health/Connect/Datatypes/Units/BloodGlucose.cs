@@ -55,11 +55,12 @@ namespace Android.Health.Connect.Datatypes.Units
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/BloodGlucose.html#getInMillimolesPerLiter()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/BloodGlucose.html#getInMillimolesPerLiter()"/>
         /// </summary>
-        public double InMillimolesPerLiter
+        /// <returns><see cref="double"/></returns>
+        public double GetInMillimolesPerLiter()
         {
-            get { return IExecuteWithSignature<double>("getInMillimolesPerLiter", "()D"); }
+            return IExecuteWithSignature<double>("getInMillimolesPerLiter", "()D");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/BloodGlucose.html#compareTo(android.health.connect.datatypes.units.BloodGlucose)"/>

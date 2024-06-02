@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#%3Cinit%3E(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#%3Cinit%3E(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public AtomicBoolean(bool arg0)
@@ -54,39 +54,18 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#getAcquire()"/> 
-        /// </summary>
-        public bool Acquire
-        {
-            get { return IExecuteWithSignature<bool>("getAcquire", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#getOpaque()"/> <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#setOpaque(boolean)"/>
-        /// </summary>
-        public bool Opaque
-        {
-            get { return IExecuteWithSignature<bool>("getOpaque", "()Z"); } set { IExecuteWithSignature("setOpaque", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#getPlain()"/> <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#setPlain(boolean)"/>
-        /// </summary>
-        public bool Plain
-        {
-            get { return IExecuteWithSignature<bool>("getPlain", "()Z"); } set { IExecuteWithSignature("setPlain", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSet(boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSet(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool WeakCompareAndSet(bool arg0, bool arg1)
         {
             return IExecute<bool>("weakCompareAndSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetPlain(boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetPlain(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -96,7 +75,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetPlain", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchange(boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchange(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -106,7 +85,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndExchange", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchangeAcquire(boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchangeAcquire(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -116,7 +95,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndExchangeAcquire", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchangeRelease(boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#compareAndExchangeRelease(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -126,7 +105,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndExchangeRelease", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#compareAndSet(boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#compareAndSet(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -136,7 +115,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#get()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool Get()
@@ -144,7 +123,15 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<bool>("get", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#getAndSet(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#getAcquire()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetAcquire()
+        {
+            return IExecuteWithSignature<bool>("getAcquire", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#getAndSet(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -153,7 +140,23 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<bool>("getAndSet", "(Z)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetAcquire(boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#getOpaque()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetOpaque()
+        {
+            return IExecuteWithSignature<bool>("getOpaque", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#getPlain()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetPlain()
+        {
+            return IExecuteWithSignature<bool>("getPlain", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetAcquire(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -163,7 +166,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetAcquire", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetRelease(boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetRelease(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -173,7 +176,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetRelease", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetVolatile(boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#weakCompareAndSetVolatile(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -183,7 +186,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#lazySet(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#lazySet(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void LazySet(bool arg0)
@@ -191,7 +194,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecuteWithSignature("lazySet", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#set(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#set(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void Set(bool arg0)
@@ -199,7 +202,23 @@ namespace Java.Util.Concurrent.Atomic
             IExecuteWithSignature("set", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html#setRelease(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#setOpaque(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetOpaque(bool arg0)
+        {
+            IExecuteWithSignature("setOpaque", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#setPlain(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetPlain(bool arg0)
+        {
+            IExecuteWithSignature("setPlain", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html#setRelease(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetRelease(bool arg0)

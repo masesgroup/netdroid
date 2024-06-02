@@ -94,27 +94,6 @@ namespace Android.Bluetooth.Le
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseSettings.html#getMode()"/> 
-        /// </summary>
-        public int Mode
-        {
-            get { return IExecuteWithSignature<int>("getMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseSettings.html#getTimeout()"/> 
-        /// </summary>
-        public int Timeout
-        {
-            get { return IExecuteWithSignature<int>("getTimeout", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseSettings.html#getTxPowerLevel()"/> 
-        /// </summary>
-        public int TxPowerLevel
-        {
-            get { return IExecuteWithSignature<int>("getTxPowerLevel", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseSettings.html#isConnectable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -137,6 +116,30 @@ namespace Android.Bluetooth.Le
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseSettings.html#getMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMode()
+        {
+            return IExecuteWithSignature<int>("getMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseSettings.html#getTimeout()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTimeout()
+        {
+            return IExecuteWithSignature<int>("getTimeout", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseSettings.html#getTxPowerLevel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTxPowerLevel()
+        {
+            return IExecuteWithSignature<int>("getTxPowerLevel", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertiseSettings.html#writeToParcel(android.os.Parcel,int)"/>

@@ -30,7 +30,7 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECPublicKeySpec.html#%3Cinit%3E(java.security.spec.ECPoint,java.security.spec.ECParameterSpec)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECPublicKeySpec.html#%3Cinit%3E(java.security.spec.ECPoint,java.security.spec.ECParameterSpec)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Spec.ECPoint"/></param>
         /// <param name="arg1"><see cref="Java.Security.Spec.ECParameterSpec"/></param>
@@ -55,18 +55,20 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECPublicKeySpec.html#getParams()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECPublicKeySpec.html#getParams()"/>
         /// </summary>
-        public Java.Security.Spec.ECParameterSpec Params
+        /// <returns><see cref="Java.Security.Spec.ECParameterSpec"/></returns>
+        public Java.Security.Spec.ECParameterSpec GetParams()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.ECParameterSpec>("getParams", "()Ljava/security/spec/ECParameterSpec;"); }
+            return IExecuteWithSignature<Java.Security.Spec.ECParameterSpec>("getParams", "()Ljava/security/spec/ECParameterSpec;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECPublicKeySpec.html#getW()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECPublicKeySpec.html#getW()"/>
         /// </summary>
-        public Java.Security.Spec.ECPoint W
+        /// <returns><see cref="Java.Security.Spec.ECPoint"/></returns>
+        public Java.Security.Spec.ECPoint GetW()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.ECPoint>("getW", "()Ljava/security/spec/ECPoint;"); }
+            return IExecuteWithSignature<Java.Security.Spec.ECPoint>("getW", "()Ljava/security/spec/ECPoint;");
         }
 
         #endregion

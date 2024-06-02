@@ -122,7 +122,7 @@ namespace Android.Telephony
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="Android.Telephony.SmsMessage"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Telephony.SmsMessage CreateFromPdu(byte[] arg0)
         {
             return SExecuteWithSignature<Android.Telephony.SmsMessage>(LocalBridgeClazz, "createFromPdu", "([B)Landroid/telephony/SmsMessage;", new object[] { arg0 });
@@ -186,132 +186,12 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getDisplayMessageBody()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getMessageClass()"/>
         /// </summary>
-        public Java.Lang.String DisplayMessageBody
+        /// <returns><see cref="Android.Telephony.SmsMessage.MessageClass"/></returns>
+        public Android.Telephony.SmsMessage.MessageClass GetMessageClass()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayMessageBody", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getDisplayOriginatingAddress()"/> 
-        /// </summary>
-        public Java.Lang.String DisplayOriginatingAddress
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayOriginatingAddress", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getEmailBody()"/> 
-        /// </summary>
-        public Java.Lang.String EmailBody
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEmailBody", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getEmailFrom()"/> 
-        /// </summary>
-        public Java.Lang.String EmailFrom
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEmailFrom", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getMessageClass()"/> 
-        /// </summary>
-        public Android.Telephony.SmsMessage.MessageClass GetMessageClass
-        {
-            get { return IExecuteWithSignature<Android.Telephony.SmsMessage.MessageClass>("getMessageClass", "()Landroid/telephony/SmsMessage$MessageClass;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getIndexOnIcc()"/> 
-        /// </summary>
-        public int IndexOnIcc
-        {
-            get { return IExecuteWithSignature<int>("getIndexOnIcc", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getIndexOnSim()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int IndexOnSim
-        {
-            get { return IExecuteWithSignature<int>("getIndexOnSim", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getMessageBody()"/> 
-        /// </summary>
-        public Java.Lang.String MessageBody
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMessageBody", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getOriginatingAddress()"/> 
-        /// </summary>
-        public Java.Lang.String OriginatingAddress
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOriginatingAddress", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getPdu()"/> 
-        /// </summary>
-        public byte[] Pdu
-        {
-            get { return IExecuteWithSignatureArray<byte>("getPdu", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getProtocolIdentifier()"/> 
-        /// </summary>
-        public int ProtocolIdentifier
-        {
-            get { return IExecuteWithSignature<int>("getProtocolIdentifier", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getPseudoSubject()"/> 
-        /// </summary>
-        public Java.Lang.String PseudoSubject
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPseudoSubject", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getServiceCenterAddress()"/> 
-        /// </summary>
-        public Java.Lang.String ServiceCenterAddress
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getServiceCenterAddress", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getStatus()"/> 
-        /// </summary>
-        public int Status
-        {
-            get { return IExecuteWithSignature<int>("getStatus", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getStatusOnIcc()"/> 
-        /// </summary>
-        public int StatusOnIcc
-        {
-            get { return IExecuteWithSignature<int>("getStatusOnIcc", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getStatusOnSim()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int StatusOnSim
-        {
-            get { return IExecuteWithSignature<int>("getStatusOnSim", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getTimestampMillis()"/> 
-        /// </summary>
-        public long TimestampMillis
-        {
-            get { return IExecuteWithSignature<long>("getTimestampMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getUserData()"/> 
-        /// </summary>
-        public byte[] UserData
-        {
-            get { return IExecuteWithSignatureArray<byte>("getUserData", "()[B"); }
+            return IExecuteWithSignature<Android.Telephony.SmsMessage.MessageClass>("getMessageClass", "()Landroid/telephony/SmsMessage$MessageClass;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#isCphsMwiMessage()"/>
@@ -376,6 +256,144 @@ namespace Android.Telephony
         public bool IsStatusReportMessage()
         {
             return IExecuteWithSignature<bool>("isStatusReportMessage", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getPdu()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetPdu()
+        {
+            return IExecuteWithSignatureArray<byte>("getPdu", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getUserData()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetUserData()
+        {
+            return IExecuteWithSignatureArray<byte>("getUserData", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getIndexOnIcc()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIndexOnIcc()
+        {
+            return IExecuteWithSignature<int>("getIndexOnIcc", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getIndexOnSim()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetIndexOnSim()
+        {
+            return IExecuteWithSignature<int>("getIndexOnSim", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getProtocolIdentifier()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetProtocolIdentifier()
+        {
+            return IExecuteWithSignature<int>("getProtocolIdentifier", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStatus()
+        {
+            return IExecuteWithSignature<int>("getStatus", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getStatusOnIcc()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStatusOnIcc()
+        {
+            return IExecuteWithSignature<int>("getStatusOnIcc", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getStatusOnSim()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetStatusOnSim()
+        {
+            return IExecuteWithSignature<int>("getStatusOnSim", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getDisplayMessageBody()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayMessageBody()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayMessageBody", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getDisplayOriginatingAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDisplayOriginatingAddress()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayOriginatingAddress", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getEmailBody()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEmailBody()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getEmailBody", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getEmailFrom()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEmailFrom()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getEmailFrom", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getMessageBody()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMessageBody()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMessageBody", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getOriginatingAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOriginatingAddress()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOriginatingAddress", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getPseudoSubject()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPseudoSubject()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPseudoSubject", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getServiceCenterAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetServiceCenterAddress()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getServiceCenterAddress", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsMessage.html#getTimestampMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTimestampMillis()
+        {
+            return IExecuteWithSignature<long>("getTimestampMillis", "()J");
         }
 
         #endregion

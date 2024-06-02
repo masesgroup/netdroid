@@ -64,14 +64,7 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Blob.html#getBinaryStream()"/> 
-        /// </summary>
-        public Java.Io.InputStream BinaryStream
-        {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getBinaryStream", "()Ljava/io/InputStream;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Blob.html#getBytes(long,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Blob.html#getBytes(long,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -82,7 +75,7 @@ namespace Java.Sql
             return IExecuteArray<byte>("getBytes", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Blob.html#setBytes(long,byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Blob.html#setBytes(long,byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -95,7 +88,7 @@ namespace Java.Sql
             return IExecute<int>("setBytes", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Blob.html#setBytes(long,byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Blob.html#setBytes(long,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -106,7 +99,16 @@ namespace Java.Sql
             return IExecute<int>("setBytes", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Blob.html#getBinaryStream(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Blob.html#getBinaryStream()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Io.InputStream GetBinaryStream()
+        {
+            return IExecuteWithSignature<Java.Io.InputStream>("getBinaryStream", "()Ljava/io/InputStream;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Blob.html#getBinaryStream(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -117,7 +119,7 @@ namespace Java.Sql
             return IExecute<Java.Io.InputStream>("getBinaryStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Blob.html#setBinaryStream(long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Blob.html#setBinaryStream(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Io.OutputStream"/></returns>
@@ -127,7 +129,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Io.OutputStream>("setBinaryStream", "(J)Ljava/io/OutputStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Blob.html#length()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Blob.html#length()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -136,7 +138,7 @@ namespace Java.Sql
             return IExecuteWithSignature<long>("length", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Blob.html#position(byte[],long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Blob.html#position(byte[],long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -147,7 +149,7 @@ namespace Java.Sql
             return IExecute<long>("position", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Blob.html#position(java.sql.Blob,long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Blob.html#position(java.sql.Blob,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Blob"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -158,7 +160,7 @@ namespace Java.Sql
             return IExecute<long>("position", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Blob.html#free()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Blob.html#free()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
         public void Free()
@@ -166,7 +168,7 @@ namespace Java.Sql
             IExecuteWithSignature("free", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Blob.html#truncate(long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Blob.html#truncate(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>

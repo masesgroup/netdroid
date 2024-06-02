@@ -94,144 +94,36 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getActionProvider()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getIntent()"/>
         /// </summary>
-        public Android.View.ActionProvider ActionProvider
+        /// <returns><see cref="Android.Content.Intent"/></returns>
+        public Android.Content.Intent GetIntent()
         {
-            get { return IExecuteWithSignature<Android.View.ActionProvider>("getActionProvider", "()Landroid/view/ActionProvider;"); }
+            return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getActionView()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getIcon()"/>
         /// </summary>
-        public Android.View.View ActionView
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetIcon()
         {
-            get { return IExecuteWithSignature<Android.View.View>("getActionView", "()Landroid/view/View;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getIcon", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getAlphabeticModifiers()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getActionProvider()"/>
         /// </summary>
-        public int AlphabeticModifiers
+        /// <returns><see cref="Android.View.ActionProvider"/></returns>
+        public Android.View.ActionProvider GetActionProvider()
         {
-            get { return IExecuteWithSignature<int>("getAlphabeticModifiers", "()I"); }
+            return IExecuteWithSignature<Android.View.ActionProvider>("getActionProvider", "()Landroid/view/ActionProvider;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getAlphabeticShortcut()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getMenuInfo()"/>
         /// </summary>
-        public char AlphabeticShortcut
+        /// <returns><see cref="Android.View.ContextMenu.ContextMenuInfo"/></returns>
+        public Android.View.ContextMenu.ContextMenuInfo GetMenuInfo()
         {
-            get { return IExecuteWithSignature<char>("getAlphabeticShortcut", "()C"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getContentDescription()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence ContentDescription
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getGroupId()"/> 
-        /// </summary>
-        public int GroupId
-        {
-            get { return IExecuteWithSignature<int>("getGroupId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getIcon()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable Icon
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getIcon", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getIconTintBlendMode()"/> 
-        /// </summary>
-        public Android.Graphics.BlendMode IconTintBlendMode
-        {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getIconTintBlendMode", "()Landroid/graphics/BlendMode;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getIconTintList()"/> 
-        /// </summary>
-        public Android.Content.Res.ColorStateList IconTintList
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getIconTintList", "()Landroid/content/res/ColorStateList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getIconTintMode()"/> 
-        /// </summary>
-        public Android.Graphics.PorterDuff.Mode IconTintMode
-        {
-            get { return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getIconTintMode", "()Landroid/graphics/PorterDuff$Mode;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getIntent()"/> 
-        /// </summary>
-        public Android.Content.Intent Intent
-        {
-            get { return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getItemId()"/> 
-        /// </summary>
-        public int ItemId
-        {
-            get { return IExecuteWithSignature<int>("getItemId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getMenuInfo()"/> 
-        /// </summary>
-        public Android.View.ContextMenu.ContextMenuInfo MenuInfo
-        {
-            get { return IExecuteWithSignature<Android.View.ContextMenu.ContextMenuInfo>("getMenuInfo", "()Landroid/view/ContextMenu$ContextMenuInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getNumericModifiers()"/> 
-        /// </summary>
-        public int NumericModifiers
-        {
-            get { return IExecuteWithSignature<int>("getNumericModifiers", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getNumericShortcut()"/> 
-        /// </summary>
-        public char NumericShortcut
-        {
-            get { return IExecuteWithSignature<char>("getNumericShortcut", "()C"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getOrder()"/> 
-        /// </summary>
-        public int Order
-        {
-            get { return IExecuteWithSignature<int>("getOrder", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getSubMenu()"/> 
-        /// </summary>
-        public Android.View.SubMenu SubMenu
-        {
-            get { return IExecuteWithSignature<Android.View.SubMenu>("getSubMenu", "()Landroid/view/SubMenu;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getTitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Title
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getTitleCondensed()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence TitleCondensed
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitleCondensed", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getTooltipText()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence TooltipText
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTooltipText", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Android.View.ContextMenu.ContextMenuInfo>("getMenuInfo", "()Landroid/view/ContextMenu$ContextMenuInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#setActionProvider(android.view.ActionProvider)"/>
@@ -406,6 +298,22 @@ namespace Android.View
             return IExecuteWithSignature<Android.View.MenuItem>("setVisible", "(Z)Landroid/view/MenuItem;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getSubMenu()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.SubMenu"/></returns>
+        public Android.View.SubMenu GetSubMenu()
+        {
+            return IExecuteWithSignature<Android.View.SubMenu>("getSubMenu", "()Landroid/view/SubMenu;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getActionView()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetActionView()
+        {
+            return IExecuteWithSignature<Android.View.View>("getActionView", "()Landroid/view/View;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#collapseActionView()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -470,12 +378,92 @@ namespace Android.View
             return IExecuteWithSignature<bool>("isVisible", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getAlphabeticShortcut()"/>
+        /// </summary>
+        /// <returns><see cref="char"/></returns>
+        public char GetAlphabeticShortcut()
+        {
+            return IExecuteWithSignature<char>("getAlphabeticShortcut", "()C");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getNumericShortcut()"/>
+        /// </summary>
+        /// <returns><see cref="char"/></returns>
+        public char GetNumericShortcut()
+        {
+            return IExecuteWithSignature<char>("getNumericShortcut", "()C");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getGroupId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGroupId()
+        {
+            return IExecuteWithSignature<int>("getGroupId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getItemId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetItemId()
+        {
+            return IExecuteWithSignature<int>("getItemId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getOrder()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOrder()
+        {
+            return IExecuteWithSignature<int>("getOrder", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getTitleCondensed()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTitleCondensed()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTitleCondensed", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#setShowAsAction(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void SetShowAsAction(int arg0)
         {
             IExecuteWithSignature("setShowAsAction", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getIconTintList()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetIconTintList()
+        {
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getIconTintList", "()Landroid/content/res/ColorStateList;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getIconTintBlendMode()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetIconTintBlendMode()
+        {
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getIconTintBlendMode", "()Landroid/graphics/BlendMode;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getIconTintMode()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.PorterDuff.Mode"/></returns>
+        public Android.Graphics.PorterDuff.Mode GetIconTintMode()
+        {
+            return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getIconTintMode", "()Landroid/graphics/PorterDuff$Mode;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#setAlphabeticShortcut(char,int)"/>
@@ -554,6 +542,38 @@ namespace Android.View
         {
             return IExecuteWithSignature<Android.View.MenuItem>("setTooltipText", "(Ljava/lang/CharSequence;)Landroid/view/MenuItem;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getAlphabeticModifiers()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAlphabeticModifiers()
+        {
+            return IExecuteWithSignature<int>("getAlphabeticModifiers", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getNumericModifiers()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumericModifiers()
+        {
+            return IExecuteWithSignature<int>("getNumericModifiers", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getContentDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetContentDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/MenuItem.html#getTooltipText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTooltipText()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTooltipText", "()Ljava/lang/CharSequence;");
+        }
 
         #endregion
 
@@ -583,8 +603,8 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onMenuItemActionCollapse", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MenuItem>>>(OnMenuItemActionCollapseEventHandler));
-                AddEventHandler("onMenuItemActionExpand", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MenuItem>>>(OnMenuItemActionExpandEventHandler));
+                AddEventHandler("onMenuItemActionCollapse", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MenuItem>>>(OnMenuItemActionCollapseEventHandler));
+                AddEventHandler("onMenuItemActionExpand", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MenuItem>>>(OnMenuItemActionExpandEventHandler));
 
             }
 
@@ -592,7 +612,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/MenuItem.OnActionExpandListener.html#onMenuItemActionCollapse(android.view.MenuItem)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMenuItemActionCollapse"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MenuItem, bool> OnOnMenuItemActionCollapse { get; set; } = null;
+            public global::System.Func<Android.View.MenuItem, bool> OnOnMenuItemActionCollapse { get; set; } = null;
 
             void OnMenuItemActionCollapseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MenuItem>> data)
             {
@@ -615,7 +635,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/MenuItem.OnActionExpandListener.html#onMenuItemActionExpand(android.view.MenuItem)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMenuItemActionExpand"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MenuItem, bool> OnOnMenuItemActionExpand { get; set; } = null;
+            public global::System.Func<Android.View.MenuItem, bool> OnOnMenuItemActionExpand { get; set; } = null;
 
             void OnMenuItemActionExpandEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MenuItem>> data)
             {
@@ -718,7 +738,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onMenuItemClick", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MenuItem>>>(OnMenuItemClickEventHandler));
+                AddEventHandler("onMenuItemClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MenuItem>>>(OnMenuItemClickEventHandler));
 
             }
 
@@ -726,7 +746,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/MenuItem.OnMenuItemClickListener.html#onMenuItemClick(android.view.MenuItem)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMenuItemClick"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MenuItem, bool> OnOnMenuItemClick { get; set; } = null;
+            public global::System.Func<Android.View.MenuItem, bool> OnOnMenuItemClick { get; set; } = null;
 
             void OnMenuItemClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MenuItem>> data)
             {

@@ -176,7 +176,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/ViewTreeObserver.html#removeGlobalOnLayoutListener(android.view.ViewTreeObserver.OnGlobalLayoutListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.ViewTreeObserver.OnGlobalLayoutListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveGlobalOnLayoutListener(Android.View.ViewTreeObserver.OnGlobalLayoutListener arg0)
         {
             IExecuteWithSignature("removeGlobalOnLayoutListener", "(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V", arg0);
@@ -290,7 +290,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDraw", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnDrawEventHandler));
+                AddEventHandler("onDraw", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnDrawEventHandler));
 
             }
 
@@ -298,7 +298,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ViewTreeObserver.OnDrawListener.html#onDraw()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDraw"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnDraw { get; set; } = null;
+            public global::System.Action OnOnDraw { get; set; } = null;
 
             void OnDrawEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -387,7 +387,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onGlobalFocusChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnGlobalFocusChangedEventHandler));
+                AddEventHandler("onGlobalFocusChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnGlobalFocusChangedEventHandler));
 
             }
 
@@ -395,7 +395,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ViewTreeObserver.OnGlobalFocusChangeListener.html#onGlobalFocusChanged(android.view.View,android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGlobalFocusChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.View, Android.View.View> OnOnGlobalFocusChanged { get; set; } = null;
+            public global::System.Action<Android.View.View, Android.View.View> OnOnGlobalFocusChanged { get; set; } = null;
 
             void OnGlobalFocusChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -488,7 +488,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onGlobalLayout", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnGlobalLayoutEventHandler));
+                AddEventHandler("onGlobalLayout", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnGlobalLayoutEventHandler));
 
             }
 
@@ -496,7 +496,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ViewTreeObserver.OnGlobalLayoutListener.html#onGlobalLayout()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGlobalLayout"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnGlobalLayout { get; set; } = null;
+            public global::System.Action OnOnGlobalLayout { get; set; } = null;
 
             void OnGlobalLayoutEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -585,7 +585,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onPreDraw", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnPreDrawEventHandler));
+                AddEventHandler("onPreDraw", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnPreDrawEventHandler));
 
             }
 
@@ -593,7 +593,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ViewTreeObserver.OnPreDrawListener.html#onPreDraw()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPreDraw"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<bool> OnOnPreDraw { get; set; } = null;
+            public global::System.Func<bool> OnOnPreDraw { get; set; } = null;
 
             void OnPreDrawEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -685,7 +685,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onScrollChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnScrollChangedEventHandler));
+                AddEventHandler("onScrollChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnScrollChangedEventHandler));
 
             }
 
@@ -693,7 +693,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ViewTreeObserver.OnScrollChangedListener.html#onScrollChanged()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScrollChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnScrollChanged { get; set; } = null;
+            public global::System.Action OnOnScrollChanged { get; set; } = null;
 
             void OnScrollChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -782,7 +782,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onTouchModeChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnTouchModeChangedEventHandler));
+                AddEventHandler("onTouchModeChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnTouchModeChangedEventHandler));
 
             }
 
@@ -790,7 +790,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ViewTreeObserver.OnTouchModeChangeListener.html#onTouchModeChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTouchModeChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnTouchModeChanged { get; set; } = null;
+            public global::System.Action<bool> OnOnTouchModeChanged { get; set; } = null;
 
             void OnTouchModeChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
             {
@@ -881,8 +881,8 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onWindowAttached", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnWindowAttachedEventHandler));
-                AddEventHandler("onWindowDetached", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnWindowDetachedEventHandler));
+                AddEventHandler("onWindowAttached", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnWindowAttachedEventHandler));
+                AddEventHandler("onWindowDetached", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnWindowDetachedEventHandler));
 
             }
 
@@ -890,7 +890,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ViewTreeObserver.OnWindowAttachListener.html#onWindowAttached()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnWindowAttached"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnWindowAttached { get; set; } = null;
+            public global::System.Action OnOnWindowAttached { get; set; } = null;
 
             void OnWindowAttachedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -910,7 +910,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ViewTreeObserver.OnWindowAttachListener.html#onWindowDetached()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnWindowDetached"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnWindowDetached { get; set; } = null;
+            public global::System.Action OnOnWindowDetached { get; set; } = null;
 
             void OnWindowDetachedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -1006,7 +1006,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onWindowFocusChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnWindowFocusChangedEventHandler));
+                AddEventHandler("onWindowFocusChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnWindowFocusChangedEventHandler));
 
             }
 
@@ -1014,7 +1014,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ViewTreeObserver.OnWindowFocusChangeListener.html#onWindowFocusChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnWindowFocusChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnWindowFocusChanged { get; set; } = null;
+            public global::System.Action<bool> OnOnWindowFocusChanged { get; set; } = null;
 
             void OnWindowFocusChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
             {
@@ -1105,7 +1105,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onWindowVisibilityChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnWindowVisibilityChangedEventHandler));
+                AddEventHandler("onWindowVisibilityChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnWindowVisibilityChangedEventHandler));
 
             }
 
@@ -1113,7 +1113,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ViewTreeObserver.OnWindowVisibilityChangeListener.html#onWindowVisibilityChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnWindowVisibilityChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnWindowVisibilityChanged { get; set; } = null;
+            public global::System.Action<int> OnOnWindowVisibilityChanged { get; set; } = null;
 
             void OnWindowVisibilityChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {

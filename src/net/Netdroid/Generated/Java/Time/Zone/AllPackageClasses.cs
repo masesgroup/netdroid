@@ -28,7 +28,7 @@ namespace Java.Time.Zone
 {
     #region ZoneOffsetTransition
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransition.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransition.html"/>
     /// </summary>
     public partial class ZoneOffsetTransition : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ZoneOffsetTransition>
     {
@@ -72,7 +72,7 @@ namespace Java.Time.Zone
 
     #region ZoneOffsetTransitionRule
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.html"/>
     /// </summary>
     public partial class ZoneOffsetTransitionRule : Java.Io.Serializable
     {
@@ -112,7 +112,7 @@ namespace Java.Time.Zone
         // TODO: complete the class
         #region TimeDefinition
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html"/>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html"/>
         /// </summary>
         public partial class TimeDefinition : Java.Lang.Enum<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>
         {
@@ -160,7 +160,7 @@ namespace Java.Time.Zone
 
     #region ZoneRules
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneRules.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/zone/ZoneRules.html"/>
     /// </summary>
     public partial class ZoneRules : Java.Io.Serializable
     {
@@ -204,7 +204,7 @@ namespace Java.Time.Zone
 
     #region ZoneRulesException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneRulesException.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/zone/ZoneRulesException.html"/>
     /// </summary>
     public partial class ZoneRulesException : Java.Time.DateTimeException
     {

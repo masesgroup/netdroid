@@ -46,21 +46,7 @@ namespace Javax.Xml.Parsers
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/DocumentBuilder.html#getDOMImplementation()"/> 
-        /// </summary>
-        public Org.W3c.Dom.DOMImplementation DOMImplementation
-        {
-            get { return IExecuteWithSignature<Org.W3c.Dom.DOMImplementation>("getDOMImplementation", "()Lorg/w3c/dom/DOMImplementation;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/DocumentBuilder.html#getSchema()"/> 
-        /// </summary>
-        public Javax.Xml.Validation.Schema Schema
-        {
-            get { return IExecuteWithSignature<Javax.Xml.Validation.Schema>("getSchema", "()Ljavax/xml/validation/Schema;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/DocumentBuilder.html#isNamespaceAware()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilder.html#isNamespaceAware()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsNamespaceAware()
@@ -68,7 +54,7 @@ namespace Javax.Xml.Parsers
             return IExecuteWithSignature<bool>("isNamespaceAware", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/DocumentBuilder.html#isValidating()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilder.html#isValidating()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsValidating()
@@ -76,7 +62,7 @@ namespace Javax.Xml.Parsers
             return IExecuteWithSignature<bool>("isValidating", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/DocumentBuilder.html#newDocument()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilder.html#newDocument()"/>
         /// </summary>
         /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
         public Org.W3c.Dom.Document NewDocument()
@@ -84,7 +70,7 @@ namespace Javax.Xml.Parsers
             return IExecuteWithSignature<Org.W3c.Dom.Document>("newDocument", "()Lorg/w3c/dom/Document;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(org.xml.sax.InputSource)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilder.html#parse(org.xml.sax.InputSource)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
         /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
@@ -95,7 +81,15 @@ namespace Javax.Xml.Parsers
             return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Lorg/xml/sax/InputSource;)Lorg/w3c/dom/Document;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/DocumentBuilder.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilder.html#getDOMImplementation()"/>
+        /// </summary>
+        /// <returns><see cref="Org.W3c.Dom.DOMImplementation"/></returns>
+        public Org.W3c.Dom.DOMImplementation GetDOMImplementation()
+        {
+            return IExecuteWithSignature<Org.W3c.Dom.DOMImplementation>("getDOMImplementation", "()Lorg/w3c/dom/DOMImplementation;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilder.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.EntityResolver"/></param>
         public void SetEntityResolver(Org.Xml.Sax.EntityResolver arg0)
@@ -103,7 +97,7 @@ namespace Javax.Xml.Parsers
             IExecuteWithSignature("setEntityResolver", "(Lorg/xml/sax/EntityResolver;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/DocumentBuilder.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilder.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.ErrorHandler"/></param>
         public void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
@@ -111,7 +105,7 @@ namespace Javax.Xml.Parsers
             IExecuteWithSignature("setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/DocumentBuilder.html#isXIncludeAware()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilder.html#isXIncludeAware()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsXIncludeAware()
@@ -119,7 +113,15 @@ namespace Javax.Xml.Parsers
             return IExecuteWithSignature<bool>("isXIncludeAware", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilder.html#getSchema()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Xml.Validation.Schema"/></returns>
+        public Javax.Xml.Validation.Schema GetSchema()
+        {
+            return IExecuteWithSignature<Javax.Xml.Validation.Schema>("getSchema", "()Ljavax/xml/validation/Schema;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilder.html#parse(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
@@ -130,7 +132,7 @@ namespace Javax.Xml.Parsers
             return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Ljava/io/File;)Lorg/w3c/dom/Document;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(java.io.InputStream,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilder.html#parse(java.io.InputStream,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -142,7 +144,7 @@ namespace Javax.Xml.Parsers
             return IExecute<Org.W3c.Dom.Document>("parse", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilder.html#parse(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
@@ -153,7 +155,7 @@ namespace Javax.Xml.Parsers
             return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Ljava/io/InputStream;)Lorg/w3c/dom/Document;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilder.html#parse(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
@@ -164,7 +166,7 @@ namespace Javax.Xml.Parsers
             return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Ljava/lang/String;)Lorg/w3c/dom/Document;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/parsers/DocumentBuilder.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/DocumentBuilder.html#reset()"/>
         /// </summary>
         public void Reset()
         {

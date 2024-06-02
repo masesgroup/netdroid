@@ -328,111 +328,6 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getBaseLevel()"/> 
-        /// </summary>
-        public int BaseLevel
-        {
-            get { return IExecuteWithSignature<int>("getBaseLevel", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getCustomClassifier()"/> <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#setCustomClassifier(android.icu.text.BidiClassifier)"/>
-        /// </summary>
-        public Android.Icu.Text.BidiClassifier CustomClassifier
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.BidiClassifier>("getCustomClassifier", "()Landroid/icu/text/BidiClassifier;"); } set { IExecuteWithSignature("setCustomClassifier", "(Landroid/icu/text/BidiClassifier;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getDirection()"/> 
-        /// </summary>
-        public byte Direction
-        {
-            get { return IExecuteWithSignature<byte>("getDirection", "()B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getLength()"/> 
-        /// </summary>
-        public int Length
-        {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getLevels()"/> 
-        /// </summary>
-        public byte[] Levels
-        {
-            get { return IExecuteWithSignatureArray<byte>("getLevels", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getLogicalMap()"/> 
-        /// </summary>
-        public int[] LogicalMap
-        {
-            get { return IExecuteWithSignatureArray<int>("getLogicalMap", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getParaLevel()"/> 
-        /// </summary>
-        public byte ParaLevel
-        {
-            get { return IExecuteWithSignature<byte>("getParaLevel", "()B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getProcessedLength()"/> 
-        /// </summary>
-        public int ProcessedLength
-        {
-            get { return IExecuteWithSignature<int>("getProcessedLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getReorderingMode()"/> <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#setReorderingMode(int)"/>
-        /// </summary>
-        public int ReorderingMode
-        {
-            get { return IExecuteWithSignature<int>("getReorderingMode", "()I"); } set { IExecuteWithSignature("setReorderingMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getReorderingOptions()"/> <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#setReorderingOptions(int)"/>
-        /// </summary>
-        public int ReorderingOptions
-        {
-            get { return IExecuteWithSignature<int>("getReorderingOptions", "()I"); } set { IExecuteWithSignature("setReorderingOptions", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getResultLength()"/> 
-        /// </summary>
-        public int ResultLength
-        {
-            get { return IExecuteWithSignature<int>("getResultLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getRunCount()"/> 
-        /// </summary>
-        public int RunCount
-        {
-            get { return IExecuteWithSignature<int>("getRunCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getText()"/> 
-        /// </summary>
-        public char[] Text
-        {
-            get { return IExecuteWithSignatureArray<char>("getText", "()[C"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getTextAsString()"/> 
-        /// </summary>
-        public Java.Lang.String TextAsString
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTextAsString", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getVisualMap()"/> 
-        /// </summary>
-        public int[] VisualMap
-        {
-            get { return IExecuteWithSignatureArray<int>("getVisualMap", "()[I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#createLineBidi(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -451,6 +346,14 @@ namespace Android.Icu.Text
         public Android.Icu.Text.Bidi SetLine(int arg0, int arg1)
         {
             return IExecute<Android.Icu.Text.Bidi>("setLine", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getCustomClassifier()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.BidiClassifier"/></returns>
+        public Android.Icu.Text.BidiClassifier GetCustomClassifier()
+        {
+            return IExecuteWithSignature<Android.Icu.Text.BidiClassifier>("getCustomClassifier", "()Landroid/icu/text/BidiClassifier;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getLogicalRun(int)"/>
@@ -537,6 +440,14 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<bool>("isRightToLeft", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getDirection()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte GetDirection()
+        {
+            return IExecuteWithSignature<byte>("getDirection", "()B");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getLevelAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -544,6 +455,30 @@ namespace Android.Icu.Text
         public byte GetLevelAt(int arg0)
         {
             return IExecuteWithSignature<byte>("getLevelAt", "(I)B", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getParaLevel()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte GetParaLevel()
+        {
+            return IExecuteWithSignature<byte>("getParaLevel", "()B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getLevels()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetLevels()
+        {
+            return IExecuteWithSignatureArray<byte>("getLevels", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getText()"/>
+        /// </summary>
+        /// <returns><see cref="char"/></returns>
+        public char[] GetText()
+        {
+            return IExecuteWithSignatureArray<char>("getText", "()[C");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#countParagraphs()"/>
@@ -562,6 +497,14 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<int>("countRuns", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getBaseLevel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBaseLevel()
+        {
+            return IExecuteWithSignature<int>("getBaseLevel", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getCustomizedClass(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -569,6 +512,14 @@ namespace Android.Icu.Text
         public int GetCustomizedClass(int arg0)
         {
             return IExecuteWithSignature<int>("getCustomizedClass", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLength()
+        {
+            return IExecuteWithSignature<int>("getLength", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getLogicalIndex(int)"/>
@@ -587,6 +538,46 @@ namespace Android.Icu.Text
         public int GetParagraphIndex(int arg0)
         {
             return IExecuteWithSignature<int>("getParagraphIndex", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getProcessedLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetProcessedLength()
+        {
+            return IExecuteWithSignature<int>("getProcessedLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getReorderingMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetReorderingMode()
+        {
+            return IExecuteWithSignature<int>("getReorderingMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getReorderingOptions()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetReorderingOptions()
+        {
+            return IExecuteWithSignature<int>("getReorderingOptions", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getResultLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetResultLength()
+        {
+            return IExecuteWithSignature<int>("getResultLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getRunCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRunCount()
+        {
+            return IExecuteWithSignature<int>("getRunCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getRunLevel(int)"/>
@@ -625,6 +616,30 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<int>("getVisualIndex", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getLogicalMap()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetLogicalMap()
+        {
+            return IExecuteWithSignatureArray<int>("getLogicalMap", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getVisualMap()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetVisualMap()
+        {
+            return IExecuteWithSignatureArray<int>("getVisualMap", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#getTextAsString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTextAsString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTextAsString", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#writeReordered(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -649,6 +664,14 @@ namespace Android.Icu.Text
         public void SetContext(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             IExecute("setContext", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#setCustomClassifier(android.icu.text.BidiClassifier)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Text.BidiClassifier"/></param>
+        public void SetCustomClassifier(Android.Icu.Text.BidiClassifier arg0)
+        {
+            IExecuteWithSignature("setCustomClassifier", "(Landroid/icu/text/BidiClassifier;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#setInverse(boolean)"/>
@@ -685,6 +708,22 @@ namespace Android.Icu.Text
         public void SetPara(Java.Text.AttributedCharacterIterator arg0)
         {
             IExecuteWithSignature("setPara", "(Ljava/text/AttributedCharacterIterator;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#setReorderingMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetReorderingMode(int arg0)
+        {
+            IExecuteWithSignature("setReorderingMode", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Bidi.html#setReorderingOptions(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetReorderingOptions(int arg0)
+        {
+            IExecuteWithSignature("setReorderingOptions", "(I)V", arg0);
         }
 
         #endregion

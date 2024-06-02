@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PushbackReader.html#%3Cinit%3E(java.io.Reader,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PushbackReader.html#%3Cinit%3E(java.io.Reader,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -39,7 +39,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PushbackReader.html#%3Cinit%3E(java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PushbackReader.html#%3Cinit%3E(java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         public PushbackReader(Java.Io.Reader arg0)
@@ -63,7 +63,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PushbackReader.html#unread(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PushbackReader.html#unread(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -74,7 +74,7 @@ namespace Java.Io
             IExecute("unread", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PushbackReader.html#unread(char[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/PushbackReader.html#unread(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -83,7 +83,7 @@ namespace Java.Io
             IExecuteWithSignature("unread", "([C)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PushbackReader.html#unread(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PushbackReader.html#unread(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>

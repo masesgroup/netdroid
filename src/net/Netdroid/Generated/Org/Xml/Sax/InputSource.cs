@@ -30,7 +30,7 @@ namespace Org.Xml.Sax
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/InputSource.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/InputSource.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public InputSource(Java.Io.InputStream arg0)
@@ -38,7 +38,7 @@ namespace Org.Xml.Sax
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/InputSource.html#%3Cinit%3E(java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/InputSource.html#%3Cinit%3E(java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         public InputSource(Java.Io.Reader arg0)
@@ -46,7 +46,7 @@ namespace Org.Xml.Sax
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/InputSource.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/InputSource.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public InputSource(Java.Lang.String arg0)
@@ -70,47 +70,92 @@ namespace Org.Xml.Sax
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/InputSource.html#getByteStream()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/InputSource.html#setByteStream(java.io.InputStream)"/>
-        /// </summary>
-        public Java.Io.InputStream ByteStream
-        {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getByteStream", "()Ljava/io/InputStream;"); } set { IExecuteWithSignature("setByteStream", "(Ljava/io/InputStream;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/InputSource.html#getCharacterStream()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/InputSource.html#setCharacterStream(java.io.Reader)"/>
-        /// </summary>
-        public Java.Io.Reader CharacterStream
-        {
-            get { return IExecuteWithSignature<Java.Io.Reader>("getCharacterStream", "()Ljava/io/Reader;"); } set { IExecuteWithSignature("setCharacterStream", "(Ljava/io/Reader;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/InputSource.html#getEncoding()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/InputSource.html#setEncoding(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Encoding
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/InputSource.html#getPublicId()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/InputSource.html#setPublicId(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String PublicId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPublicId", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/InputSource.html#getSystemId()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/InputSource.html#setSystemId(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String SystemId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/InputSource.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/InputSource.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
         {
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/InputSource.html#getByteStream()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        public Java.Io.InputStream GetByteStream()
+        {
+            return IExecuteWithSignature<Java.Io.InputStream>("getByteStream", "()Ljava/io/InputStream;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/InputSource.html#getCharacterStream()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.Reader"/></returns>
+        public Java.Io.Reader GetCharacterStream()
+        {
+            return IExecuteWithSignature<Java.Io.Reader>("getCharacterStream", "()Ljava/io/Reader;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/InputSource.html#getEncoding()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEncoding()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/InputSource.html#getPublicId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPublicId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/InputSource.html#getSystemId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/InputSource.html#setByteStream(java.io.InputStream)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        public void SetByteStream(Java.Io.InputStream arg0)
+        {
+            IExecuteWithSignature("setByteStream", "(Ljava/io/InputStream;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/InputSource.html#setCharacterStream(java.io.Reader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        public void SetCharacterStream(Java.Io.Reader arg0)
+        {
+            IExecuteWithSignature("setCharacterStream", "(Ljava/io/Reader;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/InputSource.html#setEncoding(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetEncoding(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/InputSource.html#setPublicId(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPublicId(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPublicId", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/InputSource.html#setSystemId(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetSystemId(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

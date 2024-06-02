@@ -30,7 +30,7 @@ namespace Javax.Xml.Transform.Sax
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXResult.html#%3Cinit%3E(org.xml.sax.ContentHandler)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXResult.html#%3Cinit%3E(org.xml.sax.ContentHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.ContentHandler"/></param>
         public SAXResult(Org.Xml.Sax.ContentHandler arg0)
@@ -46,7 +46,7 @@ namespace Javax.Xml.Transform.Sax
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXResult.html#FEATURE"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXResult.html#FEATURE"/>
         /// </summary>
         public static Java.Lang.String FEATURE { get { if (!_FEATUREReady) { _FEATUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE"); _FEATUREReady = true; } return _FEATUREContent; } }
         private static Java.Lang.String _FEATUREContent = default;
@@ -60,25 +60,52 @@ namespace Javax.Xml.Transform.Sax
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXResult.html#getHandler()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXResult.html#setHandler(org.xml.sax.ContentHandler)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXResult.html#getSystemId()"/>
         /// </summary>
-        public Org.Xml.Sax.ContentHandler Handler
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemId()
         {
-            get { return IExecuteWithSignature<Org.Xml.Sax.ContentHandler>("getHandler", "()Lorg/xml/sax/ContentHandler;"); } set { IExecuteWithSignature("setHandler", "(Lorg/xml/sax/ContentHandler;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXResult.html#getLexicalHandler()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXResult.html#setLexicalHandler(org.xml.sax.ext.LexicalHandler)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXResult.html#getHandler()"/>
         /// </summary>
-        public Org.Xml.Sax.Ext.LexicalHandler LexicalHandler
+        /// <returns><see cref="Org.Xml.Sax.ContentHandler"/></returns>
+        public Org.Xml.Sax.ContentHandler GetHandler()
         {
-            get { return IExecuteWithSignature<Org.Xml.Sax.Ext.LexicalHandler>("getLexicalHandler", "()Lorg/xml/sax/ext/LexicalHandler;"); } set { IExecuteWithSignature("setLexicalHandler", "(Lorg/xml/sax/ext/LexicalHandler;)V", value); }
+            return IExecuteWithSignature<Org.Xml.Sax.ContentHandler>("getHandler", "()Lorg/xml/sax/ContentHandler;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXResult.html#getSystemId()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXResult.html#setSystemId(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXResult.html#getLexicalHandler()"/>
         /// </summary>
-        public Java.Lang.String SystemId
+        /// <returns><see cref="Org.Xml.Sax.Ext.LexicalHandler"/></returns>
+        public Org.Xml.Sax.Ext.LexicalHandler GetLexicalHandler()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Org.Xml.Sax.Ext.LexicalHandler>("getLexicalHandler", "()Lorg/xml/sax/ext/LexicalHandler;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXResult.html#setHandler(org.xml.sax.ContentHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.ContentHandler"/></param>
+        public void SetHandler(Org.Xml.Sax.ContentHandler arg0)
+        {
+            IExecuteWithSignature("setHandler", "(Lorg/xml/sax/ContentHandler;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXResult.html#setLexicalHandler(org.xml.sax.ext.LexicalHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.Ext.LexicalHandler"/></param>
+        public void SetLexicalHandler(Org.Xml.Sax.Ext.LexicalHandler arg0)
+        {
+            IExecuteWithSignature("setLexicalHandler", "(Lorg/xml/sax/ext/LexicalHandler;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXResult.html#setSystemId(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetSystemId(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

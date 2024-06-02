@@ -33,7 +33,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#%3Cinit%3E(android.location.Criteria)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Location.Criteria"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Criteria(Android.Location.Criteria arg0)
             : base(arg0)
         {
@@ -49,70 +49,70 @@ namespace Android.Location
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#CREATOR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#ACCURACY_COARSE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ACCURACY_COARSE { get { if (!_ACCURACY_COARSEReady) { _ACCURACY_COARSEContent = SGetField<int>(LocalBridgeClazz, "ACCURACY_COARSE"); _ACCURACY_COARSEReady = true; } return _ACCURACY_COARSEContent; } }
         private static int _ACCURACY_COARSEContent = default;
         private static bool _ACCURACY_COARSEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#ACCURACY_FINE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ACCURACY_FINE { get { if (!_ACCURACY_FINEReady) { _ACCURACY_FINEContent = SGetField<int>(LocalBridgeClazz, "ACCURACY_FINE"); _ACCURACY_FINEReady = true; } return _ACCURACY_FINEContent; } }
         private static int _ACCURACY_FINEContent = default;
         private static bool _ACCURACY_FINEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#ACCURACY_HIGH"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ACCURACY_HIGH { get { if (!_ACCURACY_HIGHReady) { _ACCURACY_HIGHContent = SGetField<int>(LocalBridgeClazz, "ACCURACY_HIGH"); _ACCURACY_HIGHReady = true; } return _ACCURACY_HIGHContent; } }
         private static int _ACCURACY_HIGHContent = default;
         private static bool _ACCURACY_HIGHReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#ACCURACY_LOW"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ACCURACY_LOW { get { if (!_ACCURACY_LOWReady) { _ACCURACY_LOWContent = SGetField<int>(LocalBridgeClazz, "ACCURACY_LOW"); _ACCURACY_LOWReady = true; } return _ACCURACY_LOWContent; } }
         private static int _ACCURACY_LOWContent = default;
         private static bool _ACCURACY_LOWReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#ACCURACY_MEDIUM"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ACCURACY_MEDIUM { get { if (!_ACCURACY_MEDIUMReady) { _ACCURACY_MEDIUMContent = SGetField<int>(LocalBridgeClazz, "ACCURACY_MEDIUM"); _ACCURACY_MEDIUMReady = true; } return _ACCURACY_MEDIUMContent; } }
         private static int _ACCURACY_MEDIUMContent = default;
         private static bool _ACCURACY_MEDIUMReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#NO_REQUIREMENT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int NO_REQUIREMENT { get { if (!_NO_REQUIREMENTReady) { _NO_REQUIREMENTContent = SGetField<int>(LocalBridgeClazz, "NO_REQUIREMENT"); _NO_REQUIREMENTReady = true; } return _NO_REQUIREMENTContent; } }
         private static int _NO_REQUIREMENTContent = default;
         private static bool _NO_REQUIREMENTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#POWER_HIGH"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int POWER_HIGH { get { if (!_POWER_HIGHReady) { _POWER_HIGHContent = SGetField<int>(LocalBridgeClazz, "POWER_HIGH"); _POWER_HIGHReady = true; } return _POWER_HIGHContent; } }
         private static int _POWER_HIGHContent = default;
         private static bool _POWER_HIGHReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#POWER_LOW"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int POWER_LOW { get { if (!_POWER_LOWReady) { _POWER_LOWContent = SGetField<int>(LocalBridgeClazz, "POWER_LOW"); _POWER_LOWReady = true; } return _POWER_LOWContent; } }
         private static int _POWER_LOWContent = default;
         private static bool _POWER_LOWReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#POWER_MEDIUM"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int POWER_MEDIUM { get { if (!_POWER_MEDIUMReady) { _POWER_MEDIUMContent = SGetField<int>(LocalBridgeClazz, "POWER_MEDIUM"); _POWER_MEDIUMReady = true; } return _POWER_MEDIUMContent; } }
         private static int _POWER_MEDIUMContent = default;
         private static bool _POWER_MEDIUMReady = false; // this is used because in case of generics 
@@ -125,58 +125,10 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#getAccuracy()"/> <see href="https://developer.android.com/reference/android/location/Criteria.html#setAccuracy(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int Accuracy
-        {
-            get { return IExecuteWithSignature<int>("getAccuracy", "()I"); } set { IExecuteWithSignature("setAccuracy", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#getBearingAccuracy()"/> <see href="https://developer.android.com/reference/android/location/Criteria.html#setBearingAccuracy(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int BearingAccuracy
-        {
-            get { return IExecuteWithSignature<int>("getBearingAccuracy", "()I"); } set { IExecuteWithSignature("setBearingAccuracy", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#getHorizontalAccuracy()"/> <see href="https://developer.android.com/reference/android/location/Criteria.html#setHorizontalAccuracy(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int HorizontalAccuracy
-        {
-            get { return IExecuteWithSignature<int>("getHorizontalAccuracy", "()I"); } set { IExecuteWithSignature("setHorizontalAccuracy", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#getPowerRequirement()"/> <see href="https://developer.android.com/reference/android/location/Criteria.html#setPowerRequirement(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int PowerRequirement
-        {
-            get { return IExecuteWithSignature<int>("getPowerRequirement", "()I"); } set { IExecuteWithSignature("setPowerRequirement", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#getSpeedAccuracy()"/> <see href="https://developer.android.com/reference/android/location/Criteria.html#setSpeedAccuracy(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int SpeedAccuracy
-        {
-            get { return IExecuteWithSignature<int>("getSpeedAccuracy", "()I"); } set { IExecuteWithSignature("setSpeedAccuracy", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#getVerticalAccuracy()"/> <see href="https://developer.android.com/reference/android/location/Criteria.html#setVerticalAccuracy(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int VerticalAccuracy
-        {
-            get { return IExecuteWithSignature<int>("getVerticalAccuracy", "()I"); } set { IExecuteWithSignature("setVerticalAccuracy", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#isAltitudeRequired()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsAltitudeRequired()
         {
             return IExecuteWithSignature<bool>("isAltitudeRequired", "()Z");
@@ -185,7 +137,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#isBearingRequired()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsBearingRequired()
         {
             return IExecuteWithSignature<bool>("isBearingRequired", "()Z");
@@ -194,7 +146,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#isCostAllowed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsCostAllowed()
         {
             return IExecuteWithSignature<bool>("isCostAllowed", "()Z");
@@ -203,7 +155,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#isSpeedRequired()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsSpeedRequired()
         {
             return IExecuteWithSignature<bool>("isSpeedRequired", "()Z");
@@ -212,25 +164,97 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#getAccuracy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetAccuracy()
+        {
+            return IExecuteWithSignature<int>("getAccuracy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#getBearingAccuracy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetBearingAccuracy()
+        {
+            return IExecuteWithSignature<int>("getBearingAccuracy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#getHorizontalAccuracy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetHorizontalAccuracy()
+        {
+            return IExecuteWithSignature<int>("getHorizontalAccuracy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#getPowerRequirement()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetPowerRequirement()
+        {
+            return IExecuteWithSignature<int>("getPowerRequirement", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#getSpeedAccuracy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetSpeedAccuracy()
+        {
+            return IExecuteWithSignature<int>("getSpeedAccuracy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#getVerticalAccuracy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetVerticalAccuracy()
+        {
+            return IExecuteWithSignature<int>("getVerticalAccuracy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#setAccuracy(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetAccuracy(int arg0)
+        {
+            IExecuteWithSignature("setAccuracy", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#setAltitudeRequired(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAltitudeRequired(bool arg0)
         {
             IExecuteWithSignature("setAltitudeRequired", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#setBearingAccuracy(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetBearingAccuracy(int arg0)
+        {
+            IExecuteWithSignature("setBearingAccuracy", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#setBearingRequired(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetBearingRequired(bool arg0)
         {
             IExecuteWithSignature("setBearingRequired", "(Z)V", arg0);
@@ -239,26 +263,62 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#setCostAllowed(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetCostAllowed(bool arg0)
         {
             IExecuteWithSignature("setCostAllowed", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#setHorizontalAccuracy(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetHorizontalAccuracy(int arg0)
+        {
+            IExecuteWithSignature("setHorizontalAccuracy", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#setPowerRequirement(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetPowerRequirement(int arg0)
+        {
+            IExecuteWithSignature("setPowerRequirement", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#setSpeedAccuracy(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetSpeedAccuracy(int arg0)
+        {
+            IExecuteWithSignature("setSpeedAccuracy", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#setSpeedRequired(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSpeedRequired(bool arg0)
         {
             IExecuteWithSignature("setSpeedRequired", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Criteria.html#setVerticalAccuracy(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetVerticalAccuracy(int arg0)
+        {
+            IExecuteWithSignature("setVerticalAccuracy", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Criteria.html#writeToParcel(android.os.Parcel,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
             IExecute("writeToParcel", arg0, arg1);

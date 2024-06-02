@@ -84,25 +84,20 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Chronometer.html#getBase()"/> <see href="https://developer.android.com/reference/android/widget/Chronometer.html#setBase(long)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Chronometer.html#getOnChronometerTickListener()"/>
         /// </summary>
-        public long Base
+        /// <returns><see cref="Android.Widget.Chronometer.OnChronometerTickListener"/></returns>
+        public Android.Widget.Chronometer.OnChronometerTickListener GetOnChronometerTickListener()
         {
-            get { return IExecuteWithSignature<long>("getBase", "()J"); } set { IExecuteWithSignature("setBase", "(J)V", value); }
+            return IExecuteWithSignature<Android.Widget.Chronometer.OnChronometerTickListener>("getOnChronometerTickListener", "()Landroid/widget/Chronometer$OnChronometerTickListener;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Chronometer.html#getFormat()"/> <see href="https://developer.android.com/reference/android/widget/Chronometer.html#setFormat(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Chronometer.html#getOnChronometerTickListener()"/>
         /// </summary>
-        public Java.Lang.String Format
+        /// <returns><see cref="Android.Widget.Chronometer.OnChronometerTickListener"/></returns>
+        public Android.Widget.Chronometer.OnChronometerTickListener GetOnChronometerTickListenerDirect()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFormat", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFormat", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Chronometer.html#getOnChronometerTickListener()"/> 
-        /// </summary>
-        public Android.Widget.Chronometer.OnChronometerTickListener GetOnChronometerTickListener
-        {
-            get { return IExecuteWithSignature<Android.Widget.Chronometer.OnChronometerTickListener>("getOnChronometerTickListener", "()Landroid/widget/Chronometer$OnChronometerTickListener;"); }
+            return IExecuteWithSignature<Android.Widget.Chronometer.OnChronometerTickListenerDirect, Android.Widget.Chronometer.OnChronometerTickListener>("getOnChronometerTickListener", "()Landroid/widget/Chronometer$OnChronometerTickListener;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Chronometer.html#isCountDown()"/>
@@ -121,12 +116,44 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("isTheFinalCountDown", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Chronometer.html#getFormat()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFormat()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFormat", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Chronometer.html#getBase()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetBase()
+        {
+            return IExecuteWithSignature<long>("getBase", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Chronometer.html#setBase(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetBase(long arg0)
+        {
+            IExecuteWithSignature("setBase", "(J)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Chronometer.html#setCountDown(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetCountDown(bool arg0)
         {
             IExecuteWithSignature("setCountDown", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Chronometer.html#setFormat(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetFormat(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setFormat", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Chronometer.html#setOnChronometerTickListener(android.widget.Chronometer.OnChronometerTickListener)"/>
@@ -179,7 +206,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onChronometerTick", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.Chronometer>>>(OnChronometerTickEventHandler));
+                AddEventHandler("onChronometerTick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.Chronometer>>>(OnChronometerTickEventHandler));
 
             }
 
@@ -187,7 +214,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/Chronometer.OnChronometerTickListener.html#onChronometerTick(android.widget.Chronometer)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnChronometerTick"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Widget.Chronometer> OnOnChronometerTick { get; set; } = null;
+            public global::System.Action<Android.Widget.Chronometer> OnOnChronometerTick { get; set; } = null;
 
             void OnChronometerTickEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.Chronometer>> data)
             {

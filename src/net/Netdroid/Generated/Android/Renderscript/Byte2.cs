@@ -34,7 +34,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Byte2(byte arg0, byte arg1)
             : base(arg0, arg1)
         {
@@ -50,12 +50,12 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Byte2.html#x"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public byte x { get { return IGetField<byte>("x"); } set { ISetField("x", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Byte2.html#y"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public byte y { get { return IGetField<byte>("y"); } set { ISetField("y", value); } }
 
         #endregion

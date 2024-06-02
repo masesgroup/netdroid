@@ -30,7 +30,7 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/RC2ParameterSpec.html#%3Cinit%3E(int,byte[],int)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/RC2ParameterSpec.html#%3Cinit%3E(int,byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -40,7 +40,7 @@ namespace Javax.Crypto.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/RC2ParameterSpec.html#%3Cinit%3E(int,byte[])"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/RC2ParameterSpec.html#%3Cinit%3E(int,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -49,7 +49,7 @@ namespace Javax.Crypto.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/RC2ParameterSpec.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/RC2ParameterSpec.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public RC2ParameterSpec(int arg0)
@@ -73,18 +73,20 @@ namespace Javax.Crypto.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/RC2ParameterSpec.html#getEffectiveKeyBits()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/RC2ParameterSpec.html#getIV()"/>
         /// </summary>
-        public int EffectiveKeyBits
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetIV()
         {
-            get { return IExecuteWithSignature<int>("getEffectiveKeyBits", "()I"); }
+            return IExecuteWithSignatureArray<byte>("getIV", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/RC2ParameterSpec.html#getIV()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/RC2ParameterSpec.html#getEffectiveKeyBits()"/>
         /// </summary>
-        public byte[] IV
+        /// <returns><see cref="int"/></returns>
+        public int GetEffectiveKeyBits()
         {
-            get { return IExecuteWithSignatureArray<byte>("getIV", "()[B"); }
+            return IExecuteWithSignature<int>("getEffectiveKeyBits", "()I");
         }
 
         #endregion

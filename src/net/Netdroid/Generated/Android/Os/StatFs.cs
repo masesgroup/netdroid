@@ -54,85 +54,96 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getAvailableBlocks()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getAvailableBlocks()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int AvailableBlocks
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetAvailableBlocks()
         {
-            get { return IExecuteWithSignature<int>("getAvailableBlocks", "()I"); }
+            return IExecuteWithSignature<int>("getAvailableBlocks", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getAvailableBlocksLong()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getBlockCount()"/>
         /// </summary>
-        public long AvailableBlocksLong
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetBlockCount()
         {
-            get { return IExecuteWithSignature<long>("getAvailableBlocksLong", "()J"); }
+            return IExecuteWithSignature<int>("getBlockCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getAvailableBytes()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getBlockSize()"/>
         /// </summary>
-        public long AvailableBytes
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetBlockSize()
         {
-            get { return IExecuteWithSignature<long>("getAvailableBytes", "()J"); }
+            return IExecuteWithSignature<int>("getBlockSize", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getBlockCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getFreeBlocks()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int BlockCount
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetFreeBlocks()
         {
-            get { return IExecuteWithSignature<int>("getBlockCount", "()I"); }
+            return IExecuteWithSignature<int>("getFreeBlocks", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getBlockCountLong()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getAvailableBlocksLong()"/>
         /// </summary>
-        public long BlockCountLong
+        /// <returns><see cref="long"/></returns>
+        public long GetAvailableBlocksLong()
         {
-            get { return IExecuteWithSignature<long>("getBlockCountLong", "()J"); }
+            return IExecuteWithSignature<long>("getAvailableBlocksLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getBlockSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getAvailableBytes()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int BlockSize
+        /// <returns><see cref="long"/></returns>
+        public long GetAvailableBytes()
         {
-            get { return IExecuteWithSignature<int>("getBlockSize", "()I"); }
+            return IExecuteWithSignature<long>("getAvailableBytes", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getBlockSizeLong()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getBlockCountLong()"/>
         /// </summary>
-        public long BlockSizeLong
+        /// <returns><see cref="long"/></returns>
+        public long GetBlockCountLong()
         {
-            get { return IExecuteWithSignature<long>("getBlockSizeLong", "()J"); }
+            return IExecuteWithSignature<long>("getBlockCountLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getFreeBlocks()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getBlockSizeLong()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int FreeBlocks
+        /// <returns><see cref="long"/></returns>
+        public long GetBlockSizeLong()
         {
-            get { return IExecuteWithSignature<int>("getFreeBlocks", "()I"); }
+            return IExecuteWithSignature<long>("getBlockSizeLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getFreeBlocksLong()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getFreeBlocksLong()"/>
         /// </summary>
-        public long FreeBlocksLong
+        /// <returns><see cref="long"/></returns>
+        public long GetFreeBlocksLong()
         {
-            get { return IExecuteWithSignature<long>("getFreeBlocksLong", "()J"); }
+            return IExecuteWithSignature<long>("getFreeBlocksLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getFreeBytes()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getFreeBytes()"/>
         /// </summary>
-        public long FreeBytes
+        /// <returns><see cref="long"/></returns>
+        public long GetFreeBytes()
         {
-            get { return IExecuteWithSignature<long>("getFreeBytes", "()J"); }
+            return IExecuteWithSignature<long>("getFreeBytes", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getTotalBytes()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/StatFs.html#getTotalBytes()"/>
         /// </summary>
-        public long TotalBytes
+        /// <returns><see cref="long"/></returns>
+        public long GetTotalBytes()
         {
-            get { return IExecuteWithSignature<long>("getTotalBytes", "()J"); }
+            return IExecuteWithSignature<long>("getTotalBytes", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/StatFs.html#restat(java.lang.String)"/>

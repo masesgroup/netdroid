@@ -46,47 +46,53 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLEntry.html#getCertificateIssuer()"/> 
-        /// </summary>
-        public Javax.Security.Auth.X500.X500Principal CertificateIssuer
-        {
-            get { return IExecuteWithSignature<Javax.Security.Auth.X500.X500Principal>("getCertificateIssuer", "()Ljavax/security/auth/x500/X500Principal;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLEntry.html#getEncoded()"/> 
-        /// </summary>
-        public byte[] Encoded
-        {
-            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLEntry.html#getRevocationDate()"/> 
-        /// </summary>
-        public Java.Util.Date RevocationDate
-        {
-            get { return IExecuteWithSignature<Java.Util.Date>("getRevocationDate", "()Ljava/util/Date;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLEntry.html#getRevocationReason()"/> 
-        /// </summary>
-        public Java.Security.Cert.CRLReason RevocationReason
-        {
-            get { return IExecuteWithSignature<Java.Security.Cert.CRLReason>("getRevocationReason", "()Ljava/security/cert/CRLReason;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLEntry.html#getSerialNumber()"/> 
-        /// </summary>
-        public Java.Math.BigInteger SerialNumber
-        {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getSerialNumber", "()Ljava/math/BigInteger;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509CRLEntry.html#hasExtensions()"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLEntry.html#hasExtensions()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasExtensions()
         {
             return IExecuteWithSignature<bool>("hasExtensions", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLEntry.html#getEncoded()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Java.Security.Cert.CRLException"/>
+        public byte[] GetEncoded()
+        {
+            return IExecuteWithSignatureArray<byte>("getEncoded", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLEntry.html#getSerialNumber()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetSerialNumber()
+        {
+            return IExecuteWithSignature<Java.Math.BigInteger>("getSerialNumber", "()Ljava/math/BigInteger;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLEntry.html#getRevocationDate()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Date"/></returns>
+        public Java.Util.Date GetRevocationDate()
+        {
+            return IExecuteWithSignature<Java.Util.Date>("getRevocationDate", "()Ljava/util/Date;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLEntry.html#getRevocationReason()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Cert.CRLReason"/></returns>
+        public Java.Security.Cert.CRLReason GetRevocationReason()
+        {
+            return IExecuteWithSignature<Java.Security.Cert.CRLReason>("getRevocationReason", "()Ljava/security/cert/CRLReason;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509CRLEntry.html#getCertificateIssuer()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Security.Auth.X500.X500Principal"/></returns>
+        public Javax.Security.Auth.X500.X500Principal GetCertificateIssuer()
+        {
+            return IExecuteWithSignature<Javax.Security.Auth.X500.X500Principal>("getCertificateIssuer", "()Ljavax/security/auth/x500/X500Principal;");
         }
 
         #endregion

@@ -28,7 +28,7 @@ namespace Javax.Xml.Transform.Stream
 {
     #region StreamResult
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamResult.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamResult.html"/>
     /// </summary>
     public partial class StreamResult : Javax.Xml.Transform.Result
     {
@@ -72,7 +72,7 @@ namespace Javax.Xml.Transform.Stream
 
     #region StreamSource
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamSource.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamSource.html"/>
     /// </summary>
     public partial class StreamSource : Javax.Xml.Transform.Source
     {

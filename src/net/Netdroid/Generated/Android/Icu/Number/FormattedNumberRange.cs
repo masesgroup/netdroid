@@ -46,35 +46,22 @@ namespace Android.Icu.Number
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/number/FormattedNumberRange.html#getFirstBigDecimal()"/> 
-        /// </summary>
-        public Java.Math.BigDecimal FirstBigDecimal
-        {
-            get { return IExecuteWithSignature<Java.Math.BigDecimal>("getFirstBigDecimal", "()Ljava/math/BigDecimal;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/number/FormattedNumberRange.html#getIdentityResult()"/> 
-        /// </summary>
-        public Android.Icu.Number.NumberRangeFormatter.RangeIdentityResult IdentityResult
-        {
-            get { return IExecuteWithSignature<Android.Icu.Number.NumberRangeFormatter.RangeIdentityResult>("getIdentityResult", "()Landroid/icu/number/NumberRangeFormatter$RangeIdentityResult;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/number/FormattedNumberRange.html#getSecondBigDecimal()"/> 
-        /// </summary>
-        public Java.Math.BigDecimal SecondBigDecimal
-        {
-            get { return IExecuteWithSignature<Java.Math.BigDecimal>("getSecondBigDecimal", "()Ljava/math/BigDecimal;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/number/FormattedNumberRange.html#appendTo(java.lang.Appendable)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="A"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.IAppendable"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A AppendTo<A>(A arg0) where A: Java.Lang.IAppendable, new()
+        public A AppendTo<A>(A arg0) where A : Java.Lang.IAppendable, new()
         {
-            return IExecuteWithSignature<A>("appendTo", "(Ljava/lang/Appendable;)Ljava/lang/Appendable;", arg0);
+            return IExecute<A>("appendTo", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/number/FormattedNumberRange.html#getIdentityResult()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Number.NumberRangeFormatter.RangeIdentityResult"/></returns>
+        public Android.Icu.Number.NumberRangeFormatter.RangeIdentityResult GetIdentityResult()
+        {
+            return IExecuteWithSignature<Android.Icu.Number.NumberRangeFormatter.RangeIdentityResult>("getIdentityResult", "()Landroid/icu/number/NumberRangeFormatter$RangeIdentityResult;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/number/FormattedNumberRange.html#nextPosition(android.icu.text.ConstrainedFieldPosition)"/>
@@ -111,6 +98,22 @@ namespace Android.Icu.Number
         public Java.Lang.CharSequence SubSequence(int arg0, int arg1)
         {
             return IExecute<Java.Lang.CharSequence>("subSequence", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/number/FormattedNumberRange.html#getFirstBigDecimal()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
+        public Java.Math.BigDecimal GetFirstBigDecimal()
+        {
+            return IExecuteWithSignature<Java.Math.BigDecimal>("getFirstBigDecimal", "()Ljava/math/BigDecimal;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/number/FormattedNumberRange.html#getSecondBigDecimal()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
+        public Java.Math.BigDecimal GetSecondBigDecimal()
+        {
+            return IExecuteWithSignature<Java.Math.BigDecimal>("getSecondBigDecimal", "()Ljava/math/BigDecimal;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/number/FormattedNumberRange.html#toCharacterIterator()"/>

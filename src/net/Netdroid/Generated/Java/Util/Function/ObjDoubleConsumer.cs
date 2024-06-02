@@ -50,15 +50,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<object, double> OnAccept { get; set; } = null;
+        public global::System.Action<object, double> OnAccept { get; set; } = null;
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
@@ -67,7 +67,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -107,7 +107,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -128,7 +128,7 @@ namespace Java.Util.Function
 
     #region IObjDoubleConsumer<T>
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.ObjDoubleConsumer implementing <see href="https://developer.android.com/reference/java.base/java/util/function/ObjDoubleConsumer.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.ObjDoubleConsumer implementing <see href="https://developer.android.com/reference/java/util/function/ObjDoubleConsumer.html"/>
     /// </summary>
     public partial interface IObjDoubleConsumer<T>
     {
@@ -169,15 +169,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<T, double> OnAccept { get; set; } = null;
+        public global::System.Action<T, double> OnAccept { get; set; } = null;
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
@@ -186,7 +186,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -226,7 +226,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="double"/></param>

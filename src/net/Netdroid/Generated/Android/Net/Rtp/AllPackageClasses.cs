@@ -30,7 +30,7 @@ namespace Android.Net.Rtp
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/net/rtp/AudioCodec.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class AudioCodec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AudioCodec>
     {
         const string _bridgeClassName = "android.net.rtp.AudioCodec";
@@ -75,7 +75,7 @@ namespace Android.Net.Rtp
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/net/rtp/AudioGroup.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class AudioGroup : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AudioGroup>
     {
         const string _bridgeClassName = "android.net.rtp.AudioGroup";
@@ -120,7 +120,7 @@ namespace Android.Net.Rtp
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/net/rtp/AudioStream.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class AudioStream : Android.Net.Rtp.RtpStream
     {
         const string _bridgeClassName = "android.net.rtp.AudioStream";
@@ -165,7 +165,7 @@ namespace Android.Net.Rtp
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/net/rtp/RtpStream.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class RtpStream : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RtpStream>
     {
         const string _bridgeClassName = "android.net.rtp.RtpStream";

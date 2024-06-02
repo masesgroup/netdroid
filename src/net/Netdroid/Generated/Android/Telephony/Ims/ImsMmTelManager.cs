@@ -64,13 +64,6 @@ namespace Android.Telephony.Ims
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsMmTelManager.html#getVoWiFiModeSetting()"/> 
-        /// </summary>
-        public int VoWiFiModeSetting
-        {
-            get { return IExecuteWithSignature<int>("getVoWiFiModeSetting", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsMmTelManager.html#isAdvancedCallingSettingEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -118,6 +111,14 @@ namespace Android.Telephony.Ims
         public bool IsVtSettingEnabled()
         {
             return IExecuteWithSignature<bool>("isVtSettingEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsMmTelManager.html#getVoWiFiModeSetting()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVoWiFiModeSetting()
+        {
+            return IExecuteWithSignature<int>("getVoWiFiModeSetting", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsMmTelManager.html#getRegistrationState(java.util.concurrent.Executor,java.util.function.Consumer)"/>

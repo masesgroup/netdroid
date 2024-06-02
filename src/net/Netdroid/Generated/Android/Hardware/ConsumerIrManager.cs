@@ -46,11 +46,12 @@ namespace Android.Hardware
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/ConsumerIrManager.html#getCarrierFrequencies()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/ConsumerIrManager.html#getCarrierFrequencies()"/>
         /// </summary>
-        public Android.Hardware.ConsumerIrManager.CarrierFrequencyRange[] CarrierFrequencies
+        /// <returns><see cref="Android.Hardware.ConsumerIrManager.CarrierFrequencyRange"/></returns>
+        public Android.Hardware.ConsumerIrManager.CarrierFrequencyRange[] GetCarrierFrequencies()
         {
-            get { return IExecuteWithSignatureArray<Android.Hardware.ConsumerIrManager.CarrierFrequencyRange>("getCarrierFrequencies", "()[Landroid/hardware/ConsumerIrManager$CarrierFrequencyRange;"); }
+            return IExecuteWithSignatureArray<Android.Hardware.ConsumerIrManager.CarrierFrequencyRange>("getCarrierFrequencies", "()[Landroid/hardware/ConsumerIrManager$CarrierFrequencyRange;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/ConsumerIrManager.html#hasIrEmitter()"/>
@@ -104,18 +105,20 @@ namespace Android.Hardware
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/ConsumerIrManager.CarrierFrequencyRange.html#getMaxFrequency()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/ConsumerIrManager.CarrierFrequencyRange.html#getMaxFrequency()"/>
             /// </summary>
-            public int MaxFrequency
+            /// <returns><see cref="int"/></returns>
+            public int GetMaxFrequency()
             {
-                get { return IExecuteWithSignature<int>("getMaxFrequency", "()I"); }
+                return IExecuteWithSignature<int>("getMaxFrequency", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/ConsumerIrManager.CarrierFrequencyRange.html#getMinFrequency()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/ConsumerIrManager.CarrierFrequencyRange.html#getMinFrequency()"/>
             /// </summary>
-            public int MinFrequency
+            /// <returns><see cref="int"/></returns>
+            public int GetMinFrequency()
             {
-                get { return IExecuteWithSignature<int>("getMinFrequency", "()I"); }
+                return IExecuteWithSignature<int>("getMinFrequency", "()I");
             }
 
             #endregion

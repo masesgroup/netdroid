@@ -30,7 +30,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Allocation : Android.Renderscript.BaseObj
     {
         const string _bridgeClassName = "android.renderscript.Allocation";
@@ -71,7 +71,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.MipmapControl.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class MipmapControl : Java.Lang.Enum<Android.Renderscript.Allocation.MipmapControl>
         {
             const string _bridgeClassName = "android.renderscript.Allocation$MipmapControl";
@@ -116,7 +116,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Allocation.OnBufferAvailableListener.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class OnBufferAvailableListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
             /// <summary>
@@ -124,10 +124,13 @@ namespace Android.Renderscript
             /// </summary>
             public OnBufferAvailableListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.renderscript.Allocation_OnBufferAvailableListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.renderscript.OnBufferAvailableListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -149,10 +152,13 @@ namespace Android.Renderscript
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.renderscript.Allocation$OnBufferAvailableListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.renderscript.Allocation$OnBufferAvailableListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -180,39 +186,25 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/AllocationAdapter.html"/>
     /// </summary>
-    [System.Obsolete()]
-    public partial class AllocationAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    [global::System.Obsolete()]
+    public partial class AllocationAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AllocationAdapter>
     {
+        const string _bridgeClassName = "android.renderscript.AllocationAdapter";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AllocationAdapter() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AllocationAdapterDirect
-    /// <summary>
-    /// Direct override of <see cref="AllocationAdapter"/> or its generic type if there is one
-    /// </summary>
-    public partial class AllocationAdapterDirect : AllocationAdapter
-    {
+        public AllocationAdapter() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        public AllocationAdapter(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.renderscript.AllocationAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -229,6 +221,9 @@ namespace Android.Renderscript
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 
@@ -236,7 +231,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/BaseObj.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class BaseObj : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BaseObj>
     {
         const string _bridgeClassName = "android.renderscript.BaseObj";
@@ -281,7 +276,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Byte2.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Byte2 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Byte2>
     {
         const string _bridgeClassName = "android.renderscript.Byte2";
@@ -326,7 +321,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Byte3.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Byte3 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Byte3>
     {
         const string _bridgeClassName = "android.renderscript.Byte3";
@@ -371,7 +366,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Byte4.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Byte4 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Byte4>
     {
         const string _bridgeClassName = "android.renderscript.Byte4";
@@ -416,7 +411,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Double2.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Double2 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Double2>
     {
         const string _bridgeClassName = "android.renderscript.Double2";
@@ -461,7 +456,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Double3.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Double3 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Double3>
     {
         const string _bridgeClassName = "android.renderscript.Double3";
@@ -506,7 +501,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Double4.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Double4 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Double4>
     {
         const string _bridgeClassName = "android.renderscript.Double4";
@@ -551,7 +546,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Element.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Element : Android.Renderscript.BaseObj
     {
         const string _bridgeClassName = "android.renderscript.Element";
@@ -592,7 +587,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Element.Builder.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
         {
             const string _bridgeClassName = "android.renderscript.Element$Builder";
@@ -637,7 +632,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataKind.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class DataKind : Java.Lang.Enum<Android.Renderscript.Element.DataKind>
         {
             const string _bridgeClassName = "android.renderscript.Element$DataKind";
@@ -682,7 +677,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class DataType : Java.Lang.Enum<Android.Renderscript.Element.DataType>
         {
             const string _bridgeClassName = "android.renderscript.Element$DataType";
@@ -731,7 +726,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/FieldPacker.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class FieldPacker : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FieldPacker>
     {
         const string _bridgeClassName = "android.renderscript.FieldPacker";
@@ -776,7 +771,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Float2.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Float2 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Float2>
     {
         const string _bridgeClassName = "android.renderscript.Float2";
@@ -821,7 +816,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Float3.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Float3 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Float3>
     {
         const string _bridgeClassName = "android.renderscript.Float3";
@@ -866,7 +861,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Float4.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Float4 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Float4>
     {
         const string _bridgeClassName = "android.renderscript.Float4";
@@ -911,7 +906,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Int2.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Int2 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Int2>
     {
         const string _bridgeClassName = "android.renderscript.Int2";
@@ -956,7 +951,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Int3.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Int3 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Int3>
     {
         const string _bridgeClassName = "android.renderscript.Int3";
@@ -1001,7 +996,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Int4.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Int4 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Int4>
     {
         const string _bridgeClassName = "android.renderscript.Int4";
@@ -1046,7 +1041,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Long2.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Long2 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Long2>
     {
         const string _bridgeClassName = "android.renderscript.Long2";
@@ -1091,7 +1086,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Long3.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Long3 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Long3>
     {
         const string _bridgeClassName = "android.renderscript.Long3";
@@ -1136,7 +1131,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Long4.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Long4 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Long4>
     {
         const string _bridgeClassName = "android.renderscript.Long4";
@@ -1181,7 +1176,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Matrix2f.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Matrix2f : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Matrix2f>
     {
         const string _bridgeClassName = "android.renderscript.Matrix2f";
@@ -1226,7 +1221,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Matrix3f.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Matrix3f : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Matrix3f>
     {
         const string _bridgeClassName = "android.renderscript.Matrix3f";
@@ -1271,7 +1266,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Matrix4f.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Matrix4f : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Matrix4f>
     {
         const string _bridgeClassName = "android.renderscript.Matrix4f";
@@ -1316,7 +1311,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class RenderScript : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RenderScript>
     {
         const string _bridgeClassName = "android.renderscript.RenderScript";
@@ -1357,7 +1352,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.ContextType.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class ContextType : Java.Lang.Enum<Android.Renderscript.RenderScript.ContextType>
         {
             const string _bridgeClassName = "android.renderscript.RenderScript$ContextType";
@@ -1402,7 +1397,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.Priority.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Priority : Java.Lang.Enum<Android.Renderscript.RenderScript.Priority>
         {
             const string _bridgeClassName = "android.renderscript.RenderScript$Priority";
@@ -1447,7 +1442,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.RSErrorHandler.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class RSErrorHandler : Java.Lang.Runnable
         {
             const string _bridgeClassName = "android.renderscript.RenderScript$RSErrorHandler";
@@ -1492,7 +1487,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.RSMessageHandler.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class RSMessageHandler : Java.Lang.Runnable
         {
             const string _bridgeClassName = "android.renderscript.RenderScript$RSMessageHandler";
@@ -1541,7 +1536,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/RSDriverException.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class RSDriverException : Android.Renderscript.RSRuntimeException
     {
         const string _bridgeClassName = "android.renderscript.RSDriverException";
@@ -1559,7 +1554,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/RSIllegalArgumentException.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class RSIllegalArgumentException : Android.Renderscript.RSRuntimeException
     {
         const string _bridgeClassName = "android.renderscript.RSIllegalArgumentException";
@@ -1577,7 +1572,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/RSInvalidStateException.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class RSInvalidStateException : Android.Renderscript.RSRuntimeException
     {
         const string _bridgeClassName = "android.renderscript.RSInvalidStateException";
@@ -1595,7 +1590,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/RSRuntimeException.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class RSRuntimeException : Java.Lang.RuntimeException
     {
         const string _bridgeClassName = "android.renderscript.RSRuntimeException";
@@ -1613,7 +1608,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Sampler : Android.Renderscript.BaseObj
     {
         const string _bridgeClassName = "android.renderscript.Sampler";
@@ -1654,7 +1649,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.Builder.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
         {
             const string _bridgeClassName = "android.renderscript.Sampler$Builder";
@@ -1699,7 +1694,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Sampler.Value.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Value : Java.Lang.Enum<Android.Renderscript.Sampler.Value>
         {
             const string _bridgeClassName = "android.renderscript.Sampler$Value";
@@ -1748,7 +1743,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Script.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Script : Android.Renderscript.BaseObj
     {
         const string _bridgeClassName = "android.renderscript.Script";
@@ -1789,7 +1784,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Script.Builder.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
         {
             const string _bridgeClassName = "android.renderscript.Script$Builder";
@@ -1834,7 +1829,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Script.FieldBase.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class FieldBase : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FieldBase>
         {
             const string _bridgeClassName = "android.renderscript.Script$FieldBase";
@@ -1879,7 +1874,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Script.FieldID.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class FieldID : Android.Renderscript.BaseObj
         {
             const string _bridgeClassName = "android.renderscript.Script$FieldID";
@@ -1924,7 +1919,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Script.InvokeID.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class InvokeID : Android.Renderscript.BaseObj
         {
             const string _bridgeClassName = "android.renderscript.Script$InvokeID";
@@ -1969,7 +1964,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Script.KernelID.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class KernelID : Android.Renderscript.BaseObj
         {
             const string _bridgeClassName = "android.renderscript.Script$KernelID";
@@ -2014,7 +2009,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Script.LaunchOptions.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class LaunchOptions : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LaunchOptions>
         {
             const string _bridgeClassName = "android.renderscript.Script$LaunchOptions";
@@ -2063,7 +2058,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/ScriptC.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ScriptC : Android.Renderscript.Script
     {
         const string _bridgeClassName = "android.renderscript.ScriptC";
@@ -2108,7 +2103,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/ScriptGroup.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ScriptGroup : Android.Renderscript.BaseObj
     {
         const string _bridgeClassName = "android.renderscript.ScriptGroup";
@@ -2149,7 +2144,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptGroup.Binding.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Binding : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Binding>
         {
             const string _bridgeClassName = "android.renderscript.ScriptGroup$Binding";
@@ -2194,7 +2189,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptGroup.Builder.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
         {
             const string _bridgeClassName = "android.renderscript.ScriptGroup$Builder";
@@ -2239,7 +2234,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptGroup.Builder2.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Builder2 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder2>
         {
             const string _bridgeClassName = "android.renderscript.ScriptGroup$Builder2";
@@ -2284,7 +2279,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptGroup.Closure.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Closure : Android.Renderscript.BaseObj
         {
             const string _bridgeClassName = "android.renderscript.ScriptGroup$Closure";
@@ -2329,7 +2324,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptGroup.Future.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Future : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Future>
         {
             const string _bridgeClassName = "android.renderscript.ScriptGroup$Future";
@@ -2374,7 +2369,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptGroup.Input.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Input : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Input>
         {
             const string _bridgeClassName = "android.renderscript.ScriptGroup$Input";
@@ -2423,19 +2418,19 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsic.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ScriptIntrinsic : Android.Renderscript.Script
     {
         const string _bridgeClassName = "android.renderscript.ScriptIntrinsic";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ScriptIntrinsic class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ScriptIntrinsic class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ScriptIntrinsic() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ScriptIntrinsic class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ScriptIntrinsic class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ScriptIntrinsic(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2470,7 +2465,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsic3DLUT.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ScriptIntrinsic3DLUT : Android.Renderscript.ScriptIntrinsic
     {
         const string _bridgeClassName = "android.renderscript.ScriptIntrinsic3DLUT";
@@ -2515,7 +2510,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBLAS.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ScriptIntrinsicBLAS : Android.Renderscript.ScriptIntrinsic
     {
         const string _bridgeClassName = "android.renderscript.ScriptIntrinsicBLAS";
@@ -2560,7 +2555,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlend.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ScriptIntrinsicBlend : Android.Renderscript.ScriptIntrinsic
     {
         const string _bridgeClassName = "android.renderscript.ScriptIntrinsicBlend";
@@ -2605,7 +2600,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicBlur.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ScriptIntrinsicBlur : Android.Renderscript.ScriptIntrinsic
     {
         const string _bridgeClassName = "android.renderscript.ScriptIntrinsicBlur";
@@ -2650,7 +2645,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicColorMatrix.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ScriptIntrinsicColorMatrix : Android.Renderscript.ScriptIntrinsic
     {
         const string _bridgeClassName = "android.renderscript.ScriptIntrinsicColorMatrix";
@@ -2695,7 +2690,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicConvolve3x3.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ScriptIntrinsicConvolve3x3 : Android.Renderscript.ScriptIntrinsic
     {
         const string _bridgeClassName = "android.renderscript.ScriptIntrinsicConvolve3x3";
@@ -2740,7 +2735,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicConvolve5x5.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ScriptIntrinsicConvolve5x5 : Android.Renderscript.ScriptIntrinsic
     {
         const string _bridgeClassName = "android.renderscript.ScriptIntrinsicConvolve5x5";
@@ -2785,7 +2780,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicHistogram.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ScriptIntrinsicHistogram : Android.Renderscript.ScriptIntrinsic
     {
         const string _bridgeClassName = "android.renderscript.ScriptIntrinsicHistogram";
@@ -2830,7 +2825,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicLUT.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ScriptIntrinsicLUT : Android.Renderscript.ScriptIntrinsic
     {
         const string _bridgeClassName = "android.renderscript.ScriptIntrinsicLUT";
@@ -2875,7 +2870,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicResize.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ScriptIntrinsicResize : Android.Renderscript.ScriptIntrinsic
     {
         const string _bridgeClassName = "android.renderscript.ScriptIntrinsicResize";
@@ -2920,7 +2915,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicYuvToRGB.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ScriptIntrinsicYuvToRGB : Android.Renderscript.ScriptIntrinsic
     {
         const string _bridgeClassName = "android.renderscript.ScriptIntrinsicYuvToRGB";
@@ -2965,7 +2960,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Short2.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Short2 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Short2>
     {
         const string _bridgeClassName = "android.renderscript.Short2";
@@ -3010,7 +3005,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Short3.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Short3 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Short3>
     {
         const string _bridgeClassName = "android.renderscript.Short3";
@@ -3055,7 +3050,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Short4.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Short4 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Short4>
     {
         const string _bridgeClassName = "android.renderscript.Short4";
@@ -3100,7 +3095,7 @@ namespace Android.Renderscript
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/renderscript/Type.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Type : Android.Renderscript.BaseObj
     {
         const string _bridgeClassName = "android.renderscript.Type";
@@ -3141,7 +3136,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Type.Builder.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
         {
             const string _bridgeClassName = "android.renderscript.Type$Builder";
@@ -3186,7 +3181,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Type.CubemapFace.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class CubemapFace : Java.Lang.Enum<Android.Renderscript.Type.CubemapFace>
         {
             const string _bridgeClassName = "android.renderscript.Type$CubemapFace";

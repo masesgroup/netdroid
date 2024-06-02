@@ -104,71 +104,56 @@ namespace Android.Media
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getAudioSourceMax()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getAudioSourceMax()"/>
         /// </summary>
-        public static int AudioSourceMax
+        /// <returns><see cref="int"/></returns>
+        public static int GetAudioSourceMax()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getAudioSourceMax", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getAudioSourceMax", "()I");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getActiveMicrophones()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getPreferredDevice()"/>
         /// </summary>
-        public Java.Util.List<Android.Media.MicrophoneInfo> ActiveMicrophones
+        /// <returns><see cref="Android.Media.AudioDeviceInfo"/></returns>
+        public Android.Media.AudioDeviceInfo GetPreferredDevice()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.MicrophoneInfo>>("getActiveMicrophones", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getPreferredDevice", "()Landroid/media/AudioDeviceInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getActiveRecordingConfiguration()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getRoutedDevice()"/>
         /// </summary>
-        public Android.Media.AudioRecordingConfiguration ActiveRecordingConfiguration
+        /// <returns><see cref="Android.Media.AudioDeviceInfo"/></returns>
+        public Android.Media.AudioDeviceInfo GetRoutedDevice()
         {
-            get { return IExecuteWithSignature<Android.Media.AudioRecordingConfiguration>("getActiveRecordingConfiguration", "()Landroid/media/AudioRecordingConfiguration;"); }
+            return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getRoutedDevice", "()Landroid/media/AudioDeviceInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getLogSessionId()"/> <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#setLogSessionId(android.media.metrics.LogSessionId)"/>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getActiveRecordingConfiguration()"/>
         /// </summary>
-        public Android.Media.Metrics.LogSessionId LogSessionId
+        /// <returns><see cref="Android.Media.AudioRecordingConfiguration"/></returns>
+        public Android.Media.AudioRecordingConfiguration GetActiveRecordingConfiguration()
         {
-            get { return IExecuteWithSignature<Android.Media.Metrics.LogSessionId>("getLogSessionId", "()Landroid/media/metrics/LogSessionId;"); } set { IExecuteWithSignature("setLogSessionId", "(Landroid/media/metrics/LogSessionId;)V", value); }
+            return IExecuteWithSignature<Android.Media.AudioRecordingConfiguration>("getActiveRecordingConfiguration", "()Landroid/media/AudioRecordingConfiguration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getMaxAmplitude()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getLogSessionId()"/>
         /// </summary>
-        public int MaxAmplitude
+        /// <returns><see cref="Android.Media.Metrics.LogSessionId"/></returns>
+        public Android.Media.Metrics.LogSessionId GetLogSessionId()
         {
-            get { return IExecuteWithSignature<int>("getMaxAmplitude", "()I"); }
+            return IExecuteWithSignature<Android.Media.Metrics.LogSessionId>("getLogSessionId", "()Landroid/media/metrics/LogSessionId;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getMetrics()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getMetrics()"/>
         /// </summary>
-        public Android.Os.PersistableBundle Metrics
+        /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
+        public Android.Os.PersistableBundle GetMetrics()
         {
-            get { return IExecuteWithSignature<Android.Os.PersistableBundle>("getMetrics", "()Landroid/os/PersistableBundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getPreferredDevice()"/> 
-        /// </summary>
-        public Android.Media.AudioDeviceInfo PreferredDevice
-        {
-            get { return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getPreferredDevice", "()Landroid/media/AudioDeviceInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getRoutedDevice()"/> 
-        /// </summary>
-        public Android.Media.AudioDeviceInfo RoutedDevice
-        {
-            get { return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getRoutedDevice", "()Landroid/media/AudioDeviceInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getSurface()"/> 
-        /// </summary>
-        public Android.View.Surface Surface
-        {
-            get { return IExecuteWithSignature<Android.View.Surface>("getSurface", "()Landroid/view/Surface;"); }
+            return IExecuteWithSignature<Android.Os.PersistableBundle>("getMetrics", "()Landroid/os/PersistableBundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#setPreferredDevice(android.media.AudioDeviceInfo)"/>
@@ -198,12 +183,38 @@ namespace Android.Media
             return IExecuteWithSignature<bool>("setPreferredMicrophoneFieldDimension", "(F)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getActiveMicrophones()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.List<Android.Media.MicrophoneInfo> GetActiveMicrophones()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.MicrophoneInfo>>("getActiveMicrophones", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getSurface()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Surface"/></returns>
+        public Android.View.Surface GetSurface()
+        {
+            return IExecuteWithSignature<Android.View.Surface>("getSurface", "()Landroid/view/Surface;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#isPrivacySensitive()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsPrivacySensitive()
         {
             return IExecuteWithSignature<bool>("isPrivacySensitive", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#getMaxAmplitude()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        public int GetMaxAmplitude()
+        {
+            return IExecuteWithSignature<int>("getMaxAmplitude", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#pause()"/>
@@ -250,7 +261,7 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#setCamera(android.hardware.Camera)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Hardware.Camera"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetCamera(Android.Hardware.Camera arg0)
         {
             IExecuteWithSignature("setCamera", "(Landroid/hardware/Camera;)V", arg0);
@@ -441,6 +452,14 @@ namespace Android.Media
         public void SetLocation(float arg0, float arg1)
         {
             IExecute("setLocation", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#setLogSessionId(android.media.metrics.LogSessionId)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.Metrics.LogSessionId"/></param>
+        public void SetLogSessionId(Android.Media.Metrics.LogSessionId arg0)
+        {
+            IExecuteWithSignature("setLogSessionId", "(Landroid/media/metrics/LogSessionId;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.html#setNextOutputFile(java.io.File)"/>
@@ -891,7 +910,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onError", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaRecorder>>>(OnErrorEventHandler));
+                AddEventHandler("onError", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaRecorder>>>(OnErrorEventHandler));
 
             }
 
@@ -899,7 +918,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaRecorder.OnErrorListener.html#onError(android.media.MediaRecorder,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaRecorder, int, int> OnOnError { get; set; } = null;
+            public global::System.Action<Android.Media.MediaRecorder, int, int> OnOnError { get; set; } = null;
 
             void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaRecorder>> data)
             {
@@ -994,7 +1013,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onInfo", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaRecorder>>>(OnInfoEventHandler));
+                AddEventHandler("onInfo", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaRecorder>>>(OnInfoEventHandler));
 
             }
 
@@ -1002,7 +1021,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaRecorder.OnInfoListener.html#onInfo(android.media.MediaRecorder,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnInfo"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaRecorder, int, int> OnOnInfo { get; set; } = null;
+            public global::System.Action<Android.Media.MediaRecorder, int, int> OnOnInfo { get; set; } = null;
 
             void OnInfoEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaRecorder>> data)
             {
@@ -1129,7 +1148,7 @@ namespace Android.Media
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRecorder.OutputFormat.html#RAW_AMR"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int RAW_AMR { get { if (!_RAW_AMRReady) { _RAW_AMRContent = SGetField<int>(LocalBridgeClazz, "RAW_AMR"); _RAW_AMRReady = true; } return _RAW_AMRContent; } }
             private static int _RAW_AMRContent = default;
             private static bool _RAW_AMRReady = false; // this is used because in case of generics 

@@ -69,26 +69,44 @@ namespace Android.Os.Health
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/health/TimerStat.html#getCount()"/> <see href="https://developer.android.com/reference/android/os/health/TimerStat.html#setCount(int)"/>
-        /// </summary>
-        public int Count
-        {
-            get { return IExecuteWithSignature<int>("getCount", "()I"); } set { IExecuteWithSignature("setCount", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/health/TimerStat.html#getTime()"/> <see href="https://developer.android.com/reference/android/os/health/TimerStat.html#setTime(long)"/>
-        /// </summary>
-        public long Time
-        {
-            get { return IExecuteWithSignature<long>("getTime", "()J"); } set { IExecuteWithSignature("setTime", "(J)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/health/TimerStat.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/TimerStat.html#getCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCount()
+        {
+            return IExecuteWithSignature<int>("getCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/TimerStat.html#getTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTime()
+        {
+            return IExecuteWithSignature<long>("getTime", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/TimerStat.html#setCount(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetCount(int arg0)
+        {
+            IExecuteWithSignature("setCount", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/TimerStat.html#setTime(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetTime(long arg0)
+        {
+            IExecuteWithSignature("setTime", "(J)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/health/TimerStat.html#writeToParcel(android.os.Parcel,int)"/>

@@ -64,19 +64,30 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileOwnerAttributeView.html#getOwner()"/> <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileOwnerAttributeView.html#setOwner(java.nio.file.attribute.UserPrincipal)"/>
-        /// </summary>
-        public Java.Nio.File.Attribute.UserPrincipal Owner
-        {
-            get { return IExecuteWithSignature<Java.Nio.File.Attribute.UserPrincipal>("getOwner", "()Ljava/nio/file/attribute/UserPrincipal;"); } set { IExecuteWithSignature("setOwner", "(Ljava/nio/file/attribute/UserPrincipal;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/FileOwnerAttributeView.html#name()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileOwnerAttributeView.html#name()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileOwnerAttributeView.html#getOwner()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Nio.File.Attribute.UserPrincipal"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.File.Attribute.UserPrincipal GetOwner()
+        {
+            return IExecuteWithSignature<Java.Nio.File.Attribute.UserPrincipal>("getOwner", "()Ljava/nio/file/attribute/UserPrincipal;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/FileOwnerAttributeView.html#setOwner(java.nio.file.attribute.UserPrincipal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.UserPrincipal"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void SetOwner(Java.Nio.File.Attribute.UserPrincipal arg0)
+        {
+            IExecuteWithSignature("setOwner", "(Ljava/nio/file/attribute/UserPrincipal;)V", arg0);
         }
 
         #endregion

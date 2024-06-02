@@ -92,14 +92,14 @@ namespace Android.Os
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#MODE_WORLD_READABLE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MODE_WORLD_READABLE { get { if (!_MODE_WORLD_READABLEReady) { _MODE_WORLD_READABLEContent = SGetField<int>(LocalBridgeClazz, "MODE_WORLD_READABLE"); _MODE_WORLD_READABLEReady = true; } return _MODE_WORLD_READABLEContent; } }
         private static int _MODE_WORLD_READABLEContent = default;
         private static bool _MODE_WORLD_READABLEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#MODE_WORLD_WRITEABLE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MODE_WORLD_WRITEABLE { get { if (!_MODE_WORLD_WRITEABLEReady) { _MODE_WORLD_WRITEABLEContent = SGetField<int>(LocalBridgeClazz, "MODE_WORLD_WRITEABLE"); _MODE_WORLD_WRITEABLEReady = true; } return _MODE_WORLD_WRITEABLEContent; } }
         private static int _MODE_WORLD_WRITEABLEContent = default;
         private static bool _MODE_WORLD_WRITEABLEReady = false; // this is used because in case of generics 
@@ -246,27 +246,6 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#getFd()"/> 
-        /// </summary>
-        public int Fd
-        {
-            get { return IExecuteWithSignature<int>("getFd", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#getFileDescriptor()"/> 
-        /// </summary>
-        public Java.Io.FileDescriptor FileDescriptor
-        {
-            get { return IExecuteWithSignature<Java.Io.FileDescriptor>("getFileDescriptor", "()Ljava/io/FileDescriptor;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#getStatSize()"/> 
-        /// </summary>
-        public long StatSize
-        {
-            get { return IExecuteWithSignature<long>("getStatSize", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#dup()"/>
         /// </summary>
         /// <returns><see cref="Android.Os.ParcelFileDescriptor"/></returns>
@@ -298,6 +277,30 @@ namespace Android.Os
         public int DetachFd()
         {
             return IExecuteWithSignature<int>("detachFd", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#getFd()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFd()
+        {
+            return IExecuteWithSignature<int>("getFd", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#getFileDescriptor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.FileDescriptor"/></returns>
+        public Java.Io.FileDescriptor GetFileDescriptor()
+        {
+            return IExecuteWithSignature<Java.Io.FileDescriptor>("getFileDescriptor", "()Ljava/io/FileDescriptor;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#getStatSize()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetStatSize()
+        {
+            return IExecuteWithSignature<long>("getStatSize", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.html#checkError()"/>
@@ -471,7 +474,7 @@ namespace Android.Os
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onClose", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnCloseEventHandler));
+                AddEventHandler("onClose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnCloseEventHandler));
 
             }
 
@@ -479,7 +482,7 @@ namespace Android.Os
             /// Handler for <see href="https://developer.android.com/reference/android/os/ParcelFileDescriptor.OnCloseListener.html#onClose(java.io.IOException)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnClose"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnOnClose { get; set; } = null;
+            public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnOnClose { get; set; } = null;
 
             void OnCloseEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {

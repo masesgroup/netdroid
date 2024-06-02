@@ -42,7 +42,7 @@ namespace Javax.Crypto
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/ExemptionMechanism.html#getInstance(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/ExemptionMechanism.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -54,7 +54,7 @@ namespace Javax.Crypto
             return SExecute<Javax.Crypto.ExemptionMechanism>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/ExemptionMechanism.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/ExemptionMechanism.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
@@ -65,7 +65,7 @@ namespace Javax.Crypto
             return SExecute<Javax.Crypto.ExemptionMechanism>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/ExemptionMechanism.html#getInstance(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/ExemptionMechanism.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Crypto.ExemptionMechanism"/></returns>
@@ -79,21 +79,7 @@ namespace Javax.Crypto
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/ExemptionMechanism.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/ExemptionMechanism.html#getProvider()"/> 
-        /// </summary>
-        public Java.Security.Provider Provider
-        {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/ExemptionMechanism.html#isCryptoAllowed(java.security.Key)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/ExemptionMechanism.html#isCryptoAllowed(java.security.Key)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -103,7 +89,7 @@ namespace Javax.Crypto
             return IExecuteWithSignature<bool>("isCryptoAllowed", "(Ljava/security/Key;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/ExemptionMechanism.html#genExemptionBlob()"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/ExemptionMechanism.html#genExemptionBlob()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Lang.IllegalStateException"/>
@@ -113,7 +99,7 @@ namespace Javax.Crypto
             return IExecuteWithSignatureArray<byte>("genExemptionBlob", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/ExemptionMechanism.html#genExemptionBlob(byte[],int)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/ExemptionMechanism.html#genExemptionBlob(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -126,7 +112,7 @@ namespace Javax.Crypto
             return IExecute<int>("genExemptionBlob", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/ExemptionMechanism.html#genExemptionBlob(byte[])"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/ExemptionMechanism.html#genExemptionBlob(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="int"/></returns>
@@ -138,7 +124,7 @@ namespace Javax.Crypto
             return IExecuteWithSignature<int>("genExemptionBlob", "([B)I", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/ExemptionMechanism.html#getOutputSize(int)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/ExemptionMechanism.html#getOutputSize(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -148,7 +134,23 @@ namespace Javax.Crypto
             return IExecuteWithSignature<int>("getOutputSize", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/ExemptionMechanism.html#init(java.security.Key,java.security.AlgorithmParameters)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/ExemptionMechanism.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/crypto/ExemptionMechanism.html#getProvider()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public Java.Security.Provider GetProvider()
+        {
+            return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/crypto/ExemptionMechanism.html#init(java.security.Key,java.security.AlgorithmParameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <param name="arg1"><see cref="Java.Security.AlgorithmParameters"/></param>
@@ -160,7 +162,7 @@ namespace Javax.Crypto
             IExecute("init", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/ExemptionMechanism.html#init(java.security.Key,java.security.spec.AlgorithmParameterSpec)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/ExemptionMechanism.html#init(java.security.Key,java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <param name="arg1"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
@@ -172,7 +174,7 @@ namespace Javax.Crypto
             IExecute("init", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/ExemptionMechanism.html#init(java.security.Key)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/ExemptionMechanism.html#init(java.security.Key)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <exception cref="Java.Security.InvalidKeyException"/>

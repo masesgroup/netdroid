@@ -64,21 +64,7 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CookieStore.html#getCookies()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Net.HttpCookie> Cookies
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Net.HttpCookie>>("getCookies", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CookieStore.html#getURIs()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Net.URI> URIs
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Net.URI>>("getURIs", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CookieStore.html#remove(java.net.URI,java.net.HttpCookie)"/>
+        /// <see href="https://developer.android.com/reference/java/net/CookieStore.html#remove(java.net.URI,java.net.HttpCookie)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
@@ -88,7 +74,7 @@ namespace Java.Net
             return IExecute<bool>("remove", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CookieStore.html#removeAll()"/>
+        /// <see href="https://developer.android.com/reference/java/net/CookieStore.html#removeAll()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool RemoveAll()
@@ -96,7 +82,7 @@ namespace Java.Net
             return IExecuteWithSignature<bool>("removeAll", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CookieStore.html#get(java.net.URI)"/>
+        /// <see href="https://developer.android.com/reference/java/net/CookieStore.html#get(java.net.URI)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
@@ -105,7 +91,23 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Util.List<Java.Net.HttpCookie>>("get", "(Ljava/net/URI;)Ljava/util/List;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CookieStore.html#add(java.net.URI,java.net.HttpCookie)"/>
+        /// <see href="https://developer.android.com/reference/java/net/CookieStore.html#getCookies()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Net.HttpCookie> GetCookies()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Net.HttpCookie>>("getCookies", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/CookieStore.html#getURIs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Net.URI> GetURIs()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Net.URI>>("getURIs", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/CookieStore.html#add(java.net.URI,java.net.HttpCookie)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>

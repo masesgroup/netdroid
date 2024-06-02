@@ -74,18 +74,36 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/BitmapShader.html#getFilterMode()"/> <see href="https://developer.android.com/reference/android/graphics/BitmapShader.html#setFilterMode(int)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/BitmapShader.html#getFilterMode()"/>
         /// </summary>
-        public int FilterMode
+        /// <returns><see cref="int"/></returns>
+        public int GetFilterMode()
         {
-            get { return IExecuteWithSignature<int>("getFilterMode", "()I"); } set { IExecuteWithSignature("setFilterMode", "(I)V", value); }
+            return IExecuteWithSignature<int>("getFilterMode", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/BitmapShader.html#getMaxAnisotropy()"/> <see href="https://developer.android.com/reference/android/graphics/BitmapShader.html#setMaxAnisotropy(int)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/BitmapShader.html#getMaxAnisotropy()"/>
         /// </summary>
-        public int MaxAnisotropy
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxAnisotropy()
         {
-            get { return IExecuteWithSignature<int>("getMaxAnisotropy", "()I"); } set { IExecuteWithSignature("setMaxAnisotropy", "(I)V", value); }
+            return IExecuteWithSignature<int>("getMaxAnisotropy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/BitmapShader.html#setFilterMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetFilterMode(int arg0)
+        {
+            IExecuteWithSignature("setFilterMode", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/BitmapShader.html#setMaxAnisotropy(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaxAnisotropy(int arg0)
+        {
+            IExecuteWithSignature("setMaxAnisotropy", "(I)V", arg0);
         }
 
         #endregion

@@ -69,7 +69,7 @@ namespace Android.Database.Sqlite
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteClosable.html#releaseReferenceFromContainer()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ReleaseReferenceFromContainer()
         {
             IExecuteWithSignature("releaseReferenceFromContainer", "()V");

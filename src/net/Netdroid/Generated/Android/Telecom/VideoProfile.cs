@@ -186,26 +186,28 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/VideoProfile.html#getQuality()"/> 
-        /// </summary>
-        public int Quality
-        {
-            get { return IExecuteWithSignature<int>("getQuality", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/VideoProfile.html#getVideoState()"/> 
-        /// </summary>
-        public int VideoState
-        {
-            get { return IExecuteWithSignature<int>("getVideoState", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/VideoProfile.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/VideoProfile.html#getQuality()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetQuality()
+        {
+            return IExecuteWithSignature<int>("getQuality", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/VideoProfile.html#getVideoState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVideoState()
+        {
+            return IExecuteWithSignature<int>("getVideoState", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/VideoProfile.html#writeToParcel(android.os.Parcel,int)"/>
@@ -267,27 +269,6 @@ namespace Android.Telecom
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/VideoProfile.CameraCapabilities.html#getHeight()"/> 
-            /// </summary>
-            public int Height
-            {
-                get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/VideoProfile.CameraCapabilities.html#getMaxZoom()"/> 
-            /// </summary>
-            public float MaxZoom
-            {
-                get { return IExecuteWithSignature<float>("getMaxZoom", "()F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/telecom/VideoProfile.CameraCapabilities.html#getWidth()"/> 
-            /// </summary>
-            public int Width
-            {
-                get { return IExecuteWithSignature<int>("getWidth", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/VideoProfile.CameraCapabilities.html#isZoomSupported()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
@@ -296,12 +277,36 @@ namespace Android.Telecom
                 return IExecuteWithSignature<bool>("isZoomSupported", "()Z");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/VideoProfile.CameraCapabilities.html#getMaxZoom()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            public float GetMaxZoom()
+            {
+                return IExecuteWithSignature<float>("getMaxZoom", "()F");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/VideoProfile.CameraCapabilities.html#describeContents()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/VideoProfile.CameraCapabilities.html#getHeight()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetHeight()
+            {
+                return IExecuteWithSignature<int>("getHeight", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/telecom/VideoProfile.CameraCapabilities.html#getWidth()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetWidth()
+            {
+                return IExecuteWithSignature<int>("getWidth", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/telecom/VideoProfile.CameraCapabilities.html#writeToParcel(android.os.Parcel,int)"/>

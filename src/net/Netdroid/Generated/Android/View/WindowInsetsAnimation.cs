@@ -56,46 +56,68 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.html#getAlpha()"/> <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.html#setAlpha(float)"/>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.html#getInterpolator()"/>
         /// </summary>
-        public float Alpha
+        /// <returns><see cref="Android.View.Animation.Interpolator"/></returns>
+        public Android.View.Animation.Interpolator GetInterpolator()
         {
-            get { return IExecuteWithSignature<float>("getAlpha", "()F"); } set { IExecuteWithSignature("setAlpha", "(F)V", value); }
+            return IExecuteWithSignature<Android.View.Animation.Interpolator>("getInterpolator", "()Landroid/view/animation/Interpolator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.html#getDurationMillis()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.html#getAlpha()"/>
         /// </summary>
-        public long DurationMillis
+        /// <returns><see cref="float"/></returns>
+        public float GetAlpha()
         {
-            get { return IExecuteWithSignature<long>("getDurationMillis", "()J"); }
+            return IExecuteWithSignature<float>("getAlpha", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.html#getFraction()"/> <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.html#setFraction(float)"/>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.html#getFraction()"/>
         /// </summary>
-        public float Fraction
+        /// <returns><see cref="float"/></returns>
+        public float GetFraction()
         {
-            get { return IExecuteWithSignature<float>("getFraction", "()F"); } set { IExecuteWithSignature("setFraction", "(F)V", value); }
+            return IExecuteWithSignature<float>("getFraction", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.html#getInterpolatedFraction()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.html#getInterpolatedFraction()"/>
         /// </summary>
-        public float InterpolatedFraction
+        /// <returns><see cref="float"/></returns>
+        public float GetInterpolatedFraction()
         {
-            get { return IExecuteWithSignature<float>("getInterpolatedFraction", "()F"); }
+            return IExecuteWithSignature<float>("getInterpolatedFraction", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.html#getInterpolator()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.html#getTypeMask()"/>
         /// </summary>
-        public Android.View.Animation.Interpolator Interpolator
+        /// <returns><see cref="int"/></returns>
+        public int GetTypeMask()
         {
-            get { return IExecuteWithSignature<Android.View.Animation.Interpolator>("getInterpolator", "()Landroid/view/animation/Interpolator;"); }
+            return IExecuteWithSignature<int>("getTypeMask", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.html#getTypeMask()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.html#getDurationMillis()"/>
         /// </summary>
-        public int TypeMask
+        /// <returns><see cref="long"/></returns>
+        public long GetDurationMillis()
         {
-            get { return IExecuteWithSignature<int>("getTypeMask", "()I"); }
+            return IExecuteWithSignature<long>("getDurationMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.html#setAlpha(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetAlpha(float arg0)
+        {
+            IExecuteWithSignature("setAlpha", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.html#setFraction(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetFraction(float arg0)
+        {
+            IExecuteWithSignature("setFraction", "(F)V", arg0);
         }
 
         #endregion
@@ -131,18 +153,20 @@ namespace Android.View
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.Bounds.html#getLowerBound()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.Bounds.html#getLowerBound()"/>
             /// </summary>
-            public Android.Graphics.Insets LowerBound
+            /// <returns><see cref="Android.Graphics.Insets"/></returns>
+            public Android.Graphics.Insets GetLowerBound()
             {
-                get { return IExecuteWithSignature<Android.Graphics.Insets>("getLowerBound", "()Landroid/graphics/Insets;"); }
+                return IExecuteWithSignature<Android.Graphics.Insets>("getLowerBound", "()Landroid/graphics/Insets;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.Bounds.html#getUpperBound()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.Bounds.html#getUpperBound()"/>
             /// </summary>
-            public Android.Graphics.Insets UpperBound
+            /// <returns><see cref="Android.Graphics.Insets"/></returns>
+            public Android.Graphics.Insets GetUpperBound()
             {
-                get { return IExecuteWithSignature<Android.Graphics.Insets>("getUpperBound", "()Landroid/graphics/Insets;"); }
+                return IExecuteWithSignature<Android.Graphics.Insets>("getUpperBound", "()Landroid/graphics/Insets;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.Bounds.html#inset(android.graphics.Insets)"/>
@@ -205,13 +229,6 @@ namespace Android.View
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.Callback.html#getDispatchMode()"/> 
-            /// </summary>
-            public int DispatchMode
-            {
-                get { return IExecuteWithSignature<int>("getDispatchMode", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.Callback.html#onProgress(android.view.WindowInsets,java.util.List)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.View.WindowInsets"/></param>
@@ -230,6 +247,14 @@ namespace Android.View
             public Android.View.WindowInsetsAnimation.Bounds OnStart(Android.View.WindowInsetsAnimation arg0, Android.View.WindowInsetsAnimation.Bounds arg1)
             {
                 return IExecute<Android.View.WindowInsetsAnimation.Bounds>("onStart", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.Callback.html#getDispatchMode()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetDispatchMode()
+            {
+                return IExecuteWithSignature<int>("getDispatchMode", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimation.Callback.html#onEnd(android.view.WindowInsetsAnimation)"/>

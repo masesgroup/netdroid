@@ -73,18 +73,20 @@ namespace Android.Graphics.Fonts
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/fonts/FontVariationAxis.html#getStyleValue()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/fonts/FontVariationAxis.html#getStyleValue()"/>
         /// </summary>
-        public float StyleValue
+        /// <returns><see cref="float"/></returns>
+        public float GetStyleValue()
         {
-            get { return IExecuteWithSignature<float>("getStyleValue", "()F"); }
+            return IExecuteWithSignature<float>("getStyleValue", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/fonts/FontVariationAxis.html#getTag()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/fonts/FontVariationAxis.html#getTag()"/>
         /// </summary>
-        public Java.Lang.String Tag
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTag()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;");
         }
 
         #endregion

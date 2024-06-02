@@ -99,13 +99,6 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.html#getUri()"/> 
-        /// </summary>
-        public Android.Net.Uri Uri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.html#apply(android.content.ContentProvider,android.content.ContentProviderResult[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ContentProvider"/></param>
@@ -126,6 +119,14 @@ namespace Android.Content
         public Android.Content.ContentValues ResolveValueBackReferences(Android.Content.ContentProviderResult[] arg0, int arg1)
         {
             return IExecute<Android.Content.ContentValues>("resolveValueBackReferences", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.html#getUri()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetUri()
+        {
+            return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderOperation.html#resolveExtrasBackReferences(android.content.ContentProviderResult[],int)"/>

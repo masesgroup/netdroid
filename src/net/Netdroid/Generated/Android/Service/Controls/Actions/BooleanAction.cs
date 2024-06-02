@@ -65,11 +65,12 @@ namespace Android.Service.Controls.Actions
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/actions/BooleanAction.html#getNewState()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/actions/BooleanAction.html#getNewState()"/>
         /// </summary>
-        public bool NewState
+        /// <returns><see cref="bool"/></returns>
+        public bool GetNewState()
         {
-            get { return IExecuteWithSignature<bool>("getNewState", "()Z"); }
+            return IExecuteWithSignature<bool>("getNewState", "()Z");
         }
 
         #endregion

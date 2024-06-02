@@ -28,7 +28,7 @@ namespace Java.Util.Regex
 {
     #region Matcher
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html"/>
     /// </summary>
     public partial class Matcher : Java.Util.Regex.MatchResult
     {
@@ -72,7 +72,7 @@ namespace Java.Util.Regex
 
     #region MatchResult
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/regex/MatchResult.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/regex/MatchResult.html"/>
     /// </summary>
     public partial class MatchResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MatchResult>
     {
@@ -80,12 +80,12 @@ namespace Java.Util.Regex
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("MatchResult class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MatchResult class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MatchResult() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("MatchResult class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MatchResult class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MatchResult(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -118,7 +118,7 @@ namespace Java.Util.Regex
 
     #region Pattern
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Pattern.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/regex/Pattern.html"/>
     /// </summary>
     public partial class Pattern : Java.Io.Serializable
     {
@@ -162,7 +162,7 @@ namespace Java.Util.Regex
 
     #region PatternSyntaxException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/regex/PatternSyntaxException.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/regex/PatternSyntaxException.html"/>
     /// </summary>
     public partial class PatternSyntaxException : Java.Lang.IllegalArgumentException
     {

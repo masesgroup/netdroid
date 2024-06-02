@@ -33,7 +33,7 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#%3Cinit%3E(android.os.Parcel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public NeighboringCellInfo(Android.Os.Parcel arg0)
             : base(arg0)
         {
@@ -43,7 +43,7 @@ namespace Android.Telephony
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public NeighboringCellInfo(int arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -54,7 +54,7 @@ namespace Android.Telephony
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public NeighboringCellInfo(int arg0, Java.Lang.String arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -70,21 +70,21 @@ namespace Android.Telephony
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#CREATOR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#UNKNOWN_CID"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int UNKNOWN_CID { get { if (!_UNKNOWN_CIDReady) { _UNKNOWN_CIDContent = SGetField<int>(LocalBridgeClazz, "UNKNOWN_CID"); _UNKNOWN_CIDReady = true; } return _UNKNOWN_CIDContent; } }
         private static int _UNKNOWN_CIDContent = default;
         private static bool _UNKNOWN_CIDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#UNKNOWN_RSSI"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int UNKNOWN_RSSI { get { if (!_UNKNOWN_RSSIReady) { _UNKNOWN_RSSIContent = SGetField<int>(LocalBridgeClazz, "UNKNOWN_RSSI"); _UNKNOWN_RSSIReady = true; } return _UNKNOWN_RSSIContent; } }
         private static int _UNKNOWN_RSSIContent = default;
         private static bool _UNKNOWN_RSSIReady = false; // this is used because in case of generics 
@@ -97,60 +97,83 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#getCid()"/> <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#setCid(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int Cid
-        {
-            get { return IExecuteWithSignature<int>("getCid", "()I"); } set { IExecuteWithSignature("setCid", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#getLac()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Lac
-        {
-            get { return IExecuteWithSignature<int>("getLac", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#getNetworkType()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int NetworkType
-        {
-            get { return IExecuteWithSignature<int>("getNetworkType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#getPsc()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Psc
-        {
-            get { return IExecuteWithSignature<int>("getPsc", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#getRssi()"/> <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#setRssi(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int Rssi
-        {
-            get { return IExecuteWithSignature<int>("getRssi", "()I"); } set { IExecuteWithSignature("setRssi", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#getCid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetCid()
+        {
+            return IExecuteWithSignature<int>("getCid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#getLac()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetLac()
+        {
+            return IExecuteWithSignature<int>("getLac", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#getNetworkType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetNetworkType()
+        {
+            return IExecuteWithSignature<int>("getNetworkType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#getPsc()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetPsc()
+        {
+            return IExecuteWithSignature<int>("getPsc", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#getRssi()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetRssi()
+        {
+            return IExecuteWithSignature<int>("getRssi", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#setCid(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetCid(int arg0)
+        {
+            IExecuteWithSignature("setCid", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#setRssi(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetRssi(int arg0)
+        {
+            IExecuteWithSignature("setRssi", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/NeighboringCellInfo.html#writeToParcel(android.os.Parcel,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
             IExecute("writeToParcel", arg0, arg1);

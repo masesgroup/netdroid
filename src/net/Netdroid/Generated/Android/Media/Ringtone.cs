@@ -46,26 +46,12 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Ringtone.html#getAudioAttributes()"/> <see href="https://developer.android.com/reference/android/media/Ringtone.html#setAudioAttributes(android.media.AudioAttributes)"/>
+        /// <see href="https://developer.android.com/reference/android/media/Ringtone.html#getAudioAttributes()"/>
         /// </summary>
-        public Android.Media.AudioAttributes AudioAttributes
+        /// <returns><see cref="Android.Media.AudioAttributes"/></returns>
+        public Android.Media.AudioAttributes GetAudioAttributes()
         {
-            get { return IExecuteWithSignature<Android.Media.AudioAttributes>("getAudioAttributes", "()Landroid/media/AudioAttributes;"); } set { IExecuteWithSignature("setAudioAttributes", "(Landroid/media/AudioAttributes;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Ringtone.html#getStreamType()"/> <see href="https://developer.android.com/reference/android/media/Ringtone.html#setStreamType(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int StreamType
-        {
-            get { return IExecuteWithSignature<int>("getStreamType", "()I"); } set { IExecuteWithSignature("setStreamType", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Ringtone.html#getVolume()"/> <see href="https://developer.android.com/reference/android/media/Ringtone.html#setVolume(float)"/>
-        /// </summary>
-        public float Volume
-        {
-            get { return IExecuteWithSignature<float>("getVolume", "()F"); } set { IExecuteWithSignature("setVolume", "(F)V", value); }
+            return IExecuteWithSignature<Android.Media.AudioAttributes>("getAudioAttributes", "()Landroid/media/AudioAttributes;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Ringtone.html#isHapticGeneratorEnabled()"/>
@@ -101,6 +87,23 @@ namespace Android.Media
             return IExecuteWithSignature<bool>("setHapticGeneratorEnabled", "(Z)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Ringtone.html#getVolume()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetVolume()
+        {
+            return IExecuteWithSignature<float>("getVolume", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Ringtone.html#getStreamType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetStreamType()
+        {
+            return IExecuteWithSignature<int>("getStreamType", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Ringtone.html#getTitle(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -117,12 +120,38 @@ namespace Android.Media
             IExecuteWithSignature("play", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Ringtone.html#setAudioAttributes(android.media.AudioAttributes)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.AudioAttributes"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        public void SetAudioAttributes(Android.Media.AudioAttributes arg0)
+        {
+            IExecuteWithSignature("setAudioAttributes", "(Landroid/media/AudioAttributes;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Ringtone.html#setLooping(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetLooping(bool arg0)
         {
             IExecuteWithSignature("setLooping", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Ringtone.html#setStreamType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetStreamType(int arg0)
+        {
+            IExecuteWithSignature("setStreamType", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Ringtone.html#setVolume(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetVolume(float arg0)
+        {
+            IExecuteWithSignature("setVolume", "(F)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Ringtone.html#stop()"/>

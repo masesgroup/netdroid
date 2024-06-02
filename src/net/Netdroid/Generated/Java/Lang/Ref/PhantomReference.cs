@@ -30,7 +30,7 @@ namespace Java.Lang.Ref
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/PhantomReference.html#%3Cinit%3E(java.lang.Object,java.lang.ref.ReferenceQueue)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/PhantomReference.html#%3Cinit%3E(java.lang.Object,java.lang.ref.ReferenceQueue)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Ref.ReferenceQueue"/></param>
@@ -70,7 +70,7 @@ namespace Java.Lang.Ref
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/PhantomReference.html#%3Cinit%3E(java.lang.Object,java.lang.ref.ReferenceQueue)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/PhantomReference.html#%3Cinit%3E(java.lang.Object,java.lang.ref.ReferenceQueue)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Ref.ReferenceQueue"/></param>

@@ -50,23 +50,23 @@ namespace Android.Widget
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getView", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetViewEventHandler));
-            AddEventHandler("getCount", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetCountEventHandler));
-            AddEventHandler("getItem", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetItemEventHandler));
-            AddEventHandler("getItemId", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetItemIdEventHandler));
-            AddEventHandler("getDropDownView", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetDropDownViewEventHandler));
-            AddEventHandler("areAllItemsEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(AreAllItemsEnabledEventHandler));
-            AddEventHandler("hasStableIds", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(HasStableIdsEventHandler));
-            AddEventHandler("isEmpty", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsEmptyEventHandler));
-            AddEventHandler("isEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(IsEnabledEventHandler));
-            AddEventHandler("getItemViewType", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetItemViewTypeEventHandler));
-            AddEventHandler("getViewTypeCount", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetViewTypeCountEventHandler));
-            AddEventHandler("getAutofillOptions", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAutofillOptionsEventHandler));
-            AddEventHandler("notifyDataSetChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NotifyDataSetChangedEventHandler));
-            AddEventHandler("notifyDataSetInvalidated", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NotifyDataSetInvalidatedEventHandler));
-            AddEventHandler("registerDataSetObserver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Database.DataSetObserver>>>(RegisterDataSetObserverEventHandler));
-            AddEventHandler("setAutofillOptions", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.CharSequence[]>>>(SetAutofillOptionsEventHandler));
-            AddEventHandler("unregisterDataSetObserver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Database.DataSetObserver>>>(UnregisterDataSetObserverEventHandler));
+            AddEventHandler("getView", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetViewEventHandler));
+            AddEventHandler("getCount", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetCountEventHandler));
+            AddEventHandler("getItem", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetItemEventHandler));
+            AddEventHandler("getItemId", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetItemIdEventHandler));
+            AddEventHandler("getDropDownView", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetDropDownViewEventHandler));
+            AddEventHandler("areAllItemsEnabled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(AreAllItemsEnabledEventHandler));
+            AddEventHandler("hasStableIds", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(HasStableIdsEventHandler));
+            AddEventHandler("isEmpty", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsEmptyEventHandler));
+            AddEventHandler("isEnabled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(IsEnabledEventHandler));
+            AddEventHandler("getItemViewType", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetItemViewTypeEventHandler));
+            AddEventHandler("getViewTypeCount", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetViewTypeCountEventHandler));
+            AddEventHandler("getAutofillOptions", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAutofillOptionsEventHandler));
+            AddEventHandler("notifyDataSetChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(NotifyDataSetChangedEventHandler));
+            AddEventHandler("notifyDataSetInvalidated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(NotifyDataSetInvalidatedEventHandler));
+            AddEventHandler("registerDataSetObserver", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Database.DataSetObserver>>>(RegisterDataSetObserverEventHandler));
+            AddEventHandler("setAutofillOptions", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.CharSequence[]>>>(SetAutofillOptionsEventHandler));
+            AddEventHandler("unregisterDataSetObserver", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Database.DataSetObserver>>>(UnregisterDataSetObserverEventHandler));
 
         }
 
@@ -74,7 +74,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/Adapter.html#getView(int,android.view.View,android.view.ViewGroup)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetView"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, Android.View.View, Android.View.ViewGroup, Android.View.View> OnGetView { get; set; } = null;
+        public global::System.Func<int, Android.View.View, Android.View.ViewGroup, Android.View.View> OnGetView { get; set; } = null;
 
         void GetViewEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -99,7 +99,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/Adapter.html#getCount()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetCount"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int> OnGetCount { get; set; } = null;
+        public global::System.Func<int> OnGetCount { get; set; } = null;
 
         void GetCountEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -121,7 +121,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/Adapter.html#getItem(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetItem"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, object> OnGetItem { get; set; } = null;
+        public global::System.Func<int, object> OnGetItem { get; set; } = null;
 
         void GetItemEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -144,7 +144,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/Adapter.html#getItemId(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetItemId"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, long> OnGetItemId { get; set; } = null;
+        public global::System.Func<int, long> OnGetItemId { get; set; } = null;
 
         void GetItemIdEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -167,7 +167,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getDropDownView(int,android.view.View,android.view.ViewGroup)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetDropDownView"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, Android.View.View, Android.View.ViewGroup, Android.View.View> OnGetDropDownView { get; set; } = null;
+        public global::System.Func<int, Android.View.View, Android.View.ViewGroup, Android.View.View> OnGetDropDownView { get; set; } = null;
 
         void GetDropDownViewEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -192,7 +192,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#areAllItemsEnabled()"/>
         /// </summary>
         /// <remarks>If <see cref="OnAreAllItemsEnabled"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnAreAllItemsEnabled { get; set; } = null;
+        public global::System.Func<bool> OnAreAllItemsEnabled { get; set; } = null;
 
         void AreAllItemsEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -214,7 +214,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#hasStableIds()"/>
         /// </summary>
         /// <remarks>If <see cref="OnHasStableIds"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnHasStableIds { get; set; } = null;
+        public global::System.Func<bool> OnHasStableIds { get; set; } = null;
 
         void HasStableIdsEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -236,7 +236,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#isEmpty()"/>
         /// </summary>
         /// <remarks>If <see cref="OnIsEmpty"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnIsEmpty { get; set; } = null;
+        public global::System.Func<bool> OnIsEmpty { get; set; } = null;
 
         void IsEmptyEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -258,7 +258,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#isEnabled(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnIsEnabled"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, bool> OnIsEnabled { get; set; } = null;
+        public global::System.Func<int, bool> OnIsEnabled { get; set; } = null;
 
         void IsEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -281,7 +281,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getItemViewType(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetItemViewType"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, int> OnGetItemViewType { get; set; } = null;
+        public global::System.Func<int, int> OnGetItemViewType { get; set; } = null;
 
         void GetItemViewTypeEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -304,7 +304,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getViewTypeCount()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetViewTypeCount"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int> OnGetViewTypeCount { get; set; } = null;
+        public global::System.Func<int> OnGetViewTypeCount { get; set; } = null;
 
         void GetViewTypeCountEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -326,7 +326,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getAutofillOptions()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetAutofillOptions"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.CharSequence[]> OnGetAutofillOptions { get; set; } = null;
+        public global::System.Func<Java.Lang.CharSequence[]> OnGetAutofillOptions { get; set; } = null;
 
         void GetAutofillOptionsEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -348,7 +348,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#notifyDataSetChanged()"/>
         /// </summary>
         /// <remarks>If <see cref="OnNotifyDataSetChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnNotifyDataSetChanged { get; set; } = null;
+        public global::System.Action OnNotifyDataSetChanged { get; set; } = null;
 
         void NotifyDataSetChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -368,7 +368,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#notifyDataSetInvalidated()"/>
         /// </summary>
         /// <remarks>If <see cref="OnNotifyDataSetInvalidated"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnNotifyDataSetInvalidated { get; set; } = null;
+        public global::System.Action OnNotifyDataSetInvalidated { get; set; } = null;
 
         void NotifyDataSetInvalidatedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -388,7 +388,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#registerDataSetObserver(android.database.DataSetObserver)"/>
         /// </summary>
         /// <remarks>If <see cref="OnRegisterDataSetObserver"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Database.DataSetObserver> OnRegisterDataSetObserver { get; set; } = null;
+        public global::System.Action<Android.Database.DataSetObserver> OnRegisterDataSetObserver { get; set; } = null;
 
         void RegisterDataSetObserverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Database.DataSetObserver>> data)
         {
@@ -409,12 +409,12 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#setAutofillOptions(java.lang.CharSequence[])"/>
         /// </summary>
         /// <remarks>If <see cref="OnSetAutofillOptions"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<> OnSetAutofillOptions { get; set; } = null;
+        public global::System.Action<Java.Lang.CharSequence[]> OnSetAutofillOptions { get; set; } = null;
 
         void SetAutofillOptionsEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.CharSequence[]>> data)
         {
             var methodToExecute = (OnSetAutofillOptions != null) ? OnSetAutofillOptions : SetAutofillOptions;
-            methodToExecute.Invoke();
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -430,7 +430,7 @@ namespace Android.Widget
         /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)"/>
         /// </summary>
         /// <remarks>If <see cref="OnUnregisterDataSetObserver"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Database.DataSetObserver> OnUnregisterDataSetObserver { get; set; } = null;
+        public global::System.Action<Android.Database.DataSetObserver> OnUnregisterDataSetObserver { get; set; } = null;
 
         void UnregisterDataSetObserverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Database.DataSetObserver>> data)
         {
@@ -478,27 +478,6 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getAutofillOptions()"/> <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#setAutofillOptions(java.lang.CharSequence[])"/>
-        /// </summary>
-        public Java.Lang.CharSequence[] AutofillOptions
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.CharSequence>("getAutofillOptions", "()[Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setAutofillOptions", "([Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getCount()"/> 
-        /// </summary>
-        public int Count
-        {
-            get { return IExecute<int>("getCount"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getViewTypeCount()"/> 
-        /// </summary>
-        public int ViewTypeCount
-        {
-            get { return IExecuteWithSignature<int>("getViewTypeCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getView(int,android.view.View,android.view.ViewGroup)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -508,6 +487,14 @@ namespace Android.Widget
         public override Android.View.View GetView(int arg0, Android.View.View arg1, Android.View.ViewGroup arg2)
         {
             return IExecute<Android.View.View>("getView", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public override int GetCount()
+        {
+            return IExecute<int>("getCount");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Adapter.html#getItem(int)"/>
@@ -581,6 +568,22 @@ namespace Android.Widget
             return IExecuteWithSignature<int>("getItemViewType", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getViewTypeCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public override int GetViewTypeCount()
+        {
+            return IExecuteWithSignature<int>("getViewTypeCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getAutofillOptions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public override Java.Lang.CharSequence[] GetAutofillOptions()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.CharSequence>("getAutofillOptions", "()[Ljava/lang/CharSequence;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#notifyDataSetChanged()"/>
         /// </summary>
         public override void NotifyDataSetChanged()
@@ -601,6 +604,14 @@ namespace Android.Widget
         public override void RegisterDataSetObserver(Android.Database.DataSetObserver arg0)
         {
             IExecuteWithSignature("registerDataSetObserver", "(Landroid/database/DataSetObserver;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#setAutofillOptions(java.lang.CharSequence[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public override void SetAutofillOptions(params Java.Lang.CharSequence[] arg0)
+        {
+            if (arg0.Length == 0) IExecuteWithSignature("setAutofillOptions", "([Ljava/lang/CharSequence;)V"); else IExecuteWithSignature("setAutofillOptions", "([Ljava/lang/CharSequence;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)"/>

@@ -46,20 +46,6 @@ namespace Android.Graphics.Drawable.Shapes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/shapes/Shape.html#getHeight()"/> 
-        /// </summary>
-        public float Height
-        {
-            get { return IExecuteWithSignature<float>("getHeight", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/shapes/Shape.html#getWidth()"/> 
-        /// </summary>
-        public float Width
-        {
-            get { return IExecuteWithSignature<float>("getWidth", "()F"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/shapes/Shape.html#draw(android.graphics.Canvas,android.graphics.Paint)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Canvas"/></param>
@@ -84,6 +70,22 @@ namespace Android.Graphics.Drawable.Shapes
         public bool HasAlpha()
         {
             return IExecuteWithSignature<bool>("hasAlpha", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/shapes/Shape.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetHeight()
+        {
+            return IExecuteWithSignature<float>("getHeight", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/shapes/Shape.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetWidth()
+        {
+            return IExecuteWithSignature<float>("getWidth", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/shapes/Shape.html#resize(float,float)"/>

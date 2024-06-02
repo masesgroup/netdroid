@@ -50,7 +50,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.App.KeyguardManager.KeyguardLock"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.App.KeyguardManager.KeyguardLock NewKeyguardLock(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.App.KeyguardManager.KeyguardLock>("newKeyguardLock", "(Ljava/lang/String;)Landroid/app/KeyguardManager$KeyguardLock;", arg0);
@@ -61,7 +61,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Android.Content.Intent"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Content.Intent CreateConfirmDeviceCredentialIntent(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1)
         {
             return IExecute<Android.Content.Intent>("createConfirmDeviceCredentialIntent", arg0, arg1);
@@ -70,7 +70,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/KeyguardManager.html#inKeyguardRestrictedInputMode()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool InKeyguardRestrictedInputMode()
         {
             return IExecuteWithSignature<bool>("inKeyguardRestrictedInputMode", "()Z");
@@ -120,7 +120,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/KeyguardManager.html#exitKeyguardSecurely(android.app.KeyguardManager.OnKeyguardExitResult)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.KeyguardManager.OnKeyguardExitResult"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ExitKeyguardSecurely(Android.App.KeyguardManager.OnKeyguardExitResult arg0)
         {
             IExecuteWithSignature("exitKeyguardSecurely", "(Landroid/app/KeyguardManager$OnKeyguardExitResult;)V", arg0);
@@ -221,7 +221,7 @@ namespace Android.App
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/KeyguardManager.KeyguardLock.html#disableKeyguard()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void DisableKeyguard()
             {
                 IExecuteWithSignature("disableKeyguard", "()V");
@@ -229,7 +229,7 @@ namespace Android.App
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/KeyguardManager.KeyguardLock.html#reenableKeyguard()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void ReenableKeyguard()
             {
                 IExecuteWithSignature("reenableKeyguard", "()V");
@@ -270,7 +270,7 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onKeyguardLockedStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnKeyguardLockedStateChangedEventHandler));
+                AddEventHandler("onKeyguardLockedStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnKeyguardLockedStateChangedEventHandler));
 
             }
 
@@ -278,7 +278,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/KeyguardManager.KeyguardLockedStateListener.html#onKeyguardLockedStateChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnKeyguardLockedStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnKeyguardLockedStateChanged { get; set; } = null;
+            public global::System.Action<bool> OnOnKeyguardLockedStateChanged { get; set; } = null;
 
             void OnKeyguardLockedStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
             {
@@ -368,7 +368,7 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/KeyguardManager.OnKeyguardExitResult.html#onKeyguardExitResult(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnKeyguardExitResultMethod(bool arg0)
             {
                 IExecuteWithSignature("onKeyguardExitResult", "(Z)V", arg0);

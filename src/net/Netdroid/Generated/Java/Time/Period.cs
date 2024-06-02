@@ -46,7 +46,7 @@ namespace Java.Time
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#ZERO"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#ZERO"/>
         /// </summary>
         public static Java.Time.Period ZERO { get { if (!_ZEROReady) { _ZEROContent = SGetField<Java.Time.Period>(LocalBridgeClazz, "ZERO"); _ZEROReady = true; } return _ZEROContent; } }
         private static Java.Time.Period _ZEROContent = default;
@@ -56,7 +56,7 @@ namespace Java.Time
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#between(java.time.LocalDate,java.time.LocalDate)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#between(java.time.LocalDate,java.time.LocalDate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.LocalDate"/></param>
         /// <param name="arg1"><see cref="Java.Time.LocalDate"/></param>
@@ -66,7 +66,7 @@ namespace Java.Time
             return SExecute<Java.Time.Period>(LocalBridgeClazz, "between", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#from(java.time.temporal.TemporalAmount)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#from(java.time.temporal.TemporalAmount)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
         /// <returns><see cref="Java.Time.Period"/></returns>
@@ -75,7 +75,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.Period>(LocalBridgeClazz, "from", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/Period;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#of(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#of(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -86,7 +86,7 @@ namespace Java.Time
             return SExecute<Java.Time.Period>(LocalBridgeClazz, "of", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#ofDays(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#ofDays(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Period"/></returns>
@@ -95,7 +95,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.Period>(LocalBridgeClazz, "ofDays", "(I)Ljava/time/Period;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#ofMonths(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#ofMonths(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Period"/></returns>
@@ -104,7 +104,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.Period>(LocalBridgeClazz, "ofMonths", "(I)Ljava/time/Period;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#ofWeeks(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#ofWeeks(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Period"/></returns>
@@ -113,7 +113,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.Period>(LocalBridgeClazz, "ofWeeks", "(I)Ljava/time/Period;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#ofYears(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#ofYears(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Period"/></returns>
@@ -122,7 +122,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.Period>(LocalBridgeClazz, "ofYears", "(I)Ljava/time/Period;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#parse(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#parse(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Java.Time.Period"/></returns>
@@ -135,42 +135,7 @@ namespace Java.Time
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#getChronology()"/> 
-        /// </summary>
-        public Java.Time.Chrono.Chronology Chronology
-        {
-            get { return IExecuteWithSignature<Java.Time.Chrono.Chronology>("getChronology", "()Ljava/time/chrono/Chronology;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#getDays()"/> 
-        /// </summary>
-        public int Days
-        {
-            get { return IExecuteWithSignature<int>("getDays", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#getMonths()"/> 
-        /// </summary>
-        public int Months
-        {
-            get { return IExecuteWithSignature<int>("getMonths", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#getUnits()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Time.Temporal.TemporalUnit> Units
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Time.Temporal.TemporalUnit>>("getUnits", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#getYears()"/> 
-        /// </summary>
-        public int Years
-        {
-            get { return IExecuteWithSignature<int>("getYears", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#isNegative()"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#isNegative()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsNegative()
@@ -178,7 +143,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isNegative", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#isZero()"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#isZero()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsZero()
@@ -186,7 +151,39 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isZero", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#minus(java.time.temporal.TemporalAmount)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#getDays()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDays()
+        {
+            return IExecuteWithSignature<int>("getDays", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#getMonths()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMonths()
+        {
+            return IExecuteWithSignature<int>("getMonths", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#getYears()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetYears()
+        {
+            return IExecuteWithSignature<int>("getYears", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#getChronology()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Chrono.Chronology"/></returns>
+        public Java.Time.Chrono.Chronology GetChronology()
+        {
+            return IExecuteWithSignature<Java.Time.Chrono.Chronology>("getChronology", "()Ljava/time/chrono/Chronology;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#minus(java.time.temporal.TemporalAmount)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
@@ -195,7 +192,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>("minus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/chrono/ChronoPeriod;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#multipliedBy(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#multipliedBy(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
@@ -204,7 +201,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>("multipliedBy", "(I)Ljava/time/chrono/ChronoPeriod;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#negated()"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#negated()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Negated()
@@ -212,7 +209,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>("negated", "()Ljava/time/chrono/ChronoPeriod;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#normalized()"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#normalized()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Normalized()
@@ -220,7 +217,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>("normalized", "()Ljava/time/chrono/ChronoPeriod;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#plus(java.time.temporal.TemporalAmount)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#plus(java.time.temporal.TemporalAmount)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
@@ -229,7 +226,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>("plus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/chrono/ChronoPeriod;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#minusDays(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#minusDays(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Period"/></returns>
@@ -238,7 +235,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Period>("minusDays", "(J)Ljava/time/Period;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#minusMonths(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#minusMonths(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Period"/></returns>
@@ -247,7 +244,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Period>("minusMonths", "(J)Ljava/time/Period;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#minusYears(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#minusYears(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Period"/></returns>
@@ -256,7 +253,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Period>("minusYears", "(J)Ljava/time/Period;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#plusDays(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#plusDays(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Period"/></returns>
@@ -265,7 +262,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Period>("plusDays", "(J)Ljava/time/Period;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#plusMonths(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#plusMonths(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Period"/></returns>
@@ -274,7 +271,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Period>("plusMonths", "(J)Ljava/time/Period;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#plusYears(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#plusYears(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Period"/></returns>
@@ -283,7 +280,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Period>("plusYears", "(J)Ljava/time/Period;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#withDays(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#withDays(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Period"/></returns>
@@ -292,7 +289,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Period>("withDays", "(I)Ljava/time/Period;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#withMonths(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#withMonths(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Period"/></returns>
@@ -301,7 +298,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Period>("withMonths", "(I)Ljava/time/Period;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#withYears(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#withYears(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Period"/></returns>
@@ -310,7 +307,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Period>("withYears", "(I)Ljava/time/Period;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#addTo(java.time.temporal.Temporal)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#addTo(java.time.temporal.Temporal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
@@ -319,7 +316,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("addTo", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#subtractFrom(java.time.temporal.Temporal)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#subtractFrom(java.time.temporal.Temporal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
@@ -328,7 +325,15 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("subtractFrom", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#get(java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#getUnits()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Time.Temporal.TemporalUnit> GetUnits()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Time.Temporal.TemporalUnit>>("getUnits", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#get(java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
         /// <returns><see cref="long"/></returns>
@@ -337,7 +342,7 @@ namespace Java.Time
             return IExecuteWithSignature<long>("get", "(Ljava/time/temporal/TemporalUnit;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html#toTotalMonths()"/>
+        /// <see href="https://developer.android.com/reference/java/time/Period.html#toTotalMonths()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long ToTotalMonths()

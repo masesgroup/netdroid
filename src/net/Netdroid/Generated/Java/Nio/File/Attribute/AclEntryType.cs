@@ -38,25 +38,25 @@ namespace Java.Nio.File.Attribute
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclEntryType.html#ALARM"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclEntryType.html#ALARM"/>
         /// </summary>
         public static Java.Nio.File.Attribute.AclEntryType ALARM { get { if (!_ALARMReady) { _ALARMContent = SGetField<Java.Nio.File.Attribute.AclEntryType>(LocalBridgeClazz, "ALARM"); _ALARMReady = true; } return _ALARMContent; } }
         private static Java.Nio.File.Attribute.AclEntryType _ALARMContent = default;
         private static bool _ALARMReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclEntryType.html#ALLOW"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclEntryType.html#ALLOW"/>
         /// </summary>
         public static Java.Nio.File.Attribute.AclEntryType ALLOW { get { if (!_ALLOWReady) { _ALLOWContent = SGetField<Java.Nio.File.Attribute.AclEntryType>(LocalBridgeClazz, "ALLOW"); _ALLOWReady = true; } return _ALLOWContent; } }
         private static Java.Nio.File.Attribute.AclEntryType _ALLOWContent = default;
         private static bool _ALLOWReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclEntryType.html#AUDIT"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclEntryType.html#AUDIT"/>
         /// </summary>
         public static Java.Nio.File.Attribute.AclEntryType AUDIT { get { if (!_AUDITReady) { _AUDITContent = SGetField<Java.Nio.File.Attribute.AclEntryType>(LocalBridgeClazz, "AUDIT"); _AUDITReady = true; } return _AUDITContent; } }
         private static Java.Nio.File.Attribute.AclEntryType _AUDITContent = default;
         private static bool _AUDITReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclEntryType.html#DENY"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclEntryType.html#DENY"/>
         /// </summary>
         public static Java.Nio.File.Attribute.AclEntryType DENY { get { if (!_DENYReady) { _DENYContent = SGetField<Java.Nio.File.Attribute.AclEntryType>(LocalBridgeClazz, "DENY"); _DENYReady = true; } return _DENYContent; } }
         private static Java.Nio.File.Attribute.AclEntryType _DENYContent = default;
@@ -66,7 +66,7 @@ namespace Java.Nio.File.Attribute
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclEntryType.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclEntryType.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Nio.File.Attribute.AclEntryType"/></returns>
@@ -75,7 +75,7 @@ namespace Java.Nio.File.Attribute
             return SExecuteWithSignature<Java.Nio.File.Attribute.AclEntryType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/nio/file/attribute/AclEntryType;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclEntryType.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclEntryType.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.Attribute.AclEntryType"/></returns>
         public static Java.Nio.File.Attribute.AclEntryType[] Values()

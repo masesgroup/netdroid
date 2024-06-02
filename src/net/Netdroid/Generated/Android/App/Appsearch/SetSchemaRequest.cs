@@ -82,54 +82,60 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#getMigrators()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Android.App.Appsearch.Migrator> Migrators
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Android.App.Appsearch.Migrator>>("getMigrators", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#getRequiredPermissionsForSchemaTypeVisibility()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.Set<Java.Util.Set<Java.Lang.Integer>>> RequiredPermissionsForSchemaTypeVisibility
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Set<Java.Util.Set<Java.Lang.Integer>>>>("getRequiredPermissionsForSchemaTypeVisibility", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#getSchemas()"/> 
-        /// </summary>
-        public Java.Util.Set<Android.App.Appsearch.AppSearchSchema> Schemas
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Android.App.Appsearch.AppSearchSchema>>("getSchemas", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#getSchemasNotDisplayedBySystem()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> SchemasNotDisplayedBySystem
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSchemasNotDisplayedBySystem", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#getSchemasVisibleToPackages()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.Set<Android.App.Appsearch.PackageIdentifier>> SchemasVisibleToPackages
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Set<Android.App.Appsearch.PackageIdentifier>>>("getSchemasVisibleToPackages", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#getVersion()"/> 
-        /// </summary>
-        public int Version
-        {
-            get { return IExecuteWithSignature<int>("getVersion", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#isForceOverride()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsForceOverride()
         {
             return IExecuteWithSignature<bool>("isForceOverride", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#getVersion()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVersion()
+        {
+            return IExecuteWithSignature<int>("getVersion", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#getMigrators()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Android.App.Appsearch.Migrator> GetMigrators()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Android.App.Appsearch.Migrator>>("getMigrators", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#getSchemasVisibleToPackages()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.Set<Android.App.Appsearch.PackageIdentifier>> GetSchemasVisibleToPackages()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Set<Android.App.Appsearch.PackageIdentifier>>>("getSchemasVisibleToPackages", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#getRequiredPermissionsForSchemaTypeVisibility()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.Set<Java.Util.Set<Java.Lang.Integer>>> GetRequiredPermissionsForSchemaTypeVisibility()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Set<Java.Util.Set<Java.Lang.Integer>>>>("getRequiredPermissionsForSchemaTypeVisibility", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#getSchemas()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Android.App.Appsearch.AppSearchSchema> GetSchemas()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Android.App.Appsearch.AppSearchSchema>>("getSchemas", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/SetSchemaRequest.html#getSchemasNotDisplayedBySystem()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetSchemasNotDisplayedBySystem()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSchemasNotDisplayedBySystem", "()Ljava/util/Set;");
         }
 
         #endregion

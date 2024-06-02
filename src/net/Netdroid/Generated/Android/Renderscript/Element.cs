@@ -46,7 +46,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element A_8(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "A_8", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -56,7 +56,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element ALLOCATION(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "ALLOCATION", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -66,7 +66,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element BOOLEAN(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "BOOLEAN", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -78,7 +78,7 @@ namespace Android.Renderscript
         /// <param name="arg1"><see cref="Android.Renderscript.Element.DataType"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Element.DataKind"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element CreatePixel(Android.Renderscript.RenderScript arg0, Android.Renderscript.Element.DataType arg1, Android.Renderscript.Element.DataKind arg2)
         {
             return SExecute<Android.Renderscript.Element>(LocalBridgeClazz, "createPixel", arg0, arg1, arg2);
@@ -90,7 +90,7 @@ namespace Android.Renderscript
         /// <param name="arg1"><see cref="Android.Renderscript.Element.DataType"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element CreateVector(Android.Renderscript.RenderScript arg0, Android.Renderscript.Element.DataType arg1, int arg2)
         {
             return SExecute<Android.Renderscript.Element>(LocalBridgeClazz, "createVector", arg0, arg1, arg2);
@@ -100,7 +100,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element ELEMENT(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "ELEMENT", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -110,7 +110,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element F16_2(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "F16_2", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -120,7 +120,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element F16_3(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "F16_3", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -130,7 +130,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element F16_4(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "F16_4", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -140,7 +140,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element F16(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "F16", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -150,7 +150,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element F32_2(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "F32_2", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -160,7 +160,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element F32_3(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "F32_3", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -170,7 +170,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element F32_4(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "F32_4", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -180,7 +180,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element F32(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "F32", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -190,7 +190,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element F64_2(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "F64_2", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -200,7 +200,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element F64_3(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "F64_3", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -210,7 +210,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element F64_4(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "F64_4", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -220,7 +220,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element F64(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "F64", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -230,7 +230,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element FONT(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "FONT", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -240,7 +240,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element I16_2(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "I16_2", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -250,7 +250,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element I16_3(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "I16_3", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -260,7 +260,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element I16_4(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "I16_4", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -270,7 +270,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element I16(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "I16", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -280,7 +280,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element I32_2(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "I32_2", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -290,7 +290,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element I32_3(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "I32_3", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -300,7 +300,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element I32_4(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "I32_4", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -310,7 +310,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element I32(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "I32", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -320,7 +320,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element I64_2(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "I64_2", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -330,7 +330,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element I64_3(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "I64_3", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -340,7 +340,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element I64_4(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "I64_4", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -350,7 +350,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element I64(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "I64", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -360,7 +360,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element I8_2(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "I8_2", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -370,7 +370,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element I8_3(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "I8_3", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -380,7 +380,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element I8_4(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "I8_4", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -390,7 +390,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element I8(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "I8", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -400,7 +400,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element MATRIX_2X2(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "MATRIX_2X2", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -410,7 +410,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element MATRIX_3X3(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "MATRIX_3X3", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -420,7 +420,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element MATRIX_4X4(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "MATRIX_4X4", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -430,7 +430,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element MATRIX4X4(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "MATRIX4X4", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -440,7 +440,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element MESH(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "MESH", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -450,7 +450,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element PROGRAM_FRAGMENT(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "PROGRAM_FRAGMENT", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -460,7 +460,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element PROGRAM_RASTER(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "PROGRAM_RASTER", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -470,7 +470,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element PROGRAM_STORE(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "PROGRAM_STORE", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -480,7 +480,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element PROGRAM_VERTEX(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "PROGRAM_VERTEX", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -490,7 +490,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element RGB_565(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "RGB_565", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -500,7 +500,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element RGB_888(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "RGB_888", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -510,7 +510,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element RGBA_4444(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "RGBA_4444", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -520,7 +520,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element RGBA_5551(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "RGBA_5551", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -530,7 +530,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element RGBA_8888(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "RGBA_8888", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -540,7 +540,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element SAMPLER(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "SAMPLER", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -550,7 +550,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element SCRIPT(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "SCRIPT", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -560,7 +560,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element TYPE(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "TYPE", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -570,7 +570,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element U16_2(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "U16_2", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -580,7 +580,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element U16_3(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "U16_3", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -590,7 +590,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element U16_4(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "U16_4", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -600,7 +600,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element U16(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "U16", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -610,7 +610,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element U32_2(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "U32_2", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -620,7 +620,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element U32_3(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "U32_3", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -630,7 +630,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element U32_4(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "U32_4", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -640,7 +640,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element U32(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "U32", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -650,7 +650,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element U64_2(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "U64_2", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -660,7 +660,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element U64_3(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "U64_3", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -670,7 +670,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element U64_4(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "U64_4", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -680,7 +680,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element U64(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "U64", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -690,7 +690,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element U8_2(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "U8_2", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -700,7 +700,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element U8_3(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "U8_3", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -710,7 +710,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element U8_4(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "U8_4", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -720,7 +720,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element U8(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "U8", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -730,7 +730,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Element YUV(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.Element>(LocalBridgeClazz, "YUV", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;", arg0);
@@ -740,61 +740,39 @@ namespace Android.Renderscript
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#getBytesSize()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int BytesSize
-        {
-            get { return IExecuteWithSignature<int>("getBytesSize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#getDataKind()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Element.DataKind GetDataKind
-        {
-            get { return IExecuteWithSignature<Android.Renderscript.Element.DataKind>("getDataKind", "()Landroid/renderscript/Element$DataKind;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#getDataType()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Element.DataType GetDataType
-        {
-            get { return IExecuteWithSignature<Android.Renderscript.Element.DataType>("getDataType", "()Landroid/renderscript/Element$DataType;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#getSubElementCount()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int SubElementCount
-        {
-            get { return IExecuteWithSignature<int>("getSubElementCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#getVectorSize()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int VectorSize
-        {
-            get { return IExecuteWithSignature<int>("getVectorSize", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#getSubElement(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.Element"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Renderscript.Element GetSubElement(int arg0)
         {
             return IExecuteWithSignature<Android.Renderscript.Element>("getSubElement", "(I)Landroid/renderscript/Element;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#getDataKind()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Renderscript.Element.DataKind"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Element.DataKind GetDataKind()
+        {
+            return IExecuteWithSignature<Android.Renderscript.Element.DataKind>("getDataKind", "()Landroid/renderscript/Element$DataKind;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#getDataType()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Renderscript.Element.DataType"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Element.DataType GetDataType()
+        {
+            return IExecuteWithSignature<Android.Renderscript.Element.DataType>("getDataType", "()Landroid/renderscript/Element$DataType;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#isCompatible(android.renderscript.Element)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Element"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsCompatible(Android.Renderscript.Element arg0)
         {
             return IExecuteWithSignature<bool>("isCompatible", "(Landroid/renderscript/Element;)Z", arg0);
@@ -803,37 +781,64 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#isComplex()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsComplex()
         {
             return IExecuteWithSignature<bool>("isComplex", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#getBytesSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetBytesSize()
+        {
+            return IExecuteWithSignature<int>("getBytesSize", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#getSubElementArraySize(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int GetSubElementArraySize(int arg0)
         {
             return IExecuteWithSignature<int>("getSubElementArraySize", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#getSubElementCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetSubElementCount()
+        {
+            return IExecuteWithSignature<int>("getSubElementCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#getSubElementOffsetBytes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int GetSubElementOffsetBytes(int arg0)
         {
             return IExecuteWithSignature<int>("getSubElementOffsetBytes", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#getVectorSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetVectorSize()
+        {
+            return IExecuteWithSignature<int>("getVectorSize", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Element.html#getSubElementName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String GetSubElementName(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getSubElementName", "(I)Ljava/lang/String;", arg0);
@@ -850,7 +855,7 @@ namespace Android.Renderscript
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.Builder.html#%3Cinit%3E(android.renderscript.RenderScript)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Builder(Android.Renderscript.RenderScript arg0)
                 : base(arg0)
             {
@@ -875,7 +880,7 @@ namespace Android.Renderscript
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.Builder.html#create()"/>
             /// </summary>
             /// <returns><see cref="Android.Renderscript.Element"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.Element Create()
             {
                 return IExecuteWithSignature<Android.Renderscript.Element>("create", "()Landroid/renderscript/Element;");
@@ -887,7 +892,7 @@ namespace Android.Renderscript
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             /// <param name="arg2"><see cref="int"/></param>
             /// <returns><see cref="Android.Renderscript.Element.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.Element.Builder Add(Android.Renderscript.Element arg0, Java.Lang.String arg1, int arg2)
             {
                 return IExecute<Android.Renderscript.Element.Builder>("add", arg0, arg1, arg2);
@@ -898,7 +903,7 @@ namespace Android.Renderscript
             /// <param name="arg0"><see cref="Android.Renderscript.Element"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Android.Renderscript.Element.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.Element.Builder Add(Android.Renderscript.Element arg0, Java.Lang.String arg1)
             {
                 return IExecute<Android.Renderscript.Element.Builder>("add", arg0, arg1);
@@ -929,56 +934,56 @@ namespace Android.Renderscript
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataKind.html#PIXEL_A"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataKind PIXEL_A { get { if (!_PIXEL_AReady) { _PIXEL_AContent = SGetField<Android.Renderscript.Element.DataKind>(LocalBridgeClazz, "PIXEL_A"); _PIXEL_AReady = true; } return _PIXEL_AContent; } }
             private static Android.Renderscript.Element.DataKind _PIXEL_AContent = default;
             private static bool _PIXEL_AReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataKind.html#PIXEL_DEPTH"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataKind PIXEL_DEPTH { get { if (!_PIXEL_DEPTHReady) { _PIXEL_DEPTHContent = SGetField<Android.Renderscript.Element.DataKind>(LocalBridgeClazz, "PIXEL_DEPTH"); _PIXEL_DEPTHReady = true; } return _PIXEL_DEPTHContent; } }
             private static Android.Renderscript.Element.DataKind _PIXEL_DEPTHContent = default;
             private static bool _PIXEL_DEPTHReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataKind.html#PIXEL_L"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataKind PIXEL_L { get { if (!_PIXEL_LReady) { _PIXEL_LContent = SGetField<Android.Renderscript.Element.DataKind>(LocalBridgeClazz, "PIXEL_L"); _PIXEL_LReady = true; } return _PIXEL_LContent; } }
             private static Android.Renderscript.Element.DataKind _PIXEL_LContent = default;
             private static bool _PIXEL_LReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataKind.html#PIXEL_LA"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataKind PIXEL_LA { get { if (!_PIXEL_LAReady) { _PIXEL_LAContent = SGetField<Android.Renderscript.Element.DataKind>(LocalBridgeClazz, "PIXEL_LA"); _PIXEL_LAReady = true; } return _PIXEL_LAContent; } }
             private static Android.Renderscript.Element.DataKind _PIXEL_LAContent = default;
             private static bool _PIXEL_LAReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataKind.html#PIXEL_RGB"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataKind PIXEL_RGB { get { if (!_PIXEL_RGBReady) { _PIXEL_RGBContent = SGetField<Android.Renderscript.Element.DataKind>(LocalBridgeClazz, "PIXEL_RGB"); _PIXEL_RGBReady = true; } return _PIXEL_RGBContent; } }
             private static Android.Renderscript.Element.DataKind _PIXEL_RGBContent = default;
             private static bool _PIXEL_RGBReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataKind.html#PIXEL_RGBA"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataKind PIXEL_RGBA { get { if (!_PIXEL_RGBAReady) { _PIXEL_RGBAContent = SGetField<Android.Renderscript.Element.DataKind>(LocalBridgeClazz, "PIXEL_RGBA"); _PIXEL_RGBAReady = true; } return _PIXEL_RGBAContent; } }
             private static Android.Renderscript.Element.DataKind _PIXEL_RGBAContent = default;
             private static bool _PIXEL_RGBAReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataKind.html#PIXEL_YUV"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataKind PIXEL_YUV { get { if (!_PIXEL_YUVReady) { _PIXEL_YUVContent = SGetField<Android.Renderscript.Element.DataKind>(LocalBridgeClazz, "PIXEL_YUV"); _PIXEL_YUVReady = true; } return _PIXEL_YUVContent; } }
             private static Android.Renderscript.Element.DataKind _PIXEL_YUVContent = default;
             private static bool _PIXEL_YUVReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataKind.html#USER"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataKind USER { get { if (!_USERReady) { _USERContent = SGetField<Android.Renderscript.Element.DataKind>(LocalBridgeClazz, "USER"); _USERReady = true; } return _USERContent; } }
             private static Android.Renderscript.Element.DataKind _USERContent = default;
             private static bool _USERReady = false; // this is used because in case of generics 
@@ -1033,210 +1038,210 @@ namespace Android.Renderscript
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#BOOLEAN"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType BOOLEAN { get { if (!_BOOLEANReady) { _BOOLEANContent = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "BOOLEAN"); _BOOLEANReady = true; } return _BOOLEANContent; } }
             private static Android.Renderscript.Element.DataType _BOOLEANContent = default;
             private static bool _BOOLEANReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#FLOAT_16"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType FLOAT_16 { get { if (!_FLOAT_16Ready) { _FLOAT_16Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "FLOAT_16"); _FLOAT_16Ready = true; } return _FLOAT_16Content; } }
             private static Android.Renderscript.Element.DataType _FLOAT_16Content = default;
             private static bool _FLOAT_16Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#FLOAT_32"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType FLOAT_32 { get { if (!_FLOAT_32Ready) { _FLOAT_32Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "FLOAT_32"); _FLOAT_32Ready = true; } return _FLOAT_32Content; } }
             private static Android.Renderscript.Element.DataType _FLOAT_32Content = default;
             private static bool _FLOAT_32Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#FLOAT_64"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType FLOAT_64 { get { if (!_FLOAT_64Ready) { _FLOAT_64Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "FLOAT_64"); _FLOAT_64Ready = true; } return _FLOAT_64Content; } }
             private static Android.Renderscript.Element.DataType _FLOAT_64Content = default;
             private static bool _FLOAT_64Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#MATRIX_2X2"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType MATRIX_2X2 { get { if (!_MATRIX_2X2Ready) { _MATRIX_2X2Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "MATRIX_2X2"); _MATRIX_2X2Ready = true; } return _MATRIX_2X2Content; } }
             private static Android.Renderscript.Element.DataType _MATRIX_2X2Content = default;
             private static bool _MATRIX_2X2Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#MATRIX_3X3"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType MATRIX_3X3 { get { if (!_MATRIX_3X3Ready) { _MATRIX_3X3Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "MATRIX_3X3"); _MATRIX_3X3Ready = true; } return _MATRIX_3X3Content; } }
             private static Android.Renderscript.Element.DataType _MATRIX_3X3Content = default;
             private static bool _MATRIX_3X3Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#MATRIX_4X4"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType MATRIX_4X4 { get { if (!_MATRIX_4X4Ready) { _MATRIX_4X4Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "MATRIX_4X4"); _MATRIX_4X4Ready = true; } return _MATRIX_4X4Content; } }
             private static Android.Renderscript.Element.DataType _MATRIX_4X4Content = default;
             private static bool _MATRIX_4X4Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#NONE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType NONE { get { if (!_NONEReady) { _NONEContent = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "NONE"); _NONEReady = true; } return _NONEContent; } }
             private static Android.Renderscript.Element.DataType _NONEContent = default;
             private static bool _NONEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#RS_ALLOCATION"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType RS_ALLOCATION { get { if (!_RS_ALLOCATIONReady) { _RS_ALLOCATIONContent = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "RS_ALLOCATION"); _RS_ALLOCATIONReady = true; } return _RS_ALLOCATIONContent; } }
             private static Android.Renderscript.Element.DataType _RS_ALLOCATIONContent = default;
             private static bool _RS_ALLOCATIONReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#RS_ELEMENT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType RS_ELEMENT { get { if (!_RS_ELEMENTReady) { _RS_ELEMENTContent = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "RS_ELEMENT"); _RS_ELEMENTReady = true; } return _RS_ELEMENTContent; } }
             private static Android.Renderscript.Element.DataType _RS_ELEMENTContent = default;
             private static bool _RS_ELEMENTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#RS_FONT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType RS_FONT { get { if (!_RS_FONTReady) { _RS_FONTContent = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "RS_FONT"); _RS_FONTReady = true; } return _RS_FONTContent; } }
             private static Android.Renderscript.Element.DataType _RS_FONTContent = default;
             private static bool _RS_FONTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#RS_MESH"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType RS_MESH { get { if (!_RS_MESHReady) { _RS_MESHContent = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "RS_MESH"); _RS_MESHReady = true; } return _RS_MESHContent; } }
             private static Android.Renderscript.Element.DataType _RS_MESHContent = default;
             private static bool _RS_MESHReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#RS_PROGRAM_FRAGMENT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType RS_PROGRAM_FRAGMENT { get { if (!_RS_PROGRAM_FRAGMENTReady) { _RS_PROGRAM_FRAGMENTContent = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "RS_PROGRAM_FRAGMENT"); _RS_PROGRAM_FRAGMENTReady = true; } return _RS_PROGRAM_FRAGMENTContent; } }
             private static Android.Renderscript.Element.DataType _RS_PROGRAM_FRAGMENTContent = default;
             private static bool _RS_PROGRAM_FRAGMENTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#RS_PROGRAM_RASTER"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType RS_PROGRAM_RASTER { get { if (!_RS_PROGRAM_RASTERReady) { _RS_PROGRAM_RASTERContent = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "RS_PROGRAM_RASTER"); _RS_PROGRAM_RASTERReady = true; } return _RS_PROGRAM_RASTERContent; } }
             private static Android.Renderscript.Element.DataType _RS_PROGRAM_RASTERContent = default;
             private static bool _RS_PROGRAM_RASTERReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#RS_PROGRAM_STORE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType RS_PROGRAM_STORE { get { if (!_RS_PROGRAM_STOREReady) { _RS_PROGRAM_STOREContent = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "RS_PROGRAM_STORE"); _RS_PROGRAM_STOREReady = true; } return _RS_PROGRAM_STOREContent; } }
             private static Android.Renderscript.Element.DataType _RS_PROGRAM_STOREContent = default;
             private static bool _RS_PROGRAM_STOREReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#RS_PROGRAM_VERTEX"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType RS_PROGRAM_VERTEX { get { if (!_RS_PROGRAM_VERTEXReady) { _RS_PROGRAM_VERTEXContent = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "RS_PROGRAM_VERTEX"); _RS_PROGRAM_VERTEXReady = true; } return _RS_PROGRAM_VERTEXContent; } }
             private static Android.Renderscript.Element.DataType _RS_PROGRAM_VERTEXContent = default;
             private static bool _RS_PROGRAM_VERTEXReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#RS_SAMPLER"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType RS_SAMPLER { get { if (!_RS_SAMPLERReady) { _RS_SAMPLERContent = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "RS_SAMPLER"); _RS_SAMPLERReady = true; } return _RS_SAMPLERContent; } }
             private static Android.Renderscript.Element.DataType _RS_SAMPLERContent = default;
             private static bool _RS_SAMPLERReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#RS_SCRIPT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType RS_SCRIPT { get { if (!_RS_SCRIPTReady) { _RS_SCRIPTContent = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "RS_SCRIPT"); _RS_SCRIPTReady = true; } return _RS_SCRIPTContent; } }
             private static Android.Renderscript.Element.DataType _RS_SCRIPTContent = default;
             private static bool _RS_SCRIPTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#RS_TYPE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType RS_TYPE { get { if (!_RS_TYPEReady) { _RS_TYPEContent = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "RS_TYPE"); _RS_TYPEReady = true; } return _RS_TYPEContent; } }
             private static Android.Renderscript.Element.DataType _RS_TYPEContent = default;
             private static bool _RS_TYPEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#SIGNED_16"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType SIGNED_16 { get { if (!_SIGNED_16Ready) { _SIGNED_16Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "SIGNED_16"); _SIGNED_16Ready = true; } return _SIGNED_16Content; } }
             private static Android.Renderscript.Element.DataType _SIGNED_16Content = default;
             private static bool _SIGNED_16Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#SIGNED_32"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType SIGNED_32 { get { if (!_SIGNED_32Ready) { _SIGNED_32Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "SIGNED_32"); _SIGNED_32Ready = true; } return _SIGNED_32Content; } }
             private static Android.Renderscript.Element.DataType _SIGNED_32Content = default;
             private static bool _SIGNED_32Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#SIGNED_64"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType SIGNED_64 { get { if (!_SIGNED_64Ready) { _SIGNED_64Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "SIGNED_64"); _SIGNED_64Ready = true; } return _SIGNED_64Content; } }
             private static Android.Renderscript.Element.DataType _SIGNED_64Content = default;
             private static bool _SIGNED_64Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#SIGNED_8"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType SIGNED_8 { get { if (!_SIGNED_8Ready) { _SIGNED_8Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "SIGNED_8"); _SIGNED_8Ready = true; } return _SIGNED_8Content; } }
             private static Android.Renderscript.Element.DataType _SIGNED_8Content = default;
             private static bool _SIGNED_8Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#UNSIGNED_16"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType UNSIGNED_16 { get { if (!_UNSIGNED_16Ready) { _UNSIGNED_16Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "UNSIGNED_16"); _UNSIGNED_16Ready = true; } return _UNSIGNED_16Content; } }
             private static Android.Renderscript.Element.DataType _UNSIGNED_16Content = default;
             private static bool _UNSIGNED_16Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#UNSIGNED_32"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType UNSIGNED_32 { get { if (!_UNSIGNED_32Ready) { _UNSIGNED_32Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "UNSIGNED_32"); _UNSIGNED_32Ready = true; } return _UNSIGNED_32Content; } }
             private static Android.Renderscript.Element.DataType _UNSIGNED_32Content = default;
             private static bool _UNSIGNED_32Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#UNSIGNED_4_4_4_4"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType UNSIGNED_4_4_4_4 { get { if (!_UNSIGNED_4_4_4_4Ready) { _UNSIGNED_4_4_4_4Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "UNSIGNED_4_4_4_4"); _UNSIGNED_4_4_4_4Ready = true; } return _UNSIGNED_4_4_4_4Content; } }
             private static Android.Renderscript.Element.DataType _UNSIGNED_4_4_4_4Content = default;
             private static bool _UNSIGNED_4_4_4_4Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#UNSIGNED_5_5_5_1"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType UNSIGNED_5_5_5_1 { get { if (!_UNSIGNED_5_5_5_1Ready) { _UNSIGNED_5_5_5_1Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "UNSIGNED_5_5_5_1"); _UNSIGNED_5_5_5_1Ready = true; } return _UNSIGNED_5_5_5_1Content; } }
             private static Android.Renderscript.Element.DataType _UNSIGNED_5_5_5_1Content = default;
             private static bool _UNSIGNED_5_5_5_1Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#UNSIGNED_5_6_5"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType UNSIGNED_5_6_5 { get { if (!_UNSIGNED_5_6_5Ready) { _UNSIGNED_5_6_5Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "UNSIGNED_5_6_5"); _UNSIGNED_5_6_5Ready = true; } return _UNSIGNED_5_6_5Content; } }
             private static Android.Renderscript.Element.DataType _UNSIGNED_5_6_5Content = default;
             private static bool _UNSIGNED_5_6_5Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#UNSIGNED_64"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType UNSIGNED_64 { get { if (!_UNSIGNED_64Ready) { _UNSIGNED_64Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "UNSIGNED_64"); _UNSIGNED_64Ready = true; } return _UNSIGNED_64Content; } }
             private static Android.Renderscript.Element.DataType _UNSIGNED_64Content = default;
             private static bool _UNSIGNED_64Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Element.DataType.html#UNSIGNED_8"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Element.DataType UNSIGNED_8 { get { if (!_UNSIGNED_8Ready) { _UNSIGNED_8Content = SGetField<Android.Renderscript.Element.DataType>(LocalBridgeClazz, "UNSIGNED_8"); _UNSIGNED_8Ready = true; } return _UNSIGNED_8Content; } }
             private static Android.Renderscript.Element.DataType _UNSIGNED_8Content = default;
             private static bool _UNSIGNED_8Ready = false; // this is used because in case of generics 

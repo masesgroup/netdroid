@@ -54,181 +54,6 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getAlpha()"/> 
-        /// </summary>
-        public float Alpha
-        {
-            get { return IExecuteWithSignature<float>("getAlpha", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getAmbientShadowColor()"/> 
-        /// </summary>
-        public int AmbientShadowColor
-        {
-            get { return IExecuteWithSignature<int>("getAmbientShadowColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getBottom()"/> 
-        /// </summary>
-        public int Bottom
-        {
-            get { return IExecuteWithSignature<int>("getBottom", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getCameraDistance()"/> 
-        /// </summary>
-        public float CameraDistance
-        {
-            get { return IExecuteWithSignature<float>("getCameraDistance", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getClipToBounds()"/> 
-        /// </summary>
-        public bool ClipToBounds
-        {
-            get { return IExecuteWithSignature<bool>("getClipToBounds", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getClipToOutline()"/> 
-        /// </summary>
-        public bool ClipToOutline
-        {
-            get { return IExecuteWithSignature<bool>("getClipToOutline", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getElevation()"/> 
-        /// </summary>
-        public float Elevation
-        {
-            get { return IExecuteWithSignature<float>("getElevation", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getHeight()"/> 
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getLeft()"/> 
-        /// </summary>
-        public int Left
-        {
-            get { return IExecuteWithSignature<int>("getLeft", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getPivotX()"/> 
-        /// </summary>
-        public float PivotX
-        {
-            get { return IExecuteWithSignature<float>("getPivotX", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getPivotY()"/> 
-        /// </summary>
-        public float PivotY
-        {
-            get { return IExecuteWithSignature<float>("getPivotY", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getRight()"/> 
-        /// </summary>
-        public int Right
-        {
-            get { return IExecuteWithSignature<int>("getRight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getRotationX()"/> 
-        /// </summary>
-        public float RotationX
-        {
-            get { return IExecuteWithSignature<float>("getRotationX", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getRotationY()"/> 
-        /// </summary>
-        public float RotationY
-        {
-            get { return IExecuteWithSignature<float>("getRotationY", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getRotationZ()"/> 
-        /// </summary>
-        public float RotationZ
-        {
-            get { return IExecuteWithSignature<float>("getRotationZ", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getScaleX()"/> 
-        /// </summary>
-        public float ScaleX
-        {
-            get { return IExecuteWithSignature<float>("getScaleX", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getScaleY()"/> 
-        /// </summary>
-        public float ScaleY
-        {
-            get { return IExecuteWithSignature<float>("getScaleY", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getSpotShadowColor()"/> 
-        /// </summary>
-        public int SpotShadowColor
-        {
-            get { return IExecuteWithSignature<int>("getSpotShadowColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getTop()"/> 
-        /// </summary>
-        public int Top
-        {
-            get { return IExecuteWithSignature<int>("getTop", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getTranslationX()"/> 
-        /// </summary>
-        public float TranslationX
-        {
-            get { return IExecuteWithSignature<float>("getTranslationX", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getTranslationY()"/> 
-        /// </summary>
-        public float TranslationY
-        {
-            get { return IExecuteWithSignature<float>("getTranslationY", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getTranslationZ()"/> 
-        /// </summary>
-        public float TranslationZ
-        {
-            get { return IExecuteWithSignature<float>("getTranslationZ", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getUniqueId()"/> 
-        /// </summary>
-        public long UniqueId
-        {
-            get { return IExecuteWithSignature<long>("getUniqueId", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getUseCompositingLayer()"/> 
-        /// </summary>
-        public bool UseCompositingLayer
-        {
-            get { return IExecuteWithSignature<bool>("getUseCompositingLayer", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getWidth()"/> 
-        /// </summary>
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#beginRecording()"/>
         /// </summary>
         /// <returns><see cref="Android.Graphics.RecordingCanvas"/></returns>
@@ -245,6 +70,30 @@ namespace Android.Graphics
         public Android.Graphics.RecordingCanvas BeginRecording(int arg0, int arg1)
         {
             return IExecute<Android.Graphics.RecordingCanvas>("beginRecording", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getClipToBounds()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetClipToBounds()
+        {
+            return IExecuteWithSignature<bool>("getClipToBounds", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getClipToOutline()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetClipToOutline()
+        {
+            return IExecuteWithSignature<bool>("getClipToOutline", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getUseCompositingLayer()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetUseCompositingLayer()
+        {
+            return IExecuteWithSignature<bool>("getUseCompositingLayer", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#hasDisplayList()"/>
@@ -568,12 +417,188 @@ namespace Android.Graphics
             return IExecute<bool>("setUseCompositingLayer", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getAlpha()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetAlpha()
+        {
+            return IExecuteWithSignature<float>("getAlpha", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getCameraDistance()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetCameraDistance()
+        {
+            return IExecuteWithSignature<float>("getCameraDistance", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getElevation()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetElevation()
+        {
+            return IExecuteWithSignature<float>("getElevation", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getPivotX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetPivotX()
+        {
+            return IExecuteWithSignature<float>("getPivotX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getPivotY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetPivotY()
+        {
+            return IExecuteWithSignature<float>("getPivotY", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getRotationX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetRotationX()
+        {
+            return IExecuteWithSignature<float>("getRotationX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getRotationY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetRotationY()
+        {
+            return IExecuteWithSignature<float>("getRotationY", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getRotationZ()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetRotationZ()
+        {
+            return IExecuteWithSignature<float>("getRotationZ", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getScaleX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetScaleX()
+        {
+            return IExecuteWithSignature<float>("getScaleX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getScaleY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetScaleY()
+        {
+            return IExecuteWithSignature<float>("getScaleY", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getTranslationX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetTranslationX()
+        {
+            return IExecuteWithSignature<float>("getTranslationX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getTranslationY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetTranslationY()
+        {
+            return IExecuteWithSignature<float>("getTranslationY", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getTranslationZ()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetTranslationZ()
+        {
+            return IExecuteWithSignature<float>("getTranslationZ", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getAmbientShadowColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAmbientShadowColor()
+        {
+            return IExecuteWithSignature<int>("getAmbientShadowColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getBottom()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBottom()
+        {
+            return IExecuteWithSignature<int>("getBottom", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getLeft()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLeft()
+        {
+            return IExecuteWithSignature<int>("getLeft", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getRight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRight()
+        {
+            return IExecuteWithSignature<int>("getRight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getSpotShadowColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSpotShadowColor()
+        {
+            return IExecuteWithSignature<int>("getSpotShadowColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getTop()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTop()
+        {
+            return IExecuteWithSignature<int>("getTop", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
+        {
+            return IExecuteWithSignature<int>("getWidth", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#computeApproximateMemoryUsage()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long ComputeApproximateMemoryUsage()
         {
             return IExecuteWithSignature<long>("computeApproximateMemoryUsage", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#getUniqueId()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetUniqueId()
+        {
+            return IExecuteWithSignature<long>("getUniqueId", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/RenderNode.html#discardDisplayList()"/>

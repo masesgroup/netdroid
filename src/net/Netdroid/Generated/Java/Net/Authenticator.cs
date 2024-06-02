@@ -42,14 +42,15 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/Authenticator.html#getDefault()"/> <see href="https://developer.android.com/reference/java.base/java/net/Authenticator.html#setDefault(java.net.Authenticator)"/>
+        /// <see href="https://developer.android.com/reference/java/net/Authenticator.html#getDefault()"/>
         /// </summary>
-        public static Java.Net.Authenticator Default
+        /// <returns><see cref="Java.Net.Authenticator"/></returns>
+        public static Java.Net.Authenticator GetDefault()
         {
-            get { return SExecuteWithSignature<Java.Net.Authenticator>(LocalBridgeClazz, "getDefault", "()Ljava/net/Authenticator;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/net/Authenticator;)V", value); }
+            return SExecuteWithSignature<Java.Net.Authenticator>(LocalBridgeClazz, "getDefault", "()Ljava/net/Authenticator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String,java.net.URL,java.net.Authenticator.RequestorType)"/>
+        /// <see href="https://developer.android.com/reference/java/net/Authenticator.html#requestPasswordAuthentication(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String,java.net.URL,java.net.Authenticator.RequestorType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Net.InetAddress"/></param>
@@ -65,7 +66,7 @@ namespace Java.Net
             return SExecute<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/Authenticator.html#requestPasswordAuthentication(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Net.InetAddress"/></param>
@@ -79,7 +80,7 @@ namespace Java.Net
             return SExecute<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.net.Authenticator,java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String,java.net.URL,java.net.Authenticator.RequestorType)"/>
+        /// <see href="https://developer.android.com/reference/java/net/Authenticator.html#requestPasswordAuthentication(java.net.Authenticator,java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String,java.net.URL,java.net.Authenticator.RequestorType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.Authenticator"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -96,7 +97,7 @@ namespace Java.Net
             return SExecute<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/Authenticator.html#requestPasswordAuthentication(java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -108,12 +109,20 @@ namespace Java.Net
         {
             return SExecute<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/Authenticator.html#setDefault(java.net.Authenticator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.Authenticator"/></param>
+        public static void SetDefault(Java.Net.Authenticator arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/net/Authenticator;)V", arg0);
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/Authenticator.html#requestPasswordAuthenticationInstance(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String,java.net.URL,java.net.Authenticator.RequestorType)"/>
+        /// <see href="https://developer.android.com/reference/java/net/Authenticator.html#requestPasswordAuthenticationInstance(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String,java.net.URL,java.net.Authenticator.RequestorType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Net.InetAddress"/></param>
@@ -145,13 +154,13 @@ namespace Java.Net
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/net/Authenticator.RequestorType.html#PROXY"/>
+            /// <see href="https://developer.android.com/reference/java/net/Authenticator.RequestorType.html#PROXY"/>
             /// </summary>
             public static Java.Net.Authenticator.RequestorType PROXY { get { if (!_PROXYReady) { _PROXYContent = SGetField<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "PROXY"); _PROXYReady = true; } return _PROXYContent; } }
             private static Java.Net.Authenticator.RequestorType _PROXYContent = default;
             private static bool _PROXYReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/net/Authenticator.RequestorType.html#SERVER"/>
+            /// <see href="https://developer.android.com/reference/java/net/Authenticator.RequestorType.html#SERVER"/>
             /// </summary>
             public static Java.Net.Authenticator.RequestorType SERVER { get { if (!_SERVERReady) { _SERVERContent = SGetField<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "SERVER"); _SERVERReady = true; } return _SERVERContent; } }
             private static Java.Net.Authenticator.RequestorType _SERVERContent = default;
@@ -161,7 +170,7 @@ namespace Java.Net
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/net/Authenticator.RequestorType.html#valueOf(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/net/Authenticator.RequestorType.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Net.Authenticator.RequestorType"/></returns>
@@ -170,7 +179,7 @@ namespace Java.Net
                 return SExecuteWithSignature<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/net/Authenticator$RequestorType;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/net/Authenticator.RequestorType.html#values()"/>
+            /// <see href="https://developer.android.com/reference/java/net/Authenticator.RequestorType.html#values()"/>
             /// </summary>
             /// <returns><see cref="Java.Net.Authenticator.RequestorType"/></returns>
             public static Java.Net.Authenticator.RequestorType[] Values()

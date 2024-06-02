@@ -64,63 +64,63 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_ORIENTATION"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MOTION_RANGE_ORIENTATION { get { if (!_MOTION_RANGE_ORIENTATIONReady) { _MOTION_RANGE_ORIENTATIONContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_ORIENTATION"); _MOTION_RANGE_ORIENTATIONReady = true; } return _MOTION_RANGE_ORIENTATIONContent; } }
         private static int _MOTION_RANGE_ORIENTATIONContent = default;
         private static bool _MOTION_RANGE_ORIENTATIONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_PRESSURE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MOTION_RANGE_PRESSURE { get { if (!_MOTION_RANGE_PRESSUREReady) { _MOTION_RANGE_PRESSUREContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_PRESSURE"); _MOTION_RANGE_PRESSUREReady = true; } return _MOTION_RANGE_PRESSUREContent; } }
         private static int _MOTION_RANGE_PRESSUREContent = default;
         private static bool _MOTION_RANGE_PRESSUREReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_SIZE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MOTION_RANGE_SIZE { get { if (!_MOTION_RANGE_SIZEReady) { _MOTION_RANGE_SIZEContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_SIZE"); _MOTION_RANGE_SIZEReady = true; } return _MOTION_RANGE_SIZEContent; } }
         private static int _MOTION_RANGE_SIZEContent = default;
         private static bool _MOTION_RANGE_SIZEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_TOOL_MAJOR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MOTION_RANGE_TOOL_MAJOR { get { if (!_MOTION_RANGE_TOOL_MAJORReady) { _MOTION_RANGE_TOOL_MAJORContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_TOOL_MAJOR"); _MOTION_RANGE_TOOL_MAJORReady = true; } return _MOTION_RANGE_TOOL_MAJORContent; } }
         private static int _MOTION_RANGE_TOOL_MAJORContent = default;
         private static bool _MOTION_RANGE_TOOL_MAJORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_TOOL_MINOR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MOTION_RANGE_TOOL_MINOR { get { if (!_MOTION_RANGE_TOOL_MINORReady) { _MOTION_RANGE_TOOL_MINORContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_TOOL_MINOR"); _MOTION_RANGE_TOOL_MINORReady = true; } return _MOTION_RANGE_TOOL_MINORContent; } }
         private static int _MOTION_RANGE_TOOL_MINORContent = default;
         private static bool _MOTION_RANGE_TOOL_MINORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_TOUCH_MAJOR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MOTION_RANGE_TOUCH_MAJOR { get { if (!_MOTION_RANGE_TOUCH_MAJORReady) { _MOTION_RANGE_TOUCH_MAJORContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_TOUCH_MAJOR"); _MOTION_RANGE_TOUCH_MAJORReady = true; } return _MOTION_RANGE_TOUCH_MAJORContent; } }
         private static int _MOTION_RANGE_TOUCH_MAJORContent = default;
         private static bool _MOTION_RANGE_TOUCH_MAJORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_TOUCH_MINOR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MOTION_RANGE_TOUCH_MINOR { get { if (!_MOTION_RANGE_TOUCH_MINORReady) { _MOTION_RANGE_TOUCH_MINORContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_TOUCH_MINOR"); _MOTION_RANGE_TOUCH_MINORReady = true; } return _MOTION_RANGE_TOUCH_MINORContent; } }
         private static int _MOTION_RANGE_TOUCH_MINORContent = default;
         private static bool _MOTION_RANGE_TOUCH_MINORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_X"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MOTION_RANGE_X { get { if (!_MOTION_RANGE_XReady) { _MOTION_RANGE_XContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_X"); _MOTION_RANGE_XReady = true; } return _MOTION_RANGE_XContent; } }
         private static int _MOTION_RANGE_XContent = default;
         private static bool _MOTION_RANGE_XReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#MOTION_RANGE_Y"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MOTION_RANGE_Y { get { if (!_MOTION_RANGE_YReady) { _MOTION_RANGE_YContent = SGetField<int>(LocalBridgeClazz, "MOTION_RANGE_Y"); _MOTION_RANGE_YReady = true; } return _MOTION_RANGE_YContent; } }
         private static int _MOTION_RANGE_YContent = default;
         private static bool _MOTION_RANGE_YReady = false; // this is used because in case of generics 
@@ -273,13 +273,6 @@ namespace Android.View
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getDeviceIds()"/> 
-        /// </summary>
-        public static int[] DeviceIds
-        {
-            get { return SExecuteWithSignatureArray<int>(LocalBridgeClazz, "getDeviceIds", "()[I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getDevice(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -288,115 +281,58 @@ namespace Android.View
         {
             return SExecuteWithSignature<Android.View.InputDevice>(LocalBridgeClazz, "getDevice", "(I)Landroid/view/InputDevice;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getDeviceIds()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int[] GetDeviceIds()
+        {
+            return SExecuteWithSignatureArray<int>(LocalBridgeClazz, "getDeviceIds", "()[I");
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getBatteryState()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getBatteryState()"/>
         /// </summary>
-        public Android.Hardware.BatteryState BatteryState
+        /// <returns><see cref="Android.Hardware.BatteryState"/></returns>
+        public Android.Hardware.BatteryState GetBatteryState()
         {
-            get { return IExecuteWithSignature<Android.Hardware.BatteryState>("getBatteryState", "()Landroid/hardware/BatteryState;"); }
+            return IExecuteWithSignature<Android.Hardware.BatteryState>("getBatteryState", "()Landroid/hardware/BatteryState;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getControllerNumber()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getLightsManager()"/>
         /// </summary>
-        public int ControllerNumber
+        /// <returns><see cref="Android.Hardware.Lights.LightsManager"/></returns>
+        public Android.Hardware.Lights.LightsManager GetLightsManager()
         {
-            get { return IExecuteWithSignature<int>("getControllerNumber", "()I"); }
+            return IExecuteWithSignature<Android.Hardware.Lights.LightsManager>("getLightsManager", "()Landroid/hardware/lights/LightsManager;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getDescriptor()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getSensorManager()"/>
         /// </summary>
-        public Java.Lang.String Descriptor
+        /// <returns><see cref="Android.Hardware.SensorManager"/></returns>
+        public Android.Hardware.SensorManager GetSensorManager()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescriptor", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Hardware.SensorManager>("getSensorManager", "()Landroid/hardware/SensorManager;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getVibrator()"/>
         /// </summary>
-        public int Id
+        /// <returns><see cref="Android.Os.Vibrator"/></returns>
+        [global::System.Obsolete()]
+        public Android.Os.Vibrator GetVibrator()
         {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
+            return IExecuteWithSignature<Android.Os.Vibrator>("getVibrator", "()Landroid/os/Vibrator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getKeyboardType()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getVibratorManager()"/>
         /// </summary>
-        public int KeyboardType
+        /// <returns><see cref="Android.Os.VibratorManager"/></returns>
+        public Android.Os.VibratorManager GetVibratorManager()
         {
-            get { return IExecuteWithSignature<int>("getKeyboardType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getKeyCharacterMap()"/> 
-        /// </summary>
-        public Android.View.KeyCharacterMap KeyCharacterMap
-        {
-            get { return IExecuteWithSignature<Android.View.KeyCharacterMap>("getKeyCharacterMap", "()Landroid/view/KeyCharacterMap;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getLightsManager()"/> 
-        /// </summary>
-        public Android.Hardware.Lights.LightsManager LightsManager
-        {
-            get { return IExecuteWithSignature<Android.Hardware.Lights.LightsManager>("getLightsManager", "()Landroid/hardware/lights/LightsManager;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getMotionRanges()"/> 
-        /// </summary>
-        public Java.Util.List<Android.View.InputDevice.MotionRange> MotionRanges
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.View.InputDevice.MotionRange>>("getMotionRanges", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getProductId()"/> 
-        /// </summary>
-        public int ProductId
-        {
-            get { return IExecuteWithSignature<int>("getProductId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getSensorManager()"/> 
-        /// </summary>
-        public Android.Hardware.SensorManager SensorManager
-        {
-            get { return IExecuteWithSignature<Android.Hardware.SensorManager>("getSensorManager", "()Landroid/hardware/SensorManager;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getSources()"/> 
-        /// </summary>
-        public int Sources
-        {
-            get { return IExecuteWithSignature<int>("getSources", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getVendorId()"/> 
-        /// </summary>
-        public int VendorId
-        {
-            get { return IExecuteWithSignature<int>("getVendorId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getVibrator()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Os.Vibrator Vibrator
-        {
-            get { return IExecuteWithSignature<Android.Os.Vibrator>("getVibrator", "()Landroid/os/Vibrator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getVibratorManager()"/> 
-        /// </summary>
-        public Android.Os.VibratorManager VibratorManager
-        {
-            get { return IExecuteWithSignature<Android.Os.VibratorManager>("getVibratorManager", "()Landroid/os/VibratorManager;"); }
+            return IExecuteWithSignature<Android.Os.VibratorManager>("getVibratorManager", "()Landroid/os/VibratorManager;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getMotionRange(int,int)"/>
@@ -416,6 +352,14 @@ namespace Android.View
         public Android.View.InputDevice.MotionRange GetMotionRange(int arg0)
         {
             return IExecuteWithSignature<Android.View.InputDevice.MotionRange>("getMotionRange", "(I)Landroid/view/InputDevice$MotionRange;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getKeyCharacterMap()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.KeyCharacterMap"/></returns>
+        public Android.View.KeyCharacterMap GetKeyCharacterMap()
+        {
+            return IExecuteWithSignature<Android.View.KeyCharacterMap>("getKeyCharacterMap", "()Landroid/view/KeyCharacterMap;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#hasMicrophone()"/>
@@ -476,6 +420,30 @@ namespace Android.View
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getControllerNumber()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetControllerNumber()
+        {
+            return IExecuteWithSignature<int>("getControllerNumber", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getKeyboardType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetKeyboardType()
+        {
+            return IExecuteWithSignature<int>("getKeyboardType", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getKeyCodeForKeyLocation(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -483,6 +451,54 @@ namespace Android.View
         public int GetKeyCodeForKeyLocation(int arg0)
         {
             return IExecuteWithSignature<int>("getKeyCodeForKeyLocation", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getProductId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetProductId()
+        {
+            return IExecuteWithSignature<int>("getProductId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getSources()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSources()
+        {
+            return IExecuteWithSignature<int>("getSources", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getVendorId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVendorId()
+        {
+            return IExecuteWithSignature<int>("getVendorId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getDescriptor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDescriptor()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDescriptor", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#getMotionRanges()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.InputDevice.MotionRange> GetMotionRanges()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.View.InputDevice.MotionRange>>("getMotionRanges", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/InputDevice.html#writeToParcel(android.os.Parcel,int)"/>
@@ -518,62 +534,6 @@ namespace Android.View
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/InputDevice.MotionRange.html#getAxis()"/> 
-            /// </summary>
-            public int Axis
-            {
-                get { return IExecuteWithSignature<int>("getAxis", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/InputDevice.MotionRange.html#getFlat()"/> 
-            /// </summary>
-            public float Flat
-            {
-                get { return IExecuteWithSignature<float>("getFlat", "()F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/InputDevice.MotionRange.html#getFuzz()"/> 
-            /// </summary>
-            public float Fuzz
-            {
-                get { return IExecuteWithSignature<float>("getFuzz", "()F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/InputDevice.MotionRange.html#getMax()"/> 
-            /// </summary>
-            public float Max
-            {
-                get { return IExecuteWithSignature<float>("getMax", "()F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/InputDevice.MotionRange.html#getMin()"/> 
-            /// </summary>
-            public float Min
-            {
-                get { return IExecuteWithSignature<float>("getMin", "()F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/InputDevice.MotionRange.html#getRange()"/> 
-            /// </summary>
-            public float Range
-            {
-                get { return IExecuteWithSignature<float>("getRange", "()F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/InputDevice.MotionRange.html#getResolution()"/> 
-            /// </summary>
-            public float Resolution
-            {
-                get { return IExecuteWithSignature<float>("getResolution", "()F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/InputDevice.MotionRange.html#getSource()"/> 
-            /// </summary>
-            public int Source
-            {
-                get { return IExecuteWithSignature<int>("getSource", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/InputDevice.MotionRange.html#isFromSource(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -581,6 +541,70 @@ namespace Android.View
             public bool IsFromSource(int arg0)
             {
                 return IExecuteWithSignature<bool>("isFromSource", "(I)Z", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/InputDevice.MotionRange.html#getFlat()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            public float GetFlat()
+            {
+                return IExecuteWithSignature<float>("getFlat", "()F");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/InputDevice.MotionRange.html#getFuzz()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            public float GetFuzz()
+            {
+                return IExecuteWithSignature<float>("getFuzz", "()F");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/InputDevice.MotionRange.html#getMax()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            public float GetMax()
+            {
+                return IExecuteWithSignature<float>("getMax", "()F");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/InputDevice.MotionRange.html#getMin()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            public float GetMin()
+            {
+                return IExecuteWithSignature<float>("getMin", "()F");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/InputDevice.MotionRange.html#getRange()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            public float GetRange()
+            {
+                return IExecuteWithSignature<float>("getRange", "()F");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/InputDevice.MotionRange.html#getResolution()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            public float GetResolution()
+            {
+                return IExecuteWithSignature<float>("getResolution", "()F");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/InputDevice.MotionRange.html#getAxis()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetAxis()
+            {
+                return IExecuteWithSignature<int>("getAxis", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/InputDevice.MotionRange.html#getSource()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetSource()
+            {
+                return IExecuteWithSignature<int>("getSource", "()I");
             }
 
             #endregion

@@ -42,22 +42,24 @@ namespace Android.Webkit
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerController.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerController.html#getInstance()"/>
         /// </summary>
-        public static Android.Webkit.ServiceWorkerController Instance
+        /// <returns><see cref="Android.Webkit.ServiceWorkerController"/></returns>
+        public static Android.Webkit.ServiceWorkerController GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Webkit.ServiceWorkerController>(LocalBridgeClazz, "getInstance", "()Landroid/webkit/ServiceWorkerController;"); }
+            return SExecuteWithSignature<Android.Webkit.ServiceWorkerController>(LocalBridgeClazz, "getInstance", "()Landroid/webkit/ServiceWorkerController;");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerController.html#getServiceWorkerWebSettings()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerController.html#getServiceWorkerWebSettings()"/>
         /// </summary>
-        public Android.Webkit.ServiceWorkerWebSettings ServiceWorkerWebSettings
+        /// <returns><see cref="Android.Webkit.ServiceWorkerWebSettings"/></returns>
+        public Android.Webkit.ServiceWorkerWebSettings GetServiceWorkerWebSettings()
         {
-            get { return IExecuteWithSignature<Android.Webkit.ServiceWorkerWebSettings>("getServiceWorkerWebSettings", "()Landroid/webkit/ServiceWorkerWebSettings;"); }
+            return IExecuteWithSignature<Android.Webkit.ServiceWorkerWebSettings>("getServiceWorkerWebSettings", "()Landroid/webkit/ServiceWorkerWebSettings;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/ServiceWorkerController.html#setServiceWorkerClient(android.webkit.ServiceWorkerClient)"/>

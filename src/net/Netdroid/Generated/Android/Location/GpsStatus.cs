@@ -40,28 +40,28 @@ namespace Android.Location
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GpsStatus.html#GPS_EVENT_FIRST_FIX"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int GPS_EVENT_FIRST_FIX { get { if (!_GPS_EVENT_FIRST_FIXReady) { _GPS_EVENT_FIRST_FIXContent = SGetField<int>(LocalBridgeClazz, "GPS_EVENT_FIRST_FIX"); _GPS_EVENT_FIRST_FIXReady = true; } return _GPS_EVENT_FIRST_FIXContent; } }
         private static int _GPS_EVENT_FIRST_FIXContent = default;
         private static bool _GPS_EVENT_FIRST_FIXReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GpsStatus.html#GPS_EVENT_SATELLITE_STATUS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int GPS_EVENT_SATELLITE_STATUS { get { if (!_GPS_EVENT_SATELLITE_STATUSReady) { _GPS_EVENT_SATELLITE_STATUSContent = SGetField<int>(LocalBridgeClazz, "GPS_EVENT_SATELLITE_STATUS"); _GPS_EVENT_SATELLITE_STATUSReady = true; } return _GPS_EVENT_SATELLITE_STATUSContent; } }
         private static int _GPS_EVENT_SATELLITE_STATUSContent = default;
         private static bool _GPS_EVENT_SATELLITE_STATUSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GpsStatus.html#GPS_EVENT_STARTED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int GPS_EVENT_STARTED { get { if (!_GPS_EVENT_STARTEDReady) { _GPS_EVENT_STARTEDContent = SGetField<int>(LocalBridgeClazz, "GPS_EVENT_STARTED"); _GPS_EVENT_STARTEDReady = true; } return _GPS_EVENT_STARTEDContent; } }
         private static int _GPS_EVENT_STARTEDContent = default;
         private static bool _GPS_EVENT_STARTEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GpsStatus.html#GPS_EVENT_STOPPED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int GPS_EVENT_STOPPED { get { if (!_GPS_EVENT_STOPPEDReady) { _GPS_EVENT_STOPPEDContent = SGetField<int>(LocalBridgeClazz, "GPS_EVENT_STOPPED"); _GPS_EVENT_STOPPEDReady = true; } return _GPS_EVENT_STOPPEDContent; } }
         private static int _GPS_EVENT_STOPPEDContent = default;
         private static bool _GPS_EVENT_STOPPEDReady = false; // this is used because in case of generics 
@@ -75,7 +75,7 @@ namespace Android.Location
         /// <param name="arg0"><see cref="Android.Location.GnssStatus"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Android.Location.GpsStatus"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Location.GpsStatus Create(Android.Location.GnssStatus arg0, int arg1)
         {
             return SExecute<Android.Location.GpsStatus>(LocalBridgeClazz, "create", arg0, arg1);
@@ -85,28 +85,31 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GpsStatus.html#getMaxSatellites()"/> 
+        /// <see href="https://developer.android.com/reference/android/location/GpsStatus.html#getMaxSatellites()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int MaxSatellites
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetMaxSatellites()
         {
-            get { return IExecuteWithSignature<int>("getMaxSatellites", "()I"); }
+            return IExecuteWithSignature<int>("getMaxSatellites", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GpsStatus.html#getSatellites()"/> 
+        /// <see href="https://developer.android.com/reference/android/location/GpsStatus.html#getTimeToFirstFix()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.Iterable<Android.Location.GpsSatellite> Satellites
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetTimeToFirstFix()
         {
-            get { return IExecuteWithSignature<Java.Lang.Iterable<Android.Location.GpsSatellite>>("getSatellites", "()Ljava/lang/Iterable;"); }
+            return IExecuteWithSignature<int>("getTimeToFirstFix", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GpsStatus.html#getTimeToFirstFix()"/> 
+        /// <see href="https://developer.android.com/reference/android/location/GpsStatus.html#getSatellites()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int TimeToFirstFix
+        /// <returns><see cref="Java.Lang.Iterable"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.Iterable<Android.Location.GpsSatellite> GetSatellites()
         {
-            get { return IExecuteWithSignature<int>("getTimeToFirstFix", "()I"); }
+            return IExecuteWithSignature<Java.Lang.Iterable<Android.Location.GpsSatellite>>("getSatellites", "()Ljava/lang/Iterable;");
         }
 
         #endregion
@@ -137,7 +140,7 @@ namespace Android.Location
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onGpsStatusChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnGpsStatusChangedEventHandler));
+                AddEventHandler("onGpsStatusChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnGpsStatusChangedEventHandler));
 
             }
 
@@ -145,7 +148,7 @@ namespace Android.Location
             /// Handler for <see href="https://developer.android.com/reference/android/location/GpsStatus.Listener.html#onGpsStatusChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGpsStatusChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnGpsStatusChanged { get; set; } = null;
+            public global::System.Action<int> OnOnGpsStatusChanged { get; set; } = null;
 
             void OnGpsStatusChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -157,7 +160,7 @@ namespace Android.Location
             /// <see href="https://developer.android.com/reference/android/location/GpsStatus.Listener.html#onGpsStatusChanged(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnGpsStatusChanged(int arg0)
             {
                 
@@ -197,7 +200,7 @@ namespace Android.Location
             /// <see href="https://developer.android.com/reference/android/location/GpsStatus.Listener.html#onGpsStatusChanged(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnGpsStatusChanged(int arg0)
             {
                 IExecuteWithSignature("onGpsStatusChanged", "(I)V", arg0);
@@ -238,7 +241,7 @@ namespace Android.Location
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onNmeaReceived", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(OnNmeaReceivedEventHandler));
+                AddEventHandler("onNmeaReceived", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(OnNmeaReceivedEventHandler));
 
             }
 
@@ -246,7 +249,7 @@ namespace Android.Location
             /// Handler for <see href="https://developer.android.com/reference/android/location/GpsStatus.NmeaListener.html#onNmeaReceived(long,java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnNmeaReceived"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<long, Java.Lang.String> OnOnNmeaReceived { get; set; } = null;
+            public global::System.Action<long, Java.Lang.String> OnOnNmeaReceived { get; set; } = null;
 
             void OnNmeaReceivedEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
             {
@@ -259,7 +262,7 @@ namespace Android.Location
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnNmeaReceived(long arg0, Java.Lang.String arg1)
             {
                 
@@ -300,7 +303,7 @@ namespace Android.Location
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnNmeaReceived(long arg0, Java.Lang.String arg1)
             {
                 IExecute("onNmeaReceived", arg0, arg1);

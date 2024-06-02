@@ -146,25 +146,28 @@ namespace Android.Graphics
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/PathIterator.Segment.html#getConicWeight()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/PathIterator.Segment.html#getConicWeight()"/>
             /// </summary>
-            public float ConicWeight
+            /// <returns><see cref="float"/></returns>
+            public float GetConicWeight()
             {
-                get { return IExecuteWithSignature<float>("getConicWeight", "()F"); }
+                return IExecuteWithSignature<float>("getConicWeight", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/PathIterator.Segment.html#getPoints()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/PathIterator.Segment.html#getPoints()"/>
             /// </summary>
-            public float[] Points
+            /// <returns><see cref="float"/></returns>
+            public float[] GetPoints()
             {
-                get { return IExecuteWithSignatureArray<float>("getPoints", "()[F"); }
+                return IExecuteWithSignatureArray<float>("getPoints", "()[F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/PathIterator.Segment.html#getVerb()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/PathIterator.Segment.html#getVerb()"/>
             /// </summary>
-            public int Verb
+            /// <returns><see cref="int"/></returns>
+            public int GetVerb()
             {
-                get { return IExecuteWithSignature<int>("getVerb", "()I"); }
+                return IExecuteWithSignature<int>("getVerb", "()I");
             }
 
             #endregion

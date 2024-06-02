@@ -76,18 +76,20 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/CommandResponse.html#getResponse()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/CommandResponse.html#getResponse()"/>
         /// </summary>
-        public Java.Lang.String Response
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetResponse()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getResponse", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getResponse", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/CommandResponse.html#getResponseType()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/CommandResponse.html#getResponseType()"/>
         /// </summary>
-        public Java.Lang.String ResponseType
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetResponseType()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getResponseType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getResponseType", "()Ljava/lang/String;");
         }
 
         #endregion

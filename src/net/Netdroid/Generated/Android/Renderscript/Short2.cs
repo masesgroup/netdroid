@@ -34,7 +34,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="short"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Short2(short arg0, short arg1)
             : base(arg0, arg1)
         {
@@ -50,12 +50,12 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Short2.html#x"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public short x { get { return IGetField<short>("x"); } set { ISetField("x", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Short2.html#y"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public short y { get { return IGetField<short>("y"); } set { ISetField("y", value); } }
 
         #endregion

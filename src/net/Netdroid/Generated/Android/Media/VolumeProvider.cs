@@ -85,32 +85,44 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/VolumeProvider.html#getCurrentVolume()"/> <see href="https://developer.android.com/reference/android/media/VolumeProvider.html#setCurrentVolume(int)"/>
+        /// <see href="https://developer.android.com/reference/android/media/VolumeProvider.html#getCurrentVolume()"/>
         /// </summary>
-        public int CurrentVolume
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentVolume()
         {
-            get { return IExecuteWithSignature<int>("getCurrentVolume", "()I"); } set { IExecuteWithSignature("setCurrentVolume", "(I)V", value); }
+            return IExecuteWithSignature<int>("getCurrentVolume", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/VolumeProvider.html#getMaxVolume()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/VolumeProvider.html#getMaxVolume()"/>
         /// </summary>
-        public int MaxVolume
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxVolume()
         {
-            get { return IExecuteWithSignature<int>("getMaxVolume", "()I"); }
+            return IExecuteWithSignature<int>("getMaxVolume", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/VolumeProvider.html#getVolumeControl()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/VolumeProvider.html#getVolumeControl()"/>
         /// </summary>
-        public int VolumeControl
+        /// <returns><see cref="int"/></returns>
+        public int GetVolumeControl()
         {
-            get { return IExecuteWithSignature<int>("getVolumeControl", "()I"); }
+            return IExecuteWithSignature<int>("getVolumeControl", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/VolumeProvider.html#getVolumeControlId()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/VolumeProvider.html#getVolumeControlId()"/>
         /// </summary>
-        public Java.Lang.String VolumeControlId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetVolumeControlId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVolumeControlId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getVolumeControlId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/VolumeProvider.html#setCurrentVolume(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetCurrentVolume(int arg0)
+        {
+            IExecuteWithSignature("setCurrentVolume", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/VolumeProvider.html#onAdjustVolume(int)"/>

@@ -30,7 +30,7 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/StringBuilder.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/StringBuilder.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public StringBuilder(int arg0)
@@ -38,7 +38,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/StringBuilder.html#%3Cinit%3E(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/StringBuilder.html#%3Cinit%3E(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         public StringBuilder(Java.Lang.CharSequence arg0)
@@ -46,7 +46,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/StringBuilder.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/StringBuilder.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public StringBuilder(Java.Lang.String arg0)
@@ -82,7 +82,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/StringBuilder.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/StringBuilder.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -91,7 +91,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/StringBuilder.html#compareTo(java.lang.StringBuilder)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/StringBuilder.html#compareTo(java.lang.StringBuilder)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.StringBuilder"/></param>
         /// <returns><see cref="int"/></returns>

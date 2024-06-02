@@ -297,20 +297,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaParser.html#getLogSessionId()"/> <see href="https://developer.android.com/reference/android/media/MediaParser.html#setLogSessionId(android.media.metrics.LogSessionId)"/>
-        /// </summary>
-        public Android.Media.Metrics.LogSessionId LogSessionId
-        {
-            get { return IExecuteWithSignature<Android.Media.Metrics.LogSessionId>("getLogSessionId", "()Landroid/media/metrics/LogSessionId;"); } set { IExecuteWithSignature("setLogSessionId", "(Landroid/media/metrics/LogSessionId;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaParser.html#getParserName()"/> 
-        /// </summary>
-        public Java.Lang.String ParserName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getParserName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaParser.html#setParameter(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -319,6 +305,14 @@ namespace Android.Media
         public Android.Media.MediaParser SetParameter(Java.Lang.String arg0, object arg1)
         {
             return IExecute<Android.Media.MediaParser>("setParameter", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaParser.html#getLogSessionId()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.Metrics.LogSessionId"/></returns>
+        public Android.Media.Metrics.LogSessionId GetLogSessionId()
+        {
+            return IExecuteWithSignature<Android.Media.Metrics.LogSessionId>("getLogSessionId", "()Landroid/media/metrics/LogSessionId;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaParser.html#advance(android.media.MediaParser.SeekableInputReader)"/>
@@ -340,6 +334,14 @@ namespace Android.Media
             return IExecuteWithSignature<bool>("supportsParameter", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaParser.html#getParserName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetParserName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getParserName", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaParser.html#release()"/>
         /// </summary>
         public void Release()
@@ -353,6 +355,14 @@ namespace Android.Media
         public void Seek(Android.Media.MediaParser.SeekPoint arg0)
         {
             IExecuteWithSignature("seek", "(Landroid/media/MediaParser$SeekPoint;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaParser.html#setLogSessionId(android.media.metrics.LogSessionId)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.Metrics.LogSessionId"/></param>
+        public void SetLogSessionId(Android.Media.Metrics.LogSessionId arg0)
+        {
+            IExecuteWithSignature("setLogSessionId", "(Landroid/media/metrics/LogSessionId;)V", arg0);
         }
 
         #endregion
@@ -379,20 +389,6 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaParser.InputReader.html#getLength()"/> 
-            /// </summary>
-            public long Length
-            {
-                get { return IExecuteWithSignature<long>("getLength", "()J"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaParser.InputReader.html#getPosition()"/> 
-            /// </summary>
-            public long Position
-            {
-                get { return IExecuteWithSignature<long>("getPosition", "()J"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaParser.InputReader.html#read(byte[],int,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="byte"/></param>
@@ -403,6 +399,22 @@ namespace Android.Media
             public int Read(byte[] arg0, int arg1, int arg2)
             {
                 return IExecute<int>("read", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaParser.InputReader.html#getLength()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetLength()
+            {
+                return IExecuteWithSignature<long>("getLength", "()J");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaParser.InputReader.html#getPosition()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetPosition()
+            {
+                return IExecuteWithSignature<long>("getPosition", "()J");
             }
 
             #endregion
@@ -591,13 +603,6 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaParser.SeekMap.html#getDurationMicros()"/> 
-            /// </summary>
-            public long DurationMicros
-            {
-                get { return IExecuteWithSignature<long>("getDurationMicros", "()J"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaParser.SeekMap.html#getSeekPoints(long)"/>
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
@@ -613,6 +618,14 @@ namespace Android.Media
             public bool IsSeekable()
             {
                 return IExecuteWithSignature<bool>("isSeekable", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaParser.SeekMap.html#getDurationMicros()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetDurationMicros()
+            {
+                return IExecuteWithSignature<long>("getDurationMicros", "()J");
             }
 
             #endregion

@@ -84,110 +84,124 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getDate()"/> <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setDate(long)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getSelectedDateVerticalBar()"/>
         /// </summary>
-        public long Date
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.Drawable.Drawable GetSelectedDateVerticalBar()
         {
-            get { return IExecuteWithSignature<long>("getDate", "()J"); } set { IExecuteWithSignature("setDate", "(J)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getSelectedDateVerticalBar", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getDateTextAppearance()"/> <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setDateTextAppearance(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getShowWeekNumber()"/>
         /// </summary>
-        public int DateTextAppearance
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetShowWeekNumber()
         {
-            get { return IExecuteWithSignature<int>("getDateTextAppearance", "()I"); } set { IExecuteWithSignature("setDateTextAppearance", "(I)V", value); }
+            return IExecuteWithSignature<bool>("getShowWeekNumber", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getFirstDayOfWeek()"/> <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setFirstDayOfWeek(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getDateTextAppearance()"/>
         /// </summary>
-        public int FirstDayOfWeek
+        /// <returns><see cref="int"/></returns>
+        public int GetDateTextAppearance()
         {
-            get { return IExecuteWithSignature<int>("getFirstDayOfWeek", "()I"); } set { IExecuteWithSignature("setFirstDayOfWeek", "(I)V", value); }
+            return IExecuteWithSignature<int>("getDateTextAppearance", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getFocusedMonthDateColor()"/> <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setFocusedMonthDateColor(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getFirstDayOfWeek()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int FocusedMonthDateColor
+        /// <returns><see cref="int"/></returns>
+        public int GetFirstDayOfWeek()
         {
-            get { return IExecuteWithSignature<int>("getFocusedMonthDateColor", "()I"); } set { IExecuteWithSignature("setFocusedMonthDateColor", "(I)V", value); }
+            return IExecuteWithSignature<int>("getFirstDayOfWeek", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getMaxDate()"/> <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setMaxDate(long)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getFocusedMonthDateColor()"/>
         /// </summary>
-        public long MaxDate
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetFocusedMonthDateColor()
         {
-            get { return IExecuteWithSignature<long>("getMaxDate", "()J"); } set { IExecuteWithSignature("setMaxDate", "(J)V", value); }
+            return IExecuteWithSignature<int>("getFocusedMonthDateColor", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getMinDate()"/> <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setMinDate(long)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getSelectedWeekBackgroundColor()"/>
         /// </summary>
-        public long MinDate
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetSelectedWeekBackgroundColor()
         {
-            get { return IExecuteWithSignature<long>("getMinDate", "()J"); } set { IExecuteWithSignature("setMinDate", "(J)V", value); }
+            return IExecuteWithSignature<int>("getSelectedWeekBackgroundColor", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getSelectedDateVerticalBar()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getShownWeekCount()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.Drawable.Drawable SelectedDateVerticalBar
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetShownWeekCount()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getSelectedDateVerticalBar", "()Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<int>("getShownWeekCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getSelectedWeekBackgroundColor()"/> <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setSelectedWeekBackgroundColor(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getUnfocusedMonthDateColor()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int SelectedWeekBackgroundColor
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetUnfocusedMonthDateColor()
         {
-            get { return IExecuteWithSignature<int>("getSelectedWeekBackgroundColor", "()I"); } set { IExecuteWithSignature("setSelectedWeekBackgroundColor", "(I)V", value); }
+            return IExecuteWithSignature<int>("getUnfocusedMonthDateColor", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getShownWeekCount()"/> <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setShownWeekCount(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getWeekDayTextAppearance()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int ShownWeekCount
+        /// <returns><see cref="int"/></returns>
+        public int GetWeekDayTextAppearance()
         {
-            get { return IExecuteWithSignature<int>("getShownWeekCount", "()I"); } set { IExecuteWithSignature("setShownWeekCount", "(I)V", value); }
+            return IExecuteWithSignature<int>("getWeekDayTextAppearance", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getShowWeekNumber()"/> <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setShowWeekNumber(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getWeekNumberColor()"/>
         /// </summary>
-        [System.Obsolete()]
-        public bool ShowWeekNumber
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetWeekNumberColor()
         {
-            get { return IExecuteWithSignature<bool>("getShowWeekNumber", "()Z"); } set { IExecuteWithSignature("setShowWeekNumber", "(Z)V", value); }
+            return IExecuteWithSignature<int>("getWeekNumberColor", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getUnfocusedMonthDateColor()"/> <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setUnfocusedMonthDateColor(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getWeekSeparatorLineColor()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int UnfocusedMonthDateColor
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetWeekSeparatorLineColor()
         {
-            get { return IExecuteWithSignature<int>("getUnfocusedMonthDateColor", "()I"); } set { IExecuteWithSignature("setUnfocusedMonthDateColor", "(I)V", value); }
+            return IExecuteWithSignature<int>("getWeekSeparatorLineColor", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getWeekDayTextAppearance()"/> <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setWeekDayTextAppearance(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getDate()"/>
         /// </summary>
-        public int WeekDayTextAppearance
+        /// <returns><see cref="long"/></returns>
+        public long GetDate()
         {
-            get { return IExecuteWithSignature<int>("getWeekDayTextAppearance", "()I"); } set { IExecuteWithSignature("setWeekDayTextAppearance", "(I)V", value); }
+            return IExecuteWithSignature<long>("getDate", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getWeekNumberColor()"/> <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setWeekNumberColor(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getMaxDate()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int WeekNumberColor
+        /// <returns><see cref="long"/></returns>
+        public long GetMaxDate()
         {
-            get { return IExecuteWithSignature<int>("getWeekNumberColor", "()I"); } set { IExecuteWithSignature("setWeekNumberColor", "(I)V", value); }
+            return IExecuteWithSignature<long>("getMaxDate", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getWeekSeparatorLineColor()"/> <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setWeekSeparatorLineColor(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#getMinDate()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int WeekSeparatorLineColor
+        /// <returns><see cref="long"/></returns>
+        public long GetMinDate()
         {
-            get { return IExecuteWithSignature<int>("getWeekSeparatorLineColor", "()I"); } set { IExecuteWithSignature("setWeekSeparatorLineColor", "(I)V", value); }
+            return IExecuteWithSignature<long>("getMinDate", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setDate(long,boolean,boolean)"/>
@@ -198,6 +212,55 @@ namespace Android.Widget
         public void SetDate(long arg0, bool arg1, bool arg2)
         {
             IExecute("setDate", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setDate(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetDate(long arg0)
+        {
+            IExecuteWithSignature("setDate", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setDateTextAppearance(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDateTextAppearance(int arg0)
+        {
+            IExecuteWithSignature("setDateTextAppearance", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setFirstDayOfWeek(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetFirstDayOfWeek(int arg0)
+        {
+            IExecuteWithSignature("setFirstDayOfWeek", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setFocusedMonthDateColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetFocusedMonthDateColor(int arg0)
+        {
+            IExecuteWithSignature("setFocusedMonthDateColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setMaxDate(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetMaxDate(long arg0)
+        {
+            IExecuteWithSignature("setMaxDate", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setMinDate(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetMinDate(long arg0)
+        {
+            IExecuteWithSignature("setMinDate", "(J)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setOnDateChangeListener(android.widget.CalendarView.OnDateChangeListener)"/>
@@ -211,7 +274,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setSelectedDateVerticalBar(android.graphics.drawable.Drawable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSelectedDateVerticalBar(Android.Graphics.Drawable.Drawable arg0)
         {
             IExecuteWithSignature("setSelectedDateVerticalBar", "(Landroid/graphics/drawable/Drawable;)V", arg0);
@@ -220,10 +283,72 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setSelectedDateVerticalBar(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSelectedDateVerticalBar(int arg0)
         {
             IExecuteWithSignature("setSelectedDateVerticalBar", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setSelectedWeekBackgroundColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetSelectedWeekBackgroundColor(int arg0)
+        {
+            IExecuteWithSignature("setSelectedWeekBackgroundColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setShownWeekCount(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetShownWeekCount(int arg0)
+        {
+            IExecuteWithSignature("setShownWeekCount", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setShowWeekNumber(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetShowWeekNumber(bool arg0)
+        {
+            IExecuteWithSignature("setShowWeekNumber", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setUnfocusedMonthDateColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetUnfocusedMonthDateColor(int arg0)
+        {
+            IExecuteWithSignature("setUnfocusedMonthDateColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setWeekDayTextAppearance(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetWeekDayTextAppearance(int arg0)
+        {
+            IExecuteWithSignature("setWeekDayTextAppearance", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setWeekNumberColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetWeekNumberColor(int arg0)
+        {
+            IExecuteWithSignature("setWeekNumberColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CalendarView.html#setWeekSeparatorLineColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetWeekSeparatorLineColor(int arg0)
+        {
+            IExecuteWithSignature("setWeekSeparatorLineColor", "(I)V", arg0);
         }
 
         #endregion
@@ -254,7 +379,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onSelectedDayChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.CalendarView>>>(OnSelectedDayChangeEventHandler));
+                AddEventHandler("onSelectedDayChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.CalendarView>>>(OnSelectedDayChangeEventHandler));
 
             }
 
@@ -262,7 +387,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/CalendarView.OnDateChangeListener.html#onSelectedDayChange(android.widget.CalendarView,int,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSelectedDayChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Widget.CalendarView, int, int, int> OnOnSelectedDayChange { get; set; } = null;
+            public global::System.Action<Android.Widget.CalendarView, int, int, int> OnOnSelectedDayChange { get; set; } = null;
 
             void OnSelectedDayChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.CalendarView>> data)
             {

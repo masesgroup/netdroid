@@ -61,26 +61,28 @@ namespace Android.Telephony.Euicc
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/euicc/DownloadableSubscription.html#getConfirmationCode()"/> 
-        /// </summary>
-        public Java.Lang.String ConfirmationCode
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getConfirmationCode", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/euicc/DownloadableSubscription.html#getEncodedActivationCode()"/> 
-        /// </summary>
-        public Java.Lang.String EncodedActivationCode
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncodedActivationCode", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/euicc/DownloadableSubscription.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/euicc/DownloadableSubscription.html#getConfirmationCode()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetConfirmationCode()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getConfirmationCode", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/euicc/DownloadableSubscription.html#getEncodedActivationCode()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEncodedActivationCode()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getEncodedActivationCode", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/euicc/DownloadableSubscription.html#writeToParcel(android.os.Parcel,int)"/>

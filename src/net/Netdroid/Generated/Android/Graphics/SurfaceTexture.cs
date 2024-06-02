@@ -71,26 +71,28 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/SurfaceTexture.html#getDataSpace()"/> 
-        /// </summary>
-        public int DataSpace
-        {
-            get { return IExecuteWithSignature<int>("getDataSpace", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/SurfaceTexture.html#getTimestamp()"/> 
-        /// </summary>
-        public long Timestamp
-        {
-            get { return IExecuteWithSignature<long>("getTimestamp", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/SurfaceTexture.html#isReleased()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsReleased()
         {
             return IExecuteWithSignature<bool>("isReleased", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/SurfaceTexture.html#getDataSpace()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDataSpace()
+        {
+            return IExecuteWithSignature<int>("getDataSpace", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/SurfaceTexture.html#getTimestamp()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTimestamp()
+        {
+            return IExecuteWithSignature<long>("getTimestamp", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/SurfaceTexture.html#attachToGLContext(int)"/>
@@ -191,7 +193,7 @@ namespace Android.Graphics
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onFrameAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Graphics.SurfaceTexture>>>(OnFrameAvailableEventHandler));
+                AddEventHandler("onFrameAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Graphics.SurfaceTexture>>>(OnFrameAvailableEventHandler));
 
             }
 
@@ -199,7 +201,7 @@ namespace Android.Graphics
             /// Handler for <see href="https://developer.android.com/reference/android/graphics/SurfaceTexture.OnFrameAvailableListener.html#onFrameAvailable(android.graphics.SurfaceTexture)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFrameAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Graphics.SurfaceTexture> OnOnFrameAvailable { get; set; } = null;
+            public global::System.Action<Android.Graphics.SurfaceTexture> OnOnFrameAvailable { get; set; } = null;
 
             void OnFrameAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Graphics.SurfaceTexture>> data)
             {

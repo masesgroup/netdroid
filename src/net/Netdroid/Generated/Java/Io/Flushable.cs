@@ -64,7 +64,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Flushable.html#flush()"/>
+        /// <see href="https://developer.android.com/reference/java/io/Flushable.html#flush()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()

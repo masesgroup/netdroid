@@ -70,34 +70,6 @@ namespace Android.Accessibilityservice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/MagnificationConfig.html#getCenterX()"/> 
-        /// </summary>
-        public float CenterX
-        {
-            get { return IExecuteWithSignature<float>("getCenterX", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/MagnificationConfig.html#getCenterY()"/> 
-        /// </summary>
-        public float CenterY
-        {
-            get { return IExecuteWithSignature<float>("getCenterY", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/MagnificationConfig.html#getMode()"/> 
-        /// </summary>
-        public int Mode
-        {
-            get { return IExecuteWithSignature<int>("getMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/MagnificationConfig.html#getScale()"/> 
-        /// </summary>
-        public float Scale
-        {
-            get { return IExecuteWithSignature<float>("getScale", "()F"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/MagnificationConfig.html#isActivated()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -106,12 +78,44 @@ namespace Android.Accessibilityservice
             return IExecuteWithSignature<bool>("isActivated", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/MagnificationConfig.html#getCenterX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetCenterX()
+        {
+            return IExecuteWithSignature<float>("getCenterX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/MagnificationConfig.html#getCenterY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetCenterY()
+        {
+            return IExecuteWithSignature<float>("getCenterY", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/MagnificationConfig.html#getScale()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetScale()
+        {
+            return IExecuteWithSignature<float>("getScale", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/MagnificationConfig.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/MagnificationConfig.html#getMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMode()
+        {
+            return IExecuteWithSignature<int>("getMode", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/MagnificationConfig.html#writeToParcel(android.os.Parcel,int)"/>

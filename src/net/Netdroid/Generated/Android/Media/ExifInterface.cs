@@ -164,7 +164,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#TAG_APERTURE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String TAG_APERTURE { get { if (!_TAG_APERTUREReady) { _TAG_APERTUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TAG_APERTURE"); _TAG_APERTUREReady = true; } return _TAG_APERTUREContent; } }
         private static Java.Lang.String _TAG_APERTUREContent = default;
         private static bool _TAG_APERTUREReady = false; // this is used because in case of generics 
@@ -603,7 +603,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#TAG_ISO"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String TAG_ISO { get { if (!_TAG_ISOReady) { _TAG_ISOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TAG_ISO"); _TAG_ISOReady = true; } return _TAG_ISOContent; } }
         private static Java.Lang.String _TAG_ISOContent = default;
         private static bool _TAG_ISOReady = false; // this is used because in case of generics 
@@ -922,7 +922,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#TAG_SUBSEC_TIME_DIG"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String TAG_SUBSEC_TIME_DIG { get { if (!_TAG_SUBSEC_TIME_DIGReady) { _TAG_SUBSEC_TIME_DIGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TAG_SUBSEC_TIME_DIG"); _TAG_SUBSEC_TIME_DIGReady = true; } return _TAG_SUBSEC_TIME_DIGContent; } }
         private static Java.Lang.String _TAG_SUBSEC_TIME_DIGContent = default;
         private static bool _TAG_SUBSEC_TIME_DIGReady = false; // this is used because in case of generics 
@@ -935,7 +935,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#TAG_SUBSEC_TIME_ORIG"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String TAG_SUBSEC_TIME_ORIG { get { if (!_TAG_SUBSEC_TIME_ORIGReady) { _TAG_SUBSEC_TIME_ORIGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TAG_SUBSEC_TIME_ORIG"); _TAG_SUBSEC_TIME_ORIGReady = true; } return _TAG_SUBSEC_TIME_ORIGContent; } }
         private static Java.Lang.String _TAG_SUBSEC_TIME_ORIGContent = default;
         private static bool _TAG_SUBSEC_TIME_ORIGReady = false; // this is used because in case of generics 
@@ -1041,60 +1041,12 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getDateTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getThumbnailBitmap()"/>
         /// </summary>
-        public long DateTime
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        public Android.Graphics.Bitmap GetThumbnailBitmap()
         {
-            get { return IExecuteWithSignature<long>("getDateTime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getDateTimeDigitized()"/> 
-        /// </summary>
-        public long DateTimeDigitized
-        {
-            get { return IExecuteWithSignature<long>("getDateTimeDigitized", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getDateTimeOriginal()"/> 
-        /// </summary>
-        public long DateTimeOriginal
-        {
-            get { return IExecuteWithSignature<long>("getDateTimeOriginal", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getGpsDateTime()"/> 
-        /// </summary>
-        public long GpsDateTime
-        {
-            get { return IExecuteWithSignature<long>("getGpsDateTime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getThumbnail()"/> 
-        /// </summary>
-        public byte[] Thumbnail
-        {
-            get { return IExecuteWithSignatureArray<byte>("getThumbnail", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getThumbnailBitmap()"/> 
-        /// </summary>
-        public Android.Graphics.Bitmap ThumbnailBitmap
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getThumbnailBitmap", "()Landroid/graphics/Bitmap;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getThumbnailBytes()"/> 
-        /// </summary>
-        public byte[] ThumbnailBytes
-        {
-            get { return IExecuteWithSignatureArray<byte>("getThumbnailBytes", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getThumbnailRange()"/> 
-        /// </summary>
-        public long[] ThumbnailRange
-        {
-            get { return IExecuteWithSignatureArray<long>("getThumbnailRange", "()[J"); }
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getThumbnailBitmap", "()Landroid/graphics/Bitmap;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getLatLong(float[])"/>
@@ -1140,6 +1092,22 @@ namespace Android.Media
             return IExecuteWithSignatureArray<byte>("getAttributeBytes", "(Ljava/lang/String;)[B", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getThumbnail()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetThumbnail()
+        {
+            return IExecuteWithSignatureArray<byte>("getThumbnail", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getThumbnailBytes()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetThumbnailBytes()
+        {
+            return IExecuteWithSignatureArray<byte>("getThumbnailBytes", "()[B");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getAltitude(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
@@ -1178,6 +1146,38 @@ namespace Android.Media
             return IExecuteWithSignature<Java.Lang.String>("getAttribute", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getDateTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDateTime()
+        {
+            return IExecuteWithSignature<long>("getDateTime", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getDateTimeDigitized()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDateTimeDigitized()
+        {
+            return IExecuteWithSignature<long>("getDateTimeDigitized", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getDateTimeOriginal()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDateTimeOriginal()
+        {
+            return IExecuteWithSignature<long>("getDateTimeOriginal", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getGpsDateTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetGpsDateTime()
+        {
+            return IExecuteWithSignature<long>("getGpsDateTime", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getAttributeRange(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -1185,6 +1185,14 @@ namespace Android.Media
         public long[] GetAttributeRange(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<long>("getAttributeRange", "(Ljava/lang/String;)[J", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#getThumbnailRange()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long[] GetThumbnailRange()
+        {
+            return IExecuteWithSignatureArray<long>("getThumbnailRange", "()[J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ExifInterface.html#saveAttributes()"/>

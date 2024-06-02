@@ -28,7 +28,7 @@ namespace Javax.Xml.Transform.Sax
 {
     #region SAXResult
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXResult.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXResult.html"/>
     /// </summary>
     public partial class SAXResult : Javax.Xml.Transform.Result
     {
@@ -72,7 +72,7 @@ namespace Javax.Xml.Transform.Sax
 
     #region SAXSource
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXSource.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXSource.html"/>
     /// </summary>
     public partial class SAXSource : Javax.Xml.Transform.Source
     {
@@ -116,7 +116,7 @@ namespace Javax.Xml.Transform.Sax
 
     #region SAXTransformerFactory
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/SAXTransformerFactory.html"/>
     /// </summary>
     public partial class SAXTransformerFactory : Javax.Xml.Transform.TransformerFactory
     {
@@ -124,12 +124,12 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SAXTransformerFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SAXTransformerFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SAXTransformerFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SAXTransformerFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SAXTransformerFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SAXTransformerFactory(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -162,7 +162,7 @@ namespace Javax.Xml.Transform.Sax
 
     #region TemplatesHandler
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/TemplatesHandler.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/TemplatesHandler.html"/>
     /// </summary>
     public partial class TemplatesHandler : Org.Xml.Sax.ContentHandler
     {
@@ -170,12 +170,12 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TemplatesHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TemplatesHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TemplatesHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TemplatesHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TemplatesHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TemplatesHandler(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -208,7 +208,7 @@ namespace Javax.Xml.Transform.Sax
 
     #region TransformerHandler
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/TransformerHandler.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/TransformerHandler.html"/>
     /// </summary>
     public partial class TransformerHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TransformerHandler>
     {
@@ -216,12 +216,12 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TransformerHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TransformerHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TransformerHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TransformerHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TransformerHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TransformerHandler(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

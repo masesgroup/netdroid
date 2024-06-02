@@ -116,28 +116,28 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#PERSISTENT_ALL_CACHES"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PERSISTENT_ALL_CACHES { get { if (!_PERSISTENT_ALL_CACHESReady) { _PERSISTENT_ALL_CACHESContent = SGetField<int>(LocalBridgeClazz, "PERSISTENT_ALL_CACHES"); _PERSISTENT_ALL_CACHESReady = true; } return _PERSISTENT_ALL_CACHESContent; } }
         private static int _PERSISTENT_ALL_CACHESContent = default;
         private static bool _PERSISTENT_ALL_CACHESReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#PERSISTENT_ANIMATION_CACHE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PERSISTENT_ANIMATION_CACHE { get { if (!_PERSISTENT_ANIMATION_CACHEReady) { _PERSISTENT_ANIMATION_CACHEContent = SGetField<int>(LocalBridgeClazz, "PERSISTENT_ANIMATION_CACHE"); _PERSISTENT_ANIMATION_CACHEReady = true; } return _PERSISTENT_ANIMATION_CACHEContent; } }
         private static int _PERSISTENT_ANIMATION_CACHEContent = default;
         private static bool _PERSISTENT_ANIMATION_CACHEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#PERSISTENT_NO_CACHE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PERSISTENT_NO_CACHE { get { if (!_PERSISTENT_NO_CACHEReady) { _PERSISTENT_NO_CACHEContent = SGetField<int>(LocalBridgeClazz, "PERSISTENT_NO_CACHE"); _PERSISTENT_NO_CACHEReady = true; } return _PERSISTENT_NO_CACHEContent; } }
         private static int _PERSISTENT_NO_CACHEContent = default;
         private static bool _PERSISTENT_NO_CACHEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#PERSISTENT_SCROLLING_CACHE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PERSISTENT_SCROLLING_CACHE { get { if (!_PERSISTENT_SCROLLING_CACHEReady) { _PERSISTENT_SCROLLING_CACHEContent = SGetField<int>(LocalBridgeClazz, "PERSISTENT_SCROLLING_CACHE"); _PERSISTENT_SCROLLING_CACHEReady = true; } return _PERSISTENT_SCROLLING_CACHEContent; } }
         private static int _PERSISTENT_SCROLLING_CACHEContent = default;
         private static bool _PERSISTENT_SCROLLING_CACHEReady = false; // this is used because in case of generics 
@@ -161,89 +161,12 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getChildCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getLayoutTransition()"/>
         /// </summary>
-        public int ChildCount
+        /// <returns><see cref="Android.Animation.LayoutTransition"/></returns>
+        public Android.Animation.LayoutTransition GetLayoutTransition()
         {
-            get { return IExecuteWithSignature<int>("getChildCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getClipChildren()"/> <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setClipChildren(boolean)"/>
-        /// </summary>
-        public bool ClipChildren
-        {
-            get { return IExecuteWithSignature<bool>("getClipChildren", "()Z"); } set { IExecuteWithSignature("setClipChildren", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getClipToPadding()"/> <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setClipToPadding(boolean)"/>
-        /// </summary>
-        public bool ClipToPadding
-        {
-            get { return IExecuteWithSignature<bool>("getClipToPadding", "()Z"); } set { IExecuteWithSignature("setClipToPadding", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getDescendantFocusability()"/> <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setDescendantFocusability(int)"/>
-        /// </summary>
-        public int DescendantFocusability
-        {
-            get { return IExecuteWithSignature<int>("getDescendantFocusability", "()I"); } set { IExecuteWithSignature("setDescendantFocusability", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getFocusedChild()"/> 
-        /// </summary>
-        public Android.View.View FocusedChild
-        {
-            get { return IExecuteWithSignature<Android.View.View>("getFocusedChild", "()Landroid/view/View;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getLayoutAnimation()"/> <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setLayoutAnimation(android.view.animation.LayoutAnimationController)"/>
-        /// </summary>
-        public Android.View.Animation.LayoutAnimationController LayoutAnimation
-        {
-            get { return IExecuteWithSignature<Android.View.Animation.LayoutAnimationController>("getLayoutAnimation", "()Landroid/view/animation/LayoutAnimationController;"); } set { IExecuteWithSignature("setLayoutAnimation", "(Landroid/view/animation/LayoutAnimationController;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getLayoutAnimationListener()"/> <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setLayoutAnimationListener(android.view.animation.Animation.AnimationListener)"/>
-        /// </summary>
-        public Android.View.Animation.Animation.AnimationListener LayoutAnimationListener
-        {
-            get { return IExecuteWithSignature<Android.View.Animation.Animation.AnimationListener>("getLayoutAnimationListener", "()Landroid/view/animation/Animation$AnimationListener;"); } set { IExecuteWithSignature("setLayoutAnimationListener", "(Landroid/view/animation/Animation$AnimationListener;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getLayoutMode()"/> <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setLayoutMode(int)"/>
-        /// </summary>
-        public int LayoutMode
-        {
-            get { return IExecuteWithSignature<int>("getLayoutMode", "()I"); } set { IExecuteWithSignature("setLayoutMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getLayoutTransition()"/> <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setLayoutTransition(android.animation.LayoutTransition)"/>
-        /// </summary>
-        public Android.Animation.LayoutTransition LayoutTransition
-        {
-            get { return IExecuteWithSignature<Android.Animation.LayoutTransition>("getLayoutTransition", "()Landroid/animation/LayoutTransition;"); } set { IExecuteWithSignature("setLayoutTransition", "(Landroid/animation/LayoutTransition;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getNestedScrollAxes()"/> 
-        /// </summary>
-        public int NestedScrollAxes
-        {
-            get { return IExecuteWithSignature<int>("getNestedScrollAxes", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getPersistentDrawingCache()"/> <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setPersistentDrawingCache(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int PersistentDrawingCache
-        {
-            get { return IExecuteWithSignature<int>("getPersistentDrawingCache", "()I"); } set { IExecuteWithSignature("setPersistentDrawingCache", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getTouchscreenBlocksFocus()"/> <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setTouchscreenBlocksFocus(boolean)"/>
-        /// </summary>
-        public bool TouchscreenBlocksFocus
-        {
-            get { return IExecuteWithSignature<bool>("getTouchscreenBlocksFocus", "()Z"); } set { IExecuteWithSignature("setTouchscreenBlocksFocus", "(Z)V", value); }
+            return IExecuteWithSignature<Android.Animation.LayoutTransition>("getLayoutTransition", "()Landroid/animation/LayoutTransition;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#startActionModeForChild(android.view.View,android.view.ActionMode.Callback,int)"/>
@@ -267,6 +190,30 @@ namespace Android.View
             return IExecute<Android.View.ActionMode>("startActionModeForChild", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getLayoutAnimationListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Animation.Animation.AnimationListener"/></returns>
+        public Android.View.Animation.Animation.AnimationListener GetLayoutAnimationListener()
+        {
+            return IExecuteWithSignature<Android.View.Animation.Animation.AnimationListener>("getLayoutAnimationListener", "()Landroid/view/animation/Animation$AnimationListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getLayoutAnimationListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Animation.Animation.AnimationListener"/></returns>
+        public Android.View.Animation.Animation.AnimationListener GetLayoutAnimationListenerDirect()
+        {
+            return IExecuteWithSignature<Android.View.Animation.Animation.AnimationListenerDirect, Android.View.Animation.Animation.AnimationListener>("getLayoutAnimationListener", "()Landroid/view/animation/Animation$AnimationListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getLayoutAnimation()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Animation.LayoutAnimationController"/></returns>
+        public Android.View.Animation.LayoutAnimationController GetLayoutAnimation()
+        {
+            return IExecuteWithSignature<Android.View.Animation.LayoutAnimationController>("getLayoutAnimation", "()Landroid/view/animation/LayoutAnimationController;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#focusSearch(android.view.View,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
@@ -286,6 +233,14 @@ namespace Android.View
             return IExecuteWithSignature<Android.View.View>("getChildAt", "(I)Landroid/view/View;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getFocusedChild()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetFocusedChild()
+        {
+            return IExecuteWithSignature<Android.View.View>("getFocusedChild", "()Landroid/view/View;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#generateLayoutParams(android.util.AttributeSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Util.AttributeSet"/></param>
@@ -300,7 +255,7 @@ namespace Android.View
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Graphics.Rect"/></param>
         /// <returns><see cref="Android.View.ViewParent"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.View.ViewParent InvalidateChildInParent(int[] arg0, Android.Graphics.Rect arg1)
         {
             return IExecute<Android.View.ViewParent>("invalidateChildInParent", arg0, arg1);
@@ -335,10 +290,34 @@ namespace Android.View
             return IExecute<bool>("getChildVisibleRect", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getClipChildren()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetClipChildren()
+        {
+            return IExecuteWithSignature<bool>("getClipChildren", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getClipToPadding()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetClipToPadding()
+        {
+            return IExecuteWithSignature<bool>("getClipToPadding", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getTouchscreenBlocksFocus()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetTouchscreenBlocksFocus()
+        {
+            return IExecuteWithSignature<bool>("getTouchscreenBlocksFocus", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#isAlwaysDrawnWithCacheEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsAlwaysDrawnWithCacheEnabled()
         {
             return IExecuteWithSignature<bool>("isAlwaysDrawnWithCacheEnabled", "()Z");
@@ -347,7 +326,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#isAnimationCacheEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsAnimationCacheEnabled()
         {
             return IExecuteWithSignature<bool>("isAnimationCacheEnabled", "()Z");
@@ -512,7 +491,7 @@ namespace Android.View
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
         /// <param name="arg1"><see cref="Android.Graphics.Rect"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void InvalidateChild(Android.View.View arg0, Android.Graphics.Rect arg1)
         {
             IExecute("invalidateChild", arg0, arg1);
@@ -534,6 +513,47 @@ namespace Android.View
         public void OffsetRectIntoDescendantCoords(Android.View.View arg0, Android.Graphics.Rect arg1)
         {
             IExecute("offsetRectIntoDescendantCoords", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getChildCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChildCount()
+        {
+            return IExecuteWithSignature<int>("getChildCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getDescendantFocusability()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDescendantFocusability()
+        {
+            return IExecuteWithSignature<int>("getDescendantFocusability", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getLayoutMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLayoutMode()
+        {
+            return IExecuteWithSignature<int>("getLayoutMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getNestedScrollAxes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNestedScrollAxes()
+        {
+            return IExecuteWithSignature<int>("getNestedScrollAxes", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#getPersistentDrawingCache()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetPersistentDrawingCache()
+        {
+            return IExecuteWithSignature<int>("getPersistentDrawingCache", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#indexOfChild(android.view.View)"/>
@@ -846,7 +866,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setAlwaysDrawnWithCacheEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAlwaysDrawnWithCacheEnabled(bool arg0)
         {
             IExecuteWithSignature("setAlwaysDrawnWithCacheEnabled", "(Z)V", arg0);
@@ -855,10 +875,66 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setAnimationCacheEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAnimationCacheEnabled(bool arg0)
         {
             IExecuteWithSignature("setAnimationCacheEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setClipChildren(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetClipChildren(bool arg0)
+        {
+            IExecuteWithSignature("setClipChildren", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setClipToPadding(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetClipToPadding(bool arg0)
+        {
+            IExecuteWithSignature("setClipToPadding", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setDescendantFocusability(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDescendantFocusability(int arg0)
+        {
+            IExecuteWithSignature("setDescendantFocusability", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setLayoutAnimation(android.view.animation.LayoutAnimationController)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Animation.LayoutAnimationController"/></param>
+        public void SetLayoutAnimation(Android.View.Animation.LayoutAnimationController arg0)
+        {
+            IExecuteWithSignature("setLayoutAnimation", "(Landroid/view/animation/LayoutAnimationController;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setLayoutAnimationListener(android.view.animation.Animation.AnimationListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Animation.Animation.AnimationListener"/></param>
+        public void SetLayoutAnimationListener(Android.View.Animation.Animation.AnimationListener arg0)
+        {
+            IExecuteWithSignature("setLayoutAnimationListener", "(Landroid/view/animation/Animation$AnimationListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setLayoutMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetLayoutMode(int arg0)
+        {
+            IExecuteWithSignature("setLayoutMode", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setLayoutTransition(android.animation.LayoutTransition)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Animation.LayoutTransition"/></param>
+        public void SetLayoutTransition(Android.Animation.LayoutTransition arg0)
+        {
+            IExecuteWithSignature("setLayoutTransition", "(Landroid/animation/LayoutTransition;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setMotionEventSplittingEnabled(boolean)"/>
@@ -875,6 +951,23 @@ namespace Android.View
         public void SetOnHierarchyChangeListener(Android.View.ViewGroup.OnHierarchyChangeListener arg0)
         {
             IExecuteWithSignature("setOnHierarchyChangeListener", "(Landroid/view/ViewGroup$OnHierarchyChangeListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setPersistentDrawingCache(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetPersistentDrawingCache(int arg0)
+        {
+            IExecuteWithSignature("setPersistentDrawingCache", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setTouchscreenBlocksFocus(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetTouchscreenBlocksFocus(bool arg0)
+        {
+            IExecuteWithSignature("setTouchscreenBlocksFocus", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewGroup.html#setTransitionGroup(boolean)"/>
@@ -973,7 +1066,7 @@ namespace Android.View
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewGroup.LayoutParams.html#FILL_PARENT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FILL_PARENT { get { if (!_FILL_PARENTReady) { _FILL_PARENTContent = SGetField<int>(LocalBridgeClazz, "FILL_PARENT"); _FILL_PARENTReady = true; } return _FILL_PARENTContent; } }
             private static int _FILL_PARENTContent = default;
             private static bool _FILL_PARENTReady = false; // this is used because in case of generics 
@@ -1087,33 +1180,52 @@ namespace Android.View
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#getLayoutDirection()"/> <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#setLayoutDirection(int)"/>
-            /// </summary>
-            public int LayoutDirection
-            {
-                get { return IExecuteWithSignature<int>("getLayoutDirection", "()I"); } set { IExecuteWithSignature("setLayoutDirection", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#getMarginEnd()"/> <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#setMarginEnd(int)"/>
-            /// </summary>
-            public int MarginEnd
-            {
-                get { return IExecuteWithSignature<int>("getMarginEnd", "()I"); } set { IExecuteWithSignature("setMarginEnd", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#getMarginStart()"/> <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#setMarginStart(int)"/>
-            /// </summary>
-            public int MarginStart
-            {
-                get { return IExecuteWithSignature<int>("getMarginStart", "()I"); } set { IExecuteWithSignature("setMarginStart", "(I)V", value); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#isMarginRelative()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool IsMarginRelative()
             {
                 return IExecuteWithSignature<bool>("isMarginRelative", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#getLayoutDirection()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetLayoutDirection()
+            {
+                return IExecuteWithSignature<int>("getLayoutDirection", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#getMarginEnd()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetMarginEnd()
+            {
+                return IExecuteWithSignature<int>("getMarginEnd", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#getMarginStart()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetMarginStart()
+            {
+                return IExecuteWithSignature<int>("getMarginStart", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#setLayoutDirection(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void SetLayoutDirection(int arg0)
+            {
+                IExecuteWithSignature("setLayoutDirection", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#setMarginEnd(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void SetMarginEnd(int arg0)
+            {
+                IExecuteWithSignature("setMarginEnd", "(I)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#setMargins(int,int,int,int)"/>
@@ -1125,6 +1237,14 @@ namespace Android.View
             public void SetMargins(int arg0, int arg1, int arg2, int arg3)
             {
                 IExecute("setMargins", arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/ViewGroup.MarginLayoutParams.html#setMarginStart(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void SetMarginStart(int arg0)
+            {
+                IExecuteWithSignature("setMarginStart", "(I)V", arg0);
             }
 
             #endregion
@@ -1162,8 +1282,8 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onChildViewAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnChildViewAddedEventHandler));
-                AddEventHandler("onChildViewRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnChildViewRemovedEventHandler));
+                AddEventHandler("onChildViewAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnChildViewAddedEventHandler));
+                AddEventHandler("onChildViewRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnChildViewRemovedEventHandler));
 
             }
 
@@ -1171,7 +1291,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ViewGroup.OnHierarchyChangeListener.html#onChildViewAdded(android.view.View,android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnChildViewAdded"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.View, Android.View.View> OnOnChildViewAdded { get; set; } = null;
+            public global::System.Action<Android.View.View, Android.View.View> OnOnChildViewAdded { get; set; } = null;
 
             void OnChildViewAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {
@@ -1193,7 +1313,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ViewGroup.OnHierarchyChangeListener.html#onChildViewRemoved(android.view.View,android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnChildViewRemoved"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.View, Android.View.View> OnOnChildViewRemoved { get; set; } = null;
+            public global::System.Action<Android.View.View, Android.View.View> OnOnChildViewRemoved { get; set; } = null;
 
             void OnChildViewRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
             {

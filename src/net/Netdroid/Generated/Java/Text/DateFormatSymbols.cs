@@ -30,7 +30,7 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#%3Cinit%3E(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#%3Cinit%3E(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public DateFormatSymbols(Java.Util.Locale arg0)
@@ -58,21 +58,15 @@ namespace Java.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#getAvailableLocales()"/> 
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#getInstance()"/>
         /// </summary>
-        public static Java.Util.Locale[] AvailableLocales
+        /// <returns><see cref="Java.Text.DateFormatSymbols"/></returns>
+        public static Java.Text.DateFormatSymbols GetInstance()
         {
-            get { return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;"); }
+            return SExecuteWithSignature<Java.Text.DateFormatSymbols>(LocalBridgeClazz, "getInstance", "()Ljava/text/DateFormatSymbols;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#getInstance()"/> 
-        /// </summary>
-        public static Java.Text.DateFormatSymbols Instance
-        {
-            get { return SExecuteWithSignature<Java.Text.DateFormatSymbols>(LocalBridgeClazz, "getInstance", "()Ljava/text/DateFormatSymbols;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#getInstance(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#getInstance(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Text.DateFormatSymbols"/></returns>
@@ -80,65 +74,145 @@ namespace Java.Text
         {
             return SExecuteWithSignature<Java.Text.DateFormatSymbols>(LocalBridgeClazz, "getInstance", "(Ljava/util/Locale;)Ljava/text/DateFormatSymbols;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#getAvailableLocales()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public static Java.Util.Locale[] GetAvailableLocales()
+        {
+            return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#getAmPmStrings()"/> <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#setAmPmStrings(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#getLocalPatternChars()"/>
         /// </summary>
-        public Java.Lang.String[] AmPmStrings
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLocalPatternChars()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getAmPmStrings", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setAmPmStrings", "([Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getLocalPatternChars", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#getEras()"/> <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#setEras(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#getAmPmStrings()"/>
         /// </summary>
-        public Java.Lang.String[] Eras
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetAmPmStrings()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getEras", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setEras", "([Ljava/lang/String;)V", value); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getAmPmStrings", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#getLocalPatternChars()"/> <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#setLocalPatternChars(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#getEras()"/>
         /// </summary>
-        public Java.Lang.String LocalPatternChars
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetEras()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLocalPatternChars", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLocalPatternChars", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getEras", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#getMonths()"/> <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#setMonths(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#getMonths()"/>
         /// </summary>
-        public Java.Lang.String[] Months
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetMonths()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getMonths", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setMonths", "([Ljava/lang/String;)V", value); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getMonths", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#getShortMonths()"/> <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#setShortMonths(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#getShortMonths()"/>
         /// </summary>
-        public Java.Lang.String[] ShortMonths
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetShortMonths()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getShortMonths", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setShortMonths", "([Ljava/lang/String;)V", value); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getShortMonths", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#getShortWeekdays()"/> <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#setShortWeekdays(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#getShortWeekdays()"/>
         /// </summary>
-        public Java.Lang.String[] ShortWeekdays
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetShortWeekdays()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getShortWeekdays", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setShortWeekdays", "([Ljava/lang/String;)V", value); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getShortWeekdays", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#getWeekdays()"/> <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#setWeekdays(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#getWeekdays()"/>
         /// </summary>
-        public Java.Lang.String[] Weekdays
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetWeekdays()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getWeekdays", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setWeekdays", "([Ljava/lang/String;)V", value); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getWeekdays", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#getZoneStrings()"/> <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html#setZoneStrings(java.lang.String[][])"/>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#getZoneStrings()"/>
         /// </summary>
-        public Java.Lang.String[] ZoneStrings
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetZoneStrings()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getZoneStrings", "()[[Ljava/lang/String;"); } set { IExecuteWithSignature("setZoneStrings", "([[Ljava/lang/String;)V", value); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getZoneStrings", "()[[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#setAmPmStrings(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetAmPmStrings(Java.Lang.String[] arg0)
+        {
+            IExecuteWithSignature("setAmPmStrings", "([Ljava/lang/String;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#setEras(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetEras(Java.Lang.String[] arg0)
+        {
+            IExecuteWithSignature("setEras", "([Ljava/lang/String;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#setLocalPatternChars(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetLocalPatternChars(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setLocalPatternChars", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#setMonths(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetMonths(Java.Lang.String[] arg0)
+        {
+            IExecuteWithSignature("setMonths", "([Ljava/lang/String;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#setShortMonths(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetShortMonths(Java.Lang.String[] arg0)
+        {
+            IExecuteWithSignature("setShortMonths", "([Ljava/lang/String;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#setShortWeekdays(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetShortWeekdays(Java.Lang.String[] arg0)
+        {
+            IExecuteWithSignature("setShortWeekdays", "([Ljava/lang/String;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#setWeekdays(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetWeekdays(Java.Lang.String[] arg0)
+        {
+            IExecuteWithSignature("setWeekdays", "([Ljava/lang/String;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html#setZoneStrings(java.lang.String[][])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetZoneStrings(Java.Lang.String[][] arg0)
+        {
+            IExecuteWithSignature("setZoneStrings", "([[Ljava/lang/String;)V", new object[] { arg0 });
         }
 
         #endregion

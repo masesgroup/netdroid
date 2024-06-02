@@ -46,25 +46,28 @@ namespace Android.Service.Autofill
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/Field.html#getFilter()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/Field.html#getPresentations()"/>
         /// </summary>
-        public Java.Util.Regex.Pattern Filter
+        /// <returns><see cref="Android.Service.Autofill.Presentations"/></returns>
+        public Android.Service.Autofill.Presentations GetPresentations()
         {
-            get { return IExecuteWithSignature<Java.Util.Regex.Pattern>("getFilter", "()Ljava/util/regex/Pattern;"); }
+            return IExecuteWithSignature<Android.Service.Autofill.Presentations>("getPresentations", "()Landroid/service/autofill/Presentations;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/Field.html#getPresentations()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/Field.html#getValue()"/>
         /// </summary>
-        public Android.Service.Autofill.Presentations Presentations
+        /// <returns><see cref="Android.View.Autofill.AutofillValue"/></returns>
+        public Android.View.Autofill.AutofillValue GetValue()
         {
-            get { return IExecuteWithSignature<Android.Service.Autofill.Presentations>("getPresentations", "()Landroid/service/autofill/Presentations;"); }
+            return IExecuteWithSignature<Android.View.Autofill.AutofillValue>("getValue", "()Landroid/view/autofill/AutofillValue;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/autofill/Field.html#getValue()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/autofill/Field.html#getFilter()"/>
         /// </summary>
-        public Android.View.Autofill.AutofillValue Value
+        /// <returns><see cref="Java.Util.Regex.Pattern"/></returns>
+        public Java.Util.Regex.Pattern GetFilter()
         {
-            get { return IExecuteWithSignature<Android.View.Autofill.AutofillValue>("getValue", "()Landroid/view/autofill/AutofillValue;"); }
+            return IExecuteWithSignature<Java.Util.Regex.Pattern>("getFilter", "()Ljava/util/regex/Pattern;");
         }
 
         #endregion

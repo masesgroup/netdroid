@@ -64,7 +64,7 @@ namespace Javax.Xml.Xpath
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPathVariableResolver.html#resolveVariable(javax.xml.namespace.QName)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathVariableResolver.html#resolveVariable(javax.xml.namespace.QName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
         /// <returns><see cref="object"/></returns>

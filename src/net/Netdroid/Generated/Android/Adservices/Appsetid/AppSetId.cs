@@ -67,18 +67,20 @@ namespace Android.Adservices.Appsetid
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/appsetid/AppSetId.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/appsetid/AppSetId.html#getScope()"/>
         /// </summary>
-        public Java.Lang.String Id
+        /// <returns><see cref="int"/></returns>
+        public int GetScope()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getScope", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/appsetid/AppSetId.html#getScope()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/appsetid/AppSetId.html#getId()"/>
         /// </summary>
-        public int Scope
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
         {
-            get { return IExecuteWithSignature<int>("getScope", "()I"); }
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
         }
 
         #endregion

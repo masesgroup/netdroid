@@ -46,11 +46,12 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/PutDocumentsRequest.html#getGenericDocuments()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/PutDocumentsRequest.html#getGenericDocuments()"/>
         /// </summary>
-        public Java.Util.List<Android.App.Appsearch.GenericDocument> GenericDocuments
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.Appsearch.GenericDocument> GetGenericDocuments()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.Appsearch.GenericDocument>>("getGenericDocuments", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.App.Appsearch.GenericDocument>>("getGenericDocuments", "()Ljava/util/List;");
         }
 
         #endregion
@@ -99,7 +100,7 @@ namespace Android.App.Appsearch
             /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
             /// <typeparam name="Arg0ExtendsAndroid_App_Appsearch_GenericDocument"><see cref="Android.App.Appsearch.GenericDocument"/></typeparam>
             /// <returns><see cref="Android.App.Appsearch.PutDocumentsRequest.Builder"/></returns>
-            public Android.App.Appsearch.PutDocumentsRequest.Builder AddGenericDocuments<Arg0ExtendsAndroid_App_Appsearch_GenericDocument>(Java.Util.Collection<Arg0ExtendsAndroid_App_Appsearch_GenericDocument> arg0) where Arg0ExtendsAndroid_App_Appsearch_GenericDocument: Android.App.Appsearch.GenericDocument
+            public Android.App.Appsearch.PutDocumentsRequest.Builder AddGenericDocuments<Arg0ExtendsAndroid_App_Appsearch_GenericDocument>(Java.Util.Collection<Arg0ExtendsAndroid_App_Appsearch_GenericDocument> arg0) where Arg0ExtendsAndroid_App_Appsearch_GenericDocument : Android.App.Appsearch.GenericDocument
             {
                 return IExecuteWithSignature<Android.App.Appsearch.PutDocumentsRequest.Builder>("addGenericDocuments", "(Ljava/util/Collection;)Landroid/app/appsearch/PutDocumentsRequest$Builder;", arg0);
             }

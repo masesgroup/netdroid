@@ -30,7 +30,7 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeEvent.html#%3Cinit%3E(java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeEvent.html#%3Cinit%3E(java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -57,32 +57,44 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeEvent.html#getNewValue()"/> 
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeEvent.html#getNewValue()"/>
         /// </summary>
-        public object NewValue
+        /// <returns><see cref="object"/></returns>
+        public object GetNewValue()
         {
-            get { return IExecuteWithSignature("getNewValue", "()Ljava/lang/Object;"); }
+            return IExecuteWithSignature("getNewValue", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeEvent.html#getOldValue()"/> 
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeEvent.html#getOldValue()"/>
         /// </summary>
-        public object OldValue
+        /// <returns><see cref="object"/></returns>
+        public object GetOldValue()
         {
-            get { return IExecuteWithSignature("getOldValue", "()Ljava/lang/Object;"); }
+            return IExecuteWithSignature("getOldValue", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeEvent.html#getPropagationId()"/> <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeEvent.html#setPropagationId(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeEvent.html#getPropagationId()"/>
         /// </summary>
-        public object PropagationId
+        /// <returns><see cref="object"/></returns>
+        public object GetPropagationId()
         {
-            get { return IExecuteWithSignature("getPropagationId", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setPropagationId", "(Ljava/lang/Object;)V", value); }
+            return IExecuteWithSignature("getPropagationId", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeEvent.html#getPropertyName()"/> 
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeEvent.html#getPropertyName()"/>
         /// </summary>
-        public Java.Lang.String PropertyName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPropertyName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPropertyName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getPropertyName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeEvent.html#setPropagationId(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        public void SetPropagationId(object arg0)
+        {
+            IExecuteWithSignature("setPropagationId", "(Ljava/lang/Object;)V", arg0);
         }
 
         #endregion

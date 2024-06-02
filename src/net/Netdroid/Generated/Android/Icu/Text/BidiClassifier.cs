@@ -54,13 +54,6 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/BidiClassifier.html#getContext()"/> <see href="https://developer.android.com/reference/android/icu/text/BidiClassifier.html#setContext(java.lang.Object)"/>
-        /// </summary>
-        public object Context
-        {
-            get { return IExecuteWithSignature("getContext", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setContext", "(Ljava/lang/Object;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/BidiClassifier.html#classify(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -68,6 +61,22 @@ namespace Android.Icu.Text
         public int Classify(int arg0)
         {
             return IExecute<int>("classify", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/BidiClassifier.html#getContext()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetContext()
+        {
+            return IExecuteWithSignature("getContext", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/BidiClassifier.html#setContext(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        public void SetContext(object arg0)
+        {
+            IExecuteWithSignature("setContext", "(Ljava/lang/Object;)V", arg0);
         }
 
         #endregion

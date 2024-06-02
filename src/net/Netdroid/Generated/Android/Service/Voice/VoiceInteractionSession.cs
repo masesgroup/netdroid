@@ -121,39 +121,28 @@ namespace Android.Service.Voice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getContext()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getWindow()"/>
         /// </summary>
-        public Android.Content.Context Context
+        /// <returns><see cref="Android.App.Dialog"/></returns>
+        public Android.App.Dialog GetWindow()
         {
-            get { return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;"); }
+            return IExecuteWithSignature<Android.App.Dialog>("getWindow", "()Landroid/app/Dialog;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getDisabledShowContext()"/> <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#setDisabledShowContext(int)"/>
+        /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getContext()"/>
         /// </summary>
-        public int DisabledShowContext
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        public Android.Content.Context GetContext()
         {
-            get { return IExecuteWithSignature<int>("getDisabledShowContext", "()I"); } set { IExecuteWithSignature("setDisabledShowContext", "(I)V", value); }
+            return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getLayoutInflater()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getLayoutInflater()"/>
         /// </summary>
-        public Android.View.LayoutInflater LayoutInflater
+        /// <returns><see cref="Android.View.LayoutInflater"/></returns>
+        public Android.View.LayoutInflater GetLayoutInflater()
         {
-            get { return IExecuteWithSignature<Android.View.LayoutInflater>("getLayoutInflater", "()Landroid/view/LayoutInflater;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getUserDisabledShowContext()"/> 
-        /// </summary>
-        public int UserDisabledShowContext
-        {
-            get { return IExecuteWithSignature<int>("getUserDisabledShowContext", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getWindow()"/> 
-        /// </summary>
-        public Android.App.Dialog Window
-        {
-            get { return IExecuteWithSignature<Android.App.Dialog>("getWindow", "()Landroid/app/Dialog;"); }
+            return IExecuteWithSignature<Android.View.LayoutInflater>("getLayoutInflater", "()Landroid/view/LayoutInflater;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onCreateContentView()"/>
@@ -252,6 +241,22 @@ namespace Android.Service.Voice
         public void UnregisterVisibleActivityCallback(Android.Service.Voice.VoiceInteractionSession.VisibleActivityCallback arg0)
         {
             IExecuteWithSignature("unregisterVisibleActivityCallback", "(Landroid/service/voice/VoiceInteractionSession$VisibleActivityCallback;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getDisabledShowContext()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDisabledShowContext()
+        {
+            return IExecuteWithSignature<int>("getDisabledShowContext", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getUserDisabledShowContext()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUserDisabledShowContext()
+        {
+            return IExecuteWithSignature<int>("getUserDisabledShowContext", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#closeSystemDialogs()"/>
@@ -359,7 +364,7 @@ namespace Android.Service.Voice
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
         /// <param name="arg1"><see cref="Android.App.Assist.AssistStructure"/></param>
         /// <param name="arg2"><see cref="Android.App.Assist.AssistContent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnHandleAssist(Android.Os.Bundle arg0, Android.App.Assist.AssistStructure arg1, Android.App.Assist.AssistContent arg2)
         {
             IExecute("onHandleAssist", arg0, arg1, arg2);
@@ -380,7 +385,7 @@ namespace Android.Service.Voice
         /// <param name="arg2"><see cref="Android.App.Assist.AssistContent"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnHandleAssistSecondary(Android.Os.Bundle arg0, Android.App.Assist.AssistStructure arg1, Android.App.Assist.AssistContent arg2, int arg3, int arg4)
         {
             IExecute("onHandleAssistSecondary", arg0, arg1, arg2, arg3, arg4);
@@ -507,6 +512,14 @@ namespace Android.Service.Voice
             IExecuteWithSignature("setContentView", "(Landroid/view/View;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#setDisabledShowContext(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDisabledShowContext(int arg0)
+        {
+            IExecuteWithSignature("setDisabledShowContext", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#setKeepAwake(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -589,19 +602,21 @@ namespace Android.Service.Voice
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AbortVoiceRequest.html#getMessage()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AbortVoiceRequest.html#getVoicePrompt()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Java.Lang.CharSequence Message
+            /// <returns><see cref="Android.App.VoiceInteractor.Prompt"/></returns>
+            public Android.App.VoiceInteractor.Prompt GetVoicePrompt()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getMessage", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Android.App.VoiceInteractor.Prompt>("getVoicePrompt", "()Landroid/app/VoiceInteractor$Prompt;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AbortVoiceRequest.html#getVoicePrompt()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AbortVoiceRequest.html#getMessage()"/>
             /// </summary>
-            public Android.App.VoiceInteractor.Prompt VoicePrompt
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            [global::System.Obsolete()]
+            public Java.Lang.CharSequence GetMessage()
             {
-                get { return IExecuteWithSignature<Android.App.VoiceInteractor.Prompt>("getVoicePrompt", "()Landroid/app/VoiceInteractor$Prompt;"); }
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getMessage", "()Ljava/lang/CharSequence;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AbortVoiceRequest.html#sendAbortResult(android.os.Bundle)"/>
@@ -674,46 +689,36 @@ namespace Android.Service.Voice
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AssistState.html#getAssistContent()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AssistState.html#getAssistContent()"/>
             /// </summary>
-            public Android.App.Assist.AssistContent AssistContent
+            /// <returns><see cref="Android.App.Assist.AssistContent"/></returns>
+            public Android.App.Assist.AssistContent GetAssistContent()
             {
-                get { return IExecuteWithSignature<Android.App.Assist.AssistContent>("getAssistContent", "()Landroid/app/assist/AssistContent;"); }
+                return IExecuteWithSignature<Android.App.Assist.AssistContent>("getAssistContent", "()Landroid/app/assist/AssistContent;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AssistState.html#getAssistData()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AssistState.html#getAssistStructure()"/>
             /// </summary>
-            public Android.Os.Bundle AssistData
+            /// <returns><see cref="Android.App.Assist.AssistStructure"/></returns>
+            public Android.App.Assist.AssistStructure GetAssistStructure()
             {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getAssistData", "()Landroid/os/Bundle;"); }
+                return IExecuteWithSignature<Android.App.Assist.AssistStructure>("getAssistStructure", "()Landroid/app/assist/AssistStructure;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AssistState.html#getAssistStructure()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AssistState.html#getAssistData()"/>
             /// </summary>
-            public Android.App.Assist.AssistStructure AssistStructure
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetAssistData()
             {
-                get { return IExecuteWithSignature<Android.App.Assist.AssistStructure>("getAssistStructure", "()Landroid/app/assist/AssistStructure;"); }
+                return IExecuteWithSignature<Android.Os.Bundle>("getAssistData", "()Landroid/os/Bundle;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AssistState.html#getCount()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AssistState.html#getActivityId()"/>
             /// </summary>
-            public int Count
+            /// <returns><see cref="Android.Service.Voice.VoiceInteractionSession.ActivityId"/></returns>
+            public Android.Service.Voice.VoiceInteractionSession.ActivityId GetActivityId()
             {
-                get { return IExecuteWithSignature<int>("getCount", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AssistState.html#getActivityId()"/> 
-            /// </summary>
-            public Android.Service.Voice.VoiceInteractionSession.ActivityId GetActivityId
-            {
-                get { return IExecuteWithSignature<Android.Service.Voice.VoiceInteractionSession.ActivityId>("getActivityId", "()Landroid/service/voice/VoiceInteractionSession$ActivityId;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AssistState.html#getIndex()"/> 
-            /// </summary>
-            public int Index
-            {
-                get { return IExecuteWithSignature<int>("getIndex", "()I"); }
+                return IExecuteWithSignature<Android.Service.Voice.VoiceInteractionSession.ActivityId>("getActivityId", "()Landroid/service/voice/VoiceInteractionSession$ActivityId;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AssistState.html#isFocused()"/>
@@ -722,6 +727,22 @@ namespace Android.Service.Voice
             public bool IsFocused()
             {
                 return IExecuteWithSignature<bool>("isFocused", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AssistState.html#getCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetCount()
+            {
+                return IExecuteWithSignature<int>("getCount", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.AssistState.html#getIndex()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetIndex()
+            {
+                return IExecuteWithSignature<int>("getIndex", "()I");
             }
 
             #endregion
@@ -755,11 +776,12 @@ namespace Android.Service.Voice
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.CommandRequest.html#getCommand()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.CommandRequest.html#getCommand()"/>
             /// </summary>
-            public Java.Lang.String Command
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetCommand()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getCommand", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getCommand", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.CommandRequest.html#sendIntermediateResult(android.os.Bundle)"/>
@@ -809,19 +831,21 @@ namespace Android.Service.Voice
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.CompleteVoiceRequest.html#getMessage()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.CompleteVoiceRequest.html#getVoicePrompt()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Java.Lang.CharSequence Message
+            /// <returns><see cref="Android.App.VoiceInteractor.Prompt"/></returns>
+            public Android.App.VoiceInteractor.Prompt GetVoicePrompt()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getMessage", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Android.App.VoiceInteractor.Prompt>("getVoicePrompt", "()Landroid/app/VoiceInteractor$Prompt;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.CompleteVoiceRequest.html#getVoicePrompt()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.CompleteVoiceRequest.html#getMessage()"/>
             /// </summary>
-            public Android.App.VoiceInteractor.Prompt VoicePrompt
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            [global::System.Obsolete()]
+            public Java.Lang.CharSequence GetMessage()
             {
-                get { return IExecuteWithSignature<Android.App.VoiceInteractor.Prompt>("getVoicePrompt", "()Landroid/app/VoiceInteractor$Prompt;"); }
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getMessage", "()Ljava/lang/CharSequence;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.CompleteVoiceRequest.html#sendCompleteResult(android.os.Bundle)"/>
@@ -863,19 +887,21 @@ namespace Android.Service.Voice
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.ConfirmationRequest.html#getPrompt()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.ConfirmationRequest.html#getVoicePrompt()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Java.Lang.CharSequence Prompt
+            /// <returns><see cref="Android.App.VoiceInteractor.Prompt"/></returns>
+            public Android.App.VoiceInteractor.Prompt GetVoicePrompt()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getPrompt", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Android.App.VoiceInteractor.Prompt>("getVoicePrompt", "()Landroid/app/VoiceInteractor$Prompt;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.ConfirmationRequest.html#getVoicePrompt()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.ConfirmationRequest.html#getPrompt()"/>
             /// </summary>
-            public Android.App.VoiceInteractor.Prompt VoicePrompt
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            [global::System.Obsolete()]
+            public Java.Lang.CharSequence GetPrompt()
             {
-                get { return IExecuteWithSignature<Android.App.VoiceInteractor.Prompt>("getVoicePrompt", "()Landroid/app/VoiceInteractor$Prompt;"); }
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getPrompt", "()Ljava/lang/CharSequence;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.ConfirmationRequest.html#sendConfirmationResult(boolean,android.os.Bundle)"/>
@@ -983,26 +1009,29 @@ namespace Android.Service.Voice
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.PickOptionRequest.html#getOptions()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.PickOptionRequest.html#getOptions()"/>
             /// </summary>
-            public Android.App.VoiceInteractor.PickOptionRequest.Option[] Options
+            /// <returns><see cref="Android.App.VoiceInteractor.PickOptionRequest.Option"/></returns>
+            public Android.App.VoiceInteractor.PickOptionRequest.Option[] GetOptions()
             {
-                get { return IExecuteWithSignatureArray<Android.App.VoiceInteractor.PickOptionRequest.Option>("getOptions", "()[Landroid/app/VoiceInteractor$PickOptionRequest$Option;"); }
+                return IExecuteWithSignatureArray<Android.App.VoiceInteractor.PickOptionRequest.Option>("getOptions", "()[Landroid/app/VoiceInteractor$PickOptionRequest$Option;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.PickOptionRequest.html#getPrompt()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.PickOptionRequest.html#getVoicePrompt()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Java.Lang.CharSequence Prompt
+            /// <returns><see cref="Android.App.VoiceInteractor.Prompt"/></returns>
+            public Android.App.VoiceInteractor.Prompt GetVoicePrompt()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getPrompt", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Android.App.VoiceInteractor.Prompt>("getVoicePrompt", "()Landroid/app/VoiceInteractor$Prompt;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.PickOptionRequest.html#getVoicePrompt()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.PickOptionRequest.html#getPrompt()"/>
             /// </summary>
-            public Android.App.VoiceInteractor.Prompt VoicePrompt
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            [global::System.Obsolete()]
+            public Java.Lang.CharSequence GetPrompt()
             {
-                get { return IExecuteWithSignature<Android.App.VoiceInteractor.Prompt>("getVoicePrompt", "()Landroid/app/VoiceInteractor$Prompt;"); }
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getPrompt", "()Ljava/lang/CharSequence;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.PickOptionRequest.html#sendIntermediatePickOptionResult(android.app.VoiceInteractor.PickOptionRequest.Option[],android.os.Bundle)"/>
@@ -1054,25 +1083,12 @@ namespace Android.Service.Voice
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.Request.html#getCallingPackage()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.Request.html#getExtras()"/>
             /// </summary>
-            public Java.Lang.String CallingPackage
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetExtras()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getCallingPackage", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.Request.html#getCallingUid()"/> 
-            /// </summary>
-            public int CallingUid
-            {
-                get { return IExecuteWithSignature<int>("getCallingUid", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.Request.html#getExtras()"/> 
-            /// </summary>
-            public Android.Os.Bundle Extras
-            {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
+                return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.Request.html#isActive()"/>
@@ -1081,6 +1097,22 @@ namespace Android.Service.Voice
             public bool IsActive()
             {
                 return IExecuteWithSignature<bool>("isActive", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.Request.html#getCallingUid()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetCallingUid()
+            {
+                return IExecuteWithSignature<int>("getCallingUid", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.Request.html#getCallingPackage()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetCallingPackage()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getCallingPackage", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.Request.html#cancel()"/>

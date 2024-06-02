@@ -76,39 +76,12 @@ namespace Android.Net.Http
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.html#getHeaders()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.html#getHeaders()"/>
         /// </summary>
-        public Android.Net.Http.HeaderBlock Headers
+        /// <returns><see cref="Android.Net.Http.HeaderBlock"/></returns>
+        public Android.Net.Http.HeaderBlock GetHeaders()
         {
-            get { return IExecuteWithSignature<Android.Net.Http.HeaderBlock>("getHeaders", "()Landroid/net/http/HeaderBlock;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.html#getHttpMethod()"/> 
-        /// </summary>
-        public Java.Lang.String HttpMethod
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHttpMethod", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.html#getPriority()"/> 
-        /// </summary>
-        public int Priority
-        {
-            get { return IExecuteWithSignature<int>("getPriority", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.html#getTrafficStatsTag()"/> 
-        /// </summary>
-        public int TrafficStatsTag
-        {
-            get { return IExecuteWithSignature<int>("getTrafficStatsTag", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.html#getTrafficStatsUid()"/> 
-        /// </summary>
-        public int TrafficStatsUid
-        {
-            get { return IExecuteWithSignature<int>("getTrafficStatsUid", "()I"); }
+            return IExecuteWithSignature<Android.Net.Http.HeaderBlock>("getHeaders", "()Landroid/net/http/HeaderBlock;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.html#hasTrafficStatsTag()"/>
@@ -141,6 +114,38 @@ namespace Android.Net.Http
         public bool IsDone()
         {
             return IExecuteWithSignature<bool>("isDone", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.html#getPriority()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriority()
+        {
+            return IExecuteWithSignature<int>("getPriority", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.html#getTrafficStatsTag()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTrafficStatsTag()
+        {
+            return IExecuteWithSignature<int>("getTrafficStatsTag", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.html#getTrafficStatsUid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTrafficStatsUid()
+        {
+            return IExecuteWithSignature<int>("getTrafficStatsUid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.html#getHttpMethod()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHttpMethod()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getHttpMethod", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/BidirectionalStream.html#cancel()"/>

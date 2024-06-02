@@ -55,20 +55,29 @@ namespace Android.Transition
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/ChangeBounds.html#getResizeClip()"/> <see href="https://developer.android.com/reference/android/transition/ChangeBounds.html#setResizeClip(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/transition/ChangeBounds.html#getResizeClip()"/>
         /// </summary>
-        public bool ResizeClip
+        /// <returns><see cref="bool"/></returns>
+        public bool GetResizeClip()
         {
-            get { return IExecuteWithSignature<bool>("getResizeClip", "()Z"); } set { IExecuteWithSignature("setResizeClip", "(Z)V", value); }
+            return IExecuteWithSignature<bool>("getResizeClip", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/ChangeBounds.html#setReparent(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetReparent(bool arg0)
         {
             IExecuteWithSignature("setReparent", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/ChangeBounds.html#setResizeClip(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetResizeClip(bool arg0)
+        {
+            IExecuteWithSignature("setResizeClip", "(Z)V", arg0);
         }
 
         #endregion

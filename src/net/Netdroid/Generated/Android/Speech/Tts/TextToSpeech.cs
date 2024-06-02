@@ -169,79 +169,38 @@ namespace Android.Speech.Tts
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getMaxSpeechInputLength()"/> 
+        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getMaxSpeechInputLength()"/>
         /// </summary>
-        public static int MaxSpeechInputLength
+        /// <returns><see cref="int"/></returns>
+        public static int GetMaxSpeechInputLength()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxSpeechInputLength", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxSpeechInputLength", "()I");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getAvailableLanguages()"/> 
+        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getDefaultVoice()"/>
         /// </summary>
-        public Java.Util.Set<Java.Util.Locale> AvailableLanguages
+        /// <returns><see cref="Android.Speech.Tts.Voice"/></returns>
+        public Android.Speech.Tts.Voice GetDefaultVoice()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Util.Locale>>("getAvailableLanguages", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Android.Speech.Tts.Voice>("getDefaultVoice", "()Landroid/speech/tts/Voice;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getDefaultEngine()"/> 
+        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getVoice()"/>
         /// </summary>
-        public Java.Lang.String DefaultEngine
+        /// <returns><see cref="Android.Speech.Tts.Voice"/></returns>
+        public Android.Speech.Tts.Voice GetVoice()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDefaultEngine", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getDefaultLanguage()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Util.Locale DefaultLanguage
-        {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getDefaultLanguage", "()Ljava/util/Locale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getDefaultVoice()"/> 
-        /// </summary>
-        public Android.Speech.Tts.Voice DefaultVoice
-        {
-            get { return IExecuteWithSignature<Android.Speech.Tts.Voice>("getDefaultVoice", "()Landroid/speech/tts/Voice;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getEngines()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Speech.Tts.TextToSpeech.EngineInfo> Engines
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Speech.Tts.TextToSpeech.EngineInfo>>("getEngines", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getLanguage()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Util.Locale Language
-        {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLanguage", "()Ljava/util/Locale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getVoice()"/> 
-        /// </summary>
-        public Android.Speech.Tts.Voice Voice
-        {
-            get { return IExecuteWithSignature<Android.Speech.Tts.Voice>("getVoice", "()Landroid/speech/tts/Voice;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getVoices()"/> 
-        /// </summary>
-        public Java.Util.Set<Android.Speech.Tts.Voice> Voices
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Android.Speech.Tts.Voice>>("getVoices", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Android.Speech.Tts.Voice>("getVoice", "()Landroid/speech/tts/Voice;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#areDefaultsEnforced()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool AreDefaultsEnforced()
         {
             return IExecuteWithSignature<bool>("areDefaultsEnforced", "()Z");
@@ -291,7 +250,7 @@ namespace Android.Speech.Tts
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int AddEarcon(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<int>("addEarcon", arg0, arg1);
@@ -376,7 +335,7 @@ namespace Android.Speech.Tts
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.HashMap"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int PlayEarcon(Java.Lang.String arg0, int arg1, Java.Util.HashMap<Java.Lang.String, Java.Lang.String> arg2)
         {
             return IExecute<int>("playEarcon", arg0, arg1, arg2);
@@ -388,7 +347,7 @@ namespace Android.Speech.Tts
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.HashMap"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int PlaySilence(long arg0, int arg1, Java.Util.HashMap<Java.Lang.String, Java.Lang.String> arg2)
         {
             return IExecute<int>("playSilence", arg0, arg1, arg2);
@@ -418,7 +377,7 @@ namespace Android.Speech.Tts
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int SetEngineByPackageName(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<int>("setEngineByPackageName", "(Ljava/lang/String;)I", arg0);
@@ -437,7 +396,7 @@ namespace Android.Speech.Tts
         /// </summary>
         /// <param name="arg0"><see cref="Android.Speech.Tts.TextToSpeech.OnUtteranceCompletedListener"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int SetOnUtteranceCompletedListener(Android.Speech.Tts.TextToSpeech.OnUtteranceCompletedListener arg0)
         {
             return IExecuteWithSignature<int>("setOnUtteranceCompletedListener", "(Landroid/speech/tts/TextToSpeech$OnUtteranceCompletedListener;)I", arg0);
@@ -497,7 +456,7 @@ namespace Android.Speech.Tts
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.HashMap"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int Speak(Java.Lang.String arg0, int arg1, Java.Util.HashMap<Java.Lang.String, Java.Lang.String> arg2)
         {
             return IExecute<int>("speak", arg0, arg1, arg2);
@@ -541,20 +500,70 @@ namespace Android.Speech.Tts
         /// <param name="arg1"><see cref="Java.Util.HashMap"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int SynthesizeToFile(Java.Lang.String arg0, Java.Util.HashMap<Java.Lang.String, Java.Lang.String> arg1, Java.Lang.String arg2)
         {
             return IExecute<int>("synthesizeToFile", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getDefaultEngine()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDefaultEngine()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDefaultEngine", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getEngines()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Speech.Tts.TextToSpeech.EngineInfo> GetEngines()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Speech.Tts.TextToSpeech.EngineInfo>>("getEngines", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getDefaultLanguage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.Locale GetDefaultLanguage()
+        {
+            return IExecuteWithSignature<Java.Util.Locale>("getDefaultLanguage", "()Ljava/util/Locale;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getLanguage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.Locale GetLanguage()
+        {
+            return IExecuteWithSignature<Java.Util.Locale>("getLanguage", "()Ljava/util/Locale;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getVoices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Android.Speech.Tts.Voice> GetVoices()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Android.Speech.Tts.Voice>>("getVoices", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getFeatures(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.Set<Java.Lang.String> GetFeatures(Java.Util.Locale arg0)
         {
             return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getFeatures", "(Ljava/util/Locale;)Ljava/util/Set;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#getAvailableLanguages()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Util.Locale> GetAvailableLanguages()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Util.Locale>>("getAvailableLanguages", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html#shutdown()"/>
@@ -590,7 +599,7 @@ namespace Android.Speech.Tts
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#CHECK_VOICE_DATA_BAD_DATA"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int CHECK_VOICE_DATA_BAD_DATA { get { if (!_CHECK_VOICE_DATA_BAD_DATAReady) { _CHECK_VOICE_DATA_BAD_DATAContent = SGetField<int>(LocalBridgeClazz, "CHECK_VOICE_DATA_BAD_DATA"); _CHECK_VOICE_DATA_BAD_DATAReady = true; } return _CHECK_VOICE_DATA_BAD_DATAContent; } }
             private static int _CHECK_VOICE_DATA_BAD_DATAContent = default;
             private static bool _CHECK_VOICE_DATA_BAD_DATAReady = false; // this is used because in case of generics 
@@ -603,14 +612,14 @@ namespace Android.Speech.Tts
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#CHECK_VOICE_DATA_MISSING_DATA"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int CHECK_VOICE_DATA_MISSING_DATA { get { if (!_CHECK_VOICE_DATA_MISSING_DATAReady) { _CHECK_VOICE_DATA_MISSING_DATAContent = SGetField<int>(LocalBridgeClazz, "CHECK_VOICE_DATA_MISSING_DATA"); _CHECK_VOICE_DATA_MISSING_DATAReady = true; } return _CHECK_VOICE_DATA_MISSING_DATAContent; } }
             private static int _CHECK_VOICE_DATA_MISSING_DATAContent = default;
             private static bool _CHECK_VOICE_DATA_MISSING_DATAReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#CHECK_VOICE_DATA_MISSING_VOLUME"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int CHECK_VOICE_DATA_MISSING_VOLUME { get { if (!_CHECK_VOICE_DATA_MISSING_VOLUMEReady) { _CHECK_VOICE_DATA_MISSING_VOLUMEContent = SGetField<int>(LocalBridgeClazz, "CHECK_VOICE_DATA_MISSING_VOLUME"); _CHECK_VOICE_DATA_MISSING_VOLUMEReady = true; } return _CHECK_VOICE_DATA_MISSING_VOLUMEContent; } }
             private static int _CHECK_VOICE_DATA_MISSING_VOLUMEContent = default;
             private static bool _CHECK_VOICE_DATA_MISSING_VOLUMEReady = false; // this is used because in case of generics 
@@ -659,7 +668,7 @@ namespace Android.Speech.Tts
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_CHECK_VOICE_DATA_FOR"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String EXTRA_CHECK_VOICE_DATA_FOR { get { if (!_EXTRA_CHECK_VOICE_DATA_FORReady) { _EXTRA_CHECK_VOICE_DATA_FORContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_CHECK_VOICE_DATA_FOR"); _EXTRA_CHECK_VOICE_DATA_FORReady = true; } return _EXTRA_CHECK_VOICE_DATA_FORContent; } }
             private static Java.Lang.String _EXTRA_CHECK_VOICE_DATA_FORContent = default;
             private static bool _EXTRA_CHECK_VOICE_DATA_FORReady = false; // this is used because in case of generics 
@@ -672,7 +681,7 @@ namespace Android.Speech.Tts
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_TTS_DATA_INSTALLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String EXTRA_TTS_DATA_INSTALLED { get { if (!_EXTRA_TTS_DATA_INSTALLEDReady) { _EXTRA_TTS_DATA_INSTALLEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_TTS_DATA_INSTALLED"); _EXTRA_TTS_DATA_INSTALLEDReady = true; } return _EXTRA_TTS_DATA_INSTALLEDContent; } }
             private static Java.Lang.String _EXTRA_TTS_DATA_INSTALLEDContent = default;
             private static bool _EXTRA_TTS_DATA_INSTALLEDReady = false; // this is used because in case of generics 
@@ -685,21 +694,21 @@ namespace Android.Speech.Tts
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_VOICE_DATA_FILES"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String EXTRA_VOICE_DATA_FILES { get { if (!_EXTRA_VOICE_DATA_FILESReady) { _EXTRA_VOICE_DATA_FILESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_VOICE_DATA_FILES"); _EXTRA_VOICE_DATA_FILESReady = true; } return _EXTRA_VOICE_DATA_FILESContent; } }
             private static Java.Lang.String _EXTRA_VOICE_DATA_FILESContent = default;
             private static bool _EXTRA_VOICE_DATA_FILESReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_VOICE_DATA_FILES_INFO"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String EXTRA_VOICE_DATA_FILES_INFO { get { if (!_EXTRA_VOICE_DATA_FILES_INFOReady) { _EXTRA_VOICE_DATA_FILES_INFOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_VOICE_DATA_FILES_INFO"); _EXTRA_VOICE_DATA_FILES_INFOReady = true; } return _EXTRA_VOICE_DATA_FILES_INFOContent; } }
             private static Java.Lang.String _EXTRA_VOICE_DATA_FILES_INFOContent = default;
             private static bool _EXTRA_VOICE_DATA_FILES_INFOReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_VOICE_DATA_ROOT_DIRECTORY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String EXTRA_VOICE_DATA_ROOT_DIRECTORY { get { if (!_EXTRA_VOICE_DATA_ROOT_DIRECTORYReady) { _EXTRA_VOICE_DATA_ROOT_DIRECTORYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_VOICE_DATA_ROOT_DIRECTORY"); _EXTRA_VOICE_DATA_ROOT_DIRECTORYReady = true; } return _EXTRA_VOICE_DATA_ROOT_DIRECTORYContent; } }
             private static Java.Lang.String _EXTRA_VOICE_DATA_ROOT_DIRECTORYContent = default;
             private static bool _EXTRA_VOICE_DATA_ROOT_DIRECTORYReady = false; // this is used because in case of generics 
@@ -712,7 +721,7 @@ namespace Android.Speech.Tts
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_FEATURE_EMBEDDED_SYNTHESIS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String KEY_FEATURE_EMBEDDED_SYNTHESIS { get { if (!_KEY_FEATURE_EMBEDDED_SYNTHESISReady) { _KEY_FEATURE_EMBEDDED_SYNTHESISContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_FEATURE_EMBEDDED_SYNTHESIS"); _KEY_FEATURE_EMBEDDED_SYNTHESISReady = true; } return _KEY_FEATURE_EMBEDDED_SYNTHESISContent; } }
             private static Java.Lang.String _KEY_FEATURE_EMBEDDED_SYNTHESISContent = default;
             private static bool _KEY_FEATURE_EMBEDDED_SYNTHESISReady = false; // this is used because in case of generics 
@@ -725,7 +734,7 @@ namespace Android.Speech.Tts
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_FEATURE_NETWORK_SYNTHESIS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String KEY_FEATURE_NETWORK_SYNTHESIS { get { if (!_KEY_FEATURE_NETWORK_SYNTHESISReady) { _KEY_FEATURE_NETWORK_SYNTHESISContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_FEATURE_NETWORK_SYNTHESIS"); _KEY_FEATURE_NETWORK_SYNTHESISReady = true; } return _KEY_FEATURE_NETWORK_SYNTHESISContent; } }
             private static Java.Lang.String _KEY_FEATURE_NETWORK_SYNTHESISContent = default;
             private static bool _KEY_FEATURE_NETWORK_SYNTHESISReady = false; // this is used because in case of generics 
@@ -864,7 +873,7 @@ namespace Android.Speech.Tts
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onInit", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnInitEventHandler));
+                AddEventHandler("onInit", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnInitEventHandler));
 
             }
 
@@ -872,7 +881,7 @@ namespace Android.Speech.Tts
             /// Handler for <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.OnInitListener.html#onInit(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnInit"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnInit { get; set; } = null;
+            public global::System.Action<int> OnOnInit { get; set; } = null;
 
             void OnInitEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -963,7 +972,7 @@ namespace Android.Speech.Tts
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onUtteranceCompleted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnUtteranceCompletedEventHandler));
+                AddEventHandler("onUtteranceCompleted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnUtteranceCompletedEventHandler));
 
             }
 
@@ -971,7 +980,7 @@ namespace Android.Speech.Tts
             /// Handler for <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.OnUtteranceCompletedListener.html#onUtteranceCompleted(java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnUtteranceCompleted"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Lang.String> OnOnUtteranceCompleted { get; set; } = null;
+            public global::System.Action<Java.Lang.String> OnOnUtteranceCompleted { get; set; } = null;
 
             void OnUtteranceCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
             {
@@ -983,7 +992,7 @@ namespace Android.Speech.Tts
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.OnUtteranceCompletedListener.html#onUtteranceCompleted(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnUtteranceCompleted(Java.Lang.String arg0)
             {
                 
@@ -1023,7 +1032,7 @@ namespace Android.Speech.Tts
             /// <see href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.OnUtteranceCompletedListener.html#onUtteranceCompleted(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnUtteranceCompleted(Java.Lang.String arg0)
             {
                 IExecuteWithSignature("onUtteranceCompleted", "(Ljava/lang/String;)V", arg0);

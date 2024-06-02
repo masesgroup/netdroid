@@ -64,75 +64,85 @@ namespace Android.Speech.Tts
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getCallerUid()"/> 
+        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getParams()"/>
         /// </summary>
-        public int CallerUid
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetParams()
         {
-            get { return IExecuteWithSignature<int>("getCallerUid", "()I"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getParams", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getCharSequenceText()"/> 
+        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getCallerUid()"/>
         /// </summary>
-        public Java.Lang.CharSequence CharSequenceText
+        /// <returns><see cref="int"/></returns>
+        public int GetCallerUid()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getCharSequenceText", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<int>("getCallerUid", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getCountry()"/> 
+        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getPitch()"/>
         /// </summary>
-        public Java.Lang.String Country
+        /// <returns><see cref="int"/></returns>
+        public int GetPitch()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCountry", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getPitch", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getLanguage()"/> 
+        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getSpeechRate()"/>
         /// </summary>
-        public Java.Lang.String Language
+        /// <returns><see cref="int"/></returns>
+        public int GetSpeechRate()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLanguage", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getSpeechRate", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getParams()"/> 
+        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getCharSequenceText()"/>
         /// </summary>
-        public Android.Os.Bundle Params
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetCharSequenceText()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getParams", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getCharSequenceText", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getPitch()"/> 
+        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getCountry()"/>
         /// </summary>
-        public int Pitch
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCountry()
         {
-            get { return IExecuteWithSignature<int>("getPitch", "()I"); }
+            return IExecuteWithSignature<Java.Lang.String>("getCountry", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getSpeechRate()"/> 
+        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getLanguage()"/>
         /// </summary>
-        public int SpeechRate
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLanguage()
         {
-            get { return IExecuteWithSignature<int>("getSpeechRate", "()I"); }
+            return IExecuteWithSignature<Java.Lang.String>("getLanguage", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getText()"/> 
+        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getText()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Text
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetText()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getVariant()"/> 
+        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getVariant()"/>
         /// </summary>
-        public Java.Lang.String Variant
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetVariant()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVariant", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getVariant", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getVoiceName()"/> 
+        /// <see href="https://developer.android.com/reference/android/speech/tts/SynthesisRequest.html#getVoiceName()"/>
         /// </summary>
-        public Java.Lang.String VoiceName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetVoiceName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVoiceName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getVoiceName", "()Ljava/lang/String;");
         }
 
         #endregion

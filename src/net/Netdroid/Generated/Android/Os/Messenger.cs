@@ -86,11 +86,12 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Messenger.html#getBinder()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/Messenger.html#getBinder()"/>
         /// </summary>
-        public Android.Os.IBinder Binder
+        /// <returns><see cref="Android.Os.IBinder"/></returns>
+        public Android.Os.IBinder GetBinder()
         {
-            get { return IExecuteWithSignature<Android.Os.IBinder>("getBinder", "()Landroid/os/IBinder;"); }
+            return IExecuteWithSignature<Android.Os.IBinder>("getBinder", "()Landroid/os/IBinder;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Messenger.html#describeContents()"/>

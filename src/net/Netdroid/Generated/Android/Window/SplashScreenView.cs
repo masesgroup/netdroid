@@ -46,25 +46,28 @@ namespace Android.Window
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/window/SplashScreenView.html#getIconAnimationDuration()"/> 
+        /// <see href="https://developer.android.com/reference/android/window/SplashScreenView.html#getIconView()"/>
         /// </summary>
-        public Java.Time.Duration IconAnimationDuration
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetIconView()
         {
-            get { return IExecuteWithSignature<Java.Time.Duration>("getIconAnimationDuration", "()Ljava/time/Duration;"); }
+            return IExecuteWithSignature<Android.View.View>("getIconView", "()Landroid/view/View;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/window/SplashScreenView.html#getIconAnimationStart()"/> 
+        /// <see href="https://developer.android.com/reference/android/window/SplashScreenView.html#getIconAnimationDuration()"/>
         /// </summary>
-        public Java.Time.Instant IconAnimationStart
+        /// <returns><see cref="Java.Time.Duration"/></returns>
+        public Java.Time.Duration GetIconAnimationDuration()
         {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getIconAnimationStart", "()Ljava/time/Instant;"); }
+            return IExecuteWithSignature<Java.Time.Duration>("getIconAnimationDuration", "()Ljava/time/Duration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/window/SplashScreenView.html#getIconView()"/> 
+        /// <see href="https://developer.android.com/reference/android/window/SplashScreenView.html#getIconAnimationStart()"/>
         /// </summary>
-        public Android.View.View IconView
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetIconAnimationStart()
         {
-            get { return IExecuteWithSignature<Android.View.View>("getIconView", "()Landroid/view/View;"); }
+            return IExecuteWithSignature<Java.Time.Instant>("getIconAnimationStart", "()Ljava/time/Instant;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/window/SplashScreenView.html#remove()"/>

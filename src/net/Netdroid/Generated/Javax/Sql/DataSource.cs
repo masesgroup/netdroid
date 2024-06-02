@@ -72,28 +72,34 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/DataSource.html#getConnection()"/> 
+        /// <see href="https://developer.android.com/reference/javax/sql/DataSource.html#getLoginTimeout()"/>
         /// </summary>
-        public Java.Sql.Connection Connection
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetLoginTimeout()
         {
-            get { return IExecuteWithSignature<Java.Sql.Connection>("getConnection", "()Ljava/sql/Connection;"); }
+            return IExecuteWithSignature<int>("getLoginTimeout", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/DataSource.html#getLoginTimeout()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/DataSource.html#setLoginTimeout(int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/DataSource.html#getLogWriter()"/>
         /// </summary>
-        public int LoginTimeout
+        /// <returns><see cref="Java.Io.PrintWriter"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Io.PrintWriter GetLogWriter()
         {
-            get { return IExecuteWithSignature<int>("getLoginTimeout", "()I"); } set { IExecuteWithSignature("setLoginTimeout", "(I)V", value); }
+            return IExecuteWithSignature<Java.Io.PrintWriter>("getLogWriter", "()Ljava/io/PrintWriter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/DataSource.html#getLogWriter()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/DataSource.html#setLogWriter(java.io.PrintWriter)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/DataSource.html#getConnection()"/>
         /// </summary>
-        public Java.Io.PrintWriter LogWriter
+        /// <returns><see cref="Java.Sql.Connection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.Connection GetConnection()
         {
-            get { return IExecuteWithSignature<Java.Io.PrintWriter>("getLogWriter", "()Ljava/io/PrintWriter;"); } set { IExecuteWithSignature("setLogWriter", "(Ljava/io/PrintWriter;)V", value); }
+            return IExecuteWithSignature<Java.Sql.Connection>("getConnection", "()Ljava/sql/Connection;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/DataSource.html#getConnection(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/DataSource.html#getConnection(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -102,6 +108,24 @@ namespace Javax.Sql
         public Java.Sql.Connection GetConnection(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<Java.Sql.Connection>("getConnection", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/DataSource.html#setLoginTimeout(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetLoginTimeout(int arg0)
+        {
+            IExecuteWithSignature("setLoginTimeout", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/DataSource.html#setLogWriter(java.io.PrintWriter)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetLogWriter(Java.Io.PrintWriter arg0)
+        {
+            IExecuteWithSignature("setLogWriter", "(Ljava/io/PrintWriter;)V", arg0);
         }
 
         #endregion

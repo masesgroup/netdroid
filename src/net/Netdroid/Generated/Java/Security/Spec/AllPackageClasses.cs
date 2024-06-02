@@ -28,7 +28,7 @@ namespace Java.Security.Spec
 {
     #region AlgorithmParameterSpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/AlgorithmParameterSpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/AlgorithmParameterSpec.html"/>
     /// </summary>
     public partial class AlgorithmParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AlgorithmParameterSpec>
     {
@@ -36,12 +36,12 @@ namespace Java.Security.Spec
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AlgorithmParameterSpec class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AlgorithmParameterSpec class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AlgorithmParameterSpec() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AlgorithmParameterSpec class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AlgorithmParameterSpec class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AlgorithmParameterSpec(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Java.Security.Spec
 
     #region DSAParameterSpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/DSAParameterSpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/DSAParameterSpec.html"/>
     /// </summary>
     public partial class DSAParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DSAParameterSpec>
     {
@@ -118,7 +118,7 @@ namespace Java.Security.Spec
 
     #region DSAPrivateKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/DSAPrivateKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/DSAPrivateKeySpec.html"/>
     /// </summary>
     public partial class DSAPrivateKeySpec : Java.Security.Spec.KeySpec
     {
@@ -162,7 +162,7 @@ namespace Java.Security.Spec
 
     #region DSAPublicKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/DSAPublicKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/DSAPublicKeySpec.html"/>
     /// </summary>
     public partial class DSAPublicKeySpec : Java.Security.Spec.KeySpec
     {
@@ -206,7 +206,7 @@ namespace Java.Security.Spec
 
     #region ECField
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECField.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/ECField.html"/>
     /// </summary>
     public partial class ECField : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECField>
     {
@@ -214,12 +214,12 @@ namespace Java.Security.Spec
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ECField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ECField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ECField() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ECField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ECField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ECField(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -252,7 +252,7 @@ namespace Java.Security.Spec
 
     #region ECFieldF2m
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECFieldF2m.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/ECFieldF2m.html"/>
     /// </summary>
     public partial class ECFieldF2m : Java.Security.Spec.ECField
     {
@@ -296,7 +296,7 @@ namespace Java.Security.Spec
 
     #region ECFieldFp
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECFieldFp.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/ECFieldFp.html"/>
     /// </summary>
     public partial class ECFieldFp : Java.Security.Spec.ECField
     {
@@ -340,7 +340,7 @@ namespace Java.Security.Spec
 
     #region ECGenParameterSpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECGenParameterSpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/ECGenParameterSpec.html"/>
     /// </summary>
     public partial class ECGenParameterSpec : Java.Security.Spec.NamedParameterSpec
     {
@@ -384,7 +384,7 @@ namespace Java.Security.Spec
 
     #region ECParameterSpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECParameterSpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/ECParameterSpec.html"/>
     /// </summary>
     public partial class ECParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
@@ -428,7 +428,7 @@ namespace Java.Security.Spec
 
     #region ECPoint
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECPoint.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/ECPoint.html"/>
     /// </summary>
     public partial class ECPoint : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECPoint>
     {
@@ -472,7 +472,7 @@ namespace Java.Security.Spec
 
     #region ECPrivateKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECPrivateKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/ECPrivateKeySpec.html"/>
     /// </summary>
     public partial class ECPrivateKeySpec : Java.Security.Spec.KeySpec
     {
@@ -516,7 +516,7 @@ namespace Java.Security.Spec
 
     #region ECPublicKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECPublicKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/ECPublicKeySpec.html"/>
     /// </summary>
     public partial class ECPublicKeySpec : Java.Security.Spec.KeySpec
     {
@@ -558,141 +558,9 @@ namespace Java.Security.Spec
     }
     #endregion
 
-    #region EdECPoint
-    /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EdECPoint.html"/>
-    /// </summary>
-    public partial class EdECPoint : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EdECPoint>
-    {
-        const string _bridgeClassName = "java.security.spec.EdECPoint";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public EdECPoint() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public EdECPoint(params object[] args) : base(args) { }
-
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
-
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => _bridgeClassName;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-        /// </summary>
-        public override bool IsBridgeAbstract => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-        /// </summary>
-        public override bool IsBridgeCloseable => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
-        public override bool IsBridgeInterface => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-        /// </summary>
-        public override bool IsBridgeStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region EdECPrivateKeySpec
-    /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EdECPrivateKeySpec.html"/>
-    /// </summary>
-    public partial class EdECPrivateKeySpec : Java.Security.Spec.KeySpec
-    {
-        const string _bridgeClassName = "java.security.spec.EdECPrivateKeySpec";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public EdECPrivateKeySpec() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public EdECPrivateKeySpec(params object[] args) : base(args) { }
-
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
-
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => _bridgeClassName;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-        /// </summary>
-        public override bool IsBridgeAbstract => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-        /// </summary>
-        public override bool IsBridgeCloseable => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
-        public override bool IsBridgeInterface => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-        /// </summary>
-        public override bool IsBridgeStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region EdECPublicKeySpec
-    /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EdECPublicKeySpec.html"/>
-    /// </summary>
-    public partial class EdECPublicKeySpec : Java.Security.Spec.KeySpec
-    {
-        const string _bridgeClassName = "java.security.spec.EdECPublicKeySpec";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public EdECPublicKeySpec() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public EdECPublicKeySpec(params object[] args) : base(args) { }
-
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
-
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => _bridgeClassName;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-        /// </summary>
-        public override bool IsBridgeAbstract => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-        /// </summary>
-        public override bool IsBridgeCloseable => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
-        public override bool IsBridgeInterface => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-        /// </summary>
-        public override bool IsBridgeStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region EllipticCurve
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EllipticCurve.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/EllipticCurve.html"/>
     /// </summary>
     public partial class EllipticCurve : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EllipticCurve>
     {
@@ -736,7 +604,7 @@ namespace Java.Security.Spec
 
     #region EncodedKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EncodedKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/EncodedKeySpec.html"/>
     /// </summary>
     public partial class EncodedKeySpec : Java.Security.Spec.KeySpec
     {
@@ -744,12 +612,12 @@ namespace Java.Security.Spec
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("EncodedKeySpec class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EncodedKeySpec class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EncodedKeySpec() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("EncodedKeySpec class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EncodedKeySpec class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EncodedKeySpec(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -782,7 +650,7 @@ namespace Java.Security.Spec
 
     #region InvalidKeySpecException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/InvalidKeySpecException.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/InvalidKeySpecException.html"/>
     /// </summary>
     public partial class InvalidKeySpecException : Java.Security.GeneralSecurityException
     {
@@ -799,7 +667,7 @@ namespace Java.Security.Spec
 
     #region InvalidParameterSpecException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/InvalidParameterSpecException.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/InvalidParameterSpecException.html"/>
     /// </summary>
     public partial class InvalidParameterSpecException : Java.Security.GeneralSecurityException
     {
@@ -816,7 +684,7 @@ namespace Java.Security.Spec
 
     #region KeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/KeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/KeySpec.html"/>
     /// </summary>
     public partial class KeySpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeySpec>
     {
@@ -824,12 +692,12 @@ namespace Java.Security.Spec
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("KeySpec class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("KeySpec class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public KeySpec() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("KeySpec class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("KeySpec class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public KeySpec(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -862,7 +730,7 @@ namespace Java.Security.Spec
 
     #region MGF1ParameterSpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/MGF1ParameterSpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/MGF1ParameterSpec.html"/>
     /// </summary>
     public partial class MGF1ParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
@@ -906,7 +774,7 @@ namespace Java.Security.Spec
 
     #region NamedParameterSpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/NamedParameterSpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/NamedParameterSpec.html"/>
     /// </summary>
     public partial class NamedParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
@@ -950,7 +818,7 @@ namespace Java.Security.Spec
 
     #region PKCS8EncodedKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/PKCS8EncodedKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/PKCS8EncodedKeySpec.html"/>
     /// </summary>
     public partial class PKCS8EncodedKeySpec : Java.Security.Spec.EncodedKeySpec
     {
@@ -994,7 +862,7 @@ namespace Java.Security.Spec
 
     #region PSSParameterSpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/PSSParameterSpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/PSSParameterSpec.html"/>
     /// </summary>
     public partial class PSSParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
@@ -1038,7 +906,7 @@ namespace Java.Security.Spec
 
     #region RSAKeyGenParameterSpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAKeyGenParameterSpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/RSAKeyGenParameterSpec.html"/>
     /// </summary>
     public partial class RSAKeyGenParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
@@ -1082,7 +950,7 @@ namespace Java.Security.Spec
 
     #region RSAMultiPrimePrivateCrtKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAMultiPrimePrivateCrtKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/RSAMultiPrimePrivateCrtKeySpec.html"/>
     /// </summary>
     public partial class RSAMultiPrimePrivateCrtKeySpec : Java.Security.Spec.RSAPrivateKeySpec
     {
@@ -1126,7 +994,7 @@ namespace Java.Security.Spec
 
     #region RSAOtherPrimeInfo
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAOtherPrimeInfo.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/RSAOtherPrimeInfo.html"/>
     /// </summary>
     public partial class RSAOtherPrimeInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RSAOtherPrimeInfo>
     {
@@ -1170,7 +1038,7 @@ namespace Java.Security.Spec
 
     #region RSAPrivateCrtKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAPrivateCrtKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/RSAPrivateCrtKeySpec.html"/>
     /// </summary>
     public partial class RSAPrivateCrtKeySpec : Java.Security.Spec.RSAPrivateKeySpec
     {
@@ -1214,7 +1082,7 @@ namespace Java.Security.Spec
 
     #region RSAPrivateKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAPrivateKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/RSAPrivateKeySpec.html"/>
     /// </summary>
     public partial class RSAPrivateKeySpec : Java.Security.Spec.KeySpec
     {
@@ -1258,7 +1126,7 @@ namespace Java.Security.Spec
 
     #region RSAPublicKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/RSAPublicKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/RSAPublicKeySpec.html"/>
     /// </summary>
     public partial class RSAPublicKeySpec : Java.Security.Spec.KeySpec
     {
@@ -1302,7 +1170,7 @@ namespace Java.Security.Spec
 
     #region X509EncodedKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/X509EncodedKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/X509EncodedKeySpec.html"/>
     /// </summary>
     public partial class X509EncodedKeySpec : Java.Security.Spec.EncodedKeySpec
     {
@@ -1346,7 +1214,7 @@ namespace Java.Security.Spec
 
     #region XECPrivateKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/XECPrivateKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/XECPrivateKeySpec.html"/>
     /// </summary>
     public partial class XECPrivateKeySpec : Java.Security.Spec.KeySpec
     {
@@ -1390,7 +1258,7 @@ namespace Java.Security.Spec
 
     #region XECPublicKeySpec
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/security/spec/XECPublicKeySpec.html"/>
+    /// <see href="https://developer.android.com/reference/java/security/spec/XECPublicKeySpec.html"/>
     /// </summary>
     public partial class XECPublicKeySpec : Java.Security.Spec.KeySpec
     {

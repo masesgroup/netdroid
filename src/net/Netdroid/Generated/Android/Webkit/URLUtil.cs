@@ -73,7 +73,7 @@ namespace Android.Webkit
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool IsCookielessProxyUrl(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isCookielessProxyUrl", "(Ljava/lang/String;)Z", arg0);

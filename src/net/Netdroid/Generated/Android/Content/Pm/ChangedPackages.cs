@@ -61,26 +61,28 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ChangedPackages.html#getPackageNames()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> PackageNames
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getPackageNames", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ChangedPackages.html#getSequenceNumber()"/> 
-        /// </summary>
-        public int SequenceNumber
-        {
-            get { return IExecuteWithSignature<int>("getSequenceNumber", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ChangedPackages.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ChangedPackages.html#getSequenceNumber()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSequenceNumber()
+        {
+            return IExecuteWithSignature<int>("getSequenceNumber", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ChangedPackages.html#getPackageNames()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetPackageNames()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getPackageNames", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ChangedPackages.html#writeToParcel(android.os.Parcel,int)"/>

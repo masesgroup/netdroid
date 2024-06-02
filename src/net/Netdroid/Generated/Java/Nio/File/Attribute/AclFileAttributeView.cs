@@ -64,19 +64,30 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclFileAttributeView.html#getAcl()"/> <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclFileAttributeView.html#setAcl(java.util.List)"/>
-        /// </summary>
-        public Java.Util.List<Java.Nio.File.Attribute.AclEntry> Acl
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Nio.File.Attribute.AclEntry>>("getAcl", "()Ljava/util/List;"); } set { IExecuteWithSignature("setAcl", "(Ljava/util/List;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclFileAttributeView.html#name()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclFileAttributeView.html#name()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
         {
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclFileAttributeView.html#getAcl()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.List<Java.Nio.File.Attribute.AclEntry> GetAcl()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Nio.File.Attribute.AclEntry>>("getAcl", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclFileAttributeView.html#setAcl(java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void SetAcl(Java.Util.List<Java.Nio.File.Attribute.AclEntry> arg0)
+        {
+            IExecuteWithSignature("setAcl", "(Ljava/util/List;)V", arg0);
         }
 
         #endregion

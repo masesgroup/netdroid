@@ -33,7 +33,7 @@ namespace Android.Drm
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public DrmManagerClient(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -49,14 +49,14 @@ namespace Android.Drm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#ERROR_NONE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ERROR_NONE { get { if (!_ERROR_NONEReady) { _ERROR_NONEContent = SGetField<int>(LocalBridgeClazz, "ERROR_NONE"); _ERROR_NONEReady = true; } return _ERROR_NONEContent; } }
         private static int _ERROR_NONEContent = default;
         private static bool _ERROR_NONEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#ERROR_UNKNOWN"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ERROR_UNKNOWN { get { if (!_ERROR_UNKNOWNReady) { _ERROR_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "ERROR_UNKNOWN"); _ERROR_UNKNOWNReady = true; } return _ERROR_UNKNOWNContent; } }
         private static int _ERROR_UNKNOWNContent = default;
         private static bool _ERROR_UNKNOWNReady = false; // this is used because in case of generics 
@@ -69,28 +69,12 @@ namespace Android.Drm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#getAvailableDrmEngines()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String[] AvailableDrmEngines
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getAvailableDrmEngines", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#getAvailableDrmSupportInfo()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Util.Collection<Android.Drm.DrmSupportInfo> AvailableDrmSupportInfo
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<Android.Drm.DrmSupportInfo>>("getAvailableDrmSupportInfo", "()Ljava/util/Collection;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#getConstraints(android.net.Uri,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Android.Content.ContentValues"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Content.ContentValues GetConstraints(Android.Net.Uri arg0, int arg1)
         {
             return IExecute<Android.Content.ContentValues>("getConstraints", arg0, arg1);
@@ -101,7 +85,7 @@ namespace Android.Drm
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Android.Content.ContentValues"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Content.ContentValues GetConstraints(Java.Lang.String arg0, int arg1)
         {
             return IExecute<Android.Content.ContentValues>("getConstraints", arg0, arg1);
@@ -111,7 +95,7 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
         /// <returns><see cref="Android.Content.ContentValues"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Content.ContentValues GetMetadata(Android.Net.Uri arg0)
         {
             return IExecuteWithSignature<Android.Content.ContentValues>("getMetadata", "(Landroid/net/Uri;)Landroid/content/ContentValues;", arg0);
@@ -121,7 +105,7 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.Content.ContentValues"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Content.ContentValues GetMetadata(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.Content.ContentValues>("getMetadata", "(Ljava/lang/String;)Landroid/content/ContentValues;", arg0);
@@ -131,7 +115,7 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Android.Drm.DrmConvertedStatus"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Drm.DrmConvertedStatus CloseConvertSession(int arg0)
         {
             return IExecuteWithSignature<Android.Drm.DrmConvertedStatus>("closeConvertSession", "(I)Landroid/drm/DrmConvertedStatus;", arg0);
@@ -142,7 +126,7 @@ namespace Android.Drm
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <returns><see cref="Android.Drm.DrmConvertedStatus"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Drm.DrmConvertedStatus ConvertData(int arg0, byte[] arg1)
         {
             return IExecute<Android.Drm.DrmConvertedStatus>("convertData", arg0, arg1);
@@ -152,7 +136,7 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="Android.Drm.DrmInfoRequest"/></param>
         /// <returns><see cref="Android.Drm.DrmInfo"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Drm.DrmInfo AcquireDrmInfo(Android.Drm.DrmInfoRequest arg0)
         {
             return IExecuteWithSignature<Android.Drm.DrmInfo>("acquireDrmInfo", "(Landroid/drm/DrmInfoRequest;)Landroid/drm/DrmInfo;", arg0);
@@ -163,7 +147,7 @@ namespace Android.Drm
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool CanHandle(Android.Net.Uri arg0, Java.Lang.String arg1)
         {
             return IExecute<bool>("canHandle", arg0, arg1);
@@ -174,7 +158,7 @@ namespace Android.Drm
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool CanHandle(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<bool>("canHandle", arg0, arg1);
@@ -184,7 +168,7 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="Android.Drm.DrmInfoRequest"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int AcquireRights(Android.Drm.DrmInfoRequest arg0)
         {
             return IExecuteWithSignature<int>("acquireRights", "(Landroid/drm/DrmInfoRequest;)I", arg0);
@@ -195,7 +179,7 @@ namespace Android.Drm
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int CheckRightsStatus(Android.Net.Uri arg0, int arg1)
         {
             return IExecute<int>("checkRightsStatus", arg0, arg1);
@@ -205,7 +189,7 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int CheckRightsStatus(Android.Net.Uri arg0)
         {
             return IExecuteWithSignature<int>("checkRightsStatus", "(Landroid/net/Uri;)I", arg0);
@@ -216,7 +200,7 @@ namespace Android.Drm
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int CheckRightsStatus(Java.Lang.String arg0, int arg1)
         {
             return IExecute<int>("checkRightsStatus", arg0, arg1);
@@ -226,7 +210,7 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int CheckRightsStatus(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<int>("checkRightsStatus", "(Ljava/lang/String;)I", arg0);
@@ -237,7 +221,7 @@ namespace Android.Drm
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int GetDrmObjectType(Android.Net.Uri arg0, Java.Lang.String arg1)
         {
             return IExecute<int>("getDrmObjectType", arg0, arg1);
@@ -248,7 +232,7 @@ namespace Android.Drm
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int GetDrmObjectType(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<int>("getDrmObjectType", arg0, arg1);
@@ -258,7 +242,7 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int OpenConvertSession(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<int>("openConvertSession", "(Ljava/lang/String;)I", arg0);
@@ -268,7 +252,7 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="Android.Drm.DrmInfo"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int ProcessDrmInfo(Android.Drm.DrmInfo arg0)
         {
             return IExecuteWithSignature<int>("processDrmInfo", "(Landroid/drm/DrmInfo;)I", arg0);
@@ -277,7 +261,7 @@ namespace Android.Drm
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#removeAllRights()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int RemoveAllRights()
         {
             return IExecuteWithSignature<int>("removeAllRights", "()I");
@@ -287,7 +271,7 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int RemoveRights(Android.Net.Uri arg0)
         {
             return IExecuteWithSignature<int>("removeRights", "(Landroid/net/Uri;)I", arg0);
@@ -297,7 +281,7 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int RemoveRights(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<int>("removeRights", "(Ljava/lang/String;)I", arg0);
@@ -310,7 +294,7 @@ namespace Android.Drm
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int SaveRights(Android.Drm.DrmRights arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return IExecute<int>("saveRights", arg0, arg1, arg2);
@@ -320,7 +304,7 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String GetOriginalMimeType(Android.Net.Uri arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getOriginalMimeType", "(Landroid/net/Uri;)Ljava/lang/String;", arg0);
@@ -330,16 +314,34 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String GetOriginalMimeType(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getOriginalMimeType", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#getAvailableDrmEngines()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String[] GetAvailableDrmEngines()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getAvailableDrmEngines", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#getAvailableDrmSupportInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.Collection<Android.Drm.DrmSupportInfo> GetAvailableDrmSupportInfo()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Android.Drm.DrmSupportInfo>>("getAvailableDrmSupportInfo", "()Ljava/util/Collection;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#setOnErrorListener(android.drm.DrmManagerClient.OnErrorListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Drm.DrmManagerClient.OnErrorListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOnErrorListener(Android.Drm.DrmManagerClient.OnErrorListener arg0)
         {
             IExecuteWithSignature("setOnErrorListener", "(Landroid/drm/DrmManagerClient$OnErrorListener;)V", arg0);
@@ -348,7 +350,7 @@ namespace Android.Drm
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#setOnEventListener(android.drm.DrmManagerClient.OnEventListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Drm.DrmManagerClient.OnEventListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOnEventListener(Android.Drm.DrmManagerClient.OnEventListener arg0)
         {
             IExecuteWithSignature("setOnEventListener", "(Landroid/drm/DrmManagerClient$OnEventListener;)V", arg0);
@@ -357,7 +359,7 @@ namespace Android.Drm
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#setOnInfoListener(android.drm.DrmManagerClient.OnInfoListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Drm.DrmManagerClient.OnInfoListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOnInfoListener(Android.Drm.DrmManagerClient.OnInfoListener arg0)
         {
             IExecuteWithSignature("setOnInfoListener", "(Landroid/drm/DrmManagerClient$OnInfoListener;)V", arg0);
@@ -365,7 +367,7 @@ namespace Android.Drm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#close()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -373,7 +375,7 @@ namespace Android.Drm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.html#release()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Release()
         {
             IExecuteWithSignature("release", "()V");
@@ -407,7 +409,7 @@ namespace Android.Drm
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onError", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Drm.DrmManagerClient>>>(OnErrorEventHandler));
+                AddEventHandler("onError", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Drm.DrmManagerClient>>>(OnErrorEventHandler));
 
             }
 
@@ -415,7 +417,7 @@ namespace Android.Drm
             /// Handler for <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.OnErrorListener.html#onError(android.drm.DrmManagerClient,android.drm.DrmErrorEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Drm.DrmManagerClient, Android.Drm.DrmErrorEvent> OnOnError { get; set; } = null;
+            public global::System.Action<Android.Drm.DrmManagerClient, Android.Drm.DrmErrorEvent> OnOnError { get; set; } = null;
 
             void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Drm.DrmManagerClient>> data)
             {
@@ -428,7 +430,7 @@ namespace Android.Drm
             /// </summary>
             /// <param name="arg0"><see cref="Android.Drm.DrmManagerClient"/></param>
             /// <param name="arg1"><see cref="Android.Drm.DrmErrorEvent"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnError(Android.Drm.DrmManagerClient arg0, Android.Drm.DrmErrorEvent arg1)
             {
                 
@@ -469,7 +471,7 @@ namespace Android.Drm
             /// </summary>
             /// <param name="arg0"><see cref="Android.Drm.DrmManagerClient"/></param>
             /// <param name="arg1"><see cref="Android.Drm.DrmErrorEvent"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnError(Android.Drm.DrmManagerClient arg0, Android.Drm.DrmErrorEvent arg1)
             {
                 IExecute("onError", arg0, arg1);
@@ -510,7 +512,7 @@ namespace Android.Drm
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onEvent", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Drm.DrmManagerClient>>>(OnEventEventHandler));
+                AddEventHandler("onEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Drm.DrmManagerClient>>>(OnEventEventHandler));
 
             }
 
@@ -518,7 +520,7 @@ namespace Android.Drm
             /// Handler for <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.OnEventListener.html#onEvent(android.drm.DrmManagerClient,android.drm.DrmEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnEvent"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Drm.DrmManagerClient, Android.Drm.DrmEvent> OnOnEvent { get; set; } = null;
+            public global::System.Action<Android.Drm.DrmManagerClient, Android.Drm.DrmEvent> OnOnEvent { get; set; } = null;
 
             void OnEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Drm.DrmManagerClient>> data)
             {
@@ -531,7 +533,7 @@ namespace Android.Drm
             /// </summary>
             /// <param name="arg0"><see cref="Android.Drm.DrmManagerClient"/></param>
             /// <param name="arg1"><see cref="Android.Drm.DrmEvent"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnEvent(Android.Drm.DrmManagerClient arg0, Android.Drm.DrmEvent arg1)
             {
                 
@@ -572,7 +574,7 @@ namespace Android.Drm
             /// </summary>
             /// <param name="arg0"><see cref="Android.Drm.DrmManagerClient"/></param>
             /// <param name="arg1"><see cref="Android.Drm.DrmEvent"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnEvent(Android.Drm.DrmManagerClient arg0, Android.Drm.DrmEvent arg1)
             {
                 IExecute("onEvent", arg0, arg1);
@@ -613,7 +615,7 @@ namespace Android.Drm
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onInfo", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Drm.DrmManagerClient>>>(OnInfoEventHandler));
+                AddEventHandler("onInfo", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Drm.DrmManagerClient>>>(OnInfoEventHandler));
 
             }
 
@@ -621,7 +623,7 @@ namespace Android.Drm
             /// Handler for <see href="https://developer.android.com/reference/android/drm/DrmManagerClient.OnInfoListener.html#onInfo(android.drm.DrmManagerClient,android.drm.DrmInfoEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnInfo"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Drm.DrmManagerClient, Android.Drm.DrmInfoEvent> OnOnInfo { get; set; } = null;
+            public global::System.Action<Android.Drm.DrmManagerClient, Android.Drm.DrmInfoEvent> OnOnInfo { get; set; } = null;
 
             void OnInfoEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Drm.DrmManagerClient>> data)
             {
@@ -634,7 +636,7 @@ namespace Android.Drm
             /// </summary>
             /// <param name="arg0"><see cref="Android.Drm.DrmManagerClient"/></param>
             /// <param name="arg1"><see cref="Android.Drm.DrmInfoEvent"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnInfo(Android.Drm.DrmManagerClient arg0, Android.Drm.DrmInfoEvent arg1)
             {
                 
@@ -675,7 +677,7 @@ namespace Android.Drm
             /// </summary>
             /// <param name="arg0"><see cref="Android.Drm.DrmManagerClient"/></param>
             /// <param name="arg1"><see cref="Android.Drm.DrmInfoEvent"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnInfo(Android.Drm.DrmManagerClient arg0, Android.Drm.DrmInfoEvent arg1)
             {
                 IExecute("onInfo", arg0, arg1);

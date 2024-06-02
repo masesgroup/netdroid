@@ -46,53 +46,60 @@ namespace Android.Net.Wifi.Aware
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/ServiceDiscoveryInfo.html#getMatchFilters()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/ServiceDiscoveryInfo.html#getPairingConfig()"/>
         /// </summary>
-        public Java.Util.List<byte[]> MatchFilters
+        /// <returns><see cref="Android.Net.Wifi.Aware.AwarePairingConfig"/></returns>
+        public Android.Net.Wifi.Aware.AwarePairingConfig GetPairingConfig()
         {
-            get { return IExecuteWithSignature<Java.Util.List<byte[]>>("getMatchFilters", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Net.Wifi.Aware.AwarePairingConfig>("getPairingConfig", "()Landroid/net/wifi/aware/AwarePairingConfig;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/ServiceDiscoveryInfo.html#getPairedAlias()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/ServiceDiscoveryInfo.html#getPeerHandle()"/>
         /// </summary>
-        public Java.Lang.String PairedAlias
+        /// <returns><see cref="Android.Net.Wifi.Aware.PeerHandle"/></returns>
+        public Android.Net.Wifi.Aware.PeerHandle GetPeerHandle()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPairedAlias", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Net.Wifi.Aware.PeerHandle>("getPeerHandle", "()Landroid/net/wifi/aware/PeerHandle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/ServiceDiscoveryInfo.html#getPairingConfig()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/ServiceDiscoveryInfo.html#getScid()"/>
         /// </summary>
-        public Android.Net.Wifi.Aware.AwarePairingConfig PairingConfig
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetScid()
         {
-            get { return IExecuteWithSignature<Android.Net.Wifi.Aware.AwarePairingConfig>("getPairingConfig", "()Landroid/net/wifi/aware/AwarePairingConfig;"); }
+            return IExecuteWithSignatureArray<byte>("getScid", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/ServiceDiscoveryInfo.html#getPeerCipherSuite()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/ServiceDiscoveryInfo.html#getServiceSpecificInfo()"/>
         /// </summary>
-        public int PeerCipherSuite
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetServiceSpecificInfo()
         {
-            get { return IExecuteWithSignature<int>("getPeerCipherSuite", "()I"); }
+            return IExecuteWithSignatureArray<byte>("getServiceSpecificInfo", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/ServiceDiscoveryInfo.html#getPeerHandle()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/ServiceDiscoveryInfo.html#getPeerCipherSuite()"/>
         /// </summary>
-        public Android.Net.Wifi.Aware.PeerHandle PeerHandle
+        /// <returns><see cref="int"/></returns>
+        public int GetPeerCipherSuite()
         {
-            get { return IExecuteWithSignature<Android.Net.Wifi.Aware.PeerHandle>("getPeerHandle", "()Landroid/net/wifi/aware/PeerHandle;"); }
+            return IExecuteWithSignature<int>("getPeerCipherSuite", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/ServiceDiscoveryInfo.html#getScid()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/ServiceDiscoveryInfo.html#getPairedAlias()"/>
         /// </summary>
-        public byte[] Scid
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPairedAlias()
         {
-            get { return IExecuteWithSignatureArray<byte>("getScid", "()[B"); }
+            return IExecuteWithSignature<Java.Lang.String>("getPairedAlias", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/ServiceDiscoveryInfo.html#getServiceSpecificInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/ServiceDiscoveryInfo.html#getMatchFilters()"/>
         /// </summary>
-        public byte[] ServiceSpecificInfo
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<byte[]> GetMatchFilters()
         {
-            get { return IExecuteWithSignatureArray<byte>("getServiceSpecificInfo", "()[B"); }
+            return IExecuteWithSignature<Java.Util.List<byte[]>>("getMatchFilters", "()Ljava/util/List;");
         }
 
         #endregion

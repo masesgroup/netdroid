@@ -52,11 +52,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/TotalCaloriesBurnedRecord.html#getEnergy()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/TotalCaloriesBurnedRecord.html#getEnergy()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Energy Energy
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Energy"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Energy GetEnergy()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Energy>("getEnergy", "()Landroid/health/connect/datatypes/units/Energy;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Energy>("getEnergy", "()Landroid/health/connect/datatypes/units/Energy;");
         }
 
         #endregion

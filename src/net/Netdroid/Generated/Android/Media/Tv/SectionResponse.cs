@@ -65,25 +65,28 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/SectionResponse.html#getSessionData()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/SectionResponse.html#getSessionData()"/>
         /// </summary>
-        public Android.Os.Bundle SessionData
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetSessionData()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getSessionData", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getSessionData", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/SectionResponse.html#getSessionId()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/SectionResponse.html#getSessionId()"/>
         /// </summary>
-        public int SessionId
+        /// <returns><see cref="int"/></returns>
+        public int GetSessionId()
         {
-            get { return IExecuteWithSignature<int>("getSessionId", "()I"); }
+            return IExecuteWithSignature<int>("getSessionId", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/SectionResponse.html#getVersion()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/SectionResponse.html#getVersion()"/>
         /// </summary>
-        public int Version
+        /// <returns><see cref="int"/></returns>
+        public int GetVersion()
         {
-            get { return IExecuteWithSignature<int>("getVersion", "()I"); }
+            return IExecuteWithSignature<int>("getVersion", "()I");
         }
 
         #endregion

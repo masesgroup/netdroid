@@ -30,7 +30,7 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/InflaterOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.util.zip.Inflater,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/InflaterOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.util.zip.Inflater,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Util.Zip.Inflater"/></param>
@@ -40,7 +40,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/InflaterOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.util.zip.Inflater)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/InflaterOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.util.zip.Inflater)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Util.Zip.Inflater"/></param>
@@ -49,7 +49,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/InflaterOutputStream.html#%3Cinit%3E(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/InflaterOutputStream.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         public InflaterOutputStream(Java.Io.OutputStream arg0)
@@ -73,7 +73,7 @@ namespace Java.Util.Zip
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/InflaterOutputStream.html#finish()"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/InflaterOutputStream.html#finish()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Finish()

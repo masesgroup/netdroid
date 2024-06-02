@@ -38,19 +38,19 @@ namespace Java.Util.Prefs
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#MAX_KEY_LENGTH"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#MAX_KEY_LENGTH"/>
         /// </summary>
         public static int MAX_KEY_LENGTH { get { if (!_MAX_KEY_LENGTHReady) { _MAX_KEY_LENGTHContent = SGetField<int>(LocalBridgeClazz, "MAX_KEY_LENGTH"); _MAX_KEY_LENGTHReady = true; } return _MAX_KEY_LENGTHContent; } }
         private static int _MAX_KEY_LENGTHContent = default;
         private static bool _MAX_KEY_LENGTHReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#MAX_NAME_LENGTH"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#MAX_NAME_LENGTH"/>
         /// </summary>
         public static int MAX_NAME_LENGTH { get { if (!_MAX_NAME_LENGTHReady) { _MAX_NAME_LENGTHContent = SGetField<int>(LocalBridgeClazz, "MAX_NAME_LENGTH"); _MAX_NAME_LENGTHReady = true; } return _MAX_NAME_LENGTHContent; } }
         private static int _MAX_NAME_LENGTHContent = default;
         private static bool _MAX_NAME_LENGTHReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#MAX_VALUE_LENGTH"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#MAX_VALUE_LENGTH"/>
         /// </summary>
         public static int MAX_VALUE_LENGTH { get { if (!_MAX_VALUE_LENGTHReady) { _MAX_VALUE_LENGTHContent = SGetField<int>(LocalBridgeClazz, "MAX_VALUE_LENGTH"); _MAX_VALUE_LENGTHReady = true; } return _MAX_VALUE_LENGTHContent; } }
         private static int _MAX_VALUE_LENGTHContent = default;
@@ -60,7 +60,7 @@ namespace Java.Util.Prefs
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#systemNodeForPackage(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#systemNodeForPackage(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
@@ -69,7 +69,7 @@ namespace Java.Util.Prefs
             return SExecuteWithSignature<Java.Util.Prefs.Preferences>(LocalBridgeClazz, "systemNodeForPackage", "(Ljava/lang/Class;)Ljava/util/prefs/Preferences;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#systemRoot()"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#systemRoot()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public static Java.Util.Prefs.Preferences SystemRoot()
@@ -77,7 +77,7 @@ namespace Java.Util.Prefs
             return SExecuteWithSignature<Java.Util.Prefs.Preferences>(LocalBridgeClazz, "systemRoot", "()Ljava/util/prefs/Preferences;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#userNodeForPackage(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#userNodeForPackage(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
@@ -86,7 +86,7 @@ namespace Java.Util.Prefs
             return SExecuteWithSignature<Java.Util.Prefs.Preferences>(LocalBridgeClazz, "userNodeForPackage", "(Ljava/lang/Class;)Ljava/util/prefs/Preferences;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#userRoot()"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#userRoot()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public static Java.Util.Prefs.Preferences UserRoot()
@@ -94,7 +94,7 @@ namespace Java.Util.Prefs
             return SExecuteWithSignature<Java.Util.Prefs.Preferences>(LocalBridgeClazz, "userRoot", "()Ljava/util/prefs/Preferences;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#importPreferences(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#importPreferences(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -108,7 +108,7 @@ namespace Java.Util.Prefs
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#getBoolean(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#getBoolean(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -118,7 +118,7 @@ namespace Java.Util.Prefs
             return IExecute<bool>("getBoolean", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#isUserNode()"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#isUserNode()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsUserNode()
@@ -126,7 +126,7 @@ namespace Java.Util.Prefs
             return IExecuteWithSignature<bool>("isUserNode", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#nodeExists(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#nodeExists(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -136,7 +136,7 @@ namespace Java.Util.Prefs
             return IExecuteWithSignature<bool>("nodeExists", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#getByteArray(java.lang.String,byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#getByteArray(java.lang.String,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -146,7 +146,7 @@ namespace Java.Util.Prefs
             return IExecuteArray<byte>("getByteArray", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#getDouble(java.lang.String,double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#getDouble(java.lang.String,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -156,7 +156,7 @@ namespace Java.Util.Prefs
             return IExecute<double>("getDouble", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#getFloat(java.lang.String,float)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#getFloat(java.lang.String,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -166,7 +166,7 @@ namespace Java.Util.Prefs
             return IExecute<float>("getFloat", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#getInt(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#getInt(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -176,7 +176,7 @@ namespace Java.Util.Prefs
             return IExecute<int>("getInt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#absolutePath()"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#absolutePath()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String AbsolutePath()
@@ -184,7 +184,7 @@ namespace Java.Util.Prefs
             return IExecuteWithSignature<Java.Lang.String>("absolutePath", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#get(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#get(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -194,7 +194,7 @@ namespace Java.Util.Prefs
             return IExecute<Java.Lang.String>("get", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#name()"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#name()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
@@ -202,7 +202,7 @@ namespace Java.Util.Prefs
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#childrenNames()"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#childrenNames()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
@@ -211,7 +211,7 @@ namespace Java.Util.Prefs
             return IExecuteWithSignatureArray<Java.Lang.String>("childrenNames", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#keys()"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#keys()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
@@ -220,7 +220,7 @@ namespace Java.Util.Prefs
             return IExecuteWithSignatureArray<Java.Lang.String>("keys", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#node(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#node(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
@@ -229,7 +229,7 @@ namespace Java.Util.Prefs
             return IExecuteWithSignature<Java.Util.Prefs.Preferences>("node", "(Ljava/lang/String;)Ljava/util/prefs/Preferences;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#parent()"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#parent()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
         public Java.Util.Prefs.Preferences Parent()
@@ -237,7 +237,7 @@ namespace Java.Util.Prefs
             return IExecuteWithSignature<Java.Util.Prefs.Preferences>("parent", "()Ljava/util/prefs/Preferences;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#getLong(java.lang.String,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#getLong(java.lang.String,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -247,7 +247,7 @@ namespace Java.Util.Prefs
             return IExecute<long>("getLong", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#addNodeChangeListener(java.util.prefs.NodeChangeListener)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#addNodeChangeListener(java.util.prefs.NodeChangeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeListener"/></param>
         public void AddNodeChangeListener(Java.Util.Prefs.NodeChangeListener arg0)
@@ -255,7 +255,7 @@ namespace Java.Util.Prefs
             IExecuteWithSignature("addNodeChangeListener", "(Ljava/util/prefs/NodeChangeListener;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#addPreferenceChangeListener(java.util.prefs.PreferenceChangeListener)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#addPreferenceChangeListener(java.util.prefs.PreferenceChangeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Prefs.PreferenceChangeListener"/></param>
         public void AddPreferenceChangeListener(Java.Util.Prefs.PreferenceChangeListener arg0)
@@ -263,7 +263,7 @@ namespace Java.Util.Prefs
             IExecuteWithSignature("addPreferenceChangeListener", "(Ljava/util/prefs/PreferenceChangeListener;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#clear()"/>
         /// </summary>
         /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void Clear()
@@ -271,7 +271,7 @@ namespace Java.Util.Prefs
             IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#exportNode(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#exportNode(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -281,7 +281,7 @@ namespace Java.Util.Prefs
             IExecuteWithSignature("exportNode", "(Ljava/io/OutputStream;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#exportSubtree(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#exportSubtree(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -291,7 +291,7 @@ namespace Java.Util.Prefs
             IExecuteWithSignature("exportSubtree", "(Ljava/io/OutputStream;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#flush()"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#flush()"/>
         /// </summary>
         /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void Flush()
@@ -299,7 +299,7 @@ namespace Java.Util.Prefs
             IExecuteWithSignature("flush", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#put(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#put(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -308,7 +308,7 @@ namespace Java.Util.Prefs
             IExecute("put", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#putBoolean(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#putBoolean(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -317,7 +317,7 @@ namespace Java.Util.Prefs
             IExecute("putBoolean", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#putByteArray(java.lang.String,byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#putByteArray(java.lang.String,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -326,7 +326,7 @@ namespace Java.Util.Prefs
             IExecute("putByteArray", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#putDouble(java.lang.String,double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#putDouble(java.lang.String,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -335,7 +335,7 @@ namespace Java.Util.Prefs
             IExecute("putDouble", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#putFloat(java.lang.String,float)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#putFloat(java.lang.String,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -344,7 +344,7 @@ namespace Java.Util.Prefs
             IExecute("putFloat", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#putInt(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#putInt(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -353,7 +353,7 @@ namespace Java.Util.Prefs
             IExecute("putInt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#putLong(java.lang.String,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#putLong(java.lang.String,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -362,7 +362,7 @@ namespace Java.Util.Prefs
             IExecute("putLong", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#remove(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#remove(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void Remove(Java.Lang.String arg0)
@@ -370,7 +370,7 @@ namespace Java.Util.Prefs
             IExecuteWithSignature("remove", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#removeNode()"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#removeNode()"/>
         /// </summary>
         /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void RemoveNode()
@@ -378,7 +378,7 @@ namespace Java.Util.Prefs
             IExecuteWithSignature("removeNode", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#removeNodeChangeListener(java.util.prefs.NodeChangeListener)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#removeNodeChangeListener(java.util.prefs.NodeChangeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeListener"/></param>
         public void RemoveNodeChangeListener(Java.Util.Prefs.NodeChangeListener arg0)
@@ -386,7 +386,7 @@ namespace Java.Util.Prefs
             IExecuteWithSignature("removeNodeChangeListener", "(Ljava/util/prefs/NodeChangeListener;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#removePreferenceChangeListener(java.util.prefs.PreferenceChangeListener)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#removePreferenceChangeListener(java.util.prefs.PreferenceChangeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Prefs.PreferenceChangeListener"/></param>
         public void RemovePreferenceChangeListener(Java.Util.Prefs.PreferenceChangeListener arg0)
@@ -394,7 +394,7 @@ namespace Java.Util.Prefs
             IExecuteWithSignature("removePreferenceChangeListener", "(Ljava/util/prefs/PreferenceChangeListener;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/Preferences.html#sync()"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/Preferences.html#sync()"/>
         /// </summary>
         /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
         public void Sync()

@@ -46,7 +46,7 @@ namespace Java.Util.Stream
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#isParallel()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#isParallel()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsParallel()
@@ -54,7 +54,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<bool>("isParallel", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
@@ -62,7 +62,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#spliterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#spliterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator Spliterator()
@@ -70,7 +70,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Spliterator>("spliterator", "()Ljava/util/Spliterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#onClose(java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#onClose(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
@@ -79,7 +79,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.BaseStream>("onClose", "(Ljava/lang/Runnable;)Ljava/util/stream/BaseStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#parallel()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#parallel()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         public Java.Util.Stream.BaseStream Parallel()
@@ -87,7 +87,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.BaseStream>("parallel", "()Ljava/util/stream/BaseStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#sequential()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#sequential()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         public Java.Util.Stream.BaseStream Sequential()
@@ -95,7 +95,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.BaseStream>("sequential", "()Ljava/util/stream/BaseStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#unordered()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#unordered()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         public Java.Util.Stream.BaseStream Unordered()
@@ -103,7 +103,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.BaseStream>("unordered", "()Ljava/util/stream/BaseStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#close()"/>
         /// </summary>
         public void Close()
         {
@@ -163,7 +163,7 @@ namespace Java.Util.Stream
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#isParallel()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#isParallel()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsParallel()
@@ -171,7 +171,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<bool>("isParallel", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<T> Iterator()
@@ -179,7 +179,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Iterator<T>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#spliterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#spliterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator<T> Spliterator()
@@ -187,7 +187,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Spliterator<T>>("spliterator", "()Ljava/util/Spliterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#onClose(java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#onClose(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <returns><typeparamref name="S"/></returns>
@@ -196,7 +196,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<S>("onClose", "(Ljava/lang/Runnable;)Ljava/util/stream/BaseStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#parallel()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#parallel()"/>
         /// </summary>
         /// <returns><typeparamref name="S"/></returns>
         public S Parallel()
@@ -204,7 +204,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<S>("parallel", "()Ljava/util/stream/BaseStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#sequential()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#sequential()"/>
         /// </summary>
         /// <returns><typeparamref name="S"/></returns>
         public S Sequential()
@@ -212,7 +212,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<S>("sequential", "()Ljava/util/stream/BaseStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#unordered()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#unordered()"/>
         /// </summary>
         /// <returns><typeparamref name="S"/></returns>
         public S Unordered()
@@ -220,7 +220,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<S>("unordered", "()Ljava/util/stream/BaseStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/BaseStream.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#close()"/>
         /// </summary>
         public void Close()
         {

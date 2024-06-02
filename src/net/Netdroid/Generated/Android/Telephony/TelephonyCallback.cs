@@ -74,7 +74,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onActiveDataSubscriptionIdChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnActiveDataSubscriptionIdChangedEventHandler));
+                AddEventHandler("onActiveDataSubscriptionIdChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnActiveDataSubscriptionIdChangedEventHandler));
 
             }
 
@@ -82,7 +82,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.ActiveDataSubscriptionIdListener.html#onActiveDataSubscriptionIdChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnActiveDataSubscriptionIdChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnActiveDataSubscriptionIdChanged { get; set; } = null;
+            public global::System.Action<int> OnOnActiveDataSubscriptionIdChanged { get; set; } = null;
 
             void OnActiveDataSubscriptionIdChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -173,7 +173,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onBarringInfoChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.BarringInfo>>>(OnBarringInfoChangedEventHandler));
+                AddEventHandler("onBarringInfoChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.BarringInfo>>>(OnBarringInfoChangedEventHandler));
 
             }
 
@@ -181,7 +181,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.BarringInfoListener.html#onBarringInfoChanged(android.telephony.BarringInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnBarringInfoChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Telephony.BarringInfo> OnOnBarringInfoChanged { get; set; } = null;
+            public global::System.Action<Android.Telephony.BarringInfo> OnOnBarringInfoChanged { get; set; } = null;
 
             void OnBarringInfoChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.BarringInfo>> data)
             {
@@ -272,7 +272,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onCallDisconnectCauseChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnCallDisconnectCauseChangedEventHandler));
+                AddEventHandler("onCallDisconnectCauseChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnCallDisconnectCauseChangedEventHandler));
 
             }
 
@@ -280,7 +280,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CallDisconnectCauseListener.html#onCallDisconnectCauseChanged(int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCallDisconnectCauseChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int, int> OnOnCallDisconnectCauseChanged { get; set; } = null;
+            public global::System.Action<int, int> OnOnCallDisconnectCauseChanged { get; set; } = null;
 
             void OnCallDisconnectCauseChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -373,7 +373,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onCallForwardingIndicatorChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnCallForwardingIndicatorChangedEventHandler));
+                AddEventHandler("onCallForwardingIndicatorChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnCallForwardingIndicatorChangedEventHandler));
 
             }
 
@@ -381,7 +381,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CallForwardingIndicatorListener.html#onCallForwardingIndicatorChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCallForwardingIndicatorChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnCallForwardingIndicatorChanged { get; set; } = null;
+            public global::System.Action<bool> OnOnCallForwardingIndicatorChanged { get; set; } = null;
 
             void OnCallForwardingIndicatorChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
             {
@@ -472,7 +472,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onCallStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnCallStateChangedEventHandler));
+                AddEventHandler("onCallStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnCallStateChangedEventHandler));
 
             }
 
@@ -480,7 +480,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CallStateListener.html#onCallStateChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCallStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnCallStateChanged { get; set; } = null;
+            public global::System.Action<int> OnOnCallStateChanged { get; set; } = null;
 
             void OnCallStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -571,7 +571,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onCarrierNetworkChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnCarrierNetworkChangeEventHandler));
+                AddEventHandler("onCarrierNetworkChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnCarrierNetworkChangeEventHandler));
 
             }
 
@@ -579,7 +579,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CarrierNetworkListener.html#onCarrierNetworkChange(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCarrierNetworkChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnCarrierNetworkChange { get; set; } = null;
+            public global::System.Action<bool> OnOnCarrierNetworkChange { get; set; } = null;
 
             void OnCarrierNetworkChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
             {
@@ -670,7 +670,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onCellInfoChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Telephony.CellInfo>>>>(OnCellInfoChangedEventHandler));
+                AddEventHandler("onCellInfoChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Telephony.CellInfo>>>>(OnCellInfoChangedEventHandler));
 
             }
 
@@ -678,7 +678,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CellInfoListener.html#onCellInfoChanged(java.util.List)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCellInfoChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Util.List<Android.Telephony.CellInfo>> OnOnCellInfoChanged { get; set; } = null;
+            public global::System.Action<Java.Util.List<Android.Telephony.CellInfo>> OnOnCellInfoChanged { get; set; } = null;
 
             void OnCellInfoChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Telephony.CellInfo>>> data)
             {
@@ -769,7 +769,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onCellLocationChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.CellLocation>>>(OnCellLocationChangedEventHandler));
+                AddEventHandler("onCellLocationChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.CellLocation>>>(OnCellLocationChangedEventHandler));
 
             }
 
@@ -777,7 +777,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.CellLocationListener.html#onCellLocationChanged(android.telephony.CellLocation)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCellLocationChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Telephony.CellLocation> OnOnCellLocationChanged { get; set; } = null;
+            public global::System.Action<Android.Telephony.CellLocation> OnOnCellLocationChanged { get; set; } = null;
 
             void OnCellLocationChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.CellLocation>> data)
             {
@@ -868,7 +868,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDataActivationStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDataActivationStateChangedEventHandler));
+                AddEventHandler("onDataActivationStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDataActivationStateChangedEventHandler));
 
             }
 
@@ -876,7 +876,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.DataActivationStateListener.html#onDataActivationStateChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDataActivationStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnDataActivationStateChanged { get; set; } = null;
+            public global::System.Action<int> OnOnDataActivationStateChanged { get; set; } = null;
 
             void OnDataActivationStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -967,7 +967,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDataActivity", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDataActivityEventHandler));
+                AddEventHandler("onDataActivity", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDataActivityEventHandler));
 
             }
 
@@ -975,7 +975,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.DataActivityListener.html#onDataActivity(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDataActivity"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnDataActivity { get; set; } = null;
+            public global::System.Action<int> OnOnDataActivity { get; set; } = null;
 
             void OnDataActivityEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -1066,7 +1066,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDataConnectionStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDataConnectionStateChangedEventHandler));
+                AddEventHandler("onDataConnectionStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDataConnectionStateChangedEventHandler));
 
             }
 
@@ -1074,7 +1074,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.DataConnectionStateListener.html#onDataConnectionStateChanged(int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDataConnectionStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int, int> OnOnDataConnectionStateChanged { get; set; } = null;
+            public global::System.Action<int, int> OnOnDataConnectionStateChanged { get; set; } = null;
 
             void OnDataConnectionStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -1167,7 +1167,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDisplayInfoChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.TelephonyDisplayInfo>>>(OnDisplayInfoChangedEventHandler));
+                AddEventHandler("onDisplayInfoChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.TelephonyDisplayInfo>>>(OnDisplayInfoChangedEventHandler));
 
             }
 
@@ -1175,7 +1175,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.DisplayInfoListener.html#onDisplayInfoChanged(android.telephony.TelephonyDisplayInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDisplayInfoChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Telephony.TelephonyDisplayInfo> OnOnDisplayInfoChanged { get; set; } = null;
+            public global::System.Action<Android.Telephony.TelephonyDisplayInfo> OnOnDisplayInfoChanged { get; set; } = null;
 
             void OnDisplayInfoChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.TelephonyDisplayInfo>> data)
             {
@@ -1266,7 +1266,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onEmergencyNumberListChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Map<Java.Lang.Integer, Java.Util.List<Android.Telephony.Emergency.EmergencyNumber>>>>>(OnEmergencyNumberListChangedEventHandler));
+                AddEventHandler("onEmergencyNumberListChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Map<Java.Lang.Integer, Java.Util.List<Android.Telephony.Emergency.EmergencyNumber>>>>>(OnEmergencyNumberListChangedEventHandler));
 
             }
 
@@ -1274,7 +1274,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.EmergencyNumberListListener.html#onEmergencyNumberListChanged(java.util.Map)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnEmergencyNumberListChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Util.Map<Java.Lang.Integer, Java.Util.List<Android.Telephony.Emergency.EmergencyNumber>>> OnOnEmergencyNumberListChanged { get; set; } = null;
+            public global::System.Action<Java.Util.Map<Java.Lang.Integer, Java.Util.List<Android.Telephony.Emergency.EmergencyNumber>>> OnOnEmergencyNumberListChanged { get; set; } = null;
 
             void OnEmergencyNumberListChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Map<Java.Lang.Integer, Java.Util.List<Android.Telephony.Emergency.EmergencyNumber>>>> data)
             {
@@ -1365,7 +1365,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onImsCallDisconnectCauseChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.Ims.ImsReasonInfo>>>(OnImsCallDisconnectCauseChangedEventHandler));
+                AddEventHandler("onImsCallDisconnectCauseChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.Ims.ImsReasonInfo>>>(OnImsCallDisconnectCauseChangedEventHandler));
 
             }
 
@@ -1373,7 +1373,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.ImsCallDisconnectCauseListener.html#onImsCallDisconnectCauseChanged(android.telephony.ims.ImsReasonInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnImsCallDisconnectCauseChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Telephony.Ims.ImsReasonInfo> OnOnImsCallDisconnectCauseChanged { get; set; } = null;
+            public global::System.Action<Android.Telephony.Ims.ImsReasonInfo> OnOnImsCallDisconnectCauseChanged { get; set; } = null;
 
             void OnImsCallDisconnectCauseChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.Ims.ImsReasonInfo>> data)
             {
@@ -1464,7 +1464,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onMessageWaitingIndicatorChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnMessageWaitingIndicatorChangedEventHandler));
+                AddEventHandler("onMessageWaitingIndicatorChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnMessageWaitingIndicatorChangedEventHandler));
 
             }
 
@@ -1472,7 +1472,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.MessageWaitingIndicatorListener.html#onMessageWaitingIndicatorChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMessageWaitingIndicatorChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnMessageWaitingIndicatorChanged { get; set; } = null;
+            public global::System.Action<bool> OnOnMessageWaitingIndicatorChanged { get; set; } = null;
 
             void OnMessageWaitingIndicatorChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
             {
@@ -1563,7 +1563,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onPhysicalChannelConfigChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Telephony.PhysicalChannelConfig>>>>(OnPhysicalChannelConfigChangedEventHandler));
+                AddEventHandler("onPhysicalChannelConfigChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Telephony.PhysicalChannelConfig>>>>(OnPhysicalChannelConfigChangedEventHandler));
 
             }
 
@@ -1571,7 +1571,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.PhysicalChannelConfigListener.html#onPhysicalChannelConfigChanged(java.util.List)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPhysicalChannelConfigChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Util.List<Android.Telephony.PhysicalChannelConfig>> OnOnPhysicalChannelConfigChanged { get; set; } = null;
+            public global::System.Action<Java.Util.List<Android.Telephony.PhysicalChannelConfig>> OnOnPhysicalChannelConfigChanged { get; set; } = null;
 
             void OnPhysicalChannelConfigChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Telephony.PhysicalChannelConfig>>> data)
             {
@@ -1662,7 +1662,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onPreciseDataConnectionStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.PreciseDataConnectionState>>>(OnPreciseDataConnectionStateChangedEventHandler));
+                AddEventHandler("onPreciseDataConnectionStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.PreciseDataConnectionState>>>(OnPreciseDataConnectionStateChangedEventHandler));
 
             }
 
@@ -1670,7 +1670,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.PreciseDataConnectionStateListener.html#onPreciseDataConnectionStateChanged(android.telephony.PreciseDataConnectionState)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPreciseDataConnectionStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Telephony.PreciseDataConnectionState> OnOnPreciseDataConnectionStateChanged { get; set; } = null;
+            public global::System.Action<Android.Telephony.PreciseDataConnectionState> OnOnPreciseDataConnectionStateChanged { get; set; } = null;
 
             void OnPreciseDataConnectionStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.PreciseDataConnectionState>> data)
             {
@@ -1761,7 +1761,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onRegistrationFailed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.CellIdentity>>>(OnRegistrationFailedEventHandler));
+                AddEventHandler("onRegistrationFailed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.CellIdentity>>>(OnRegistrationFailedEventHandler));
 
             }
 
@@ -1769,7 +1769,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.RegistrationFailedListener.html#onRegistrationFailed(android.telephony.CellIdentity,java.lang.String,int,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnRegistrationFailed"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Telephony.CellIdentity, Java.Lang.String, int, int, int> OnOnRegistrationFailed { get; set; } = null;
+            public global::System.Action<Android.Telephony.CellIdentity, Java.Lang.String, int, int, int> OnOnRegistrationFailed { get; set; } = null;
 
             void OnRegistrationFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.CellIdentity>> data)
             {
@@ -1868,7 +1868,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onServiceStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.ServiceState>>>(OnServiceStateChangedEventHandler));
+                AddEventHandler("onServiceStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.ServiceState>>>(OnServiceStateChangedEventHandler));
 
             }
 
@@ -1876,7 +1876,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.ServiceStateListener.html#onServiceStateChanged(android.telephony.ServiceState)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnServiceStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Telephony.ServiceState> OnOnServiceStateChanged { get; set; } = null;
+            public global::System.Action<Android.Telephony.ServiceState> OnOnServiceStateChanged { get; set; } = null;
 
             void OnServiceStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.ServiceState>> data)
             {
@@ -1967,7 +1967,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onSignalStrengthsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.SignalStrength>>>(OnSignalStrengthsChangedEventHandler));
+                AddEventHandler("onSignalStrengthsChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.SignalStrength>>>(OnSignalStrengthsChangedEventHandler));
 
             }
 
@@ -1975,7 +1975,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.SignalStrengthsListener.html#onSignalStrengthsChanged(android.telephony.SignalStrength)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSignalStrengthsChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Telephony.SignalStrength> OnOnSignalStrengthsChanged { get; set; } = null;
+            public global::System.Action<Android.Telephony.SignalStrength> OnOnSignalStrengthsChanged { get; set; } = null;
 
             void OnSignalStrengthsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.SignalStrength>> data)
             {
@@ -2066,7 +2066,7 @@ namespace Android.Telephony
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onUserMobileDataStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnUserMobileDataStateChangedEventHandler));
+                AddEventHandler("onUserMobileDataStateChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnUserMobileDataStateChangedEventHandler));
 
             }
 
@@ -2074,7 +2074,7 @@ namespace Android.Telephony
             /// Handler for <see href="https://developer.android.com/reference/android/telephony/TelephonyCallback.UserMobileDataStateListener.html#onUserMobileDataStateChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnUserMobileDataStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnUserMobileDataStateChanged { get; set; } = null;
+            public global::System.Action<bool> OnOnUserMobileDataStateChanged { get; set; } = null;
 
             void OnUserMobileDataStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
             {

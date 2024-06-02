@@ -64,11 +64,26 @@ namespace Android.Media.Audiofx
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/LoudnessEnhancer.html#getTargetGain()"/> <see href="https://developer.android.com/reference/android/media/audiofx/LoudnessEnhancer.html#setTargetGain(int)"/>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/LoudnessEnhancer.html#getTargetGain()"/>
         /// </summary>
-        public float TargetGain
+        /// <returns><see cref="float"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public float GetTargetGain()
         {
-            get { return IExecuteWithSignature<float>("getTargetGain", "()F"); } set { IExecuteWithSignature("setTargetGain", "(I)V", value); }
+            return IExecuteWithSignature<float>("getTargetGain", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/LoudnessEnhancer.html#setTargetGain(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public void SetTargetGain(int arg0)
+        {
+            IExecuteWithSignature("setTargetGain", "(I)V", arg0);
         }
 
         #endregion

@@ -46,18 +46,12 @@ namespace Android.Se.Omapi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/se/omapi/Reader.html#getName()"/> 
+        /// <see href="https://developer.android.com/reference/android/se/omapi/Reader.html#getSEService()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="Android.Se.Omapi.SEService"/></returns>
+        public Android.Se.Omapi.SEService GetSEService()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/se/omapi/Reader.html#getSEService()"/> 
-        /// </summary>
-        public Android.Se.Omapi.SEService SEService
-        {
-            get { return IExecuteWithSignature<Android.Se.Omapi.SEService>("getSEService", "()Landroid/se/omapi/SEService;"); }
+            return IExecuteWithSignature<Android.Se.Omapi.SEService>("getSEService", "()Landroid/se/omapi/SEService;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/se/omapi/Reader.html#openSession()"/>
@@ -75,6 +69,14 @@ namespace Android.Se.Omapi
         public bool IsSecureElementPresent()
         {
             return IExecuteWithSignature<bool>("isSecureElementPresent", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/se/omapi/Reader.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/se/omapi/Reader.html#closeSessions()"/>

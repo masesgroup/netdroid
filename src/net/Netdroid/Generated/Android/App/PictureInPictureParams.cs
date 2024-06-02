@@ -52,53 +52,36 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/PictureInPictureParams.html#getActions()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/PictureInPictureParams.html#getCloseAction()"/>
         /// </summary>
-        public Java.Util.List<Android.App.RemoteAction> Actions
+        /// <returns><see cref="Android.App.RemoteAction"/></returns>
+        public Android.App.RemoteAction GetCloseAction()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.RemoteAction>>("getActions", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.App.RemoteAction>("getCloseAction", "()Landroid/app/RemoteAction;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/PictureInPictureParams.html#getAspectRatio()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/PictureInPictureParams.html#getSourceRectHint()"/>
         /// </summary>
-        public Android.Util.Rational AspectRatio
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetSourceRectHint()
         {
-            get { return IExecuteWithSignature<Android.Util.Rational>("getAspectRatio", "()Landroid/util/Rational;"); }
+            return IExecuteWithSignature<Android.Graphics.Rect>("getSourceRectHint", "()Landroid/graphics/Rect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/PictureInPictureParams.html#getCloseAction()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/PictureInPictureParams.html#getAspectRatio()"/>
         /// </summary>
-        public Android.App.RemoteAction CloseAction
+        /// <returns><see cref="Android.Util.Rational"/></returns>
+        public Android.Util.Rational GetAspectRatio()
         {
-            get { return IExecuteWithSignature<Android.App.RemoteAction>("getCloseAction", "()Landroid/app/RemoteAction;"); }
+            return IExecuteWithSignature<Android.Util.Rational>("getAspectRatio", "()Landroid/util/Rational;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/PictureInPictureParams.html#getExpandedAspectRatio()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/PictureInPictureParams.html#getExpandedAspectRatio()"/>
         /// </summary>
-        public Android.Util.Rational ExpandedAspectRatio
+        /// <returns><see cref="Android.Util.Rational"/></returns>
+        public Android.Util.Rational GetExpandedAspectRatio()
         {
-            get { return IExecuteWithSignature<Android.Util.Rational>("getExpandedAspectRatio", "()Landroid/util/Rational;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/PictureInPictureParams.html#getSourceRectHint()"/> 
-        /// </summary>
-        public Android.Graphics.Rect SourceRectHint
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getSourceRectHint", "()Landroid/graphics/Rect;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/PictureInPictureParams.html#getSubtitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Subtitle
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSubtitle", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/PictureInPictureParams.html#getTitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Title
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Android.Util.Rational>("getExpandedAspectRatio", "()Landroid/util/Rational;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PictureInPictureParams.html#isAutoEnterEnabled()"/>
@@ -123,6 +106,30 @@ namespace Android.App
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/PictureInPictureParams.html#getSubtitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetSubtitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getSubtitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/PictureInPictureParams.html#getTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/PictureInPictureParams.html#getActions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.RemoteAction> GetActions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.RemoteAction>>("getActions", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PictureInPictureParams.html#writeToParcel(android.os.Parcel,int)"/>

@@ -75,25 +75,12 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Session2Command.html#getCommandCode()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/Session2Command.html#getCustomExtras()"/>
         /// </summary>
-        public int CommandCode
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetCustomExtras()
         {
-            get { return IExecuteWithSignature<int>("getCommandCode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Session2Command.html#getCustomAction()"/> 
-        /// </summary>
-        public Java.Lang.String CustomAction
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCustomAction", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Session2Command.html#getCustomExtras()"/> 
-        /// </summary>
-        public Android.Os.Bundle CustomExtras
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getCustomExtras", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getCustomExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Session2Command.html#describeContents()"/>
@@ -102,6 +89,22 @@ namespace Android.Media
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Session2Command.html#getCommandCode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCommandCode()
+        {
+            return IExecuteWithSignature<int>("getCommandCode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Session2Command.html#getCustomAction()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCustomAction()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCustomAction", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Session2Command.html#writeToParcel(android.os.Parcel,int)"/>
@@ -164,18 +167,20 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/Session2Command.Result.html#getResultCode()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/Session2Command.Result.html#getResultData()"/>
             /// </summary>
-            public int ResultCode
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetResultData()
             {
-                get { return IExecuteWithSignature<int>("getResultCode", "()I"); }
+                return IExecuteWithSignature<Android.Os.Bundle>("getResultData", "()Landroid/os/Bundle;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/Session2Command.Result.html#getResultData()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/Session2Command.Result.html#getResultCode()"/>
             /// </summary>
-            public Android.Os.Bundle ResultData
+            /// <returns><see cref="int"/></returns>
+            public int GetResultCode()
             {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getResultData", "()Landroid/os/Bundle;"); }
+                return IExecuteWithSignature<int>("getResultCode", "()I");
             }
 
             #endregion

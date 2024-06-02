@@ -46,7 +46,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedMap.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection Values()
@@ -54,7 +54,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Collection>("values", "()Ljava/util/Collection;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#entrySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedMap.html#entrySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set EntrySet()
@@ -62,7 +62,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Set>("entrySet", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#keySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedMap.html#keySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set KeySet()
@@ -70,7 +70,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#headMap(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedMap.html#headMap(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
@@ -79,7 +79,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.SortedMap>("headMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#subMap(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedMap.html#subMap(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -89,7 +89,7 @@ namespace Java.Util
             return IExecute<Java.Util.SortedMap>("subMap", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#tailMap(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedMap.html#tailMap(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
@@ -98,7 +98,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.SortedMap>("tailMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#firstKey()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedMap.html#firstKey()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object FirstKey()
@@ -106,7 +106,7 @@ namespace Java.Util
             return IExecuteWithSignature("firstKey", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#lastKey()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedMap.html#lastKey()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object LastKey()
@@ -167,7 +167,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedMap.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection<V> Values()
@@ -175,7 +175,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Collection<V>>("values", "()Ljava/util/Collection;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#entrySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedMap.html#entrySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySet()
@@ -183,7 +183,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Set<Java.Util.Map.Entry<K, V>>>("entrySet", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#keySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedMap.html#keySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<K> KeySet()
@@ -191,7 +191,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Set<K>>("keySet", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#headMap(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedMap.html#headMap(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
@@ -200,7 +200,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.SortedMap<K, V>>("headMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#subMap(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedMap.html#subMap(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="K"/></param>
@@ -210,7 +210,7 @@ namespace Java.Util
             return IExecute<Java.Util.SortedMap<K, V>>("subMap", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#tailMap(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedMap.html#tailMap(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
@@ -219,7 +219,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.SortedMap<K, V>>("tailMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#firstKey()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedMap.html#firstKey()"/>
         /// </summary>
         /// <returns><typeparamref name="K"/></returns>
         public K FirstKey()
@@ -227,7 +227,7 @@ namespace Java.Util
             return IExecuteWithSignature<K>("firstKey", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/SortedMap.html#lastKey()"/>
+        /// <see href="https://developer.android.com/reference/java/util/SortedMap.html#lastKey()"/>
         /// </summary>
         /// <returns><typeparamref name="K"/></returns>
         public K LastKey()

@@ -52,11 +52,12 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DisplayShape.html#getPath()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/DisplayShape.html#getPath()"/>
         /// </summary>
-        public Android.Graphics.Path Path
+        /// <returns><see cref="Android.Graphics.Path"/></returns>
+        public Android.Graphics.Path GetPath()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Path>("getPath", "()Landroid/graphics/Path;"); }
+            return IExecuteWithSignature<Android.Graphics.Path>("getPath", "()Landroid/graphics/Path;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/DisplayShape.html#describeContents()"/>

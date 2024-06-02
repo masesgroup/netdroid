@@ -64,11 +64,12 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/ECKey.html#getParams()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/ECKey.html#getParams()"/>
         /// </summary>
-        public Java.Security.Spec.ECParameterSpec Params
+        /// <returns><see cref="Java.Security.Spec.ECParameterSpec"/></returns>
+        public Java.Security.Spec.ECParameterSpec GetParams()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.ECParameterSpec>("getParams", "()Ljava/security/spec/ECParameterSpec;"); }
+            return IExecuteWithSignature<Java.Security.Spec.ECParameterSpec>("getParams", "()Ljava/security/spec/ECParameterSpec;");
         }
 
         #endregion

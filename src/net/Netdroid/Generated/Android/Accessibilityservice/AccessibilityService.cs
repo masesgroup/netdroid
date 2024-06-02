@@ -508,76 +508,6 @@ namespace Android.Accessibilityservice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getAccessibilityButtonController()"/> 
-        /// </summary>
-        public Android.Accessibilityservice.AccessibilityButtonController AccessibilityButtonController
-        {
-            get { return IExecuteWithSignature<Android.Accessibilityservice.AccessibilityButtonController>("getAccessibilityButtonController", "()Landroid/accessibilityservice/AccessibilityButtonController;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getFingerprintGestureController()"/> 
-        /// </summary>
-        public Android.Accessibilityservice.FingerprintGestureController FingerprintGestureController
-        {
-            get { return IExecuteWithSignature<Android.Accessibilityservice.FingerprintGestureController>("getFingerprintGestureController", "()Landroid/accessibilityservice/FingerprintGestureController;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getMagnificationController()"/> 
-        /// </summary>
-        public Android.Accessibilityservice.AccessibilityService.MagnificationController GetMagnificationController
-        {
-            get { return IExecuteWithSignature<Android.Accessibilityservice.AccessibilityService.MagnificationController>("getMagnificationController", "()Landroid/accessibilityservice/AccessibilityService$MagnificationController;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getSoftKeyboardController()"/> 
-        /// </summary>
-        public Android.Accessibilityservice.AccessibilityService.SoftKeyboardController GetSoftKeyboardController
-        {
-            get { return IExecuteWithSignature<Android.Accessibilityservice.AccessibilityService.SoftKeyboardController>("getSoftKeyboardController", "()Landroid/accessibilityservice/AccessibilityService$SoftKeyboardController;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getInputMethod()"/> 
-        /// </summary>
-        public Android.Accessibilityservice.InputMethod InputMethod
-        {
-            get { return IExecuteWithSignature<Android.Accessibilityservice.InputMethod>("getInputMethod", "()Landroid/accessibilityservice/InputMethod;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getRootInActiveWindow()"/> 
-        /// </summary>
-        public Android.View.Accessibility.AccessibilityNodeInfo RootInActiveWindow
-        {
-            get { return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>("getRootInActiveWindow", "()Landroid/view/accessibility/AccessibilityNodeInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getServiceInfo()"/> <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#setServiceInfo(android.accessibilityservice.AccessibilityServiceInfo)"/>
-        /// </summary>
-        public Android.Accessibilityservice.AccessibilityServiceInfo ServiceInfo
-        {
-            get { return IExecuteWithSignature<Android.Accessibilityservice.AccessibilityServiceInfo>("getServiceInfo", "()Landroid/accessibilityservice/AccessibilityServiceInfo;"); } set { IExecuteWithSignature("setServiceInfo", "(Landroid/accessibilityservice/AccessibilityServiceInfo;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getSystemActions()"/> 
-        /// </summary>
-        public Java.Util.List<Android.View.Accessibility.AccessibilityNodeInfo.AccessibilityAction> SystemActions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.View.Accessibility.AccessibilityNodeInfo.AccessibilityAction>>("getSystemActions", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getWindows()"/> 
-        /// </summary>
-        public Java.Util.List<Android.View.Accessibility.AccessibilityWindowInfo> Windows
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.View.Accessibility.AccessibilityWindowInfo>>("getWindows", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getWindowsOnAllDisplays()"/> 
-        /// </summary>
-        public Android.Util.SparseArray<Java.Util.List<Android.View.Accessibility.AccessibilityWindowInfo>> WindowsOnAllDisplays
-        {
-            get { return IExecuteWithSignature<Android.Util.SparseArray<Java.Util.List<Android.View.Accessibility.AccessibilityWindowInfo>>>("getWindowsOnAllDisplays", "()Landroid/util/SparseArray;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#onAccessibilityEvent(android.view.accessibility.AccessibilityEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Accessibility.AccessibilityEvent"/></param>
@@ -608,6 +538,14 @@ namespace Android.Accessibilityservice
         public Android.View.Accessibility.AccessibilityNodeInfo FindFocus(int arg0)
         {
             return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>("findFocus", "(I)Landroid/view/accessibility/AccessibilityNodeInfo;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getRootInActiveWindow()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo"/></returns>
+        public Android.View.Accessibility.AccessibilityNodeInfo GetRootInActiveWindow()
+        {
+            return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>("getRootInActiveWindow", "()Landroid/view/accessibility/AccessibilityNodeInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getRootInActiveWindow(int)"/>
@@ -671,6 +609,14 @@ namespace Android.Accessibilityservice
             return IExecuteWithSignature<bool>("setCacheEnabled", "(Z)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getAccessibilityButtonController()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Accessibilityservice.AccessibilityButtonController"/></returns>
+        public Android.Accessibilityservice.AccessibilityButtonController GetAccessibilityButtonController()
+        {
+            return IExecuteWithSignature<Android.Accessibilityservice.AccessibilityButtonController>("getAccessibilityButtonController", "()Landroid/accessibilityservice/AccessibilityButtonController;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getAccessibilityButtonController(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -680,6 +626,46 @@ namespace Android.Accessibilityservice
             return IExecuteWithSignature<Android.Accessibilityservice.AccessibilityButtonController>("getAccessibilityButtonController", "(I)Landroid/accessibilityservice/AccessibilityButtonController;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getMagnificationController()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Accessibilityservice.AccessibilityService.MagnificationController"/></returns>
+        public Android.Accessibilityservice.AccessibilityService.MagnificationController GetMagnificationController()
+        {
+            return IExecuteWithSignature<Android.Accessibilityservice.AccessibilityService.MagnificationController>("getMagnificationController", "()Landroid/accessibilityservice/AccessibilityService$MagnificationController;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getSoftKeyboardController()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Accessibilityservice.AccessibilityService.SoftKeyboardController"/></returns>
+        public Android.Accessibilityservice.AccessibilityService.SoftKeyboardController GetSoftKeyboardController()
+        {
+            return IExecuteWithSignature<Android.Accessibilityservice.AccessibilityService.SoftKeyboardController>("getSoftKeyboardController", "()Landroid/accessibilityservice/AccessibilityService$SoftKeyboardController;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getServiceInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Accessibilityservice.AccessibilityServiceInfo"/></returns>
+        public Android.Accessibilityservice.AccessibilityServiceInfo GetServiceInfo()
+        {
+            return IExecuteWithSignature<Android.Accessibilityservice.AccessibilityServiceInfo>("getServiceInfo", "()Landroid/accessibilityservice/AccessibilityServiceInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getFingerprintGestureController()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Accessibilityservice.FingerprintGestureController"/></returns>
+        public Android.Accessibilityservice.FingerprintGestureController GetFingerprintGestureController()
+        {
+            return IExecuteWithSignature<Android.Accessibilityservice.FingerprintGestureController>("getFingerprintGestureController", "()Landroid/accessibilityservice/FingerprintGestureController;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getInputMethod()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Accessibilityservice.InputMethod"/></returns>
+        public Android.Accessibilityservice.InputMethod GetInputMethod()
+        {
+            return IExecuteWithSignature<Android.Accessibilityservice.InputMethod>("getInputMethod", "()Landroid/accessibilityservice/InputMethod;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getTouchInteractionController(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -687,6 +673,14 @@ namespace Android.Accessibilityservice
         public Android.Accessibilityservice.TouchInteractionController GetTouchInteractionController(int arg0)
         {
             return IExecuteWithSignature<Android.Accessibilityservice.TouchInteractionController>("getTouchInteractionController", "(I)Landroid/accessibilityservice/TouchInteractionController;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getWindowsOnAllDisplays()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Util.SparseArray"/></returns>
+        public Android.Util.SparseArray<Java.Util.List<Android.View.Accessibility.AccessibilityWindowInfo>> GetWindowsOnAllDisplays()
+        {
+            return IExecuteWithSignature<Android.Util.SparseArray<Java.Util.List<Android.View.Accessibility.AccessibilityWindowInfo>>>("getWindowsOnAllDisplays", "()Landroid/util/SparseArray;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#dispatchGesture(android.accessibilityservice.GestureDescription,android.accessibilityservice.AccessibilityService.GestureResultCallback,android.os.Handler)"/>
@@ -709,11 +703,35 @@ namespace Android.Accessibilityservice
             return IExecuteWithSignature<bool>("performGlobalAction", "(I)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getSystemActions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.Accessibility.AccessibilityNodeInfo.AccessibilityAction> GetSystemActions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.View.Accessibility.AccessibilityNodeInfo.AccessibilityAction>>("getSystemActions", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#disableSelf()"/>
         /// </summary>
         public void DisableSelf()
         {
             IExecuteWithSignature("disableSelf", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#setServiceInfo(android.accessibilityservice.AccessibilityServiceInfo)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Accessibilityservice.AccessibilityServiceInfo"/></param>
+        public void SetServiceInfo(Android.Accessibilityservice.AccessibilityServiceInfo arg0)
+        {
+            IExecuteWithSignature("setServiceInfo", "(Landroid/accessibilityservice/AccessibilityServiceInfo;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#getWindows()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.Accessibility.AccessibilityWindowInfo> GetWindows()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.View.Accessibility.AccessibilityWindowInfo>>("getWindows", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.html#attachAccessibilityOverlayToDisplay(int,android.view.SurfaceControl)"/>
@@ -875,50 +893,29 @@ namespace Android.Accessibilityservice
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getCenterX()"/> 
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getMagnificationConfig()"/>
             /// </summary>
-            [System.Obsolete()]
-            public float CenterX
+            /// <returns><see cref="Android.Accessibilityservice.MagnificationConfig"/></returns>
+            public Android.Accessibilityservice.MagnificationConfig GetMagnificationConfig()
             {
-                get { return IExecuteWithSignature<float>("getCenterX", "()F"); }
+                return IExecuteWithSignature<Android.Accessibilityservice.MagnificationConfig>("getMagnificationConfig", "()Landroid/accessibilityservice/MagnificationConfig;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getCenterY()"/> 
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getCurrentMagnificationRegion()"/>
             /// </summary>
-            [System.Obsolete()]
-            public float CenterY
+            /// <returns><see cref="Android.Graphics.Region"/></returns>
+            public Android.Graphics.Region GetCurrentMagnificationRegion()
             {
-                get { return IExecuteWithSignature<float>("getCenterY", "()F"); }
+                return IExecuteWithSignature<Android.Graphics.Region>("getCurrentMagnificationRegion", "()Landroid/graphics/Region;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getCurrentMagnificationRegion()"/> 
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getMagnificationRegion()"/>
             /// </summary>
-            public Android.Graphics.Region CurrentMagnificationRegion
+            /// <returns><see cref="Android.Graphics.Region"/></returns>
+            [global::System.Obsolete()]
+            public Android.Graphics.Region GetMagnificationRegion()
             {
-                get { return IExecuteWithSignature<Android.Graphics.Region>("getCurrentMagnificationRegion", "()Landroid/graphics/Region;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getMagnificationConfig()"/> 
-            /// </summary>
-            public Android.Accessibilityservice.MagnificationConfig MagnificationConfig
-            {
-                get { return IExecuteWithSignature<Android.Accessibilityservice.MagnificationConfig>("getMagnificationConfig", "()Landroid/accessibilityservice/MagnificationConfig;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getMagnificationRegion()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Android.Graphics.Region MagnificationRegion
-            {
-                get { return IExecuteWithSignature<Android.Graphics.Region>("getMagnificationRegion", "()Landroid/graphics/Region;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getScale()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public float Scale
-            {
-                get { return IExecuteWithSignature<float>("getScale", "()F"); }
+                return IExecuteWithSignature<Android.Graphics.Region>("getMagnificationRegion", "()Landroid/graphics/Region;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#removeListener(android.accessibilityservice.AccessibilityService.MagnificationController.OnMagnificationChangedListener)"/>
@@ -954,7 +951,7 @@ namespace Android.Accessibilityservice
             /// <param name="arg1"><see cref="float"/></param>
             /// <param name="arg2"><see cref="bool"/></param>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public bool SetCenter(float arg0, float arg1, bool arg2)
             {
                 return IExecute<bool>("setCenter", arg0, arg1, arg2);
@@ -975,10 +972,37 @@ namespace Android.Accessibilityservice
             /// <param name="arg0"><see cref="float"/></param>
             /// <param name="arg1"><see cref="bool"/></param>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public bool SetScale(float arg0, bool arg1)
             {
                 return IExecute<bool>("setScale", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getCenterX()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            [global::System.Obsolete()]
+            public float GetCenterX()
+            {
+                return IExecuteWithSignature<float>("getCenterX", "()F");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getCenterY()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            [global::System.Obsolete()]
+            public float GetCenterY()
+            {
+                return IExecuteWithSignature<float>("getCenterY", "()F");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#getScale()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            [global::System.Obsolete()]
+            public float GetScale()
+            {
+                return IExecuteWithSignature<float>("getScale", "()F");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.html#addListener(android.accessibilityservice.AccessibilityService.MagnificationController.OnMagnificationChangedListener,android.os.Handler)"/>
@@ -1026,8 +1050,8 @@ namespace Android.Accessibilityservice
                 /// </summary>
                 protected virtual void InitializeHandlers()
                 {
-                    AddEventHandler("onMagnificationChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Accessibilityservice.AccessibilityService.MagnificationController>>>(OnMagnificationChangedEventHandler));
-                    AddEventHandler("onMagnificationChanged3", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Accessibilityservice.AccessibilityService.MagnificationController>>>(OnMagnificationChanged3EventHandler));
+                    AddEventHandler("onMagnificationChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Accessibilityservice.AccessibilityService.MagnificationController>>>(OnMagnificationChangedEventHandler));
+                    AddEventHandler("onMagnificationChanged3", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Accessibilityservice.AccessibilityService.MagnificationController>>>(OnMagnificationChanged3EventHandler));
 
                 }
 
@@ -1035,7 +1059,7 @@ namespace Android.Accessibilityservice
                 /// Handler for <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.OnMagnificationChangedListener.html#onMagnificationChanged(android.accessibilityservice.AccessibilityService.MagnificationController,android.graphics.Region,float,float,float)"/>
                 /// </summary>
                 /// <remarks>If <see cref="OnOnMagnificationChanged"/> has a value it takes precedence over corresponding class method</remarks>
-                public System.Action<Android.Accessibilityservice.AccessibilityService.MagnificationController, Android.Graphics.Region, float, float, float> OnOnMagnificationChanged { get; set; } = null;
+                public global::System.Action<Android.Accessibilityservice.AccessibilityService.MagnificationController, Android.Graphics.Region, float, float, float> OnOnMagnificationChanged { get; set; } = null;
 
                 void OnMagnificationChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Accessibilityservice.AccessibilityService.MagnificationController>> data)
                 {
@@ -1051,7 +1075,7 @@ namespace Android.Accessibilityservice
                 /// <param name="arg2"><see cref="float"/></param>
                 /// <param name="arg3"><see cref="float"/></param>
                 /// <param name="arg4"><see cref="float"/></param>
-                [System.Obsolete()]
+                [global::System.Obsolete()]
                 public virtual void OnMagnificationChanged(Android.Accessibilityservice.AccessibilityService.MagnificationController arg0, Android.Graphics.Region arg1, float arg2, float arg3, float arg4)
                 {
                     
@@ -1072,7 +1096,7 @@ namespace Android.Accessibilityservice
                 /// Handler for <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.MagnificationController.OnMagnificationChangedListener.html#onMagnificationChanged(android.accessibilityservice.AccessibilityService.MagnificationController,android.graphics.Region,android.accessibilityservice.MagnificationConfig)"/>
                 /// </summary>
                 /// <remarks>If <see cref="OnOnMagnificationChanged3"/> has a value it takes precedence over corresponding class method</remarks>
-                public System.Action<Android.Accessibilityservice.AccessibilityService.MagnificationController, Android.Graphics.Region, Android.Accessibilityservice.MagnificationConfig> OnOnMagnificationChanged3 { get; set; } = null;
+                public global::System.Action<Android.Accessibilityservice.AccessibilityService.MagnificationController, Android.Graphics.Region, Android.Accessibilityservice.MagnificationConfig> OnOnMagnificationChanged3 { get; set; } = null;
 
                 void OnMagnificationChanged3EventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Accessibilityservice.AccessibilityService.MagnificationController>> data)
                 {
@@ -1130,7 +1154,7 @@ namespace Android.Accessibilityservice
                 /// <param name="arg2"><see cref="float"/></param>
                 /// <param name="arg3"><see cref="float"/></param>
                 /// <param name="arg4"><see cref="float"/></param>
-                [System.Obsolete()]
+                [global::System.Obsolete()]
                 public override void OnMagnificationChanged(Android.Accessibilityservice.AccessibilityService.MagnificationController arg0, Android.Graphics.Region arg1, float arg2, float arg3, float arg4)
                 {
                     IExecute("onMagnificationChanged", arg0, arg1, arg2, arg3, arg4);
@@ -1184,25 +1208,28 @@ namespace Android.Accessibilityservice
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.ScreenshotResult.html#getColorSpace()"/> 
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.ScreenshotResult.html#getColorSpace()"/>
             /// </summary>
-            public Android.Graphics.ColorSpace ColorSpace
+            /// <returns><see cref="Android.Graphics.ColorSpace"/></returns>
+            public Android.Graphics.ColorSpace GetColorSpace()
             {
-                get { return IExecuteWithSignature<Android.Graphics.ColorSpace>("getColorSpace", "()Landroid/graphics/ColorSpace;"); }
+                return IExecuteWithSignature<Android.Graphics.ColorSpace>("getColorSpace", "()Landroid/graphics/ColorSpace;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.ScreenshotResult.html#getHardwareBuffer()"/> 
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.ScreenshotResult.html#getHardwareBuffer()"/>
             /// </summary>
-            public Android.Hardware.HardwareBuffer HardwareBuffer
+            /// <returns><see cref="Android.Hardware.HardwareBuffer"/></returns>
+            public Android.Hardware.HardwareBuffer GetHardwareBuffer()
             {
-                get { return IExecuteWithSignature<Android.Hardware.HardwareBuffer>("getHardwareBuffer", "()Landroid/hardware/HardwareBuffer;"); }
+                return IExecuteWithSignature<Android.Hardware.HardwareBuffer>("getHardwareBuffer", "()Landroid/hardware/HardwareBuffer;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.ScreenshotResult.html#getTimestamp()"/> 
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.ScreenshotResult.html#getTimestamp()"/>
             /// </summary>
-            public long Timestamp
+            /// <returns><see cref="long"/></returns>
+            public long GetTimestamp()
             {
-                get { return IExecuteWithSignature<long>("getTimestamp", "()J"); }
+                return IExecuteWithSignature<long>("getTimestamp", "()J");
             }
 
             #endregion
@@ -1254,13 +1281,6 @@ namespace Android.Accessibilityservice
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.SoftKeyboardController.html#getShowMode()"/> 
-            /// </summary>
-            public int ShowMode
-            {
-                get { return IExecuteWithSignature<int>("getShowMode", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.SoftKeyboardController.html#removeOnShowModeChangedListener(android.accessibilityservice.AccessibilityService.SoftKeyboardController.OnShowModeChangedListener)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Accessibilityservice.AccessibilityService.SoftKeyboardController.OnShowModeChangedListener"/></param>
@@ -1286,6 +1306,14 @@ namespace Android.Accessibilityservice
             public bool SwitchToInputMethod(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<bool>("switchToInputMethod", "(Ljava/lang/String;)Z", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.SoftKeyboardController.html#getShowMode()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetShowMode()
+            {
+                return IExecuteWithSignature<int>("getShowMode", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.SoftKeyboardController.html#setInputMethodEnabled(java.lang.String,boolean)"/>
@@ -1344,7 +1372,7 @@ namespace Android.Accessibilityservice
                 /// </summary>
                 protected virtual void InitializeHandlers()
                 {
-                    AddEventHandler("onShowModeChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Accessibilityservice.AccessibilityService.SoftKeyboardController>>>(OnShowModeChangedEventHandler));
+                    AddEventHandler("onShowModeChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Accessibilityservice.AccessibilityService.SoftKeyboardController>>>(OnShowModeChangedEventHandler));
 
                 }
 
@@ -1352,7 +1380,7 @@ namespace Android.Accessibilityservice
                 /// Handler for <see href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService.SoftKeyboardController.OnShowModeChangedListener.html#onShowModeChanged(android.accessibilityservice.AccessibilityService.SoftKeyboardController,int)"/>
                 /// </summary>
                 /// <remarks>If <see cref="OnOnShowModeChanged"/> has a value it takes precedence over corresponding class method</remarks>
-                public System.Action<Android.Accessibilityservice.AccessibilityService.SoftKeyboardController, int> OnOnShowModeChanged { get; set; } = null;
+                public global::System.Action<Android.Accessibilityservice.AccessibilityService.SoftKeyboardController, int> OnOnShowModeChanged { get; set; } = null;
 
                 void OnShowModeChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Accessibilityservice.AccessibilityService.SoftKeyboardController>> data)
                 {

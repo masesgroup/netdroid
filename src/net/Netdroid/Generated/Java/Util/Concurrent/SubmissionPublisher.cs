@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#%3Cinit%3E(java.util.concurrent.Executor,int,java.util.function.BiConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#%3Cinit%3E(java.util.concurrent.Executor,int,java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -40,7 +40,7 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#%3Cinit%3E(java.util.concurrent.Executor,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#%3Cinit%3E(java.util.concurrent.Executor,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -69,42 +69,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#getClosedException()"/> 
-        /// </summary>
-        public Java.Lang.Throwable ClosedException
-        {
-            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getClosedException", "()Ljava/lang/Throwable;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#getExecutor()"/> 
-        /// </summary>
-        public Java.Util.Concurrent.Executor Executor
-        {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.Executor>("getExecutor", "()Ljava/util/concurrent/Executor;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#getMaxBufferCapacity()"/> 
-        /// </summary>
-        public int MaxBufferCapacity
-        {
-            get { return IExecuteWithSignature<int>("getMaxBufferCapacity", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#getNumberOfSubscribers()"/> 
-        /// </summary>
-        public int NumberOfSubscribers
-        {
-            get { return IExecuteWithSignature<int>("getNumberOfSubscribers", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#getSubscribers()"/> 
-        /// </summary>
-        public Java.Util.List Subscribers
-        {
-            get { return IExecuteWithSignature<Java.Util.List>("getSubscribers", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#hasSubscribers()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#hasSubscribers()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasSubscribers()
@@ -112,7 +77,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("hasSubscribers", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#isClosed()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#isClosed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsClosed()
@@ -120,7 +85,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isClosed", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#isSubscribed(java.util.concurrent.Flow.Subscriber)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#isSubscribed(java.util.concurrent.Flow.Subscriber)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -129,7 +94,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isSubscribed", "(Ljava/util/concurrent/Flow$Subscriber;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMaximumLag()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#estimateMaximumLag()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int EstimateMaximumLag()
@@ -137,7 +102,23 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("estimateMaximumLag", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#offer(java.lang.Object,java.util.function.BiPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#getMaxBufferCapacity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxBufferCapacity()
+        {
+            return IExecuteWithSignature<int>("getMaxBufferCapacity", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#getNumberOfSubscribers()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumberOfSubscribers()
+        {
+            return IExecuteWithSignature<int>("getNumberOfSubscribers", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#offer(java.lang.Object,java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiPredicate"/></param>
@@ -147,7 +128,7 @@ namespace Java.Util.Concurrent
             return IExecute<int>("offer", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit,java.util.function.BiPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit,java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -159,7 +140,7 @@ namespace Java.Util.Concurrent
             return IExecute<int>("offer", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#submit(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#submit(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -168,7 +149,15 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("submit", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#consume(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#getClosedException()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Throwable"/></returns>
+        public Java.Lang.Throwable GetClosedException()
+        {
+            var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getClosedException", "()Ljava/lang/Throwable;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#consume(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
@@ -177,7 +166,23 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>("consume", "(Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMinimumDemand()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#getExecutor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.Executor"/></returns>
+        public Java.Util.Concurrent.Executor GetExecutor()
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.Executor>("getExecutor", "()Ljava/util/concurrent/Executor;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#getSubscribers()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List GetSubscribers()
+        {
+            return IExecuteWithSignature<Java.Util.List>("getSubscribers", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#estimateMinimumDemand()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long EstimateMinimumDemand()
@@ -185,14 +190,14 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<long>("estimateMinimumDemand", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#close()"/>
         /// </summary>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#closeExceptionally(java.lang.Throwable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#closeExceptionally(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         public void CloseExceptionally(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
@@ -200,7 +205,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("closeExceptionally", "(Ljava/lang/Throwable;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#subscribe(java.util.concurrent.Flow.Subscriber)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#subscribe(java.util.concurrent.Flow.Subscriber)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
         public void Subscribe(Java.Util.Concurrent.Flow.Subscriber arg0)
@@ -223,7 +228,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#%3Cinit%3E(java.util.concurrent.Executor,int,java.util.function.BiConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#%3Cinit%3E(java.util.concurrent.Executor,int,java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -233,7 +238,7 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#%3Cinit%3E(java.util.concurrent.Executor,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#%3Cinit%3E(java.util.concurrent.Executor,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -266,42 +271,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#getClosedException()"/> 
-        /// </summary>
-        public Java.Lang.Throwable ClosedException
-        {
-            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getClosedException", "()Ljava/lang/Throwable;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#getExecutor()"/> 
-        /// </summary>
-        public Java.Util.Concurrent.Executor Executor
-        {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.Executor>("getExecutor", "()Ljava/util/concurrent/Executor;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#getMaxBufferCapacity()"/> 
-        /// </summary>
-        public int MaxBufferCapacity
-        {
-            get { return IExecuteWithSignature<int>("getMaxBufferCapacity", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#getNumberOfSubscribers()"/> 
-        /// </summary>
-        public int NumberOfSubscribers
-        {
-            get { return IExecuteWithSignature<int>("getNumberOfSubscribers", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#getSubscribers()"/> 
-        /// </summary>
-        public Java.Util.List Subscribers
-        {
-            get { return IExecuteWithSignature<Java.Util.List>("getSubscribers", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#hasSubscribers()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#hasSubscribers()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasSubscribers()
@@ -309,7 +279,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("hasSubscribers", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#isClosed()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#isClosed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsClosed()
@@ -317,17 +287,17 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isClosed", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#isSubscribed(java.util.concurrent.Flow.Subscriber)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#isSubscribed(java.util.concurrent.Flow.Subscriber)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool IsSubscribed<Arg0objectSuperT>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public bool IsSubscribed<Arg0objectSuperT>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<bool>("isSubscribed", "(Ljava/util/concurrent/Flow$Subscriber;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMaximumLag()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#estimateMaximumLag()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int EstimateMaximumLag()
@@ -335,18 +305,34 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("estimateMaximumLag", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#offer(java.lang.Object,java.util.function.BiPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#getMaxBufferCapacity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxBufferCapacity()
+        {
+            return IExecuteWithSignature<int>("getMaxBufferCapacity", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#getNumberOfSubscribers()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumberOfSubscribers()
+        {
+            return IExecuteWithSignature<int>("getNumberOfSubscribers", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#offer(java.lang.Object,java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public int Offer<Arg1objectSuperT>(T arg0, Java.Util.Function.BiPredicate<Java.Util.Concurrent.Flow.Subscriber<Arg1objectSuperT>, Arg1objectSuperT> arg1) where Arg1objectSuperT: T
+        public int Offer<Arg1objectSuperT>(T arg0, Java.Util.Function.BiPredicate<Java.Util.Concurrent.Flow.Subscriber<Arg1objectSuperT>, Arg1objectSuperT> arg1) where Arg1objectSuperT : T
         {
             return IExecute<int>("offer", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit,java.util.function.BiPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit,java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -354,12 +340,12 @@ namespace Java.Util.Concurrent
         /// <param name="arg3"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <typeparam name="Arg3objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public int Offer<Arg3objectSuperT>(T arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, Java.Util.Function.BiPredicate<Java.Util.Concurrent.Flow.Subscriber<Arg3objectSuperT>, Arg3objectSuperT> arg3) where Arg3objectSuperT: T
+        public int Offer<Arg3objectSuperT>(T arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, Java.Util.Function.BiPredicate<Java.Util.Concurrent.Flow.Subscriber<Arg3objectSuperT>, Arg3objectSuperT> arg3) where Arg3objectSuperT : T
         {
             return IExecute<int>("offer", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#submit(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#submit(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="int"/></returns>
@@ -368,17 +354,42 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("submit", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#consume(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#getClosedException()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Throwable"/></returns>
+        public Java.Lang.Throwable GetClosedException()
+        {
+            var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getClosedException", "()Ljava/lang/Throwable;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#consume(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture<Java.Lang.Void> Consume<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public Java.Util.Concurrent.CompletableFuture<Java.Lang.Void> Consume<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>("consume", "(Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#estimateMinimumDemand()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#getExecutor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.Executor"/></returns>
+        public Java.Util.Concurrent.Executor GetExecutor()
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.Executor>("getExecutor", "()Ljava/util/concurrent/Executor;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#getSubscribers()"/>
+        /// </summary>
+        /// <typeparam name="ReturnobjectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Util.Concurrent.Flow.Subscriber<ReturnobjectSuperT>> GetSubscribers<ReturnobjectSuperT>() where ReturnobjectSuperT : T
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Util.Concurrent.Flow.Subscriber<ReturnobjectSuperT>>>("getSubscribers", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#estimateMinimumDemand()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long EstimateMinimumDemand()
@@ -386,14 +397,14 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<long>("estimateMinimumDemand", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#close()"/>
         /// </summary>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#closeExceptionally(java.lang.Throwable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#closeExceptionally(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         public void CloseExceptionally(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
@@ -401,11 +412,11 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("closeExceptionally", "(Ljava/lang/Throwable;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html#subscribe(java.util.concurrent.Flow.Subscriber)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html#subscribe(java.util.concurrent.Flow.Subscriber)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        public void Subscribe<Arg0objectSuperT>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public void Subscribe<Arg0objectSuperT>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             IExecuteWithSignature("subscribe", "(Ljava/util/concurrent/Flow$Subscriber;)V", arg0);
         }

@@ -87,32 +87,12 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RggbChannelVector.html#getBlue()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RggbChannelVector.html#getBlue()"/>
         /// </summary>
-        public float Blue
+        /// <returns><see cref="float"/></returns>
+        public float GetBlue()
         {
-            get { return IExecuteWithSignature<float>("getBlue", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RggbChannelVector.html#getGreenEven()"/> 
-        /// </summary>
-        public float GreenEven
-        {
-            get { return IExecuteWithSignature<float>("getGreenEven", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RggbChannelVector.html#getGreenOdd()"/> 
-        /// </summary>
-        public float GreenOdd
-        {
-            get { return IExecuteWithSignature<float>("getGreenOdd", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RggbChannelVector.html#getRed()"/> 
-        /// </summary>
-        public float Red
-        {
-            get { return IExecuteWithSignature<float>("getRed", "()F"); }
+            return IExecuteWithSignature<float>("getBlue", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RggbChannelVector.html#getComponent(int)"/>
@@ -122,6 +102,30 @@ namespace Android.Hardware.Camera2.Params
         public float GetComponent(int arg0)
         {
             return IExecuteWithSignature<float>("getComponent", "(I)F", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RggbChannelVector.html#getGreenEven()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetGreenEven()
+        {
+            return IExecuteWithSignature<float>("getGreenEven", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RggbChannelVector.html#getGreenOdd()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetGreenOdd()
+        {
+            return IExecuteWithSignature<float>("getGreenOdd", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RggbChannelVector.html#getRed()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetRed()
+        {
+            return IExecuteWithSignature<float>("getRed", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RggbChannelVector.html#copyTo(float[],int)"/>

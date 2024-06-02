@@ -46,7 +46,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/LongAdder.html#sum()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/LongAdder.html#sum()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long Sum()
@@ -54,7 +54,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("sum", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/LongAdder.html#sumThenReset()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/LongAdder.html#sumThenReset()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long SumThenReset()
@@ -62,7 +62,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("sumThenReset", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/LongAdder.html#add(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/LongAdder.html#add(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public void Add(long arg0)
@@ -70,21 +70,21 @@ namespace Java.Util.Concurrent.Atomic
             IExecuteWithSignature("add", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/LongAdder.html#decrement()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/LongAdder.html#decrement()"/>
         /// </summary>
         public void Decrement()
         {
             IExecuteWithSignature("decrement", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/LongAdder.html#increment()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/LongAdder.html#increment()"/>
         /// </summary>
         public void Increment()
         {
             IExecuteWithSignature("increment", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/LongAdder.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/LongAdder.html#reset()"/>
         /// </summary>
         public void Reset()
         {

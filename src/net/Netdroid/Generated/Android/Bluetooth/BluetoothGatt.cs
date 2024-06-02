@@ -136,26 +136,12 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getConnectedDevices()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getDevice()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Util.List<Android.Bluetooth.BluetoothDevice> ConnectedDevices
+        /// <returns><see cref="Android.Bluetooth.BluetoothDevice"/></returns>
+        public Android.Bluetooth.BluetoothDevice GetDevice()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getConnectedDevices", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getDevice()"/> 
-        /// </summary>
-        public Android.Bluetooth.BluetoothDevice Device
-        {
-            get { return IExecuteWithSignature<Android.Bluetooth.BluetoothDevice>("getDevice", "()Landroid/bluetooth/BluetoothDevice;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getServices()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Bluetooth.BluetoothGattService> Services
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothGattService>>("getServices", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothDevice>("getDevice", "()Landroid/bluetooth/BluetoothDevice;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getService(java.util.UUID)"/>
@@ -257,7 +243,7 @@ namespace Android.Bluetooth
         /// </summary>
         /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothGattCharacteristic"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool WriteCharacteristic(Android.Bluetooth.BluetoothGattCharacteristic arg0)
         {
             return IExecuteWithSignature<bool>("writeCharacteristic", "(Landroid/bluetooth/BluetoothGattCharacteristic;)Z", arg0);
@@ -267,7 +253,7 @@ namespace Android.Bluetooth
         /// </summary>
         /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothGattDescriptor"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool WriteDescriptor(Android.Bluetooth.BluetoothGattDescriptor arg0)
         {
             return IExecuteWithSignature<bool>("writeDescriptor", "(Landroid/bluetooth/BluetoothGattDescriptor;)Z", arg0);
@@ -277,7 +263,7 @@ namespace Android.Bluetooth
         /// </summary>
         /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothDevice"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int GetConnectionState(Android.Bluetooth.BluetoothDevice arg0)
         {
             return IExecuteWithSignature<int>("getConnectionState", "(Landroid/bluetooth/BluetoothDevice;)I", arg0);
@@ -304,14 +290,31 @@ namespace Android.Bluetooth
             return IExecute<int>("writeDescriptor", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getConnectedDevices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.List<Android.Bluetooth.BluetoothDevice> GetConnectedDevices()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getConnectedDevices", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getDevicesMatchingConnectionStates(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.List<Android.Bluetooth.BluetoothDevice> GetDevicesMatchingConnectionStates(int[] arg0)
         {
             return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getDevicesMatchingConnectionStates", "([I)Ljava/util/List;", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#getServices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Bluetooth.BluetoothGattService> GetServices()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothGattService>>("getServices", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#abortReliableWrite()"/>
@@ -324,7 +327,7 @@ namespace Android.Bluetooth
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html#abortReliableWrite(android.bluetooth.BluetoothDevice)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothDevice"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AbortReliableWrite(Android.Bluetooth.BluetoothDevice arg0)
         {
             IExecuteWithSignature("abortReliableWrite", "(Landroid/bluetooth/BluetoothDevice;)V", arg0);

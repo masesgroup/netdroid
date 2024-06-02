@@ -61,26 +61,28 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SyncNotedAppOp.html#getAttributionTag()"/> 
-        /// </summary>
-        public Java.Lang.String AttributionTag
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAttributionTag", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SyncNotedAppOp.html#getOp()"/> 
-        /// </summary>
-        public Java.Lang.String Op
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOp", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/SyncNotedAppOp.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SyncNotedAppOp.html#getAttributionTag()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAttributionTag()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAttributionTag", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SyncNotedAppOp.html#getOp()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOp()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOp", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/SyncNotedAppOp.html#writeToParcel(android.os.Parcel,int)"/>

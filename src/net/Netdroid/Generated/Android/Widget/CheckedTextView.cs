@@ -88,32 +88,36 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CheckedTextView.html#getCheckMarkDrawable()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/CheckedTextView.html#getCheckMarkTintList()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable CheckMarkDrawable
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetCheckMarkTintList()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getCheckMarkDrawable", "()Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getCheckMarkTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CheckedTextView.html#getCheckMarkTintBlendMode()"/> <see href="https://developer.android.com/reference/android/widget/CheckedTextView.html#setCheckMarkTintBlendMode(android.graphics.BlendMode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CheckedTextView.html#getCheckMarkTintBlendMode()"/>
         /// </summary>
-        public Android.Graphics.BlendMode CheckMarkTintBlendMode
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetCheckMarkTintBlendMode()
         {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getCheckMarkTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setCheckMarkTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getCheckMarkTintBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CheckedTextView.html#getCheckMarkTintList()"/> <see href="https://developer.android.com/reference/android/widget/CheckedTextView.html#setCheckMarkTintList(android.content.res.ColorStateList)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CheckedTextView.html#getCheckMarkDrawable()"/>
         /// </summary>
-        public Android.Content.Res.ColorStateList CheckMarkTintList
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetCheckMarkDrawable()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getCheckMarkTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setCheckMarkTintList", "(Landroid/content/res/ColorStateList;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getCheckMarkDrawable", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CheckedTextView.html#getCheckMarkTintMode()"/> <see href="https://developer.android.com/reference/android/widget/CheckedTextView.html#setCheckMarkTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/CheckedTextView.html#getCheckMarkTintMode()"/>
         /// </summary>
-        public Android.Graphics.PorterDuff.Mode CheckMarkTintMode
+        /// <returns><see cref="Android.Graphics.PorterDuff.Mode"/></returns>
+        public Android.Graphics.PorterDuff.Mode GetCheckMarkTintMode()
         {
-            get { return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getCheckMarkTintMode", "()Landroid/graphics/PorterDuff$Mode;"); } set { IExecuteWithSignature("setCheckMarkTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getCheckMarkTintMode", "()Landroid/graphics/PorterDuff$Mode;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/CheckedTextView.html#isChecked()"/>
@@ -146,6 +150,30 @@ namespace Android.Widget
         public void SetCheckMarkDrawable(int arg0)
         {
             IExecuteWithSignature("setCheckMarkDrawable", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CheckedTextView.html#setCheckMarkTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        public void SetCheckMarkTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setCheckMarkTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CheckedTextView.html#setCheckMarkTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        public void SetCheckMarkTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setCheckMarkTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/CheckedTextView.html#setCheckMarkTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.PorterDuff.Mode"/></param>
+        public void SetCheckMarkTintMode(Android.Graphics.PorterDuff.Mode arg0)
+        {
+            IExecuteWithSignature("setCheckMarkTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/CheckedTextView.html#toggle()"/>

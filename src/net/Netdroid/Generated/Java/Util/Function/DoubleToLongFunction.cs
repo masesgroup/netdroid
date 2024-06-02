@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IDoubleToLongFunction
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.DoubleToLongFunction implementing <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleToLongFunction.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.DoubleToLongFunction implementing <see href="https://developer.android.com/reference/java/util/function/DoubleToLongFunction.html"/>
     /// </summary>
     public partial interface IDoubleToLongFunction
     {
@@ -68,15 +68,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsLongEventHandler));
+            AddEventHandler("applyAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsLongEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleToLongFunction.html#applyAsLong(double)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/DoubleToLongFunction.html#applyAsLong(double)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsLong"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<double, long> OnApplyAsLong { get; set; } = null;
+        public global::System.Func<double, long> OnApplyAsLong { get; set; } = null;
 
         void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
         {
@@ -86,7 +86,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleToLongFunction.html#applyAsLong(double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoubleToLongFunction.html#applyAsLong(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="long"/></returns>
@@ -126,7 +126,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleToLongFunction.html#applyAsLong(double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoubleToLongFunction.html#applyAsLong(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="long"/></returns>

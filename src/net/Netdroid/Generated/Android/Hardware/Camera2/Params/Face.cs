@@ -64,46 +64,52 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Face.html#getBounds()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Face.html#getLeftEyePosition()"/>
         /// </summary>
-        public Android.Graphics.Rect Bounds
+        /// <returns><see cref="Android.Graphics.Point"/></returns>
+        public Android.Graphics.Point GetLeftEyePosition()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getBounds", "()Landroid/graphics/Rect;"); }
+            return IExecuteWithSignature<Android.Graphics.Point>("getLeftEyePosition", "()Landroid/graphics/Point;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Face.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Face.html#getMouthPosition()"/>
         /// </summary>
-        public int Id
+        /// <returns><see cref="Android.Graphics.Point"/></returns>
+        public Android.Graphics.Point GetMouthPosition()
         {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Point>("getMouthPosition", "()Landroid/graphics/Point;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Face.html#getLeftEyePosition()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Face.html#getRightEyePosition()"/>
         /// </summary>
-        public Android.Graphics.Point LeftEyePosition
+        /// <returns><see cref="Android.Graphics.Point"/></returns>
+        public Android.Graphics.Point GetRightEyePosition()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Point>("getLeftEyePosition", "()Landroid/graphics/Point;"); }
+            return IExecuteWithSignature<Android.Graphics.Point>("getRightEyePosition", "()Landroid/graphics/Point;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Face.html#getMouthPosition()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Face.html#getBounds()"/>
         /// </summary>
-        public Android.Graphics.Point MouthPosition
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetBounds()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Point>("getMouthPosition", "()Landroid/graphics/Point;"); }
+            return IExecuteWithSignature<Android.Graphics.Rect>("getBounds", "()Landroid/graphics/Rect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Face.html#getRightEyePosition()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Face.html#getId()"/>
         /// </summary>
-        public Android.Graphics.Point RightEyePosition
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Point>("getRightEyePosition", "()Landroid/graphics/Point;"); }
+            return IExecuteWithSignature<int>("getId", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Face.html#getScore()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Face.html#getScore()"/>
         /// </summary>
-        public int Score
+        /// <returns><see cref="int"/></returns>
+        public int GetScore()
         {
-            get { return IExecuteWithSignature<int>("getScore", "()I"); }
+            return IExecuteWithSignature<int>("getScore", "()I");
         }
 
         #endregion

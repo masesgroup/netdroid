@@ -60,39 +60,12 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/AttributionSource.html#getAttributionTag()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/AttributionSource.html#getNext()"/>
         /// </summary>
-        public Java.Lang.String AttributionTag
+        /// <returns><see cref="Android.Content.AttributionSource"/></returns>
+        public Android.Content.AttributionSource GetNext()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAttributionTag", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/AttributionSource.html#getNext()"/> 
-        /// </summary>
-        public Android.Content.AttributionSource Next
-        {
-            get { return IExecuteWithSignature<Android.Content.AttributionSource>("getNext", "()Landroid/content/AttributionSource;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/AttributionSource.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/AttributionSource.html#getPid()"/> 
-        /// </summary>
-        public int Pid
-        {
-            get { return IExecuteWithSignature<int>("getPid", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/AttributionSource.html#getUid()"/> 
-        /// </summary>
-        public int Uid
-        {
-            get { return IExecuteWithSignature<int>("getUid", "()I"); }
+            return IExecuteWithSignature<Android.Content.AttributionSource>("getNext", "()Landroid/content/AttributionSource;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/AttributionSource.html#checkCallingUid()"/>
@@ -118,6 +91,38 @@ namespace Android.Content
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/AttributionSource.html#getPid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPid()
+        {
+            return IExecuteWithSignature<int>("getPid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/AttributionSource.html#getUid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUid()
+        {
+            return IExecuteWithSignature<int>("getUid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/AttributionSource.html#getAttributionTag()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAttributionTag()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAttributionTag", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/AttributionSource.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/AttributionSource.html#enforceCallingUid()"/>

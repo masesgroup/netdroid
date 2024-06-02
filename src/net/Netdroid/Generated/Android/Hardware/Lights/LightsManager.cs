@@ -46,13 +46,6 @@ namespace Android.Hardware.Lights
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/lights/LightsManager.html#getLights()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Hardware.Lights.Light> Lights
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Lights.Light>>("getLights", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/lights/LightsManager.html#openSession()"/>
         /// </summary>
         /// <returns><see cref="Android.Hardware.Lights.LightsManager.LightsSession"/></returns>
@@ -68,6 +61,14 @@ namespace Android.Hardware.Lights
         public Android.Hardware.Lights.LightState GetLightState(Android.Hardware.Lights.Light arg0)
         {
             return IExecuteWithSignature<Android.Hardware.Lights.LightState>("getLightState", "(Landroid/hardware/lights/Light;)Landroid/hardware/lights/LightState;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/lights/LightsManager.html#getLights()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Hardware.Lights.Light> GetLights()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Hardware.Lights.Light>>("getLights", "()Ljava/util/List;");
         }
 
         #endregion

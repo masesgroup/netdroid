@@ -64,11 +64,12 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/GenericDeclaration.html#getTypeParameters()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/GenericDeclaration.html#getTypeParameters()"/>
         /// </summary>
-        public Java.Lang.Reflect.TypeVariable[] TypeParameters
+        /// <returns><see cref="Java.Lang.Reflect.TypeVariable"/></returns>
+        public Java.Lang.Reflect.TypeVariable[] GetTypeParameters()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.TypeVariable>("getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;"); }
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.TypeVariable>("getTypeParameters", "()[Ljava/lang/reflect/TypeVariable;");
         }
 
         #endregion

@@ -46,7 +46,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectableChannel.html#isBlocking()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectableChannel.html#isBlocking()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsBlocking()
@@ -54,7 +54,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("isBlocking", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectableChannel.html#isRegistered()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectableChannel.html#isRegistered()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsRegistered()
@@ -62,7 +62,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("isRegistered", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectableChannel.html#validOps()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectableChannel.html#validOps()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int ValidOps()
@@ -70,7 +70,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<int>("validOps", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectableChannel.html#blockingLock()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectableChannel.html#blockingLock()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object BlockingLock()
@@ -78,7 +78,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature("blockingLock", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectableChannel.html#configureBlocking(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectableChannel.html#configureBlocking(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Nio.Channels.SelectableChannel"/></returns>
@@ -88,7 +88,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.SelectableChannel>("configureBlocking", "(Z)Ljava/nio/channels/SelectableChannel;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectableChannel.html#keyFor(java.nio.channels.Selector)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectableChannel.html#keyFor(java.nio.channels.Selector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.Selector"/></param>
         /// <returns><see cref="Java.Nio.Channels.SelectionKey"/></returns>
@@ -97,7 +97,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.SelectionKey>("keyFor", "(Ljava/nio/channels/Selector;)Ljava/nio/channels/SelectionKey;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectableChannel.html#register(java.nio.channels.Selector,int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectableChannel.html#register(java.nio.channels.Selector,int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.Selector"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -109,7 +109,7 @@ namespace Java.Nio.Channels
             return IExecute<Java.Nio.Channels.SelectionKey>("register", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectableChannel.html#provider()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectableChannel.html#provider()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.Spi.SelectorProvider"/></returns>
         public Java.Nio.Channels.Spi.SelectorProvider Provider()
@@ -117,7 +117,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.Spi.SelectorProvider>("provider", "()Ljava/nio/channels/spi/SelectorProvider;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/SelectableChannel.html#register(java.nio.channels.Selector,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/SelectableChannel.html#register(java.nio.channels.Selector,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.Selector"/></param>
         /// <param name="arg1"><see cref="int"/></param>

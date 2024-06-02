@@ -76,13 +76,6 @@ namespace Android.Animation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/LayoutTransition.html#getTransitionListeners()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Animation.LayoutTransition.TransitionListener> TransitionListeners
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Animation.LayoutTransition.TransitionListener>>("getTransitionListeners", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/LayoutTransition.html#getAnimator(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -124,6 +117,14 @@ namespace Android.Animation
         public bool IsTransitionTypeEnabled(int arg0)
         {
             return IExecuteWithSignature<bool>("isTransitionTypeEnabled", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/LayoutTransition.html#getTransitionListeners()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Animation.LayoutTransition.TransitionListener> GetTransitionListeners()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Animation.LayoutTransition.TransitionListener>>("getTransitionListeners", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/LayoutTransition.html#getDuration(int)"/>
@@ -200,7 +201,7 @@ namespace Android.Animation
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.ViewGroup"/></param>
         /// <param name="arg1"><see cref="Android.View.View"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void HideChild(Android.View.ViewGroup arg0, Android.View.View arg1)
         {
             IExecute("hideChild", arg0, arg1);
@@ -298,7 +299,7 @@ namespace Android.Animation
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.ViewGroup"/></param>
         /// <param name="arg1"><see cref="Android.View.View"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ShowChild(Android.View.ViewGroup arg0, Android.View.View arg1)
         {
             IExecute("showChild", arg0, arg1);
@@ -332,8 +333,8 @@ namespace Android.Animation
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("endTransition", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.LayoutTransition>>>(EndTransitionEventHandler));
-                AddEventHandler("startTransition", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.LayoutTransition>>>(StartTransitionEventHandler));
+                AddEventHandler("endTransition", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.LayoutTransition>>>(EndTransitionEventHandler));
+                AddEventHandler("startTransition", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.LayoutTransition>>>(StartTransitionEventHandler));
 
             }
 
@@ -341,7 +342,7 @@ namespace Android.Animation
             /// Handler for <see href="https://developer.android.com/reference/android/animation/LayoutTransition.TransitionListener.html#endTransition(android.animation.LayoutTransition,android.view.ViewGroup,android.view.View,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnEndTransition"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Animation.LayoutTransition, Android.View.ViewGroup, Android.View.View, int> OnEndTransition { get; set; } = null;
+            public global::System.Action<Android.Animation.LayoutTransition, Android.View.ViewGroup, Android.View.View, int> OnEndTransition { get; set; } = null;
 
             void EndTransitionEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.LayoutTransition>> data)
             {
@@ -365,7 +366,7 @@ namespace Android.Animation
             /// Handler for <see href="https://developer.android.com/reference/android/animation/LayoutTransition.TransitionListener.html#startTransition(android.animation.LayoutTransition,android.view.ViewGroup,android.view.View,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnStartTransition"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Animation.LayoutTransition, Android.View.ViewGroup, Android.View.View, int> OnStartTransition { get; set; } = null;
+            public global::System.Action<Android.Animation.LayoutTransition, Android.View.ViewGroup, Android.View.View, int> OnStartTransition { get; set; } = null;
 
             void StartTransitionEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.LayoutTransition>> data)
             {

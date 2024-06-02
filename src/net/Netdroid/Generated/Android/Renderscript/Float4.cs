@@ -36,7 +36,7 @@ namespace Android.Renderscript
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="float"/></param>
         /// <param name="arg3"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Float4(float arg0, float arg1, float arg2, float arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -52,22 +52,22 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Float4.html#w"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public float w { get { return IGetField<float>("w"); } set { ISetField("w", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Float4.html#x"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public float x { get { return IGetField<float>("x"); } set { ISetField("x", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Float4.html#y"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public float y { get { return IGetField<float>("y"); } set { ISetField("y", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Float4.html#z"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public float z { get { return IGetField<float>("z"); } set { ISetField("z", value); } }
 
         #endregion

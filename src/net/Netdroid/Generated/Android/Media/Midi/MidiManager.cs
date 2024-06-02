@@ -58,12 +58,13 @@ namespace Android.Media.Midi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/midi/MidiManager.html#getDevices()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/midi/MidiManager.html#getDevices()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Media.Midi.MidiDeviceInfo[] Devices
+        /// <returns><see cref="Android.Media.Midi.MidiDeviceInfo"/></returns>
+        [global::System.Obsolete()]
+        public Android.Media.Midi.MidiDeviceInfo[] GetDevices()
         {
-            get { return IExecuteWithSignatureArray<Android.Media.Midi.MidiDeviceInfo>("getDevices", "()[Landroid/media/midi/MidiDeviceInfo;"); }
+            return IExecuteWithSignatureArray<Android.Media.Midi.MidiDeviceInfo>("getDevices", "()[Landroid/media/midi/MidiDeviceInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/midi/MidiManager.html#getDevicesForTransport(int)"/>
@@ -99,7 +100,7 @@ namespace Android.Media.Midi
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.Midi.MidiManager.DeviceCallback"/></param>
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RegisterDeviceCallback(Android.Media.Midi.MidiManager.DeviceCallback arg0, Android.Os.Handler arg1)
         {
             IExecute("registerDeviceCallback", arg0, arg1);
@@ -206,7 +207,7 @@ namespace Android.Media.Midi
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDeviceOpened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Midi.MidiDevice>>>(OnDeviceOpenedEventHandler));
+                AddEventHandler("onDeviceOpened", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Midi.MidiDevice>>>(OnDeviceOpenedEventHandler));
 
             }
 
@@ -214,7 +215,7 @@ namespace Android.Media.Midi
             /// Handler for <see href="https://developer.android.com/reference/android/media/midi/MidiManager.OnDeviceOpenedListener.html#onDeviceOpened(android.media.midi.MidiDevice)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDeviceOpened"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.Midi.MidiDevice> OnOnDeviceOpened { get; set; } = null;
+            public global::System.Action<Android.Media.Midi.MidiDevice> OnOnDeviceOpened { get; set; } = null;
 
             void OnDeviceOpenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.Midi.MidiDevice>> data)
             {

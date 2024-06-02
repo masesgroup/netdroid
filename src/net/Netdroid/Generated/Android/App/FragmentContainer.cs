@@ -51,16 +51,16 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <typeparam name="T"><see cref="Android.View.View"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        [System.Obsolete()]
-        public T OnFindViewById<T>(int arg0) where T: Android.View.View
+        [global::System.Obsolete()]
+        public T OnFindViewById<T>(int arg0) where T : Android.View.View
         {
-            return IExecuteWithSignature<T>("onFindViewById", "(I)Landroid/view/View;", arg0);
+            return IExecute<T>("onFindViewById", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentContainer.html#onHasView()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnHasView()
         {
             return IExecuteWithSignature<bool>("onHasView", "()Z");

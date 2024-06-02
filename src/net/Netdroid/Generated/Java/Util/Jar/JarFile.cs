@@ -30,19 +30,7 @@ namespace Java.Util.Jar
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarFile.html#%3Cinit%3E(java.io.File,boolean,int,java.lang.Runtime.Version)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="Java.Lang.Runtime.Version"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        public JarFile(Java.Io.File arg0, bool arg1, int arg2, Java.Lang.Runtime.Version arg3)
-            : base(arg0, arg1, arg2, arg3)
-        {
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarFile.html#%3Cinit%3E(java.io.File,boolean,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarFile.html#%3Cinit%3E(java.io.File,boolean,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -53,7 +41,7 @@ namespace Java.Util.Jar
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarFile.html#%3Cinit%3E(java.io.File,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarFile.html#%3Cinit%3E(java.io.File,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -63,7 +51,7 @@ namespace Java.Util.Jar
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarFile.html#%3Cinit%3E(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarFile.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -72,7 +60,7 @@ namespace Java.Util.Jar
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarFile.html#%3Cinit%3E(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarFile.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -82,7 +70,7 @@ namespace Java.Util.Jar
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarFile.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarFile.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -99,7 +87,7 @@ namespace Java.Util.Jar
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarFile.html#MANIFEST_NAME"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarFile.html#MANIFEST_NAME"/>
         /// </summary>
         public static Java.Lang.String MANIFEST_NAME { get { if (!_MANIFEST_NAMEReady) { _MANIFEST_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MANIFEST_NAME"); _MANIFEST_NAMEReady = true; } return _MANIFEST_NAMEContent; } }
         private static Java.Lang.String _MANIFEST_NAMEContent = default;
@@ -108,42 +96,12 @@ namespace Java.Util.Jar
         #endregion
 
         #region Static methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarFile.html#baseVersion()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.Runtime.Version"/></returns>
-        public static Java.Lang.Runtime.Version BaseVersion()
-        {
-            return SExecuteWithSignature<Java.Lang.Runtime.Version>(LocalBridgeClazz, "baseVersion", "()Ljava/lang/Runtime$Version;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarFile.html#runtimeVersion()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.Runtime.Version"/></returns>
-        public static Java.Lang.Runtime.Version RuntimeVersion()
-        {
-            return SExecuteWithSignature<Java.Lang.Runtime.Version>(LocalBridgeClazz, "runtimeVersion", "()Ljava/lang/Runtime$Version;");
-        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarFile.html#getManifest()"/> 
-        /// </summary>
-        public Java.Util.Jar.Manifest Manifest
-        {
-            get { return IExecuteWithSignature<Java.Util.Jar.Manifest>("getManifest", "()Ljava/util/jar/Manifest;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarFile.html#getVersion()"/> 
-        /// </summary>
-        public Java.Lang.Runtime.Version Version
-        {
-            get { return IExecuteWithSignature<Java.Lang.Runtime.Version>("getVersion", "()Ljava/lang/Runtime$Version;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarFile.html#isMultiRelease()"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarFile.html#isMultiRelease()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsMultiRelease()
@@ -151,7 +109,7 @@ namespace Java.Util.Jar
             return IExecuteWithSignature<bool>("isMultiRelease", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarFile.html#getJarEntry(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarFile.html#getJarEntry(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Jar.JarEntry"/></returns>
@@ -160,7 +118,16 @@ namespace Java.Util.Jar
             return IExecuteWithSignature<Java.Util.Jar.JarEntry>("getJarEntry", "(Ljava/lang/String;)Ljava/util/jar/JarEntry;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarFile.html#versionedStream()"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarFile.html#getManifest()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Jar.Manifest"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Jar.Manifest GetManifest()
+        {
+            return IExecuteWithSignature<Java.Util.Jar.Manifest>("getManifest", "()Ljava/util/jar/Manifest;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarFile.html#versionedStream()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Util.Jar.JarEntry> VersionedStream()

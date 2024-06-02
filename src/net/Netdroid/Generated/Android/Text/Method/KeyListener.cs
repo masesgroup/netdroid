@@ -68,11 +68,11 @@ namespace Android.Text.Method
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("onKeyDown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnKeyDownEventHandler));
-            AddEventHandler("onKeyOther", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnKeyOtherEventHandler));
-            AddEventHandler("onKeyUp", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnKeyUpEventHandler));
-            AddEventHandler("getInputType", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetInputTypeEventHandler));
-            AddEventHandler("clearMetaKeyState", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(ClearMetaKeyStateEventHandler));
+            AddEventHandler("onKeyDown", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnKeyDownEventHandler));
+            AddEventHandler("onKeyOther", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnKeyOtherEventHandler));
+            AddEventHandler("onKeyUp", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnKeyUpEventHandler));
+            AddEventHandler("getInputType", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetInputTypeEventHandler));
+            AddEventHandler("clearMetaKeyState", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(ClearMetaKeyStateEventHandler));
 
         }
 
@@ -80,7 +80,7 @@ namespace Android.Text.Method
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#onKeyDown(android.view.View,android.text.Editable,int,android.view.KeyEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnKeyDown"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.View.View, Android.Text.Editable, int, Android.View.KeyEvent, bool> OnOnKeyDown { get; set; } = null;
+        public global::System.Func<Android.View.View, Android.Text.Editable, int, Android.View.KeyEvent, bool> OnOnKeyDown { get; set; } = null;
 
         void OnKeyDownEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
         {
@@ -106,7 +106,7 @@ namespace Android.Text.Method
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#onKeyOther(android.view.View,android.text.Editable,android.view.KeyEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnKeyOther"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.View.View, Android.Text.Editable, Android.View.KeyEvent, bool> OnOnKeyOther { get; set; } = null;
+        public global::System.Func<Android.View.View, Android.Text.Editable, Android.View.KeyEvent, bool> OnOnKeyOther { get; set; } = null;
 
         void OnKeyOtherEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
         {
@@ -131,7 +131,7 @@ namespace Android.Text.Method
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#onKeyUp(android.view.View,android.text.Editable,int,android.view.KeyEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnKeyUp"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.View.View, Android.Text.Editable, int, Android.View.KeyEvent, bool> OnOnKeyUp { get; set; } = null;
+        public global::System.Func<Android.View.View, Android.Text.Editable, int, Android.View.KeyEvent, bool> OnOnKeyUp { get; set; } = null;
 
         void OnKeyUpEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
         {
@@ -157,7 +157,7 @@ namespace Android.Text.Method
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#getInputType()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetInputType"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int> OnGetInputType { get; set; } = null;
+        public global::System.Func<int> OnGetInputType { get; set; } = null;
 
         void GetInputTypeEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -179,7 +179,7 @@ namespace Android.Text.Method
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#clearMetaKeyState(android.view.View,android.text.Editable,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnClearMetaKeyState"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.View.View, Android.Text.Editable, int> OnClearMetaKeyState { get; set; } = null;
+        public global::System.Action<Android.View.View, Android.Text.Editable, int> OnClearMetaKeyState { get; set; } = null;
 
         void ClearMetaKeyStateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
         {
@@ -229,13 +229,6 @@ namespace Android.Text.Method
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#getInputType()"/> 
-        /// </summary>
-        public int InputType
-        {
-            get { return IExecuteWithSignature<int>("getInputType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#onKeyDown(android.view.View,android.text.Editable,int,android.view.KeyEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
@@ -269,6 +262,14 @@ namespace Android.Text.Method
         public override bool OnKeyUp(Android.View.View arg0, Android.Text.Editable arg1, int arg2, Android.View.KeyEvent arg3)
         {
             return IExecute<bool>("onKeyUp", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#getInputType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public override int GetInputType()
+        {
+            return IExecuteWithSignature<int>("getInputType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#clearMetaKeyState(android.view.View,android.text.Editable,int)"/>

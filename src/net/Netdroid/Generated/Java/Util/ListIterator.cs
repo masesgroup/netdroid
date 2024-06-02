@@ -46,7 +46,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#hasNext()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#hasNext()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasNext()
@@ -54,7 +54,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNext", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#hasPrevious()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#hasPrevious()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasPrevious()
@@ -62,7 +62,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasPrevious", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#next()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#next()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Next()
@@ -70,7 +70,7 @@ namespace Java.Util
             return IExecuteWithSignature("next", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#previous()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#previous()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Previous()
@@ -78,7 +78,7 @@ namespace Java.Util
             return IExecuteWithSignature("previous", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#nextIndex()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#nextIndex()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int NextIndex()
@@ -86,7 +86,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("nextIndex", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#previousIndex()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#previousIndex()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int PreviousIndex()
@@ -94,7 +94,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("previousIndex", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#add(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void Add(object arg0)
@@ -102,14 +102,14 @@ namespace Java.Util
             IExecuteWithSignature("add", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#remove()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#remove()"/>
         /// </summary>
         public void Remove()
         {
             IExecuteWithSignature("remove", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#set(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#set(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void Set(object arg0)
@@ -170,7 +170,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#hasNext()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#hasNext()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasNext()
@@ -178,7 +178,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNext", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#hasPrevious()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#hasPrevious()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasPrevious()
@@ -186,7 +186,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasPrevious", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#next()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#next()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Next()
@@ -194,7 +194,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("next", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#previous()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#previous()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E Previous()
@@ -202,7 +202,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("previous", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#nextIndex()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#nextIndex()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int NextIndex()
@@ -210,7 +210,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("nextIndex", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#previousIndex()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#previousIndex()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int PreviousIndex()
@@ -218,7 +218,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("previousIndex", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#add(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void Add(E arg0)
@@ -226,14 +226,14 @@ namespace Java.Util
             IExecuteWithSignature("add", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#remove()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#remove()"/>
         /// </summary>
         public void Remove()
         {
             IExecuteWithSignature("remove", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ListIterator.html#set(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ListIterator.html#set(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         public void Set(E arg0)

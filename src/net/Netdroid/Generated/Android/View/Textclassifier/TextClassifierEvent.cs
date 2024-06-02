@@ -202,81 +202,36 @@ namespace Android.View.Textclassifier
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getActionIndices()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getLocale()"/>
         /// </summary>
-        public int[] ActionIndices
+        /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
+        public Android.Icu.Util.ULocale GetLocale()
         {
-            get { return IExecuteWithSignatureArray<int>("getActionIndices", "()[I"); }
+            return IExecuteWithSignature<Android.Icu.Util.ULocale>("getLocale", "()Landroid/icu/util/ULocale;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getEntityTypes()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getExtras()"/>
         /// </summary>
-        public Java.Lang.String[] EntityTypes
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getEntityTypes", "()[Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getEventCategory()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getEventContext()"/>
         /// </summary>
-        public int EventCategory
+        /// <returns><see cref="Android.View.Textclassifier.TextClassificationContext"/></returns>
+        public Android.View.Textclassifier.TextClassificationContext GetEventContext()
         {
-            get { return IExecuteWithSignature<int>("getEventCategory", "()I"); }
+            return IExecute<Android.View.Textclassifier.TextClassificationContext>("getEventContext");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getEventContext()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getScores()"/>
         /// </summary>
-        public Android.View.Textclassifier.TextClassificationContext EventContext
+        /// <returns><see cref="float"/></returns>
+        public float[] GetScores()
         {
-            get { return IExecute<Android.View.Textclassifier.TextClassificationContext>("getEventContext"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getEventIndex()"/> 
-        /// </summary>
-        public int EventIndex
-        {
-            get { return IExecuteWithSignature<int>("getEventIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getEventType()"/> 
-        /// </summary>
-        public int EventType
-        {
-            get { return IExecuteWithSignature<int>("getEventType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getExtras()"/> 
-        /// </summary>
-        public Android.Os.Bundle Extras
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getLocale()"/> 
-        /// </summary>
-        public Android.Icu.Util.ULocale Locale
-        {
-            get { return IExecuteWithSignature<Android.Icu.Util.ULocale>("getLocale", "()Landroid/icu/util/ULocale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getModelName()"/> 
-        /// </summary>
-        public Java.Lang.String ModelName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getModelName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getResultId()"/> 
-        /// </summary>
-        public Java.Lang.String ResultId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getResultId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getScores()"/> 
-        /// </summary>
-        public float[] Scores
-        {
-            get { return IExecuteWithSignatureArray<float>("getScores", "()[F"); }
+            return IExecuteWithSignatureArray<float>("getScores", "()[F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#describeContents()"/>
@@ -285,6 +240,62 @@ namespace Android.View.Textclassifier
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getEventCategory()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEventCategory()
+        {
+            return IExecuteWithSignature<int>("getEventCategory", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getEventIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEventIndex()
+        {
+            return IExecuteWithSignature<int>("getEventIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getEventType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEventType()
+        {
+            return IExecuteWithSignature<int>("getEventType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getActionIndices()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetActionIndices()
+        {
+            return IExecuteWithSignatureArray<int>("getActionIndices", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getModelName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetModelName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getModelName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getResultId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetResultId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getResultId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#getEntityTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetEntityTypes()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getEntityTypes", "()[Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.html#writeToParcel(android.os.Parcel,int)"/>
@@ -806,32 +817,36 @@ namespace Android.View.Textclassifier
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.TextSelectionEvent.html#getRelativeSuggestedWordEndIndex()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.TextSelectionEvent.html#getRelativeSuggestedWordEndIndex()"/>
             /// </summary>
-            public int RelativeSuggestedWordEndIndex
+            /// <returns><see cref="int"/></returns>
+            public int GetRelativeSuggestedWordEndIndex()
             {
-                get { return IExecuteWithSignature<int>("getRelativeSuggestedWordEndIndex", "()I"); }
+                return IExecuteWithSignature<int>("getRelativeSuggestedWordEndIndex", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.TextSelectionEvent.html#getRelativeSuggestedWordStartIndex()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.TextSelectionEvent.html#getRelativeSuggestedWordStartIndex()"/>
             /// </summary>
-            public int RelativeSuggestedWordStartIndex
+            /// <returns><see cref="int"/></returns>
+            public int GetRelativeSuggestedWordStartIndex()
             {
-                get { return IExecuteWithSignature<int>("getRelativeSuggestedWordStartIndex", "()I"); }
+                return IExecuteWithSignature<int>("getRelativeSuggestedWordStartIndex", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.TextSelectionEvent.html#getRelativeWordEndIndex()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.TextSelectionEvent.html#getRelativeWordEndIndex()"/>
             /// </summary>
-            public int RelativeWordEndIndex
+            /// <returns><see cref="int"/></returns>
+            public int GetRelativeWordEndIndex()
             {
-                get { return IExecuteWithSignature<int>("getRelativeWordEndIndex", "()I"); }
+                return IExecuteWithSignature<int>("getRelativeWordEndIndex", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.TextSelectionEvent.html#getRelativeWordStartIndex()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifierEvent.TextSelectionEvent.html#getRelativeWordStartIndex()"/>
             /// </summary>
-            public int RelativeWordStartIndex
+            /// <returns><see cref="int"/></returns>
+            public int GetRelativeWordStartIndex()
             {
-                get { return IExecuteWithSignature<int>("getRelativeWordStartIndex", "()I"); }
+                return IExecuteWithSignature<int>("getRelativeWordStartIndex", "()I");
             }
 
             #endregion

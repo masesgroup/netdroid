@@ -46,25 +46,28 @@ namespace Android.Hardware.Lights
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/lights/LightsRequest.html#getLights()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/lights/LightsRequest.html#getLightStates()"/>
         /// </summary>
-        public Java.Util.List<Java.Lang.Integer> Lights
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Hardware.Lights.LightState> GetLightStates()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getLights", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Hardware.Lights.LightState>>("getLightStates", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/lights/LightsRequest.html#getLightsAndStates()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/lights/LightsRequest.html#getLights()"/>
         /// </summary>
-        public Java.Util.Map<Android.Hardware.Lights.Light, Android.Hardware.Lights.LightState> LightsAndStates
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.Integer> GetLights()
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Android.Hardware.Lights.Light, Android.Hardware.Lights.LightState>>("getLightsAndStates", "()Ljava/util/Map;"); }
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getLights", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/lights/LightsRequest.html#getLightStates()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/lights/LightsRequest.html#getLightsAndStates()"/>
         /// </summary>
-        public Java.Util.List<Android.Hardware.Lights.LightState> LightStates
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Android.Hardware.Lights.Light, Android.Hardware.Lights.LightState> GetLightsAndStates()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Lights.LightState>>("getLightStates", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.Map<Android.Hardware.Lights.Light, Android.Hardware.Lights.LightState>>("getLightsAndStates", "()Ljava/util/Map;");
         }
 
         #endregion

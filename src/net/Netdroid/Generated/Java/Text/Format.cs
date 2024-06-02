@@ -54,7 +54,7 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Format.html#parseObject(java.lang.String,java.text.ParsePosition)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Format.html#parseObject(java.lang.String,java.text.ParsePosition)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Text.ParsePosition"/></param>
@@ -64,7 +64,7 @@ namespace Java.Text
             return IExecute("parseObject", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Format.html#format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Format.html#format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.StringBuffer"/></param>
@@ -75,7 +75,7 @@ namespace Java.Text
             return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Format.html#format(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Format.html#format(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -84,7 +84,7 @@ namespace Java.Text
             return IExecuteWithSignature<Java.Lang.String>("format", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Format.html#parseObject(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Format.html#parseObject(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
@@ -94,7 +94,7 @@ namespace Java.Text
             return IExecuteWithSignature("parseObject", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Format.html#formatToCharacterIterator(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Format.html#formatToCharacterIterator(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>

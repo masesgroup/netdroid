@@ -64,27 +64,6 @@ namespace Org.Xmlpull.V1
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#getDepth()"/> 
-        /// </summary>
-        public int Depth
-        {
-            get { return IExecuteWithSignature<int>("getDepth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#getNamespace()"/> 
-        /// </summary>
-        public Java.Lang.String Namespace
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#getFeature(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -94,6 +73,14 @@ namespace Org.Xmlpull.V1
             return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#getDepth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDepth()
+        {
+            return IExecuteWithSignature<int>("getDepth", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -101,6 +88,22 @@ namespace Org.Xmlpull.V1
         public object GetProperty(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#getNamespace()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNamespace()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/xmlpull/v1/XmlSerializer.html#getPrefix(java.lang.String,boolean)"/>

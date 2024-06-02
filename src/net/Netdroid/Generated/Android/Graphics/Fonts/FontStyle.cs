@@ -139,18 +139,20 @@ namespace Android.Graphics.Fonts
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/fonts/FontStyle.html#getSlant()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/fonts/FontStyle.html#getSlant()"/>
         /// </summary>
-        public int Slant
+        /// <returns><see cref="int"/></returns>
+        public int GetSlant()
         {
-            get { return IExecuteWithSignature<int>("getSlant", "()I"); }
+            return IExecuteWithSignature<int>("getSlant", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/fonts/FontStyle.html#getWeight()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/fonts/FontStyle.html#getWeight()"/>
         /// </summary>
-        public int Weight
+        /// <returns><see cref="int"/></returns>
+        public int GetWeight()
         {
-            get { return IExecuteWithSignature<int>("getWeight", "()I"); }
+            return IExecuteWithSignature<int>("getWeight", "()I");
         }
 
         #endregion

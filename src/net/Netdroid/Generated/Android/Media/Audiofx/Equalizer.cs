@@ -119,39 +119,15 @@ namespace Android.Media.Audiofx
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#getBandLevelRange()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#getProperties()"/>
         /// </summary>
-        public short[] BandLevelRange
+        /// <returns><see cref="Android.Media.Audiofx.Equalizer.Settings"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public Android.Media.Audiofx.Equalizer.Settings GetProperties()
         {
-            get { return IExecuteWithSignatureArray<short>("getBandLevelRange", "()[S"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#getCurrentPreset()"/> 
-        /// </summary>
-        public short CurrentPreset
-        {
-            get { return IExecuteWithSignature<short>("getCurrentPreset", "()S"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#getNumberOfBands()"/> 
-        /// </summary>
-        public short NumberOfBands
-        {
-            get { return IExecuteWithSignature<short>("getNumberOfBands", "()S"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#getNumberOfPresets()"/> 
-        /// </summary>
-        public short NumberOfPresets
-        {
-            get { return IExecuteWithSignature<short>("getNumberOfPresets", "()S"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#getProperties()"/> <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#setProperties(android.media.audiofx.Equalizer.Settings)"/>
-        /// </summary>
-        public Android.Media.Audiofx.Equalizer.Settings Properties
-        {
-            get { return IExecuteWithSignature<Android.Media.Audiofx.Equalizer.Settings>("getProperties", "()Landroid/media/audiofx/Equalizer$Settings;"); } set { IExecuteWithSignature("setProperties", "(Landroid/media/audiofx/Equalizer$Settings;)V", value); }
+            return IExecuteWithSignature<Android.Media.Audiofx.Equalizer.Settings>("getProperties", "()Landroid/media/audiofx/Equalizer$Settings;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#getCenterFreq(short)"/>
@@ -211,6 +187,50 @@ namespace Android.Media.Audiofx
             return IExecuteWithSignature<short>("getBandLevel", "(S)S", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#getCurrentPreset()"/>
+        /// </summary>
+        /// <returns><see cref="short"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public short GetCurrentPreset()
+        {
+            return IExecuteWithSignature<short>("getCurrentPreset", "()S");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#getNumberOfBands()"/>
+        /// </summary>
+        /// <returns><see cref="short"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public short GetNumberOfBands()
+        {
+            return IExecuteWithSignature<short>("getNumberOfBands", "()S");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#getNumberOfPresets()"/>
+        /// </summary>
+        /// <returns><see cref="short"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public short GetNumberOfPresets()
+        {
+            return IExecuteWithSignature<short>("getNumberOfPresets", "()S");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#getBandLevelRange()"/>
+        /// </summary>
+        /// <returns><see cref="short"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public short[] GetBandLevelRange()
+        {
+            return IExecuteWithSignatureArray<short>("getBandLevelRange", "()[S");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#setBandLevel(short,short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
@@ -229,6 +249,17 @@ namespace Android.Media.Audiofx
         public void SetParameterListener(Android.Media.Audiofx.Equalizer.OnParameterChangeListener arg0)
         {
             IExecuteWithSignature("setParameterListener", "(Landroid/media/audiofx/Equalizer$OnParameterChangeListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#setProperties(android.media.audiofx.Equalizer.Settings)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.Audiofx.Equalizer.Settings"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public void SetProperties(Android.Media.Audiofx.Equalizer.Settings arg0)
+        {
+            IExecuteWithSignature("setProperties", "(Landroid/media/audiofx/Equalizer$Settings;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.html#usePreset(short)"/>
@@ -270,7 +301,7 @@ namespace Android.Media.Audiofx
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onParameterChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.Equalizer>>>(OnParameterChangeEventHandler));
+                AddEventHandler("onParameterChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.Equalizer>>>(OnParameterChangeEventHandler));
 
             }
 
@@ -278,7 +309,7 @@ namespace Android.Media.Audiofx
             /// Handler for <see href="https://developer.android.com/reference/android/media/audiofx/Equalizer.OnParameterChangeListener.html#onParameterChange(android.media.audiofx.Equalizer,int,int,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnParameterChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.Audiofx.Equalizer, int, int, int, int> OnOnParameterChange { get; set; } = null;
+            public global::System.Action<Android.Media.Audiofx.Equalizer, int, int, int, int> OnOnParameterChange { get; set; } = null;
 
             void OnParameterChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.Equalizer>> data)
             {

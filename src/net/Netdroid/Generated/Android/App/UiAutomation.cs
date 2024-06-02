@@ -94,40 +94,12 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#getRootInActiveWindow()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#getServiceInfo()"/>
         /// </summary>
-        public Android.View.Accessibility.AccessibilityNodeInfo RootInActiveWindow
+        /// <returns><see cref="Android.Accessibilityservice.AccessibilityServiceInfo"/></returns>
+        public Android.Accessibilityservice.AccessibilityServiceInfo GetServiceInfo()
         {
-            get { return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>("getRootInActiveWindow", "()Landroid/view/accessibility/AccessibilityNodeInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#getServiceInfo()"/> <see href="https://developer.android.com/reference/android/app/UiAutomation.html#setServiceInfo(android.accessibilityservice.AccessibilityServiceInfo)"/>
-        /// </summary>
-        public Android.Accessibilityservice.AccessibilityServiceInfo ServiceInfo
-        {
-            get { return IExecuteWithSignature<Android.Accessibilityservice.AccessibilityServiceInfo>("getServiceInfo", "()Landroid/accessibilityservice/AccessibilityServiceInfo;"); } set { IExecuteWithSignature("setServiceInfo", "(Landroid/accessibilityservice/AccessibilityServiceInfo;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#getWindowAnimationFrameStats()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.View.WindowAnimationFrameStats WindowAnimationFrameStats
-        {
-            get { return IExecuteWithSignature<Android.View.WindowAnimationFrameStats>("getWindowAnimationFrameStats", "()Landroid/view/WindowAnimationFrameStats;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#getWindows()"/> 
-        /// </summary>
-        public Java.Util.List<Android.View.Accessibility.AccessibilityWindowInfo> Windows
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.View.Accessibility.AccessibilityWindowInfo>>("getWindows", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#getWindowsOnAllDisplays()"/> 
-        /// </summary>
-        public Android.Util.SparseArray<Java.Util.List<Android.View.Accessibility.AccessibilityWindowInfo>> WindowsOnAllDisplays
-        {
-            get { return IExecuteWithSignature<Android.Util.SparseArray<Java.Util.List<Android.View.Accessibility.AccessibilityWindowInfo>>>("getWindowsOnAllDisplays", "()Landroid/util/SparseArray;"); }
+            return IExecuteWithSignature<Android.Accessibilityservice.AccessibilityServiceInfo>("getServiceInfo", "()Landroid/accessibilityservice/AccessibilityServiceInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#takeScreenshot()"/>
@@ -174,6 +146,14 @@ namespace Android.App
             return IExecuteWithSignatureArray<Android.Os.ParcelFileDescriptor>("executeShellCommandRwe", "(Ljava/lang/String;)[Landroid/os/ParcelFileDescriptor;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#getWindowsOnAllDisplays()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Util.SparseArray"/></returns>
+        public Android.Util.SparseArray<Java.Util.List<Android.View.Accessibility.AccessibilityWindowInfo>> GetWindowsOnAllDisplays()
+        {
+            return IExecuteWithSignature<Android.Util.SparseArray<Java.Util.List<Android.View.Accessibility.AccessibilityWindowInfo>>>("getWindowsOnAllDisplays", "()Landroid/util/SparseArray;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#executeAndWaitForEvent(java.lang.Runnable,android.app.UiAutomation.AccessibilityEventFilter,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
@@ -193,6 +173,23 @@ namespace Android.App
         public Android.View.Accessibility.AccessibilityNodeInfo FindFocus(int arg0)
         {
             return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>("findFocus", "(I)Landroid/view/accessibility/AccessibilityNodeInfo;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#getRootInActiveWindow()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo"/></returns>
+        public Android.View.Accessibility.AccessibilityNodeInfo GetRootInActiveWindow()
+        {
+            return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo>("getRootInActiveWindow", "()Landroid/view/accessibility/AccessibilityNodeInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#getWindowAnimationFrameStats()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.WindowAnimationFrameStats"/></returns>
+        [global::System.Obsolete()]
+        public Android.View.WindowAnimationFrameStats GetWindowAnimationFrameStats()
+        {
+            return IExecuteWithSignature<Android.View.WindowAnimationFrameStats>("getWindowAnimationFrameStats", "()Landroid/view/WindowAnimationFrameStats;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#getWindowContentFrameStats(int)"/>
@@ -249,6 +246,14 @@ namespace Android.App
             return IExecuteWithSignature<bool>("setRotation", "(I)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#getWindows()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.Accessibility.AccessibilityWindowInfo> GetWindows()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.View.Accessibility.AccessibilityWindowInfo>>("getWindows", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#adoptShellPermissionIdentity()"/>
         /// </summary>
         public void AdoptShellPermissionIdentity()
@@ -266,7 +271,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#clearWindowAnimationFrameStats()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ClearWindowAnimationFrameStats()
         {
             IExecuteWithSignature("clearWindowAnimationFrameStats", "()V");
@@ -339,6 +344,14 @@ namespace Android.App
         public void SetRunAsMonkey(bool arg0)
         {
             IExecuteWithSignature("setRunAsMonkey", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#setServiceInfo(android.accessibilityservice.AccessibilityServiceInfo)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Accessibilityservice.AccessibilityServiceInfo"/></param>
+        public void SetServiceInfo(Android.Accessibilityservice.AccessibilityServiceInfo arg0)
+        {
+            IExecuteWithSignature("setServiceInfo", "(Landroid/accessibilityservice/AccessibilityServiceInfo;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/UiAutomation.html#waitForIdle(long,long)"/>
@@ -419,7 +432,7 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onAccessibilityEvent", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.Accessibility.AccessibilityEvent>>>(OnAccessibilityEventEventHandler));
+                AddEventHandler("onAccessibilityEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.Accessibility.AccessibilityEvent>>>(OnAccessibilityEventEventHandler));
 
             }
 
@@ -427,7 +440,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/UiAutomation.OnAccessibilityEventListener.html#onAccessibilityEvent(android.view.accessibility.AccessibilityEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAccessibilityEvent"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.Accessibility.AccessibilityEvent> OnOnAccessibilityEvent { get; set; } = null;
+            public global::System.Action<Android.View.Accessibility.AccessibilityEvent> OnOnAccessibilityEvent { get; set; } = null;
 
             void OnAccessibilityEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.Accessibility.AccessibilityEvent>> data)
             {

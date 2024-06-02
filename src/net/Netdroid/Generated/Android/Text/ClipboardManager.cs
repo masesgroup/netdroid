@@ -46,21 +46,31 @@ namespace Android.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/ClipboardManager.html#getText()"/> <see href="https://developer.android.com/reference/android/text/ClipboardManager.html#setText(java.lang.CharSequence)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.CharSequence Text
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setText", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/ClipboardManager.html#hasText()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasText()
         {
             return IExecuteWithSignature<bool>("hasText", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/ClipboardManager.html#getText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.CharSequence GetText()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/ClipboardManager.html#setText(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        [global::System.Obsolete()]
+        public void SetText(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setText", "(Ljava/lang/CharSequence;)V", arg0);
         }
 
         #endregion

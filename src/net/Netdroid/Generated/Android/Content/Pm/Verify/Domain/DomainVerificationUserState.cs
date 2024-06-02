@@ -70,25 +70,12 @@ namespace Android.Content.Pm.Verify.Domain
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/verify/domain/DomainVerificationUserState.html#getHostToStateMap()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/verify/domain/DomainVerificationUserState.html#getUser()"/>
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Lang.Integer> HostToStateMap
+        /// <returns><see cref="Android.Os.UserHandle"/></returns>
+        public Android.Os.UserHandle GetUser()
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.Integer>>("getHostToStateMap", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/verify/domain/DomainVerificationUserState.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/verify/domain/DomainVerificationUserState.html#getUser()"/> 
-        /// </summary>
-        public Android.Os.UserHandle User
-        {
-            get { return IExecuteWithSignature<Android.Os.UserHandle>("getUser", "()Landroid/os/UserHandle;"); }
+            return IExecuteWithSignature<Android.Os.UserHandle>("getUser", "()Landroid/os/UserHandle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/verify/domain/DomainVerificationUserState.html#isLinkHandlingAllowed()"/>
@@ -105,6 +92,22 @@ namespace Android.Content.Pm.Verify.Domain
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/verify/domain/DomainVerificationUserState.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/verify/domain/DomainVerificationUserState.html#getHostToStateMap()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Lang.Integer> GetHostToStateMap()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.Integer>>("getHostToStateMap", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/verify/domain/DomainVerificationUserState.html#writeToParcel(android.os.Parcel,int)"/>

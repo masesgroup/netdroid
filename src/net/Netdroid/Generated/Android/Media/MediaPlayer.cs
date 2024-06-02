@@ -236,7 +236,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#MEDIA_MIMETYPE_TEXT_SUBRIP"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String MEDIA_MIMETYPE_TEXT_SUBRIP { get { if (!_MEDIA_MIMETYPE_TEXT_SUBRIPReady) { _MEDIA_MIMETYPE_TEXT_SUBRIPContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEDIA_MIMETYPE_TEXT_SUBRIP"); _MEDIA_MIMETYPE_TEXT_SUBRIPReady = true; } return _MEDIA_MIMETYPE_TEXT_SUBRIPContent; } }
         private static Java.Lang.String _MEDIA_MIMETYPE_TEXT_SUBRIPContent = default;
         private static bool _MEDIA_MIMETYPE_TEXT_SUBRIPReady = false; // this is used because in case of generics 
@@ -305,95 +305,20 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getAudioSessionId()"/> <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#setAudioSessionId(int)"/>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getPreferredDevice()"/>
         /// </summary>
-        public int AudioSessionId
+        /// <returns><see cref="Android.Media.AudioDeviceInfo"/></returns>
+        public Android.Media.AudioDeviceInfo GetPreferredDevice()
         {
-            get { return IExecuteWithSignature<int>("getAudioSessionId", "()I"); } set { IExecuteWithSignature("setAudioSessionId", "(I)V", value); }
+            return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getPreferredDevice", "()Landroid/media/AudioDeviceInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getCurrentPosition()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getRoutedDevice()"/>
         /// </summary>
-        public int CurrentPosition
+        /// <returns><see cref="Android.Media.AudioDeviceInfo"/></returns>
+        public Android.Media.AudioDeviceInfo GetRoutedDevice()
         {
-            get { return IExecuteWithSignature<int>("getCurrentPosition", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getDuration()"/> 
-        /// </summary>
-        public int Duration
-        {
-            get { return IExecuteWithSignature<int>("getDuration", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getDrmInfo()"/> 
-        /// </summary>
-        public Android.Media.MediaPlayer.DrmInfo GetDrmInfo
-        {
-            get { return IExecuteWithSignature<Android.Media.MediaPlayer.DrmInfo>("getDrmInfo", "()Landroid/media/MediaPlayer$DrmInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getTrackInfo()"/> 
-        /// </summary>
-        public Android.Media.MediaPlayer.TrackInfo[] GetTrackInfo
-        {
-            get { return IExecuteWithSignatureArray<Android.Media.MediaPlayer.TrackInfo>("getTrackInfo", "()[Landroid/media/MediaPlayer$TrackInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getMetrics()"/> 
-        /// </summary>
-        public Android.Os.PersistableBundle Metrics
-        {
-            get { return IExecuteWithSignature<Android.Os.PersistableBundle>("getMetrics", "()Landroid/os/PersistableBundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getPlaybackParams()"/> <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#setPlaybackParams(android.media.PlaybackParams)"/>
-        /// </summary>
-        public Android.Media.PlaybackParams PlaybackParams
-        {
-            get { return IExecuteWithSignature<Android.Media.PlaybackParams>("getPlaybackParams", "()Landroid/media/PlaybackParams;"); } set { IExecuteWithSignature("setPlaybackParams", "(Landroid/media/PlaybackParams;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getPreferredDevice()"/> 
-        /// </summary>
-        public Android.Media.AudioDeviceInfo PreferredDevice
-        {
-            get { return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getPreferredDevice", "()Landroid/media/AudioDeviceInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getRoutedDevice()"/> 
-        /// </summary>
-        public Android.Media.AudioDeviceInfo RoutedDevice
-        {
-            get { return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getRoutedDevice", "()Landroid/media/AudioDeviceInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getSyncParams()"/> <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#setSyncParams(android.media.SyncParams)"/>
-        /// </summary>
-        public Android.Media.SyncParams SyncParams
-        {
-            get { return IExecuteWithSignature<Android.Media.SyncParams>("getSyncParams", "()Landroid/media/SyncParams;"); } set { IExecuteWithSignature("setSyncParams", "(Landroid/media/SyncParams;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getTimestamp()"/> 
-        /// </summary>
-        public Android.Media.MediaTimestamp Timestamp
-        {
-            get { return IExecuteWithSignature<Android.Media.MediaTimestamp>("getTimestamp", "()Landroid/media/MediaTimestamp;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getVideoHeight()"/> 
-        /// </summary>
-        public int VideoHeight
-        {
-            get { return IExecuteWithSignature<int>("getVideoHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getVideoWidth()"/> 
-        /// </summary>
-        public int VideoWidth
-        {
-            get { return IExecuteWithSignature<int>("getVideoWidth", "()I"); }
+            return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getRoutedDevice", "()Landroid/media/AudioDeviceInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getKeyRequest(byte[],byte[],java.lang.String,int,java.util.Map)"/>
@@ -410,6 +335,31 @@ namespace Android.Media
             return IExecute<Android.Media.MediaDrm.KeyRequest>("getKeyRequest", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getDrmInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.MediaPlayer.DrmInfo"/></returns>
+        public Android.Media.MediaPlayer.DrmInfo GetDrmInfo()
+        {
+            return IExecuteWithSignature<Android.Media.MediaPlayer.DrmInfo>("getDrmInfo", "()Landroid/media/MediaPlayer$DrmInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getTrackInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.MediaPlayer.TrackInfo"/></returns>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        public Android.Media.MediaPlayer.TrackInfo[] GetTrackInfo()
+        {
+            return IExecuteWithSignatureArray<Android.Media.MediaPlayer.TrackInfo>("getTrackInfo", "()[Landroid/media/MediaPlayer$TrackInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getTimestamp()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.MediaTimestamp"/></returns>
+        public Android.Media.MediaTimestamp GetTimestamp()
+        {
+            return IExecuteWithSignature<Android.Media.MediaTimestamp>("getTimestamp", "()Landroid/media/MediaTimestamp;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#createVolumeShaper(android.media.VolumeShaper.Configuration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.VolumeShaper.Configuration"/></param>
@@ -417,6 +367,14 @@ namespace Android.Media
         public Android.Media.VolumeShaper CreateVolumeShaper(Android.Media.VolumeShaper.Configuration arg0)
         {
             return IExecuteWithSignature<Android.Media.VolumeShaper>("createVolumeShaper", "(Landroid/media/VolumeShaper$Configuration;)Landroid/media/VolumeShaper;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getMetrics()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
+        public Android.Os.PersistableBundle GetMetrics()
+        {
+            return IExecuteWithSignature<Android.Os.PersistableBundle>("getMetrics", "()Landroid/os/PersistableBundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#setPreferredDevice(android.media.AudioDeviceInfo)"/>
@@ -460,6 +418,22 @@ namespace Android.Media
             return IExecuteWithSignature<Java.Lang.String>("getDrmPropertyString", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getPlaybackParams()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.PlaybackParams"/></returns>
+        public Android.Media.PlaybackParams GetPlaybackParams()
+        {
+            return IExecuteWithSignature<Android.Media.PlaybackParams>("getPlaybackParams", "()Landroid/media/PlaybackParams;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getSyncParams()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.SyncParams"/></returns>
+        public Android.Media.SyncParams GetSyncParams()
+        {
+            return IExecuteWithSignature<Android.Media.SyncParams>("getSyncParams", "()Landroid/media/SyncParams;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#isLooping()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -474,6 +448,46 @@ namespace Android.Media
         public bool IsPlaying()
         {
             return IExecuteWithSignature<bool>("isPlaying", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getAudioSessionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAudioSessionId()
+        {
+            return IExecuteWithSignature<int>("getAudioSessionId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getCurrentPosition()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentPosition()
+        {
+            return IExecuteWithSignature<int>("getCurrentPosition", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getDuration()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDuration()
+        {
+            return IExecuteWithSignature<int>("getDuration", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getVideoHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVideoHeight()
+        {
+            return IExecuteWithSignature<int>("getVideoHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#getVideoWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVideoWidth()
+        {
+            return IExecuteWithSignature<int>("getVideoWidth", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#attachAuxEffect(int)"/>
@@ -498,6 +512,22 @@ namespace Android.Media
         public void SetNextMediaPlayer(Android.Media.MediaPlayer arg0)
         {
             IExecuteWithSignature("setNextMediaPlayer", "(Landroid/media/MediaPlayer;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#setPlaybackParams(android.media.PlaybackParams)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.PlaybackParams"/></param>
+        public void SetPlaybackParams(Android.Media.PlaybackParams arg0)
+        {
+            IExecuteWithSignature("setPlaybackParams", "(Landroid/media/PlaybackParams;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#setSyncParams(android.media.SyncParams)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.SyncParams"/></param>
+        public void SetSyncParams(Android.Media.SyncParams arg0)
+        {
+            IExecuteWithSignature("setSyncParams", "(Landroid/media/SyncParams;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#addOnRoutingChangedListener(android.media.AudioRouting.OnRoutingChangedListener,android.os.Handler)"/>
@@ -693,10 +723,20 @@ namespace Android.Media
             IExecuteWithSignature("setAudioAttributes", "(Landroid/media/AudioAttributes;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#setAudioSessionId(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        public void SetAudioSessionId(int arg0)
+        {
+            IExecuteWithSignature("setAudioSessionId", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.html#setAudioStreamType(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAudioStreamType(int arg0)
         {
             IExecuteWithSignature("setAudioStreamType", "(I)V", arg0);
@@ -1054,18 +1094,20 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.DrmInfo.html#getPssh()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.DrmInfo.html#getPssh()"/>
             /// </summary>
-            public Java.Util.Map<Java.Util.UUID, byte[]> Pssh
+            /// <returns><see cref="Java.Util.Map"/></returns>
+            public Java.Util.Map<Java.Util.UUID, byte[]> GetPssh()
             {
-                get { return IExecuteWithSignature<Java.Util.Map<Java.Util.UUID, byte[]>>("getPssh", "()Ljava/util/Map;"); }
+                return IExecuteWithSignature<Java.Util.Map<Java.Util.UUID, byte[]>>("getPssh", "()Ljava/util/Map;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.DrmInfo.html#getSupportedSchemes()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.DrmInfo.html#getSupportedSchemes()"/>
             /// </summary>
-            public Java.Util.UUID[] SupportedSchemes
+            /// <returns><see cref="Java.Util.UUID"/></returns>
+            public Java.Util.UUID[] GetSupportedSchemes()
             {
-                get { return IExecuteWithSignatureArray<Java.Util.UUID>("getSupportedSchemes", "()[Ljava/util/UUID;"); }
+                return IExecuteWithSignatureArray<Java.Util.UUID>("getSupportedSchemes", "()[Ljava/util/UUID;");
             }
 
             #endregion
@@ -1237,7 +1279,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onBufferingUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnBufferingUpdateEventHandler));
+                AddEventHandler("onBufferingUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnBufferingUpdateEventHandler));
 
             }
 
@@ -1245,7 +1287,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaPlayer.OnBufferingUpdateListener.html#onBufferingUpdate(android.media.MediaPlayer,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnBufferingUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaPlayer, int> OnOnBufferingUpdate { get; set; } = null;
+            public global::System.Action<Android.Media.MediaPlayer, int> OnOnBufferingUpdate { get; set; } = null;
 
             void OnBufferingUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>> data)
             {
@@ -1338,7 +1380,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onCompletion", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnCompletionEventHandler));
+                AddEventHandler("onCompletion", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnCompletionEventHandler));
 
             }
 
@@ -1346,7 +1388,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaPlayer.OnCompletionListener.html#onCompletion(android.media.MediaPlayer)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCompletion"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaPlayer> OnOnCompletion { get; set; } = null;
+            public global::System.Action<Android.Media.MediaPlayer> OnOnCompletion { get; set; } = null;
 
             void OnCompletionEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>> data)
             {
@@ -1476,7 +1518,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDrmInfo", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnDrmInfoEventHandler));
+                AddEventHandler("onDrmInfo", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnDrmInfoEventHandler));
 
             }
 
@@ -1484,7 +1526,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaPlayer.OnDrmInfoListener.html#onDrmInfo(android.media.MediaPlayer,android.media.MediaPlayer.DrmInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDrmInfo"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaPlayer, Android.Media.MediaPlayer.DrmInfo> OnOnDrmInfo { get; set; } = null;
+            public global::System.Action<Android.Media.MediaPlayer, Android.Media.MediaPlayer.DrmInfo> OnOnDrmInfo { get; set; } = null;
 
             void OnDrmInfoEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>> data)
             {
@@ -1577,7 +1619,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDrmPrepared", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnDrmPreparedEventHandler));
+                AddEventHandler("onDrmPrepared", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnDrmPreparedEventHandler));
 
             }
 
@@ -1585,7 +1627,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaPlayer.OnDrmPreparedListener.html#onDrmPrepared(android.media.MediaPlayer,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDrmPrepared"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaPlayer, int> OnOnDrmPrepared { get; set; } = null;
+            public global::System.Action<Android.Media.MediaPlayer, int> OnOnDrmPrepared { get; set; } = null;
 
             void OnDrmPreparedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>> data)
             {
@@ -1678,7 +1720,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onError", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnErrorEventHandler));
+                AddEventHandler("onError", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnErrorEventHandler));
 
             }
 
@@ -1686,7 +1728,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaPlayer.OnErrorListener.html#onError(android.media.MediaPlayer,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.Media.MediaPlayer, int, int, bool> OnOnError { get; set; } = null;
+            public global::System.Func<Android.Media.MediaPlayer, int, int, bool> OnOnError { get; set; } = null;
 
             void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>> data)
             {
@@ -1784,7 +1826,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onInfo", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnInfoEventHandler));
+                AddEventHandler("onInfo", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnInfoEventHandler));
 
             }
 
@@ -1792,7 +1834,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaPlayer.OnInfoListener.html#onInfo(android.media.MediaPlayer,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnInfo"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.Media.MediaPlayer, int, int, bool> OnOnInfo { get; set; } = null;
+            public global::System.Func<Android.Media.MediaPlayer, int, int, bool> OnOnInfo { get; set; } = null;
 
             void OnInfoEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>> data)
             {
@@ -1890,7 +1932,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onMediaTimeDiscontinuity", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnMediaTimeDiscontinuityEventHandler));
+                AddEventHandler("onMediaTimeDiscontinuity", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnMediaTimeDiscontinuityEventHandler));
 
             }
 
@@ -1898,7 +1940,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaPlayer.OnMediaTimeDiscontinuityListener.html#onMediaTimeDiscontinuity(android.media.MediaPlayer,android.media.MediaTimestamp)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMediaTimeDiscontinuity"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaPlayer, Android.Media.MediaTimestamp> OnOnMediaTimeDiscontinuity { get; set; } = null;
+            public global::System.Action<Android.Media.MediaPlayer, Android.Media.MediaTimestamp> OnOnMediaTimeDiscontinuity { get; set; } = null;
 
             void OnMediaTimeDiscontinuityEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>> data)
             {
@@ -1991,7 +2033,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onPrepared", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnPreparedEventHandler));
+                AddEventHandler("onPrepared", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnPreparedEventHandler));
 
             }
 
@@ -1999,7 +2041,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaPlayer.OnPreparedListener.html#onPrepared(android.media.MediaPlayer)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPrepared"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaPlayer> OnOnPrepared { get; set; } = null;
+            public global::System.Action<Android.Media.MediaPlayer> OnOnPrepared { get; set; } = null;
 
             void OnPreparedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>> data)
             {
@@ -2090,7 +2132,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onSeekComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnSeekCompleteEventHandler));
+                AddEventHandler("onSeekComplete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnSeekCompleteEventHandler));
 
             }
 
@@ -2098,7 +2140,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaPlayer.OnSeekCompleteListener.html#onSeekComplete(android.media.MediaPlayer)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSeekComplete"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaPlayer> OnOnSeekComplete { get; set; } = null;
+            public global::System.Action<Android.Media.MediaPlayer> OnOnSeekComplete { get; set; } = null;
 
             void OnSeekCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>> data)
             {
@@ -2189,7 +2231,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onSubtitleData", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnSubtitleDataEventHandler));
+                AddEventHandler("onSubtitleData", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnSubtitleDataEventHandler));
 
             }
 
@@ -2197,7 +2239,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaPlayer.OnSubtitleDataListener.html#onSubtitleData(android.media.MediaPlayer,android.media.SubtitleData)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSubtitleData"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaPlayer, Android.Media.SubtitleData> OnOnSubtitleData { get; set; } = null;
+            public global::System.Action<Android.Media.MediaPlayer, Android.Media.SubtitleData> OnOnSubtitleData { get; set; } = null;
 
             void OnSubtitleDataEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>> data)
             {
@@ -2290,7 +2332,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onTimedMetaDataAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnTimedMetaDataAvailableEventHandler));
+                AddEventHandler("onTimedMetaDataAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnTimedMetaDataAvailableEventHandler));
 
             }
 
@@ -2298,7 +2340,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaPlayer.OnTimedMetaDataAvailableListener.html#onTimedMetaDataAvailable(android.media.MediaPlayer,android.media.TimedMetaData)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTimedMetaDataAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaPlayer, Android.Media.TimedMetaData> OnOnTimedMetaDataAvailable { get; set; } = null;
+            public global::System.Action<Android.Media.MediaPlayer, Android.Media.TimedMetaData> OnOnTimedMetaDataAvailable { get; set; } = null;
 
             void OnTimedMetaDataAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>> data)
             {
@@ -2391,7 +2433,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onTimedText", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnTimedTextEventHandler));
+                AddEventHandler("onTimedText", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnTimedTextEventHandler));
 
             }
 
@@ -2399,7 +2441,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaPlayer.OnTimedTextListener.html#onTimedText(android.media.MediaPlayer,android.media.TimedText)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTimedText"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaPlayer, Android.Media.TimedText> OnOnTimedText { get; set; } = null;
+            public global::System.Action<Android.Media.MediaPlayer, Android.Media.TimedText> OnOnTimedText { get; set; } = null;
 
             void OnTimedTextEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>> data)
             {
@@ -2492,7 +2534,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onVideoSizeChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnVideoSizeChangedEventHandler));
+                AddEventHandler("onVideoSizeChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>>>(OnVideoSizeChangedEventHandler));
 
             }
 
@@ -2500,7 +2542,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaPlayer.OnVideoSizeChangedListener.html#onVideoSizeChanged(android.media.MediaPlayer,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnVideoSizeChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaPlayer, int, int> OnOnVideoSizeChanged { get; set; } = null;
+            public global::System.Action<Android.Media.MediaPlayer, int, int> OnOnVideoSizeChanged { get; set; } = null;
 
             void OnVideoSizeChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaPlayer>> data)
             {
@@ -2689,25 +2731,12 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.TrackInfo.html#getFormat()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.TrackInfo.html#getFormat()"/>
             /// </summary>
-            public Android.Media.MediaFormat Format
+            /// <returns><see cref="Android.Media.MediaFormat"/></returns>
+            public Android.Media.MediaFormat GetFormat()
             {
-                get { return IExecuteWithSignature<Android.Media.MediaFormat>("getFormat", "()Landroid/media/MediaFormat;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.TrackInfo.html#getLanguage()"/> 
-            /// </summary>
-            public Java.Lang.String Language
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getLanguage", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.TrackInfo.html#getTrackType()"/> 
-            /// </summary>
-            public int TrackType
-            {
-                get { return IExecuteWithSignature<int>("getTrackType", "()I"); }
+                return IExecuteWithSignature<Android.Media.MediaFormat>("getFormat", "()Landroid/media/MediaFormat;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.TrackInfo.html#describeContents()"/>
@@ -2716,6 +2745,22 @@ namespace Android.Media
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.TrackInfo.html#getTrackType()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetTrackType()
+            {
+                return IExecuteWithSignature<int>("getTrackType", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.TrackInfo.html#getLanguage()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetLanguage()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getLanguage", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaPlayer.TrackInfo.html#writeToParcel(android.os.Parcel,int)"/>

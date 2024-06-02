@@ -42,18 +42,27 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CookieHandler.html#getDefault()"/> <see href="https://developer.android.com/reference/java.base/java/net/CookieHandler.html#setDefault(java.net.CookieHandler)"/>
+        /// <see href="https://developer.android.com/reference/java/net/CookieHandler.html#getDefault()"/>
         /// </summary>
-        public static Java.Net.CookieHandler Default
+        /// <returns><see cref="Java.Net.CookieHandler"/></returns>
+        public static Java.Net.CookieHandler GetDefault()
         {
-            get { return SExecuteWithSignature<Java.Net.CookieHandler>(LocalBridgeClazz, "getDefault", "()Ljava/net/CookieHandler;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/net/CookieHandler;)V", value); }
+            return SExecuteWithSignature<Java.Net.CookieHandler>(LocalBridgeClazz, "getDefault", "()Ljava/net/CookieHandler;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/CookieHandler.html#setDefault(java.net.CookieHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.CookieHandler"/></param>
+        public static void SetDefault(Java.Net.CookieHandler arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/net/CookieHandler;)V", arg0);
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CookieHandler.html#get(java.net.URI,java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/net/CookieHandler.html#get(java.net.URI,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
@@ -64,7 +73,7 @@ namespace Java.Net
             return IExecute<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("get", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CookieHandler.html#put(java.net.URI,java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/net/CookieHandler.html#put(java.net.URI,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>

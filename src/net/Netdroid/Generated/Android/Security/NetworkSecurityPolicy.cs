@@ -42,11 +42,12 @@ namespace Android.Security
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/NetworkSecurityPolicy.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/security/NetworkSecurityPolicy.html#getInstance()"/>
         /// </summary>
-        public static Android.Security.NetworkSecurityPolicy Instance
+        /// <returns><see cref="Android.Security.NetworkSecurityPolicy"/></returns>
+        public static Android.Security.NetworkSecurityPolicy GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Security.NetworkSecurityPolicy>(LocalBridgeClazz, "getInstance", "()Landroid/security/NetworkSecurityPolicy;"); }
+            return SExecuteWithSignature<Android.Security.NetworkSecurityPolicy>(LocalBridgeClazz, "getInstance", "()Landroid/security/NetworkSecurityPolicy;");
         }
 
         #endregion

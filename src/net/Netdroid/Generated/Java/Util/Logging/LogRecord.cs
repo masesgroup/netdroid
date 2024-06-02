@@ -30,7 +30,7 @@ namespace Java.Util.Logging
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#%3Cinit%3E(java.util.logging.Level,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#%3Cinit%3E(java.util.logging.Level,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -55,113 +55,213 @@ namespace Java.Util.Logging
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getInstant()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setInstant(java.time.Instant)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#getThreadID()"/>
         /// </summary>
-        public Java.Time.Instant Instant
+        /// <returns><see cref="int"/></returns>
+        public int GetThreadID()
         {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getInstant", "()Ljava/time/Instant;"); } set { IExecuteWithSignature("setInstant", "(Ljava/time/Instant;)V", value); }
+            return IExecuteWithSignature<int>("getThreadID", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getLevel()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setLevel(java.util.logging.Level)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#getParameters()"/>
         /// </summary>
-        public Java.Util.Logging.Level Level
+        /// <returns><see cref="object"/></returns>
+        public object[] GetParameters()
         {
-            get { return IExecuteWithSignature<Java.Util.Logging.Level>("getLevel", "()Ljava/util/logging/Level;"); } set { IExecuteWithSignature("setLevel", "(Ljava/util/logging/Level;)V", value); }
+            return IExecuteWithSignatureArray<object>("getParameters", "()[Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getLoggerName()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setLoggerName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#getLoggerName()"/>
         /// </summary>
-        public Java.Lang.String LoggerName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLoggerName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLoggerName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setLoggerName", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getLoggerName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getLongThreadID()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#getMessage()"/>
         /// </summary>
-        public long LongThreadID
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMessage()
         {
-            get { return IExecuteWithSignature<long>("getLongThreadID", "()J"); }
+            return IExecuteWithSignature<Java.Lang.String>("getMessage", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getMessage()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setMessage(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#getResourceBundleName()"/>
         /// </summary>
-        public Java.Lang.String Message
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetResourceBundleName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMessage", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setMessage", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getResourceBundleName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getMillis()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setMillis(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#getSourceClassName()"/>
         /// </summary>
-        [System.Obsolete()]
-        public long Millis
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSourceClassName()
         {
-            get { return IExecuteWithSignature<long>("getMillis", "()J"); } set { IExecuteWithSignature("setMillis", "(J)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getSourceClassName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getParameters()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setParameters(java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#getSourceMethodName()"/>
         /// </summary>
-        public object[] Parameters
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSourceMethodName()
         {
-            get { return IExecuteWithSignatureArray<object>("getParameters", "()[Ljava/lang/Object;"); } set { IExecuteWithSignature("setParameters", "([Ljava/lang/Object;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getSourceMethodName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getResourceBundle()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setResourceBundle(java.util.ResourceBundle)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#getThrown()"/>
         /// </summary>
-        public Java.Util.ResourceBundle ResourceBundle
+        /// <returns><see cref="Java.Lang.Throwable"/></returns>
+        public Java.Lang.Throwable GetThrown()
         {
-            get { return IExecuteWithSignature<Java.Util.ResourceBundle>("getResourceBundle", "()Ljava/util/ResourceBundle;"); } set { IExecuteWithSignature("setResourceBundle", "(Ljava/util/ResourceBundle;)V", value); }
+            var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getThrown", "()Ljava/lang/Throwable;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getResourceBundleName()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setResourceBundleName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#getInstant()"/>
         /// </summary>
-        public Java.Lang.String ResourceBundleName
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetInstant()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getResourceBundleName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setResourceBundleName", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Time.Instant>("getInstant", "()Ljava/time/Instant;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getSequenceNumber()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setSequenceNumber(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#getLevel()"/>
         /// </summary>
-        public long SequenceNumber
+        /// <returns><see cref="Java.Util.Logging.Level"/></returns>
+        public Java.Util.Logging.Level GetLevel()
         {
-            get { return IExecuteWithSignature<long>("getSequenceNumber", "()J"); } set { IExecuteWithSignature("setSequenceNumber", "(J)V", value); }
+            return IExecuteWithSignature<Java.Util.Logging.Level>("getLevel", "()Ljava/util/logging/Level;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getSourceClassName()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setSourceClassName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#getResourceBundle()"/>
         /// </summary>
-        public Java.Lang.String SourceClassName
+        /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
+        public Java.Util.ResourceBundle GetResourceBundle()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSourceClassName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSourceClassName", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Util.ResourceBundle>("getResourceBundle", "()Ljava/util/ResourceBundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getSourceMethodName()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setSourceMethodName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#getMillis()"/>
         /// </summary>
-        public Java.Lang.String SourceMethodName
+        /// <returns><see cref="long"/></returns>
+        public long GetMillis()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSourceMethodName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSourceMethodName", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<long>("getMillis", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getThreadID()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setThreadID(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#getSequenceNumber()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int ThreadID
+        /// <returns><see cref="long"/></returns>
+        public long GetSequenceNumber()
         {
-            get { return IExecuteWithSignature<int>("getThreadID", "()I"); } set { IExecuteWithSignature("setThreadID", "(I)V", value); }
+            return IExecuteWithSignature<long>("getSequenceNumber", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#getThrown()"/> <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setThrown(java.lang.Throwable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#setInstant(java.time.Instant)"/>
         /// </summary>
-        public Java.Lang.Throwable Thrown
+        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
+        public void SetInstant(Java.Time.Instant arg0)
         {
-            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getThrown", "()Ljava/lang/Throwable;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); } set { IExecuteWithSignature("setThrown", "(Ljava/lang/Throwable;)V", value); }
+            IExecuteWithSignature("setInstant", "(Ljava/time/Instant;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/LogRecord.html#setLongThreadID(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#setLevel(java.util.logging.Level)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
+        public void SetLevel(Java.Util.Logging.Level arg0)
+        {
+            IExecuteWithSignature("setLevel", "(Ljava/util/logging/Level;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#setLoggerName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetLoggerName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setLoggerName", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#setMessage(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetMessage(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setMessage", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#setMillis(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Java.Util.Logging.LogRecord"/></returns>
-        public Java.Util.Logging.LogRecord SetLongThreadID(long arg0)
+        [global::System.Obsolete()]
+        public void SetMillis(long arg0)
         {
-            return IExecuteWithSignature<Java.Util.Logging.LogRecord>("setLongThreadID", "(J)Ljava/util/logging/LogRecord;", arg0);
+            IExecuteWithSignature("setMillis", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#setParameters(java.lang.Object[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        public void SetParameters(object[] arg0)
+        {
+            IExecuteWithSignature("setParameters", "([Ljava/lang/Object;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#setResourceBundle(java.util.ResourceBundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.ResourceBundle"/></param>
+        public void SetResourceBundle(Java.Util.ResourceBundle arg0)
+        {
+            IExecuteWithSignature("setResourceBundle", "(Ljava/util/ResourceBundle;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#setResourceBundleName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetResourceBundleName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setResourceBundleName", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#setSequenceNumber(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetSequenceNumber(long arg0)
+        {
+            IExecuteWithSignature("setSequenceNumber", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#setSourceClassName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetSourceClassName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSourceClassName", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#setSourceMethodName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetSourceMethodName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSourceMethodName", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#setThreadID(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetThreadID(int arg0)
+        {
+            IExecuteWithSignature("setThreadID", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#setThrown(java.lang.Throwable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
+        public void SetThrown(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
+        {
+            IExecuteWithSignature("setThrown", "(Ljava/lang/Throwable;)V", arg0);
         }
 
         #endregion

@@ -70,25 +70,20 @@ namespace Android.View.Translation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationContext.html#getSourceSpec()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationContext.html#getSourceSpec()"/>
         /// </summary>
-        public Android.View.Translation.TranslationSpec SourceSpec
+        /// <returns><see cref="Android.View.Translation.TranslationSpec"/></returns>
+        public Android.View.Translation.TranslationSpec GetSourceSpec()
         {
-            get { return IExecuteWithSignature<Android.View.Translation.TranslationSpec>("getSourceSpec", "()Landroid/view/translation/TranslationSpec;"); }
+            return IExecuteWithSignature<Android.View.Translation.TranslationSpec>("getSourceSpec", "()Landroid/view/translation/TranslationSpec;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationContext.html#getTargetSpec()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationContext.html#getTargetSpec()"/>
         /// </summary>
-        public Android.View.Translation.TranslationSpec TargetSpec
+        /// <returns><see cref="Android.View.Translation.TranslationSpec"/></returns>
+        public Android.View.Translation.TranslationSpec GetTargetSpec()
         {
-            get { return IExecuteWithSignature<Android.View.Translation.TranslationSpec>("getTargetSpec", "()Landroid/view/translation/TranslationSpec;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationContext.html#getTranslationFlags()"/> 
-        /// </summary>
-        public int TranslationFlags
-        {
-            get { return IExecuteWithSignature<int>("getTranslationFlags", "()I"); }
+            return IExecuteWithSignature<Android.View.Translation.TranslationSpec>("getTargetSpec", "()Landroid/view/translation/TranslationSpec;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/TranslationContext.html#describeContents()"/>
@@ -97,6 +92,14 @@ namespace Android.View.Translation
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationContext.html#getTranslationFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTranslationFlags()
+        {
+            return IExecuteWithSignature<int>("getTranslationFlags", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/TranslationContext.html#writeToParcel(android.os.Parcel,int)"/>

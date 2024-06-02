@@ -46,42 +46,7 @@ namespace Java.Util.Concurrent.Locks
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getExclusiveQueuedThreads()"/> 
-        /// </summary>
-        public Java.Util.Collection<Java.Lang.Thread> ExclusiveQueuedThreads
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<Java.Lang.Thread>>("getExclusiveQueuedThreads", "()Ljava/util/Collection;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getFirstQueuedThread()"/> 
-        /// </summary>
-        public Java.Lang.Thread FirstQueuedThread
-        {
-            get { return IExecuteWithSignature<Java.Lang.Thread>("getFirstQueuedThread", "()Ljava/lang/Thread;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getQueuedThreads()"/> 
-        /// </summary>
-        public Java.Util.Collection<Java.Lang.Thread> QueuedThreads
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<Java.Lang.Thread>>("getQueuedThreads", "()Ljava/util/Collection;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getQueueLength()"/> 
-        /// </summary>
-        public int QueueLength
-        {
-            get { return IExecuteWithSignature<int>("getQueueLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getSharedQueuedThreads()"/> 
-        /// </summary>
-        public Java.Util.Collection<Java.Lang.Thread> SharedQueuedThreads
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<Java.Lang.Thread>>("getSharedQueuedThreads", "()Ljava/util/Collection;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#hasContended()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#hasContended()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasContended()
@@ -89,7 +54,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("hasContended", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#hasQueuedPredecessors()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#hasQueuedPredecessors()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasQueuedPredecessors()
@@ -97,7 +62,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("hasQueuedPredecessors", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#hasQueuedThreads()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#hasQueuedThreads()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasQueuedThreads()
@@ -105,7 +70,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("hasQueuedThreads", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#hasWaiters(java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#hasWaiters(java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer.ConditionObject"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -114,7 +79,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("hasWaiters", "(Ljava/util/concurrent/locks/AbstractQueuedLongSynchronizer$ConditionObject;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#isQueued(java.lang.Thread)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#isQueued(java.lang.Thread)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -123,7 +88,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("isQueued", "(Ljava/lang/Thread;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#owns(java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#owns(java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer.ConditionObject"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -132,7 +97,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("owns", "(Ljava/util/concurrent/locks/AbstractQueuedLongSynchronizer$ConditionObject;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#release(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#release(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -141,7 +106,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("release", "(J)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#releaseShared(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#releaseShared(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -150,7 +115,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("releaseShared", "(J)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#tryAcquireNanos(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#tryAcquireNanos(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -161,7 +126,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecute<bool>("tryAcquireNanos", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#tryAcquireSharedNanos(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#tryAcquireSharedNanos(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -172,7 +137,15 @@ namespace Java.Util.Concurrent.Locks
             return IExecute<bool>("tryAcquireSharedNanos", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getWaitQueueLength(java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getQueueLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetQueueLength()
+        {
+            return IExecuteWithSignature<int>("getQueueLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getWaitQueueLength(java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer.ConditionObject"/></param>
         /// <returns><see cref="int"/></returns>
@@ -181,7 +154,39 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<int>("getWaitQueueLength", "(Ljava/util/concurrent/locks/AbstractQueuedLongSynchronizer$ConditionObject;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getWaitingThreads(java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getFirstQueuedThread()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Thread"/></returns>
+        public Java.Lang.Thread GetFirstQueuedThread()
+        {
+            return IExecuteWithSignature<Java.Lang.Thread>("getFirstQueuedThread", "()Ljava/lang/Thread;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getExclusiveQueuedThreads()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Java.Lang.Thread> GetExclusiveQueuedThreads()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Java.Lang.Thread>>("getExclusiveQueuedThreads", "()Ljava/util/Collection;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getQueuedThreads()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Java.Lang.Thread> GetQueuedThreads()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Java.Lang.Thread>>("getQueuedThreads", "()Ljava/util/Collection;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getSharedQueuedThreads()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Java.Lang.Thread> GetSharedQueuedThreads()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Java.Lang.Thread>>("getSharedQueuedThreads", "()Ljava/util/Collection;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#getWaitingThreads(java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer.ConditionObject"/></param>
         /// <returns><see cref="Java.Util.Collection"/></returns>
@@ -190,7 +195,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<Java.Util.Collection<Java.Lang.Thread>>("getWaitingThreads", "(Ljava/util/concurrent/locks/AbstractQueuedLongSynchronizer$ConditionObject;)Ljava/util/Collection;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#acquire(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#acquire(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public void Acquire(long arg0)
@@ -198,7 +203,7 @@ namespace Java.Util.Concurrent.Locks
             IExecuteWithSignature("acquire", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#acquireInterruptibly(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#acquireInterruptibly(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -207,7 +212,7 @@ namespace Java.Util.Concurrent.Locks
             IExecuteWithSignature("acquireInterruptibly", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#acquireShared(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#acquireShared(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public void AcquireShared(long arg0)
@@ -215,7 +220,7 @@ namespace Java.Util.Concurrent.Locks
             IExecuteWithSignature("acquireShared", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#acquireSharedInterruptibly(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html#acquireSharedInterruptibly(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -232,7 +237,7 @@ namespace Java.Util.Concurrent.Locks
         {
             #region Constructors
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#%3Cinit%3E(java.util.concurrent.locks.AbstractQueuedLongSynchronizer)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#%3Cinit%3E(java.util.concurrent.locks.AbstractQueuedLongSynchronizer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer"/></param>
             public ConditionObject(Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer arg0)
@@ -264,7 +269,7 @@ namespace Java.Util.Concurrent.Locks
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#await(long,java.util.concurrent.TimeUnit)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#await(long,java.util.concurrent.TimeUnit)"/>
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
             /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -275,7 +280,7 @@ namespace Java.Util.Concurrent.Locks
                 return IExecute<bool>("await", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#awaitUntil(java.util.Date)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#awaitUntil(java.util.Date)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Date"/></param>
             /// <returns><see cref="bool"/></returns>
@@ -285,7 +290,7 @@ namespace Java.Util.Concurrent.Locks
                 return IExecuteWithSignature<bool>("awaitUntil", "(Ljava/util/Date;)Z", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#awaitNanos(long)"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#awaitNanos(long)"/>
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
             /// <returns><see cref="long"/></returns>
@@ -295,7 +300,7 @@ namespace Java.Util.Concurrent.Locks
                 return IExecuteWithSignature<long>("awaitNanos", "(J)J", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#await()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#await()"/>
             /// </summary>
             /// <exception cref="Java.Lang.InterruptedException"/>
             public void Await()
@@ -303,21 +308,21 @@ namespace Java.Util.Concurrent.Locks
                 IExecuteWithSignature("await", "()V");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#awaitUninterruptibly()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#awaitUninterruptibly()"/>
             /// </summary>
             public void AwaitUninterruptibly()
             {
                 IExecuteWithSignature("awaitUninterruptibly", "()V");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#signal()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#signal()"/>
             /// </summary>
             public void Signal()
             {
                 IExecuteWithSignature("signal", "()V");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#signalAll()"/>
+            /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html#signalAll()"/>
             /// </summary>
             public void SignalAll()
             {

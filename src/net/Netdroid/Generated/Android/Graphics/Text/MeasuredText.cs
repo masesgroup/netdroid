@@ -189,7 +189,7 @@ namespace Android.Graphics.Text
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             /// <returns><see cref="Android.Graphics.Text.MeasuredText.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Graphics.Text.MeasuredText.Builder SetComputeHyphenation(bool arg0)
             {
                 return IExecuteWithSignature<Android.Graphics.Text.MeasuredText.Builder>("setComputeHyphenation", "(Z)Landroid/graphics/text/MeasuredText$Builder;", arg0);

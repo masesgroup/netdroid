@@ -46,7 +46,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Future.html#cancel(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Future.html#cancel(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("cancel", "(Z)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Future.html#isCancelled()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Future.html#isCancelled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
@@ -63,7 +63,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isCancelled", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Future.html#isDone()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Future.html#isDone()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
@@ -71,7 +71,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isDone", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Future.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Future.html#get()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -81,7 +81,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("get", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Future.html#get(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Future.html#get(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -147,7 +147,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Future.html#cancel(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Future.html#cancel(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -156,7 +156,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("cancel", "(Z)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Future.html#isCancelled()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Future.html#isCancelled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
@@ -164,7 +164,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isCancelled", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Future.html#isDone()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Future.html#isDone()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
@@ -172,7 +172,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isDone", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Future.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Future.html#get()"/>
         /// </summary>
         /// <returns><typeparamref name="V"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -182,7 +182,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<V>("get", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Future.html#get(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Future.html#get(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>

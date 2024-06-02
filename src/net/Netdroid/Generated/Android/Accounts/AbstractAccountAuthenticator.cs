@@ -60,13 +60,6 @@ namespace Android.Accounts
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#getIBinder()"/> 
-        /// </summary>
-        public Android.Os.IBinder IBinder
-        {
-            get { return IExecuteWithSignature<Android.Os.IBinder>("getIBinder", "()Landroid/os/IBinder;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#addAccount(android.accounts.AccountAuthenticatorResponse,java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Accounts.AccountAuthenticatorResponse"/></param>
@@ -233,6 +226,14 @@ namespace Android.Accounts
         public Android.Os.Bundle StartUpdateCredentialsSession(Android.Accounts.AccountAuthenticatorResponse arg0, Android.Accounts.Account arg1, Java.Lang.String arg2, Android.Os.Bundle arg3)
         {
             return IExecute<Android.Os.Bundle>("startUpdateCredentialsSession", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accounts/AbstractAccountAuthenticator.html#getIBinder()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.IBinder"/></returns>
+        public Android.Os.IBinder GetIBinder()
+        {
+            return IExecuteWithSignature<Android.Os.IBinder>("getIBinder", "()Landroid/os/IBinder;");
         }
 
         #endregion

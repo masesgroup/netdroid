@@ -61,26 +61,28 @@ namespace Android.Nfc
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/AvailableNfcAntenna.html#getLocationX()"/> 
-        /// </summary>
-        public int LocationX
-        {
-            get { return IExecuteWithSignature<int>("getLocationX", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/AvailableNfcAntenna.html#getLocationY()"/> 
-        /// </summary>
-        public int LocationY
-        {
-            get { return IExecuteWithSignature<int>("getLocationY", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/AvailableNfcAntenna.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/AvailableNfcAntenna.html#getLocationX()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLocationX()
+        {
+            return IExecuteWithSignature<int>("getLocationX", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/AvailableNfcAntenna.html#getLocationY()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLocationY()
+        {
+            return IExecuteWithSignature<int>("getLocationY", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/AvailableNfcAntenna.html#writeToParcel(android.os.Parcel,int)"/>

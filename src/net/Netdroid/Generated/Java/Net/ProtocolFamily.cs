@@ -64,7 +64,7 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ProtocolFamily.html#name()"/>
+        /// <see href="https://developer.android.com/reference/java/net/ProtocolFamily.html#name()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()

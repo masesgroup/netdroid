@@ -52,32 +52,36 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetByDocumentIdRequest.html#getIds()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetByDocumentIdRequest.html#getNamespace()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> Ids
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNamespace()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getIds", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetByDocumentIdRequest.html#getNamespace()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetByDocumentIdRequest.html#getProjectionPaths()"/>
         /// </summary>
-        public Java.Lang.String Namespace
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.List<Android.App.Appsearch.PropertyPath>> GetProjectionPaths()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Android.App.Appsearch.PropertyPath>>>("getProjectionPaths", "()Ljava/util/Map;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetByDocumentIdRequest.html#getProjectionPaths()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetByDocumentIdRequest.html#getProjections()"/>
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.List<Android.App.Appsearch.PropertyPath>> ProjectionPaths
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> GetProjections()
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Android.App.Appsearch.PropertyPath>>>("getProjectionPaths", "()Ljava/util/Map;"); }
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getProjections", "()Ljava/util/Map;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetByDocumentIdRequest.html#getProjections()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetByDocumentIdRequest.html#getIds()"/>
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> Projections
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetIds()
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getProjections", "()Ljava/util/Map;"); }
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getIds", "()Ljava/util/Set;");
         }
 
         #endregion

@@ -30,7 +30,7 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/IndexedPropertyChangeEvent.html#%3Cinit%3E(java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object,int)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/IndexedPropertyChangeEvent.html#%3Cinit%3E(java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -58,11 +58,12 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/IndexedPropertyChangeEvent.html#getIndex()"/> 
+        /// <see href="https://developer.android.com/reference/java/beans/IndexedPropertyChangeEvent.html#getIndex()"/>
         /// </summary>
-        public int Index
+        /// <returns><see cref="int"/></returns>
+        public int GetIndex()
         {
-            get { return IExecuteWithSignature<int>("getIndex", "()I"); }
+            return IExecuteWithSignature<int>("getIndex", "()I");
         }
 
         #endregion

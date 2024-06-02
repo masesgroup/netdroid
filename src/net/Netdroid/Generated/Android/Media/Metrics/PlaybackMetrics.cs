@@ -202,123 +202,20 @@ namespace Android.Media.Metrics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getAudioUnderrunCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getMetricsBundle()"/>
         /// </summary>
-        public int AudioUnderrunCount
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetMetricsBundle()
         {
-            get { return IExecuteWithSignature<int>("getAudioUnderrunCount", "()I"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getMetricsBundle", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getContentType()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getDrmSessionId()"/>
         /// </summary>
-        public int ContentType
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetDrmSessionId()
         {
-            get { return IExecuteWithSignature<int>("getContentType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getDrmSessionId()"/> 
-        /// </summary>
-        public byte[] DrmSessionId
-        {
-            get { return IExecuteWithSignatureArray<byte>("getDrmSessionId", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getDrmType()"/> 
-        /// </summary>
-        public int DrmType
-        {
-            get { return IExecuteWithSignature<int>("getDrmType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getExperimentIds()"/> 
-        /// </summary>
-        public long[] ExperimentIds
-        {
-            get { return IExecuteWithSignatureArray<long>("getExperimentIds", "()[J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getLocalBytesRead()"/> 
-        /// </summary>
-        public long LocalBytesRead
-        {
-            get { return IExecuteWithSignature<long>("getLocalBytesRead", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getMediaDurationMillis()"/> 
-        /// </summary>
-        public long MediaDurationMillis
-        {
-            get { return IExecuteWithSignature<long>("getMediaDurationMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getMetricsBundle()"/> 
-        /// </summary>
-        public Android.Os.Bundle MetricsBundle
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getMetricsBundle", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getNetworkBytesRead()"/> 
-        /// </summary>
-        public long NetworkBytesRead
-        {
-            get { return IExecuteWithSignature<long>("getNetworkBytesRead", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getNetworkTransferDurationMillis()"/> 
-        /// </summary>
-        public long NetworkTransferDurationMillis
-        {
-            get { return IExecuteWithSignature<long>("getNetworkTransferDurationMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getPlaybackType()"/> 
-        /// </summary>
-        public int PlaybackType
-        {
-            get { return IExecuteWithSignature<int>("getPlaybackType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getPlayerName()"/> 
-        /// </summary>
-        public Java.Lang.String PlayerName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPlayerName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getPlayerVersion()"/> 
-        /// </summary>
-        public Java.Lang.String PlayerVersion
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPlayerVersion", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getStreamSource()"/> 
-        /// </summary>
-        public int StreamSource
-        {
-            get { return IExecuteWithSignature<int>("getStreamSource", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getStreamType()"/> 
-        /// </summary>
-        public int StreamType
-        {
-            get { return IExecuteWithSignature<int>("getStreamType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getVideoFramesDropped()"/> 
-        /// </summary>
-        public int VideoFramesDropped
-        {
-            get { return IExecuteWithSignature<int>("getVideoFramesDropped", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getVideoFramesPlayed()"/> 
-        /// </summary>
-        public int VideoFramesPlayed
-        {
-            get { return IExecuteWithSignature<int>("getVideoFramesPlayed", "()I"); }
+            return IExecuteWithSignatureArray<byte>("getDrmSessionId", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#describeContents()"/>
@@ -327,6 +224,126 @@ namespace Android.Media.Metrics
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getAudioUnderrunCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAudioUnderrunCount()
+        {
+            return IExecuteWithSignature<int>("getAudioUnderrunCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getContentType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetContentType()
+        {
+            return IExecuteWithSignature<int>("getContentType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getDrmType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDrmType()
+        {
+            return IExecuteWithSignature<int>("getDrmType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getPlaybackType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPlaybackType()
+        {
+            return IExecuteWithSignature<int>("getPlaybackType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getStreamSource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStreamSource()
+        {
+            return IExecuteWithSignature<int>("getStreamSource", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getStreamType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStreamType()
+        {
+            return IExecuteWithSignature<int>("getStreamType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getVideoFramesDropped()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVideoFramesDropped()
+        {
+            return IExecuteWithSignature<int>("getVideoFramesDropped", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getVideoFramesPlayed()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVideoFramesPlayed()
+        {
+            return IExecuteWithSignature<int>("getVideoFramesPlayed", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getPlayerName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPlayerName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPlayerName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getPlayerVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPlayerVersion()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPlayerVersion", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getLocalBytesRead()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLocalBytesRead()
+        {
+            return IExecuteWithSignature<long>("getLocalBytesRead", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getMediaDurationMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetMediaDurationMillis()
+        {
+            return IExecuteWithSignature<long>("getMediaDurationMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getNetworkBytesRead()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetNetworkBytesRead()
+        {
+            return IExecuteWithSignature<long>("getNetworkBytesRead", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getNetworkTransferDurationMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetNetworkTransferDurationMillis()
+        {
+            return IExecuteWithSignature<long>("getNetworkTransferDurationMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#getExperimentIds()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long[] GetExperimentIds()
+        {
+            return IExecuteWithSignatureArray<long>("getExperimentIds", "()[J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackMetrics.html#writeToParcel(android.os.Parcel,int)"/>

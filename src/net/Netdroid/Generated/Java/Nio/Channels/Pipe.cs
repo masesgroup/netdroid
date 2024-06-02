@@ -42,7 +42,7 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Pipe.html#open()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Pipe.html#open()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.Pipe"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -55,7 +55,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Pipe.html#sink()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Pipe.html#sink()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.Pipe.SinkChannel"/></returns>
         public Java.Nio.Channels.Pipe.SinkChannel Sink()
@@ -63,7 +63,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.Pipe.SinkChannel>("sink", "()Ljava/nio/channels/Pipe$SinkChannel;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Pipe.html#source()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Pipe.html#source()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.Pipe.SourceChannel"/></returns>
         public Java.Nio.Channels.Pipe.SourceChannel Source()

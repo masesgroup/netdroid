@@ -57,39 +57,52 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ExtensionSessionConfiguration.html#getExecutor()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ExtensionSessionConfiguration.html#getStateCallback()"/>
         /// </summary>
-        public Java.Util.Concurrent.Executor Executor
+        /// <returns><see cref="Android.Hardware.Camera2.CameraExtensionSession.StateCallback"/></returns>
+        public Android.Hardware.Camera2.CameraExtensionSession.StateCallback GetStateCallback()
         {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.Executor>("getExecutor", "()Ljava/util/concurrent/Executor;"); }
+            return IExecuteWithSignature<Android.Hardware.Camera2.CameraExtensionSession.StateCallback>("getStateCallback", "()Landroid/hardware/camera2/CameraExtensionSession$StateCallback;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ExtensionSessionConfiguration.html#getExtension()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ExtensionSessionConfiguration.html#getPostviewOutputConfiguration()"/>
         /// </summary>
-        public int Extension
+        /// <returns><see cref="Android.Hardware.Camera2.Params.OutputConfiguration"/></returns>
+        public Android.Hardware.Camera2.Params.OutputConfiguration GetPostviewOutputConfiguration()
         {
-            get { return IExecuteWithSignature<int>("getExtension", "()I"); }
+            return IExecuteWithSignature<Android.Hardware.Camera2.Params.OutputConfiguration>("getPostviewOutputConfiguration", "()Landroid/hardware/camera2/params/OutputConfiguration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ExtensionSessionConfiguration.html#getOutputConfigurations()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ExtensionSessionConfiguration.html#getExtension()"/>
         /// </summary>
-        public Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration> OutputConfigurations
+        /// <returns><see cref="int"/></returns>
+        public int GetExtension()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration>>("getOutputConfigurations", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<int>("getExtension", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ExtensionSessionConfiguration.html#getPostviewOutputConfiguration()"/> <see href="https://developer.android.com/reference/android/hardware/camera2/params/ExtensionSessionConfiguration.html#setPostviewOutputConfiguration(android.hardware.camera2.params.OutputConfiguration)"/>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ExtensionSessionConfiguration.html#getExecutor()"/>
         /// </summary>
-        public Android.Hardware.Camera2.Params.OutputConfiguration PostviewOutputConfiguration
+        /// <returns><see cref="Java.Util.Concurrent.Executor"/></returns>
+        public Java.Util.Concurrent.Executor GetExecutor()
         {
-            get { return IExecuteWithSignature<Android.Hardware.Camera2.Params.OutputConfiguration>("getPostviewOutputConfiguration", "()Landroid/hardware/camera2/params/OutputConfiguration;"); } set { IExecuteWithSignature("setPostviewOutputConfiguration", "(Landroid/hardware/camera2/params/OutputConfiguration;)V", value); }
+            return IExecuteWithSignature<Java.Util.Concurrent.Executor>("getExecutor", "()Ljava/util/concurrent/Executor;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ExtensionSessionConfiguration.html#getStateCallback()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ExtensionSessionConfiguration.html#getOutputConfigurations()"/>
         /// </summary>
-        public Android.Hardware.Camera2.CameraExtensionSession.StateCallback StateCallback
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration> GetOutputConfigurations()
         {
-            get { return IExecuteWithSignature<Android.Hardware.Camera2.CameraExtensionSession.StateCallback>("getStateCallback", "()Landroid/hardware/camera2/CameraExtensionSession$StateCallback;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.Params.OutputConfiguration>>("getOutputConfigurations", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/ExtensionSessionConfiguration.html#setPostviewOutputConfiguration(android.hardware.camera2.params.OutputConfiguration)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Hardware.Camera2.Params.OutputConfiguration"/></param>
+        public void SetPostviewOutputConfiguration(Android.Hardware.Camera2.Params.OutputConfiguration arg0)
+        {
+            IExecuteWithSignature("setPostviewOutputConfiguration", "(Landroid/hardware/camera2/params/OutputConfiguration;)V", arg0);
         }
 
         #endregion

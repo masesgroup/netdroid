@@ -88,11 +88,12 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/DatePickerDialog.html#getDatePicker()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/DatePickerDialog.html#getDatePicker()"/>
         /// </summary>
-        public Android.Widget.DatePicker DatePicker
+        /// <returns><see cref="Android.Widget.DatePicker"/></returns>
+        public Android.Widget.DatePicker GetDatePicker()
         {
-            get { return IExecuteWithSignature<Android.Widget.DatePicker>("getDatePicker", "()Landroid/widget/DatePicker;"); }
+            return IExecuteWithSignature<Android.Widget.DatePicker>("getDatePicker", "()Landroid/widget/DatePicker;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DatePickerDialog.html#onClick(android.content.DialogInterface,int)"/>
@@ -161,7 +162,7 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDateSet", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.DatePicker>>>(OnDateSetEventHandler));
+                AddEventHandler("onDateSet", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.DatePicker>>>(OnDateSetEventHandler));
 
             }
 
@@ -169,7 +170,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/DatePickerDialog.OnDateSetListener.html#onDateSet(android.widget.DatePicker,int,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDateSet"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Widget.DatePicker, int, int, int> OnOnDateSet { get; set; } = null;
+            public global::System.Action<Android.Widget.DatePicker, int, int, int> OnOnDateSet { get; set; } = null;
 
             void OnDateSetEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.DatePicker>> data)
             {

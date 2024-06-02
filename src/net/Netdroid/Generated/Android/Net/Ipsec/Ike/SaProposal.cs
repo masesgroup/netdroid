@@ -228,36 +228,40 @@ namespace Android.Net.Ipsec.Ike
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getSupportedDhGroups()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getSupportedDhGroups()"/>
         /// </summary>
-        public static Java.Util.Set<Java.Lang.Integer> SupportedDhGroups
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set<Java.Lang.Integer> GetSupportedDhGroups()
         {
-            get { return SExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>(LocalBridgeClazz, "getSupportedDhGroups", "()Ljava/util/Set;"); }
+            return SExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>(LocalBridgeClazz, "getSupportedDhGroups", "()Ljava/util/Set;");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getDhGroups()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getEncryptionAlgorithms()"/>
         /// </summary>
-        public Java.Util.List<Java.Lang.Integer> DhGroups
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Util.Pair<Java.Lang.Integer, Java.Lang.Integer>> GetEncryptionAlgorithms()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getDhGroups", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Util.Pair<Java.Lang.Integer, Java.Lang.Integer>>>("getEncryptionAlgorithms", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getEncryptionAlgorithms()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getDhGroups()"/>
         /// </summary>
-        public Java.Util.List<Android.Util.Pair<Java.Lang.Integer, Java.Lang.Integer>> EncryptionAlgorithms
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.Integer> GetDhGroups()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Util.Pair<Java.Lang.Integer, Java.Lang.Integer>>>("getEncryptionAlgorithms", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getDhGroups", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getIntegrityAlgorithms()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/SaProposal.html#getIntegrityAlgorithms()"/>
         /// </summary>
-        public Java.Util.List<Java.Lang.Integer> IntegrityAlgorithms
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.Integer> GetIntegrityAlgorithms()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getIntegrityAlgorithms", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getIntegrityAlgorithms", "()Ljava/util/List;");
         }
 
         #endregion

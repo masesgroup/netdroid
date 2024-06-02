@@ -48,7 +48,7 @@ namespace Android.Renderscript
         /// <param name="arg1"><see cref="Android.Renderscript.Element"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.Type"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Type CreateX(Android.Renderscript.RenderScript arg0, Android.Renderscript.Element arg1, int arg2)
         {
             return SExecute<Android.Renderscript.Type>(LocalBridgeClazz, "createX", arg0, arg1, arg2);
@@ -61,7 +61,7 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.Type"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Type CreateXY(Android.Renderscript.RenderScript arg0, Android.Renderscript.Element arg1, int arg2, int arg3)
         {
             return SExecute<Android.Renderscript.Type>(LocalBridgeClazz, "createXY", arg0, arg1, arg2, arg3);
@@ -75,7 +75,7 @@ namespace Android.Renderscript
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.Type"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.Type CreateXYZ(Android.Renderscript.RenderScript arg0, Android.Renderscript.Element arg1, int arg2, int arg3, int arg4)
         {
             return SExecute<Android.Renderscript.Type>(LocalBridgeClazz, "createXYZ", arg0, arg1, arg2, arg3, arg4);
@@ -85,58 +85,19 @@ namespace Android.Renderscript
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Type.html#getCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/Type.html#getElement()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int Count
+        /// <returns><see cref="Android.Renderscript.Element"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Element GetElement()
         {
-            get { return IExecuteWithSignature<int>("getCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Type.html#getElement()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Element Element
-        {
-            get { return IExecuteWithSignature<Android.Renderscript.Element>("getElement", "()Landroid/renderscript/Element;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Type.html#getX()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int X
-        {
-            get { return IExecuteWithSignature<int>("getX", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Type.html#getY()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Y
-        {
-            get { return IExecuteWithSignature<int>("getY", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Type.html#getYuv()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Yuv
-        {
-            get { return IExecuteWithSignature<int>("getYuv", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/Type.html#getZ()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Z
-        {
-            get { return IExecuteWithSignature<int>("getZ", "()I"); }
+            return IExecuteWithSignature<Android.Renderscript.Element>("getElement", "()Landroid/renderscript/Element;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Type.html#hasFaces()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasFaces()
         {
             return IExecuteWithSignature<bool>("hasFaces", "()Z");
@@ -145,10 +106,55 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/Type.html#hasMipmaps()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasMipmaps()
         {
             return IExecuteWithSignature<bool>("hasMipmaps", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/renderscript/Type.html#getCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetCount()
+        {
+            return IExecuteWithSignature<int>("getCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/renderscript/Type.html#getX()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetX()
+        {
+            return IExecuteWithSignature<int>("getX", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/renderscript/Type.html#getY()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetY()
+        {
+            return IExecuteWithSignature<int>("getY", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/renderscript/Type.html#getYuv()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetYuv()
+        {
+            return IExecuteWithSignature<int>("getYuv", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/renderscript/Type.html#getZ()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetZ()
+        {
+            return IExecuteWithSignature<int>("getZ", "()I");
         }
 
         #endregion
@@ -163,7 +169,7 @@ namespace Android.Renderscript
             /// </summary>
             /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
             /// <param name="arg1"><see cref="Android.Renderscript.Element"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Builder(Android.Renderscript.RenderScript arg0, Android.Renderscript.Element arg1)
                 : base(arg0, arg1)
             {
@@ -188,7 +194,7 @@ namespace Android.Renderscript
             /// <see href="https://developer.android.com/reference/android/renderscript/Type.Builder.html#create()"/>
             /// </summary>
             /// <returns><see cref="Android.Renderscript.Type"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.Type Create()
             {
                 return IExecuteWithSignature<Android.Renderscript.Type>("create", "()Landroid/renderscript/Type;");
@@ -198,7 +204,7 @@ namespace Android.Renderscript
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             /// <returns><see cref="Android.Renderscript.Type.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.Type.Builder SetFaces(bool arg0)
             {
                 return IExecuteWithSignature<Android.Renderscript.Type.Builder>("setFaces", "(Z)Landroid/renderscript/Type$Builder;", arg0);
@@ -208,7 +214,7 @@ namespace Android.Renderscript
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             /// <returns><see cref="Android.Renderscript.Type.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.Type.Builder SetMipmaps(bool arg0)
             {
                 return IExecuteWithSignature<Android.Renderscript.Type.Builder>("setMipmaps", "(Z)Landroid/renderscript/Type$Builder;", arg0);
@@ -218,7 +224,7 @@ namespace Android.Renderscript
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.Renderscript.Type.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.Type.Builder SetX(int arg0)
             {
                 return IExecuteWithSignature<Android.Renderscript.Type.Builder>("setX", "(I)Landroid/renderscript/Type$Builder;", arg0);
@@ -228,7 +234,7 @@ namespace Android.Renderscript
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.Renderscript.Type.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.Type.Builder SetY(int arg0)
             {
                 return IExecuteWithSignature<Android.Renderscript.Type.Builder>("setY", "(I)Landroid/renderscript/Type$Builder;", arg0);
@@ -238,7 +244,7 @@ namespace Android.Renderscript
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.Renderscript.Type.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.Type.Builder SetYuvFormat(int arg0)
             {
                 return IExecuteWithSignature<Android.Renderscript.Type.Builder>("setYuvFormat", "(I)Landroid/renderscript/Type$Builder;", arg0);
@@ -248,7 +254,7 @@ namespace Android.Renderscript
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.Renderscript.Type.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.Type.Builder SetZ(int arg0)
             {
                 return IExecuteWithSignature<Android.Renderscript.Type.Builder>("setZ", "(I)Landroid/renderscript/Type$Builder;", arg0);
@@ -279,63 +285,63 @@ namespace Android.Renderscript
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Type.CubemapFace.html#NEGATIVE_X"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Type.CubemapFace NEGATIVE_X { get { if (!_NEGATIVE_XReady) { _NEGATIVE_XContent = SGetField<Android.Renderscript.Type.CubemapFace>(LocalBridgeClazz, "NEGATIVE_X"); _NEGATIVE_XReady = true; } return _NEGATIVE_XContent; } }
             private static Android.Renderscript.Type.CubemapFace _NEGATIVE_XContent = default;
             private static bool _NEGATIVE_XReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Type.CubemapFace.html#NEGATIVE_Y"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Type.CubemapFace NEGATIVE_Y { get { if (!_NEGATIVE_YReady) { _NEGATIVE_YContent = SGetField<Android.Renderscript.Type.CubemapFace>(LocalBridgeClazz, "NEGATIVE_Y"); _NEGATIVE_YReady = true; } return _NEGATIVE_YContent; } }
             private static Android.Renderscript.Type.CubemapFace _NEGATIVE_YContent = default;
             private static bool _NEGATIVE_YReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Type.CubemapFace.html#NEGATIVE_Z"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Type.CubemapFace NEGATIVE_Z { get { if (!_NEGATIVE_ZReady) { _NEGATIVE_ZContent = SGetField<Android.Renderscript.Type.CubemapFace>(LocalBridgeClazz, "NEGATIVE_Z"); _NEGATIVE_ZReady = true; } return _NEGATIVE_ZContent; } }
             private static Android.Renderscript.Type.CubemapFace _NEGATIVE_ZContent = default;
             private static bool _NEGATIVE_ZReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Type.CubemapFace.html#POSITIVE_X"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Type.CubemapFace POSITIVE_X { get { if (!_POSITIVE_XReady) { _POSITIVE_XContent = SGetField<Android.Renderscript.Type.CubemapFace>(LocalBridgeClazz, "POSITIVE_X"); _POSITIVE_XReady = true; } return _POSITIVE_XContent; } }
             private static Android.Renderscript.Type.CubemapFace _POSITIVE_XContent = default;
             private static bool _POSITIVE_XReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Type.CubemapFace.html#POSITIVE_Y"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Type.CubemapFace POSITIVE_Y { get { if (!_POSITIVE_YReady) { _POSITIVE_YContent = SGetField<Android.Renderscript.Type.CubemapFace>(LocalBridgeClazz, "POSITIVE_Y"); _POSITIVE_YReady = true; } return _POSITIVE_YContent; } }
             private static Android.Renderscript.Type.CubemapFace _POSITIVE_YContent = default;
             private static bool _POSITIVE_YReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Type.CubemapFace.html#POSITIVE_Z"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Type.CubemapFace POSITIVE_Z { get { if (!_POSITIVE_ZReady) { _POSITIVE_ZContent = SGetField<Android.Renderscript.Type.CubemapFace>(LocalBridgeClazz, "POSITIVE_Z"); _POSITIVE_ZReady = true; } return _POSITIVE_ZContent; } }
             private static Android.Renderscript.Type.CubemapFace _POSITIVE_ZContent = default;
             private static bool _POSITIVE_ZReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Type.CubemapFace.html#POSITVE_X"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Type.CubemapFace POSITVE_X { get { if (!_POSITVE_XReady) { _POSITVE_XContent = SGetField<Android.Renderscript.Type.CubemapFace>(LocalBridgeClazz, "POSITVE_X"); _POSITVE_XReady = true; } return _POSITVE_XContent; } }
             private static Android.Renderscript.Type.CubemapFace _POSITVE_XContent = default;
             private static bool _POSITVE_XReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Type.CubemapFace.html#POSITVE_Y"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Type.CubemapFace POSITVE_Y { get { if (!_POSITVE_YReady) { _POSITVE_YContent = SGetField<Android.Renderscript.Type.CubemapFace>(LocalBridgeClazz, "POSITVE_Y"); _POSITVE_YReady = true; } return _POSITVE_YContent; } }
             private static Android.Renderscript.Type.CubemapFace _POSITVE_YContent = default;
             private static bool _POSITVE_YReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/Type.CubemapFace.html#POSITVE_Z"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.Type.CubemapFace POSITVE_Z { get { if (!_POSITVE_ZReady) { _POSITVE_ZContent = SGetField<Android.Renderscript.Type.CubemapFace>(LocalBridgeClazz, "POSITVE_Z"); _POSITVE_ZReady = true; } return _POSITVE_ZContent; } }
             private static Android.Renderscript.Type.CubemapFace _POSITVE_ZContent = default;
             private static bool _POSITVE_ZReady = false; // this is used because in case of generics 

@@ -89,18 +89,20 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/BaseInputConnection.html#getEditable()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/BaseInputConnection.html#getHandler()"/>
         /// </summary>
-        public Android.Text.Editable Editable
+        /// <returns><see cref="Android.Os.Handler"/></returns>
+        public Android.Os.Handler GetHandler()
         {
-            get { return IExecuteWithSignature<Android.Text.Editable>("getEditable", "()Landroid/text/Editable;"); }
+            return IExecuteWithSignature<Android.Os.Handler>("getHandler", "()Landroid/os/Handler;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/BaseInputConnection.html#getHandler()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/BaseInputConnection.html#getEditable()"/>
         /// </summary>
-        public Android.Os.Handler Handler
+        /// <returns><see cref="Android.Text.Editable"/></returns>
+        public Android.Text.Editable GetEditable()
         {
-            get { return IExecuteWithSignature<Android.Os.Handler>("getHandler", "()Landroid/os/Handler;"); }
+            return IExecuteWithSignature<Android.Text.Editable>("getEditable", "()Landroid/text/Editable;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/BaseInputConnection.html#getExtractedText(android.view.inputmethod.ExtractedTextRequest,int)"/>

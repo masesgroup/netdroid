@@ -46,20 +46,6 @@ namespace Android.Animation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/AnimatorSet.html#getChildAnimations()"/> 
-        /// </summary>
-        public Java.Util.ArrayList<Android.Animation.Animator> ChildAnimations
-        {
-            get { return IExecuteWithSignature<Java.Util.ArrayList<Android.Animation.Animator>>("getChildAnimations", "()Ljava/util/ArrayList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/AnimatorSet.html#getCurrentPlayTime()"/> <see href="https://developer.android.com/reference/android/animation/AnimatorSet.html#setCurrentPlayTime(long)"/>
-        /// </summary>
-        public long CurrentPlayTime
-        {
-            get { return IExecuteWithSignature<long>("getCurrentPlayTime", "()J"); } set { IExecuteWithSignature("setCurrentPlayTime", "(J)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/AnimatorSet.html#play(android.animation.Animator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
@@ -67,6 +53,22 @@ namespace Android.Animation
         public Android.Animation.AnimatorSet.Builder Play(Android.Animation.Animator arg0)
         {
             return IExecuteWithSignature<Android.Animation.AnimatorSet.Builder>("play", "(Landroid/animation/Animator;)Landroid/animation/AnimatorSet$Builder;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/AnimatorSet.html#getChildAnimations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.ArrayList"/></returns>
+        public Java.Util.ArrayList<Android.Animation.Animator> GetChildAnimations()
+        {
+            return IExecuteWithSignature<Java.Util.ArrayList<Android.Animation.Animator>>("getChildAnimations", "()Ljava/util/ArrayList;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/AnimatorSet.html#getCurrentPlayTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetCurrentPlayTime()
+        {
+            return IExecuteWithSignature<long>("getCurrentPlayTime", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/AnimatorSet.html#playSequentially(android.animation.Animator[])"/>
@@ -106,6 +108,14 @@ namespace Android.Animation
         public void Reverse()
         {
             IExecuteWithSignature("reverse", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/AnimatorSet.html#setCurrentPlayTime(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetCurrentPlayTime(long arg0)
+        {
+            IExecuteWithSignature("setCurrentPlayTime", "(J)V", arg0);
         }
 
         #endregion

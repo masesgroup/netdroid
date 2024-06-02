@@ -46,7 +46,7 @@ namespace Java.Nio
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#allocate(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#allocate(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Nio
             return SExecuteWithSignature<Java.Nio.ByteBuffer>(LocalBridgeClazz, "allocate", "(I)Ljava/nio/ByteBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#allocateDirect(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#allocateDirect(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
@@ -64,7 +64,7 @@ namespace Java.Nio
             return SExecuteWithSignature<Java.Nio.ByteBuffer>(LocalBridgeClazz, "allocateDirect", "(I)Ljava/nio/ByteBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#wrap(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#wrap(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -75,7 +75,7 @@ namespace Java.Nio
             return SExecute<Java.Nio.ByteBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#wrap(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#wrap(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
@@ -88,49 +88,7 @@ namespace Java.Nio
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#getChar()"/> 
-        /// </summary>
-        public char Char
-        {
-            get { return IExecuteWithSignature<char>("getChar", "()C"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#getDouble()"/> 
-        /// </summary>
-        public double Double
-        {
-            get { return IExecuteWithSignature<double>("getDouble", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#getFloat()"/> 
-        /// </summary>
-        public float Float
-        {
-            get { return IExecuteWithSignature<float>("getFloat", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#getInt()"/> 
-        /// </summary>
-        public int Int
-        {
-            get { return IExecuteWithSignature<int>("getInt", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#getLong()"/> 
-        /// </summary>
-        public long Long
-        {
-            get { return IExecuteWithSignature<long>("getLong", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#getShort()"/> 
-        /// </summary>
-        public short Short
-        {
-            get { return IExecuteWithSignature<short>("getShort", "()S"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#get()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         public byte Get()
@@ -138,7 +96,7 @@ namespace Java.Nio
             return IExecuteWithSignature<byte>("get", "()B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#get(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -147,7 +105,15 @@ namespace Java.Nio
             return IExecuteWithSignature<byte>("get", "(I)B", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#getChar(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#getChar()"/>
+        /// </summary>
+        /// <returns><see cref="char"/></returns>
+        public char GetChar()
+        {
+            return IExecuteWithSignature<char>("getChar", "()C");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#getChar(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="char"/></returns>
@@ -156,7 +122,15 @@ namespace Java.Nio
             return IExecuteWithSignature<char>("getChar", "(I)C", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#getDouble(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#getDouble()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetDouble()
+        {
+            return IExecuteWithSignature<double>("getDouble", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#getDouble(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="double"/></returns>
@@ -165,7 +139,15 @@ namespace Java.Nio
             return IExecuteWithSignature<double>("getDouble", "(I)D", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#getFloat(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#getFloat()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetFloat()
+        {
+            return IExecuteWithSignature<float>("getFloat", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#getFloat(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="float"/></returns>
@@ -174,7 +156,15 @@ namespace Java.Nio
             return IExecuteWithSignature<float>("getFloat", "(I)F", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#getInt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#getInt()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInt()
+        {
+            return IExecuteWithSignature<int>("getInt", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#getInt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -183,7 +173,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("getInt", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#asReadOnlyBuffer()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#asReadOnlyBuffer()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer AsReadOnlyBuffer()
@@ -191,7 +181,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("asReadOnlyBuffer", "()Ljava/nio/ByteBuffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#compact()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#compact()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer Compact()
@@ -199,7 +189,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("compact", "()Ljava/nio/ByteBuffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#put(byte)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#put(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
@@ -208,7 +198,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("put", "(B)Ljava/nio/ByteBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#put(int,byte)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#put(int,byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -218,7 +208,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.ByteBuffer>("put", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#putChar(char)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#putChar(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
@@ -227,7 +217,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("putChar", "(C)Ljava/nio/ByteBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#putChar(int,char)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#putChar(int,char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="char"/></param>
@@ -237,7 +227,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.ByteBuffer>("putChar", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#putDouble(double)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#putDouble(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
@@ -246,7 +236,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("putDouble", "(D)Ljava/nio/ByteBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#putDouble(int,double)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#putDouble(int,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -256,7 +246,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.ByteBuffer>("putDouble", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#putFloat(float)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#putFloat(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
@@ -265,7 +255,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("putFloat", "(F)Ljava/nio/ByteBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#putFloat(int,float)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#putFloat(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -275,7 +265,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.ByteBuffer>("putFloat", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#putInt(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#putInt(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -285,7 +275,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.ByteBuffer>("putInt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#putInt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#putInt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
@@ -294,7 +284,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("putInt", "(I)Ljava/nio/ByteBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#putLong(int,long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#putLong(int,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -304,7 +294,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.ByteBuffer>("putLong", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#putLong(long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#putLong(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
@@ -313,7 +303,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("putLong", "(J)Ljava/nio/ByteBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#putShort(int,short)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#putShort(int,short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="short"/></param>
@@ -323,7 +313,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.ByteBuffer>("putShort", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#putShort(short)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#putShort(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
@@ -332,7 +322,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("putShort", "(S)Ljava/nio/ByteBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#asCharBuffer()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#asCharBuffer()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
         public Java.Nio.CharBuffer AsCharBuffer()
@@ -340,7 +330,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.CharBuffer>("asCharBuffer", "()Ljava/nio/CharBuffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#asDoubleBuffer()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#asDoubleBuffer()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
         public Java.Nio.DoubleBuffer AsDoubleBuffer()
@@ -348,7 +338,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.DoubleBuffer>("asDoubleBuffer", "()Ljava/nio/DoubleBuffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#asFloatBuffer()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#asFloatBuffer()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer AsFloatBuffer()
@@ -356,7 +346,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.FloatBuffer>("asFloatBuffer", "()Ljava/nio/FloatBuffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#asIntBuffer()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#asIntBuffer()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
         public Java.Nio.IntBuffer AsIntBuffer()
@@ -364,7 +354,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.IntBuffer>("asIntBuffer", "()Ljava/nio/IntBuffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#asLongBuffer()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#asLongBuffer()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public Java.Nio.LongBuffer AsLongBuffer()
@@ -372,7 +362,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.LongBuffer>("asLongBuffer", "()Ljava/nio/LongBuffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#asShortBuffer()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#asShortBuffer()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer AsShortBuffer()
@@ -380,7 +370,15 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ShortBuffer>("asShortBuffer", "()Ljava/nio/ShortBuffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#getLong(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#getLong()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLong()
+        {
+            return IExecuteWithSignature<long>("getLong", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#getLong(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="long"/></returns>
@@ -389,7 +387,15 @@ namespace Java.Nio
             return IExecuteWithSignature<long>("getLong", "(I)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#getShort(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#getShort()"/>
+        /// </summary>
+        /// <returns><see cref="short"/></returns>
+        public short GetShort()
+        {
+            return IExecuteWithSignature<short>("getShort", "()S");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#getShort(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="short"/></returns>
@@ -398,7 +404,7 @@ namespace Java.Nio
             return IExecuteWithSignature<short>("getShort", "(I)S", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#alignmentOffset(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#alignmentOffset(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -408,7 +414,7 @@ namespace Java.Nio
             return IExecute<int>("alignmentOffset", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#alignedSlice(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#alignedSlice(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
@@ -417,7 +423,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("alignedSlice", "(I)Ljava/nio/ByteBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#order(java.nio.ByteOrder)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#order(java.nio.ByteOrder)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteOrder"/></param>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
@@ -426,7 +432,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("order", "(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#put(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#put(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
@@ -435,7 +441,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("put", "([B)Ljava/nio/ByteBuffer;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#order()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#order()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
         public Java.Nio.ByteOrder Order()
@@ -443,7 +449,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteOrder>("order", "()Ljava/nio/ByteOrder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -452,7 +458,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#compareTo(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#compareTo(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -461,7 +467,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("compareTo", "(Ljava/nio/ByteBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#mismatch(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#mismatch(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -470,7 +476,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("mismatch", "(Ljava/nio/ByteBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#get(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#get(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -481,7 +487,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.ByteBuffer>("get", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#get(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#get(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
@@ -490,29 +496,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteBuffer>("get", "([B)Ljava/nio/ByteBuffer;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#get(int,byte[],int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
-        public Java.Nio.ByteBuffer Get(int arg0, byte[] arg1, int arg2, int arg3)
-        {
-            return IExecute<Java.Nio.ByteBuffer>("get", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#get(int,byte[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
-        public Java.Nio.ByteBuffer Get(int arg0, byte[] arg1)
-        {
-            return IExecute<Java.Nio.ByteBuffer>("get", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#put(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#put(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -523,41 +507,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.ByteBuffer>("put", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#put(int,byte[],int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
-        public Java.Nio.ByteBuffer Put(int arg0, byte[] arg1, int arg2, int arg3)
-        {
-            return IExecute<Java.Nio.ByteBuffer>("put", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#put(int,byte[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="byte"/></param>
-        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
-        public Java.Nio.ByteBuffer Put(int arg0, byte[] arg1)
-        {
-            return IExecute<Java.Nio.ByteBuffer>("put", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#put(int,java.nio.ByteBuffer,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
-        public Java.Nio.ByteBuffer Put(int arg0, Java.Nio.ByteBuffer arg1, int arg2, int arg3)
-        {
-            return IExecute<Java.Nio.ByteBuffer>("put", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ByteBuffer.html#put(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ByteBuffer.html#put(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>

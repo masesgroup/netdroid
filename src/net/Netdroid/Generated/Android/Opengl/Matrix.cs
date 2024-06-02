@@ -222,7 +222,7 @@ namespace Android.Opengl
         /// <param name="arg2"><see cref="float"/></param>
         /// <param name="arg3"><see cref="float"/></param>
         /// <param name="arg4"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void SetRotateEulerM(float[] arg0, int arg1, float arg2, float arg3, float arg4)
         {
             SExecute(LocalBridgeClazz, "setRotateEulerM", arg0, arg1, arg2, arg3, arg4);

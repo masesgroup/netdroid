@@ -33,7 +33,7 @@ namespace Android.Net.Rtp
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioGroup.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public AudioGroup(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -49,28 +49,28 @@ namespace Android.Net.Rtp
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioGroup.html#MODE_ECHO_SUPPRESSION"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MODE_ECHO_SUPPRESSION { get { if (!_MODE_ECHO_SUPPRESSIONReady) { _MODE_ECHO_SUPPRESSIONContent = SGetField<int>(LocalBridgeClazz, "MODE_ECHO_SUPPRESSION"); _MODE_ECHO_SUPPRESSIONReady = true; } return _MODE_ECHO_SUPPRESSIONContent; } }
         private static int _MODE_ECHO_SUPPRESSIONContent = default;
         private static bool _MODE_ECHO_SUPPRESSIONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioGroup.html#MODE_MUTED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MODE_MUTED { get { if (!_MODE_MUTEDReady) { _MODE_MUTEDContent = SGetField<int>(LocalBridgeClazz, "MODE_MUTED"); _MODE_MUTEDReady = true; } return _MODE_MUTEDContent; } }
         private static int _MODE_MUTEDContent = default;
         private static bool _MODE_MUTEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioGroup.html#MODE_NORMAL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MODE_NORMAL { get { if (!_MODE_NORMALReady) { _MODE_NORMALContent = SGetField<int>(LocalBridgeClazz, "MODE_NORMAL"); _MODE_NORMALReady = true; } return _MODE_NORMALContent; } }
         private static int _MODE_NORMALContent = default;
         private static bool _MODE_NORMALReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioGroup.html#MODE_ON_HOLD"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MODE_ON_HOLD { get { if (!_MODE_ON_HOLDReady) { _MODE_ON_HOLDContent = SGetField<int>(LocalBridgeClazz, "MODE_ON_HOLD"); _MODE_ON_HOLDReady = true; } return _MODE_ON_HOLDContent; } }
         private static int _MODE_ON_HOLDContent = default;
         private static bool _MODE_ON_HOLDReady = false; // this is used because in case of generics 
@@ -83,25 +83,27 @@ namespace Android.Net.Rtp
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/rtp/AudioGroup.html#getMode()"/> <see href="https://developer.android.com/reference/android/net/rtp/AudioGroup.html#setMode(int)"/>
+        /// <see href="https://developer.android.com/reference/android/net/rtp/AudioGroup.html#getStreams()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int Mode
+        /// <returns><see cref="Android.Net.Rtp.AudioStream"/></returns>
+        [global::System.Obsolete()]
+        public Android.Net.Rtp.AudioStream[] GetStreams()
         {
-            get { return IExecuteWithSignature<int>("getMode", "()I"); } set { IExecuteWithSignature("setMode", "(I)V", value); }
+            return IExecuteWithSignatureArray<Android.Net.Rtp.AudioStream>("getStreams", "()[Landroid/net/rtp/AudioStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/rtp/AudioGroup.html#getStreams()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/rtp/AudioGroup.html#getMode()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Net.Rtp.AudioStream[] Streams
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetMode()
         {
-            get { return IExecuteWithSignatureArray<Android.Net.Rtp.AudioStream>("getStreams", "()[Landroid/net/rtp/AudioStream;"); }
+            return IExecuteWithSignature<int>("getMode", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioGroup.html#clear()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
@@ -110,10 +112,19 @@ namespace Android.Net.Rtp
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioGroup.html#sendDtmf(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SendDtmf(int arg0)
         {
             IExecuteWithSignature("sendDtmf", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/rtp/AudioGroup.html#setMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetMode(int arg0)
+        {
+            IExecuteWithSignature("setMode", "(I)V", arg0);
         }
 
         #endregion

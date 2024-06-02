@@ -46,11 +46,12 @@ namespace Android.Nfc
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/NfcManager.html#getDefaultAdapter()"/> 
+        /// <see href="https://developer.android.com/reference/android/nfc/NfcManager.html#getDefaultAdapter()"/>
         /// </summary>
-        public Android.Nfc.NfcAdapter DefaultAdapter
+        /// <returns><see cref="Android.Nfc.NfcAdapter"/></returns>
+        public Android.Nfc.NfcAdapter GetDefaultAdapter()
         {
-            get { return IExecuteWithSignature<Android.Nfc.NfcAdapter>("getDefaultAdapter", "()Landroid/nfc/NfcAdapter;"); }
+            return IExecuteWithSignature<Android.Nfc.NfcAdapter>("getDefaultAdapter", "()Landroid/nfc/NfcAdapter;");
         }
 
         #endregion

@@ -46,11 +46,12 @@ namespace Android.Content.Res.Loader
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/res/loader/ResourcesLoader.html#getProviders()"/> <see href="https://developer.android.com/reference/android/content/res/loader/ResourcesLoader.html#setProviders(java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/android/content/res/loader/ResourcesLoader.html#getProviders()"/>
         /// </summary>
-        public Java.Util.List<Android.Content.Res.Loader.ResourcesProvider> Providers
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Content.Res.Loader.ResourcesProvider> GetProviders()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Content.Res.Loader.ResourcesProvider>>("getProviders", "()Ljava/util/List;"); } set { IExecuteWithSignature("setProviders", "(Ljava/util/List;)V", value); }
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Res.Loader.ResourcesProvider>>("getProviders", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/res/loader/ResourcesLoader.html#addProvider(android.content.res.loader.ResourcesProvider)"/>
@@ -74,6 +75,14 @@ namespace Android.Content.Res.Loader
         public void RemoveProvider(Android.Content.Res.Loader.ResourcesProvider arg0)
         {
             IExecuteWithSignature("removeProvider", "(Landroid/content/res/loader/ResourcesProvider;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/res/loader/ResourcesLoader.html#setProviders(java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public void SetProviders(Java.Util.List<Android.Content.Res.Loader.ResourcesProvider> arg0)
+        {
+            IExecuteWithSignature("setProviders", "(Ljava/util/List;)V", arg0);
         }
 
         #endregion

@@ -52,61 +52,68 @@ namespace Android.Hardware.Usb
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbEndpoint.html#getAddress()"/> 
-        /// </summary>
-        public int Address
-        {
-            get { return IExecuteWithSignature<int>("getAddress", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbEndpoint.html#getAttributes()"/> 
-        /// </summary>
-        public int Attributes
-        {
-            get { return IExecuteWithSignature<int>("getAttributes", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbEndpoint.html#getDirection()"/> 
-        /// </summary>
-        public int Direction
-        {
-            get { return IExecuteWithSignature<int>("getDirection", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbEndpoint.html#getEndpointNumber()"/> 
-        /// </summary>
-        public int EndpointNumber
-        {
-            get { return IExecuteWithSignature<int>("getEndpointNumber", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbEndpoint.html#getInterval()"/> 
-        /// </summary>
-        public int Interval
-        {
-            get { return IExecuteWithSignature<int>("getInterval", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbEndpoint.html#getMaxPacketSize()"/> 
-        /// </summary>
-        public int MaxPacketSize
-        {
-            get { return IExecuteWithSignature<int>("getMaxPacketSize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbEndpoint.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbEndpoint.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbEndpoint.html#getAddress()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAddress()
+        {
+            return IExecuteWithSignature<int>("getAddress", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbEndpoint.html#getAttributes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAttributes()
+        {
+            return IExecuteWithSignature<int>("getAttributes", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbEndpoint.html#getDirection()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDirection()
+        {
+            return IExecuteWithSignature<int>("getDirection", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbEndpoint.html#getEndpointNumber()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEndpointNumber()
+        {
+            return IExecuteWithSignature<int>("getEndpointNumber", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbEndpoint.html#getInterval()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInterval()
+        {
+            return IExecuteWithSignature<int>("getInterval", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbEndpoint.html#getMaxPacketSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxPacketSize()
+        {
+            return IExecuteWithSignature<int>("getMaxPacketSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbEndpoint.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbEndpoint.html#writeToParcel(android.os.Parcel,int)"/>

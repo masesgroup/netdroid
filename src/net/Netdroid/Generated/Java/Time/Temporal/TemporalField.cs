@@ -64,32 +64,18 @@ namespace Java.Time.Temporal
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#getBaseUnit()"/> 
-        /// </summary>
-        public Java.Time.Temporal.TemporalUnit BaseUnit
-        {
-            get { return IExecuteWithSignature<Java.Time.Temporal.TemporalUnit>("getBaseUnit", "()Ljava/time/temporal/TemporalUnit;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#getRangeUnit()"/> 
-        /// </summary>
-        public Java.Time.Temporal.TemporalUnit RangeUnit
-        {
-            get { return IExecuteWithSignature<Java.Time.Temporal.TemporalUnit>("getRangeUnit", "()Ljava/time/temporal/TemporalUnit;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#adjustInto(java.time.temporal.Temporal,long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalField.html#adjustInto(java.time.temporal.Temporal,long)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="R"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <typeparam name="R"><see cref="Java.Time.Temporal.ITemporal"/></typeparam>
         /// <returns><typeparamref name="R"/></returns>
-        public R AdjustInto<R>(R arg0, long arg1) where R: Java.Time.Temporal.ITemporal, new()
+        public R AdjustInto<R>(R arg0, long arg1) where R : Java.Time.Temporal.ITemporal, new()
         {
             return IExecute<R>("adjustInto", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#isDateBased()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalField.html#isDateBased()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDateBased()
@@ -97,7 +83,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<bool>("isDateBased", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#isSupportedBy(java.time.temporal.TemporalAccessor)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalField.html#isSupportedBy(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -106,7 +92,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<bool>("isSupportedBy", "(Ljava/time/temporal/TemporalAccessor;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#isTimeBased()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalField.html#isTimeBased()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsTimeBased()
@@ -114,7 +100,23 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<bool>("isTimeBased", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#range()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalField.html#getBaseUnit()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Temporal.TemporalUnit"/></returns>
+        public Java.Time.Temporal.TemporalUnit GetBaseUnit()
+        {
+            return IExecuteWithSignature<Java.Time.Temporal.TemporalUnit>("getBaseUnit", "()Ljava/time/temporal/TemporalUnit;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalField.html#getRangeUnit()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Temporal.TemporalUnit"/></returns>
+        public Java.Time.Temporal.TemporalUnit GetRangeUnit()
+        {
+            return IExecuteWithSignature<Java.Time.Temporal.TemporalUnit>("getRangeUnit", "()Ljava/time/temporal/TemporalUnit;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalField.html#range()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
         public Java.Time.Temporal.ValueRange Range()
@@ -122,7 +124,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "()Ljava/time/temporal/ValueRange;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#rangeRefinedBy(java.time.temporal.TemporalAccessor)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalField.html#rangeRefinedBy(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
@@ -131,7 +133,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("rangeRefinedBy", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/temporal/ValueRange;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#getFrom(java.time.temporal.TemporalAccessor)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalField.html#getFrom(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <returns><see cref="long"/></returns>
@@ -140,7 +142,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<long>("getFrom", "(Ljava/time/temporal/TemporalAccessor;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#getDisplayName(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalField.html#getDisplayName(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -149,7 +151,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalField.html#resolve(java.util.Map,java.time.temporal.TemporalAccessor,java.time.format.ResolverStyle)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalField.html#resolve(java.util.Map,java.time.temporal.TemporalAccessor,java.time.format.ResolverStyle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>

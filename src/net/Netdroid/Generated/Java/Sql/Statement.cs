@@ -64,43 +64,43 @@ namespace Java.Sql
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#CLOSE_ALL_RESULTS"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#CLOSE_ALL_RESULTS"/>
         /// </summary>
         public static int CLOSE_ALL_RESULTS { get { if (!_CLOSE_ALL_RESULTSReady) { _CLOSE_ALL_RESULTSContent = SGetField<int>(LocalBridgeClazz, "CLOSE_ALL_RESULTS"); _CLOSE_ALL_RESULTSReady = true; } return _CLOSE_ALL_RESULTSContent; } }
         private static int _CLOSE_ALL_RESULTSContent = default;
         private static bool _CLOSE_ALL_RESULTSReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#CLOSE_CURRENT_RESULT"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#CLOSE_CURRENT_RESULT"/>
         /// </summary>
         public static int CLOSE_CURRENT_RESULT { get { if (!_CLOSE_CURRENT_RESULTReady) { _CLOSE_CURRENT_RESULTContent = SGetField<int>(LocalBridgeClazz, "CLOSE_CURRENT_RESULT"); _CLOSE_CURRENT_RESULTReady = true; } return _CLOSE_CURRENT_RESULTContent; } }
         private static int _CLOSE_CURRENT_RESULTContent = default;
         private static bool _CLOSE_CURRENT_RESULTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#EXECUTE_FAILED"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#EXECUTE_FAILED"/>
         /// </summary>
         public static int EXECUTE_FAILED { get { if (!_EXECUTE_FAILEDReady) { _EXECUTE_FAILEDContent = SGetField<int>(LocalBridgeClazz, "EXECUTE_FAILED"); _EXECUTE_FAILEDReady = true; } return _EXECUTE_FAILEDContent; } }
         private static int _EXECUTE_FAILEDContent = default;
         private static bool _EXECUTE_FAILEDReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#KEEP_CURRENT_RESULT"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#KEEP_CURRENT_RESULT"/>
         /// </summary>
         public static int KEEP_CURRENT_RESULT { get { if (!_KEEP_CURRENT_RESULTReady) { _KEEP_CURRENT_RESULTContent = SGetField<int>(LocalBridgeClazz, "KEEP_CURRENT_RESULT"); _KEEP_CURRENT_RESULTReady = true; } return _KEEP_CURRENT_RESULTContent; } }
         private static int _KEEP_CURRENT_RESULTContent = default;
         private static bool _KEEP_CURRENT_RESULTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#NO_GENERATED_KEYS"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#NO_GENERATED_KEYS"/>
         /// </summary>
         public static int NO_GENERATED_KEYS { get { if (!_NO_GENERATED_KEYSReady) { _NO_GENERATED_KEYSContent = SGetField<int>(LocalBridgeClazz, "NO_GENERATED_KEYS"); _NO_GENERATED_KEYSReady = true; } return _NO_GENERATED_KEYSContent; } }
         private static int _NO_GENERATED_KEYSContent = default;
         private static bool _NO_GENERATED_KEYSReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#RETURN_GENERATED_KEYS"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#RETURN_GENERATED_KEYS"/>
         /// </summary>
         public static int RETURN_GENERATED_KEYS { get { if (!_RETURN_GENERATED_KEYSReady) { _RETURN_GENERATED_KEYSContent = SGetField<int>(LocalBridgeClazz, "RETURN_GENERATED_KEYS"); _RETURN_GENERATED_KEYSReady = true; } return _RETURN_GENERATED_KEYSContent; } }
         private static int _RETURN_GENERATED_KEYSContent = default;
         private static bool _RETURN_GENERATED_KEYSReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#SUCCESS_NO_INFO"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#SUCCESS_NO_INFO"/>
         /// </summary>
         public static int SUCCESS_NO_INFO { get { if (!_SUCCESS_NO_INFOReady) { _SUCCESS_NO_INFOContent = SGetField<int>(LocalBridgeClazz, "SUCCESS_NO_INFO"); _SUCCESS_NO_INFOReady = true; } return _SUCCESS_NO_INFOContent; } }
         private static int _SUCCESS_NO_INFOContent = default;
@@ -114,119 +114,7 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#getConnection()"/> 
-        /// </summary>
-        public Java.Sql.Connection Connection
-        {
-            get { return IExecuteWithSignature<Java.Sql.Connection>("getConnection", "()Ljava/sql/Connection;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#getFetchDirection()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#setFetchDirection(int)"/>
-        /// </summary>
-        public int FetchDirection
-        {
-            get { return IExecuteWithSignature<int>("getFetchDirection", "()I"); } set { IExecuteWithSignature("setFetchDirection", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#getFetchSize()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#setFetchSize(int)"/>
-        /// </summary>
-        public int FetchSize
-        {
-            get { return IExecuteWithSignature<int>("getFetchSize", "()I"); } set { IExecuteWithSignature("setFetchSize", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#getGeneratedKeys()"/> 
-        /// </summary>
-        public Java.Sql.ResultSet GeneratedKeys
-        {
-            get { return IExecuteWithSignature<Java.Sql.ResultSet>("getGeneratedKeys", "()Ljava/sql/ResultSet;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#getLargeMaxRows()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#setLargeMaxRows(long)"/>
-        /// </summary>
-        public long LargeMaxRows
-        {
-            get { return IExecuteWithSignature<long>("getLargeMaxRows", "()J"); } set { IExecuteWithSignature("setLargeMaxRows", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#getLargeUpdateCount()"/> 
-        /// </summary>
-        public long LargeUpdateCount
-        {
-            get { return IExecuteWithSignature<long>("getLargeUpdateCount", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#getMaxFieldSize()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#setMaxFieldSize(int)"/>
-        /// </summary>
-        public int MaxFieldSize
-        {
-            get { return IExecuteWithSignature<int>("getMaxFieldSize", "()I"); } set { IExecuteWithSignature("setMaxFieldSize", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#getMaxRows()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#setMaxRows(int)"/>
-        /// </summary>
-        public int MaxRows
-        {
-            get { return IExecuteWithSignature<int>("getMaxRows", "()I"); } set { IExecuteWithSignature("setMaxRows", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#getMoreResults()"/> 
-        /// </summary>
-        public bool MoreResults
-        {
-            get { return IExecuteWithSignature<bool>("getMoreResults", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#getQueryTimeout()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#setQueryTimeout(int)"/>
-        /// </summary>
-        public int QueryTimeout
-        {
-            get { return IExecuteWithSignature<int>("getQueryTimeout", "()I"); } set { IExecuteWithSignature("setQueryTimeout", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#getResultSet()"/> 
-        /// </summary>
-        public Java.Sql.ResultSet ResultSet
-        {
-            get { return IExecuteWithSignature<Java.Sql.ResultSet>("getResultSet", "()Ljava/sql/ResultSet;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#getResultSetConcurrency()"/> 
-        /// </summary>
-        public int ResultSetConcurrency
-        {
-            get { return IExecuteWithSignature<int>("getResultSetConcurrency", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#getResultSetHoldability()"/> 
-        /// </summary>
-        public int ResultSetHoldability
-        {
-            get { return IExecuteWithSignature<int>("getResultSetHoldability", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#getResultSetType()"/> 
-        /// </summary>
-        public int ResultSetType
-        {
-            get { return IExecuteWithSignature<int>("getResultSetType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#getUpdateCount()"/> 
-        /// </summary>
-        public int UpdateCount
-        {
-            get { return IExecuteWithSignature<int>("getUpdateCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#getWarnings()"/> 
-        /// </summary>
-        public Java.Sql.SQLWarning Warnings
-        {
-            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getWarnings", "()Ljava/sql/SQLWarning;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLWarning>(obj); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#execute(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#execute(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -237,7 +125,7 @@ namespace Java.Sql
             return IExecute<bool>("execute", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#execute(java.lang.String,int[])"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#execute(java.lang.String,int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -248,7 +136,7 @@ namespace Java.Sql
             return IExecute<bool>("execute", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#execute(java.lang.String,java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#execute(java.lang.String,java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -259,7 +147,7 @@ namespace Java.Sql
             return IExecute<bool>("execute", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#execute(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#execute(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -269,7 +157,16 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("execute", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#getMoreResults(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#getMoreResults()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool GetMoreResults()
+        {
+            return IExecuteWithSignature<bool>("getMoreResults", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#getMoreResults(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -279,7 +176,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("getMoreResults", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#isClosed()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#isClosed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -288,7 +185,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("isClosed", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#isCloseOnCompletion()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#isCloseOnCompletion()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -297,7 +194,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("isCloseOnCompletion", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#isPoolable()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#isPoolable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -306,7 +203,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("isPoolable", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#executeUpdate(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#executeUpdate(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -317,7 +214,7 @@ namespace Java.Sql
             return IExecute<int>("executeUpdate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#executeUpdate(java.lang.String,int[])"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#executeUpdate(java.lang.String,int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -328,7 +225,7 @@ namespace Java.Sql
             return IExecute<int>("executeUpdate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#executeUpdate(java.lang.String,java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#executeUpdate(java.lang.String,java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -339,7 +236,7 @@ namespace Java.Sql
             return IExecute<int>("executeUpdate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#executeUpdate(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#executeUpdate(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
@@ -349,7 +246,88 @@ namespace Java.Sql
             return IExecuteWithSignature<int>("executeUpdate", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#executeBatch()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#getFetchDirection()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetFetchDirection()
+        {
+            return IExecuteWithSignature<int>("getFetchDirection", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#getFetchSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetFetchSize()
+        {
+            return IExecuteWithSignature<int>("getFetchSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#getMaxFieldSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetMaxFieldSize()
+        {
+            return IExecuteWithSignature<int>("getMaxFieldSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#getMaxRows()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetMaxRows()
+        {
+            return IExecuteWithSignature<int>("getMaxRows", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#getQueryTimeout()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetQueryTimeout()
+        {
+            return IExecuteWithSignature<int>("getQueryTimeout", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#getResultSetConcurrency()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetResultSetConcurrency()
+        {
+            return IExecuteWithSignature<int>("getResultSetConcurrency", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#getResultSetHoldability()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetResultSetHoldability()
+        {
+            return IExecuteWithSignature<int>("getResultSetHoldability", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#getResultSetType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetResultSetType()
+        {
+            return IExecuteWithSignature<int>("getResultSetType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#getUpdateCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetUpdateCount()
+        {
+            return IExecuteWithSignature<int>("getUpdateCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#executeBatch()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -358,7 +336,16 @@ namespace Java.Sql
             return IExecuteWithSignatureArray<int>("executeBatch", "()[I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#executeQuery(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#getConnection()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Sql.Connection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.Connection GetConnection()
+        {
+            return IExecuteWithSignature<Java.Sql.Connection>("getConnection", "()Ljava/sql/Connection;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#executeQuery(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.ResultSet"/></returns>
@@ -368,7 +355,34 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.ResultSet>("executeQuery", "(Ljava/lang/String;)Ljava/sql/ResultSet;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#addBatch(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#getGeneratedKeys()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.ResultSet GetGeneratedKeys()
+        {
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getGeneratedKeys", "()Ljava/sql/ResultSet;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#getResultSet()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.ResultSet GetResultSet()
+        {
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getResultSet", "()Ljava/sql/ResultSet;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#getWarnings()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Sql.SQLWarning"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.SQLWarning GetWarnings()
+        {
+            var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getWarnings", "()Ljava/sql/SQLWarning;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLWarning>(obj);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#addBatch(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -377,7 +391,7 @@ namespace Java.Sql
             IExecuteWithSignature("addBatch", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#cancel()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#cancel()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
         public void Cancel()
@@ -385,7 +399,7 @@ namespace Java.Sql
             IExecuteWithSignature("cancel", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#clearBatch()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#clearBatch()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearBatch()
@@ -393,7 +407,7 @@ namespace Java.Sql
             IExecuteWithSignature("clearBatch", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#clearWarnings()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#clearWarnings()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearWarnings()
@@ -401,7 +415,7 @@ namespace Java.Sql
             IExecuteWithSignature("clearWarnings", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
         public void Close()
@@ -409,7 +423,7 @@ namespace Java.Sql
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#closeOnCompletion()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#closeOnCompletion()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
         public void CloseOnCompletion()
@@ -417,7 +431,7 @@ namespace Java.Sql
             IExecuteWithSignature("closeOnCompletion", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#setCursorName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#setCursorName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -426,7 +440,7 @@ namespace Java.Sql
             IExecuteWithSignature("setCursorName", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#setEscapeProcessing(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#setEscapeProcessing(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -435,7 +449,43 @@ namespace Java.Sql
             IExecuteWithSignature("setEscapeProcessing", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#setPoolable(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#setFetchDirection(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetFetchDirection(int arg0)
+        {
+            IExecuteWithSignature("setFetchDirection", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#setFetchSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetFetchSize(int arg0)
+        {
+            IExecuteWithSignature("setFetchSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#setMaxFieldSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetMaxFieldSize(int arg0)
+        {
+            IExecuteWithSignature("setMaxFieldSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#setMaxRows(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetMaxRows(int arg0)
+        {
+            IExecuteWithSignature("setMaxRows", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#setPoolable(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -444,7 +494,16 @@ namespace Java.Sql
             IExecuteWithSignature("setPoolable", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#isSimpleIdentifier(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#setQueryTimeout(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetQueryTimeout(int arg0)
+        {
+            IExecuteWithSignature("setQueryTimeout", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#isSimpleIdentifier(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -454,7 +513,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("isSimpleIdentifier", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#enquoteIdentifier(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#enquoteIdentifier(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -465,7 +524,7 @@ namespace Java.Sql
             return IExecute<Java.Lang.String>("enquoteIdentifier", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#enquoteLiteral(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#enquoteLiteral(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -475,7 +534,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("enquoteLiteral", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#enquoteNCharLiteral(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#enquoteNCharLiteral(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -485,7 +544,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("enquoteNCharLiteral", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#executeLargeUpdate(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#executeLargeUpdate(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -496,7 +555,7 @@ namespace Java.Sql
             return IExecute<long>("executeLargeUpdate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#executeLargeUpdate(java.lang.String,int[])"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#executeLargeUpdate(java.lang.String,int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -507,7 +566,7 @@ namespace Java.Sql
             return IExecute<long>("executeLargeUpdate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#executeLargeUpdate(java.lang.String,java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#executeLargeUpdate(java.lang.String,java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -518,7 +577,7 @@ namespace Java.Sql
             return IExecute<long>("executeLargeUpdate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#executeLargeUpdate(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#executeLargeUpdate(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="long"/></returns>
@@ -528,13 +587,40 @@ namespace Java.Sql
             return IExecuteWithSignature<long>("executeLargeUpdate", "(Ljava/lang/String;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html#executeLargeBatch()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#getLargeMaxRows()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public long GetLargeMaxRows()
+        {
+            return IExecuteWithSignature<long>("getLargeMaxRows", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#getLargeUpdateCount()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public long GetLargeUpdateCount()
+        {
+            return IExecuteWithSignature<long>("getLargeUpdateCount", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#executeLargeBatch()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         public long[] ExecuteLargeBatch()
         {
             return IExecuteWithSignatureArray<long>("executeLargeBatch", "()[J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Statement.html#setLargeMaxRows(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetLargeMaxRows(long arg0)
+        {
+            IExecuteWithSignature("setLargeMaxRows", "(J)V", arg0);
         }
 
         #endregion

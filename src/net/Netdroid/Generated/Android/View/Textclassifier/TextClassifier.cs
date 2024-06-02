@@ -208,13 +208,6 @@ namespace Android.View.Textclassifier
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifier.html#getMaxGenerateLinksTextLength()"/> 
-        /// </summary>
-        public int MaxGenerateLinksTextLength
-        {
-            get { return IExecuteWithSignature<int>("getMaxGenerateLinksTextLength", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifier.html#suggestConversationActions(android.view.textclassifier.ConversationActions.Request)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Textclassifier.ConversationActions.Request"/></param>
@@ -292,6 +285,14 @@ namespace Android.View.Textclassifier
             return IExecuteWithSignature<bool>("isDestroyed", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifier.html#getMaxGenerateLinksTextLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxGenerateLinksTextLength()
+        {
+            return IExecuteWithSignature<int>("getMaxGenerateLinksTextLength", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifier.html#destroy()"/>
         /// </summary>
         public void Destroy()
@@ -347,7 +348,7 @@ namespace Android.View.Textclassifier
             /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
             /// <param name="arg2"><see cref="Java.Util.Collection"/></param>
             /// <returns><see cref="Android.View.Textclassifier.TextClassifier.EntityConfig"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.View.Textclassifier.TextClassifier.EntityConfig Create(Java.Util.Collection<Java.Lang.String> arg0, Java.Util.Collection<Java.Lang.String> arg1, Java.Util.Collection<Java.Lang.String> arg2)
             {
                 return SExecute<Android.View.Textclassifier.TextClassifier.EntityConfig>(LocalBridgeClazz, "create", arg0, arg1, arg2);
@@ -357,7 +358,7 @@ namespace Android.View.Textclassifier
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
             /// <returns><see cref="Android.View.Textclassifier.TextClassifier.EntityConfig"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.View.Textclassifier.TextClassifier.EntityConfig CreateWithExplicitEntityList(Java.Util.Collection<Java.Lang.String> arg0)
             {
                 return SExecute<Android.View.Textclassifier.TextClassifier.EntityConfig>(LocalBridgeClazz, "createWithExplicitEntityList", arg0);
@@ -367,7 +368,7 @@ namespace Android.View.Textclassifier
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
             /// <returns><see cref="Android.View.Textclassifier.TextClassifier.EntityConfig"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.View.Textclassifier.TextClassifier.EntityConfig CreateWithHints(Java.Util.Collection<Java.Lang.String> arg0)
             {
                 return SExecute<Android.View.Textclassifier.TextClassifier.EntityConfig>(LocalBridgeClazz, "createWithHints", arg0);
@@ -376,13 +377,6 @@ namespace Android.View.Textclassifier
             #endregion
 
             #region Instance methods
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifier.EntityConfig.html#getHints()"/> 
-            /// </summary>
-            public Java.Util.Collection<Java.Lang.String> Hints
-            {
-                get { return IExecuteWithSignature<Java.Util.Collection<Java.Lang.String>>("getHints", "()Ljava/util/Collection;"); }
-            }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifier.EntityConfig.html#shouldIncludeTypesFromTextClassifier()"/>
             /// </summary>
@@ -398,6 +392,14 @@ namespace Android.View.Textclassifier
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifier.EntityConfig.html#getHints()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.Collection"/></returns>
+            public Java.Util.Collection<Java.Lang.String> GetHints()
+            {
+                return IExecuteWithSignature<Java.Util.Collection<Java.Lang.String>>("getHints", "()Ljava/util/Collection;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassifier.EntityConfig.html#resolveEntityListModifications(java.util.Collection)"/>

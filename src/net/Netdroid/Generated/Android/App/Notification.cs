@@ -43,7 +43,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg2"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Notification(int arg0, Java.Lang.CharSequence arg1, long arg2)
             : base(arg0, arg1, arg2)
         {
@@ -79,17 +79,17 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#largeIcon"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Graphics.Bitmap largeIcon { get { return IGetField<Android.Graphics.Bitmap>("largeIcon"); } set { ISetField("largeIcon", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#audioAttributes"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Media.AudioAttributes audioAttributes { get { return IGetField<Android.Media.AudioAttributes>("audioAttributes"); } set { ISetField("audioAttributes", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#sound"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Net.Uri sound { get { return IGetField<Android.Net.Uri>("sound"); } set { ISetField("sound", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#extras"/>
@@ -98,27 +98,27 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#bigContentView"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Widget.RemoteViews bigContentView { get { return IGetField<Android.Widget.RemoteViews>("bigContentView"); } set { ISetField("bigContentView", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#contentView"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Widget.RemoteViews contentView { get { return IGetField<Android.Widget.RemoteViews>("contentView"); } set { ISetField("contentView", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#headsUpContentView"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Widget.RemoteViews headsUpContentView { get { return IGetField<Android.Widget.RemoteViews>("headsUpContentView"); } set { ISetField("headsUpContentView", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#tickerView"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Widget.RemoteViews tickerView { get { return IGetField<Android.Widget.RemoteViews>("tickerView"); } set { ISetField("tickerView", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#audioStreamType"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int audioStreamType { get { return IGetField<int>("audioStreamType"); } set { ISetField("audioStreamType", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#color"/>
@@ -127,7 +127,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#defaults"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int defaults { get { return IGetField<int>("defaults"); } set { ISetField("defaults", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#flags"/>
@@ -136,7 +136,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#icon"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int icon { get { return IGetField<int>("icon"); } set { ISetField("icon", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#iconLevel"/>
@@ -145,17 +145,17 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#ledARGB"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int ledARGB { get { return IGetField<int>("ledARGB"); } set { ISetField("ledARGB", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#ledOffMS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int ledOffMS { get { return IGetField<int>("ledOffMS"); } set { ISetField("ledOffMS", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#ledOnMS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int ledOnMS { get { return IGetField<int>("ledOnMS"); } set { ISetField("ledOnMS", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#number"/>
@@ -164,7 +164,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#priority"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int priority { get { return IGetField<int>("priority"); } set { ISetField("priority", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#visibility"/>
@@ -185,7 +185,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#vibrate"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long[] vibrate { get { return IGetFieldArray<long>("vibrate"); } set { ISetField("vibrate", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#AUDIO_ATTRIBUTES_DEFAULT"/>
@@ -274,7 +274,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#FLAG_HIGH_PRIORITY"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_HIGH_PRIORITY { get { if (!_FLAG_HIGH_PRIORITYReady) { _FLAG_HIGH_PRIORITYContent = SGetField<int>(LocalBridgeClazz, "FLAG_HIGH_PRIORITY"); _FLAG_HIGH_PRIORITYReady = true; } return _FLAG_HIGH_PRIORITYContent; } }
         private static int _FLAG_HIGH_PRIORITYContent = default;
         private static bool _FLAG_HIGH_PRIORITYReady = false; // this is used because in case of generics 
@@ -311,7 +311,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#FLAG_SHOW_LIGHTS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_SHOW_LIGHTS { get { if (!_FLAG_SHOW_LIGHTSReady) { _FLAG_SHOW_LIGHTSContent = SGetField<int>(LocalBridgeClazz, "FLAG_SHOW_LIGHTS"); _FLAG_SHOW_LIGHTSReady = true; } return _FLAG_SHOW_LIGHTSContent; } }
         private static int _FLAG_SHOW_LIGHTSContent = default;
         private static bool _FLAG_SHOW_LIGHTSReady = false; // this is used because in case of generics 
@@ -354,42 +354,42 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#PRIORITY_DEFAULT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PRIORITY_DEFAULT { get { if (!_PRIORITY_DEFAULTReady) { _PRIORITY_DEFAULTContent = SGetField<int>(LocalBridgeClazz, "PRIORITY_DEFAULT"); _PRIORITY_DEFAULTReady = true; } return _PRIORITY_DEFAULTContent; } }
         private static int _PRIORITY_DEFAULTContent = default;
         private static bool _PRIORITY_DEFAULTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#PRIORITY_HIGH"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PRIORITY_HIGH { get { if (!_PRIORITY_HIGHReady) { _PRIORITY_HIGHContent = SGetField<int>(LocalBridgeClazz, "PRIORITY_HIGH"); _PRIORITY_HIGHReady = true; } return _PRIORITY_HIGHContent; } }
         private static int _PRIORITY_HIGHContent = default;
         private static bool _PRIORITY_HIGHReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#PRIORITY_LOW"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PRIORITY_LOW { get { if (!_PRIORITY_LOWReady) { _PRIORITY_LOWContent = SGetField<int>(LocalBridgeClazz, "PRIORITY_LOW"); _PRIORITY_LOWReady = true; } return _PRIORITY_LOWContent; } }
         private static int _PRIORITY_LOWContent = default;
         private static bool _PRIORITY_LOWReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#PRIORITY_MAX"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PRIORITY_MAX { get { if (!_PRIORITY_MAXReady) { _PRIORITY_MAXContent = SGetField<int>(LocalBridgeClazz, "PRIORITY_MAX"); _PRIORITY_MAXReady = true; } return _PRIORITY_MAXContent; } }
         private static int _PRIORITY_MAXContent = default;
         private static bool _PRIORITY_MAXReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#PRIORITY_MIN"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PRIORITY_MIN { get { if (!_PRIORITY_MINReady) { _PRIORITY_MINContent = SGetField<int>(LocalBridgeClazz, "PRIORITY_MIN"); _PRIORITY_MINReady = true; } return _PRIORITY_MINContent; } }
         private static int _PRIORITY_MINContent = default;
         private static bool _PRIORITY_MINReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#STREAM_DEFAULT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int STREAM_DEFAULT { get { if (!_STREAM_DEFAULTReady) { _STREAM_DEFAULTContent = SGetField<int>(LocalBridgeClazz, "STREAM_DEFAULT"); _STREAM_DEFAULTReady = true; } return _STREAM_DEFAULTContent; } }
         private static int _STREAM_DEFAULTContent = default;
         private static bool _STREAM_DEFAULTReady = false; // this is used because in case of generics 
@@ -654,7 +654,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#EXTRA_LARGE_ICON"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_LARGE_ICON { get { if (!_EXTRA_LARGE_ICONReady) { _EXTRA_LARGE_ICONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_LARGE_ICON"); _EXTRA_LARGE_ICONReady = true; } return _EXTRA_LARGE_ICONContent; } }
         private static Java.Lang.String _EXTRA_LARGE_ICONContent = default;
         private static bool _EXTRA_LARGE_ICONReady = false; // this is used because in case of generics 
@@ -697,7 +697,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#EXTRA_PEOPLE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_PEOPLE { get { if (!_EXTRA_PEOPLEReady) { _EXTRA_PEOPLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PEOPLE"); _EXTRA_PEOPLEReady = true; } return _EXTRA_PEOPLEContent; } }
         private static Java.Lang.String _EXTRA_PEOPLEContent = default;
         private static bool _EXTRA_PEOPLEReady = false; // this is used because in case of generics 
@@ -758,7 +758,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#EXTRA_SELF_DISPLAY_NAME"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_SELF_DISPLAY_NAME { get { if (!_EXTRA_SELF_DISPLAY_NAMEReady) { _EXTRA_SELF_DISPLAY_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SELF_DISPLAY_NAME"); _EXTRA_SELF_DISPLAY_NAMEReady = true; } return _EXTRA_SELF_DISPLAY_NAMEContent; } }
         private static Java.Lang.String _EXTRA_SELF_DISPLAY_NAMEContent = default;
         private static bool _EXTRA_SELF_DISPLAY_NAMEReady = false; // this is used because in case of generics 
@@ -783,7 +783,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#EXTRA_SMALL_ICON"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_SMALL_ICON { get { if (!_EXTRA_SMALL_ICONReady) { _EXTRA_SMALL_ICONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SMALL_ICON"); _EXTRA_SMALL_ICONReady = true; } return _EXTRA_SMALL_ICONContent; } }
         private static Java.Lang.String _EXTRA_SMALL_ICONContent = default;
         private static bool _EXTRA_SMALL_ICONReady = false; // this is used because in case of generics 
@@ -856,110 +856,44 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getAllowSystemGeneratedContextualActions()"/> 
-        /// </summary>
-        public bool AllowSystemGeneratedContextualActions
-        {
-            get { return IExecuteWithSignature<bool>("getAllowSystemGeneratedContextualActions", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getBadgeIconType()"/> 
-        /// </summary>
-        public int BadgeIconType
-        {
-            get { return IExecuteWithSignature<int>("getBadgeIconType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getChannelId()"/> 
-        /// </summary>
-        public Java.Lang.String ChannelId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getChannelId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getContextualActions()"/> 
-        /// </summary>
-        public Java.Util.List<Android.App.Notification.Action> ContextualActions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.Notification.Action>>("getContextualActions", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getBubbleMetadata()"/> 
-        /// </summary>
-        public Android.App.Notification.BubbleMetadata GetBubbleMetadata
-        {
-            get { return IExecuteWithSignature<Android.App.Notification.BubbleMetadata>("getBubbleMetadata", "()Landroid/app/Notification$BubbleMetadata;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getGroup()"/> 
-        /// </summary>
-        public Java.Lang.String Group
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getGroup", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getGroupAlertBehavior()"/> 
-        /// </summary>
-        public int GroupAlertBehavior
-        {
-            get { return IExecuteWithSignature<int>("getGroupAlertBehavior", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getLargeIcon()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Icon LargeIcon
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getLargeIcon", "()Landroid/graphics/drawable/Icon;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getLocusId()"/> 
-        /// </summary>
-        public Android.Content.LocusId LocusId
-        {
-            get { return IExecuteWithSignature<Android.Content.LocusId>("getLocusId", "()Landroid/content/LocusId;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getSettingsText()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence SettingsText
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSettingsText", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getShortcutId()"/> 
-        /// </summary>
-        public Java.Lang.String ShortcutId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getShortcutId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getSmallIcon()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Icon SmallIcon
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getSmallIcon", "()Landroid/graphics/drawable/Icon;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getSortKey()"/> 
-        /// </summary>
-        public Java.Lang.String SortKey
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSortKey", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getTimeoutAfter()"/> 
-        /// </summary>
-        public long TimeoutAfter
-        {
-            get { return IExecuteWithSignature<long>("getTimeoutAfter", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#clone()"/>
         /// </summary>
         /// <returns><see cref="Android.App.Notification"/></returns>
         public Android.App.Notification Clone()
         {
             return IExecuteWithSignature<Android.App.Notification>("clone", "()Landroid/app/Notification;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getBubbleMetadata()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.Notification.BubbleMetadata"/></returns>
+        public Android.App.Notification.BubbleMetadata GetBubbleMetadata()
+        {
+            return IExecuteWithSignature<Android.App.Notification.BubbleMetadata>("getBubbleMetadata", "()Landroid/app/Notification$BubbleMetadata;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getLocusId()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.LocusId"/></returns>
+        public Android.Content.LocusId GetLocusId()
+        {
+            return IExecuteWithSignature<Android.Content.LocusId>("getLocusId", "()Landroid/content/LocusId;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getLargeIcon()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+        public Android.Graphics.Drawable.Icon GetLargeIcon()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getLargeIcon", "()Landroid/graphics/drawable/Icon;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getSmallIcon()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+        public Android.Graphics.Drawable.Icon GetSmallIcon()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getSmallIcon", "()Landroid/graphics/drawable/Icon;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#findRemoteInputActionPair(boolean)"/>
@@ -969,6 +903,14 @@ namespace Android.App
         public Android.Util.Pair<Android.App.RemoteInput, Android.App.Notification.Action> FindRemoteInputActionPair(bool arg0)
         {
             return IExecuteWithSignature<Android.Util.Pair<Android.App.RemoteInput, Android.App.Notification.Action>>("findRemoteInputActionPair", "(Z)Landroid/util/Pair;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getAllowSystemGeneratedContextualActions()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetAllowSystemGeneratedContextualActions()
+        {
+            return IExecuteWithSignature<bool>("getAllowSystemGeneratedContextualActions", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#hasImage()"/>
@@ -985,6 +927,78 @@ namespace Android.App
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getBadgeIconType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBadgeIconType()
+        {
+            return IExecuteWithSignature<int>("getBadgeIconType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getGroupAlertBehavior()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGroupAlertBehavior()
+        {
+            return IExecuteWithSignature<int>("getGroupAlertBehavior", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getSettingsText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetSettingsText()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getSettingsText", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getChannelId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetChannelId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getChannelId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getGroup()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetGroup()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getGroup", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getShortcutId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetShortcutId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getShortcutId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getSortKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSortKey()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSortKey", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getContextualActions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.Notification.Action> GetContextualActions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.Notification.Action>>("getContextualActions", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Notification.html#getTimeoutAfter()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTimeoutAfter()
+        {
+            return IExecuteWithSignature<long>("getTimeoutAfter", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Notification.html#writeToParcel(android.os.Parcel,int)"/>
@@ -1009,7 +1023,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
             /// <param name="arg2"><see cref="Android.App.PendingIntent"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Action(int arg0, Java.Lang.CharSequence arg1, Android.App.PendingIntent arg2)
                 : base(arg0, arg1, arg2)
             {
@@ -1029,7 +1043,7 @@ namespace Android.App
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#icon"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int icon { get { return IGetField<int>("icon"); } set { ISetField("icon", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#title"/>
@@ -1116,54 +1130,52 @@ namespace Android.App
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#getAllowGeneratedReplies()"/> 
-            /// </summary>
-            public bool AllowGeneratedReplies
-            {
-                get { return IExecuteWithSignature<bool>("getAllowGeneratedReplies", "()Z"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#getDataOnlyRemoteInputs()"/> 
-            /// </summary>
-            public Android.App.RemoteInput[] DataOnlyRemoteInputs
-            {
-                get { return IExecuteWithSignatureArray<Android.App.RemoteInput>("getDataOnlyRemoteInputs", "()[Landroid/app/RemoteInput;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#getExtras()"/> 
-            /// </summary>
-            public Android.Os.Bundle Extras
-            {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#getIcon()"/> 
-            /// </summary>
-            public Android.Graphics.Drawable.Icon Icon
-            {
-                get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#getRemoteInputs()"/> 
-            /// </summary>
-            public Android.App.RemoteInput[] RemoteInputs
-            {
-                get { return IExecuteWithSignatureArray<Android.App.RemoteInput>("getRemoteInputs", "()[Landroid/app/RemoteInput;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#getSemanticAction()"/> 
-            /// </summary>
-            public int SemanticAction
-            {
-                get { return IExecuteWithSignature<int>("getSemanticAction", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#clone()"/>
             /// </summary>
             /// <returns><see cref="Android.App.Notification.Action"/></returns>
             public Android.App.Notification.Action Clone()
             {
                 return IExecuteWithSignature<Android.App.Notification.Action>("clone", "()Landroid/app/Notification$Action;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#getDataOnlyRemoteInputs()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.RemoteInput"/></returns>
+            public Android.App.RemoteInput[] GetDataOnlyRemoteInputs()
+            {
+                return IExecuteWithSignatureArray<Android.App.RemoteInput>("getDataOnlyRemoteInputs", "()[Landroid/app/RemoteInput;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#getRemoteInputs()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.RemoteInput"/></returns>
+            public Android.App.RemoteInput[] GetRemoteInputs()
+            {
+                return IExecuteWithSignatureArray<Android.App.RemoteInput>("getRemoteInputs", "()[Landroid/app/RemoteInput;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#getIcon()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+            public Android.Graphics.Drawable.Icon GetIcon()
+            {
+                return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#getExtras()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetExtras()
+            {
+                return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#getAllowGeneratedReplies()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool GetAllowGeneratedReplies()
+            {
+                return IExecuteWithSignature<bool>("getAllowGeneratedReplies", "()Z");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#isAuthenticationRequired()"/>
@@ -1188,6 +1200,14 @@ namespace Android.App
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#getSemanticAction()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetSemanticAction()
+            {
+                return IExecuteWithSignature<int>("getSemanticAction", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Action.html#writeToParcel(android.os.Parcel,int)"/>
@@ -1231,44 +1251,6 @@ namespace Android.App
 
                 #region Instance methods
                 /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#getCancelLabel()"/> 
-                /// </summary>
-                [System.Obsolete()]
-                public Java.Lang.CharSequence CancelLabel
-                {
-                    get { return IExecuteWithSignature<Java.Lang.CharSequence>("getCancelLabel", "()Ljava/lang/CharSequence;"); }
-                }
-                /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#getConfirmLabel()"/> 
-                /// </summary>
-                [System.Obsolete()]
-                public Java.Lang.CharSequence ConfirmLabel
-                {
-                    get { return IExecuteWithSignature<Java.Lang.CharSequence>("getConfirmLabel", "()Ljava/lang/CharSequence;"); }
-                }
-                /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#getHintDisplayActionInline()"/> 
-                /// </summary>
-                public bool HintDisplayActionInline
-                {
-                    get { return IExecuteWithSignature<bool>("getHintDisplayActionInline", "()Z"); }
-                }
-                /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#getHintLaunchesActivity()"/> 
-                /// </summary>
-                public bool HintLaunchesActivity
-                {
-                    get { return IExecuteWithSignature<bool>("getHintLaunchesActivity", "()Z"); }
-                }
-                /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#getInProgressLabel()"/> 
-                /// </summary>
-                [System.Obsolete()]
-                public Java.Lang.CharSequence InProgressLabel
-                {
-                    get { return IExecuteWithSignature<Java.Lang.CharSequence>("getInProgressLabel", "()Ljava/lang/CharSequence;"); }
-                }
-                /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#extend(android.app.Notification.Action.Builder)"/>
                 /// </summary>
                 /// <param name="arg0"><see cref="Android.App.Notification.Action.Builder"/></param>
@@ -1299,7 +1281,7 @@ namespace Android.App
                 /// </summary>
                 /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
                 /// <returns><see cref="Android.App.Notification.Action.WearableExtender"/></returns>
-                [System.Obsolete()]
+                [global::System.Obsolete()]
                 public Android.App.Notification.Action.WearableExtender SetCancelLabel(Java.Lang.CharSequence arg0)
                 {
                     return IExecuteWithSignature<Android.App.Notification.Action.WearableExtender>("setCancelLabel", "(Ljava/lang/CharSequence;)Landroid/app/Notification$Action$WearableExtender;", arg0);
@@ -1309,7 +1291,7 @@ namespace Android.App
                 /// </summary>
                 /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
                 /// <returns><see cref="Android.App.Notification.Action.WearableExtender"/></returns>
-                [System.Obsolete()]
+                [global::System.Obsolete()]
                 public Android.App.Notification.Action.WearableExtender SetConfirmLabel(Java.Lang.CharSequence arg0)
                 {
                     return IExecuteWithSignature<Android.App.Notification.Action.WearableExtender>("setConfirmLabel", "(Ljava/lang/CharSequence;)Landroid/app/Notification$Action$WearableExtender;", arg0);
@@ -1337,10 +1319,26 @@ namespace Android.App
                 /// </summary>
                 /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
                 /// <returns><see cref="Android.App.Notification.Action.WearableExtender"/></returns>
-                [System.Obsolete()]
+                [global::System.Obsolete()]
                 public Android.App.Notification.Action.WearableExtender SetInProgressLabel(Java.Lang.CharSequence arg0)
                 {
                     return IExecuteWithSignature<Android.App.Notification.Action.WearableExtender>("setInProgressLabel", "(Ljava/lang/CharSequence;)Landroid/app/Notification$Action$WearableExtender;", arg0);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#getHintDisplayActionInline()"/>
+                /// </summary>
+                /// <returns><see cref="bool"/></returns>
+                public bool GetHintDisplayActionInline()
+                {
+                    return IExecuteWithSignature<bool>("getHintDisplayActionInline", "()Z");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#getHintLaunchesActivity()"/>
+                /// </summary>
+                /// <returns><see cref="bool"/></returns>
+                public bool GetHintLaunchesActivity()
+                {
+                    return IExecuteWithSignature<bool>("getHintLaunchesActivity", "()Z");
                 }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#isAvailableOffline()"/>
@@ -1349,6 +1347,33 @@ namespace Android.App
                 public bool IsAvailableOffline()
                 {
                     return IExecuteWithSignature<bool>("isAvailableOffline", "()Z");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#getCancelLabel()"/>
+                /// </summary>
+                /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+                [global::System.Obsolete()]
+                public Java.Lang.CharSequence GetCancelLabel()
+                {
+                    return IExecuteWithSignature<Java.Lang.CharSequence>("getCancelLabel", "()Ljava/lang/CharSequence;");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#getConfirmLabel()"/>
+                /// </summary>
+                /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+                [global::System.Obsolete()]
+                public Java.Lang.CharSequence GetConfirmLabel()
+                {
+                    return IExecuteWithSignature<Java.Lang.CharSequence>("getConfirmLabel", "()Ljava/lang/CharSequence;");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.Action.WearableExtender.html#getInProgressLabel()"/>
+                /// </summary>
+                /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+                [global::System.Obsolete()]
+                public Java.Lang.CharSequence GetInProgressLabel()
+                {
+                    return IExecuteWithSignature<Java.Lang.CharSequence>("getInProgressLabel", "()Ljava/lang/CharSequence;");
                 }
 
                 #endregion
@@ -1429,7 +1454,7 @@ namespace Android.App
                 /// <param name="arg0"><see cref="int"/></param>
                 /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
                 /// <param name="arg2"><see cref="Android.App.PendingIntent"/></param>
-                [System.Obsolete()]
+                [global::System.Obsolete()]
                 public Builder(int arg0, Java.Lang.CharSequence arg1, Android.App.PendingIntent arg2)
                     : base(arg0, arg1, arg2)
                 {
@@ -1450,13 +1475,6 @@ namespace Android.App
                 #endregion
 
                 #region Instance methods
-                /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.Action.Builder.html#getExtras()"/> 
-                /// </summary>
-                public Android.Os.Bundle Extras
-                {
-                    get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-                }
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.Action.Builder.html#build()"/>
                 /// </summary>
@@ -1528,6 +1546,14 @@ namespace Android.App
                 {
                     return IExecuteWithSignature<Android.App.Notification.Action.Builder>("setSemanticAction", "(I)Landroid/app/Notification$Action$Builder;", arg0);
                 }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.Action.Builder.html#getExtras()"/>
+                /// </summary>
+                /// <returns><see cref="Android.Os.Bundle"/></returns>
+                public Android.Os.Bundle GetExtras()
+                {
+                    return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
+                }
 
                 #endregion
 
@@ -1554,7 +1580,7 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/Notification.BigPictureStyle.html#%3Cinit%3E(android.app.Notification.Builder)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.Notification.Builder"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public BigPictureStyle(Android.App.Notification.Builder arg0)
                 : base(arg0)
             {
@@ -1666,7 +1692,7 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/Notification.BigTextStyle.html#%3Cinit%3E(android.app.Notification.Builder)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.Notification.Builder"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public BigTextStyle(Android.App.Notification.Builder arg0)
                 : base(arg0)
             {
@@ -1752,53 +1778,36 @@ namespace Android.App
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#getAutoExpandBubble()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#getDeleteIntent()"/>
             /// </summary>
-            public bool AutoExpandBubble
+            /// <returns><see cref="Android.App.PendingIntent"/></returns>
+            public Android.App.PendingIntent GetDeleteIntent()
             {
-                get { return IExecuteWithSignature<bool>("getAutoExpandBubble", "()Z"); }
+                return IExecuteWithSignature<Android.App.PendingIntent>("getDeleteIntent", "()Landroid/app/PendingIntent;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#getDeleteIntent()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#getIntent()"/>
             /// </summary>
-            public Android.App.PendingIntent DeleteIntent
+            /// <returns><see cref="Android.App.PendingIntent"/></returns>
+            public Android.App.PendingIntent GetIntent()
             {
-                get { return IExecuteWithSignature<Android.App.PendingIntent>("getDeleteIntent", "()Landroid/app/PendingIntent;"); }
+                return IExecuteWithSignature<Android.App.PendingIntent>("getIntent", "()Landroid/app/PendingIntent;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#getDesiredHeight()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#getIcon()"/>
             /// </summary>
-            public int DesiredHeight
+            /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+            public Android.Graphics.Drawable.Icon GetIcon()
             {
-                get { return IExecuteWithSignature<int>("getDesiredHeight", "()I"); }
+                return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#getDesiredHeightResId()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#getAutoExpandBubble()"/>
             /// </summary>
-            public int DesiredHeightResId
+            /// <returns><see cref="bool"/></returns>
+            public bool GetAutoExpandBubble()
             {
-                get { return IExecuteWithSignature<int>("getDesiredHeightResId", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#getIcon()"/> 
-            /// </summary>
-            public Android.Graphics.Drawable.Icon Icon
-            {
-                get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#getIntent()"/> 
-            /// </summary>
-            public Android.App.PendingIntent Intent
-            {
-                get { return IExecuteWithSignature<Android.App.PendingIntent>("getIntent", "()Landroid/app/PendingIntent;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#getShortcutId()"/> 
-            /// </summary>
-            public Java.Lang.String ShortcutId
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getShortcutId", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<bool>("getAutoExpandBubble", "()Z");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#isBubbleSuppressable()"/>
@@ -1831,6 +1840,30 @@ namespace Android.App
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#getDesiredHeight()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetDesiredHeight()
+            {
+                return IExecuteWithSignature<int>("getDesiredHeight", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#getDesiredHeightResId()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetDesiredHeightResId()
+            {
+                return IExecuteWithSignature<int>("getDesiredHeightResId", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#getShortcutId()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetShortcutId()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getShortcutId", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.BubbleMetadata.html#writeToParcel(android.os.Parcel,int)"/>
@@ -1997,7 +2030,7 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#%3Cinit%3E(android.content.Context)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Builder(Android.Content.Context arg0)
                 : base(arg0)
             {
@@ -2029,34 +2062,21 @@ namespace Android.App
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#getExtras()"/> 
-            /// </summary>
-            public Android.Os.Bundle Extras
-            {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#getNotification()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Android.App.Notification GetNotification
-            {
-                get { return IExecuteWithSignature<Android.App.Notification>("getNotification", "()Landroid/app/Notification;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#getStyle()"/> 
-            /// </summary>
-            public Android.App.Notification.Style GetStyle
-            {
-                get { return IExecuteWithSignature<Android.App.Notification.Style>("getStyle", "()Landroid/app/Notification$Style;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#build()"/>
             /// </summary>
             /// <returns><see cref="Android.App.Notification"/></returns>
             public Android.App.Notification Build()
             {
                 return IExecuteWithSignature<Android.App.Notification>("build", "()Landroid/app/Notification;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#getNotification()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.Notification"/></returns>
+            [global::System.Obsolete()]
+            public Android.App.Notification GetNotification()
+            {
+                return IExecuteWithSignature<Android.App.Notification>("getNotification", "()Landroid/app/Notification;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#addAction(android.app.Notification.Action)"/>
@@ -2074,7 +2094,7 @@ namespace Android.App
             /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
             /// <param name="arg2"><see cref="Android.App.PendingIntent"/></param>
             /// <returns><see cref="Android.App.Notification.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.Builder AddAction(int arg0, Java.Lang.CharSequence arg1, Android.App.PendingIntent arg2)
             {
                 return IExecute<Android.App.Notification.Builder>("addAction", arg0, arg1, arg2);
@@ -2102,7 +2122,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Android.App.Notification.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.Builder AddPerson(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.Builder>("addPerson", "(Ljava/lang/String;)Landroid/app/Notification$Builder;", arg0);
@@ -2211,7 +2231,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.Widget.RemoteViews"/></param>
             /// <returns><see cref="Android.App.Notification.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.Builder SetContent(Android.Widget.RemoteViews arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.Builder>("setContent", "(Landroid/widget/RemoteViews;)Landroid/app/Notification$Builder;", arg0);
@@ -2221,7 +2241,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
             /// <returns><see cref="Android.App.Notification.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.Builder SetContentInfo(Java.Lang.CharSequence arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.Builder>("setContentInfo", "(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;", arg0);
@@ -2285,7 +2305,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.App.Notification.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.Builder SetDefaults(int arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.Builder>("setDefaults", "(I)Landroid/app/Notification$Builder;", arg0);
@@ -2389,7 +2409,7 @@ namespace Android.App
             /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="int"/></param>
             /// <returns><see cref="Android.App.Notification.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.Builder SetLights(int arg0, int arg1, int arg2)
             {
                 return IExecute<Android.App.Notification.Builder>("setLights", arg0, arg1, arg2);
@@ -2444,7 +2464,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.App.Notification.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.Builder SetPriority(int arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.Builder>("setPriority", "(I)Landroid/app/Notification$Builder;", arg0);
@@ -2548,7 +2568,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
             /// <param name="arg1"><see cref="Android.Media.AudioAttributes"/></param>
             /// <returns><see cref="Android.App.Notification.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.Builder SetSound(Android.Net.Uri arg0, Android.Media.AudioAttributes arg1)
             {
                 return IExecute<Android.App.Notification.Builder>("setSound", arg0, arg1);
@@ -2559,7 +2579,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
             /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see cref="Android.App.Notification.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.Builder SetSound(Android.Net.Uri arg0, int arg1)
             {
                 return IExecute<Android.App.Notification.Builder>("setSound", arg0, arg1);
@@ -2569,7 +2589,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
             /// <returns><see cref="Android.App.Notification.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.Builder SetSound(Android.Net.Uri arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.Builder>("setSound", "(Landroid/net/Uri;)Landroid/app/Notification$Builder;", arg0);
@@ -2598,7 +2618,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
             /// <param name="arg1"><see cref="Android.Widget.RemoteViews"/></param>
             /// <returns><see cref="Android.App.Notification.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.Builder SetTicker(Java.Lang.CharSequence arg0, Android.Widget.RemoteViews arg1)
             {
                 return IExecute<Android.App.Notification.Builder>("setTicker", arg0, arg1);
@@ -2635,7 +2655,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="long"/></param>
             /// <returns><see cref="Android.App.Notification.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.Builder SetVibrate(long[] arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.Builder>("setVibrate", "([J)Landroid/app/Notification$Builder;", new object[] { arg0 });
@@ -2657,6 +2677,22 @@ namespace Android.App
             public Android.App.Notification.Builder SetWhen(long arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.Builder>("setWhen", "(J)Landroid/app/Notification$Builder;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#getStyle()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.Notification.Style"/></returns>
+            public Android.App.Notification.Style GetStyle()
+            {
+                return IExecuteWithSignature<Android.App.Notification.Style>("getStyle", "()Landroid/app/Notification$Style;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#getExtras()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetExtras()
+            {
+                return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.Builder.html#createBigContentView()"/>
@@ -2854,27 +2890,6 @@ namespace Android.App
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.html#getColor()"/> 
-            /// </summary>
-            public int Color
-            {
-                get { return IExecuteWithSignature<int>("getColor", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.html#getLargeIcon()"/> 
-            /// </summary>
-            public Android.Graphics.Bitmap LargeIcon
-            {
-                get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getLargeIcon", "()Landroid/graphics/Bitmap;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.html#getUnreadConversation()"/> 
-            /// </summary>
-            public Android.App.Notification.CarExtender.UnreadConversation UnreadConversation
-            {
-                get { return IExecuteWithSignature<Android.App.Notification.CarExtender.UnreadConversation>("getUnreadConversation", "()Landroid/app/Notification$CarExtender$UnreadConversation;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.html#extend(android.app.Notification.Builder)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.Notification.Builder"/></param>
@@ -2910,6 +2925,30 @@ namespace Android.App
             {
                 return IExecuteWithSignature<Android.App.Notification.CarExtender>("setUnreadConversation", "(Landroid/app/Notification$CarExtender$UnreadConversation;)Landroid/app/Notification$CarExtender;", arg0);
             }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.html#getUnreadConversation()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.Notification.CarExtender.UnreadConversation"/></returns>
+            public Android.App.Notification.CarExtender.UnreadConversation GetUnreadConversation()
+            {
+                return IExecuteWithSignature<Android.App.Notification.CarExtender.UnreadConversation>("getUnreadConversation", "()Landroid/app/Notification$CarExtender$UnreadConversation;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.html#getLargeIcon()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+            public Android.Graphics.Bitmap GetLargeIcon()
+            {
+                return IExecuteWithSignature<Android.Graphics.Bitmap>("getLargeIcon", "()Landroid/graphics/Bitmap;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.html#getColor()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetColor()
+            {
+                return IExecuteWithSignature<int>("getColor", "()I");
+            }
 
             #endregion
 
@@ -2935,53 +2974,60 @@ namespace Android.App
 
                 #region Instance methods
                 /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getLatestTimestamp()"/> 
+                /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getReadPendingIntent()"/>
                 /// </summary>
-                public long LatestTimestamp
+                /// <returns><see cref="Android.App.PendingIntent"/></returns>
+                public Android.App.PendingIntent GetReadPendingIntent()
                 {
-                    get { return IExecuteWithSignature<long>("getLatestTimestamp", "()J"); }
+                    return IExecuteWithSignature<Android.App.PendingIntent>("getReadPendingIntent", "()Landroid/app/PendingIntent;");
                 }
                 /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getMessages()"/> 
+                /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getReplyPendingIntent()"/>
                 /// </summary>
-                public Java.Lang.String[] Messages
+                /// <returns><see cref="Android.App.PendingIntent"/></returns>
+                public Android.App.PendingIntent GetReplyPendingIntent()
                 {
-                    get { return IExecuteWithSignatureArray<Java.Lang.String>("getMessages", "()[Ljava/lang/String;"); }
+                    return IExecuteWithSignature<Android.App.PendingIntent>("getReplyPendingIntent", "()Landroid/app/PendingIntent;");
                 }
                 /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getParticipant()"/> 
+                /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getRemoteInput()"/>
                 /// </summary>
-                public Java.Lang.String Participant
+                /// <returns><see cref="Android.App.RemoteInput"/></returns>
+                public Android.App.RemoteInput GetRemoteInput()
                 {
-                    get { return IExecuteWithSignature<Java.Lang.String>("getParticipant", "()Ljava/lang/String;"); }
+                    return IExecuteWithSignature<Android.App.RemoteInput>("getRemoteInput", "()Landroid/app/RemoteInput;");
                 }
                 /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getParticipants()"/> 
+                /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getParticipant()"/>
                 /// </summary>
-                public Java.Lang.String[] Participants
+                /// <returns><see cref="Java.Lang.String"/></returns>
+                public Java.Lang.String GetParticipant()
                 {
-                    get { return IExecuteWithSignatureArray<Java.Lang.String>("getParticipants", "()[Ljava/lang/String;"); }
+                    return IExecuteWithSignature<Java.Lang.String>("getParticipant", "()Ljava/lang/String;");
                 }
                 /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getReadPendingIntent()"/> 
+                /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getMessages()"/>
                 /// </summary>
-                public Android.App.PendingIntent ReadPendingIntent
+                /// <returns><see cref="Java.Lang.String"/></returns>
+                public Java.Lang.String[] GetMessages()
                 {
-                    get { return IExecuteWithSignature<Android.App.PendingIntent>("getReadPendingIntent", "()Landroid/app/PendingIntent;"); }
+                    return IExecuteWithSignatureArray<Java.Lang.String>("getMessages", "()[Ljava/lang/String;");
                 }
                 /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getRemoteInput()"/> 
+                /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getParticipants()"/>
                 /// </summary>
-                public Android.App.RemoteInput RemoteInput
+                /// <returns><see cref="Java.Lang.String"/></returns>
+                public Java.Lang.String[] GetParticipants()
                 {
-                    get { return IExecuteWithSignature<Android.App.RemoteInput>("getRemoteInput", "()Landroid/app/RemoteInput;"); }
+                    return IExecuteWithSignatureArray<Java.Lang.String>("getParticipants", "()[Ljava/lang/String;");
                 }
                 /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getReplyPendingIntent()"/> 
+                /// <see href="https://developer.android.com/reference/android/app/Notification.CarExtender.UnreadConversation.html#getLatestTimestamp()"/>
                 /// </summary>
-                public Android.App.PendingIntent ReplyPendingIntent
+                /// <returns><see cref="long"/></returns>
+                public long GetLatestTimestamp()
                 {
-                    get { return IExecuteWithSignature<Android.App.PendingIntent>("getReplyPendingIntent", "()Landroid/app/PendingIntent;"); }
+                    return IExecuteWithSignature<long>("getLatestTimestamp", "()J");
                 }
 
                 #endregion
@@ -3195,7 +3241,7 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/Notification.InboxStyle.html#%3Cinit%3E(android.app.Notification.Builder)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.Notification.Builder"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public InboxStyle(Android.App.Notification.Builder arg0)
                 : base(arg0)
             {
@@ -3262,7 +3308,7 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/Notification.MediaStyle.html#%3Cinit%3E(android.app.Notification.Builder)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.Notification.Builder"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public MediaStyle(Android.App.Notification.Builder arg0)
                 : base(arg0)
             {
@@ -3339,7 +3385,7 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.html#%3Cinit%3E(java.lang.CharSequence)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public MessagingStyle(Java.Lang.CharSequence arg0)
                 : base(arg0)
             {
@@ -3366,42 +3412,6 @@ namespace Android.App
             #endregion
 
             #region Instance methods
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.html#getConversationTitle()"/> 
-            /// </summary>
-            public Java.Lang.CharSequence ConversationTitle
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getConversationTitle", "()Ljava/lang/CharSequence;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.html#getHistoricMessages()"/> 
-            /// </summary>
-            public Java.Util.List<Android.App.Notification.MessagingStyle.Message> HistoricMessages
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Android.App.Notification.MessagingStyle.Message>>("getHistoricMessages", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.html#getMessages()"/> 
-            /// </summary>
-            public Java.Util.List<Android.App.Notification.MessagingStyle.Message> Messages
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Android.App.Notification.MessagingStyle.Message>>("getMessages", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.html#getUser()"/> 
-            /// </summary>
-            public Android.App.Person User
-            {
-                get { return IExecuteWithSignature<Android.App.Person>("getUser", "()Landroid/app/Person;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.html#getUserDisplayName()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Lang.CharSequence UserDisplayName
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getUserDisplayName", "()Ljava/lang/CharSequence;"); }
-            }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.html#addHistoricMessage(android.app.Notification.MessagingStyle.Message)"/>
             /// </summary>
@@ -3438,7 +3448,7 @@ namespace Android.App
             /// <param name="arg1"><see cref="long"/></param>
             /// <param name="arg2"><see cref="Java.Lang.CharSequence"/></param>
             /// <returns><see cref="Android.App.Notification.MessagingStyle"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.MessagingStyle AddMessage(Java.Lang.CharSequence arg0, long arg1, Java.Lang.CharSequence arg2)
             {
                 return IExecute<Android.App.Notification.MessagingStyle>("addMessage", arg0, arg1, arg2);
@@ -3462,12 +3472,53 @@ namespace Android.App
                 return IExecuteWithSignature<Android.App.Notification.MessagingStyle>("setGroupConversation", "(Z)Landroid/app/Notification$MessagingStyle;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.html#getUser()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.Person"/></returns>
+            public Android.App.Person GetUser()
+            {
+                return IExecuteWithSignature<Android.App.Person>("getUser", "()Landroid/app/Person;");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.html#isGroupConversation()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool IsGroupConversation()
             {
                 return IExecuteWithSignature<bool>("isGroupConversation", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.html#getConversationTitle()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetConversationTitle()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getConversationTitle", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.html#getUserDisplayName()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            [global::System.Obsolete()]
+            public Java.Lang.CharSequence GetUserDisplayName()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getUserDisplayName", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.html#getHistoricMessages()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Android.App.Notification.MessagingStyle.Message> GetHistoricMessages()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.App.Notification.MessagingStyle.Message>>("getHistoricMessages", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.html#getMessages()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Android.App.Notification.MessagingStyle.Message> GetMessages()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.App.Notification.MessagingStyle.Message>>("getMessages", "()Ljava/util/List;");
             }
 
             #endregion
@@ -3493,7 +3544,7 @@ namespace Android.App
                 /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
                 /// <param name="arg1"><see cref="long"/></param>
                 /// <param name="arg2"><see cref="Java.Lang.CharSequence"/></param>
-                [System.Obsolete()]
+                [global::System.Obsolete()]
                 public Message(Java.Lang.CharSequence arg0, long arg1, Java.Lang.CharSequence arg2)
                     : base(arg0, arg1, arg2)
                 {
@@ -3524,56 +3575,6 @@ namespace Android.App
 
                 #region Instance methods
                 /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getDataMimeType()"/> 
-                /// </summary>
-                public Java.Lang.String DataMimeType
-                {
-                    get { return IExecuteWithSignature<Java.Lang.String>("getDataMimeType", "()Ljava/lang/String;"); }
-                }
-                /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getDataUri()"/> 
-                /// </summary>
-                public Android.Net.Uri DataUri
-                {
-                    get { return IExecuteWithSignature<Android.Net.Uri>("getDataUri", "()Landroid/net/Uri;"); }
-                }
-                /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getExtras()"/> 
-                /// </summary>
-                public Android.Os.Bundle Extras
-                {
-                    get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-                }
-                /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getSender()"/> 
-                /// </summary>
-                [System.Obsolete()]
-                public Java.Lang.CharSequence Sender
-                {
-                    get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSender", "()Ljava/lang/CharSequence;"); }
-                }
-                /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getSenderPerson()"/> 
-                /// </summary>
-                public Android.App.Person SenderPerson
-                {
-                    get { return IExecuteWithSignature<Android.App.Person>("getSenderPerson", "()Landroid/app/Person;"); }
-                }
-                /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getText()"/> 
-                /// </summary>
-                public Java.Lang.CharSequence Text
-                {
-                    get { return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;"); }
-                }
-                /// <summary>
-                /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getTimestamp()"/> 
-                /// </summary>
-                public long Timestamp
-                {
-                    get { return IExecuteWithSignature<long>("getTimestamp", "()J"); }
-                }
-                /// <summary>
                 /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#setData(java.lang.String,android.net.Uri)"/>
                 /// </summary>
                 /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -3582,6 +3583,63 @@ namespace Android.App
                 public Android.App.Notification.MessagingStyle.Message SetData(Java.Lang.String arg0, Android.Net.Uri arg1)
                 {
                     return IExecute<Android.App.Notification.MessagingStyle.Message>("setData", arg0, arg1);
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getSenderPerson()"/>
+                /// </summary>
+                /// <returns><see cref="Android.App.Person"/></returns>
+                public Android.App.Person GetSenderPerson()
+                {
+                    return IExecuteWithSignature<Android.App.Person>("getSenderPerson", "()Landroid/app/Person;");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getDataUri()"/>
+                /// </summary>
+                /// <returns><see cref="Android.Net.Uri"/></returns>
+                public Android.Net.Uri GetDataUri()
+                {
+                    return IExecuteWithSignature<Android.Net.Uri>("getDataUri", "()Landroid/net/Uri;");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getExtras()"/>
+                /// </summary>
+                /// <returns><see cref="Android.Os.Bundle"/></returns>
+                public Android.Os.Bundle GetExtras()
+                {
+                    return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getSender()"/>
+                /// </summary>
+                /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+                [global::System.Obsolete()]
+                public Java.Lang.CharSequence GetSender()
+                {
+                    return IExecuteWithSignature<Java.Lang.CharSequence>("getSender", "()Ljava/lang/CharSequence;");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getText()"/>
+                /// </summary>
+                /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+                public Java.Lang.CharSequence GetText()
+                {
+                    return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getDataMimeType()"/>
+                /// </summary>
+                /// <returns><see cref="Java.Lang.String"/></returns>
+                public Java.Lang.String GetDataMimeType()
+                {
+                    return IExecuteWithSignature<Java.Lang.String>("getDataMimeType", "()Ljava/lang/String;");
+                }
+                /// <summary>
+                /// <see href="https://developer.android.com/reference/android/app/Notification.MessagingStyle.Message.html#getTimestamp()"/>
+                /// </summary>
+                /// <returns><see cref="long"/></returns>
+                public long GetTimestamp()
+                {
+                    return IExecuteWithSignature<long>("getTimestamp", "()J");
                 }
 
                 #endregion
@@ -3671,56 +3729,56 @@ namespace Android.App
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#SCREEN_TIMEOUT_LONG"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int SCREEN_TIMEOUT_LONG { get { if (!_SCREEN_TIMEOUT_LONGReady) { _SCREEN_TIMEOUT_LONGContent = SGetField<int>(LocalBridgeClazz, "SCREEN_TIMEOUT_LONG"); _SCREEN_TIMEOUT_LONGReady = true; } return _SCREEN_TIMEOUT_LONGContent; } }
             private static int _SCREEN_TIMEOUT_LONGContent = default;
             private static bool _SCREEN_TIMEOUT_LONGReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#SCREEN_TIMEOUT_SHORT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int SCREEN_TIMEOUT_SHORT { get { if (!_SCREEN_TIMEOUT_SHORTReady) { _SCREEN_TIMEOUT_SHORTContent = SGetField<int>(LocalBridgeClazz, "SCREEN_TIMEOUT_SHORT"); _SCREEN_TIMEOUT_SHORTReady = true; } return _SCREEN_TIMEOUT_SHORTContent; } }
             private static int _SCREEN_TIMEOUT_SHORTContent = default;
             private static bool _SCREEN_TIMEOUT_SHORTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#SIZE_DEFAULT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int SIZE_DEFAULT { get { if (!_SIZE_DEFAULTReady) { _SIZE_DEFAULTContent = SGetField<int>(LocalBridgeClazz, "SIZE_DEFAULT"); _SIZE_DEFAULTReady = true; } return _SIZE_DEFAULTContent; } }
             private static int _SIZE_DEFAULTContent = default;
             private static bool _SIZE_DEFAULTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#SIZE_FULL_SCREEN"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int SIZE_FULL_SCREEN { get { if (!_SIZE_FULL_SCREENReady) { _SIZE_FULL_SCREENContent = SGetField<int>(LocalBridgeClazz, "SIZE_FULL_SCREEN"); _SIZE_FULL_SCREENReady = true; } return _SIZE_FULL_SCREENContent; } }
             private static int _SIZE_FULL_SCREENContent = default;
             private static bool _SIZE_FULL_SCREENReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#SIZE_LARGE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int SIZE_LARGE { get { if (!_SIZE_LARGEReady) { _SIZE_LARGEContent = SGetField<int>(LocalBridgeClazz, "SIZE_LARGE"); _SIZE_LARGEReady = true; } return _SIZE_LARGEContent; } }
             private static int _SIZE_LARGEContent = default;
             private static bool _SIZE_LARGEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#SIZE_MEDIUM"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int SIZE_MEDIUM { get { if (!_SIZE_MEDIUMReady) { _SIZE_MEDIUMContent = SGetField<int>(LocalBridgeClazz, "SIZE_MEDIUM"); _SIZE_MEDIUMReady = true; } return _SIZE_MEDIUMContent; } }
             private static int _SIZE_MEDIUMContent = default;
             private static bool _SIZE_MEDIUMReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#SIZE_SMALL"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int SIZE_SMALL { get { if (!_SIZE_SMALLReady) { _SIZE_SMALLContent = SGetField<int>(LocalBridgeClazz, "SIZE_SMALL"); _SIZE_SMALLReady = true; } return _SIZE_SMALLContent; } }
             private static int _SIZE_SMALLContent = default;
             private static bool _SIZE_SMALLReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#SIZE_XSMALL"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int SIZE_XSMALL { get { if (!_SIZE_XSMALLReady) { _SIZE_XSMALLContent = SGetField<int>(LocalBridgeClazz, "SIZE_XSMALL"); _SIZE_XSMALLReady = true; } return _SIZE_XSMALLContent; } }
             private static int _SIZE_XSMALLContent = default;
             private static bool _SIZE_XSMALLReady = false; // this is used because in case of generics 
@@ -3738,159 +3796,6 @@ namespace Android.App
             #endregion
 
             #region Instance methods
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getActions()"/> 
-            /// </summary>
-            public Java.Util.List<Android.App.Notification.Action> Actions
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Android.App.Notification.Action>>("getActions", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getBackground()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Android.Graphics.Bitmap Background
-            {
-                get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getBackground", "()Landroid/graphics/Bitmap;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getBridgeTag()"/> 
-            /// </summary>
-            public Java.Lang.String BridgeTag
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getBridgeTag", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getContentAction()"/> 
-            /// </summary>
-            public int ContentAction
-            {
-                get { return IExecuteWithSignature<int>("getContentAction", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getContentIcon()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int ContentIcon
-            {
-                get { return IExecuteWithSignature<int>("getContentIcon", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getContentIconGravity()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int ContentIconGravity
-            {
-                get { return IExecuteWithSignature<int>("getContentIconGravity", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getContentIntentAvailableOffline()"/> 
-            /// </summary>
-            public bool ContentIntentAvailableOffline
-            {
-                get { return IExecuteWithSignature<bool>("getContentIntentAvailableOffline", "()Z"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getCustomContentHeight()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int CustomContentHeight
-            {
-                get { return IExecuteWithSignature<int>("getCustomContentHeight", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getCustomSizePreset()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int CustomSizePreset
-            {
-                get { return IExecuteWithSignature<int>("getCustomSizePreset", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getDismissalId()"/> 
-            /// </summary>
-            public Java.Lang.String DismissalId
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getDismissalId", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getDisplayIntent()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Android.App.PendingIntent DisplayIntent
-            {
-                get { return IExecuteWithSignature<Android.App.PendingIntent>("getDisplayIntent", "()Landroid/app/PendingIntent;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getGravity()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int Gravity
-            {
-                get { return IExecuteWithSignature<int>("getGravity", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getHintAmbientBigPicture()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public bool HintAmbientBigPicture
-            {
-                get { return IExecuteWithSignature<bool>("getHintAmbientBigPicture", "()Z"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getHintAvoidBackgroundClipping()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public bool HintAvoidBackgroundClipping
-            {
-                get { return IExecuteWithSignature<bool>("getHintAvoidBackgroundClipping", "()Z"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getHintContentIntentLaunchesActivity()"/> 
-            /// </summary>
-            public bool HintContentIntentLaunchesActivity
-            {
-                get { return IExecuteWithSignature<bool>("getHintContentIntentLaunchesActivity", "()Z"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getHintHideIcon()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public bool HintHideIcon
-            {
-                get { return IExecuteWithSignature<bool>("getHintHideIcon", "()Z"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getHintScreenTimeout()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public int HintScreenTimeout
-            {
-                get { return IExecuteWithSignature<int>("getHintScreenTimeout", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getHintShowBackgroundOnly()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public bool HintShowBackgroundOnly
-            {
-                get { return IExecuteWithSignature<bool>("getHintShowBackgroundOnly", "()Z"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getPages()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Util.List<Android.App.Notification> Pages
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Android.App.Notification>>("getPages", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getStartScrollBottom()"/> 
-            /// </summary>
-            public bool StartScrollBottom
-            {
-                get { return IExecuteWithSignature<bool>("getStartScrollBottom", "()Z"); }
-            }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#extend(android.app.Notification.Builder)"/>
             /// </summary>
@@ -3923,7 +3828,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.Notification"/></param>
             /// <returns><see cref="Android.App.Notification.WearableExtender"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.WearableExtender AddPage(Android.App.Notification arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.WearableExtender>("addPage", "(Landroid/app/Notification;)Landroid/app/Notification$WearableExtender;", arg0);
@@ -3933,7 +3838,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.List"/></param>
             /// <returns><see cref="Android.App.Notification.WearableExtender"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.WearableExtender AddPages(Java.Util.List<Android.App.Notification> arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.WearableExtender>("addPages", "(Ljava/util/List;)Landroid/app/Notification$WearableExtender;", arg0);
@@ -3950,7 +3855,7 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#clearPages()"/>
             /// </summary>
             /// <returns><see cref="Android.App.Notification.WearableExtender"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.WearableExtender ClearPages()
             {
                 return IExecuteWithSignature<Android.App.Notification.WearableExtender>("clearPages", "()Landroid/app/Notification$WearableExtender;");
@@ -3968,7 +3873,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
             /// <returns><see cref="Android.App.Notification.WearableExtender"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.WearableExtender SetBackground(Android.Graphics.Bitmap arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.WearableExtender>("setBackground", "(Landroid/graphics/Bitmap;)Landroid/app/Notification$WearableExtender;", arg0);
@@ -3996,7 +3901,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.App.Notification.WearableExtender"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.WearableExtender SetContentIcon(int arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.WearableExtender>("setContentIcon", "(I)Landroid/app/Notification$WearableExtender;", arg0);
@@ -4006,7 +3911,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.App.Notification.WearableExtender"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.WearableExtender SetContentIconGravity(int arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.WearableExtender>("setContentIconGravity", "(I)Landroid/app/Notification$WearableExtender;", arg0);
@@ -4025,7 +3930,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.App.Notification.WearableExtender"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.WearableExtender SetCustomContentHeight(int arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.WearableExtender>("setCustomContentHeight", "(I)Landroid/app/Notification$WearableExtender;", arg0);
@@ -4035,7 +3940,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.App.Notification.WearableExtender"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.WearableExtender SetCustomSizePreset(int arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.WearableExtender>("setCustomSizePreset", "(I)Landroid/app/Notification$WearableExtender;", arg0);
@@ -4054,7 +3959,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.PendingIntent"/></param>
             /// <returns><see cref="Android.App.Notification.WearableExtender"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.WearableExtender SetDisplayIntent(Android.App.PendingIntent arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.WearableExtender>("setDisplayIntent", "(Landroid/app/PendingIntent;)Landroid/app/Notification$WearableExtender;", arg0);
@@ -4064,7 +3969,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.App.Notification.WearableExtender"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.WearableExtender SetGravity(int arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.WearableExtender>("setGravity", "(I)Landroid/app/Notification$WearableExtender;", arg0);
@@ -4074,7 +3979,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             /// <returns><see cref="Android.App.Notification.WearableExtender"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.WearableExtender SetHintAmbientBigPicture(bool arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.WearableExtender>("setHintAmbientBigPicture", "(Z)Landroid/app/Notification$WearableExtender;", arg0);
@@ -4084,7 +3989,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             /// <returns><see cref="Android.App.Notification.WearableExtender"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.WearableExtender SetHintAvoidBackgroundClipping(bool arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.WearableExtender>("setHintAvoidBackgroundClipping", "(Z)Landroid/app/Notification$WearableExtender;", arg0);
@@ -4103,7 +4008,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             /// <returns><see cref="Android.App.Notification.WearableExtender"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.WearableExtender SetHintHideIcon(bool arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.WearableExtender>("setHintHideIcon", "(Z)Landroid/app/Notification$WearableExtender;", arg0);
@@ -4113,7 +4018,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.App.Notification.WearableExtender"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.WearableExtender SetHintScreenTimeout(int arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.WearableExtender>("setHintScreenTimeout", "(I)Landroid/app/Notification$WearableExtender;", arg0);
@@ -4123,7 +4028,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             /// <returns><see cref="Android.App.Notification.WearableExtender"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.App.Notification.WearableExtender SetHintShowBackgroundOnly(bool arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.WearableExtender>("setHintShowBackgroundOnly", "(Z)Landroid/app/Notification$WearableExtender;", arg0);
@@ -4136,6 +4041,179 @@ namespace Android.App
             public Android.App.Notification.WearableExtender SetStartScrollBottom(bool arg0)
             {
                 return IExecuteWithSignature<Android.App.Notification.WearableExtender>("setStartScrollBottom", "(Z)Landroid/app/Notification$WearableExtender;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getDisplayIntent()"/>
+            /// </summary>
+            /// <returns><see cref="Android.App.PendingIntent"/></returns>
+            [global::System.Obsolete()]
+            public Android.App.PendingIntent GetDisplayIntent()
+            {
+                return IExecuteWithSignature<Android.App.PendingIntent>("getDisplayIntent", "()Landroid/app/PendingIntent;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getBackground()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+            [global::System.Obsolete()]
+            public Android.Graphics.Bitmap GetBackground()
+            {
+                return IExecuteWithSignature<Android.Graphics.Bitmap>("getBackground", "()Landroid/graphics/Bitmap;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getContentIntentAvailableOffline()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool GetContentIntentAvailableOffline()
+            {
+                return IExecuteWithSignature<bool>("getContentIntentAvailableOffline", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getHintAmbientBigPicture()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            [global::System.Obsolete()]
+            public bool GetHintAmbientBigPicture()
+            {
+                return IExecuteWithSignature<bool>("getHintAmbientBigPicture", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getHintAvoidBackgroundClipping()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            [global::System.Obsolete()]
+            public bool GetHintAvoidBackgroundClipping()
+            {
+                return IExecuteWithSignature<bool>("getHintAvoidBackgroundClipping", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getHintContentIntentLaunchesActivity()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool GetHintContentIntentLaunchesActivity()
+            {
+                return IExecuteWithSignature<bool>("getHintContentIntentLaunchesActivity", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getHintHideIcon()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            [global::System.Obsolete()]
+            public bool GetHintHideIcon()
+            {
+                return IExecuteWithSignature<bool>("getHintHideIcon", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getHintShowBackgroundOnly()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            [global::System.Obsolete()]
+            public bool GetHintShowBackgroundOnly()
+            {
+                return IExecuteWithSignature<bool>("getHintShowBackgroundOnly", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getStartScrollBottom()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool GetStartScrollBottom()
+            {
+                return IExecuteWithSignature<bool>("getStartScrollBottom", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getContentAction()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetContentAction()
+            {
+                return IExecuteWithSignature<int>("getContentAction", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getContentIcon()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetContentIcon()
+            {
+                return IExecuteWithSignature<int>("getContentIcon", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getContentIconGravity()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetContentIconGravity()
+            {
+                return IExecuteWithSignature<int>("getContentIconGravity", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getCustomContentHeight()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetCustomContentHeight()
+            {
+                return IExecuteWithSignature<int>("getCustomContentHeight", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getCustomSizePreset()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetCustomSizePreset()
+            {
+                return IExecuteWithSignature<int>("getCustomSizePreset", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getGravity()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetGravity()
+            {
+                return IExecuteWithSignature<int>("getGravity", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getHintScreenTimeout()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            [global::System.Obsolete()]
+            public int GetHintScreenTimeout()
+            {
+                return IExecuteWithSignature<int>("getHintScreenTimeout", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getBridgeTag()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetBridgeTag()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getBridgeTag", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getDismissalId()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetDismissalId()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getDismissalId", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getPages()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            [global::System.Obsolete()]
+            public Java.Util.List<Android.App.Notification> GetPages()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.App.Notification>>("getPages", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/Notification.WearableExtender.html#getActions()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Android.App.Notification.Action> GetActions()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.App.Notification.Action>>("getActions", "()Ljava/util/List;");
             }
 
             #endregion

@@ -64,28 +64,7 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Driver.html#getMajorVersion()"/> 
-        /// </summary>
-        public int MajorVersion
-        {
-            get { return IExecuteWithSignature<int>("getMajorVersion", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Driver.html#getMinorVersion()"/> 
-        /// </summary>
-        public int MinorVersion
-        {
-            get { return IExecuteWithSignature<int>("getMinorVersion", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Driver.html#getParentLogger()"/> 
-        /// </summary>
-        public Java.Util.Logging.Logger ParentLogger
-        {
-            get { return IExecuteWithSignature<Java.Util.Logging.Logger>("getParentLogger", "()Ljava/util/logging/Logger;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Driver.html#acceptsURL(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Driver.html#acceptsURL(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -95,7 +74,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("acceptsURL", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Driver.html#jdbcCompliant()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Driver.html#jdbcCompliant()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool JdbcCompliant()
@@ -103,7 +82,23 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("jdbcCompliant", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Driver.html#connect(java.lang.String,java.util.Properties)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Driver.html#getMajorVersion()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMajorVersion()
+        {
+            return IExecuteWithSignature<int>("getMajorVersion", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Driver.html#getMinorVersion()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinorVersion()
+        {
+            return IExecuteWithSignature<int>("getMinorVersion", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Driver.html#connect(java.lang.String,java.util.Properties)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Properties"/></param>
@@ -114,7 +109,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.Connection>("connect", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Driver.html#getPropertyInfo(java.lang.String,java.util.Properties)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Driver.html#getPropertyInfo(java.lang.String,java.util.Properties)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Properties"/></param>
@@ -123,6 +118,15 @@ namespace Java.Sql
         public Java.Sql.DriverPropertyInfo[] GetPropertyInfo(Java.Lang.String arg0, Java.Util.Properties arg1)
         {
             return IExecuteArray<Java.Sql.DriverPropertyInfo>("getPropertyInfo", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Driver.html#getParentLogger()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Logging.Logger"/></returns>
+        /// <exception cref="Java.Sql.SQLFeatureNotSupportedException"/>
+        public Java.Util.Logging.Logger GetParentLogger()
+        {
+            return IExecuteWithSignature<Java.Util.Logging.Logger>("getParentLogger", "()Ljava/util/logging/Logger;");
         }
 
         #endregion

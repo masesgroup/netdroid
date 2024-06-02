@@ -64,41 +64,6 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#getLayoutDirection()"/> 
-        /// </summary>
-        public int LayoutDirection
-        {
-            get { return IExecuteWithSignature<int>("getLayoutDirection", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#getParent()"/> 
-        /// </summary>
-        public Android.View.ViewParent Parent
-        {
-            get { return IExecuteWithSignature<Android.View.ViewParent>("getParent", "()Landroid/view/ViewParent;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#getParentForAccessibility()"/> 
-        /// </summary>
-        public Android.View.ViewParent ParentForAccessibility
-        {
-            get { return IExecuteWithSignature<Android.View.ViewParent>("getParentForAccessibility", "()Landroid/view/ViewParent;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#getTextAlignment()"/> 
-        /// </summary>
-        public int TextAlignment
-        {
-            get { return IExecuteWithSignature<int>("getTextAlignment", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#getTextDirection()"/> 
-        /// </summary>
-        public int TextDirection
-        {
-            get { return IExecuteWithSignature<int>("getTextDirection", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#startActionModeForChild(android.view.View,android.view.ActionMode.Callback,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
@@ -140,12 +105,28 @@ namespace Android.View
             return IExecute<Android.View.View>("keyboardNavigationClusterSearch", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#getParent()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.ViewParent"/></returns>
+        public Android.View.ViewParent GetParent()
+        {
+            return IExecuteWithSignature<Android.View.ViewParent>("getParent", "()Landroid/view/ViewParent;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#getParentForAccessibility()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.ViewParent"/></returns>
+        public Android.View.ViewParent GetParentForAccessibility()
+        {
+            return IExecuteWithSignature<Android.View.ViewParent>("getParentForAccessibility", "()Landroid/view/ViewParent;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#invalidateChildInParent(int[],android.graphics.Rect)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Graphics.Rect"/></param>
         /// <returns><see cref="Android.View.ViewParent"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.View.ViewParent InvalidateChildInParent(int[] arg0, Android.Graphics.Rect arg1)
         {
             return IExecute<Android.View.ViewParent>("invalidateChildInParent", arg0, arg1);
@@ -304,6 +285,30 @@ namespace Android.View
             return IExecuteWithSignature<bool>("showContextMenuForChild", "(Landroid/view/View;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#getLayoutDirection()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLayoutDirection()
+        {
+            return IExecuteWithSignature<int>("getLayoutDirection", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#getTextAlignment()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTextAlignment()
+        {
+            return IExecuteWithSignature<int>("getTextAlignment", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#getTextDirection()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTextDirection()
+        {
+            return IExecuteWithSignature<int>("getTextDirection", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewParent.html#bringChildToFront(android.view.View)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
@@ -357,7 +362,7 @@ namespace Android.View
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
         /// <param name="arg1"><see cref="Android.Graphics.Rect"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void InvalidateChild(Android.View.View arg0, Android.Graphics.Rect arg1)
         {
             IExecute("invalidateChild", arg0, arg1);

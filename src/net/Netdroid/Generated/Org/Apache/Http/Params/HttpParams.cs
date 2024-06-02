@@ -69,7 +69,7 @@ namespace Org.Apache.Http.Params
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool GetBooleanParameter(Java.Lang.String arg0, bool arg1)
         {
             return IExecute<bool>("getBooleanParameter", arg0, arg1);
@@ -79,7 +79,7 @@ namespace Org.Apache.Http.Params
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsParameterFalse(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isParameterFalse", "(Ljava/lang/String;)Z", arg0);
@@ -89,7 +89,7 @@ namespace Org.Apache.Http.Params
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsParameterTrue(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isParameterTrue", "(Ljava/lang/String;)Z", arg0);
@@ -99,7 +99,7 @@ namespace Org.Apache.Http.Params
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool RemoveParameter(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("removeParameter", "(Ljava/lang/String;)Z", arg0);
@@ -110,7 +110,7 @@ namespace Org.Apache.Http.Params
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="double"/></param>
         /// <returns><see cref="double"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public double GetDoubleParameter(Java.Lang.String arg0, double arg1)
         {
             return IExecute<double>("getDoubleParameter", arg0, arg1);
@@ -121,7 +121,7 @@ namespace Org.Apache.Http.Params
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int GetIntParameter(Java.Lang.String arg0, int arg1)
         {
             return IExecute<int>("getIntParameter", arg0, arg1);
@@ -131,7 +131,7 @@ namespace Org.Apache.Http.Params
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public object GetParameter(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("getParameter", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
@@ -142,7 +142,7 @@ namespace Org.Apache.Http.Params
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long GetLongParameter(Java.Lang.String arg0, long arg1)
         {
             return IExecute<long>("getLongParameter", arg0, arg1);
@@ -151,7 +151,7 @@ namespace Org.Apache.Http.Params
         /// <see href="https://developer.android.com/reference/org/apache/http/params/HttpParams.html#copy()"/>
         /// </summary>
         /// <returns><see cref="Org.Apache.Http.Params.HttpParams"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Org.Apache.Http.Params.HttpParams Copy()
         {
             return IExecuteWithSignature<Org.Apache.Http.Params.HttpParams>("copy", "()Lorg/apache/http/params/HttpParams;");
@@ -162,7 +162,7 @@ namespace Org.Apache.Http.Params
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Org.Apache.Http.Params.HttpParams"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Org.Apache.Http.Params.HttpParams SetBooleanParameter(Java.Lang.String arg0, bool arg1)
         {
             return IExecute<Org.Apache.Http.Params.HttpParams>("setBooleanParameter", arg0, arg1);
@@ -173,7 +173,7 @@ namespace Org.Apache.Http.Params
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="double"/></param>
         /// <returns><see cref="Org.Apache.Http.Params.HttpParams"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Org.Apache.Http.Params.HttpParams SetDoubleParameter(Java.Lang.String arg0, double arg1)
         {
             return IExecute<Org.Apache.Http.Params.HttpParams>("setDoubleParameter", arg0, arg1);
@@ -184,7 +184,7 @@ namespace Org.Apache.Http.Params
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Org.Apache.Http.Params.HttpParams"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Org.Apache.Http.Params.HttpParams SetIntParameter(Java.Lang.String arg0, int arg1)
         {
             return IExecute<Org.Apache.Http.Params.HttpParams>("setIntParameter", arg0, arg1);
@@ -195,7 +195,7 @@ namespace Org.Apache.Http.Params
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="Org.Apache.Http.Params.HttpParams"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Org.Apache.Http.Params.HttpParams SetLongParameter(Java.Lang.String arg0, long arg1)
         {
             return IExecute<Org.Apache.Http.Params.HttpParams>("setLongParameter", arg0, arg1);
@@ -206,7 +206,7 @@ namespace Org.Apache.Http.Params
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="Org.Apache.Http.Params.HttpParams"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Org.Apache.Http.Params.HttpParams SetParameter(Java.Lang.String arg0, object arg1)
         {
             return IExecute<Org.Apache.Http.Params.HttpParams>("setParameter", arg0, arg1);

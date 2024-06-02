@@ -42,7 +42,7 @@ namespace Java.Util.Regex
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#quoteReplacement(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#quoteReplacement(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Util.Regex
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#find()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#find()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool Find()
@@ -63,7 +63,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<bool>("find", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#find(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#find(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -72,7 +72,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<bool>("find", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#hasAnchoringBounds()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#hasAnchoringBounds()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasAnchoringBounds()
@@ -80,7 +80,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<bool>("hasAnchoringBounds", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#hasTransparentBounds()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#hasTransparentBounds()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasTransparentBounds()
@@ -88,7 +88,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<bool>("hasTransparentBounds", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#hitEnd()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#hitEnd()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HitEnd()
@@ -96,7 +96,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<bool>("hitEnd", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#lookingAt()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#lookingAt()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool LookingAt()
@@ -104,7 +104,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<bool>("lookingAt", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#matches()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#matches()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool Matches()
@@ -112,7 +112,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<bool>("matches", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#requireEnd()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#requireEnd()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool RequireEnd()
@@ -120,7 +120,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<bool>("requireEnd", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#end()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#end()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int End()
@@ -128,7 +128,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<int>("end", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#end(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#end(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -137,7 +137,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<int>("end", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#end(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#end(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
@@ -146,7 +146,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<int>("end", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#groupCount()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#groupCount()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int GroupCount()
@@ -154,7 +154,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<int>("groupCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#regionEnd()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#regionEnd()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int RegionEnd()
@@ -162,7 +162,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<int>("regionEnd", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#regionStart()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#regionStart()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int RegionStart()
@@ -170,7 +170,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<int>("regionStart", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#start()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#start()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Start()
@@ -178,7 +178,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<int>("start", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#start(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#start(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -187,7 +187,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<int>("start", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#start(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#start(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
@@ -196,7 +196,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<int>("start", "(Ljava/lang/String;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#group()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#group()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Group()
@@ -204,7 +204,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Lang.String>("group", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#group(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#group(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -213,7 +213,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Lang.String>("group", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#group(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#group(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -222,7 +222,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Lang.String>("group", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#replaceAll(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#replaceAll(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -231,7 +231,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Lang.String>("replaceAll", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#replaceAll(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#replaceAll(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -240,7 +240,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Lang.String>("replaceAll", "(Ljava/util/function/Function;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#replaceFirst(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#replaceFirst(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -249,7 +249,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Lang.String>("replaceFirst", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#replaceFirst(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#replaceFirst(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -258,7 +258,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Lang.String>("replaceFirst", "(Ljava/util/function/Function;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#appendTail(java.lang.StringBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#appendTail(java.lang.StringBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.StringBuffer"/></param>
         /// <returns><see cref="Java.Lang.StringBuffer"/></returns>
@@ -267,7 +267,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Lang.StringBuffer>("appendTail", "(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#appendTail(java.lang.StringBuilder)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#appendTail(java.lang.StringBuilder)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.StringBuilder"/></param>
         /// <returns><see cref="Java.Lang.StringBuilder"/></returns>
@@ -276,7 +276,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Lang.StringBuilder>("appendTail", "(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#appendReplacement(java.lang.StringBuffer,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#appendReplacement(java.lang.StringBuffer,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.StringBuffer"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -286,7 +286,7 @@ namespace Java.Util.Regex
             return IExecute<Java.Util.Regex.Matcher>("appendReplacement", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#appendReplacement(java.lang.StringBuilder,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#appendReplacement(java.lang.StringBuilder,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.StringBuilder"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -296,7 +296,7 @@ namespace Java.Util.Regex
             return IExecute<Java.Util.Regex.Matcher>("appendReplacement", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#region(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#region(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -306,7 +306,7 @@ namespace Java.Util.Regex
             return IExecute<Java.Util.Regex.Matcher>("region", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#reset()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
         public Java.Util.Regex.Matcher Reset()
@@ -314,7 +314,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Util.Regex.Matcher>("reset", "()Ljava/util/regex/Matcher;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#reset(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#reset(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
@@ -323,7 +323,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Util.Regex.Matcher>("reset", "(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#useAnchoringBounds(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#useAnchoringBounds(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
@@ -332,7 +332,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Util.Regex.Matcher>("useAnchoringBounds", "(Z)Ljava/util/regex/Matcher;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#usePattern(java.util.regex.Pattern)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#usePattern(java.util.regex.Pattern)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Regex.Pattern"/></param>
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
@@ -341,7 +341,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Util.Regex.Matcher>("usePattern", "(Ljava/util/regex/Pattern;)Ljava/util/regex/Matcher;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#useTransparentBounds(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#useTransparentBounds(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.Regex.Matcher"/></returns>
@@ -350,7 +350,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Util.Regex.Matcher>("useTransparentBounds", "(Z)Ljava/util/regex/Matcher;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#toMatchResult()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#toMatchResult()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Regex.MatchResult"/></returns>
         public Java.Util.Regex.MatchResult ToMatchResult()
@@ -358,7 +358,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Util.Regex.MatchResult>("toMatchResult", "()Ljava/util/regex/MatchResult;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#pattern()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#pattern()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Regex.Pattern"/></returns>
         public Java.Util.Regex.Pattern Pattern()
@@ -366,7 +366,7 @@ namespace Java.Util.Regex
             return IExecuteWithSignature<Java.Util.Regex.Pattern>("pattern", "()Ljava/util/regex/Pattern;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/regex/Matcher.html#results()"/>
+        /// <see href="https://developer.android.com/reference/java/util/regex/Matcher.html#results()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Util.Regex.MatchResult> Results()

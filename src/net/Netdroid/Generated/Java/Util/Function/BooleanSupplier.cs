@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IBooleanSupplier
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.BooleanSupplier implementing <see href="https://developer.android.com/reference/java.base/java/util/function/BooleanSupplier.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.BooleanSupplier implementing <see href="https://developer.android.com/reference/java/util/function/BooleanSupplier.html"/>
     /// </summary>
     public partial interface IBooleanSupplier
     {
@@ -68,15 +68,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getAsBoolean", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsBooleanEventHandler));
+            AddEventHandler("getAsBoolean", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsBooleanEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/BooleanSupplier.html#getAsBoolean()"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/BooleanSupplier.html#getAsBoolean()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetAsBoolean"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnGetAsBoolean { get; set; } = null;
+        public global::System.Func<bool> OnGetAsBoolean { get; set; } = null;
 
         void GetAsBooleanEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -86,7 +86,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BooleanSupplier.html#getAsBoolean()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BooleanSupplier.html#getAsBoolean()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public virtual bool GetAsBoolean()
@@ -125,11 +125,12 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BooleanSupplier.html#getAsBoolean()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/function/BooleanSupplier.html#getAsBoolean()"/>
         /// </summary>
-        public bool AsBoolean
+        /// <returns><see cref="bool"/></returns>
+        public override bool GetAsBoolean()
         {
-            get { return IExecuteWithSignature<bool>("getAsBoolean", "()Z"); }
+            return IExecuteWithSignature<bool>("getAsBoolean", "()Z");
         }
 
         #endregion

@@ -56,13 +56,13 @@ namespace Javax.Xml.Transform
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Result.html#PI_DISABLE_OUTPUT_ESCAPING"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Result.html#PI_DISABLE_OUTPUT_ESCAPING"/>
         /// </summary>
         public static Java.Lang.String PI_DISABLE_OUTPUT_ESCAPING { get { if (!_PI_DISABLE_OUTPUT_ESCAPINGReady) { _PI_DISABLE_OUTPUT_ESCAPINGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PI_DISABLE_OUTPUT_ESCAPING"); _PI_DISABLE_OUTPUT_ESCAPINGReady = true; } return _PI_DISABLE_OUTPUT_ESCAPINGContent; } }
         private static Java.Lang.String _PI_DISABLE_OUTPUT_ESCAPINGContent = default;
         private static bool _PI_DISABLE_OUTPUT_ESCAPINGReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Result.html#PI_ENABLE_OUTPUT_ESCAPING"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Result.html#PI_ENABLE_OUTPUT_ESCAPING"/>
         /// </summary>
         public static Java.Lang.String PI_ENABLE_OUTPUT_ESCAPING { get { if (!_PI_ENABLE_OUTPUT_ESCAPINGReady) { _PI_ENABLE_OUTPUT_ESCAPINGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PI_ENABLE_OUTPUT_ESCAPING"); _PI_ENABLE_OUTPUT_ESCAPINGReady = true; } return _PI_ENABLE_OUTPUT_ESCAPINGContent; } }
         private static Java.Lang.String _PI_ENABLE_OUTPUT_ESCAPINGContent = default;
@@ -76,11 +76,20 @@ namespace Javax.Xml.Transform
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Result.html#getSystemId()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Result.html#setSystemId(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Result.html#getSystemId()"/>
         /// </summary>
-        public Java.Lang.String SystemId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Result.html#setSystemId(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetSystemId(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

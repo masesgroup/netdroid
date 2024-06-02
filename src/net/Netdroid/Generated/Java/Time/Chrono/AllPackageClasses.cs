@@ -28,7 +28,7 @@ namespace Java.Time.Chrono
 {
     #region AbstractChronology
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/AbstractChronology.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/AbstractChronology.html"/>
     /// </summary>
     public partial class AbstractChronology : Java.Time.Chrono.Chronology
     {
@@ -36,12 +36,12 @@ namespace Java.Time.Chrono
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AbstractChronology class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractChronology class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractChronology() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AbstractChronology class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractChronology class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractChronology(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Java.Time.Chrono
 
     #region ChronoLocalDate
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ChronoLocalDate.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoLocalDate.html"/>
     /// </summary>
     public partial class ChronoLocalDate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ChronoLocalDate>
     {
@@ -82,12 +82,12 @@ namespace Java.Time.Chrono
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ChronoLocalDate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChronoLocalDate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoLocalDate() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ChronoLocalDate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChronoLocalDate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoLocalDate(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -120,7 +120,7 @@ namespace Java.Time.Chrono
 
     #region ChronoLocalDateTime
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ChronoLocalDateTime.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoLocalDateTime.html"/>
     /// </summary>
     public partial class ChronoLocalDateTime : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ChronoLocalDateTime>
     {
@@ -128,12 +128,12 @@ namespace Java.Time.Chrono
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ChronoLocalDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChronoLocalDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoLocalDateTime() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ChronoLocalDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChronoLocalDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoLocalDateTime(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -164,9 +164,56 @@ namespace Java.Time.Chrono
     }
     #endregion
 
+    #region ChronoLocalDateTime<D>
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoLocalDateTime.html"/>
+    /// </summary>
+    /// <typeparam name="D"><see cref="Java.Time.Chrono.IChronoLocalDate"/></typeparam>
+    public partial class ChronoLocalDateTime<D> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ChronoLocalDateTime<D>> where D : Java.Time.Chrono.IChronoLocalDate, new()
+    {
+        const string _bridgeClassName = "java.time.chrono.ChronoLocalDateTime";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        [global::System.Obsolete("ChronoLocalDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public ChronoLocalDateTime() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        [global::System.Obsolete("ChronoLocalDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public ChronoLocalDateTime(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+    
+    }
+    #endregion
+
     #region Chronology
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Chronology.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html"/>
     /// </summary>
     public partial class Chronology : Java.Lang.Comparable<Java.Time.Chrono.Chronology>
     {
@@ -174,12 +221,12 @@ namespace Java.Time.Chrono
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Chronology class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Chronology class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Chronology() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Chronology class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Chronology class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Chronology(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -212,7 +259,7 @@ namespace Java.Time.Chrono
 
     #region ChronoPeriod
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ChronoPeriod.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoPeriod.html"/>
     /// </summary>
     public partial class ChronoPeriod : Java.Time.Temporal.TemporalAmount
     {
@@ -220,12 +267,12 @@ namespace Java.Time.Chrono
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ChronoPeriod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChronoPeriod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoPeriod() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ChronoPeriod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChronoPeriod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoPeriod(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -258,7 +305,7 @@ namespace Java.Time.Chrono
 
     #region ChronoZonedDateTime
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ChronoZonedDateTime.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoZonedDateTime.html"/>
     /// </summary>
     public partial class ChronoZonedDateTime : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ChronoZonedDateTime>
     {
@@ -266,12 +313,12 @@ namespace Java.Time.Chrono
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ChronoZonedDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChronoZonedDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoZonedDateTime() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ChronoZonedDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ChronoZonedDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ChronoZonedDateTime(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -302,9 +349,56 @@ namespace Java.Time.Chrono
     }
     #endregion
 
+    #region ChronoZonedDateTime<D>
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoZonedDateTime.html"/>
+    /// </summary>
+    /// <typeparam name="D"><see cref="Java.Time.Chrono.IChronoLocalDate"/></typeparam>
+    public partial class ChronoZonedDateTime<D> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ChronoZonedDateTime<D>> where D : Java.Time.Chrono.IChronoLocalDate, new()
+    {
+        const string _bridgeClassName = "java.time.chrono.ChronoZonedDateTime";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        [global::System.Obsolete("ChronoZonedDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public ChronoZonedDateTime() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        [global::System.Obsolete("ChronoZonedDateTime class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public ChronoZonedDateTime(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+    
+    }
+    #endregion
+
     #region Era
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/Era.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/Era.html"/>
     /// </summary>
     public partial class Era : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Era>
     {
@@ -312,12 +406,12 @@ namespace Java.Time.Chrono
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Era class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Era class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Era() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Era class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Era class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Era(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -350,7 +444,7 @@ namespace Java.Time.Chrono
 
     #region HijrahChronology
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/HijrahChronology.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahChronology.html"/>
     /// </summary>
     public partial class HijrahChronology : Java.Time.Chrono.AbstractChronology
     {
@@ -394,7 +488,7 @@ namespace Java.Time.Chrono
 
     #region HijrahDate
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/HijrahDate.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahDate.html"/>
     /// </summary>
     public partial class HijrahDate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HijrahDate>
     {
@@ -438,7 +532,7 @@ namespace Java.Time.Chrono
 
     #region HijrahEra
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/HijrahEra.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahEra.html"/>
     /// </summary>
     public partial class HijrahEra : Java.Lang.Enum<Java.Time.Chrono.HijrahEra>
     {
@@ -482,7 +576,7 @@ namespace Java.Time.Chrono
 
     #region IsoChronology
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/IsoChronology.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/IsoChronology.html"/>
     /// </summary>
     public partial class IsoChronology : Java.Time.Chrono.AbstractChronology
     {
@@ -526,7 +620,7 @@ namespace Java.Time.Chrono
 
     #region IsoEra
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/IsoEra.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/IsoEra.html"/>
     /// </summary>
     public partial class IsoEra : Java.Lang.Enum<Java.Time.Chrono.IsoEra>
     {
@@ -570,7 +664,7 @@ namespace Java.Time.Chrono
 
     #region JapaneseChronology
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseChronology.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseChronology.html"/>
     /// </summary>
     public partial class JapaneseChronology : Java.Time.Chrono.AbstractChronology
     {
@@ -614,7 +708,7 @@ namespace Java.Time.Chrono
 
     #region JapaneseDate
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseDate.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseDate.html"/>
     /// </summary>
     public partial class JapaneseDate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JapaneseDate>
     {
@@ -658,7 +752,7 @@ namespace Java.Time.Chrono
 
     #region JapaneseEra
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseEra.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseEra.html"/>
     /// </summary>
     public partial class JapaneseEra : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JapaneseEra>
     {
@@ -702,7 +796,7 @@ namespace Java.Time.Chrono
 
     #region MinguoChronology
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/MinguoChronology.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/MinguoChronology.html"/>
     /// </summary>
     public partial class MinguoChronology : Java.Time.Chrono.AbstractChronology
     {
@@ -746,7 +840,7 @@ namespace Java.Time.Chrono
 
     #region MinguoDate
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/MinguoDate.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/MinguoDate.html"/>
     /// </summary>
     public partial class MinguoDate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MinguoDate>
     {
@@ -790,7 +884,7 @@ namespace Java.Time.Chrono
 
     #region MinguoEra
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/MinguoEra.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/MinguoEra.html"/>
     /// </summary>
     public partial class MinguoEra : Java.Lang.Enum<Java.Time.Chrono.MinguoEra>
     {
@@ -834,7 +928,7 @@ namespace Java.Time.Chrono
 
     #region ThaiBuddhistChronology
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ThaiBuddhistChronology.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/ThaiBuddhistChronology.html"/>
     /// </summary>
     public partial class ThaiBuddhistChronology : Java.Time.Chrono.AbstractChronology
     {
@@ -878,7 +972,7 @@ namespace Java.Time.Chrono
 
     #region ThaiBuddhistDate
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ThaiBuddhistDate.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/ThaiBuddhistDate.html"/>
     /// </summary>
     public partial class ThaiBuddhistDate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ThaiBuddhistDate>
     {
@@ -922,7 +1016,7 @@ namespace Java.Time.Chrono
 
     #region ThaiBuddhistEra
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ThaiBuddhistEra.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/chrono/ThaiBuddhistEra.html"/>
     /// </summary>
     public partial class ThaiBuddhistEra : Java.Lang.Enum<Java.Time.Chrono.ThaiBuddhistEra>
     {

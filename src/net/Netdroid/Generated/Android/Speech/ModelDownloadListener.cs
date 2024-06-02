@@ -68,10 +68,10 @@ namespace Android.Speech
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("onError", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnErrorEventHandler));
-            AddEventHandler("onProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnProgressEventHandler));
-            AddEventHandler("onScheduled", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnScheduledEventHandler));
-            AddEventHandler("onSuccess", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnSuccessEventHandler));
+            AddEventHandler("onError", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnErrorEventHandler));
+            AddEventHandler("onProgress", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnProgressEventHandler));
+            AddEventHandler("onScheduled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnScheduledEventHandler));
+            AddEventHandler("onSuccess", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnSuccessEventHandler));
 
         }
 
@@ -79,7 +79,7 @@ namespace Android.Speech
         /// Handler for <see href="https://developer.android.com/reference/android/speech/ModelDownloadListener.html#onError(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int> OnOnError { get; set; } = null;
+        public global::System.Action<int> OnOnError { get; set; } = null;
 
         void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -100,7 +100,7 @@ namespace Android.Speech
         /// Handler for <see href="https://developer.android.com/reference/android/speech/ModelDownloadListener.html#onProgress(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnProgress"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int> OnOnProgress { get; set; } = null;
+        public global::System.Action<int> OnOnProgress { get; set; } = null;
 
         void OnProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -121,7 +121,7 @@ namespace Android.Speech
         /// Handler for <see href="https://developer.android.com/reference/android/speech/ModelDownloadListener.html#onScheduled()"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnScheduled"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnOnScheduled { get; set; } = null;
+        public global::System.Action OnOnScheduled { get; set; } = null;
 
         void OnScheduledEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -141,7 +141,7 @@ namespace Android.Speech
         /// Handler for <see href="https://developer.android.com/reference/android/speech/ModelDownloadListener.html#onSuccess()"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnSuccess"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnOnSuccess { get; set; } = null;
+        public global::System.Action OnOnSuccess { get; set; } = null;
 
         void OnSuccessEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {

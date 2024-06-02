@@ -42,36 +42,40 @@ namespace Android.Net.Ipsec.Ike
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSaProposal.html#getSupportedEncryptionAlgorithms()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSaProposal.html#getSupportedEncryptionAlgorithms()"/>
         /// </summary>
-        public static Java.Util.Set<Java.Lang.Integer> SupportedEncryptionAlgorithms
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set<Java.Lang.Integer> GetSupportedEncryptionAlgorithms()
         {
-            get { return SExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>(LocalBridgeClazz, "getSupportedEncryptionAlgorithms", "()Ljava/util/Set;"); }
+            return SExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>(LocalBridgeClazz, "getSupportedEncryptionAlgorithms", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSaProposal.html#getSupportedIntegrityAlgorithms()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSaProposal.html#getSupportedIntegrityAlgorithms()"/>
         /// </summary>
-        public static Java.Util.Set<Java.Lang.Integer> SupportedIntegrityAlgorithms
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set<Java.Lang.Integer> GetSupportedIntegrityAlgorithms()
         {
-            get { return SExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>(LocalBridgeClazz, "getSupportedIntegrityAlgorithms", "()Ljava/util/Set;"); }
+            return SExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>(LocalBridgeClazz, "getSupportedIntegrityAlgorithms", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSaProposal.html#getSupportedPseudorandomFunctions()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSaProposal.html#getSupportedPseudorandomFunctions()"/>
         /// </summary>
-        public static Java.Util.Set<Java.Lang.Integer> SupportedPseudorandomFunctions
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set<Java.Lang.Integer> GetSupportedPseudorandomFunctions()
         {
-            get { return SExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>(LocalBridgeClazz, "getSupportedPseudorandomFunctions", "()Ljava/util/Set;"); }
+            return SExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>(LocalBridgeClazz, "getSupportedPseudorandomFunctions", "()Ljava/util/Set;");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSaProposal.html#getPseudorandomFunctions()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSaProposal.html#getPseudorandomFunctions()"/>
         /// </summary>
-        public Java.Util.List<Java.Lang.Integer> PseudorandomFunctions
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.Integer> GetPseudorandomFunctions()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getPseudorandomFunctions", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getPseudorandomFunctions", "()Ljava/util/List;");
         }
 
         #endregion

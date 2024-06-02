@@ -30,7 +30,7 @@ namespace Java.Util.Logging
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/StreamHandler.html#%3Cinit%3E(java.io.OutputStream,java.util.logging.Formatter)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/StreamHandler.html#%3Cinit%3E(java.io.OutputStream,java.util.logging.Formatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Util.Logging.Formatter"/></param>

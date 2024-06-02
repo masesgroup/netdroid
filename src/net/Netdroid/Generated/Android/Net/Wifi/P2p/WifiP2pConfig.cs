@@ -120,47 +120,52 @@ namespace Android.Net.Wifi.P2p
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#getGroupClientIpProvisioningMode()"/> 
-        /// </summary>
-        public int GroupClientIpProvisioningMode
-        {
-            get { return IExecuteWithSignature<int>("getGroupClientIpProvisioningMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#getGroupOwnerBand()"/> 
-        /// </summary>
-        public int GroupOwnerBand
-        {
-            get { return IExecuteWithSignature<int>("getGroupOwnerBand", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#getNetworkId()"/> 
-        /// </summary>
-        public int NetworkId
-        {
-            get { return IExecuteWithSignature<int>("getNetworkId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#getNetworkName()"/> 
-        /// </summary>
-        public Java.Lang.String NetworkName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNetworkName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#getPassphrase()"/> 
-        /// </summary>
-        public Java.Lang.String Passphrase
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPassphrase", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#getGroupClientIpProvisioningMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGroupClientIpProvisioningMode()
+        {
+            return IExecuteWithSignature<int>("getGroupClientIpProvisioningMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#getGroupOwnerBand()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGroupOwnerBand()
+        {
+            return IExecuteWithSignature<int>("getGroupOwnerBand", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#getNetworkId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNetworkId()
+        {
+            return IExecuteWithSignature<int>("getNetworkId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#getNetworkName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNetworkName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getNetworkName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#getPassphrase()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPassphrase()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPassphrase", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html#writeToParcel(android.os.Parcel,int)"/>

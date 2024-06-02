@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/LongSummaryStatistics.html#%3Cinit%3E(long,long,long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/LongSummaryStatistics.html#%3Cinit%3E(long,long,long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -66,42 +66,47 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/LongSummaryStatistics.html#getAverage()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/LongSummaryStatistics.html#getAverage()"/>
         /// </summary>
-        public double Average
+        /// <returns><see cref="double"/></returns>
+        public double GetAverage()
         {
-            get { return IExecuteWithSignature<double>("getAverage", "()D"); }
+            return IExecuteWithSignature<double>("getAverage", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/LongSummaryStatistics.html#getCount()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/LongSummaryStatistics.html#getCount()"/>
         /// </summary>
-        public long Count
+        /// <returns><see cref="long"/></returns>
+        public long GetCount()
         {
-            get { return IExecuteWithSignature<long>("getCount", "()J"); }
+            return IExecuteWithSignature<long>("getCount", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/LongSummaryStatistics.html#getMax()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/LongSummaryStatistics.html#getMax()"/>
         /// </summary>
-        public long Max
+        /// <returns><see cref="long"/></returns>
+        public long GetMax()
         {
-            get { return IExecuteWithSignature<long>("getMax", "()J"); }
+            return IExecuteWithSignature<long>("getMax", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/LongSummaryStatistics.html#getMin()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/LongSummaryStatistics.html#getMin()"/>
         /// </summary>
-        public long Min
+        /// <returns><see cref="long"/></returns>
+        public long GetMin()
         {
-            get { return IExecuteWithSignature<long>("getMin", "()J"); }
+            return IExecuteWithSignature<long>("getMin", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/LongSummaryStatistics.html#getSum()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/LongSummaryStatistics.html#getSum()"/>
         /// </summary>
-        public long Sum
+        /// <returns><see cref="long"/></returns>
+        public long GetSum()
         {
-            get { return IExecuteWithSignature<long>("getSum", "()J"); }
+            return IExecuteWithSignature<long>("getSum", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/LongSummaryStatistics.html#accept(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/LongSummaryStatistics.html#accept(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void Accept(int arg0)
@@ -109,7 +114,7 @@ namespace Java.Util
             IExecuteWithSignature("accept", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/LongSummaryStatistics.html#accept(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/LongSummaryStatistics.html#accept(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public void Accept(long arg0)
@@ -117,7 +122,7 @@ namespace Java.Util
             IExecuteWithSignature("accept", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/LongSummaryStatistics.html#combine(java.util.LongSummaryStatistics)"/>
+        /// <see href="https://developer.android.com/reference/java/util/LongSummaryStatistics.html#combine(java.util.LongSummaryStatistics)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.LongSummaryStatistics"/></param>
         public void Combine(Java.Util.LongSummaryStatistics arg0)

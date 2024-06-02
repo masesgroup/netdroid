@@ -54,7 +54,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsPeriodic()
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsPeriodic()

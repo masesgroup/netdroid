@@ -246,7 +246,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#SYNC_EXTRAS_ACCOUNT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String SYNC_EXTRAS_ACCOUNT { get { if (!_SYNC_EXTRAS_ACCOUNTReady) { _SYNC_EXTRAS_ACCOUNTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SYNC_EXTRAS_ACCOUNT"); _SYNC_EXTRAS_ACCOUNTReady = true; } return _SYNC_EXTRAS_ACCOUNTContent; } }
         private static Java.Lang.String _SYNC_EXTRAS_ACCOUNTContent = default;
         private static bool _SYNC_EXTRAS_ACCOUNTReady = false; // this is used because in case of generics 
@@ -271,7 +271,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#SYNC_EXTRAS_FORCE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String SYNC_EXTRAS_FORCE { get { if (!_SYNC_EXTRAS_FORCEReady) { _SYNC_EXTRAS_FORCEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SYNC_EXTRAS_FORCE"); _SYNC_EXTRAS_FORCEReady = true; } return _SYNC_EXTRAS_FORCEContent; } }
         private static Java.Lang.String _SYNC_EXTRAS_FORCEContent = default;
         private static bool _SYNC_EXTRAS_FORCEReady = false; // this is used because in case of generics 
@@ -328,35 +328,6 @@ namespace Android.Content
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#getCurrentSync()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public static Android.Content.SyncInfo CurrentSync
-        {
-            get { return SExecuteWithSignature<Android.Content.SyncInfo>(LocalBridgeClazz, "getCurrentSync", "()Landroid/content/SyncInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#getCurrentSyncs()"/> 
-        /// </summary>
-        public static Java.Util.List<Android.Content.SyncInfo> CurrentSyncs
-        {
-            get { return SExecuteWithSignature<Java.Util.List<Android.Content.SyncInfo>>(LocalBridgeClazz, "getCurrentSyncs", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#getMasterSyncAutomatically()"/> <see href="https://developer.android.com/reference/android/content/ContentResolver.html#setMasterSyncAutomatically(boolean)"/>
-        /// </summary>
-        public static bool MasterSyncAutomatically
-        {
-            get { return SExecuteWithSignature<bool>(LocalBridgeClazz, "getMasterSyncAutomatically", "()Z"); } set { SExecuteWithSignature(LocalBridgeClazz, "setMasterSyncAutomatically", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#getSyncAdapterTypes()"/> 
-        /// </summary>
-        public static Android.Content.SyncAdapterType[] SyncAdapterTypes
-        {
-            get { return SExecuteWithSignatureArray<Android.Content.SyncAdapterType>(LocalBridgeClazz, "getSyncAdapterTypes", "()[Landroid/content/SyncAdapterType;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#wrap(android.content.ContentProvider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ContentProvider"/></param>
@@ -373,6 +344,31 @@ namespace Android.Content
         public static Android.Content.ContentResolver Wrap(Android.Content.ContentProviderClient arg0)
         {
             return SExecuteWithSignature<Android.Content.ContentResolver>(LocalBridgeClazz, "wrap", "(Landroid/content/ContentProviderClient;)Landroid/content/ContentResolver;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#getSyncAdapterTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.SyncAdapterType"/></returns>
+        public static Android.Content.SyncAdapterType[] GetSyncAdapterTypes()
+        {
+            return SExecuteWithSignatureArray<Android.Content.SyncAdapterType>(LocalBridgeClazz, "getSyncAdapterTypes", "()[Landroid/content/SyncAdapterType;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#getCurrentSync()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.SyncInfo"/></returns>
+        [global::System.Obsolete()]
+        public static Android.Content.SyncInfo GetCurrentSync()
+        {
+            return SExecuteWithSignature<Android.Content.SyncInfo>(LocalBridgeClazz, "getCurrentSync", "()Landroid/content/SyncInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#getMasterSyncAutomatically()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public static bool GetMasterSyncAutomatically()
+        {
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "getMasterSyncAutomatically", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#getSyncAutomatically(android.accounts.Account,java.lang.String)"/>
@@ -433,6 +429,14 @@ namespace Android.Content
         public static Java.Util.List<Android.Content.PeriodicSync> GetPeriodicSyncs(Android.Accounts.Account arg0, Java.Lang.String arg1)
         {
             return SExecute<Java.Util.List<Android.Content.PeriodicSync>>(LocalBridgeClazz, "getPeriodicSyncs", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#getCurrentSyncs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public static Java.Util.List<Android.Content.SyncInfo> GetCurrentSyncs()
+        {
+            return SExecuteWithSignature<Java.Util.List<Android.Content.SyncInfo>>(LocalBridgeClazz, "getCurrentSyncs", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#addPeriodicSync(android.accounts.Account,java.lang.String,android.os.Bundle,long)"/>
@@ -509,6 +513,14 @@ namespace Android.Content
             SExecute(LocalBridgeClazz, "setIsSyncable", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#setMasterSyncAutomatically(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public static void SetMasterSyncAutomatically(bool arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setMasterSyncAutomatically", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#setSyncAutomatically(android.accounts.Account,java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Accounts.Account"/></param>
@@ -530,20 +542,6 @@ namespace Android.Content
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#getOutgoingPersistedUriPermissions()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Content.UriPermission> OutgoingPersistedUriPermissions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Content.UriPermission>>("getOutgoingPersistedUriPermissions", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#getPersistedUriPermissions()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Content.UriPermission> PersistedUriPermissions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Content.UriPermission>>("getPersistedUriPermissions", "()Ljava/util/List;"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#applyBatch(java.lang.String,java.util.ArrayList)"/>
         /// </summary>
@@ -957,10 +955,26 @@ namespace Android.Content
             return IExecuteArray<Java.Lang.String>("getStreamTypes", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#getOutgoingPersistedUriPermissions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Content.UriPermission> GetOutgoingPersistedUriPermissions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Content.UriPermission>>("getOutgoingPersistedUriPermissions", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#getPersistedUriPermissions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Content.UriPermission> GetPersistedUriPermissions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Content.UriPermission>>("getPersistedUriPermissions", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentResolver.html#cancelSync(android.net.Uri)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CancelSync(Android.Net.Uri arg0)
         {
             IExecuteWithSignature("cancelSync", "(Landroid/net/Uri;)V", arg0);
@@ -971,7 +985,7 @@ namespace Android.Content
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
         /// <param name="arg1"><see cref="Android.Database.ContentObserver"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void NotifyChange(Android.Net.Uri arg0, Android.Database.ContentObserver arg1, bool arg2)
         {
             IExecute("notifyChange", arg0, arg1, arg2);
@@ -1019,7 +1033,7 @@ namespace Android.Content
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartSync(Android.Net.Uri arg0, Android.Os.Bundle arg1)
         {
             IExecute("startSync", arg0, arg1);
@@ -1058,25 +1072,28 @@ namespace Android.Content
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/ContentResolver.MimeTypeInfo.html#getContentDescription()"/> 
+            /// <see href="https://developer.android.com/reference/android/content/ContentResolver.MimeTypeInfo.html#getIcon()"/>
             /// </summary>
-            public Java.Lang.CharSequence ContentDescription
+            /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+            public Android.Graphics.Drawable.Icon GetIcon()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/ContentResolver.MimeTypeInfo.html#getIcon()"/> 
+            /// <see href="https://developer.android.com/reference/android/content/ContentResolver.MimeTypeInfo.html#getContentDescription()"/>
             /// </summary>
-            public Android.Graphics.Drawable.Icon Icon
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetContentDescription()
             {
-                get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;"); }
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/ContentResolver.MimeTypeInfo.html#getLabel()"/> 
+            /// <see href="https://developer.android.com/reference/android/content/ContentResolver.MimeTypeInfo.html#getLabel()"/>
             /// </summary>
-            public Java.Lang.CharSequence Label
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetLabel()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;");
             }
 
             #endregion

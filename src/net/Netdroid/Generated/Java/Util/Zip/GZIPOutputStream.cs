@@ -30,7 +30,7 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/GZIPOutputStream.html#%3Cinit%3E(java.io.OutputStream,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/GZIPOutputStream.html#%3Cinit%3E(java.io.OutputStream,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -40,7 +40,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/GZIPOutputStream.html#%3Cinit%3E(java.io.OutputStream,int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/GZIPOutputStream.html#%3Cinit%3E(java.io.OutputStream,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -51,7 +51,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/GZIPOutputStream.html#%3Cinit%3E(java.io.OutputStream,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/GZIPOutputStream.html#%3Cinit%3E(java.io.OutputStream,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -61,7 +61,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/GZIPOutputStream.html#%3Cinit%3E(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/GZIPOutputStream.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>

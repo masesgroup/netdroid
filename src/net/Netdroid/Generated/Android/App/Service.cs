@@ -92,7 +92,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Service.html#STOP_FOREGROUND_LEGACY"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int STOP_FOREGROUND_LEGACY { get { if (!_STOP_FOREGROUND_LEGACYReady) { _STOP_FOREGROUND_LEGACYContent = SGetField<int>(LocalBridgeClazz, "STOP_FOREGROUND_LEGACY"); _STOP_FOREGROUND_LEGACYReady = true; } return _STOP_FOREGROUND_LEGACYContent; } }
         private static int _STOP_FOREGROUND_LEGACYContent = default;
         private static bool _STOP_FOREGROUND_LEGACYReady = false; // this is used because in case of generics 
@@ -110,20 +110,6 @@ namespace Android.App
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Service.html#getApplication()"/> 
-        /// </summary>
-        public Android.App.Application Application
-        {
-            get { return IExecuteWithSignature<Android.App.Application>("getApplication", "()Landroid/app/Application;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Service.html#getForegroundServiceType()"/> 
-        /// </summary>
-        public int ForegroundServiceType
-        {
-            get { return IExecuteWithSignature<int>("getForegroundServiceType", "()I"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Service.html#onBind(android.content.Intent)"/>
         /// </summary>
@@ -143,6 +129,14 @@ namespace Android.App
             return IExecuteWithSignature<bool>("onUnbind", "(Landroid/content/Intent;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Service.html#getApplication()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.Application"/></returns>
+        public Android.App.Application GetApplication()
+        {
+            return IExecuteWithSignature<Android.App.Application>("getApplication", "()Landroid/app/Application;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Service.html#stopSelfResult(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -150,6 +144,14 @@ namespace Android.App
         public bool StopSelfResult(int arg0)
         {
             return IExecuteWithSignature<bool>("stopSelfResult", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Service.html#getForegroundServiceType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetForegroundServiceType()
+        {
+            return IExecuteWithSignature<int>("getForegroundServiceType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Service.html#startForeground(int,android.app.Notification,int)"/>
@@ -174,7 +176,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Service.html#stopForeground(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StopForeground(bool arg0)
         {
             IExecuteWithSignature("stopForeground", "(Z)V", arg0);
@@ -255,7 +257,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnStart(Android.Content.Intent arg0, int arg1)
         {
             IExecute("onStart", arg0, arg1);

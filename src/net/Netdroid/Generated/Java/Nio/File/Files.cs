@@ -42,7 +42,7 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#readAttributes(java.nio.file.Path,java.lang.Class,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#readAttributes(java.nio.file.Path,java.lang.Class,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -50,24 +50,24 @@ namespace Java.Nio.File
         /// <typeparam name="A"><see cref="Java.Nio.File.Attribute.IBasicFileAttributes"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static A ReadAttributes<A>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where A: Java.Nio.File.Attribute.IBasicFileAttributes, new()
+        public static A ReadAttributes<A>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where A : Java.Nio.File.Attribute.IBasicFileAttributes, new()
         {
             if (arg2.Length == 0) return SExecute<A>(LocalBridgeClazz, "readAttributes", arg0, arg1); else return SExecute<A>(LocalBridgeClazz, "readAttributes", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#getFileAttributeView(java.nio.file.Path,java.lang.Class,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#getFileAttributeView(java.nio.file.Path,java.lang.Class,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
         /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.IFileAttributeView"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public static V GetFileAttributeView<V>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V: Java.Nio.File.Attribute.IFileAttributeView, new()
+        public static V GetFileAttributeView<V>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V : Java.Nio.File.Attribute.IFileAttributeView, new()
         {
             if (arg2.Length == 0) return SExecute<V>(LocalBridgeClazz, "getFileAttributeView", arg0, arg1); else return SExecute<V>(LocalBridgeClazz, "getFileAttributeView", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#deleteIfExists(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#deleteIfExists(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -77,7 +77,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "deleteIfExists", "(Ljava/nio/file/Path;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#exists(java.nio.file.Path,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#exists(java.nio.file.Path,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.LinkOption"/></param>
@@ -87,7 +87,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return SExecute<bool>(LocalBridgeClazz, "exists", arg0); else return SExecute<bool>(LocalBridgeClazz, "exists", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#isDirectory(java.nio.file.Path,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#isDirectory(java.nio.file.Path,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.LinkOption"/></param>
@@ -97,7 +97,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return SExecute<bool>(LocalBridgeClazz, "isDirectory", arg0); else return SExecute<bool>(LocalBridgeClazz, "isDirectory", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#isExecutable(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#isExecutable(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -106,7 +106,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isExecutable", "(Ljava/nio/file/Path;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#isHidden(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#isHidden(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -116,7 +116,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isHidden", "(Ljava/nio/file/Path;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#isReadable(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#isReadable(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -125,7 +125,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isReadable", "(Ljava/nio/file/Path;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#isRegularFile(java.nio.file.Path,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#isRegularFile(java.nio.file.Path,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.LinkOption"/></param>
@@ -135,7 +135,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return SExecute<bool>(LocalBridgeClazz, "isRegularFile", arg0); else return SExecute<bool>(LocalBridgeClazz, "isRegularFile", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#isSameFile(java.nio.file.Path,java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#isSameFile(java.nio.file.Path,java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
@@ -146,7 +146,7 @@ namespace Java.Nio.File
             return SExecute<bool>(LocalBridgeClazz, "isSameFile", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#isSymbolicLink(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#isSymbolicLink(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -155,7 +155,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSymbolicLink", "(Ljava/nio/file/Path;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#isWritable(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#isWritable(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -164,7 +164,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isWritable", "(Ljava/nio/file/Path;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#notExists(java.nio.file.Path,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#notExists(java.nio.file.Path,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.LinkOption"/></param>
@@ -174,7 +174,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return SExecute<bool>(LocalBridgeClazz, "notExists", arg0); else return SExecute<bool>(LocalBridgeClazz, "notExists", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#readAllBytes(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#readAllBytes(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -184,7 +184,7 @@ namespace Java.Nio.File
             return SExecuteWithSignatureArray<byte>(LocalBridgeClazz, "readAllBytes", "(Ljava/nio/file/Path;)[B", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#newBufferedReader(java.nio.file.Path,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#newBufferedReader(java.nio.file.Path,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -195,7 +195,7 @@ namespace Java.Nio.File
             return SExecute<Java.Io.BufferedReader>(LocalBridgeClazz, "newBufferedReader", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#newBufferedReader(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#newBufferedReader(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="Java.Io.BufferedReader"/></returns>
@@ -205,7 +205,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<Java.Io.BufferedReader>(LocalBridgeClazz, "newBufferedReader", "(Ljava/nio/file/Path;)Ljava/io/BufferedReader;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,java.nio.charset.Charset,java.nio.file.OpenOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,java.nio.charset.Charset,java.nio.file.OpenOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -217,7 +217,7 @@ namespace Java.Nio.File
             if (arg2.Length == 0) return SExecute<Java.Io.BufferedWriter>(LocalBridgeClazz, "newBufferedWriter", arg0, arg1); else return SExecute<Java.Io.BufferedWriter>(LocalBridgeClazz, "newBufferedWriter", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,java.nio.file.OpenOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,java.nio.file.OpenOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
@@ -228,7 +228,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return SExecute<Java.Io.BufferedWriter>(LocalBridgeClazz, "newBufferedWriter", arg0); else return SExecute<Java.Io.BufferedWriter>(LocalBridgeClazz, "newBufferedWriter", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#newInputStream(java.nio.file.Path,java.nio.file.OpenOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#newInputStream(java.nio.file.Path,java.nio.file.OpenOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
@@ -239,7 +239,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return SExecute<Java.Io.InputStream>(LocalBridgeClazz, "newInputStream", arg0); else return SExecute<Java.Io.InputStream>(LocalBridgeClazz, "newInputStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#newOutputStream(java.nio.file.Path,java.nio.file.OpenOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#newOutputStream(java.nio.file.Path,java.nio.file.OpenOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
@@ -250,7 +250,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return SExecute<Java.Io.OutputStream>(LocalBridgeClazz, "newOutputStream", arg0); else return SExecute<Java.Io.OutputStream>(LocalBridgeClazz, "newOutputStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#getAttribute(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#getAttribute(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -262,7 +262,7 @@ namespace Java.Nio.File
             if (arg2.Length == 0) return SExecute(LocalBridgeClazz, "getAttribute", arg0, arg1); else return SExecute(LocalBridgeClazz, "getAttribute", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#probeContentType(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#probeContentType(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -272,7 +272,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "probeContentType", "(Ljava/nio/file/Path;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#readString(java.nio.file.Path,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#readString(java.nio.file.Path,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -283,7 +283,7 @@ namespace Java.Nio.File
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "readString", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#readString(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#readString(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -293,7 +293,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "readString", "(Ljava/nio/file/Path;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#newByteChannel(java.nio.file.Path,java.nio.file.OpenOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#newByteChannel(java.nio.file.Path,java.nio.file.OpenOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
@@ -304,7 +304,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return SExecute<Java.Nio.Channels.SeekableByteChannel>(LocalBridgeClazz, "newByteChannel", arg0); else return SExecute<Java.Nio.Channels.SeekableByteChannel>(LocalBridgeClazz, "newByteChannel", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#newByteChannel(java.nio.file.Path,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#newByteChannel(java.nio.file.Path,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
@@ -312,12 +312,12 @@ namespace Java.Nio.File
         /// <typeparam name="Arg1ExtendsJava_Nio_File_OpenOption"><see cref="Java.Nio.File.OpenOption"/></typeparam>
         /// <returns><see cref="Java.Nio.Channels.SeekableByteChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.Channels.SeekableByteChannel NewByteChannel<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption: Java.Nio.File.OpenOption
+        public static Java.Nio.Channels.SeekableByteChannel NewByteChannel<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption : Java.Nio.File.OpenOption
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.Channels.SeekableByteChannel>(LocalBridgeClazz, "newByteChannel", arg0, arg1); else return SExecute<Java.Nio.Channels.SeekableByteChannel>(LocalBridgeClazz, "newByteChannel", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#getLastModifiedTime(java.nio.file.Path,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#getLastModifiedTime(java.nio.file.Path,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.LinkOption"/></param>
@@ -328,7 +328,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Attribute.FileTime>(LocalBridgeClazz, "getLastModifiedTime", arg0); else return SExecute<Java.Nio.File.Attribute.FileTime>(LocalBridgeClazz, "getLastModifiedTime", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#getOwner(java.nio.file.Path,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#getOwner(java.nio.file.Path,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.LinkOption"/></param>
@@ -339,7 +339,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Attribute.UserPrincipal>(LocalBridgeClazz, "getOwner", arg0); else return SExecute<Java.Nio.File.Attribute.UserPrincipal>(LocalBridgeClazz, "getOwner", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#newDirectoryStream(java.nio.file.Path,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#newDirectoryStream(java.nio.file.Path,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -350,19 +350,19 @@ namespace Java.Nio.File
             return SExecute<Java.Nio.File.DirectoryStream<Java.Nio.File.Path>>(LocalBridgeClazz, "newDirectoryStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#newDirectoryStream(java.nio.file.Path,java.nio.file.DirectoryStream.Filter)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#newDirectoryStream(java.nio.file.Path,java.nio.file.DirectoryStream.Filter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.DirectoryStream.Filter"/></param>
         /// <typeparam name="Arg1objectSuperJava_Nio_File_Path"><see cref="Java.Nio.File.Path"/></typeparam>
         /// <returns><see cref="Java.Nio.File.DirectoryStream"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.DirectoryStream<Java.Nio.File.Path> NewDirectoryStream<Arg1objectSuperJava_Nio_File_Path>(Java.Nio.File.Path arg0, Java.Nio.File.DirectoryStream.Filter<Arg1objectSuperJava_Nio_File_Path> arg1) where Arg1objectSuperJava_Nio_File_Path: Java.Nio.File.Path
+        public static Java.Nio.File.DirectoryStream<Java.Nio.File.Path> NewDirectoryStream<Arg1objectSuperJava_Nio_File_Path>(Java.Nio.File.Path arg0, Java.Nio.File.DirectoryStream.Filter<Arg1objectSuperJava_Nio_File_Path> arg1) where Arg1objectSuperJava_Nio_File_Path : Java.Nio.File.Path
         {
             return SExecute<Java.Nio.File.DirectoryStream<Java.Nio.File.Path>>(LocalBridgeClazz, "newDirectoryStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#newDirectoryStream(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#newDirectoryStream(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="Java.Nio.File.DirectoryStream"/></returns>
@@ -372,7 +372,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<Java.Nio.File.DirectoryStream<Java.Nio.File.Path>>(LocalBridgeClazz, "newDirectoryStream", "(Ljava/nio/file/Path;)Ljava/nio/file/DirectoryStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#getFileStore(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#getFileStore(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="Java.Nio.File.FileStore"/></returns>
@@ -382,7 +382,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<Java.Nio.File.FileStore>(LocalBridgeClazz, "getFileStore", "(Ljava/nio/file/Path;)Ljava/nio/file/FileStore;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#copy(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#copy(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
@@ -394,7 +394,7 @@ namespace Java.Nio.File
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "copy", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "copy", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#createDirectories(java.nio.file.Path,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#createDirectories(java.nio.file.Path,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
@@ -405,7 +405,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createDirectories", arg0); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createDirectories", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#createDirectory(java.nio.file.Path,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#createDirectory(java.nio.file.Path,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
@@ -416,7 +416,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createDirectory", arg0); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createDirectory", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#createFile(java.nio.file.Path,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#createFile(java.nio.file.Path,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
@@ -427,7 +427,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createFile", arg0); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createFile", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#createLink(java.nio.file.Path,java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#createLink(java.nio.file.Path,java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
@@ -438,7 +438,7 @@ namespace Java.Nio.File
             return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createLink", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#createSymbolicLink(java.nio.file.Path,java.nio.file.Path,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#createSymbolicLink(java.nio.file.Path,java.nio.file.Path,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
@@ -450,7 +450,7 @@ namespace Java.Nio.File
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createSymbolicLink", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createSymbolicLink", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#createTempDirectory(java.lang.String,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#createTempDirectory(java.lang.String,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
@@ -461,7 +461,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempDirectory", arg0); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempDirectory", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#createTempDirectory(java.nio.file.Path,java.lang.String,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#createTempDirectory(java.nio.file.Path,java.lang.String,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -473,7 +473,7 @@ namespace Java.Nio.File
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempDirectory", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempDirectory", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#createTempFile(java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#createTempFile(java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -485,7 +485,7 @@ namespace Java.Nio.File
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempFile", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempFile", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#createTempFile(java.nio.file.Path,java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#createTempFile(java.nio.file.Path,java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -498,7 +498,7 @@ namespace Java.Nio.File
             if (arg3.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempFile", arg0, arg1, arg2); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempFile", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#move(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#move(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
@@ -510,7 +510,7 @@ namespace Java.Nio.File
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "move", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "move", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#readSymbolicLink(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#readSymbolicLink(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
@@ -520,7 +520,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<Java.Nio.File.Path>(LocalBridgeClazz, "readSymbolicLink", "(Ljava/nio/file/Path;)Ljava/nio/file/Path;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#setAttribute(java.nio.file.Path,java.lang.String,java.lang.Object,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#setAttribute(java.nio.file.Path,java.lang.String,java.lang.Object,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -533,7 +533,7 @@ namespace Java.Nio.File
             if (arg3.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "setAttribute", arg0, arg1, arg2); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "setAttribute", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#setLastModifiedTime(java.nio.file.Path,java.nio.file.attribute.FileTime)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#setLastModifiedTime(java.nio.file.Path,java.nio.file.attribute.FileTime)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
@@ -544,7 +544,7 @@ namespace Java.Nio.File
             return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "setLastModifiedTime", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#setOwner(java.nio.file.Path,java.nio.file.attribute.UserPrincipal)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#setOwner(java.nio.file.Path,java.nio.file.attribute.UserPrincipal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.UserPrincipal"/></param>
@@ -555,7 +555,7 @@ namespace Java.Nio.File
             return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "setOwner", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#setPosixFilePermissions(java.nio.file.Path,java.util.Set)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#setPosixFilePermissions(java.nio.file.Path,java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
@@ -566,19 +566,19 @@ namespace Java.Nio.File
             return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "setPosixFilePermissions", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#walkFileTree(java.nio.file.Path,java.nio.file.FileVisitor)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#walkFileTree(java.nio.file.Path,java.nio.file.FileVisitor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.FileVisitor"/></param>
         /// <typeparam name="Arg1objectSuperJava_Nio_File_Path"><see cref="Java.Nio.File.Path"/></typeparam>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.Path WalkFileTree<Arg1objectSuperJava_Nio_File_Path>(Java.Nio.File.Path arg0, Java.Nio.File.FileVisitor<Arg1objectSuperJava_Nio_File_Path> arg1) where Arg1objectSuperJava_Nio_File_Path: Java.Nio.File.Path
+        public static Java.Nio.File.Path WalkFileTree<Arg1objectSuperJava_Nio_File_Path>(Java.Nio.File.Path arg0, Java.Nio.File.FileVisitor<Arg1objectSuperJava_Nio_File_Path> arg1) where Arg1objectSuperJava_Nio_File_Path : Java.Nio.File.Path
         {
             return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "walkFileTree", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#walkFileTree(java.nio.file.Path,java.util.Set,int,java.nio.file.FileVisitor)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#walkFileTree(java.nio.file.Path,java.util.Set,int,java.nio.file.FileVisitor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
@@ -587,12 +587,12 @@ namespace Java.Nio.File
         /// <typeparam name="Arg3objectSuperJava_Nio_File_Path"><see cref="Java.Nio.File.Path"/></typeparam>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.Path WalkFileTree<Arg3objectSuperJava_Nio_File_Path>(Java.Nio.File.Path arg0, Java.Util.Set<Java.Nio.File.FileVisitOption> arg1, int arg2, Java.Nio.File.FileVisitor<Arg3objectSuperJava_Nio_File_Path> arg3) where Arg3objectSuperJava_Nio_File_Path: Java.Nio.File.Path
+        public static Java.Nio.File.Path WalkFileTree<Arg3objectSuperJava_Nio_File_Path>(Java.Nio.File.Path arg0, Java.Util.Set<Java.Nio.File.FileVisitOption> arg1, int arg2, Java.Nio.File.FileVisitor<Arg3objectSuperJava_Nio_File_Path> arg3) where Arg3objectSuperJava_Nio_File_Path : Java.Nio.File.Path
         {
             return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "walkFileTree", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#write(java.nio.file.Path,byte[],java.nio.file.OpenOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#write(java.nio.file.Path,byte[],java.nio.file.OpenOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -604,7 +604,7 @@ namespace Java.Nio.File
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "write", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#write(java.nio.file.Path,java.lang.Iterable,java.nio.charset.Charset,java.nio.file.OpenOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#write(java.nio.file.Path,java.lang.Iterable,java.nio.charset.Charset,java.nio.file.OpenOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Iterable"/></param>
@@ -613,12 +613,12 @@ namespace Java.Nio.File
         /// <typeparam name="Arg1ExtendsJava_Lang_CharSequence"><see cref="Java.Lang.CharSequence"/></typeparam>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.Path Write<Arg1ExtendsJava_Lang_CharSequence>(Java.Nio.File.Path arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1, Java.Nio.Charset.Charset arg2, params Java.Nio.File.OpenOption[] arg3) where Arg1ExtendsJava_Lang_CharSequence: Java.Lang.CharSequence
+        public static Java.Nio.File.Path Write<Arg1ExtendsJava_Lang_CharSequence>(Java.Nio.File.Path arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1, Java.Nio.Charset.Charset arg2, params Java.Nio.File.OpenOption[] arg3) where Arg1ExtendsJava_Lang_CharSequence : Java.Lang.CharSequence
         {
             if (arg3.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "write", arg0, arg1, arg2); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "write", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#write(java.nio.file.Path,java.lang.Iterable,java.nio.file.OpenOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#write(java.nio.file.Path,java.lang.Iterable,java.nio.file.OpenOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Iterable"/></param>
@@ -626,12 +626,12 @@ namespace Java.Nio.File
         /// <typeparam name="Arg1ExtendsJava_Lang_CharSequence"><see cref="Java.Lang.CharSequence"/></typeparam>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.Path Write<Arg1ExtendsJava_Lang_CharSequence>(Java.Nio.File.Path arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1, params Java.Nio.File.OpenOption[] arg2) where Arg1ExtendsJava_Lang_CharSequence: Java.Lang.CharSequence
+        public static Java.Nio.File.Path Write<Arg1ExtendsJava_Lang_CharSequence>(Java.Nio.File.Path arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1, params Java.Nio.File.OpenOption[] arg2) where Arg1ExtendsJava_Lang_CharSequence : Java.Lang.CharSequence
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "write", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.charset.Charset,java.nio.file.OpenOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.charset.Charset,java.nio.file.OpenOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
@@ -644,7 +644,7 @@ namespace Java.Nio.File
             if (arg3.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "writeString", arg0, arg1, arg2); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "writeString", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.file.OpenOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.file.OpenOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
@@ -656,7 +656,7 @@ namespace Java.Nio.File
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "writeString", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "writeString", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#readAllLines(java.nio.file.Path,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#readAllLines(java.nio.file.Path,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -667,7 +667,7 @@ namespace Java.Nio.File
             return SExecute<Java.Util.List<Java.Lang.String>>(LocalBridgeClazz, "readAllLines", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#readAllLines(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#readAllLines(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
@@ -677,7 +677,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<Java.Util.List<Java.Lang.String>>(LocalBridgeClazz, "readAllLines", "(Ljava/nio/file/Path;)Ljava/util/List;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#readAttributes(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#readAttributes(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -689,7 +689,7 @@ namespace Java.Nio.File
             if (arg2.Length == 0) return SExecute<Java.Util.Map<Java.Lang.String, object>>(LocalBridgeClazz, "readAttributes", arg0, arg1); else return SExecute<Java.Util.Map<Java.Lang.String, object>>(LocalBridgeClazz, "readAttributes", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#getPosixFilePermissions(java.nio.file.Path,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#getPosixFilePermissions(java.nio.file.Path,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.LinkOption"/></param>
@@ -700,7 +700,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return SExecute<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>>(LocalBridgeClazz, "getPosixFilePermissions", arg0); else return SExecute<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>>(LocalBridgeClazz, "getPosixFilePermissions", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#lines(java.nio.file.Path,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#lines(java.nio.file.Path,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -711,7 +711,7 @@ namespace Java.Nio.File
             return SExecute<Java.Util.Stream.Stream<Java.Lang.String>>(LocalBridgeClazz, "lines", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#lines(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#lines(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
@@ -721,7 +721,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.String>>(LocalBridgeClazz, "lines", "(Ljava/nio/file/Path;)Ljava/util/stream/Stream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#find(java.nio.file.Path,int,java.util.function.BiPredicate,java.nio.file.FileVisitOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#find(java.nio.file.Path,int,java.util.function.BiPredicate,java.nio.file.FileVisitOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -734,7 +734,7 @@ namespace Java.Nio.File
             if (arg3.Length == 0) return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalBridgeClazz, "find", arg0, arg1, arg2); else return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalBridgeClazz, "find", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#list(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#list(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
@@ -744,7 +744,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalBridgeClazz, "list", "(Ljava/nio/file/Path;)Ljava/util/stream/Stream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#walk(java.nio.file.Path,int,java.nio.file.FileVisitOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#walk(java.nio.file.Path,int,java.nio.file.FileVisitOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -756,7 +756,7 @@ namespace Java.Nio.File
             if (arg2.Length == 0) return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalBridgeClazz, "walk", arg0, arg1); else return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalBridgeClazz, "walk", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#walk(java.nio.file.Path,java.nio.file.FileVisitOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#walk(java.nio.file.Path,java.nio.file.FileVisitOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.FileVisitOption"/></param>
@@ -767,7 +767,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalBridgeClazz, "walk", arg0); else return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalBridgeClazz, "walk", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
@@ -779,7 +779,7 @@ namespace Java.Nio.File
             if (arg2.Length == 0) return SExecute<long>(LocalBridgeClazz, "copy", arg0, arg1); else return SExecute<long>(LocalBridgeClazz, "copy", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#copy(java.nio.file.Path,java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#copy(java.nio.file.Path,java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Io.OutputStream"/></param>
@@ -790,18 +790,7 @@ namespace Java.Nio.File
             return SExecute<long>(LocalBridgeClazz, "copy", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#mismatch(java.nio.file.Path,java.nio.file.Path)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
-        /// <returns><see cref="long"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public static long Mismatch(Java.Nio.File.Path arg0, Java.Nio.File.Path arg1)
-        {
-            return SExecute<long>(LocalBridgeClazz, "mismatch", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#size(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#size(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="long"/></returns>
@@ -811,7 +800,7 @@ namespace Java.Nio.File
             return SExecuteWithSignature<long>(LocalBridgeClazz, "size", "(Ljava/nio/file/Path;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html#delete(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/Files.html#delete(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <exception cref="Java.Io.IOException"/>

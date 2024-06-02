@@ -71,25 +71,20 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccountHandle.html#getComponentName()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccountHandle.html#getComponentName()"/>
         /// </summary>
-        public Android.Content.ComponentName ComponentName
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetComponentName()
         {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getComponentName", "()Landroid/content/ComponentName;"); }
+            return IExecuteWithSignature<Android.Content.ComponentName>("getComponentName", "()Landroid/content/ComponentName;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccountHandle.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccountHandle.html#getUserHandle()"/>
         /// </summary>
-        public Java.Lang.String Id
+        /// <returns><see cref="Android.Os.UserHandle"/></returns>
+        public Android.Os.UserHandle GetUserHandle()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccountHandle.html#getUserHandle()"/> 
-        /// </summary>
-        public Android.Os.UserHandle UserHandle
-        {
-            get { return IExecuteWithSignature<Android.Os.UserHandle>("getUserHandle", "()Landroid/os/UserHandle;"); }
+            return IExecuteWithSignature<Android.Os.UserHandle>("getUserHandle", "()Landroid/os/UserHandle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccountHandle.html#describeContents()"/>
@@ -98,6 +93,14 @@ namespace Android.Telecom
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccountHandle.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/PhoneAccountHandle.html#writeToParcel(android.os.Parcel,int)"/>

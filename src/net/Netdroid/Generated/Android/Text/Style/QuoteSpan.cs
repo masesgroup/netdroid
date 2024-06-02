@@ -98,40 +98,28 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#getColor()"/> 
-        /// </summary>
-        public int Color
-        {
-            get { return IExecuteWithSignature<int>("getColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#getGapWidth()"/> 
-        /// </summary>
-        public int GapWidth
-        {
-            get { return IExecuteWithSignature<int>("getGapWidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#getSpanTypeId()"/> 
-        /// </summary>
-        public int SpanTypeId
-        {
-            get { return IExecuteWithSignature<int>("getSpanTypeId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#getStripeWidth()"/> 
-        /// </summary>
-        public int StripeWidth
-        {
-            get { return IExecuteWithSignature<int>("getStripeWidth", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#getColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetColor()
+        {
+            return IExecuteWithSignature<int>("getColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#getGapWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGapWidth()
+        {
+            return IExecuteWithSignature<int>("getGapWidth", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#getLeadingMargin(boolean)"/>
@@ -141,6 +129,22 @@ namespace Android.Text.Style
         public int GetLeadingMargin(bool arg0)
         {
             return IExecuteWithSignature<int>("getLeadingMargin", "(Z)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#getSpanTypeId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSpanTypeId()
+        {
+            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#getStripeWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStripeWidth()
+        {
+            return IExecuteWithSignature<int>("getStripeWidth", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/QuoteSpan.html#drawLeadingMargin(android.graphics.Canvas,android.graphics.Paint,int,int,int,int,int,java.lang.CharSequence,int,int,boolean,android.text.Layout)"/>

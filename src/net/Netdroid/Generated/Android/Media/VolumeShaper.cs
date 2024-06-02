@@ -46,11 +46,12 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.html#getVolume()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.html#getVolume()"/>
         /// </summary>
-        public float Volume
+        /// <returns><see cref="float"/></returns>
+        public float GetVolume()
         {
-            get { return IExecuteWithSignature<float>("getVolume", "()F"); }
+            return IExecuteWithSignature<float>("getVolume", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.html#apply(android.media.VolumeShaper.Operation)"/>
@@ -152,43 +153,32 @@ namespace Android.Media
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.html#getMaximumCurvePoints()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.html#getMaximumCurvePoints()"/>
             /// </summary>
-            public static int MaximumCurvePoints
+            /// <returns><see cref="int"/></returns>
+            public static int GetMaximumCurvePoints()
             {
-                get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaximumCurvePoints", "()I"); }
+                return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaximumCurvePoints", "()I");
             }
 
             #endregion
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.html#getDuration()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.html#getTimes()"/>
             /// </summary>
-            public long Duration
+            /// <returns><see cref="float"/></returns>
+            public float[] GetTimes()
             {
-                get { return IExecuteWithSignature<long>("getDuration", "()J"); }
+                return IExecuteWithSignatureArray<float>("getTimes", "()[F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.html#getInterpolatorType()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.html#getVolumes()"/>
             /// </summary>
-            public int InterpolatorType
+            /// <returns><see cref="float"/></returns>
+            public float[] GetVolumes()
             {
-                get { return IExecuteWithSignature<int>("getInterpolatorType", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.html#getTimes()"/> 
-            /// </summary>
-            public float[] Times
-            {
-                get { return IExecuteWithSignatureArray<float>("getTimes", "()[F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.html#getVolumes()"/> 
-            /// </summary>
-            public float[] Volumes
-            {
-                get { return IExecuteWithSignatureArray<float>("getVolumes", "()[F"); }
+                return IExecuteWithSignatureArray<float>("getVolumes", "()[F");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.html#describeContents()"/>
@@ -197,6 +187,22 @@ namespace Android.Media
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.html#getInterpolatorType()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetInterpolatorType()
+            {
+                return IExecuteWithSignature<int>("getInterpolatorType", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.html#getDuration()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetDuration()
+            {
+                return IExecuteWithSignature<long>("getDuration", "()J");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/VolumeShaper.Configuration.html#writeToParcel(android.os.Parcel,int)"/>

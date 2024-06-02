@@ -48,11 +48,12 @@ namespace Android.Companion
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/companion/BluetoothLeDeviceFilter.html#getRenamePrefixLengthLimit()"/> 
+        /// <see href="https://developer.android.com/reference/android/companion/BluetoothLeDeviceFilter.html#getRenamePrefixLengthLimit()"/>
         /// </summary>
-        public static int RenamePrefixLengthLimit
+        /// <returns><see cref="int"/></returns>
+        public static int GetRenamePrefixLengthLimit()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getRenamePrefixLengthLimit", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getRenamePrefixLengthLimit", "()I");
         }
 
         #endregion

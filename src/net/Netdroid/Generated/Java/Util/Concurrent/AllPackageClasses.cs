@@ -28,7 +28,7 @@ namespace Java.Util.Concurrent
 {
     #region AbstractExecutorService
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/AbstractExecutorService.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/AbstractExecutorService.html"/>
     /// </summary>
     public partial class AbstractExecutorService : Java.Util.Concurrent.ExecutorService
     {
@@ -36,12 +36,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AbstractExecutorService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractExecutorService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractExecutorService() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AbstractExecutorService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractExecutorService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractExecutorService(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Java.Util.Concurrent
 
     #region ArrayBlockingQueue
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ArrayBlockingQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ArrayBlockingQueue.html"/>
     /// </summary>
     public partial class ArrayBlockingQueue : Java.Util.AbstractQueue
     {
@@ -118,7 +118,7 @@ namespace Java.Util.Concurrent
 
     #region ArrayBlockingQueue<E>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ArrayBlockingQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ArrayBlockingQueue.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
     public partial class ArrayBlockingQueue<E> : Java.Util.AbstractQueue<E>
@@ -163,7 +163,7 @@ namespace Java.Util.Concurrent
 
     #region BlockingDeque
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html"/>
     /// </summary>
     public partial class BlockingDeque : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BlockingDeque>
     {
@@ -171,12 +171,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("BlockingDeque class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BlockingDeque class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BlockingDeque() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("BlockingDeque class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BlockingDeque class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BlockingDeque(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -209,7 +209,7 @@ namespace Java.Util.Concurrent
 
     #region BlockingDeque<E>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingDeque.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
     public partial class BlockingDeque<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BlockingDeque<E>>
@@ -218,12 +218,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("BlockingDeque class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BlockingDeque class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BlockingDeque() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("BlockingDeque class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BlockingDeque class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BlockingDeque(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -256,7 +256,7 @@ namespace Java.Util.Concurrent
 
     #region BlockingQueue
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html"/>
     /// </summary>
     public partial class BlockingQueue : Java.Util.Queue
     {
@@ -264,12 +264,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("BlockingQueue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BlockingQueue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BlockingQueue() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("BlockingQueue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BlockingQueue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BlockingQueue(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -302,7 +302,7 @@ namespace Java.Util.Concurrent
 
     #region BlockingQueue<E>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
     public partial class BlockingQueue<E> : Java.Util.Queue<E>
@@ -311,12 +311,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("BlockingQueue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BlockingQueue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BlockingQueue() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("BlockingQueue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BlockingQueue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BlockingQueue(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -349,7 +349,7 @@ namespace Java.Util.Concurrent
 
     #region BrokenBarrierException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BrokenBarrierException.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/BrokenBarrierException.html"/>
     /// </summary>
     public partial class BrokenBarrierException : Java.Lang.Exception
     {
@@ -366,7 +366,7 @@ namespace Java.Util.Concurrent
 
     #region Callable
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Callable.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/Callable.html"/>
     /// </summary>
     public partial class Callable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Callable>
     {
@@ -374,12 +374,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Callable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Callable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Callable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Callable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Callable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Callable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -412,7 +412,7 @@ namespace Java.Util.Concurrent
 
     #region Callable<V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Callable.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/Callable.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
     public partial class Callable<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Callable<V>>
@@ -421,12 +421,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Callable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Callable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Callable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Callable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Callable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Callable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -459,7 +459,7 @@ namespace Java.Util.Concurrent
 
     #region CancellationException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CancellationException.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/CancellationException.html"/>
     /// </summary>
     public partial class CancellationException : Java.Lang.IllegalStateException
     {
@@ -476,7 +476,7 @@ namespace Java.Util.Concurrent
 
     #region CompletableFuture
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html"/>
     /// </summary>
     public partial class CompletableFuture : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletableFuture>
     {
@@ -516,7 +516,7 @@ namespace Java.Util.Concurrent
         // TODO: complete the class
         #region AsynchronousCompletionTask
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.AsynchronousCompletionTask.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.AsynchronousCompletionTask.html"/>
         /// </summary>
         public partial class AsynchronousCompletionTask : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AsynchronousCompletionTask>
         {
@@ -524,12 +524,12 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("AsynchronousCompletionTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("AsynchronousCompletionTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public AsynchronousCompletionTask() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("AsynchronousCompletionTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("AsynchronousCompletionTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public AsynchronousCompletionTask(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -566,7 +566,7 @@ namespace Java.Util.Concurrent
 
     #region CompletableFuture<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class CompletableFuture<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletableFuture<T>>
@@ -611,7 +611,7 @@ namespace Java.Util.Concurrent
 
     #region CompletionException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletionException.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionException.html"/>
     /// </summary>
     public partial class CompletionException : Java.Lang.RuntimeException
     {
@@ -628,7 +628,7 @@ namespace Java.Util.Concurrent
 
     #region CompletionService
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletionService.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html"/>
     /// </summary>
     public partial class CompletionService : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletionService>
     {
@@ -636,12 +636,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CompletionService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CompletionService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CompletionService() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CompletionService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CompletionService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CompletionService(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -674,7 +674,7 @@ namespace Java.Util.Concurrent
 
     #region CompletionService<V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletionService.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
     public partial class CompletionService<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletionService<V>>
@@ -683,12 +683,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CompletionService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CompletionService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CompletionService() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CompletionService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CompletionService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CompletionService(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -721,7 +721,7 @@ namespace Java.Util.Concurrent
 
     #region CompletionStage
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletionStage.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html"/>
     /// </summary>
     public partial class CompletionStage : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletionStage>
     {
@@ -729,12 +729,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CompletionStage class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CompletionStage class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CompletionStage() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CompletionStage class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CompletionStage class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CompletionStage(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -767,7 +767,7 @@ namespace Java.Util.Concurrent
 
     #region CompletionStage<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletionStage.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionStage.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class CompletionStage<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletionStage<T>>
@@ -776,12 +776,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CompletionStage class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CompletionStage class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CompletionStage() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CompletionStage class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CompletionStage class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CompletionStage(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -814,7 +814,7 @@ namespace Java.Util.Concurrent
 
     #region ConcurrentHashMap
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentHashMap.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentHashMap.html"/>
     /// </summary>
     public partial class ConcurrentHashMap : Java.Util.AbstractMap
     {
@@ -854,7 +854,7 @@ namespace Java.Util.Concurrent
         // TODO: complete the class
         #region KeySetView
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentHashMap.KeySetView.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentHashMap.KeySetView.html"/>
         /// </summary>
         public partial class KeySetView : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeySetView>
         {
@@ -898,7 +898,7 @@ namespace Java.Util.Concurrent
 
         #region KeySetView<K, V>
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentHashMap.KeySetView.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentHashMap.KeySetView.html"/>
         /// </summary>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="V"></typeparam>
@@ -948,7 +948,7 @@ namespace Java.Util.Concurrent
 
     #region ConcurrentHashMap<K, V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentHashMap.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentHashMap.html"/>
     /// </summary>
     /// <typeparam name="K"></typeparam>
     /// <typeparam name="V"></typeparam>
@@ -994,7 +994,7 @@ namespace Java.Util.Concurrent
 
     #region ConcurrentLinkedDeque
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html"/>
     /// </summary>
     public partial class ConcurrentLinkedDeque : Java.Util.AbstractCollection
     {
@@ -1038,7 +1038,7 @@ namespace Java.Util.Concurrent
 
     #region ConcurrentLinkedDeque<E>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedDeque.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedDeque.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
     public partial class ConcurrentLinkedDeque<E> : Java.Util.AbstractCollection<E>
@@ -1083,7 +1083,7 @@ namespace Java.Util.Concurrent
 
     #region ConcurrentLinkedQueue
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedQueue.html"/>
     /// </summary>
     public partial class ConcurrentLinkedQueue : Java.Util.AbstractQueue
     {
@@ -1127,7 +1127,7 @@ namespace Java.Util.Concurrent
 
     #region ConcurrentLinkedQueue<E>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentLinkedQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentLinkedQueue.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
     public partial class ConcurrentLinkedQueue<E> : Java.Util.AbstractQueue<E>
@@ -1172,7 +1172,7 @@ namespace Java.Util.Concurrent
 
     #region ConcurrentMap
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentMap.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentMap.html"/>
     /// </summary>
     public partial class ConcurrentMap : Java.Util.Map
     {
@@ -1180,12 +1180,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ConcurrentMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ConcurrentMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ConcurrentMap() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ConcurrentMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ConcurrentMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ConcurrentMap(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1218,7 +1218,7 @@ namespace Java.Util.Concurrent
 
     #region ConcurrentMap<K, V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentMap.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentMap.html"/>
     /// </summary>
     /// <typeparam name="K"></typeparam>
     /// <typeparam name="V"></typeparam>
@@ -1228,12 +1228,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ConcurrentMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ConcurrentMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ConcurrentMap() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ConcurrentMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ConcurrentMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ConcurrentMap(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1266,7 +1266,7 @@ namespace Java.Util.Concurrent
 
     #region ConcurrentNavigableMap
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html"/>
     /// </summary>
     public partial class ConcurrentNavigableMap : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ConcurrentNavigableMap>
     {
@@ -1274,12 +1274,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ConcurrentNavigableMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ConcurrentNavigableMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ConcurrentNavigableMap() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ConcurrentNavigableMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ConcurrentNavigableMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ConcurrentNavigableMap(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1312,7 +1312,7 @@ namespace Java.Util.Concurrent
 
     #region ConcurrentNavigableMap<K, V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html"/>
     /// </summary>
     /// <typeparam name="K"></typeparam>
     /// <typeparam name="V"></typeparam>
@@ -1322,12 +1322,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ConcurrentNavigableMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ConcurrentNavigableMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ConcurrentNavigableMap() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ConcurrentNavigableMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ConcurrentNavigableMap class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ConcurrentNavigableMap(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1360,7 +1360,7 @@ namespace Java.Util.Concurrent
 
     #region ConcurrentSkipListMap
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListMap.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListMap.html"/>
     /// </summary>
     public partial class ConcurrentSkipListMap : Java.Util.AbstractMap
     {
@@ -1404,7 +1404,7 @@ namespace Java.Util.Concurrent
 
     #region ConcurrentSkipListMap<K, V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListMap.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListMap.html"/>
     /// </summary>
     /// <typeparam name="K"></typeparam>
     /// <typeparam name="V"></typeparam>
@@ -1450,7 +1450,7 @@ namespace Java.Util.Concurrent
 
     #region ConcurrentSkipListSet
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html"/>
     /// </summary>
     public partial class ConcurrentSkipListSet : Java.Util.AbstractSet
     {
@@ -1494,7 +1494,7 @@ namespace Java.Util.Concurrent
 
     #region ConcurrentSkipListSet<E>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentSkipListSet.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentSkipListSet.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
     public partial class ConcurrentSkipListSet<E> : Java.Util.AbstractSet<E>
@@ -1539,7 +1539,7 @@ namespace Java.Util.Concurrent
 
     #region CopyOnWriteArrayList
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html"/>
     /// </summary>
     public partial class CopyOnWriteArrayList : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CopyOnWriteArrayList>
     {
@@ -1583,7 +1583,7 @@ namespace Java.Util.Concurrent
 
     #region CopyOnWriteArrayList<E>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArrayList.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArrayList.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
     public partial class CopyOnWriteArrayList<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CopyOnWriteArrayList<E>>
@@ -1628,7 +1628,7 @@ namespace Java.Util.Concurrent
 
     #region CopyOnWriteArraySet
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArraySet.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArraySet.html"/>
     /// </summary>
     public partial class CopyOnWriteArraySet : Java.Util.AbstractSet
     {
@@ -1672,7 +1672,7 @@ namespace Java.Util.Concurrent
 
     #region CopyOnWriteArraySet<E>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CopyOnWriteArraySet.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/CopyOnWriteArraySet.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
     public partial class CopyOnWriteArraySet<E> : Java.Util.AbstractSet<E>
@@ -1717,7 +1717,7 @@ namespace Java.Util.Concurrent
 
     #region CountDownLatch
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountDownLatch.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/CountDownLatch.html"/>
     /// </summary>
     public partial class CountDownLatch : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CountDownLatch>
     {
@@ -1761,7 +1761,7 @@ namespace Java.Util.Concurrent
 
     #region CountedCompleter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html"/>
     /// </summary>
     public partial class CountedCompleter : Java.Util.Concurrent.ForkJoinTask
     {
@@ -1769,12 +1769,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CountedCompleter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CountedCompleter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CountedCompleter() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CountedCompleter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CountedCompleter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CountedCompleter(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1807,7 +1807,7 @@ namespace Java.Util.Concurrent
 
     #region CountedCompleter<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class CountedCompleter<T> : Java.Util.Concurrent.ForkJoinTask<T>
@@ -1816,12 +1816,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CountedCompleter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CountedCompleter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CountedCompleter() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CountedCompleter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CountedCompleter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CountedCompleter(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1854,7 +1854,7 @@ namespace Java.Util.Concurrent
 
     #region CyclicBarrier
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CyclicBarrier.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/CyclicBarrier.html"/>
     /// </summary>
     public partial class CyclicBarrier : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CyclicBarrier>
     {
@@ -1898,7 +1898,7 @@ namespace Java.Util.Concurrent
 
     #region Delayed
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Delayed.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/Delayed.html"/>
     /// </summary>
     public partial class Delayed : Java.Lang.Comparable<Java.Util.Concurrent.Delayed>
     {
@@ -1906,12 +1906,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Delayed class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Delayed class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Delayed() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Delayed class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Delayed class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Delayed(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1944,7 +1944,7 @@ namespace Java.Util.Concurrent
 
     #region DelayQueue
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html"/>
     /// </summary>
     public partial class DelayQueue : Java.Util.AbstractQueue
     {
@@ -1988,10 +1988,10 @@ namespace Java.Util.Concurrent
 
     #region DelayQueue<E>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/DelayQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/DelayQueue.html"/>
     /// </summary>
     /// <typeparam name="E"><see cref="Java.Util.Concurrent.IDelayed"/></typeparam>
-    public partial class DelayQueue<E> : Java.Util.AbstractQueue<E> where E: Java.Util.Concurrent.IDelayed, new()
+    public partial class DelayQueue<E> : Java.Util.AbstractQueue<E> where E : Java.Util.Concurrent.IDelayed, new()
     {
         const string _bridgeClassName = "java.util.concurrent.DelayQueue";
         /// <summary>
@@ -2033,7 +2033,7 @@ namespace Java.Util.Concurrent
 
     #region Exchanger
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Exchanger.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/Exchanger.html"/>
     /// </summary>
     public partial class Exchanger : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Exchanger>
     {
@@ -2077,7 +2077,7 @@ namespace Java.Util.Concurrent
 
     #region Exchanger<V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Exchanger.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/Exchanger.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
     public partial class Exchanger<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Exchanger<V>>
@@ -2122,7 +2122,7 @@ namespace Java.Util.Concurrent
 
     #region ExecutionException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ExecutionException.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ExecutionException.html"/>
     /// </summary>
     public partial class ExecutionException : Java.Lang.Exception
     {
@@ -2139,7 +2139,7 @@ namespace Java.Util.Concurrent
 
     #region Executor
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Executor.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/Executor.html"/>
     /// </summary>
     public partial class Executor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Executor>
     {
@@ -2147,12 +2147,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Executor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Executor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Executor() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Executor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Executor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Executor(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2185,7 +2185,7 @@ namespace Java.Util.Concurrent
 
     #region ExecutorCompletionService
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ExecutorCompletionService.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ExecutorCompletionService.html"/>
     /// </summary>
     public partial class ExecutorCompletionService : Java.Util.Concurrent.CompletionService
     {
@@ -2229,7 +2229,7 @@ namespace Java.Util.Concurrent
 
     #region ExecutorCompletionService<V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ExecutorCompletionService.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ExecutorCompletionService.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
     public partial class ExecutorCompletionService<V> : Java.Util.Concurrent.CompletionService<V>
@@ -2274,7 +2274,7 @@ namespace Java.Util.Concurrent
 
     #region Executors
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Executors.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/Executors.html"/>
     /// </summary>
     public partial class Executors : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Executors>
     {
@@ -2318,7 +2318,7 @@ namespace Java.Util.Concurrent
 
     #region ExecutorService
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ExecutorService.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ExecutorService.html"/>
     /// </summary>
     public partial class ExecutorService : Java.Util.Concurrent.Executor
     {
@@ -2326,12 +2326,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ExecutorService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ExecutorService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ExecutorService() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ExecutorService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ExecutorService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ExecutorService(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2364,7 +2364,7 @@ namespace Java.Util.Concurrent
 
     #region Flow
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.html"/>
     /// </summary>
     public partial class Flow : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Flow>
     {
@@ -2404,7 +2404,7 @@ namespace Java.Util.Concurrent
         // TODO: complete the class
         #region Processor
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Processor.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Processor.html"/>
         /// </summary>
         public partial class Processor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Processor>
         {
@@ -2412,12 +2412,12 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Processor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Processor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Processor() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Processor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Processor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Processor(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2450,7 +2450,7 @@ namespace Java.Util.Concurrent
 
         #region Processor<T, R>
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Processor.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Processor.html"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="R"></typeparam>
@@ -2460,12 +2460,12 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Processor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Processor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Processor() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Processor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Processor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Processor(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2498,7 +2498,7 @@ namespace Java.Util.Concurrent
 
         #region Publisher
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Publisher.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Publisher.html"/>
         /// </summary>
         public partial class Publisher : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Publisher>
         {
@@ -2506,12 +2506,12 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Publisher class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Publisher class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Publisher() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Publisher class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Publisher class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Publisher(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2544,7 +2544,7 @@ namespace Java.Util.Concurrent
 
         #region Publisher<T>
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Publisher.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Publisher.html"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
         public partial class Publisher<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Publisher<T>>
@@ -2553,12 +2553,12 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Publisher class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Publisher class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Publisher() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Publisher class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Publisher class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Publisher(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2591,7 +2591,7 @@ namespace Java.Util.Concurrent
 
         #region Subscriber
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Subscriber.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Subscriber.html"/>
         /// </summary>
         public partial class Subscriber : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Subscriber>
         {
@@ -2599,12 +2599,12 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Subscriber class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Subscriber class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Subscriber() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Subscriber class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Subscriber class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Subscriber(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2637,7 +2637,7 @@ namespace Java.Util.Concurrent
 
         #region Subscriber<T>
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Subscriber.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Subscriber.html"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
         public partial class Subscriber<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Subscriber<T>>
@@ -2646,12 +2646,12 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Subscriber class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Subscriber class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Subscriber() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Subscriber class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Subscriber class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Subscriber(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2684,7 +2684,7 @@ namespace Java.Util.Concurrent
 
         #region Subscription
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Flow.Subscription.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Flow.Subscription.html"/>
         /// </summary>
         public partial class Subscription : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Subscription>
         {
@@ -2692,12 +2692,12 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Subscription class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Subscription class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Subscription() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Subscription class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Subscription class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Subscription(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2734,7 +2734,7 @@ namespace Java.Util.Concurrent
 
     #region ForkJoinPool
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.html"/>
     /// </summary>
     public partial class ForkJoinPool : Java.Util.Concurrent.AbstractExecutorService
     {
@@ -2774,7 +2774,7 @@ namespace Java.Util.Concurrent
         // TODO: complete the class
         #region ForkJoinWorkerThreadFactory
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.html"/>
         /// </summary>
         public partial class ForkJoinWorkerThreadFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ForkJoinWorkerThreadFactory>
         {
@@ -2782,12 +2782,12 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("ForkJoinWorkerThreadFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("ForkJoinWorkerThreadFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ForkJoinWorkerThreadFactory() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("ForkJoinWorkerThreadFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("ForkJoinWorkerThreadFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ForkJoinWorkerThreadFactory(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2820,7 +2820,7 @@ namespace Java.Util.Concurrent
 
         #region ManagedBlocker
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinPool.ManagedBlocker.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinPool.ManagedBlocker.html"/>
         /// </summary>
         public partial class ManagedBlocker : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ManagedBlocker>
         {
@@ -2828,12 +2828,12 @@ namespace Java.Util.Concurrent
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("ManagedBlocker class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("ManagedBlocker class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ManagedBlocker() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("ManagedBlocker class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("ManagedBlocker class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ManagedBlocker(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2870,7 +2870,7 @@ namespace Java.Util.Concurrent
 
     #region ForkJoinTask
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html"/>
     /// </summary>
     public partial class ForkJoinTask : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ForkJoinTask>
     {
@@ -2878,12 +2878,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ForkJoinTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ForkJoinTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ForkJoinTask() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ForkJoinTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ForkJoinTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ForkJoinTask(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2916,7 +2916,7 @@ namespace Java.Util.Concurrent
 
     #region ForkJoinTask<V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinTask.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinTask.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
     public partial class ForkJoinTask<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ForkJoinTask<V>>
@@ -2925,12 +2925,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ForkJoinTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ForkJoinTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ForkJoinTask() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ForkJoinTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ForkJoinTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ForkJoinTask(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2963,7 +2963,7 @@ namespace Java.Util.Concurrent
 
     #region ForkJoinWorkerThread
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ForkJoinWorkerThread.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ForkJoinWorkerThread.html"/>
     /// </summary>
     public partial class ForkJoinWorkerThread : Java.Lang.Thread
     {
@@ -3007,7 +3007,7 @@ namespace Java.Util.Concurrent
 
     #region Future
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Future.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/Future.html"/>
     /// </summary>
     public partial class Future : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Future>
     {
@@ -3015,12 +3015,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Future class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Future class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Future() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Future class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Future class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Future(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -3053,7 +3053,7 @@ namespace Java.Util.Concurrent
 
     #region Future<V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Future.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/Future.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
     public partial class Future<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Future<V>>
@@ -3062,12 +3062,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Future class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Future class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Future() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Future class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Future class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Future(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -3100,7 +3100,7 @@ namespace Java.Util.Concurrent
 
     #region FutureTask
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html"/>
     /// </summary>
     public partial class FutureTask : Java.Util.Concurrent.RunnableFuture
     {
@@ -3144,7 +3144,7 @@ namespace Java.Util.Concurrent
 
     #region FutureTask<V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/FutureTask.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/FutureTask.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
     public partial class FutureTask<V> : Java.Util.Concurrent.RunnableFuture<V>
@@ -3189,7 +3189,7 @@ namespace Java.Util.Concurrent
 
     #region LinkedBlockingDeque
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/LinkedBlockingDeque.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/LinkedBlockingDeque.html"/>
     /// </summary>
     public partial class LinkedBlockingDeque : Java.Util.AbstractQueue
     {
@@ -3233,7 +3233,7 @@ namespace Java.Util.Concurrent
 
     #region LinkedBlockingDeque<E>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/LinkedBlockingDeque.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/LinkedBlockingDeque.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
     public partial class LinkedBlockingDeque<E> : Java.Util.AbstractQueue<E>
@@ -3278,7 +3278,7 @@ namespace Java.Util.Concurrent
 
     #region LinkedBlockingQueue
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/LinkedBlockingQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/LinkedBlockingQueue.html"/>
     /// </summary>
     public partial class LinkedBlockingQueue : Java.Util.AbstractQueue
     {
@@ -3322,7 +3322,7 @@ namespace Java.Util.Concurrent
 
     #region LinkedBlockingQueue<E>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/LinkedBlockingQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/LinkedBlockingQueue.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
     public partial class LinkedBlockingQueue<E> : Java.Util.AbstractQueue<E>
@@ -3367,7 +3367,7 @@ namespace Java.Util.Concurrent
 
     #region LinkedTransferQueue
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/LinkedTransferQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/LinkedTransferQueue.html"/>
     /// </summary>
     public partial class LinkedTransferQueue : Java.Util.AbstractQueue
     {
@@ -3411,7 +3411,7 @@ namespace Java.Util.Concurrent
 
     #region LinkedTransferQueue<E>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/LinkedTransferQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/LinkedTransferQueue.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
     public partial class LinkedTransferQueue<E> : Java.Util.AbstractQueue<E>
@@ -3456,7 +3456,7 @@ namespace Java.Util.Concurrent
 
     #region Phaser
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Phaser.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/Phaser.html"/>
     /// </summary>
     public partial class Phaser : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Phaser>
     {
@@ -3500,7 +3500,7 @@ namespace Java.Util.Concurrent
 
     #region PriorityBlockingQueue
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/PriorityBlockingQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html"/>
     /// </summary>
     public partial class PriorityBlockingQueue : Java.Util.AbstractQueue
     {
@@ -3544,7 +3544,7 @@ namespace Java.Util.Concurrent
 
     #region PriorityBlockingQueue<E>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/PriorityBlockingQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/PriorityBlockingQueue.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
     public partial class PriorityBlockingQueue<E> : Java.Util.AbstractQueue<E>
@@ -3589,7 +3589,7 @@ namespace Java.Util.Concurrent
 
     #region RecursiveAction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/RecursiveAction.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/RecursiveAction.html"/>
     /// </summary>
     public partial class RecursiveAction : Java.Util.Concurrent.ForkJoinTask<Java.Lang.Void>
     {
@@ -3597,12 +3597,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("RecursiveAction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RecursiveAction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RecursiveAction() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("RecursiveAction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RecursiveAction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RecursiveAction(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -3635,7 +3635,7 @@ namespace Java.Util.Concurrent
 
     #region RecursiveTask
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/RecursiveTask.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/RecursiveTask.html"/>
     /// </summary>
     public partial class RecursiveTask : Java.Util.Concurrent.ForkJoinTask
     {
@@ -3643,12 +3643,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("RecursiveTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RecursiveTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RecursiveTask() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("RecursiveTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RecursiveTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RecursiveTask(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -3681,7 +3681,7 @@ namespace Java.Util.Concurrent
 
     #region RecursiveTask<V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/RecursiveTask.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/RecursiveTask.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
     public partial class RecursiveTask<V> : Java.Util.Concurrent.ForkJoinTask<V>
@@ -3690,12 +3690,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("RecursiveTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RecursiveTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RecursiveTask() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("RecursiveTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RecursiveTask class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RecursiveTask(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -3728,7 +3728,7 @@ namespace Java.Util.Concurrent
 
     #region RejectedExecutionException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/RejectedExecutionException.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/RejectedExecutionException.html"/>
     /// </summary>
     public partial class RejectedExecutionException : Java.Lang.RuntimeException
     {
@@ -3745,7 +3745,7 @@ namespace Java.Util.Concurrent
 
     #region RejectedExecutionHandler
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/RejectedExecutionHandler.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/RejectedExecutionHandler.html"/>
     /// </summary>
     public partial class RejectedExecutionHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RejectedExecutionHandler>
     {
@@ -3753,12 +3753,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("RejectedExecutionHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RejectedExecutionHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RejectedExecutionHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("RejectedExecutionHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RejectedExecutionHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RejectedExecutionHandler(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -3791,7 +3791,7 @@ namespace Java.Util.Concurrent
 
     #region RunnableFuture
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/RunnableFuture.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/RunnableFuture.html"/>
     /// </summary>
     public partial class RunnableFuture : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RunnableFuture>
     {
@@ -3799,12 +3799,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("RunnableFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RunnableFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RunnableFuture() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("RunnableFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RunnableFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RunnableFuture(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -3837,7 +3837,7 @@ namespace Java.Util.Concurrent
 
     #region RunnableFuture<V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/RunnableFuture.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/RunnableFuture.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
     public partial class RunnableFuture<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RunnableFuture<V>>
@@ -3846,12 +3846,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("RunnableFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RunnableFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RunnableFuture() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("RunnableFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RunnableFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RunnableFuture(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -3884,7 +3884,7 @@ namespace Java.Util.Concurrent
 
     #region RunnableScheduledFuture
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/RunnableScheduledFuture.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/RunnableScheduledFuture.html"/>
     /// </summary>
     public partial class RunnableScheduledFuture : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RunnableScheduledFuture>
     {
@@ -3892,12 +3892,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("RunnableScheduledFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RunnableScheduledFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RunnableScheduledFuture() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("RunnableScheduledFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RunnableScheduledFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RunnableScheduledFuture(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -3930,7 +3930,7 @@ namespace Java.Util.Concurrent
 
     #region RunnableScheduledFuture<V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/RunnableScheduledFuture.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/RunnableScheduledFuture.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
     public partial class RunnableScheduledFuture<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RunnableScheduledFuture<V>>
@@ -3939,12 +3939,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("RunnableScheduledFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RunnableScheduledFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RunnableScheduledFuture() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("RunnableScheduledFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RunnableScheduledFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RunnableScheduledFuture(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -3977,7 +3977,7 @@ namespace Java.Util.Concurrent
 
     #region ScheduledExecutorService
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledExecutorService.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledExecutorService.html"/>
     /// </summary>
     public partial class ScheduledExecutorService : Java.Util.Concurrent.ExecutorService
     {
@@ -3985,12 +3985,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ScheduledExecutorService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ScheduledExecutorService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ScheduledExecutorService() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ScheduledExecutorService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ScheduledExecutorService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ScheduledExecutorService(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -4023,7 +4023,7 @@ namespace Java.Util.Concurrent
 
     #region ScheduledFuture
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledFuture.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledFuture.html"/>
     /// </summary>
     public partial class ScheduledFuture : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ScheduledFuture>
     {
@@ -4031,12 +4031,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ScheduledFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ScheduledFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ScheduledFuture() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ScheduledFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ScheduledFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ScheduledFuture(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -4069,7 +4069,7 @@ namespace Java.Util.Concurrent
 
     #region ScheduledFuture<V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledFuture.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledFuture.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
     public partial class ScheduledFuture<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ScheduledFuture<V>>
@@ -4078,12 +4078,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ScheduledFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ScheduledFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ScheduledFuture() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ScheduledFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ScheduledFuture class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ScheduledFuture(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -4116,7 +4116,7 @@ namespace Java.Util.Concurrent
 
     #region ScheduledThreadPoolExecutor
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ScheduledThreadPoolExecutor.html"/>
     /// </summary>
     public partial class ScheduledThreadPoolExecutor : Java.Util.Concurrent.ThreadPoolExecutor
     {
@@ -4160,7 +4160,7 @@ namespace Java.Util.Concurrent
 
     #region Semaphore
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Semaphore.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/Semaphore.html"/>
     /// </summary>
     public partial class Semaphore : Java.Io.Serializable
     {
@@ -4204,7 +4204,7 @@ namespace Java.Util.Concurrent
 
     #region SubmissionPublisher
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html"/>
     /// </summary>
     public partial class SubmissionPublisher : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SubmissionPublisher>
     {
@@ -4248,7 +4248,7 @@ namespace Java.Util.Concurrent
 
     #region SubmissionPublisher<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SubmissionPublisher.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/SubmissionPublisher.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class SubmissionPublisher<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SubmissionPublisher<T>>
@@ -4293,7 +4293,7 @@ namespace Java.Util.Concurrent
 
     #region SynchronousQueue
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SynchronousQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/SynchronousQueue.html"/>
     /// </summary>
     public partial class SynchronousQueue : Java.Util.AbstractQueue
     {
@@ -4337,7 +4337,7 @@ namespace Java.Util.Concurrent
 
     #region SynchronousQueue<E>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/SynchronousQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/SynchronousQueue.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
     public partial class SynchronousQueue<E> : Java.Util.AbstractQueue<E>
@@ -4382,7 +4382,7 @@ namespace Java.Util.Concurrent
 
     #region ThreadFactory
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadFactory.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadFactory.html"/>
     /// </summary>
     public partial class ThreadFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ThreadFactory>
     {
@@ -4390,12 +4390,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ThreadFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ThreadFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ThreadFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ThreadFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ThreadFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ThreadFactory(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -4428,7 +4428,7 @@ namespace Java.Util.Concurrent
 
     #region ThreadLocalRandom
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadLocalRandom.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadLocalRandom.html"/>
     /// </summary>
     public partial class ThreadLocalRandom : Java.Util.Random
     {
@@ -4472,7 +4472,7 @@ namespace Java.Util.Concurrent
 
     #region ThreadPoolExecutor
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.html"/>
     /// </summary>
     public partial class ThreadPoolExecutor : Java.Util.Concurrent.AbstractExecutorService
     {
@@ -4512,7 +4512,7 @@ namespace Java.Util.Concurrent
         // TODO: complete the class
         #region AbortPolicy
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.AbortPolicy.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.AbortPolicy.html"/>
         /// </summary>
         public partial class AbortPolicy : Java.Util.Concurrent.RejectedExecutionHandler
         {
@@ -4556,7 +4556,7 @@ namespace Java.Util.Concurrent
 
         #region CallerRunsPolicy
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.CallerRunsPolicy.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.CallerRunsPolicy.html"/>
         /// </summary>
         public partial class CallerRunsPolicy : Java.Util.Concurrent.RejectedExecutionHandler
         {
@@ -4600,7 +4600,7 @@ namespace Java.Util.Concurrent
 
         #region DiscardOldestPolicy
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.DiscardOldestPolicy.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.DiscardOldestPolicy.html"/>
         /// </summary>
         public partial class DiscardOldestPolicy : Java.Util.Concurrent.RejectedExecutionHandler
         {
@@ -4644,7 +4644,7 @@ namespace Java.Util.Concurrent
 
         #region DiscardPolicy
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadPoolExecutor.DiscardPolicy.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadPoolExecutor.DiscardPolicy.html"/>
         /// </summary>
         public partial class DiscardPolicy : Java.Util.Concurrent.RejectedExecutionHandler
         {
@@ -4692,7 +4692,7 @@ namespace Java.Util.Concurrent
 
     #region TimeoutException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeoutException.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeoutException.html"/>
     /// </summary>
     public partial class TimeoutException : Java.Lang.Exception
     {
@@ -4709,7 +4709,7 @@ namespace Java.Util.Concurrent
 
     #region TimeUnit
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TimeUnit.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/TimeUnit.html"/>
     /// </summary>
     public partial class TimeUnit : Java.Lang.Enum<Java.Util.Concurrent.TimeUnit>
     {
@@ -4753,7 +4753,7 @@ namespace Java.Util.Concurrent
 
     #region TransferQueue
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TransferQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/TransferQueue.html"/>
     /// </summary>
     public partial class TransferQueue : Java.Util.Concurrent.BlockingQueue
     {
@@ -4761,12 +4761,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TransferQueue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TransferQueue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TransferQueue() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TransferQueue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TransferQueue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TransferQueue(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -4799,7 +4799,7 @@ namespace Java.Util.Concurrent
 
     #region TransferQueue<E>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/TransferQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/TransferQueue.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
     public partial class TransferQueue<E> : Java.Util.Concurrent.BlockingQueue<E>
@@ -4808,12 +4808,12 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TransferQueue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TransferQueue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TransferQueue() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TransferQueue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TransferQueue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TransferQueue(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

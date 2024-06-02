@@ -406,20 +406,6 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#getBlockedRatings()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Media.Tv.TvContentRating> BlockedRatings
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.Tv.TvContentRating>>("getBlockedRatings", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#getTvInputList()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Media.Tv.TvInputInfo> TvInputList
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.Tv.TvInputInfo>>("getTvInputList", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#getTvInputInfo(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -453,6 +439,22 @@ namespace Android.Media.Tv
         public int GetInputState(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<int>("getInputState", "(Ljava/lang/String;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#getBlockedRatings()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.Tv.TvContentRating> GetBlockedRatings()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.Tv.TvContentRating>>("getBlockedRatings", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#getTvInputList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.Tv.TvInputInfo> GetTvInputList()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.Tv.TvInputInfo>>("getTvInputList", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#registerCallback(android.media.tv.TvInputManager.TvInputCallback,android.os.Handler)"/>

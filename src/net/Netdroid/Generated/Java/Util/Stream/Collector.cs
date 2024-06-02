@@ -42,7 +42,7 @@ namespace Java.Util.Stream
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.function.Function,java.util.stream.Collector.Characteristics[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.function.Function,java.util.stream.Collector.Characteristics[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
@@ -55,7 +55,7 @@ namespace Java.Util.Stream
             if (arg4.Length == 0) return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3); else return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.stream.Collector.Characteristics[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.stream.Collector.Characteristics[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
@@ -71,7 +71,7 @@ namespace Java.Util.Stream
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#accumulator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#accumulator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         public Java.Util.Function.BiConsumer Accumulator()
@@ -79,7 +79,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.BiConsumer>("accumulator", "()Ljava/util/function/BiConsumer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#accumulator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#accumulator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         public Java.Util.Function.BiConsumer AccumulatorDirect()
@@ -87,7 +87,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.BiConsumerDirect, Java.Util.Function.BiConsumer>("accumulator", "()Ljava/util/function/BiConsumer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#combiner()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#combiner()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         public Java.Util.Function.BinaryOperator Combiner()
@@ -95,7 +95,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.BinaryOperator>("combiner", "()Ljava/util/function/BinaryOperator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#combiner()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#combiner()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         public Java.Util.Function.BinaryOperator CombinerDirect()
@@ -103,7 +103,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.BinaryOperatorDirect, Java.Util.Function.BinaryOperator>("combiner", "()Ljava/util/function/BinaryOperator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#finisher()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#finisher()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         public Java.Util.Function.Function Finisher()
@@ -111,7 +111,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.Function>("finisher", "()Ljava/util/function/Function;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#finisher()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#finisher()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         public Java.Util.Function.Function FinisherDirect()
@@ -119,7 +119,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.FunctionDirect, Java.Util.Function.Function>("finisher", "()Ljava/util/function/Function;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#supplier()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#supplier()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
         public Java.Util.Function.Supplier Supplier()
@@ -127,7 +127,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.Supplier>("supplier", "()Ljava/util/function/Supplier;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#supplier()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#supplier()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
         public Java.Util.Function.Supplier SupplierDirect()
@@ -135,7 +135,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.SupplierDirect, Java.Util.Function.Supplier>("supplier", "()Ljava/util/function/Supplier;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#characteristics()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#characteristics()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set CharacteristicsMethod()
@@ -159,19 +159,19 @@ namespace Java.Util.Stream
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.Characteristics.html#CONCURRENT"/>
+            /// <see href="https://developer.android.com/reference/java/util/stream/Collector.Characteristics.html#CONCURRENT"/>
             /// </summary>
             public static Java.Util.Stream.Collector.Characteristics CONCURRENT { get { if (!_CONCURRENTReady) { _CONCURRENTContent = SGetField<Java.Util.Stream.Collector.Characteristics>(LocalBridgeClazz, "CONCURRENT"); _CONCURRENTReady = true; } return _CONCURRENTContent; } }
             private static Java.Util.Stream.Collector.Characteristics _CONCURRENTContent = default;
             private static bool _CONCURRENTReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.Characteristics.html#IDENTITY_FINISH"/>
+            /// <see href="https://developer.android.com/reference/java/util/stream/Collector.Characteristics.html#IDENTITY_FINISH"/>
             /// </summary>
             public static Java.Util.Stream.Collector.Characteristics IDENTITY_FINISH { get { if (!_IDENTITY_FINISHReady) { _IDENTITY_FINISHContent = SGetField<Java.Util.Stream.Collector.Characteristics>(LocalBridgeClazz, "IDENTITY_FINISH"); _IDENTITY_FINISHReady = true; } return _IDENTITY_FINISHContent; } }
             private static Java.Util.Stream.Collector.Characteristics _IDENTITY_FINISHContent = default;
             private static bool _IDENTITY_FINISHReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.Characteristics.html#UNORDERED"/>
+            /// <see href="https://developer.android.com/reference/java/util/stream/Collector.Characteristics.html#UNORDERED"/>
             /// </summary>
             public static Java.Util.Stream.Collector.Characteristics UNORDERED { get { if (!_UNORDEREDReady) { _UNORDEREDContent = SGetField<Java.Util.Stream.Collector.Characteristics>(LocalBridgeClazz, "UNORDERED"); _UNORDEREDReady = true; } return _UNORDEREDContent; } }
             private static Java.Util.Stream.Collector.Characteristics _UNORDEREDContent = default;
@@ -181,7 +181,7 @@ namespace Java.Util.Stream
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.Characteristics.html#valueOf(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/stream/Collector.Characteristics.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.Stream.Collector.Characteristics"/></returns>
@@ -190,7 +190,7 @@ namespace Java.Util.Stream
                 return SExecuteWithSignature<Java.Util.Stream.Collector.Characteristics>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/util/stream/Collector$Characteristics;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.Characteristics.html#values()"/>
+            /// <see href="https://developer.android.com/reference/java/util/stream/Collector.Characteristics.html#values()"/>
             /// </summary>
             /// <returns><see cref="Java.Util.Stream.Collector.Characteristics"/></returns>
             public static Java.Util.Stream.Collector.Characteristics[] Values()
@@ -258,7 +258,7 @@ namespace Java.Util.Stream
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.function.Function,java.util.stream.Collector.Characteristics[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.function.Function,java.util.stream.Collector.Characteristics[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
@@ -271,7 +271,7 @@ namespace Java.Util.Stream
             if (arg4.Length == 0) return SExecute<Java.Util.Stream.Collector<T, A, R>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3); else return SExecute<Java.Util.Stream.Collector<T, A, R>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.stream.Collector.Characteristics[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.stream.Collector.Characteristics[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
@@ -287,7 +287,7 @@ namespace Java.Util.Stream
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#accumulator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#accumulator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         public Java.Util.Function.BiConsumer<A, T> Accumulator()
@@ -295,7 +295,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.BiConsumer<A, T>>("accumulator", "()Ljava/util/function/BiConsumer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#accumulator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#accumulator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
         public Java.Util.Function.BiConsumer<A, T> AccumulatorDirect()
@@ -303,7 +303,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.BiConsumerDirect<A, T>, Java.Util.Function.BiConsumer<A, T>>("accumulator", "()Ljava/util/function/BiConsumer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#combiner()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#combiner()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         public Java.Util.Function.BinaryOperator<A> Combiner()
@@ -311,7 +311,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.BinaryOperator<A>>("combiner", "()Ljava/util/function/BinaryOperator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#combiner()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#combiner()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         public Java.Util.Function.BinaryOperator<A> CombinerDirect()
@@ -319,7 +319,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.BinaryOperatorDirect<A>, Java.Util.Function.BinaryOperator<A>>("combiner", "()Ljava/util/function/BinaryOperator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#finisher()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#finisher()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         public Java.Util.Function.Function<A, R> Finisher()
@@ -327,7 +327,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.Function<A, R>>("finisher", "()Ljava/util/function/Function;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#finisher()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#finisher()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         public Java.Util.Function.Function<A, R> FinisherDirect()
@@ -335,7 +335,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.FunctionDirect<A, R>, Java.Util.Function.Function<A, R>>("finisher", "()Ljava/util/function/Function;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#supplier()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#supplier()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
         public Java.Util.Function.Supplier<A> Supplier()
@@ -343,7 +343,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.Supplier<A>>("supplier", "()Ljava/util/function/Supplier;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#supplier()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#supplier()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
         public Java.Util.Function.Supplier<A> SupplierDirect()
@@ -351,7 +351,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.SupplierDirect<A>, Java.Util.Function.Supplier<A>>("supplier", "()Ljava/util/function/Supplier;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/Collector.html#characteristics()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#characteristics()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Util.Stream.Collector.Characteristics> CharacteristicsMethod()

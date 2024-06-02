@@ -64,11 +64,12 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingMonitor.html#getActiveRecordingConfiguration()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioRecordingMonitor.html#getActiveRecordingConfiguration()"/>
         /// </summary>
-        public Android.Media.AudioRecordingConfiguration ActiveRecordingConfiguration
+        /// <returns><see cref="Android.Media.AudioRecordingConfiguration"/></returns>
+        public Android.Media.AudioRecordingConfiguration GetActiveRecordingConfiguration()
         {
-            get { return IExecuteWithSignature<Android.Media.AudioRecordingConfiguration>("getActiveRecordingConfiguration", "()Landroid/media/AudioRecordingConfiguration;"); }
+            return IExecuteWithSignature<Android.Media.AudioRecordingConfiguration>("getActiveRecordingConfiguration", "()Landroid/media/AudioRecordingConfiguration;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioRecordingMonitor.html#registerAudioRecordingCallback(java.util.concurrent.Executor,android.media.AudioManager.AudioRecordingCallback)"/>

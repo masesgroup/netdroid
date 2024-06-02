@@ -82,67 +82,20 @@ namespace Android.Net.Wifi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getApMacAddress()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getApMacAddress()"/>
         /// </summary>
-        public Android.Net.MacAddress ApMacAddress
+        /// <returns><see cref="Android.Net.MacAddress"/></returns>
+        public Android.Net.MacAddress GetApMacAddress()
         {
-            get { return IExecuteWithSignature<Android.Net.MacAddress>("getApMacAddress", "()Landroid/net/MacAddress;"); }
+            return IExecuteWithSignature<Android.Net.MacAddress>("getApMacAddress", "()Landroid/net/MacAddress;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getBand()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getStaMacAddress()"/>
         /// </summary>
-        public int Band
+        /// <returns><see cref="Android.Net.MacAddress"/></returns>
+        public Android.Net.MacAddress GetStaMacAddress()
         {
-            get { return IExecuteWithSignature<int>("getBand", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getChannel()"/> 
-        /// </summary>
-        public int Channel
-        {
-            get { return IExecuteWithSignature<int>("getChannel", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getLinkId()"/> 
-        /// </summary>
-        public int LinkId
-        {
-            get { return IExecuteWithSignature<int>("getLinkId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getRssi()"/> 
-        /// </summary>
-        public int Rssi
-        {
-            get { return IExecuteWithSignature<int>("getRssi", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getRxLinkSpeedMbps()"/> 
-        /// </summary>
-        public int RxLinkSpeedMbps
-        {
-            get { return IExecuteWithSignature<int>("getRxLinkSpeedMbps", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getStaMacAddress()"/> 
-        /// </summary>
-        public Android.Net.MacAddress StaMacAddress
-        {
-            get { return IExecuteWithSignature<Android.Net.MacAddress>("getStaMacAddress", "()Landroid/net/MacAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getState()"/> 
-        /// </summary>
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getTxLinkSpeedMbps()"/> 
-        /// </summary>
-        public int TxLinkSpeedMbps
-        {
-            get { return IExecuteWithSignature<int>("getTxLinkSpeedMbps", "()I"); }
+            return IExecuteWithSignature<Android.Net.MacAddress>("getStaMacAddress", "()Landroid/net/MacAddress;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#describeContents()"/>
@@ -151,6 +104,62 @@ namespace Android.Net.Wifi
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getBand()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBand()
+        {
+            return IExecuteWithSignature<int>("getBand", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getChannel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannel()
+        {
+            return IExecuteWithSignature<int>("getChannel", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getLinkId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLinkId()
+        {
+            return IExecuteWithSignature<int>("getLinkId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getRssi()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRssi()
+        {
+            return IExecuteWithSignature<int>("getRssi", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getRxLinkSpeedMbps()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRxLinkSpeedMbps()
+        {
+            return IExecuteWithSignature<int>("getRxLinkSpeedMbps", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#getTxLinkSpeedMbps()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTxLinkSpeedMbps()
+        {
+            return IExecuteWithSignature<int>("getTxLinkSpeedMbps", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/MloLink.html#writeToParcel(android.os.Parcel,int)"/>

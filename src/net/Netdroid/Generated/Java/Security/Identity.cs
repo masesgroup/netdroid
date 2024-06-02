@@ -30,7 +30,7 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Identity.html#%3Cinit%3E(java.lang.String,java.security.IdentityScope)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Identity.html#%3Cinit%3E(java.lang.String,java.security.IdentityScope)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.IdentityScope"/></param>
@@ -40,7 +40,7 @@ namespace Java.Security
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Identity.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Identity.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public Identity(Java.Lang.String arg0)
@@ -72,35 +72,31 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Identity.html#getInfo()"/> <see href="https://developer.android.com/reference/java.base/java/security/Identity.html#setInfo(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Identity.html#getName()"/>
         /// </summary>
-        public Java.Lang.String Info
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInfo", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setInfo", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Identity.html#getName()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/Identity.html#getScope()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="Java.Security.IdentityScope"/></returns>
+        public Java.Security.IdentityScope GetScope()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Security.IdentityScope>("getScope", "()Ljava/security/IdentityScope;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Identity.html#getPublicKey()"/> <see href="https://developer.android.com/reference/java.base/java/security/Identity.html#setPublicKey(java.security.PublicKey)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Identity.html#getInfo()"/>
         /// </summary>
-        public Java.Security.PublicKey PublicKey
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetInfo()
         {
-            get { return IExecuteWithSignature<Java.Security.PublicKey>("getPublicKey", "()Ljava/security/PublicKey;"); } set { IExecuteWithSignature("setPublicKey", "(Ljava/security/PublicKey;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getInfo", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Identity.html#getScope()"/> 
-        /// </summary>
-        public Java.Security.IdentityScope Scope
-        {
-            get { return IExecuteWithSignature<Java.Security.IdentityScope>("getScope", "()Ljava/security/IdentityScope;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Identity.html#toString(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Identity.html#toString(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -109,7 +105,7 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Lang.String>("toString", "(Z)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Identity.html#certificates()"/>
+        /// <see href="https://developer.android.com/reference/java/security/Identity.html#certificates()"/>
         /// </summary>
         /// <returns><see cref="Java.Security.Certificate"/></returns>
         public Java.Security.Certificate[] Certificates()
@@ -117,7 +113,15 @@ namespace Java.Security
             return IExecuteWithSignatureArray<Java.Security.Certificate>("certificates", "()[Ljava/security/Certificate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Identity.html#addCertificate(java.security.Certificate)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Identity.html#getPublicKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.PublicKey"/></returns>
+        public Java.Security.PublicKey GetPublicKey()
+        {
+            return IExecuteWithSignature<Java.Security.PublicKey>("getPublicKey", "()Ljava/security/PublicKey;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/Identity.html#addCertificate(java.security.Certificate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Certificate"/></param>
         /// <exception cref="Java.Security.KeyManagementException"/>
@@ -126,13 +130,30 @@ namespace Java.Security
             IExecuteWithSignature("addCertificate", "(Ljava/security/Certificate;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Identity.html#removeCertificate(java.security.Certificate)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Identity.html#removeCertificate(java.security.Certificate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Certificate"/></param>
         /// <exception cref="Java.Security.KeyManagementException"/>
         public void RemoveCertificate(Java.Security.Certificate arg0)
         {
             IExecuteWithSignature("removeCertificate", "(Ljava/security/Certificate;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/Identity.html#setInfo(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetInfo(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setInfo", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/Identity.html#setPublicKey(java.security.PublicKey)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
+        /// <exception cref="Java.Security.KeyManagementException"/>
+        public void SetPublicKey(Java.Security.PublicKey arg0)
+        {
+            IExecuteWithSignature("setPublicKey", "(Ljava/security/PublicKey;)V", arg0);
         }
 
         #endregion

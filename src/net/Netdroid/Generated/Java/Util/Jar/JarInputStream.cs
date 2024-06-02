@@ -30,7 +30,7 @@ namespace Java.Util.Jar
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarInputStream.html#%3Cinit%3E(java.io.InputStream,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarInputStream.html#%3Cinit%3E(java.io.InputStream,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -40,7 +40,7 @@ namespace Java.Util.Jar
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -65,18 +65,21 @@ namespace Java.Util.Jar
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarInputStream.html#getManifest()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarInputStream.html#getNextJarEntry()"/>
         /// </summary>
-        public Java.Util.Jar.Manifest Manifest
+        /// <returns><see cref="Java.Util.Jar.JarEntry"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Jar.JarEntry GetNextJarEntry()
         {
-            get { return IExecuteWithSignature<Java.Util.Jar.Manifest>("getManifest", "()Ljava/util/jar/Manifest;"); }
+            return IExecuteWithSignature<Java.Util.Jar.JarEntry>("getNextJarEntry", "()Ljava/util/jar/JarEntry;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarInputStream.html#getNextJarEntry()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarInputStream.html#getManifest()"/>
         /// </summary>
-        public Java.Util.Jar.JarEntry NextJarEntry
+        /// <returns><see cref="Java.Util.Jar.Manifest"/></returns>
+        public Java.Util.Jar.Manifest GetManifest()
         {
-            get { return IExecuteWithSignature<Java.Util.Jar.JarEntry>("getNextJarEntry", "()Ljava/util/jar/JarEntry;"); }
+            return IExecuteWithSignature<Java.Util.Jar.Manifest>("getManifest", "()Ljava/util/jar/Manifest;");
         }
 
         #endregion

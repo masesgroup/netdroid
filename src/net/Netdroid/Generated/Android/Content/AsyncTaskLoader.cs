@@ -33,7 +33,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/AsyncTaskLoader.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public AsyncTaskLoader(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -58,7 +58,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/AsyncTaskLoader.html#loadInBackground()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public object LoadInBackground()
         {
             return IExecuteWithSignature("loadInBackground", "()Ljava/lang/Object;");
@@ -67,7 +67,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/AsyncTaskLoader.html#isLoadInBackgroundCanceled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsLoadInBackgroundCanceled()
         {
             return IExecuteWithSignature<bool>("isLoadInBackgroundCanceled", "()Z");
@@ -75,7 +75,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/AsyncTaskLoader.html#cancelLoadInBackground()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CancelLoadInBackground()
         {
             IExecuteWithSignature("cancelLoadInBackground", "()V");
@@ -84,7 +84,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/AsyncTaskLoader.html#onCanceled(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnCanceled(object arg0)
         {
             IExecuteWithSignature("onCanceled", "(Ljava/lang/Object;)V", arg0);
@@ -93,7 +93,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/AsyncTaskLoader.html#setUpdateThrottle(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetUpdateThrottle(long arg0)
         {
             IExecuteWithSignature("setUpdateThrottle", "(J)V", arg0);
@@ -117,7 +117,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/AsyncTaskLoader.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public AsyncTaskLoader(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -146,7 +146,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/AsyncTaskLoader.html#loadInBackground()"/>
         /// </summary>
         /// <returns><typeparamref name="D"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public D LoadInBackground()
         {
             return IExecuteWithSignature<D>("loadInBackground", "()Ljava/lang/Object;");
@@ -155,7 +155,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/AsyncTaskLoader.html#isLoadInBackgroundCanceled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsLoadInBackgroundCanceled()
         {
             return IExecuteWithSignature<bool>("isLoadInBackgroundCanceled", "()Z");
@@ -163,7 +163,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/AsyncTaskLoader.html#cancelLoadInBackground()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CancelLoadInBackground()
         {
             IExecuteWithSignature("cancelLoadInBackground", "()V");
@@ -172,7 +172,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/AsyncTaskLoader.html#onCanceled(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="D"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnCanceled(D arg0)
         {
             IExecuteWithSignature("onCanceled", "(Ljava/lang/Object;)V", arg0);
@@ -181,7 +181,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/AsyncTaskLoader.html#setUpdateThrottle(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetUpdateThrottle(long arg0)
         {
             IExecuteWithSignature("setUpdateThrottle", "(J)V", arg0);

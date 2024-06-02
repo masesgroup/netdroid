@@ -358,20 +358,6 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchManager.html#getGlobalSearchActivity()"/> 
-        /// </summary>
-        public Android.Content.ComponentName GlobalSearchActivity
-        {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getGlobalSearchActivity", "()Landroid/content/ComponentName;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/SearchManager.html#getSearchablesInGlobalSearch()"/> 
-        /// </summary>
-        public Java.Util.List<Android.App.SearchableInfo> SearchablesInGlobalSearch
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.SearchableInfo>>("getSearchablesInGlobalSearch", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/SearchManager.html#getSearchableInfo(android.content.ComponentName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
@@ -381,10 +367,26 @@ namespace Android.App
             return IExecuteWithSignature<Android.App.SearchableInfo>("getSearchableInfo", "(Landroid/content/ComponentName;)Landroid/app/SearchableInfo;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchManager.html#getGlobalSearchActivity()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetGlobalSearchActivity()
+        {
+            return IExecuteWithSignature<Android.Content.ComponentName>("getGlobalSearchActivity", "()Landroid/content/ComponentName;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/SearchManager.html#getSearchablesInGlobalSearch()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.SearchableInfo> GetSearchablesInGlobalSearch()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.SearchableInfo>>("getSearchablesInGlobalSearch", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/SearchManager.html#onCancel(android.content.DialogInterface)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.DialogInterface"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnCancel(Android.Content.DialogInterface arg0)
         {
             IExecuteWithSignature("onCancel", "(Landroid/content/DialogInterface;)V", arg0);
@@ -393,7 +395,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/SearchManager.html#onDismiss(android.content.DialogInterface)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.DialogInterface"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnDismiss(Android.Content.DialogInterface arg0)
         {
             IExecuteWithSignature("onDismiss", "(Landroid/content/DialogInterface;)V", arg0);
@@ -472,7 +474,7 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onCancel", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnCancelEventHandler));
+                AddEventHandler("onCancel", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnCancelEventHandler));
 
             }
 
@@ -480,7 +482,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/SearchManager.OnCancelListener.html#onCancel()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCancel"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnCancel { get; set; } = null;
+            public global::System.Action OnOnCancel { get; set; } = null;
 
             void OnCancelEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -569,7 +571,7 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDismiss", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnDismissEventHandler));
+                AddEventHandler("onDismiss", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnDismissEventHandler));
 
             }
 
@@ -577,7 +579,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/SearchManager.OnDismissListener.html#onDismiss()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDismiss"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnDismiss { get; set; } = null;
+            public global::System.Action OnOnDismiss { get; set; } = null;
 
             void OnDismissEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {

@@ -28,7 +28,7 @@ namespace Java.Nio.Charset.Spi
 {
     #region CharsetProvider
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/spi/CharsetProvider.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/charset/spi/CharsetProvider.html"/>
     /// </summary>
     public partial class CharsetProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CharsetProvider>
     {
@@ -36,12 +36,12 @@ namespace Java.Nio.Charset.Spi
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CharsetProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CharsetProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharsetProvider() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CharsetProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CharsetProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharsetProvider(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

@@ -52,18 +52,12 @@ namespace Android.Adservices.Customaudience
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/TrustedBiddingData.html#getTrustedBiddingKeys()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/TrustedBiddingData.html#getTrustedBiddingUri()"/>
         /// </summary>
-        public Java.Util.List<Java.Lang.String> TrustedBiddingKeys
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetTrustedBiddingUri()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getTrustedBiddingKeys", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/TrustedBiddingData.html#getTrustedBiddingUri()"/> 
-        /// </summary>
-        public Android.Net.Uri TrustedBiddingUri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getTrustedBiddingUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getTrustedBiddingUri", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/TrustedBiddingData.html#describeContents()"/>
@@ -72,6 +66,14 @@ namespace Android.Adservices.Customaudience
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/TrustedBiddingData.html#getTrustedBiddingKeys()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetTrustedBiddingKeys()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getTrustedBiddingKeys", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/customaudience/TrustedBiddingData.html#writeToParcel(android.os.Parcel,int)"/>

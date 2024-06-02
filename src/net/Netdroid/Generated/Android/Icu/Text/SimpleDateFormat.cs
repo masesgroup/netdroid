@@ -91,25 +91,12 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#getDateFormatSymbols()"/> <see href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#setDateFormatSymbols(android.icu.text.DateFormatSymbols)"/>
+        /// <see href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#getDateFormatSymbols()"/>
         /// </summary>
-        public Android.Icu.Text.DateFormatSymbols DateFormatSymbols
+        /// <returns><see cref="Android.Icu.Text.DateFormatSymbols"/></returns>
+        public Android.Icu.Text.DateFormatSymbols GetDateFormatSymbols()
         {
-            get { return IExecuteWithSignature<Android.Icu.Text.DateFormatSymbols>("getDateFormatSymbols", "()Landroid/icu/text/DateFormatSymbols;"); } set { IExecuteWithSignature("setDateFormatSymbols", "(Landroid/icu/text/DateFormatSymbols;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#get2DigitYearStart()"/> 
-        /// </summary>
-        public Java.Util.Date Get2DigitYearStart
-        {
-            get { return IExecuteWithSignature<Java.Util.Date>("get2DigitYearStart", "()Ljava/util/Date;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#getTimeZoneFormat()"/> <see href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#setTimeZoneFormat(android.icu.text.TimeZoneFormat)"/>
-        /// </summary>
-        public Android.Icu.Text.TimeZoneFormat TimeZoneFormat
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.TimeZoneFormat>("getTimeZoneFormat", "()Landroid/icu/text/TimeZoneFormat;"); } set { IExecuteWithSignature("setTimeZoneFormat", "(Landroid/icu/text/TimeZoneFormat;)V", value); }
+            return IExecuteWithSignature<Android.Icu.Text.DateFormatSymbols>("getDateFormatSymbols", "()Landroid/icu/text/DateFormatSymbols;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#getNumberFormat(char)"/>
@@ -119,6 +106,14 @@ namespace Android.Icu.Text
         public Android.Icu.Text.NumberFormat GetNumberFormat(char arg0)
         {
             return IExecuteWithSignature<Android.Icu.Text.NumberFormat>("getNumberFormat", "(C)Landroid/icu/text/NumberFormat;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#getTimeZoneFormat()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.TimeZoneFormat"/></returns>
+        public Android.Icu.Text.TimeZoneFormat GetTimeZoneFormat()
+        {
+            return IExecuteWithSignature<Android.Icu.Text.TimeZoneFormat>("getTimeZoneFormat", "()Landroid/icu/text/TimeZoneFormat;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#toLocalizedPattern()"/>
@@ -135,6 +130,14 @@ namespace Android.Icu.Text
         public Java.Lang.String ToPattern()
         {
             return IExecuteWithSignature<Java.Lang.String>("toPattern", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#get2DigitYearStart()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Date"/></returns>
+        public Java.Util.Date Get2DigitYearStart()
+        {
+            return IExecuteWithSignature<Java.Util.Date>("get2DigitYearStart", "()Ljava/util/Date;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#applyLocalizedPattern(java.lang.String)"/>
@@ -161,6 +164,14 @@ namespace Android.Icu.Text
             IExecuteWithSignature("set2DigitYearStart", "(Ljava/util/Date;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#setDateFormatSymbols(android.icu.text.DateFormatSymbols)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Text.DateFormatSymbols"/></param>
+        public void SetDateFormatSymbols(Android.Icu.Text.DateFormatSymbols arg0)
+        {
+            IExecuteWithSignature("setDateFormatSymbols", "(Landroid/icu/text/DateFormatSymbols;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#setNumberFormat(java.lang.String,android.icu.text.NumberFormat)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -168,6 +179,14 @@ namespace Android.Icu.Text
         public void SetNumberFormat(Java.Lang.String arg0, Android.Icu.Text.NumberFormat arg1)
         {
             IExecute("setNumberFormat", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#setTimeZoneFormat(android.icu.text.TimeZoneFormat)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Text.TimeZoneFormat"/></param>
+        public void SetTimeZoneFormat(Android.Icu.Text.TimeZoneFormat arg0)
+        {
+            IExecuteWithSignature("setTimeZoneFormat", "(Landroid/icu/text/TimeZoneFormat;)V", arg0);
         }
 
         #endregion

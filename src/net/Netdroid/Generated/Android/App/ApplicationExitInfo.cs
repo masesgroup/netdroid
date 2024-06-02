@@ -154,109 +154,20 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getDefiningUid()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getUserHandle()"/>
         /// </summary>
-        public int DefiningUid
+        /// <returns><see cref="Android.Os.UserHandle"/></returns>
+        public Android.Os.UserHandle GetUserHandle()
         {
-            get { return IExecuteWithSignature<int>("getDefiningUid", "()I"); }
+            return IExecuteWithSignature<Android.Os.UserHandle>("getUserHandle", "()Landroid/os/UserHandle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getDescription()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getProcessStateSummary()"/>
         /// </summary>
-        public Java.Lang.String Description
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetProcessStateSummary()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getImportance()"/> 
-        /// </summary>
-        public int Importance
-        {
-            get { return IExecuteWithSignature<int>("getImportance", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getPackageUid()"/> 
-        /// </summary>
-        public int PackageUid
-        {
-            get { return IExecuteWithSignature<int>("getPackageUid", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getPid()"/> 
-        /// </summary>
-        public int Pid
-        {
-            get { return IExecuteWithSignature<int>("getPid", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getProcessName()"/> 
-        /// </summary>
-        public Java.Lang.String ProcessName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getProcessName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getProcessStateSummary()"/> 
-        /// </summary>
-        public byte[] ProcessStateSummary
-        {
-            get { return IExecuteWithSignatureArray<byte>("getProcessStateSummary", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getPss()"/> 
-        /// </summary>
-        public long Pss
-        {
-            get { return IExecuteWithSignature<long>("getPss", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getRealUid()"/> 
-        /// </summary>
-        public int RealUid
-        {
-            get { return IExecuteWithSignature<int>("getRealUid", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getReason()"/> 
-        /// </summary>
-        public int Reason
-        {
-            get { return IExecuteWithSignature<int>("getReason", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getRss()"/> 
-        /// </summary>
-        public long Rss
-        {
-            get { return IExecuteWithSignature<long>("getRss", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getStatus()"/> 
-        /// </summary>
-        public int Status
-        {
-            get { return IExecuteWithSignature<int>("getStatus", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getTimestamp()"/> 
-        /// </summary>
-        public long Timestamp
-        {
-            get { return IExecuteWithSignature<long>("getTimestamp", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getTraceInputStream()"/> 
-        /// </summary>
-        public Java.Io.InputStream TraceInputStream
-        {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getTraceInputStream", "()Ljava/io/InputStream;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getUserHandle()"/> 
-        /// </summary>
-        public Android.Os.UserHandle UserHandle
-        {
-            get { return IExecuteWithSignature<Android.Os.UserHandle>("getUserHandle", "()Landroid/os/UserHandle;"); }
+            return IExecuteWithSignatureArray<byte>("getProcessStateSummary", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#describeContents()"/>
@@ -265,6 +176,111 @@ namespace Android.App
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getDefiningUid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDefiningUid()
+        {
+            return IExecuteWithSignature<int>("getDefiningUid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getImportance()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetImportance()
+        {
+            return IExecuteWithSignature<int>("getImportance", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getPackageUid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPackageUid()
+        {
+            return IExecuteWithSignature<int>("getPackageUid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getPid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPid()
+        {
+            return IExecuteWithSignature<int>("getPid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getRealUid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRealUid()
+        {
+            return IExecuteWithSignature<int>("getRealUid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getReason()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetReason()
+        {
+            return IExecuteWithSignature<int>("getReason", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStatus()
+        {
+            return IExecuteWithSignature<int>("getStatus", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getTraceInputStream()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Io.InputStream GetTraceInputStream()
+        {
+            return IExecuteWithSignature<Java.Io.InputStream>("getTraceInputStream", "()Ljava/io/InputStream;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getProcessName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetProcessName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getProcessName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getPss()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetPss()
+        {
+            return IExecuteWithSignature<long>("getPss", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getRss()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetRss()
+        {
+            return IExecuteWithSignature<long>("getRss", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#getTimestamp()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTimestamp()
+        {
+            return IExecuteWithSignature<long>("getTimestamp", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ApplicationExitInfo.html#writeToParcel(android.os.Parcel,int)"/>

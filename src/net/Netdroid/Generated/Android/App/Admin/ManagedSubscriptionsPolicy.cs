@@ -72,19 +72,20 @@ namespace Android.App.Admin
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/ManagedSubscriptionsPolicy.html#getPolicyType()"/> 
-        /// </summary>
-        public int PolicyType
-        {
-            get { return IExecuteWithSignature<int>("getPolicyType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/ManagedSubscriptionsPolicy.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/ManagedSubscriptionsPolicy.html#getPolicyType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPolicyType()
+        {
+            return IExecuteWithSignature<int>("getPolicyType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/ManagedSubscriptionsPolicy.html#writeToParcel(android.os.Parcel,int)"/>

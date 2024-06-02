@@ -204,39 +204,44 @@ namespace Android.Graphics.Text
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.ParagraphConstraints.html#getDefaultTabStop()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.ParagraphConstraints.html#getDefaultTabStop()"/>
             /// </summary>
-            public float DefaultTabStop
+            /// <returns><see cref="float"/></returns>
+            public float GetDefaultTabStop()
             {
-                get { return IExecuteWithSignature<float>("getDefaultTabStop", "()F"); }
+                return IExecuteWithSignature<float>("getDefaultTabStop", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.ParagraphConstraints.html#getFirstWidth()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.ParagraphConstraints.html#getFirstWidth()"/>
             /// </summary>
-            public float FirstWidth
+            /// <returns><see cref="float"/></returns>
+            public float GetFirstWidth()
             {
-                get { return IExecuteWithSignature<float>("getFirstWidth", "()F"); }
+                return IExecuteWithSignature<float>("getFirstWidth", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.ParagraphConstraints.html#getFirstWidthLineCount()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.ParagraphConstraints.html#getWidth()"/>
             /// </summary>
-            public int FirstWidthLineCount
+            /// <returns><see cref="float"/></returns>
+            public float GetWidth()
             {
-                get { return IExecuteWithSignature<int>("getFirstWidthLineCount", "()I"); }
+                return IExecuteWithSignature<float>("getWidth", "()F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.ParagraphConstraints.html#getTabStops()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.ParagraphConstraints.html#getTabStops()"/>
             /// </summary>
-            public float[] TabStops
+            /// <returns><see cref="float"/></returns>
+            public float[] GetTabStops()
             {
-                get { return IExecuteWithSignatureArray<float>("getTabStops", "()[F"); }
+                return IExecuteWithSignatureArray<float>("getTabStops", "()[F");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.ParagraphConstraints.html#getWidth()"/> <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.ParagraphConstraints.html#setWidth(float)"/>
+            /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.ParagraphConstraints.html#getFirstWidthLineCount()"/>
             /// </summary>
-            public float Width
+            /// <returns><see cref="int"/></returns>
+            public int GetFirstWidthLineCount()
             {
-                get { return IExecuteWithSignature<float>("getWidth", "()F"); } set { IExecuteWithSignature("setWidth", "(F)V", value); }
+                return IExecuteWithSignature<int>("getFirstWidthLineCount", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.ParagraphConstraints.html#setIndent(float,int)"/>
@@ -255,6 +260,14 @@ namespace Android.Graphics.Text
             public void SetTabStops(float[] arg0, float arg1)
             {
                 IExecute("setTabStops", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.ParagraphConstraints.html#setWidth(float)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="float"/></param>
+            public void SetWidth(float arg0)
+            {
+                IExecuteWithSignature("setWidth", "(F)V", arg0);
             }
 
             #endregion
@@ -287,13 +300,6 @@ namespace Android.Graphics.Text
             #endregion
 
             #region Instance methods
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.Result.html#getLineCount()"/> 
-            /// </summary>
-            public int LineCount
-            {
-                get { return IExecuteWithSignature<int>("getLineCount", "()I"); }
-            }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.Result.html#hasLineTab(int)"/>
             /// </summary>
@@ -347,6 +353,14 @@ namespace Android.Graphics.Text
             public int GetLineBreakOffset(int arg0)
             {
                 return IExecuteWithSignature<int>("getLineBreakOffset", "(I)I", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.Result.html#getLineCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetLineCount()
+            {
+                return IExecuteWithSignature<int>("getLineCount", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreaker.Result.html#getStartLineHyphenEdit(int)"/>

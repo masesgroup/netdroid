@@ -46,7 +46,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Exchanger.html#exchange(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Exchanger.html#exchange(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -59,7 +59,7 @@ namespace Java.Util.Concurrent
             return IExecute("exchange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Exchanger.html#exchange(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Exchanger.html#exchange(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -104,7 +104,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Exchanger.html#exchange(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Exchanger.html#exchange(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -117,7 +117,7 @@ namespace Java.Util.Concurrent
             return IExecute<V>("exchange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Exchanger.html#exchange(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Exchanger.html#exchange(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <returns><typeparamref name="V"/></returns>

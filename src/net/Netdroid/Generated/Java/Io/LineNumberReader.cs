@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/LineNumberReader.html#%3Cinit%3E(java.io.Reader,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/LineNumberReader.html#%3Cinit%3E(java.io.Reader,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -39,7 +39,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/LineNumberReader.html#%3Cinit%3E(java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/java/io/LineNumberReader.html#%3Cinit%3E(java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         public LineNumberReader(Java.Io.Reader arg0)
@@ -63,11 +63,20 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/LineNumberReader.html#getLineNumber()"/> <see href="https://developer.android.com/reference/java.base/java/io/LineNumberReader.html#setLineNumber(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/LineNumberReader.html#getLineNumber()"/>
         /// </summary>
-        public int LineNumber
+        /// <returns><see cref="int"/></returns>
+        public int GetLineNumber()
         {
-            get { return IExecuteWithSignature<int>("getLineNumber", "()I"); } set { IExecuteWithSignature("setLineNumber", "(I)V", value); }
+            return IExecuteWithSignature<int>("getLineNumber", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/LineNumberReader.html#setLineNumber(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetLineNumber(int arg0)
+        {
+            IExecuteWithSignature("setLineNumber", "(I)V", arg0);
         }
 
         #endregion

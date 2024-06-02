@@ -33,7 +33,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.html#%3Cinit%3E(android.view.View)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public ZoomButtonsController(Android.View.View arg0)
             : base(arg0)
         {
@@ -55,26 +55,28 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.html#getContainer()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.html#getZoomControls()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.View.ViewGroup Container
+        /// <returns><see cref="Android.View.View"/></returns>
+        [global::System.Obsolete()]
+        public Android.View.View GetZoomControls()
         {
-            get { return IExecuteWithSignature<Android.View.ViewGroup>("getContainer", "()Landroid/view/ViewGroup;"); }
+            return IExecuteWithSignature<Android.View.View>("getZoomControls", "()Landroid/view/View;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.html#getZoomControls()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.html#getContainer()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.View.View ZoomControls
+        /// <returns><see cref="Android.View.ViewGroup"/></returns>
+        [global::System.Obsolete()]
+        public Android.View.ViewGroup GetContainer()
         {
-            get { return IExecuteWithSignature<Android.View.View>("getZoomControls", "()Landroid/view/View;"); }
+            return IExecuteWithSignature<Android.View.ViewGroup>("getContainer", "()Landroid/view/ViewGroup;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.html#isAutoDismissed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsAutoDismissed()
         {
             return IExecuteWithSignature<bool>("isAutoDismissed", "()Z");
@@ -83,7 +85,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.html#isVisible()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsVisible()
         {
             return IExecuteWithSignature<bool>("isVisible", "()Z");
@@ -102,7 +104,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.html#setAutoDismissed(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAutoDismissed(bool arg0)
         {
             IExecuteWithSignature("setAutoDismissed", "(Z)V", arg0);
@@ -111,7 +113,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.html#setFocusable(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetFocusable(bool arg0)
         {
             IExecuteWithSignature("setFocusable", "(Z)V", arg0);
@@ -120,7 +122,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.html#setOnZoomListener(android.widget.ZoomButtonsController.OnZoomListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Widget.ZoomButtonsController.OnZoomListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOnZoomListener(Android.Widget.ZoomButtonsController.OnZoomListener arg0)
         {
             IExecuteWithSignature("setOnZoomListener", "(Landroid/widget/ZoomButtonsController$OnZoomListener;)V", arg0);
@@ -129,7 +131,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.html#setVisible(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetVisible(bool arg0)
         {
             IExecuteWithSignature("setVisible", "(Z)V", arg0);
@@ -138,7 +140,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.html#setZoomInEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetZoomInEnabled(bool arg0)
         {
             IExecuteWithSignature("setZoomInEnabled", "(Z)V", arg0);
@@ -147,7 +149,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.html#setZoomOutEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetZoomOutEnabled(bool arg0)
         {
             IExecuteWithSignature("setZoomOutEnabled", "(Z)V", arg0);
@@ -156,7 +158,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.html#setZoomSpeed(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetZoomSpeed(long arg0)
         {
             IExecuteWithSignature("setZoomSpeed", "(J)V", arg0);
@@ -190,8 +192,8 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onVisibilityChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnVisibilityChangedEventHandler));
-                AddEventHandler("onZoom", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnZoomEventHandler));
+                AddEventHandler("onVisibilityChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnVisibilityChangedEventHandler));
+                AddEventHandler("onZoom", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnZoomEventHandler));
 
             }
 
@@ -199,7 +201,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.OnZoomListener.html#onVisibilityChanged(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnVisibilityChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnVisibilityChanged { get; set; } = null;
+            public global::System.Action<bool> OnOnVisibilityChanged { get; set; } = null;
 
             void OnVisibilityChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
             {
@@ -211,7 +213,7 @@ namespace Android.Widget
             /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.OnZoomListener.html#onVisibilityChanged(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnVisibilityChanged(bool arg0)
             {
                 
@@ -221,7 +223,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.OnZoomListener.html#onZoom(boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnZoom"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnZoom { get; set; } = null;
+            public global::System.Action<bool> OnOnZoom { get; set; } = null;
 
             void OnZoomEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
             {
@@ -233,7 +235,7 @@ namespace Android.Widget
             /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.OnZoomListener.html#onZoom(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnZoom(bool arg0)
             {
                 
@@ -273,7 +275,7 @@ namespace Android.Widget
             /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.OnZoomListener.html#onVisibilityChanged(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnVisibilityChanged(bool arg0)
             {
                 IExecuteWithSignature("onVisibilityChanged", "(Z)V", arg0);
@@ -282,7 +284,7 @@ namespace Android.Widget
             /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.OnZoomListener.html#onZoom(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnZoom(bool arg0)
             {
                 IExecuteWithSignature("onZoom", "(Z)V", arg0);

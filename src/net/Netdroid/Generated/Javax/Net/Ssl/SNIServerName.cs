@@ -46,18 +46,20 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SNIServerName.html#getEncoded()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SNIServerName.html#getEncoded()"/>
         /// </summary>
-        public byte[] Encoded
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetEncoded()
         {
-            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getEncoded", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SNIServerName.html#getType()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SNIServerName.html#getType()"/>
         /// </summary>
-        public int Type
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
         {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            return IExecuteWithSignature<int>("getType", "()I");
         }
 
         #endregion

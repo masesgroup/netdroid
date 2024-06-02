@@ -60,75 +60,84 @@ namespace Android.App.Usage
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getFirstTimeStamp()"/> 
-        /// </summary>
-        public long FirstTimeStamp
-        {
-            get { return IExecuteWithSignature<long>("getFirstTimeStamp", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getLastTimeForegroundServiceUsed()"/> 
-        /// </summary>
-        public long LastTimeForegroundServiceUsed
-        {
-            get { return IExecuteWithSignature<long>("getLastTimeForegroundServiceUsed", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getLastTimeStamp()"/> 
-        /// </summary>
-        public long LastTimeStamp
-        {
-            get { return IExecuteWithSignature<long>("getLastTimeStamp", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getLastTimeUsed()"/> 
-        /// </summary>
-        public long LastTimeUsed
-        {
-            get { return IExecuteWithSignature<long>("getLastTimeUsed", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getLastTimeVisible()"/> 
-        /// </summary>
-        public long LastTimeVisible
-        {
-            get { return IExecuteWithSignature<long>("getLastTimeVisible", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getTotalTimeForegroundServiceUsed()"/> 
-        /// </summary>
-        public long TotalTimeForegroundServiceUsed
-        {
-            get { return IExecuteWithSignature<long>("getTotalTimeForegroundServiceUsed", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getTotalTimeInForeground()"/> 
-        /// </summary>
-        public long TotalTimeInForeground
-        {
-            get { return IExecuteWithSignature<long>("getTotalTimeInForeground", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getTotalTimeVisible()"/> 
-        /// </summary>
-        public long TotalTimeVisible
-        {
-            get { return IExecuteWithSignature<long>("getTotalTimeVisible", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getFirstTimeStamp()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetFirstTimeStamp()
+        {
+            return IExecuteWithSignature<long>("getFirstTimeStamp", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getLastTimeForegroundServiceUsed()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLastTimeForegroundServiceUsed()
+        {
+            return IExecuteWithSignature<long>("getLastTimeForegroundServiceUsed", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getLastTimeStamp()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLastTimeStamp()
+        {
+            return IExecuteWithSignature<long>("getLastTimeStamp", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getLastTimeUsed()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLastTimeUsed()
+        {
+            return IExecuteWithSignature<long>("getLastTimeUsed", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getLastTimeVisible()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLastTimeVisible()
+        {
+            return IExecuteWithSignature<long>("getLastTimeVisible", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getTotalTimeForegroundServiceUsed()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTotalTimeForegroundServiceUsed()
+        {
+            return IExecuteWithSignature<long>("getTotalTimeForegroundServiceUsed", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getTotalTimeInForeground()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTotalTimeInForeground()
+        {
+            return IExecuteWithSignature<long>("getTotalTimeInForeground", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#getTotalTimeVisible()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTotalTimeVisible()
+        {
+            return IExecuteWithSignature<long>("getTotalTimeVisible", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/UsageStats.html#add(android.app.usage.UsageStats)"/>

@@ -151,13 +151,6 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/PluralRules.html#getKeywords()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> Keywords
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getKeywords", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/PluralRules.html#getUniqueKeywordValue(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -210,6 +203,14 @@ namespace Android.Icu.Text
         public Java.Util.Collection<Java.Lang.Double> GetSamples(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Util.Collection<Java.Lang.Double>>("getSamples", "(Ljava/lang/String;)Ljava/util/Collection;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/PluralRules.html#getKeywords()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetKeywords()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getKeywords", "()Ljava/util/Set;");
         }
 
         #endregion

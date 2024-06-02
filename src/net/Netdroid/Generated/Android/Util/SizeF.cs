@@ -71,18 +71,20 @@ namespace Android.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/SizeF.html#getHeight()"/> 
+        /// <see href="https://developer.android.com/reference/android/util/SizeF.html#getHeight()"/>
         /// </summary>
-        public float Height
+        /// <returns><see cref="float"/></returns>
+        public float GetHeight()
         {
-            get { return IExecuteWithSignature<float>("getHeight", "()F"); }
+            return IExecuteWithSignature<float>("getHeight", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/SizeF.html#getWidth()"/> 
+        /// <see href="https://developer.android.com/reference/android/util/SizeF.html#getWidth()"/>
         /// </summary>
-        public float Width
+        /// <returns><see cref="float"/></returns>
+        public float GetWidth()
         {
-            get { return IExecuteWithSignature<float>("getWidth", "()F"); }
+            return IExecuteWithSignature<float>("getWidth", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/SizeF.html#describeContents()"/>

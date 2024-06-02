@@ -30,7 +30,7 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.Runnable,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#%3Cinit%3E(java.lang.Runnable,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -39,7 +39,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#%3Cinit%3E(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         public Thread(Java.Lang.Runnable arg0)
@@ -47,7 +47,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public Thread(Java.Lang.String arg0)
@@ -55,7 +55,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String,long,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String,long,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -67,7 +67,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String,long)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -78,7 +78,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.Runnable,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -88,7 +88,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -97,7 +97,7 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#%3Cinit%3E(java.lang.ThreadGroup,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ThreadGroup"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -114,19 +114,19 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#MAX_PRIORITY"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#MAX_PRIORITY"/>
         /// </summary>
         public static int MAX_PRIORITY { get { if (!_MAX_PRIORITYReady) { _MAX_PRIORITYContent = SGetField<int>(LocalBridgeClazz, "MAX_PRIORITY"); _MAX_PRIORITYReady = true; } return _MAX_PRIORITYContent; } }
         private static int _MAX_PRIORITYContent = default;
         private static bool _MAX_PRIORITYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#MIN_PRIORITY"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#MIN_PRIORITY"/>
         /// </summary>
         public static int MIN_PRIORITY { get { if (!_MIN_PRIORITYReady) { _MIN_PRIORITYContent = SGetField<int>(LocalBridgeClazz, "MIN_PRIORITY"); _MIN_PRIORITYReady = true; } return _MIN_PRIORITYContent; } }
         private static int _MIN_PRIORITYContent = default;
         private static bool _MIN_PRIORITYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#NORM_PRIORITY"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#NORM_PRIORITY"/>
         /// </summary>
         public static int NORM_PRIORITY { get { if (!_NORM_PRIORITYReady) { _NORM_PRIORITYContent = SGetField<int>(LocalBridgeClazz, "NORM_PRIORITY"); _NORM_PRIORITYReady = true; } return _NORM_PRIORITYContent; } }
         private static int _NORM_PRIORITYContent = default;
@@ -136,14 +136,7 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#getAllStackTraces()"/> 
-        /// </summary>
-        public static Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]> AllStackTraces
-        {
-            get { return SExecuteWithSignature<Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]>>(LocalBridgeClazz, "getAllStackTraces", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#interrupted()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#interrupted()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public static bool Interrupted()
@@ -151,7 +144,7 @@ namespace Java.Lang
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "interrupted", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#activeCount()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#activeCount()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public static int ActiveCount()
@@ -159,7 +152,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "activeCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#enumerate(java.lang.Thread[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#enumerate(java.lang.Thread[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
         /// <returns><see cref="int"/></returns>
@@ -168,7 +161,15 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "enumerate", "([Ljava/lang/Thread;)I", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#holdsLock(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#getAllStackTraces()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public static Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]> GetAllStackTraces()
+        {
+            return SExecuteWithSignature<Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]>>(LocalBridgeClazz, "getAllStackTraces", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#holdsLock(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -177,7 +178,7 @@ namespace Java.Lang
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "holdsLock", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#currentThread()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#currentThread()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Thread"/></returns>
         public static Java.Lang.Thread CurrentThread()
@@ -185,37 +186,37 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.Thread>(LocalBridgeClazz, "currentThread", "()Ljava/lang/Thread;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#sleep(long)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#sleep(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public static void Sleep(long arg0)
         {
-            SExecuteWithSignature(LocalBridgeClazz, "sleep", "(J)V", arg0);
+            SExecute(LocalBridgeClazz, "sleep", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#yield()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#yield()"/>
         /// </summary>
         public static void Yield()
         {
-            SExecuteWithSignature(LocalBridgeClazz, "yield", "()V");
+            SExecute(LocalBridgeClazz, "yield");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#dumpStack()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#dumpStack()"/>
         /// </summary>
         public static void DumpStack()
         {
             SExecuteWithSignature(LocalBridgeClazz, "dumpStack", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#onSpinWait()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#onSpinWait()"/>
         /// </summary>
         public static void OnSpinWait()
         {
             SExecuteWithSignature(LocalBridgeClazz, "onSpinWait", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#sleep(long,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#sleep(long,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -229,56 +230,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#getContextClassLoader()"/> <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#setContextClassLoader(java.lang.ClassLoader)"/>
-        /// </summary>
-        public Java.Lang.ClassLoader ContextClassLoader
-        {
-            get { return IExecuteWithSignature<Java.Lang.ClassLoader>("getContextClassLoader", "()Ljava/lang/ClassLoader;"); } set { IExecuteWithSignature("setContextClassLoader", "(Ljava/lang/ClassLoader;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#getState()"/> 
-        /// </summary>
-        public Java.Lang.Thread.State GetState
-        {
-            get { return IExecuteWithSignature<Java.Lang.Thread.State>("getState", "()Ljava/lang/Thread$State;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#getId()"/> 
-        /// </summary>
-        public long Id
-        {
-            get { return IExecuteWithSignature<long>("getId", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#getName()"/> <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#setName(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#getPriority()"/> <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#setPriority(int)"/>
-        /// </summary>
-        public int Priority
-        {
-            get { return IExecuteWithSignature<int>("getPriority", "()I"); } set { IExecuteWithSignature("setPriority", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#getStackTrace()"/> 
-        /// </summary>
-        public Java.Lang.StackTraceElement[] StackTrace
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.StackTraceElement>("getStackTrace", "()[Ljava/lang/StackTraceElement;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#getThreadGroup()"/> 
-        /// </summary>
-        public Java.Lang.ThreadGroup ThreadGroup
-        {
-            get { return IExecuteWithSignature<Java.Lang.ThreadGroup>("getThreadGroup", "()Ljava/lang/ThreadGroup;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#isInterrupted()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#isInterrupted()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsInterrupted()
@@ -286,15 +238,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isInterrupted", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#isAlive()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public bool IsAlive()
-        {
-            return IExecuteWithSignature<bool>("isAlive", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#isDaemon()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#isDaemon()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDaemon()
@@ -302,7 +246,39 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isDaemon", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#join(long,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#getPriority()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriority()
+        {
+            return IExecuteWithSignature<int>("getPriority", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#getThreadGroup()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.ThreadGroup"/></returns>
+        public Java.Lang.ThreadGroup GetThreadGroup()
+        {
+            return IExecuteWithSignature<Java.Lang.ThreadGroup>("getThreadGroup", "()Ljava/lang/ThreadGroup;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#isAlive()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAlive()
+        {
+            return IExecute<bool>("isAlive");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#join(long,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -312,24 +288,31 @@ namespace Java.Lang
             IExecute("join", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#join(long)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#join(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Join(long arg0)
         {
-            IExecuteWithSignature("join", "(J)V", arg0);
+            IExecute("join", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#checkAccess()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#setName(java.lang.String)"/>
         /// </summary>
-        [System.Obsolete()]
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setName", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#checkAccess()"/>
+        /// </summary>
         public void CheckAccess()
         {
             IExecuteWithSignature("checkAccess", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#join()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#join()"/>
         /// </summary>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Join()
@@ -337,15 +320,15 @@ namespace Java.Lang
             IExecuteWithSignature("join", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#resume()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#resume()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Resume()
         {
             IExecuteWithSignature("resume", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#setDaemon(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#setDaemon(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetDaemon(bool arg0)
@@ -353,50 +336,98 @@ namespace Java.Lang
             IExecuteWithSignature("setDaemon", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#stop()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#setPriority(int)"/>
         /// </summary>
-        [System.Obsolete()]
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetPriority(int arg0)
+        {
+            IExecuteWithSignature("setPriority", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#stop()"/>
+        /// </summary>
+        [global::System.Obsolete()]
         public void Stop()
         {
             IExecuteWithSignature("stop", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#suspend()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#suspend()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Suspend()
         {
             IExecuteWithSignature("suspend", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#countStackFrames()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#getContextClassLoader()"/>
         /// </summary>
-        /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
-        public int CountStackFrames()
+        /// <returns><see cref="Java.Lang.ClassLoader"/></returns>
+        public Java.Lang.ClassLoader GetContextClassLoader()
         {
-            return IExecuteWithSignature<int>("countStackFrames", "()I");
+            return IExecuteWithSignature<Java.Lang.ClassLoader>("getContextClassLoader", "()Ljava/lang/ClassLoader;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#start()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#getStackTrace()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.StackTraceElement"/></returns>
+        public Java.Lang.StackTraceElement[] GetStackTrace()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.StackTraceElement>("getStackTrace", "()[Ljava/lang/StackTraceElement;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Thread.State"/></returns>
+        public Java.Lang.Thread.State GetState()
+        {
+            return IExecuteWithSignature<Java.Lang.Thread.State>("getState", "()Ljava/lang/Thread$State;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetId()
+        {
+            return IExecuteWithSignature<long>("getId", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#countStackFrames()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int CountStackFrames()
+        {
+            return IExecute<int>("countStackFrames");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#start()"/>
         /// </summary>
         public void Start()
         {
-            IExecuteWithSignature("start", "()V");
+            IExecute("start");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#interrupt()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#interrupt()"/>
         /// </summary>
         public void Interrupt()
         {
             IExecuteWithSignature("interrupt", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html#run()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#run()"/>
         /// </summary>
         public void Run()
         {
             IExecuteWithSignature("run", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.html#setContextClassLoader(java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        public void SetContextClassLoader(Java.Lang.ClassLoader arg0)
+        {
+            IExecuteWithSignature("setContextClassLoader", "(Ljava/lang/ClassLoader;)V", arg0);
         }
 
         #endregion
@@ -415,37 +446,37 @@ namespace Java.Lang
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.State.html#BLOCKED"/>
+            /// <see href="https://developer.android.com/reference/java/lang/Thread.State.html#BLOCKED"/>
             /// </summary>
             public static Java.Lang.Thread.State BLOCKED { get { if (!_BLOCKEDReady) { _BLOCKEDContent = SGetField<Java.Lang.Thread.State>(LocalBridgeClazz, "BLOCKED"); _BLOCKEDReady = true; } return _BLOCKEDContent; } }
             private static Java.Lang.Thread.State _BLOCKEDContent = default;
             private static bool _BLOCKEDReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.State.html#NEW"/>
+            /// <see href="https://developer.android.com/reference/java/lang/Thread.State.html#NEW"/>
             /// </summary>
             public static Java.Lang.Thread.State NEW { get { if (!_NEWReady) { _NEWContent = SGetField<Java.Lang.Thread.State>(LocalBridgeClazz, "NEW"); _NEWReady = true; } return _NEWContent; } }
             private static Java.Lang.Thread.State _NEWContent = default;
             private static bool _NEWReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.State.html#RUNNABLE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/Thread.State.html#RUNNABLE"/>
             /// </summary>
             public static Java.Lang.Thread.State RUNNABLE { get { if (!_RUNNABLEReady) { _RUNNABLEContent = SGetField<Java.Lang.Thread.State>(LocalBridgeClazz, "RUNNABLE"); _RUNNABLEReady = true; } return _RUNNABLEContent; } }
             private static Java.Lang.Thread.State _RUNNABLEContent = default;
             private static bool _RUNNABLEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.State.html#TERMINATED"/>
+            /// <see href="https://developer.android.com/reference/java/lang/Thread.State.html#TERMINATED"/>
             /// </summary>
             public static Java.Lang.Thread.State TERMINATED { get { if (!_TERMINATEDReady) { _TERMINATEDContent = SGetField<Java.Lang.Thread.State>(LocalBridgeClazz, "TERMINATED"); _TERMINATEDReady = true; } return _TERMINATEDContent; } }
             private static Java.Lang.Thread.State _TERMINATEDContent = default;
             private static bool _TERMINATEDReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.State.html#TIMED_WAITING"/>
+            /// <see href="https://developer.android.com/reference/java/lang/Thread.State.html#TIMED_WAITING"/>
             /// </summary>
             public static Java.Lang.Thread.State TIMED_WAITING { get { if (!_TIMED_WAITINGReady) { _TIMED_WAITINGContent = SGetField<Java.Lang.Thread.State>(LocalBridgeClazz, "TIMED_WAITING"); _TIMED_WAITINGReady = true; } return _TIMED_WAITINGContent; } }
             private static Java.Lang.Thread.State _TIMED_WAITINGContent = default;
             private static bool _TIMED_WAITINGReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.State.html#WAITING"/>
+            /// <see href="https://developer.android.com/reference/java/lang/Thread.State.html#WAITING"/>
             /// </summary>
             public static Java.Lang.Thread.State WAITING { get { if (!_WAITINGReady) { _WAITINGContent = SGetField<Java.Lang.Thread.State>(LocalBridgeClazz, "WAITING"); _WAITINGReady = true; } return _WAITINGContent; } }
             private static Java.Lang.Thread.State _WAITINGContent = default;
@@ -455,7 +486,7 @@ namespace Java.Lang
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.State.html#valueOf(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/Thread.State.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Lang.Thread.State"/></returns>
@@ -464,7 +495,7 @@ namespace Java.Lang
                 return SExecuteWithSignature<Java.Lang.Thread.State>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/Thread$State;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.State.html#values()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/Thread.State.html#values()"/>
             /// </summary>
             /// <returns><see cref="Java.Lang.Thread.State"/></returns>
             public static Java.Lang.Thread.State[] Values()

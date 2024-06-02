@@ -65,83 +65,6 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getCurrentSpan()"/> 
-        /// </summary>
-        public float CurrentSpan
-        {
-            get { return IExecuteWithSignature<float>("getCurrentSpan", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getCurrentSpanX()"/> 
-        /// </summary>
-        public float CurrentSpanX
-        {
-            get { return IExecuteWithSignature<float>("getCurrentSpanX", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getCurrentSpanY()"/> 
-        /// </summary>
-        public float CurrentSpanY
-        {
-            get { return IExecuteWithSignature<float>("getCurrentSpanY", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getEventTime()"/> 
-        /// </summary>
-        public long EventTime
-        {
-            get { return IExecuteWithSignature<long>("getEventTime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getFocusX()"/> 
-        /// </summary>
-        public float FocusX
-        {
-            get { return IExecuteWithSignature<float>("getFocusX", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getFocusY()"/> 
-        /// </summary>
-        public float FocusY
-        {
-            get { return IExecuteWithSignature<float>("getFocusY", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getPreviousSpan()"/> 
-        /// </summary>
-        public float PreviousSpan
-        {
-            get { return IExecuteWithSignature<float>("getPreviousSpan", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getPreviousSpanX()"/> 
-        /// </summary>
-        public float PreviousSpanX
-        {
-            get { return IExecuteWithSignature<float>("getPreviousSpanX", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getPreviousSpanY()"/> 
-        /// </summary>
-        public float PreviousSpanY
-        {
-            get { return IExecuteWithSignature<float>("getPreviousSpanY", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getScaleFactor()"/> 
-        /// </summary>
-        public float ScaleFactor
-        {
-            get { return IExecuteWithSignature<float>("getScaleFactor", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getTimeDelta()"/> 
-        /// </summary>
-        public long TimeDelta
-        {
-            get { return IExecuteWithSignature<long>("getTimeDelta", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#isInProgress()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -173,6 +96,94 @@ namespace Android.View
         public bool OnTouchEvent(Android.View.MotionEvent arg0)
         {
             return IExecuteWithSignature<bool>("onTouchEvent", "(Landroid/view/MotionEvent;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getCurrentSpan()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetCurrentSpan()
+        {
+            return IExecuteWithSignature<float>("getCurrentSpan", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getCurrentSpanX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetCurrentSpanX()
+        {
+            return IExecuteWithSignature<float>("getCurrentSpanX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getCurrentSpanY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetCurrentSpanY()
+        {
+            return IExecuteWithSignature<float>("getCurrentSpanY", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getFocusX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetFocusX()
+        {
+            return IExecuteWithSignature<float>("getFocusX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getFocusY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetFocusY()
+        {
+            return IExecuteWithSignature<float>("getFocusY", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getPreviousSpan()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetPreviousSpan()
+        {
+            return IExecuteWithSignature<float>("getPreviousSpan", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getPreviousSpanX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetPreviousSpanX()
+        {
+            return IExecuteWithSignature<float>("getPreviousSpanX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getPreviousSpanY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetPreviousSpanY()
+        {
+            return IExecuteWithSignature<float>("getPreviousSpanY", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getScaleFactor()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetScaleFactor()
+        {
+            return IExecuteWithSignature<float>("getScaleFactor", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getEventTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetEventTime()
+        {
+            return IExecuteWithSignature<long>("getEventTime", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#getTimeDelta()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTimeDelta()
+        {
+            return IExecuteWithSignature<long>("getTimeDelta", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.html#setQuickScaleEnabled(boolean)"/>
@@ -219,9 +230,9 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onScale", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>>>(OnScaleEventHandler));
-                AddEventHandler("onScaleBegin", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>>>(OnScaleBeginEventHandler));
-                AddEventHandler("onScaleEnd", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>>>(OnScaleEndEventHandler));
+                AddEventHandler("onScale", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>>>(OnScaleEventHandler));
+                AddEventHandler("onScaleBegin", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>>>(OnScaleBeginEventHandler));
+                AddEventHandler("onScaleEnd", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>>>(OnScaleEndEventHandler));
 
             }
 
@@ -229,7 +240,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.OnScaleGestureListener.html#onScale(android.view.ScaleGestureDetector)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScale"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.ScaleGestureDetector, bool> OnOnScale { get; set; } = null;
+            public global::System.Func<Android.View.ScaleGestureDetector, bool> OnOnScale { get; set; } = null;
 
             void OnScaleEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>> data)
             {
@@ -252,7 +263,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.OnScaleGestureListener.html#onScaleBegin(android.view.ScaleGestureDetector)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScaleBegin"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.ScaleGestureDetector, bool> OnOnScaleBegin { get; set; } = null;
+            public global::System.Func<Android.View.ScaleGestureDetector, bool> OnOnScaleBegin { get; set; } = null;
 
             void OnScaleBeginEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>> data)
             {
@@ -275,7 +286,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.OnScaleGestureListener.html#onScaleEnd(android.view.ScaleGestureDetector)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScaleEnd"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.ScaleGestureDetector> OnOnScaleEnd { get; set; } = null;
+            public global::System.Action<Android.View.ScaleGestureDetector> OnOnScaleEnd { get; set; } = null;
 
             void OnScaleEndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>> data)
             {
@@ -384,9 +395,9 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onScale", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>>>(OnScaleEventHandler));
-                AddEventHandler("onScaleBegin", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>>>(OnScaleBeginEventHandler));
-                AddEventHandler("onScaleEnd", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>>>(OnScaleEndEventHandler));
+                AddEventHandler("onScale", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>>>(OnScaleEventHandler));
+                AddEventHandler("onScaleBegin", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>>>(OnScaleBeginEventHandler));
+                AddEventHandler("onScaleEnd", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>>>(OnScaleEndEventHandler));
 
             }
 
@@ -394,7 +405,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.SimpleOnScaleGestureListener.html#onScale(android.view.ScaleGestureDetector)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScale"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.ScaleGestureDetector, bool> OnOnScale { get; set; } = null;
+            public global::System.Func<Android.View.ScaleGestureDetector, bool> OnOnScale { get; set; } = null;
 
             void OnScaleEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>> data)
             {
@@ -417,7 +428,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.SimpleOnScaleGestureListener.html#onScaleBegin(android.view.ScaleGestureDetector)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScaleBegin"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.ScaleGestureDetector, bool> OnOnScaleBegin { get; set; } = null;
+            public global::System.Func<Android.View.ScaleGestureDetector, bool> OnOnScaleBegin { get; set; } = null;
 
             void OnScaleBeginEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>> data)
             {
@@ -440,7 +451,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ScaleGestureDetector.SimpleOnScaleGestureListener.html#onScaleEnd(android.view.ScaleGestureDetector)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScaleEnd"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.ScaleGestureDetector> OnOnScaleEnd { get; set; } = null;
+            public global::System.Action<Android.View.ScaleGestureDetector> OnOnScaleEnd { get; set; } = null;
 
             void OnScaleEndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.ScaleGestureDetector>> data)
             {

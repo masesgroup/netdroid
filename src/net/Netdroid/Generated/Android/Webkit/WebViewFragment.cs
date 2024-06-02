@@ -46,12 +46,13 @@ namespace Android.Webkit
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebViewFragment.html#getWebView()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebViewFragment.html#getWebView()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Webkit.WebView WebView
+        /// <returns><see cref="Android.Webkit.WebView"/></returns>
+        [global::System.Obsolete()]
+        public Android.Webkit.WebView GetWebView()
         {
-            get { return IExecuteWithSignature<Android.Webkit.WebView>("getWebView", "()Landroid/webkit/WebView;"); }
+            return IExecuteWithSignature<Android.Webkit.WebView>("getWebView", "()Landroid/webkit/WebView;");
         }
 
         #endregion

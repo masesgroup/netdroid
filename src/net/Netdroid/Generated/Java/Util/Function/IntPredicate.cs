@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IIntPredicate
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.IntPredicate implementing <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.IntPredicate implementing <see href="https://developer.android.com/reference/java/util/function/IntPredicate.html"/>
     /// </summary>
     public partial interface IIntPredicate
     {
@@ -68,18 +68,18 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(TestEventHandler));
-            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntPredicate>>>(AndEventHandler));
-            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
-            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntPredicate>>>(OrEventHandler));
+            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(TestEventHandler));
+            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntPredicate>>>(AndEventHandler));
+            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
+            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntPredicate>>>(OrEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#test(int)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/IntPredicate.html#test(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTest"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, bool> OnTest { get; set; } = null;
+        public global::System.Func<int, bool> OnTest { get; set; } = null;
 
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -89,7 +89,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#test(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntPredicate.html#test(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -98,7 +98,7 @@ namespace Java.Util.Function
             return default;
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
@@ -109,10 +109,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAnd"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.IntPredicate, Java.Util.Function.IntPredicate> OnAnd { get; set; } = null;
+        public global::System.Func<Java.Util.Function.IntPredicate, Java.Util.Function.IntPredicate> OnAnd { get; set; } = null;
 
         void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.IntPredicate>> data)
         {
@@ -122,7 +122,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
@@ -132,7 +132,7 @@ namespace Java.Util.Function
             return AndDefault(arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntPredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
@@ -142,10 +142,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#negate()"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/IntPredicate.html#negate()"/>
         /// </summary>
         /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.IntPredicate> OnNegate { get; set; } = null;
+        public global::System.Func<Java.Util.Function.IntPredicate> OnNegate { get; set; } = null;
 
         void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -155,7 +155,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntPredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
@@ -164,7 +164,7 @@ namespace Java.Util.Function
             return NegateDefault();
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
@@ -175,10 +175,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOr"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.IntPredicate, Java.Util.Function.IntPredicate> OnOr { get; set; } = null;
+        public global::System.Func<Java.Util.Function.IntPredicate, Java.Util.Function.IntPredicate> OnOr { get; set; } = null;
 
         void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.IntPredicate>> data)
         {
@@ -188,7 +188,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
@@ -229,7 +229,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#test(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntPredicate.html#test(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -238,7 +238,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<bool>("test", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
@@ -247,7 +247,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.IntPredicateDirect, Java.Util.Function.IntPredicate>("and", "(Ljava/util/function/IntPredicate;)Ljava/util/function/IntPredicate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntPredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
         public override Java.Util.Function.IntPredicate Negate()
@@ -255,7 +255,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.IntPredicateDirect, Java.Util.Function.IntPredicate>("negate", "()Ljava/util/function/IntPredicate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>

@@ -27,7 +27,7 @@ namespace Javax.Sql
 {
     #region IConnectionEventListener
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.javax.sql.ConnectionEventListener implementing <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionEventListener.html"/>
+    /// .NET interface for org.mases.netdroid.generated.javax.sql.ConnectionEventListener implementing <see href="https://developer.android.com/reference/javax/sql/ConnectionEventListener.html"/>
     /// </summary>
     public partial interface IConnectionEventListener
     {
@@ -68,16 +68,16 @@ namespace Javax.Sql
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("connectionClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionClosedEventHandler));
-            AddEventHandler("connectionErrorOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionErrorOccurredEventHandler));
+            AddEventHandler("connectionClosed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionClosedEventHandler));
+            AddEventHandler("connectionErrorOccurred", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionErrorOccurredEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionEventListener.html#connectionClosed(javax.sql.ConnectionEvent)"/>
+        /// Handler for <see href="https://developer.android.com/reference/javax/sql/ConnectionEventListener.html#connectionClosed(javax.sql.ConnectionEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnConnectionClosed"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Sql.ConnectionEvent> OnConnectionClosed { get; set; } = null;
+        public global::System.Action<Javax.Sql.ConnectionEvent> OnConnectionClosed { get; set; } = null;
 
         void ConnectionClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>> data)
         {
@@ -86,7 +86,7 @@ namespace Javax.Sql
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionEventListener.html#connectionClosed(javax.sql.ConnectionEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/ConnectionEventListener.html#connectionClosed(javax.sql.ConnectionEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.ConnectionEvent"/></param>
         public virtual void ConnectionClosed(Javax.Sql.ConnectionEvent arg0)
@@ -95,10 +95,10 @@ namespace Javax.Sql
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionEventListener.html#connectionErrorOccurred(javax.sql.ConnectionEvent)"/>
+        /// Handler for <see href="https://developer.android.com/reference/javax/sql/ConnectionEventListener.html#connectionErrorOccurred(javax.sql.ConnectionEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnConnectionErrorOccurred"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Javax.Sql.ConnectionEvent> OnConnectionErrorOccurred { get; set; } = null;
+        public global::System.Action<Javax.Sql.ConnectionEvent> OnConnectionErrorOccurred { get; set; } = null;
 
         void ConnectionErrorOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>> data)
         {
@@ -107,7 +107,7 @@ namespace Javax.Sql
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionEventListener.html#connectionErrorOccurred(javax.sql.ConnectionEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/ConnectionEventListener.html#connectionErrorOccurred(javax.sql.ConnectionEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.ConnectionEvent"/></param>
         public virtual void ConnectionErrorOccurred(Javax.Sql.ConnectionEvent arg0)
@@ -146,7 +146,7 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionEventListener.html#connectionClosed(javax.sql.ConnectionEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/ConnectionEventListener.html#connectionClosed(javax.sql.ConnectionEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.ConnectionEvent"/></param>
         public override void ConnectionClosed(Javax.Sql.ConnectionEvent arg0)
@@ -154,7 +154,7 @@ namespace Javax.Sql
             IExecuteWithSignature("connectionClosed", "(Ljavax/sql/ConnectionEvent;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionEventListener.html#connectionErrorOccurred(javax.sql.ConnectionEvent)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/ConnectionEventListener.html#connectionErrorOccurred(javax.sql.ConnectionEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.ConnectionEvent"/></param>
         public override void ConnectionErrorOccurred(Javax.Sql.ConnectionEvent arg0)

@@ -190,7 +190,7 @@ namespace Android
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#BIND_CARRIER_MESSAGING_SERVICE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String BIND_CARRIER_MESSAGING_SERVICE { get { if (!_BIND_CARRIER_MESSAGING_SERVICEReady) { _BIND_CARRIER_MESSAGING_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BIND_CARRIER_MESSAGING_SERVICE"); _BIND_CARRIER_MESSAGING_SERVICEReady = true; } return _BIND_CARRIER_MESSAGING_SERVICEContent; } }
             private static Java.Lang.String _BIND_CARRIER_MESSAGING_SERVICEContent = default;
             private static bool _BIND_CARRIER_MESSAGING_SERVICEReady = false; // this is used because in case of generics 
@@ -203,7 +203,7 @@ namespace Android
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#BIND_CHOOSER_TARGET_SERVICE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String BIND_CHOOSER_TARGET_SERVICE { get { if (!_BIND_CHOOSER_TARGET_SERVICEReady) { _BIND_CHOOSER_TARGET_SERVICEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BIND_CHOOSER_TARGET_SERVICE"); _BIND_CHOOSER_TARGET_SERVICEReady = true; } return _BIND_CHOOSER_TARGET_SERVICEContent; } }
             private static Java.Lang.String _BIND_CHOOSER_TARGET_SERVICEContent = default;
             private static bool _BIND_CHOOSER_TARGET_SERVICEReady = false; // this is used because in case of generics 
@@ -690,7 +690,7 @@ namespace Android
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#GET_TASKS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String GET_TASKS { get { if (!_GET_TASKSReady) { _GET_TASKSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "GET_TASKS"); _GET_TASKSReady = true; } return _GET_TASKSContent; } }
             private static Java.Lang.String _GET_TASKSContent = default;
             private static bool _GET_TASKSReady = false; // this is used because in case of generics 
@@ -1351,7 +1351,7 @@ namespace Android
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#PERSISTENT_ACTIVITY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String PERSISTENT_ACTIVITY { get { if (!_PERSISTENT_ACTIVITYReady) { _PERSISTENT_ACTIVITYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PERSISTENT_ACTIVITY"); _PERSISTENT_ACTIVITYReady = true; } return _PERSISTENT_ACTIVITYContent; } }
             private static Java.Lang.String _PERSISTENT_ACTIVITYContent = default;
             private static bool _PERSISTENT_ACTIVITYReady = false; // this is used because in case of generics 
@@ -1364,7 +1364,7 @@ namespace Android
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#PROCESS_OUTGOING_CALLS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String PROCESS_OUTGOING_CALLS { get { if (!_PROCESS_OUTGOING_CALLSReady) { _PROCESS_OUTGOING_CALLSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PROCESS_OUTGOING_CALLS"); _PROCESS_OUTGOING_CALLSReady = true; } return _PROCESS_OUTGOING_CALLSContent; } }
             private static Java.Lang.String _PROCESS_OUTGOING_CALLSContent = default;
             private static bool _PROCESS_OUTGOING_CALLSReady = false; // this is used because in case of generics 
@@ -1431,7 +1431,7 @@ namespace Android
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#READ_INPUT_STATE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String READ_INPUT_STATE { get { if (!_READ_INPUT_STATEReady) { _READ_INPUT_STATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "READ_INPUT_STATE"); _READ_INPUT_STATEReady = true; } return _READ_INPUT_STATEContent; } }
             private static Java.Lang.String _READ_INPUT_STATEContent = default;
             private static bool _READ_INPUT_STATEReady = false; // this is used because in case of generics 
@@ -1648,7 +1648,7 @@ namespace Android
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#RESTART_PACKAGES"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String RESTART_PACKAGES { get { if (!_RESTART_PACKAGESReady) { _RESTART_PACKAGESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RESTART_PACKAGES"); _RESTART_PACKAGESReady = true; } return _RESTART_PACKAGESContent; } }
             private static Java.Lang.String _RESTART_PACKAGESContent = default;
             private static bool _RESTART_PACKAGESReady = false; // this is used because in case of generics 
@@ -1703,7 +1703,7 @@ namespace Android
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#SET_PREFERRED_APPLICATIONS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SET_PREFERRED_APPLICATIONS { get { if (!_SET_PREFERRED_APPLICATIONSReady) { _SET_PREFERRED_APPLICATIONSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SET_PREFERRED_APPLICATIONS"); _SET_PREFERRED_APPLICATIONSReady = true; } return _SET_PREFERRED_APPLICATIONSContent; } }
             private static Java.Lang.String _SET_PREFERRED_APPLICATIONSContent = default;
             private static bool _SET_PREFERRED_APPLICATIONSReady = false; // this is used because in case of generics 
@@ -1746,7 +1746,7 @@ namespace Android
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#SMS_FINANCIAL_TRANSACTIONS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SMS_FINANCIAL_TRANSACTIONS { get { if (!_SMS_FINANCIAL_TRANSACTIONSReady) { _SMS_FINANCIAL_TRANSACTIONSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SMS_FINANCIAL_TRANSACTIONS"); _SMS_FINANCIAL_TRANSACTIONSReady = true; } return _SMS_FINANCIAL_TRANSACTIONSContent; } }
             private static Java.Lang.String _SMS_FINANCIAL_TRANSACTIONSContent = default;
             private static bool _SMS_FINANCIAL_TRANSACTIONSReady = false; // this is used because in case of generics 
@@ -1831,7 +1831,7 @@ namespace Android
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/Manifest.permission.html#USE_FINGERPRINT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String USE_FINGERPRINT { get { if (!_USE_FINGERPRINTReady) { _USE_FINGERPRINTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USE_FINGERPRINT"); _USE_FINGERPRINTReady = true; } return _USE_FINGERPRINTContent; } }
             private static Java.Lang.String _USE_FINGERPRINTContent = default;
             private static bool _USE_FINGERPRINTReady = false; // this is used because in case of generics 

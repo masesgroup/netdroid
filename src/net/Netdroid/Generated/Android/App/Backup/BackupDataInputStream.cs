@@ -46,19 +46,20 @@ namespace Android.App.Backup
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/backup/BackupDataInputStream.html#getKey()"/> 
-        /// </summary>
-        public Java.Lang.String Key
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/backup/BackupDataInputStream.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
         {
             return IExecuteWithSignature<int>("size", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/backup/BackupDataInputStream.html#getKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetKey()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;");
         }
 
         #endregion

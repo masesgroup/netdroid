@@ -28,20 +28,20 @@ namespace Java.Time
 {
     #region Clock
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/Clock.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/Clock.html"/>
     /// </summary>
-    public partial class Clock : Java.Time.InstantSource
+    public partial class Clock : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Clock>
     {
         const string _bridgeClassName = "java.time.Clock";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Clock class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Clock class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Clock() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Clock class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Clock class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Clock(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Java.Time
 
     #region DateTimeException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/DateTimeException.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/DateTimeException.html"/>
     /// </summary>
     public partial class DateTimeException : Java.Lang.RuntimeException
     {
@@ -91,7 +91,7 @@ namespace Java.Time
 
     #region DayOfWeek
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/DayOfWeek.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/DayOfWeek.html"/>
     /// </summary>
     public partial class DayOfWeek : Java.Lang.Enum<Java.Time.DayOfWeek>
     {
@@ -135,7 +135,7 @@ namespace Java.Time
 
     #region Duration
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/Duration.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/Duration.html"/>
     /// </summary>
     public partial class Duration : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Duration>
     {
@@ -179,7 +179,7 @@ namespace Java.Time
 
     #region Instant
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/Instant.html"/>
     /// </summary>
     public partial class Instant : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Instant>
     {
@@ -221,55 +221,9 @@ namespace Java.Time
     }
     #endregion
 
-    #region InstantSource
-    /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/InstantSource.html"/>
-    /// </summary>
-    public partial class InstantSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InstantSource>
-    {
-        const string _bridgeClassName = "java.time.InstantSource";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [Obsolete("InstantSource class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public InstantSource() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        [Obsolete("InstantSource class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public InstantSource(params object[] args) : base(args) { }
-
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
-
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => _bridgeClassName;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-        /// </summary>
-        public override bool IsBridgeAbstract => true;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-        /// </summary>
-        public override bool IsBridgeCloseable => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
-        public override bool IsBridgeInterface => true;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-        /// </summary>
-        public override bool IsBridgeStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region LocalDate
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/LocalDate.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/LocalDate.html"/>
     /// </summary>
     public partial class LocalDate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LocalDate>
     {
@@ -313,7 +267,7 @@ namespace Java.Time
 
     #region LocalDateTime
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/LocalDateTime.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/LocalDateTime.html"/>
     /// </summary>
     public partial class LocalDateTime : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LocalDateTime>
     {
@@ -357,7 +311,7 @@ namespace Java.Time
 
     #region LocalTime
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/LocalTime.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/LocalTime.html"/>
     /// </summary>
     public partial class LocalTime : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LocalTime>
     {
@@ -401,7 +355,7 @@ namespace Java.Time
 
     #region Month
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/Month.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/Month.html"/>
     /// </summary>
     public partial class Month : Java.Lang.Enum<Java.Time.Month>
     {
@@ -445,7 +399,7 @@ namespace Java.Time
 
     #region MonthDay
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/MonthDay.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/MonthDay.html"/>
     /// </summary>
     public partial class MonthDay : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MonthDay>
     {
@@ -489,7 +443,7 @@ namespace Java.Time
 
     #region OffsetDateTime
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetDateTime.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/OffsetDateTime.html"/>
     /// </summary>
     public partial class OffsetDateTime : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OffsetDateTime>
     {
@@ -533,7 +487,7 @@ namespace Java.Time
 
     #region OffsetTime
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/OffsetTime.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/OffsetTime.html"/>
     /// </summary>
     public partial class OffsetTime : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OffsetTime>
     {
@@ -577,7 +531,7 @@ namespace Java.Time
 
     #region Period
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/Period.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/Period.html"/>
     /// </summary>
     public partial class Period : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Period>
     {
@@ -621,7 +575,7 @@ namespace Java.Time
 
     #region Year
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/Year.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/Year.html"/>
     /// </summary>
     public partial class Year : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Year>
     {
@@ -665,7 +619,7 @@ namespace Java.Time
 
     #region YearMonth
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/YearMonth.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/YearMonth.html"/>
     /// </summary>
     public partial class YearMonth : MASES.JCOBridge.C2JBridge.JVMBridgeBase<YearMonth>
     {
@@ -709,7 +663,7 @@ namespace Java.Time
 
     #region ZonedDateTime
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html"/>
     /// </summary>
     public partial class ZonedDateTime : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ZonedDateTime>
     {
@@ -753,7 +707,7 @@ namespace Java.Time
 
     #region ZoneId
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneId.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/ZoneId.html"/>
     /// </summary>
     public partial class ZoneId : Java.Io.Serializable
     {
@@ -761,12 +715,12 @@ namespace Java.Time
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ZoneId class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ZoneId class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ZoneId() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ZoneId class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ZoneId class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ZoneId(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -799,7 +753,7 @@ namespace Java.Time
 
     #region ZoneOffset
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/time/ZoneOffset.html"/>
+    /// <see href="https://developer.android.com/reference/java/time/ZoneOffset.html"/>
     /// </summary>
     public partial class ZoneOffset : Java.Time.ZoneId
     {

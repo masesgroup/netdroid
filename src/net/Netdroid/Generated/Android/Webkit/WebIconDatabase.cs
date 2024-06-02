@@ -42,12 +42,13 @@ namespace Android.Webkit
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebIconDatabase.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebIconDatabase.html#getInstance()"/>
         /// </summary>
-        [System.Obsolete()]
-        public static Android.Webkit.WebIconDatabase Instance
+        /// <returns><see cref="Android.Webkit.WebIconDatabase"/></returns>
+        [global::System.Obsolete()]
+        public static Android.Webkit.WebIconDatabase GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Webkit.WebIconDatabase>(LocalBridgeClazz, "getInstance", "()Landroid/webkit/WebIconDatabase;"); }
+            return SExecuteWithSignature<Android.Webkit.WebIconDatabase>(LocalBridgeClazz, "getInstance", "()Landroid/webkit/WebIconDatabase;");
         }
 
         #endregion
@@ -56,7 +57,7 @@ namespace Android.Webkit
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebIconDatabase.html#close()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
@@ -65,7 +66,7 @@ namespace Android.Webkit
         /// <see href="https://developer.android.com/reference/android/webkit/WebIconDatabase.html#open(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Open(Java.Lang.String arg0)
         {
             IExecuteWithSignature("open", "(Ljava/lang/String;)V", arg0);
@@ -74,7 +75,7 @@ namespace Android.Webkit
         /// <see href="https://developer.android.com/reference/android/webkit/WebIconDatabase.html#releaseIconForPageUrl(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ReleaseIconForPageUrl(Java.Lang.String arg0)
         {
             IExecuteWithSignature("releaseIconForPageUrl", "(Ljava/lang/String;)V", arg0);
@@ -82,7 +83,7 @@ namespace Android.Webkit
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebIconDatabase.html#removeAllIcons()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveAllIcons()
         {
             IExecuteWithSignature("removeAllIcons", "()V");
@@ -92,7 +93,7 @@ namespace Android.Webkit
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Android.Webkit.WebIconDatabase.IconListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RequestIconForPageUrl(Java.Lang.String arg0, Android.Webkit.WebIconDatabase.IconListener arg1)
         {
             IExecute("requestIconForPageUrl", arg0, arg1);
@@ -101,7 +102,7 @@ namespace Android.Webkit
         /// <see href="https://developer.android.com/reference/android/webkit/WebIconDatabase.html#retainIconForPageUrl(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RetainIconForPageUrl(Java.Lang.String arg0)
         {
             IExecuteWithSignature("retainIconForPageUrl", "(Ljava/lang/String;)V", arg0);
@@ -135,7 +136,7 @@ namespace Android.Webkit
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onReceivedIcon", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnReceivedIconEventHandler));
+                AddEventHandler("onReceivedIcon", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnReceivedIconEventHandler));
 
             }
 
@@ -143,7 +144,7 @@ namespace Android.Webkit
             /// Handler for <see href="https://developer.android.com/reference/android/webkit/WebIconDatabase.IconListener.html#onReceivedIcon(java.lang.String,android.graphics.Bitmap)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnReceivedIcon"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Lang.String, Android.Graphics.Bitmap> OnOnReceivedIcon { get; set; } = null;
+            public global::System.Action<Java.Lang.String, Android.Graphics.Bitmap> OnOnReceivedIcon { get; set; } = null;
 
             void OnReceivedIconEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
             {
@@ -156,7 +157,7 @@ namespace Android.Webkit
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Android.Graphics.Bitmap"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnReceivedIcon(Java.Lang.String arg0, Android.Graphics.Bitmap arg1)
             {
                 
@@ -197,7 +198,7 @@ namespace Android.Webkit
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Android.Graphics.Bitmap"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnReceivedIcon(Java.Lang.String arg0, Android.Graphics.Bitmap arg1)
             {
                 IExecute("onReceivedIcon", arg0, arg1);

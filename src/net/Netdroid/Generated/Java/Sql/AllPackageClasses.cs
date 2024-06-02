@@ -28,7 +28,7 @@ namespace Java.Sql
 {
     #region Array
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/Array.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/Array.html"/>
     /// </summary>
     public partial class Array : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Array>
     {
@@ -36,12 +36,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Array class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Array class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Array() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Array class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Array class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Array(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Java.Sql
 
     #region BatchUpdateException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/BatchUpdateException.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/BatchUpdateException.html"/>
     /// </summary>
     public partial class BatchUpdateException : Java.Sql.SQLException
     {
@@ -91,7 +91,7 @@ namespace Java.Sql
 
     #region Blob
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/Blob.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/Blob.html"/>
     /// </summary>
     public partial class Blob : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Blob>
     {
@@ -99,12 +99,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Blob class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Blob class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Blob() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Blob class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Blob class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Blob(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -137,7 +137,7 @@ namespace Java.Sql
 
     #region CallableStatement
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/CallableStatement.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/CallableStatement.html"/>
     /// </summary>
     public partial class CallableStatement : Java.Sql.PreparedStatement
     {
@@ -145,12 +145,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CallableStatement class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CallableStatement class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CallableStatement() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CallableStatement class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CallableStatement class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CallableStatement(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -183,7 +183,7 @@ namespace Java.Sql
 
     #region ClientInfoStatus
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/ClientInfoStatus.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/ClientInfoStatus.html"/>
     /// </summary>
     public partial class ClientInfoStatus : Java.Lang.Enum<Java.Sql.ClientInfoStatus>
     {
@@ -227,7 +227,7 @@ namespace Java.Sql
 
     #region Clob
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/Clob.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/Clob.html"/>
     /// </summary>
     public partial class Clob : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Clob>
     {
@@ -235,12 +235,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Clob class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Clob class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Clob() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Clob class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Clob class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Clob(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -273,7 +273,7 @@ namespace Java.Sql
 
     #region Connection
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/Connection.html"/>
     /// </summary>
     public partial class Connection : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Connection>
     {
@@ -281,12 +281,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Connection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Connection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Connection() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Connection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Connection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Connection(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -319,7 +319,7 @@ namespace Java.Sql
 
     #region DatabaseMetaData
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/DatabaseMetaData.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/DatabaseMetaData.html"/>
     /// </summary>
     public partial class DatabaseMetaData : Java.Sql.Wrapper
     {
@@ -327,12 +327,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DatabaseMetaData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DatabaseMetaData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DatabaseMetaData() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DatabaseMetaData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DatabaseMetaData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DatabaseMetaData(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -365,7 +365,7 @@ namespace Java.Sql
 
     #region DataTruncation
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/DataTruncation.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/DataTruncation.html"/>
     /// </summary>
     public partial class DataTruncation : Java.Sql.SQLWarning
     {
@@ -382,7 +382,7 @@ namespace Java.Sql
 
     #region Date
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/Date.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/Date.html"/>
     /// </summary>
     public partial class Date : Java.Util.Date
     {
@@ -426,7 +426,7 @@ namespace Java.Sql
 
     #region Driver
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/Driver.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/Driver.html"/>
     /// </summary>
     public partial class Driver : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Driver>
     {
@@ -434,12 +434,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Driver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Driver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Driver() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Driver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Driver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Driver(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -472,7 +472,7 @@ namespace Java.Sql
 
     #region DriverManager
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverManager.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/DriverManager.html"/>
     /// </summary>
     public partial class DriverManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DriverManager>
     {
@@ -516,7 +516,7 @@ namespace Java.Sql
 
     #region DriverPropertyInfo
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/DriverPropertyInfo.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/DriverPropertyInfo.html"/>
     /// </summary>
     public partial class DriverPropertyInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DriverPropertyInfo>
     {
@@ -560,7 +560,7 @@ namespace Java.Sql
 
     #region NClob
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/NClob.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/NClob.html"/>
     /// </summary>
     public partial class NClob : Java.Sql.Clob
     {
@@ -568,12 +568,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("NClob class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NClob class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NClob() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("NClob class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NClob class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NClob(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -606,7 +606,7 @@ namespace Java.Sql
 
     #region ParameterMetaData
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/ParameterMetaData.html"/>
     /// </summary>
     public partial class ParameterMetaData : Java.Sql.Wrapper
     {
@@ -614,12 +614,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ParameterMetaData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ParameterMetaData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ParameterMetaData() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ParameterMetaData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ParameterMetaData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ParameterMetaData(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -652,7 +652,7 @@ namespace Java.Sql
 
     #region PreparedStatement
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/PreparedStatement.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/PreparedStatement.html"/>
     /// </summary>
     public partial class PreparedStatement : Java.Sql.Statement
     {
@@ -660,12 +660,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("PreparedStatement class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PreparedStatement class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PreparedStatement() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("PreparedStatement class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PreparedStatement class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PreparedStatement(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -698,7 +698,7 @@ namespace Java.Sql
 
     #region Ref
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/Ref.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/Ref.html"/>
     /// </summary>
     public partial class Ref : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Ref>
     {
@@ -706,12 +706,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Ref class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Ref class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Ref() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Ref class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Ref class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Ref(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -744,7 +744,7 @@ namespace Java.Sql
 
     #region ResultSet
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSet.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/ResultSet.html"/>
     /// </summary>
     public partial class ResultSet : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ResultSet>
     {
@@ -752,12 +752,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ResultSet class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ResultSet class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ResultSet() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ResultSet class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ResultSet class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ResultSet(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -790,7 +790,7 @@ namespace Java.Sql
 
     #region ResultSetMetaData
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/ResultSetMetaData.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/ResultSetMetaData.html"/>
     /// </summary>
     public partial class ResultSetMetaData : Java.Sql.Wrapper
     {
@@ -798,12 +798,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ResultSetMetaData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ResultSetMetaData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ResultSetMetaData() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ResultSetMetaData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ResultSetMetaData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ResultSetMetaData(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -836,7 +836,7 @@ namespace Java.Sql
 
     #region RowId
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/RowId.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/RowId.html"/>
     /// </summary>
     public partial class RowId : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowId>
     {
@@ -844,12 +844,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("RowId class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RowId class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RowId() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("RowId class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RowId class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RowId(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -882,7 +882,7 @@ namespace Java.Sql
 
     #region RowIdLifetime
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/RowIdLifetime.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/RowIdLifetime.html"/>
     /// </summary>
     public partial class RowIdLifetime : Java.Lang.Enum<Java.Sql.RowIdLifetime>
     {
@@ -926,7 +926,7 @@ namespace Java.Sql
 
     #region Savepoint
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/Savepoint.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/Savepoint.html"/>
     /// </summary>
     public partial class Savepoint : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Savepoint>
     {
@@ -934,12 +934,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Savepoint class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Savepoint class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Savepoint() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Savepoint class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Savepoint class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Savepoint(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -972,7 +972,7 @@ namespace Java.Sql
 
     #region SQLClientInfoException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLClientInfoException.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLClientInfoException.html"/>
     /// </summary>
     public partial class SQLClientInfoException : Java.Sql.SQLException
     {
@@ -989,7 +989,7 @@ namespace Java.Sql
 
     #region SQLData
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLData.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLData.html"/>
     /// </summary>
     public partial class SQLData : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SQLData>
     {
@@ -997,12 +997,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SQLData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SQLData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SQLData() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SQLData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SQLData class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SQLData(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1035,7 +1035,7 @@ namespace Java.Sql
 
     #region SQLDataException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLDataException.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLDataException.html"/>
     /// </summary>
     public partial class SQLDataException : Java.Sql.SQLNonTransientException
     {
@@ -1052,7 +1052,7 @@ namespace Java.Sql
 
     #region SQLException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLException.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLException.html"/>
     /// </summary>
     public partial class SQLException : Java.Lang.Exception
     {
@@ -1069,7 +1069,7 @@ namespace Java.Sql
 
     #region SQLFeatureNotSupportedException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLFeatureNotSupportedException.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLFeatureNotSupportedException.html"/>
     /// </summary>
     public partial class SQLFeatureNotSupportedException : Java.Sql.SQLNonTransientException
     {
@@ -1086,7 +1086,7 @@ namespace Java.Sql
 
     #region SQLInput
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInput.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLInput.html"/>
     /// </summary>
     public partial class SQLInput : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SQLInput>
     {
@@ -1094,12 +1094,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SQLInput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SQLInput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SQLInput() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SQLInput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SQLInput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SQLInput(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1132,7 +1132,7 @@ namespace Java.Sql
 
     #region SQLIntegrityConstraintViolationException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLIntegrityConstraintViolationException.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLIntegrityConstraintViolationException.html"/>
     /// </summary>
     public partial class SQLIntegrityConstraintViolationException : Java.Sql.SQLNonTransientException
     {
@@ -1149,7 +1149,7 @@ namespace Java.Sql
 
     #region SQLInvalidAuthorizationSpecException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLInvalidAuthorizationSpecException.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLInvalidAuthorizationSpecException.html"/>
     /// </summary>
     public partial class SQLInvalidAuthorizationSpecException : Java.Sql.SQLNonTransientException
     {
@@ -1166,7 +1166,7 @@ namespace Java.Sql
 
     #region SQLNonTransientConnectionException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLNonTransientConnectionException.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLNonTransientConnectionException.html"/>
     /// </summary>
     public partial class SQLNonTransientConnectionException : Java.Sql.SQLNonTransientException
     {
@@ -1183,7 +1183,7 @@ namespace Java.Sql
 
     #region SQLNonTransientException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLNonTransientException.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLNonTransientException.html"/>
     /// </summary>
     public partial class SQLNonTransientException : Java.Sql.SQLException
     {
@@ -1200,7 +1200,7 @@ namespace Java.Sql
 
     #region SQLOutput
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLOutput.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLOutput.html"/>
     /// </summary>
     public partial class SQLOutput : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SQLOutput>
     {
@@ -1208,12 +1208,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SQLOutput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SQLOutput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SQLOutput() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SQLOutput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SQLOutput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SQLOutput(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1246,7 +1246,7 @@ namespace Java.Sql
 
     #region SQLPermission
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLPermission.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLPermission.html"/>
     /// </summary>
     public partial class SQLPermission : Java.Security.BasicPermission
     {
@@ -1290,7 +1290,7 @@ namespace Java.Sql
 
     #region SQLRecoverableException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLRecoverableException.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLRecoverableException.html"/>
     /// </summary>
     public partial class SQLRecoverableException : Java.Sql.SQLException
     {
@@ -1307,7 +1307,7 @@ namespace Java.Sql
 
     #region SQLSyntaxErrorException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLSyntaxErrorException.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLSyntaxErrorException.html"/>
     /// </summary>
     public partial class SQLSyntaxErrorException : Java.Sql.SQLNonTransientException
     {
@@ -1324,7 +1324,7 @@ namespace Java.Sql
 
     #region SQLTimeoutException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLTimeoutException.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLTimeoutException.html"/>
     /// </summary>
     public partial class SQLTimeoutException : Java.Sql.SQLTransientException
     {
@@ -1341,7 +1341,7 @@ namespace Java.Sql
 
     #region SQLTransactionRollbackException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLTransactionRollbackException.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLTransactionRollbackException.html"/>
     /// </summary>
     public partial class SQLTransactionRollbackException : Java.Sql.SQLTransientException
     {
@@ -1358,7 +1358,7 @@ namespace Java.Sql
 
     #region SQLTransientConnectionException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLTransientConnectionException.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLTransientConnectionException.html"/>
     /// </summary>
     public partial class SQLTransientConnectionException : Java.Sql.SQLTransientException
     {
@@ -1375,7 +1375,7 @@ namespace Java.Sql
 
     #region SQLTransientException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLTransientException.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLTransientException.html"/>
     /// </summary>
     public partial class SQLTransientException : Java.Sql.SQLException
     {
@@ -1392,7 +1392,7 @@ namespace Java.Sql
 
     #region SQLWarning
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLWarning.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLWarning.html"/>
     /// </summary>
     public partial class SQLWarning : Java.Sql.SQLException
     {
@@ -1409,7 +1409,7 @@ namespace Java.Sql
 
     #region SQLXML
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/SQLXML.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/SQLXML.html"/>
     /// </summary>
     public partial class SQLXML : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SQLXML>
     {
@@ -1417,12 +1417,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SQLXML class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SQLXML class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SQLXML() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SQLXML class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SQLXML class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SQLXML(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1455,7 +1455,7 @@ namespace Java.Sql
 
     #region Statement
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/Statement.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/Statement.html"/>
     /// </summary>
     public partial class Statement : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Statement>
     {
@@ -1463,12 +1463,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Statement class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Statement class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Statement() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Statement class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Statement class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Statement(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1501,7 +1501,7 @@ namespace Java.Sql
 
     #region Struct
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/Struct.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/Struct.html"/>
     /// </summary>
     public partial class Struct : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Struct>
     {
@@ -1509,12 +1509,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Struct class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Struct class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Struct() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Struct class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Struct class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Struct(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1547,7 +1547,7 @@ namespace Java.Sql
 
     #region Time
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/Time.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/Time.html"/>
     /// </summary>
     public partial class Time : Java.Util.Date
     {
@@ -1591,7 +1591,7 @@ namespace Java.Sql
 
     #region Timestamp
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/Timestamp.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/Timestamp.html"/>
     /// </summary>
     public partial class Timestamp : Java.Util.Date
     {
@@ -1635,7 +1635,7 @@ namespace Java.Sql
 
     #region Types
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/Types.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/Types.html"/>
     /// </summary>
     public partial class Types : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Types>
     {
@@ -1679,7 +1679,7 @@ namespace Java.Sql
 
     #region Wrapper
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.sql/java/sql/Wrapper.html"/>
+    /// <see href="https://developer.android.com/reference/java/sql/Wrapper.html"/>
     /// </summary>
     public partial class Wrapper : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Wrapper>
     {
@@ -1687,12 +1687,12 @@ namespace Java.Sql
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Wrapper class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Wrapper class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Wrapper() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Wrapper class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Wrapper class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Wrapper(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

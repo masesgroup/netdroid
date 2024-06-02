@@ -54,7 +54,7 @@ namespace Java.Nio.Channels.Spi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/AbstractInterruptibleChannel.html#isOpen()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/spi/AbstractInterruptibleChannel.html#isOpen()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsOpen()
@@ -62,7 +62,7 @@ namespace Java.Nio.Channels.Spi
             return IExecuteWithSignature<bool>("isOpen", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/spi/AbstractInterruptibleChannel.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/spi/AbstractInterruptibleChannel.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()

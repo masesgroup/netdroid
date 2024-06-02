@@ -50,7 +50,7 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Enum.html#valueOf(java.lang.Class,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Enum.html#valueOf(java.lang.Class,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -64,14 +64,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Enum.html#getDeclaringClass()"/> 
-        /// </summary>
-        public Java.Lang.Class DeclaringClass
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Enum.html#compareTo(java.lang.Enum)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Enum.html#compareTo(java.lang.Enum)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
         /// <returns><see cref="int"/></returns>
@@ -80,7 +73,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Enum;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Enum.html#ordinal()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Enum.html#ordinal()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Ordinal()
@@ -88,7 +81,15 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("ordinal", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Enum.html#name()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Enum.html#getDeclaringClass()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetDeclaringClass()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Enum.html#name()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
@@ -96,15 +97,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Enum.html#describeConstable()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional DescribeConstable()
-        {
-            return IExecuteWithSignature<Java.Util.Optional>("describeConstable", "()Ljava/util/Optional;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Enum.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Enum.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -152,13 +145,13 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Enum.html#valueOf(java.lang.Class,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Enum.html#valueOf(java.lang.Class,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Enum{T}"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T ValueOf<T>(Java.Lang.Class arg0, Java.Lang.String arg1) where T: Java.Lang.Enum<T>
+        public static T ValueOf<T>(Java.Lang.Class arg0, Java.Lang.String arg1) where T : Java.Lang.Enum<T>
         {
             return SExecute<T>(LocalBridgeClazz, "valueOf", arg0, arg1);
         }
@@ -167,14 +160,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Enum.html#getDeclaringClass()"/> 
-        /// </summary>
-        public Java.Lang.Class DeclaringClass
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Enum.html#compareTo(java.lang.Enum)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Enum.html#compareTo(java.lang.Enum)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="int"/></returns>
@@ -183,7 +169,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Enum;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Enum.html#ordinal()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Enum.html#ordinal()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Ordinal()
@@ -191,7 +177,15 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("ordinal", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Enum.html#name()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Enum.html#getDeclaringClass()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetDeclaringClass()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Enum.html#name()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
@@ -199,15 +193,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Enum.html#describeConstable()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Lang.Enum.EnumDesc<E>> DescribeConstable()
-        {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.Enum.EnumDesc<E>>>("describeConstable", "()Ljava/util/Optional;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Enum.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Enum.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>

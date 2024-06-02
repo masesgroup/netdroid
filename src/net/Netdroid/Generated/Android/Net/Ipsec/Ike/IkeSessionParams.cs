@@ -76,88 +76,44 @@ namespace Android.Net.Ipsec.Ike
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getDpdDelaySeconds()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getLocalIdentification()"/>
         /// </summary>
-        public int DpdDelaySeconds
+        /// <returns><see cref="Android.Net.Ipsec.Ike.IkeIdentification"/></returns>
+        public Android.Net.Ipsec.Ike.IkeIdentification GetLocalIdentification()
         {
-            get { return IExecuteWithSignature<int>("getDpdDelaySeconds", "()I"); }
+            return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeIdentification>("getLocalIdentification", "()Landroid/net/ipsec/ike/IkeIdentification;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getHardLifetimeSeconds()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getRemoteIdentification()"/>
         /// </summary>
-        public int HardLifetimeSeconds
+        /// <returns><see cref="Android.Net.Ipsec.Ike.IkeIdentification"/></returns>
+        public Android.Net.Ipsec.Ike.IkeIdentification GetRemoteIdentification()
         {
-            get { return IExecuteWithSignature<int>("getHardLifetimeSeconds", "()I"); }
+            return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeIdentification>("getRemoteIdentification", "()Landroid/net/ipsec/ike/IkeIdentification;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getIkeSaProposals()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getLocalAuthConfig()"/>
         /// </summary>
-        public Java.Util.List<Android.Net.Ipsec.Ike.IkeSaProposal> IkeSaProposals
+        /// <returns><see cref="Android.Net.Ipsec.Ike.IkeSessionParams.IkeAuthConfig"/></returns>
+        public Android.Net.Ipsec.Ike.IkeSessionParams.IkeAuthConfig GetLocalAuthConfig()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Ipsec.Ike.IkeSaProposal>>("getIkeSaProposals", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeSessionParams.IkeAuthConfig>("getLocalAuthConfig", "()Landroid/net/ipsec/ike/IkeSessionParams$IkeAuthConfig;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getLocalAuthConfig()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getRemoteAuthConfig()"/>
         /// </summary>
-        public Android.Net.Ipsec.Ike.IkeSessionParams.IkeAuthConfig LocalAuthConfig
+        /// <returns><see cref="Android.Net.Ipsec.Ike.IkeSessionParams.IkeAuthConfig"/></returns>
+        public Android.Net.Ipsec.Ike.IkeSessionParams.IkeAuthConfig GetRemoteAuthConfig()
         {
-            get { return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeSessionParams.IkeAuthConfig>("getLocalAuthConfig", "()Landroid/net/ipsec/ike/IkeSessionParams$IkeAuthConfig;"); }
+            return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeSessionParams.IkeAuthConfig>("getRemoteAuthConfig", "()Landroid/net/ipsec/ike/IkeSessionParams$IkeAuthConfig;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getLocalIdentification()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getNetwork()"/>
         /// </summary>
-        public Android.Net.Ipsec.Ike.IkeIdentification LocalIdentification
+        /// <returns><see cref="Android.Net.Network"/></returns>
+        public Android.Net.Network GetNetwork()
         {
-            get { return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeIdentification>("getLocalIdentification", "()Landroid/net/ipsec/ike/IkeIdentification;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getNattKeepAliveDelaySeconds()"/> 
-        /// </summary>
-        public int NattKeepAliveDelaySeconds
-        {
-            get { return IExecuteWithSignature<int>("getNattKeepAliveDelaySeconds", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getNetwork()"/> 
-        /// </summary>
-        public Android.Net.Network Network
-        {
-            get { return IExecuteWithSignature<Android.Net.Network>("getNetwork", "()Landroid/net/Network;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getRemoteAuthConfig()"/> 
-        /// </summary>
-        public Android.Net.Ipsec.Ike.IkeSessionParams.IkeAuthConfig RemoteAuthConfig
-        {
-            get { return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeSessionParams.IkeAuthConfig>("getRemoteAuthConfig", "()Landroid/net/ipsec/ike/IkeSessionParams$IkeAuthConfig;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getRemoteIdentification()"/> 
-        /// </summary>
-        public Android.Net.Ipsec.Ike.IkeIdentification RemoteIdentification
-        {
-            get { return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeIdentification>("getRemoteIdentification", "()Landroid/net/ipsec/ike/IkeIdentification;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getRetransmissionTimeoutsMillis()"/> 
-        /// </summary>
-        public int[] RetransmissionTimeoutsMillis
-        {
-            get { return IExecuteWithSignatureArray<int>("getRetransmissionTimeoutsMillis", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getServerHostname()"/> 
-        /// </summary>
-        public Java.Lang.String ServerHostname
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getServerHostname", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getSoftLifetimeSeconds()"/> 
-        /// </summary>
-        public int SoftLifetimeSeconds
-        {
-            get { return IExecuteWithSignature<int>("getSoftLifetimeSeconds", "()I"); }
+            return IExecuteWithSignature<Android.Net.Network>("getNetwork", "()Landroid/net/Network;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#hasIkeOption(int)"/>
@@ -167,6 +123,62 @@ namespace Android.Net.Ipsec.Ike
         public bool HasIkeOption(int arg0)
         {
             return IExecuteWithSignature<bool>("hasIkeOption", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getDpdDelaySeconds()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDpdDelaySeconds()
+        {
+            return IExecuteWithSignature<int>("getDpdDelaySeconds", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getHardLifetimeSeconds()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHardLifetimeSeconds()
+        {
+            return IExecuteWithSignature<int>("getHardLifetimeSeconds", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getNattKeepAliveDelaySeconds()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNattKeepAliveDelaySeconds()
+        {
+            return IExecuteWithSignature<int>("getNattKeepAliveDelaySeconds", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getSoftLifetimeSeconds()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSoftLifetimeSeconds()
+        {
+            return IExecuteWithSignature<int>("getSoftLifetimeSeconds", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getRetransmissionTimeoutsMillis()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetRetransmissionTimeoutsMillis()
+        {
+            return IExecuteWithSignatureArray<int>("getRetransmissionTimeoutsMillis", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getServerHostname()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetServerHostname()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getServerHostname", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.html#getIkeSaProposals()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Ipsec.Ike.IkeSaProposal> GetIkeSaProposals()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Ipsec.Ike.IkeSaProposal>>("getIkeSaProposals", "()Ljava/util/List;");
         }
 
         #endregion
@@ -413,25 +425,28 @@ namespace Android.Net.Ipsec.Ike
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthDigitalSignLocalConfig.html#getClientEndCertificate()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthDigitalSignLocalConfig.html#getClientEndCertificate()"/>
             /// </summary>
-            public Java.Security.Cert.X509Certificate ClientEndCertificate
+            /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
+            public Java.Security.Cert.X509Certificate GetClientEndCertificate()
             {
-                get { return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getClientEndCertificate", "()Ljava/security/cert/X509Certificate;"); }
+                return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getClientEndCertificate", "()Ljava/security/cert/X509Certificate;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthDigitalSignLocalConfig.html#getIntermediateCertificates()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthDigitalSignLocalConfig.html#getPrivateKey()"/>
             /// </summary>
-            public Java.Util.List<Java.Security.Cert.X509Certificate> IntermediateCertificates
+            /// <returns><see cref="Java.Security.PrivateKey"/></returns>
+            public Java.Security.PrivateKey GetPrivateKey()
             {
-                get { return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.X509Certificate>>("getIntermediateCertificates", "()Ljava/util/List;"); }
+                return IExecuteWithSignature<Java.Security.PrivateKey>("getPrivateKey", "()Ljava/security/PrivateKey;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthDigitalSignLocalConfig.html#getPrivateKey()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthDigitalSignLocalConfig.html#getIntermediateCertificates()"/>
             /// </summary>
-            public Java.Security.PrivateKey PrivateKey
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Java.Security.Cert.X509Certificate> GetIntermediateCertificates()
             {
-                get { return IExecuteWithSignature<Java.Security.PrivateKey>("getPrivateKey", "()Ljava/security/PrivateKey;"); }
+                return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.X509Certificate>>("getIntermediateCertificates", "()Ljava/util/List;");
             }
 
             #endregion
@@ -465,11 +480,12 @@ namespace Android.Net.Ipsec.Ike
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthDigitalSignRemoteConfig.html#getRemoteCaCert()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthDigitalSignRemoteConfig.html#getRemoteCaCert()"/>
             /// </summary>
-            public Java.Security.Cert.X509Certificate RemoteCaCert
+            /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
+            public Java.Security.Cert.X509Certificate GetRemoteCaCert()
             {
-                get { return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getRemoteCaCert", "()Ljava/security/cert/X509Certificate;"); }
+                return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getRemoteCaCert", "()Ljava/security/cert/X509Certificate;");
             }
 
             #endregion
@@ -503,11 +519,12 @@ namespace Android.Net.Ipsec.Ike
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthEapConfig.html#getEapConfig()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthEapConfig.html#getEapConfig()"/>
             /// </summary>
-            public Android.Net.Eap.EapSessionConfig EapConfig
+            /// <returns><see cref="Android.Net.Eap.EapSessionConfig"/></returns>
+            public Android.Net.Eap.EapSessionConfig GetEapConfig()
             {
-                get { return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig>("getEapConfig", "()Landroid/net/eap/EapSessionConfig;"); }
+                return IExecuteWithSignature<Android.Net.Eap.EapSessionConfig>("getEapConfig", "()Landroid/net/eap/EapSessionConfig;");
             }
 
             #endregion
@@ -541,11 +558,12 @@ namespace Android.Net.Ipsec.Ike
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthPskConfig.html#getPsk()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeSessionParams.IkeAuthPskConfig.html#getPsk()"/>
             /// </summary>
-            public byte[] Psk
+            /// <returns><see cref="byte"/></returns>
+            public byte[] GetPsk()
             {
-                get { return IExecuteWithSignatureArray<byte>("getPsk", "()[B"); }
+                return IExecuteWithSignatureArray<byte>("getPsk", "()[B");
             }
 
             #endregion

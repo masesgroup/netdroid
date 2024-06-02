@@ -37,89 +37,18 @@ namespace Android.Net.Wifi.Aware
         #endregion
 
         #region Fields
-
-        #endregion
-
-        #region Static methods
-
-        #endregion
-
-        #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="IdentityChangedListener"/>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/IdentityChangedListener.html#CLUSTER_CHANGE_EVENT_JOINED"/>
         /// </summary>
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("onClusterIdChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnClusterIdChangedEventHandler));
-            AddEventHandler("onIdentityChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<byte[]>>>(OnIdentityChangedEventHandler));
-
-        }
-
+        public static int CLUSTER_CHANGE_EVENT_JOINED { get { if (!_CLUSTER_CHANGE_EVENT_JOINEDReady) { _CLUSTER_CHANGE_EVENT_JOINEDContent = SGetField<int>(LocalBridgeClazz, "CLUSTER_CHANGE_EVENT_JOINED"); _CLUSTER_CHANGE_EVENT_JOINEDReady = true; } return _CLUSTER_CHANGE_EVENT_JOINEDContent; } }
+        private static int _CLUSTER_CHANGE_EVENT_JOINEDContent = default;
+        private static bool _CLUSTER_CHANGE_EVENT_JOINEDReady = false; // this is used because in case of generics 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/aware/IdentityChangedListener.html#onClusterIdChanged(int,android.net.MacAddress)"/>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/IdentityChangedListener.html#CLUSTER_CHANGE_EVENT_STARTED"/>
         /// </summary>
-        /// <remarks>If <see cref="OnOnClusterIdChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int, Android.Net.MacAddress> OnOnClusterIdChanged { get; set; } = null;
-
-        void OnClusterIdChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
-        {
-            var methodToExecute = (OnOnClusterIdChanged != null) ? OnOnClusterIdChanged : OnClusterIdChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Net.MacAddress>(0));
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/IdentityChangedListener.html#onClusterIdChanged(int,android.net.MacAddress)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Android.Net.MacAddress"/></param>
-        public virtual void OnClusterIdChanged(int arg0, Android.Net.MacAddress arg1)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/aware/IdentityChangedListener.html#onIdentityChanged(byte[])"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnIdentityChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<byte[]> OnOnIdentityChanged { get; set; } = null;
-
-        void OnIdentityChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<byte[]>> data)
-        {
-            var methodToExecute = (OnOnIdentityChanged != null) ? OnOnIdentityChanged : OnIdentityChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/IdentityChangedListener.html#onIdentityChanged(byte[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        public virtual void OnIdentityChanged(byte[] arg0)
-        {
-            
-        }
-
-        #endregion
-
-        #region Nested classes
-
-        #endregion
-
-        // TODO: complete the class
-    }
-    #endregion
-
-    #region IdentityChangedListenerDirect
-    public partial class IdentityChangedListenerDirect
-    {
-        #region Constructors
-
-        #endregion
-
-        #region Class/Interface conversion operators
-
-        #endregion
-
-        #region Fields
+        public static int CLUSTER_CHANGE_EVENT_STARTED { get { if (!_CLUSTER_CHANGE_EVENT_STARTEDReady) { _CLUSTER_CHANGE_EVENT_STARTEDContent = SGetField<int>(LocalBridgeClazz, "CLUSTER_CHANGE_EVENT_STARTED"); _CLUSTER_CHANGE_EVENT_STARTEDReady = true; } return _CLUSTER_CHANGE_EVENT_STARTEDContent; } }
+        private static int _CLUSTER_CHANGE_EVENT_STARTEDContent = default;
+        private static bool _CLUSTER_CHANGE_EVENT_STARTEDReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -133,7 +62,7 @@ namespace Android.Net.Wifi.Aware
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Net.MacAddress"/></param>
-        public override void OnClusterIdChanged(int arg0, Android.Net.MacAddress arg1)
+        public void OnClusterIdChanged(int arg0, Android.Net.MacAddress arg1)
         {
             IExecute("onClusterIdChanged", arg0, arg1);
         }
@@ -141,7 +70,7 @@ namespace Android.Net.Wifi.Aware
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/IdentityChangedListener.html#onIdentityChanged(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        public override void OnIdentityChanged(byte[] arg0)
+        public void OnIdentityChanged(byte[] arg0)
         {
             IExecuteWithSignature("onIdentityChanged", "([B)V", new object[] { arg0 });
         }

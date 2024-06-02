@@ -118,34 +118,6 @@ namespace Android.Bluetooth.Le
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetParameters.html#getInterval()"/> 
-        /// </summary>
-        public int Interval
-        {
-            get { return IExecuteWithSignature<int>("getInterval", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetParameters.html#getPrimaryPhy()"/> 
-        /// </summary>
-        public int PrimaryPhy
-        {
-            get { return IExecuteWithSignature<int>("getPrimaryPhy", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetParameters.html#getSecondaryPhy()"/> 
-        /// </summary>
-        public int SecondaryPhy
-        {
-            get { return IExecuteWithSignature<int>("getSecondaryPhy", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetParameters.html#getTxPowerLevel()"/> 
-        /// </summary>
-        public int TxPowerLevel
-        {
-            get { return IExecuteWithSignature<int>("getTxPowerLevel", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetParameters.html#includeTxPower()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -200,6 +172,38 @@ namespace Android.Bluetooth.Le
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetParameters.html#getInterval()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInterval()
+        {
+            return IExecuteWithSignature<int>("getInterval", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetParameters.html#getPrimaryPhy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPrimaryPhy()
+        {
+            return IExecuteWithSignature<int>("getPrimaryPhy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetParameters.html#getSecondaryPhy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSecondaryPhy()
+        {
+            return IExecuteWithSignature<int>("getSecondaryPhy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetParameters.html#getTxPowerLevel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTxPowerLevel()
+        {
+            return IExecuteWithSignature<int>("getTxPowerLevel", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/AdvertisingSetParameters.html#writeToParcel(android.os.Parcel,int)"/>

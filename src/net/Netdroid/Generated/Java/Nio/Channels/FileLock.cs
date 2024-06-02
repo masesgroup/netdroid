@@ -46,7 +46,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileLock.html#isValid()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileLock.html#isValid()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
@@ -54,7 +54,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("isValid", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileLock.html#release()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileLock.html#release()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Release()
@@ -62,7 +62,7 @@ namespace Java.Nio.Channels
             IExecuteWithSignature("release", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileLock.html#isShared()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileLock.html#isShared()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsShared()
@@ -70,7 +70,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("isShared", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileLock.html#overlaps(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileLock.html#overlaps(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -80,7 +80,7 @@ namespace Java.Nio.Channels
             return IExecute<bool>("overlaps", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileLock.html#channel()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileLock.html#channel()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.FileChannel"/></returns>
         public Java.Nio.Channels.FileChannel Channel()
@@ -88,7 +88,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.FileChannel>("channel", "()Ljava/nio/channels/FileChannel;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileLock.html#position()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileLock.html#position()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long Position()
@@ -96,7 +96,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<long>("position", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileLock.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileLock.html#size()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long Size()
@@ -104,7 +104,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<long>("size", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileLock.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileLock.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
@@ -112,7 +112,7 @@ namespace Java.Nio.Channels
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/FileLock.html#acquiredBy()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/FileLock.html#acquiredBy()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.Channel"/></returns>
         public Java.Nio.Channels.Channel AcquiredBy()

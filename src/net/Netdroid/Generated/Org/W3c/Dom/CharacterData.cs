@@ -64,21 +64,24 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CharacterData.html#getData()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CharacterData.html#setData(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/CharacterData.html#getLength()"/>
         /// </summary>
-        public Java.Lang.String Data
+        /// <returns><see cref="int"/></returns>
+        public int GetLength()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getData", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setData", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<int>("getLength", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CharacterData.html#getLength()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/CharacterData.html#getData()"/>
         /// </summary>
-        public int Length
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        public Java.Lang.String GetData()
         {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
+            return IExecuteWithSignature<Java.Lang.String>("getData", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CharacterData.html#substringData(int,int)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/CharacterData.html#substringData(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -89,7 +92,7 @@ namespace Org.W3c.Dom
             return IExecute<Java.Lang.String>("substringData", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CharacterData.html#appendData(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/CharacterData.html#appendData(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.W3c.Dom.DOMException"/>
@@ -98,7 +101,7 @@ namespace Org.W3c.Dom
             IExecuteWithSignature("appendData", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CharacterData.html#deleteData(int,int)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/CharacterData.html#deleteData(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -108,7 +111,7 @@ namespace Org.W3c.Dom
             IExecute("deleteData", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CharacterData.html#insertData(int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/CharacterData.html#insertData(int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -118,7 +121,7 @@ namespace Org.W3c.Dom
             IExecute("insertData", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/CharacterData.html#replaceData(int,int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/CharacterData.html#replaceData(int,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -127,6 +130,15 @@ namespace Org.W3c.Dom
         public void ReplaceData(int arg0, int arg1, Java.Lang.String arg2)
         {
             IExecute("replaceData", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/CharacterData.html#setData(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        public void SetData(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setData", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

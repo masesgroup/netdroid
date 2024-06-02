@@ -54,11 +54,12 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/SearchEvent.html#getInputDevice()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/SearchEvent.html#getInputDevice()"/>
         /// </summary>
-        public Android.View.InputDevice InputDevice
+        /// <returns><see cref="Android.View.InputDevice"/></returns>
+        public Android.View.InputDevice GetInputDevice()
         {
-            get { return IExecuteWithSignature<Android.View.InputDevice>("getInputDevice", "()Landroid/view/InputDevice;"); }
+            return IExecuteWithSignature<Android.View.InputDevice>("getInputDevice", "()Landroid/view/InputDevice;");
         }
 
         #endregion

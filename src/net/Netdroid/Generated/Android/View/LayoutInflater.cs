@@ -55,34 +55,6 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#getContext()"/> 
-        /// </summary>
-        public Android.Content.Context Context
-        {
-            get { return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#getFactory()"/> 
-        /// </summary>
-        public Android.View.LayoutInflater.Factory GetFactory
-        {
-            get { return IExecuteWithSignature<Android.View.LayoutInflater.Factory>("getFactory", "()Landroid/view/LayoutInflater$Factory;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#getFactory2()"/> 
-        /// </summary>
-        public Android.View.LayoutInflater.Factory2 GetFactory2
-        {
-            get { return IExecuteWithSignature<Android.View.LayoutInflater.Factory2>("getFactory2", "()Landroid/view/LayoutInflater$Factory2;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#getFilter()"/> 
-        /// </summary>
-        public Android.View.LayoutInflater.Filter GetFilter
-        {
-            get { return IExecuteWithSignature<Android.View.LayoutInflater.Filter>("getFilter", "()Landroid/view/LayoutInflater$Filter;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#cloneInContext(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -90,6 +62,22 @@ namespace Android.View
         public Android.View.LayoutInflater CloneInContext(Android.Content.Context arg0)
         {
             return IExecuteWithSignature<Android.View.LayoutInflater>("cloneInContext", "(Landroid/content/Context;)Landroid/view/LayoutInflater;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#getContext()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        public Android.Content.Context GetContext()
+        {
+            return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#getFilter()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.LayoutInflater.Filter"/></returns>
+        public Android.View.LayoutInflater.Filter GetFilter()
+        {
+            return IExecuteWithSignature<Android.View.LayoutInflater.Filter>("getFilter", "()Landroid/view/LayoutInflater$Filter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#inflate(int,android.view.ViewGroup,boolean)"/>
@@ -145,6 +133,22 @@ namespace Android.View
         public Android.View.View OnCreateView(Android.Content.Context arg0, Android.View.View arg1, Java.Lang.String arg2, Android.Util.AttributeSet arg3)
         {
             return IExecute<Android.View.View>("onCreateView", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#getFactory()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.LayoutInflater.Factory"/></returns>
+        public Android.View.LayoutInflater.Factory GetFactory()
+        {
+            return IExecuteWithSignature<Android.View.LayoutInflater.Factory>("getFactory", "()Landroid/view/LayoutInflater$Factory;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#getFactory2()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.LayoutInflater.Factory2"/></returns>
+        public Android.View.LayoutInflater.Factory2 GetFactory2()
+        {
+            return IExecuteWithSignature<Android.View.LayoutInflater.Factory2>("getFactory2", "()Landroid/view/LayoutInflater$Factory2;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/LayoutInflater.html#createView(android.content.Context,java.lang.String,java.lang.String,android.util.AttributeSet)"/>

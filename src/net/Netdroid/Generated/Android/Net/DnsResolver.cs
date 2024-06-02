@@ -96,11 +96,12 @@ namespace Android.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/DnsResolver.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/DnsResolver.html#getInstance()"/>
         /// </summary>
-        public static Android.Net.DnsResolver Instance
+        /// <returns><see cref="Android.Net.DnsResolver"/></returns>
+        public static Android.Net.DnsResolver GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Net.DnsResolver>(LocalBridgeClazz, "getInstance", "()Landroid/net/DnsResolver;"); }
+            return SExecuteWithSignature<Android.Net.DnsResolver>(LocalBridgeClazz, "getInstance", "()Landroid/net/DnsResolver;");
         }
 
         #endregion
@@ -117,7 +118,7 @@ namespace Android.Net
         /// <param name="arg5"><see cref="Android.Os.CancellationSignal"/></param>
         /// <param name="arg6"><see cref="Android.Net.DnsResolver.Callback"/></param>
         /// <typeparam name="Arg6objectSuperJava_Util_List_Java_Net_InetAddress_"><see cref="Java.Util.List{Java.Net.InetAddress}"/></typeparam>
-        public void Query<Arg6objectSuperJava_Util_List_Java_Net_InetAddress_>(Android.Net.Network arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Util.Concurrent.Executor arg4, Android.Os.CancellationSignal arg5, Android.Net.DnsResolver.Callback<Arg6objectSuperJava_Util_List_Java_Net_InetAddress_> arg6) where Arg6objectSuperJava_Util_List_Java_Net_InetAddress_: Java.Util.List<Java.Net.InetAddress>
+        public void Query<Arg6objectSuperJava_Util_List_Java_Net_InetAddress_>(Android.Net.Network arg0, Java.Lang.String arg1, int arg2, int arg3, Java.Util.Concurrent.Executor arg4, Android.Os.CancellationSignal arg5, Android.Net.DnsResolver.Callback<Arg6objectSuperJava_Util_List_Java_Net_InetAddress_> arg6) where Arg6objectSuperJava_Util_List_Java_Net_InetAddress_ : Java.Util.List<Java.Net.InetAddress>
         {
             IExecute("query", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -131,7 +132,7 @@ namespace Android.Net
         /// <param name="arg4"><see cref="Android.Os.CancellationSignal"/></param>
         /// <param name="arg5"><see cref="Android.Net.DnsResolver.Callback"/></param>
         /// <typeparam name="Arg5objectSuperJava_Util_List_Java_Net_InetAddress_"><see cref="Java.Util.List{Java.Net.InetAddress}"/></typeparam>
-        public void Query<Arg5objectSuperJava_Util_List_Java_Net_InetAddress_>(Android.Net.Network arg0, Java.Lang.String arg1, int arg2, Java.Util.Concurrent.Executor arg3, Android.Os.CancellationSignal arg4, Android.Net.DnsResolver.Callback<Arg5objectSuperJava_Util_List_Java_Net_InetAddress_> arg5) where Arg5objectSuperJava_Util_List_Java_Net_InetAddress_: Java.Util.List<Java.Net.InetAddress>
+        public void Query<Arg5objectSuperJava_Util_List_Java_Net_InetAddress_>(Android.Net.Network arg0, Java.Lang.String arg1, int arg2, Java.Util.Concurrent.Executor arg3, Android.Os.CancellationSignal arg4, Android.Net.DnsResolver.Callback<Arg5objectSuperJava_Util_List_Java_Net_InetAddress_> arg5) where Arg5objectSuperJava_Util_List_Java_Net_InetAddress_ : Java.Util.List<Java.Net.InetAddress>
         {
             IExecute("query", arg0, arg1, arg2, arg3, arg4, arg5);
         }

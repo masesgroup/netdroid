@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/PriorityQueue.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/PriorityQueue.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public PriorityQueue(int arg0)
@@ -38,7 +38,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/PriorityQueue.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public PriorityQueue(Java.Util.Collection arg0)
@@ -46,7 +46,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.PriorityQueue)"/>
+        /// <see href="https://developer.android.com/reference/java/util/PriorityQueue.html#%3Cinit%3E(java.util.PriorityQueue)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.PriorityQueue"/></param>
         public PriorityQueue(Java.Util.PriorityQueue arg0)
@@ -54,7 +54,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.SortedSet)"/>
+        /// <see href="https://developer.android.com/reference/java/util/PriorityQueue.html#%3Cinit%3E(java.util.SortedSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
         public PriorityQueue(Java.Util.SortedSet arg0)
@@ -97,7 +97,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/PriorityQueue.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/PriorityQueue.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public PriorityQueue(int arg0)
@@ -105,7 +105,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/PriorityQueue.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public PriorityQueue(Java.Util.Collection<E> arg0)
@@ -113,7 +113,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.PriorityQueue)"/>
+        /// <see href="https://developer.android.com/reference/java/util/PriorityQueue.html#%3Cinit%3E(java.util.PriorityQueue)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.PriorityQueue"/></param>
         public PriorityQueue(Java.Util.PriorityQueue<E> arg0)
@@ -121,7 +121,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.SortedSet)"/>
+        /// <see href="https://developer.android.com/reference/java/util/PriorityQueue.html#%3Cinit%3E(java.util.SortedSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
         public PriorityQueue(Java.Util.SortedSet<E> arg0)

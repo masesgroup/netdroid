@@ -154,109 +154,124 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getAddress()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getOrientation()"/>
         /// </summary>
-        public Java.Lang.String Address
+        /// <returns><see cref="Android.Media.MicrophoneInfo.Coordinate3F"/></returns>
+        public Android.Media.MicrophoneInfo.Coordinate3F GetOrientation()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAddress", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Media.MicrophoneInfo.Coordinate3F>("getOrientation", "()Landroid/media/MicrophoneInfo$Coordinate3F;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getChannelMapping()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getPosition()"/>
         /// </summary>
-        public Java.Util.List<Android.Util.Pair<Java.Lang.Integer, Java.Lang.Integer>> ChannelMapping
+        /// <returns><see cref="Android.Media.MicrophoneInfo.Coordinate3F"/></returns>
+        public Android.Media.MicrophoneInfo.Coordinate3F GetPosition()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Util.Pair<Java.Lang.Integer, Java.Lang.Integer>>>("getChannelMapping", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Media.MicrophoneInfo.Coordinate3F>("getPosition", "()Landroid/media/MicrophoneInfo$Coordinate3F;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getDescription()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getMaxSpl()"/>
         /// </summary>
-        public Java.Lang.String Description
+        /// <returns><see cref="float"/></returns>
+        public float GetMaxSpl()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<float>("getMaxSpl", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getDirectionality()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getMinSpl()"/>
         /// </summary>
-        public int Directionality
+        /// <returns><see cref="float"/></returns>
+        public float GetMinSpl()
         {
-            get { return IExecuteWithSignature<int>("getDirectionality", "()I"); }
+            return IExecuteWithSignature<float>("getMinSpl", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getFrequencyResponse()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getSensitivity()"/>
         /// </summary>
-        public Java.Util.List<Android.Util.Pair<Java.Lang.Float, Java.Lang.Float>> FrequencyResponse
+        /// <returns><see cref="float"/></returns>
+        public float GetSensitivity()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Util.Pair<Java.Lang.Float, Java.Lang.Float>>>("getFrequencyResponse", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<float>("getSensitivity", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getGroup()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getDirectionality()"/>
         /// </summary>
-        public int Group
+        /// <returns><see cref="int"/></returns>
+        public int GetDirectionality()
         {
-            get { return IExecuteWithSignature<int>("getGroup", "()I"); }
+            return IExecuteWithSignature<int>("getDirectionality", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getGroup()"/>
         /// </summary>
-        public int Id
+        /// <returns><see cref="int"/></returns>
+        public int GetGroup()
         {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
+            return IExecuteWithSignature<int>("getGroup", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getIndexInTheGroup()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getId()"/>
         /// </summary>
-        public int IndexInTheGroup
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
         {
-            get { return IExecuteWithSignature<int>("getIndexInTheGroup", "()I"); }
+            return IExecuteWithSignature<int>("getId", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getLocation()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getIndexInTheGroup()"/>
         /// </summary>
-        public int Location
+        /// <returns><see cref="int"/></returns>
+        public int GetIndexInTheGroup()
         {
-            get { return IExecuteWithSignature<int>("getLocation", "()I"); }
+            return IExecuteWithSignature<int>("getIndexInTheGroup", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getMaxSpl()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getLocation()"/>
         /// </summary>
-        public float MaxSpl
+        /// <returns><see cref="int"/></returns>
+        public int GetLocation()
         {
-            get { return IExecuteWithSignature<float>("getMaxSpl", "()F"); }
+            return IExecuteWithSignature<int>("getLocation", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getMinSpl()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getType()"/>
         /// </summary>
-        public float MinSpl
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
         {
-            get { return IExecuteWithSignature<float>("getMinSpl", "()F"); }
+            return IExecuteWithSignature<int>("getType", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getOrientation()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getAddress()"/>
         /// </summary>
-        public Android.Media.MicrophoneInfo.Coordinate3F Orientation
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAddress()
         {
-            get { return IExecuteWithSignature<Android.Media.MicrophoneInfo.Coordinate3F>("getOrientation", "()Landroid/media/MicrophoneInfo$Coordinate3F;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getAddress", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getPosition()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getDescription()"/>
         /// </summary>
-        public Android.Media.MicrophoneInfo.Coordinate3F Position
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDescription()
         {
-            get { return IExecuteWithSignature<Android.Media.MicrophoneInfo.Coordinate3F>("getPosition", "()Landroid/media/MicrophoneInfo$Coordinate3F;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getSensitivity()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getFrequencyResponse()"/>
         /// </summary>
-        public float Sensitivity
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Util.Pair<Java.Lang.Float, Java.Lang.Float>> GetFrequencyResponse()
         {
-            get { return IExecuteWithSignature<float>("getSensitivity", "()F"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Util.Pair<Java.Lang.Float, Java.Lang.Float>>>("getFrequencyResponse", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getType()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MicrophoneInfo.html#getChannelMapping()"/>
         /// </summary>
-        public int Type
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Util.Pair<Java.Lang.Integer, Java.Lang.Integer>> GetChannelMapping()
         {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Util.Pair<Java.Lang.Integer, Java.Lang.Integer>>>("getChannelMapping", "()Ljava/util/List;");
         }
 
         #endregion

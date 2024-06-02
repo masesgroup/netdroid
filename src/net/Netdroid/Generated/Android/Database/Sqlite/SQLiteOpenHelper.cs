@@ -80,27 +80,6 @@ namespace Android.Database.Sqlite
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteOpenHelper.html#getDatabaseName()"/> 
-        /// </summary>
-        public Java.Lang.String DatabaseName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDatabaseName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteOpenHelper.html#getReadableDatabase()"/> 
-        /// </summary>
-        public Android.Database.Sqlite.SQLiteDatabase ReadableDatabase
-        {
-            get { return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase>("getReadableDatabase", "()Landroid/database/sqlite/SQLiteDatabase;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteOpenHelper.html#getWritableDatabase()"/> 
-        /// </summary>
-        public Android.Database.Sqlite.SQLiteDatabase WritableDatabase
-        {
-            get { return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase>("getWritableDatabase", "()Landroid/database/sqlite/SQLiteDatabase;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteOpenHelper.html#onCreate(android.database.sqlite.SQLiteDatabase)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Database.Sqlite.SQLiteDatabase"/></param>
@@ -117,6 +96,30 @@ namespace Android.Database.Sqlite
         public void OnUpgrade(Android.Database.Sqlite.SQLiteDatabase arg0, int arg1, int arg2)
         {
             IExecute("onUpgrade", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteOpenHelper.html#getReadableDatabase()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase"/></returns>
+        public Android.Database.Sqlite.SQLiteDatabase GetReadableDatabase()
+        {
+            return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase>("getReadableDatabase", "()Landroid/database/sqlite/SQLiteDatabase;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteOpenHelper.html#getWritableDatabase()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase"/></returns>
+        public Android.Database.Sqlite.SQLiteDatabase GetWritableDatabase()
+        {
+            return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase>("getWritableDatabase", "()Landroid/database/sqlite/SQLiteDatabase;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteOpenHelper.html#getDatabaseName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDatabaseName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDatabaseName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteOpenHelper.html#close()"/>
@@ -155,7 +158,7 @@ namespace Android.Database.Sqlite
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteOpenHelper.html#setIdleConnectionTimeout(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetIdleConnectionTimeout(long arg0)
         {
             IExecuteWithSignature("setIdleConnectionTimeout", "(J)V", arg0);

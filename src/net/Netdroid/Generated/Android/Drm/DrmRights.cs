@@ -34,7 +34,7 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="Android.Drm.ProcessedData"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public DrmRights(Android.Drm.ProcessedData arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -44,7 +44,7 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public DrmRights(Java.Io.File arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -56,7 +56,7 @@ namespace Android.Drm
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public DrmRights(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -67,7 +67,7 @@ namespace Android.Drm
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public DrmRights(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
         {
@@ -77,7 +77,7 @@ namespace Android.Drm
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public DrmRights(Java.Lang.String arg0, Java.Lang.String arg1)
             : base(arg0, arg1)
         {
@@ -99,36 +99,40 @@ namespace Android.Drm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/drm/DrmRights.html#getAccountId()"/> 
+        /// <see href="https://developer.android.com/reference/android/drm/DrmRights.html#getData()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String AccountId
+        /// <returns><see cref="byte"/></returns>
+        [global::System.Obsolete()]
+        public byte[] GetData()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAccountId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<byte>("getData", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/drm/DrmRights.html#getData()"/> 
+        /// <see href="https://developer.android.com/reference/android/drm/DrmRights.html#getAccountId()"/>
         /// </summary>
-        [System.Obsolete()]
-        public byte[] Data
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetAccountId()
         {
-            get { return IExecuteWithSignatureArray<byte>("getData", "()[B"); }
+            return IExecuteWithSignature<Java.Lang.String>("getAccountId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/drm/DrmRights.html#getMimeType()"/> 
+        /// <see href="https://developer.android.com/reference/android/drm/DrmRights.html#getMimeType()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String MimeType
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetMimeType()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/drm/DrmRights.html#getSubscriptionId()"/> 
+        /// <see href="https://developer.android.com/reference/android/drm/DrmRights.html#getSubscriptionId()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String SubscriptionId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetSubscriptionId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSubscriptionId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSubscriptionId", "()Ljava/lang/String;");
         }
 
         #endregion

@@ -129,39 +129,20 @@ namespace Android.App.Admin
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getActivityInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getComponent()"/>
         /// </summary>
-        public Android.Content.Pm.ActivityInfo ActivityInfo
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetComponent()
         {
-            get { return IExecuteWithSignature<Android.Content.Pm.ActivityInfo>("getActivityInfo", "()Landroid/content/pm/ActivityInfo;"); }
+            return IExecuteWithSignature<Android.Content.ComponentName>("getComponent", "()Landroid/content/ComponentName;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getComponent()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getActivityInfo()"/>
         /// </summary>
-        public Android.Content.ComponentName Component
+        /// <returns><see cref="Android.Content.Pm.ActivityInfo"/></returns>
+        public Android.Content.Pm.ActivityInfo GetActivityInfo()
         {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getComponent", "()Landroid/content/ComponentName;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getHeadlessDeviceOwnerMode()"/> 
-        /// </summary>
-        public int HeadlessDeviceOwnerMode
-        {
-            get { return IExecuteWithSignature<int>("getHeadlessDeviceOwnerMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getReceiverName()"/> 
-        /// </summary>
-        public Java.Lang.String ReceiverName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getReceiverName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Content.Pm.ActivityInfo>("getActivityInfo", "()Landroid/content/pm/ActivityInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#loadIcon(android.content.pm.PackageManager)"/>
@@ -206,6 +187,14 @@ namespace Android.App.Admin
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getHeadlessDeviceOwnerMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeadlessDeviceOwnerMode()
+        {
+            return IExecuteWithSignature<int>("getHeadlessDeviceOwnerMode", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#loadDescription(android.content.pm.PackageManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.PackageManager"/></param>
@@ -223,6 +212,22 @@ namespace Android.App.Admin
         public Java.Lang.CharSequence LoadLabel(Android.Content.Pm.PackageManager arg0)
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("loadLabel", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getReceiverName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetReceiverName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getReceiverName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/DeviceAdminInfo.html#getTagForPolicy(int)"/>

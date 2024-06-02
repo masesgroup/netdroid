@@ -126,116 +126,36 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getAnchorView()"/> <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setAnchorView(android.view.View)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getBackground()"/>
         /// </summary>
-        public Android.View.View AnchorView
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetBackground()
         {
-            get { return IExecuteWithSignature<Android.View.View>("getAnchorView", "()Landroid/view/View;"); } set { IExecuteWithSignature("setAnchorView", "(Landroid/view/View;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getBackground", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getAnimationStyle()"/> <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setAnimationStyle(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getEpicenterBounds()"/>
         /// </summary>
-        public int AnimationStyle
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetEpicenterBounds()
         {
-            get { return IExecuteWithSignature<int>("getAnimationStyle", "()I"); } set { IExecuteWithSignature("setAnimationStyle", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Rect>("getEpicenterBounds", "()Landroid/graphics/Rect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getBackground()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getAnchorView()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable Background
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetAnchorView()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getBackground", "()Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<Android.View.View>("getAnchorView", "()Landroid/view/View;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getEpicenterBounds()"/> <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setEpicenterBounds(android.graphics.Rect)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getSelectedView()"/>
         /// </summary>
-        public Android.Graphics.Rect EpicenterBounds
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetSelectedView()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getEpicenterBounds", "()Landroid/graphics/Rect;"); } set { IExecuteWithSignature("setEpicenterBounds", "(Landroid/graphics/Rect;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getHeight()"/> <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setHeight(int)"/>
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); } set { IExecuteWithSignature("setHeight", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getHorizontalOffset()"/> <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setHorizontalOffset(int)"/>
-        /// </summary>
-        public int HorizontalOffset
-        {
-            get { return IExecuteWithSignature<int>("getHorizontalOffset", "()I"); } set { IExecuteWithSignature("setHorizontalOffset", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getInputMethodMode()"/> <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setInputMethodMode(int)"/>
-        /// </summary>
-        public int InputMethodMode
-        {
-            get { return IExecuteWithSignature<int>("getInputMethodMode", "()I"); } set { IExecuteWithSignature("setInputMethodMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getListView()"/> 
-        /// </summary>
-        public Android.Widget.ListView ListView
-        {
-            get { return IExecuteWithSignature<Android.Widget.ListView>("getListView", "()Landroid/widget/ListView;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getPromptPosition()"/> <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setPromptPosition(int)"/>
-        /// </summary>
-        public int PromptPosition
-        {
-            get { return IExecuteWithSignature<int>("getPromptPosition", "()I"); } set { IExecuteWithSignature("setPromptPosition", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getSelectedItem()"/> 
-        /// </summary>
-        public object SelectedItem
-        {
-            get { return IExecuteWithSignature("getSelectedItem", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getSelectedItemId()"/> 
-        /// </summary>
-        public long SelectedItemId
-        {
-            get { return IExecuteWithSignature<long>("getSelectedItemId", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getSelectedItemPosition()"/> 
-        /// </summary>
-        public int SelectedItemPosition
-        {
-            get { return IExecuteWithSignature<int>("getSelectedItemPosition", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getSelectedView()"/> 
-        /// </summary>
-        public Android.View.View SelectedView
-        {
-            get { return IExecuteWithSignature<Android.View.View>("getSelectedView", "()Landroid/view/View;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getSoftInputMode()"/> <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setSoftInputMode(int)"/>
-        /// </summary>
-        public int SoftInputMode
-        {
-            get { return IExecuteWithSignature<int>("getSoftInputMode", "()I"); } set { IExecuteWithSignature("setSoftInputMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getVerticalOffset()"/> <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setVerticalOffset(int)"/>
-        /// </summary>
-        public int VerticalOffset
-        {
-            get { return IExecuteWithSignature<int>("getVerticalOffset", "()I"); } set { IExecuteWithSignature("setVerticalOffset", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getWidth()"/> <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setWidth(int)"/>
-        /// </summary>
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); } set { IExecuteWithSignature("setWidth", "(I)V", value); }
+            return IExecuteWithSignature<Android.View.View>("getSelectedView", "()Landroid/view/View;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#createDragToOpenListener(android.view.View)"/>
@@ -254,6 +174,14 @@ namespace Android.Widget
         public Android.View.View.OnTouchListener CreateDragToOpenListenerDirect(Android.View.View arg0)
         {
             return IExecuteWithSignature<Android.View.View.OnTouchListenerDirect, Android.View.View.OnTouchListener>("createDragToOpenListener", "(Landroid/view/View;)Landroid/view/View$OnTouchListener;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getListView()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Widget.ListView"/></returns>
+        public Android.Widget.ListView GetListView()
+        {
+            return IExecuteWithSignature<Android.Widget.ListView>("getListView", "()Landroid/widget/ListView;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#isInputMethodNotNeeded()"/>
@@ -319,6 +247,94 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("performItemClick", "(I)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getAnimationStyle()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAnimationStyle()
+        {
+            return IExecuteWithSignature<int>("getAnimationStyle", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getHorizontalOffset()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHorizontalOffset()
+        {
+            return IExecuteWithSignature<int>("getHorizontalOffset", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getInputMethodMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInputMethodMode()
+        {
+            return IExecuteWithSignature<int>("getInputMethodMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getPromptPosition()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPromptPosition()
+        {
+            return IExecuteWithSignature<int>("getPromptPosition", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getSelectedItemPosition()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSelectedItemPosition()
+        {
+            return IExecuteWithSignature<int>("getSelectedItemPosition", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getSoftInputMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSoftInputMode()
+        {
+            return IExecuteWithSignature<int>("getSoftInputMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getVerticalOffset()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVerticalOffset()
+        {
+            return IExecuteWithSignature<int>("getVerticalOffset", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
+        {
+            return IExecuteWithSignature<int>("getWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getSelectedItem()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetSelectedItem()
+        {
+            return IExecuteWithSignature("getSelectedItem", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#getSelectedItemId()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetSelectedItemId()
+        {
+            return IExecuteWithSignature<long>("getSelectedItemId", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#clearListSelection()"/>
         /// </summary>
         public void ClearListSelection()
@@ -348,6 +364,22 @@ namespace Android.Widget
             IExecuteWithSignature("setAdapter", "(Landroid/widget/ListAdapter;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setAnchorView(android.view.View)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        public void SetAnchorView(Android.View.View arg0)
+        {
+            IExecuteWithSignature("setAnchorView", "(Landroid/view/View;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setAnimationStyle(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetAnimationStyle(int arg0)
+        {
+            IExecuteWithSignature("setAnimationStyle", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setBackgroundDrawable(android.graphics.drawable.Drawable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
@@ -370,6 +402,38 @@ namespace Android.Widget
         public void SetDropDownGravity(int arg0)
         {
             IExecuteWithSignature("setDropDownGravity", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setEpicenterBounds(android.graphics.Rect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+        public void SetEpicenterBounds(Android.Graphics.Rect arg0)
+        {
+            IExecuteWithSignature("setEpicenterBounds", "(Landroid/graphics/Rect;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setHeight(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetHeight(int arg0)
+        {
+            IExecuteWithSignature("setHeight", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setHorizontalOffset(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetHorizontalOffset(int arg0)
+        {
+            IExecuteWithSignature("setHorizontalOffset", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setInputMethodMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetInputMethodMode(int arg0)
+        {
+            IExecuteWithSignature("setInputMethodMode", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setListSelector(android.graphics.drawable.Drawable)"/>
@@ -412,6 +476,14 @@ namespace Android.Widget
             IExecuteWithSignature("setOnItemSelectedListener", "(Landroid/widget/AdapterView$OnItemSelectedListener;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setPromptPosition(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetPromptPosition(int arg0)
+        {
+            IExecuteWithSignature("setPromptPosition", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setPromptView(android.view.View)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
@@ -426,6 +498,30 @@ namespace Android.Widget
         public void SetSelection(int arg0)
         {
             IExecuteWithSignature("setSelection", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setSoftInputMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetSoftInputMode(int arg0)
+        {
+            IExecuteWithSignature("setSoftInputMode", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setVerticalOffset(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetVerticalOffset(int arg0)
+        {
+            IExecuteWithSignature("setVerticalOffset", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setWidth(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetWidth(int arg0)
+        {
+            IExecuteWithSignature("setWidth", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ListPopupWindow.html#setWindowLayoutType(int)"/>

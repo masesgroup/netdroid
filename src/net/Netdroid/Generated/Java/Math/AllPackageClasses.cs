@@ -28,7 +28,7 @@ namespace Java.Math
 {
     #region BigDecimal
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/math/BigDecimal.html"/>
+    /// <see href="https://developer.android.com/reference/java/math/BigDecimal.html"/>
     /// </summary>
     public partial class BigDecimal : Java.Lang.Number
     {
@@ -72,7 +72,7 @@ namespace Java.Math
 
     #region BigInteger
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/math/BigInteger.html"/>
+    /// <see href="https://developer.android.com/reference/java/math/BigInteger.html"/>
     /// </summary>
     public partial class BigInteger : Java.Lang.Number
     {
@@ -116,7 +116,7 @@ namespace Java.Math
 
     #region MathContext
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/math/MathContext.html"/>
+    /// <see href="https://developer.android.com/reference/java/math/MathContext.html"/>
     /// </summary>
     public partial class MathContext : Java.Io.Serializable
     {
@@ -160,7 +160,7 @@ namespace Java.Math
 
     #region RoundingMode
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/math/RoundingMode.html"/>
+    /// <see href="https://developer.android.com/reference/java/math/RoundingMode.html"/>
     /// </summary>
     public partial class RoundingMode : Java.Lang.Enum<Java.Math.RoundingMode>
     {

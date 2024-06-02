@@ -46,11 +46,12 @@ namespace Android.Net.Eap
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/eap/EapInfo.html#getEapMethodType()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/eap/EapInfo.html#getEapMethodType()"/>
         /// </summary>
-        public int EapMethodType
+        /// <returns><see cref="int"/></returns>
+        public int GetEapMethodType()
         {
-            get { return IExecuteWithSignature<int>("getEapMethodType", "()I"); }
+            return IExecuteWithSignature<int>("getEapMethodType", "()I");
         }
 
         #endregion

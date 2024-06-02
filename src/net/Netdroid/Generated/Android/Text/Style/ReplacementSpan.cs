@@ -46,13 +46,6 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/ReplacementSpan.html#getContentDescription()"/> <see href="https://developer.android.com/reference/android/text/style/ReplacementSpan.html#setContentDescription(java.lang.CharSequence)"/>
-        /// </summary>
-        public Java.Lang.CharSequence ContentDescription
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setContentDescription", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/ReplacementSpan.html#getSize(android.graphics.Paint,java.lang.CharSequence,int,int,android.graphics.Paint.FontMetricsInt)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Paint"/></param>
@@ -80,6 +73,22 @@ namespace Android.Text.Style
         public void Draw(Android.Graphics.Canvas arg0, Java.Lang.CharSequence arg1, int arg2, int arg3, float arg4, int arg5, int arg6, int arg7, Android.Graphics.Paint arg8)
         {
             IExecute("draw", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/ReplacementSpan.html#getContentDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetContentDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/ReplacementSpan.html#setContentDescription(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetContentDescription(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setContentDescription", "(Ljava/lang/CharSequence;)V", arg0);
         }
 
         #endregion

@@ -46,7 +46,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineContainsAlias(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineContainsAlias(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Security
             return IExecuteWithSignature<bool>("engineContainsAlias", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineIsCertificateEntry(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineIsCertificateEntry(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -64,7 +64,7 @@ namespace Java.Security
             return IExecuteWithSignature<bool>("engineIsCertificateEntry", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineIsKeyEntry(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineIsKeyEntry(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -73,7 +73,7 @@ namespace Java.Security
             return IExecuteWithSignature<bool>("engineIsKeyEntry", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineSize()"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineSize()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int EngineSize()
@@ -81,7 +81,7 @@ namespace Java.Security
             return IExecuteWithSignature<int>("engineSize", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineGetCertificateAlias(java.security.cert.Certificate)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineGetCertificateAlias(java.security.cert.Certificate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -90,7 +90,7 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Lang.String>("engineGetCertificateAlias", "(Ljava/security/cert/Certificate;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineGetCertificate(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineGetCertificate(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
@@ -99,7 +99,7 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Security.Cert.Certificate>("engineGetCertificate", "(Ljava/lang/String;)Ljava/security/cert/Certificate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineGetCertificateChain(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineGetCertificateChain(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
@@ -108,7 +108,7 @@ namespace Java.Security
             return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("engineGetCertificateChain", "(Ljava/lang/String;)[Ljava/security/cert/Certificate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineGetKey(java.lang.String,char[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineGetKey(java.lang.String,char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="char"/></param>
@@ -120,7 +120,7 @@ namespace Java.Security
             return IExecute<Java.Security.Key>("engineGetKey", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineGetCreationDate(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineGetCreationDate(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Date"/></returns>
@@ -129,7 +129,7 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Util.Date>("engineGetCreationDate", "(Ljava/lang/String;)Ljava/util/Date;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineAliases()"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineAliases()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
         public Java.Util.Enumeration<Java.Lang.String> EngineAliases()
@@ -137,7 +137,7 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("engineAliases", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineDeleteEntry(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineDeleteEntry(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Security.KeyStoreException"/>
@@ -146,7 +146,7 @@ namespace Java.Security
             IExecuteWithSignature("engineDeleteEntry", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineLoad(java.io.InputStream,char[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineLoad(java.io.InputStream,char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="char"/></param>
@@ -158,7 +158,7 @@ namespace Java.Security
             IExecute("engineLoad", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineSetCertificateEntry(java.lang.String,java.security.cert.Certificate)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineSetCertificateEntry(java.lang.String,java.security.cert.Certificate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
@@ -168,7 +168,7 @@ namespace Java.Security
             IExecute("engineSetCertificateEntry", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineSetKeyEntry(java.lang.String,byte[],java.security.cert.Certificate[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineSetKeyEntry(java.lang.String,byte[],java.security.cert.Certificate[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -179,7 +179,7 @@ namespace Java.Security
             IExecute("engineSetKeyEntry", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineSetKeyEntry(java.lang.String,java.security.Key,char[],java.security.cert.Certificate[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineSetKeyEntry(java.lang.String,java.security.Key,char[],java.security.cert.Certificate[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Key"/></param>
@@ -191,7 +191,7 @@ namespace Java.Security
             IExecute("engineSetKeyEntry", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineStore(java.io.OutputStream,char[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineStore(java.io.OutputStream,char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="char"/></param>
@@ -203,7 +203,7 @@ namespace Java.Security
             IExecute("engineStore", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineEntryInstanceOf(java.lang.String,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineEntryInstanceOf(java.lang.String,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -213,7 +213,7 @@ namespace Java.Security
             return IExecute<bool>("engineEntryInstanceOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineProbe(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineProbe(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -223,7 +223,7 @@ namespace Java.Security
             return IExecuteWithSignature<bool>("engineProbe", "(Ljava/io/InputStream;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineGetEntry(java.lang.String,java.security.KeyStore.ProtectionParameter)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineGetEntry(java.lang.String,java.security.KeyStore.ProtectionParameter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.KeyStore.ProtectionParameter"/></param>
@@ -236,7 +236,7 @@ namespace Java.Security
             return IExecute<Java.Security.KeyStore.Entry>("engineGetEntry", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineLoad(java.security.KeyStore.LoadStoreParameter)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineLoad(java.security.KeyStore.LoadStoreParameter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.KeyStore.LoadStoreParameter"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -247,7 +247,7 @@ namespace Java.Security
             IExecuteWithSignature("engineLoad", "(Ljava/security/KeyStore$LoadStoreParameter;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineSetEntry(java.lang.String,java.security.KeyStore.Entry,java.security.KeyStore.ProtectionParameter)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineSetEntry(java.lang.String,java.security.KeyStore.Entry,java.security.KeyStore.ProtectionParameter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.KeyStore.Entry"/></param>
@@ -258,7 +258,7 @@ namespace Java.Security
             IExecute("engineSetEntry", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyStoreSpi.html#engineStore(java.security.KeyStore.LoadStoreParameter)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyStoreSpi.html#engineStore(java.security.KeyStore.LoadStoreParameter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.KeyStore.LoadStoreParameter"/></param>
         /// <exception cref="Java.Io.IOException"/>

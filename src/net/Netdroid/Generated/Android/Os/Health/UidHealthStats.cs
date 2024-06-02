@@ -94,7 +94,7 @@ namespace Android.Os.Health
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/health/UidHealthStats.html#MEASUREMENT_CPU_POWER_MAMS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MEASUREMENT_CPU_POWER_MAMS { get { if (!_MEASUREMENT_CPU_POWER_MAMSReady) { _MEASUREMENT_CPU_POWER_MAMSContent = SGetField<int>(LocalBridgeClazz, "MEASUREMENT_CPU_POWER_MAMS"); _MEASUREMENT_CPU_POWER_MAMSReady = true; } return _MEASUREMENT_CPU_POWER_MAMSContent; } }
         private static int _MEASUREMENT_CPU_POWER_MAMSContent = default;
         private static bool _MEASUREMENT_CPU_POWER_MAMSReady = false; // this is used because in case of generics 

@@ -55,19 +55,20 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/CharacterStyle.html#getUnderlying()"/> 
-        /// </summary>
-        public Android.Text.Style.CharacterStyle Underlying
-        {
-            get { return IExecuteWithSignature<Android.Text.Style.CharacterStyle>("getUnderlying", "()Landroid/text/style/CharacterStyle;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/CharacterStyle.html#updateDrawState(android.text.TextPaint)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Text.TextPaint"/></param>
         public void UpdateDrawState(Android.Text.TextPaint arg0)
         {
             IExecuteWithSignature("updateDrawState", "(Landroid/text/TextPaint;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/CharacterStyle.html#getUnderlying()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.Style.CharacterStyle"/></returns>
+        public Android.Text.Style.CharacterStyle GetUnderlying()
+        {
+            return IExecuteWithSignature<Android.Text.Style.CharacterStyle>("getUnderlying", "()Landroid/text/style/CharacterStyle;");
         }
 
         #endregion

@@ -50,15 +50,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<object, long> OnAccept { get; set; } = null;
+        public global::System.Action<object, long> OnAccept { get; set; } = null;
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
@@ -67,7 +67,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -107,7 +107,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -128,7 +128,7 @@ namespace Java.Util.Function
 
     #region IObjLongConsumer<T>
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.ObjLongConsumer implementing <see href="https://developer.android.com/reference/java.base/java/util/function/ObjLongConsumer.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.ObjLongConsumer implementing <see href="https://developer.android.com/reference/java/util/function/ObjLongConsumer.html"/>
     /// </summary>
     public partial interface IObjLongConsumer<T>
     {
@@ -169,15 +169,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<T, long> OnAccept { get; set; } = null;
+        public global::System.Action<T, long> OnAccept { get; set; } = null;
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
@@ -186,7 +186,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -226,7 +226,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="long"/></param>

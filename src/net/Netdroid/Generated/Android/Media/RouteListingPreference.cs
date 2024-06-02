@@ -64,25 +64,20 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.html#getItems()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.html#getLinkedItemComponentName()"/>
         /// </summary>
-        public Java.Util.List<Android.Media.RouteListingPreference.Item> Items
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetLinkedItemComponentName()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.RouteListingPreference.Item>>("getItems", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Content.ComponentName>("getLinkedItemComponentName", "()Landroid/content/ComponentName;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.html#getLinkedItemComponentName()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.html#getUseSystemOrdering()"/>
         /// </summary>
-        public Android.Content.ComponentName LinkedItemComponentName
+        /// <returns><see cref="bool"/></returns>
+        public bool GetUseSystemOrdering()
         {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getLinkedItemComponentName", "()Landroid/content/ComponentName;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.html#getUseSystemOrdering()"/> 
-        /// </summary>
-        public bool UseSystemOrdering
-        {
-            get { return IExecuteWithSignature<bool>("getUseSystemOrdering", "()Z"); }
+            return IExecuteWithSignature<bool>("getUseSystemOrdering", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.html#describeContents()"/>
@@ -91,6 +86,14 @@ namespace Android.Media
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.html#getItems()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.RouteListingPreference.Item> GetItems()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.RouteListingPreference.Item>>("getItems", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.html#writeToParcel(android.os.Parcel,int)"/>
@@ -288,47 +291,52 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.Item.html#getCustomSubtextMessage()"/> 
-            /// </summary>
-            public Java.Lang.CharSequence CustomSubtextMessage
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getCustomSubtextMessage", "()Ljava/lang/CharSequence;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.Item.html#getFlags()"/> 
-            /// </summary>
-            public int Flags
-            {
-                get { return IExecuteWithSignature<int>("getFlags", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.Item.html#getRouteId()"/> 
-            /// </summary>
-            public Java.Lang.String RouteId
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getRouteId", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.Item.html#getSelectionBehavior()"/> 
-            /// </summary>
-            public int SelectionBehavior
-            {
-                get { return IExecuteWithSignature<int>("getSelectionBehavior", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.Item.html#getSubText()"/> 
-            /// </summary>
-            public int SubText
-            {
-                get { return IExecuteWithSignature<int>("getSubText", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.Item.html#describeContents()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.Item.html#getFlags()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetFlags()
+            {
+                return IExecuteWithSignature<int>("getFlags", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.Item.html#getSelectionBehavior()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetSelectionBehavior()
+            {
+                return IExecuteWithSignature<int>("getSelectionBehavior", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.Item.html#getSubText()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetSubText()
+            {
+                return IExecuteWithSignature<int>("getSubText", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.Item.html#getCustomSubtextMessage()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetCustomSubtextMessage()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getCustomSubtextMessage", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.Item.html#getRouteId()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetRouteId()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getRouteId", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/RouteListingPreference.Item.html#writeToParcel(android.os.Parcel,int)"/>

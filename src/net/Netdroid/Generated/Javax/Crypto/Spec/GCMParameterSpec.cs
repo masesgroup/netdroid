@@ -30,7 +30,7 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/GCMParameterSpec.html#%3Cinit%3E(int,byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/GCMParameterSpec.html#%3Cinit%3E(int,byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -41,7 +41,7 @@ namespace Javax.Crypto.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/GCMParameterSpec.html#%3Cinit%3E(int,byte[])"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/GCMParameterSpec.html#%3Cinit%3E(int,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -66,18 +66,20 @@ namespace Javax.Crypto.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/GCMParameterSpec.html#getIV()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/GCMParameterSpec.html#getIV()"/>
         /// </summary>
-        public byte[] IV
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetIV()
         {
-            get { return IExecuteWithSignatureArray<byte>("getIV", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getIV", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/GCMParameterSpec.html#getTLen()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/GCMParameterSpec.html#getTLen()"/>
         /// </summary>
-        public int TLen
+        /// <returns><see cref="int"/></returns>
+        public int GetTLen()
         {
-            get { return IExecuteWithSignature<int>("getTLen", "()I"); }
+            return IExecuteWithSignature<int>("getTLen", "()I");
         }
 
         #endregion

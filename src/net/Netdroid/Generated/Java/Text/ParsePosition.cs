@@ -30,7 +30,7 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/ParsePosition.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/ParsePosition.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public ParsePosition(int arg0)
@@ -54,18 +54,36 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/ParsePosition.html#getErrorIndex()"/> <see href="https://developer.android.com/reference/java.base/java/text/ParsePosition.html#setErrorIndex(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/ParsePosition.html#getErrorIndex()"/>
         /// </summary>
-        public int ErrorIndex
+        /// <returns><see cref="int"/></returns>
+        public int GetErrorIndex()
         {
-            get { return IExecuteWithSignature<int>("getErrorIndex", "()I"); } set { IExecuteWithSignature("setErrorIndex", "(I)V", value); }
+            return IExecuteWithSignature<int>("getErrorIndex", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/ParsePosition.html#getIndex()"/> <see href="https://developer.android.com/reference/java.base/java/text/ParsePosition.html#setIndex(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/ParsePosition.html#getIndex()"/>
         /// </summary>
-        public int Index
+        /// <returns><see cref="int"/></returns>
+        public int GetIndex()
         {
-            get { return IExecuteWithSignature<int>("getIndex", "()I"); } set { IExecuteWithSignature("setIndex", "(I)V", value); }
+            return IExecuteWithSignature<int>("getIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/ParsePosition.html#setErrorIndex(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetErrorIndex(int arg0)
+        {
+            IExecuteWithSignature("setErrorIndex", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/ParsePosition.html#setIndex(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetIndex(int arg0)
+        {
+            IExecuteWithSignature("setIndex", "(I)V", arg0);
         }
 
         #endregion

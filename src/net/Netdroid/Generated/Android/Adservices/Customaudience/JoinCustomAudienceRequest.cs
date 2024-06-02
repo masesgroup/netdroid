@@ -46,11 +46,12 @@ namespace Android.Adservices.Customaudience
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/JoinCustomAudienceRequest.html#getCustomAudience()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/customaudience/JoinCustomAudienceRequest.html#getCustomAudience()"/>
         /// </summary>
-        public Android.Adservices.Customaudience.CustomAudience CustomAudience
+        /// <returns><see cref="Android.Adservices.Customaudience.CustomAudience"/></returns>
+        public Android.Adservices.Customaudience.CustomAudience GetCustomAudience()
         {
-            get { return IExecuteWithSignature<Android.Adservices.Customaudience.CustomAudience>("getCustomAudience", "()Landroid/adservices/customaudience/CustomAudience;"); }
+            return IExecuteWithSignature<Android.Adservices.Customaudience.CustomAudience>("getCustomAudience", "()Landroid/adservices/customaudience/CustomAudience;");
         }
 
         #endregion

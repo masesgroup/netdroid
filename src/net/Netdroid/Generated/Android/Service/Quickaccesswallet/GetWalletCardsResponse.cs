@@ -61,26 +61,28 @@ namespace Android.Service.Quickaccesswallet
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsResponse.html#getSelectedIndex()"/> 
-        /// </summary>
-        public int SelectedIndex
-        {
-            get { return IExecuteWithSignature<int>("getSelectedIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsResponse.html#getWalletCards()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Service.Quickaccesswallet.WalletCard> WalletCards
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Service.Quickaccesswallet.WalletCard>>("getWalletCards", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsResponse.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsResponse.html#getSelectedIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSelectedIndex()
+        {
+            return IExecuteWithSignature<int>("getSelectedIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsResponse.html#getWalletCards()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Service.Quickaccesswallet.WalletCard> GetWalletCards()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Service.Quickaccesswallet.WalletCard>>("getWalletCards", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsResponse.html#writeToParcel(android.os.Parcel,int)"/>

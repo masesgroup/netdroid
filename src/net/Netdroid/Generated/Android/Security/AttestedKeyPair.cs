@@ -55,18 +55,20 @@ namespace Android.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/AttestedKeyPair.html#getAttestationRecord()"/> 
+        /// <see href="https://developer.android.com/reference/android/security/AttestedKeyPair.html#getKeyPair()"/>
         /// </summary>
-        public Java.Util.List<Java.Security.Cert.Certificate> AttestationRecord
+        /// <returns><see cref="Java.Security.KeyPair"/></returns>
+        public Java.Security.KeyPair GetKeyPair()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.Certificate>>("getAttestationRecord", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Security.KeyPair>("getKeyPair", "()Ljava/security/KeyPair;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/AttestedKeyPair.html#getKeyPair()"/> 
+        /// <see href="https://developer.android.com/reference/android/security/AttestedKeyPair.html#getAttestationRecord()"/>
         /// </summary>
-        public Java.Security.KeyPair KeyPair
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Security.Cert.Certificate> GetAttestationRecord()
         {
-            get { return IExecuteWithSignature<Java.Security.KeyPair>("getKeyPair", "()Ljava/security/KeyPair;"); }
+            return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.Certificate>>("getAttestationRecord", "()Ljava/util/List;");
         }
 
         #endregion

@@ -38,61 +38,61 @@ namespace Javax.Xml.Transform
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/OutputKeys.html#CDATA_SECTION_ELEMENTS"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/OutputKeys.html#CDATA_SECTION_ELEMENTS"/>
         /// </summary>
         public static Java.Lang.String CDATA_SECTION_ELEMENTS { get { if (!_CDATA_SECTION_ELEMENTSReady) { _CDATA_SECTION_ELEMENTSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CDATA_SECTION_ELEMENTS"); _CDATA_SECTION_ELEMENTSReady = true; } return _CDATA_SECTION_ELEMENTSContent; } }
         private static Java.Lang.String _CDATA_SECTION_ELEMENTSContent = default;
         private static bool _CDATA_SECTION_ELEMENTSReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/OutputKeys.html#DOCTYPE_PUBLIC"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/OutputKeys.html#DOCTYPE_PUBLIC"/>
         /// </summary>
         public static Java.Lang.String DOCTYPE_PUBLIC { get { if (!_DOCTYPE_PUBLICReady) { _DOCTYPE_PUBLICContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DOCTYPE_PUBLIC"); _DOCTYPE_PUBLICReady = true; } return _DOCTYPE_PUBLICContent; } }
         private static Java.Lang.String _DOCTYPE_PUBLICContent = default;
         private static bool _DOCTYPE_PUBLICReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/OutputKeys.html#DOCTYPE_SYSTEM"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/OutputKeys.html#DOCTYPE_SYSTEM"/>
         /// </summary>
         public static Java.Lang.String DOCTYPE_SYSTEM { get { if (!_DOCTYPE_SYSTEMReady) { _DOCTYPE_SYSTEMContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DOCTYPE_SYSTEM"); _DOCTYPE_SYSTEMReady = true; } return _DOCTYPE_SYSTEMContent; } }
         private static Java.Lang.String _DOCTYPE_SYSTEMContent = default;
         private static bool _DOCTYPE_SYSTEMReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/OutputKeys.html#ENCODING"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/OutputKeys.html#ENCODING"/>
         /// </summary>
         public static Java.Lang.String ENCODING { get { if (!_ENCODINGReady) { _ENCODINGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ENCODING"); _ENCODINGReady = true; } return _ENCODINGContent; } }
         private static Java.Lang.String _ENCODINGContent = default;
         private static bool _ENCODINGReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/OutputKeys.html#INDENT"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/OutputKeys.html#INDENT"/>
         /// </summary>
         public static Java.Lang.String INDENT { get { if (!_INDENTReady) { _INDENTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "INDENT"); _INDENTReady = true; } return _INDENTContent; } }
         private static Java.Lang.String _INDENTContent = default;
         private static bool _INDENTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/OutputKeys.html#MEDIA_TYPE"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/OutputKeys.html#MEDIA_TYPE"/>
         /// </summary>
         public static Java.Lang.String MEDIA_TYPE { get { if (!_MEDIA_TYPEReady) { _MEDIA_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MEDIA_TYPE"); _MEDIA_TYPEReady = true; } return _MEDIA_TYPEContent; } }
         private static Java.Lang.String _MEDIA_TYPEContent = default;
         private static bool _MEDIA_TYPEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/OutputKeys.html#METHOD"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/OutputKeys.html#METHOD"/>
         /// </summary>
         public static Java.Lang.String METHOD { get { if (!_METHODReady) { _METHODContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "METHOD"); _METHODReady = true; } return _METHODContent; } }
         private static Java.Lang.String _METHODContent = default;
         private static bool _METHODReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/OutputKeys.html#OMIT_XML_DECLARATION"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/OutputKeys.html#OMIT_XML_DECLARATION"/>
         /// </summary>
         public static Java.Lang.String OMIT_XML_DECLARATION { get { if (!_OMIT_XML_DECLARATIONReady) { _OMIT_XML_DECLARATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "OMIT_XML_DECLARATION"); _OMIT_XML_DECLARATIONReady = true; } return _OMIT_XML_DECLARATIONContent; } }
         private static Java.Lang.String _OMIT_XML_DECLARATIONContent = default;
         private static bool _OMIT_XML_DECLARATIONReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/OutputKeys.html#STANDALONE"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/OutputKeys.html#STANDALONE"/>
         /// </summary>
         public static Java.Lang.String STANDALONE { get { if (!_STANDALONEReady) { _STANDALONEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "STANDALONE"); _STANDALONEReady = true; } return _STANDALONEContent; } }
         private static Java.Lang.String _STANDALONEContent = default;
         private static bool _STANDALONEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/OutputKeys.html#VERSION"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/OutputKeys.html#VERSION"/>
         /// </summary>
         public static Java.Lang.String VERSION { get { if (!_VERSIONReady) { _VERSIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "VERSION"); _VERSIONReady = true; } return _VERSIONContent; } }
         private static Java.Lang.String _VERSIONContent = default;

@@ -88,11 +88,12 @@ namespace Android.Net.Vcn
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnManager.html#getConfiguredSubscriptionGroups()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/vcn/VcnManager.html#getConfiguredSubscriptionGroups()"/>
         /// </summary>
-        public Java.Util.List<Android.Os.ParcelUuid> ConfiguredSubscriptionGroups
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Os.ParcelUuid> GetConfiguredSubscriptionGroups()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Os.ParcelUuid>>("getConfiguredSubscriptionGroups", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Os.ParcelUuid>>("getConfiguredSubscriptionGroups", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/vcn/VcnManager.html#clearVcnConfig(android.os.ParcelUuid)"/>

@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.io.File,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#%3Cinit%3E(java.io.File,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -41,7 +41,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -51,7 +51,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>
@@ -60,7 +60,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.io.OutputStream,boolean,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#%3Cinit%3E(java.io.OutputStream,boolean,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -70,7 +70,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.io.OutputStream,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#%3Cinit%3E(java.io.OutputStream,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -79,7 +79,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         public PrintWriter(Java.Io.OutputStream arg0)
@@ -87,7 +87,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.io.Writer,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#%3Cinit%3E(java.io.Writer,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -96,7 +96,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.io.Writer)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#%3Cinit%3E(java.io.Writer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
         public PrintWriter(Java.Io.Writer arg0)
@@ -104,7 +104,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -115,7 +115,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -125,7 +125,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>
@@ -150,7 +150,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#checkError()"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#checkError()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool CheckError()
@@ -158,7 +158,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("checkError", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#format(java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#format(java.lang.String,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -168,7 +168,7 @@ namespace Java.Io
             if (arg1.Length == 0) return IExecute<Java.Io.PrintWriter>("format", arg0); else return IExecute<Java.Io.PrintWriter>("format", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#format(java.util.Locale,java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#format(java.util.Locale,java.lang.String,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -179,7 +179,7 @@ namespace Java.Io
             if (arg2.Length == 0) return IExecute<Java.Io.PrintWriter>("format", arg0, arg1); else return IExecute<Java.Io.PrintWriter>("format", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#printf(java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#printf(java.lang.String,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -189,7 +189,7 @@ namespace Java.Io
             if (arg1.Length == 0) return IExecute<Java.Io.PrintWriter>("printf", arg0); else return IExecute<Java.Io.PrintWriter>("printf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#printf(java.util.Locale,java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#printf(java.util.Locale,java.lang.String,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -200,7 +200,7 @@ namespace Java.Io
             if (arg2.Length == 0) return IExecute<Java.Io.PrintWriter>("printf", arg0, arg1); else return IExecute<Java.Io.PrintWriter>("printf", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#print(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#print(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void Print(bool arg0)
@@ -208,7 +208,7 @@ namespace Java.Io
             IExecuteWithSignature("print", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#print(char)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#print(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         public void Print(char arg0)
@@ -216,7 +216,7 @@ namespace Java.Io
             IExecuteWithSignature("print", "(C)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#print(char[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#print(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         public void Print(char[] arg0)
@@ -224,7 +224,7 @@ namespace Java.Io
             IExecuteWithSignature("print", "([C)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#print(double)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#print(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         public void Print(double arg0)
@@ -232,7 +232,7 @@ namespace Java.Io
             IExecuteWithSignature("print", "(D)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#print(float)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#print(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         public void Print(float arg0)
@@ -240,7 +240,7 @@ namespace Java.Io
             IExecuteWithSignature("print", "(F)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#print(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#print(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void Print(int arg0)
@@ -248,7 +248,7 @@ namespace Java.Io
             IExecuteWithSignature("print", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#print(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#print(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void Print(object arg0)
@@ -256,7 +256,7 @@ namespace Java.Io
             IExecuteWithSignature("print", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#print(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#print(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void Print(Java.Lang.String arg0)
@@ -264,7 +264,7 @@ namespace Java.Io
             IExecuteWithSignature("print", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#print(long)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#print(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public void Print(long arg0)
@@ -272,14 +272,14 @@ namespace Java.Io
             IExecuteWithSignature("print", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#println()"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#println()"/>
         /// </summary>
         public void Println()
         {
             IExecuteWithSignature("println", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#println(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#println(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void Println(bool arg0)
@@ -287,7 +287,7 @@ namespace Java.Io
             IExecuteWithSignature("println", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#println(char)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#println(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         public void Println(char arg0)
@@ -295,7 +295,7 @@ namespace Java.Io
             IExecuteWithSignature("println", "(C)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#println(char[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#println(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         public void Println(char[] arg0)
@@ -303,7 +303,7 @@ namespace Java.Io
             IExecuteWithSignature("println", "([C)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#println(double)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#println(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         public void Println(double arg0)
@@ -311,7 +311,7 @@ namespace Java.Io
             IExecuteWithSignature("println", "(D)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#println(float)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#println(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         public void Println(float arg0)
@@ -319,7 +319,7 @@ namespace Java.Io
             IExecuteWithSignature("println", "(F)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#println(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#println(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void Println(int arg0)
@@ -327,7 +327,7 @@ namespace Java.Io
             IExecuteWithSignature("println", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#println(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#println(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void Println(object arg0)
@@ -335,7 +335,7 @@ namespace Java.Io
             IExecuteWithSignature("println", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#println(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#println(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void Println(Java.Lang.String arg0)
@@ -343,7 +343,7 @@ namespace Java.Io
             IExecuteWithSignature("println", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html#println(long)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html#println(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public void Println(long arg0)

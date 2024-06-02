@@ -38,7 +38,7 @@ namespace Javax.Net.Ssl
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/StandardConstants.html#SNI_HOST_NAME"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/StandardConstants.html#SNI_HOST_NAME"/>
         /// </summary>
         public static int SNI_HOST_NAME { get { if (!_SNI_HOST_NAMEReady) { _SNI_HOST_NAMEContent = SGetField<int>(LocalBridgeClazz, "SNI_HOST_NAME"); _SNI_HOST_NAMEReady = true; } return _SNI_HOST_NAMEContent; } }
         private static int _SNI_HOST_NAMEContent = default;

@@ -82,74 +82,12 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getCachedDuration()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getDrmInitData()"/>
         /// </summary>
-        public long CachedDuration
+        /// <returns><see cref="Android.Media.DrmInitData"/></returns>
+        public Android.Media.DrmInitData GetDrmInitData()
         {
-            get { return IExecuteWithSignature<long>("getCachedDuration", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getDrmInitData()"/> 
-        /// </summary>
-        public Android.Media.DrmInitData DrmInitData
-        {
-            get { return IExecuteWithSignature<Android.Media.DrmInitData>("getDrmInitData", "()Landroid/media/DrmInitData;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getLogSessionId()"/> <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#setLogSessionId(android.media.metrics.LogSessionId)"/>
-        /// </summary>
-        public Android.Media.Metrics.LogSessionId LogSessionId
-        {
-            get { return IExecuteWithSignature<Android.Media.Metrics.LogSessionId>("getLogSessionId", "()Landroid/media/metrics/LogSessionId;"); } set { IExecuteWithSignature("setLogSessionId", "(Landroid/media/metrics/LogSessionId;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getMetrics()"/> 
-        /// </summary>
-        public Android.Os.PersistableBundle Metrics
-        {
-            get { return IExecuteWithSignature<Android.Os.PersistableBundle>("getMetrics", "()Landroid/os/PersistableBundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getPsshInfo()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Util.UUID, byte[]> PsshInfo
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Util.UUID, byte[]>>("getPsshInfo", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getSampleFlags()"/> 
-        /// </summary>
-        public int SampleFlags
-        {
-            get { return IExecuteWithSignature<int>("getSampleFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getSampleSize()"/> 
-        /// </summary>
-        public long SampleSize
-        {
-            get { return IExecuteWithSignature<long>("getSampleSize", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getSampleTime()"/> 
-        /// </summary>
-        public long SampleTime
-        {
-            get { return IExecuteWithSignature<long>("getSampleTime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getSampleTrackIndex()"/> 
-        /// </summary>
-        public int SampleTrackIndex
-        {
-            get { return IExecuteWithSignature<int>("getSampleTrackIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getTrackCount()"/> 
-        /// </summary>
-        public int TrackCount
-        {
-            get { return IExecuteWithSignature<int>("getTrackCount", "()I"); }
+            return IExecuteWithSignature<Android.Media.DrmInitData>("getDrmInitData", "()Landroid/media/DrmInitData;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getCasInfo(int)"/>
@@ -170,6 +108,22 @@ namespace Android.Media
             return IExecuteWithSignature<Android.Media.MediaFormat>("getTrackFormat", "(I)Landroid/media/MediaFormat;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getLogSessionId()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.Metrics.LogSessionId"/></returns>
+        public Android.Media.Metrics.LogSessionId GetLogSessionId()
+        {
+            return IExecuteWithSignature<Android.Media.Metrics.LogSessionId>("getLogSessionId", "()Landroid/media/metrics/LogSessionId;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getMetrics()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
+        public Android.Os.PersistableBundle GetMetrics()
+        {
+            return IExecuteWithSignature<Android.Os.PersistableBundle>("getMetrics", "()Landroid/os/PersistableBundle;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getAudioPresentations(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -177,6 +131,14 @@ namespace Android.Media
         public Java.Util.List<Android.Media.AudioPresentation> GetAudioPresentations(int arg0)
         {
             return IExecuteWithSignature<Java.Util.List<Android.Media.AudioPresentation>>("getAudioPresentations", "(I)Ljava/util/List;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getPsshInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Util.UUID, byte[]> GetPsshInfo()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Util.UUID, byte[]>>("getPsshInfo", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#advance()"/>
@@ -204,6 +166,30 @@ namespace Android.Media
             return IExecuteWithSignature<bool>("hasCacheReachedEndOfStream", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getSampleFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSampleFlags()
+        {
+            return IExecuteWithSignature<int>("getSampleFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getSampleTrackIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSampleTrackIndex()
+        {
+            return IExecuteWithSignature<int>("getSampleTrackIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getTrackCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTrackCount()
+        {
+            return IExecuteWithSignature<int>("getTrackCount", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#readSampleData(java.nio.ByteBuffer,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
@@ -212,6 +198,30 @@ namespace Android.Media
         public int ReadSampleData(Java.Nio.ByteBuffer arg0, int arg1)
         {
             return IExecute<int>("readSampleData", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getCachedDuration()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetCachedDuration()
+        {
+            return IExecuteWithSignature<long>("getCachedDuration", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getSampleSize()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetSampleSize()
+        {
+            return IExecuteWithSignature<long>("getSampleSize", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#getSampleTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetSampleTime()
+        {
+            return IExecuteWithSignature<long>("getSampleTime", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#release()"/>
@@ -316,10 +326,18 @@ namespace Android.Media
             IExecuteWithSignature("setDataSource", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#setLogSessionId(android.media.metrics.LogSessionId)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.Metrics.LogSessionId"/></param>
+        public void SetLogSessionId(Android.Media.Metrics.LogSessionId arg0)
+        {
+            IExecuteWithSignature("setLogSessionId", "(Landroid/media/metrics/LogSessionId;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.html#setMediaCas(android.media.MediaCas)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.MediaCas"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetMediaCas(Android.Media.MediaCas arg0)
         {
             IExecuteWithSignature("setMediaCas", "(Landroid/media/MediaCas;)V", arg0);
@@ -349,25 +367,28 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.CasInfo.html#getPrivateData()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.CasInfo.html#getSession()"/>
             /// </summary>
-            public byte[] PrivateData
+            /// <returns><see cref="Android.Media.MediaCas.Session"/></returns>
+            public Android.Media.MediaCas.Session GetSession()
             {
-                get { return IExecuteWithSignatureArray<byte>("getPrivateData", "()[B"); }
+                return IExecuteWithSignature<Android.Media.MediaCas.Session>("getSession", "()Landroid/media/MediaCas$Session;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.CasInfo.html#getSession()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.CasInfo.html#getPrivateData()"/>
             /// </summary>
-            public Android.Media.MediaCas.Session Session
+            /// <returns><see cref="byte"/></returns>
+            public byte[] GetPrivateData()
             {
-                get { return IExecuteWithSignature<Android.Media.MediaCas.Session>("getSession", "()Landroid/media/MediaCas$Session;"); }
+                return IExecuteWithSignatureArray<byte>("getPrivateData", "()[B");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.CasInfo.html#getSystemId()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaExtractor.CasInfo.html#getSystemId()"/>
             /// </summary>
-            public int SystemId
+            /// <returns><see cref="int"/></returns>
+            public int GetSystemId()
             {
-                get { return IExecuteWithSignature<int>("getSystemId", "()I"); }
+                return IExecuteWithSignature<int>("getSystemId", "()I");
             }
 
             #endregion

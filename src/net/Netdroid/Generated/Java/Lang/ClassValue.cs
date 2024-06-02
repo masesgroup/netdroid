@@ -46,7 +46,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassValue.html#get(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassValue.html#get(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="object"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Lang
             return IExecuteWithSignature("get", "(Ljava/lang/Class;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassValue.html#remove(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassValue.html#remove(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         public void Remove(Java.Lang.Class arg0)
@@ -98,7 +98,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassValue.html#get(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassValue.html#get(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><typeparamref name="T"/></returns>
@@ -107,7 +107,7 @@ namespace Java.Lang
             return IExecuteWithSignature<T>("get", "(Ljava/lang/Class;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassValue.html#remove(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ClassValue.html#remove(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         public void Remove(Java.Lang.Class arg0)

@@ -292,312 +292,356 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getBiotin()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getEnergy()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Biotin
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Energy"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Energy GetEnergy()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getBiotin", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Energy>("getEnergy", "()Landroid/health/connect/datatypes/units/Energy;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getCaffeine()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getEnergyFromFat()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Caffeine
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Energy"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Energy GetEnergyFromFat()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getCaffeine", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Energy>("getEnergyFromFat", "()Landroid/health/connect/datatypes/units/Energy;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getCalcium()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getBiotin()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Calcium
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetBiotin()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getCalcium", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getBiotin", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getChloride()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getCaffeine()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Chloride
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetCaffeine()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getChloride", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getCaffeine", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getCholesterol()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getCalcium()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Cholesterol
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetCalcium()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getCholesterol", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getCalcium", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getChromium()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getChloride()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Chromium
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetChloride()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getChromium", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getChloride", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getCopper()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getCholesterol()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Copper
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetCholesterol()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getCopper", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getCholesterol", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getDietaryFiber()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getChromium()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass DietaryFiber
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetChromium()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getDietaryFiber", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getChromium", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getEnergy()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getCopper()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Energy Energy
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetCopper()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Energy>("getEnergy", "()Landroid/health/connect/datatypes/units/Energy;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getCopper", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getEnergyFromFat()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getDietaryFiber()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Energy EnergyFromFat
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetDietaryFiber()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Energy>("getEnergyFromFat", "()Landroid/health/connect/datatypes/units/Energy;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getDietaryFiber", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getFolate()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getFolate()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Folate
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetFolate()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getFolate", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getFolate", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getFolicAcid()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getFolicAcid()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass FolicAcid
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetFolicAcid()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getFolicAcid", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getFolicAcid", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getIodine()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getIodine()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Iodine
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetIodine()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getIodine", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getIodine", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getIron()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getIron()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Iron
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetIron()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getIron", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getIron", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMagnesium()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMagnesium()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Magnesium
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetMagnesium()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getMagnesium", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getMagnesium", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getManganese()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getManganese()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Manganese
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetManganese()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getManganese", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getManganese", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMealName()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMolybdenum()"/>
         /// </summary>
-        public Java.Lang.String MealName
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetMolybdenum()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMealName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getMolybdenum", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMealType()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMonounsaturatedFat()"/>
         /// </summary>
-        public int MealType
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetMonounsaturatedFat()
         {
-            get { return IExecuteWithSignature<int>("getMealType", "()I"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getMonounsaturatedFat", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMolybdenum()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getNiacin()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Molybdenum
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetNiacin()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getMolybdenum", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getNiacin", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMonounsaturatedFat()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getPantothenicAcid()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass MonounsaturatedFat
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetPantothenicAcid()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getMonounsaturatedFat", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getPantothenicAcid", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getNiacin()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getPhosphorus()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Niacin
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetPhosphorus()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getNiacin", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getPhosphorus", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getPantothenicAcid()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getPolyunsaturatedFat()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass PantothenicAcid
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetPolyunsaturatedFat()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getPantothenicAcid", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getPolyunsaturatedFat", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getPhosphorus()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getPotassium()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Phosphorus
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetPotassium()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getPhosphorus", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getPotassium", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getPolyunsaturatedFat()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getProtein()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass PolyunsaturatedFat
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetProtein()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getPolyunsaturatedFat", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getProtein", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getPotassium()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getRiboflavin()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Potassium
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetRiboflavin()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getPotassium", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getRiboflavin", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getProtein()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getSaturatedFat()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Protein
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetSaturatedFat()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getProtein", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getSaturatedFat", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getRiboflavin()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getSelenium()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Riboflavin
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetSelenium()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getRiboflavin", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getSelenium", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getSaturatedFat()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getSodium()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass SaturatedFat
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetSodium()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getSaturatedFat", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getSodium", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getSelenium()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getSugar()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Selenium
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetSugar()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getSelenium", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getSugar", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getSodium()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getThiamin()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Sodium
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetThiamin()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getSodium", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getThiamin", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getSugar()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getTotalCarbohydrate()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Sugar
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetTotalCarbohydrate()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getSugar", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getTotalCarbohydrate", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getThiamin()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getTotalFat()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Thiamin
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetTotalFat()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getThiamin", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getTotalFat", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getTotalCarbohydrate()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getTransFat()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass TotalCarbohydrate
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetTransFat()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getTotalCarbohydrate", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getTransFat", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getTotalFat()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getUnsaturatedFat()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass TotalFat
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetUnsaturatedFat()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getTotalFat", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getUnsaturatedFat", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getTransFat()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminA()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass TransFat
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetVitaminA()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getTransFat", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getVitaminA", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getUnsaturatedFat()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminB12()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass UnsaturatedFat
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetVitaminB12()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getUnsaturatedFat", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getVitaminB12", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminA()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminB6()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass VitaminA
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetVitaminB6()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getVitaminA", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getVitaminB6", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminB12()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminC()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass VitaminB12
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetVitaminC()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getVitaminB12", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getVitaminC", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminB6()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminD()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass VitaminB6
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetVitaminD()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getVitaminB6", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getVitaminD", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminC()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminE()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass VitaminC
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetVitaminE()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getVitaminC", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getVitaminE", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminD()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminK()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass VitaminD
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetVitaminK()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getVitaminD", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getVitaminK", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminE()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getZinc()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass VitaminE
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Mass"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Mass GetZinc()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getVitaminE", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getZinc", "()Landroid/health/connect/datatypes/units/Mass;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getVitaminK()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMealType()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass VitaminK
+        /// <returns><see cref="int"/></returns>
+        public int GetMealType()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getVitaminK", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<int>("getMealType", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getZinc()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/NutritionRecord.html#getMealName()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Mass Zinc
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMealName()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Mass>("getZinc", "()Landroid/health/connect/datatypes/units/Mass;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getMealName", "()Ljava/lang/String;");
         }
 
         #endregion

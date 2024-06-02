@@ -42,7 +42,7 @@ namespace Java.Util.Concurrent.Locks
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#isLockStamp(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#isLockStamp(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -51,7 +51,7 @@ namespace Java.Util.Concurrent.Locks
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isLockStamp", "(J)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#isOptimisticReadStamp(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#isOptimisticReadStamp(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -60,7 +60,7 @@ namespace Java.Util.Concurrent.Locks
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isOptimisticReadStamp", "(J)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#isReadLockStamp(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#isReadLockStamp(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -69,7 +69,7 @@ namespace Java.Util.Concurrent.Locks
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isReadLockStamp", "(J)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#isWriteLockStamp(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#isWriteLockStamp(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -82,14 +82,7 @@ namespace Java.Util.Concurrent.Locks
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#getReadLockCount()"/> 
-        /// </summary>
-        public int ReadLockCount
-        {
-            get { return IExecuteWithSignature<int>("getReadLockCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#isReadLocked()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#isReadLocked()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsReadLocked()
@@ -97,7 +90,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("isReadLocked", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#isWriteLocked()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#isWriteLocked()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsWriteLocked()
@@ -105,7 +98,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("isWriteLocked", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#tryUnlockRead()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#tryUnlockRead()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool TryUnlockRead()
@@ -113,7 +106,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("tryUnlockRead", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#tryUnlockWrite()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#tryUnlockWrite()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool TryUnlockWrite()
@@ -121,7 +114,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("tryUnlockWrite", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#validate(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#validate(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -130,7 +123,15 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("validate", "(J)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#asReadLock()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#getReadLockCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetReadLockCount()
+        {
+            return IExecuteWithSignature<int>("getReadLockCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#asReadLock()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         public Java.Util.Concurrent.Locks.Lock AsReadLock()
@@ -138,7 +139,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<Java.Util.Concurrent.Locks.Lock>("asReadLock", "()Ljava/util/concurrent/locks/Lock;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#asWriteLock()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#asWriteLock()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
         public Java.Util.Concurrent.Locks.Lock AsWriteLock()
@@ -146,7 +147,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<Java.Util.Concurrent.Locks.Lock>("asWriteLock", "()Ljava/util/concurrent/locks/Lock;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#asReadWriteLock()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#asReadWriteLock()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.Locks.ReadWriteLock"/></returns>
         public Java.Util.Concurrent.Locks.ReadWriteLock AsReadWriteLock()
@@ -154,7 +155,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<Java.Util.Concurrent.Locks.ReadWriteLock>("asReadWriteLock", "()Ljava/util/concurrent/locks/ReadWriteLock;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#readLock()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#readLock()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long ReadLock()
@@ -162,7 +163,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<long>("readLock", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#readLockInterruptibly()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#readLockInterruptibly()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -171,7 +172,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<long>("readLockInterruptibly", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#tryConvertToOptimisticRead(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#tryConvertToOptimisticRead(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -180,7 +181,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<long>("tryConvertToOptimisticRead", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#tryConvertToReadLock(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#tryConvertToReadLock(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -189,7 +190,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<long>("tryConvertToReadLock", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#tryConvertToWriteLock(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#tryConvertToWriteLock(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -198,7 +199,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<long>("tryConvertToWriteLock", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#tryOptimisticRead()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#tryOptimisticRead()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long TryOptimisticRead()
@@ -206,7 +207,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<long>("tryOptimisticRead", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#tryReadLock()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#tryReadLock()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long TryReadLock()
@@ -214,7 +215,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<long>("tryReadLock", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#tryReadLock(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#tryReadLock(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -225,7 +226,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecute<long>("tryReadLock", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#tryWriteLock()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#tryWriteLock()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long TryWriteLock()
@@ -233,7 +234,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<long>("tryWriteLock", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#tryWriteLock(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#tryWriteLock(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -244,7 +245,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecute<long>("tryWriteLock", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#writeLock()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#writeLock()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long WriteLock()
@@ -252,7 +253,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<long>("writeLock", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#writeLockInterruptibly()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#writeLockInterruptibly()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -261,7 +262,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<long>("writeLockInterruptibly", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#unlock(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#unlock(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public void Unlock(long arg0)
@@ -269,7 +270,7 @@ namespace Java.Util.Concurrent.Locks
             IExecuteWithSignature("unlock", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#unlockRead(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#unlockRead(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public void UnlockRead(long arg0)
@@ -277,7 +278,7 @@ namespace Java.Util.Concurrent.Locks
             IExecuteWithSignature("unlockRead", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html#unlockWrite(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html#unlockWrite(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public void UnlockWrite(long arg0)

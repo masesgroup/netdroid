@@ -46,11 +46,12 @@ namespace Android.Transition
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/TransitionPropagation.html#getPropagationProperties()"/> 
+        /// <see href="https://developer.android.com/reference/android/transition/TransitionPropagation.html#getPropagationProperties()"/>
         /// </summary>
-        public Java.Lang.String[] PropagationProperties
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetPropagationProperties()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getPropagationProperties", "()[Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getPropagationProperties", "()[Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/transition/TransitionPropagation.html#getStartDelay(android.view.ViewGroup,android.transition.Transition,android.transition.TransitionValues,android.transition.TransitionValues)"/>

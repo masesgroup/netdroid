@@ -64,35 +64,15 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/AttributedCharacterIterator.html#getAllAttributeKeys()"/> 
+        /// <see href="https://developer.android.com/reference/java/text/AttributedCharacterIterator.html#getRunLimit()"/>
         /// </summary>
-        public Java.Util.Set<Java.Text.AttributedCharacterIterator.Attribute> AllAttributeKeys
+        /// <returns><see cref="int"/></returns>
+        public int GetRunLimit()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Text.AttributedCharacterIterator.Attribute>>("getAllAttributeKeys", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<int>("getRunLimit", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/AttributedCharacterIterator.html#getAttributes()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Text.AttributedCharacterIterator.Attribute, object> Attributes
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Text.AttributedCharacterIterator.Attribute, object>>("getAttributes", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/AttributedCharacterIterator.html#getRunLimit()"/> 
-        /// </summary>
-        public int RunLimit
-        {
-            get { return IExecuteWithSignature<int>("getRunLimit", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/AttributedCharacterIterator.html#getRunStart()"/> 
-        /// </summary>
-        public int RunStart
-        {
-            get { return IExecuteWithSignature<int>("getRunStart", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/AttributedCharacterIterator.html#getRunLimit(java.text.AttributedCharacterIterator.Attribute)"/>
+        /// <see href="https://developer.android.com/reference/java/text/AttributedCharacterIterator.html#getRunLimit(java.text.AttributedCharacterIterator.Attribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
         /// <returns><see cref="int"/></returns>
@@ -101,17 +81,25 @@ namespace Java.Text
             return IExecuteWithSignature<int>("getRunLimit", "(Ljava/text/AttributedCharacterIterator$Attribute;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/AttributedCharacterIterator.html#getRunLimit(java.util.Set)"/>
+        /// <see href="https://developer.android.com/reference/java/text/AttributedCharacterIterator.html#getRunLimit(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public int GetRunLimit<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Set<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute: Java.Text.AttributedCharacterIterator.Attribute
+        public int GetRunLimit<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Set<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute : Java.Text.AttributedCharacterIterator.Attribute
         {
             return IExecuteWithSignature<int>("getRunLimit", "(Ljava/util/Set;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/AttributedCharacterIterator.html#getRunStart(java.text.AttributedCharacterIterator.Attribute)"/>
+        /// <see href="https://developer.android.com/reference/java/text/AttributedCharacterIterator.html#getRunStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRunStart()
+        {
+            return IExecuteWithSignature<int>("getRunStart", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/AttributedCharacterIterator.html#getRunStart(java.text.AttributedCharacterIterator.Attribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
         /// <returns><see cref="int"/></returns>
@@ -120,23 +108,39 @@ namespace Java.Text
             return IExecuteWithSignature<int>("getRunStart", "(Ljava/text/AttributedCharacterIterator$Attribute;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/AttributedCharacterIterator.html#getRunStart(java.util.Set)"/>
+        /// <see href="https://developer.android.com/reference/java/text/AttributedCharacterIterator.html#getRunStart(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public int GetRunStart<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Set<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute: Java.Text.AttributedCharacterIterator.Attribute
+        public int GetRunStart<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Set<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute : Java.Text.AttributedCharacterIterator.Attribute
         {
             return IExecuteWithSignature<int>("getRunStart", "(Ljava/util/Set;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/AttributedCharacterIterator.html#getAttribute(java.text.AttributedCharacterIterator.Attribute)"/>
+        /// <see href="https://developer.android.com/reference/java/text/AttributedCharacterIterator.html#getAttribute(java.text.AttributedCharacterIterator.Attribute)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
         /// <returns><see cref="object"/></returns>
         public object GetAttribute(Java.Text.AttributedCharacterIterator.Attribute arg0)
         {
             return IExecuteWithSignature("getAttribute", "(Ljava/text/AttributedCharacterIterator$Attribute;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/AttributedCharacterIterator.html#getAttributes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Text.AttributedCharacterIterator.Attribute, object> GetAttributes()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Text.AttributedCharacterIterator.Attribute, object>>("getAttributes", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/AttributedCharacterIterator.html#getAllAttributeKeys()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Text.AttributedCharacterIterator.Attribute> GetAllAttributeKeys()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Text.AttributedCharacterIterator.Attribute>>("getAllAttributeKeys", "()Ljava/util/Set;");
         }
 
         #endregion
@@ -155,19 +159,19 @@ namespace Java.Text
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/text/AttributedCharacterIterator.Attribute.html#INPUT_METHOD_SEGMENT"/>
+            /// <see href="https://developer.android.com/reference/java/text/AttributedCharacterIterator.Attribute.html#INPUT_METHOD_SEGMENT"/>
             /// </summary>
             public static Java.Text.AttributedCharacterIterator.Attribute INPUT_METHOD_SEGMENT { get { if (!_INPUT_METHOD_SEGMENTReady) { _INPUT_METHOD_SEGMENTContent = SGetField<Java.Text.AttributedCharacterIterator.Attribute>(LocalBridgeClazz, "INPUT_METHOD_SEGMENT"); _INPUT_METHOD_SEGMENTReady = true; } return _INPUT_METHOD_SEGMENTContent; } }
             private static Java.Text.AttributedCharacterIterator.Attribute _INPUT_METHOD_SEGMENTContent = default;
             private static bool _INPUT_METHOD_SEGMENTReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/text/AttributedCharacterIterator.Attribute.html#LANGUAGE"/>
+            /// <see href="https://developer.android.com/reference/java/text/AttributedCharacterIterator.Attribute.html#LANGUAGE"/>
             /// </summary>
             public static Java.Text.AttributedCharacterIterator.Attribute LANGUAGE { get { if (!_LANGUAGEReady) { _LANGUAGEContent = SGetField<Java.Text.AttributedCharacterIterator.Attribute>(LocalBridgeClazz, "LANGUAGE"); _LANGUAGEReady = true; } return _LANGUAGEContent; } }
             private static Java.Text.AttributedCharacterIterator.Attribute _LANGUAGEContent = default;
             private static bool _LANGUAGEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/text/AttributedCharacterIterator.Attribute.html#READING"/>
+            /// <see href="https://developer.android.com/reference/java/text/AttributedCharacterIterator.Attribute.html#READING"/>
             /// </summary>
             public static Java.Text.AttributedCharacterIterator.Attribute READING { get { if (!_READINGReady) { _READINGContent = SGetField<Java.Text.AttributedCharacterIterator.Attribute>(LocalBridgeClazz, "READING"); _READINGReady = true; } return _READINGContent; } }
             private static Java.Text.AttributedCharacterIterator.Attribute _READINGContent = default;

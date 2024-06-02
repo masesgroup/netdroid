@@ -54,7 +54,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingKeySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#descendingKeySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet DescendingKeySet()
@@ -62,7 +62,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.NavigableSet>("descendingKeySet", "()Ljava/util/NavigableSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#navigableKeySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#navigableKeySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet NavigableKeySet()
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.NavigableSet>("navigableKeySet", "()Ljava/util/NavigableSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingMap()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#descendingMap()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap DescendingMap()
@@ -78,7 +78,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.NavigableMap>("descendingMap", "()Ljava/util/NavigableMap;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -88,7 +88,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.NavigableMap>("headMap", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -100,7 +100,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.NavigableMap>("subMap", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -110,7 +110,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.NavigableMap>("tailMap", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#keySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#keySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set KeySet()
@@ -118,7 +118,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
@@ -127,7 +127,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.SortedMap>("headMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -137,7 +137,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.SortedMap>("subMap", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
@@ -207,7 +207,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingKeySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#descendingKeySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<K> DescendingKeySet()
@@ -215,7 +215,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.NavigableSet<K>>("descendingKeySet", "()Ljava/util/NavigableSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#navigableKeySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#navigableKeySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<K> NavigableKeySet()
@@ -223,7 +223,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.NavigableSet<K>>("navigableKeySet", "()Ljava/util/NavigableSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingMap()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#descendingMap()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public Java.Util.NavigableMap DescendingMap()
@@ -231,7 +231,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.NavigableMap>("descendingMap", "()Ljava/util/NavigableMap;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -241,7 +241,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.NavigableMap>("headMap", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -253,7 +253,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.NavigableMap>("subMap", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -263,7 +263,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.NavigableMap>("tailMap", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#keySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#keySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set KeySet()
@@ -271,7 +271,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
@@ -280,7 +280,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.SortedMap>("headMap", "(Ljava/lang/Object;)Ljava/util/SortedMap;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -290,7 +290,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.SortedMap>("subMap", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.SortedMap"/></returns>

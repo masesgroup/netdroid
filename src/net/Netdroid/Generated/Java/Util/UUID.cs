@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/UUID.html#%3Cinit%3E(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/UUID.html#%3Cinit%3E(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -59,7 +59,7 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/UUID.html#fromString(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/UUID.html#fromString(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.UUID"/></returns>
@@ -68,7 +68,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.UUID>(LocalBridgeClazz, "fromString", "(Ljava/lang/String;)Ljava/util/UUID;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/UUID.html#nameUUIDFromBytes(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/UUID.html#nameUUIDFromBytes(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="Java.Util.UUID"/></returns>
@@ -77,7 +77,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.UUID>(LocalBridgeClazz, "nameUUIDFromBytes", "([B)Ljava/util/UUID;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/UUID.html#randomUUID()"/>
+        /// <see href="https://developer.android.com/reference/java/util/UUID.html#randomUUID()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.UUID"/></returns>
         public static Java.Util.UUID RandomUUID()
@@ -89,21 +89,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/UUID.html#getLeastSignificantBits()"/> 
-        /// </summary>
-        public long LeastSignificantBits
-        {
-            get { return IExecuteWithSignature<long>("getLeastSignificantBits", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/UUID.html#getMostSignificantBits()"/> 
-        /// </summary>
-        public long MostSignificantBits
-        {
-            get { return IExecuteWithSignature<long>("getMostSignificantBits", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/UUID.html#clockSequence()"/>
+        /// <see href="https://developer.android.com/reference/java/util/UUID.html#clockSequence()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int ClockSequence()
@@ -111,7 +97,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("clockSequence", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/UUID.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/UUID.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -120,7 +106,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/UUID.html#compareTo(java.util.UUID)"/>
+        /// <see href="https://developer.android.com/reference/java/util/UUID.html#compareTo(java.util.UUID)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.UUID"/></param>
         /// <returns><see cref="int"/></returns>
@@ -129,7 +115,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("compareTo", "(Ljava/util/UUID;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/UUID.html#variant()"/>
+        /// <see href="https://developer.android.com/reference/java/util/UUID.html#variant()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Variant()
@@ -137,7 +123,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("variant", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/UUID.html#version()"/>
+        /// <see href="https://developer.android.com/reference/java/util/UUID.html#version()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Version()
@@ -145,7 +131,23 @@ namespace Java.Util
             return IExecuteWithSignature<int>("version", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/UUID.html#node()"/>
+        /// <see href="https://developer.android.com/reference/java/util/UUID.html#getLeastSignificantBits()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLeastSignificantBits()
+        {
+            return IExecuteWithSignature<long>("getLeastSignificantBits", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/UUID.html#getMostSignificantBits()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetMostSignificantBits()
+        {
+            return IExecuteWithSignature<long>("getMostSignificantBits", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/UUID.html#node()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long Node()
@@ -153,7 +155,7 @@ namespace Java.Util
             return IExecuteWithSignature<long>("node", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/UUID.html#timestamp()"/>
+        /// <see href="https://developer.android.com/reference/java/util/UUID.html#timestamp()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long Timestamp()

@@ -34,7 +34,7 @@ namespace Android.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.BufferedReader"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public EventLogTags(Java.Io.BufferedReader arg0)
             : base(arg0)
         {
@@ -60,7 +60,7 @@ namespace Android.Util
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Android.Util.EventLogTags.Description"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Util.EventLogTags.Description Get(int arg0)
         {
             return IExecuteWithSignature<Android.Util.EventLogTags.Description>("get", "(I)Landroid/util/EventLogTags$Description;", arg0);
@@ -70,7 +70,7 @@ namespace Android.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.Util.EventLogTags.Description"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Util.EventLogTags.Description Get(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.Util.EventLogTags.Description>("get", "(Ljava/lang/String;)Landroid/util/EventLogTags$Description;", arg0);
@@ -94,14 +94,14 @@ namespace Android.Util
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/util/EventLogTags.Description.html#mTag"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int mTag { get { if (!_mTagReady) { _mTagContent = IGetField<int>("mTag"); _mTagReady = true; } return _mTagContent; } }
             private int _mTagContent = default;
             private bool _mTagReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/util/EventLogTags.Description.html#mName"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.String mName { get { if (!_mNameReady) { _mNameContent = IGetField<Java.Lang.String>("mName"); _mNameReady = true; } return _mNameContent; } }
             private Java.Lang.String _mNameContent = default;
             private bool _mNameReady = false; // this is used because in case of generics 

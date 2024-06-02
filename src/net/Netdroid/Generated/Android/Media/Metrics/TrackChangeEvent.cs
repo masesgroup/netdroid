@@ -116,102 +116,12 @@ namespace Android.Media.Metrics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getAudioSampleRate()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getVideoFrameRate()"/>
         /// </summary>
-        public int AudioSampleRate
+        /// <returns><see cref="float"/></returns>
+        public float GetVideoFrameRate()
         {
-            get { return IExecuteWithSignature<int>("getAudioSampleRate", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getBitrate()"/> 
-        /// </summary>
-        public int Bitrate
-        {
-            get { return IExecuteWithSignature<int>("getBitrate", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getChannelCount()"/> 
-        /// </summary>
-        public int ChannelCount
-        {
-            get { return IExecuteWithSignature<int>("getChannelCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getCodecName()"/> 
-        /// </summary>
-        public Java.Lang.String CodecName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCodecName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getContainerMimeType()"/> 
-        /// </summary>
-        public Java.Lang.String ContainerMimeType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getContainerMimeType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getHeight()"/> 
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getLanguage()"/> 
-        /// </summary>
-        public Java.Lang.String Language
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLanguage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getLanguageRegion()"/> 
-        /// </summary>
-        public Java.Lang.String LanguageRegion
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLanguageRegion", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getSampleMimeType()"/> 
-        /// </summary>
-        public Java.Lang.String SampleMimeType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSampleMimeType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getTrackChangeReason()"/> 
-        /// </summary>
-        public int TrackChangeReason
-        {
-            get { return IExecuteWithSignature<int>("getTrackChangeReason", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getTrackState()"/> 
-        /// </summary>
-        public int TrackState
-        {
-            get { return IExecuteWithSignature<int>("getTrackState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getTrackType()"/> 
-        /// </summary>
-        public int TrackType
-        {
-            get { return IExecuteWithSignature<int>("getTrackType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getVideoFrameRate()"/> 
-        /// </summary>
-        public float VideoFrameRate
-        {
-            get { return IExecuteWithSignature<float>("getVideoFrameRate", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getWidth()"/> 
-        /// </summary>
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+            return IExecuteWithSignature<float>("getVideoFrameRate", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#describeContents()"/>
@@ -220,6 +130,110 @@ namespace Android.Media.Metrics
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getAudioSampleRate()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAudioSampleRate()
+        {
+            return IExecuteWithSignature<int>("getAudioSampleRate", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getBitrate()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBitrate()
+        {
+            return IExecuteWithSignature<int>("getBitrate", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getChannelCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannelCount()
+        {
+            return IExecuteWithSignature<int>("getChannelCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getTrackChangeReason()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTrackChangeReason()
+        {
+            return IExecuteWithSignature<int>("getTrackChangeReason", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getTrackState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTrackState()
+        {
+            return IExecuteWithSignature<int>("getTrackState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getTrackType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTrackType()
+        {
+            return IExecuteWithSignature<int>("getTrackType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
+        {
+            return IExecuteWithSignature<int>("getWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getCodecName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCodecName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCodecName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getContainerMimeType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetContainerMimeType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getContainerMimeType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getLanguage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLanguage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLanguage", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getLanguageRegion()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLanguageRegion()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLanguageRegion", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#getSampleMimeType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSampleMimeType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSampleMimeType", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/metrics/TrackChangeEvent.html#writeToParcel(android.os.Parcel,int)"/>

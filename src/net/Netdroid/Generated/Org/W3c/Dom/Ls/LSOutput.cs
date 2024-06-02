@@ -64,32 +64,68 @@ namespace Org.W3c.Dom.Ls
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSOutput.html#getByteStream()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSOutput.html#setByteStream(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSOutput.html#getByteStream()"/>
         /// </summary>
-        public Java.Io.OutputStream ByteStream
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        public Java.Io.OutputStream GetByteStream()
         {
-            get { return IExecuteWithSignature<Java.Io.OutputStream>("getByteStream", "()Ljava/io/OutputStream;"); } set { IExecuteWithSignature("setByteStream", "(Ljava/io/OutputStream;)V", value); }
+            return IExecuteWithSignature<Java.Io.OutputStream>("getByteStream", "()Ljava/io/OutputStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSOutput.html#getCharacterStream()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSOutput.html#setCharacterStream(java.io.Writer)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSOutput.html#getCharacterStream()"/>
         /// </summary>
-        public Java.Io.Writer CharacterStream
+        /// <returns><see cref="Java.Io.Writer"/></returns>
+        public Java.Io.Writer GetCharacterStream()
         {
-            get { return IExecuteWithSignature<Java.Io.Writer>("getCharacterStream", "()Ljava/io/Writer;"); } set { IExecuteWithSignature("setCharacterStream", "(Ljava/io/Writer;)V", value); }
+            return IExecuteWithSignature<Java.Io.Writer>("getCharacterStream", "()Ljava/io/Writer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSOutput.html#getEncoding()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSOutput.html#setEncoding(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSOutput.html#getEncoding()"/>
         /// </summary>
-        public Java.Lang.String Encoding
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEncoding()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSOutput.html#getSystemId()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSOutput.html#setSystemId(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSOutput.html#getSystemId()"/>
         /// </summary>
-        public Java.Lang.String SystemId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSOutput.html#setByteStream(java.io.OutputStream)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        public void SetByteStream(Java.Io.OutputStream arg0)
+        {
+            IExecuteWithSignature("setByteStream", "(Ljava/io/OutputStream;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSOutput.html#setCharacterStream(java.io.Writer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
+        public void SetCharacterStream(Java.Io.Writer arg0)
+        {
+            IExecuteWithSignature("setCharacterStream", "(Ljava/io/Writer;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSOutput.html#setEncoding(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetEncoding(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSOutput.html#setSystemId(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetSystemId(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

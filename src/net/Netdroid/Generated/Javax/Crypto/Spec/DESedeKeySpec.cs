@@ -30,7 +30,7 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/DESedeKeySpec.html#%3Cinit%3E(byte[],int)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/DESedeKeySpec.html#%3Cinit%3E(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -40,7 +40,7 @@ namespace Javax.Crypto.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/DESedeKeySpec.html#%3Cinit%3E(byte[])"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/DESedeKeySpec.html#%3Cinit%3E(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Security.InvalidKeyException"/>
@@ -57,7 +57,7 @@ namespace Javax.Crypto.Spec
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/DESedeKeySpec.html#DES_EDE_KEY_LEN"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/DESedeKeySpec.html#DES_EDE_KEY_LEN"/>
         /// </summary>
         public static int DES_EDE_KEY_LEN { get { if (!_DES_EDE_KEY_LENReady) { _DES_EDE_KEY_LENContent = SGetField<int>(LocalBridgeClazz, "DES_EDE_KEY_LEN"); _DES_EDE_KEY_LENReady = true; } return _DES_EDE_KEY_LENContent; } }
         private static int _DES_EDE_KEY_LENContent = default;
@@ -67,7 +67,7 @@ namespace Javax.Crypto.Spec
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/DESedeKeySpec.html#isParityAdjusted(byte[],int)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/DESedeKeySpec.html#isParityAdjusted(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -82,11 +82,12 @@ namespace Javax.Crypto.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/DESedeKeySpec.html#getKey()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/DESedeKeySpec.html#getKey()"/>
         /// </summary>
-        public byte[] Key
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetKey()
         {
-            get { return IExecuteWithSignatureArray<byte>("getKey", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getKey", "()[B");
         }
 
         #endregion

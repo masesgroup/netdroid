@@ -46,18 +46,20 @@ namespace Android.Hardware.Display
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplay.html#getDisplay()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplay.html#getDisplay()"/>
         /// </summary>
-        public Android.View.Display Display
+        /// <returns><see cref="Android.View.Display"/></returns>
+        public Android.View.Display GetDisplay()
         {
-            get { return IExecuteWithSignature<Android.View.Display>("getDisplay", "()Landroid/view/Display;"); }
+            return IExecuteWithSignature<Android.View.Display>("getDisplay", "()Landroid/view/Display;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplay.html#getSurface()"/> <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplay.html#setSurface(android.view.Surface)"/>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplay.html#getSurface()"/>
         /// </summary>
-        public Android.View.Surface Surface
+        /// <returns><see cref="Android.View.Surface"/></returns>
+        public Android.View.Surface GetSurface()
         {
-            get { return IExecuteWithSignature<Android.View.Surface>("getSurface", "()Landroid/view/Surface;"); } set { IExecuteWithSignature("setSurface", "(Landroid/view/Surface;)V", value); }
+            return IExecuteWithSignature<Android.View.Surface>("getSurface", "()Landroid/view/Surface;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplay.html#release()"/>
@@ -75,6 +77,14 @@ namespace Android.Hardware.Display
         public void Resize(int arg0, int arg1, int arg2)
         {
             IExecute("resize", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/VirtualDisplay.html#setSurface(android.view.Surface)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Surface"/></param>
+        public void SetSurface(Android.View.Surface arg0)
+        {
+            IExecuteWithSignature("setSurface", "(Landroid/view/Surface;)V", arg0);
         }
 
         #endregion

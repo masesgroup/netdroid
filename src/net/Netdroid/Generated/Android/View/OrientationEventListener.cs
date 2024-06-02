@@ -29,6 +29,23 @@ namespace Android.View
     public partial class OrientationEventListener
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/OrientationEventListener.html#%3Cinit%3E(android.content.Context,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        public OrientationEventListener(Android.Content.Context arg0, int arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/OrientationEventListener.html#%3Cinit%3E(android.content.Context)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        public OrientationEventListener(Android.Content.Context arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 
@@ -37,131 +54,12 @@ namespace Android.View
         #endregion
 
         #region Fields
-
-        #endregion
-
-        #region Static methods
-
-        #endregion
-
-        #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="OrientationEventListener"/>
+        /// <see href="https://developer.android.com/reference/android/view/OrientationEventListener.html#ORIENTATION_UNKNOWN"/>
         /// </summary>
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("onOrientationChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnOrientationChangedEventHandler));
-            AddEventHandler("canDetectOrientation", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(CanDetectOrientationEventHandler));
-            AddEventHandler("disable", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(DisableEventHandler));
-            AddEventHandler("enable", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(EnableEventHandler));
-
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/view/OrientationEventListener.html#onOrientationChanged(int)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnOrientationChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int> OnOnOrientationChanged { get; set; } = null;
-
-        void OnOrientationChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
-        {
-            var methodToExecute = (OnOnOrientationChanged != null) ? OnOnOrientationChanged : OnOrientationChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/OrientationEventListener.html#onOrientationChanged(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        public virtual void OnOrientationChanged(int arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/view/OrientationEventListener.html#canDetectOrientation()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnCanDetectOrientation"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnCanDetectOrientation { get; set; } = null;
-
-        void CanDetectOrientationEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnCanDetectOrientation != null) ? OnCanDetectOrientation : CanDetectOrientation;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/OrientationEventListener.html#canDetectOrientation()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public virtual bool CanDetectOrientation()
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/view/OrientationEventListener.html#disable()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnDisable"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnDisable { get; set; } = null;
-
-        void DisableEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnDisable != null) ? OnDisable : Disable;
-            methodToExecute.Invoke();
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/OrientationEventListener.html#disable()"/>
-        /// </summary>
-        public virtual void Disable()
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/view/OrientationEventListener.html#enable()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnEnable"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnEnable { get; set; } = null;
-
-        void EnableEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnEnable != null) ? OnEnable : Enable;
-            methodToExecute.Invoke();
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/OrientationEventListener.html#enable()"/>
-        /// </summary>
-        public virtual void Enable()
-        {
-            
-        }
-
-        #endregion
-
-        #region Nested classes
-
-        #endregion
-
-        // TODO: complete the class
-    }
-    #endregion
-
-    #region OrientationEventListenerDirect
-    public partial class OrientationEventListenerDirect
-    {
-        #region Constructors
-
-        #endregion
-
-        #region Class/Interface conversion operators
-
-        #endregion
-
-        #region Fields
+        public static int ORIENTATION_UNKNOWN { get { if (!_ORIENTATION_UNKNOWNReady) { _ORIENTATION_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "ORIENTATION_UNKNOWN"); _ORIENTATION_UNKNOWNReady = true; } return _ORIENTATION_UNKNOWNContent; } }
+        private static int _ORIENTATION_UNKNOWNContent = default;
+        private static bool _ORIENTATION_UNKNOWNReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -174,7 +72,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/OrientationEventListener.html#onOrientationChanged(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        public override void OnOrientationChanged(int arg0)
+        public void OnOrientationChanged(int arg0)
         {
             IExecuteWithSignature("onOrientationChanged", "(I)V", arg0);
         }
@@ -182,21 +80,21 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/OrientationEventListener.html#canDetectOrientation()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public override bool CanDetectOrientation()
+        public bool CanDetectOrientation()
         {
             return IExecuteWithSignature<bool>("canDetectOrientation", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/OrientationEventListener.html#disable()"/>
         /// </summary>
-        public override void Disable()
+        public void Disable()
         {
             IExecuteWithSignature("disable", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/OrientationEventListener.html#enable()"/>
         /// </summary>
-        public override void Enable()
+        public void Enable()
         {
             IExecuteWithSignature("enable", "()V");
         }

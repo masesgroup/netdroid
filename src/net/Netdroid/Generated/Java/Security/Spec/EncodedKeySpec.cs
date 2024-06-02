@@ -30,7 +30,7 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EncodedKeySpec.html#%3Cinit%3E(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/EncodedKeySpec.html#%3Cinit%3E(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public EncodedKeySpec(byte[] arg0)
@@ -54,25 +54,28 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EncodedKeySpec.html#getAlgorithm()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/EncodedKeySpec.html#getFormat()"/>
         /// </summary>
-        public Java.Lang.String Algorithm
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFormat()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getFormat", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EncodedKeySpec.html#getEncoded()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/EncodedKeySpec.html#getEncoded()"/>
         /// </summary>
-        public byte[] Encoded
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetEncoded()
         {
-            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getEncoded", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EncodedKeySpec.html#getFormat()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/EncodedKeySpec.html#getAlgorithm()"/>
         /// </summary>
-        public Java.Lang.String Format
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlgorithm()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFormat", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;");
         }
 
         #endregion

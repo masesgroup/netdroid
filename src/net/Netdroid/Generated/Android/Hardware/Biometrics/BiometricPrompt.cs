@@ -172,47 +172,52 @@ namespace Android.Hardware.Biometrics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#getAllowedAuthenticators()"/> 
-        /// </summary>
-        public int AllowedAuthenticators
-        {
-            get { return IExecuteWithSignature<int>("getAllowedAuthenticators", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#getDescription()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Description
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#getNegativeButtonText()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence NegativeButtonText
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getNegativeButtonText", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#getSubtitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Subtitle
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSubtitle", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#getTitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Title
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#isConfirmationRequired()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsConfirmationRequired()
         {
             return IExecuteWithSignature<bool>("isConfirmationRequired", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#getAllowedAuthenticators()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAllowedAuthenticators()
+        {
+            return IExecuteWithSignature<int>("getAllowedAuthenticators", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#getNegativeButtonText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetNegativeButtonText()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getNegativeButtonText", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#getSubtitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetSubtitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getSubtitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#getTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#authenticate(android.hardware.biometrics.BiometricPrompt.CryptoObject,android.os.CancellationSignal,java.util.concurrent.Executor,android.hardware.biometrics.BiometricPrompt.AuthenticationCallback)"/>
@@ -324,18 +329,20 @@ namespace Android.Hardware.Biometrics
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.AuthenticationResult.html#getAuthenticationType()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.AuthenticationResult.html#getCryptoObject()"/>
             /// </summary>
-            public int AuthenticationType
+            /// <returns><see cref="Android.Hardware.Biometrics.BiometricPrompt.CryptoObject"/></returns>
+            public Android.Hardware.Biometrics.BiometricPrompt.CryptoObject GetCryptoObject()
             {
-                get { return IExecuteWithSignature<int>("getAuthenticationType", "()I"); }
+                return IExecuteWithSignature<Android.Hardware.Biometrics.BiometricPrompt.CryptoObject>("getCryptoObject", "()Landroid/hardware/biometrics/BiometricPrompt$CryptoObject;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.AuthenticationResult.html#getCryptoObject()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.AuthenticationResult.html#getAuthenticationType()"/>
             /// </summary>
-            public Android.Hardware.Biometrics.BiometricPrompt.CryptoObject GetCryptoObject
+            /// <returns><see cref="int"/></returns>
+            public int GetAuthenticationType()
             {
-                get { return IExecuteWithSignature<Android.Hardware.Biometrics.BiometricPrompt.CryptoObject>("getCryptoObject", "()Landroid/hardware/biometrics/BiometricPrompt$CryptoObject;"); }
+                return IExecuteWithSignature<int>("getAuthenticationType", "()I");
             }
 
             #endregion
@@ -416,7 +423,7 @@ namespace Android.Hardware.Biometrics
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             /// <returns><see cref="Android.Hardware.Biometrics.BiometricPrompt.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Hardware.Biometrics.BiometricPrompt.Builder SetDeviceCredentialAllowed(bool arg0)
             {
                 return IExecuteWithSignature<Android.Hardware.Biometrics.BiometricPrompt.Builder>("setDeviceCredentialAllowed", "(Z)Landroid/hardware/biometrics/BiometricPrompt$Builder;", arg0);
@@ -469,7 +476,7 @@ namespace Android.Hardware.Biometrics
             /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#%3Cinit%3E(android.security.identity.IdentityCredential)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Security.Identity.IdentityCredential"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public CryptoObject(Android.Security.Identity.IdentityCredential arg0)
                 : base(arg0)
             {
@@ -523,40 +530,45 @@ namespace Android.Hardware.Biometrics
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#getCipher()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#getIdentityCredential()"/>
             /// </summary>
-            public Javax.Crypto.Cipher Cipher
+            /// <returns><see cref="Android.Security.Identity.IdentityCredential"/></returns>
+            [global::System.Obsolete()]
+            public Android.Security.Identity.IdentityCredential GetIdentityCredential()
             {
-                get { return IExecuteWithSignature<Javax.Crypto.Cipher>("getCipher", "()Ljavax/crypto/Cipher;"); }
+                return IExecuteWithSignature<Android.Security.Identity.IdentityCredential>("getIdentityCredential", "()Landroid/security/identity/IdentityCredential;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#getIdentityCredential()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#getPresentationSession()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Android.Security.Identity.IdentityCredential IdentityCredential
+            /// <returns><see cref="Android.Security.Identity.PresentationSession"/></returns>
+            public Android.Security.Identity.PresentationSession GetPresentationSession()
             {
-                get { return IExecuteWithSignature<Android.Security.Identity.IdentityCredential>("getIdentityCredential", "()Landroid/security/identity/IdentityCredential;"); }
+                return IExecuteWithSignature<Android.Security.Identity.PresentationSession>("getPresentationSession", "()Landroid/security/identity/PresentationSession;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#getMac()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#getSignature()"/>
             /// </summary>
-            public Javax.Crypto.Mac Mac
+            /// <returns><see cref="Java.Security.Signature"/></returns>
+            public Java.Security.Signature GetSignature()
             {
-                get { return IExecuteWithSignature<Javax.Crypto.Mac>("getMac", "()Ljavax/crypto/Mac;"); }
+                return IExecuteWithSignature<Java.Security.Signature>("getSignature", "()Ljava/security/Signature;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#getPresentationSession()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#getCipher()"/>
             /// </summary>
-            public Android.Security.Identity.PresentationSession PresentationSession
+            /// <returns><see cref="Javax.Crypto.Cipher"/></returns>
+            public Javax.Crypto.Cipher GetCipher()
             {
-                get { return IExecuteWithSignature<Android.Security.Identity.PresentationSession>("getPresentationSession", "()Landroid/security/identity/PresentationSession;"); }
+                return IExecuteWithSignature<Javax.Crypto.Cipher>("getCipher", "()Ljavax/crypto/Cipher;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#getSignature()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.CryptoObject.html#getMac()"/>
             /// </summary>
-            public Java.Security.Signature Signature
+            /// <returns><see cref="Javax.Crypto.Mac"/></returns>
+            public Javax.Crypto.Mac GetMac()
             {
-                get { return IExecuteWithSignature<Java.Security.Signature>("getSignature", "()Ljava/security/Signature;"); }
+                return IExecuteWithSignature<Javax.Crypto.Mac>("getMac", "()Ljavax/crypto/Mac;");
             }
 
             #endregion

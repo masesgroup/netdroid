@@ -52,7 +52,7 @@ namespace Android.Net.Sip
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#CREATOR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
@@ -65,115 +65,127 @@ namespace Android.Net.Sip
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getAuthUserName()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getAutoRegistration()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String AuthUserName
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetAutoRegistration()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAuthUserName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<bool>("getAutoRegistration", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getAutoRegistration()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getSendKeepAlive()"/>
         /// </summary>
-        [System.Obsolete()]
-        public bool AutoRegistration
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetSendKeepAlive()
         {
-            get { return IExecuteWithSignature<bool>("getAutoRegistration", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getDisplayName()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String DisplayName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getPassword()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Password
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPassword", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getPort()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Port
-        {
-            get { return IExecuteWithSignature<int>("getPort", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getProfileName()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String ProfileName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getProfileName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getProtocol()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Protocol
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getProtocol", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getProxyAddress()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String ProxyAddress
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getProxyAddress", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getSendKeepAlive()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public bool SendKeepAlive
-        {
-            get { return IExecuteWithSignature<bool>("getSendKeepAlive", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getSipDomain()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String SipDomain
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSipDomain", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getUriString()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String UriString
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUriString", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getUserName()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String UserName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUserName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<bool>("getSendKeepAlive", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getPort()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetPort()
+        {
+            return IExecuteWithSignature<int>("getPort", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getAuthUserName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetAuthUserName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAuthUserName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getDisplayName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetDisplayName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getPassword()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetPassword()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPassword", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getProfileName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetProfileName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getProfileName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getProtocol()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetProtocol()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getProtocol", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getProxyAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetProxyAddress()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getProxyAddress", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getSipDomain()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetSipDomain()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSipDomain", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getUriString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetUriString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUriString", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#getUserName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetUserName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUserName", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.html#setCallingUid(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetCallingUid(int arg0)
         {
             IExecuteWithSignature("setCallingUid", "(I)V", arg0);
@@ -183,7 +195,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
             IExecute("writeToParcel", arg0, arg1);
@@ -200,7 +212,7 @@ namespace Android.Net.Sip
             /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.Builder.html#%3Cinit%3E(android.net.sip.SipProfile)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Sip.SipProfile"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Builder(Android.Net.Sip.SipProfile arg0)
                 : base(arg0)
             {
@@ -211,7 +223,7 @@ namespace Android.Net.Sip
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             /// <exception cref="Java.Text.ParseException"/>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Builder(Java.Lang.String arg0, Java.Lang.String arg1)
                 : base(arg0, arg1)
             {
@@ -221,7 +233,7 @@ namespace Android.Net.Sip
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <exception cref="Java.Text.ParseException"/>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Builder(Java.Lang.String arg0)
                 : base(arg0)
             {
@@ -246,7 +258,7 @@ namespace Android.Net.Sip
             /// <see href="https://developer.android.com/reference/android/net/sip/SipProfile.Builder.html#build()"/>
             /// </summary>
             /// <returns><see cref="Android.Net.Sip.SipProfile"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Net.Sip.SipProfile Build()
             {
                 return IExecuteWithSignature<Android.Net.Sip.SipProfile>("build", "()Landroid/net/sip/SipProfile;");
@@ -256,7 +268,7 @@ namespace Android.Net.Sip
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Android.Net.Sip.SipProfile.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Net.Sip.SipProfile.Builder SetAuthUserName(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Net.Sip.SipProfile.Builder>("setAuthUserName", "(Ljava/lang/String;)Landroid/net/sip/SipProfile$Builder;", arg0);
@@ -266,7 +278,7 @@ namespace Android.Net.Sip
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             /// <returns><see cref="Android.Net.Sip.SipProfile.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Net.Sip.SipProfile.Builder SetAutoRegistration(bool arg0)
             {
                 return IExecuteWithSignature<Android.Net.Sip.SipProfile.Builder>("setAutoRegistration", "(Z)Landroid/net/sip/SipProfile$Builder;", arg0);
@@ -276,7 +288,7 @@ namespace Android.Net.Sip
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Android.Net.Sip.SipProfile.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Net.Sip.SipProfile.Builder SetDisplayName(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Net.Sip.SipProfile.Builder>("setDisplayName", "(Ljava/lang/String;)Landroid/net/sip/SipProfile$Builder;", arg0);
@@ -286,7 +298,7 @@ namespace Android.Net.Sip
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Android.Net.Sip.SipProfile.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Net.Sip.SipProfile.Builder SetOutboundProxy(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Net.Sip.SipProfile.Builder>("setOutboundProxy", "(Ljava/lang/String;)Landroid/net/sip/SipProfile$Builder;", arg0);
@@ -296,7 +308,7 @@ namespace Android.Net.Sip
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Android.Net.Sip.SipProfile.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Net.Sip.SipProfile.Builder SetPassword(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Net.Sip.SipProfile.Builder>("setPassword", "(Ljava/lang/String;)Landroid/net/sip/SipProfile$Builder;", arg0);
@@ -307,7 +319,7 @@ namespace Android.Net.Sip
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.Net.Sip.SipProfile.Builder"/></returns>
             /// <exception cref="Java.Lang.IllegalArgumentException"/>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Net.Sip.SipProfile.Builder SetPort(int arg0)
             {
                 return IExecuteWithSignature<Android.Net.Sip.SipProfile.Builder>("setPort", "(I)Landroid/net/sip/SipProfile$Builder;", arg0);
@@ -317,7 +329,7 @@ namespace Android.Net.Sip
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Android.Net.Sip.SipProfile.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Net.Sip.SipProfile.Builder SetProfileName(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Net.Sip.SipProfile.Builder>("setProfileName", "(Ljava/lang/String;)Landroid/net/sip/SipProfile$Builder;", arg0);
@@ -328,7 +340,7 @@ namespace Android.Net.Sip
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Android.Net.Sip.SipProfile.Builder"/></returns>
             /// <exception cref="Java.Lang.IllegalArgumentException"/>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Net.Sip.SipProfile.Builder SetProtocol(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.Net.Sip.SipProfile.Builder>("setProtocol", "(Ljava/lang/String;)Landroid/net/sip/SipProfile$Builder;", arg0);
@@ -338,7 +350,7 @@ namespace Android.Net.Sip
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             /// <returns><see cref="Android.Net.Sip.SipProfile.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Net.Sip.SipProfile.Builder SetSendKeepAlive(bool arg0)
             {
                 return IExecuteWithSignature<Android.Net.Sip.SipProfile.Builder>("setSendKeepAlive", "(Z)Landroid/net/sip/SipProfile$Builder;", arg0);

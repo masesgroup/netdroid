@@ -120,133 +120,6 @@ namespace Android.Net.Wifi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getAltSubjectMatch()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setAltSubjectMatch(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String AltSubjectMatch
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAltSubjectMatch", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAltSubjectMatch", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getAnonymousIdentity()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setAnonymousIdentity(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String AnonymousIdentity
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAnonymousIdentity", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAnonymousIdentity", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getCaCertificate()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setCaCertificate(java.security.cert.X509Certificate)"/>
-        /// </summary>
-        public Java.Security.Cert.X509Certificate CaCertificate
-        {
-            get { return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getCaCertificate", "()Ljava/security/cert/X509Certificate;"); } set { IExecuteWithSignature("setCaCertificate", "(Ljava/security/cert/X509Certificate;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getCaCertificates()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setCaCertificates(java.security.cert.X509Certificate[])"/>
-        /// </summary>
-        public Java.Security.Cert.X509Certificate[] CaCertificates
-        {
-            get { return IExecuteWithSignatureArray<Java.Security.Cert.X509Certificate>("getCaCertificates", "()[Ljava/security/cert/X509Certificate;"); } set { IExecuteWithSignature("setCaCertificates", "([Ljava/security/cert/X509Certificate;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getClientCertificate()"/> 
-        /// </summary>
-        public Java.Security.Cert.X509Certificate ClientCertificate
-        {
-            get { return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getClientCertificate", "()Ljava/security/cert/X509Certificate;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getClientCertificateChain()"/> 
-        /// </summary>
-        public Java.Security.Cert.X509Certificate[] ClientCertificateChain
-        {
-            get { return IExecuteWithSignatureArray<Java.Security.Cert.X509Certificate>("getClientCertificateChain", "()[Ljava/security/cert/X509Certificate;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getClientKeyPairAlias()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setClientKeyPairAlias(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String ClientKeyPairAlias
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClientKeyPairAlias", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setClientKeyPairAlias", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getClientPrivateKey()"/> 
-        /// </summary>
-        public Java.Security.PrivateKey ClientPrivateKey
-        {
-            get { return IExecuteWithSignature<Java.Security.PrivateKey>("getClientPrivateKey", "()Ljava/security/PrivateKey;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getDecoratedIdentityPrefix()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setDecoratedIdentityPrefix(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String DecoratedIdentityPrefix
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDecoratedIdentityPrefix", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDecoratedIdentityPrefix", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getDomainSuffixMatch()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setDomainSuffixMatch(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String DomainSuffixMatch
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDomainSuffixMatch", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDomainSuffixMatch", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getEapMethod()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setEapMethod(int)"/>
-        /// </summary>
-        public int EapMethod
-        {
-            get { return IExecuteWithSignature<int>("getEapMethod", "()I"); } set { IExecuteWithSignature("setEapMethod", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getIdentity()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setIdentity(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Identity
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getIdentity", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setIdentity", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getMinimumTlsVersion()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setMinimumTlsVersion(int)"/>
-        /// </summary>
-        public int MinimumTlsVersion
-        {
-            get { return IExecuteWithSignature<int>("getMinimumTlsVersion", "()I"); } set { IExecuteWithSignature("setMinimumTlsVersion", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getPassword()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setPassword(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Password
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPassword", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPassword", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getPhase2Method()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setPhase2Method(int)"/>
-        /// </summary>
-        public int Phase2Method
-        {
-            get { return IExecuteWithSignature<int>("getPhase2Method", "()I"); } set { IExecuteWithSignature("setPhase2Method", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getPlmn()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setPlmn(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Plmn
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPlmn", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPlmn", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getRealm()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setRealm(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Realm
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRealm", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setRealm", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getSubjectMatch()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setSubjectMatch(java.lang.String)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String SubjectMatch
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSubjectMatch", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSubjectMatch", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#hasCaCertificate()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -295,12 +168,189 @@ namespace Android.Net.Wifi
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getEapMethod()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEapMethod()
+        {
+            return IExecuteWithSignature<int>("getEapMethod", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getMinimumTlsVersion()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinimumTlsVersion()
+        {
+            return IExecuteWithSignature<int>("getMinimumTlsVersion", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getPhase2Method()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPhase2Method()
+        {
+            return IExecuteWithSignature<int>("getPhase2Method", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getAltSubjectMatch()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAltSubjectMatch()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAltSubjectMatch", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getAnonymousIdentity()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAnonymousIdentity()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAnonymousIdentity", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getClientKeyPairAlias()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetClientKeyPairAlias()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getClientKeyPairAlias", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getDecoratedIdentityPrefix()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDecoratedIdentityPrefix()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDecoratedIdentityPrefix", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getDomainSuffixMatch()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDomainSuffixMatch()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDomainSuffixMatch", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getIdentity()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetIdentity()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getIdentity", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getPassword()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPassword()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPassword", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getPlmn()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPlmn()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPlmn", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getRealm()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetRealm()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getRealm", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getSubjectMatch()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetSubjectMatch()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSubjectMatch", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getCaCertificate()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
+        public Java.Security.Cert.X509Certificate GetCaCertificate()
+        {
+            return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getCaCertificate", "()Ljava/security/cert/X509Certificate;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getClientCertificate()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
+        public Java.Security.Cert.X509Certificate GetClientCertificate()
+        {
+            return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getClientCertificate", "()Ljava/security/cert/X509Certificate;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getCaCertificates()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
+        public Java.Security.Cert.X509Certificate[] GetCaCertificates()
+        {
+            return IExecuteWithSignatureArray<Java.Security.Cert.X509Certificate>("getCaCertificates", "()[Ljava/security/cert/X509Certificate;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getClientCertificateChain()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
+        public Java.Security.Cert.X509Certificate[] GetClientCertificateChain()
+        {
+            return IExecuteWithSignatureArray<Java.Security.Cert.X509Certificate>("getClientCertificateChain", "()[Ljava/security/cert/X509Certificate;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#getClientPrivateKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.PrivateKey"/></returns>
+        public Java.Security.PrivateKey GetClientPrivateKey()
+        {
+            return IExecuteWithSignature<Java.Security.PrivateKey>("getClientPrivateKey", "()Ljava/security/PrivateKey;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#enableTrustOnFirstUse(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void EnableTrustOnFirstUse(bool arg0)
         {
             IExecuteWithSignature("enableTrustOnFirstUse", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setAltSubjectMatch(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetAltSubjectMatch(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setAltSubjectMatch", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setAnonymousIdentity(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetAnonymousIdentity(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setAnonymousIdentity", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setCaCertificate(java.security.cert.X509Certificate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
+        public void SetCaCertificate(Java.Security.Cert.X509Certificate arg0)
+        {
+            IExecuteWithSignature("setCaCertificate", "(Ljava/security/cert/X509Certificate;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setCaCertificates(java.security.cert.X509Certificate[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
+        public void SetCaCertificates(Java.Security.Cert.X509Certificate[] arg0)
+        {
+            IExecuteWithSignature("setCaCertificates", "([Ljava/security/cert/X509Certificate;)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setClientKeyEntry(java.security.PrivateKey,java.security.cert.X509Certificate)"/>
@@ -319,6 +369,96 @@ namespace Android.Net.Wifi
         public void SetClientKeyEntryWithCertificateChain(Java.Security.PrivateKey arg0, Java.Security.Cert.X509Certificate[] arg1)
         {
             IExecute("setClientKeyEntryWithCertificateChain", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setClientKeyPairAlias(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetClientKeyPairAlias(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setClientKeyPairAlias", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setDecoratedIdentityPrefix(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetDecoratedIdentityPrefix(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setDecoratedIdentityPrefix", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setDomainSuffixMatch(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetDomainSuffixMatch(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setDomainSuffixMatch", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setEapMethod(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetEapMethod(int arg0)
+        {
+            IExecuteWithSignature("setEapMethod", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setIdentity(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetIdentity(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setIdentity", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setMinimumTlsVersion(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        public void SetMinimumTlsVersion(int arg0)
+        {
+            IExecuteWithSignature("setMinimumTlsVersion", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setPassword(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPassword(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPassword", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setPhase2Method(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetPhase2Method(int arg0)
+        {
+            IExecuteWithSignature("setPhase2Method", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setPlmn(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPlmn(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPlmn", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setRealm(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetRealm(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setRealm", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#setSubjectMatch(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [global::System.Obsolete()]
+        public void SetSubjectMatch(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSubjectMatch", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiEnterpriseConfig.html#writeToParcel(android.os.Parcel,int)"/>

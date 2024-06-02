@@ -214,42 +214,6 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getActiveStagedSession()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Content.Pm.PackageInstaller.SessionInfo ActiveStagedSession
-        {
-            get { return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.SessionInfo>("getActiveStagedSession", "()Landroid/content/pm/PackageInstaller$SessionInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getActiveStagedSessions()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo> ActiveStagedSessions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo>>("getActiveStagedSessions", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getAllSessions()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo> AllSessions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo>>("getAllSessions", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getMySessions()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo> MySessions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo>>("getMySessions", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getStagedSessions()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo> StagedSessions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo>>("getStagedSessions", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#openSession(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -258,6 +222,15 @@ namespace Android.Content.Pm
         public Android.Content.Pm.PackageInstaller.Session OpenSession(int arg0)
         {
             return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.Session>("openSession", "(I)Landroid/content/pm/PackageInstaller$Session;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getActiveStagedSession()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Pm.PackageInstaller.SessionInfo"/></returns>
+        [global::System.Obsolete()]
+        public Android.Content.Pm.PackageInstaller.SessionInfo GetActiveStagedSession()
+        {
+            return IExecuteWithSignature<Android.Content.Pm.PackageInstaller.SessionInfo>("getActiveStagedSession", "()Landroid/content/pm/PackageInstaller$SessionInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getSessionInfo(int)"/>
@@ -277,6 +250,38 @@ namespace Android.Content.Pm
         public int CreateSession(Android.Content.Pm.PackageInstaller.SessionParams arg0)
         {
             return IExecuteWithSignature<int>("createSession", "(Landroid/content/pm/PackageInstaller$SessionParams;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getActiveStagedSessions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo> GetActiveStagedSessions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo>>("getActiveStagedSessions", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getAllSessions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo> GetAllSessions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo>>("getAllSessions", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getMySessions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo> GetMySessions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo>>("getMySessions", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#getStagedSessions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo> GetStagedSessions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.PackageInstaller.SessionInfo>>("getStagedSessions", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.html#abandonSession(int)"/>
@@ -681,32 +686,20 @@ namespace Android.Content.Pm
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.PreapprovalDetails.html#getIcon()"/> 
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.PreapprovalDetails.html#getIcon()"/>
             /// </summary>
-            public Android.Graphics.Bitmap Icon
+            /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+            public Android.Graphics.Bitmap GetIcon()
             {
-                get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getIcon", "()Landroid/graphics/Bitmap;"); }
+                return IExecuteWithSignature<Android.Graphics.Bitmap>("getIcon", "()Landroid/graphics/Bitmap;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.PreapprovalDetails.html#getLabel()"/> 
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.PreapprovalDetails.html#getLocale()"/>
             /// </summary>
-            public Java.Lang.CharSequence Label
+            /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
+            public Android.Icu.Util.ULocale GetLocale()
             {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.PreapprovalDetails.html#getLocale()"/> 
-            /// </summary>
-            public Android.Icu.Util.ULocale Locale
-            {
-                get { return IExecuteWithSignature<Android.Icu.Util.ULocale>("getLocale", "()Landroid/icu/util/ULocale;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.PreapprovalDetails.html#getPackageName()"/> 
-            /// </summary>
-            public Java.Lang.String PackageName
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Android.Icu.Util.ULocale>("getLocale", "()Landroid/icu/util/ULocale;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.PreapprovalDetails.html#describeContents()"/>
@@ -715,6 +708,22 @@ namespace Android.Content.Pm
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.PreapprovalDetails.html#getLabel()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetLabel()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.PreapprovalDetails.html#getPackageName()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetPackageName()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.PreapprovalDetails.html#writeToParcel(android.os.Parcel,int)"/>
@@ -832,32 +841,12 @@ namespace Android.Content.Pm
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#getAppMetadata()"/> <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#setAppMetadata(android.os.PersistableBundle)"/>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#getAppMetadata()"/>
             /// </summary>
-            public Android.Os.PersistableBundle AppMetadata
+            /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
+            public Android.Os.PersistableBundle GetAppMetadata()
             {
-                get { return IExecuteWithSignature<Android.Os.PersistableBundle>("getAppMetadata", "()Landroid/os/PersistableBundle;"); } set { IExecuteWithSignature("setAppMetadata", "(Landroid/os/PersistableBundle;)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#getChildSessionIds()"/> 
-            /// </summary>
-            public int[] ChildSessionIds
-            {
-                get { return IExecuteWithSignatureArray<int>("getChildSessionIds", "()[I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#getNames()"/> 
-            /// </summary>
-            public Java.Lang.String[] Names
-            {
-                get { return IExecuteWithSignatureArray<Java.Lang.String>("getNames", "()[Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#getParentSessionId()"/> 
-            /// </summary>
-            public int ParentSessionId
-            {
-                get { return IExecuteWithSignature<int>("getParentSessionId", "()I"); }
+                return IExecuteWithSignature<Android.Os.PersistableBundle>("getAppMetadata", "()Landroid/os/PersistableBundle;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#isApplicationEnabledSettingPersistent()"/>
@@ -892,6 +881,22 @@ namespace Android.Content.Pm
                 return IExecuteWithSignature<bool>("isStaged", "()Z");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#getParentSessionId()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetParentSessionId()
+            {
+                return IExecuteWithSignature<int>("getParentSessionId", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#getChildSessionIds()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int[] GetChildSessionIds()
+            {
+                return IExecuteWithSignatureArray<int>("getChildSessionIds", "()[I");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#openRead(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -912,6 +917,15 @@ namespace Android.Content.Pm
             public Java.Io.OutputStream OpenWrite(Java.Lang.String arg0, long arg1, long arg2)
             {
                 return IExecute<Java.Io.OutputStream>("openWrite", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#getNames()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            /// <exception cref="Java.Io.IOException"/>
+            public Java.Lang.String[] GetNames()
+            {
+                return IExecuteWithSignatureArray<Java.Lang.String>("getNames", "()[Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#abandon()"/>
@@ -993,13 +1007,22 @@ namespace Android.Content.Pm
                 IExecute("requestUserPreapproval", arg0, arg1);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#setAppMetadata(android.os.PersistableBundle)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Android.Os.PersistableBundle"/></param>
+            /// <exception cref="Java.Io.IOException"/>
+            public void SetAppMetadata(Android.Os.PersistableBundle arg0)
+            {
+                IExecuteWithSignature("setAppMetadata", "(Landroid/os/PersistableBundle;)V", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.Session.html#setChecksums(java.lang.String,java.util.List,byte[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Util.List"/></param>
             /// <param name="arg2"><see cref="byte"/></param>
             /// <exception cref="Java.Io.IOException"/>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetChecksums(Java.Lang.String arg0, Java.Util.List<Android.Content.Pm.Checksum> arg1, byte[] arg2)
             {
                 IExecute("setChecksums", arg0, arg1, arg2);
@@ -1163,35 +1186,35 @@ namespace Android.Content.Pm
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#STAGED_SESSION_ACTIVATION_FAILED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int STAGED_SESSION_ACTIVATION_FAILED { get { if (!_STAGED_SESSION_ACTIVATION_FAILEDReady) { _STAGED_SESSION_ACTIVATION_FAILEDContent = SGetField<int>(LocalBridgeClazz, "STAGED_SESSION_ACTIVATION_FAILED"); _STAGED_SESSION_ACTIVATION_FAILEDReady = true; } return _STAGED_SESSION_ACTIVATION_FAILEDContent; } }
             private static int _STAGED_SESSION_ACTIVATION_FAILEDContent = default;
             private static bool _STAGED_SESSION_ACTIVATION_FAILEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#STAGED_SESSION_CONFLICT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int STAGED_SESSION_CONFLICT { get { if (!_STAGED_SESSION_CONFLICTReady) { _STAGED_SESSION_CONFLICTContent = SGetField<int>(LocalBridgeClazz, "STAGED_SESSION_CONFLICT"); _STAGED_SESSION_CONFLICTReady = true; } return _STAGED_SESSION_CONFLICTContent; } }
             private static int _STAGED_SESSION_CONFLICTContent = default;
             private static bool _STAGED_SESSION_CONFLICTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#STAGED_SESSION_NO_ERROR"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int STAGED_SESSION_NO_ERROR { get { if (!_STAGED_SESSION_NO_ERRORReady) { _STAGED_SESSION_NO_ERRORContent = SGetField<int>(LocalBridgeClazz, "STAGED_SESSION_NO_ERROR"); _STAGED_SESSION_NO_ERRORReady = true; } return _STAGED_SESSION_NO_ERRORContent; } }
             private static int _STAGED_SESSION_NO_ERRORContent = default;
             private static bool _STAGED_SESSION_NO_ERRORReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#STAGED_SESSION_UNKNOWN"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int STAGED_SESSION_UNKNOWN { get { if (!_STAGED_SESSION_UNKNOWNReady) { _STAGED_SESSION_UNKNOWNContent = SGetField<int>(LocalBridgeClazz, "STAGED_SESSION_UNKNOWN"); _STAGED_SESSION_UNKNOWNReady = true; } return _STAGED_SESSION_UNKNOWNContent; } }
             private static int _STAGED_SESSION_UNKNOWNContent = default;
             private static bool _STAGED_SESSION_UNKNOWNReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#STAGED_SESSION_VERIFICATION_FAILED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int STAGED_SESSION_VERIFICATION_FAILED { get { if (!_STAGED_SESSION_VERIFICATION_FAILEDReady) { _STAGED_SESSION_VERIFICATION_FAILEDContent = SGetField<int>(LocalBridgeClazz, "STAGED_SESSION_VERIFICATION_FAILED"); _STAGED_SESSION_VERIFICATION_FAILEDReady = true; } return _STAGED_SESSION_VERIFICATION_FAILEDContent; } }
             private static int _STAGED_SESSION_VERIFICATION_FAILEDContent = default;
             private static bool _STAGED_SESSION_VERIFICATION_FAILEDReady = false; // this is used because in case of generics 
@@ -1204,187 +1227,52 @@ namespace Android.Content.Pm
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getAppIcon()"/> 
-            /// </summary>
-            public Android.Graphics.Bitmap AppIcon
-            {
-                get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getAppIcon", "()Landroid/graphics/Bitmap;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getAppLabel()"/> 
-            /// </summary>
-            public Java.Lang.CharSequence AppLabel
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getAppLabel", "()Ljava/lang/CharSequence;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getAppPackageName()"/> 
-            /// </summary>
-            public Java.Lang.String AppPackageName
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getAppPackageName", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getChildSessionIds()"/> 
-            /// </summary>
-            public int[] ChildSessionIds
-            {
-                get { return IExecuteWithSignatureArray<int>("getChildSessionIds", "()[I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getCreatedMillis()"/> 
-            /// </summary>
-            public long CreatedMillis
-            {
-                get { return IExecuteWithSignature<long>("getCreatedMillis", "()J"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getDontKillApp()"/> 
-            /// </summary>
-            public bool DontKillApp
-            {
-                get { return IExecuteWithSignature<bool>("getDontKillApp", "()Z"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getInstallerAttributionTag()"/> 
-            /// </summary>
-            public Java.Lang.String InstallerAttributionTag
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getInstallerAttributionTag", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getInstallerPackageName()"/> 
-            /// </summary>
-            public Java.Lang.String InstallerPackageName
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getInstallerPackageName", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getInstallerUid()"/> 
-            /// </summary>
-            public int InstallerUid
-            {
-                get { return IExecuteWithSignature<int>("getInstallerUid", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getInstallLocation()"/> 
-            /// </summary>
-            public int InstallLocation
-            {
-                get { return IExecuteWithSignature<int>("getInstallLocation", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getInstallReason()"/> 
-            /// </summary>
-            public int InstallReason
-            {
-                get { return IExecuteWithSignature<int>("getInstallReason", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getMode()"/> 
-            /// </summary>
-            public int Mode
-            {
-                get { return IExecuteWithSignature<int>("getMode", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getOriginatingUid()"/> 
-            /// </summary>
-            public int OriginatingUid
-            {
-                get { return IExecuteWithSignature<int>("getOriginatingUid", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getOriginatingUri()"/> 
-            /// </summary>
-            public Android.Net.Uri OriginatingUri
-            {
-                get { return IExecuteWithSignature<Android.Net.Uri>("getOriginatingUri", "()Landroid/net/Uri;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getPackageSource()"/> 
-            /// </summary>
-            public int PackageSource
-            {
-                get { return IExecuteWithSignature<int>("getPackageSource", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getParentSessionId()"/> 
-            /// </summary>
-            public int ParentSessionId
-            {
-                get { return IExecuteWithSignature<int>("getParentSessionId", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getProgress()"/> 
-            /// </summary>
-            public float Progress
-            {
-                get { return IExecuteWithSignature<float>("getProgress", "()F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getReferrerUri()"/> 
-            /// </summary>
-            public Android.Net.Uri ReferrerUri
-            {
-                get { return IExecuteWithSignature<Android.Net.Uri>("getReferrerUri", "()Landroid/net/Uri;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getRequireUserAction()"/> 
-            /// </summary>
-            public int RequireUserAction
-            {
-                get { return IExecuteWithSignature<int>("getRequireUserAction", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getSessionId()"/> 
-            /// </summary>
-            public int SessionId
-            {
-                get { return IExecuteWithSignature<int>("getSessionId", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getSize()"/> 
-            /// </summary>
-            public long Size
-            {
-                get { return IExecuteWithSignature<long>("getSize", "()J"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getStagedSessionErrorCode()"/> 
-            /// </summary>
-            public int StagedSessionErrorCode
-            {
-                get { return IExecuteWithSignature<int>("getStagedSessionErrorCode", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getStagedSessionErrorMessage()"/> 
-            /// </summary>
-            public Java.Lang.String StagedSessionErrorMessage
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getStagedSessionErrorMessage", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getUpdatedMillis()"/> 
-            /// </summary>
-            public long UpdatedMillis
-            {
-                get { return IExecuteWithSignature<long>("getUpdatedMillis", "()J"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getUser()"/> 
-            /// </summary>
-            public Android.Os.UserHandle User
-            {
-                get { return IExecuteWithSignature<Android.Os.UserHandle>("getUser", "()Landroid/os/UserHandle;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#createDetailsIntent()"/>
             /// </summary>
             /// <returns><see cref="Android.Content.Intent"/></returns>
             public Android.Content.Intent CreateDetailsIntent()
             {
                 return IExecuteWithSignature<Android.Content.Intent>("createDetailsIntent", "()Landroid/content/Intent;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getAppIcon()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+            public Android.Graphics.Bitmap GetAppIcon()
+            {
+                return IExecuteWithSignature<Android.Graphics.Bitmap>("getAppIcon", "()Landroid/graphics/Bitmap;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getOriginatingUri()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Net.Uri"/></returns>
+            public Android.Net.Uri GetOriginatingUri()
+            {
+                return IExecuteWithSignature<Android.Net.Uri>("getOriginatingUri", "()Landroid/net/Uri;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getReferrerUri()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Net.Uri"/></returns>
+            public Android.Net.Uri GetReferrerUri()
+            {
+                return IExecuteWithSignature<Android.Net.Uri>("getReferrerUri", "()Landroid/net/Uri;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getUser()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Os.UserHandle"/></returns>
+            public Android.Os.UserHandle GetUser()
+            {
+                return IExecuteWithSignature<Android.Os.UserHandle>("getUser", "()Landroid/os/UserHandle;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getDontKillApp()"/>
+            /// </summary>
+            /// <returns><see cref="bool"/></returns>
+            public bool GetDontKillApp()
+            {
+                return IExecuteWithSignature<bool>("getDontKillApp", "()Z");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#hasParentSessionId()"/>
@@ -1491,12 +1379,172 @@ namespace Android.Content.Pm
                 return IExecuteWithSignature<bool>("isStagedSessionReady", "()Z");
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getProgress()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            public float GetProgress()
+            {
+                return IExecuteWithSignature<float>("getProgress", "()F");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#describeContents()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getInstallerUid()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetInstallerUid()
+            {
+                return IExecuteWithSignature<int>("getInstallerUid", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getInstallLocation()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetInstallLocation()
+            {
+                return IExecuteWithSignature<int>("getInstallLocation", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getInstallReason()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetInstallReason()
+            {
+                return IExecuteWithSignature<int>("getInstallReason", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getMode()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetMode()
+            {
+                return IExecuteWithSignature<int>("getMode", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getOriginatingUid()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetOriginatingUid()
+            {
+                return IExecuteWithSignature<int>("getOriginatingUid", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getPackageSource()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetPackageSource()
+            {
+                return IExecuteWithSignature<int>("getPackageSource", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getParentSessionId()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetParentSessionId()
+            {
+                return IExecuteWithSignature<int>("getParentSessionId", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getRequireUserAction()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetRequireUserAction()
+            {
+                return IExecuteWithSignature<int>("getRequireUserAction", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getSessionId()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetSessionId()
+            {
+                return IExecuteWithSignature<int>("getSessionId", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getStagedSessionErrorCode()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetStagedSessionErrorCode()
+            {
+                return IExecuteWithSignature<int>("getStagedSessionErrorCode", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getChildSessionIds()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int[] GetChildSessionIds()
+            {
+                return IExecuteWithSignatureArray<int>("getChildSessionIds", "()[I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getAppLabel()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetAppLabel()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getAppLabel", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getAppPackageName()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetAppPackageName()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getAppPackageName", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getInstallerAttributionTag()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetInstallerAttributionTag()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getInstallerAttributionTag", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getInstallerPackageName()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetInstallerPackageName()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getInstallerPackageName", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getStagedSessionErrorMessage()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetStagedSessionErrorMessage()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getStagedSessionErrorMessage", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getCreatedMillis()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetCreatedMillis()
+            {
+                return IExecuteWithSignature<long>("getCreatedMillis", "()J");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getSize()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetSize()
+            {
+                return IExecuteWithSignature<long>("getSize", "()J");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#getUpdatedMillis()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetUpdatedMillis()
+            {
+                return IExecuteWithSignature<long>("getUpdatedMillis", "()J");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionInfo.html#writeToParcel(android.os.Parcel,int)"/>
@@ -1659,7 +1707,7 @@ namespace Android.Content.Pm
             /// <see href="https://developer.android.com/reference/android/content/pm/PackageInstaller.SessionParams.html#setAutoRevokePermissionsMode(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void SetAutoRevokePermissionsMode(bool arg0)
             {
                 IExecuteWithSignature("setAutoRevokePermissionsMode", "(Z)V", arg0);

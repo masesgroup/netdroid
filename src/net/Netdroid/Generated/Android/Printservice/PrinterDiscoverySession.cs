@@ -46,20 +46,6 @@ namespace Android.Printservice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/printservice/PrinterDiscoverySession.html#getPrinters()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Print.PrinterInfo> Printers
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Print.PrinterInfo>>("getPrinters", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/printservice/PrinterDiscoverySession.html#getTrackedPrinters()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Print.PrinterId> TrackedPrinters
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Print.PrinterId>>("getTrackedPrinters", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/printservice/PrinterDiscoverySession.html#onDestroy()"/>
         /// </summary>
         public void OnDestroy()
@@ -120,6 +106,22 @@ namespace Android.Printservice
         public bool IsPrinterDiscoveryStarted()
         {
             return IExecuteWithSignature<bool>("isPrinterDiscoveryStarted", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/printservice/PrinterDiscoverySession.html#getTrackedPrinters()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Print.PrinterId> GetTrackedPrinters()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Print.PrinterId>>("getTrackedPrinters", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/printservice/PrinterDiscoverySession.html#getPrinters()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Print.PrinterInfo> GetPrinters()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Print.PrinterInfo>>("getPrinters", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/printservice/PrinterDiscoverySession.html#addPrinters(java.util.List)"/>

@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/LongAccumulator.html#%3Cinit%3E(java.util.function.LongBinaryOperator,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/LongAccumulator.html#%3Cinit%3E(java.util.function.LongBinaryOperator,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -55,14 +55,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/LongAccumulator.html#getThenReset()"/> 
-        /// </summary>
-        public long ThenReset
-        {
-            get { return IExecuteWithSignature<long>("getThenReset", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/LongAccumulator.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/LongAccumulator.html#get()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long Get()
@@ -70,7 +63,15 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("get", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/LongAccumulator.html#accumulate(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/LongAccumulator.html#getThenReset()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetThenReset()
+        {
+            return IExecuteWithSignature<long>("getThenReset", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/LongAccumulator.html#accumulate(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public void Accumulate(long arg0)
@@ -78,7 +79,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecuteWithSignature("accumulate", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/LongAccumulator.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/LongAccumulator.html#reset()"/>
         /// </summary>
         public void Reset()
         {

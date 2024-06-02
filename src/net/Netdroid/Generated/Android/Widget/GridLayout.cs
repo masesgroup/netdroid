@@ -252,39 +252,12 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#getAlignmentMode()"/> <see href="https://developer.android.com/reference/android/widget/GridLayout.html#setAlignmentMode(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#getUseDefaultMargins()"/>
         /// </summary>
-        public int AlignmentMode
+        /// <returns><see cref="bool"/></returns>
+        public bool GetUseDefaultMargins()
         {
-            get { return IExecuteWithSignature<int>("getAlignmentMode", "()I"); } set { IExecuteWithSignature("setAlignmentMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#getColumnCount()"/> <see href="https://developer.android.com/reference/android/widget/GridLayout.html#setColumnCount(int)"/>
-        /// </summary>
-        public int ColumnCount
-        {
-            get { return IExecuteWithSignature<int>("getColumnCount", "()I"); } set { IExecuteWithSignature("setColumnCount", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#getOrientation()"/> <see href="https://developer.android.com/reference/android/widget/GridLayout.html#setOrientation(int)"/>
-        /// </summary>
-        public int Orientation
-        {
-            get { return IExecuteWithSignature<int>("getOrientation", "()I"); } set { IExecuteWithSignature("setOrientation", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#getRowCount()"/> <see href="https://developer.android.com/reference/android/widget/GridLayout.html#setRowCount(int)"/>
-        /// </summary>
-        public int RowCount
-        {
-            get { return IExecuteWithSignature<int>("getRowCount", "()I"); } set { IExecuteWithSignature("setRowCount", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#getUseDefaultMargins()"/> <see href="https://developer.android.com/reference/android/widget/GridLayout.html#setUseDefaultMargins(boolean)"/>
-        /// </summary>
-        public bool UseDefaultMargins
-        {
-            get { return IExecuteWithSignature<bool>("getUseDefaultMargins", "()Z"); } set { IExecuteWithSignature("setUseDefaultMargins", "(Z)V", value); }
+            return IExecuteWithSignature<bool>("getUseDefaultMargins", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#isColumnOrderPreserved()"/>
@@ -303,6 +276,54 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("isRowOrderPreserved", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#getAlignmentMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAlignmentMode()
+        {
+            return IExecuteWithSignature<int>("getAlignmentMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#getColumnCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetColumnCount()
+        {
+            return IExecuteWithSignature<int>("getColumnCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#getOrientation()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOrientation()
+        {
+            return IExecuteWithSignature<int>("getOrientation", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#getRowCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRowCount()
+        {
+            return IExecuteWithSignature<int>("getRowCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#setAlignmentMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetAlignmentMode(int arg0)
+        {
+            IExecuteWithSignature("setAlignmentMode", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#setColumnCount(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetColumnCount(int arg0)
+        {
+            IExecuteWithSignature("setColumnCount", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#setColumnOrderPreserved(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -311,12 +332,36 @@ namespace Android.Widget
             IExecuteWithSignature("setColumnOrderPreserved", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#setOrientation(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetOrientation(int arg0)
+        {
+            IExecuteWithSignature("setOrientation", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#setRowCount(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRowCount(int arg0)
+        {
+            IExecuteWithSignature("setRowCount", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#setRowOrderPreserved(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetRowOrderPreserved(bool arg0)
         {
             IExecuteWithSignature("setRowOrderPreserved", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/GridLayout.html#setUseDefaultMargins(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetUseDefaultMargins(bool arg0)
+        {
+            IExecuteWithSignature("setUseDefaultMargins", "(Z)V", arg0);
         }
 
         #endregion

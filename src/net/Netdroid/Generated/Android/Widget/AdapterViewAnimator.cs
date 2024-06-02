@@ -88,32 +88,20 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#getCurrentView()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#getInAnimation()"/>
         /// </summary>
-        public Android.View.View CurrentView
+        /// <returns><see cref="Android.Animation.ObjectAnimator"/></returns>
+        public Android.Animation.ObjectAnimator GetInAnimation()
         {
-            get { return IExecuteWithSignature<Android.View.View>("getCurrentView", "()Landroid/view/View;"); }
+            return IExecuteWithSignature<Android.Animation.ObjectAnimator>("getInAnimation", "()Landroid/animation/ObjectAnimator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#getDisplayedChild()"/> <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setDisplayedChild(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#getOutAnimation()"/>
         /// </summary>
-        public int DisplayedChild
+        /// <returns><see cref="Android.Animation.ObjectAnimator"/></returns>
+        public Android.Animation.ObjectAnimator GetOutAnimation()
         {
-            get { return IExecuteWithSignature<int>("getDisplayedChild", "()I"); } set { IExecuteWithSignature("setDisplayedChild", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#getInAnimation()"/> <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setInAnimation(android.animation.ObjectAnimator)"/>
-        /// </summary>
-        public Android.Animation.ObjectAnimator InAnimation
-        {
-            get { return IExecuteWithSignature<Android.Animation.ObjectAnimator>("getInAnimation", "()Landroid/animation/ObjectAnimator;"); } set { IExecuteWithSignature("setInAnimation", "(Landroid/animation/ObjectAnimator;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#getOutAnimation()"/> <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setOutAnimation(android.animation.ObjectAnimator)"/>
-        /// </summary>
-        public Android.Animation.ObjectAnimator OutAnimation
-        {
-            get { return IExecuteWithSignature<Android.Animation.ObjectAnimator>("getOutAnimation", "()Landroid/animation/ObjectAnimator;"); } set { IExecuteWithSignature("setOutAnimation", "(Landroid/animation/ObjectAnimator;)V", value); }
+            return IExecuteWithSignature<Android.Animation.ObjectAnimator>("getOutAnimation", "()Landroid/animation/ObjectAnimator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#onSaveInstanceState()"/>
@@ -124,12 +112,28 @@ namespace Android.Widget
             return IExecuteWithSignature<Android.Os.Parcelable>("onSaveInstanceState", "()Landroid/os/Parcelable;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#getCurrentView()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetCurrentView()
+        {
+            return IExecuteWithSignature<Android.View.View>("getCurrentView", "()Landroid/view/View;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#onRemoteAdapterConnected()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool OnRemoteAdapterConnected()
         {
             return IExecuteWithSignature<bool>("onRemoteAdapterConnected", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#getDisplayedChild()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDisplayedChild()
+        {
+            return IExecuteWithSignature<int>("getDisplayedChild", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#advance()"/>
@@ -176,6 +180,22 @@ namespace Android.Widget
             IExecuteWithSignature("setAnimateFirstView", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setDisplayedChild(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDisplayedChild(int arg0)
+        {
+            IExecuteWithSignature("setDisplayedChild", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setInAnimation(android.animation.ObjectAnimator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Animation.ObjectAnimator"/></param>
+        public void SetInAnimation(Android.Animation.ObjectAnimator arg0)
+        {
+            IExecuteWithSignature("setInAnimation", "(Landroid/animation/ObjectAnimator;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setInAnimation(android.content.Context,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -183,6 +203,14 @@ namespace Android.Widget
         public void SetInAnimation(Android.Content.Context arg0, int arg1)
         {
             IExecute("setInAnimation", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setOutAnimation(android.animation.ObjectAnimator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Animation.ObjectAnimator"/></param>
+        public void SetOutAnimation(Android.Animation.ObjectAnimator arg0)
+        {
+            IExecuteWithSignature("setOutAnimation", "(Landroid/animation/ObjectAnimator;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AdapterViewAnimator.html#setOutAnimation(android.content.Context,int)"/>

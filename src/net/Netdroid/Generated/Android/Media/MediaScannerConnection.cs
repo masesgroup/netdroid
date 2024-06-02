@@ -180,7 +180,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onScanCompleted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnScanCompletedEventHandler));
+                AddEventHandler("onScanCompleted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnScanCompletedEventHandler));
 
             }
 
@@ -188,7 +188,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaScannerConnection.OnScanCompletedListener.html#onScanCompleted(java.lang.String,android.net.Uri)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScanCompleted"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Lang.String, Android.Net.Uri> OnOnScanCompleted { get; set; } = null;
+            public global::System.Action<Java.Lang.String, Android.Net.Uri> OnOnScanCompleted { get; set; } = null;
 
             void OnScanCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
             {

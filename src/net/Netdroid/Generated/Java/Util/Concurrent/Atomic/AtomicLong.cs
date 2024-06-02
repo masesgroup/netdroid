@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#%3Cinit%3E(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#%3Cinit%3E(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public AtomicLong(long arg0)
@@ -54,42 +54,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#getAcquire()"/> 
-        /// </summary>
-        public long Acquire
-        {
-            get { return IExecuteWithSignature<long>("getAcquire", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#getAndDecrement()"/> 
-        /// </summary>
-        public long AndDecrement
-        {
-            get { return IExecuteWithSignature<long>("getAndDecrement", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#getAndIncrement()"/> 
-        /// </summary>
-        public long AndIncrement
-        {
-            get { return IExecuteWithSignature<long>("getAndIncrement", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#getOpaque()"/> <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#setOpaque(long)"/>
-        /// </summary>
-        public long Opaque
-        {
-            get { return IExecuteWithSignature<long>("getOpaque", "()J"); } set { IExecuteWithSignature("setOpaque", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#getPlain()"/> <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#setPlain(long)"/>
-        /// </summary>
-        public long Plain
-        {
-            get { return IExecuteWithSignature<long>("getPlain", "()J"); } set { IExecuteWithSignature("setPlain", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#compareAndSet(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#compareAndSet(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -99,18 +64,18 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSet(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSet(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool WeakCompareAndSet(long arg0, long arg1)
         {
             return IExecute<bool>("weakCompareAndSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSetAcquire(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSetAcquire(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -120,7 +85,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetAcquire", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSetPlain(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSetPlain(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -130,7 +95,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetPlain", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSetRelease(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSetRelease(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -140,7 +105,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetRelease", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSetVolatile(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSetVolatile(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -150,7 +115,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#accumulateAndGet(long,java.util.function.LongBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#accumulateAndGet(long,java.util.function.LongBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
@@ -160,7 +125,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("accumulateAndGet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#addAndGet(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#addAndGet(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -169,7 +134,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("addAndGet", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#compareAndExchange(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#compareAndExchange(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -179,7 +144,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("compareAndExchange", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#compareAndExchangeAcquire(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#compareAndExchangeAcquire(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -189,7 +154,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("compareAndExchangeAcquire", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#compareAndExchangeRelease(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#compareAndExchangeRelease(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -199,7 +164,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("compareAndExchangeRelease", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#decrementAndGet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#decrementAndGet()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long DecrementAndGet()
@@ -207,7 +172,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("decrementAndGet", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#get()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long Get()
@@ -215,7 +180,15 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("get", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#getAndAccumulate(long,java.util.function.LongBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#getAcquire()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetAcquire()
+        {
+            return IExecuteWithSignature<long>("getAcquire", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#getAndAccumulate(long,java.util.function.LongBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
@@ -225,7 +198,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("getAndAccumulate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#getAndAdd(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#getAndAdd(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -234,7 +207,23 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("getAndAdd", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#getAndSet(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#getAndDecrement()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetAndDecrement()
+        {
+            return IExecuteWithSignature<long>("getAndDecrement", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#getAndIncrement()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetAndIncrement()
+        {
+            return IExecuteWithSignature<long>("getAndIncrement", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#getAndSet(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -243,7 +232,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("getAndSet", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#getAndUpdate(java.util.function.LongUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#getAndUpdate(java.util.function.LongUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongUnaryOperator"/></param>
         /// <returns><see cref="long"/></returns>
@@ -252,7 +241,23 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("getAndUpdate", "(Ljava/util/function/LongUnaryOperator;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#incrementAndGet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#getOpaque()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetOpaque()
+        {
+            return IExecuteWithSignature<long>("getOpaque", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#getPlain()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetPlain()
+        {
+            return IExecuteWithSignature<long>("getPlain", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#incrementAndGet()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long IncrementAndGet()
@@ -260,7 +265,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("incrementAndGet", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#updateAndGet(java.util.function.LongUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#updateAndGet(java.util.function.LongUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongUnaryOperator"/></param>
         /// <returns><see cref="long"/></returns>
@@ -269,7 +274,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("updateAndGet", "(Ljava/util/function/LongUnaryOperator;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#lazySet(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#lazySet(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public void LazySet(long arg0)
@@ -277,7 +282,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecuteWithSignature("lazySet", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#set(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#set(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public void Set(long arg0)
@@ -285,7 +290,23 @@ namespace Java.Util.Concurrent.Atomic
             IExecuteWithSignature("set", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html#setRelease(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#setOpaque(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetOpaque(long arg0)
+        {
+            IExecuteWithSignature("setOpaque", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#setPlain(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetPlain(long arg0)
+        {
+            IExecuteWithSignature("setPlain", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html#setRelease(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public void SetRelease(long arg0)

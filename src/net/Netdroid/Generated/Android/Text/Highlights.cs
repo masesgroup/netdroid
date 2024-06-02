@@ -46,13 +46,6 @@ namespace Android.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Highlights.html#getSize()"/> 
-        /// </summary>
-        public int Size
-        {
-            get { return IExecuteWithSignature<int>("getSize", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Highlights.html#getPaint(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -60,6 +53,14 @@ namespace Android.Text
         public Android.Graphics.Paint GetPaint(int arg0)
         {
             return IExecuteWithSignature<Android.Graphics.Paint>("getPaint", "(I)Landroid/graphics/Paint;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Highlights.html#getSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSize()
+        {
+            return IExecuteWithSignature<int>("getSize", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Highlights.html#getRanges(int)"/>

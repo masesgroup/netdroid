@@ -42,13 +42,13 @@ namespace Java.Time.Chrono
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/MinguoEra.html#BEFORE_ROC"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/MinguoEra.html#BEFORE_ROC"/>
         /// </summary>
         public static Java.Time.Chrono.MinguoEra BEFORE_ROC { get { if (!_BEFORE_ROCReady) { _BEFORE_ROCContent = SGetField<Java.Time.Chrono.MinguoEra>(LocalBridgeClazz, "BEFORE_ROC"); _BEFORE_ROCReady = true; } return _BEFORE_ROCContent; } }
         private static Java.Time.Chrono.MinguoEra _BEFORE_ROCContent = default;
         private static bool _BEFORE_ROCReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/MinguoEra.html#ROC"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/MinguoEra.html#ROC"/>
         /// </summary>
         public static Java.Time.Chrono.MinguoEra ROC { get { if (!_ROCReady) { _ROCContent = SGetField<Java.Time.Chrono.MinguoEra>(LocalBridgeClazz, "ROC"); _ROCReady = true; } return _ROCContent; } }
         private static Java.Time.Chrono.MinguoEra _ROCContent = default;
@@ -58,7 +58,7 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/MinguoEra.html#of(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/MinguoEra.html#of(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Chrono.MinguoEra"/></returns>
@@ -67,7 +67,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.MinguoEra>(LocalBridgeClazz, "of", "(I)Ljava/time/chrono/MinguoEra;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/MinguoEra.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/MinguoEra.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Time.Chrono.MinguoEra"/></returns>
@@ -76,7 +76,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.MinguoEra>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/chrono/MinguoEra;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/MinguoEra.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/MinguoEra.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Chrono.MinguoEra"/></returns>
         public static Java.Time.Chrono.MinguoEra[] Values()
@@ -88,14 +88,15 @@ namespace Java.Time.Chrono
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/MinguoEra.html#getValue()"/> 
+        /// <see href="https://developer.android.com/reference/java/time/chrono/MinguoEra.html#getValue()"/>
         /// </summary>
-        public int Value
+        /// <returns><see cref="int"/></returns>
+        public int GetValue()
         {
-            get { return IExecuteWithSignature<int>("getValue", "()I"); }
+            return IExecuteWithSignature<int>("getValue", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/MinguoEra.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/MinguoEra.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
