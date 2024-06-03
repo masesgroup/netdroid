@@ -76,6 +76,7 @@
     "org.xml.sax.helpers.XMLReaderAdapter"
   ],
   "ClassesToAvoid": [
+    "android.net.TransportInfo",
     "android.util.Range",
     "java.io.ObjectInputFilter",
     "java.lang.Enum$EnumDesc",
@@ -96,6 +97,7 @@
     "java.sql.ShardingKeyBuilder",
     "java.sql.SQLType",
     "java.text.NumberFormat$Style",
+    "java.time.chrono.ChronoLocalDate",
     "java.util.Comparator",
     "java.util.EventListener",
     "java.util.random.RandomGenerator",
