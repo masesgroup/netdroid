@@ -835,12 +835,85 @@ namespace Android.Widget
         {
             return IExecuteWithSignature<T>("getAdapter", "()Landroid/widget/Adapter;");
         }
-
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#getAdapter()"/>
+        /// </summary>
+        /// <returns><typeparamref name="T"/></returns>
+        public T GetAdapterDirect()
+        {
+            return IExecuteWithSignature<TDirect, T>("getAdapter", "()Landroid/widget/Adapter;");
         }
-
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#setAdapter(android.widget.Adapter)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        public void SetAdapter(T arg0)
+        {
+            IExecuteWithSignature("setAdapter", "(Landroid/widget/Adapter;)V", arg0);
         }
-
-
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#setSelection(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetSelection(int arg0)
+        {
+            IExecuteWithSignature("setSelection", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#getEmptyView()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetEmptyView()
+        {
+            return IExecuteWithSignature<Android.View.View>("getEmptyView", "()Landroid/view/View;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#performItemClick(android.view.View,int,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.View"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="long"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public bool PerformItemClick(Android.View.View arg0, int arg1, long arg2)
+        {
+            return IExecute<bool>("performItemClick", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#getOnItemClickListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Widget.AdapterView.OnItemClickListener"/></returns>
+        public Android.Widget.AdapterView.OnItemClickListener GetOnItemClickListener()
+        {
+            return IExecuteWithSignature<Android.Widget.AdapterView.OnItemClickListener>("getOnItemClickListener", "()Landroid/widget/AdapterView$OnItemClickListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#getOnItemClickListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Widget.AdapterView.OnItemClickListener"/></returns>
+        public Android.Widget.AdapterView.OnItemClickListener GetOnItemClickListenerDirect()
+        {
+            return IExecuteWithSignature<Android.Widget.AdapterView.OnItemClickListenerDirect, Android.Widget.AdapterView.OnItemClickListener>("getOnItemClickListener", "()Landroid/widget/AdapterView$OnItemClickListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#getOnItemLongClickListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Widget.AdapterView.OnItemLongClickListener"/></returns>
+        public Android.Widget.AdapterView.OnItemLongClickListener GetOnItemLongClickListener()
+        {
+            return IExecuteWithSignature<Android.Widget.AdapterView.OnItemLongClickListener>("getOnItemLongClickListener", "()Landroid/widget/AdapterView$OnItemLongClickListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#getOnItemLongClickListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Widget.AdapterView.OnItemLongClickListener"/></returns>
+        public Android.Widget.AdapterView.OnItemLongClickListener GetOnItemLongClickListenerDirect()
+        {
+            return IExecuteWithSignature<Android.Widget.AdapterView.OnItemLongClickListenerDirect, Android.Widget.AdapterView.OnItemLongClickListener>("getOnItemLongClickListener", "()Landroid/widget/AdapterView$OnItemLongClickListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#getOnItemSelectedListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Widget.AdapterView.OnItemSelectedListener"/></returns>
         public Android.Widget.AdapterView.OnItemSelectedListener GetOnItemSelectedListener()
         {
             return IExecuteWithSignature<Android.Widget.AdapterView.OnItemSelectedListener>("getOnItemSelectedListener", "()Landroid/widget/AdapterView$OnItemSelectedListener;");
@@ -861,7 +934,14 @@ namespace Android.Widget
         {
             return IExecuteWithSignature<int>("getCount", "()I");
         }
- 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#getFirstVisiblePosition()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFirstVisiblePosition()
+        {
+            return IExecuteWithSignature<int>("getFirstVisiblePosition", "()I");
+        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#getLastVisiblePosition()"/>
         /// </summary>

@@ -179,6 +179,15 @@ namespace Android.Net.Wifi
             return IExecuteWithSignature<Android.Net.MacAddress>("getApMldMacAddress", "()Landroid/net/MacAddress;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#makeCopy(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="Android.Net.TransportInfo"/></returns>
+        public Android.Net.TransportInfo MakeCopy(long arg0)
+        {
+            return IExecuteWithSignature<Android.Net.TransportInfo>("makeCopy", "(J)Landroid/net/TransportInfo;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getSupplicantState()"/>
         /// </summary>
         /// <returns><see cref="Android.Net.Wifi.SupplicantState"/></returns>
