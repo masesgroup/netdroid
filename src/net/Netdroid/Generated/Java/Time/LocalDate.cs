@@ -323,15 +323,6 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Lang.String>("format", "(Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java/time/LocalDate.html#atTime(java.time.LocalTime)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.LocalTime"/></param>
-        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></returns>
-        public Java.Time.Chrono.ChronoLocalDateTime AtTime(Java.Time.LocalTime arg0)
-        {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDateTime>("atTime", "(Ljava/time/LocalTime;)Ljava/time/chrono/ChronoLocalDateTime;", arg0);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/LocalDate.html#getChronology()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Chrono.Chronology"/></returns>

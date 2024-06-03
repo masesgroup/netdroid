@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Time
 {
     #region ZonedDateTime
-    public partial class ZonedDateTime : Java.Time.Temporal.ITemporal, Java.Time.Chrono.IChronoZonedDateTime, Java.Io.ISerializable
+    public partial class ZonedDateTime : Java.Time.Temporal.ITemporal, Java.Io.ISerializable
     {
         #region Constructors
 
@@ -37,10 +37,6 @@ namespace Java.Time
         /// Converter from <see cref="Java.Time.ZonedDateTime"/> to <see cref="Java.Time.Temporal.Temporal"/>
         /// </summary>
         public static implicit operator Java.Time.Temporal.Temporal(Java.Time.ZonedDateTime t) => t.Cast<Java.Time.Temporal.Temporal>();
-        /// <summary>
-        /// Converter from <see cref="Java.Time.ZonedDateTime"/> to <see cref="Java.Time.Chrono.ChronoZonedDateTime"/>
-        /// </summary>
-        public static implicit operator Java.Time.Chrono.ChronoZonedDateTime(Java.Time.ZonedDateTime t) => t.Cast<Java.Time.Chrono.ChronoZonedDateTime>();
         /// <summary>
         /// Converter from <see cref="Java.Time.ZonedDateTime"/> to <see cref="Java.Io.Serializable"/>
         /// </summary>
@@ -299,48 +295,6 @@ namespace Java.Time
         public Java.Time.Chrono.ChronoLocalDate ToLocalDate()
         {
             return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>("toLocalDate", "()Ljava/time/chrono/ChronoLocalDate;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#toLocalDateTime()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></returns>
-        public Java.Time.Chrono.ChronoLocalDateTime ToLocalDateTime()
-        {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDateTime>("toLocalDateTime", "()Ljava/time/chrono/ChronoLocalDateTime;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#withEarlierOffsetAtOverlap()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
-        public Java.Time.Chrono.ChronoZonedDateTime WithEarlierOffsetAtOverlap()
-        {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoZonedDateTime>("withEarlierOffsetAtOverlap", "()Ljava/time/chrono/ChronoZonedDateTime;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#withLaterOffsetAtOverlap()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
-        public Java.Time.Chrono.ChronoZonedDateTime WithLaterOffsetAtOverlap()
-        {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoZonedDateTime>("withLaterOffsetAtOverlap", "()Ljava/time/chrono/ChronoZonedDateTime;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#withZoneSameInstant(java.time.ZoneId)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
-        /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
-        public Java.Time.Chrono.ChronoZonedDateTime WithZoneSameInstant(Java.Time.ZoneId arg0)
-        {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoZonedDateTime>("withZoneSameInstant", "(Ljava/time/ZoneId;)Ljava/time/chrono/ChronoZonedDateTime;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#withZoneSameLocal(java.time.ZoneId)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
-        /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
-        public Java.Time.Chrono.ChronoZonedDateTime WithZoneSameLocal(Java.Time.ZoneId arg0)
-        {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoZonedDateTime>("withZoneSameLocal", "(Ljava/time/ZoneId;)Ljava/time/chrono/ChronoZonedDateTime;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#getDayOfWeek()"/>

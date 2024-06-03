@@ -286,15 +286,6 @@ namespace Java.Time.Chrono
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("dateYearDay", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#localDateTime(java.time.temporal.TemporalAccessor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
-        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></returns>
-        public Java.Time.Chrono.ChronoLocalDateTime LocalDateTime(Java.Time.Temporal.TemporalAccessor arg0)
-        {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDateTime>("localDateTime", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoLocalDateTime;", arg0);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#period(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -304,25 +295,6 @@ namespace Java.Time.Chrono
         public Java.Time.Chrono.ChronoPeriod Period(int arg0, int arg1, int arg2)
         {
             return IExecute<Java.Time.Chrono.ChronoPeriod>("period", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#zonedDateTime(java.time.Instant,java.time.ZoneId)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
-        /// <param name="arg1"><see cref="Java.Time.ZoneId"/></param>
-        /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
-        public Java.Time.Chrono.ChronoZonedDateTime ZonedDateTime(Java.Time.Instant arg0, Java.Time.ZoneId arg1)
-        {
-            return IExecute<Java.Time.Chrono.ChronoZonedDateTime>("zonedDateTime", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#zonedDateTime(java.time.temporal.TemporalAccessor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
-        /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
-        public Java.Time.Chrono.ChronoZonedDateTime ZonedDateTime(Java.Time.Temporal.TemporalAccessor arg0)
-        {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoZonedDateTime>("zonedDateTime", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoZonedDateTime;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/Chronology.html#epochSecond(int,int,int,int,int,int,java.time.ZoneOffset)"/>
